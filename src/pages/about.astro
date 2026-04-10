@@ -1,63 +1,766 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`About | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Outfit:wght@200;300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+		<style>
+			:global(html),
+			:global(body) {
+				margin: 0;
+				padding: 0;
+				overflow-x: hidden;
+				background:
+					radial-gradient(circle at 0% 0%, rgba(145, 176, 156, 0.12), transparent 28%),
+					radial-gradient(circle at 100% 10%, rgba(225, 215, 189, 0.18), transparent 24%),
+					radial-gradient(circle at 50% 100%, rgba(181, 201, 192, 0.14), transparent 20%),
+					linear-gradient(180deg, #f7f3ed 0%, #eef3ef 100%);
+				color: #213028;
+				font-family: 'Outfit', system-ui, sans-serif;
+			}
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+			:global(a) {
+				color: inherit;
+				text-decoration: none;
+			}
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+			.page {
+				position: relative;
+				min-height: 100vh;
+				padding: 0 18px 42px;
+			}
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+			.bg-shape {
+				position: fixed;
+				pointer-events: none;
+				z-index: 0;
+				opacity: 0.55;
+				filter: blur(90px);
+				border-radius: 999px;
+				animation: drift 16s ease-in-out infinite alternate;
+			}
+
+			.bg-shape--1 {
+				top: -8rem;
+				left: -6rem;
+				width: 22rem;
+				height: 22rem;
+				background: rgba(126, 163, 140, 0.22);
+			}
+
+			.bg-shape--2 {
+				top: 14rem;
+				right: -7rem;
+				width: 20rem;
+				height: 20rem;
+				background: rgba(221, 207, 175, 0.28);
+				animation-delay: -3s;
+			}
+
+			.bg-shape--3 {
+				bottom: -7rem;
+				left: 34%;
+				width: 18rem;
+				height: 18rem;
+				background: rgba(164, 194, 184, 0.2);
+				animation-delay: -1.5s;
+			}
+
+			.about {
+				position: relative;
+				z-index: 1;
+				width: min(1280px, 100%);
+				margin: 0 auto;
+				padding-top: 1.25rem;
+			}
+
+			.masthead {
+				position: relative;
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 1.5rem;
+				align-items: end;
+				padding: 0.75rem 0 2rem;
+			}
+
+			.masthead-copy {
+				position: relative;
+			}
+
+			.masthead-label {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.9rem;
+				margin-bottom: 1rem;
+				font-size: 0.78rem;
+				letter-spacing: 0.32em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.58);
+			}
+
+			.masthead-label::before {
+				content: '';
+				width: 44px;
+				height: 1px;
+				background: currentColor;
+			}
+
+			.masthead-title {
+				margin: 0;
+				font-size: clamp(4rem, 14vw, 10rem);
+				line-height: 0.84;
+				letter-spacing: -0.09em;
+				font-weight: 200;
+				color: rgba(33, 48, 40, 0.94);
+			}
+
+			.masthead-title span {
+				display: block;
+				margin-left: 0.08em;
+			}
+
+			.masthead-ghost {
+				position: absolute;
+				top: -0.12em;
+				right: 0.04em;
+				font-size: clamp(4rem, 16vw, 14rem);
+				line-height: 0.9;
+				font-weight: 200;
+				letter-spacing: -0.08em;
+				color: rgba(126, 163, 140, 0.025);
+				pointer-events: none;
+				user-select: none;
+			}
+
+			.masthead-side {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				gap: 0.8rem;
+				padding-bottom: 0.55rem;
+			}
+
+			.stat-pill {
+				padding: 0.72rem 1rem;
+				border-radius: 999px;
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				background: rgba(255, 255, 255, 0.38);
+				backdrop-filter: blur(14px);
+				font-size: 0.76rem;
+				letter-spacing: 0.28em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.68);
+				white-space: nowrap;
+				box-shadow: 0 10px 26px rgba(24, 34, 28, 0.04);
+			}
+
+			.hero {
+				margin-bottom: 1rem;
+			}
+
+			.hero-card {
+				position: relative;
+				display: grid;
+				grid-template-columns: minmax(0, 1fr) 240px;
+				gap: 1.5rem;
+				min-height: 380px;
+				padding: 2rem;
+				border-radius: 36px;
+				overflow: hidden;
+				background:
+					linear-gradient(135deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.2)),
+					linear-gradient(180deg, rgba(126, 163, 140, 0.08), rgba(226, 218, 194, 0.08));
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				backdrop-filter: blur(16px);
+				box-shadow: 0 18px 48px rgba(31, 42, 36, 0.05);
+				transition:
+					transform 0.45s ease,
+					box-shadow 0.45s ease,
+					border-color 0.45s ease;
+			}
+
+			.hero-card:hover {
+				transform: translateY(-6px);
+				box-shadow: 0 26px 72px rgba(31, 42, 36, 0.1);
+				border-color: rgba(0, 0, 0, 0.08);
+			}
+
+			.hero-card::before {
+				content: 'A';
+				position: absolute;
+				right: 1.4rem;
+				bottom: -0.06em;
+				font-size: clamp(7rem, 18vw, 14rem);
+				line-height: 0.9;
+				font-weight: 200;
+				letter-spacing: -0.08em;
+				color: rgba(33, 48, 40, 0.05);
+				pointer-events: none;
+			}
+
+			.hero-card::after {
+				content: '';
+				position: absolute;
+				top: 1.25rem;
+				right: 1.25rem;
+				width: 84px;
+				height: 84px;
+				border-radius: 999px;
+				border: 1px solid rgba(126, 163, 140, 0.14);
+				background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.3), transparent 65%);
+				pointer-events: none;
+			}
+
+			.hero-main {
+				position: relative;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				min-width: 0;
+			}
+
+			.hero-meta {
+				display: flex;
+				align-items: center;
+				gap: 0.8rem;
+				flex-wrap: wrap;
+				margin-bottom: 1.1rem;
+				font-size: 0.76rem;
+				letter-spacing: 0.24em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.62);
+			}
+
+			.hero-tag {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.5rem 0.75rem;
+				border-radius: 999px;
+				background: rgba(255, 255, 255, 0.5);
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				box-shadow: 0 10px 24px rgba(24, 34, 28, 0.035);
+			}
+
+			.hero-dot {
+				width: 5px;
+				height: 5px;
+				border-radius: 999px;
+				background: #7ea38c;
+			}
+
+			.hero-title {
+				margin: 0;
+				max-width: 8.8em;
+				font-family: 'Noto Serif SC', serif;
+				font-size: clamp(2.2rem, 5vw, 4.8rem);
+				line-height: 1.06;
+				letter-spacing: 0.03em;
+				font-weight: 400;
+				text-wrap: balance;
+			}
+
+			.hero-desc {
+				margin: 1.2rem 0 0;
+				max-width: 40rem;
+				font-size: 1rem;
+				line-height: 1.9;
+				color: rgba(33, 48, 40, 0.68);
+			}
+
+			.hero-bottom {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-top: 1.8rem;
+			}
+
+			.hero-line {
+				width: 88px;
+				height: 1px;
+				background: linear-gradient(90deg, rgba(33, 48, 40, 0.62), transparent);
+			}
+
+			.hero-note {
+				font-size: 0.8rem;
+				letter-spacing: 0.24em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.6);
+			}
+
+			.hero-side {
+				position: relative;
+				z-index: 1;
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-end;
+				padding-top: 0.2rem;
+			}
+
+			.hero-stack {
+				display: flex;
+				flex-direction: column;
+				gap: 0.8rem;
+				width: 100%;
+			}
+
+			.hero-chip {
+				padding: 0.95rem 1rem;
+				border-radius: 22px;
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				background: rgba(255, 255, 255, 0.4);
+				backdrop-filter: blur(14px);
+				text-align: right;
+				box-shadow: 0 12px 28px rgba(24, 34, 28, 0.04);
+			}
+
+			.hero-chip-label {
+				display: block;
+				margin-bottom: 0.3rem;
+				font-size: 0.68rem;
+				letter-spacing: 0.26em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.48);
+			}
+
+			.hero-chip-value {
+				display: block;
+				font-size: 1rem;
+				letter-spacing: 0.12em;
+				color: rgba(33, 48, 40, 0.84);
+			}
+
+			.sections {
+				display: grid;
+				grid-template-columns: repeat(12, minmax(0, 1fr));
+				gap: 16px;
+			}
+
+			.card {
+				min-width: 0;
+			}
+
+			.card--wide {
+				grid-column: span 7;
+			}
+
+			.card--stack {
+				grid-column: span 5;
+			}
+
+			.card--full {
+				grid-column: span 12;
+			}
+
+			.panel {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				min-height: 240px;
+				padding: 1.4rem 1.4rem 1.3rem;
+				border-radius: 30px;
+				overflow: hidden;
+				background:
+					linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),
+					linear-gradient(180deg, rgba(126, 163, 140, 0.06), rgba(226, 218, 194, 0.06));
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				backdrop-filter: blur(14px);
+				box-shadow: 0 14px 36px rgba(31, 42, 36, 0.045);
+				transition:
+					transform 0.45s ease,
+					box-shadow 0.45s ease,
+					border-color 0.45s ease;
+			}
+
+			.panel:hover {
+				transform: translateY(-6px);
+				box-shadow: 0 22px 58px rgba(31, 42, 36, 0.09);
+				border-color: rgba(0, 0, 0, 0.08);
+			}
+
+			.panel::before {
+				content: '';
+				position: absolute;
+				top: 1rem;
+				right: 1rem;
+				width: 54px;
+				height: 54px;
+				border-radius: 999px;
+				border: 1px solid rgba(126, 163, 140, 0.14);
+				background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.24), transparent 70%);
+				pointer-events: none;
+			}
+
+			.panel-top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 0.8rem;
+				margin-bottom: 1rem;
+			}
+
+			.panel-label {
+				font-size: 0.72rem;
+				letter-spacing: 0.26em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.52);
+			}
+
+			.panel-index {
+				font-size: 0.72rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.52);
+			}
+
+			.panel-title {
+				margin: 0;
+				max-width: 9em;
+				font-family: 'Noto Serif SC', serif;
+				font-size: clamp(1.4rem, 2.4vw, 2.2rem);
+				line-height: 1.15;
+				font-weight: 400;
+				letter-spacing: 0.02em;
+				text-wrap: balance;
+			}
+
+			.panel-copy {
+				margin: 1rem 0 0;
+				max-width: 34rem;
+				font-size: 0.98rem;
+				line-height: 1.85;
+				color: rgba(33, 48, 40, 0.66);
+			}
+
+			.panel-list {
+				margin: 1rem 0 0;
+				padding: 0;
+				list-style: none;
+				display: grid;
+				gap: 0.8rem;
+			}
+
+			.panel-list li {
+				display: flex;
+				align-items: center;
+				gap: 0.75rem;
+				color: rgba(33, 48, 40, 0.72);
+				font-size: 0.96rem;
+			}
+
+			.panel-bullet {
+				width: 7px;
+				height: 7px;
+				border-radius: 999px;
+				background: #7ea38c;
+				flex-shrink: 0;
+			}
+
+			.panel-bottom {
+				display: flex;
+				align-items: center;
+				gap: 0.8rem;
+				margin-top: auto;
+				padding-top: 2rem;
+			}
+
+			.panel-line {
+				width: 54px;
+				height: 1px;
+				background: linear-gradient(90deg, rgba(33, 48, 40, 0.56), transparent);
+			}
+
+			.panel-note {
+				font-size: 0.74rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: rgba(33, 48, 40, 0.52);
+			}
+
+			.quote-panel {
+				min-height: 180px;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+
+			.quote-text {
+				margin: 0;
+				font-family: 'Noto Serif SC', serif;
+				font-size: clamp(1.4rem, 3vw, 2.4rem);
+				line-height: 1.5;
+				letter-spacing: 0.06em;
+				color: rgba(33, 48, 40, 0.82);
+			}
+
+			@keyframes drift {
+				from {
+					transform: translate3d(0, 0, 0) scale(1);
+				}
+				to {
+					transform: translate3d(4%, 5%, 0) scale(1.08);
+				}
+			}
+
+			@media (max-width: 1080px) {
+				.masthead {
+					grid-template-columns: 1fr;
+				}
+
+				.masthead-side {
+					align-items: flex-start;
+				}
+
+				.hero-card {
+					grid-template-columns: 1fr;
+					min-height: unset;
+				}
+
+				.hero-side {
+					justify-content: flex-start;
+				}
+
+				.hero-chip {
+					width: min(280px, 100%);
+					text-align: left;
+				}
+
+				.card--wide,
+				.card--stack {
+					grid-column: span 6;
+				}
+			}
+
+			@media (max-width: 760px) {
+				.page {
+					padding: 0 12px 28px;
+				}
+
+				.masthead {
+					padding-bottom: 1.4rem;
+				}
+
+				.masthead-title {
+					font-size: clamp(3.2rem, 18vw, 6rem);
+				}
+
+				.masthead-ghost {
+					display: none;
+				}
+
+				.hero-card {
+					padding: 1.35rem;
+					border-radius: 24px;
+				}
+
+				.hero-title {
+					max-width: 100%;
+					font-size: clamp(1.9rem, 8vw, 3rem);
+				}
+
+				.hero-desc {
+					font-size: 0.96rem;
+				}
+
+				.sections {
+					grid-template-columns: 1fr;
+				}
+
+				.card--wide,
+				.card--stack,
+				.card--full {
+					grid-column: auto;
+				}
+
+				.panel {
+					min-height: 210px;
+					border-radius: 24px;
+				}
+
+				.panel-title {
+					max-width: 100%;
+					font-size: clamp(1.35rem, 7vw, 2rem);
+				}
+
+				.quote-text {
+					font-size: clamp(1.2rem, 6vw, 1.8rem);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="page">
+			<div class="bg-shape bg-shape--1"></div>
+			<div class="bg-shape bg-shape--2"></div>
+			<div class="bg-shape bg-shape--3"></div>
+
+			<main class="about">
+				<section class="masthead">
+					<div class="masthead-copy">
+						<div class="masthead-label">Quiet Introduction</div>
+						<div class="masthead-ghost" aria-hidden="true">ABOUT</div>
+						<h1 class="masthead-title">
+							ABOUT
+							<span>ME</span>
+						</h1>
+					</div>
+
+					<div class="masthead-side">
+						<div class="stat-pill">Profile</div>
+						<div class="stat-pill">Notes</div>
+					</div>
+				</section>
+
+				<section class="hero">
+					<div class="hero-card">
+						<div class="hero-main">
+							<div>
+								<div class="hero-meta">
+									<span class="hero-tag">Intro</span>
+									<span class="hero-dot"></span>
+									<span>Placeholder</span>
+								</div>
+
+								<h2 class="hero-title">这里写一句很短的自我介绍。</h2>
+
+								<p class="hero-desc">
+									这里可以放两三句非常简短的说明。现在先保持留白，
+									等你之后自己补上更具体的内容。
+								</p>
+							</div>
+
+							<div class="hero-bottom">
+								<div class="hero-line"></div>
+								<div class="hero-note">To be filled</div>
+							</div>
+						</div>
+
+						<div class="hero-side">
+							<div class="hero-stack">
+								<div class="hero-chip">
+									<span class="hero-chip-label">Role</span>
+									<span class="hero-chip-value">Your Role</span>
+								</div>
+
+								<div class="hero-chip">
+									<span class="hero-chip-label">Base</span>
+									<span class="hero-chip-value">Your City</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="sections">
+					<article class="card card--wide">
+						<div class="panel">
+							<div class="panel-top">
+								<div class="panel-label">Section</div>
+								<div class="panel-index">01</div>
+							</div>
+
+							<h3 class="panel-title">关于我在做什么</h3>
+
+							<p class="panel-copy">
+								这里可以写你的方向、兴趣、正在做的事情，
+								保持三到五行就足够。
+							</p>
+
+							<div class="panel-bottom">
+								<div class="panel-line"></div>
+								<div class="panel-note">Brief note</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--stack">
+						<div class="panel">
+							<div class="panel-top">
+								<div class="panel-label">Focus</div>
+								<div class="panel-index">02</div>
+							</div>
+
+							<h3 class="panel-title">几个关键词</h3>
+
+							<ul class="panel-list">
+								<li><span class="panel-bullet"></span>关键词一</li>
+								<li><span class="panel-bullet"></span>关键词二</li>
+								<li><span class="panel-bullet"></span>关键词三</li>
+							</ul>
+
+							<div class="panel-bottom">
+								<div class="panel-line"></div>
+								<div class="panel-note">Short list</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--stack">
+						<div class="panel">
+							<div class="panel-top">
+								<div class="panel-label">Elsewhere</div>
+								<div class="panel-index">03</div>
+							</div>
+
+							<h3 class="panel-title">联系或链接</h3>
+
+							<ul class="panel-list">
+								<li><span class="panel-bullet"></span>Email / Link</li>
+								<li><span class="panel-bullet"></span>GitHub / X</li>
+								<li><span class="panel-bullet"></span>Another Link</li>
+							</ul>
+
+							<div class="panel-bottom">
+								<div class="panel-line"></div>
+								<div class="panel-note">Contact</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--wide">
+						<div class="panel">
+							<div class="panel-top">
+								<div class="panel-label">Statement</div>
+								<div class="panel-index">04</div>
+							</div>
+
+							<h3 class="panel-title">一句作为页面结尾的话</h3>
+
+							<p class="panel-copy">
+								可以是一句偏审美、偏创作、偏个人表达的话，
+								也可以只是很安静的一句留白。
+							</p>
+
+							<div class="panel-bottom">
+								<div class="panel-line"></div>
+								<div class="panel-note">Closing</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--full">
+						<div class="panel quote-panel">
+							<p class="quote-text">“ 这里留一句很短的话。 ”</p>
+						</div>
+					</article>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
