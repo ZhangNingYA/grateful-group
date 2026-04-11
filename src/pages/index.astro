@@ -35,24 +35,24 @@ import BaseHead from '../components/BaseHead.astro';
             <h1 class="main-title slide-up delay-2">明天<span class="comma">，</span><br/><span class="indent">你好</span><span class="accent-dot">.</span></h1>
             
             <div class="vertical-quote slide-up delay-3">
-              <p>含着泪微笑。</p>
-              <p>越美好，越害怕得到。</p>
+              <p>时针的刻度。</p>
+              <p>越漫长，越不急于靠岸。</p>
             </div>
           </div>
         </section>
 
         <section class="lyrics-right">
           <div class="lyric-staircase">
-            <div class="slide-up delay-4 step-1"><p class="float-anim float-delay-1">长大以后，我只能奔跑</p></div>
-            <div class="slide-up delay-5 step-2"><p class="float-anim float-delay-2">我多害怕，黑暗中跌倒</p></div>
-            <div class="slide-up delay-6 step-3"><p class="float-anim float-delay-3">每一次哭，又笑着奔跑</p></div>
-            <div class="slide-up delay-7 step-4"><p class="float-anim float-delay-1">一边失去，一边在寻找</p></div>
+            <div class="slide-up delay-4 step-1"><p class="float-anim float-delay-1">影子被拉长，又慢慢缩短</p></div>
+            <div class="slide-up delay-5 step-2"><p class="float-anim float-delay-2">写下的注脚，风会去翻阅</p></div>
+            <div class="slide-up delay-6 step-3"><p class="float-anim float-delay-3">沿途的站台，退向了身侧</p></div>
+            <div class="slide-up delay-7 step-4"><p class="float-anim float-delay-1">翻过这一页，故事在继续</p></div>
             
             <div class="slide-up delay-8 step-5">
               <div class="highlight-block float-anim float-delay-2">
                 <div class="decorative-line"></div>
-                <p>声音多渺小，却提醒我</p>
-                <p class="strong">勇敢是什么。</p>
+                <p>车厢的摇晃，正悄无声息</p>
+                <p class="strong">驶向下一站。</p>
               </div>
             </div>
           </div>
@@ -433,10 +433,10 @@ import BaseHead from '../components/BaseHead.astro';
   }
 </style>
 
-<script>
+  <script>
   // 等待 DOM 加载完成
   document.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('bg-music');
+    const audio = document.getElementById('bg-music') as HTMLAudioElement;
     const playBtn = document.getElementById('play-btn');
     const playIcon = document.getElementById('play-icon');
     const pauseIcon = document.getElementById('pause-icon');
@@ -444,32 +444,40 @@ import BaseHead from '../components/BaseHead.astro';
     const eq = document.getElementById('eq');
 
     // 初始状态：让黑胶唱片和均衡器停止动画
-    vinyl.style.animationPlayState = 'paused';
-    const eqBars = eq.querySelectorAll('.bar');
-    eqBars.forEach(bar => bar.style.animationPlayState = 'paused');
+    if (vinyl) {
+      vinyl.style.animationPlayState = 'paused';
+    }
+    const eqBars = eq?.querySelectorAll('.bar') || [];
+    eqBars.forEach((bar) => {
+      (bar as HTMLElement).style.animationPlayState = 'paused';
+    });
 
     let isPlaying = false;
 
     // 点击按钮切换播放/暂停状态
-    playBtn.addEventListener('click', () => {
+    playBtn?.addEventListener('click', () => {
       if (isPlaying) {
         // 暂停音乐
-        audio.pause();
-        playIcon.style.display = 'block';
-        pauseIcon.style.display = 'none';
+        audio?.pause();
+        if (playIcon) playIcon.style.display = 'block';
+        if (pauseIcon) pauseIcon.style.display = 'none';
         
         // 暂停动画
-        vinyl.style.animationPlayState = 'paused';
-        eqBars.forEach(bar => bar.style.animationPlayState = 'paused');
+        if (vinyl) vinyl.style.animationPlayState = 'paused';
+        eqBars.forEach((bar) => {
+          (bar as HTMLElement).style.animationPlayState = 'paused';
+        });
       } else {
         // 播放音乐
-        audio.play();
-        playIcon.style.display = 'none';
-        pauseIcon.style.display = 'block';
+        audio?.play();
+        if (playIcon) playIcon.style.display = 'none';
+        if (pauseIcon) pauseIcon.style.display = 'block';
         
         // 恢复动画
-        vinyl.style.animationPlayState = 'running';
-        eqBars.forEach(bar => bar.style.animationPlayState = 'running');
+        if (vinyl) vinyl.style.animationPlayState = 'running';
+        eqBars.forEach((bar) => {
+          (bar as HTMLElement).style.animationPlayState = 'running';
+        });
       }
       isPlaying = !isPlaying;
     });

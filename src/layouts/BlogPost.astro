@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
@@ -11,76 +10,639 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+<html lang="zh-CN">
+  <head>
+    <BaseHead title={title} description={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Outfit:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+    <style>
+      :global(html),
+      :global(body) {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background:
+          radial-gradient(circle at 0% 0%, rgba(145, 176, 156, 0.12), transparent 28%),
+          radial-gradient(circle at 100% 10%, rgba(225, 215, 189, 0.18), transparent 24%),
+          radial-gradient(circle at 50% 100%, rgba(181, 201, 192, 0.14), transparent 20%),
+          linear-gradient(180deg, #f7f3ed 0%, #eef3ef 100%);
+        color: #213028;
+        font-family: 'Outfit', system-ui, sans-serif;
+      }
+
+      :global(a) {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        position: relative;
+        min-height: 100vh;
+        padding: 0 18px 42px;
+      }
+
+      .bg-shape {
+        position: fixed;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.55;
+        filter: blur(90px);
+        border-radius: 999px;
+        animation: drift 16s ease-in-out infinite alternate;
+      }
+
+      .bg-shape--1 {
+        top: -8rem;
+        left: -6rem;
+        width: 22rem;
+        height: 22rem;
+        background: rgba(126, 163, 140, 0.22);
+      }
+
+      .bg-shape--2 {
+        top: 14rem;
+        right: -7rem;
+        width: 20rem;
+        height: 20rem;
+        background: rgba(221, 207, 175, 0.28);
+        animation-delay: -3s;
+      }
+
+      .bg-shape--3 {
+        bottom: -7rem;
+        left: 34%;
+        width: 18rem;
+        height: 18rem;
+        background: rgba(164, 194, 184, 0.2);
+        animation-delay: -1.5s;
+      }
+
+      .post {
+        position: relative;
+        z-index: 1;
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        padding-top: 1.2rem;
+      }
+
+      .post-masthead {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 1.5rem;
+        align-items: end;
+        padding: 0.75rem 0 2rem;
+      }
+
+      .post-masthead-copy {
+        position: relative;
+        min-width: 0;
+      }
+
+      .post-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-bottom: 1rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: rgba(33, 48, 40, 0.58);
+      }
+
+      .post-label::before {
+        content: '';
+        width: 44px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      .post-ghost {
+        position: absolute;
+        top: -0.16em;
+        left: 0.06em;
+        font-size: clamp(4rem, 14vw, 11rem);
+        line-height: 0.9;
+        font-weight: 200;
+        letter-spacing: -0.08em;
+        color: rgba(126, 163, 140, 0.04);
+        pointer-events: none;
+        user-select: none;
+        text-transform: uppercase;
+      }
+
+      .post-title {
+        position: relative;
+        margin: 0;
+        max-width: 10.5em;
+        font-family: 'Noto Serif SC', serif;
+        font-size: clamp(2.5rem, 6vw, 5.8rem);
+        line-height: 1.02;
+        letter-spacing: 0.01em;
+        font-weight: 400;
+        color: rgba(33, 48, 40, 0.96);
+        text-wrap: balance;
+      }
+
+      .post-side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.8rem;
+        padding-bottom: 0.45rem;
+      }
+
+      .post-pill {
+        padding: 0.72rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        background: rgba(255, 255, 255, 0.38);
+        backdrop-filter: blur(14px);
+        font-size: 0.76rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: rgba(33, 48, 40, 0.68);
+        white-space: nowrap;
+        box-shadow: 0 10px 26px rgba(24, 34, 28, 0.04);
+      }
+
+      .hero {
+        position: relative;
+        margin-bottom: 1rem;
+      }
+
+      .hero-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 36px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.2)),
+          linear-gradient(180deg, rgba(126, 163, 140, 0.08), rgba(226, 218, 194, 0.08));
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 18px 48px rgba(31, 42, 36, 0.05);
+      }
+
+      .hero-card::before {
+        content: '';
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        width: 84px;
+        height: 84px;
+        border-radius: 999px;
+        border: 1px solid rgba(126, 163, 140, 0.14);
+        background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.3), transparent 65%);
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .hero-media {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .hero-media img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 8.2;
+        object-fit: cover;
+        border-radius: 28px;
+        box-shadow: 0 14px 36px rgba(31, 42, 36, 0.06);
+      }
+
+      .hero-empty {
+        display: grid;
+        place-items: center;
+        min-height: 320px;
+        padding: 2rem;
+      }
+
+      .hero-empty-inner {
+        width: min(420px, 100%);
+        padding: 2rem 1.6rem;
+        border-radius: 28px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.34);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 12px 28px rgba(24, 34, 28, 0.04);
+      }
+
+      .hero-empty-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: rgba(33, 48, 40, 0.54);
+      }
+
+      .hero-empty-label::before,
+      .hero-empty-label::after {
+        content: '';
+        width: 22px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      .hero-empty-text {
+        margin: 1rem 0 0;
+        font-family: 'Noto Serif SC', serif;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        color: rgba(33, 48, 40, 0.76);
+      }
+
+      .article-card {
+        position: relative;
+        width: min(820px, calc(100% - 1.25rem));
+        margin: -3.8rem auto 0;
+        padding: 2rem 2rem 2.4rem;
+        border-radius: 30px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.24)),
+          linear-gradient(180deg, rgba(126, 163, 140, 0.05), rgba(226, 218, 194, 0.05));
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 18px 42px rgba(31, 42, 36, 0.055);
+        z-index: 3;
+      }
+
+      .article-card::before {
+        content: '';
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 56px;
+        height: 56px;
+        border-radius: 999px;
+        border: 1px solid rgba(126, 163, 140, 0.12);
+        background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.24), transparent 70%);
+        pointer-events: none;
+      }
+
+      .article-head {
+        padding-bottom: 1.5rem;
+      }
+
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: rgba(33, 48, 40, 0.58);
+      }
+
+      .article-tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.52rem 0.78rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 24px rgba(24, 34, 28, 0.035);
+      }
+
+      .article-dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 999px;
+        background: #7ea38c;
+      }
+
+      .article-desc {
+        margin: 0;
+        max-width: 42rem;
+        font-size: 1rem;
+        line-height: 1.95;
+        color: rgba(33, 48, 40, 0.68);
+      }
+
+      .article-rule {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+      }
+
+      .article-rule-line {
+        width: 88px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(33, 48, 40, 0.62), transparent);
+      }
+
+      .article-rule-note {
+        font-size: 0.76rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(33, 48, 40, 0.52);
+      }
+
+      .post-body {
+        min-width: 0;
+      }
+
+      :global(.post-body > :first-child) {
+        margin-top: 0;
+      }
+
+      :global(.post-body > :last-child) {
+        margin-bottom: 0;
+      }
+
+      :global(.post-body p) {
+        margin: 1.1rem 0;
+        font-size: 1.02rem;
+        line-height: 1.95;
+        color: rgba(33, 48, 40, 0.78);
+      }
+
+      :global(.post-body h2),
+      :global(.post-body h3),
+      :global(.post-body h4) {
+        margin: 2.2rem 0 0.85rem;
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 400;
+        line-height: 1.3;
+        letter-spacing: 0.02em;
+        color: rgba(33, 48, 40, 0.92);
+      }
+
+      :global(.post-body h2) {
+        font-size: clamp(1.7rem, 3vw, 2.35rem);
+      }
+
+      :global(.post-body h3) {
+        font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+      }
+
+      :global(.post-body ul),
+      :global(.post-body ol) {
+        margin: 1.1rem 0;
+        padding-left: 1.35rem;
+        color: rgba(33, 48, 40, 0.76);
+      }
+
+      :global(.post-body li) {
+        margin: 0.45rem 0;
+        line-height: 1.9;
+      }
+
+      :global(.post-body strong) {
+        color: rgba(33, 48, 40, 0.92);
+        font-weight: 600;
+      }
+
+      :global(.post-body a) {
+        color: #587765;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(88, 119, 101, 0.28);
+        transition:
+          color 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      :global(.post-body a:hover) {
+        color: #3f5d4d;
+        border-bottom-color: rgba(63, 93, 77, 0.46);
+      }
+
+      :global(.post-body blockquote) {
+        margin: 1.6rem 0;
+        padding: 1rem 1.15rem;
+        border-left: 3px solid rgba(126, 163, 140, 0.72);
+        border-radius: 0 18px 18px 0;
+        background: rgba(255, 255, 255, 0.36);
+        color: rgba(33, 48, 40, 0.72);
+      }
+
+      :global(.post-body hr) {
+        margin: 2rem 0;
+        border: none;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(33, 48, 40, 0.14), transparent);
+      }
+
+      :global(.post-body img) {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 1.5rem auto;
+        border-radius: 22px;
+        box-shadow: 0 14px 36px rgba(31, 42, 36, 0.06);
+      }
+
+      :global(.post-body pre) {
+        margin: 1.4rem 0;
+        padding: 1rem 1.1rem;
+        overflow-x: auto;
+        border-radius: 22px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 12px 28px rgba(24, 34, 28, 0.04);
+      }
+
+      :global(.post-body code) {
+        font-size: 0.94em;
+      }
+
+      .post-footer-space {
+        height: 1.5rem;
+      }
+
+      @keyframes drift {
+        from {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        to {
+          transform: translate3d(4%, 5%, 0) scale(1.08);
+        }
+      }
+
+      @media (max-width: 980px) {
+        .post-masthead {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .post-side {
+          align-items: flex-start;
+        }
+
+        .article-card {
+          width: min(860px, calc(100% - 0.4rem));
+        }
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          padding: 0 12px 28px;
+        }
+
+        .post {
+          padding-top: 0.9rem;
+        }
+
+        .post-masthead {
+          padding-bottom: 1.4rem;
+        }
+
+        .post-ghost {
+          display: none;
+        }
+
+        .post-title {
+          font-size: clamp(2rem, 10vw, 3.4rem);
+          line-height: 1.08;
+        }
+
+        .hero-card {
+          border-radius: 24px;
+        }
+
+        .hero-media {
+          padding: 0.7rem;
+        }
+
+        .hero-media img {
+          border-radius: 18px;
+          aspect-ratio: 16 / 10;
+        }
+
+        .hero-empty {
+          min-height: 240px;
+          padding: 1rem;
+        }
+
+        .article-card {
+          margin-top: -1.8rem;
+          padding: 1.35rem 1.1rem 1.7rem;
+          border-radius: 24px;
+        }
+
+        .article-meta {
+          gap: 0.55rem;
+          letter-spacing: 0.16em;
+        }
+
+        .article-desc {
+          font-size: 0.96rem;
+          line-height: 1.85;
+        }
+
+        :global(.post-body p),
+        :global(.post-body li) {
+          font-size: 0.98rem;
+          line-height: 1.88;
+        }
+
+        :global(.post-body h2) {
+          font-size: clamp(1.45rem, 7vw, 2rem);
+        }
+
+        :global(.post-body h3) {
+          font-size: clamp(1.2rem, 6vw, 1.55rem);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <div class="page">
+      <div class="bg-shape bg-shape--1"></div>
+      <div class="bg-shape bg-shape--2"></div>
+      <div class="bg-shape bg-shape--3"></div>
+
+      <main class="post">
+        <section class="post-masthead">
+          <div class="post-masthead-copy">
+            <div class="post-label">Journal Entry</div>
+            <div class="post-ghost" aria-hidden="true">ARTICLE</div>
+            <h1 class="post-title">{title}</h1>
+          </div>
+
+          <div class="post-side">
+            <div class="post-pill">Essay</div>
+            <div class="post-pill">
+              <FormattedDate date={pubDate} />
+            </div>
+            {
+              updatedDate && (
+                <div class="post-pill">
+                  Updated · <FormattedDate date={updatedDate} />    
+                </div>
+              )
+            }
+          </div>
+        </section>
+
+        <section class="hero">
+          <div class="hero-card">
+            {
+              heroImage ? (
+                <div class="hero-media">
+                  <Image width={1600} height={900} src={heroImage} alt={title} />
+                </div>
+              ) : (
+                <div class="hero-empty">
+                  <div class="hero-empty-inner">
+                    <div class="hero-empty-label">Quiet Reading</div>
+                    <p class="hero-empty-text">
+                      一页适合慢慢阅读的文字，留一点呼吸感，也留一点安静。
+                    </p>
+                  </div>
+                </div>
+              )
+            }
+          </div>
+
+          <article class="article-card">
+            <div class="article-head">
+              <div class="article-meta">
+                <span class="article-tag">Post</span>
+                <span class="article-dot"></span>
+                <span><FormattedDate date={pubDate} /></span>
+                {
+                  updatedDate && (
+                    <>
+                      <span class="article-dot"></span>
+                      <span>Updated <FormattedDate date={updatedDate} /></span>
+                    </>
+                  )
+                }
+              </div>
+
+              {description && <p class="article-desc">{description}</p>}
+
+              <div class="article-rule">
+                <div class="article-rule-line"></div>
+                <div class="article-rule-note">Continue Reading</div>
+              </div>
+            </div>
+
+            <div class="post-body">
+              <slot />
+            </div>
+          </article>
+        </section>
+
+        <div class="post-footer-space"></div>
+      </main>
+    </div>
+
+  </body>
 </html>
