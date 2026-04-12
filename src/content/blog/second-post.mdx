@@ -1,0 +1,25 @@
+---
+title: '可控展台：OrbitControls + 自动聚焦'
+description: '用 OrbitControls + Bounds 做一个模型展台'
+pubDate: 'Jul 15 2025'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
+
+import ProductShowroomIsland from '../../components/r3f/showroom/ProductShowroomIsland';
+
+# 1. 可控展台：OrbitControls + 自动聚焦
+
+这个练习目标：
+
+- 中间一个模型
+- 鼠标可旋转 / 缩放 / 平移
+- 点击“下一个模型”时，相机自动重新框住目标
+- 点击“复位视角”时，恢复到当前模型的最佳观看位置
+
+<ProductShowroomIsland client:only="react" />
+
+## 你应该观察什么
+
+1. 切换小模型和大模型时，相机距离是否合适  
+2. 旋转、缩放、拖拽是否平滑  
+3. 点击“复位视角”后，是否能重新回到合理 framing
