@@ -1,5 +1,5 @@
 import type { ShowroomModelDefinition } from '../../../types/showroom';
-
+import { useControls } from 'leva';
 interface ShowcaseModelProps {
   model: ShowroomModelDefinition;
 }
@@ -56,35 +56,96 @@ function WatchModel() {
   );
 }
 
-function SpeakerModel() {
+export function SpeakerModel() {
   return (
     <group rotation={[0.1, -0.55, 0]} scale={1.85}>
-      {/* 主体 */}
+      {/* 1. 主体音箱壳：颜色稍微调亮一点 (深灰)，降低金属感，模拟磨砂塑料或木质质感 */}
       <mesh castShadow receiveShadow>
         <boxGeometry args={[1.6, 2.2, 1.1]} />
-        <meshStandardMaterial color="#1f2937" metalness={0.45} roughness={0.45} />
+        <meshStandardMaterial 
+          color="#374151" 
+          metalness={0.2} 
+          roughness={0.8} 
+        />
       </mesh>
 
-      {/* 上喇叭 */}
+      {/* 2. 上喇叭振膜：使用纯黑，并调低粗糙度 (roughness)，让它看起来像光滑的亮面振膜 */}
       <mesh castShadow receiveShadow position={[0, 0.5, 0.56]}>
         <circleGeometry args={[0.42, 48]} />
-        <meshStandardMaterial color="#111827" metalness={0.7} roughness={0.28} />
+        <meshStandardMaterial 
+          color="#000000" 
+          metalness={0.6} 
+          roughness={0.15} 
+        />
       </mesh>
 
-      {/* 下喇叭 */}
+      {/* 3. 下喇叭振膜：同上 */}
       <mesh castShadow receiveShadow position={[0, -0.5, 0.56]}>
         <circleGeometry args={[0.28, 48]} />
-        <meshStandardMaterial color="#111827" metalness={0.7} roughness={0.28} />
+        <meshStandardMaterial 
+          color="#000000" 
+          metalness={0.6} 
+          roughness={0.15} 
+        />
       </mesh>
 
-      {/* 中心高光圈 */}
+      {/* 4. 中心高光圈：换成更明亮的蓝色，并增加了一点自发光 (emissive)，让它像通电了一样 */}
       <mesh castShadow receiveShadow position={[0, 0.5, 0.57]}>
         <ringGeometry args={[0.28, 0.38, 48]} />
-        <meshStandardMaterial color="#60a5fa" metalness={1} roughness={0.2} />
+        <meshStandardMaterial 
+          color="#3b82f6" 
+          emissive="#2563eb" 
+          emissiveIntensity={0.6} // 自发光强度
+          metalness={0.8} 
+          roughness={0.2} 
+        />
       </mesh>
     </group>
   );
 }
+// export function SpeakerModel() {
+//   // 1. 开启 Leva 控制面板，定义你需要调试的变量
+//   const { 
+//     speakerZ, 
+//     speakerColor, 
+//     speakerScale,
+//     boxDepth
+//   } = useControls('音箱参数微调', {
+//     speakerZ: { value: 0.56, min: 0.4, max: 1.0, step: 0.01 }, // 拖动找找看 Z 轴
+//     speakerColor: '#111827', // 默认黑色，你可以随便换个鲜艳的颜色测试
+//     speakerScale: { value: 1, min: 0.1, max: 2, step: 0.1 },
+//     boxDepth: { value: 1.1, min: 0.5, max: 2, step: 0.1 }, // 控制主体厚度
+//   });
+
+//   return (
+//     <group rotation={[0.1, -0.55, 0]} scale={1.85}>
+//       {/* 主体 */}
+//       <mesh castShadow receiveShadow>
+//         {/* 用面板里的变量替换写死的值 */}
+//         <boxGeometry args={[1.6, 2.2, boxDepth]} />
+//         <meshStandardMaterial color="#1f2937" metalness={0.45} roughness={0.45} />
+//       </mesh>
+
+//       {/* 上喇叭 */}
+//       <mesh castShadow receiveShadow position={[0, 0.5, speakerZ]} scale={speakerScale}>
+//         <circleGeometry args={[0.42, 48]} />
+//         <meshStandardMaterial color={speakerColor} metalness={0.7} roughness={0.28} />
+//       </mesh>
+
+//       {/* 下喇叭 */}
+//       <mesh castShadow receiveShadow position={[0, -0.5, speakerZ]} scale={speakerScale}>
+//         <circleGeometry args={[0.28, 48]} />
+//         <meshStandardMaterial color={speakerColor} metalness={0.7} roughness={0.28} />
+//       </mesh>
+
+//       {/* 中心高光圈（它的 Z 轴要比黑色底盘再靠前一点点） */}
+//       <mesh castShadow receiveShadow position={[0, 0.5, speakerZ + 0.01]} scale={speakerScale}>
+//         <ringGeometry args={[0.28, 0.38, 48]} />
+//         <meshStandardMaterial color="#60a5fa" metalness={1} roughness={0.2} />
+//       </mesh>
+//     </group>
+//   );
+// }
 
 function LampModel() {
   return (

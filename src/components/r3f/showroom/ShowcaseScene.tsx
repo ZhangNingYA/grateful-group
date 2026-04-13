@@ -50,7 +50,7 @@ export function ShowcaseScene({ model, focusVersion }: ShowcaseSceneProps) {
           <ShowcaseModel model={model} />
         </group>
 
-        {/* 模型切换 / 点击复位时，自动重新 framing */}
+        {/* 模型切换 / 点击复位时，自动重新 framing */} 
         <FocusCurrentModel
           targetRef={currentModelRef}
           selectedId={model.id}
