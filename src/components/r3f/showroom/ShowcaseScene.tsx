@@ -58,11 +58,6 @@ export function ShowcaseScene({ model, focusVersion }: ShowcaseSceneProps) {
         />
       </Bounds>
 
-      {/* 
-        OrbitControls:
-        - makeDefault：让 Bounds 等组件知道当前 controls 是谁
-        - enableDamping：平滑阻尼
-      */}
       <OrbitControls
         makeDefault
         enableDamping
