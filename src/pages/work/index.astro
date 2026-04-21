@@ -1,0 +1,15 @@
+---
+// src/pages/services.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Experience from '../../components/cutedog/exprience.jsx';
+---
+
+<BaseLayout 
+  title="我们的服务" 
+  description="页面描述" 
+  ghostText="WORK" 
+>
+  <section>
+	<Experience client:only="react" />
+  </section>
+</BaseLayout>
