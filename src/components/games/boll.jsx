@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import  './boll.css';
-
+import '../../styles/boll.css'
 // 游戏物理配置
 const PIG_SIZE = 60; // 小猪大小
 const ITEM_SIZE = 70; // 掉落物大小
