@@ -17,6 +17,16 @@ const blog = defineCollection({
 		}),
 });
 
+const games = defineCollection({
+    // 注意这里路径改成了 ./src/content/games
+    loader: glob({ base: './src/content/games', pattern: '**/*.{md,mdx}' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            description: z.string(),
+            pubDate: z.coerce.date(),
+            // 你可以根据 games 栏目的实际情况增减字段
+        }),
+});
 
-
-export const collections = { blog};
+export const collections = { blog, games };

@@ -1,0 +1,280 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('games')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const featuredPost = posts[0];
+const restPosts = posts.slice(1);
+
+const daysPassed = Math.floor((Date.now() - new Date(2025, 9, 18).getTime()) / 864e5)
+---
+
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            :root {
+                /* 奶茶系温柔配色 */
+                --bg-body: #F8F6F4; /* 燕麦奶白底色 */
+                --card-bg: #FFFFFF;
+                --text-main: #433D3C; /* 暖深灰 */
+                --text-muted: #9E9592;
+                
+                /* 极其温柔的马卡龙渐变，用于封面占位 */
+                --gradient-1: linear-gradient(135deg, #FFD3D6 0%, #FDFBFB 100%); /* 蜜桃 */
+                --gradient-2: linear-gradient(135deg, #D4E2D4 0%, #FDFBFB 100%); /* 抹茶 */
+                --gradient-3: linear-gradient(135deg, #DCE2F0 0%, #FDFBFB 100%); /* 雾霾蓝 */
+                --gradient-4: linear-gradient(135deg, #F5E6CC 0%, #FDFBFB 100%); /* 奶油 */
+            }
+
+            :global(html),
+            :global(body) {
+                margin: 0;
+                padding: 0;
+                background-color: var(--bg-body);
+                color: var(--text-main);
+                font-family: 'Nunito', "PingFang SC", "Microsoft YaHei", sans-serif;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            :global(a) {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .page-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 50px 20px 100px;
+            }
+
+            /* --- Ins风页眉 --- */
+            .gallery-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 60px;
+            }
+
+            .header-tag {
+                background: var(--card-bg);
+                padding: 8px 20px;
+                border-radius: 99px;
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: #C28B8B;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+
+            .header-title {
+                font-size: 2rem;
+                font-weight: 800;
+                margin: 0;
+                color: var(--text-main);
+            }
+
+            /* --- 便当盒卡片通用样式 --- */
+            .bento-card {
+                background: var(--card-bg);
+                border-radius: 24px;
+                overflow: hidden;
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bento-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            /* 魔法：用 CSS 渐变生成的虚拟封面图，打破纯文字的单调 */
+            .card-cover {
+                height: 160px;
+                width: 100%;
+                position: relative;
+            }
+
+            .card-content {
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+
+            /* --- 顶部大卡片 (Featured) --- */
+            .featured-wrapper {
+                margin-bottom: 32px;
+            }
+
+            .featured-card {
+                flex-direction: row;
+                height: 320px;
+            }
+
+            .featured-card .card-cover {
+                height: 100%;
+                width: 50%;
+                background: var(--gradient-1); /* 头条固定用蜜桃色 */
+                position: relative;
+            }
+
+            .featured-card .card-content {
+                width: 50%;
+                padding: 40px;
+                justify-content: center;
+            }
+
+            .status-badge {
+                align-self: flex-start;
+                background: #FFF1F0;
+                color: #E07A7A;
+                padding: 6px 14px;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+
+            .card-title {
+                font-size: clamp(1.4rem, 4vw, 2rem);
+                font-weight: 800;
+                line-height: 1.4;
+                margin: 0 0 16px 0;
+            }
+
+            .card-meta {
+                font-size: 0.9rem;
+                color: var(--text-muted);
+                font-weight: 500;
+                margin-top: auto;
+            }
+
+            /* --- 网格列表 --- */
+            .bento-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 32px;
+            }
+
+            .grid-card .card-title {
+                font-size: 1.2rem;
+                margin: 0 0 16px 0;
+            }
+
+            /* 自动为网格里的卡片分配不同的渐变封面 */
+            .bento-grid a:nth-child(4n+1) .card-cover { background: var(--gradient-2); }
+            .bento-grid a:nth-child(4n+2) .card-cover { background: var(--gradient-3); }
+            .bento-grid a:nth-child(4n+3) .card-cover { background: var(--gradient-4); }
+            .bento-grid a:nth-child(4n+4) .card-cover { background: var(--gradient-1); }
+
+            /* 为封面加一点点可爱的装饰符号 */
+            .card-cover::after {
+                content: '❀';
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+                font-size: 3rem;
+                color: rgba(255,255,255,0.7);
+            }
+            .bento-grid a:nth-child(4n+2) .card-cover::after { content: '☁️'; font-size: 2.5rem; }
+            .bento-grid a:nth-child(4n+3) .card-cover::after { content: '✨'; font-size: 2.5rem; }
+
+            /* --- 响应式 --- */
+            @media (max-width: 768px) {
+                .page-container {
+                    padding: 30px 16px 60px;
+                }
+
+                .featured-card {
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                .featured-card .card-cover {
+                    width: 100%;
+                    height: 200px;
+                }
+
+                .featured-card .card-content {
+                    width: 100%;
+                    padding: 30px 24px;
+                }
+
+                .bento-grid {
+                    gap: 24px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="page-container">
+            <header class="gallery-header">
+                <div class="header-tag">OUR MEMORIES</div>
+                <h1 class="header-title">和🐖的第 {daysPassed} 天</h1>
+            </header>
+
+            {
+                featuredPost ? (
+                    <>
+                        <section class="featured-wrapper">
+                            <a href={`/games/${featuredPost.id}/`}>
+                                <article class="bento-card featured-card">
+                                    <div class="card-cover"></div>
+                                    <div class="card-content">
+                                        <div class="status-badge">最新日常 ✨</div>
+                                        <h2 class="card-title">{featuredPost.data.title}</h2>
+                                        <div class="card-meta">
+                                            <FormattedDate date={featuredPost.data.pubDate} />
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </section>
+
+                        {
+                            restPosts.length > 0 && (
+                                <section class="bento-grid">
+                                    {restPosts.map((post) => (
+                                        <a href={`/games/${post.id}/`}>
+                                            <article class="bento-card grid-card">
+                                                <div class="card-cover"></div>
+                                                <div class="card-content">
+                                                    <h3 class="card-title">{post.data.title}</h3>
+                                                    <div class="card-meta">
+                                                        <FormattedDate date={post.data.pubDate} />
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    ))}
+                                </section>
+                            )
+                        }
+                    </>
+                ) : (
+                    <div style="text-align:center; padding: 60px; color: var(--text-muted);">
+                        快来写下你们的第一篇故事吧 ~
+                    </div>
+                )
+            }
+        </main> 
+    </body>
+</html>
