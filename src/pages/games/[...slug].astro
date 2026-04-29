@@ -1,7 +1,6 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-
-
+import Lazy from '../../layouts/lazy.astro';
 export async function getStaticPaths() {
 	const posts = await getCollection('games');
 	return posts.map((post) => ({
@@ -15,4 +14,7 @@ const post = Astro.props;
 const { Content } = await render(post);
 ---
 
+<lazy {...post.data}>
 	<Content />
+</lazy>
+
