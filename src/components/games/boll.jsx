@@ -8,6 +8,23 @@ const BASE_FALL_SPEED = 228;
 const MAX_FALL_SPEED = 308;
 const HIT_PAUSE_MS = 760;
 
+/**
+ * 把你的音效文件放到 public/sounds/ 里，然后填这里。
+ * 例如:
+ * correct: '/sounds/correct.mp3'
+ *
+ * 不填会自动走内置合成音。
+ */
+const SOUND_FILES = {
+  correct: '',
+  wrong: '',
+  combo: '',
+  resultB: '',
+  resultA: '',
+  resultS: '',
+  resultSSS: '',
+};
+
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 const shuffle = (list) => {
@@ -76,12 +93,10 @@ const getDropSpeed = (currentIndex, totalWords, mode = 'normal') => {
 const PERFECT_FIREWORKS = Array.from({ length: 36 }).map((_, index) => {
   const angle = (Math.PI * 2 * index) / 36;
   const distance = 90 + (index % 6) * 18;
-  const x = Math.cos(angle) * distance;
-  const y = Math.sin(angle) * distance;
   return {
     id: `fire-${index}`,
-    x,
-    y,
+    x: Math.cos(angle) * distance,
+    y: Math.sin(angle) * distance,
     delay: (index % 12) * 0.06,
     size: 14 + (index % 3) * 3,
   };
@@ -98,10 +113,13 @@ export default function PiggyVocabGame() {
   const [maxCombo, setMaxCombo] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [errorMessage, setErrorMessage] = useState('');
-  const [isFullscreen, setIsFullscreen] = useState(Boolean(document.fullscreenElement));
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [, forceRender] = useState(0);
 
   const containerRef = useRef(null);
+  const audioCtxRef = useRef(null);
+  const audioUnlockedRef = useRef(false);
+  const resultSoundPlayedRef = useRef(false);
 
   const wordsRef = useRef([]);
   const scoreRef = useRef(0);
@@ -127,6 +145,9 @@ export default function PiggyVocabGame() {
       pigSize: 78,
       itemSize: 88,
       pigY: 0,
+      railWidth: 74,
+      uiScale: 1,
+      questionFont: 32,
     },
   });
 
@@ -143,11 +164,146 @@ export default function PiggyVocabGame() {
     forceRender((n) => (n + 1) % 1000000);
   }, []);
 
+  const getAudioContext = useCallback(() => {
+    if (typeof window === 'undefined') return null;
+    if (!audioCtxRef.current) {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return null;
+      audioCtxRef.current = new Ctx();
+    }
+    return audioCtxRef.current;
+  }, []);
+
+  const unlockAudio = useCallback(async () => {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+
+    if (ctx.state === 'suspended') {
+      try {
+        await ctx.resume();
+      } catch (error) {
+        console.error('audio resume failed:', error);
+      }
+    }
+    audioUnlockedRef.current = true;
+  }, [getAudioContext]);
+
+  const playTone = useCallback((ctx, {
+    freq,
+    start,
+    duration,
+    type = 'sine',
+    gain = 0.03,
+    endFreq = null,
+  }) => {
+    const osc = ctx.createOscillator();
+    const gainNode = ctx.createGain();
+
+    osc.type = type;
+    osc.frequency.setValueAtTime(freq, start);
+    if (endFreq) {
+      osc.frequency.exponentialRampToValueAtTime(endFreq, start + duration);
+    }
+
+    gainNode.gain.setValueAtTime(0.0001, start);
+    gainNode.gain.exponentialRampToValueAtTime(gain, start + 0.02);
+    gainNode.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+    osc.connect(gainNode);
+    gainNode.connect(ctx.destination);
+
+    osc.start(start);
+    osc.stop(start + duration + 0.02);
+  }, []);
+
+  const playAssetSound = useCallback((src) => {
+    if (!src) return false;
+    try {
+      const audio = new Audio(src);
+      audio.volume = 0.6;
+      audio.play().catch(() => {});
+      return true;
+    } catch {
+      return false;
+    }
+  }, []);
+
+  const playCorrectSound = useCallback(() => {
+    if (playAssetSound(SOUND_FILES.correct)) return;
+    const ctx = getAudioContext();
+    if (!ctx || !audioUnlockedRef.current) return;
+    const t = ctx.currentTime;
+    playTone(ctx, { freq: 740, start: t, duration: 0.09, type: 'triangle', gain: 0.03 });
+    playTone(ctx, { freq: 980, start: t + 0.08, duration: 0.12, type: 'triangle', gain: 0.028 });
+  }, [getAudioContext, playAssetSound, playTone]);
+
+  const playWrongSound = useCallback(() => {
+    if (playAssetSound(SOUND_FILES.wrong)) return;
+    const ctx = getAudioContext();
+    if (!ctx || !audioUnlockedRef.current) return;
+    const t = ctx.currentTime;
+    playTone(ctx, { freq: 320, endFreq: 220, start: t, duration: 0.18, type: 'sawtooth', gain: 0.025 });
+    playTone(ctx, { freq: 210, endFreq: 150, start: t + 0.08, duration: 0.2, type: 'triangle', gain: 0.02 });
+  }, [getAudioContext, playAssetSound, playTone]);
+
+  const playComboSound = useCallback(() => {
+    if (playAssetSound(SOUND_FILES.combo)) return;
+    const ctx = getAudioContext();
+    if (!ctx || !audioUnlockedRef.current) return;
+    const t = ctx.currentTime;
+    playTone(ctx, { freq: 660, start: t, duration: 0.1, type: 'triangle', gain: 0.025 });
+    playTone(ctx, { freq: 880, start: t + 0.08, duration: 0.11, type: 'triangle', gain: 0.028 });
+    playTone(ctx, { freq: 1174, start: t + 0.16, duration: 0.15, type: 'triangle', gain: 0.03 });
+  }, [getAudioContext, playAssetSound, playTone]);
+
+  const playResultSound = useCallback((resultGrade) => {
+    const assetKey = resultGrade === 'SSS'
+      ? 'resultSSS'
+      : resultGrade === 'S'
+      ? 'resultS'
+      : resultGrade === 'A'
+      ? 'resultA'
+      : 'resultB';
+
+    if (playAssetSound(SOUND_FILES[assetKey])) return;
+
+    const ctx = getAudioContext();
+    if (!ctx || !audioUnlockedRef.current) return;
+    const t = ctx.currentTime;
+
+    if (resultGrade === 'SSS') {
+      playTone(ctx, { freq: 784, start: t, duration: 0.12, type: 'triangle', gain: 0.028 });
+      playTone(ctx, { freq: 988, start: t + 0.08, duration: 0.13, type: 'triangle', gain: 0.03 });
+      playTone(ctx, { freq: 1174, start: t + 0.16, duration: 0.16, type: 'triangle', gain: 0.032 });
+      playTone(ctx, { freq: 1568, start: t + 0.26, duration: 0.18, type: 'sine', gain: 0.028 });
+      return;
+    }
+
+    if (resultGrade === 'S') {
+      playTone(ctx, { freq: 659, start: t, duration: 0.1, type: 'triangle', gain: 0.026 });
+      playTone(ctx, { freq: 880, start: t + 0.09, duration: 0.13, type: 'triangle', gain: 0.028 });
+      playTone(ctx, { freq: 1046, start: t + 0.18, duration: 0.16, type: 'triangle', gain: 0.03 });
+      return;
+    }
+
+    if (resultGrade === 'A') {
+      playTone(ctx, { freq: 523, start: t, duration: 0.12, type: 'triangle', gain: 0.024 });
+      playTone(ctx, { freq: 659, start: t + 0.11, duration: 0.14, type: 'triangle', gain: 0.026 });
+      return;
+    }
+
+    playTone(ctx, { freq: 392, start: t, duration: 0.18, type: 'triangle', gain: 0.022 });
+  }, [getAudioContext, playAssetSound, playTone]);
+
   useEffect(() => {
     gameStateRef.current = gameState;
   }, [gameState]);
 
   useEffect(() => {
+    if (typeof document === 'undefined') return undefined;
+
+    setIsFullscreen(Boolean(document.fullscreenElement));
+
     const onFullscreenChange = () => {
       setIsFullscreen(Boolean(document.fullscreenElement));
     };
@@ -158,8 +314,24 @@ export default function PiggyVocabGame() {
     };
   }, []);
 
+  useEffect(() => {
+    if (gameState === 'result' && !resultSoundPlayedRef.current) {
+      playResultSound(grade);
+      resultSoundPlayedRef.current = true;
+      return;
+    }
+
+    if (gameState !== 'result') {
+      resultSoundPlayedRef.current = false;
+    }
+  }, [gameState, grade, playResultSound]);
+
   const toggleFullscreen = useCallback(async () => {
+    if (typeof document === 'undefined') return;
+
     try {
+      await unlockAudio();
+
       if (!document.fullscreenElement) {
         if (document.documentElement.requestFullscreen) {
           await document.documentElement.requestFullscreen();
@@ -170,7 +342,7 @@ export default function PiggyVocabGame() {
     } catch (error) {
       console.error('fullscreen failed:', error);
     }
-  }, []);
+  }, [unlockAudio]);
 
   const cleanupEngine = useCallback(() => {
     const engine = engineRef.current;
@@ -222,12 +394,27 @@ export default function PiggyVocabGame() {
     const itemSize = clamp(width * 0.22, 70, 102);
     const pigY = height - pigSize - 26;
 
+    const shortSide = Math.min(width, height);
+    let uiScale = clamp(shortSide / 390, 0.98, 1.08);
+    uiScale *= isFullscreen ? 0.94 : 1.04;
+
+    const railWidth = isFullscreen
+      ? clamp(width * 0.155, 64, 74)
+      : clamp(width * 0.17, 68, 80);
+
+    const questionFont = isFullscreen
+      ? clamp(width * 0.075, 26, 34)
+      : clamp(width * 0.08, 28, 36);
+
     engine.layout = {
       width,
       height,
       pigSize,
       itemSize,
       pigY,
+      railWidth,
+      uiScale,
+      questionFont,
     };
 
     if (typeof engine.pigX !== 'number') {
@@ -237,7 +424,7 @@ export default function PiggyVocabGame() {
     }
 
     rerender();
-  }, [rerender]);
+  }, [isFullscreen, rerender]);
 
   const spawnNormalItems = useCallback(
     (wordIndex, wordList = wordsRef.current) => {
@@ -342,13 +529,14 @@ export default function PiggyVocabGame() {
     livesRef.current = nextLives;
     setLives(nextLives);
 
+    playComboSound();
     rerender();
 
     if (engine.timeoutId) clearTimeout(engine.timeoutId);
     engine.timeoutId = window.setTimeout(() => {
       resumeNormalRound();
     }, HIT_PAUSE_MS);
-  }, [resumeNormalRound, rerender]);
+  }, [playComboSound, resumeNormalRound, rerender]);
 
   const resolveWordCatch = useCallback(
     (hitItem) => {
@@ -373,6 +561,12 @@ export default function PiggyVocabGame() {
           type: 'correct',
           id: createId(),
         };
+
+        if (nextCombo > 0 && nextCombo % BONUS_EVERY === 0) {
+          playComboSound();
+        } else {
+          playCorrectSound();
+        }
 
         rerender();
 
@@ -414,6 +608,7 @@ export default function PiggyVocabGame() {
         id: createId(),
       };
 
+      playWrongSound();
       rerender();
 
       if (engine.timeoutId) clearTimeout(engine.timeoutId);
@@ -425,7 +620,16 @@ export default function PiggyVocabGame() {
         resumeNormalRound();
       }, HIT_PAUSE_MS);
     },
-    [finishGame, resumeNormalRound, rerender, spawnBonusItem, spawnNormalItems]
+    [
+      finishGame,
+      playComboSound,
+      playCorrectSound,
+      playWrongSound,
+      resumeNormalRound,
+      rerender,
+      spawnBonusItem,
+      spawnNormalItems,
+    ]
   );
 
   const gameLoop = useCallback(
@@ -450,7 +654,6 @@ export default function PiggyVocabGame() {
           engine.mode
         );
         const moveY = (speed * delta) / 1000;
-
         const { height, pigSize, pigY } = engine.layout;
 
         let allPassed = engine.items.length > 0;
@@ -490,7 +693,35 @@ export default function PiggyVocabGame() {
           if (engine.mode === 'bonus') {
             resumeNormalRound();
           } else {
-            spawnNormalItems(currentIndexRef.current, wordsRef.current);
+            engine.status = 'paused';
+            engine.feedback = {
+              type: 'wrong',
+              id: createId(),
+            };
+
+            const nextLives = livesRef.current - 1;
+            const nextWrongCount = wrongCountRef.current + 1;
+
+            livesRef.current = nextLives;
+            wrongCountRef.current = nextWrongCount;
+            comboRef.current = 0;
+
+            setLives(nextLives);
+            setWrongCount(nextWrongCount);
+            setCombo(0);
+
+            playWrongSound();
+            rerender();
+
+            if (engine.timeoutId) clearTimeout(engine.timeoutId);
+            engine.timeoutId = window.setTimeout(() => {
+              if (nextLives <= 0) {
+                finishGame();
+                return;
+              }
+
+              resumeNormalRound();
+            }, HIT_PAUSE_MS);
           }
         }
       }
@@ -498,11 +729,21 @@ export default function PiggyVocabGame() {
       rerender();
       engine.rafId = requestAnimationFrame(gameLoop);
     },
-    [rerender, resolveBonusCatch, resolveWordCatch, resumeNormalRound, spawnNormalItems]
+    [
+      finishGame,
+      playWrongSound,
+      rerender,
+      resolveBonusCatch,
+      resolveWordCatch,
+      resumeNormalRound,
+      spawnNormalItems,
+    ]
   );
 
   const handlePointer = useCallback(
-    (clientX) => {
+    async (clientX) => {
+      await unlockAudio();
+
       const engine = engineRef.current;
       const container = containerRef.current;
       if (!container) return;
@@ -513,11 +754,12 @@ export default function PiggyVocabGame() {
       engine.pigX = x;
       rerender();
     },
-    [rerender]
+    [rerender, unlockAudio]
   );
 
   const fetchWords = useCallback(
     async (selectedDate) => {
+      await unlockAudio();
       cleanupEngine();
       resetRoundState();
       setErrorMessage('');
@@ -553,7 +795,7 @@ export default function PiggyVocabGame() {
         setGameState('error');
       }
     },
-    [cleanupEngine, resetRoundState]
+    [cleanupEngine, resetRoundState, unlockAudio]
   );
 
   useEffect(() => {
@@ -596,6 +838,11 @@ export default function PiggyVocabGame() {
   }, [cleanupEngine]);
 
   const engine = engineRef.current;
+  const boardVars = {
+    '--ui-scale': engine.layout.uiScale,
+    '--question-font': `${engine.layout.questionFont}px`,
+    '--rail-width': `${engine.layout.railWidth}px`,
+  };
 
   if (gameState === 'start') {
     return (
@@ -670,8 +917,8 @@ export default function PiggyVocabGame() {
                 <strong>渐进加速</strong>
               </div>
               <div className="start-card-mini">
-                <span className="mini-title">生命上限</span>
-                <strong>{MAX_LIVES}</strong>
+                <span className="mini-title">音效</span>
+                <strong>已接入</strong>
               </div>
             </div>
           </div>
@@ -836,21 +1083,21 @@ export default function PiggyVocabGame() {
   return (
     <div className="piggy-game-screen">
       <div
-        className={`piggy-game-board mode-${engine.mode}`}
+        className={`piggy-game-board mode-${engine.mode} ${isFullscreen ? 'is-fullscreen' : 'is-windowed'}`}
         ref={containerRef}
+        style={boardVars}
         onPointerDown={(e) => {
           e.currentTarget.setPointerCapture?.(e.pointerId);
           handlePointer(e.clientX);
         }}
         onPointerMove={(e) => {
-          if (e.pointerType === 'mouse' || e.pressure > 0) {
+          if (e.pointerType !== 'mouse' || e.buttons === 1) {
             handlePointer(e.clientX);
           }
         }}
         onPointerUp={(e) => {
           e.currentTarget.releasePointerCapture?.(e.pointerId);
         }}
-        style={{ touchAction: 'none' }}
       >
         <div className="bg-glow board-glow-left" />
         <div className="bg-glow board-glow-right" />
@@ -858,6 +1105,8 @@ export default function PiggyVocabGame() {
         <div className="ambient-particle ap-2" />
         <div className="ambient-particle ap-3" />
         <div className="ambient-particle ap-4" />
+        <div className="soft-glass sg-1" />
+        <div className="soft-glass sg-2" />
 
         <div className="top-progress-bar">
           <div className="progress-track">
@@ -900,6 +1149,7 @@ export default function PiggyVocabGame() {
         </div>
 
         <div className="side-rail">
+          <div className="rail-backdrop" />
           <div className="metric-card accuracy-card">
             <div
               className="accuracy-ring"
