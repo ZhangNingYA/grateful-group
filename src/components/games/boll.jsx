@@ -9,11 +9,11 @@ const MAX_FALL_SPEED = 308;
 const HIT_PAUSE_MS = 760;
 
 /**
- * 把你的音效文件放到 public/sounds/ 里，然后填这里。
+ * 把音效文件放到 public/sounds/ 里，然后填这里。
  * 例如:
  * correct: '/sounds/correct.mp3'
  *
- * 不填会自动走内置合成音。
+ * 不填会自动使用内置合成音。
  */
 const SOUND_FILES = {
   correct: '',
@@ -92,7 +92,7 @@ const getDropSpeed = (currentIndex, totalWords, mode = 'normal') => {
 
 const PERFECT_FIREWORKS = Array.from({ length: 36 }).map((_, index) => {
   const angle = (Math.PI * 2 * index) / 36;
-  const distance = 90 + (index % 6) * 18;
+  const distance = 92 + (index % 6) * 18;
   return {
     id: `fire-${index}`,
     x: Math.cos(angle) * distance,
@@ -134,7 +134,7 @@ export default function PiggyVocabGame() {
     pigX: null,
     items: [],
     status: 'idle',
-    mode: 'normal',
+    mode: 'normal', // normal | bonus
     feedback: null,
     rafId: 0,
     timeoutId: 0,
@@ -142,10 +142,9 @@ export default function PiggyVocabGame() {
     layout: {
       width: 390,
       height: 844,
-      pigSize: 78,
+      pigSize: 80,
       itemSize: 88,
       pigY: 0,
-      railWidth: 74,
       uiScale: 1,
       questionFont: 32,
     },
@@ -177,7 +176,6 @@ export default function PiggyVocabGame() {
   const unlockAudio = useCallback(async () => {
     const ctx = getAudioContext();
     if (!ctx) return;
-
     if (ctx.state === 'suspended') {
       try {
         await ctx.resume();
@@ -320,7 +318,6 @@ export default function PiggyVocabGame() {
       resultSoundPlayedRef.current = true;
       return;
     }
-
     if (gameState !== 'result') {
       resultSoundPlayedRef.current = false;
     }
@@ -398,13 +395,9 @@ export default function PiggyVocabGame() {
     let uiScale = clamp(shortSide / 390, 0.98, 1.08);
     uiScale *= isFullscreen ? 0.94 : 1.04;
 
-    const railWidth = isFullscreen
-      ? clamp(width * 0.155, 64, 74)
-      : clamp(width * 0.17, 68, 80);
-
     const questionFont = isFullscreen
-      ? clamp(width * 0.075, 26, 34)
-      : clamp(width * 0.08, 28, 36);
+      ? clamp(width * 0.073, 26, 34)
+      : clamp(width * 0.079, 28, 36);
 
     engine.layout = {
       width,
@@ -412,7 +405,6 @@ export default function PiggyVocabGame() {
       pigSize,
       itemSize,
       pigY,
-      railWidth,
       uiScale,
       questionFont,
     };
@@ -736,7 +728,6 @@ export default function PiggyVocabGame() {
       resolveBonusCatch,
       resolveWordCatch,
       resumeNormalRound,
-      spawnNormalItems,
     ]
   );
 
@@ -841,7 +832,6 @@ export default function PiggyVocabGame() {
   const boardVars = {
     '--ui-scale': engine.layout.uiScale,
     '--question-font': `${engine.layout.questionFont}px`,
-    '--rail-width': `${engine.layout.railWidth}px`,
   };
 
   if (gameState === 'start') {
@@ -882,7 +872,7 @@ export default function PiggyVocabGame() {
               <div className="hero-chip">VOCAB GAME</div>
               <h1 className="hero-title">小猪接单词</h1>
               <p className="hero-subtitle">
-                接住正确释义，越往后越快。10 连击解锁爱心奖励关。
+                普通选项统一外观，不透题。没接住会掉命，10 连击解锁爱心奖励关。
               </p>
             </div>
           </div>
@@ -913,12 +903,12 @@ export default function PiggyVocabGame() {
                 <strong>{BONUS_EVERY} 连击</strong>
               </div>
               <div className="start-card-mini">
-                <span className="mini-title">速度变化</span>
-                <strong>渐进加速</strong>
+                <span className="mini-title">没接住</span>
+                <strong>扣生命</strong>
               </div>
               <div className="start-card-mini">
                 <span className="mini-title">音效</span>
-                <strong>已接入</strong>
+                <strong>可替换</strong>
               </div>
             </div>
           </div>
@@ -1133,6 +1123,30 @@ export default function PiggyVocabGame() {
         </div>
 
         <div className={`question-box ${engine.mode === 'bonus' ? 'bonus-box' : ''}`}>
+          <div className="question-meta-row">
+            <div className="meta-chip">
+              <span className="meta-k">ACC</span>
+              <strong className="meta-v">{accuracy}%</strong>
+            </div>
+
+            <div className={`meta-chip ${combo >= BONUS_EVERY ? 'charged' : ''}`}>
+              <span className="meta-k">COMBO</span>
+              <strong className="meta-v">{combo}</strong>
+            </div>
+
+            <div className="meta-chip life-chip">
+              <span className="meta-k">LIFE</span>
+              <div className="life-inline-row">
+                {Array.from({ length: MAX_LIVES }).map((_, index) => (
+                  <span
+                    key={index}
+                    className={`life-heart inline ${index < lives ? 'alive' : 'empty'}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
           {engine.mode === 'bonus' ? (
             <div className="bonus-stage-head">
               <div className="bonus-stage-title">BONUS</div>
@@ -1148,54 +1162,10 @@ export default function PiggyVocabGame() {
           )}
         </div>
 
-        <div className="side-rail">
-          <div className="rail-backdrop" />
-          <div className="metric-card accuracy-card">
-            <div
-              className="accuracy-ring"
-              style={{
-                background: `conic-gradient(#ff7a86 0deg ${accuracy * 3.6}deg, rgba(255,255,255,0.18) ${accuracy * 3.6}deg 360deg)`,
-              }}
-            >
-              <div className="accuracy-core">
-                <span className="metric-label">ACC</span>
-                <strong className="metric-value">{accuracy}%</strong>
-              </div>
-            </div>
-          </div>
-
-          <div className={`metric-card combo-card ${combo >= BONUS_EVERY ? 'charged' : ''}`}>
-            <span className="metric-label">COMBO</span>
-            <strong className="metric-value combo-value">{combo}</strong>
-            <div className="combo-track">
-              <div
-                className="combo-fill"
-                style={{
-                  width: `${((combo % BONUS_EVERY) / BONUS_EVERY) * 100}%`,
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="metric-card life-card">
-            <span className="metric-label">LIFE</span>
-            <div className="life-row">
-              {Array.from({ length: MAX_LIVES }).map((_, index) => (
-                <span
-                  key={index}
-                  className={`life-heart ${index < lives ? 'alive' : 'empty'}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
         {engine.items.map((item) => (
           <div
             key={item.id}
-            className={`falling-item ${item.type === 'bonus' ? 'bonus-token' : 'word-token'} ${
-              item.isCorrect ? 'token-good' : 'token-bad'
-            }`}
+            className={`falling-item ${item.type === 'bonus' ? 'bonus-token' : 'word-token'}`}
             style={{
               width: `${item.size}px`,
               height: `${item.size}px`,
