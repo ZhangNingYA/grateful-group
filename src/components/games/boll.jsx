@@ -4,17 +4,11 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 const START_LIVES = 3;
 const MAX_LIVES = 5;
 const BONUS_EVERY = 10;
-const BASE_FALL_SPEED = 228;
-const MAX_FALL_SPEED = 308;
-const HIT_PAUSE_MS = 760;
+const BASE_FALL_SPEED = 218;
+const MAX_FALL_SPEED = 320;
+const HIT_PAUSE_MS = 720;
+const API_ENDPOINT = 'https://api.fulafu.com/api/words';
 
-/**
- * 把音效文件放到 public/sounds/ 里，然后填这里。
- * 例如:
- * correct: '/sounds/correct.mp3'
- *
- * 不填会自动使用内置合成音。
- */
 const SOUND_FILES = {
   correct: '',
   wrong: '',
@@ -36,8 +30,7 @@ const shuffle = (list) => {
   return arr;
 };
 
-const createId = () =>
-  `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
+const createId = () => `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
 
 const getTodayInputValue = () => {
   const now = new Date();
@@ -49,92 +42,133 @@ const isOverlap = (ax, ay, aw, ah, bx, by, bw, bh) =>
   ax < bx + bw && ax + aw > bx && ay < by + bh && ay + ah > by;
 
 const normalizeWords = (payload) => {
-  if (!payload || typeof payload !== 'object') return [];
+  if (!payload) return [];
 
   if (Array.isArray(payload)) {
     return payload
       .map((item) => {
-        if (!item) return null;
-        if (typeof item === 'object' && item.en && item.zh) {
-          return { en: String(item.en).trim(), zh: String(item.zh).trim() };
-        }
-        return null;
+        if (!item || typeof item !== 'object') return null;
+        if (!item.en || !item.zh) return null;
+        return { en: String(item.en).trim(), zh: String(item.zh).trim() };
       })
       .filter(Boolean)
       .filter((item) => item.en && item.zh);
   }
 
-  return Object.entries(payload)
-    .filter(([en, zh]) => typeof en === 'string' && typeof zh === 'string')
-    .map(([en, zh]) => ({ en: en.trim(), zh: zh.trim() }))
-    .filter((item) => item.en && item.zh);
+  if (typeof payload === 'object') {
+    return Object.entries(payload)
+      .filter(([en, zh]) => typeof en === 'string' && typeof zh === 'string')
+      .map(([en, zh]) => ({ en: en.trim(), zh: zh.trim() }))
+      .filter((item) => item.en && item.zh);
+  }
+
+  return [];
 };
 
-const getGrade = (accuracy) => {
-  if (accuracy === 100) return 'SSS';
-  if (accuracy >= 80) return 'S';
-  if (accuracy >= 60) return 'A';
-  return 'B';
-};
-
-const getGradeClass = (grade) => {
-  if (grade === 'SSS') return 'grade-sss';
-  if (grade === 'S') return 'grade-s';
-  if (grade === 'A') return 'grade-a';
-  return 'grade-b';
-};
+const createDefaultStats = () => ({
+  score: 0,
+  wrong: 0,
+  lives: START_LIVES,
+  combo: 0,
+  maxCombo: 0,
+  currentIndex: 0,
+});
 
 const getDropSpeed = (currentIndex, totalWords, mode = 'normal') => {
   const progress = totalWords > 1 ? currentIndex / (totalWords - 1) : 0;
   const speed = BASE_FALL_SPEED + (MAX_FALL_SPEED - BASE_FALL_SPEED) * progress;
-  return mode === 'bonus' ? speed * 0.92 : speed;
+  return mode === 'bonus' ? speed * 0.9 : speed;
 };
 
-const PERFECT_FIREWORKS = Array.from({ length: 36 }).map((_, index) => {
-  const angle = (Math.PI * 2 * index) / 36;
-  const distance = 92 + (index % 6) * 18;
-  return {
-    id: `fire-${index}`,
-    x: Math.cos(angle) * distance,
-    y: Math.sin(angle) * distance,
-    delay: (index % 12) * 0.06,
-    size: 14 + (index % 3) * 3,
-  };
-});
+const getGrade = (accuracy, completion) => {
+  if (completion === 100 && accuracy === 100) return 'SSS';
+  if (accuracy >= 82) return 'S';
+  if (accuracy >= 60) return 'A';
+  return 'B';
+};
+
+const RESULT_META = {
+  B: {
+    title: '先抱一下',
+    subtitle: '今天先到这里，亲亲先给你存着。',
+    pill: '下轮多接一点，我就把亲亲全补给你。',
+  },
+  A: {
+    title: '已经很乖啦',
+    subtitle: '差一点点就能收更多亲亲。',
+    pill: '你再认真一点，我就舍不得停。',
+  },
+  S: {
+    title: '好会接呀',
+    subtitle: '今天要多奖励你好多亲亲。',
+    pill: '这轮真的很甜，我想继续奖励你。',
+  },
+  SSS: {
+    title: '满分小宝贝',
+    subtitle: '这轮当然要给你一大把亲亲。',
+    pill: '亲亲雨已经准备好了，全都落给你。',
+  },
+};
+
+const RESULT_KISS_COUNT = {
+  B: 0,
+  A: 6,
+  S: 12,
+  SSS: 18,
+};
+
+const RESULT_KISSES = Array.from({ length: 18 }).map((_, index) => ({
+  id: `kiss-${index}`,
+  x: [8, 16, 28, 72, 84, 92, 12, 24, 38, 62, 76, 88, 10, 20, 46, 68, 80, 90][index],
+  y: [16, 6, 0, 2, 10, 20, 78, 90, 96, 96, 90, 80, 50, 64, 8, 12, 58, 44][index],
+  rotate: [-12, 10, -16, 8, 18, -8, 12, -10, 6, -6, 14, -14, 9, -18, 12, -8, 16, -10][index],
+  delay: index * 0.06,
+}));
+
+function PigFace({ className = '' }) {
+  return (
+    <div className={`pig-face ${className}`.trim()}>
+      <span className="pig-ear pig-ear-left" />
+      <span className="pig-ear pig-ear-right" />
+      <span className="pig-eye pig-eye-left" />
+      <span className="pig-eye pig-eye-right" />
+      <span className="pig-blush pig-blush-left" />
+      <span className="pig-blush pig-blush-right" />
+      <span className="pig-snout">
+        <i />
+        <i />
+      </span>
+    </div>
+  );
+}
 
 export default function PiggyVocabGame() {
   const [date, setDate] = useState(getTodayInputValue());
-  const [gameState, setGameState] = useState('start');
+  const [phase, setPhase] = useState('start');
   const [words, setWords] = useState([]);
-  const [score, setScore] = useState(0);
-  const [wrongCount, setWrongCount] = useState(0);
-  const [lives, setLives] = useState(START_LIVES);
-  const [combo, setCombo] = useState(0);
-  const [maxCombo, setMaxCombo] = useState(0);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [errorMessage, setErrorMessage] = useState('');
+  const [stats, setStats] = useState(createDefaultStats());
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [, forceRender] = useState(0);
+  const [, setFrameTick] = useState(0);
 
-  const containerRef = useRef(null);
+  const boardRef = useRef(null);
+  const pigRef = useRef(null);
   const audioCtxRef = useRef(null);
   const audioUnlockedRef = useRef(false);
+  const requestRef = useRef(null);
   const resultSoundPlayedRef = useRef(false);
 
   const wordsRef = useRef([]);
-  const scoreRef = useRef(0);
-  const wrongCountRef = useRef(0);
-  const livesRef = useRef(START_LIVES);
-  const comboRef = useRef(0);
-  const maxComboRef = useRef(0);
-  const currentIndexRef = useRef(0);
-  const gameStateRef = useRef(gameState);
+  const statsRef = useRef(createDefaultStats());
+  const phaseRef = useRef('start');
+
+  const dragRef = useRef({ active: false, pointerId: null, grabOffsetX: 0 });
 
   const engineRef = useRef({
     pigX: null,
     items: [],
+    mode: 'normal',
     status: 'idle',
-    mode: 'normal', // normal | bonus
     feedback: null,
     rafId: 0,
     timeoutId: 0,
@@ -142,33 +176,58 @@ export default function PiggyVocabGame() {
     layout: {
       width: 390,
       height: 844,
-      pigSize: 80,
-      itemSize: 88,
+      pigSize: 88,
       pigY: 0,
-      uiScale: 1,
-      questionFont: 32,
+      itemWidth: 108,
+      itemHeight: 92,
+      paddingX: 14,
     },
   });
 
-  const answeredCount = score + wrongCount;
-  const accuracy = useMemo(() => {
-    if (answeredCount <= 0) return 0;
-    return Math.round((score / answeredCount) * 100);
-  }, [score, wrongCount, answeredCount]);
+  const invalidate = useCallback(() => {
+    setFrameTick((n) => (n + 1) % 1000000);
+  }, []);
 
-  const grade = getGrade(accuracy);
-  const gradeClass = getGradeClass(grade);
+  const syncStats = useCallback((patch) => {
+    const next = { ...statsRef.current, ...patch };
+    statsRef.current = next;
+    setStats(next);
+  }, []);
 
-  const rerender = useCallback(() => {
-    forceRender((n) => (n + 1) % 1000000);
+  const resetRoundState = useCallback(() => {
+    const cleanStats = createDefaultStats();
+    statsRef.current = cleanStats;
+    setStats(cleanStats);
+
+    const engine = engineRef.current;
+    engine.items = [];
+    engine.feedback = null;
+    engine.mode = 'normal';
+    engine.status = 'idle';
+    engine.pigX = null;
+    engine.lastTs = 0;
+    dragRef.current = { active: false, pointerId: null, grabOffsetX: 0 };
+  }, []);
+
+  const cleanupEngine = useCallback(() => {
+    const engine = engineRef.current;
+    if (engine.rafId) {
+      cancelAnimationFrame(engine.rafId);
+      engine.rafId = 0;
+    }
+    if (engine.timeoutId) {
+      clearTimeout(engine.timeoutId);
+      engine.timeoutId = 0;
+    }
+    engine.lastTs = 0;
   }, []);
 
   const getAudioContext = useCallback(() => {
     if (typeof window === 'undefined') return null;
     if (!audioCtxRef.current) {
-      const Ctx = window.AudioContext || window.webkitAudioContext;
-      if (!Ctx) return null;
-      audioCtxRef.current = new Ctx();
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (!AudioCtx) return null;
+      audioCtxRef.current = new AudioCtx();
     }
     return audioCtxRef.current;
   }, []);
@@ -186,14 +245,7 @@ export default function PiggyVocabGame() {
     audioUnlockedRef.current = true;
   }, [getAudioContext]);
 
-  const playTone = useCallback((ctx, {
-    freq,
-    start,
-    duration,
-    type = 'sine',
-    gain = 0.03,
-    endFreq = null,
-  }) => {
+  const playTone = useCallback((ctx, { freq, start, duration, type = 'sine', gain = 0.03, endFreq = null }) => {
     const osc = ctx.createOscillator();
     const gainNode = ctx.createGain();
 
@@ -211,14 +263,14 @@ export default function PiggyVocabGame() {
     gainNode.connect(ctx.destination);
 
     osc.start(start);
-    osc.stop(start + duration + 0.02);
+    osc.stop(start + duration + 0.03);
   }, []);
 
   const playAssetSound = useCallback((src) => {
     if (!src) return false;
     try {
       const audio = new Audio(src);
-      audio.volume = 0.6;
+      audio.volume = 0.62;
       audio.play().catch(() => {});
       return true;
     } catch {
@@ -231,8 +283,8 @@ export default function PiggyVocabGame() {
     const ctx = getAudioContext();
     if (!ctx || !audioUnlockedRef.current) return;
     const t = ctx.currentTime;
-    playTone(ctx, { freq: 740, start: t, duration: 0.09, type: 'triangle', gain: 0.03 });
-    playTone(ctx, { freq: 980, start: t + 0.08, duration: 0.12, type: 'triangle', gain: 0.028 });
+    playTone(ctx, { freq: 760, start: t, duration: 0.08, type: 'triangle', gain: 0.03 });
+    playTone(ctx, { freq: 1040, start: t + 0.07, duration: 0.11, type: 'triangle', gain: 0.03 });
   }, [getAudioContext, playAssetSound, playTone]);
 
   const playWrongSound = useCallback(() => {
@@ -240,8 +292,8 @@ export default function PiggyVocabGame() {
     const ctx = getAudioContext();
     if (!ctx || !audioUnlockedRef.current) return;
     const t = ctx.currentTime;
-    playTone(ctx, { freq: 320, endFreq: 220, start: t, duration: 0.18, type: 'sawtooth', gain: 0.025 });
-    playTone(ctx, { freq: 210, endFreq: 150, start: t + 0.08, duration: 0.2, type: 'triangle', gain: 0.02 });
+    playTone(ctx, { freq: 330, start: t, duration: 0.15, endFreq: 220, type: 'sawtooth', gain: 0.025 });
+    playTone(ctx, { freq: 220, start: t + 0.06, duration: 0.18, endFreq: 150, type: 'triangle', gain: 0.02 });
   }, [getAudioContext, playAssetSound, playTone]);
 
   const playComboSound = useCallback(() => {
@@ -249,42 +301,35 @@ export default function PiggyVocabGame() {
     const ctx = getAudioContext();
     if (!ctx || !audioUnlockedRef.current) return;
     const t = ctx.currentTime;
-    playTone(ctx, { freq: 660, start: t, duration: 0.1, type: 'triangle', gain: 0.025 });
-    playTone(ctx, { freq: 880, start: t + 0.08, duration: 0.11, type: 'triangle', gain: 0.028 });
-    playTone(ctx, { freq: 1174, start: t + 0.16, duration: 0.15, type: 'triangle', gain: 0.03 });
+    playTone(ctx, { freq: 660, start: t, duration: 0.08, type: 'triangle', gain: 0.025 });
+    playTone(ctx, { freq: 900, start: t + 0.08, duration: 0.1, type: 'triangle', gain: 0.028 });
+    playTone(ctx, { freq: 1200, start: t + 0.16, duration: 0.14, type: 'triangle', gain: 0.03 });
   }, [getAudioContext, playAssetSound, playTone]);
 
-  const playResultSound = useCallback((resultGrade) => {
-    const assetKey = resultGrade === 'SSS'
-      ? 'resultSSS'
-      : resultGrade === 'S'
-      ? 'resultS'
-      : resultGrade === 'A'
-      ? 'resultA'
-      : 'resultB';
-
+  const playResultSound = useCallback((grade) => {
+    const assetKey = grade === 'SSS' ? 'resultSSS' : grade === 'S' ? 'resultS' : grade === 'A' ? 'resultA' : 'resultB';
     if (playAssetSound(SOUND_FILES[assetKey])) return;
 
     const ctx = getAudioContext();
     if (!ctx || !audioUnlockedRef.current) return;
     const t = ctx.currentTime;
 
-    if (resultGrade === 'SSS') {
+    if (grade === 'SSS') {
       playTone(ctx, { freq: 784, start: t, duration: 0.12, type: 'triangle', gain: 0.028 });
       playTone(ctx, { freq: 988, start: t + 0.08, duration: 0.13, type: 'triangle', gain: 0.03 });
       playTone(ctx, { freq: 1174, start: t + 0.16, duration: 0.16, type: 'triangle', gain: 0.032 });
-      playTone(ctx, { freq: 1568, start: t + 0.26, duration: 0.18, type: 'sine', gain: 0.028 });
+      playTone(ctx, { freq: 1568, start: t + 0.26, duration: 0.18, type: 'sine', gain: 0.03 });
       return;
     }
 
-    if (resultGrade === 'S') {
+    if (grade === 'S') {
       playTone(ctx, { freq: 659, start: t, duration: 0.1, type: 'triangle', gain: 0.026 });
       playTone(ctx, { freq: 880, start: t + 0.09, duration: 0.13, type: 'triangle', gain: 0.028 });
       playTone(ctx, { freq: 1046, start: t + 0.18, duration: 0.16, type: 'triangle', gain: 0.03 });
       return;
     }
 
-    if (resultGrade === 'A') {
+    if (grade === 'A') {
       playTone(ctx, { freq: 523, start: t, duration: 0.12, type: 'triangle', gain: 0.024 });
       playTone(ctx, { freq: 659, start: t + 0.11, duration: 0.14, type: 'triangle', gain: 0.026 });
       return;
@@ -293,681 +338,560 @@ export default function PiggyVocabGame() {
     playTone(ctx, { freq: 392, start: t, duration: 0.18, type: 'triangle', gain: 0.022 });
   }, [getAudioContext, playAssetSound, playTone]);
 
+  const updateFullscreenState = useCallback(() => {
+    if (typeof document === 'undefined') return;
+    setIsFullscreen(Boolean(document.fullscreenElement));
+  }, []);
+
   useEffect(() => {
-    gameStateRef.current = gameState;
-  }, [gameState]);
+    wordsRef.current = words;
+  }, [words]);
+
+  useEffect(() => {
+    phaseRef.current = phase;
+  }, [phase]);
 
   useEffect(() => {
     if (typeof document === 'undefined') return undefined;
+    updateFullscreenState();
+    document.addEventListener('fullscreenchange', updateFullscreenState);
+    return () => document.removeEventListener('fullscreenchange', updateFullscreenState);
+  }, [updateFullscreenState]);
 
-    setIsFullscreen(Boolean(document.fullscreenElement));
-
-    const onFullscreenChange = () => {
-      setIsFullscreen(Boolean(document.fullscreenElement));
-    };
-
-    document.addEventListener('fullscreenchange', onFullscreenChange);
-    return () => {
-      document.removeEventListener('fullscreenchange', onFullscreenChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (gameState === 'result' && !resultSoundPlayedRef.current) {
-      playResultSound(grade);
-      resultSoundPlayedRef.current = true;
-      return;
-    }
-    if (gameState !== 'result') {
-      resultSoundPlayedRef.current = false;
-    }
-  }, [gameState, grade, playResultSound]);
-
-  const toggleFullscreen = useCallback(async () => {
-    if (typeof document === 'undefined') return;
-
+  const tryEnterFullscreen = useCallback(async () => {
+    if (typeof document === 'undefined') return false;
+    const el = document.documentElement;
+    if (!el || !el.requestFullscreen || document.fullscreenElement) return false;
     try {
-      await unlockAudio();
-
-      if (!document.fullscreenElement) {
-        if (document.documentElement.requestFullscreen) {
-          await document.documentElement.requestFullscreen();
-        }
-      } else if (document.exitFullscreen) {
-        await document.exitFullscreen();
-      }
-    } catch (error) {
-      console.error('fullscreen failed:', error);
+      await el.requestFullscreen();
+      return true;
+    } catch {
+      return false;
     }
-  }, [unlockAudio]);
-
-  const cleanupEngine = useCallback(() => {
-    const engine = engineRef.current;
-    if (engine.rafId) {
-      cancelAnimationFrame(engine.rafId);
-      engine.rafId = 0;
-    }
-    if (engine.timeoutId) {
-      clearTimeout(engine.timeoutId);
-      engine.timeoutId = 0;
-    }
-    engine.lastTs = 0;
   }, []);
 
-  const resetRoundState = useCallback(() => {
-    const engine = engineRef.current;
-    engine.items = [];
-    engine.feedback = null;
-    engine.status = 'idle';
-    engine.mode = 'normal';
-    engine.pigX = null;
-    engine.lastTs = 0;
-
-    scoreRef.current = 0;
-    wrongCountRef.current = 0;
-    livesRef.current = START_LIVES;
-    comboRef.current = 0;
-    maxComboRef.current = 0;
-    currentIndexRef.current = 0;
-
-    setScore(0);
-    setWrongCount(0);
-    setLives(START_LIVES);
-    setCombo(0);
-    setMaxCombo(0);
-    setCurrentIndex(0);
+  const tryExitFullscreen = useCallback(async () => {
+    if (typeof document === 'undefined') return;
+    if (!document.fullscreenElement || !document.exitFullscreen) return;
+    try {
+      await document.exitFullscreen();
+    } catch {
+      // ignore
+    }
   }, []);
 
   const syncLayout = useCallback(() => {
-    const container = containerRef.current;
-    const engine = engineRef.current;
-    if (!container) return;
+    const board = boardRef.current;
+    if (!board) return;
 
-    const rect = container.getBoundingClientRect();
+    const engine = engineRef.current;
+    const rect = board.getBoundingClientRect();
     const width = rect.width || window.innerWidth || 390;
     const height = rect.height || window.innerHeight || 844;
 
-    const pigSize = clamp(width * 0.18, 68, 94);
-    const itemSize = clamp(width * 0.22, 70, 102);
-    const pigY = height - pigSize - 26;
-
-    const shortSide = Math.min(width, height);
-    let uiScale = clamp(shortSide / 390, 0.98, 1.08);
-    uiScale *= isFullscreen ? 0.94 : 1.04;
-
-    const questionFont = isFullscreen
-      ? clamp(width * 0.073, 26, 34)
-      : clamp(width * 0.079, 28, 36);
+    const pigSize = clamp(width * 0.195, 84, 112);
+    const itemWidth = clamp(width * 0.26, 88, 138);
+    const itemHeight = clamp(width * 0.24, 84, 112);
+    const pigY = height - pigSize - 22;
+    const paddingX = clamp(width * 0.04, 12, 18);
 
     engine.layout = {
       width,
       height,
       pigSize,
-      itemSize,
       pigY,
-      uiScale,
-      questionFont,
+      itemWidth,
+      itemHeight,
+      paddingX,
     };
 
     if (typeof engine.pigX !== 'number') {
       engine.pigX = (width - pigSize) / 2;
     } else {
-      engine.pigX = clamp(engine.pigX, 8, width - pigSize - 8);
+      engine.pigX = clamp(engine.pigX, 10, width - pigSize - 10);
     }
 
-    rerender();
-  }, [isFullscreen, rerender]);
+    invalidate();
+  }, [invalidate]);
 
-  const spawnNormalItems = useCallback(
-    (wordIndex, wordList = wordsRef.current) => {
-      const engine = engineRef.current;
-      const currentWord = wordList[wordIndex];
-      if (!currentWord || !containerRef.current) return;
+  const positionPigByClientX = useCallback((clientX) => {
+    const board = boardRef.current;
+    if (!board) return;
+    const engine = engineRef.current;
+    const rect = board.getBoundingClientRect();
+    const { pigSize } = engine.layout;
+    const x = clamp(clientX - rect.left - dragRef.current.grabOffsetX, 10, rect.width - pigSize - 10);
+    engine.pigX = x;
+    invalidate();
+  }, [invalidate]);
 
-      const { width, height, itemSize } = engine.layout;
+  const spawnNormalItems = useCallback((wordIndex, wordList = wordsRef.current) => {
+    const engine = engineRef.current;
+    const currentWord = wordList[wordIndex];
+    if (!currentWord) return;
 
-      const pool = [];
-      const seenZh = new Set([currentWord.zh]);
-
-      for (const word of shuffle(wordList.filter((_, idx) => idx !== wordIndex))) {
-        if (!seenZh.has(word.zh)) {
-          seenZh.add(word.zh);
-          pool.push(word);
-        }
-        if (pool.length >= 2) break;
+    const pool = [];
+    const seenZh = new Set([currentWord.zh]);
+    for (const word of shuffle(wordList.filter((_, index) => index !== wordIndex))) {
+      if (!seenZh.has(word.zh)) {
+        seenZh.add(word.zh);
+        pool.push(word);
       }
+      if (pool.length >= 2) break;
+    }
 
-      const options = shuffle([
-        { text: currentWord.zh, isCorrect: true, type: 'word' },
-        ...pool.map((item) => ({
-          text: item.zh,
-          isCorrect: false,
-          type: 'word',
-        })),
-      ]);
+    const options = shuffle([
+      { text: currentWord.zh, isCorrect: true, type: 'word' },
+      ...pool.map((item) => ({ text: item.zh, isCorrect: false, type: 'word' })),
+    ]);
 
-      const count = Math.max(options.length, 1);
-      const padding = 12;
-      const slotWidth = (width - padding * 2) / count;
-      const size = Math.min(itemSize, slotWidth - 10);
+    const { width, height, itemWidth, itemHeight, paddingX } = engine.layout;
+    const count = Math.max(options.length, 1);
+    const slotWidth = (width - paddingX * 2) / count;
+    const w = Math.min(itemWidth, slotWidth - 10);
+    const h = itemHeight;
 
-      engine.mode = 'normal';
-      engine.items = options.map((option, index) => ({
-        id: createId(),
-        text: option.text,
-        isCorrect: option.isCorrect,
-        type: option.type,
-        size,
-        x: padding + slotWidth * index + (slotWidth - size) / 2,
-        y: -(size + Math.random() * (height * 0.12 + 24)),
-      }));
-
-      engine.feedback = null;
-      rerender();
-    },
-    [rerender]
-  );
+    engine.mode = 'normal';
+    engine.items = options.map((option, index) => ({
+      id: createId(),
+      text: option.text,
+      isCorrect: option.isCorrect,
+      type: option.type,
+      w,
+      h,
+      x: paddingX + slotWidth * index + (slotWidth - w) / 2,
+      y: -(h + Math.random() * (height * 0.14 + 24)),
+    }));
+    engine.feedback = null;
+    invalidate();
+  }, [invalidate]);
 
   const spawnBonusItem = useCallback(() => {
     const engine = engineRef.current;
-    if (!containerRef.current) return;
-
-    const { width, height, itemSize } = engine.layout;
-    const size = clamp(itemSize * 0.92, 68, 96);
+    const { width, height } = engine.layout;
+    const size = clamp(engine.layout.itemHeight * 0.92, 82, 96);
 
     engine.mode = 'bonus';
     engine.items = [
       {
         id: createId(),
-        text: '',
+        text: '💋',
         isCorrect: true,
         type: 'bonus',
-        size,
+        w: size,
+        h: size,
         x: (width - size) / 2,
-        y: -(size + height * 0.08),
+        y: -(size + height * 0.12),
       },
     ];
-
     engine.feedback = null;
-    rerender();
-  }, [rerender]);
+    invalidate();
+  }, [invalidate]);
 
   const finishGame = useCallback(() => {
     const engine = engineRef.current;
-    engine.status = 'done';
+    cleanupEngine();
     engine.items = [];
     engine.feedback = null;
-    cleanupEngine();
-    setGameState('result');
-    rerender();
-  }, [cleanupEngine, rerender]);
+    engine.status = 'done';
+    setPhase('result');
+    invalidate();
+  }, [cleanupEngine, invalidate]);
 
   const resumeNormalRound = useCallback(() => {
     const engine = engineRef.current;
     engine.status = 'running';
     engine.feedback = null;
-    spawnNormalItems(currentIndexRef.current, wordsRef.current);
+    spawnNormalItems(statsRef.current.currentIndex, wordsRef.current);
   }, [spawnNormalItems]);
 
   const resolveBonusCatch = useCallback(() => {
     const engine = engineRef.current;
     engine.status = 'paused';
-    engine.feedback = {
-      type: 'bonus-life',
-      id: createId(),
-    };
+    engine.feedback = { type: 'bonus', id: createId() };
 
-    const nextLives = Math.min(MAX_LIVES, livesRef.current + 1);
-    livesRef.current = nextLives;
-    setLives(nextLives);
-
+    const nextLives = Math.min(MAX_LIVES, statsRef.current.lives + 1);
+    syncStats({ lives: nextLives });
     playComboSound();
-    rerender();
+    invalidate();
 
     if (engine.timeoutId) clearTimeout(engine.timeoutId);
     engine.timeoutId = window.setTimeout(() => {
       resumeNormalRound();
     }, HIT_PAUSE_MS);
-  }, [playComboSound, resumeNormalRound, rerender]);
+  }, [invalidate, playComboSound, resumeNormalRound, syncStats]);
 
-  const resolveWordCatch = useCallback(
-    (hitItem) => {
-      const engine = engineRef.current;
-      engine.status = 'paused';
+  const resolveWordCatch = useCallback((item) => {
+    const engine = engineRef.current;
+    engine.status = 'paused';
 
-      if (hitItem.isCorrect) {
-        const nextScore = scoreRef.current + 1;
-        const nextCombo = comboRef.current + 1;
-        const nextMaxCombo = Math.max(maxComboRef.current, nextCombo);
-        const nextIndex = currentIndexRef.current + 1;
+    if (item.isCorrect) {
+      const nextScore = statsRef.current.score + 1;
+      const nextCombo = statsRef.current.combo + 1;
+      const nextMaxCombo = Math.max(statsRef.current.maxCombo, nextCombo);
+      const nextIndex = statsRef.current.currentIndex + 1;
 
-        scoreRef.current = nextScore;
-        comboRef.current = nextCombo;
-        maxComboRef.current = nextMaxCombo;
-
-        setScore(nextScore);
-        setCombo(nextCombo);
-        setMaxCombo(nextMaxCombo);
-
-        engine.feedback = {
-          type: 'correct',
-          id: createId(),
-        };
-
-        if (nextCombo > 0 && nextCombo % BONUS_EVERY === 0) {
-          playComboSound();
-        } else {
-          playCorrectSound();
-        }
-
-        rerender();
-
-        if (engine.timeoutId) clearTimeout(engine.timeoutId);
-        engine.timeoutId = window.setTimeout(() => {
-          if (nextIndex >= wordsRef.current.length) {
-            finishGame();
-            return;
-          }
-
-          currentIndexRef.current = nextIndex;
-          setCurrentIndex(nextIndex);
-
-          engine.status = 'running';
-
-          if (nextCombo > 0 && nextCombo % BONUS_EVERY === 0) {
-            spawnBonusItem();
-          } else {
-            spawnNormalItems(nextIndex, wordsRef.current);
-          }
-        }, HIT_PAUSE_MS);
-
-        return;
-      }
-
-      const nextLives = livesRef.current - 1;
-      const nextWrongCount = wrongCountRef.current + 1;
-
-      livesRef.current = nextLives;
-      wrongCountRef.current = nextWrongCount;
-      comboRef.current = 0;
-
-      setLives(nextLives);
-      setWrongCount(nextWrongCount);
-      setCombo(0);
+      syncStats({
+        score: nextScore,
+        combo: nextCombo,
+        maxCombo: nextMaxCombo,
+        currentIndex: nextIndex,
+      });
 
       engine.feedback = {
-        type: 'wrong',
+        type: nextCombo > 0 && nextCombo % BONUS_EVERY === 0 ? 'combo' : 'correct',
         id: createId(),
       };
 
-      playWrongSound();
-      rerender();
+      if (nextCombo > 0 && nextCombo % BONUS_EVERY === 0) {
+        playComboSound();
+      } else {
+        playCorrectSound();
+      }
+
+      invalidate();
 
       if (engine.timeoutId) clearTimeout(engine.timeoutId);
       engine.timeoutId = window.setTimeout(() => {
-        if (nextLives <= 0) {
+        if (nextIndex >= wordsRef.current.length) {
           finishGame();
           return;
         }
-        resumeNormalRound();
+        engine.status = 'running';
+        if (nextCombo > 0 && nextCombo % BONUS_EVERY === 0) {
+          spawnBonusItem();
+        } else {
+          spawnNormalItems(nextIndex, wordsRef.current);
+        }
       }, HIT_PAUSE_MS);
-    },
-    [
-      finishGame,
-      playComboSound,
-      playCorrectSound,
-      playWrongSound,
-      resumeNormalRound,
-      rerender,
-      spawnBonusItem,
-      spawnNormalItems,
-    ]
-  );
+      return;
+    }
 
-  const gameLoop = useCallback(
-    (timestamp) => {
-      const engine = engineRef.current;
+    const nextLives = statsRef.current.lives - 1;
+    const nextWrong = statsRef.current.wrong + 1;
 
-      if (gameStateRef.current !== 'playing') return;
+    syncStats({ lives: nextLives, wrong: nextWrong, combo: 0 });
+    engine.feedback = { type: 'wrong', id: createId() };
+    playWrongSound();
+    invalidate();
 
-      if (!containerRef.current) {
-        engine.rafId = requestAnimationFrame(gameLoop);
+    if (engine.timeoutId) clearTimeout(engine.timeoutId);
+    engine.timeoutId = window.setTimeout(() => {
+      if (nextLives <= 0) {
+        finishGame();
         return;
       }
+      resumeNormalRound();
+    }, HIT_PAUSE_MS);
+  }, [finishGame, invalidate, playComboSound, playCorrectSound, playWrongSound, resumeNormalRound, spawnBonusItem, spawnNormalItems, syncStats]);
 
-      if (!engine.lastTs) engine.lastTs = timestamp;
-      const delta = Math.min(32, timestamp - engine.lastTs || 16);
-      engine.lastTs = timestamp;
+  const gameLoop = useCallback((timestamp) => {
+    const engine = engineRef.current;
+    if (phaseRef.current !== 'playing') return;
 
-      if (engine.status === 'running') {
-        const speed = getDropSpeed(
-          currentIndexRef.current,
-          wordsRef.current.length,
-          engine.mode
-        );
-        const moveY = (speed * delta) / 1000;
-        const { height, pigSize, pigY } = engine.layout;
+    if (!engine.lastTs) engine.lastTs = timestamp;
+    const delta = Math.min(32, timestamp - engine.lastTs || 16);
+    engine.lastTs = timestamp;
 
-        let allPassed = engine.items.length > 0;
-        let hitItem = null;
+    if (engine.status === 'running') {
+      const speed = getDropSpeed(statsRef.current.currentIndex, wordsRef.current.length, engine.mode);
+      const moveY = (speed * delta) / 1000;
+      const { height, pigSize, pigY } = engine.layout;
 
-        for (const item of engine.items) {
-          item.y += moveY;
+      let allPassed = engine.items.length > 0;
+      let hitItem = null;
 
-          if (item.y < height + item.size) {
-            allPassed = false;
-          }
+      for (const item of engine.items) {
+        item.y += moveY;
 
-          const hit = isOverlap(
+        if (item.y < height + item.h) {
+          allPassed = false;
+        }
+
+        if (
+          isOverlap(
             item.x,
             item.y,
-            item.size,
-            item.size,
+            item.w,
+            item.h,
             engine.pigX,
             pigY,
             pigSize,
             pigSize
-          );
-
-          if (hit) {
-            hitItem = item;
-            break;
-          }
+          )
+        ) {
+          hitItem = item;
+          break;
         }
+      }
 
-        if (hitItem) {
-          if (engine.mode === 'bonus') {
-            resolveBonusCatch();
-          } else {
-            resolveWordCatch(hitItem);
-          }
-        } else if (allPassed || engine.items.length === 0) {
-          if (engine.mode === 'bonus') {
+      if (hitItem) {
+        if (engine.mode === 'bonus') {
+          resolveBonusCatch();
+        } else {
+          resolveWordCatch(hitItem);
+        }
+      } else if (allPassed || engine.items.length === 0) {
+        if (engine.mode === 'bonus') {
+          resumeNormalRound();
+        } else {
+          engine.status = 'paused';
+          engine.feedback = { type: 'wrong', id: createId() };
+
+          const nextLives = statsRef.current.lives - 1;
+          const nextWrong = statsRef.current.wrong + 1;
+          syncStats({ lives: nextLives, wrong: nextWrong, combo: 0 });
+          playWrongSound();
+          invalidate();
+
+          if (engine.timeoutId) clearTimeout(engine.timeoutId);
+          engine.timeoutId = window.setTimeout(() => {
+            if (nextLives <= 0) {
+              finishGame();
+              return;
+            }
             resumeNormalRound();
-          } else {
-            engine.status = 'paused';
-            engine.feedback = {
-              type: 'wrong',
-              id: createId(),
-            };
-
-            const nextLives = livesRef.current - 1;
-            const nextWrongCount = wrongCountRef.current + 1;
-
-            livesRef.current = nextLives;
-            wrongCountRef.current = nextWrongCount;
-            comboRef.current = 0;
-
-            setLives(nextLives);
-            setWrongCount(nextWrongCount);
-            setCombo(0);
-
-            playWrongSound();
-            rerender();
-
-            if (engine.timeoutId) clearTimeout(engine.timeoutId);
-            engine.timeoutId = window.setTimeout(() => {
-              if (nextLives <= 0) {
-                finishGame();
-                return;
-              }
-
-              resumeNormalRound();
-            }, HIT_PAUSE_MS);
-          }
+          }, HIT_PAUSE_MS);
         }
       }
+    }
 
-      rerender();
-      engine.rafId = requestAnimationFrame(gameLoop);
-    },
-    [
-      finishGame,
-      playWrongSound,
-      rerender,
-      resolveBonusCatch,
-      resolveWordCatch,
-      resumeNormalRound,
-    ]
-  );
+    invalidate();
+    engine.rafId = requestAnimationFrame(gameLoop);
+  }, [finishGame, invalidate, playWrongSound, resolveBonusCatch, resolveWordCatch, resumeNormalRound, syncStats]);
 
-  const handlePointer = useCallback(
-    async (clientX) => {
-      await unlockAudio();
+  const fetchWords = useCallback(async (selectedDate) => {
+    cleanupEngine();
+    resetRoundState();
+    setErrorMessage('');
+    setPhase('loading');
 
-      const engine = engineRef.current;
-      const container = containerRef.current;
-      if (!container) return;
+    if (requestRef.current) {
+      requestRef.current.abort();
+    }
 
-      const rect = container.getBoundingClientRect();
-      const { pigSize } = engine.layout;
-      const x = clamp(clientX - rect.left - pigSize / 2, 8, rect.width - pigSize - 8);
-      engine.pigX = x;
-      rerender();
-    },
-    [rerender, unlockAudio]
-  );
+    const controller = new AbortController();
+    requestRef.current = controller;
 
-  const fetchWords = useCallback(
-    async (selectedDate) => {
-      await unlockAudio();
-      cleanupEngine();
-      resetRoundState();
-      setErrorMessage('');
-      setGameState('loading');
-
-      try {
-        const response = await fetch(
-          `https://api.fulafu.com/api/words?date=${selectedDate}`
-        );
-
-        if (!response.ok) {
-          throw new Error('网络有点不稳定，单词还没拿回来。');
-        }
-
-        const data = await response.json();
-
-        if (data?.error) {
-          throw new Error(String(data.error));
-        }
-
-        const sourceList = normalizeWords(data).map((item) => ({ ...item }));
-        const list = shuffle(sourceList);
-
-        if (list.length === 0) {
-          throw new Error('这一天还没有单词记录。');
-        }
-
-        wordsRef.current = list;
-        setWords(list);
-        setGameState('playing');
-      } catch (error) {
-        setErrorMessage(error?.message || '加载失败。');
-        setGameState('error');
+    try {
+      const response = await fetch(`${API_ENDPOINT}?date=${selectedDate}`, { signal: controller.signal });
+      if (!response.ok) {
+        throw new Error('单词还没抱过来，再试一下。');
       }
-    },
-    [cleanupEngine, resetRoundState, unlockAudio]
-  );
+
+      const data = await response.json();
+      if (data?.error) {
+        throw new Error(String(data.error));
+      }
+
+      const list = shuffle(normalizeWords(data));
+      if (!list.length) {
+        throw new Error('这一天还没有单词呀。');
+      }
+
+      wordsRef.current = list;
+      setWords(list);
+      setPhase('playing');
+    } catch (error) {
+      if (controller.signal.aborted) return;
+      setErrorMessage(error?.message || '加载失败了。');
+      setPhase('error');
+    }
+  }, [cleanupEngine, resetRoundState]);
+
+  const startGame = useCallback(async () => {
+    await unlockAudio();
+    await tryEnterFullscreen();
+    await fetchWords(date);
+  }, [date, fetchWords, tryEnterFullscreen, unlockAudio]);
+
+  const restartSameDate = useCallback(async () => {
+    await unlockAudio();
+    if (!isFullscreen) {
+      await tryEnterFullscreen();
+    }
+    await fetchWords(date);
+  }, [date, fetchWords, isFullscreen, tryEnterFullscreen, unlockAudio]);
+
+  const goStart = useCallback(async (exitFullscreen = false) => {
+    cleanupEngine();
+    if (requestRef.current) {
+      requestRef.current.abort();
+      requestRef.current = null;
+    }
+    resetRoundState();
+    setWords([]);
+    setErrorMessage('');
+    setPhase('start');
+    if (exitFullscreen) {
+      await tryExitFullscreen();
+    }
+  }, [cleanupEngine, resetRoundState, tryExitFullscreen]);
 
   useEffect(() => {
-    if (gameState !== 'playing') return;
+    if (phase !== 'playing') return undefined;
 
     syncLayout();
-
     const engine = engineRef.current;
     engine.status = 'running';
     engine.feedback = null;
 
     if (engine.items.length === 0) {
-      spawnNormalItems(currentIndexRef.current, wordsRef.current);
+      spawnNormalItems(statsRef.current.currentIndex, wordsRef.current);
     }
 
-    let removeResizeListener = null;
+    const onResize = () => syncLayout();
+    const board = boardRef.current;
+    let observer = null;
 
-    if (typeof ResizeObserver !== 'undefined' && containerRef.current) {
-      const observer = new ResizeObserver(() => {
-        syncLayout();
-      });
-      observer.observe(containerRef.current);
-      removeResizeListener = () => observer.disconnect();
+    if (typeof ResizeObserver !== 'undefined' && board) {
+      observer = new ResizeObserver(onResize);
+      observer.observe(board);
     } else {
-      const onResize = () => syncLayout();
       window.addEventListener('resize', onResize);
-      removeResizeListener = () => window.removeEventListener('resize', onResize);
     }
 
     engine.rafId = requestAnimationFrame(gameLoop);
 
     return () => {
       cleanupEngine();
-      if (removeResizeListener) removeResizeListener();
+      if (observer) {
+        observer.disconnect();
+      } else {
+        window.removeEventListener('resize', onResize);
+      }
     };
-  }, [cleanupEngine, gameLoop, gameState, spawnNormalItems, syncLayout]);
+  }, [cleanupEngine, gameLoop, phase, spawnNormalItems, syncLayout]);
 
-  useEffect(() => {
-    return () => cleanupEngine();
+  useEffect(() => () => {
+    cleanupEngine();
+    if (requestRef.current) {
+      requestRef.current.abort();
+    }
   }, [cleanupEngine]);
 
+  useEffect(() => {
+    const handlePointerMove = (event) => {
+      if (!dragRef.current.active) return;
+      if (dragRef.current.pointerId !== null && event.pointerId !== dragRef.current.pointerId) return;
+      positionPigByClientX(event.clientX);
+    };
+
+    const handlePointerUp = (event) => {
+      if (!dragRef.current.active) return;
+      if (dragRef.current.pointerId !== null && event.pointerId !== dragRef.current.pointerId) return;
+      dragRef.current.active = false;
+      const pig = pigRef.current;
+      if (pig && dragRef.current.pointerId !== null && pig.hasPointerCapture?.(dragRef.current.pointerId)) {
+        pig.releasePointerCapture(dragRef.current.pointerId);
+      }
+      dragRef.current.pointerId = null;
+      dragRef.current.grabOffsetX = 0;
+      invalidate();
+    };
+
+    window.addEventListener('pointermove', handlePointerMove);
+    window.addEventListener('pointerup', handlePointerUp);
+    window.addEventListener('pointercancel', handlePointerUp);
+
+    return () => {
+      window.removeEventListener('pointermove', handlePointerMove);
+      window.removeEventListener('pointerup', handlePointerUp);
+      window.removeEventListener('pointercancel', handlePointerUp);
+    };
+  }, [invalidate, positionPigByClientX]);
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return undefined;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, []);
+
+  const totalWords = words.length;
+  const answeredCount = stats.score + stats.wrong;
+  const accuracy = useMemo(() => {
+    if (answeredCount <= 0) return 0;
+    return Math.round((stats.score / answeredCount) * 100);
+  }, [answeredCount, stats.score]);
+  const completion = totalWords > 0 ? Math.round((stats.score / totalWords) * 100) : 0;
+  const grade = getGrade(accuracy, completion);
+  const resultMeta = RESULT_META[grade];
+  const kissCount = RESULT_KISS_COUNT[grade];
   const engine = engineRef.current;
-  const boardVars = {
-    '--ui-scale': engine.layout.uiScale,
-    '--question-font': `${engine.layout.questionFont}px`,
+  const currentWord = words[stats.currentIndex];
+
+  useEffect(() => {
+    if (phase === 'result' && !resultSoundPlayedRef.current) {
+      playResultSound(grade);
+      resultSoundPlayedRef.current = true;
+      return;
+    }
+    if (phase !== 'result') {
+      resultSoundPlayedRef.current = false;
+    }
+  }, [grade, phase, playResultSound]);
+
+  const handlePigPointerDown = async (event) => {
+    if (phase !== 'playing') return;
+    await unlockAudio();
+
+    const board = boardRef.current;
+    const pig = pigRef.current;
+    if (!board || !pig) return;
+
+    const boardRect = board.getBoundingClientRect();
+    const localX = event.clientX - boardRect.left;
+
+    dragRef.current.active = true;
+    dragRef.current.pointerId = event.pointerId;
+    dragRef.current.grabOffsetX = clamp(localX - engine.pigX, 0, engine.layout.pigSize);
+
+    if (pig.setPointerCapture) {
+      try {
+        pig.setPointerCapture(event.pointerId);
+      } catch {
+        // ignore
+      }
+    }
+
+    positionPigByClientX(event.clientX);
   };
 
-  if (gameState === 'start') {
+  if (phase === 'start') {
     return (
-      <div className="piggy-screen piggy-start-screen">
-        <button
-          type="button"
-          className="fullscreen-fab"
-          onClick={toggleFullscreen}
-          aria-label={isFullscreen ? '退出全屏' : '进入全屏'}
-        >
-          {isFullscreen ? '退出' : '全屏'}
-        </button>
+      <div className="pg-shell pg-shell-start">
+        <div className="scene-blush blush-a" />
+        <div className="scene-blush blush-b" />
+        <div className="float-kiss fk-1">💋</div>
+        <div className="float-kiss fk-2">💋</div>
+        <div className="float-kiss fk-3">💋</div>
 
-        <div className="sky-sun start-sun" />
-        <div className="sky-cloud cloud-one" />
-        <div className="sky-cloud cloud-two" />
-        <div className="sky-cloud cloud-three" />
-
-        <div className="start-wrap">
-          <div className="start-hero-block">
-            <div className="hero-pig-card">
-              <div className="hero-pig-art pig-face-art">
-                <span className="pig-ear left" />
-                <span className="pig-ear right" />
-                <span className="pig-eye left" />
-                <span className="pig-eye right" />
-                <span className="pig-blush left" />
-                <span className="pig-blush right" />
-                <span className="pig-snout">
-                  <i />
-                  <i />
-                </span>
-              </div>
+        <div className="start-card">
+          <div className="start-hero">
+            <div className="hero-bubble">接对就奖励你亲亲</div>
+            <div className="hero-pig-wrap">
+              <div className="hero-pig-glow" />
+              <PigFace className="hero-pig" />
             </div>
-
-            <div className="hero-copy">
-              <div className="hero-chip">VOCAB GAME</div>
-              <h1 className="hero-title">小猪接单词</h1>
-              <p className="hero-subtitle">
-                普通选项统一外观，不透题。没接住会掉命，10 连击解锁爱心奖励关。
-              </p>
-            </div>
+            <h1>小猪接单词</h1>
+            <p>按住小猪左右拖，把对的意思接住就好。</p>
           </div>
 
           <div className="start-panel">
-            <label className="field-label" htmlFor="piggy-date">
-              选择练习日期
-            </label>
+            <label className="date-label" htmlFor="piggy-date">想练哪一天</label>
             <input
               id="piggy-date"
-              className="full-date-input"
+              className="date-input"
               type="date"
               value={date}
-              onChange={(e) => setDate(e.target.value)}
+              onChange={(event) => setDate(event.target.value)}
             />
 
-            <button
-              type="button"
-              className="start-main-button"
-              onClick={() => fetchWords(date)}
-            >
-              开始今天的任务
-            </button>
-
-            <div className="start-grid">
-              <div className="start-card-mini">
-                <span className="mini-title">奖励关触发</span>
-                <strong>{BONUS_EVERY} 连击</strong>
-              </div>
-              <div className="start-card-mini">
-                <span className="mini-title">没接住</span>
-                <strong>扣生命</strong>
-              </div>
-              <div className="start-card-mini">
-                <span className="mini-title">音效</span>
-                <strong>可替换</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (gameState === 'loading') {
-    return (
-      <div className="piggy-screen piggy-loading-screen">
-        <button
-          type="button"
-          className="fullscreen-fab"
-          onClick={toggleFullscreen}
-          aria-label={isFullscreen ? '退出全屏' : '进入全屏'}
-        >
-          {isFullscreen ? '退出' : '全屏'}
-        </button>
-
-        <div className="sky-sun mini-sun" />
-        <div className="sky-cloud cloud-one" />
-        <div className="sky-cloud cloud-two" />
-        <div className="loading-shell">
-          <div className="loading-ring" />
-          <div className="loading-core" />
-        </div>
-      </div>
-    );
-  }
-
-  if (gameState === 'error') {
-    return (
-      <div className="piggy-screen piggy-error-screen">
-        <button
-          type="button"
-          className="fullscreen-fab"
-          onClick={toggleFullscreen}
-          aria-label={isFullscreen ? '退出全屏' : '进入全屏'}
-        >
-          {isFullscreen ? '退出' : '全屏'}
-        </button>
-
-        <div className="sky-sun mini-sun" />
-        <div className="sky-cloud cloud-one" />
-        <div className="sky-cloud cloud-two" />
-
-        <div className="result-panel result-panel-small">
-          <div className="rating-medal grade-b">
-            <div className="rating-inner">!</div>
-          </div>
-          <h2 className="result-title">加载失败</h2>
-          <p className="result-desc">{errorMessage}</p>
-          <div className="result-actions">
-            <button type="button" className="ghost-button" onClick={() => setGameState('start')}>
-              返回
-            </button>
-            <button type="button" className="solid-button" onClick={() => fetchWords(date)}>
-              重试
+            <button type="button" className="start-button" onClick={startGame}>
+              开始
             </button>
           </div>
         </div>
@@ -975,93 +899,101 @@ export default function PiggyVocabGame() {
     );
   }
 
-  if (gameState === 'result') {
+  if (phase === 'loading') {
     return (
-      <div className={`piggy-screen piggy-result-screen ${gradeClass}`}>
-        <button
-          type="button"
-          className="fullscreen-fab"
-          onClick={toggleFullscreen}
-          aria-label={isFullscreen ? '退出全屏' : '进入全屏'}
-        >
-          {isFullscreen ? '退出' : '全屏'}
-        </button>
-
-        <div className="result-scene">
-          <div className="sky-sun result-sun" />
-          <div className="sky-cloud cloud-one" />
-          <div className="sky-cloud cloud-two" />
-          <div className="sky-cloud cloud-four" />
+      <div className="pg-shell pg-shell-center">
+        <div className="loading-card">
+          <div className="loading-pig-ring">
+            <PigFace className="loading-pig" />
+          </div>
+          <h2>单词抱过来啦</h2>
+          <p>等我一下下。</p>
+          <div className="loading-dots">
+            <span />
+            <span />
+            <span />
+          </div>
         </div>
+      </div>
+    );
+  }
 
-        {grade === 'SSS' && (
-          <div className="perfect-kiss-fireworks">
-            <div className="reward-pig-wrapper">
-              <div className="reward-pig">
-                <div className="reward-pig-face pig-face-art">
-                  <span className="pig-ear left" />
-                  <span className="pig-ear right" />
-                  <span className="pig-eye left" />
-                  <span className="pig-eye right" />
-                  <span className="pig-blush left" />
-                  <span className="pig-blush right" />
-                  <span className="pig-snout">
-                    <i />
-                    <i />
-                  </span>
-                </div>
-              </div>
-
-              {PERFECT_FIREWORKS.map((item) => (
-                <span
-                  key={item.id}
-                  className="kiss-firework"
-                  style={{
-                    '--tx': `${item.x}px`,
-                    '--ty': `${item.y}px`,
-                    '--d': `${item.delay}s`,
-                    '--s': `${item.size}px`,
-                  }}
-                />
-              ))}
-            </div>
+  if (phase === 'error') {
+    return (
+      <div className="pg-shell pg-shell-center">
+        <div className="simple-card">
+          <div className="error-mark">!</div>
+          <h2>没抱到单词</h2>
+          <p>{errorMessage}</p>
+          <div className="result-actions compact-actions">
+            <button type="button" className="ghost-button" onClick={() => goStart(false)}>
+              换一天
+            </button>
+            <button type="button" className="solid-button" onClick={restartSameDate}>
+              再试试
+            </button>
           </div>
-        )}
+        </div>
+      </div>
+    );
+  }
 
-        <div className="result-panel result-panel-fancy">
-          <div className={`rating-medal ${gradeClass}`}>
-            <div className="rating-inner">{grade}</div>
-            <span className="medal-orbit orbit-1" />
-            <span className="medal-orbit orbit-2" />
+  if (phase === 'result') {
+    return (
+      <div className={`pg-shell pg-shell-result grade-${grade.toLowerCase()}`}>
+        <div className="scene-blush blush-a" />
+        <div className="scene-blush blush-c" />
+
+        <div className="result-card">
+          <div className="result-top-visual">
+            <div className={`result-medal grade-${grade.toLowerCase()}`}>{grade}</div>
+            {RESULT_KISSES.slice(0, kissCount).map((item) => (
+              <span
+                key={item.id}
+                className="result-kiss"
+                style={{
+                  left: `${item.x}%`,
+                  top: `${item.y}%`,
+                  '--r': `${item.rotate}deg`,
+                  animationDelay: `${item.delay}s`,
+                }}
+              >
+                💋
+              </span>
+            ))}
           </div>
 
-          <div className="result-heading">
-            <h2 className="result-title">今日评级</h2>
-            <p className="result-desc">本轮任务已经完成，看看今天的表现。</p>
+          <div className="result-copy">
+            <h2>{resultMeta.title}</h2>
+            <p>{resultMeta.subtitle}</p>
+            <div className="result-pill">{resultMeta.pill}</div>
           </div>
 
-          <div className="result-stats">
-            <div className="stat-box stat-main">
-              <span className="stat-label">正确率</span>
-              <strong className="stat-value">{accuracy}%</strong>
+          <div className="result-stat-main">
+            <span>正确率</span>
+            <strong>{accuracy}%</strong>
+          </div>
+
+          <div className="result-grid">
+            <div className="result-stat">
+              <span>完成率</span>
+              <strong>{completion}%</strong>
             </div>
-            <div className="stat-box">
-              <span className="stat-label">答对</span>
-              <strong className="stat-value">
-                {score}/{answeredCount || 0}
-              </strong>
+            <div className="result-stat">
+              <span>答对</span>
+              <strong>{stats.score}/{totalWords || 0}</strong>
             </div>
-            <div className="stat-box">
-              <span className="stat-label">最高连击</span>
-              <strong className="stat-value">{maxCombo}</strong>
+            <div className="result-stat wide">
+              <span>最高连击</span>
+              <strong>{stats.maxCombo}</strong>
             </div>
           </div>
 
           <div className="result-actions">
-            <button type="button" className="ghost-button" onClick={() => setGameState('start')}>
-              换个日期
+            <button type="button" className="ghost-button" onClick={() => goStart(true)}>
+              换一天
             </button>
-            <button type="button" className="solid-button" onClick={() => fetchWords(date)}>
+            <button type="button" className="solid-button" onClick={restartSameDate}>
               再来一轮
             </button>
           </div>
@@ -1071,171 +1003,128 @@ export default function PiggyVocabGame() {
   }
 
   return (
-    <div className="piggy-game-screen">
-      <div
-        className={`piggy-game-board mode-${engine.mode} ${isFullscreen ? 'is-fullscreen' : 'is-windowed'}`}
-        ref={containerRef}
-        style={boardVars}
-        onPointerDown={(e) => {
-          e.currentTarget.setPointerCapture?.(e.pointerId);
-          handlePointer(e.clientX);
-        }}
-        onPointerMove={(e) => {
-          if (e.pointerType !== 'mouse' || e.buttons === 1) {
-            handlePointer(e.clientX);
-          }
-        }}
-        onPointerUp={(e) => {
-          e.currentTarget.releasePointerCapture?.(e.pointerId);
-        }}
-      >
-        <div className="bg-glow board-glow-left" />
-        <div className="bg-glow board-glow-right" />
-        <div className="ambient-particle ap-1" />
-        <div className="ambient-particle ap-2" />
-        <div className="ambient-particle ap-3" />
-        <div className="ambient-particle ap-4" />
-        <div className="soft-glass sg-1" />
-        <div className="soft-glass sg-2" />
+    <div className={`play-shell ${engine.mode === 'bonus' ? 'mode-bonus' : ''}`}>
+      <div className="play-scene" ref={boardRef}>
+        <div className="scene-blush blush-a" />
+        <div className="scene-blush blush-b" />
+        <div className="light-orb lo-1" />
+        <div className="light-orb lo-2" />
+        <div className="light-orb lo-3" />
 
-        <div className="top-progress-bar">
-          <div className="progress-track">
-            <div
-              className="progress-fill"
-              style={{
-                width: `${words.length ? ((currentIndex + 1) / words.length) * 100 : 0}%`,
-              }}
-            />
+        <div className="play-top-ui">
+          <div className="top-progress-card">
+            <div className="top-progress-head">
+              <span>练习进度</span>
+              <strong>{Math.min(stats.currentIndex + 1, totalWords || 0)}/{totalWords || 0}</strong>
+            </div>
+            <div className="top-progress-track">
+              <div
+                className="top-progress-fill"
+                style={{ width: `${totalWords ? ((stats.currentIndex + 1) / totalWords) * 100 : 0}%` }}
+              />
+            </div>
           </div>
 
-          <div className="progress-count">
-            {currentIndex + 1}/{words.length}
-          </div>
-
-          <button
-            type="button"
-            className="fullscreen-mini-btn"
-            onClick={toggleFullscreen}
-            aria-label={isFullscreen ? '退出全屏' : '进入全屏'}
-          >
-            {isFullscreen ? '退' : '全'}
-          </button>
-        </div>
-
-        <div className={`question-box ${engine.mode === 'bonus' ? 'bonus-box' : ''}`}>
-          <div className="question-meta-row">
-            <div className="meta-chip">
-              <span className="meta-k">ACC</span>
-              <strong className="meta-v">{accuracy}%</strong>
+          <div className="top-mini-row">
+            <div className="mini-stat-card">
+              <span>正确率</span>
+              <strong>{accuracy}%</strong>
             </div>
-
-            <div className={`meta-chip ${combo >= BONUS_EVERY ? 'charged' : ''}`}>
-              <span className="meta-k">COMBO</span>
-              <strong className="meta-v">{combo}</strong>
+            <div className="mini-stat-card">
+              <span>连击</span>
+              <strong>{stats.combo}</strong>
             </div>
-
-            <div className="meta-chip life-chip">
-              <span className="meta-k">LIFE</span>
-              <div className="life-inline-row">
+            <div className="mini-life-card">
+              <span>生命</span>
+              <div className="heart-row">
                 {Array.from({ length: MAX_LIVES }).map((_, index) => (
-                  <span
-                    key={index}
-                    className={`life-heart inline ${index < lives ? 'alive' : 'empty'}`}
-                  />
+                  <i key={index} className={`tiny-heart ${index < stats.lives ? 'alive' : ''}`} />
                 ))}
               </div>
             </div>
+            <button type="button" className="quit-button" onClick={() => goStart(true)}>
+              退出
+            </button>
           </div>
 
-          {engine.mode === 'bonus' ? (
-            <div className="bonus-stage-head">
-              <div className="bonus-stage-title">BONUS</div>
-              <div className="bonus-heart-preview">
-                <span className="bonus-heart-shape" />
-              </div>
-            </div>
-          ) : (
-            <>
-              <div className="question-caption">Catch the right meaning</div>
-              <div className="question-text">{words[currentIndex]?.en || '--'}</div>
-            </>
-          )}
-        </div>
-
-        {engine.items.map((item) => (
-          <div
-            key={item.id}
-            className={`falling-item ${item.type === 'bonus' ? 'bonus-token' : 'word-token'}`}
-            style={{
-              width: `${item.size}px`,
-              height: `${item.size}px`,
-              transform: `translate3d(${item.x}px, ${item.y}px, 0)`,
-            }}
-          >
-            {item.type === 'bonus' ? (
-              <div className="heart-token-shape" />
+          <div className={`word-card ${engine.mode === 'bonus' ? 'bonus-word-card' : ''}`}>
+            {engine.mode === 'bonus' ? (
+              <>
+                <div className="bonus-icon">💋</div>
+                <div className="word-caption">亲亲奖励</div>
+                <div className="word-main bonus-main">接住就多一颗命</div>
+              </>
             ) : (
-              <span>{item.text}</span>
+              <>
+                <div className="word-caption">接住对的意思</div>
+                <div className="word-main">{currentWord?.en || '--'}</div>
+              </>
             )}
           </div>
-        ))}
+        </div>
+
+        <div className="fall-layer" aria-hidden="true">
+          {engine.items.map((item) => (
+            <div
+              key={item.id}
+              className={`fall-item ${item.type === 'bonus' ? 'fall-item-bonus' : 'fall-item-word'}`}
+              style={{
+                width: `${item.w}px`,
+                height: `${item.h}px`,
+                transform: `translate3d(${item.x}px, ${item.y}px, 0)`,
+              }}
+            >
+              {item.type === 'bonus' ? <span className="bonus-drop-kiss">💋</span> : <span>{item.text}</span>}
+            </div>
+          ))}
+        </div>
+
+        <div className="pig-dock" aria-hidden="true" />
 
         <div
-          className="player-shell"
+          ref={pigRef}
+          className={`pig-dragger ${dragRef.current.active ? 'dragging' : ''} ${engine.feedback?.type || ''}`}
           style={{
             width: `${engine.layout.pigSize}px`,
             height: `${engine.layout.pigSize}px`,
-            transform: `translate3d(${engine.pigX || 0}px, ${engine.layout.pigY}px, 0)`,
+            transform: `translate3d(${typeof engine.pigX === 'number' ? engine.pigX : 0}px, ${engine.layout.pigY}px, 0)`,
           }}
+          onPointerDown={handlePigPointerDown}
         >
-          <div
-            className={`player-core ${
-              engine.feedback?.type === 'correct'
-                ? 'hit-correct'
-                : engine.feedback?.type === 'wrong'
-                ? 'hit-wrong'
-                : engine.feedback?.type === 'bonus-life'
-                ? 'hit-bonus'
-                : ''
-            }`}
-          >
-            <div className="pig-face-art player-pig">
-              <span className="pig-ear left" />
-              <span className="pig-ear right" />
-              <span className="pig-eye left" />
-              <span className="pig-eye right" />
-              <span className="pig-blush left" />
-              <span className="pig-blush right" />
-              <span className="pig-snout">
-                <i />
-                <i />
-              </span>
-            </div>
+          <div className="pig-shadow" />
+          <div className="pig-shell-body">
+            <PigFace className="play-pig" />
           </div>
 
           {engine.feedback?.type === 'correct' && (
-            <div className="effect-layer kiss-burst" key={engine.feedback.id}>
-              <span className="effect-heart eh-1" />
-              <span className="effect-heart eh-2" />
-              <span className="effect-heart eh-3" />
-              <span className="effect-star es-1" />
-              <span className="effect-star es-2" />
+            <div key={engine.feedback.id} className="effect-burst kiss-burst">
+              <span>💋</span>
+              <span>💋</span>
+              <span>✨</span>
+            </div>
+          )}
+
+          {engine.feedback?.type === 'combo' && (
+            <div key={engine.feedback.id} className="effect-burst combo-burst">
+              <span>💋</span>
+              <span>💋</span>
+              <span>💋</span>
+              <b>奖励</b>
+            </div>
+          )}
+
+          {engine.feedback?.type === 'bonus' && (
+            <div key={engine.feedback.id} className="effect-burst bonus-burst">
+              <span>💋</span>
+              <span>+1</span>
+              <span>💋</span>
             </div>
           )}
 
           {engine.feedback?.type === 'wrong' && (
-            <div className="effect-layer wrong-burst" key={engine.feedback.id}>
-              <span className="wrong-ring wr-1" />
-              <span className="wrong-ring wr-2" />
-            </div>
-          )}
-
-          {engine.feedback?.type === 'bonus-life' && (
-            <div className="effect-layer life-burst" key={engine.feedback.id}>
-              <span className="life-pop lp-1" />
-              <span className="life-pop lp-2" />
-              <span className="life-pop lp-3" />
-              <span className="life-pop lp-4" />
+            <div key={engine.feedback.id} className="effect-burst wrong-burst">
+              <span>唔</span>
+              <span>再来</span>
             </div>
           )}
         </div>
