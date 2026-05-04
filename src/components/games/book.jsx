@@ -1,16 +1,8 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 
-const API_BASE = 'https://api.fulafu.com/api/words';
-const START_LIVES = 3;
-const MAX_LIVES = 5;
-const BASE_HINTS = 1;
-const ROUND_REVEAL_MS = 1100;
-const CORRECT_PAUSE_MS = 820;
-const WRONG_PAUSE_MS = 1100;
-const ROUND_THEMES = ['rose', 'lilac', 'sky', 'peach'];
-
-const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+const MAX_LIVES = 3;
+const API_ENDPOINT = 'https://api.fulafu.com/api/words';
 
 const shuffle = (list) => {
   const arr = [...list];
@@ -21,874 +13,567 @@ const shuffle = (list) => {
   return arr;
 };
 
-const createId = () =>
-  `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 9)}`;
-
-const getTodayInputValue = () => {
-  const now = new Date();
-  const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
-  return local.toISOString().slice(0, 10);
-};
-
 const normalizeWords = (payload) => {
-  if (!payload || typeof payload !== 'object') return [];
-
+  if (!payload) return [];
   if (Array.isArray(payload)) {
     return payload
       .map((item) => {
-        if (!item) return null;
-        if (typeof item === 'object' && item.en && item.zh) {
-          return {
-            en: String(item.en).trim(),
-            zh: String(item.zh).trim(),
-          };
-        }
-        return null;
+        if (!item || typeof item !== 'object') return null;
+        if (!item.en || !item.zh) return null;
+        return { en: String(item.en).trim(), zh: String(item.zh).trim() };
       })
-      .filter(Boolean)
+      .filter(Boolean);
+  }
+  if (typeof payload === 'object') {
+    return Object.entries(payload)
+      .filter(([en, zh]) => typeof en === 'string' && typeof zh === 'string')
+      .map(([en, zh]) => ({ en: en.trim(), zh: zh.trim() }))
       .filter((item) => item.en && item.zh);
   }
-
-  return Object.entries(payload)
-    .filter(([en, zh]) => typeof en === 'string' && typeof zh === 'string')
-    .map(([en, zh]) => ({ en: en.trim(), zh: zh.trim() }))
-    .filter((item) => item.en && item.zh);
+  return [];
 };
 
-const normalizeMeaning = (value) =>
-  String(value || '')
-    .replace(/\s+/g, '')
-    .replace(/[“”"'‘’]/g, '')
-    .trim();
-
-const splitMeaning = (zh) => {
-  const clean = String(zh || '').trim().replace(/\s+/g, '');
-  if (!clean) return [''];
-  if (clean.length <= 2) return clean.split('');
-
-  const pieceCount = clean.length <= 4 ? 2 : clean.length <= 8 ? 3 : 4;
-  const base = Math.floor(clean.length / pieceCount);
-  const extra = clean.length % pieceCount;
-
-  const pieces = [];
-  let cursor = 0;
-  for (let i = 0; i < pieceCount; i += 1) {
-    const size = base + (i < extra ? 1 : 0);
-    pieces.push(clean.slice(cursor, cursor + size));
-    cursor += size;
-  }
-
-  return pieces.filter(Boolean);
+const playSound = (type) => {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const now = ctx.currentTime;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    
+    if (type === 'shoot') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(400, now);
+      osc.frequency.exponentialRampToValueAtTime(800, now + 0.1);
+      gain.gain.setValueAtTime(0.1, now);
+      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(now); osc.stop(now + 0.1);
+    } else if (type === 'hit') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(800, now);
+      osc.frequency.exponentialRampToValueAtTime(1200, now + 0.1);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(now); osc.stop(now + 0.1);
+    } else if (type === 'error') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(200, now);
+      osc.frequency.exponentialRampToValueAtTime(100, now + 0.2);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.linearRampToValueAtTime(0.01, now + 0.2);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(now); osc.stop(now + 0.2);
+    }
+  } catch (e) {}
 };
 
-const pickRoundEvent = () => {
-  const pool = [
-    {
-      type: 'peek',
-      badge: '偷看一下',
-      tip: '这一回我先悄悄帮你亮一个正确碎片。',
-    },
-    {
-      type: 'double',
-      badge: '亲亲加倍',
-      tip: '这回答对，心动值会多一点点。',
-    },
-    {
-      type: 'calm',
-      badge: '慢一点嘛',
-      tip: '这回时间会更宽裕，别着急。',
-    },
-    {
-      type: 'bloom',
-      badge: '送你小贴士',
-      tip: '这回会顺手多送你一个偷看机会。',
-    },
-    {
-      type: 'none',
-      badge: '认真一下',
-      tip: '这一封就靠你啦，我在旁边看着你。',
-    },
-  ];
+export default function SlingshotVocabGame() {
+  const [date, setDate] = useState(() => new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10));
+  const [phase, setPhase] = useState('start');
+  const [words, setWords] = useState([]);
+  const [errorMsg, setErrorMsg] = useState('');
+  
+  const [stats, setStats] = useState({ score: 0, wrong: 0, lives: MAX_LIVES, combo: 0, maxCombo: 0, currentIndex: 0 });
+  const [mistakeCtx, setMistakeCtx] = useState(null);
 
-  const weights = [0.22, 0.16, 0.18, 0.16, 0.28];
-  const random = Math.random();
-  let cursor = 0;
-
-  for (let i = 0; i < pool.length; i += 1) {
-    cursor += weights[i];
-    if (random <= cursor) return pool[i];
-  }
-
-  return pool[pool.length - 1];
-};
-
-const sampleDecoyFragments = (words, currentIndex, count) => {
-  const pool = [];
-  words.forEach((word, index) => {
-    if (index === currentIndex) return;
-    splitMeaning(word.zh).forEach((fragment) => {
-      if (fragment) pool.push(fragment);
-    });
+  // 物理引擎状态
+  const canvasRef = useRef(null);
+  const containerRef = useRef(null);
+  const engineRef = useRef({
+    width: 0, height: 0,
+    targets: [],
+    projectile: { active: false, x: 0, y: 0, vx: 0, vy: 0, radius: 40 },
+    anchor: { x: 0, y: 0 },
+    drag: { active: false, x: 0, y: 0 },
+    particles: [],
+    rafId: 0
   });
 
-  return shuffle(
-    [...new Set(pool.filter(Boolean))]
-  ).slice(0, count);
-};
+  const generateTargets = useCallback((index, wordList, width, height) => {
+    if (!wordList || !wordList[index]) return [];
+    const currentWord = wordList[index];
+    const pool = shuffle(wordList.filter((_, i) => i !== index)).slice(0, 3);
+    const options = shuffle([
+      { text: currentWord.zh, isCorrect: true, id: 'correct' },
+      ...pool.map((w, i) => ({ text: w.zh, isCorrect: false, id: `wrong-${i}` }))
+    ]);
 
-const buildRound = (words, currentIndex) => {
-  const word = words[currentIndex];
-  const correctParts = splitMeaning(word.zh).map((text, index) => ({
-    id: createId(),
-    text,
-    isCorrect: true,
-    correctIndex: index,
-  }));
-
-  const event = pickRoundEvent();
-  const decoyCount = clamp(correctParts.length + (Math.random() > 0.55 ? 2 : 3), 2, 5);
-  const decoys = sampleDecoyFragments(words, currentIndex, decoyCount).map((text) => ({
-    id: createId(),
-    text,
-    isCorrect: false,
-    correctIndex: -1,
-  }));
-
-  const pool = shuffle([...correctParts, ...decoys]).map((item, index) => ({
-    ...item,
-    slotOrder: null,
-    seed: (index * 17 + 13) % 23,
-  }));
-
-  const baseTime = clamp(16 + correctParts.length * 2, 16, 24);
-  const timeLimit = event.type === 'calm' ? baseTime + 4 : baseTime;
-  const revealedIds = event.type === 'peek' ? [correctParts[0]?.id].filter(Boolean) : [];
-
-  return {
-    id: createId(),
-    word,
-    pool,
-    correctLength: correctParts.length,
-    assembledIds: [],
-    timeLimit,
-    event,
-    theme: ROUND_THEMES[currentIndex % ROUND_THEMES.length],
-    revealedIds,
-    multiplier: event.type === 'double' ? 2 : 1,
-  };
-};
-
-const getGrade = ({ accuracy, completion }) => {
-  if (accuracy === 100 && completion === 100) return 'SSS';
-  if (accuracy >= 88 && completion >= 88) return 'S';
-  if (accuracy >= 68 && completion >= 70) return 'A';
-  return 'B';
-};
-
-const getEndingCopy = (grade) => {
-  if (grade === 'SSS') {
-    return {
-      title: '你怎么这么会呀',
-      desc: '这一轮甜到不行，亲亲真的要一串一串送给你。',
-      note: '今晚的亲亲都归你，抱一下还不够。',
-      kisses: 18,
-    };
-  }
-
-  if (grade === 'S') {
-    return {
-      title: '今天也好乖',
-      desc: '这一轮真的很棒，我已经把好多亲亲偷偷装进你口袋里了。',
-      note: '再来一轮的话，我会继续偏心你。',
-      kisses: 12,
-    };
-  }
-
-  if (grade === 'A') {
-    return {
-      title: '已经很甜啦',
-      desc: '今天记得不错，再多练一点点，我就把亲亲翻倍给你。',
-      note: '亲亲先预支一点点，剩下的等你来拿。',
-      kisses: 7,
-    };
-  }
-
-  return {
-    title: '先记到这里吧',
-    desc: '今天没关系呀，再陪我玩一会儿，亲亲我会慢慢补给你。',
-    note: '加油一点点，下一轮我想看你更厉害。',
-    kisses: 3,
-  };
-};
-
-const MiniPig = () => (
-  <div className="sweet-pig" aria-hidden="true">
-    <span className="pig-ear left" />
-    <span className="pig-ear right" />
-    <span className="pig-eye left" />
-    <span className="pig-eye right" />
-    <span className="pig-blush left" />
-    <span className="pig-blush right" />
-    <span className="pig-snout">
-      <i />
-      <i />
-    </span>
-  </div>
-);
-
-export default function SweetLetterVocabGame() {
-  const [date, setDate] = useState(getTodayInputValue());
-  const [screen, setScreen] = useState('start');
-  const [words, setWords] = useState([]);
-  const [round, setRound] = useState(null);
-  const [score, setScore] = useState(0);
-  const [answered, setAnswered] = useState(0);
-  const [wrongCount, setWrongCount] = useState(0);
-  const [lives, setLives] = useState(START_LIVES);
-  const [combo, setCombo] = useState(0);
-  const [maxCombo, setMaxCombo] = useState(0);
-  const [hintCount, setHintCount] = useState(BASE_HINTS);
-  const [feedback, setFeedback] = useState(null);
-  const [errorMessage, setErrorMessage] = useState('');
-  const [isFullscreen, setIsFullscreen] = useState(false);
-  const [roundLocked, setRoundLocked] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(0);
-
-  const abortRef = useRef(null);
-  const timeoutRef = useRef(0);
-
-  const totalWords = words.length;
-  const completion = totalWords ? Math.round((answered / totalWords) * 100) : 0;
-  const accuracy = answered ? Math.round(((answered - wrongCount) / answered) * 100) : 0;
-  const grade = useMemo(() => getGrade({ accuracy, completion }), [accuracy, completion]);
-  const endingCopy = useMemo(() => getEndingCopy(grade), [grade]);
-
-  useEffect(() => {
-    if (typeof document === 'undefined') return undefined;
-
-    const updateFullscreen = () => {
-      setIsFullscreen(Boolean(document.fullscreenElement));
-    };
-
-    updateFullscreen();
-    document.addEventListener('fullscreenchange', updateFullscreen);
-    return () => document.removeEventListener('fullscreenchange', updateFullscreen);
-  }, []);
-
-  const enterFullscreen = useCallback(async () => {
-    if (typeof document === 'undefined') return;
-    if (document.fullscreenElement) return;
-
-    try {
-      const target = document.documentElement;
-      if (target.requestFullscreen) {
-        await target.requestFullscreen();
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
-  const cleanupTimeout = useCallback(() => {
-    if (timeoutRef.current) {
-      window.clearTimeout(timeoutRef.current);
-      timeoutRef.current = 0;
-    }
-  }, []);
-
-  useEffect(() => () => {
-    cleanupTimeout();
-    abortRef.current?.abort?.();
-  }, [cleanupTimeout]);
-
-  const resetGame = useCallback(() => {
-    cleanupTimeout();
-    setWords([]);
-    setRound(null);
-    setScore(0);
-    setAnswered(0);
-    setWrongCount(0);
-    setLives(START_LIVES);
-    setCombo(0);
-    setMaxCombo(0);
-    setHintCount(BASE_HINTS);
-    setFeedback(null);
-    setRoundLocked(false);
-    setTimeLeft(0);
-    setErrorMessage('');
-  }, [cleanupTimeout]);
-
-  const prepareRound = useCallback(
-    (list, index, options = {}) => {
-      const nextRound = buildRound(list, index);
-      setRound(nextRound);
-      setRoundLocked(false);
-      setFeedback(options.feedback || null);
-      setTimeLeft(nextRound.timeLimit);
-      if (nextRound.event.type === 'bloom') {
-        setHintCount((prev) => Math.min(prev + 1, 3));
-      }
-    },
-    []
-  );
-
-  const finishGame = useCallback(() => {
-    cleanupTimeout();
-    setRoundLocked(true);
-    setScreen('result');
-    setFeedback(null);
-  }, [cleanupTimeout]);
-
-  const moveToNextRound = useCallback(
-    (nextIndex, nextWords) => {
-      if (nextIndex >= nextWords.length || lives <= 0) {
-        finishGame();
-        return;
-      }
-      prepareRound(nextWords, nextIndex);
-    },
-    [finishGame, lives, prepareRound]
-  );
-
-  const fetchWords = useCallback(async () => {
-    abortRef.current?.abort?.();
-    const controller = new AbortController();
-    abortRef.current = controller;
-
-    resetGame();
-    setScreen('loading');
-
-    try {
-      await enterFullscreen();
-      const response = await fetch(`${API_BASE}?date=${date}`, {
-        signal: controller.signal,
-      });
-
-      if (!response.ok) {
-        throw new Error('今天的单词还没拿到，再点一下试试。');
-      }
-
-      const data = await response.json();
-      if (data?.error) {
-        throw new Error(String(data.error));
-      }
-
-      const list = shuffle(normalizeWords(data));
-      if (!list.length) {
-        throw new Error('这一天还没有词呢，换个日期抱抱我。');
-      }
-
-      setWords(list);
-      setScreen('playing');
-      prepareRound(list, 0, {
-        feedback: {
-          type: 'event',
-          title: '第一封小情书来啦',
-          desc: '把意思拼好寄给我吧。',
-        },
-      });
-    } catch (error) {
-      if (error?.name === 'AbortError') return;
-      setErrorMessage(error?.message || '加载失败啦。');
-      setScreen('error');
-    }
-  }, [date, enterFullscreen, prepareRound, resetGame]);
-
-  useEffect(() => {
-    if (screen !== 'playing' || !round || roundLocked) return undefined;
-
-    const timer = window.setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          window.clearInterval(timer);
-          setRoundLocked(true);
-          setWrongCount((count) => count + 1);
-          setAnswered((count) => count + 1);
-          setCombo(0);
-          setLives((prevLives) => {
-            const nextLives = prevLives - 1;
-
-            setFeedback({
-              type: 'wrong',
-              title: '这一封慢了一点点',
-              desc: `正确答案是「${round.word.zh}」`,
-            });
-
-            cleanupTimeout();
-            timeoutRef.current = window.setTimeout(() => {
-              if (nextLives <= 0 || answered + 1 >= words.length) {
-                finishGame();
-                return;
-              }
-              prepareRound(words, answered + 1);
-            }, WRONG_PAUSE_MS);
-
-            return nextLives;
-          });
-
-          return 0;
-        }
-
-        return prev - 1;
-      });
-    }, 1000);
-
-    return () => window.clearInterval(timer);
-  }, [
-    answered,
-    cleanupTimeout,
-    finishGame,
-    prepareRound,
-    round,
-    roundLocked,
-    screen,
-    words,
-  ]);
-
-  const assembledText = useMemo(() => {
-    if (!round) return '';
-    const map = new Map(round.pool.map((item) => [item.id, item]));
-    return round.assembledIds.map((id) => map.get(id)?.text || '').join('');
-  }, [round]);
-
-  const submitCurrent = useCallback(() => {
-    if (!round || roundLocked) return;
-    if (round.assembledIds.length !== round.correctLength) return;
-
-    setRoundLocked(true);
-    const target = normalizeMeaning(round.word.zh);
-    const current = normalizeMeaning(assembledText);
-
-    if (current === target) {
-      const nextAnswered = answered + 1;
-      const nextCombo = combo + 1;
-      const gained = 1 * round.multiplier + Math.floor(nextCombo / 3);
-      const nextScore = score + gained;
-      const bonusHint = nextCombo % 4 === 0 ? 1 : 0;
-      const lifeBonus = nextCombo > 0 && nextCombo % 6 === 0 ? 1 : 0;
-
-      setAnswered(nextAnswered);
-      setCombo(nextCombo);
-      setMaxCombo((prev) => Math.max(prev, nextCombo));
-      setScore(nextScore);
-      if (bonusHint) {
-        setHintCount((prev) => Math.min(prev + 1, 3));
-      }
-      if (lifeBonus) {
-        setLives((prev) => Math.min(prev + 1, MAX_LIVES));
-      }
-
-      setFeedback({
-        type: 'correct',
-        title: nextCombo >= 2 ? `连上啦 x${nextCombo}` : '拼对啦',
-        desc:
-          round.multiplier > 1
-            ? '这一封有亲亲加倍，我多夸你一下。'
-            : bonusHint
-            ? '你真乖，我顺手再送你一个偷看机会。'
-            : lifeBonus
-            ? '太稳啦，我偷偷多塞给你一颗小心心。'
-            : '我就知道你可以。',
-      });
-
-      cleanupTimeout();
-      timeoutRef.current = window.setTimeout(() => {
-        if (nextAnswered >= words.length) {
-          finishGame();
-          return;
-        }
-        prepareRound(words, nextAnswered);
-      }, CORRECT_PAUSE_MS);
-
-      return;
-    }
-
-    const nextAnswered = answered + 1;
-    setAnswered(nextAnswered);
-    setWrongCount((prev) => prev + 1);
-    setCombo(0);
-    setLives((prev) => {
-      const nextLives = prev - 1;
-      setFeedback({
-        type: 'wrong',
-        title: '这一封寄歪啦',
-        desc: `正确答案是「${round.word.zh}」`,
-      });
-
-      cleanupTimeout();
-      timeoutRef.current = window.setTimeout(() => {
-        if (nextLives <= 0 || nextAnswered >= words.length) {
-          finishGame();
-          return;
-        }
-        prepareRound(words, nextAnswered);
-      }, WRONG_PAUSE_MS);
-
-      return nextLives;
-    });
-  }, [
-    answered,
-    assembledText,
-    cleanupTimeout,
-    combo,
-    finishGame,
-    round,
-    roundLocked,
-    score,
-    words,
-    prepareRound,
-  ]);
-
-  const pickFragment = useCallback(
-    (fragmentId) => {
-      if (!round || roundLocked) return;
-      const fragment = round.pool.find((item) => item.id === fragmentId);
-      if (!fragment) return;
-      if (round.assembledIds.includes(fragmentId)) return;
-      if (round.assembledIds.length >= round.correctLength) return;
-
-      setRound((prev) => {
-        if (!prev) return prev;
-        return {
-          ...prev,
-          assembledIds: [...prev.assembledIds, fragmentId],
-        };
-      });
-    },
-    [round, roundLocked]
-  );
-
-  const removeFromSlot = useCallback(
-    (index) => {
-      if (!round || roundLocked) return;
-      setRound((prev) => {
-        if (!prev) return prev;
-        return {
-          ...prev,
-          assembledIds: prev.assembledIds.filter((_, slotIndex) => slotIndex !== index),
-        };
-      });
-    },
-    [round, roundLocked]
-  );
-
-  const clearAssembled = useCallback(() => {
-    if (!round || roundLocked) return;
-    setRound((prev) => (prev ? { ...prev, assembledIds: [] } : prev));
-  }, [round, roundLocked]);
-
-  const useHint = useCallback(() => {
-    if (!round || roundLocked || hintCount <= 0) return;
-
-    const alreadyRevealed = new Set(round.revealedIds);
-    const remainingCorrect = round.pool.find(
-      (item) => item.isCorrect && !alreadyRevealed.has(item.id)
-    );
-
-    if (!remainingCorrect) return;
-
-    setHintCount((prev) => Math.max(prev - 1, 0));
-    setRound((prev) => {
-      if (!prev) return prev;
+    // 初始化漂浮气泡的位置和速度
+    return options.map((opt, i) => {
+      const radius = 50;
+      const x = (width / options.length) * i + radius + Math.random() * 20;
+      const y = height * 0.15 + Math.random() * (height * 0.3);
       return {
-        ...prev,
-        revealedIds: [...prev.revealedIds, remainingCorrect.id],
+        ...opt, x, y, radius,
+        vx: (Math.random() - 0.5) * 1.5,
+        vy: (Math.random() - 0.5) * 1.5,
+        scale: 0, // 用于出场动画
       };
     });
-  }, [hintCount, round, roundLocked]);
+  }, []);
 
-  const exitToStart = useCallback(() => {
-    resetGame();
-    setScreen('start');
-  }, [resetGame]);
+  const initRound = useCallback((index, wordList) => {
+    const engine = engineRef.current;
+    engine.projectile.active = false;
+    engine.projectile.x = engine.anchor.x;
+    engine.projectile.y = engine.anchor.y;
+    engine.targets = generateTargets(index, wordList, engine.width, engine.height);
+  }, [generateTargets]);
 
-  const displayedProgress = totalWords ? answered + (screen === 'playing' ? 1 : 0) : 0;
+  const initGame = useCallback((wordList) => {
+    setStats({ score: 0, wrong: 0, lives: MAX_LIVES, combo: 0, maxCombo: 0, currentIndex: 0 });
+    setMistakeCtx(null);
+    initRound(0, wordList);
+    setPhase('playing');
+  }, [initRound]);
 
-  if (screen === 'start') {
+  const fetchWords = async () => {
+    setPhase('loading');
+    try {
+      const res = await fetch(`${API_ENDPOINT}?date=${date}`);
+      if (!res.ok) throw new Error('星空信号断了，再连一次嘛~');
+      const data = await res.json();
+      const list = shuffle(normalizeWords(data));
+      if (!list.length) throw new Error('宝贝，这天宇宙里没有单词哦。');
+      setWords(list);
+      
+      // 预先设置尺寸保证第一题生成位置正确
+      if (containerRef.current) {
+        engineRef.current.width = containerRef.current.clientWidth;
+        engineRef.current.height = containerRef.current.clientHeight;
+        engineRef.current.anchor = { x: engineRef.current.width / 2, y: engineRef.current.height * 0.85 };
+      }
+      initGame(list);
+    } catch (err) {
+      setErrorMsg(err.message || '网络傲娇了~');
+      setPhase('error');
+    }
+  };
+
+  // 物理引擎核心循环
+  useEffect(() => {
+    if (phase !== 'playing') return;
+    const canvas = canvasRef.current;
+    const container = containerRef.current;
+    if (!canvas || !container) return;
+    const ctx = canvas.getContext('2d');
+    const engine = engineRef.current;
+
+    // 适配高分屏 DPI，让文字和连线极其清晰锐利
+    const resize = () => {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = container.getBoundingClientRect();
+      engine.width = rect.width;
+      engine.height = rect.height;
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      ctx.scale(dpr, dpr);
+      engine.anchor = { x: engine.width / 2, y: engine.height * 0.82 };
+      
+      if (!engine.projectile.active && !engine.drag.active) {
+        engine.projectile.x = engine.anchor.x;
+        engine.projectile.y = engine.anchor.y;
+      }
+    };
+    resize();
+    window.addEventListener('resize', resize);
+
+    const checkCollision = () => {
+      const proj = engine.projectile;
+      for (let i = 0; i < engine.targets.length; i++) {
+        const t = engine.targets[i];
+        const dist = Math.hypot(proj.x - t.x, proj.y - t.y);
+        if (dist < proj.radius + t.radius - 10) { // 稍微缩小碰撞箱，手感更好
+          return t;
+        }
+      }
+      return null;
+    };
+
+    const explodeTarget = (target) => {
+      playSound('hit');
+      for(let i=0; i<20; i++) {
+        engine.particles.push({
+          x: target.x, y: target.y,
+          vx: (Math.random() - 0.5) * 15,
+          vy: (Math.random() - 0.5) * 15,
+          life: 1, color: target.isCorrect ? '#4ade80' : '#f87171'
+        });
+      }
+      engine.targets = engine.targets.filter(t => t.id !== target.id);
+    };
+
+    const loop = () => {
+      ctx.clearRect(0, 0, engine.width, engine.height);
+
+      // 1. 更新与绘制漂浮目标 (中文泡泡)
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      engine.targets.forEach(t => {
+        // 出场放大动画
+        if (t.scale < 1) t.scale += 0.05;
+        
+        // 漂浮物理
+        t.x += t.vx; t.y += t.vy;
+        if (t.x < t.radius || t.x > engine.width - t.radius) t.vx *= -1;
+        if (t.y < t.radius || t.y > engine.height * 0.55) t.vy *= -1;
+
+        ctx.save();
+        ctx.translate(t.x, t.y);
+        ctx.scale(t.scale, t.scale);
+        
+        // 泡泡本体
+        ctx.beginPath();
+        ctx.arc(0, 0, t.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.shadowColor = 'rgba(0, 0, 0, 0.1)';
+        ctx.shadowBlur = 15;
+        ctx.fill();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#e2e8f0';
+        ctx.stroke();
+
+        // 中文文字
+        ctx.fillStyle = '#1e293b';
+        ctx.font = 'bold 18px -apple-system, sans-serif';
+        // 简单处理超长文本换行
+        if (t.text.length > 5) {
+          ctx.fillText(t.text.slice(0, 5), 0, -10);
+          ctx.fillText(t.text.slice(5, 10), 0, 14);
+        } else {
+          ctx.fillText(t.text, 0, 0);
+        }
+        ctx.restore();
+      });
+
+      // 2. 绘制拖拽辅助线 (拉弓时的瞄准线)
+      if (engine.drag.active && !mistakeCtx) {
+        const dx = engine.anchor.x - engine.drag.x;
+        const dy = engine.anchor.y - engine.drag.y;
+        
+        ctx.beginPath();
+        ctx.moveTo(engine.anchor.x, engine.anchor.y);
+        ctx.lineTo(engine.drag.x, engine.drag.y);
+        ctx.strokeStyle = 'rgba(96, 165, 250, 0.5)';
+        ctx.lineWidth = 4;
+        ctx.stroke();
+
+        // 轨迹预测虚线
+        ctx.beginPath();
+        ctx.moveTo(engine.anchor.x, engine.anchor.y);
+        ctx.lineTo(engine.anchor.x + dx * 2, engine.anchor.y + dy * 2);
+        ctx.setLineDash([8, 8]);
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.setLineDash([]);
+      }
+
+      // 3. 更新弹射物 (飞行的单词)
+      const proj = engine.projectile;
+      if (proj.active && !mistakeCtx) {
+        proj.x += proj.vx;
+        proj.y += proj.vy;
+        
+        // 添加拖尾粒子
+        engine.particles.push({
+          x: proj.x, y: proj.y,
+          vx: 0, vy: 0,
+          life: 0.5, color: '#60a5fa'
+        });
+
+        // 碰撞检测
+        const hitTarget = checkCollision();
+        if (hitTarget) {
+          proj.active = false;
+          explodeTarget(hitTarget);
+          
+          if (hitTarget.isCorrect) {
+            // 答对处理
+            setStats(p => {
+              const nextIndex = p.currentIndex + 1;
+              const nextCombo = p.combo + 1;
+              if (nextIndex >= words.length) {
+                setTimeout(() => setPhase('result'), 600);
+              } else {
+                setTimeout(() => initRound(nextIndex, words), 400);
+              }
+              return { ...p, score: p.score + 1, combo: nextCombo, maxCombo: Math.max(p.maxCombo, nextCombo), currentIndex: nextIndex };
+            });
+          } else {
+            // 答错处理
+            playSound('error');
+            setMistakeCtx({
+              wordEn: words[stats.currentIndex].en,
+              correctZh: words[stats.currentIndex].zh,
+              caughtZh: hitTarget.text
+            });
+          }
+        } else if (proj.x < 0 || proj.x > engine.width || proj.y < -50 || proj.y > engine.height) {
+          // 飞出边界 (打偏了)
+          proj.active = false;
+          playSound('error');
+          setMistakeCtx({
+            wordEn: words[stats.currentIndex].en,
+            correctZh: words[stats.currentIndex].zh,
+            caughtZh: '打偏在无垠的太空了'
+          });
+        }
+      }
+
+      // 4. 绘制弹射物 (英文单词球)
+      if (!mistakeCtx) {
+        ctx.save();
+        ctx.translate(proj.x, proj.y);
+        ctx.beginPath();
+        ctx.arc(0, 0, proj.radius, 0, Math.PI * 2);
+        ctx.fillStyle = '#3b82f6';
+        ctx.shadowColor = '#60a5fa';
+        ctx.shadowBlur = 20;
+        ctx.fill();
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = '#bfdbfe';
+        ctx.stroke();
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 20px -apple-system, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        const wordText = words[stats.currentIndex]?.en || '';
+        if (wordText.length > 7) {
+            ctx.font = 'bold 14px -apple-system, sans-serif';
+        }
+        ctx.fillText(wordText, 0, 0);
+        ctx.restore();
+      }
+
+      // 5. 绘制粒子
+      for (let i = engine.particles.length - 1; i >= 0; i--) {
+        const p = engine.particles[i];
+        p.x += p.vx; p.y += p.vy; p.life -= 0.03;
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = Math.max(0, p.life);
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 4, 0, Math.PI*2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        if (p.life <= 0) engine.particles.splice(i, 1);
+      }
+
+      engine.rafId = requestAnimationFrame(loop);
+    };
+
+    engine.rafId = requestAnimationFrame(loop);
+    return () => {
+      cancelAnimationFrame(engine.rafId);
+      window.removeEventListener('resize', resize);
+    };
+  }, [phase, words, stats.currentIndex, mistakeCtx, initRound]);
+
+  // 拖拽手势处理
+  const handlePointerDown = (e) => {
+    if (phase !== 'playing' || mistakeCtx || engineRef.current.projectile.active) return;
+    const engine = engineRef.current;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    // 检查是否点中了发射台区域
+    const dist = Math.hypot(x - engine.anchor.x, y - engine.anchor.y);
+    if (dist < 60) {
+      engine.drag.active = true;
+      engine.drag.x = x;
+      engine.drag.y = y;
+    }
+  };
+
+  const handlePointerMove = (e) => {
+    const engine = engineRef.current;
+    if (!engine.drag.active) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    // 限制最大拉力半径
+    const maxPull = 120;
+    const dx = x - engine.anchor.x;
+    const dy = y - engine.anchor.y;
+    const dist = Math.hypot(dx, dy);
+    if (dist > maxPull) {
+      x = engine.anchor.x + (dx / dist) * maxPull;
+      y = engine.anchor.y + (dy / dist) * maxPull;
+    }
+
+    engine.drag.x = x;
+    engine.drag.y = y;
+    engine.projectile.x = x;
+    engine.projectile.y = y;
+  };
+
+  const handlePointerUp = () => {
+    const engine = engineRef.current;
+    if (!engine.drag.active) return;
+    engine.drag.active = false;
+    
+    const dx = engine.anchor.x - engine.drag.x;
+    const dy = engine.anchor.y - engine.drag.y;
+    const pullDist = Math.hypot(dx, dy);
+
+    // 只有拉动距离超过阈值才算发射
+    if (pullDist > 20) {
+      playSound('shoot');
+      engine.projectile.active = true;
+      // 速度放大系数，手感调节关键
+      engine.projectile.vx = dx * 0.25; 
+      engine.projectile.vy = dy * 0.25;
+    } else {
+      // 归位
+      engine.projectile.x = engine.anchor.x;
+      engine.projectile.y = engine.anchor.y;
+    }
+  };
+
+  const handleAcknowledgeMistake = () => {
+    setMistakeCtx(null);
+    const nextLives = stats.lives - 1;
+    setStats(p => ({ ...p, lives: nextLives, wrong: p.wrong + 1, combo: 0 }));
+    
+    if (nextLives <= 0) {
+      setPhase('result');
+    } else {
+      initRound(stats.currentIndex, words);
+    }
+  };
+
+  // --- 界面渲染 ---
+  if (phase === 'start') {
     return (
-      <div className="sweet-game-shell start-scene">
-        <div className="scene-glow glow-a" />
-        <div className="scene-glow glow-b" />
-        <div className="floating-kiss fk-1">💋</div>
-        <div className="floating-kiss fk-2">💋</div>
-        <div className="floating-kiss fk-3">💋</div>
-
-        <div className="hero-visual">
-          <div className="hero-orbit orbit-a" />
-          <div className="hero-orbit orbit-b" />
-          <div className="hero-heart heart-a">♥</div>
-          <div className="hero-heart heart-b">♥</div>
-          <MiniPig />
+      <div className="sling-wrap theme-starry">
+        <div className="glass-panel">
+          <div className="icon-pulse">🎯</div>
+          <h1 className="neon-title">星轨弹弓</h1>
+          <p className="desc-text">别再无聊地点点点了！<br/>按住底部的英文单词，**向后拉动**瞄准正确的中文气泡，松手将它击碎！<br/>小心别射偏哦，我会心疼你的连击的~</p>
+          <div className="input-group">
+            <input type="date" className="sling-input" value={date} onChange={(e) => setDate(e.target.value)} />
+          </div>
+          <button className="sling-btn primary" onClick={fetchWords}>拉弓准备</button>
         </div>
+      </div>
+    );
+  }
 
-        <div className="hero-copy">
-          <div className="hero-chip">今晚想和你玩甜甜的一局</div>
-          <h1>心动情书局</h1>
-          <p>
-            不是点对错，是把意思一点点拼进小情书里。
-            每一轮都会变，像我每次看见你时的心动一样。
+  if (phase === 'loading') {
+    return (
+      <div className="sling-wrap theme-starry">
+        <div className="glass-panel center">
+          <div className="loader-ring"></div>
+          <p className="desc-text mt-16">正在为您捕捉太空里的单词...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (phase === 'error') {
+    return (
+      <div className="sling-wrap theme-starry">
+        <div className="glass-panel center">
+          <div className="icon-pulse text-red">💢</div>
+          <h2 className="text-red">连接断开了</h2>
+          <p className="desc-text">{errorMsg}</p>
+          <button className="sling-btn outline mt-16" onClick={() => setPhase('start')}>回基地抱抱</button>
+        </div>
+      </div>
+    );
+  }
+
+  if (phase === 'result') {
+    const accuracy = stats.score + stats.wrong === 0 ? 0 : Math.round((stats.score / (stats.score + stats.wrong)) * 100);
+    const completion = words.length === 0 ? 0 : Math.round((stats.score / words.length) * 100);
+    return (
+      <div className="sling-wrap theme-starry">
+        <div className="glass-panel center">
+          <div className="score-badge">{accuracy >= 80 ? 'S' : accuracy >= 60 ? 'A' : 'B'}</div>
+          <h2 className="neon-title mt-16">狙击报告</h2>
+          <p className="desc-text">
+            {accuracy === 100 ? "百发百中！你简直是我的神射手！" : 
+             accuracy >= 80 ? "很棒啦，只有几个气泡逃脱了你的手心~" : 
+             "呜呜准星有点飘，下次我手把手教你瞄准！"}
           </p>
-        </div>
-
-        <div className="bottom-sheet start-sheet">
-          <label className="sheet-label" htmlFor="sweet-date">
-            想练哪一天
-          </label>
-          <input
-            id="sweet-date"
-            className="sweet-date-input"
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-
-          <button type="button" className="primary-cta" onClick={fetchWords}>
-            开始甜甜的一局
-          </button>
-
-          <p className="sheet-tip">
-            开始后会尽量自动铺满屏幕，词片点一下就能放进信里。
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  if (screen === 'loading') {
-    return (
-      <div className="sweet-game-shell loading-scene">
-        <div className="scene-glow glow-a" />
-        <div className="scene-glow glow-b" />
-        <div className="loading-flower">
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
-        <p className="loading-text">我在把今天的小情书准备好…</p>
-      </div>
-    );
-  }
-
-  if (screen === 'error') {
-    return (
-      <div className="sweet-game-shell error-scene">
-        <div className="bottom-sheet error-sheet">
-          <div className="error-icon">?</div>
-          <h2>这一封没拿到</h2>
-          <p>{errorMessage}</p>
-          <div className="sheet-actions">
-            <button type="button" className="secondary-cta" onClick={exitToStart}>
-              换一下
-            </button>
-            <button type="button" className="primary-cta" onClick={fetchWords}>
-              再试试
-            </button>
+          <div className="stat-row">
+            <div className="s-box"><span>命中率</span><strong>{accuracy}%</strong></div>
+            <div className="s-box"><span>击碎数</span><strong>{stats.score}/{words.length}</strong></div>
+            <div className="s-box"><span>最高连击</span><strong>{stats.maxCombo}</strong></div>
+          </div>
+          <div className="btn-row mt-16">
+            <button className="sling-btn outline" onClick={() => setPhase('start')}>换一天</button>
+            <button className="sling-btn primary" onClick={() => initGame(words)}>重新狙击</button>
           </div>
         </div>
       </div>
     );
   }
-
-  if (screen === 'result') {
-    return (
-      <div className={`sweet-game-shell result-scene grade-${grade.toLowerCase()}`}>
-        <div className="scene-glow glow-a" />
-        <div className="scene-glow glow-b" />
-        <div className="result-kiss-field" aria-hidden="true">
-          {Array.from({ length: endingCopy.kisses }).map((_, index) => (
-            <span
-              key={index}
-              className="result-kiss"
-              style={{
-                '--rx': `${(index % 6) * 14 - 35}px`,
-                '--ry': `${Math.floor(index / 6) * 16 - 24}px`,
-                '--rd': `${(index % 5) * 0.12}s`,
-              }}
-            >
-              💋
-            </span>
-          ))}
-        </div>
-
-        <div className="result-stage">
-          <div className="result-badge-wrap">
-            <div className="result-badge-ring" />
-            <div className="result-badge">{grade}</div>
-          </div>
-
-          <div className="result-copy">
-            <h2>{endingCopy.title}</h2>
-            <p>{endingCopy.desc}</p>
-            <span>{endingCopy.note}</span>
-          </div>
-
-          <div className="result-ribbons">
-            <div className="result-ribbon wide">
-              <em>正确率</em>
-              <strong>{accuracy}%</strong>
-            </div>
-            <div className="result-ribbon">
-              <em>完成率</em>
-              <strong>{completion}%</strong>
-            </div>
-            <div className="result-ribbon">
-              <em>答对</em>
-              <strong>
-                {answered - wrongCount}/{totalWords || 0}
-              </strong>
-            </div>
-            <div className="result-ribbon">
-              <em>最高连上</em>
-              <strong>{maxCombo}</strong>
-            </div>
-            <div className="result-ribbon wide">
-              <em>心动值</em>
-              <strong>{score}</strong>
-            </div>
-          </div>
-
-          <div className="result-actions">
-            <button type="button" className="secondary-cta" onClick={exitToStart}>
-              换一天
-            </button>
-            <button type="button" className="primary-cta" onClick={fetchWords}>
-              再陪我玩一轮
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  const assembledMap = new Map(round?.pool.map((item) => [item.id, item]) || []);
 
   return (
-    <div className={`sweet-game-shell play-scene theme-${round?.theme || 'rose'}`}>
-      <div className="scene-glow glow-a" />
-      <div className="scene-glow glow-b" />
-      <div className="play-topline">
-        <div className="topline-left">
-          <div className="topline-label">第 {displayedProgress}/{totalWords} 封小情书</div>
-          <div className="topline-progress">
-            <span style={{ width: `${totalWords ? (answered / totalWords) * 100 : 0}%` }} />
-          </div>
-        </div>
-        <button type="button" className="tiny-ghost" onClick={exitToStart}>
-          退出
-        </button>
-      </div>
-
-      <div className="play-ribbon">
-        <div className="ribbon-metric">
-          <small>心动值</small>
-          <strong>{score}</strong>
-        </div>
-        <div className="ribbon-metric emphasis">
-          <small>连上</small>
-          <strong>{combo}</strong>
-        </div>
-        <div className="life-row" aria-label="生命">
-          {Array.from({ length: MAX_LIVES }).map((_, index) => (
-            <span key={index} className={`life-heart ${index < lives ? 'alive' : ''}`}>
-              ♥
-            </span>
+    <div className="sling-wrap game-mode">
+      {/* 顶部状态栏 */}
+      <div className="hud">
+        <div className="health-bar">
+          {Array.from({ length: MAX_LIVES }).map((_, i) => (
+            <div key={i} className={`heart-bit ${i < stats.lives ? 'alive' : 'dead'}`}></div>
           ))}
         </div>
-        <div className="ribbon-metric timer">
-          <small>剩余</small>
-          <strong>{timeLeft}s</strong>
-        </div>
+        <div className="combo-display">🔥 {stats.combo}</div>
+        <div className="progress-display">{stats.currentIndex + 1} / {words.length}</div>
       </div>
 
-      <div className="letter-stage-shell">
-        <div className="letter-card">
-          <div className="letter-stamp">💌</div>
-          <div className="event-badge">{round?.event.badge}</div>
-          <div className="letter-caption">把这个词拼进给我的小情书里</div>
-          <div className="letter-word">{round?.word.en}</div>
-          <div className="letter-tip">{round?.event.tip}</div>
-
-          <div className="assemble-slots">
-            {Array.from({ length: round?.correctLength || 0 }).map((_, index) => {
-              const filledId = round?.assembledIds[index];
-              const item = filledId ? assembledMap.get(filledId) : null;
-              return (
-                <button
-                  key={index}
-                  type="button"
-                  className={`assemble-slot ${item ? 'filled' : ''}`}
-                  onClick={() => removeFromSlot(index)}
-                >
-                  <span>{item?.text || '·'}</span>
-                </button>
-              );
-            })}
+      {/* 交互画布 */}
+      <div 
+        className="canvas-layer" 
+        ref={containerRef}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+      >
+        <canvas ref={canvasRef} />
+        
+        {/* 发射台底座指示器 */}
+        {!engineRef.current.projectile.active && !mistakeCtx && (
+          <div className="launch-pad-hint">
+            <span>拉动我瞄准</span>
           </div>
-
-          <div className="letter-actions">
-            <button
-              type="button"
-              className="soft-ghost"
-              onClick={useHint}
-              disabled={hintCount <= 0 || roundLocked}
-            >
-              偷看一下 ({hintCount})
-            </button>
-            <button
-              type="button"
-              className="soft-ghost"
-              onClick={clearAssembled}
-              disabled={!round?.assembledIds.length || roundLocked}
-            >
-              清空
-            </button>
-            <button
-              type="button"
-              className="send-cta"
-              onClick={submitCurrent}
-              disabled={round?.assembledIds.length !== round?.correctLength || roundLocked}
-            >
-              寄出去
-            </button>
-          </div>
-        </div>
+        )}
       </div>
 
-      <div className="fragment-garden">
-        {(round?.pool || []).map((fragment) => {
-          const selected = round?.assembledIds.includes(fragment.id);
-          const revealed = round?.revealedIds.includes(fragment.id);
-          return (
-            <button
-              key={fragment.id}
-              type="button"
-              className={`fragment-chip ${selected ? 'selected' : ''} ${
-                revealed ? 'revealed' : ''
-              } ${fragment.isCorrect ? 'frag-correct' : 'frag-decoy'}`}
-              style={{ '--seed': fragment.seed }}
-              onClick={() => pickFragment(fragment.id)}
-              disabled={selected || roundLocked}
-            >
-              <span>{fragment.text}</span>
-            </button>
-          );
-        })}
-      </div>
+      {/* 娇嗔惩罚弹窗 */}
+      {mistakeCtx && (
+        <div className="mistake-modal">
+          <div className="mistake-content">
+            <div className="emoji-huge">🥺</div>
+            <h3 className="text-red">哎呀！打歪啦！</h3>
+            <p className="sub-text">大笨蛋，这都没瞄准！罚你仔细看一遍：</p>
+            
+            <div className="compare-card">
+              <div className="word-main">{mistakeCtx.wordEn}</div>
+              <div className="row correct">
+                <span className="tag">正确目标</span>
+                <span className="val">{mistakeCtx.correctZh}</span>
+              </div>
+              <div className="row wrong">
+                <span className="tag">你砸中了</span>
+                <span className="val"><strike>{mistakeCtx.caughtZh}</strike></span>
+              </div>
+            </div>
 
-      {feedback && (
-        <div className={`feedback-pop feedback-${feedback.type}`} key={feedback.title + feedback.desc}>
-          <div className="feedback-badge">
-            {feedback.type === 'correct' ? '💋' : feedback.type === 'wrong' ? '☁' : '✨'}
-          </div>
-          <div className="feedback-copy">
-            <strong>{feedback.title}</strong>
-            <span>{feedback.desc}</span>
+            <button className="sling-btn primary w-full" onClick={handleAcknowledgeMistake}>
+              乖乖记住了，继续！
+            </button>
           </div>
         </div>
       )}
-
-      {!isFullscreen && <div className="immersive-tip">已经尽量铺满啦，横屏会更开阔一点。</div>}
     </div>
   );
 }
