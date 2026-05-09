@@ -8,10 +8,11 @@ const posts = (await getCollection('games')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const featuredPost = posts[0];
-const restPosts = posts.slice(1);
-
-const daysPassed = Math.floor((Date.now() - new Date(2025, 9, 18).getTime()) / 864e5)
+const togetherDate = new Date(2025, 9, 18);
+const now = new Date();
+const daysPassed = Math.floor((now.getTime() - togetherDate.getTime()) / 864e5);
+const months = Math.floor(daysPassed / 30);
+const weeks = Math.floor(daysPassed / 7);
 ---
 
 <!doctype html>
@@ -21,260 +22,540 @@ const daysPassed = Math.floor((Date.now() - new Date(2025, 9, 18).getTime()) / 8
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400&display=swap"
             rel="stylesheet"
         />
-
         <style>
-            :root {
-                /* 奶茶系温柔配色 */
-                --bg-body: #F8F6F4; /* 燕麦奶白底色 */
-                --card-bg: #FFFFFF;
-                --text-main: #433D3C; /* 暖深灰 */
-                --text-muted: #9E9592;
-                
-                /* 极其温柔的马卡龙渐变，用于封面占位 */
-                --gradient-1: linear-gradient(135deg, #FFD3D6 0%, #FDFBFB 100%); /* 蜜桃 */
-                --gradient-2: linear-gradient(135deg, #D4E2D4 0%, #FDFBFB 100%); /* 抹茶 */
-                --gradient-3: linear-gradient(135deg, #DCE2F0 0%, #FDFBFB 100%); /* 雾霾蓝 */
-                --gradient-4: linear-gradient(135deg, #F5E6CC 0%, #FDFBFB 100%); /* 奶油 */
-            }
+            * { margin: 0; padding: 0; box-sizing: border-box; }
 
-            :global(html),
-            :global(body) {
-                margin: 0;
-                padding: 0;
-                background-color: var(--bg-body);
-                color: var(--text-main);
-                font-family: 'Nunito', "PingFang SC", "Microsoft YaHei", sans-serif;
+            html, body {
+                min-height: 100vh;
+                font-family: 'Quicksand', -apple-system, sans-serif;
                 -webkit-font-smoothing: antialiased;
+                overflow-x: hidden;
             }
 
-            :global(a) {
-                text-decoration: none;
-                color: inherit;
+            body {
+                background: #fefcfb;
+                color: #4a3f3f;
             }
 
-            .page-container {
-                max-width: 1000px;
+            a { text-decoration: none; color: inherit; }
+
+            /* ===== Dreamy Background ===== */
+            .bg-canvas {
+                position: fixed;
+                inset: 0;
+                z-index: 0;
+                overflow: hidden;
+                background: linear-gradient(180deg, #fdf2f8 0%, #fefcfb 40%, #f0f9ff 100%);
+            }
+
+            /* Soft cloud-like shapes */
+            .cloud {
+                position: absolute;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+
+            .cloud-1 {
+                width: 600px; height: 300px;
+                background: radial-gradient(ellipse, rgba(251, 207, 232, 0.6) 0%, transparent 70%);
+                top: -5%; left: -10%;
+                animation: cloud-drift 30s ease-in-out infinite alternate;
+            }
+
+            .cloud-2 {
+                width: 500px; height: 250px;
+                background: radial-gradient(ellipse, rgba(196, 181, 253, 0.4) 0%, transparent 70%);
+                top: 10%; right: -15%;
+                animation: cloud-drift 25s ease-in-out infinite alternate-reverse;
+            }
+
+            .cloud-3 {
+                width: 400px; height: 200px;
+                background: radial-gradient(ellipse, rgba(186, 230, 253, 0.5) 0%, transparent 70%);
+                bottom: 10%; left: 20%;
+                animation: cloud-drift 28s ease-in-out infinite alternate;
+                animation-delay: -5s;
+            }
+
+            .cloud-4 {
+                width: 350px; height: 180px;
+                background: radial-gradient(ellipse, rgba(254, 205, 211, 0.4) 0%, transparent 70%);
+                bottom: 30%; right: 5%;
+                animation: cloud-drift 22s ease-in-out infinite alternate-reverse;
+                animation-delay: -8s;
+            }
+
+            @keyframes cloud-drift {
+                0% { transform: translate(0, 0); }
+                100% { transform: translate(40px, 20px); }
+            }
+
+            /* Floating petals */
+            .petals {
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+            }
+
+            .petal {
+                position: absolute;
+                font-size: 1rem;
+                opacity: 0;
+                animation: petal-fall linear infinite;
+            }
+
+            .petal:nth-child(1) { left: 8%; animation-duration: 12s; animation-delay: 0s; }
+            .petal:nth-child(2) { left: 20%; animation-duration: 15s; animation-delay: 2s; }
+            .petal:nth-child(3) { left: 35%; animation-duration: 11s; animation-delay: 4s; }
+            .petal:nth-child(4) { left: 55%; animation-duration: 14s; animation-delay: 1s; }
+            .petal:nth-child(5) { left: 70%; animation-duration: 13s; animation-delay: 6s; }
+            .petal:nth-child(6) { left: 85%; animation-duration: 16s; animation-delay: 3s; }
+            .petal:nth-child(7) { left: 45%; animation-duration: 10s; animation-delay: 7s; }
+            .petal:nth-child(8) { left: 92%; animation-duration: 12s; animation-delay: 5s; }
+
+            @keyframes petal-fall {
+                0% { transform: translateY(-20px) rotate(0deg) translateX(0); opacity: 0; }
+                10% { opacity: 0.7; }
+                90% { opacity: 0.4; }
+                100% { transform: translateY(100vh) rotate(360deg) translateX(30px); opacity: 0; }
+            }
+
+            /* ===== Page ===== */
+            .page {
+                position: relative;
+                z-index: 1;
+                max-width: 640px;
                 margin: 0 auto;
                 padding: 50px 20px 100px;
             }
 
-            /* --- Ins风页眉 --- */
-            .gallery-header {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 60px;
+            /* ===== Hero ===== */
+            .hero {
+                text-align: center;
+                margin-bottom: 36px;
+                animation: fade-in 0.8s ease-out;
             }
 
-            .header-tag {
-                background: var(--card-bg);
-                padding: 8px 20px;
-                border-radius: 99px;
-                font-size: 0.9rem;
+            @keyframes fade-in {
+                from { opacity: 0; transform: translateY(16px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            .hero-pig {
+                font-size: 3.6rem;
+                display: inline-block;
+                animation: wiggle 3s ease-in-out infinite;
+                filter: drop-shadow(0 4px 12px rgba(251, 113, 133, 0.2));
+            }
+
+            @keyframes wiggle {
+                0%, 100% { transform: rotate(0deg) scale(1); }
+                25% { transform: rotate(-5deg) scale(1.05); }
+                75% { transform: rotate(5deg) scale(1.05); }
+            }
+
+            .hero-title {
+                font-size: 1.5rem;
                 font-weight: 700;
-                color: #C28B8B;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-                letter-spacing: 1px;
-                margin-bottom: 20px;
+                color: #5b4a4a;
+                margin: 16px 0 6px;
             }
 
-            .header-title {
-                font-size: 2rem;
-                font-weight: 800;
-                margin: 0;
-                color: var(--text-main);
+            .hero-quote {
+                font-family: 'Playfair Display', serif;
+                font-style: italic;
+                font-size: 0.88rem;
+                color: #b08a8a;
             }
 
-            /* --- 便当盒卡片通用样式 --- */
-            .bento-card {
-                background: var(--card-bg);
-                border-radius: 24px;
+            /* ===== Counter Card ===== */
+            .counter-card {
+                background: white;
+                border-radius: 28px;
+                padding: 44px 32px 36px;
+                margin-bottom: 40px;
+                text-align: center;
+                box-shadow:
+                    0 4px 24px rgba(251, 113, 133, 0.08),
+                    0 1px 4px rgba(0,0,0,0.03);
+                border: 1px solid rgba(251, 207, 232, 0.4);
+                position: relative;
                 overflow: hidden;
-                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
-                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
-                display: flex;
-                flex-direction: column;
+                animation: fade-in 0.8s ease-out 0.2s both;
             }
 
-            .bento-card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            /* Decorative corner flowers */
+            .counter-card::before {
+                content: '✿';
+                position: absolute;
+                top: 16px; left: 20px;
+                font-size: 1.4rem;
+                opacity: 0.2;
+                animation: spin-slow 20s linear infinite;
             }
 
-            /* 魔法：用 CSS 渐变生成的虚拟封面图，打破纯文字的单调 */
-            .card-cover {
-                height: 160px;
-                width: 100%;
-                position: relative;
-            }
-
-            .card-content {
-                padding: 24px;
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-            }
-
-            /* --- 顶部大卡片 (Featured) --- */
-            .featured-wrapper {
-                margin-bottom: 32px;
-            }
-
-            .featured-card {
-                flex-direction: row;
-                height: 320px;
-            }
-
-            .featured-card .card-cover {
-                height: 100%;
-                width: 50%;
-                background: var(--gradient-1); /* 头条固定用蜜桃色 */
-                position: relative;
-            }
-
-            .featured-card .card-content {
-                width: 50%;
-                padding: 40px;
-                justify-content: center;
-            }
-
-            .status-badge {
-                align-self: flex-start;
-                background: #FFF1F0;
-                color: #E07A7A;
-                padding: 6px 14px;
-                border-radius: 12px;
-                font-size: 0.8rem;
-                font-weight: 800;
-                margin-bottom: 20px;
-            }
-
-            .card-title {
-                font-size: clamp(1.4rem, 4vw, 2rem);
-                font-weight: 800;
-                line-height: 1.4;
-                margin: 0 0 16px 0;
-            }
-
-            .card-meta {
-                font-size: 0.9rem;
-                color: var(--text-muted);
-                font-weight: 500;
-                margin-top: auto;
-            }
-
-            /* --- 网格列表 --- */
-            .bento-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 32px;
-            }
-
-            .grid-card .card-title {
-                font-size: 1.2rem;
-                margin: 0 0 16px 0;
-            }
-
-            /* 自动为网格里的卡片分配不同的渐变封面 */
-            .bento-grid a:nth-child(4n+1) .card-cover { background: var(--gradient-2); }
-            .bento-grid a:nth-child(4n+2) .card-cover { background: var(--gradient-3); }
-            .bento-grid a:nth-child(4n+3) .card-cover { background: var(--gradient-4); }
-            .bento-grid a:nth-child(4n+4) .card-cover { background: var(--gradient-1); }
-
-            /* 为封面加一点点可爱的装饰符号 */
-            .card-cover::after {
+            .counter-card::after {
                 content: '❀';
                 position: absolute;
-                right: 20px;
-                bottom: 10px;
-                font-size: 3rem;
-                color: rgba(255,255,255,0.7);
+                bottom: 16px; right: 20px;
+                font-size: 1.2rem;
+                opacity: 0.15;
+                animation: spin-slow 25s linear infinite reverse;
             }
-            .bento-grid a:nth-child(4n+2) .card-cover::after { content: '☁️'; font-size: 2.5rem; }
-            .bento-grid a:nth-child(4n+3) .card-cover::after { content: '✨'; font-size: 2.5rem; }
 
-            /* --- 响应式 --- */
-            @media (max-width: 768px) {
-                .page-container {
-                    padding: 30px 16px 60px;
-                }
+            @keyframes spin-slow {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
 
-                .featured-card {
-                    flex-direction: column;
-                    height: auto;
-                }
+            .counter-top-label {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: #c9a0a0;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
 
-                .featured-card .card-cover {
-                    width: 100%;
-                    height: 200px;
-                }
+            .counter-number {
+                font-size: 5rem;
+                font-weight: 700;
+                line-height: 1;
+                color: #e8788a;
+                position: relative;
+                display: inline-block;
+            }
 
-                .featured-card .card-content {
-                    width: 100%;
-                    padding: 30px 24px;
-                }
+            .counter-number::after {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 10%; right: 10%;
+                height: 8px;
+                background: linear-gradient(90deg, rgba(251, 186, 200, 0.4), rgba(196, 181, 253, 0.3));
+                border-radius: 4px;
+                filter: blur(2px);
+            }
 
-                .bento-grid {
-                    gap: 24px;
-                }
+            .counter-text {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #7a6060;
+                margin-top: 10px;
+            }
+
+            .counter-since {
+                font-size: 0.78rem;
+                color: #c4a0a0;
+                margin-top: 6px;
+            }
+
+            .counter-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                margin-top: 28px;
+                padding-top: 24px;
+                border-top: 1px dashed rgba(251, 186, 200, 0.4);
+            }
+
+            .counter-stat {
+                text-align: center;
+            }
+
+            .counter-stat-value {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #6b5050;
+            }
+
+            .counter-stat-label {
+                font-size: 0.7rem;
+                color: #b89a9a;
+                font-weight: 600;
+                margin-top: 2px;
+            }
+
+            /* ===== Collapsible List ===== */
+            .list-section {
+                animation: fade-in 0.8s ease-out 0.4s both;
+            }
+
+            .list-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 16px 20px;
+                background: white;
+                border: 1px solid rgba(251, 207, 232, 0.3);
+                border-radius: 16px;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-family: inherit;
+            }
+
+            .list-toggle:hover {
+                box-shadow: 0 4px 16px rgba(251, 113, 133, 0.08);
+            }
+
+            .list-toggle-left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .list-toggle-icon {
+                font-size: 1.1rem;
+            }
+
+            .list-toggle-text {
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: #5b4a4a;
+            }
+
+            .list-toggle-count {
+                font-size: 0.72rem;
+                color: #b89a9a;
+                background: #fdf2f8;
+                padding: 3px 10px;
+                border-radius: 20px;
+                font-weight: 600;
+            }
+
+            .list-toggle-arrow {
+                font-size: 0.8rem;
+                color: #c9a0a0;
+                transition: transform 0.3s;
+            }
+
+            .list-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .list-content.is-open {
+                max-height: 2000px;
+            }
+
+            .list-toggle.is-open .list-toggle-arrow {
+                transform: rotate(180deg);
+            }
+
+            .post-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 16px 0 0;
+            }
+
+            .post-item {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding: 14px 18px;
+                background: white;
+                border: 1px solid rgba(0,0,0,0.04);
+                border-radius: 14px;
+                transition: all 0.25s;
+            }
+
+            .post-item:hover {
+                background: #fffbfc;
+                border-color: rgba(251, 186, 200, 0.4);
+                transform: translateX(4px);
+                box-shadow: 0 2px 12px rgba(251, 113, 133, 0.06);
+            }
+
+            .post-emoji {
+                width: 36px;
+                height: 36px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                flex-shrink: 0;
+            }
+
+            .post-item:nth-child(5n+1) .post-emoji { background: #fce7f3; }
+            .post-item:nth-child(5n+2) .post-emoji { background: #ede9fe; }
+            .post-item:nth-child(5n+3) .post-emoji { background: #e0f2fe; }
+            .post-item:nth-child(5n+4) .post-emoji { background: #fef3c7; }
+            .post-item:nth-child(5n+5) .post-emoji { background: #d1fae5; }
+
+            .post-body {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .post-title {
+                font-size: 0.88rem;
+                font-weight: 600;
+                color: #4a3f3f;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .post-desc {
+                font-size: 0.75rem;
+                color: #b89a9a;
+                margin-top: 2px;
+            }
+
+            .post-meta {
+                font-size: 0.7rem;
+                color: #c9b0b0;
+                font-weight: 500;
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+
+            /* ===== Footer ===== */
+            .page-footer {
+                text-align: center;
+                margin-top: 56px;
+            }
+
+            .footer-text {
+                font-size: 0.78rem;
+                color: #c9a0a0;
+            }
+
+            .footer-heart {
+                display: inline-block;
+                color: #f9a8b8;
+                animation: heartbeat 1.5s ease-in-out infinite;
+            }
+
+            @keyframes heartbeat {
+                0%, 100% { transform: scale(1); }
+                15% { transform: scale(1.2); }
+                30% { transform: scale(1); }
+                45% { transform: scale(1.15); }
+                60% { transform: scale(1); }
+            }
+
+            /* ===== Responsive ===== */
+            @media (max-width: 640px) {
+                .page { padding: 36px 16px 80px; }
+                .hero-pig { font-size: 2.8rem; }
+                .hero-title { font-size: 1.3rem; }
+                .counter-card { padding: 36px 20px 28px; border-radius: 22px; }
+                .counter-number { font-size: 3.8rem; }
+                .counter-grid { gap: 10px; }
+                .counter-stat-value { font-size: 1.2rem; }
             }
         </style>
     </head>
 
     <body>
-        <main class="page-container">
-            <header class="gallery-header">
-                <div class="header-tag">OUR MEMORIES</div>
-                <h1 class="header-title">和🐖的第 {daysPassed} 天</h1>
-            </header>
+        <!-- Background -->
+        <div class="bg-canvas">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+            <div class="petals">
+                <span class="petal">🌸</span>
+                <span class="petal">✿</span>
+                <span class="petal">🩷</span>
+                <span class="petal">✿</span>
+                <span class="petal">🌸</span>
+                <span class="petal">♡</span>
+                <span class="petal">✿</span>
+                <span class="petal">🌸</span>
+            </div>
+        </div>
 
-            {
-                featuredPost ? (
-                    <>
-                        <section class="featured-wrapper">
-                            <a href={`/games/${featuredPost.id}/`}>
-                                <article class="bento-card featured-card">
-                                    <div class="card-cover"></div>
-                                    <div class="card-content">
-                                        <div class="status-badge">最新日常 ✨</div>
-                                        <h2 class="card-title">{featuredPost.data.title}</h2>
-                                        <div class="card-meta">
-                                            <FormattedDate date={featuredPost.data.pubDate} />
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-                        </section>
+        <main class="page">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-pig">🐷</div>
+                <h1 class="hero-title">我和🐖的小世界</h1>
+                <p class="hero-quote">"Every day with you is my favorite day."</p>
+            </section>
 
-                        {
-                            restPosts.length > 0 && (
-                                <section class="bento-grid">
-                                    {restPosts.map((post) => (
-                                        <a href={`/games/${post.id}/`}>
-                                            <article class="bento-card grid-card">
-                                                <div class="card-cover"></div>
-                                                <div class="card-content">
-                                                    <h3 class="card-title">{post.data.title}</h3>
-                                                    <div class="card-meta">
-                                                        <FormattedDate date={post.data.pubDate} />
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </a>
-                                    ))}
-                                </section>
-                            )
-                        }
-                    </>
-                ) : (
-                    <div style="text-align:center; padding: 60px; color: var(--text-muted);">
-                        快来写下你们的第一篇故事吧 ~
+            <!-- Counter -->
+            <div class="counter-card">
+                <div class="counter-top-label">在一起</div>
+                <div class="counter-number">{daysPassed}</div>
+                <div class="counter-text">天 ♡</div>
+                <div class="counter-since">2025.10.18 — 至今</div>
+                <div class="counter-grid">
+                    <div class="counter-stat">
+                        <div class="counter-stat-value">{months}</div>
+                        <div class="counter-stat-label">个月</div>
                     </div>
-                )
+                    <div class="counter-stat">
+                        <div class="counter-stat-value">{weeks}</div>
+                        <div class="counter-stat-label">周</div>
+                    </div>
+                    <div class="counter-stat">
+                        <div class="counter-stat-value">{daysPassed * 24}</div>
+                        <div class="counter-stat-label">小时</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post List (Collapsible) -->
+            {posts.length > 0 && (
+                <section class="list-section">
+                    <button class="list-toggle" id="listToggle" aria-expanded="false">
+                        <span class="list-toggle-left">
+                            <span class="list-toggle-icon">📝</span>
+                            <span class="list-toggle-text">我们的日常</span>
+                        </span>
+                        <span class="list-toggle-count">{posts.length} 篇</span>
+                        <span class="list-toggle-arrow">▼</span>
+                    </button>
+                    <div class="list-content" id="listContent">
+                        <div class="post-list">
+                            {posts.map((post, i) => (
+                                <a href={`/games/${post.id}/`}>
+                                    <article class="post-item">
+                                        <div class="post-emoji">
+                                            {['🌷', '🦋', '☁️', '🍰', '🌙'][i % 5]}
+                                        </div>
+                                        <div class="post-body">
+                                            <div class="post-title">{post.data.title}</div>
+                                            <div class="post-desc">{post.data.description}</div>
+                                        </div>
+                                        <div class="post-meta">
+                                            <FormattedDate date={post.data.pubDate} />
+                                        </div>
+                                    </article>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            <!-- Footer -->
+            <footer class="page-footer">
+                <p class="footer-text">
+                    <span class="footer-heart">♥</span> 永远在一起
+                </p>
+            </footer>
+        </main>
+
+        <script>
+            const toggle = document.getElementById('listToggle');
+            const content = document.getElementById('listContent');
+            if (toggle && content) {
+                toggle.addEventListener('click', () => {
+                    const isOpen = content.classList.toggle('is-open');
+                    toggle.classList.toggle('is-open');
+                    toggle.setAttribute('aria-expanded', String(isOpen));
+                });
             }
-        </main> 
+        </script>
     </body>
 </html>
