@@ -1,0 +1,617 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+
+type Props = CollectionEntry<'works'>['data'];
+
+const { title, description, pubDate, updatedDate } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('zh-CN', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+const formattedUpdate = updatedDate
+  ? updatedDate.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })
+  : null;
+---
+
+<html lang="zh-CN">
+  <head>
+    <BaseHead title={title} description={description} />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+      integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* ===== Reset & Base ===== */
+      :global(html),
+      :global(body) {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: #fafcfb;
+        color: #2d3a33;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      :global(*) {
+        box-sizing: border-box;
+      }
+
+      :global(a) {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* ===== Falling Petals Animation ===== */
+      .petals-container {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .petal {
+        position: absolute;
+        top: -40px;
+        opacity: 0;
+        animation: petalFall linear infinite;
+        will-change: transform, opacity;
+      }
+
+      .petal::before {
+        content: '';
+        display: block;
+        border-radius: 50% 0 50% 50%;
+        background: var(--petal-color, rgba(232, 180, 188, 0.5));
+        width: var(--petal-size, 12px);
+        height: var(--petal-size, 12px);
+        transform: rotate(var(--petal-rotate, 45deg));
+        box-shadow: 0 2px 8px rgba(200, 140, 160, 0.15);
+      }
+
+      @keyframes petalFall {
+        0% {
+          opacity: 0;
+          transform: translateX(0) translateY(0) rotate(0deg);
+        }
+        10% {
+          opacity: 0.7;
+        }
+        90% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(var(--petal-drift, 80px)) translateY(105vh) rotate(var(--petal-spin, 360deg));
+        }
+      }
+
+      /* ===== Floating Dots / Sparkles ===== */
+      .sparkles-container {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(160, 200, 180, 0.6);
+        animation: sparkleFloat 6s ease-in-out infinite;
+        will-change: transform, opacity;
+      }
+
+      @keyframes sparkleFloat {
+        0%, 100% {
+          opacity: 0.3;
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: translateY(-20px) scale(1.4);
+        }
+      }
+
+      /* ===== Background Blobs ===== */
+      .bg-blobs {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.4;
+        animation: blobDrift 20s ease-in-out infinite alternate;
+      }
+
+      .blob-1 {
+        top: -5%;
+        left: 10%;
+        width: 400px;
+        height: 400px;
+        background: rgba(200, 230, 215, 0.5);
+        animation-delay: 0s;
+      }
+
+      .blob-2 {
+        top: 30%;
+        right: -5%;
+        width: 350px;
+        height: 350px;
+        background: rgba(220, 200, 240, 0.35);
+        animation-delay: -5s;
+      }
+
+      .blob-3 {
+        bottom: 10%;
+        left: 20%;
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 220, 200, 0.3);
+        animation-delay: -10s;
+      }
+
+      @keyframes blobDrift {
+        0% {
+          transform: translate(0, 0) scale(1);
+        }
+        100% {
+          transform: translate(30px, 20px) scale(1.1);
+        }
+      }
+
+      /* ===== Page Layout ===== */
+      .page {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      /* ===== Hero / Masthead ===== */
+      .hero {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 4.5rem 2rem 2rem;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.2rem;
+        padding: 0.4rem 0.9rem;
+        border-radius: 100px;
+        background: linear-gradient(135deg, rgba(160, 210, 185, 0.2), rgba(200, 180, 230, 0.15));
+        border: 1px solid rgba(160, 200, 180, 0.3);
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #5a8a6e;
+        letter-spacing: 0.06em;
+      }
+
+      .hero-badge-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #7ec49a;
+        box-shadow: 0 0 6px rgba(126, 196, 154, 0.4);
+      }
+
+      .hero-date {
+        font-size: 0.8rem;
+        color: rgba(45, 58, 51, 0.45);
+        margin-bottom: 0.8rem;
+        letter-spacing: 0.02em;
+      }
+
+      .hero-title {
+        margin: 0 0 1rem;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.025em;
+        color: #1a2b22;
+        max-width: 16em;
+      }
+
+      .hero-title-accent {
+        background: linear-gradient(135deg, #4a9e6e, #6b8dd6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-desc {
+        margin: 0;
+        font-size: 1.05rem;
+        line-height: 1.75;
+        color: rgba(45, 58, 51, 0.6);
+        max-width: 42rem;
+      }
+
+      .hero-divider {
+        margin-top: 2rem;
+        height: 2px;
+        border: none;
+        border-radius: 2px;
+        background: linear-gradient(90deg, rgba(126, 196, 154, 0.4), rgba(160, 140, 220, 0.2), transparent);
+      }
+
+      /* ===== Article Content ===== */
+      .article {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 2rem 4rem;
+      }
+
+      /* ===== Typography ===== */
+      :global(.article > :first-child) {
+        margin-top: 0;
+      }
+
+      :global(.article p) {
+        margin: 1rem 0;
+        font-size: 1rem;
+        line-height: 1.85;
+        color: rgba(45, 58, 51, 0.78);
+      }
+
+      :global(.article h2) {
+        position: relative;
+        margin: 3.5rem 0 1.2rem;
+        padding-left: 1rem;
+        font-size: clamp(1.5rem, 3vw, 1.9rem);
+        font-weight: 750;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        color: #1a2b22;
+      }
+
+      :global(.article h2::before) {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.15em;
+        bottom: 0.15em;
+        width: 3px;
+        border-radius: 3px;
+        background: linear-gradient(180deg, #7ec49a, #8ba4e6);
+      }
+
+      :global(.article h3) {
+        margin: 2.5rem 0 0.8rem;
+        font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+        font-weight: 650;
+        line-height: 1.35;
+        color: #2a4035;
+      }
+
+      :global(.article h4) {
+        margin: 1.8rem 0 0.6rem;
+        font-size: 1.08rem;
+        font-weight: 600;
+        color: #3a5545;
+      }
+
+      :global(.article ul),
+      :global(.article ol) {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+        color: rgba(45, 58, 51, 0.75);
+      }
+
+      :global(.article li) {
+        margin: 0.4rem 0;
+        line-height: 1.85;
+      }
+
+      :global(.article li::marker) {
+        color: #7ec49a;
+      }
+
+      :global(.article strong) {
+        color: #1a2b22;
+        font-weight: 650;
+      }
+
+      :global(.article a) {
+        color: #4a8a6a;
+        text-decoration: none;
+        border-bottom: 1.5px solid rgba(74, 138, 106, 0.25);
+        transition: color 0.2s, border-color 0.2s;
+      }
+
+      :global(.article a:hover) {
+        color: #357a5a;
+        border-bottom-color: rgba(53, 122, 90, 0.5);
+      }
+
+      :global(.article blockquote) {
+        margin: 1.5rem 0;
+        padding: 1rem 1.25rem;
+        border-left: 3px solid #7ec49a;
+        border-radius: 0 14px 14px 0;
+        background: linear-gradient(135deg, rgba(126, 196, 154, 0.06), rgba(160, 200, 230, 0.04));
+        color: rgba(45, 58, 51, 0.7);
+        font-size: 0.95rem;
+      }
+
+      :global(.article blockquote p) {
+        margin: 0.4rem 0;
+        color: rgba(45, 58, 51, 0.7);
+      }
+
+      :global(.article hr) {
+        margin: 2.5rem 0;
+        border: none;
+        height: 1.5px;
+        background: linear-gradient(90deg, rgba(126, 196, 154, 0.3), rgba(180, 160, 220, 0.2), transparent 80%);
+      }
+
+      :global(.article code) {
+        padding: 0.15em 0.45em;
+        border-radius: 6px;
+        background: rgba(126, 196, 154, 0.1);
+        border: 1px solid rgba(126, 196, 154, 0.15);
+        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+        font-size: 0.87em;
+        color: #3a7a5a;
+      }
+
+      :global(.article pre) {
+        margin: 1.5rem 0;
+        padding: 1.25rem 1.5rem;
+        overflow-x: auto;
+        border-radius: 16px;
+        background: #f0f5f2;
+        border: 1px solid rgba(126, 196, 154, 0.15);
+        box-shadow: 0 2px 12px rgba(45, 80, 60, 0.04);
+      }
+
+      :global(.article pre code) {
+        padding: 0;
+        border: none;
+        background: none;
+        font-size: 0.85rem;
+        color: #2d4a3a;
+      }
+
+      :global(.article img) {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 1.5rem auto;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 20px rgba(45, 80, 60, 0.06);
+      }
+
+      /* ===== Tables ===== */
+      :global(.article table) {
+        width: 100%;
+        margin: 1.5rem 0;
+        border-collapse: collapse;
+        font-size: 0.88rem;
+        overflow-x: auto;
+        display: block;
+        border-radius: 14px;
+        border: 1px solid rgba(126, 196, 154, 0.15);
+      }
+
+      :global(.article thead) {
+        background: linear-gradient(135deg, rgba(126, 196, 154, 0.08), rgba(160, 180, 220, 0.06));
+      }
+
+      :global(.article th) {
+        padding: 0.8rem 1rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: rgba(45, 58, 51, 0.6);
+        border-bottom: 1.5px solid rgba(126, 196, 154, 0.2);
+        white-space: nowrap;
+      }
+
+      :global(.article td) {
+        padding: 0.7rem 1rem;
+        border-bottom: 1px solid rgba(126, 196, 154, 0.08);
+        color: rgba(45, 58, 51, 0.75);
+        vertical-align: top;
+      }
+
+      :global(.article tbody tr:hover td) {
+        background: rgba(126, 196, 154, 0.04);
+      }
+
+      /* ===== KaTeX Math ===== */
+      :global(.article .katex-display) {
+        margin: 1.5rem 0;
+        padding: 1.1rem 1.25rem;
+        overflow-x: auto;
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(240, 248, 244, 0.8), rgba(240, 240, 255, 0.4));
+        border: 1px solid rgba(126, 196, 154, 0.12);
+        box-shadow: 0 2px 10px rgba(45, 80, 60, 0.03);
+      }
+
+      :global(.article .katex) {
+        color: #2a4035;
+        font-size: 1.02em;
+      }
+
+      :global(.article .katex-display .katex) {
+        font-size: 1.08em;
+      }
+
+      /* ===== Interactive Component Containers ===== */
+      :global(.article > div) {
+        margin: 2rem 0;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(45, 80, 60, 0.06);
+      }
+
+      /* ===== Footer ===== */
+      .page-footer {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2.5rem 2rem 3rem;
+        text-align: center;
+      }
+
+      .page-footer-line {
+        width: 60px;
+        height: 2px;
+        margin: 0 auto 1rem;
+        border-radius: 2px;
+        background: linear-gradient(90deg, #7ec49a, #8ba4e6);
+        opacity: 0.5;
+      }
+
+      .page-footer-text {
+        font-size: 0.8rem;
+        color: rgba(45, 58, 51, 0.35);
+        letter-spacing: 0.06em;
+      }
+
+      /* ===== Responsive ===== */
+      @media (max-width: 768px) {
+        .hero {
+          padding: 3.5rem 1.25rem 1.5rem;
+        }
+
+        .hero-title {
+          font-size: clamp(1.6rem, 7vw, 2.4rem);
+        }
+
+        .article {
+          padding: 1.5rem 1.25rem 3rem;
+        }
+
+        :global(.article table) {
+          font-size: 0.8rem;
+        }
+
+        :global(.article th),
+        :global(.article td) {
+          padding: 0.55rem 0.7rem;
+        }
+
+        .blob-1, .blob-2, .blob-3 {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          padding: 2.5rem 1rem 1.2rem;
+        }
+
+        .article {
+          padding: 1.2rem 1rem 2.5rem;
+        }
+
+        :global(.article h2) {
+          margin-top: 2.5rem;
+          font-size: 1.35rem;
+          padding-left: 0.8rem;
+        }
+
+        :global(.article h3) {
+          font-size: 1.12rem;
+        }
+
+        :global(.article > div) {
+          margin: 1.5rem -0.5rem;
+          border-radius: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <!-- Background decorations -->
+    <div class="bg-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Falling petals -->
+    <div class="petals-container" aria-hidden="true">
+      <div class="petal" style="left: 5%; --petal-size: 10px; --petal-color: rgba(232, 180, 188, 0.45); --petal-rotate: 30deg; --petal-drift: 60px; --petal-spin: 340deg; animation-duration: 12s; animation-delay: 0s;"></div>
+      <div class="petal" style="left: 15%; --petal-size: 8px; --petal-color: rgba(200, 220, 200, 0.4); --petal-rotate: 60deg; --petal-drift: -40px; --petal-spin: -280deg; animation-duration: 15s; animation-delay: 2s;"></div>
+      <div class="petal" style="left: 28%; --petal-size: 12px; --petal-color: rgba(220, 190, 230, 0.4); --petal-rotate: 15deg; --petal-drift: 90px; --petal-spin: 400deg; animation-duration: 18s; animation-delay: 4s;"></div>
+      <div class="petal" style="left: 42%; --petal-size: 9px; --petal-color: rgba(232, 180, 188, 0.5); --petal-rotate: 50deg; --petal-drift: -70px; --petal-spin: -320deg; animation-duration: 14s; animation-delay: 1s;"></div>
+      <div class="petal" style="left: 55%; --petal-size: 11px; --petal-color: rgba(180, 210, 200, 0.45); --petal-rotate: 75deg; --petal-drift: 50px; --petal-spin: 360deg; animation-duration: 16s; animation-delay: 6s;"></div>
+      <div class="petal" style="left: 68%; --petal-size: 7px; --petal-color: rgba(240, 200, 180, 0.4); --petal-rotate: 20deg; --petal-drift: -55px; --petal-spin: -400deg; animation-duration: 13s; animation-delay: 3s;"></div>
+      <div class="petal" style="left: 78%; --petal-size: 13px; --petal-color: rgba(232, 180, 188, 0.35); --petal-rotate: 40deg; --petal-drift: 75px; --petal-spin: 300deg; animation-duration: 17s; animation-delay: 8s;"></div>
+      <div class="petal" style="left: 88%; --petal-size: 9px; --petal-color: rgba(200, 180, 230, 0.4); --petal-rotate: 65deg; --petal-drift: -45px; --petal-spin: -350deg; animation-duration: 14s; animation-delay: 5s;"></div>
+      <div class="petal" style="left: 35%; --petal-size: 6px; --petal-color: rgba(180, 220, 190, 0.5); --petal-rotate: 80deg; --petal-drift: 35px; --petal-spin: 280deg; animation-duration: 19s; animation-delay: 7s;"></div>
+      <div class="petal" style="left: 62%; --petal-size: 10px; --petal-color: rgba(232, 190, 200, 0.4); --petal-rotate: 35deg; --petal-drift: -80px; --petal-spin: -360deg; animation-duration: 16s; animation-delay: 9s;"></div>
+      <div class="petal" style="left: 92%; --petal-size: 8px; --petal-color: rgba(210, 200, 180, 0.35); --petal-rotate: 55deg; --petal-drift: 40px; --petal-spin: 320deg; animation-duration: 20s; animation-delay: 11s;"></div>
+      <div class="petal" style="left: 8%; --petal-size: 11px; --petal-color: rgba(220, 180, 200, 0.4); --petal-rotate: 25deg; --petal-drift: -60px; --petal-spin: -300deg; animation-duration: 15s; animation-delay: 10s;"></div>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="sparkles-container" aria-hidden="true">
+      <div class="sparkle" style="left: 10%; top: 20%; animation-delay: 0s;"></div>
+      <div class="sparkle" style="left: 25%; top: 45%; animation-delay: 1.5s; background: rgba(200, 180, 230, 0.5);"></div>
+      <div class="sparkle" style="left: 70%; top: 15%; animation-delay: 3s; background: rgba(232, 180, 188, 0.5);"></div>
+      <div class="sparkle" style="left: 85%; top: 55%; animation-delay: 2s;"></div>
+      <div class="sparkle" style="left: 50%; top: 70%; animation-delay: 4s; background: rgba(200, 220, 180, 0.5);"></div>
+      <div class="sparkle" style="left: 35%; top: 85%; animation-delay: 1s; background: rgba(180, 200, 230, 0.5);"></div>
+    </div>
+
+    <div class="page">
+      <header class="hero">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Works · 学习笔记</span>
+        </div>
+        <div class="hero-date">
+          {formattedDate}
+          {formattedUpdate && <span> · 更新于 {formattedUpdate}</span>}
+        </div>
+        <h1 class="hero-title">{title}</h1>
+        {description && <p class="hero-desc">{description}</p>}
+        <hr class="hero-divider" />
+      </header>
+
+      <main class="article">
+        <slot />
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer-line"></div>
+        <p class="page-footer-text">✿ 感谢阅读 ✿</p>
+      </footer>
+    </div>
+  </body>
+</html>
