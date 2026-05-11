@@ -1,0 +1,405 @@
+---
+title: 'Geometry 2: Curves and Surfaces'
+description: 'GAMES101 几何第二讲：Bézier 曲线、De Casteljau 算法、Bernstein 基函数、分段曲线、样条与 Bézier 曲面 — 交互式复习笔记'
+pubDate: '2026-05-11'
+---
+
+import BezierHeroPlayground from '../../components/games101/geometry02/BezierHeroPlayground.jsx'
+import ParametricCurveExplorer from '../../components/games101/geometry02/ParametricCurveExplorer.jsx'
+import LinearInterpolationLab from '../../components/games101/geometry02/LinearInterpolationLab.jsx'
+import DeCasteljauVisualizer from '../../components/games101/geometry02/DeCasteljauVisualizer.jsx'
+import BernsteinBasisExplorer from '../../components/games101/geometry02/BernsteinBasisExplorer.jsx'
+import BezierPropertiesLab from '../../components/games101/geometry02/BezierPropertiesLab.jsx'
+import PiecewiseBezierContinuityLab from '../../components/games101/geometry02/PiecewiseBezierContinuityLab.jsx'
+import SplineConceptExplorer from '../../components/games101/geometry02/SplineConceptExplorer.jsx'
+import BezierSurfacePatch3D from '../../components/games101/geometry02/BezierSurfacePatch3D.jsx'
+import TensorProductSurfaceExplainer from '../../components/games101/geometry02/TensorProductSurfaceExplainer.jsx'
+import CurveSurfaceSummaryMap from '../../components/games101/geometry02/CurveSurfaceSummaryMap.jsx'
+
+## Geometry 2: Curves and Surfaces
+
+> 从控制点到平滑形状：理解 Bézier 曲线、样条与 Bézier 曲面
+
+第一讲关注"如何表示形状"——隐式、显式、点云、网格。第二讲进入一个更精妙的问题：**如何用少量控制点构造平滑曲线和曲面**。
+
+下面这个交互组件展示了一条 Cubic Bézier 曲线。拖动控制点，观察曲线如何被"牵引"而非"穿过"。
+
+<BezierHeroPlayground client:only="react" />
+
+---
+
+### 🎯 学习目标
+
+| 目标 | 核心直觉 |
+|------|----------|
+| 理解参数曲线 | 用参数 `t` 扫出路径 |
+| 理解 De Casteljau | 用递归线性插值生成曲线 |
+| 理解 Bézier 性质 | 端点、切线、凸包和仿射不变性 |
+| 理解曲面扩展 | 从曲线到 Bézier surface patch |
+
+---
+
+## 01 / Curves and Surfaces 解决什么问题？
+
+> **核心问题：** 为什么我们不直接用一大堆三角形表示所有形状，而还要研究曲线和曲面？
+
+曲线和曲面提供了一种更高层次、更紧凑、更平滑的几何表达方式。相比直接存储大量离散顶点，我们可以用少量控制点和数学函数生成平滑形状。
+
+关键区别：
+
+- **Mesh** 是离散近似——用有限三角形逼近光滑表面。
+- **Curve / Surface** 是连续表达——用数学函数精确定义形状。
+- **控制点**不是曲线必须经过的所有点，而是影响曲线形状的"手柄"。
+
+> 💡 **小结：** 曲线和曲面让我们用极少的数据（几个控制点）描述无限精度的平滑形状。这在字体设计、动画路径、CAD 建模中至关重要。
+
+**自测：** 拖动上方 Hero 组件的控制点——曲线是否一定经过所有控制点？它一定经过哪些点？
+
+---
+
+## 02 / Parametric Curve 参数曲线
+
+> **核心问题：** 如何用一个参数生成一条曲线？
+
+参数曲线把一个一维参数 $t$ 映射到空间中的点：
+
+$$
+\mathbf{p}(t) = (x(t),\; y(t),\; z(t)), \quad t \in [0, 1]
+$$
+
+随着 $t$ 从 0 变化到 1，点扫过的轨迹就是曲线。
+
+**通俗理解：** 想象一只蚂蚁沿着一条路走。$t$ 是时间，$\mathbf{p}(t)$ 是蚂蚁在时刻 $t$ 的位置。
+
+**对比上一讲：**
+- 隐式表示问："哪些点满足 $f(x,y,z)=0$？"
+- 参数表示问："给定 $t$，点在哪里？"
+
+<ParametricCurveExplorer client:only="react" />
+
+> 💡 **小结：** 参数曲线的本质是一个函数——输入参数 $t$，输出空间中的一个点。不同的函数形式产生不同的曲线形状。
+
+**自测：** 如果 $t$ 变化得均匀，曲线上的点移动速度一定均匀吗？切换到 Spiral 观察。
+
+---
+
+## 03 / Linear Interpolation 线性插值
+
+> **核心问题：** 如何在两个点之间平滑地取一个中间点？
+
+$$
+\text{lerp}(A, B, t) = (1 - t)A + tB
+$$
+
+- 当 $t = 0$，结果是 $A$
+- 当 $t = 1$，结果是 $B$
+- 当 $t$ 在 0 到 1 之间时，结果位于 $A$ 和 $B$ 的连线上
+
+**通俗理解：** $t$ 就是"从 A 走向 B 的进度条"。$t=0.3$ 意味着走了 30%。
+
+<LinearInterpolationLab client:only="react" />
+
+> 💡 **小结：** 线性插值是所有曲线构造的基础。De Casteljau 算法本质上就是反复做 lerp。
+
+**自测：** 当 $t=0.25$ 时，插值点更靠近 A 还是 B？为什么？
+
+---
+
+## 04 / De Casteljau Algorithm
+
+> **核心问题：** 如何只用线性插值构造 Bézier 曲线？
+
+De Casteljau 算法通过反复在相邻控制点之间做线性插值，逐层递归，最终得到曲线上参数 $t$ 对应的点。
+
+**Quadratic（3 个控制点）步骤：**
+1. 在 $P_0$-$P_1$ 上插值得到 $A$
+2. 在 $P_1$-$P_2$ 上插值得到 $B$
+3. 在 $A$-$B$ 上插值得到曲线点 $B(t)$
+
+**Cubic（4 个控制点）步骤：**
+1. 在四个控制点之间做第一层插值 → 得到 3 个点
+2. 在 3 个点之间做第二层插值 → 得到 2 个点
+3. 在 2 个点之间做第三层插值 → 得到最终曲线点
+
+Quadratic Bézier：
+
+$$
+B(t) = (1-t)^2 P_0 + 2(1-t)t\, P_1 + t^2 P_2
+$$
+
+Cubic Bézier：
+
+$$
+B(t) = (1-t)^3 P_0 + 3(1-t)^2 t\, P_1 + 3(1-t)t^2 P_2 + t^3 P_3
+$$
+
+<DeCasteljauVisualizer client:only="react" />
+
+> 💡 **小结：** De Casteljau 算法有很强的几何直觉——每一步都是"在线段上取比例点"。它数值稳定，且天然适合递归实现。
+
+**自测：** 把 $t$ 从 0 拖到 1，观察最终点如何沿曲线运动。中间辅助线是否一直保持在控制多边形内部？
+
+---
+
+## 05 / Bézier Curve 贝塞尔曲线
+
+> **核心问题：** 如何用控制点定义一条平滑曲线？
+
+Bézier 曲线上的每个点都是控制点的**加权组合**。不同的 $t$ 会改变每个控制点的权重。
+
+**Quadratic Bézier（3 个控制点）：**
+
+$$
+B(t) = (1-t)^2 P_0 + 2(1-t)t\, P_1 + t^2 P_2
+$$
+
+**Cubic Bézier（4 个控制点）：**
+
+$$
+B(t) = (1-t)^3 P_0 + 3(1-t)^2 t\, P_1 + 3(1-t)t^2 P_2 + t^3 P_3
+$$
+
+**通俗理解：** 每个控制点像一块磁铁，在不同的 $t$ 时刻有不同的"吸引力"。曲线是所有磁铁共同作用的结果。
+
+> 💡 **小结：**
+> - 二次 Bézier 使用 3 个控制点
+> - 三次 Bézier 使用 4 个控制点
+> - 工业设计、字体、动画路径中最常用三次 Bézier
+
+**自测：** 三次 Bézier 曲线一定会经过 $P_1$ 和 $P_2$ 吗？在上方 De Casteljau 组件中拖动控制点验证。
+
+---
+
+## 06 / Bernstein Basis 伯恩斯坦基函数
+
+> **核心问题：** 控制点的影响力如何随 $t$ 改变？
+
+Bézier 曲线可以写成：
+
+$$
+B(t) = \sum_{i=0}^{n} B_i^n(t)\, P_i
+$$
+
+其中 $B_i^n(t)$ 是 Bernstein 基函数。对于 Cubic（$n=3$）：
+
+$$
+B_0^3(t) = (1-t)^3, \quad B_1^3(t) = 3t(1-t)^2, \quad B_2^3(t) = 3t^2(1-t), \quad B_3^3(t) = t^3
+$$
+
+**关键性质：** 所有 Bernstein 基函数在任意 $t$ 处的和等于 1：
+
+$$
+\sum_{i=0}^{n} B_i^n(t) = 1
+$$
+
+**通俗理解：** 每个 Bernstein 基函数是一条"权重曲线"。在某个 $t$ 下，它告诉你对应控制点有多大的影响力。
+
+<BernsteinBasisExplorer client:only="react" />
+
+> 💡 **小结：**
+> - $t=0$ 时，$P_0$ 权重为 1（曲线在 $P_0$）
+> - $t=1$ 时，$P_3$ 权重为 1（曲线在 $P_3$）
+> - 中间位置由多个控制点共同影响
+> - 权重和恒为 1 → 曲线是控制点的 affine combination
+
+**自测：** 当 $t=0.5$ 时，四个控制点的权重分别是多少？哪个控制点影响最大？
+
+---
+
+## 07 / Bézier Curve Properties 几何性质
+
+> **核心问题：** Bézier 曲线有哪些让它适合建模和设计的性质？
+
+### 1. Endpoint Interpolation 端点插值
+
+$$
+B(0) = P_0, \quad B(1) = P_n
+$$
+
+曲线一定经过第一个和最后一个控制点。
+
+### 2. Endpoint Tangent 端点切线
+
+Cubic Bézier：
+
+$$
+B'(0) = 3(P_1 - P_0), \quad B'(1) = 3(P_3 - P_2)
+$$
+
+起点切线方向由 $P_0 \to P_1$ 决定，终点切线方向由 $P_2 \to P_3$ 决定。
+
+### 3. Convex Hull Property 凸包性质
+
+曲线始终位于控制点形成的凸包内部。这保证了曲线不会"跑出"控制点围成的区域。
+
+### 4. Affine Transformation Property 仿射不变性
+
+对控制点做仿射变换（平移、旋转、缩放），等价于对整条曲线做同样的变换。这意味着我们只需要变换控制点就够了。
+
+<BezierPropertiesLab client:only="react" />
+
+> 💡 **小结：** 这些性质让 Bézier 曲线非常适合交互式设计——设计师可以通过移动控制点直观地控制曲线形状，同时保证曲线行为可预测。
+
+**自测：** 移动 $P_1$ 时，起点位置会变吗？起点切线方向会变吗？切换到"凸包性质"tab 观察。
+
+---
+
+## 08 / Piecewise Bézier Curve 分段贝塞尔曲线
+
+> **核心问题：** 为什么不用一条非常高阶的 Bézier 曲线表示复杂路径？
+
+高阶 Bézier 曲线的问题：
+- **全局性太强**：一个控制点影响整条曲线
+- **数值不稳定**：高阶多项式容易振荡
+- **难以局部编辑**：改一处动全身
+
+实际解决方案：用多个低阶（通常是三次）Bézier 曲线片段拼接。
+
+分段 Bézier 曲线的优势：
+- 更容易控制局部形状
+- 更容易保持数值稳定
+- 广泛用于 SVG 路径、字体轮廓、动画曲线
+
+但拼接带来一个新问题：**连接处是否平滑？**
+
+---
+
+## 09 / Continuity 连续性
+
+> **核心问题：** 两段曲线接在一起，怎样才算"平滑"？
+
+### C0 Continuity 位置连续
+
+$$
+P_3 = Q_0
+$$
+
+两段曲线接上了，但连接处切线可能突变（有"折角"）。
+
+### C1 Continuity 一阶导数连续
+
+$$
+P_3 = Q_0, \quad P_3 - P_2 = Q_1 - Q_0
+$$
+
+连接处速度方向和大小都连续。视觉上非常平滑。
+
+### G1 Continuity 几何连续
+
+切线方向一致，但长度不要求相等。视觉上通常看起来平滑，但参数速度可能不连续。
+
+### C2 Continuity 二阶导数连续
+
+曲率变化也平滑。用于需要极高平滑度的场景（如汽车车身设计）。
+
+<PiecewiseBezierContinuityLab client:only="react" />
+
+> 💡 **小结：** 只把两段曲线接上（C0）还不够。平滑连接需要控制切线（C1/G1），甚至曲率（C2）。连续性等级越高，视觉越平滑，但约束也越多。
+
+**自测：** G1 和 C1 的区别是什么？切换模式观察连接处的切线箭头长度。
+
+---
+
+## 10 / Splines 样条曲线
+
+> **核心问题：** 如何用多个局部片段组成可控的平滑曲线？
+
+**Spline** 是由多个曲线段组成，并满足一定连续性条件的曲线。
+
+**B-spline 的核心思想：**
+- 使用一组控制点
+- 每个控制点只影响曲线的一部分（**局部控制 Local Control**）
+- 移动一个控制点不会改变整条曲线
+- 相比单条高阶 Bézier，更适合复杂建模
+
+<SplineConceptExplorer client:only="react" />
+
+> 💡 **小结：** 样条曲线结合了"平滑"和"可控"两个优势。B-spline 的局部控制特性使它成为 CAD、动画和工业设计中的标准工具。
+
+**自测：** 在上方组件中切换 Global Bézier 和 Local Control 模式，拖动同一个控制点，观察影响范围的区别。
+
+---
+
+## 11 / Bézier Surface 贝塞尔曲面
+
+> **核心问题：** 如何把 Bézier 曲线推广到曲面？
+
+曲线用一个参数 $t$，曲面用两个参数 $u$ 和 $v$：
+
+**曲线：**
+
+$$
+B(t) = \sum_{i=0}^{n} B_i^n(t)\, P_i
+$$
+
+**曲面：**
+
+$$
+\mathbf{S}(u, v) = \sum_{i=0}^{m}\sum_{j=0}^{n} B_i^m(u)\, B_j^n(v)\, \mathbf{P}_{ij}
+$$
+
+**通俗理解：**
+- 控制点从一排变成一个二维控制网格
+- 参数从一个 $t$ 变成两个参数 $(u, v)$
+- 曲面上的点是控制网格所有点的二维加权组合
+
+<BezierSurfacePatch3D client:only="react" />
+
+> 💡 **小结：**
+> - Bézier surface 是 Bézier curve 的二维推广
+> - 控制点网格影响曲面形状
+> - 曲面 patch 是参数域 $[0,1]^2$ 映射到 3D 空间的结果
+> - 调整控制点高度会改变局部曲面形状
+
+**自测：** 修改控制网格角点和中间点，对曲面的影响有什么不同？
+
+---
+
+## 12 / Tensor Product Surface
+
+> **核心问题：** Tensor product surface 的公式如何用几何步骤理解？
+
+可以把 Bézier surface 理解为**两个方向上的 Bézier 插值**：
+
+1. **固定 $u$**，沿 u 方向对每一行控制点做 Bézier 插值 → 得到 4 个中间点
+2. **对中间点沿 $v$ 方向**做 Bézier 插值 → 得到曲面上的点 $S(u,v)$
+
+**通俗理解：** Tensor product 不是神秘公式，而是"先在一个方向做曲线插值，再在另一个方向做曲线插值"。
+
+<TensorProductSurfaceExplainer client:only="react" />
+
+> 💡 **小结：** Tensor product 把一维的 Bézier 插值自然地推广到二维。理解了这个两步过程，曲面公式就不再抽象。
+
+**自测：** 固定 $v$ 只改变 $u$ 时，曲面上的点沿什么方向移动？固定 $u$ 改变 $v$ 呢？
+
+---
+
+## 13 / 总结：从曲线到曲面
+
+<CurveSurfaceSummaryMap client:only="react" />
+
+### 知识对比表
+
+| 概念 | 输入 | 输出 | 核心直觉 | 常见用途 |
+|------|------|------|----------|----------|
+| Parametric Curve | 参数 t | 曲线上的点 | 用 t 扫出路径 | 路径、动画、轮廓 |
+| Lerp | 两个点 + t | 中间点 | 按比例混合 | 插值基础 |
+| De Casteljau | 控制点 + t | Bézier 点 | 递归线性插值 | 曲线构造 |
+| Bézier Curve | 控制点 | 平滑曲线 | 控制点牵引曲线 | 字体、矢量图、动画 |
+| Piecewise Bézier | 多段曲线 | 复杂路径 | 小段拼复杂形状 | SVG、字体、设计软件 |
+| Spline | 控制点 + 连续性 | 平滑复杂曲线 | 局部控制 | CAD、建模、动画 |
+| Bézier Surface | 控制网格 + u,v | 曲面点 | 曲线的二维推广 | 曲面建模 |
+| Tensor Product | 两个参数方向 | 曲面 patch | 两次 Bézier 插值 | 曲面片 |
+
+### 学习总结
+
+- 曲线和曲面是**显式几何**的重要形式
+- Bézier 曲线的核心是**控制点和插值**
+- De Casteljau 提供了**直观且稳定**的构造方法
+- Bernstein basis 解释了**控制点权重**
+- 分段曲线和样条解决了**复杂形状的可控性**问题
+- Bézier surface 把一维曲线推广到了**二维参数域**
+
+### 下一步
+
+→ **Geometry 3: Mesh Operations** — 细分、简化、正则化
