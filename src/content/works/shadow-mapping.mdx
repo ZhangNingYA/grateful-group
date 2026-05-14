@@ -1,21 +1,33 @@
 ---
-title: 'Shadow Mapping'
-description: '实时阴影映射：Light Space、Depth Map、Shadow Test、Bias、PCF 与 CSM — 交互式复习笔记'
+title: 'Shadow Mapping: From Light to Visibility'
+description: 'GAMES101 实时阴影：Two-Pass、Light-Space Transform、Shadow Test、Acne / Bias / Peter Panning、PCF、PCSS、CSM — 交互式 3D 复习教材'
 pubDate: '2026-05-13'
 ---
 
 import ShadowMappingHero3D from '../../components/games101/shadowMapping/ShadowMappingHero3D.jsx'
+import VisibilityFunctionExplainer from '../../components/games101/shadowMapping/VisibilityFunctionExplainer.jsx'
 import TwoPassPipelineDiagram from '../../components/games101/shadowMapping/TwoPassPipelineDiagram.jsx'
+import TwoPassPlayground3D from '../../components/games101/shadowMapping/TwoPassPlayground3D.jsx'
+import LightSpaceTransformLab from '../../components/games101/shadowMapping/LightSpaceTransformLab.jsx'
 import ShadowDepthComparisonLab from '../../components/games101/shadowMapping/ShadowDepthComparisonLab.jsx'
+import AcneGeometryExplainer from '../../components/games101/shadowMapping/AcneGeometryExplainer.jsx'
 import ShadowAcneBiasLab from '../../components/games101/shadowMapping/ShadowAcneBiasLab.jsx'
+import ShadowResolutionAliasingDemo from '../../components/games101/shadowMapping/ShadowResolutionAliasingDemo.jsx'
 import PCFFilteringDemo from '../../components/games101/shadowMapping/PCFFilteringDemo.jsx'
+import PCSSPenumbraLab from '../../components/games101/shadowMapping/PCSSPenumbraLab.jsx'
+import LightTypeComparison3D from '../../components/games101/shadowMapping/LightTypeComparison3D.jsx'
+import CascadedShadowMapsLab from '../../components/games101/shadowMapping/CascadedShadowMapsLab.jsx'
+import ShadowDebugChecklist from '../../components/games101/shadowMapping/ShadowDebugChecklist.jsx'
+import ShadowTechniquesComparison from '../../components/games101/shadowMapping/ShadowTechniquesComparison.jsx'
 import ShadowMappingSummaryMap from '../../components/games101/shadowMapping/ShadowMappingSummaryMap.jsx'
 
-## Shadow Mapping
+## Shadow Mapping: From Light to Visibility
 
-> 从光源视角记录深度，再从相机视角判断遮挡
+> 把"光线是否被挡住"压缩成一次纹理深度比较
 
-Shadow Mapping 是实时渲染中最经典的阴影算法之一。它把"光线是否被挡住"转化成一次深度比较——先从光源看场景记录最近深度，再从相机看场景时查询这张深度图。
+光线追踪问"这个像素看到什么"。Shadow Mapping 解决一个更具体的问题：**"光源能不能看到这个着色点"**。把这个问题离线烘焙成一张深度图，运行时就只剩一次纹理读取 + 一次比较。
+
+下面这个交互场景把整张图压在一起：拖动光源、调整 shadow map 分辨率与 bias，立即看到阴影质量随之变化。
 
 <ShadowMappingHero3D client:only="react" />
 
@@ -25,115 +37,96 @@ Shadow Mapping 是实时渲染中最经典的阴影算法之一。它把"光线�
 
 | 目标 | 核心直觉 |
 |------|----------|
-| 理解两遍渲染 | 从光源生成深度图，再从相机使用它 |
-| 理解 Light Space | 把世界中的点变换到光源视角下 |
-| 理解 Shadow Test | 比较当前深度和 shadow map 深度 |
-| 理解常见问题 | acne、bias、peter panning、aliasing 和 PCF |
+| 理解 Visibility | 阴影本质是渲染方程里的 $V(x, \omega)$ 项 |
+| 理解 Two-Pass | 先从光源记录深度，再从相机查询深度 |
+| 理解 Light-Space | 把 fragment 重新放回光源坐标系 |
+| 理解工程问题 | acne / bias / peter panning / aliasing 是同一个深度精度问题的不同侧面 |
+| 理解软阴影 | PCF 是过滤"比较结果"，PCSS 是接近物理 |
 
 ---
 
-## 01 / 为什么需要 Shadow Mapping？
+## 01 / 阴影到底在算什么？
 
-> **核心问题：** 实时渲染中如何快速判断一个点是否在阴影里？
+> **核心问题：** 阴影在渲染方程里对应哪一项？
 
-阴影的几何定义很简单：如果一个表面点从光源看过去被其他物体挡住，那么它就在阴影中。
+直接光照的着色公式中，可见性 $V(x, \omega)$ 是一个二值函数：
 
-Shadow Mapping 的核心思想：
-1. 提前从光源视角渲染一张**深度图**（Shadow Map）
-2. 记录光源能看到的最近表面深度
-3. 之后从相机渲染时，把当前片元投影到这张图上
-4. 比较深度：如果片元比记录的深度更远 → 被遮挡 → 阴影
+$$
+L_o(x, \omega_o) = \int L_i \cdot \rho \cdot (n \cdot \omega_i) \cdot V(x, \omega_i) \, d\omega_i
+$$
 
-> 💡 **小结：** Shadow Map 里存的不是"阴影"，而是"光源能看到的最近深度"。阴影是通过比较得出的。
+阴影 = $V(x, \omega_i) = 0$ 的区域。如果对每个 fragment 朝光源射一条 ray 求 $V$，渲染会非常昂贵。**Shadow Mapping 把这个查询变成一次纹理读取**：把光源到场景的"最近表面深度"提前烘焙成纹理，运行时只比较深度。
 
-**自测：** 阴影图里存的是颜色、光照强度，还是深度？为什么？
+<VisibilityFunctionExplainer client:only="react" />
+
+> 💡 **小结：** Shadow map 不存阴影，它存"光源能看到的最近深度"。阴影是运行时 **比较** 出来的。
+
+**自测：** 一张 shadow map 实际存的是 (a) 颜色 (b) 阴影掩码 (c) 深度 (d) 法线？
 
 ---
 
-## 02 / Two-Pass Rendering 两遍渲染
+## 02 / Two-Pass Rendering 流程
 
-> **核心问题：** 为什么 Shadow Mapping 需要两遍渲染？
+> **核心问题：** 为什么 Shadow Mapping 必须分两遍？
 
-**Pass 1: Render from Light**
-```
-Scene → Light View → Depth Buffer → Shadow Map
-```
+**Pass 1**：把"相机"换到光源位置 + 朝向，渲染整个场景，**只写入深度缓冲**。结果作为纹理保存 → Shadow Map。
 
-**Pass 2: Render from Camera**
-```
-Scene → Camera View → Fragment → Light Space → Depth Compare → Lit/Shadow
-```
+**Pass 2**：从真正的相机视角渲染。对每个 fragment：把世界坐标变换到光源裁剪空间，得到 $(u, v, z)$。用 $(u, v)$ 采样 shadow map 拿到 `closestDepth`，比较 `z` 是否更远。
 
 <TwoPassPipelineDiagram client:only="react" />
 
-**通俗理解：** 第一遍是光源"拍照"记录它能看到什么。第二遍是相机渲染时，对每个像素问："光源能看到你吗？"
+下面同时展示两个 pass 的视角：左是光源看见的轮廓（决定 depth map），右是相机看到的最终阴影。请让"左侧背向光的区域"和"右侧的阴影区域"对应起来。
 
-> 💡 **小结：** Shadow Mapping 的关键思想是"先从光源记录可见性，再从相机查询可见性"。
+<TwoPassPlayground3D client:only="react" />
 
-**自测：** 如果物体只在第二遍渲染，但没有参与第一遍 depth pass，它能投射阴影吗？
+> 💡 **小结：** Pass 1 写深度，Pass 2 读深度。这两遍的中间产物就是 Shadow Map。
+
+**自测：** 一个物体只在 Pass 2 出现，没有在 Pass 1 渲染过，它会投射阴影吗？
 
 ---
 
-## 03 / Light Space 与坐标变换
+## 03 / Light-Space Transform
 
-> **核心问题：** 相机看到的片元，如何知道它在光源眼里对应 shadow map 的哪个位置？
+> **核心问题：** 相机看到的 fragment，怎么知道自己在 Shadow Map 上对应哪个 texel？
 
-**变换流程：**
+矩阵链：
 
 $$
-p_{lightClip} = P_{light} \cdot V_{light} \cdot M_{model} \cdot p_{local}
+\mathbf{p}_{\text{clip}}^{\text{light}} = P_{\text{light}} \cdot V_{\text{light}} \cdot \mathbf{p}_{\text{world}}
 $$
 
 **透视除法 → NDC：**
 
 $$
-p_{ndc} = \frac{p_{lightClip}.xyz}{p_{lightClip}.w}
+\mathbf{p}_{\text{ndc}} = \frac{\mathbf{p}_{\text{clip}}.xyz}{\mathbf{p}_{\text{clip}}.w}
 $$
 
 **映射到 Shadow Map UV：**
 
 $$
-u = 0.5 \cdot x_{ndc} + 0.5, \quad v = 0.5 \cdot y_{ndc} + 0.5
+u = 0.5 \cdot x_{\text{ndc}} + 0.5, \quad v = 0.5 \cdot y_{\text{ndc}} + 0.5
 $$
 
 $$
-z_{shadow} = 0.5 \cdot z_{ndc} + 0.5
+z_{\text{shadow}} = 0.5 \cdot z_{\text{ndc}} + 0.5
 $$
 
-**通俗理解：** GPU 中的片元最初在 camera view 中被看到，但判断阴影时，需要把它"重新站到光源视角看自己在哪里"。
+如果 $u \notin [0, 1]$ 或 $v \notin [0, 1]$，说明 fragment 跑出了 light frustum，shadow map 没有对应数据 —— 通常会按"lit"或"shadow"来 fallback。
 
-> 💡 **小结：** 坐标变换是 Shadow Mapping 的桥梁——它把相机空间的片元映射到光源空间的 UV + 深度。
+<LightSpaceTransformLab client:only="react" />
 
-**自测：** 如果一个片元投影到 shadow map 之外（UV 超出 [0,1]），通常说明什么？
+> 💡 **小结：** Light-Space Transform 是 Pass 1 和 Pass 2 之间的**桥梁**。fragment 必须"重新站到光源位置"才能查到自己的可见性。
+
+**自测：** fragment 投影到 shadow map 之外通常说明什么？应该被处理为 lit 还是 shadow？
 
 ---
 
-## 04 / Depth Map 到底存了什么？
+## 04 / Shadow Test：一次比较
 
-> **核心问题：** Shadow map 里每个 texel 记录的是什么？
-
-Shadow map 是从光源视角生成的 **depth texture**。每个 texel 存储从光源出发，在该方向上看到的**最近表面的深度**。
-
-关键理解：
-- Shadow map **不存颜色**
-- Shadow map **不存"阴影"**
-- 它只告诉我们光源能看到的最近深度
-- 阴影是在第二遍通过**比较**得出的
-
-> 💡 **小结：** 同一张 shadow map 可以被用于场景中所有片元的阴影判断——每个片元只需要查询自己对应位置的深度值。
-
-**自测：** 为什么同一个 shadow map 可以被用于场景中很多片元的阴影判断？
-
----
-
-## 05 / Shadow Test 深度比较
-
-> **核心问题：** 如何通过一次深度比较判断一个点是否在阴影中？
-
-**核心公式：**
+> **核心问题：** 怎么用一次深度比较判断阴影？
 
 $$
-\text{currentDepth} = z_{fragment}^{light}
+\text{currentDepth} = z_{\text{fragment}}^{\text{light}}
 $$
 
 $$
@@ -141,255 +134,251 @@ $$
 $$
 
 $$
-\text{inShadow} = \text{currentDepth} - \text{bias} > \text{closestDepth}
+\text{inShadow} = (\text{currentDepth} - \text{bias}) > \text{closestDepth}
 $$
 
-**通俗理解：** 如果当前片元从光源看过去的深度比 shadow map 记录的最近深度更大，说明它后面还有别的东西挡住了光。
+GLSL 伪代码：
 
-**GLSL 伪代码：**
 ```glsl
-vec4 lightClip = lightSpaceMatrix * vec4(worldPos, 1.0);
-vec3 projCoords = lightClip.xyz / lightClip.w;
-projCoords = projCoords * 0.5 + 0.5;
-float currentDepth = projCoords.z;
-float closestDepth = texture(shadowMap, projCoords.xy).r;
-float shadow = currentDepth - bias > closestDepth ? 1.0 : 0.0;
+vec4 lightClip = lightVP * vec4(worldPos, 1.0);
+vec3 ndc = lightClip.xyz / lightClip.w;
+ndc = ndc * 0.5 + 0.5;                     // [-1,1] → [0,1]
+float currentDepth = ndc.z;
+float closestDepth = texture(shadowMap, ndc.xy).r;
+float shadow = (currentDepth - bias) > closestDepth ? 1.0 : 0.0;
 ```
 
-拖动下方组件中的 Fragment 和 Occluder 位置，观察深度比较结果：
+下面这个组件把比较过程拉到一根坐标轴上，可以拖动 fragment 和 occluder 的位置：
 
 <ShadowDepthComparisonLab client:only="react" />
 
-> 💡 **小结：** Shadow test 的逻辑极其简单——一次减法和一次比较。但这个简单操作背后需要正确的坐标变换和深度图。
+> 💡 **小结：** Shadow Test 本身只是减法 + 比较；难点在前面的坐标变换和 bias。
 
-**自测：** 如果 `currentDepth = 0.4`，`closestDepth = 0.6`，这个点在阴影中吗？为什么？
+**自测：** 如果 currentDepth = 0.4，closestDepth = 0.6，bias = 0.005，结果是 lit 还是 shadow？
 
 ---
 
-## 06 / Shadow Acne 与 Bias
+## 05 / Shadow Acne 是怎么来的？
 
-> **核心问题：** 为什么物体会错误地给自己投下斑驳阴影？
+> **核心问题：** 物体凭空给自己投下斑驳阴影，到底是哪里出问题了？
 
-**Shadow Acne** 通常来自：
-- Shadow map 分辨率有限，一个 texel 覆盖一片表面
-- 浮点精度误差
-- 表面斜率导致同一表面在深度比较中出现微小差异
+Shadow Map 是一张**离散**的纹理：
 
-**解决方案：Depth Bias**
+- 每个 texel 在世界空间覆盖一段区域
+- 这一片区域里，shadow map 只能存**一个**深度值（最近的那个）
+- 真实表面是连续倾斜的，但 shadow map 是阶梯式的
+- 同一片表面上，多数点的 currentDepth 比 texel 记的 closestDepth 略大 → 误判为自我遮挡
 
-$$
-\text{inShadow} = \text{currentDepth} - \text{bias} > \text{closestDepth}
-$$
+<AcneGeometryExplainer client:only="react" />
 
-Bias 把比较深度稍微往光源方向推一点，减少自阴影误判。
-
-**但 bias 不是越大越好：**
-- Bias 太小 → acne 明显
-- Bias 太大 → 阴影脱离物体（**Peter Panning**）
-
-调整下方组件的 bias 值，观察 acne 和 peter panning 的变化：
+直观演示：开启不同 bias 看实际场景：
 
 <ShadowAcneBiasLab client:only="react" />
 
-> 💡 **小结：** Bias 是解决数值误差的工程补丁。实际项目中通常需要结合 normal bias 和 slope-scale bias 来平衡。
+> 💡 **小结：** Acne 不是 bug，是 shadow map 离散化 + 浮点精度的副作用。Bias 的本质是把 currentDepth 朝光源方向"挪一点点"，让它逃出 texel 的量化误差。
 
-**自测：** Peter Panning 和 Shadow Acne 分别对应 bias 太大还是太小？
-
----
-
-## 07 / Shadow Map Resolution 与 Aliasing
-
-> **核心问题：** 为什么阴影边缘会有锯齿和块状感？
-
-Shadow map 是一张有限分辨率的纹理。一个 shadow texel 可能覆盖世界空间中很大区域：
-
-$$
-\text{world texel size} = \frac{\text{light frustum width}}{\text{shadow map resolution}}
-$$
-
-**影响因素：**
-- Resolution 越低 → 每个 texel 覆盖越大 → 锯齿越明显
-- Light frustum 越大 → 同样分辨率下精度越低
-- 近处阴影尤其容易暴露低分辨率问题
-
-**改善方法：**
-- 提高 shadow map resolution（增加显存和性能成本）
-- 收紧 light frustum（只覆盖需要的区域）
-- 使用 PCF 软化边缘
-- 使用 CSM 按距离分配精度
-
-> 💡 **小结：** 阴影质量不仅取决于分辨率，还取决于光源投影范围。1024×1024 在一个很大的 frustum 下仍然可能很糊。
-
-**自测：** 为什么 1024×1024 的 shadow map 在一个很大的光源视锥下仍然可能很糊？
+**自测：** 同一个 shadow map 分辨率下，平面越斜（normal 越偏离光线）acne 会更严重还是更轻微？
 
 ---
 
-## 08 / PCF: Percentage-Closer Filtering
+## 06 / Bias、Peter Panning 与 Slope-Scale
 
-> **核心问题：** 如何让硬阴影边缘变得更柔和？
+> **核心问题：** Bias 不是越大越好。怎么平衡？
 
-PCF 不是简单过滤 depth texture，而是对多个邻近 texel **分别进行 shadow test**，然后**平均比较结果**。
+- **bias 太小** → shadow acne。
+- **bias 太大** → 阴影"漂浮"，从物体底部开始就脱离物体本身（**Peter Panning**）。
+- **slope-scale bias**：bias 随表面与光线夹角变化 —— 越斜越大。
+- **normal bias**：把比较点沿表面法线方向推一小段，几何上避免 acne 而不是改 z。
 
-**GLSL 伪代码：**
+下面这张 checklist 整理了八个常见症状和对应原因：
+
+<ShadowDebugChecklist client:only="react" />
+
+> 💡 **小结：** Bias 是工程补丁，不是物理量。实际项目通常组合使用 depth bias + slope-scale bias + normal bias。
+
+**自测：** 如果阴影看起来悬浮在物体下方，应该把 bias 调大还是调小？
+
+---
+
+## 07 / Resolution × Light Frustum = 阴影质量
+
+> **核心问题：** 为什么把 shadow map 调到 2048×2048 还是糊？
+
+阴影的"清晰度"由 **一个 texel 在世界空间的尺寸**决定：
+
+$$
+\text{world texel size} \approx \frac{\text{light frustum width}}{\text{shadow map resolution}}
+$$
+
+也就是说：
+
+- 提高 resolution 让 texel 更小。
+- 收紧 light frustum 也能让 texel 更小（同样分辨率，覆盖更小的世界范围）。
+- 两个一起调最有效。
+
+<ShadowResolutionAliasingDemo client:only="react" />
+
+> 💡 **小结：** "1024² 不够清晰"通常意味着 **frustum 太大** ，而不是分辨率本身的问题。
+
+**自测：** 把 shadow map 从 1024² 调到 2048²，但同时把 frustum 范围也翻倍，texel 世界尺寸会怎么变化？
+
+---
+
+## 08 / PCF：让边缘不那么硬
+
+> **核心问题：** 怎么把锯齿边缘变成柔和过渡？
+
+PCF（Percentage-Closer Filtering）的关键不是过滤深度，而是**过滤比较结果**：
+
 ```glsl
 float shadow = 0.0;
-for (int x = -1; x <= 1; x++) {
-  for (int y = -1; y <= 1; y++) {
-    float closestDepth = texture(shadowMap, uv + vec2(x, y) * texelSize).r;
-    shadow += currentDepth - bias > closestDepth ? 1.0 : 0.0;
+for (int y = -h; y <= h; y++)
+  for (int x = -h; x <= h; x++) {
+    float closest = texture(shadowMap, uv + vec2(x, y) * texel).r;
+    shadow += (currentDepth - bias) > closest ? 1.0 : 0.0;
   }
-}
-shadow /= 9.0; // 3x3 kernel
+shadow /= float((2*h+1) * (2*h+1));
 ```
 
-**关键理解：**
-- PCF 过滤的是 **shadow test 的结果**（0 或 1），不是深度值
-- Kernel 越大越柔和，但成本越高
-- PCF 不是物理真实软阴影
+每个邻居 texel 单独做一次 shadow test，结果取平均。kernel 越大，软化程度越高，但成本随 $k^2$ 增长。
 
 <PCFFilteringDemo client:only="react" />
 
-> 💡 **小结：** PCF 通过邻域多次比较取平均，让硬边缘变成渐变。它是最常用的阴影软化方法，但不等于物理软阴影。
+> 💡 **小结：** PCF 是过滤"比较结果"。直接对深度图做模糊得到的是错的（深度不能线性插值得到正确的 visibility）。
 
-**自测：** 3×3 PCF 和 7×7 PCF 哪个更柔和？哪个更贵？
-
----
-
-## 09 / PCF 和真实软阴影的区别
-
-> **核心问题：** PCF 产生的软边缘是不是物理真实软阴影？
-
-**真实软阴影**来自面积光源：
-- 光源有面积 → 部分被遮挡 → 产生**半影 penumbra**
-- 遮挡物离接收面越远 → 半影越宽
-- 遮挡物离接收面越近 → 阴影越硬
-
-**PCF 的局限：**
-- PCF 只是在 shadow map 空间做邻域平均
-- 无法根据 blocker 距离调整半影宽度
-- 所有位置的软化程度相同
-
-**更高级的方法：**
-- **PCSS**（Percentage-Closer Soft Shadows）：根据 blocker 距离动态调整 PCF kernel
-- **VSM**（Variance Shadow Maps）：用统计方法近似
-- **Ray Traced Shadows**：物理精确但成本高
-
-> 💡 **小结：** PCF 是工程近似，不是物理模拟。真实软阴影需要考虑光源面积和遮挡距离。
-
-**自测：** 如果光源是一个很大的 area light，遮挡物离接收面越远，半影通常会怎样变化？
+**自测：** 3×3 PCF 和 7×7 PCF 哪个更柔？哪个 GPU 成本更高？
 
 ---
 
-## 10 / 不同光源的 Shadow Map
+## 09 / PCF 的极限：不是物理软阴影
 
-> **核心问题：** Directional light、spot light、point light 的 shadow map 有什么不同？
+> **核心问题：** 真实软阴影是怎么形成的？PCF 为什么不是？
 
-| 光源类型 | 投影方式 | Shadow Map 类型 | 典型用途 |
-|----------|----------|-----------------|----------|
-| Directional | Orthographic | 2D texture | 太阳光 |
-| Spot | Perspective | 2D texture | 聚光灯 |
-| Point | 6× Perspective | Cubemap | 灯泡、火把 |
+真实软阴影来自**面积光源**：光源有面积 → 接收点的某些方向被遮挡某些没被 → 产生半影 (penumbra)。直觉公式：
 
-**Directional Light：**
-- 使用正交投影（平行光线）
-- 常配合 CSM 处理大场景
+$$
+w_{\text{penumbra}} \propto \frac{d_{\text{receiver}} - d_{\text{blocker}}}{d_{\text{blocker}}} \cdot w_{\text{light}}
+$$
 
-**Spot Light：**
-- 使用透视投影（类似相机）
-- 自然匹配聚光灯锥形范围
+也就是 blocker 离 receiver 越远，半影越宽；离得越近，阴影越锐。
 
-**Point Light：**
-- 向所有方向发光
-- 需要 cubemap shadow map（6 个方向各一张）
-- 成本是 directional 的 6 倍
+PCF 用的是**固定 kernel**，软化程度跟 blocker 距离没关系。**PCSS** 在 PCF 前加一步 blocker search，根据估算的 blocker 距离动态调整 kernel 大小，从而模拟出"近锐远柔"的效果。
 
-> 💡 **小结：** 光源类型决定了 shadow map 的投影方式和数据结构。
+<PCSSPenumbraLab client:only="react" />
 
-**自测：** 为什么 point light 不能只用一张普通 2D shadow map 覆盖所有方向？
+> 💡 **小结：** PCF 是工程近似，不区分位置；PCSS 用统计方法把 blocker 距离引入 kernel 大小，更接近物理真实。
+
+**自测：** blocker 紧贴 receiver（如球体踩在地面上）时，半影应该是宽还是窄？PCF 能否表现这一点？
 
 ---
 
-## 11 / Cascaded Shadow Maps / CSM
+## 10 / 不同光源类型的 Shadow Map
 
-> **核心问题：** 为什么大场景里的太阳阴影常常需要 CSM？
+> **核心问题：** Directional / Spot / Point 怎么区别处理？
 
-**问题：** 单张 shadow map 同时覆盖近处和远处时，近处精度不够。
+| 光源 | 投影方式 | Shadow Map | 成本 | 用途 |
+|------|----------|------------|------|------|
+| Directional | Orthographic | 1 张 2D | 1× | 太阳、月亮 |
+| Spot | Perspective | 1 张 2D | 1× | 聚光灯、手电筒 |
+| Point | 6× Perspective | Cubemap | 6× | 灯泡、火把 |
 
-**CSM 的解决方案：**
-1. 把相机视锥按距离切成多个区间（cascades）
-2. 每个 cascade 有自己的 shadow map
-3. 近处 cascade 覆盖范围小但精度高
-4. 远处 cascade 覆盖范围大但精度低
+<LightTypeComparison3D client:only="react" />
 
-**典型配置：**
-- Cascade 0: 0-10m（高精度）
-- Cascade 1: 10-30m（中精度）
-- Cascade 2: 30-100m（低精度）
-- Cascade 3: 100-500m（最低精度）
+> 💡 **小结：** 光源类型不只决定光照模型，也决定 shadow map 的投影矩阵和数据结构。Point light 是 directional 的 6 倍开销。
 
-> 💡 **小结：** CSM 的核心是把 shadow map 精度更多分配给近处。这是几乎所有 3A 游戏中太阳阴影的标准方案。
-
-**自测：** 为什么 near cascade 通常需要比 far cascade 更高的有效精度？
+**自测：** 一个 point light 为什么不能用一张普通 2D shadow map 覆盖所有方向？
 
 ---
 
-## 12 / Shadow Mapping Debugging
+## 11 / Cascaded Shadow Maps · 大场景方向光的标配
 
-> **核心问题：** 实际项目中如何定位 shadow mapping 问题？
+> **核心问题：** 为什么 1024² 的 shadow map 在开放世界中不够？
 
-**常见问题排查：**
+单张 shadow map 既要覆盖近处（要看清角色脚下细节），又要覆盖远处（几公里外），分辨率根本不够分。**CSM** 把相机视锥按距离切几段，每段一张专属 shadow map：
 
-| 现象 | 可能原因 |
-|------|----------|
-| 完全没有阴影 | light 没有 castShadow / object 没有 castShadow / shadow camera 没覆盖场景 |
-| 阴影方向错误 | light position/direction 设置错误 |
-| Shadow acne | bias 太小 / normal bias 不够 / 深度精度不足 |
-| Peter panning | bias 太大 |
-| 锯齿严重 | resolution 太低 / light frustum 太大 / 没有 PCF |
-| 阴影闪烁 | shadow map texel 和 camera movement 不稳定 / 需要 texel snapping |
-| 远处阴影消失 | shadow camera far 不够 / 需要 CSM |
+- Cascade 0：0–10m，最高精度
+- Cascade 1：10–30m
+- Cascade 2：30–100m
+- Cascade 3：100–500m
 
-**调试建议：**
-1. 可视化 light camera frustum
-2. 可视化 shadow map depth texture
-3. 检查 fragment 的 light-space coordinate
-4. 对比 currentDepth vs closestDepth
-5. 逐步调整 bias
+近处 cascade 的 frustum 小、texel 小、阴影锐；远处 cascade 反之。
 
-> 💡 **小结：** Shadow Mapping 是一个需要调参和 debug 的算法。可视化中间结果是最有效的调试手段。
+<CascadedShadowMapsLab client:only="react" />
 
-**自测：** 如果阴影完全没有出现，你会优先检查哪 5 件事？
+> 💡 **小结：** CSM 把"精度"作为可调参数沿距离分配。几乎所有 3A 游戏的太阳阴影都用 CSM。
+
+**自测：** 角色在玩家身边时，应该用哪一个 cascade？为什么 split 通常不是均匀分布？
 
 ---
 
-## 13 / 总结
+## 12 / 调试套路：Symptom → Cause → Fix
 
-### Shadow Mapping 流程
+> **核心问题：** 实际项目中阴影出问题，从哪里下手？
+
+参见上面 Section 06 的 checklist。最有用的两个调试技巧：
+
+1. **可视化 light frustum**：用 `cameraHelper` 直接画出来，确认覆盖范围。
+2. **把 shadow map 渲到屏幕角落**：作为 debug overlay，立刻看出深度分布是否正确。
+
+辅助招式：临时把 bias 设成 0（看 acne 的真实分布），临时关闭 PCF（看真实边界），临时只渲染深度（确认 light view 正确）。
+
+> 💡 **小结：** Shadow Mapping 是参数堆得很深的算法，可视化中间结果是降低 debug 成本最有效的方式。
+
+**自测：** 如果阴影完全没出现，你最先检查的 3 件事是什么？
+
+---
+
+## 13 / 阴影技术族谱
+
+> **核心问题：** Hard / PCF / PCSS / VSM / Ray Traced 各自的位置在哪？
+
+<ShadowTechniquesComparison client:only="react" />
+
+简版：
+
+| 技术 | 软阴影 | 物理近似 | 相对成本 | 典型用途 |
+|------|--------|----------|----------|----------|
+| Hard | ✗ | ✗ | 1× | 风格化 / 极限性能 |
+| PCF | ✓ | ✗ | k²× | 实时项目默认 |
+| PCSS | ✓ | 近似 | ~2× PCF | 中高端实时 |
+| VSM | ✓ | 近似 | hard + mip | 角色阴影 / 远景 |
+| Ray Traced | ✓ | ✓ | 高 | RTX、离线 |
+
+> 💡 **小结：** 工程上的演进路线大致就是 hard → PCF → PCSS → ray traced。VSM 是一条用统计学绕开离散化的支线。
+
+---
+
+## 14 / 总结：从 Light Pass 到 Soft Shadow
 
 <ShadowMappingSummaryMap client:only="react" />
 
-### 总结表
+整页主线：
 
-| 维度 | Shadow Mapping |
-|------|----------------|
-| 核心思想 | 从光源视角生成深度图，再从相机视角比较深度 |
-| 主要数据 | Shadow Map / Depth Texture |
-| 关键步骤 | Light pass → Camera pass → Light-space transform → Depth comparison |
-| 优点 | 适合实时渲染、支持动态物体、GPU 友好 |
-| 缺点 | aliasing、acne、bias、peter panning、分辨率限制 |
-| 常见改进 | Bias、Normal Bias、PCF、紧致 light frustum、CSM |
-| 不擅长 | 高质量物理软阴影、透明阴影、复杂全局可见性 |
+> **light → depth map → light-space transform → depth compare → visibility**
 
-### 核心要点
+### 核心公式速查
 
-- Shadow Mapping 的核心是"从光源看见什么"
-- Shadow map 只存深度，不存阴影
-- 阴影由第二遍渲染中的 **depth comparison** 决定
-- **Bias** 解决 acne，但可能带来 peter panning
-- **Resolution** 和 light frustum 决定阴影清晰度
-- **PCF** 可以软化边缘，但不是物理真实软阴影
-- 大场景方向光通常需要 **CSM**
+| 主题 | 公式 |
+| --- | --- |
+| Visibility | $V(x, \omega) \in \{0, 1\}$ |
+| Light-space | $\mathbf{p}_{\text{ndc}} = (P_{\text{light}} V_{\text{light}} \mathbf{p}_{\text{world}}) / w$ |
+| UV mapping | $u = 0.5 x_{\text{ndc}} + 0.5$ |
+| Shadow test | $(\text{currentDepth} - \text{bias}) > \text{closestDepth}$ |
+| Texel size | $\text{frustum} / \text{resolution}$ |
+| PCF | $\frac{1}{k^2} \sum_{i,j} \mathbb{1}[(z - b) > z_{ij}]$ |
+| PCSS penumbra | $w \propto (d_r - d_b)/d_b \cdot w_{\text{light}}$ |
+
+### 关键直觉提醒
+
+- Shadow map 存的是**深度**，不是阴影。
+- 阴影由 Pass 2 的 **比较** 决定。
+- Acne / peter panning / aliasing 都是同一个底层问题（深度离散化）的不同症状。
+- **Bias** 解决 acne，但带来 peter panning。
+- 阴影清晰度 = $\text{frustum} / \text{resolution}$，两个一起决定。
+- **PCF** 过滤的是 shadow test 结果，不是深度。
+- **PCSS** 是 PCF + blocker search，半影宽度跟随 blocker 距离。
+- **CSM** 是大场景方向光的事实标准。
 
 ### 下一步
 
-→ PCSS（Percentage-Closer Soft Shadows）、VSM、ESM、Ray Traced Shadows
+→ Soft Shadow 进阶：PCSS 实现细节、VSM / EVSM、Ray Traced Shadows、Contact Shadows、Screen-Space Shadows。

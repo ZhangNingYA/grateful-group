@@ -1,73 +1,98 @@
 import { useState } from 'react'
+import { Header, panelStyle } from './ui.jsx'
 
 const NODES = [
-  { id: 'sm', label: 'Shadow Mapping', x: 50, y: 5, desc: '实时渲染中最经典的阴影算法：从光源生成深度图，再从相机比较深度。' },
-  { id: 'pass1', label: 'Pass 1: Light', x: 25, y: 20, desc: '从光源视角渲染场景，只写入深度缓冲，生成 Shadow Map。' },
-  { id: 'lvm', label: 'Light View Matrix', x: 12, y: 35, desc: '定义光源的"相机"位置和方向，决定从哪里看场景。' },
-  { id: 'lpm', label: 'Light Projection', x: 38, y: 35, desc: '正交投影（方向光）或透视投影（聚光灯），决定覆盖范围。' },
-  { id: 'dmap', label: 'Depth Map', x: 25, y: 50, desc: '每个 texel 存储光源方向上最近表面的深度值。' },
-  { id: 'pass2', label: 'Pass 2: Camera', x: 75, y: 20, desc: '从相机正常渲染，对每个片元查询 Shadow Map 判断遮挡。' },
-  { id: 'proj', label: 'Project to LS', x: 62, y: 35, desc: '把片元世界坐标变换到光源裁剪空间，得到 UV 和深度。' },
-  { id: 'cmp', label: 'Depth Compare', x: 88, y: 35, desc: 'currentDepth - bias > closestDepth → shadow。' },
-  { id: 'artifacts', label: 'Artifacts', x: 25, y: 68, desc: 'Shadow Mapping 的常见问题：acne、peter panning、aliasing。' },
-  { id: 'acne', label: 'Shadow Acne', x: 10, y: 82, desc: '自阴影斑点，因深度精度和离散化导致的误判。' },
-  { id: 'peter', label: 'Peter Panning', x: 25, y: 82, desc: '阴影脱离物体，因 bias 过大导致。' },
-  { id: 'alias', label: 'Aliasing', x: 40, y: 82, desc: '阴影锯齿，因 shadow map 分辨率不足。' },
-  { id: 'fixes', label: 'Fixes', x: 75, y: 68, desc: '常见改进方案。' },
-  { id: 'bias', label: 'Bias', x: 60, y: 82, desc: '深度偏移，减少 acne 但可能引入 peter panning。' },
-  { id: 'pcf', label: 'PCF', x: 75, y: 82, desc: '邻域多次 shadow test 取平均，软化边缘。' },
-  { id: 'csm', label: 'CSM', x: 90, y: 82, desc: '级联阴影图，按距离分配精度，适合大场景方向光。' },
+  { id: 'root', x: 300, y: 28, label: 'Shadow Mapping', color: '#fbbf24', desc: '从光源生成 depth map，从相机查询 visibility。' },
+
+  // pillars
+  { id: 'pass1', x: 110, y: 95, label: 'Pass 1: Light', color: '#a5b4fc', desc: '从光源视角渲染场景，写入 depth buffer。' },
+  { id: 'pass2', x: 290, y: 95, label: 'Pass 2: Camera', color: '#fda4af', desc: '从相机渲染，对每个 fragment 做 shadow test。' },
+  { id: 'art', x: 470, y: 95, label: 'Artifacts', color: '#fb7185', desc: 'shadow mapping 的常见伪影。' },
+  { id: 'fix', x: 590, y: 95, label: 'Fixes', color: '#4ade80', desc: '工程上消除伪影的手段。' },
+
+  // pass1 children
+  { id: 'lvm', x: 50, y: 175, label: 'Light VP', color: '#a5b4fc', desc: '光源的 view + projection 矩阵；directional 用 ortho、spot 用 perspective、point 用 6× cubemap。' },
+  { id: 'dmap', x: 170, y: 175, label: 'Depth Map', color: '#a5b4fc', desc: '光源最近表面的深度纹理。' },
+
+  // pass2 children
+  { id: 'proj', x: 230, y: 175, label: 'Light Space', color: '#fda4af', desc: 'p_clip = P_l · V_l · p_world，再 / w 得到 NDC。' },
+  { id: 'samp', x: 320, y: 175, label: 'Sample SM', color: '#fda4af', desc: '用 NDC.xy 做 [0,1] 映射后采样 depth map。' },
+  { id: 'cmp', x: 410, y: 175, label: 'Depth Compare', color: '#fda4af', desc: 'currentDepth − bias > closestDepth → shadow。' },
+
+  // artifacts
+  { id: 'acne', x: 460, y: 175, label: 'Acne', color: '#fb7185', desc: '自阴影斑点；离散化 + 浮点 + 斜面导致。' },
+  { id: 'peter', x: 540, y: 175, label: 'Peter Pan', color: '#fb7185', desc: '阴影脱离物体；bias 过大引起。' },
+  { id: 'alias', x: 460, y: 245, label: 'Aliasing', color: '#fb7185', desc: '锯齿；texel 世界尺寸太大。' },
+
+  // fixes
+  { id: 'bias', x: 550, y: 245, label: 'Bias', color: '#4ade80', desc: 'depth bias / normal bias / slope-scale bias。' },
+  { id: 'pcf', x: 620, y: 175, label: 'PCF', color: '#4ade80', desc: '邻域多次比较取平均；软化边缘。' },
+  { id: 'pcss', x: 620, y: 245, label: 'PCSS', color: '#4ade80', desc: 'penumbra ∝ blocker 距离，物理近似软阴影。' },
+  { id: 'csm', x: 620, y: 305, label: 'CSM', color: '#4ade80', desc: '近精远粗，按距离切分多个 cascade。' },
 ]
 
 const EDGES = [
-  ['sm','pass1'],['sm','pass2'],
-  ['pass1','lvm'],['pass1','lpm'],['pass1','dmap'],
-  ['pass2','proj'],['pass2','cmp'],['dmap','cmp'],
-  ['sm','artifacts'],['sm','fixes'],
-  ['artifacts','acne'],['artifacts','peter'],['artifacts','alias'],
-  ['fixes','bias'],['fixes','pcf'],['fixes','csm'],
+  ['root', 'pass1'], ['root', 'pass2'], ['root', 'art'], ['root', 'fix'],
+  ['pass1', 'lvm'], ['pass1', 'dmap'],
+  ['pass2', 'proj'], ['pass2', 'samp'], ['pass2', 'cmp'],
+  ['dmap', 'samp'],
+  ['art', 'acne'], ['art', 'peter'], ['art', 'alias'],
+  ['fix', 'bias'], ['fix', 'pcf'], ['fix', 'pcss'], ['fix', 'csm'],
+  ['acne', 'bias'], ['alias', 'pcf'], ['alias', 'csm'],
 ]
 
 export default function ShadowMappingSummaryMap() {
-  const [selected, setSelected] = useState(null)
-  const nodeMap = {}
-  NODES.forEach(n => { nodeMap[n.id] = n })
+  const [active, setActive] = useState('cmp')
+  const sel = NODES.find((n) => n.id === active)
 
-  const svgW = 500, svgH = 400
-  const toSvg = (n) => ({ x: n.x / 100 * svgW, y: n.y / 100 * svgH + 10 })
+  // ancestors
+  const highlight = new Set([active])
+  for (const [a, b] of EDGES) if (b === active) highlight.add(a)
+  highlight.add('root')
 
   return (
-    <div style={{ width: '100%', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(99,102,241,0.15)', background: 'linear-gradient(180deg, #0c0c18 0%, #0f0f1a 100%)', boxShadow: '0 4px 20px rgba(0,0,0,0.25)', padding: '20px' }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', alignItems: 'flex-start', justifyContent: 'center' }}>
-        <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', maxWidth: '460px', height: 'auto' }}>
-          {EDGES.map(([from, to], idx) => {
-            const a = toSvg(nodeMap[from]), b = toSvg(nodeMap[to])
-            const isHL = selected === from || selected === to
-            return <line key={idx} x1={a.x} y1={a.y+12} x2={b.x} y2={b.y-12}
-              stroke={isHL ? '#6366f1' : '#333'} strokeWidth={isHL ? 2 : 1} />
-          })}
-          {NODES.map(node => {
-            const pos = toSvg(node)
-            const isSel = selected === node.id
+    <div style={panelStyle}>
+      <Header title="Shadow Mapping · Knowledge Map" subtitle="点击节点查看说明，黄路径表示当前节点的依赖。" />
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(220px, 1fr)' }}>
+        <svg viewBox="0 0 700 360" style={{ width: '100%', height: 'auto', background: '#070710', display: 'block' }}>
+          {EDGES.map(([a, b], i) => {
+            const na = NODES.find((n) => n.id === a)
+            const nb = NODES.find((n) => n.id === b)
+            const isPath = highlight.has(a) && highlight.has(b)
             return (
-              <g key={node.id} onClick={() => setSelected(selected === node.id ? null : node.id)} style={{ cursor: 'pointer' }}>
-                <rect x={pos.x-48} y={pos.y-11} width={96} height={22} rx={7}
-                  fill={isSel ? 'rgba(99,102,241,0.15)' : 'rgba(255,255,255,0.03)'}
-                  stroke={isSel ? '#6366f1' : 'rgba(255,255,255,0.08)'} strokeWidth={isSel ? 2 : 1} />
-                <text x={pos.x} y={pos.y+4} textAnchor="middle" fill={isSel ? '#c7d2fe' : '#ccc'} fontSize="9.5" fontFamily="system-ui">{node.label}</text>
+              <line key={i} x1={na.x} y1={na.y + 11} x2={nb.x} y2={nb.y - 11}
+                stroke={isPath ? '#fbbf24' : 'rgba(255,255,255,0.1)'}
+                strokeWidth={isPath ? 1.6 : 1} />
+            )
+          })}
+          {NODES.map((n) => {
+            const isActive = n.id === active
+            const inPath = highlight.has(n.id)
+            const w = n.label.length * 6.5 + 28
+            return (
+              <g key={n.id} onClick={() => setActive(n.id)} style={{ cursor: 'pointer' }}>
+                <rect x={n.x - w / 2} y={n.y - 12} width={w} height={24} rx={6}
+                  fill={isActive ? n.color : `${n.color}1a`}
+                  stroke={isActive ? '#fff' : (inPath ? n.color : 'rgba(255,255,255,0.08)')}
+                  strokeWidth={isActive ? 2 : 1} />
+                <text x={n.x} y={n.y + 4} fill={isActive ? '#0a0a14' : n.color}
+                  fontSize="10.5" textAnchor="middle" fontFamily="monospace" fontWeight={isActive ? 700 : 500}>
+                  {n.label}
+                </text>
               </g>
             )
           })}
         </svg>
-        <div style={{ flex: '1 1 200px', minWidth: '200px' }}>
-          {selected ? (
-            <div style={{ padding: '16px', borderRadius: '10px', background: 'rgba(99,102,241,0.05)', border: '1px solid rgba(99,102,241,0.2)' }}>
-              <div style={{ fontSize: '14px', color: '#c7d2fe', fontWeight: 600, marginBottom: '8px' }}>{nodeMap[selected].label}</div>
-              <div style={{ fontSize: '13px', color: '#bbb', lineHeight: '1.6' }}>{nodeMap[selected].desc}</div>
-            </div>
-          ) : (
-            <div style={{ padding: '16px', color: '#555', fontSize: '13px', textAlign: 'center' }}>点击节点查看说明</div>
-          )}
+        <div style={{ padding: 14, fontSize: 12, color: '#aaa', display: 'flex', flexDirection: 'column', gap: 12, background: 'rgba(15,15,26,0.6)' }}>
+          <div style={{ fontSize: 10, color: '#666', letterSpacing: 1 }}>SELECTED</div>
+          <div>
+            <div style={{ fontSize: 14, color: sel.color, fontWeight: 600, marginBottom: 4 }}>{sel.label}</div>
+            <div style={{ fontSize: 12, color: '#bbb', lineHeight: 1.65 }}>{sel.desc}</div>
+          </div>
+          <div style={{ marginTop: 'auto', padding: 10, borderRadius: 8, background: 'rgba(251,191,36,0.05)', border: '1px solid rgba(251,191,36,0.15)', fontSize: 11, color: '#fde68a', lineHeight: 1.6 }}>
+            <b>核心链路：</b><br />
+            light → depth map → light-space transform → depth compare → visibility
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,522 @@
+---
+title: 'Ray Tracing 1: From Pixels to Rays'
+description: 'GAMES101 光线追踪第一讲：Ray Casting、Ray Intersection、Möller–Trumbore、AABB Slab Method 与 BVH 加速 — 交互式 3D 复习教材'
+pubDate: '2026-05-14'
+---
+
+import RayTracingHeroLab3D from '../../components/games101/rayTracing01/RayTracingHeroLab3D.jsx'
+import RasterizationVsRayTracingComparison from '../../components/games101/rayTracing01/RasterizationVsRayTracingComparison.jsx'
+import RayAssumptionsInteractiveCards from '../../components/games101/rayTracing01/RayAssumptionsInteractiveCards.jsx'
+import RayEquationExplorer from '../../components/games101/rayTracing01/RayEquationExplorer.jsx'
+import PixelToRayCameraModel3D from '../../components/games101/rayTracing01/PixelToRayCameraModel3D.jsx'
+import RaySphereIntersectionLab from '../../components/games101/rayTracing01/RaySphereIntersectionLab.jsx'
+import RayPlaneAndTriangleLab from '../../components/games101/rayTracing01/RayPlaneAndTriangleLab.jsx'
+import BarycentricCoordinatesTriangleLab from '../../components/games101/rayTracing01/BarycentricCoordinatesTriangleLab.jsx'
+import MollerTrumboreVisualizer from '../../components/games101/rayTracing01/MollerTrumboreVisualizer.jsx'
+import ClosestHitAndVisibilityLab from '../../components/games101/rayTracing01/ClosestHitAndVisibilityLab.jsx'
+import BruteForceCostSimulator from '../../components/games101/rayTracing01/BruteForceCostSimulator.jsx'
+import AABBSlabMethodLab from '../../components/games101/rayTracing01/AABBSlabMethodLab.jsx'
+import BoundingVolumePruningDemo3D from '../../components/games101/rayTracing01/BoundingVolumePruningDemo3D.jsx'
+import UniformGridAccelerationLab from '../../components/games101/rayTracing01/UniformGridAccelerationLab.jsx'
+import SpatialPartitionConceptViewer from '../../components/games101/rayTracing01/SpatialPartitionConceptViewer.jsx'
+import BVHBuilderVisualizer from '../../components/games101/rayTracing01/BVHBuilderVisualizer.jsx'
+import BVHTraversalDebugger from '../../components/games101/rayTracing01/BVHTraversalDebugger.jsx'
+import AccelerationStructureComparison from '../../components/games101/rayTracing01/AccelerationStructureComparison.jsx'
+import RayTracingPipelineSummaryMap from '../../components/games101/rayTracing01/RayTracingPipelineSummaryMap.jsx'
+
+## Ray Tracing 1: From Pixels to Rays
+
+> 从相机发射光线：理解求交、三角形、AABB 与 BVH 加速
+
+光栅化问："**这个三角形覆盖哪些像素？**"光线追踪反过来问："**这个像素看到哪一个物体？**"
+
+第一讲只关心一件事：给定 camera 和场景，**这个像素的颜色由谁决定**？答案是从 camera 发射 ray、找到最近命中的物体。下面这个 3D 实验把整个过程压缩成一个画面：camera、image plane、pixel grid、primary ray、hit point、shadow ray。
+
+<RayTracingHeroLab3D client:only="react" />
+
+---
+
+### 🎯 学习目标
+
+| 目标 | 核心直觉 |
+|------|----------|
+| 理解 Ray Casting | 从像素反推场景可见性 |
+| 理解 Ray Intersection | 光线与几何体如何求交 |
+| 理解 Triangle Test | 为什么三角形是光追的核心单位 |
+| 理解 Acceleration | 为什么 AABB / BVH 是实际光追的必需品 |
+
+---
+
+## 01 / 为什么需要 Ray Tracing？
+
+> **核心问题：** 有了 Rasterization，为什么还需要 Ray Tracing？
+
+光栅化和光线追踪解决同一个问题——决定每个像素的颜色——但**问题方向完全相反**。
+
+- **Rasterization**：`object → screen`。把 triangle 投影到屏幕，遍历它覆盖的所有像素。
+- **Ray Tracing**：`pixel → scene`。从每个像素发射 ray，看它命中哪个物体。
+
+光栅化对**实时**渲染极其友好，硬件流水线就是按这个范式设计的。但有些效果非常依赖"沿着任意方向追踪一束光"：阴影、反射、折射、全局光照、AO。光线追踪天然适合这些效果，**代价是大量 ray-object intersection**。
+
+<RasterizationVsRayTracingComparison client:only="react" />
+
+> 💡 **小结：** 两种范式不是替代关系，而是回答同一个 visibility 问题的两种思路。Ray Tracing 在表达力上更强，但单条 ray 的成本更高。
+
+**自测：** 一个像素前后有 3 个三角形。Rasterization 通过 z-buffer 比较深度，Ray Tracing 怎么决定这个像素看到哪一个？
+
+---
+
+## 02 / 光线追踪的三个基本假设
+
+> **核心问题：** 我们凭什么可以**从眼睛**向场景反向追踪光线？
+
+GAMES101 第一讲明确给出三个假设，下面这组卡片帮你建立直觉，特别是第三条。
+
+<RayAssumptionsInteractiveCards client:only="react" />
+
+简单地说：
+
+1. **光沿直线传播**：在均匀介质中我们用 `r(t) = o + t·d` 描述光路。
+2. **光线之间互不影响**：每条 ray 都是独立任务，可以并行处理。
+3. **光路可逆**：camera 能看到的每条路径反过来也能走通，所以可以从 camera 出发。
+
+> 💡 **小结：** 真实世界的光从光源出发，但**绝大多数光子永远不会进入相机**。从 camera 反向追踪每条 eye ray 都直接对应一个像素，效率高出数个数量级。
+
+**自测：** 从光源随机喷洒大量光线 vs 从 camera 朝每个 pixel 发射光线，哪一种更适合生成一张相机图像？为什么？
+
+---
+
+## 03 / Ray Casting 的基本流程
+
+> **核心问题：** Ray Casting 如何从一个空场景产生一张图？
+
+最朴素的伪代码：
+
+```ts
+for each pixel (i, j):
+  ray = generatePrimaryRay(camera, i, j)
+  hit = closestIntersection(ray, scene)
+  pixel[i, j] = hit ? shade(hit) : background
+```
+
+第一讲不涉及 path tracing 等多次反弹，重点是先解决**"这个像素看到了什么？"**。这个问题由两件事决定：
+
+- **primary ray** 怎么生成（下文 Section 05）。
+- **closest intersection** 怎么找（Section 06–10）。
+
+Hero 组件就是这套流程的可视化：你点一个 pixel，发射一条 ray，沿着它走找到最近的物体。如果 miss，就显示背景色。
+
+> 💡 **小结：** Ray Casting = 像素生成 ray + 最近命中。这两件事是后续所有内容的舞台。
+
+**自测：** 一条 ray 沿途没有命中任何物体，这个像素应该显示什么？
+
+---
+
+## 04 / Ray Equation
+
+> **核心问题：** 如何用数学表达一条光线？
+
+$$
+\mathbf{r}(t) = \mathbf{o} + t\mathbf{d}, \quad t \ge 0
+$$
+
+- $\mathbf{o}$：ray origin，光线起点。
+- $\mathbf{d}$：ray direction，方向（通常归一化）。
+- $t$：沿 ray 前进的参数，相当于"距离倍数"。
+
+**关键直觉**：ray 不是线段，也不是直线，**而是从 `o` 沿 `d` 出发的半直线**。求交问题本质上是在找一个合法的 `t` —— 让这个 `t` 既满足几何条件，又满足 `t ≥ 0`。
+
+下面的组件让你拖动 origin、旋转 direction，并用 slider 改变 t。注意虚线部分（`t < 0`）只是辅助参考，不属于这条 ray。
+
+<RayEquationExplorer client:only="react" />
+
+> 💡 **小结：** 整个第一讲反复在做的事就是"给定几何条件，解 t"。所有 intersection routine 的输出最终都是一个 t 值。
+
+**自测：** 求交得到 `t = -2`，几何上这是什么含义？这是有效命中吗？
+
+---
+
+## 05 / Pixel → Ray：从像素生成相机光线
+
+> **核心问题：** 一张图像上的像素，怎么变成 3D 空间中的一条 ray？
+
+每个像素对应 image plane 上的一个采样点。从 camera origin 指向这个采样点的方向就是 primary ray 的 direction。
+
+```ts
+const px = (i + 0.5) / width
+const py = (j + 0.5) / height
+const x  = (2 * px - 1) * aspect * Math.tan(fov / 2)
+const y  = (1 - 2 * py) * Math.tan(fov / 2)
+const dir = normalize(x * right + y * up + forward)
+const ray = { origin: cameraPosition, direction: dir }
+```
+
+注意 `(2 * px - 1)` 把 [0, 1] 像素归一化坐标变到 NDC 风格的 [-1, 1]，`tan(fov / 2)` 决定 image plane 的物理高度，`aspect` 控制宽高比。下面这个 3D 组件把每一项都摆在面前：你能看到 right / up / forward 三个相机轴，看到 selected pixel，看到从 camera 经过该 pixel 的 primary ray。
+
+<PixelToRayCameraModel3D client:only="react" />
+
+> 💡 **小结：** Pixel-to-ray 是相机模型最直接的应用 —— 把 2D 像素坐标 lift 到相机坐标系下的 3D 方向。FOV 越大，边缘 pixel 的 ray direction 越倾斜。
+
+**自测：** FOV 从 50° 提升到 80°，同一个边缘像素的 ray direction 会更指向中心还是更倾斜？
+
+---
+
+## 06 / Ray 与隐式表面求交
+
+> **核心问题：** 当表面用方程 $f(\mathbf{p}) = 0$ 定义时，怎么求 ray 和它的交点？
+
+把 ray 代入表面方程，把"几何上的求交"变成"代数上解 t"。以 sphere 为例：
+
+$$
+\|\mathbf{p} - \mathbf{c}\|^2 - r^2 = 0
+$$
+
+代入 $\mathbf{p} = \mathbf{o} + t\mathbf{d}$：
+
+$$
+\|\mathbf{o} + t\mathbf{d} - \mathbf{c}\|^2 - r^2 = 0
+$$
+
+展开就是一个关于 $t$ 的二次方程 $a t^2 + b t + c = 0$。判别式 $\Delta = b^2 - 4ac$ 直接告诉你 ray 与 sphere 的关系：
+
+- $\Delta > 0$：两个交点。
+- $\Delta = 0$：相切，一个交点。
+- $\Delta < 0$：没有交点。
+
+下面拖动 ray 和球心，改变 radius 看判别式如何切换。**注意**：得到 $t_0, t_1$ 之后还要进一步取**最小的正 t**，否则可能选到 ray 后方的交点。
+
+<RaySphereIntersectionLab client:only="react" />
+
+> 💡 **小结：** 隐式表面求交是把表面方程当作"判定函数"，ray 是输入参数化 t 的探针。这种方法对 sphere、plane、quadric 等都很优雅。
+
+**自测：** 为什么我们通常选择**最小的正** t 作为可见交点？两个负 t 意味着什么？
+
+---
+
+## 07 / Ray 与平面、三角形求交
+
+> **核心问题：** Ray 命中三角形需要哪两步？
+
+光追的真正主战场是 triangle mesh。先和三角形所在**平面**求交：
+
+$$
+t = \frac{(\mathbf{p_0} - \mathbf{o}) \cdot \mathbf{n}}{\mathbf{d} \cdot \mathbf{n}}
+$$
+
+如果 $\mathbf{d} \cdot \mathbf{n} \approx 0$，ray 平行于平面，没有交点。否则得到平面上的命中点。
+
+接着判断这个点是否落在三角形内部。常见三种等价方法：
+
+- **Same-side test**：点是否在三条边的同一侧。
+- **Edge function**：三个边方程同号。
+- **Barycentric**：写成 $u, v, w$，要求三个都非负（下一节展开）。
+
+<RayPlaneAndTriangleLab client:only="react" />
+
+> 💡 **小结：** Plane hit ≠ Triangle hit。第一步给我们 t 和 hit point，第二步才决定是否命中三角形。这两步可以分开做，也可以像 Möller–Trumbore 那样一次解掉（Section 09）。
+
+**自测：** 如果 ray 命中三角形所在平面，但交点在三角形外部，最终算命中三角形吗？
+
+---
+
+## 08 / Barycentric Coordinates
+
+> **核心问题：** 怎么用一种方式既判断"点在不在三角形内"，又能"在三个顶点之间插值任何属性"？
+
+任何在三角形所在平面内的点 $\mathbf{p}$ 都可以写成：
+
+$$
+\mathbf{p} = w \mathbf{p_0} + u \mathbf{p_1} + v \mathbf{p_2}, \quad w = 1 - u - v
+$$
+
+**内部条件**：
+
+$$
+u \ge 0, \quad v \ge 0, \quad w \ge 0 \;(\text{即 } u + v \le 1)
+$$
+
+只要三个权重都非负，点就在三角形内。这套权重还能直接拿来插值法线、UV、颜色 —— 这就是为什么 GPU 渲染 pipeline 中 vertex attribute 的插值天然依赖 barycentric。
+
+下面的实验拖动点，看它的 (u, v, w) 怎么变化，并且当模式切到 **Color blend** 时，看点的颜色就是三个顶点颜色按 (u, v, w) 加权后的结果。
+
+<BarycentricCoordinatesTriangleLab client:only="react" />
+
+> 💡 **小结：** Barycentric 不只是 "inside test" 的工具，更是 attribute interpolation 的统一语言。Möller–Trumbore 输出的就是 barycentric。
+
+**自测：** 如果计算出 `u = 0.3, v = 0.8`，这个点在三角形内吗？通过哪个条件判定？
+
+---
+
+## 09 / Möller–Trumbore Algorithm ⭐
+
+> **核心问题：** 能否一次性求出 t、u、v，而不是平面求交 + 内部判断分两步？
+
+Möller–Trumbore 把 ray 等式和 barycentric 表达式直接联立：
+
+$$
+\mathbf{o} + t\mathbf{d} = (1 - b_1 - b_2)\mathbf{P_0} + b_1 \mathbf{P_1} + b_2 \mathbf{P_2}
+$$
+
+化成线性方程：
+
+$$
+\begin{bmatrix}
+-\mathbf{d} & \mathbf{P_1} - \mathbf{P_0} & \mathbf{P_2} - \mathbf{P_0}
+\end{bmatrix}
+\begin{bmatrix}
+t \\ b_1 \\ b_2
+\end{bmatrix}
+= \mathbf{o} - \mathbf{P_0}
+$$
+
+用 Cramer 法则配合三个 cross product 的几何含义就能解出来。命中条件：
+
+$$
+t > 0, \quad b_1 \ge 0, \quad b_2 \ge 0, \quad b_1 + b_2 \le 1
+$$
+
+下面这个组件**逐步执行算法**。每一步都展示当前判断条件的真假，并提供 5 个预设场景：hit / miss(u out) / miss(v out) / parallel / behind。请重点观察：哪一步导致每种 miss。
+
+<MollerTrumboreVisualizer client:only="react" />
+
+> 💡 **小结：** Möller–Trumbore 不是黑魔法，是对 "ray = barycentric expansion" 这一线性方程组的优雅解法。它的输出 (t, u, v) 同时给了你交点位置和 barycentric 坐标 —— 后续 shading 不用再算一次。
+
+**自测：** 为什么 $b_1 + b_2 > 1$ 表示交点落在三角形外部？画一下 $b_1 = 0.6, b_2 = 0.6$ 的位置。
+
+---
+
+## 10 / Closest Hit、$t_{min}$ / $t_{max}$ 与 Shadow Ray
+
+> **核心问题：** Ray 命中多个物体时，哪个才是 camera 真正看到的？
+
+光线追踪中的"可见性"等于"沿 ray 找最近合法 t"：
+
+- $t_{min}$：忽略离 origin 太近的命中（避免自交、数值噪声）。
+- $t_{max}$：限定最远距离（例如 shadow ray 设置为到光源的距离）。
+- **closest hit**：满足 $t_{min} \le t \le t_{max}$ 的最小 t。
+
+Shadow ray 是 visibility 的特例：从 surface point 朝 light 发射，若在到达 light 之前命中其他物体，则该点处于阴影中。
+
+<ClosestHitAndVisibilityLab client:only="react" />
+
+> 💡 **小结：** "找到任意命中"和"找到最近命中"是两件不同的事。Camera ray 关心 closest，shadow ray 只关心**有没有**遮挡。
+
+**自测：** Shadow ray 为什么通常把 $t_{max}$ 设置为到 light 的距离？如果不设置会出什么问题？
+
+---
+
+## 11 / 为什么 Ray Tracing 会很慢？
+
+> **核心问题：** Brute force 求交为什么不可接受？
+
+最朴素的实现：每个像素发 ray，每条 ray 测试场景中所有三角形。粗略估算：
+
+```text
+intersection tests ≈ width × height × spp × bounces × triangleCount
+```
+
+把数字代入感受一下：1920×1080、64 spp、8 bounces、500K triangles，单帧需要 **5×10¹⁵** 次三角形测试，工业级机器跑也是几年起步。下面的模拟器实时给出估算，并允许你打开 BVH 看时间从"天"级别变到"分钟"级别。
+
+<BruteForceCostSimulator client:only="react" />
+
+> 💡 **小结：** Acceleration structure 在光追里**不是优化技巧，而是必需品**。后续 Section 12–17 全部是为了把这条曲线压下来。
+
+**自测：** 分辨率从 1920×1080 翻倍到 3840×2160，pixel 数变几倍？triangle tests 在其他参数不变时变几倍？
+
+---
+
+## 12 / Bounding Volume：用包围体快速排除
+
+> **核心问题：** 如何避免对一个明显不可能命中的物体逐三角形求交？
+
+核心观察：
+
+> 如果 ray 没有命中物体的**包围盒**，那么它一定不会命中盒子里的真实几何。
+
+包围盒求交的代价非常便宜（接下来的 AABB 是常数次比较）。所以可以这样过滤：先测 bounding box，命中再测内部三角形。
+
+<BoundingVolumePruningDemo3D client:only="react" />
+
+> 💡 **小结：** Bounding volume 是后续所有加速结构的"原子操作"。BVH、KD-tree 内部的关键测试都是 ray vs AABB。
+
+**自测：** 包围盒命中是否一定代表真实几何被命中？反过来呢？
+
+---
+
+## 13 / AABB · Slab Method ⭐
+
+> **核心问题：** Ray 怎么和一个 axis-aligned 包围盒求交？
+
+AABB 在每个轴上由两个值定义：
+
+$$
+[x_{min}, x_{max}] \times [y_{min}, y_{max}] \times [z_{min}, z_{max}]
+$$
+
+每对 $[\cdot_{min}, \cdot_{max}]$ 在该轴上构成一个 **slab**（一对平行平面之间的空间）。AABB = 三个 slab 的交集。
+
+在每个轴上计算 ray 进入 / 离开 slab 的两个 t：
+
+$$
+\begin{aligned}
+t_{enter} &= \max(t_{x,min},\, t_{y,min},\, t_{z,min}) \\
+t_{exit}  &= \min(t_{x,max},\, t_{y,max},\, t_{z,max})
+\end{aligned}
+$$
+
+命中条件：
+
+$$
+t_{enter} \le t_{exit} \quad \text{and} \quad t_{exit} \ge 0
+$$
+
+注意：方向某个分量接近 0（ray 平行于该轴）需要特判，避免除零。
+
+<AABBSlabMethodLab client:only="react" />
+
+> 💡 **小结：** 三个轴各给一个合法 t 区间，三个区间的**交集非空**就说明 ray 在某一段区间同时位于三个 slab 内部——也就是位于盒子里。这比直接和盒子的 6 个面分别求交并校验更优雅。
+
+**自测：** 如果 $t_{enter} > t_{exit}$，几何上代表 ray 和盒子的关系是什么？
+
+---
+
+## 14 / Uniform Grid 加速
+
+> **核心问题：** 把空间均匀切成格子，能否避免对所有物体都求交？
+
+Uniform Grid 把场景空间均匀地切成 N×N×N 的 cell，物体被写入它**重叠**的 cells。Ray 沿着 DDA 顺序遍历它经过的 cell，只对这些 cell 里的物体求交。
+
+<UniformGridAccelerationLab client:only="react" />
+
+切换 distribution 体会三种典型情况：
+
+- **uniform**：物体均匀，grid 表现稳定。
+- **clustered**：大量物体集中在少数 cell，cell 内仍然要逐个测。
+- **sparse**：visited cell 大部分为空，traversal 开销被浪费。
+
+> 💡 **小结：** Uniform Grid 简单、硬件友好，但**对场景结构不自适应**。resolution 太低 → 单 cell 内对象太多；太高 → 遍历 cell 数量爆炸。
+
+**自测：** 为什么空旷场景中 Uniform Grid 可能效率很差？
+
+---
+
+## 15 / Spatial Partition 的直觉
+
+> **核心问题：** 能否根据场景的实际密度，递归切分空间？
+
+Spatial Partition 类家族（KD-tree、BSP-tree、Octree…）的共同思想：**切空间**。每次选一个轴或一个平面，把空间一分为二，递归。
+
+<SpatialPartitionConceptViewer client:only="react" />
+
+代价是：**几何体可能跨越分界**。一个三角形横在切分平面上时，需要被两边都"引用"，traversal 时要正确处理重复测试。
+
+> 💡 **小结：** Spatial Partition 切的是**空间**，不是物体。它对密度差异很大的场景适应得好，但遍历和构建都更复杂。
+
+**自测：** 一个三角形跨越切分平面，spatial partition 该如何处理它？
+
+---
+
+## 16 / BVH 构建：按物体分组
+
+> **核心问题：** 与其切空间，能否按物体分组建立层级 bounding box？
+
+BVH（Bounding Volume Hierarchy）是 **object partition**：
+
+1. 给一组 objects 计算一个 bounding box。
+2. 选一个 split axis（常用 longest axis）。
+3. 沿该轴排序，从中位数处切两半。
+4. 对左右两组递归。
+5. 直到 leaf node 中物体足够少。
+
+每个 object **只属于一个 leaf**，没有空间划分中"跨边界"的麻烦。BVH 也是现代实时光追（DXR、Vulkan RT、Embree）的事实标准。
+
+<BVHBuilderVisualizer client:only="react" />
+
+> 💡 **小结：** BVH 的关键是把 objects 分组，每组用一个 bounding box 包起来。bbox 之间可以互相重叠，但每个三角形只被一个 leaf 拥有。
+
+**自测：** BVH 为什么通常会选择"最长轴"作为 split axis？
+
+---
+
+## 17 / BVH Traversal ⭐
+
+> **核心问题：** Ray 如何在 BVH 上找到最近命中？
+
+伪代码非常对称：
+
+```ts
+function intersectBVH(ray, node) {
+  if (!intersectAABB(ray, node.bounds)) return miss
+  if (node.isLeaf) return intersectObjects(ray, node.objects)
+  const hL = intersectBVH(ray, node.left)
+  const hR = intersectBVH(ray, node.right)
+  return closer(hL, hR)
+}
+```
+
+加速的关键来自第一行：**ray miss 一个大 box，子树里的所有物体一次性被跳过**。下面这个 debugger 让你逐步推进，看到每一步是测 bbox、跳过子树，还是在 leaf 内部测对象。
+
+<BVHTraversalDebugger client:only="react" />
+
+可以做一个简单的工业级优化：先测两个 child，**优先访问 $t_{enter}$ 更小的那个**。这样找到一个近的 hit 之后，远侧 child 中 $t_{enter}$ 比当前 closest 还大的子树就可以剪掉。
+
+> 💡 **小结：** BVH 的遍历是 logarithmic 主导的：每多一层 depth，理论上多减半一个待测 object 子集。这就是为什么大场景下 BVH 把 ray tracing 从"天"压回到"分钟"。
+
+**自测：** 为什么 BVH traversal 中"miss 一个大盒子"可以跳过大量三角形？
+
+---
+
+## 18 / 加速结构对比
+
+> **核心问题：** Brute Force、Uniform Grid、Spatial Partition、BVH 在什么时候各自合适？
+
+<AccelerationStructureComparison client:only="react" />
+
+简版总结：
+
+| 方法 | 核心思想 | 优点 | 缺点 | 适合场景 |
+| --- | --- | --- | --- | --- |
+| Brute Force | 每条 ray 测所有三角形 | 简单 | 极慢 | 极小场景 / 调试 |
+| Uniform Grid | 均匀切空间 | 实现直观、硬件友好 | 分布不均时差 | 较均匀的中小场景 |
+| Spatial Partition | 递归切空间 | 自适应密度 | 几何跨区处理复杂 | 静态、密度差异大 |
+| BVH | 按物体分组 | 常用、高效、对动态友好 | 构建质量影响性能 | 现代光追主流 |
+
+> 💡 **小结：** "为什么 BVH 流行" 不只是因为快，更因为它在工程上**简单、稳定、对动态场景友好**。RT cores 直接为 BVH 设计。
+
+---
+
+## 19 / 总结：从 Pixel 到 BVH
+
+<RayTracingPipelineSummaryMap client:only="react" />
+
+整页内容压缩成一条主线：
+
+> **pixel → ray → intersection → closest hit → acceleration**
+
+### 核心公式速查
+
+| 主题 | 公式 |
+| --- | --- |
+| Ray equation | $\mathbf{r}(t) = \mathbf{o} + t\mathbf{d}, \; t \ge 0$ |
+| Pixel → ray | $\text{dir} = \text{normalize}(x \cdot \text{right} + y \cdot \text{up} + \text{forward})$ |
+| Plane | $t = \dfrac{(\mathbf{p_0} - \mathbf{o}) \cdot \mathbf{n}}{\mathbf{d} \cdot \mathbf{n}}$ |
+| Sphere | $\|\mathbf{o} + t\mathbf{d} - \mathbf{c}\|^2 - r^2 = 0$ |
+| Triangle inside | $u, v, w \ge 0$ where $\mathbf{p} = w \mathbf{p_0} + u \mathbf{p_1} + v \mathbf{p_2}$ |
+| AABB | $t_{enter} = \max(\cdot_{min}),\; t_{exit} = \min(\cdot_{max})$ |
+
+### 算法流程速查
+
+- **Möller–Trumbore**：解线性方程 → 检查 `det ≠ 0`、`u ∈ [0,1]`、`v ≥ 0 ∧ u+v ≤ 1`、`t > 0`。
+- **AABB Slab**：对每个轴算 $t_0, t_1$，三个区间求交集；命中要求 $t_{enter} \le t_{exit} \land t_{exit} \ge 0$。
+- **BVH Traversal**：先测 bbox；miss → 整个子树跳过；leaf → 测内部 objects；internal → 递归两个 child。
+
+### 关键直觉提醒
+
+- Rasterization 问 "object → pixel"，Ray Tracing 问 "pixel → object"。
+- Ray 不是线段，是从 origin 沿 direction 延伸的半直线（`t ≥ 0`）。
+- 求交永远在解 `t`；`t` 是几何条件 + `t ≥ 0` 一起决定的。
+- 单条 ray 极易并行；但 brute force 逐三角形测不可扩展。
+- BVH 不是"切空间"，而是"按物体分组的层级 bbox"。
+- 加速结构是必需品，不是优化点缀。
+
+
