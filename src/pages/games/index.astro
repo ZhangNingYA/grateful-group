@@ -13,6 +13,7 @@ const now = new Date();
 const daysPassed = Math.floor((now.getTime() - togetherDate.getTime()) / 864e5);
 const weeks = Math.floor(daysPassed / 7);
 const months = Math.floor(daysPassed / 30);
+const hoursTotal = daysPassed * 24;
 ---
 
 <!doctype html>
@@ -22,173 +23,186 @@ const months = Math.floor(daysPassed / 30);
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap"
             rel="stylesheet"
         />
     </head>
 
     <body>
-        <!-- Paper texture overlay -->
-        <div class="paper-grain" aria-hidden="true"></div>
-
-        <!-- Floating stickers -->
-        <div class="stickers" aria-hidden="true">
-            <span class="sticker sticker-1">🌸</span>
-            <span class="sticker sticker-2">♡</span>
-            <span class="sticker sticker-3">✦</span>
-            <span class="sticker sticker-4">🐷</span>
+        <!-- Ambient layered background ------------------------------ -->
+        <div class="bg-stage" aria-hidden="true">
+            <div class="aurora aurora-1"></div>
+            <div class="aurora aurora-2"></div>
+            <div class="aurora aurora-3"></div>
+            <div class="grain"></div>
         </div>
 
-        <div class="magazine">
-            <!-- Masthead -->
-            <header class="masthead">
-                <div class="mast-left">
-                    <span class="mast-issue">ISSUE N°001</span>
-                    <span class="mast-sep">·</span>
-                    <span class="mast-date" id="todayDate"></span>
+        <!-- Drifting bokeh dots ------------------------------------- -->
+        <div class="bokeh" aria-hidden="true">
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+            <span class="dot d3"></span>
+            <span class="dot d4"></span>
+            <span class="dot d5"></span>
+            <span class="dot d6"></span>
+            <span class="dot d7"></span>
+            <span class="dot d8"></span>
+        </div>
+
+        <!-- Cursor halo (follows mouse on desktop) ------------------ -->
+        <div class="halo" id="halo" aria-hidden="true"></div>
+
+        <main class="page">
+            <!-- Mini chip header ------------------------------------ -->
+            <nav class="topchip">
+                <span class="chip-pulse"></span>
+                <span>diary · vol.001</span>
+                <span class="chip-sep">/</span>
+                <span id="todayDate">2025.01.01</span>
+            </nav>
+
+            <!-- ============== HERO · ORBITAL DIAL =============== -->
+            <section class="orbit">
+                <p class="orbit-greeting">
+                    <span class="hand">致最甜的</span> <em>🐷</em>
+                </p>
+
+                <div class="orbit-stage">
+                    <!-- Background concentric rings -->
+                    <svg class="orbit-rings" viewBox="0 0 600 600" aria-hidden="true">
+                        <defs>
+                            <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="60%" stop-color="rgba(255,255,255,0)"/>
+                                <stop offset="100%" stop-color="rgba(212,70,123,0.10)"/>
+                            </radialGradient>
+                            <linearGradient id="ringStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#d4467b"/>
+                                <stop offset="50%" stop-color="#e89855"/>
+                                <stop offset="100%" stop-color="#a87bd6"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="300" cy="300" r="290" fill="url(#ringGlow)" />
+                        <circle cx="300" cy="300" r="240" fill="none" stroke="rgba(58,36,71,0.10)" stroke-width="1" stroke-dasharray="2 6" />
+                        <circle cx="300" cy="300" r="200" fill="none" stroke="rgba(58,36,71,0.14)" stroke-width="1" />
+                        <circle class="orbit-arc" cx="300" cy="300" r="200" fill="none" stroke="url(#ringStroke)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="60 1200" />
+                        <!-- Tick marks (12 around) -->
+                        {Array.from({ length: 24 }).map((_, i) => {
+                          const a = (i / 24) * Math.PI * 2 - Math.PI / 2;
+                          const r1 = i % 2 === 0 ? 218 : 222;
+                          const r2 = 230;
+                          const x1 = 300 + Math.cos(a) * r1;
+                          const y1 = 300 + Math.sin(a) * r1;
+                          const x2 = 300 + Math.cos(a) * r2;
+                          const y2 = 300 + Math.sin(a) * r2;
+                          return <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(58,36,71,0.18)" stroke-width={i % 2 === 0 ? 1.4 : 0.7} />
+                        })}
+                    </svg>
+
+                    <!-- Orbiting heart -->
+                    <div class="orbit-heart" aria-hidden="true">
+                        <span class="heart-glyph">♥</span>
+                    </div>
+
+                    <!-- Center glass disc -->
+                    <div class="orbit-center">
+                        <div class="orbit-eyebrow">DAYS TOGETHER</div>
+                        <div class="orbit-number">
+                            <span class="ndigits">{daysPassed}</span>
+                            <span class="nunit">天</span>
+                        </div>
+                        <div class="orbit-since">since 2025·10·18</div>
+                    </div>
+
+                    <!-- Floating sparkles inside the stage -->
+                    <span class="spark s1">✦</span>
+                    <span class="spark s2">✧</span>
+                    <span class="spark s3">·</span>
+                    <span class="spark s4">✦</span>
+                    <span class="spark s5">✧</span>
                 </div>
-                <div class="mast-title">LOVE · JOURNAL</div>
-                <div class="mast-right">
-                    <span class="mast-pill">EST. 2025.10.18</span>
-                </div>
-            </header>
 
-            <!-- Editorial Hero -->
-            <section class="cover">
-                <div class="cover-side-text" aria-hidden="true">OUR LITTLE UNIVERSE</div>
+                <!-- Quote + live ticker -->
+                <p class="orbit-quote">
+                    <span class="qmark">"</span> Every day with you is my <em>favorite</em> day. <span class="qmark">"</span>
+                </p>
 
-                <div class="cover-main">
-                    <div class="cover-kicker">
-                        <span class="kicker-dot"></span>
-                        <span>我和 🐖 的第</span>
-                    </div>
-
-                    <div class="cover-number">
-                        <span class="big-digits">{daysPassed}</span>
-                        <span class="big-unit">天</span>
-                    </div>
-
-                    <div class="cover-underline"></div>
-
-                    <p class="cover-quote">
-                        <span class="quote-mark">"</span>
-                        Every day with you is my
-                        <em>favorite</em> day.
-                        <span class="quote-mark">"</span>
-                    </p>
-
-                    <div class="live-ticker">
-                        <span class="ticker-label">LIVE</span>
-                        <span class="ticker-dot"></span>
-                        <span class="ticker-value" id="liveTicker">--:--:--</span>
-                        <span class="ticker-note">共度时光</span>
-                    </div>
+                <div class="orbit-ticker" id="liveTickerWrap">
+                    <span class="dotpulse"></span>
+                    <span class="ticker-label">LIVE</span>
+                    <span class="ticker-val" id="liveTicker">—</span>
+                    <span class="ticker-tag">共度时光</span>
                 </div>
 
-                <!-- Numeric index card (polaroid style) -->
-                <div class="index-card">
-                    <div class="card-header">
-                        <span class="card-stamp">♡ MEMO</span>
-                        <span class="card-no">N°001</span>
-                    </div>
-
-                    <dl class="card-stats">
-                        <div class="card-row">
-                            <dt>Months</dt>
-                            <dd>{months}</dd>
-                        </div>
-                        <div class="card-row">
-                            <dt>Weeks</dt>
-                            <dd>{weeks}</dd>
-                        </div>
-                        <div class="card-row">
-                            <dt>Days</dt>
-                            <dd>{daysPassed}</dd>
-                        </div>
-                        <div class="card-row">
-                            <dt>Hours</dt>
-                            <dd>{daysPassed * 24}</dd>
-                        </div>
-                    </dl>
-
-                    <div class="card-footer">
-                        <span class="card-handwrite">— forever yours 🐷♡</span>
-                    </div>
+                <!-- Stat chips -->
+                <div class="chips">
+                    <div class="chip"><span class="chip-num">{months}</span><span class="chip-key">月</span></div>
+                    <div class="chip"><span class="chip-num">{weeks}</span><span class="chip-key">周</span></div>
+                    <div class="chip"><span class="chip-num">{daysPassed}</span><span class="chip-key">天</span></div>
+                    <div class="chip"><span class="chip-num">{hoursTotal.toLocaleString()}</span><span class="chip-key">小时</span></div>
                 </div>
             </section>
 
-            <!-- Heartbeat divider -->
-            <div class="heartbeat" aria-hidden="true">
-                <svg viewBox="0 0 600 40" preserveAspectRatio="none" width="100%" height="40">
-                    <path
-                        d="M0 20 L80 20 L100 20 L110 10 L120 30 L130 5 L140 35 L150 20 L200 20 L220 20 L230 10 L240 30 L250 5 L260 35 L270 20 L320 20 L340 20 L350 10 L360 30 L370 5 L380 35 L390 20 L440 20 L460 20 L470 10 L480 30 L490 5 L500 35 L510 20 L600 20"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
+            <!-- ============== WAVE DIVIDER ====================== -->
+            <div class="wave-div" aria-hidden="true">
+                <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+                    <path d="M0 30 Q 150 0 300 30 T 600 30 T 900 30 T 1200 30 L1200 60 L0 60 Z" fill="rgba(255,255,255,0.4)" />
+                    <path d="M0 30 Q 150 60 300 30 T 600 30 T 900 30 T 1200 30" fill="none" stroke="#d4467b" stroke-width="1.4" stroke-dasharray="2 6" opacity="0.45" />
                 </svg>
-                <span class="heart-icon">♡</span>
+                <span class="wave-glyph">❀</span>
             </div>
 
-            <!-- Chapter list -->
+            <!-- ============== TIMELINE ========================== -->
             {posts.length > 0 && (
-                <section class="chapters">
-                    <button class="chapters-toggle" id="listToggle" aria-expanded="false">
-                        <div class="ch-toggle-left">
-                            <span class="ch-toggle-chapter">CHAPTERS</span>
-                            <span class="ch-toggle-title">我们的日常</span>
+                <section class="timeline">
+                    <header class="tl-head">
+                        <div class="tl-eyebrow">
+                            <span class="eb-dot"></span>
+                            <span>MEMORY LANE</span>
+                            <span class="eb-count">{String(posts.length).padStart(2, '0')}</span>
                         </div>
-                        <div class="ch-toggle-right">
-                            <span class="ch-toggle-count">{posts.length}</span>
-                            <span class="ch-toggle-arrow" aria-hidden="true">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </span>
-                        </div>
-                    </button>
+                        <h2 class="tl-title">
+                            一些<em>琐碎</em>的<br/>日常与心动
+                        </h2>
+                        <p class="tl-lead">挑一段往下读，时间会替我们记住。</p>
+                    </header>
 
-                    <div class="chapters-list" id="listContent">
-                        <ol class="entry-list">
-                            {posts.map((post, i) => (
-                                <li class="entry" style={`animation-delay: ${i * 0.05}s`}>
-                                    <a href={`/games/${post.id}/`} class="entry-link">
-                                        <span class="entry-num">{String(i + 1).padStart(2, '0')}</span>
-                                        <span class="entry-rule" aria-hidden="true"></span>
-                                        <div class="entry-content">
-                                            <h3 class="entry-title">{post.data.title}</h3>
-                                            {post.data.description && (
-                                                <p class="entry-desc">{post.data.description}</p>
-                                            )}
-                                        </div>
-                                        <time class="entry-date">
+                    <ol class="tl-list">
+                        {posts.map((post, i) => (
+                            <li class={`tl-item ${i % 2 === 0 ? 'left' : 'right'}`} data-reveal>
+                                <span class="tl-line" aria-hidden="true"></span>
+                                <span class="tl-node" aria-hidden="true"><span></span></span>
+                                <a href={`/games/${post.id}/`} class="tl-card">
+                                    <div class="tl-card-stamp">
+                                        <span class="tl-card-no">{String(i + 1).padStart(2, '0')}</span>
+                                        <span class="tl-card-date">
                                             <FormattedDate date={post.data.pubDate} />
-                                        </time>
-                                        <span class="entry-arrow" aria-hidden="true">→</span>
-                                    </a>
-                                </li>
-                            ))}
-                        </ol>
-                    </div>
+                                        </span>
+                                    </div>
+                                    <h3 class="tl-card-title">{post.data.title}</h3>
+                                    {post.data.description && (
+                                        <p class="tl-card-desc">{post.data.description}</p>
+                                    )}
+                                    <div class="tl-card-foot">
+                                        <span>展开阅读</span>
+                                        <span class="tl-card-arrow">↗</span>
+                                    </div>
+                                </a>
+                            </li>
+                        ))}
+                    </ol>
                 </section>
             )}
 
-            <!-- Colophon -->
-            <footer class="colophon">
-                <div class="colophon-line"></div>
-                <div class="colophon-text">
-                    <span>PRINTED WITH</span>
-                    <span class="colophon-heart">♥</span>
-                    <span>FOR 🐖 · {new Date().getFullYear()}</span>
-                </div>
-                <div class="colophon-line"></div>
-            </footer>
-        </div>
+            <!-- ============== CLOSING ========================== -->
+            <section class="closing" data-reveal>
+                <div class="closing-mark">♡</div>
+                <p class="closing-line">愿你所及之处，皆是温柔；愿你所求皆得，皆有所应。</p>
+                <p class="closing-sign">— forever yours · {new Date().getFullYear()}</p>
+            </section>
+        </main>
 
         <script define:vars={{ togetherTime: togetherDate.getTime() }}>
-            // Today's date in masthead
+            // -------- today's date in chip --------
             const today = new Date();
             const dateEl = document.getElementById('todayDate');
             if (dateEl) {
@@ -198,28 +212,65 @@ const months = Math.floor(daysPassed / 30);
                 dateEl.textContent = `${y}.${m}.${d}`;
             }
 
-            // Live ticker (hours : minutes : seconds since together)
+            // -------- live ticker --------
             const ticker = document.getElementById('liveTicker');
-            function updateTicker() {
+            const updateTicker = () => {
                 if (!ticker) return;
-                const diffMs = Date.now() - togetherTime;
-                const totalSec = Math.floor(diffMs / 1000);
-                const hours = Math.floor(totalSec / 3600);
-                const minutes = Math.floor((totalSec % 3600) / 60);
-                const seconds = totalSec % 60;
-                ticker.textContent = `${hours.toLocaleString()}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
-            }
+                const totalSec = Math.floor((Date.now() - togetherTime) / 1000);
+                const h = Math.floor(totalSec / 3600);
+                const m = Math.floor((totalSec % 3600) / 60);
+                const s = totalSec % 60;
+                ticker.textContent = `${h.toLocaleString()}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`;
+            };
             updateTicker();
             setInterval(updateTicker, 1000);
 
-            // Collapsible list
-            const toggle = document.getElementById('listToggle');
-            const content = document.getElementById('listContent');
-            if (toggle && content) {
-                toggle.addEventListener('click', () => {
-                    const isOpen = content.classList.toggle('is-open');
-                    toggle.classList.toggle('is-open');
-                    toggle.setAttribute('aria-expanded', String(isOpen));
+            // -------- intersection-observer reveal --------
+            const targets = document.querySelectorAll('[data-reveal]');
+            if ('IntersectionObserver' in window && targets.length) {
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('is-visible');
+                            io.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+                targets.forEach((t) => io.observe(t));
+            } else {
+                targets.forEach((t) => t.classList.add('is-visible'));
+            }
+
+            // -------- cursor halo --------
+            const halo = document.getElementById('halo');
+            if (halo && !matchMedia('(pointer: coarse)').matches) {
+                let tx = window.innerWidth / 2;
+                let ty = window.innerHeight / 2;
+                let cx = tx, cy = ty;
+                window.addEventListener('mousemove', (e) => {
+                    tx = e.clientX;
+                    ty = e.clientY;
+                });
+                const tick = () => {
+                    cx += (tx - cx) * 0.08;
+                    cy += (ty - cy) * 0.08;
+                    halo.style.transform = `translate3d(${cx - 180}px, ${cy - 180}px, 0)`;
+                    requestAnimationFrame(tick);
+                };
+                tick();
+            }
+
+            // -------- gentle parallax on the orbit (mouse only) --------
+            const stage = document.querySelector('.orbit-stage');
+            if (stage && !matchMedia('(pointer: coarse)').matches) {
+                window.addEventListener('mousemove', (e) => {
+                    const rect = stage.getBoundingClientRect();
+                    const cx = rect.left + rect.width / 2;
+                    const cy = rect.top + rect.height / 2;
+                    const dx = (e.clientX - cx) / window.innerWidth;
+                    const dy = (e.clientY - cy) / window.innerHeight;
+                    stage.style.setProperty('--px', `${dx * 8}px`);
+                    stage.style.setProperty('--py', `${dy * 6}px`);
                 });
             }
         </script>
@@ -234,697 +285,723 @@ const months = Math.floor(daysPassed / 30);
         overflow-x: hidden;
         -webkit-font-smoothing: antialiased;
         font-family: 'Inter', -apple-system, sans-serif;
+        color: #3a2447;
     }
 
     body {
-        background:
-            radial-gradient(ellipse at top left, rgba(244, 114, 182, 0.08), transparent 50%),
-            radial-gradient(ellipse at bottom right, rgba(251, 146, 60, 0.08), transparent 50%),
-            #f3ede2;
-        color: #2a1f1a;
+        background: #fdf6f0;
         position: relative;
     }
 
     a { text-decoration: none; color: inherit; }
 
-    /* Paper grain texture via SVG noise */
-    .paper-grain {
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: 1;
+    /* ============== Ambient background ===================== */
+    .bg-stage {
+        position: fixed; inset: 0; z-index: 0; pointer-events: none;
+        overflow: hidden;
+    }
+    .aurora {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(90px);
+        opacity: 0.7;
+        will-change: transform;
+        animation: drift 28s ease-in-out infinite alternate;
+    }
+    .aurora-1 {
+        width: 50vw; height: 50vw;
+        top: -10%; left: -8%;
+        background: radial-gradient(circle, rgba(255,180,194,0.55), transparent 70%);
+    }
+    .aurora-2 {
+        width: 46vw; height: 46vw;
+        top: 30%; right: -10%;
+        background: radial-gradient(circle, rgba(214,168,237,0.45), transparent 70%);
+        animation-delay: -8s;
+    }
+    .aurora-3 {
+        width: 38vw; height: 38vw;
+        bottom: -5%; left: 25%;
+        background: radial-gradient(circle, rgba(255,212,140,0.45), transparent 70%);
+        animation-delay: -16s;
+    }
+    @keyframes drift {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(40px, -30px) scale(1.08); }
+        100% { transform: translate(-30px, 25px) scale(0.96); }
+    }
+
+    .grain {
+        position: absolute; inset: 0;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.25 0 0 0 0 0.18 0 0 0 0 0.28 0 0 0 0.10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
         opacity: 0.5;
         mix-blend-mode: multiply;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0.12 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     }
 
-    /* Floating stickers */
-    .stickers {
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: 2;
-    }
-
-    .sticker {
+    /* ============== Drifting bokeh ========================== */
+    .bokeh { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
+    .dot {
         position: absolute;
-        font-size: 1.5rem;
-        opacity: 0.35;
-        animation: wobble 8s ease-in-out infinite;
-    }
-
-    .sticker-1 { top: 12%; left: 6%; font-size: 2.2rem; animation-delay: 0s; }
-    .sticker-2 { top: 30%; right: 8%; font-size: 1.6rem; color: #d4467b; animation-delay: -2s; }
-    .sticker-3 { bottom: 26%; left: 9%; font-size: 1.3rem; color: #c97524; animation-delay: -4s; }
-    .sticker-4 { bottom: 14%; right: 11%; font-size: 2rem; animation-delay: -6s; }
-
-    @keyframes wobble {
-        0%, 100% { transform: translate(0, 0) rotate(-4deg); }
-        50% { transform: translate(6px, -8px) rotate(4deg); }
-    }
-
-    /* ===== Magazine Wrapper ===== */
-    .magazine {
-        position: relative;
-        z-index: 3;
-        max-width: 1080px;
-        margin: 0 auto;
-        padding: 40px 40px 80px;
-    }
-
-    /* ===== Masthead ===== */
-    .masthead {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-        gap: 20px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid #2a1f1a;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
-        color: #2a1f1a;
-    }
-
-    .mast-left {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .mast-issue { font-weight: 500; }
-    .mast-sep { opacity: 0.4; }
-    .mast-date { opacity: 0.65; }
-
-    .mast-title {
-        font-family: 'Fraunces', serif;
-        font-weight: 900;
-        font-size: 1.1rem;
-        letter-spacing: 0.08em;
-        text-align: center;
-    }
-
-    .mast-right {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .mast-pill {
-        padding: 4px 10px;
-        border: 1px solid #2a1f1a;
-        border-radius: 100px;
-        font-size: 0.66rem;
-    }
-
-    /* ===== Cover / Editorial Hero ===== */
-    .cover {
-        position: relative;
-        display: grid;
-        grid-template-columns: 40px 1fr 300px;
-        gap: 40px;
-        padding: 50px 0 40px;
-        border-bottom: 1px solid #2a1f1a;
-    }
-
-    .cover-side-text {
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.6em;
-        color: #2a1f1a;
-        opacity: 0.45;
-        align-self: start;
-        padding-top: 20px;
-    }
-
-    .cover-main {
-        min-width: 0;
-        animation: slide-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
-    }
-
-    @keyframes slide-up {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    .cover-kicker {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.74rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: #7a5c4a;
-        margin-bottom: 8px;
-    }
-
-    .kicker-dot {
-        display: inline-block;
         width: 8px; height: 8px;
         border-radius: 50%;
+        background: radial-gradient(circle, rgba(212,70,123,0.6), rgba(212,70,123,0));
+        opacity: 0;
+        animation: rise linear infinite;
+    }
+    .d1 { left: 8%;  bottom: -4%; animation-duration: 22s; animation-delay: 0s;  width: 10px; height: 10px; }
+    .d2 { left: 22%; bottom: -4%; animation-duration: 28s; animation-delay: -6s; background: radial-gradient(circle, rgba(232,152,85,0.6), transparent); }
+    .d3 { left: 38%; bottom: -4%; animation-duration: 34s; animation-delay: -12s; }
+    .d4 { left: 52%; bottom: -4%; animation-duration: 26s; animation-delay: -3s; background: radial-gradient(circle, rgba(168,123,214,0.6), transparent); width: 12px; height: 12px; }
+    .d5 { left: 64%; bottom: -4%; animation-duration: 30s; animation-delay: -9s; }
+    .d6 { left: 74%; bottom: -4%; animation-duration: 24s; animation-delay: -15s; background: radial-gradient(circle, rgba(255,212,140,0.7), transparent); }
+    .d7 { left: 84%; bottom: -4%; animation-duration: 32s; animation-delay: -18s; }
+    .d8 { left: 92%; bottom: -4%; animation-duration: 26s; animation-delay: -22s; }
+    @keyframes rise {
+        0%   { transform: translateY(0)  scale(1); opacity: 0; }
+        12%  { opacity: 0.85; }
+        85%  { opacity: 0.55; }
+        100% { transform: translateY(-110vh) scale(0.7); opacity: 0; }
+    }
+
+    /* ============== Cursor halo ============================ */
+    .halo {
+        position: fixed; top: 0; left: 0;
+        width: 360px; height: 360px;
+        pointer-events: none;
+        z-index: 2;
+        background: radial-gradient(circle, rgba(255,180,194,0.16), transparent 60%);
+        mix-blend-mode: screen;
+        transform: translate3d(-9999px, -9999px, 0);
+    }
+    @media (pointer: coarse) { .halo { display: none; } }
+
+    /* ============== Page wrapper ============================ */
+    .page {
+        position: relative; z-index: 3;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 36px 32px 100px;
+    }
+
+    /* ============== Top chip ================================ */
+    .topchip {
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 7px 14px;
+        background: rgba(255,255,255,0.55);
+        backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(58,36,71,0.10);
+        border-radius: 100px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(58,36,71,0.7);
+    }
+    .chip-pulse {
+        width: 7px; height: 7px;
+        border-radius: 50%;
         background: #d4467b;
-        animation: pulse 1.6s ease-in-out infinite;
+        box-shadow: 0 0 0 0 rgba(212,70,123,0.5);
+        animation: chipPulse 2s ease-in-out infinite;
+    }
+    .chip-sep { opacity: 0.35; }
+    @keyframes chipPulse {
+        0%   { box-shadow: 0 0 0 0 rgba(212,70,123,0.55); }
+        70%  { box-shadow: 0 0 0 10px rgba(212,70,123,0); }
+        100% { box-shadow: 0 0 0 0 rgba(212,70,123,0); }
     }
 
-    @keyframes pulse {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(0.7); opacity: 0.4; }
+    /* ============== Hero · orbit ============================ */
+    .orbit {
+        position: relative;
+        text-align: center;
+        padding: 60px 0 40px;
     }
 
-    .cover-number {
-        display: flex;
-        align-items: baseline;
-        gap: 16px;
-        margin-bottom: 16px;
-    }
-
-    .big-digits {
+    .orbit-greeting {
         font-family: 'Fraunces', serif;
-        font-weight: 900;
-        font-style: italic;
-        font-size: clamp(7rem, 22vw, 16rem);
-        line-height: 0.85;
-        letter-spacing: -0.06em;
-        color: #2a1f1a;
-        background: linear-gradient(180deg, #2a1f1a 0%, #8b3a5c 70%, #d4467b 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        font-style: italic; font-weight: 400;
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        color: rgba(58,36,71,0.7);
+        margin-bottom: 24px;
+        letter-spacing: 0.02em;
+        animation: fadeUp 0.9s 0.1s ease-out both;
+    }
+    .orbit-greeting .hand {
+        background: linear-gradient(90deg, transparent, rgba(255,212,180,0.35), transparent);
+        padding: 2px 10px;
+        border-radius: 100px;
+    }
+    .orbit-greeting em { font-style: normal; font-size: 1.4em; vertical-align: -0.1em; }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
     }
 
-    .big-unit {
+    .orbit-stage {
+        position: relative;
+        width: min(540px, 90vw);
+        aspect-ratio: 1;
+        margin: 0 auto;
+        animation: fadeUp 1.2s 0.2s ease-out both;
+        transform: translate(var(--px, 0), var(--py, 0));
+        transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .orbit-rings {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+    }
+    .orbit-arc {
+        animation: arcSpin 18s linear infinite;
+        transform-origin: center;
+    }
+    @keyframes arcSpin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+    }
+
+    .orbit-heart {
+        position: absolute; top: 0; left: 50%;
+        width: 0; height: 0;
+        transform: translateX(-50%);
+        animation: heartOrbit 16s linear infinite;
+        z-index: 2;
+    }
+    .heart-glyph {
+        position: absolute;
+        top: -14px;
+        left: 0;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        color: #d4467b;
+        text-shadow: 0 0 14px rgba(212,70,123,0.55);
+        animation: heartBeat 1.4s ease-in-out infinite;
+    }
+    @keyframes heartOrbit {
+        from { transform: translateX(-50%) rotate(0deg) translateY(calc(min(540px,90vw)/2 * -0.66)) rotate(0deg); }
+        to   { transform: translateX(-50%) rotate(360deg) translateY(calc(min(540px,90vw)/2 * -0.66)) rotate(-360deg); }
+    }
+    @keyframes heartBeat {
+        0%, 100% { transform: translateX(-50%) scale(1); }
+        25%      { transform: translateX(-50%) scale(1.25); }
+        50%      { transform: translateX(-50%) scale(1); }
+        75%      { transform: translateX(-50%) scale(1.18); }
+    }
+
+    .orbit-center {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 64%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background:
+            radial-gradient(circle at 30% 25%, rgba(255,255,255,0.95), rgba(255,255,255,0.55) 60%, rgba(255,255,255,0.2) 100%);
+        backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255,255,255,0.7);
+        box-shadow:
+            0 12px 40px rgba(212,70,123,0.18),
+            inset 0 1px 1px rgba(255,255,255,0.8);
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        gap: 6px;
+        animation: breathe 6s ease-in-out infinite;
+    }
+    @keyframes breathe {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); }
+        50%      { transform: translate(-50%, -50%) scale(1.025); }
+    }
+
+    .orbit-eyebrow {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.66rem;
+        letter-spacing: 0.32em;
+        color: rgba(58,36,71,0.55);
+        font-weight: 500;
+    }
+    .orbit-number {
+        display: flex; align-items: baseline; gap: 8px;
+        line-height: 0.85;
+    }
+    .ndigits {
+        font-family: 'Fraunces', serif;
+        font-style: italic; font-weight: 900;
+        font-size: clamp(4.5rem, 14vw, 9rem);
+        background: linear-gradient(135deg, #d4467b 0%, #e89855 50%, #a87bd6 100%);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.05em;
+    }
+    .nunit {
         font-family: 'Fraunces', serif;
         font-weight: 300;
-        font-size: clamp(2.4rem, 6vw, 4rem);
-        color: #7a5c4a;
-        letter-spacing: -0.02em;
+        font-size: clamp(1.4rem, 4vw, 2.4rem);
+        color: rgba(58,36,71,0.5);
+    }
+    .orbit-since {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
+        color: rgba(58,36,71,0.5);
     }
 
-    .cover-underline {
-        width: 120px;
-        height: 2px;
-        background: #2a1f1a;
-        margin: 8px 0 24px;
+    .spark {
+        position: absolute;
+        font-size: 0.95rem;
+        color: rgba(212,70,123,0.6);
+        pointer-events: none;
+        animation: twinkle 4s ease-in-out infinite;
+    }
+    .s1 { top: 10%; left: 14%;  font-size: 1rem; color: #e89855; animation-delay: 0s; }
+    .s2 { top: 18%; right: 12%; color: #a87bd6; animation-delay: -0.8s; }
+    .s3 { bottom: 22%; left: 8%; font-size: 1.4rem; animation-delay: -1.6s; color: rgba(58,36,71,0.5); }
+    .s4 { bottom: 12%; right: 18%; animation-delay: -2.4s; }
+    .s5 { top: 50%; right: 4%; animation-delay: -3.2s; color: #e89855; }
+    @keyframes twinkle {
+        0%, 100% { opacity: 0.25; transform: scale(0.85); }
+        50%      { opacity: 1; transform: scale(1.2); }
     }
 
-    .cover-quote {
+    /* Quote */
+    .orbit-quote {
+        margin: 40px auto 22px;
+        max-width: 32em;
         font-family: 'Fraunces', serif;
         font-style: italic;
         font-weight: 400;
-        font-size: clamp(1.15rem, 2vw, 1.45rem);
-        line-height: 1.5;
-        color: #4a3529;
-        max-width: 28em;
-        margin-bottom: 32px;
+        font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+        line-height: 1.55;
+        color: rgba(58,36,71,0.85);
+        animation: fadeUp 0.9s 0.5s ease-out both;
     }
-
-    .cover-quote em {
-        font-style: italic;
+    .orbit-quote em {
         font-weight: 700;
-        color: #d4467b;
-        border-bottom: 2px solid #d4467b;
-        padding-bottom: 2px;
+        background: linear-gradient(180deg, transparent 60%, rgba(255,212,180,0.7) 60%);
+        padding: 0 4px;
+        font-style: italic;
+        color: #8b3a5c;
     }
-
-    .quote-mark {
+    .qmark {
         font-family: 'Fraunces', serif;
-        font-size: 1.6em;
-        line-height: 0;
         color: #d4467b;
+        font-size: 1.4em;
         font-weight: 900;
-        vertical-align: -0.1em;
+        line-height: 0;
+        vertical-align: -0.12em;
     }
 
     /* Live ticker */
-    .live-ticker {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 8px 14px;
-        border: 1px solid #2a1f1a;
+    .orbit-ticker {
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 9px 16px;
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(58,36,71,0.12);
         border-radius: 100px;
-        background: #fffbf2;
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.78rem;
-        color: #2a1f1a;
-        box-shadow: 4px 4px 0 #2a1f1a;
+        color: rgba(58,36,71,0.85);
+        margin-bottom: 36px;
+        animation: fadeUp 0.9s 0.7s ease-out both;
+        box-shadow: 0 4px 16px rgba(212,70,123,0.06);
+    }
+    .dotpulse {
+        width: 8px; height: 8px;
+        border-radius: 50%;
+        background: #d4467b;
+        animation: dotPulse 1.2s ease-in-out infinite;
+    }
+    @keyframes dotPulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%      { opacity: 0.35; transform: scale(0.7); }
+    }
+    .ticker-label {
+        padding: 1px 6px; border-radius: 4px;
+        background: linear-gradient(135deg, #d4467b, #e89855);
+        color: #fff;
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+    .ticker-val {
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: #3a2447;
+    }
+    .ticker-tag {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.72rem;
+        padding-left: 10px;
+        border-left: 1px solid rgba(58,36,71,0.18);
+        color: rgba(58,36,71,0.6);
     }
 
-    .ticker-label {
-        padding: 2px 6px;
-        background: #d4467b;
-        color: #fff;
-        border-radius: 4px;
-        font-size: 0.62rem;
-        font-weight: 600;
+    /* Stat chips */
+    .chips {
+        display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+        margin-top: 6px;
+        animation: fadeUp 0.9s 0.85s ease-out both;
+    }
+    .chip {
+        display: flex; align-items: baseline; gap: 6px;
+        padding: 9px 16px;
+        background: rgba(255,255,255,0.65);
+        border: 1px solid rgba(58,36,71,0.10);
+        border-radius: 14px;
+        backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+        transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .chip:hover {
+        transform: translateY(-2px);
+        background: rgba(255,255,255,0.85);
+        box-shadow: 0 6px 20px rgba(212,70,123,0.10);
+    }
+    .chip-num {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #8b3a5c;
+        letter-spacing: -0.02em;
+    }
+    .chip-key {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        color: rgba(58,36,71,0.55);
         letter-spacing: 0.08em;
     }
 
-    .ticker-dot {
-        width: 6px; height: 6px;
-        border-radius: 50%;
-        background: #d4467b;
-        animation: blink 1s ease-in-out infinite;
-    }
-
-    @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
-    }
-
-    .ticker-value {
-        font-weight: 500;
-        letter-spacing: 0.04em;
-    }
-
-    .ticker-note {
-        font-family: 'Inter', sans-serif;
-        font-size: 0.72rem;
-        color: #7a5c4a;
-        padding-left: 6px;
-        border-left: 1px solid rgba(42, 31, 26, 0.2);
-    }
-
-    /* Polaroid index card */
-    .index-card {
+    /* ============== Wave divider ============================ */
+    .wave-div {
         position: relative;
-        width: 100%;
-        padding: 18px;
-        background: #fffbf2;
-        border: 1px solid #2a1f1a;
-        box-shadow: 6px 6px 0 #2a1f1a;
-        transform: rotate(2deg);
-        transition: transform 0.4s ease;
-        animation: slide-up 0.9s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
-    }
-
-    .index-card:hover {
-        transform: rotate(0deg) translateY(-4px);
-    }
-
-    .card-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 12px;
-        border-bottom: 1px dashed rgba(42, 31, 26, 0.25);
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.68rem;
-        letter-spacing: 0.1em;
-    }
-
-    .card-stamp {
+        margin: 60px 0 50px;
+        text-align: center;
         color: #d4467b;
-        font-weight: 600;
+    }
+    .wave-div svg {
+        width: 100%;
+        height: 60px;
+        display: block;
+    }
+    .wave-glyph {
+        position: absolute;
+        top: -10px; left: 50%;
+        transform: translateX(-50%);
+        background: #fdf6f0;
+        padding: 0 14px;
+        font-size: 1.4rem;
+        animation: spinSlow 14s linear infinite;
+    }
+    @keyframes spinSlow {
+        from { transform: translateX(-50%) rotate(0deg); }
+        to   { transform: translateX(-50%) rotate(360deg); }
     }
 
-    .card-no {
-        opacity: 0.6;
-    }
+    /* ============== Timeline ================================ */
+    .timeline { position: relative; }
 
-    .card-stats {
-        margin: 14px 0;
+    .tl-head {
+        text-align: center;
+        margin-bottom: 60px;
     }
-
-    .card-row {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        padding: 8px 0;
-        border-bottom: 1px dashed rgba(42, 31, 26, 0.15);
-    }
-
-    .card-row:last-child {
-        border-bottom: none;
-    }
-
-    .card-row dt {
+    .tl-eyebrow {
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 5px 14px;
+        background: rgba(255,255,255,0.6);
+        border: 1px solid rgba(58,36,71,0.12);
+        border-radius: 100px;
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.7rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #7a5c4a;
+        letter-spacing: 0.22em;
+        color: rgba(58,36,71,0.65);
+        margin-bottom: 18px;
+        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
     }
-
-    .card-row dd {
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
-        font-style: italic;
-        font-size: 1.2rem;
-        color: #2a1f1a;
+    .eb-dot {
+        width: 6px; height: 6px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #d4467b, #e89855);
     }
-
-    .card-footer {
-        padding-top: 12px;
-        border-top: 1px dashed rgba(42, 31, 26, 0.25);
-        text-align: right;
+    .eb-count {
+        padding: 2px 8px;
+        background: linear-gradient(135deg, #d4467b, #e89855);
+        color: #fff;
+        border-radius: 4px;
+        font-size: 0.62rem;
+        letter-spacing: 0.05em;
     }
-
-    .card-handwrite {
-        font-family: 'Fraunces', serif;
-        font-style: italic;
-        font-size: 0.82rem;
-        color: #8b3a5c;
-    }
-
-    /* ===== Heartbeat divider ===== */
-    .heartbeat {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 40px 0 30px;
-        color: #d4467b;
-    }
-
-    .heartbeat svg {
-        flex: 1;
-        opacity: 0.7;
-    }
-
-    .heart-icon {
-        position: absolute;
-        right: 4px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #f3ede2;
-        padding: 0 10px;
-        font-size: 1.2rem;
-        animation: heartbeat 1.4s ease-in-out infinite;
-    }
-
-    @keyframes heartbeat {
-        0%, 100% { transform: translateY(-50%) scale(1); }
-        30% { transform: translateY(-50%) scale(1.3); }
-        60% { transform: translateY(-50%) scale(1); }
-    }
-
-    /* ===== Chapters ===== */
-    .chapters {
-        margin-top: 10px;
-    }
-
-    .chapters-toggle {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        padding: 18px 24px;
-        background: #2a1f1a;
-        color: #f3ede2;
-        border: 1px solid #2a1f1a;
-        border-radius: 0;
-        cursor: pointer;
-        font-family: inherit;
-        transition: all 0.25s ease;
-    }
-
-    .chapters-toggle:hover {
-        background: #3d2c23;
-    }
-
-    .ch-toggle-left {
-        display: flex;
-        align-items: baseline;
-        gap: 18px;
-    }
-
-    .ch-toggle-chapter {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.68rem;
-        letter-spacing: 0.24em;
-        opacity: 0.6;
-    }
-
-    .ch-toggle-title {
+    .tl-title {
         font-family: 'Fraunces', serif;
         font-weight: 500;
+        font-size: clamp(2rem, 4.5vw, 2.8rem);
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: #3a2447;
+        margin-bottom: 14px;
+    }
+    .tl-title em {
         font-style: italic;
-        font-size: 1.3rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #d4467b, #e89855, #a87bd6);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-
-    .ch-toggle-right {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-    }
-
-    .ch-toggle-count {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 28px;
-        height: 28px;
-        padding: 0 8px;
-        border-radius: 100px;
-        background: #d4467b;
-        color: #fff;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.78rem;
-        font-weight: 600;
-    }
-
-    .ch-toggle-arrow {
-        display: flex;
-        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .chapters-toggle.is-open .ch-toggle-arrow {
-        transform: rotate(180deg);
-    }
-
-    .chapters-list {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        background: #fffbf2;
-        border: 1px solid #2a1f1a;
-        border-top: none;
-    }
-
-    .chapters-list.is-open {
-        max-height: 3000px;
-    }
-
-    .entry-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .entry {
-        border-bottom: 1px solid rgba(42, 31, 26, 0.1);
-        opacity: 0;
-        transform: translateY(8px);
-        animation: entry-in 0.45s ease forwards;
-    }
-
-    .entry:last-child { border-bottom: none; }
-
-    @keyframes entry-in {
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    .entry-link {
-        display: grid;
-        grid-template-columns: 60px 60px 1fr auto 30px;
-        align-items: center;
-        gap: 18px;
-        padding: 20px 24px;
-        transition: all 0.25s ease;
-        color: #2a1f1a;
-    }
-
-    .entry-link:hover {
-        background: #f3ede2;
-    }
-
-    .entry-num {
+    .tl-lead {
         font-family: 'Fraunces', serif;
         font-style: italic;
-        font-weight: 400;
-        font-size: 1.9rem;
+        font-size: 1.05rem;
+        color: rgba(58,36,71,0.65);
+    }
+
+    .tl-list {
+        list-style: none;
+        position: relative;
+        max-width: 920px;
+        margin: 0 auto;
+    }
+    .tl-list::before {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 50%;
+        width: 1px;
+        background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(212,70,123,0.4) 8%,
+            rgba(168,123,214,0.4) 50%,
+            rgba(232,152,85,0.4) 92%,
+            transparent 100%);
+    }
+
+    .tl-item {
+        position: relative;
+        padding: 24px 0;
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+            opacity 0.85s cubic-bezier(0.2, 0.7, 0.2, 1),
+            transform 0.85s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .tl-item.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .tl-line {
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(212,70,123,0.4), rgba(212,70,123,0));
+    }
+    .tl-item.left .tl-line {
+        right: 50%;
+        width: 50px;
+        background: linear-gradient(90deg, rgba(212,70,123,0), rgba(212,70,123,0.4));
+    }
+    .tl-item.right .tl-line {
+        left: 50%;
+        width: 50px;
+    }
+
+    .tl-node {
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 18px; height: 18px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: rgba(253, 246, 240, 1);
+        box-shadow: 0 0 0 1px rgba(58,36,71,0.15), 0 0 20px rgba(212,70,123,0.25);
+        display: flex; align-items: center; justify-content: center;
+        z-index: 2;
+    }
+    .tl-node span {
+        width: 8px; height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #d4467b, #e89855);
+        animation: nodePulse 2.4s ease-in-out infinite;
+    }
+    @keyframes nodePulse {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212,70,123,0.5); }
+        50%      { transform: scale(1.25); box-shadow: 0 0 0 6px rgba(212,70,123,0); }
+    }
+
+    .tl-card {
+        position: relative;
+        display: block;
+        width: calc(50% - 60px);
+        padding: 22px 24px 20px;
+        background: rgba(255,255,255,0.75);
+        backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255,255,255,0.85);
+        border-radius: 18px;
+        box-shadow: 0 8px 28px rgba(58,36,71,0.06), 0 1px 0 rgba(255,255,255,0.9) inset;
+        transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s, border-color 0.35s;
+    }
+    .tl-card::before {
+        content: '';
+        position: absolute;
+        top: -1px; left: 0; right: 0; height: 3px;
+        background: linear-gradient(90deg, #d4467b, #e89855, #a87bd6);
+        border-radius: 18px 18px 0 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .tl-item.left .tl-card { margin-right: auto; transform-origin: right center; }
+    .tl-item.right .tl-card { margin-left: auto; transform-origin: left center; }
+
+    .tl-card:hover {
+        transform: translateY(-4px) scale(1.01);
+        box-shadow: 0 16px 40px rgba(58,36,71,0.10);
+        border-color: rgba(212,70,123,0.25);
+    }
+    .tl-card:hover::before { opacity: 1; }
+
+    .tl-card-stamp {
+        display: flex; align-items: center; gap: 10px;
+        margin-bottom: 12px;
+    }
+    .tl-card-no {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 1.15rem;
         color: #d4467b;
         letter-spacing: -0.02em;
     }
-
-    .entry-rule {
-        height: 1px;
-        background: #2a1f1a;
-        opacity: 0.4;
-        transition: opacity 0.3s ease;
-    }
-
-    .entry-link:hover .entry-rule {
-        opacity: 1;
-    }
-
-    .entry-content {
-        min-width: 0;
-    }
-
-    .entry-title {
-        font-family: 'Fraunces', serif;
-        font-weight: 500;
-        font-size: 1.12rem;
-        line-height: 1.3;
-        color: #2a1f1a;
-        margin-bottom: 2px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .entry-desc {
-        font-size: 0.82rem;
-        color: #7a5c4a;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .entry-date {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
-        color: #7a5c4a;
-        letter-spacing: 0.04em;
-        white-space: nowrap;
-    }
-
-    .entry-arrow {
-        font-family: 'Fraunces', serif;
-        font-size: 1.2rem;
-        color: #d4467b;
-        transition: transform 0.25s ease;
-    }
-
-    .entry-link:hover .entry-arrow {
-        transform: translateX(6px);
-    }
-
-    /* ===== Colophon ===== */
-    .colophon {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-top: 60px;
+    .tl-card-date {
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.7rem;
-        letter-spacing: 0.18em;
-        color: #7a5c4a;
+        color: rgba(58,36,71,0.5);
+        letter-spacing: 0.08em;
+        padding-left: 10px;
+        border-left: 1px solid rgba(58,36,71,0.15);
     }
-
-    .colophon-line {
-        flex: 1;
-        height: 1px;
-        background: #2a1f1a;
-        opacity: 0.2;
+    .tl-card-title {
+        font-family: 'Fraunces', serif;
+        font-weight: 600;
+        font-size: 1.18rem;
+        line-height: 1.35;
+        color: #3a2447;
+        margin-bottom: 6px;
+        letter-spacing: -0.01em;
     }
-
-    .colophon-text {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+    .tl-card-desc {
+        font-size: 0.88rem;
+        line-height: 1.65;
+        color: rgba(58,36,71,0.7);
+        margin-bottom: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
-
-    .colophon-heart {
+    .tl-card-foot {
+        display: flex; justify-content: space-between; align-items: center;
+        padding-top: 10px;
+        border-top: 1px dashed rgba(58,36,71,0.15);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72rem;
+        color: rgba(58,36,71,0.5);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .tl-card-arrow {
+        font-size: 0.95rem;
         color: #d4467b;
-        animation: heartbeat 1.4s ease-in-out infinite;
+        transition: transform 0.25s;
+    }
+    .tl-card:hover .tl-card-arrow { transform: translate(2px, -2px); }
+
+    /* ============== Closing ================================= */
+    .closing {
+        text-align: center;
+        margin-top: 80px;
+        padding: 40px 24px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.9s, transform 0.9s;
+    }
+    .closing.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .closing-mark {
+        font-family: 'Fraunces', serif;
+        font-size: 2.2rem;
+        color: #d4467b;
+        margin-bottom: 14px;
+        animation: heartBeat 1.6s ease-in-out infinite;
+        display: inline-block;
+    }
+    .closing-line {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: clamp(1.05rem, 2vw, 1.3rem);
+        line-height: 1.7;
+        color: rgba(58,36,71,0.78);
+        max-width: 30em;
+        margin: 0 auto 16px;
+    }
+    .closing-sign {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.74rem;
+        letter-spacing: 0.18em;
+        color: rgba(58,36,71,0.45);
+        text-transform: uppercase;
     }
 
-    /* ===== Responsive ===== */
-    @media (max-width: 860px) {
-        .magazine {
-            padding: 24px 20px 60px;
-        }
+    /* ============== Responsive ============================= */
+    @media (max-width: 820px) {
+        .page { padding: 24px 18px 80px; }
 
-        .masthead {
-            grid-template-columns: 1fr auto;
-            row-gap: 8px;
+        .tl-list::before {
+            left: 18px;
         }
-
-        .mast-title {
-            grid-column: 1 / -1;
-            order: -1;
-            text-align: left;
-            font-size: 0.95rem;
-        }
-
-        .mast-right {
-            justify-content: flex-end;
-        }
-
-        .cover {
-            grid-template-columns: 1fr;
-            gap: 24px;
-            padding: 30px 0 30px;
-        }
-
-        .cover-side-text {
-            display: none;
-        }
-
-        .index-card {
-            transform: rotate(-1deg);
-            max-width: 360px;
-        }
-
-        .big-digits {
-            font-size: clamp(5.5rem, 30vw, 10rem);
-        }
-
-        .entry-link {
-            grid-template-columns: 44px 1fr;
-            gap: 12px;
-            padding: 16px;
-        }
-
-        .entry-rule,
-        .entry-date,
-        .entry-arrow {
-            display: none;
-        }
-
-        .entry-num {
-            font-size: 1.5rem;
-        }
-
-        .entry-title {
-            font-size: 1rem;
-            white-space: normal;
-        }
-
-        .entry-desc {
-            white-space: normal;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
-
-        .chapters-toggle {
-            padding: 16px 18px;
-        }
-
-        .ch-toggle-title {
-            font-size: 1.1rem;
+        .tl-item { padding: 14px 0; }
+        .tl-item .tl-line { display: none; }
+        .tl-node { left: 18px; }
+        .tl-card,
+        .tl-item.left .tl-card,
+        .tl-item.right .tl-card {
+            width: calc(100% - 50px);
+            margin-left: 50px;
+            margin-right: 0;
+            transform-origin: left center;
         }
     }
 
     @media (max-width: 480px) {
-        .live-ticker {
+        .orbit { padding: 36px 0 30px; }
+        .orbit-quote { margin: 28px auto 18px; }
+        .chips { gap: 8px; }
+        .chip { padding: 7px 12px; }
+        .chip-num { font-size: 1.05rem; }
+        .orbit-ticker {
             flex-wrap: wrap;
-            gap: 6px;
-            padding: 8px 12px;
+            justify-content: center;
         }
-
-        .ticker-note {
+        .ticker-tag {
             border-left: none;
             padding-left: 0;
         }
+    }
 
-        .sticker {
-            opacity: 0.2;
+    @media (prefers-reduced-motion: reduce) {
+        .aurora,
+        .orbit-arc,
+        .orbit-heart,
+        .heart-glyph,
+        .orbit-center,
+        .spark,
+        .dot,
+        .chip-pulse,
+        .dotpulse,
+        .closing-mark,
+        .wave-glyph {
+            animation: none !important;
         }
     }
 </style>
