@@ -1,0 +1,309 @@
+---
+title: '辐射度量学入门：把"光"变成可以测量的物理量'
+description: '从 Blinn-Phong 的 intensity = 10 出发，通过交互式 3D 可视化彻底搞懂 Radiant Flux、Solid Angle、Radiant Intensity、Irradiance 与 Radiance —— 渲染方程的物理基础'
+pubDate: '2026-05-17'
+heroImage: '../../assets/blog-placeholder-2.jpg'
+---
+
+import {
+  PageStyles,
+  FluxDemo,
+  SolidAngleDemo,
+  IsotropicSourceDemo,
+} from '../../components/games101/rayTracing02/index.jsx';
+import {
+  IrradianceCosineDemo,
+  RadianceBeamDemo,
+} from '../../components/works/RayTracing03Interactive.tsx';
+
+<PageStyles client:load />
+
+## 为什么要学辐射度量学？
+
+如果你写过光线追踪作业，大概率写过这样一行代码：
+
+```cpp
+auto light = Light(Point(0, 5, 0), 10);   // intensity = 10
+```
+
+这个 `10` 是什么单位？是瓦特（W）？流明（lm）？还是某种"亮度的感觉"？答案是——**什么都不是**。它只是一个能让画面看起来"差不多"的经验数字。
+
+Blinn-Phong、Whitted-style ray tracing 这一套经验模型的麻烦在于：
+
+- **不可解释**：`intensity = 10` 没有量纲，无法和真实光源数据对接。
+- **不可拼接**：环境光 / 漫反射 / 高光是人为加权合成，物理上不守恒。
+- **不可推广**：碰到 area light、间接照明、photon mapping 就完全无能为力。
+
+要写物理正确的渲染器，第一步是把"光"重新讲一遍——给它**单位**、给它**几何**、给它**方向**。这就是 **Radiometry（辐射度量学）**。
+
+> 🧠 一句话总结：辐射度量学是渲染方程的字典。学完这套术语，path tracing、photon mapping、bidirectional path tracing 都只是它的不同采样策略。
+
+---
+
+## 学习路线
+
+整套 radiometry 的核心只有 5 个量，按"从粗到细"递进：
+
+| 量 | 描述 | 关注什么 | 单位 |
+|------|------|---------|------|
+| Radiant Energy $Q$ | 总能量 | 累积量 | $\text{J}$ |
+| Radiant Flux $\Phi$ | 单位时间能量 | 时间密度 | $\text{W}$ |
+| Radiant Intensity $I$ | 每方向的功率 | 方向密度 | $\text{W}/\text{sr}$ |
+| Irradiance $E$ | 表面接收的功率密度 | 面积密度 | $\text{W}/\text{m}^2$ |
+| Radiance $L$ | 沿单一方向、单位投影面积的功率 | 方向 + 面积 | $\text{W}/(\text{m}^2{\cdot}\text{sr})$ |
+
+依次添加"时间"、"方向"、"面积"、"方向 + 投影面积"四个维度，把光切得越来越细。
+
+---
+
+## 1. Radiant Energy 与 Radiant Flux：把时间加进来
+
+### Radiant Energy $Q$
+
+电磁辐射携带的总能量，单位**焦耳 (J)**。这是最朴素的物理量——一束光打了多久、累积了多少能量。
+
+### Radiant Flux $\Phi$
+
+把"时间"加进来：单位时间通过传感器（或离开光源）的能量。
+
+$$
+\Phi = \frac{dQ}{dt} \quad \left[\,\text{W} = \text{J}/\text{s}\,\right]
+$$
+
+直觉：把光想象成一连串 photon packet，$\Phi$ 就是单位时间内穿过 sensor 的 photon flow。
+
+<FluxDemo client:only="react" />
+
+> 🧠 **为什么 flux 比 energy 更基础**：渲染本质是稳态问题。我们不关心"今天这盏灯累计发了多少焦耳"，只关心**它现在的发光率是多少瓦**——因为相机的曝光时间也是单位时间。所以渲染方程里所有的量都是 flux 类的密度。
+
+> 🔧 **Photometric vs Radiometric**
+> - **Radiometric**（物理量）：$\text{W}$、$\text{W/sr}$、$\text{W/m}^2$、$\text{W/(m}^2{\cdot}\text{sr})$
+> - **Photometric**（光度量）：在 radiometric 上叠加人眼亮度响应函数 $V(\lambda)$，对应 lumen / candela / lux / nit
+>
+> 渲染方程使用 radiometric。lumen / candela 只在和真实灯具数据对接时出现。
+
+---
+
+## 2. Solid Angle：把"方向"几何化
+
+要谈"每个方向"上的功率，得先回答："方向"怎么度量？答案是 **Solid Angle（立体角）**，把熟悉的 2D 弧度推广到 3D。
+
+| 维度 | 角度定义 | 单位 |
+|------|----------|------|
+| 平面角 | $\theta = l / r$，弧长除以半径 | rad |
+| 立体角 | $\Omega = A / r^2$，球面 patch 面积除以半径平方 | sr |
+
+整个球面对应 $4\pi\,\text{sr}$，半球 $2\pi\,\text{sr}$。
+
+### 微分立体角
+
+在球坐标系里写微元：
+
+$$
+d\omega = \sin\theta \, d\theta \, d\varphi
+$$
+
+为什么是 $\sin\theta$ 而不是 1？因为同样的 $d\theta\,d\varphi$，赤道附近的球面 patch 又宽又大，两极附近的 patch 被纬线挤成窄条。**$\sin\theta$ 是这种几何收缩的修正因子**——这点在写 BRDF 积分、采样球面方向时反复要用到。
+
+<SolidAngleDemo client:only="react" />
+
+> 💡 **采样直觉**：如果你在球面上"均匀撒点"（用 $\theta, \varphi$ 各自均匀采样），点会**集中在两极**——因为相同的 $d\theta\,d\varphi$ 在两极对应的 patch 更小。要做物理正确的均匀采样，必须按 $\sin\theta$ 加权（或者直接用 $\cos\theta$ 反演法）。
+
+---
+
+## 3. Radiant Intensity：每方向的功率
+
+有了 solid angle，就能把 flux 拆到方向上。**Radiant Intensity** $I(\omega)$ 是每立体角的功率密度：
+
+$$
+I(\omega) = \frac{d\Phi}{d\omega} \quad \left[\,\text{W}/\text{sr}\,\right]
+$$
+
+直觉：把 flux 切成无数细小的方向锥，每个锥里的 flux 密度，就是该方向上的 intensity。
+
+### 各向同性点光源
+
+最简单的光源模型——把 flux 均匀分配到 $4\pi$ 立体角：
+
+$$
+I = \frac{\Phi}{4\pi}
+$$
+
+例如一颗标称 815 lumen 的 LED，假设各向同性：
+
+$$
+I = \frac{815}{4\pi} \approx 64.85\,\text{cd}
+$$
+
+<IsotropicSourceDemo client:only="react" />
+
+> 🔧 **工程现实**：真实灯具几乎都是各向异性的。厂商发布的 **IES profile** 就是 $I$ 在各方向的分布表。Isotropic point source 只是教学和粗略估算的方便模型，写 area light、IES、environment map 时它就被替代了。
+
+> ⚠️ **Direction 不绑定位置**：$\omega$ 是一个**单位向量**，只表示方向，不和 ray 的 origin 绑定。同一个方向在不同空间点上的 intensity 可以不同——这正是 radiance 出场的伏笔。
+
+---
+
+## 4. Irradiance：表面接收到多少光
+
+Intensity 描述的是"光源发出多少"。换到接收端的视角：一个表面**单位面积接收到多少功率**？这就是 **Irradiance**。
+
+$$
+E(\mathbf{x}) = \frac{d\Phi(\mathbf{x})}{dA} \quad \left[\,\text{W}/\text{m}^2\,\right]
+$$
+
+注意：irradiance **不带方向**，已经是对所有入射方向求和的结果。
+
+### Lambert's Cosine Law
+
+当光线以与法线成 $\theta$ 的角度倾斜入射时：
+
+$$
+E = \frac{\Phi}{A}\cos\theta
+$$
+
+逐项理解：
+
+- $\cos\theta$ 来自**投影面积**——倾斜的光线打到面上，等效于打到一个被压缩的接收面上。
+- 在反射 / 渲染计算中，这个 cosine 必须 clamp：$\max(0,\,\mathbf{n}\cdot\mathbf{l})$。
+- 如果 $\mathbf{n}\cdot\mathbf{l} < 0$，意味着光从**背面**入射，对前面没有贡献。
+
+> 💡 **常见误区**：很多教材把 cosine 法则解释成"倾斜入射光更弱了"，这是错的。**光线本身的能量没变，变的是单位面积分到的能量**。同样一束 flux 摊在更大的接收面上，每平方米拿到的自然就少。
+
+下面拖动入射方向，观察相同的 flux 摊到不同大小的面上时 $E$ 怎么变化：
+
+<IrradianceCosineDemo client:only="react" />
+
+> 🧠 **为什么夏天比冬天热？**——同样的太阳辐射 flux，夏天阳光更接近垂直入射（$\cos\theta \to 1$），单位面积上的 irradiance 大；冬天阳光斜射（$\cos\theta$ 小），同样的 flux 摊在更大面积上，irradiance 自然就低。这就是 Lambert cosine 法则在地球尺度上的应用。
+
+---
+
+## 5. Radiance：渲染方程的核心
+
+终极量来了。**Radiance** 同时包含**方向**和**投影面积**，它是 ray tracing 中最重要的物理量：
+
+$$
+L(\mathbf{p}, \boldsymbol{\omega}) = \frac{d^2\Phi(\mathbf{p}, \boldsymbol{\omega})}{d\omega \, dA \, \cos\theta}
+\quad \left[\,\text{W}/(\text{m}^2{\cdot}\text{sr})\,\right]
+$$
+
+为什么是 ray tracing 中最核心的量？
+
+- **每根 ray 上携带的就是 radiance**。
+- **camera 看到的也是某根 ray 上的 radiance**。
+- **path tracing 的递归求和实际上就是在估计 radiance**。
+
+### Radiance vs Irradiance
+
+| 量 | 关于什么 | 包含方向？ | 单位 |
+|------|----------|------------|------|
+| Irradiance $E$ | 表面接收 | 否（半球积分） | $\text{W}/\text{m}^2$ |
+| Radiance $L$ | 一根 ray | 是（单方向） | $\text{W}/(\text{m}^2{\cdot}\text{sr})$ |
+
+### 为什么要"投影面积"？
+
+定义里的分母是 $dA \cdot \cos\theta$ 而不是 $dA$。原因是：用投影面积归一化后，**radiance 沿 ray 传播时是不变量**——不管你在 ray 上的哪个位置切一个小 patch，量到的 radiance 都相同（在真空里）。
+
+这个不变性是 ray tracing 能成立的物理基础——否则我们就没法用一根简单的 ray 在场景里来回反弹"携带"光照信息。
+
+<RadianceBeamDemo client:only="react" />
+
+> 💡 **从 radiance 到 irradiance**：irradiance 等于把所有方向上的 radiance 按投影加权积分回去：
+> $$E(\mathbf{p}) = \int_{\Omega^+} L_i(\mathbf{p}, \boldsymbol{\omega})\cos\theta\, d\omega$$
+> 这个公式在反射方程里反复出现，是连接两个量的桥梁。
+
+---
+
+## 6. 五个量之间的关系图
+
+把这五个量串起来，本质上是不断地"加维度":
+
+```text
+Q (能量, J)
+  └── 除以时间 dt ────────► Φ (Flux, W)
+                              ├── 除以方向 dω ────► I (Intensity, W/sr)
+                              ├── 除以面积 dA ────► E (Irradiance, W/m²)
+                              └── 除以 dω · dA · cosθ ──► L (Radiance, W/m²/sr)
+```
+
+或者反过来看：
+
+- **Flux** = 一段 area 在一段时间内通过的能量
+- **Intensity** = Flux 在每个方向上的密度（像 PDF 的方向版）
+- **Irradiance** = Flux 在每平方米表面上的密度
+- **Radiance** = Flux 在每方向 × 每投影平方米上的密度（最细）
+
+> 🧠 **微积分直觉**：从 $Q$ 到 $L$ 一路求微分，分母里加进时间、方向、面积、投影面积。从 $L$ 反过来积分回 $Q$，就是渲染方程在做的事情。
+
+---
+
+## 7. 速查表
+
+**核心定义**
+
+$$
+\begin{aligned}
+\Phi &= \frac{dQ}{dt} && [\text{W}] \\
+I(\omega) &= \frac{d\Phi}{d\omega} && [\text{W}/\text{sr}] \\
+E(\mathbf{x}) &= \frac{d\Phi}{dA} && [\text{W}/\text{m}^2] \\
+L(\mathbf{p}, \boldsymbol{\omega}) &= \frac{d^2\Phi}{d\omega \, dA \, \cos\theta} && [\text{W}/(\text{m}^2{\cdot}\text{sr})]
+\end{aligned}
+$$
+
+**几何**
+
+$$
+\begin{aligned}
+\Omega &= A / r^2 \quad [\text{sr}] \\
+d\omega &= \sin\theta \, d\theta \, d\varphi \\
+\text{半球} \ \Omega^+ &= 2\pi \,\text{sr}, \quad \text{整球} = 4\pi \,\text{sr}
+\end{aligned}
+$$
+
+**常用结论**
+
+$$
+\begin{aligned}
+\text{Lambert:} \quad & E = \frac{\Phi}{A}\cos\theta \\
+\text{Isotropic point source:} \quad & I = \frac{\Phi}{4\pi} \\
+\text{Irradiance from radiance:} \quad & E = \int_{\Omega^+} L_i \cos\theta \, d\omega \\
+\text{Radiance is invariant along a ray (in vacuum)}
+\end{aligned}
+$$
+
+---
+
+## 8. 自测问题
+
+1. Radiant flux 和 radiant energy 的差别用一句话怎么说？
+2. 立体角为什么是无量纲的？为什么整球是 $4\pi$ 而不是 $4\pi r^2$？
+3. 微分立体角 $d\omega = \sin\theta\,d\theta\,d\varphi$ 中的 $\sin\theta$ 几何意义是什么？
+4. 各向同性点光源 $\Phi = 815\,\text{lm}$，intensity 是多少？lumen 是 radiometric 还是 photometric？
+5. Lambert cosine 法则中的 $\cos\theta$ 来自哪里？为什么不是描述"光线变弱了"？
+6. Irradiance 和 radiance 的根本区别是什么？哪个携带方向信息？
+7. 为什么 radiance 的定义里要除以 $\cos\theta$（投影面积），而不是直接除以 $dA$？
+8. 一根 ray 在真空里传播时，它携带的 radiance 会变吗？为什么？
+9. 为什么说 path tracing 在"估计 radiance"，而不是估计其它四个量？
+10. 把 $L_i(\mathbf{p}, \boldsymbol{\omega})$ 在半球上按 $\cos\theta\,d\omega$ 积分，得到的是哪个物理量？
+
+---
+
+## 总结
+
+| 概念 | 要点 |
+|------|------|
+| 学辐射度量学的动机 | 给"光"加上单位、几何、方向，让渲染方程物理正确 |
+| Radiant Flux $\Phi$ | 单位时间能量，渲染方程的基础时间密度 |
+| Solid Angle $\omega$ | 角度的 3D 推广，$d\omega = \sin\theta\,d\theta\,d\varphi$ |
+| Radiant Intensity $I$ | 每方向的功率密度，isotropic 时 $I = \Phi/4\pi$ |
+| Irradiance $E$ | 表面单位面积接收的功率，含 Lambert $\cos\theta$ 投影 |
+| Radiance $L$ | 沿 ray 不变的方向亮度，path tracer 的传输量 |
+| 五量关系 | 不断给分母加维度（时间 → 方向 → 面积 → 投影面积） |
+| Photometric vs Radiometric | 后者是物理量，前者叠加人眼响应（lumen / candela） |
+
+掌握了这五个量，你就能读懂任何 path tracer 的源码注释，能解释 Cornell box 里的每一道阴影从哪里来，也能看懂 IES 灯具数据为什么长那样。
+
+下一步可以继续学：**BRDF**（材质如何把入射 irradiance 重新分配到出射 radiance）、**反射方程**、以及把所有这些量缝在一起的 **Rendering Equation**。
+
+---
+
+*本文所有可视化均使用 React Three Fiber 实现，支持拖拽旋转和参数调节。复用了项目中 GAMES101 Ray Tracing 系列的交互组件。*

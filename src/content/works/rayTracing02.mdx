@@ -6,13 +6,6 @@ pubDate: '2026-05-15'
 
 import {
   PageStyles,
-  Callout,
-  Formula,
-  Route,
-  Section,
-  Cheat,
-  CheatCard,
-  QGrid,
   AABBSlabDemo,
   UniformGridDemo,
   SpatialPartitionDemo,
@@ -26,14 +19,25 @@ import {
 
 <PageStyles client:load />
 
-<Route />
+## Ray Tracing 2: Acceleration & Radiometry
 
-<Section
-  num="01"
-  eyebrow="Context"
-  title="课程定位：从 Whitted 到加速"
-  lead="光线追踪在数学上完全正确，但 naive 实现实在太慢。Lecture 14 的第一目标是教会我们怎么「少做工作」。"
-/>
+> 前半场用空间结构剪枝，后半场用物理量重定义光。前者让 ray tracing 跑得动，后者为下一讲 path tracing 铺好地基。
+
+光线追踪在数学上完全正确，但 naive 实现实在太慢。Lecture 14 的第一目标是教会我们怎么“少做工作”。
+
+学习路线：
+
+1. **AABB Slab Method** — ray ↔ box 的原子操作
+2. **Uniform Grid** — 最朴素的空间剪枝
+3. **Oct / KD / BSP** — 把 grid 递归化的自适应结构
+4. **KD-Tree 详解** — Spatial partition 的代表
+5. **BVH** — Object partition，工业主流
+6. **Spatial vs Object** — 区分两族的关键
+7. **Radiometry** — 给光线建立物理量纲
+
+---
+
+## 01 / 课程定位：从 Whitted 到加速
 
 **Ray Tracing 01 我们建立的能力：**
 
@@ -44,77 +48,68 @@ import {
 
 **Ray Tracing 02 我们要解决的问题：**
 
-1. ray ↔ scene 的暴力求交是 `O(R · N)`，工业场景动辄百万级 primitives，根本算不动。**需要加速结构。**
+1. ray ↔ scene 的暴力求交是 $O(R \cdot N)$，工业场景动辄百万级 primitives，根本算不动。**需要加速结构。**
 2. 即使 Whitted-style + Blinn-Phong 看起来还行，但它对光的物理含义并不诚实，作业里写 `light intensity = 10` 中的 10 没有单位。**需要 radiometry。**
 
-<Callout kind="mental" title="一句话总览这一讲">
-**前半场用空间结构剪枝，后半场用物理量重定义光。** 前者让 ray tracing 跑得动，后者为下一讲 path tracing 铺好地基。
-</Callout>
+---
 
-<Section
-  num="02"
-  eyebrow="Acceleration · Primitive"
-  title="AABB ↔ Ray Slab Method 回顾"
-  lead="加速结构的「原子操作」是 ray-vs-AABB。理解 slab method 是后面所有 acceleration 的前提。"
-/>
+## 02 / AABB ↔ Ray Slab Method 回顾
+
+加速结构的“原子操作”是 ray-vs-AABB。理解 slab method 是后面所有 acceleration 的前提。
 
 把 axis-aligned bounding box 看作三组 slab（每个 slab 是一对相互平行的平面，分别在 x、y、z 上）。对每根 ray：
 
-- 在每个轴上，求两个交点参数 `t1, t2`（其中 `t1 ≤ t2`）。
-- 三组 `(t1, t2)` 给出三个时间区间，**它们的交集**就是 ray 真正落在 box 内的时间段。
-- 取所有 `t1` 中的最大值作为 `t_enter`，所有 `t2` 中的最小值作为 `t_exit`。
-- 命中条件：`t_enter ≤ t_exit` **且** `t_exit ≥ 0`。第二条防止 box 完全在 ray 起点的"后面"。
+- 在每个轴上，求两个交点参数 $t_1, t_2$（其中 $t_1 \le t_2$）。
+- 三组 $(t_1, t_2)$ 给出三个时间区间，**它们的交集**就是 ray 真正落在 box 内的时间段。
+- 取所有 $t_1$ 中的最大值作为 $t_{\text{enter}}$，所有 $t_2$ 中的最小值作为 $t_{\text{exit}}$。
+- 命中条件：$t_{\text{enter}} \le t_{\text{exit}}$ **且** $t_{\text{exit}} \ge 0$。第二条防止 box 完全在 ray 起点的“后面”。
 
-<Formula>t_enter = max(t1x, t1y, t1z) &nbsp;|&nbsp; t_exit = min(t2x, t2y, t2z) &nbsp;|&nbsp; HIT ⇔ t_enter ≤ t_exit ∧ t_exit ≥ 0</Formula>
+$$
+t_{\text{enter}} = \max(t_{1x}, t_{1y}, t_{1z}), \qquad
+t_{\text{exit}}  = \min(t_{2x}, t_{2y}, t_{2z})
+$$
+
+$$
+\text{HIT} \iff t_{\text{enter}} \le t_{\text{exit}} \ \land\ t_{\text{exit}} \ge 0
+$$
 
 <AABBSlabDemo client:only="react" />
 
-<Callout kind="impl" title="实现细节：除零与方向取反">
-- 当 `d_i ≈ 0`，要直接判定 origin 是否落在 slab 内；否则除零会得到 `±Inf`，逻辑虽常常自洽，但出错时极难调试，老老实实加分支更安全。
-- 当 `d_i < 0`，得到的 `t1 > t2`，**必须 swap** 才能保证 `t1` 是进入时间。
-</Callout>
+> 🔧 **实现细节**：当 $d_i \approx 0$，要直接判定 origin 是否落在 slab 内；否则除零会得到 `±Inf`。当 $d_i < 0$，得到的 $t_1 > t_2$，**必须 swap** 才能保证 $t_1$ 是进入时间。
 
-<Callout kind="warning" title="常见误区">
-**`t_exit ≥ 0` 不是冗余判定。** ray 完全有可能 `t_enter < t_exit` 但两个值都是负的，这时 box 在 ray 起点的反方向，仍是 miss。把这一条漏掉，是最常见的 bug 之一。
-</Callout>
+> ⚠️ **常见误区**：`t_exit ≥ 0` 不是冗余判定。ray 完全有可能 $t_{\text{enter}} < t_{\text{exit}}$ 但两个值都是负的，这时 box 在 ray 起点的反方向，仍是 miss。把这一条漏掉，是最常见的 bug 之一。
 
-<Section
-  num="03"
-  eyebrow="Acceleration · Uniform"
-  title="Uniform Spatial Partitions / Grids"
-  lead="最朴素的加速结构：把场景切成均匀网格，沿 ray 一格一格走。简单到能在十分钟内手写一个，但只在物体分布均匀时才好用。"
-/>
+---
+
+## 03 / Uniform Spatial Partitions / Grids
+
+最朴素的加速结构：把场景切成均匀网格，沿 ray 一格一格走。简单到能在十分钟内手写一个，但只在物体分布均匀时才好用。
 
 **Preprocess：**
 
 1. 计算整个场景的 bounding box。
-2. 选择 grid 分辨率 `Nx × Ny × Nz`，把 bounding box 切成均匀 cell。
+2. 选择 grid 分辨率 $N_x \times N_y \times N_z$，把 bounding box 切成均匀 cell。
 3. 对每个 primitive，把它登记到所有它 overlap 的 cell 上（一个物体可能登记到多个 cell）。
 
 **Query：**
 
-1. 用 ray-AABB 算出 ray 进入 scene 的 `t_enter`。
+1. 用 ray-AABB 算出 ray 进入 scene 的 $t_{\text{enter}}$。
 2. 沿 ray 走 cell：每次跨过 cell 边界就跳到下一个 cell（典型实现是 3D-DDA / Amanatides–Woo）。
 3. 在每个非空 cell 中，对登记的物体做 ray-primitive intersection。命中后**注意**：仍要检查命中点是否落在当前 cell 内，否则可能错过更近的命中。
 
 <UniformGridDemo client:only="react" />
 
-<Callout kind="insight" title="格子分辨率怎么选">
-经验启发式：`#cells = C · #objects`，3D 中 `C ≈ 27`。
-- 太少：每个 cell 仍含大量物体，剪枝失败。
-- 太多：cell 平均空载，traversal 自身的成本超过收益。
-</Callout>
+> 💡 **格子分辨率怎么选**：经验启发式 `#cells = C · #objects`，3D 中 $C \approx 27$。
+> - 太少：每个 cell 仍含大量物体，剪枝失败。
+> - 太多：cell 平均空载，traversal 自身的成本超过收益。
 
-<Callout kind="warning" title="Teapot in a Stadium 问题">
-当物体高度集中、空间大量空白（如球场里的茶壶），uniform grid 要么粒度粗到对茶壶起不到剪枝作用，要么粒度细到 stadium 全是空格。**适应性结构（KD-Tree / BVH）就是为这类场景准备的。**
-</Callout>
+> ⚠️ **Teapot in a Stadium 问题**：当物体高度集中、空间大量空白（如球场里的茶壶），uniform grid 要么粒度粗到对茶壶起不到剪枝作用，要么粒度细到 stadium 全是空格。**适应性结构（KD-Tree / BVH）就是为这类场景准备的。**
 
-<Section
-  num="04"
-  eyebrow="Acceleration · Adaptive"
-  title="Spatial Partitions：Oct / KD / BSP"
-  lead="把 uniform grid「递归化」：哪里物体多就在哪里继续切，哪里空旷就停。"
-/>
+---
+
+## 04 / Spatial Partitions：Oct / KD / BSP
+
+把 uniform grid “递归化”：哪里物体多就在哪里继续切，哪里空旷就停。
 
 | 类型 | 切法 | 子节点数 | 实现复杂度 |
 |------|------|----------|-----------|
@@ -126,18 +121,16 @@ import {
 
 <SpatialPartitionDemo client:only="react" />
 
-<Callout kind="mental" title="为什么后来 KD 多于 Oct 与 BSP">
-- KD 只切一个轴，子节点更少，**traversal 时只需在两个 child 之间挑近 / 远**，控制流非常清晰。
-- BSP 表达力最强（任意方向），但需要解决"任意三角形与任意 hyperplane"的关系，常用于游戏的可见性预计算（Quake 引擎），不适合在线构建。
-- Oct-Tree 切得太均匀，依然是 uniform 的味道，对极不均匀场景帮助有限。
-</Callout>
+> 🧠 **为什么后来 KD 多于 Oct 与 BSP**
+> - KD 只切一个轴，子节点更少，**traversal 时只需在两个 child 之间挑近 / 远**，控制流非常清晰。
+> - BSP 表达力最强（任意方向），但需要解决“任意三角形与任意 hyperplane”的关系，常用于游戏的可见性预计算（Quake 引擎），不适合在线构建。
+> - Oct-Tree 切得太均匀，依然是 uniform 的味道，对极不均匀场景帮助有限。
 
-<Section
-  num="05"
-  eyebrow="Acceleration · KD-Tree"
-  title="KD-Tree 详解"
-  lead="对 spatial partition 这一族里最有代表性的成员单独深挖。理解 KD-Tree 的 internal / leaf 结构，是后面对 BVH 形成对比的前提。"
-/>
+---
+
+## 05 / KD-Tree 详解
+
+对 spatial partition 这一族里最有代表性的成员单独深挖。理解 KD-Tree 的 internal / leaf 结构，是后面对 BVH 形成对比的前提。
 
 **Pre-processing：**
 
@@ -156,11 +149,11 @@ buildKDTree(objects, nodeBox, depth):
   return internal
 ```
 
-**重点：**
+重点：
 
 - **Internal node 不存物体**，只存 split 信息和 children。
 - **Leaf node 存物体列表。**
-- 一个物体如果跨越 split plane，会被同时分配到左右两个 child（导致预处理需要"三角形 ↔ 包围盒"测试，并不简单）。
+- 一个物体如果跨越 split plane，会被同时分配到左右两个 child（导致预处理需要“三角形 ↔ 包围盒”测试，并不简单）。
 
 **Traversal：**
 
@@ -178,18 +171,15 @@ traverse(node, ray):
 
 <KDTreeDemo client:only="react" />
 
-<Callout kind="warning" title="KD-Tree 真正的痛点">
-**判断三角形是否与 box 相交本身就不便宜。** 在大场景下，预处理时间 / 内存爆炸；并且物体跨越多个 leaf 也意味着同一 primitive 可能被反复测试（除非加 mailbox）。这两个问题让工业渲染器逐步偏向 BVH。
-</Callout>
+> ⚠️ **KD-Tree 真正的痛点**：判断三角形是否与 box 相交本身就不便宜。在大场景下，预处理时间 / 内存爆炸；并且物体跨越多个 leaf 也意味着同一 primitive 可能被反复测试（除非加 mailbox）。这两个问题让工业渲染器逐步偏向 BVH。
 
-<Section
-  num="06"
-  eyebrow="Acceleration · BVH"
-  title="Object Partitions 与 BVH（最重要）"
-  lead="BVH 把「切空间」换成「切物体」。这一节是 Lecture 14 的高潮，也是当今离线 / 实时光追硬件（NVIDIA RTX、Embree）的核心数据结构。"
-/>
+---
 
-**关键定义：**
+## 06 / Object Partitions 与 BVH
+
+BVH 把“切空间”换成“切物体”。这一节是 Lecture 14 的高潮，也是当今离线 / 实时光追硬件（NVIDIA RTX、Embree）的核心数据结构。
+
+关键定义：
 
 - BVH 是 **object partition**：把 primitive 集合切成两个**不相交**的子集合。
 - Internal node 存 children + 它所包含 subset 的 bounding box。
@@ -225,23 +215,19 @@ traverseBVH(node, ray):
 
 <BVHDemo client:only="react" />
 
-<Callout kind="insight" title="BVH 的工程胜利">
-- **构建简单**：只需要按 centroid 排序，不必处理 triangle ↔ split-plane 的几何相交。
-- **每个 primitive 只属于一个 leaf**：内存可控，不会产生重复引用。
-- **GPU 友好**：扁平化 BVH (linear BVH, MBVH) 极易塞进显存做 traversal。
-- 缺点：**bbox 重叠**意味着不能简单按"近 / 远"剪枝，traversal 时常用 best-t 对远 child 做剪枝。
-</Callout>
+> 💡 **BVH 的工程胜利**
+> - **构建简单**：只需要按 centroid 排序，不必处理 triangle ↔ split-plane 的几何相交。
+> - **每个 primitive 只属于一个 leaf**：内存可控，不会产生重复引用。
+> - **GPU 友好**：扁平化 BVH (linear BVH, MBVH) 极易塞进显存做 traversal。
+> - 缺点：**bbox 重叠**意味着不能简单按“近 / 远”剪枝，traversal 时常用 best-t 对远 child 做剪枝。
 
-<Callout kind="impl" title="拆分启发式：SAH">
-课堂里我们用的是 **median split**，简单稳健，但常常不是最优。工业里使用 **Surface Area Heuristic (SAH)**：估算左右子树的命中代价 `cost = bbox_area · #prims`，按代价最低 split。SAH 是 PBRT、Embree 默认策略。
-</Callout>
+> 🔧 **拆分启发式：SAH**：课堂里我们用的是 median split，简单稳健，但常常不是最优。工业里使用 **Surface Area Heuristic**：估算左右子树的命中代价 `cost = bbox_area · #prims`，按代价最低 split。SAH 是 PBRT、Embree 默认策略。
 
-<Section
-  num="07"
-  eyebrow="Comparison"
-  title="Spatial Partition vs Object Partition"
-  lead="同一组物体，左 KD（spatial），右 BVH（object）。区分两者，是判断在新场景下选哪个的关键。"
-/>
+---
+
+## 07 / Spatial Partition vs Object Partition
+
+同一组物体，左 KD（spatial），右 BVH（object）。区分两者，是判断在新场景下选哪个的关键。
 
 <SpatialVsObjectDemo client:only="react" />
 
@@ -254,17 +240,15 @@ traverseBVH(node, ray):
 | Traversal 特点 | front-to-back 自然 | 需要排序近 / 远 child |
 | 实际工程使用率 | 较少（专业渲染器） | 主流（PBRT、Embree、RTX） |
 
-<Callout kind="mental" title="一图记住核心区别">
-- **Spatial**：切空间。空间区域 disjoint，物体可重复登记。
-- **Object**：切物体。物体集合 disjoint，bounding boxes 可重叠。
-</Callout>
+> 🧠 一图记住核心区别：
+> - **Spatial**：切空间。空间区域 disjoint，物体可重复登记。
+> - **Object**：切物体。物体集合 disjoint，bounding boxes 可重叠。
 
-<Section
-  num="08"
-  eyebrow="Radiometry · Why"
-  title="为什么需要 Radiometry：从经验到物理"
-  lead="至此加速结构告一段落。下半节课换一个频道：我们要把「光」重新讲一遍。"
-/>
+---
+
+## 08 / 为什么需要 Radiometry：从经验到物理
+
+至此加速结构告一段落。下半节课换一个频道：我们要把“光”重新讲一遍。
 
 回忆 RT01 / Lecture 7 的 Blinn-Phong：
 
@@ -278,7 +262,7 @@ traverseBVH(node, ray):
 auto light = Light(Point(0, 5, 0), 10);   // intensity = 10
 ```
 
-`10` 是 10 W 还是 10 lm？还是 10 个单位的"什么"？**经验模型不诚实**，它能糊弄出还行的图，但和真实光照对不上。
+`10` 是 10 W 还是 10 lm？还是 10 个单位的“什么”？**经验模型不诚实**，它能糊弄出还行的图，但和真实光照对不上。
 
 要做物理正确的光线追踪 / path tracing，需要先回答几个最基础的问题：
 
@@ -289,114 +273,110 @@ auto light = Light(Point(0, 5, 0), 10);   // intensity = 10
 
 这就是 **radiometry**。它不是为难学生的术语堆砌，而是 path tracing 公式的字典。
 
-<Callout kind="mental" title="Why">
-Blinn-Phong / Whitted 的 "intensity = 10" 不可解释、不可拼接、不可推广到 area light、global illumination。
-</Callout>
+> 🧠 **Why**：Blinn-Phong / Whitted 的 `intensity = 10` 不可解释、不可拼接、不可推广到 area light、global illumination。
 
-<Callout kind="impl" title="What">
-一套精确测量光的物理量 + 单位：`Q` energy、`Φ` flux、`I` intensity、`E` irradiance、`L` radiance。
-</Callout>
+> 🔧 **What**：一套精确测量光的物理量 + 单位：$Q$ energy、$\Phi$ flux、$I$ intensity、$E$ irradiance、$L$ radiance。
 
-<Callout kind="insight" title="本节我们只覆盖前三个">
-课程在 Lecture 14 末尾只讲到 radiant intensity（包含 solid angle）。irradiance 和 radiance 留到 Lecture 15。我们就把 Q、Φ、I 和 ω 这一组建立起来。
-</Callout>
+> 💡 **本节我们只覆盖前三个**：课程在 Lecture 14 末尾只讲到 radiant intensity（包含 solid angle）。irradiance 和 radiance 留到 Lecture 15。我们就把 $Q$、$\Phi$、$I$ 和 $\omega$ 这一组建立起来。
 
-<Section
-  num="09"
-  eyebrow="Radiometry · Flux"
-  title="Radiant Energy 与 Radiant Flux"
-  lead="Q 是能量，Φ 是单位时间能量。光线追踪里我们最常打交道的就是 Φ。"
-/>
+---
 
-- **Radiant energy** Q：电磁辐射携带的能量，单位 **Joule (J)**。
-- **Radiant flux / power** Φ：单位时间通过传感器或离开光源的能量。
+## 09 / Radiant Energy 与 Radiant Flux
 
-<Formula>Φ = dQ / dt &nbsp;[ Watt = J / s ]</Formula>
+$Q$ 是能量，$\Phi$ 是单位时间能量。光线追踪里我们最常打交道的就是 $\Phi$。
+
+- **Radiant energy** $Q$：电磁辐射携带的能量，单位 **Joule (J)**。
+- **Radiant flux / power** $\Phi$：单位时间通过传感器或离开光源的能量。
+
+$$
+\Phi = \frac{dQ}{dt} \quad \left[\,\text{W} = \text{J}/\text{s}\,\right]
+$$
 
 直觉：把光想象成一连串 photon packet，flux 就是单位时间穿过 sensor 的 photon flow。
 
 <FluxDemo client:only="react" />
 
-<Callout kind="mental" title="为什么 flux 是基础而不是 Q">
-渲染本质是稳态问题（steady-state）：我们不在乎"今天这盏灯到现在累计发了多少焦耳"，我们关心**它现在的发光率是多少 W**，因为相机的曝光时间也是单位时间。所以渲染方程的左右两侧都是 flux 类的量。
-</Callout>
+> 🧠 **为什么 flux 是基础而不是 Q**：渲染本质是稳态问题（steady-state）。我们不在乎“今天这盏灯到现在累计发了多少焦耳”，我们关心**它现在的发光率是多少 W**，因为相机的曝光时间也是单位时间。所以渲染方程的左右两侧都是 flux 类的量。
 
-<Callout kind="impl" title="photometric vs radiometric">
-- Radiometric：纯物理，单位 W、W·sr⁻¹、W·m⁻²、W·m⁻²·sr⁻¹。
-- Photometric：在 radiometric 上叠加人眼亮度响应函数 V(λ)，对应 lumen、candela、lux、cd·m⁻²。
-- 渲染方程使用 radiometric。lumen / candela 仅在和真实光源数据对接时出现。
-</Callout>
+> 🔧 **Photometric vs radiometric**
+> - Radiometric：纯物理，单位 W、W·sr⁻¹、W·m⁻²、W·m⁻²·sr⁻¹。
+> - Photometric：在 radiometric 上叠加人眼亮度响应函数 $V(\lambda)$，对应 lumen、candela、lux、cd·m⁻²。
+> - 渲染方程使用 radiometric。lumen / candela 仅在和真实光源数据对接时出现。
 
-<Section
-  num="10"
-  eyebrow="Radiometry · Direction"
-  title="Radiant Intensity 与 Solid Angle"
-  lead="Intensity 描述「每方向」的功率，方向用 solid angle 度量。"
-/>
+---
 
-**Solid angle**：把"角度"从 1D 推广到 2D。一段弧 / 半径 = 平面角 (rad)；一片球面 patch / 半径² = 立体角 (steradian, sr)。
+## 10 / Radiant Intensity 与 Solid Angle
 
-<Formula>平面角 θ = l / r &nbsp;|&nbsp; 立体角 Ω = A / r²</Formula>
+Intensity 描述“每方向”的功率，方向用 solid angle 度量。
 
-**整个球面**对应 `4π sr`，半球 `2π sr`。在球坐标里 differential solid angle：
+**Solid angle**：把“角度”从 1D 推广到 2D。一段弧 / 半径 = 平面角 (rad)；一片球面 patch / 半径² = 立体角 (steradian, sr)。
 
-<Formula>dω = sinθ dθ dφ</Formula>
+$$
+\theta = \frac{l}{r}, \qquad \Omega = \frac{A}{r^{2}}
+$$
 
-为什么是 `sinθ` 而不是 1？因为同样的 `dθ dφ`，在赤道附近的球面 patch 又宽又大，在两极附近的 patch 被纬线挤成窄条，patch 面积自然带一个 `sinθ` 因子。这点在写 BRDF 积分、采样球面方向时是反复要用的几何事实。
+整个球面对应 $4\pi\,\text{sr}$，半球 $2\pi\,\text{sr}$。在球坐标里 differential solid angle：
+
+$$
+d\omega = \sin\theta \, d\theta \, d\varphi
+$$
+
+为什么是 $\sin\theta$ 而不是 1？因为同样的 $d\theta\,d\varphi$，在赤道附近的球面 patch 又宽又大，在两极附近的 patch 被纬线挤成窄条，patch 面积自然带一个 $\sin\theta$ 因子。这点在写 BRDF 积分、采样球面方向时是反复要用的几何事实。
 
 <SolidAngleDemo client:only="react" />
 
-**Radiant intensity** `I(ω)`：在方向 ω 上、单位立体角内的 flux。
+**Radiant intensity** $I(\omega)$：在方向 $\omega$ 上、单位立体角内的 flux。
 
-<Formula>I(ω) = dΦ / dω &nbsp;[ Watt / sr ]</Formula>
+$$
+I(\omega) = \frac{d\Phi}{d\omega} \quad \left[\,\text{W}/\text{sr}\,\right]
+$$
 
 直觉：把 flux 切成无数细小的方向锥，每个锥里的 flux 密度，就是该方向上的 intensity。
 
-<Callout kind="warning" title="Direction 不是位置">
-课程里用一个**单位向量** ω 表示 direction（在 path tracing 中通常以法线 n 为参考、用 (θ, φ) 描述）。**它不和 ray 的 origin 绑定**，只表示方向。同一个方向在不同空间点上的 intensity 可以不同 — 这正是 radiance 出场的伏笔。
-</Callout>
+> ⚠️ **Direction 不是位置**：课程里用一个**单位向量** $\omega$ 表示 direction（在 path tracing 中通常以法线 $\mathbf{n}$ 为参考、用 $(\theta, \varphi)$ 描述）。**它不和 ray 的 origin 绑定**，只表示方向。同一个方向在不同空间点上的 intensity 可以不同 — 这正是 radiance 出场的伏笔。
 
-<Section
-  num="11"
-  eyebrow="Radiometry · Source"
-  title="Isotropic Point Source"
-  lead="各向同性点光源：所有方向 intensity 相同。最简单也最常被例题引用的光源模型。"
-/>
+---
 
-如果一个点光源把 flux Φ 均匀地分配到 4π 立体角：
+## 11 / Isotropic Point Source
 
-<Formula>I = Φ / 4π</Formula>
+各向同性点光源：所有方向 intensity 相同。最简单也最常被例题引用的光源模型。
 
-例题（课堂同款）：现代 LED 标称 815 lumen，假设 isotropic：
+如果一个点光源把 flux $\Phi$ 均匀地分配到 $4\pi$ 立体角：
 
-`I = 815 / (4π) ≈ 64.85 cd`
+$$
+I = \frac{\Phi}{4\pi}
+$$
+
+例题：现代 LED 标称 815 lumen，假设 isotropic：
+
+$$
+I = \frac{815}{4\pi} \approx 64.85\ \text{cd}
+$$
 
 <IsotropicSourceDemo client:only="react" />
 
-<Callout kind="impl" title="工程里的 isotropic 几乎不存在">
-真实灯具的 intensity 几乎都是各向异性的，所以厂商发布的 IES profile 文件描述了 I 在各方向的分布。`isotropic point source` 只是教学和粗略估算时的方便模型；写 area light、IES、environment map 时它就被替代了。
-</Callout>
+> 🔧 **工程里的 isotropic 几乎不存在**：真实灯具的 intensity 几乎都是各向异性的，所以厂商发布的 IES profile 文件描述了 $I$ 在各方向的分布。Isotropic point source 只是教学和粗略估算时的方便模型；写 area light、IES、environment map 时它就被替代了。
 
-<Callout kind="mental" title="把今天的两半内容焊在一起">
-**加速结构**让 ray scene query 从 `O(N)` 降到 `O(log N)`，使得我们能在合理时间里处理百万级三角形；**radiometry** 让每条 ray 的"颜色"成为有物理意义的量。两者结合的产物，就是下一讲将正式登场的 **The Rendering Equation**。
-</Callout>
+> 🧠 **把今天的两半内容焊在一起**：加速结构让 ray scene query 从 $O(N)$ 降到 $O(\log N)$，使得我们能在合理时间里处理百万级三角形；radiometry 让每条 ray 的“颜色”成为有物理意义的量。两者结合的产物，就是下一讲将正式登场的 **The Rendering Equation**。
 
-<Section
-  num="12"
-  eyebrow="Reference"
-  title="速查表 & 复习"
-  lead="所有公式、伪代码、对比表与 10 个自测问题，集中放在这里。"
-/>
+---
 
-<Cheat>
-  <CheatCard tone="mint" eyebrow="Formulas" title="核心公式一览" span2>
-    <Formula>Slab Method：t_enter = max(t1xyz) &nbsp;|&nbsp; t_exit = min(t2xyz) &nbsp;|&nbsp; HIT ⇔ t_enter ≤ t_exit ∧ t_exit ≥ 0</Formula>
-    <Formula>Uniform grid 启发式：#cells ≈ 27 · #objects</Formula>
-    <Formula>Solid angle：Ω = A / r² &nbsp;|&nbsp; 整球 4π sr &nbsp;|&nbsp; dω = sinθ dθ dφ</Formula>
-    <Formula>Flux Φ = dQ / dt &nbsp;|&nbsp; Intensity I = dΦ / dω &nbsp;|&nbsp; Isotropic I = Φ / 4π</Formula>
-  </CheatCard>
+## 12 / 速查表
 
-  <CheatCard tone="lilac" eyebrow="Pseudo-code" title="BVH Traversal">
+**核心公式**
+
+$$
+\begin{aligned}
+\text{Slab Method:}\quad & t_{\text{enter}} = \max(t_{1xyz}),\ t_{\text{exit}} = \min(t_{2xyz}) \\
+\text{HIT:}\quad         & t_{\text{enter}} \le t_{\text{exit}} \land t_{\text{exit}} \ge 0 \\
+\text{Uniform grid:}\quad & \#\text{cells} \approx 27\cdot \#\text{objects} \\
+\text{Solid angle:}\quad & \Omega = A/r^{2},\ d\omega = \sin\theta\,d\theta\,d\varphi \\
+\text{Flux:}\quad        & \Phi = dQ/dt \\
+\text{Intensity:}\quad   & I = d\Phi/d\omega,\quad \text{Isotropic } I = \Phi / 4\pi
+\end{aligned}
+$$
+
+**BVH Traversal 伪代码**
 
 ```text
 function intersectBVH(node, ray, bestHit):
@@ -411,9 +391,7 @@ function intersectBVH(node, ray, bestHit):
       intersectBVH(node.right, ray, bestHit)
 ```
 
-  </CheatCard>
-
-  <CheatCard tone="peach" eyebrow="Comparison" title="KD-Tree vs BVH">
+**KD-Tree vs BVH**
 
 | 维度 | KD-Tree | BVH |
 |------|---------|-----|
@@ -423,20 +401,17 @@ function intersectBVH(node, ray, bestHit):
 | 构建难度 | 高 | 低 |
 | 工业使用 | 较少 | 主流 |
 
-  </CheatCard>
-</Cheat>
+---
 
-### 复习时问自己的 10 个问题
+## 13 / 复习时问自己的 10 个问题
 
-<QGrid items={[
-  '为什么 ray ↔ AABB 测试中 t_exit ≥ 0 不能省？反例是什么？',
-  'Uniform grid 的 cell 太多和太少，分别会出什么问题？',
-  '"Teapot in a stadium" 为什么打败了 uniform grid？',
-  'KD-Tree 的 internal node 为什么不能存物体？这一约束带来了什么麻烦？',
-  '为什么说 BVH 是 object partition？把它和 spatial partition 区分开的"试金石"是什么？',
-  'BVH 的 bounding boxes 既然可重叠，traversal 时怎么剪枝远端 child？',
-  'median split 和 SAH 的本质差别在哪？什么时候必须用 SAH？',
-  'radiant flux 和 radiant energy 的差别用一句话怎么说？',
-  '立体角的 differential 为什么是 sinθ dθ dφ？几何意义是什么？',
-  '各向同性点光源 Φ = 815 lm 的 intensity 是多少？lumen 是 radiometric 还是 photometric？',
-]} client:load />
+1. 为什么 ray ↔ AABB 测试中 $t_{\text{exit}} \ge 0$ 不能省？反例是什么？
+2. Uniform grid 的 cell 太多和太少，分别会出什么问题？
+3. “Teapot in a stadium” 为什么打败了 uniform grid？
+4. KD-Tree 的 internal node 为什么不能存物体？这一约束带来了什么麻烦？
+5. 为什么说 BVH 是 object partition？把它和 spatial partition 区分开的“试金石”是什么？
+6. BVH 的 bounding boxes 既然可重叠，traversal 时怎么剪枝远端 child？
+7. median split 和 SAH 的本质差别在哪？什么时候必须用 SAH？
+8. radiant flux 和 radiant energy 的差别用一句话怎么说？
+9. 立体角的 differential 为什么是 $\sin\theta\,d\theta\,d\varphi$？几何意义是什么？
+10. 各向同性点光源 $\Phi = 815\ \text{lm}$ 的 intensity 是多少？lumen 是 radiometric 还是 photometric？

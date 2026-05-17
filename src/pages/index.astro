@@ -45,11 +45,12 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
       <span class="brand-mark" aria-hidden="true">
         <span class="sun-core"></span>
       </span>
-      <span class="brand-text">grateful.group</span>
+      <span class="brand-text">cyan</span>
     </a>
     <nav class="topnav">
       <a href="/works/"><span>Works</span></a>
       <a href="/blog/"><span>Journal</span></a>
+      <a href="/papers/"><span>Papers</span></a>
       <a href="/about/"><span>About</span></a>
     </nav>
     <div class="status">
@@ -287,9 +288,9 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
     width: 680px; height: 680px;
     border-radius: 50%;
     background: radial-gradient(circle at 50% 50%,
-      rgba(255, 220, 150, 0.85) 0%,
-      rgba(255, 200, 130, 0.55) 28%,
-      rgba(255, 200, 130, 0.0) 70%);
+      rgba(245, 235, 215, 0.9) 0%,
+      rgba(235, 225, 205, 0.5) 28%,
+      rgba(235, 225, 205, 0.0) 70%);
     filter: blur(10px);
     z-index: 0;
     pointer-events: none;
@@ -321,7 +322,7 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   }
   .cloud-3 {
     width: 360px; height: 360px;
-    background: radial-gradient(circle, var(--peach) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--sky) 0%, transparent 70%);
     top: 55%; left: 32%;
     animation: drift-c 24s ease-in-out infinite alternate;
   }
@@ -465,8 +466,8 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   .hero-tag-dot {
     width: 7px; height: 7px;
     border-radius: 50%;
-    background: var(--coral);
-    box-shadow: 0 0 0 4px rgba(255, 138, 106, 0.16);
+    background: #5b8fd9;
+    box-shadow: 0 0 0 4px rgba(91, 143, 217, 0.16);
   }
 
   .headline {
@@ -585,10 +586,10 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   }
   .cta-primary:hover {
     transform: translateY(-2px) rotate(-0.4deg);
-    background: var(--coral);
-    border-color: var(--coral);
+    background: #5b8fd9;
+    border-color: #5b8fd9;
     color: #fff;
-    box-shadow: 0 16px 32px -16px rgba(255, 138, 106, 0.6);
+    box-shadow: 0 16px 32px -16px rgba(91, 143, 217, 0.6);
   }
   .cta-primary svg { transition: transform 0.3s; }
   .cta-primary:hover svg { transform: translateX(4px); }
@@ -611,7 +612,7 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   }
   .float-1 {
     top: 70px; right: 8%;
-    color: var(--coral);
+    color: var(--plum);
     font-size: 2.2rem;
     animation: floaty 7s ease-in-out infinite;
   }
@@ -623,7 +624,7 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   }
   .float-3 {
     bottom: 70px; right: 4%;
-    color: var(--leaf);
+    color: #5b8fd9;
     font-size: 1.8rem;
     animation: floaty 8s ease-in-out infinite;
     animation-delay: -2s;
@@ -688,7 +689,7 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   .index-num {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
-    color: var(--coral);
+    color: #5b8fd9;
     letter-spacing: 0.08em;
   }
   .index-title {
@@ -822,8 +823,8 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
     display: inline-block;
     width: 9px; height: 9px;
     border-radius: 50%;
-    background: var(--coral);
-    box-shadow: 0 0 0 3px rgba(255, 138, 106, 0.22);
+    background: #5b8fd9;
+    box-shadow: 0 0 0 3px rgba(91, 143, 217, 0.22);
   }
   .card.tint-mint .card-pin   { background: var(--leaf); box-shadow: 0 0 0 3px rgba(78, 163, 116, 0.22); }
   .card.tint-sky .card-pin    { background: #4a8fc9;     box-shadow: 0 0 0 3px rgba(74, 143, 201, 0.22); }
@@ -863,11 +864,11 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
   .post-bullet {
     width: 9px; height: 9px;
     border-radius: 50%;
-    background: var(--coral);
-    box-shadow: 0 0 0 3px rgba(255, 138, 106, 0.18);
+    background: #5b8fd9;
+    box-shadow: 0 0 0 3px rgba(91, 143, 217, 0.18);
     transition: transform 0.3s, background 0.3s;
   }
-  .post-row:nth-child(4n+1) .post-bullet { background: var(--coral); box-shadow: 0 0 0 3px rgba(255, 138, 106, 0.18); }
+  .post-row:nth-child(4n+1) .post-bullet { background: #5b8fd9; box-shadow: 0 0 0 3px rgba(91, 143, 217, 0.18); }
   .post-row:nth-child(4n+2) .post-bullet { background: var(--leaf);  box-shadow: 0 0 0 3px rgba(78, 163, 116, 0.18); }
   .post-row:nth-child(4n+3) .post-bullet { background: #4a8fc9;       box-shadow: 0 0 0 3px rgba(74, 143, 201, 0.18); }
   .post-row:nth-child(4n+4) .post-bullet { background: var(--plum);  box-shadow: 0 0 0 3px rgba(138, 100, 200, 0.18); }
@@ -895,7 +896,7 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
     font-size: 1.1rem;
     transition: transform 0.3s, color 0.3s;
   }
-  .post-link:hover .post-arrow { transform: translateX(6px); color: var(--coral); }
+  .post-link:hover .post-arrow { transform: translateX(6px); color: #5b8fd9; }
 
   /* ---------- Footer ---------- */
   .foot {
@@ -914,7 +915,7 @@ const cardTints = ['tint-peach', 'tint-mint', 'tint-sky'];
 
   .foot-left { display: inline-flex; align-items: center; gap: 8px; }
   .foot-mark {
-    color: var(--coral);
+    color: #5b8fd9;
     font-family: 'Fraunces', serif;
     font-size: 1rem;
   }

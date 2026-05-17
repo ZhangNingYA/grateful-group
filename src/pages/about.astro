@@ -81,11 +81,12 @@ const elsewhere = [
         <span class="brand-mark" aria-hidden="true">
           <span class="sun-core"></span>
         </span>
-        <span class="brand-text">grateful.group</span>
+        <span class="brand-text">cyan</span>
       </a>
       <nav class="topnav">
         <a href="/works/"><span>Works</span></a>
         <a href="/blog/"><span>Journal</span></a>
+        <a href="/papers/"><span>Papers</span></a>
         <a href="/about/" class="is-active"><span>About</span></a>
       </nav>
       <div class="status">
@@ -370,9 +371,9 @@ const elsewhere = [
     width: 680px; height: 680px;
     border-radius: 50%;
     background: radial-gradient(circle at 50% 50%,
-      rgba(255, 220, 150, 0.85) 0%,
-      rgba(255, 200, 130, 0.55) 28%,
-      rgba(255, 200, 130, 0.0) 70%);
+      rgba(180, 220, 180, 0.85) 0%,
+      rgba(160, 210, 165, 0.55) 28%,
+      rgba(160, 210, 165, 0.0) 70%);
     filter: blur(10px);
     z-index: 0;
     pointer-events: none;
@@ -396,13 +397,13 @@ const elsewhere = [
   }
   .cloud-2 {
     width: 420px; height: 420px;
-    background: radial-gradient(circle, var(--lilac) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--butter) 0%, transparent 70%);
     top: 30%; right: -8%;
     animation: drift-b 30s ease-in-out infinite alternate;
   }
   .cloud-3 {
     width: 360px; height: 360px;
-    background: radial-gradient(circle, var(--peach) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--mint) 0%, transparent 70%);
     top: 55%; left: 32%;
     animation: drift-c 24s ease-in-out infinite alternate;
   }
@@ -455,8 +456,8 @@ const elsewhere = [
     position: relative;
     width: 26px; height: 26px;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 35%, #fff, var(--sun) 70%);
-    box-shadow: 0 0 0 3px rgba(246, 183, 60, 0.18);
+    background: radial-gradient(circle at 35% 35%, #fff, var(--leaf) 70%);
+    box-shadow: 0 0 0 3px rgba(78, 163, 116, 0.18);
     display: inline-flex; align-items: center; justify-content: center;
     animation: brand-spin 16s linear infinite;
   }
@@ -483,7 +484,7 @@ const elsewhere = [
   .topnav a:hover { color: var(--ink); background: rgba(31, 36, 51, 0.06); transform: translateY(-1px); }
   .topnav a.is-active {
     color: var(--ink);
-    background: var(--butter);
+    background: var(--mint);
     box-shadow: 0 2px 0 rgba(31, 36, 51, 0.08);
   }
 
@@ -547,8 +548,8 @@ const elsewhere = [
   .head-tag-dot {
     width: 7px; height: 7px;
     border-radius: 50%;
-    background: var(--coral);
-    box-shadow: 0 0 0 4px rgba(255, 138, 106, 0.16);
+    background: var(--leaf);
+    box-shadow: 0 0 0 4px rgba(78, 163, 116, 0.16);
   }
 
   .page-title {
@@ -596,7 +597,7 @@ const elsewhere = [
     width: calc(100% + 0.36em);
     height: calc(100% + 0.17em);
     z-index: 1;
-    fill: var(--butter);
+    fill: var(--mint);
     filter: drop-shadow(0 4px 0 rgba(31, 36, 51, 0.08));
   }
 
@@ -663,7 +664,7 @@ const elsewhere = [
   .card-num {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.74rem;
-    color: var(--coral);
+    color: var(--leaf);
     letter-spacing: 0.08em;
   }
   .card-label {
@@ -686,7 +687,7 @@ const elsewhere = [
   .card-em {
     font-style: italic;
     font-weight: 600;
-    background: linear-gradient(180deg, transparent 60%, var(--butter) 60%);
+    background: linear-gradient(180deg, transparent 60%, var(--mint) 60%);
     padding: 0 2px;
   }
 
@@ -788,7 +789,7 @@ const elsewhere = [
   .section-num {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
-    color: var(--coral);
+    color: var(--leaf);
     letter-spacing: 0.08em;
   }
   .section-title {
@@ -887,7 +888,7 @@ const elsewhere = [
   }
   .stack-item:hover {
     transform: translateY(-2px);
-    background: var(--butter);
+    background: var(--mint);
     border-color: var(--line-strong);
   }
   .stack-name {
@@ -929,13 +930,13 @@ const elsewhere = [
   }
   .t-row.in { opacity: 1; transform: translateX(0); }
   .t-row:last-child { border-bottom: 0; }
-  .t-row:hover { background: rgba(255, 220, 150, 0.2); }
+  .t-row:hover { background: rgba(200, 236, 214, 0.3); }
   .t-year {
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 600;
     font-size: 1.15rem;
-    color: var(--coral);
+    color: var(--leaf);
     letter-spacing: -0.01em;
   }
   .t-title {
@@ -1040,7 +1041,7 @@ const elsewhere = [
     letter-spacing: -0.005em;
   }
   .quote-mark {
-    color: var(--coral);
+    color: var(--leaf);
     font-weight: 700;
   }
   .closing-sig {
@@ -1065,7 +1066,7 @@ const elsewhere = [
   }
   .foot.in { opacity: 1; }
   .foot-left { display: inline-flex; align-items: center; gap: 8px; }
-  .foot-mark { color: var(--coral); font-family: 'Fraunces', serif; font-size: 1rem; }
+  .foot-mark { color: var(--leaf); font-family: 'Fraunces', serif; font-size: 1rem; }
   .foot-right { display: inline-flex; gap: 12px; }
   .foot-right a { transition: color 0.25s; }
   .foot-right a:hover { color: var(--ink); }
