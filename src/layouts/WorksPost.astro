@@ -1,11 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import type { MarkdownHeading } from 'astro';
 import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import TableOfContents from '../components/TableOfContents.astro';
 
-type Props = CollectionEntry<'works'>['data'];
+type Props = CollectionEntry<'works'>['data'] & {
+  headings?: MarkdownHeading[];
+};
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
 ---
 
 <html lang="zh-CN">
@@ -49,9 +53,19 @@ const { title, description, pubDate, updatedDate } = Astro.props;
         {description && <p class="article-desc">{description}</p>}
       </header>
 
-      <article class="article-body">
-        <slot />
-      </article>
+      <!-- 双栏布局容器 -->
+      <div class="content-wrapper">
+        <article class="article-body">
+          <slot />
+        </article>
+
+        <!-- 侧边 TOC -->
+        {headings.length > 0 && (
+          <aside class="toc-aside">
+            <TableOfContents headings={headings} />
+          </aside>
+        )}
+      </div>
 
       <footer class="article-footer">
         <a href="/works" class="footer-back">
@@ -105,7 +119,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
   /* Page */
   .page {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 48px 36px 80px;
   }
@@ -114,6 +128,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
   .article-header {
     margin-bottom: 40px;
     padding-left: 4px;
+    max-width: 1080px;
   }
 
   .article-meta {
@@ -152,8 +167,20 @@ const { title, description, pubDate, updatedDate } = Astro.props;
     max-width: 600px;
   }
 
+  /* 双栏布局 */
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 48px;
+  }
+
+  .toc-aside {
+    /* grid stretch（默认）让此列和文章等高，sticky 才有滑动空间 */
+  }
+
   /* Body */
   .article-body {
+    min-width: 0;
     animation: fade-in 0.5s ease both;
   }
 
@@ -348,6 +375,16 @@ const { title, description, pubDate, updatedDate } = Astro.props;
   }
 
   /* Responsive */
+  @media (max-width: 1100px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .toc-aside {
+      display: none;
+    }
+  }
+
   @media (max-width: 768px) {
     .page { padding: 36px 20px 60px; }
     .back-btn { top: 14px; left: 14px; width: 32px; height: 32px; }
