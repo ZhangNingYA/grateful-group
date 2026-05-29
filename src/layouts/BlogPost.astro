@@ -45,20 +45,10 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
         )}
       </header>
 
-      <!-- 双栏布局容器 -->
-      <div class="content-wrapper">
-        <!-- Article Body -->
-        <article class="article-body">
-          <slot />
-        </article>
-
-        <!-- 侧边 TOC -->
-        {headings.length > 0 && (
-          <aside class="toc-aside">
-            <TableOfContents headings={headings} />
-          </aside>
-        )}
-      </div>
+      <!-- Article Body -->
+      <article class="article-body">
+        <slot />
+      </article>
 
       <!-- Footer -->
       <footer class="article-footer">
@@ -70,6 +60,11 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
         </a>
       </footer>
     </main>
+
+    <!-- TOC 固定定位，脱离文档流 -->
+    {headings.length > 0 && (
+      <TableOfContents headings={headings} />
+    )}
   </body>
 </html>
 
@@ -114,7 +109,7 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
   /* Page */
   .page {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 48px 36px 80px;
   }
@@ -155,20 +150,8 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
     max-width: 600px;
   }
 
-  /* 双栏布局 */
-  .content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 48px;
-  }
-
-  .toc-aside {
-    /* grid stretch（默认）让此列和文章等高，sticky 才有滑动空间 */
-  }
-
   /* Article Body */
   .article-body {
-    min-width: 0; /* 防止 grid 子项溢出 */
     animation: fade-in 0.5s ease both;
   }
 
@@ -391,16 +374,6 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
   }
 
   /* Responsive */
-  @media (max-width: 1100px) {
-    .content-wrapper {
-      grid-template-columns: 1fr;
-    }
-
-    .toc-aside {
-      display: none;
-    }
-  }
-
   @media (max-width: 768px) {
     .page {
       padding: 36px 20px 60px;

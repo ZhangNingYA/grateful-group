@@ -53,19 +53,9 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
         {description && <p class="article-desc">{description}</p>}
       </header>
 
-      <!-- 双栏布局容器 -->
-      <div class="content-wrapper">
-        <article class="article-body">
-          <slot />
-        </article>
-
-        <!-- 侧边 TOC -->
-        {headings.length > 0 && (
-          <aside class="toc-aside">
-            <TableOfContents headings={headings} />
-          </aside>
-        )}
-      </div>
+      <article class="article-body">
+        <slot />
+      </article>
 
       <footer class="article-footer">
         <a href="/works" class="footer-back">
@@ -76,6 +66,11 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
         </a>
       </footer>
     </main>
+
+    <!-- TOC 固定定位，脱离文档流 -->
+    {headings.length > 0 && (
+      <TableOfContents headings={headings} />
+    )}
   </body>
 </html>
 
@@ -119,7 +114,7 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
   /* Page */
   .page {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 48px 36px 80px;
   }
@@ -167,20 +162,8 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
     max-width: 600px;
   }
 
-  /* 双栏布局 */
-  .content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 48px;
-  }
-
-  .toc-aside {
-    /* grid stretch（默认）让此列和文章等高，sticky 才有滑动空间 */
-  }
-
   /* Body */
   .article-body {
-    min-width: 0;
     animation: fade-in 0.5s ease both;
   }
 
@@ -279,21 +262,31 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
   }
 
-  :global(.article-body pre) {
+  :global(.article-body pre),
+  :global(.article-body pre.astro-code),
+  :global(.article-body .astro-code),
+  :global(.article-body .github-dark) {
     margin: 1.3rem 0;
     padding: 1rem 1.2rem;
     overflow-x: auto;
     border-radius: 12px;
-    border: 1px solid #f1f5f9;
-    background: #fafbfd;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+    border: 1px solid #dbeafe;
+    background: #f8fbff !important;
+    color: #0f172a !important;
+    box-shadow: 0 1px 8px rgba(37, 99, 235, 0.08);
   }
 
   :global(.article-body code) {
     font-size: 0.86em;
     font-family: 'JetBrains Mono', 'Fira Code', monospace;
   }
-  :global(.article-body pre code) { color: #334155; }
+  :global(.article-body pre code),
+  :global(.article-body pre code span),
+  :global(.article-body .astro-code code),
+  :global(.article-body .astro-code span) {
+    color: #0f172a !important;
+    background: transparent !important;
+  }
   :global(.article-body :not(pre) > code) {
     padding: 2px 6px;
     border-radius: 5px;
@@ -330,14 +323,24 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
 
   /* KaTeX */
   :global(.article-body .katex-display) {
-    margin: 1.4rem 0;
-    padding: 0.9rem 1.1rem;
+    margin: 1.55rem 0;
+    padding: 1.05rem 1.25rem;
     overflow-x: auto;
-    border-radius: 10px;
-    background: #f8faff;
-    border: 1px solid #eef2ff;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    border: 1px solid #dbeafe;
+    box-shadow: 0 10px 28px rgba(37, 99, 235, 0.08);
   }
-  :global(.article-body .katex) { color: #1e293b; }
+  :global(.article-body .katex-display > .katex) {
+    display: block;
+    text-align: center;
+    font-size: 1.08em;
+    line-height: 1.7;
+  }
+  :global(.article-body .katex) {
+    color: #0f172a;
+    font-size: 1.03em;
+  }
 
   /* R3F / interactive container — let the component decide */
   :global(.article-body > div) { margin: 2rem 0; }
@@ -375,16 +378,6 @@ const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
   }
 
   /* Responsive */
-  @media (max-width: 1100px) {
-    .content-wrapper {
-      grid-template-columns: 1fr;
-    }
-
-    .toc-aside {
-      display: none;
-    }
-  }
-
   @media (max-width: 768px) {
     .page { padding: 36px 20px 60px; }
     .back-btn { top: 14px; left: 14px; width: 32px; height: 32px; }

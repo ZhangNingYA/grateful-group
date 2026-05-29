@@ -1,0 +1,529 @@
+---
+title: 'GAMES101 第18课：高级渲染专题'
+description: 'GAMES101 第18课贴合详解：围绕高级光线传输与高级外观建模，详细讲清 Monte Carlo 方差、重要性采样、MIS、BDPT、MLT、Photon Mapping、VCM、Instant Radiosity，以及参与介质、头发、颗粒、半透明、布料等复杂外观。'
+pubDate: '2026-05-30'
+---
+
+import {
+  SamplingMISPlayground,
+  BidirectionalPathLab,
+  PhotonMappingCausticsLab,
+} from '../../components/games101/material/index.jsx'
+
+## 这节课在 GAMES101 里到底讲什么？
+
+第 18 课 **Advanced Topics in Rendering** 不是在推翻路径追踪，而是在回答两个更现实的问题：
+
+1. **高级光线传输**：渲染方程已经有了，path tracing 也能算，但有些光路太难被采到，怎么让有限样本更聪明？
+2. **高级外观建模**：真实世界不只有光滑表面，烟雾、头发、皮肤、布料、沙子这些东西不能只靠一个普通 BRDF 讲完，怎么办？
+
+可以把这节课看成 GAMES101 渲染部分的“扩展地图”：
+
+```text
+高级渲染
+├─ 高级光线传输 Advanced Light Transport
+│  ├─ 重要性采样与 MIS
+│  ├─ Bidirectional Path Tracing
+│  ├─ Metropolis Light Transport
+│  ├─ Photon Mapping
+│  ├─ Vertex Connection and Merging
+│  └─ Instant Radiosity / many-light 思想
+└─ 高级外观建模 Advanced Appearance Modeling
+   ├─ Participating media：雾、烟、云、火
+   ├─ Hair / fur / fibers：头发、毛皮、纤维
+   ├─ Granular material：沙子、糖、雪、粉末
+   ├─ Translucent material：皮肤、玉、蜡、叶子
+   └─ Cloth：织物、天鹅绒、丝绸
+```
+
+核心句：
+
+> 渲染方程只有一个，但真实世界的路径空间极大、材质极复杂。高级渲染方法的目标，是用更合适的采样和更合适的模型，让有限计算量更接近真实外观。
+
+---
+
+## 1. 为什么朴素 Path Tracing 还不够？
+
+路径追踪的基本流程很优雅：从相机出发，命中表面后根据 BSDF 随机弹射，直到碰到光源或终止。
+
+```text
+camera -> surface -> surface -> ... -> light
+```
+
+但“理论上正确”不等于“样本数少时好看”。下面这些场景会让朴素 PT 收敛非常慢：
+
+| 困难场景 | 为什么难 | 画面表现 |
+|---|---|---|
+| 小面积强光源 | 半球随机方向很难刚好打到灯 | 大片噪点、偶尔白色 firefly |
+| HDR 环境贴图 | 太阳只占极小方向，但贡献巨大 | 天空光采样不稳定 |
+| 玻璃焦散 | 从相机端很难随机走出“光源 -> 玻璃 -> 地面 -> 相机”路径 | 焦散缺失或噪声极高 |
+| 室内间接光 | 光经过多次漫反射后才进相机 | 暗部噪点多、收敛慢 |
+| 细窄 glossy lobe | 有效方向集中在很窄范围 | 高光闪烁、采样浪费 |
+| 复杂体积 | 光在介质里散射很多次 | 雾、云、烟收敛慢 |
+
+关键原因是 **variance / 方差**。估计器可以是无偏的，但如果大部分样本贡献很小、少数样本贡献巨大，就会出现噪点。
+
+---
+
+## 2. Monte Carlo 估计器：噪声从哪里来？
+
+Monte Carlo 积分的通用形式是：
+
+$$
+I = ∫ f(x) dx
+$$
+
+如果从概率密度 $p(x)$ 采样，那么估计器是：
+
+$$
+I ≈ 1/N \sum_i f(x_i) / p(x_i)
+$$
+
+这里有三个非常重要的点：
+
+| 关键词 | 含义 | 渲染中的对应 |
+|---|---|---|
+| sample | 随机选一个路径、方向、光源或距离 | 每个 pixel 里的随机 ray |
+| contribution | 这个样本对像素的贡献 | radiance、BRDF、cosine、visibility 的乘积 |
+| pdf | 采到该样本的概率密度 | 半球采样 pdf、光源采样 pdf、BSDF pdf |
+
+只要写成 `contribution / pdf`，并且 pdf 和采样过程匹配，估计器通常可以保持无偏。但噪声大小取决于 $f(x) / p(x)$ 是否稳定。
+
+### 高方差的直观画面
+
+```text
+大部分样本：0, 0, 0, 0, 0, 0
+偶尔一个样本：10000
+平均值也许对，但画面就是满屏 fireflies
+```
+
+高级光线传输方法多数不是改变真实解，而是让重要样本更容易被采到，降低方差。
+
+---
+
+## 3. Importance Sampling：按贡献大小采样
+
+重要性采样的目标是：
+
+> 贡献大的地方多采，贡献小的地方少采。
+
+如果 $p(x)$ 的形状越接近 $f(x)$，那么 `f(x) / p(x)` 越稳定，噪声越小。
+
+在渲染里最常见的两类重要性采样：
+
+| 策略 | 怎么采 | 擅长 | 不擅长 |
+|---|---|---|---|
+| BSDF sampling | 按材质 lobe 采方向 | glossy、高光、镜面附近方向 | 小光源可能采不到 |
+| Light sampling | 直接在光源上采点 | 小面积灯、强光源、环境图亮区 | 方向可能和 BRDF lobe 不匹配 |
+
+<SamplingMISPlayground client:only='react' />
+
+看交互时可以记住一个比喻：
+
+```text
+BSDF sampling 像问材质：你最愿意把光弹到哪里？
+Light sampling 像问灯：你具体在哪里？
+MIS 像同时问两个人，再按谁更靠谱来加权。
+```
+
+---
+
+## 4. Direct Lighting 里的两个采样策略
+
+考虑某个表面点的直接光照。积分里有几项同时决定贡献：
+
+```text
+incoming radiance × BRDF × cosine × visibility
+```
+
+### 4.1 只按 BSDF 采样的问题
+
+如果表面是漫反射，BSDF 采样会把方向撒到整个半球。小灯只占半球中非常小的一块，大部分方向都打不到灯。
+
+```text
+很多样本：没有打到灯 -> 贡献 0
+少数样本：打到灯 -> 很亮
+结果：噪声大
+```
+
+### 4.2 只按 Light 采样的问题
+
+如果材质是很尖的 glossy，直接在灯上采点不一定落在材质高光 lobe 里。方向虽然通向灯，但 BRDF 很小，贡献也可能很低。
+
+### 4.3 所以需要 MIS
+
+Multiple Importance Sampling 的直觉是：多种采样策略各有盲区，把它们组合起来。
+
+一个常见权重是 balance heuristic：
+
+$$
+w_i(x) = p_i(x) / \sum_k p_k(x)
+$$
+
+也常用 power heuristic：
+
+```text
+w_i = p_i^2 / (p_1^2 + p_2^2 + ...)
+```
+
+谁更容易采到当前样本，谁的权重就更高。这样可以避免“某个策略偶然采到自己不擅长的样本”时造成巨大噪声。
+
+### 直接光照 MIS 伪代码
+
+```text
+Lo = 0
+
+# Strategy A: sample light
+lightPoint, pdfLightArea = sampleLight()
+wi = direction from surface to lightPoint
+pdfLightSolidAngle = convertAreaPdfToSolidAngle(pdfLightArea)
+contribution = Li * fr * cosTheta / pdfLightSolidAngle
+Lo += weightLight * contribution
+
+# Strategy B: sample BSDF
+wi, pdfBsdf = sampleBSDF()
+if ray in direction wi hits a light:
+    contribution = Li * fr * cosTheta / pdfBsdf
+    Lo += weightBsdf * contribution
+```
+
+工程上最容易错的是 **pdf 的测度转换**。光源上采样常常先得到面积 pdf，但 BRDF 方向采样用的是立体角 pdf。二者必须转换到同一种测度才能做 MIS。
+
+---
+
+## 5. 从“方向空间”升级到“路径空间”
+
+Path tracing 不是只在采一个方向，而是在采整条路径。
+
+一条完整光路可以写成：
+
+```text
+camera -> x1 -> x2 -> x3 -> light
+```
+
+也可以用 GAMES101 常见的路径分类直觉来理解：
+
+| 路径 | 示例 | 单向 PT 的困难 |
+|---|---|---|
+| Camera - diffuse - light | 普通直接光照 | 小光源难采 |
+| Camera - diffuse - diffuse - light | 间接漫反射 | bounce 越多概率越低 |
+| Camera - glossy - light | 光泽反射 | lobe 窄，方向难中 |
+| Camera - diffuse - specular - light | 反射/折射后到灯 | 从相机端难碰到精确方向 |
+| Light - specular - diffuse - camera | 焦散 | 从相机端几乎摸不到 |
+
+高级光线传输算法，就是在路径空间里设计更好的采样策略。
+
+---
+
+## 6. Bidirectional Path Tracing：从相机和光源两头走
+
+单向路径追踪只从相机出发。BDPT 的想法是：既然有些路径从相机端很难找到，那就也从光源端生成一段路径，然后尝试连接。
+
+<BidirectionalPathLab client:only='react' />
+
+BDPT 的基本流程：
+
+```text
+1. 从 camera 生成 eye subpath:   E0, E1, E2, ...
+2. 从 light 生成 light subpath:  L0, L1, L2, ...
+3. 尝试连接 Ei 和 Lj
+4. 检查连接线段是否可见
+5. 对所有连接策略使用 MIS 加权
+```
+
+你可以把它想成：
+
+> 单向 PT 是“从眼睛摸黑找灯”；BDPT 是“眼睛走一半，灯也走一半，中间尝试握手”。
+
+### BDPT 擅长什么？
+
+| 场景 | 为什么 BDPT 更有优势 |
+|---|---|
+| 小光源室内间接光 | 从光源端能更好探索光能流向 |
+| 复杂间接照明 | 多种连接方式增加有效路径概率 |
+| 部分焦散路径 | 光源端更容易先穿过玻璃或反射镜面 |
+| 低照度场景 | 双向探索减少纯相机端盲猜 |
+
+### BDPT 的难点
+
+BDPT 不是“把两条路径连起来”这么简单。真正实现时要处理：
+
+- 每个顶点由哪个策略生成。
+- 面积测度和立体角测度转换。
+- 几何项 $G$，包括距离平方和夹角 cosine。
+- visibility ray 是否被遮挡。
+- delta 材质能不能被连接。
+- 不同路径生成策略之间的 MIS 权重。
+
+因此 BDPT 理论优雅，但工程复杂度明显高于普通 PT。
+
+---
+
+## 7. Metropolis Light Transport：让好路径繁殖
+
+MLT 的直觉和普通 Monte Carlo 不同。普通 PT 每次重新随机生成一条路径；MLT 则从一条已有路径出发，不断做小修改。
+
+```text
+start with a valid path
+repeat:
+    mutate the path slightly
+    evaluate new contribution
+    accept or reject by Metropolis rule
+```
+
+如果某条路径贡献很高，比如穿过玻璃形成了漂亮焦散，MLT 会倾向于在它附近继续探索。于是“稀有但重要”的路径不会只被偶然采到一次，而会在附近繁殖出一族相似路径。
+
+### MLT 特别适合
+
+| 场景 | 原因 |
+|---|---|
+| 复杂焦散 | 高贡献路径稀少但局部连续 |
+| 小孔成像、缝隙光 | 有效路径空间很窄 |
+| 间接高光链 | 多个 glossy / specular 事件组合概率低 |
+| 极端困难光路 | 独立随机采样很难命中 |
+
+### MLT 的代价
+
+| 优点 | 缺点 |
+|---|---|
+| 不容易错过稀有高贡献路径 | 样本之间相关性强 |
+| 对困难 caustics 很强 | 噪声可能呈块状或斑点状 |
+| 可在好路径附近集中探索 | 初始种子、mutation、接受率都难调 |
+| 理论很漂亮 | 实现和 debug 都复杂 |
+
+一句话：MLT 不是所有场景都更快，但在“好路径极少”的场景里非常有价值。
+
+---
+
+## 8. Photon Mapping：从光源撒 photon
+
+Photon Mapping 走的是另一条路线：既然焦散是光从灯出发经过镜面/玻璃后落到漫反射表面，那就从光源端先把这些能量记录下来。
+
+<PhotonMappingCausticsLab client:only='react' />
+
+典型 Photon Mapping 有两个 pass：
+
+```text
+Photon pass:
+    从光源发射大量 photon
+    photon 与场景相交并反射/折射
+    在 diffuse 或 glossy 表面存储 photon 位置、方向、能量
+
+Render pass:
+    相机 ray 命中表面
+    在命中点附近查询 photon
+    用局部密度估计 irradiance / radiance
+```
+
+### 为什么它适合焦散？
+
+焦散本质是光源端经过镜面或折射材质后，在某些区域形成高能量密度。相机端路径追踪很难随机倒推出这条路径，但光源端 photon 自然会被玻璃折射并落到焦散区域。
+
+### 密度估计与 bias
+
+Photon Mapping 用一个查询半径来估计局部能量密度：
+
+```text
+radiance ≈ nearby photon energy sum / query area
+```
+
+半径选择带来经典权衡：
+
+| 查询半径 | 优点 | 缺点 |
+|---|---|---|
+| 大 | 平滑，噪声低 | 细节被糊掉，bias 大 |
+| 小 | 焦散细节清晰 | photon 数不够时噪声大 |
+
+所以 Photon Mapping 通常是 **biased but consistent**：有限 photon 和有限半径下有偏；如果 photon 数不断增加、半径合理缩小，可以收敛到正确结果。
+
+---
+
+## 9. Vertex Connection and Merging：连接与合并的统一
+
+BDPT 擅长连接路径顶点，Photon Mapping 擅长合并附近 photon。VCM 把两件事统一起来。
+
+```text
+Connection: 像 BDPT 一样，把 eye path 和 light path 的顶点用线段连接
+Merging:    像 Photon Mapping 一样，把空间上靠近的顶点视为可合并
+```
+
+| 方法 | 核心操作 | 对哪些路径强 |
+|---|---|---|
+| Path Tracing | 从相机随机走到灯 | 普通路径，简单场景 |
+| BDPT | 两端生成路径并连接 | 多次间接光、部分焦散 |
+| Photon Mapping | 光源端 photon 密度估计 | 典型焦散 |
+| VCM | connection + merging | 综合困难光路 |
+
+VCM 的意义在于：很多路径不是“只适合连接”或“只适合合并”，统一框架可以让不同策略互补，再用 MIS 处理权重。
+
+---
+
+## 10. Instant Radiosity 与 many-light 思想
+
+GAMES101 在高级渲染里也会提到一种重要思想：把间接光近似成很多虚拟点光源。
+
+基本流程可以想成：
+
+```text
+1. 从真实光源发射一些光线路径
+2. 光线打到 diffuse 表面时，把命中点当成 Virtual Point Light
+3. 渲染时用很多 VPL 近似间接照明
+```
+
+这就是 **Instant Radiosity** 或 many-light 方法的直觉。
+
+它的优点是：
+
+- 可以把复杂间接光转成很多直接光问题。
+- 适合某些交互式或预计算场景。
+- 直观、工程上容易和 shadow map / direct lighting 结合。
+
+它的缺点是：
+
+- VPL 数量不够时会有斑点。
+- 近距离 VPL 可能产生过亮 singularity。
+- glossy 和 specular 间接光不如 path-based 方法自然。
+- 仍然需要处理可见性和大量光源采样效率。
+
+它背后的思想在现代实时 GI、many-light sampling 和 ReSTIR GI 中仍然能看到影子。
+
+---
+
+## 11. 高级外观建模：不只是表面 BRDF
+
+第 17 课讲了表面材质的 BRDF，但真实世界很多外观不能被“一个表面点上的反射函数”完全解释。
+
+### 11.1 Participating Media：雾、烟、云、火
+
+参与介质不是表面，而是光在体积中传播时不断被吸收和散射。
+
+| 现象 | 物理含义 | 视觉效果 |
+|---|---|---|
+| Absorption | 光在介质中被吸收 | 远处变暗、颜色被滤掉 |
+| Out-scattering | 光从当前方向散射走 | 背景对比降低 |
+| In-scattering | 其他方向的光散射进视线 | 看到光束、雾中发亮 |
+| Emission | 介质自身发光 | 火焰、等离子、发光烟雾 |
+
+经典例子：阳光穿过窗户照进灰尘中形成“光柱”。你看到的不是某个表面，而是空气中微粒把光散射进相机。
+
+### 11.2 Hair / Fur / Fibers：头发和纤维
+
+头发不是普通表面片，而是大量细长曲线或圆柱。它的高光有明显方向性，常常包含：
+
+- 表面反射高光。
+- 进入发丝内部后的透射。
+- 在发丝背侧产生的彩色高光。
+- 多根发丝之间的遮挡和阴影。
+
+所以头发渲染需要专门的 fiber scattering 模型，而不是简单套一个塑料 BRDF。
+
+### 11.3 Granular Material：沙子、糖、雪、粉末
+
+颗粒材质由大量小颗粒组成。宏观看起来像连续表面，微观看是复杂几何集合。
+
+| 材质 | 颗粒特征 | 外观难点 |
+|---|---|---|
+| 沙子 | 不透明颗粒 | 自遮挡、粗糙阴影 |
+| 糖 / 盐 | 半透明晶体 | 折射、内部散射、小高光 |
+| 雪 | 冰晶和空气混合 | 强散射、亮而不完全镜面 |
+| 粉末 | 细小颗粒 | 柔和遮挡、边缘散射 |
+
+直接建模每个颗粒非常贵，常见做法是用统计模型、体渲染或专门的材质模型近似。
+
+### 11.4 Translucent Material：皮肤、玉、蜡、叶子
+
+半透明材质的重要特征是：光从一点进入，在内部散射后从附近另一点出来。
+
+这已经超出普通 BRDF，因为 BRDF 假设入射点和出射点是同一个点。更合适的模型是 BSSRDF。
+
+| 材质 | 现象 | 为什么普通 BRDF 不够 |
+|---|---|---|
+| 皮肤 | 耳朵透红、阴影边缘柔和 | 光在皮下组织散射 |
+| 玉石 | 内部发亮、有厚度感 | 光进入内部多次散射 |
+| 蜡 | 柔和半透明 | 出射位置偏离入射位置 |
+| 叶子 | 逆光时发亮 | 光穿透并散射 |
+
+### 11.5 Cloth：织物外观
+
+布料由纱线编织而成，外观同时受纤维方向、微结构、绒毛和多次散射影响。
+
+| 布料 | 视觉特征 | 建模难点 |
+|---|---|---|
+| 棉布 | 粗糙漫反射 | 纱线微结构和绒毛 |
+| 丝绸 | 强各向异性高光 | 纤维方向和波纹 |
+| 天鹅绒 | 逆光或边缘发亮 | 绒毛倾斜和 retro-reflection |
+| 牛仔布 | 明显编织纹理 | 经线纬线方向不同 |
+
+这说明“材质”不是一个 RGB，也不总是一个简单 BRDF。有时需要从几何、统计、体散射和测量数据多个层面建模。
+
+---
+
+## 12. 实时渲染中的高级采样：样本少，只能重用
+
+离线渲染可以每像素几百到几千 sample。实时光追通常每像素只有 1 到几十个 sample，必须依赖重用和降噪。
+
+| 技术 | 解决什么 | 代价 |
+|---|---|---|
+| Temporal Accumulation | 复用上一帧样本 | 可能拖影 |
+| Spatial Filtering | 邻域平滑噪声 | 可能糊细节 |
+| SVGF | 用深度、法线、运动向量指导滤波 | 对 G-buffer 质量敏感 |
+| ReSTIR DI | 时空重用直接光样本 | 需要 reservoir 权重正确 |
+| ReSTIR GI | 重用间接光候选路径 | 更复杂，可能有 bias |
+| Neural Denoising | 神经网络从低 sample 恢复图像 | 可能 hallucinate 或丢细节 |
+
+实时方法经常愿意引入少量 bias，换取低噪声、稳定和可交互帧率。
+
+---
+
+## 13. 方法速查表
+
+| 方法 | 是否无偏 | 最擅长 | 主要代价 |
+|---|---|---|---|
+| Path Tracing | 通常无偏 | 通用、简单、容易实现 | 困难路径收敛慢 |
+| Importance Sampling | 无偏 | 降低特定积分方差 | 需要设计好 pdf |
+| MIS | 无偏 | 合并多种采样策略 | pdf 和权重必须算对 |
+| BDPT | 无偏 | 多次间接光、小光源、部分焦散 | 路径连接和 MIS 复杂 |
+| MLT | 理论可无偏 | 稀有高贡献路径、复杂焦散 | 相关噪声、实现调参困难 |
+| Photon Mapping | 有偏但一致 | 焦散、密度估计 | 半径带来 bias |
+| VCM | 一致 | 连接和合并都重要的路径 | 工程复杂度高 |
+| Instant Radiosity | 近似有偏 | diffuse 间接光、many-light | VPL 斑点和 singularity |
+| Denoising / Reuse | 近似有偏 | 实时低 sample | 拖影、糊、漏细节 |
+
+---
+
+## 14. 写实现时最容易错的地方
+
+1. **pdf 和采样不匹配**：采样方向变了，但 pdf 没改，结果亮度会错。
+2. **面积 pdf 和立体角 pdf 混用**：light sampling 做 MIS 时最常见。
+3. **delta 材质错误连接**：理想镜面不能随便用普通连接策略。
+4. **Russian roulette 权重忘记除生存概率**：会让路径能量偏暗。
+5. **Photon 半径固定过大**：图像平滑但永远有 bias。
+6. **把 denoising 当物理正确**：降噪是重建，不是额外真实光照。
+7. **高级外观仍用普通 BRDF 硬套**：烟、头发、皮肤、布料会显得假。
+
+---
+
+## 自测问题
+
+1. 为什么朴素 path tracing 在小光源和焦散场景中噪声很大？
+2. Monte Carlo 估计里为什么要除以 pdf？
+3. 重要性采样为什么能降低方差但不改变真实积分？
+4. BSDF sampling 和 light sampling 分别擅长什么？
+5. MIS 为什么不能简单平均，而要根据 pdf 加权？
+6. BDPT 为什么能比单向 PT 更容易找到某些路径？
+7. MLT 为什么适合稀有高贡献路径？它的噪声有什么特点？
+8. Photon Mapping 的 bias 来自哪里？为什么它可以是一致的？
+9. VCM 如何统一 BDPT 和 Photon Mapping？
+10. Instant Radiosity 为什么可以把间接光近似成 many-light 问题？
+11. 为什么雾、烟、云不能用普通表面 BRDF 表示？
+12. 头发、颗粒、皮肤和布料分别难在哪里？
+13. 实时光追为什么必须依赖样本重用和降噪？
+14. “无偏、低噪声、实时、完全真实外观”为什么很难同时满足？
+
+---
+
+## 总结
+
+第 18 课的核心是：**渲染方程给出了目标，但高级渲染方法决定我们如何更聪明地接近目标。**
+
+高级光线传输解决“哪些重要路径采不到”的问题；高级外观建模解决“真实物体不只是普通表面 BRDF”的问题。把这两部分合起来，才更接近电影、游戏和真实世界里复杂而生动的光影。 

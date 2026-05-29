@@ -1,0 +1,616 @@
+---
+title: 'GAMES101 第19课：相机、透镜与光场'
+description: 'GAMES101 第19课贴合详解：从针孔相机、视角、焦距和传感器讲到薄透镜、光圈、景深、弥散圆、散景、镜头缺陷，再讲 Plenoptic Function、4D 光场、两平面参数化、光场相机和后期重对焦。'
+pubDate: '2026-05-31'
+---
+
+import {
+  CameraRaySampler3D,
+  FOVDollyZoom3D,
+  SensorCropFactor3D,
+  ThinLensDOFLab,
+  ApertureExposureDOF3D,
+  BokehApertureLab,
+  LensDefectsGallery3D,
+  PlenopticFunction3D,
+  LightFieldRefocusLab,
+  LightFieldCameraArray3D,
+} from '../../components/games101/material/index.jsx'
+
+## 这节课在 GAMES101 里到底讲什么？
+
+第 19 课 **Cameras, Lenses and Light Fields** 的主线是：相机不是一个简单的 view matrix。它首先是一个 **光线采样器**。
+
+在前面的光线追踪里，我们经常这样生成 primary ray：
+
+```text
+for each pixel:
+    ray.origin = camera position
+    ray.direction = direction through pixel center
+```
+
+这就是针孔相机的思想。但真实相机更复杂：它有镜头、有光圈、有传感器、有焦距、有对焦距离，也会记录或丢失不同方向的光线信息。
+
+本课可以按这条线理解：
+
+```text
+Pinhole camera
+-> Perspective projection and FOV
+-> Thin lens and finite aperture
+-> Depth of field and bokeh
+-> Lens defects
+-> Plenoptic function
+-> 4D light field
+-> Refocusing and light field camera
+```
+
+核心句：
+
+> 相机模型决定哪些 ray 会进入渲染器。换一个相机模型，就等于换了 primary ray 的采样分布，也就改变了最终图像的摄影效果。
+
+---
+
+## 0. 先分清：图形学相机 vs 真实相机
+
+很多图形学入门代码里的相机只包含三件事：
+
+| 图形学参数 | 作用 | 对应概念 |
+|---|---|---|
+| position | 相机在哪里 | camera center |
+| lookAt / orientation | 朝哪里看 | view direction |
+| fov / projection matrix | 投影多宽 | perspective projection |
+
+这足以画出透视图，但不够解释这些摄影现象：
+
+- 为什么大光圈会背景虚化？
+- 为什么对焦在前景时背景会变成圆形光斑？
+- 为什么手机广角边缘会变形？
+- 为什么长焦拍远处山峰看起来“压缩”？
+- 为什么光场相机可以先拍照后对焦？
+
+真实相机至少还涉及：
+
+| 真实相机部件 | 在渲染里的意义 |
+|---|---|
+| Lens 镜头 | 改变光线方向，让不同深度成像 |
+| Aperture 光圈 | 限制能进入镜头的光线范围 |
+| Sensor 传感器 | 接收成像平面上的光能 |
+| Focus distance 对焦距离 | 哪个深度最清楚 |
+| Shutter 快门 | 控制曝光时间和运动模糊 |
+| Pixel / photosite | 对光进行离散采样 |
+
+GAMES101 这一课主要讲几何光学层面的相机和光场，不深入传感器噪声、电路和 ISP，但理解这些足够让你写出更真实的 camera ray generator。
+
+<CameraRaySampler3D client:only="react" />
+
+---
+
+## 1. 针孔相机：最干净的中心投影模型
+
+针孔相机只有一个无限小的孔。场景中每个可见点，只有一条光线可以穿过小孔到达成像平面。
+
+```text
+object point -> pinhole -> image plane
+```
+
+它的优点非常明显：
+
+- 所有深度都清晰。
+- 数学简单。
+- 透视关系明确。
+- ray tracing 中生成 primary ray 很方便。
+
+它的缺点也同样明显：
+
+- 孔无限小，真实进光量几乎为 0。
+- 没有景深、没有散景。
+- 没有真实镜头的畸变、暗角、色差。
+- 无法解释光圈和对焦。
+
+### 针孔相机的 ray generation
+
+一个典型 ray tracer 会把像素坐标变成相机空间中的 film plane 点，然后从相机中心发射 ray：
+
+```text
+for each pixel sample:
+    pRaster = pixel position plus subpixel jitter
+    pFilm   = rasterToFilm(pRaster)
+    pCamera = filmToCamera(pFilm)
+
+    ray.origin    = cameraCenter
+    ray.direction = normalize(pCamera - cameraCenter)
+```
+
+如果相机中心在原点，成像平面放在前方距离 1 的位置，可以写得更直观：
+
+```text
+x = (2 * u - 1) * tan(fovX / 2)
+y = (1 - 2 * v) * tan(fovY / 2)
+z = -1
+ray.direction = normalize((x, y, z))
+```
+
+其中 `(u, v)` 是 0 到 1 的屏幕坐标。
+
+---
+
+## 2. 透视投影：近大远小从哪里来？
+
+针孔相机的核心是中心投影：所有可见点都通过同一个 camera center 投到成像平面上。
+
+一个深度为 `z` 的物体点投影到图像平面时，屏幕大小大致和 `1 / z` 成正比：
+
+```text
+离相机越近 -> 投影越大
+离相机越远 -> 投影越小
+```
+
+这就是近大远小。
+
+| 现象 | 原因 |
+|---|---|
+| 近处栏杆看起来很大 | 相同物理长度占据更大视角 |
+| 铁轨远处汇聚 | 平行线通过中心投影后趋向消失点 |
+| 广角自拍鼻子大 | 相机离脸近，脸部不同部分深度差被夸大 |
+| 长焦人像脸更平 | 相机通常离人更远，脸部深度差相对变小 |
+
+重点：透视不是由“焦距魔法”单独决定，而是由 **相机位置 + 投影中心** 决定。
+
+---
+
+## 3. FOV、焦距与传感器尺寸
+
+视角 Field of View 由焦距和传感器尺寸共同决定。简化公式是：
+
+$$
+FOV = 2 arctan(s / 2f)
+$$
+
+其中：
+
+- `s` 是传感器或胶片在某个方向上的尺寸。
+- `f` 是焦距。
+
+| 参数变化 | FOV 变化 | 画面直觉 |
+|---|---|---|
+| 焦距变短 | FOV 变大 | 广角，能看到更多环境 |
+| 焦距变长 | FOV 变小 | 长焦，画面更窄 |
+| 传感器变大 | 同焦距下 FOV 变大 | 更“广” |
+| 传感器变小 | 同焦距下 FOV 变小 | 像裁切 |
+
+### 常见焦距直觉
+
+以全画幅摄影为例：
+
+| 焦距 | 类型 | 视觉感受 |
+|---:|---|---|
+| 14mm 到 24mm | 超广角 | 夸张透视，适合建筑、风景、狭小空间 |
+| 35mm | 小广角 | 纪实感，接近街拍视角 |
+| 50mm | 标准 | 透视自然，常用于日常、人像 |
+| 85mm | 中长焦 | 人像常用，背景压缩更明显 |
+| 200mm 以上 | 长焦 | 远距离拍摄，背景显得更近 |
+
+### “长焦压缩”到底是谁造成的？
+
+常说长焦会压缩空间，但更准确地说：
+
+> 透视关系主要由相机位置决定。长焦拍同样大小的主体时，相机通常必须退得更远，于是前后景深度差相对于相机距离变小，画面看起来被压缩。
+
+如果相机位置不动，只换焦距再裁切，透视关系本身不会改变。
+
+<FOVDollyZoom3D client:only="react" />
+
+---
+
+## 4. Sensor、film plane 与 crop factor
+
+真实相机的传感器大小会影响视角。相同焦距下，小传感器只截取成像圈中间一小块，看起来像把全画幅照片裁切了一下。
+
+```text
+same lens image circle
+├─ large sensor: captures wider area
+└─ small sensor: captures central crop
+```
+
+这就是 crop factor 的来源。
+
+| 说法 | 正确理解 |
+|---|---|
+| 手机等效 24mm | 指视角等效，不是物理焦距真有 24mm |
+| APS-C 50mm 像 75mm | 是因为传感器裁切导致 FOV 变窄 |
+| 传感器越大越容易虚化 | 同构图下通常需要更长焦距或更近距离，景深更浅 |
+
+在渲染器里，film size 和 focal length 可以同时决定 camera ray 的 spread；很多简化相机只暴露一个 FOV，其实是把二者合并了。
+
+<SensorCropFactor3D client:only="react" />
+
+---
+
+## 5. 薄透镜模型：从一个点孔变成一个孔径
+
+真实镜头不是无限小的孔，而是有有限大小的 aperture。薄透镜模型是对真实镜头的一阶近似。
+
+针孔相机：
+
+```text
+一个 pixel sample -> 一条 ray
+ray origin 固定在 camera center
+```
+
+薄透镜相机：
+
+```text
+一个 pixel sample -> 多条可能 ray
+ray origin 在 lens disk 上随机采样
+ray direction 指向焦平面上的同一点
+```
+
+<ThinLensDOFLab client:only="react" />
+
+### 薄透镜成像公式
+
+薄透镜的经典公式是：
+
+```text
+1 / focalLength = 1 / objectDistance + 1 / imageDistance
+```
+
+含义：只有特定物距上的点，会在传感器平面上清晰汇聚。对焦就是调节镜头和传感器的相对关系，让某个深度成像清楚。
+
+### 薄透镜 ray generation
+
+在 path tracer 中，常用一个简化但很有效的做法：
+
+```text
+1. 先用 pinhole camera 算出穿过 pixel 的理想 ray
+2. 让这条 ray 与 focus plane 相交，得到 pFocus
+3. 在 lens disk 上随机采样一点 pLens
+4. 新 ray 从 pLens 出发，指向 pFocus
+```
+
+伪代码：
+
+```text
+pFilm  = sample pixel on film
+rayPin = pinholeRayThrough(pFilm)
+pFocus = intersect(rayPin, focusPlane)
+
+pLens = sampleDisk(apertureRadius)
+ray.origin = pLens
+ray.direction = normalize(pFocus - pLens)
+```
+
+如果物体点正好在焦平面上，不同 lens sample 发出的 ray 会汇聚到同一个 film 位置，所以清晰。如果物体不在焦平面上，这些 ray 无法汇聚成一个点，就会形成模糊斑。
+
+---
+
+## 6. 光圈：进光量与景深的开关
+
+光圈 aperture 控制镜头允许多大范围的光线进入。
+
+| 光圈变化 | 进光量 | 景深 | 散景 |
+|---|---|---|---|
+| 光圈大 | 更多 | 更浅 | 更大、更明显 |
+| 光圈小 | 更少 | 更深 | 更小、不明显 |
+
+摄影里常用 f-number：
+
+```text
+N = focalLength / apertureDiameter
+```
+
+| f-number | 光圈大小 | 直觉 |
+|---|---|---|
+| f/1.4 | 很大 | 进光多，景深很浅 |
+| f/2.8 | 大 | 人像、夜景常用 |
+| f/8 | 小 | 风景常用，景深较深 |
+| f/16 | 很小 | 景深深，但可能有衍射模糊 |
+
+注意：在物理相机里，光圈还会影响曝光；在很多渲染器里，为了方便调试，DOF 和 exposure 有时会被拆开控制。
+
+<ApertureExposureDOF3D client:only="react" />
+
+---
+
+## 7. 景深：为什么有些地方清楚，有些地方糊？
+
+**Depth of Field / 景深** 是看起来足够清晰的深度范围。
+
+景深受多个因素影响：
+
+| 因素 | 如何影响景深 | 直觉 |
+|---|---|---|
+| 光圈越大 | 景深越浅 | 背景更容易虚化 |
+| 焦距越长 | 同构图下景深越浅 | 长焦人像背景糊 |
+| 对焦距离越近 | 景深越浅 | 微距拍摄只有很薄一层清楚 |
+| 传感器越大 | 同构图下更容易浅景深 | 全画幅比手机更容易虚化 |
+
+### Circle of Confusion / 弥散圆
+
+离焦点不是成像为一个点，而是在传感器上形成一个小圆斑，这叫 **circle of confusion**。
+
+```text
+点在焦平面上：来自 lens disk 的 rays 汇聚到一个点
+点不在焦平面上：rays 在 sensor 上散成一个圆
+```
+
+如果这个圆足够小，人眼仍然觉得它清晰；如果圆变大，就看起来模糊。
+
+### 为什么真实景深不是简单 Gaussian blur？
+
+后期高斯模糊只是把图像局部抹开，但真实 DOF 有这些特征：
+
+- 模糊大小随深度变化。
+- 前景和背景的遮挡关系会影响模糊边缘。
+- 高亮会变成 aperture 形状的 bokeh。
+- 不同 lens sample 会看到略微不同的视角。
+- 透明、反射和体积效果会与 DOF 共同作用。
+
+所以物理正确的 DOF 应该在 ray generation 阶段采样 aperture，而不是渲染完简单 blur。
+
+---
+
+## 8. Bokeh：散景是光圈的指纹
+
+当一个小亮点离焦时，它不会变成普通的模糊灰点，而会变成一个接近光圈形状的亮斑，这就是 bokeh。
+
+<BokehApertureLab client:only="react" />
+
+| 因素 | 对 bokeh 的影响 |
+|---|---|
+| 光圈形状 | 圆形、六边形、七边形等散景形状 |
+| 光圈大小 | 决定散景斑大小 |
+| 光圈叶片数 | 决定多边形边数 |
+| 镜头边缘遮挡 | 画面边缘产生猫眼 bokeh |
+| 镜片结构 | 可能产生洋葱圈、甜甜圈、旋焦 |
+| 高光强度 | 越亮越容易看出 bokeh 形状 |
+
+### 为什么画面边缘会有猫眼散景？
+
+画面边缘的光线斜着进入镜头，会被镜筒或镜片边缘遮挡一部分 aperture。于是原本圆形的散景被切掉，变成猫眼形。
+
+在 path tracing 里，如果真实采样 lens aperture 并考虑遮挡，bokeh 会自然出现。
+
+---
+
+## 9. 真实镜头并不完美：Lens Defects
+
+理想针孔和薄透镜太完美了，真实镜头会出现很多偏差。图形学里有时要校正它们，有时又故意保留它们增加摄影感。
+
+<LensDefectsGallery3D client:only="react" />
+
+### 9.1 Distortion 畸变
+
+畸变会让直线变弯。
+
+| 类型 | 表现 | 常见场景 |
+|---|---|---|
+| Barrel distortion 桶形 | 画面向外鼓 | 广角镜头、运动相机 |
+| Pincushion distortion 枕形 | 画面向内收 | 一些长焦或变焦端 |
+| Mustache distortion | 中间和边缘变化不同 | 复杂镜头 |
+
+渲染和视觉算法中常用径向畸变近似：
+
+```text
+rDistorted = r * (1 + k1 r^2 + k2 r^4 + ...)
+```
+
+### 9.2 Vignetting 暗角
+
+暗角是画面边缘比中心暗。原因可能包括：
+
+- 镜头结构遮挡边缘光线。
+- 斜入射导致传感器接收效率下降。
+- 大光圈时成像圈边缘能量不足。
+
+暗角在摄影里常常被当作风格化效果，让视线集中到画面中心。
+
+### 9.3 Chromatic Aberration 色差
+
+不同波长在玻璃中的折射率不同，因此红、绿、蓝可能聚焦到略微不同的位置。
+
+| 色差类型 | 现象 |
+|---|---|
+| Longitudinal CA | 前后焦点不同，焦外高光带颜色 |
+| Lateral CA | 图像边缘红蓝或紫绿错位 |
+
+在游戏后处理中常见的 RGB channel offset 就是在模拟横向色差。
+
+### 9.4 Spherical Aberration、Coma、Astigmatism
+
+真实镜片无法让所有光线完美汇聚到同一点：
+
+- 球差：中心光线和边缘光线焦点不同。
+- 彗差：画面边缘点光源像小彗星。
+- 像散：水平和垂直方向聚焦不同。
+
+这些缺陷在高端摄影中要被尽量校正；在渲染中也可以被艺术化模拟。
+
+---
+
+## 10. Plenoptic Function：如果要完整记录世界，需要多少维？
+
+普通照片每个 pixel 只存一个颜色。但真实世界的光更丰富：在空间中每一点、每个方向、每个波长、每个时间，都可能有不同 radiance。
+
+完整的 plenoptic function 可以理解为：
+
+```text
+P(x, y, z, theta, phi, wavelength, time)
+```
+
+它描述：
+
+| 维度 | 含义 |
+|---|---|
+| x, y, z | 空间位置 |
+| theta, phi | 光线方向 |
+| wavelength | 波长，也就是光谱 |
+| time | 时间变化 |
+
+这个函数维度太高，无法完整记录。普通相机做了大量压缩：
+
+```text
+空间中很多光线 -> 通过镜头积分 -> 传感器 pixel 只存 RGB
+```
+
+也就是说，普通照片丢掉了大量方向信息。
+
+<PlenopticFunction3D client:only="react" />
+
+---
+
+## 11. Light Field：保留方向信息的图像
+
+光场想保留的不只是“某个 pixel 的颜色”，还包括“这束光从哪个方向来”。
+
+在没有遮挡和介质散射的自由空间中，一条光线可以用 4 个数描述。常见方法是 **two-plane parameterization / 两平面参数化**：
+
+```text
+一条 ray 穿过 UV 平面上的点 (u, v)
+同一条 ray 又穿过 ST 平面上的点 (s, t)
+所以 ray = (u, v, s, t)
+```
+
+于是光场可以写成：
+
+```text
+L = L(u, v, s, t)
+```
+
+<LightFieldRefocusLab client:only="react" />
+
+### 普通照片和光场的区别
+
+| 表示 | 保存什么 | 丢掉什么 | 能做什么 |
+|---|---|---|---|
+| 普通照片 | 每个 pixel 的 RGB | 方向信息 | 普通显示、后期调色 |
+| 深度图照片 | RGB + depth | 多视角方向仍少 | 景深模拟、3D 分层 |
+| 光场 | 位置 + 方向 | 分辨率或采样密度受限 | 后期重对焦、改视角、合成光圈 |
+
+光场不是魔法，它只是把相机原本积分掉的一部分方向信息保存了下来。
+
+---
+
+## 12. 后期重对焦：Shift and Sum
+
+光场重对焦的直觉非常漂亮：不同视角看到的同一个深度平面会有视差。只要把目标深度的内容对齐，然后求和，它就会清晰；其它深度因为对不齐而变模糊。
+
+```text
+for each sub-aperture image:
+    shift image according to target depth
+average shifted images
+```
+
+| 选择的重对焦深度 | 结果 |
+|---|---|
+| 对齐前景 | 前景清晰，背景错位变糊 |
+| 对齐背景 | 背景清晰，前景错位变糊 |
+| 增大求和视角范围 | 模拟更大光圈，景深更浅 |
+| 减小求和视角范围 | 模拟更小光圈，景深更深 |
+
+这和真实镜头改变 focus distance 很像，只不过它是在采集之后通过计算完成。
+
+---
+
+## 13. Light Field Camera：微透镜阵列
+
+光场相机常见结构是：
+
+```text
+main lens -> microlens array -> sensor
+```
+
+普通相机的 sensor pixel 主要记录空间位置。光场相机在传感器前放一层微透镜阵列，让每个微透镜下面的小像素块记录不同方向的光。
+
+这带来一个根本权衡：
+
+| 分辨率 | 含义 | 如何提高 | 代价 |
+|---|---|---|---|
+| Spatial resolution | 图像有多少位置样本 | 更多 microlens | 每个位置方向样本变少 |
+| Angular resolution | 每个位置有多少方向样本 | 每个 microlens 下更多 pixel | 空间位置样本变少 |
+
+一句话：
+
+> 光场相机用空间分辨率换方向分辨率。
+
+所以早期光场相机可以后期对焦，但输出照片分辨率往往不如普通相机。
+
+<LightFieldCameraArray3D client:only="react" />
+
+---
+
+## 14. 渲染器里的相机模型怎么选？
+
+| 相机模型 | Ray origin | Ray direction | 能表现什么 | 代价 |
+|---|---|---|---|---|
+| Pinhole | 固定 camera center | 指向 film sample | 透视、全景深 | 最便宜 |
+| Thin Lens | lens disk 上采样 | 指向 focus point | 景深、bokeh | 需要多 sample |
+| Fisheye / Panoramic | 固定或小孔径 | 球面方向映射 | VR、环境图、广角 | 投影不同 |
+| Realistic Lens | 穿过多组镜片追迹 | 由折射决定 | 畸变、暗角、像差 | 贵且实现复杂 |
+| Light Field Camera | 多位置、多方向 | 4D ray sample | 重对焦、改视角 | 数据量大 |
+
+如果你正在写 path tracer，建议按下面顺序实现：
+
+```text
+1. Pinhole camera
+2. Jittered pixel sampling for anti-aliasing
+3. Thin lens depth of field
+4. Aperture shape sampling for bokeh
+5. Motion blur with shutter time
+6. Optional lens distortion / vignetting post process
+```
+
+---
+
+## 15. 常见误区和实现坑
+
+### 误区 1：FOV 变了就是透视变了
+
+FOV 影响画面裁取范围，但透视夸张主要来自相机位置。想要广角夸张透视，通常要把相机靠近主体。
+
+### 误区 2：景深就是后期 blur
+
+真实景深来自 aperture 上多条 ray 的积分。后期 blur 很难正确处理遮挡、高光 bokeh 和透明反射。
+
+### 误区 3：焦距越长一定景深越浅
+
+同一相机位置下，焦距影响构图；同构图下，长焦通常需要更远拍摄，景深变化还与光圈、对焦距离、传感器尺寸共同有关。
+
+### 误区 4：光场可以无限重建 3D
+
+光场保留了方向信息，但采样有限、遮挡复杂、分辨率有权衡。它可以重对焦和小范围改视角，但不是无限自由视角。
+
+### 实现坑
+
+1. lens disk 采样要均匀，不能直接 `r = random()`，应使用 `r = sqrt(random())`。
+2. focus plane 的位置和相机坐标系要一致。
+3. aperture radius 改变时，如果模拟真实曝光，亮度也应变化。
+4. DOF sample 数不足时，bokeh 会很吵。
+5. 后处理畸变会改变采样密度，边缘可能需要重采样或裁切。
+
+---
+
+## 自测问题
+
+1. 为什么针孔相机所有深度都清晰？
+2. 透视关系主要由焦距决定，还是由相机位置决定？
+3. FOV、focal length、sensor size 的关系是什么？
+4. crop factor 为什么本质上是视角裁切？
+5. 薄透镜相机为什么要在 lens disk 上采样 ray origin？
+6. focus plane 上的点为什么清晰，离焦点为什么变成弥散圆？
+7. 光圈变大时，进光量、景深和 bokeh 如何变化？
+8. 为什么真实景深不是简单 Gaussian blur？
+9. bokeh 的形状为什么能暴露 aperture 形状？
+10. 畸变、暗角、色差分别是什么？
+11. Plenoptic Function 比普通照片多描述了什么？
+12. 两平面参数化如何用四个数描述一条 ray？
+13. 光场为什么可以后期重对焦？
+14. 光场相机为什么要牺牲空间分辨率换角度分辨率？
+
+---
+
+## 总结
+
+第 19 课的重点是：**camera 是光线采样器，不只是一个矩阵。**
+
+针孔相机解释透视，薄透镜解释景深和 bokeh，真实镜头带来畸变、暗角和色差，光场进一步保存方向信息，让我们能够后期重对焦和轻微改变视角。理解这一课后，渲染器里的 camera ray generation 就从“从点发 ray”升级成了“模拟镜头如何选择进入图像的光线”。
