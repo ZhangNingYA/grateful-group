@@ -1654,3 +1654,449 @@ export function LightFieldCameraArray3D() {
     </DemoFrame>
   )
 }
+
+function KeyframePathScene({ method, time }) {
+  const keyframes = [
+    { t: 0, p: [-2.2, 0.3, -0.8] },
+    { t: 0.33, p: [-0.6, 1.2, 0.4] },
+    { t: 0.67, p: [0.8, 0.8, -0.5] },
+    { t: 1, p: [2.1, 0.2, 0.6] }
+  ]
+  const interpolate = (t) => {
+    if (t <= 0) return keyframes[0].p
+    if (t >= 1) return keyframes[keyframes.length - 1].p
+    for (let i = 0; i < keyframes.length - 1; i++) {
+      if (t >= keyframes[i].t && t <= keyframes[i + 1].t) {
+        const local = (t - keyframes[i].t) / (keyframes[i + 1].t - keyframes[i].t)
+        const ease = method === 'linear' ? local : method === 'ease-in' ? local * local : method === 'ease-out' ? 1 - (1 - local) * (1 - local) : 3 * local * local - 2 * local * local * local
+        return keyframes[i].p.map((v, j) => lerp(v, keyframes[i + 1].p[j], ease))
+      }
+    }
+    return keyframes[keyframes.length - 1].p
+  }
+  const currentPos = interpolate(time)
+  const pathPoints = Array.from({ length: 80 }, (_, i) => interpolate(i / 79))
+  return (
+    <Canvas camera={{ position: [4.2, 2.8, 4.5], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.62} />
+      <directionalLight position={[2.5, 4, 2.2]} intensity={2.1} />
+      {keyframes.map((kf, i) => <mesh key={i} position={kf.p}>
+        <sphereGeometry args={[0.12, 24, 12]} />
+        <meshBasicMaterial color={C.amber} />
+      </mesh>)}
+      <Line points={pathPoints} color={C.blue} lineWidth={2.5} transparent opacity={0.65} />
+      <mesh position={currentPos}>
+        <sphereGeometry args={[0.18, 32, 16]} />
+        <meshStandardMaterial color={C.green} emissive={C.green} emissiveIntensity={0.15} roughness={0.35} />
+      </mesh>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.42, 0]}>
+        <planeGeometry args={[5.2, 2.8]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.68} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function KeyframeInterpolation3D() {
+  const [method, setMethod] = useState('ease-in-out')
+  const [time, setTime] = useState(0.42)
+  return (
+    <DemoFrame title="Keyframe Interpolation 3D · 关键帧之间如何过渡" subtitle="黄色球是关键帧，绿色球沿蓝色路径运动；切换插值方法观察运动节奏变化。" accent={C.green} side={<>
+      <ButtonRow value={method} onChange={setMethod} accent={C.green} items={[{ value: 'linear', label: 'linear' }, { value: 'ease-in', label: 'ease-in' }, { value: 'ease-out', label: 'ease-out' }, { value: 'ease-in-out', label: 'ease-in-out' }]} />
+      <Slider label="animation time" value={time} min={0} max={1} step={0.01} onChange={setTime} accent={C.green} />
+      <Metric label="interpolation" value={method} color={C.green} />
+      <div>linear 速度恒定；ease-in 慢启动；ease-out 慢结束；ease-in-out 两端慢中间快，最自然。</div>
+    </>}>
+      <KeyframePathScene method={method} time={time} />
+    </DemoFrame>
+  )
+}
+
+function MassSpringScene({ stiffness, damping }) {
+  const [positions, setPositions] = useState([[-1.2, 1.5, 0], [1.2, 1.5, 0]])
+  const restLength = 2.4
+  const currentLength = Math.hypot(positions[1][0] - positions[0][0], positions[1][1] - positions[0][1], positions[1][2] - positions[0][2])
+  const extension = currentLength - restLength
+  const force = -stiffness * extension
+  return (
+    <Canvas camera={{ position: [3.8, 2.4, 4.6], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.58} />
+      <directionalLight position={[2.5, 4, 2]} intensity={2.2} />
+      {positions.map((p, i) => <mesh key={i} position={p}>
+        <sphereGeometry args={[0.16, 32, 16]} />
+        <meshStandardMaterial color={i === 0 ? C.red : C.blue} roughness={0.35} />
+      </mesh>)}
+      <Line points={positions} color={extension > 0 ? C.orange : extension < 0 ? C.cyan : C.green} lineWidth={2 + Math.abs(extension) * 3} transparent opacity={0.72} />
+      <Html position={[0, 2.2, 0]} style={{ color: C.text, fontSize: 11, fontWeight: 900 }}>spring length {fmt(currentLength, 2)} · force {fmt(force, 1)}</Html>
+      <Html position={[-1.5, 1.8, 0]} style={{ color: C.red, fontSize: 10, fontWeight: 800 }}>mass 1</Html>
+      <Html position={[1.5, 1.8, 0]} style={{ color: C.blue, fontSize: 10, fontWeight: 800 }}>mass 2</Html>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.32, 0]}>
+        <planeGeometry args={[4.8, 2.6]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.7} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function MassSpringSystem3D() {
+  const [stiffness, setStiffness] = useState(12)
+  const [damping, setDamping] = useState(0.42)
+  return (
+    <DemoFrame title="Mass-Spring System 3D · 弹簧连接质点产生弹力" subtitle="调整弹簧刚度和阻尼系数，观察弹簧力如何随形变量变化；布料、头发都可以用质点弹簧建模。" accent={C.cyan} side={<>
+      <Slider label="spring stiffness k" value={stiffness} min={2} max={35} step={0.5} onChange={setStiffness} accent={C.cyan} />
+      <Slider label="damping b" value={damping} min={0} max={1.5} step={0.01} onChange={setDamping} accent={C.orange} />
+      <Metric label="Hooke's law" value="F = -k(|x| - L₀)" color={C.cyan} />
+      <div>刚度越大，弹簧越硬；阻尼越大，能量损失越快。真实模拟需要数值积分求解运动方程。</div>
+    </>}>
+      <MassSpringScene stiffness={stiffness} damping={damping} />
+    </DemoFrame>
+  )
+}
+
+function EulerComparisonScene({ method, dt }) {
+  const steps = 18
+  const trajectories = useMemo(() => {
+    const explicit = []
+    const implicit = []
+    let ex = [0, 1.5, 0], ev = [1.2, 0, 0]
+    let ix = [0, 1.5, 0], iv = [1.2, 0, 0]
+    const k = 8, m = 1, g = -2.5
+    for (let i = 0; i < steps; i++) {
+      explicit.push([...ex])
+      implicit.push([...ix])
+      const ea = [(k / m) * (0 - ex[0]), g, 0]
+      ev = [ev[0] + ea[0] * dt, ev[1] + ea[1] * dt, ev[2] + ea[2] * dt]
+      ex = [ex[0] + ev[0] * dt, ex[1] + ev[1] * dt, ex[2] + ev[2] * dt]
+      const nextX = [ix[0] + iv[0] * dt, ix[1] + iv[1] * dt, ix[2] + iv[2] * dt]
+      const ia = [(k / m) * (0 - nextX[0]), g, 0]
+      iv = [iv[0] + ia[0] * dt * 0.85, iv[1] + ia[1] * dt, iv[2] + ia[2] * dt]
+      ix = nextX
+    }
+    return { explicit, implicit }
+  }, [method, dt])
+  const active = method === 'explicit' ? trajectories.explicit : trajectories.implicit
+  return (
+    <Canvas camera={{ position: [4.2, 2.6, 4.8], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.6} />
+      <directionalLight position={[2.5, 4, 2]} intensity={2.2} />
+      <mesh position={[0, 0, 0]}>
+        <sphereGeometry args={[0.08, 24, 12]} />
+        <meshBasicMaterial color={C.green} />
+      </mesh>
+      <Html position={[-0.25, 0.35, 0]} style={{ color: C.green, fontSize: 10, fontWeight: 900 }}>anchor</Html>
+      <Line points={active} color={method === 'explicit' ? C.red : C.blue} lineWidth={2.5} transparent opacity={0.68} />
+      {active.map((p, i) => i % 3 === 0 && <mesh key={i} position={p}>
+        <sphereGeometry args={[0.09, 20, 12]} />
+        <meshStandardMaterial color={method === 'explicit' ? C.red : C.blue} roughness={0.38} />
+      </mesh>)}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.45, 0]}>
+        <planeGeometry args={[5.2, 2.8]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.7} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function EulerIntegrationComparison3D() {
+  const [method, setMethod] = useState('explicit')
+  const [dt, setDt] = useState(0.18)
+  return (
+    <DemoFrame title="Euler Integration Comparison 3D · 显式和隐式的稳定性差异" subtitle="显式欧拉用当前时刻的力更新，简单但大时间步会爆炸；隐式用下一时刻的力，稳定但需要求解。" accent={C.orange} side={<>
+      <ButtonRow value={method} onChange={setMethod} accent={C.orange} items={[{ value: 'explicit', label: 'explicit Euler' }, { value: 'implicit', label: 'implicit Euler' }]} />
+      <Slider label="time step Δt" value={dt} min={0.05} max={0.35} step={0.01} onChange={setDt} accent={C.orange} />
+      <Metric label="stability" value={method === 'explicit' && dt > 0.22 ? 'unstable' : 'stable'} color={method === 'explicit' && dt > 0.22 ? C.red : C.green} />
+      <div>大 Δt 时显式欧拉会让能量爆炸增长；隐式欧拉会耗散能量但保持稳定，适合实时模拟。</div>
+    </>}>
+      <EulerComparisonScene method={method} dt={dt} />
+    </DemoFrame>
+  )
+}
+
+function ParticleForceScene({ forceType, strength }) {
+  const particles = useMemo(() => Array.from({ length: 42 }, (_, i) => {
+    const a = (i / 42) * Math.PI * 2
+    const r = 0.45 + (i % 7) * 0.18
+    return { p: [Math.cos(a) * r, 0.85 + Math.sin(i * 2.3) * 0.35, Math.sin(a) * r], v: [0, 0, 0] }
+  }), [])
+  const forces = particles.map((pt) => {
+    if (forceType === 'gravity') return [0, -strength * 1.5, 0]
+    if (forceType === 'wind') return [strength * 0.8, 0, strength * 0.4]
+    if (forceType === 'vortex') {
+      const dx = pt.p[0], dz = pt.p[2]
+      const r = Math.sqrt(dx * dx + dz * dz) + 0.01
+      return [-dz / r * strength, 0, dx / r * strength]
+    }
+    const r = Math.sqrt(pt.p[0] * pt.p[0] + pt.p[2] * pt.p[2]) + 0.01
+    return [pt.p[0] / r * strength * 0.6, 0, pt.p[2] / r * strength * 0.6]
+  })
+  return (
+    <Canvas camera={{ position: [3.6, 2.5, 4.5], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.62} />
+      <directionalLight position={[2.5, 4, 2]} intensity={2.1} />
+      {particles.map((pt, i) => {
+        const f = forces[i]
+        const end = [pt.p[0] + f[0] * 0.45, pt.p[1] + f[1] * 0.45, pt.p[2] + f[2] * 0.45]
+        return <group key={i}>
+          <mesh position={pt.p}>
+            <sphereGeometry args={[0.055, 16, 10]} />
+            <meshStandardMaterial color={C.cyan} roughness={0.4} />
+          </mesh>
+          <Line points={[pt.p, end]} color={C.amber} transparent opacity={0.42} lineWidth={1.2} />
+        </group>
+      })}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.35, 0]}>
+        <planeGeometry args={[4.5, 2.8]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.68} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function ParticleSystemForces3D() {
+  const [forceType, setForceType] = useState('gravity')
+  const [strength, setStrength] = useState(0.72)
+  return (
+    <DemoFrame title="Particle System Forces 3D · 粒子受力类型" subtitle="每个粒子是独立的点，可以受重力、风力、涡旋或径向力；黄色箭头表示力的方向和大小。" accent={C.amber} side={<>
+      <ButtonRow value={forceType} onChange={setForceType} accent={C.amber} items={[{ value: 'gravity', label: 'gravity' }, { value: 'wind', label: 'wind' }, { value: 'vortex', label: 'vortex' }, { value: 'radial', label: 'radial' }]} />
+      <Slider label="force strength" value={strength} min={0.1} max={1.5} step={0.01} onChange={setStrength} accent={C.amber} />
+      <Metric label="active force" value={forceType} color={C.amber} />
+      <div>粒子系统用大量简单粒子模拟复杂现象：烟雾、火焰、水花、爆炸都可以用不同力场组合实现。</div>
+    </>}>
+      <ParticleForceScene forceType={forceType} strength={strength} />
+    </DemoFrame>
+  )
+}
+
+function ForwardKinematicsScene({ angle1, angle2, angle3 }) {
+  const L1 = 0.85, L2 = 0.72, L3 = 0.58
+  const a1 = (angle1 * Math.PI) / 180
+  const a2 = (angle2 * Math.PI) / 180
+  const a3 = (angle3 * Math.PI) / 180
+  const j1 = [0, 0, 0]
+  const j2 = [Math.cos(a1) * L1, Math.sin(a1) * L1, 0]
+  const j3 = [j2[0] + Math.cos(a1 + a2) * L2, j2[1] + Math.sin(a1 + a2) * L2, 0]
+  const end = [j3[0] + Math.cos(a1 + a2 + a3) * L3, j3[1] + Math.sin(a1 + a2 + a3) * L3, 0]
+  return (
+    <Canvas camera={{ position: [3.2, 1.8, 4.2], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.65} />
+      <directionalLight position={[2, 4, 2]} intensity={2.2} />
+      {[j1, j2, j3].map((p, i) => <mesh key={i} position={p}>
+        <sphereGeometry args={[0.12, 24, 12]} />
+        <meshStandardMaterial color={C.blue} roughness={0.35} />
+      </mesh>)}
+      <Line points={[j1, j2, j3, end]} color={C.cyan} lineWidth={3.5} />
+      <mesh position={end}>
+        <sphereGeometry args={[0.15, 32, 16]} />
+        <meshStandardMaterial color={C.green} emissive={C.green} emissiveIntensity={0.12} roughness={0.32} />
+      </mesh>
+      <Html position={[end[0] + 0.25, end[1] + 0.18, 0]} style={{ color: C.green, fontSize: 11, fontWeight: 900 }}>end effector</Html>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.55, 0]}>
+        <planeGeometry args={[4.2, 2.6]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.7} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function ForwardKinematics3D() {
+  const [angle1, setAngle1] = useState(35)
+  const [angle2, setAngle2] = useState(48)
+  const [angle3, setAngle3] = useState(-62)
+  return (
+    <DemoFrame title="Forward Kinematics 3D · 给定关节角度算末端位置" subtitle="调整三个关节角度，观察末端执行器（绿色球）的位置如何通过矩阵链式相乘得到。" accent={C.cyan} side={<>
+      <Slider label="joint 1 angle" value={angle1} min={-90} max={90} step={1} onChange={setAngle1} accent={C.cyan} unit="°" />
+      <Slider label="joint 2 angle" value={angle2} min={-120} max={120} step={1} onChange={setAngle2} accent={C.blue} unit="°" />
+      <Slider label="joint 3 angle" value={angle3} min={-120} max={120} step={1} onChange={setAngle3} accent={C.purple} unit="°" />
+      <Metric label="FK method" value="matrix chain multiply" color={C.cyan} />
+      <div>FK 简单、快速、稳定，但不直观：艺术家要调很多角度才能让手碰到目标物体。</div>
+    </>}>
+      <ForwardKinematicsScene angle1={angle1} angle2={angle2} angle3={angle3} />
+    </DemoFrame>
+  )
+}
+
+function InverseKinematicsScene({ targetX, targetY, iterations }) {
+  const L1 = 0.85, L2 = 0.72, L3 = 0.58
+  const target = [targetX, targetY, 0]
+  const solve = useMemo(() => {
+    let a1 = 0.5, a2 = 0.8, a3 = -0.6
+    for (let iter = 0; iter < iterations; iter++) {
+      const j1 = [0, 0, 0]
+      const j2 = [Math.cos(a1) * L1, Math.sin(a1) * L1, 0]
+      const j3 = [j2[0] + Math.cos(a1 + a2) * L2, j2[1] + Math.sin(a1 + a2) * L2, 0]
+      const end = [j3[0] + Math.cos(a1 + a2 + a3) * L3, j3[1] + Math.sin(a1 + a2 + a3) * L3, 0]
+      const dx = target[0] - end[0], dy = target[1] - end[1]
+      const dist = Math.sqrt(dx * dx + dy * dy)
+      if (dist < 0.05) break
+      a3 += Math.atan2(dy, dx) * 0.15
+      a2 += Math.atan2(target[1] - j2[1], target[0] - j2[0]) * 0.12
+      a1 += Math.atan2(target[1], target[0]) * 0.08
+    }
+    const j1 = [0, 0, 0]
+    const j2 = [Math.cos(a1) * L1, Math.sin(a1) * L1, 0]
+    const j3 = [j2[0] + Math.cos(a1 + a2) * L2, j2[1] + Math.sin(a1 + a2) * L2, 0]
+    const end = [j3[0] + Math.cos(a1 + a2 + a3) * L3, j3[1] + Math.sin(a1 + a2 + a3) * L3, 0]
+    return { j1, j2, j3, end }
+  }, [targetX, targetY, iterations])
+  return (
+    <Canvas camera={{ position: [3.2, 1.8, 4.2], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.65} />
+      <directionalLight position={[2, 4, 2]} intensity={2.2} />
+      {[solve.j1, solve.j2, solve.j3].map((p, i) => <mesh key={i} position={p}>
+        <sphereGeometry args={[0.12, 24, 12]} />
+        <meshStandardMaterial color={C.blue} roughness={0.35} />
+      </mesh>)}
+      <Line points={[solve.j1, solve.j2, solve.j3, solve.end]} color={C.cyan} lineWidth={3.5} />
+      <mesh position={solve.end}>
+        <sphereGeometry args={[0.15, 32, 16]} />
+        <meshStandardMaterial color={C.green} emissive={C.green} emissiveIntensity={0.12} roughness={0.32} />
+      </mesh>
+      <mesh position={target}>
+        <sphereGeometry args={[0.13, 32, 16]} />
+        <meshBasicMaterial color={C.amber} transparent opacity={0.55} />
+      </mesh>
+      <Html position={[target[0] + 0.28, target[1] + 0.18, 0]} style={{ color: C.amber, fontSize: 11, fontWeight: 900 }}>IK target</Html>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.55, 0]}>
+        <planeGeometry args={[4.2, 2.6]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.7} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function InverseKinematicsIK3D() {
+  const [targetX, setTargetX] = useState(1.35)
+  const [targetY, setTargetY] = useState(0.92)
+  const [iterations, setIterations] = useState(18)
+  return (
+    <DemoFrame title="Inverse Kinematics IK 3D · 给定目标位置反推关节角度" subtitle="拖动目标位置（黄色球），IK 求解器会迭代调整关节角度让末端尽量接近目标。" accent={C.green} side={<>
+      <Slider label="target X" value={targetX} min={-1.5} max={1.8} step={0.01} onChange={setTargetX} accent={C.green} />
+      <Slider label="target Y" value={targetY} min={-0.5} max={1.8} step={0.01} onChange={setTargetY} accent={C.amber} />
+      <Slider label="IK iterations" value={iterations} min={5} max={35} step={1} onChange={setIterations} accent={C.purple} />
+      <Metric label="IK method" value="iterative gradient descent" color={C.green} />
+      <div>IK 直观但复杂：可能无解（目标太远）或多解（肘部朝向不确定），需要约束和迭代优化。</div>
+    </>}>
+      <InverseKinematicsScene targetX={targetX} targetY={targetY} iterations={iterations} />
+    </DemoFrame>
+  )
+}
+
+function RigidBodyScene({ restitution, angularVel }) {
+  const bodies = [
+    { p: [-1.25, 1.45, 0], v: [0.85, -0.42, 0], w: angularVel, col: C.blue },
+    { p: [1.15, 0.92, 0], v: [-0.72, -0.28, 0], w: -angularVel * 0.7, col: C.orange }
+  ]
+  return (
+    <Canvas camera={{ position: [3.5, 2.4, 4.6], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.62} />
+      <directionalLight position={[2.5, 4, 2]} intensity={2.2} />
+      {bodies.map((b, i) => <group key={i}>
+        <mesh position={b.p} rotation={[0, 0, b.w * 0.5]}>
+          <boxGeometry args={[0.52, 0.52, 0.52]} />
+          <meshStandardMaterial color={b.col} roughness={0.38} />
+        </mesh>
+        <Line points={[b.p, [b.p[0] + b.v[0] * 1.2, b.p[1] + b.v[1] * 1.2, b.p[2]]]} color={b.col} lineWidth={2.8} transparent opacity={0.72} />
+        <Html position={[b.p[0] + b.v[0] * 1.35, b.p[1] + b.v[1] * 1.35 + 0.15, 0]} style={{ color: b.col, fontSize: 10, fontWeight: 800 }}>v</Html>
+      </group>)}
+      <mesh position={[0, -0.28, 0]}>
+        <boxGeometry args={[0.18, 0.18, 0.18]} />
+        <meshBasicMaterial color={C.amber} transparent opacity={0.45} />
+      </mesh>
+      <Html position={[-0.35, -0.05, 0]} style={{ color: C.amber, fontSize: 11, fontWeight: 900 }}>collision point</Html>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.62, 0]}>
+        <planeGeometry args={[4.8, 2.8]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.7} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function RigidBodyCollision3D() {
+  const [restitution, setRestitution] = useState(0.65)
+  const [angularVel, setAngularVel] = useState(0.82)
+  return (
+    <DemoFrame title="Rigid Body Collision 3D · 刚体碰撞需要平动和转动" subtitle="两个刚体带着线速度和角速度运动；碰撞时要计算冲量、更新速度和角速度。" accent={C.blue} side={<>
+      <Slider label="restitution e" value={restitution} min={0} max={1} step={0.01} onChange={setRestitution} accent={C.blue} />
+      <Slider label="angular velocity" value={angularVel} min={0} max={2.5} step={0.01} onChange={setAngularVel} accent={C.purple} unit=" rad/s" />
+      <Metric label="collision type" value={restitution < 0.15 ? 'inelastic' : restitution > 0.85 ? 'elastic' : 'partial'} color={restitution < 0.15 ? C.red : restitution > 0.85 ? C.green : C.amber} />
+      <div>刚体不会变形，但会转动；碰撞响应要同时更新线速度和角速度，并考虑惯性张量。</div>
+    </>}>
+      <RigidBodyScene restitution={restitution} angularVel={angularVel} />
+    </DemoFrame>
+  )
+}
+
+function FluidSPHScene({ particleCount, viscosity }) {
+  const particles = useMemo(() => Array.from({ length: particleCount }, (_, i) => {
+    const x = -1.05 + (i % 9) * 0.26
+    const y = 0.35 + Math.floor(i / 9) * 0.24
+    const vx = (Math.sin(i * 7.3) * 0.5 - 0.15) * (1 - viscosity)
+    const vy = -0.35 - Math.abs(Math.cos(i * 5.1)) * 0.25
+    return { p: [x, y, 0], v: [vx, vy, 0], density: 0.72 + Math.sin(i * 3.7) * 0.28 }
+  }), [particleCount, viscosity])
+  return (
+    <Canvas camera={{ position: [3.4, 2.2, 4.4], fov: 44 }}>
+      <color attach="background" args={[C.bg]} />
+      <ambientLight intensity={0.65} />
+      <directionalLight position={[2, 4, 2]} intensity={2.2} />
+      <mesh position={[0, -0.45, 0]}>
+        <boxGeometry args={[2.8, 0.08, 1.2]} />
+        <meshStandardMaterial color="#1e293b" roughness={0.65} />
+      </mesh>
+      <mesh position={[-1.45, 0.55, 0]}>
+        <boxGeometry args={[0.08, 2.1, 1.2]} />
+        <meshStandardMaterial color="#334155" roughness={0.6} />
+      </mesh>
+      <mesh position={[1.45, 0.55, 0]}>
+        <boxGeometry args={[0.08, 2.1, 1.2]} />
+        <meshStandardMaterial color="#334155" roughness={0.6} />
+      </mesh>
+      {particles.map((pt, i) => {
+        const size = 0.055 + pt.density * 0.045
+        const col = mixRgb([0.06, 0.72, 0.9], [0.04, 0.42, 0.75], pt.density)
+        return <group key={i}>
+          <mesh position={pt.p}>
+            <sphereGeometry args={[size, 16, 10]} />
+            <meshStandardMaterial color={rgbCss01(col)} transparent opacity={0.72 + pt.density * 0.28} roughness={0.25} />
+          </mesh>
+          {i % 5 === 0 && <Line points={[pt.p, [pt.p[0] + pt.v[0] * 0.35, pt.p[1] + pt.v[1] * 0.35, 0]]} color={C.amber} transparent opacity={0.42} lineWidth={1.1} />}
+        </group>
+      })}
+      <Html position={[-1.75, 1.55, 0]} style={{ color: C.cyan, fontSize: 11, fontWeight: 900 }}>SPH fluid particles</Html>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.52, 0]}>
+        <planeGeometry args={[4.2, 2.6]} />
+        <meshStandardMaterial color="#e0f2fe" roughness={0.9} transparent opacity={0.68} />
+      </mesh>
+      <OrbitControls enablePan={false} />
+    </Canvas>
+  )
+}
+
+export function FluidSimulationSPH3D() {
+  const [particleCount, setParticleCount] = useState(54)
+  const [viscosity, setViscosity] = useState(0.42)
+  return (
+    <DemoFrame title="Fluid Simulation SPH 3D · 用粒子表示连续流体" subtitle="每个粒子代表一小团流体；通过核函数插值计算密度、压力和粘性力，模拟流体行为。" accent={C.cyan} side={<>
+      <Slider label="particle count" value={particleCount} min={18} max={81} step={9} onChange={setParticleCount} accent={C.cyan} />
+      <Slider label="viscosity" value={viscosity} min={0} max={1} step={0.01} onChange={setViscosity} accent={C.purple} />
+      <Metric label="SPH method" value="kernel interpolation" color={C.cyan} />
+      <div>SPH 灵活直观，但计算量大；每个粒子要查询邻居、计算压力和粘性，适合小规模或 GPU 加速。</div>
+    </>}>
+      <FluidSPHScene particleCount={particleCount} viscosity={viscosity} />
+    </DemoFrame>
+  )
+}
