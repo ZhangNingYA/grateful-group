@@ -163,13 +163,13 @@ ray.direction = normalize((x, y, z))
 视角 Field of View 由焦距和传感器尺寸共同决定。简化公式是：
 
 $$
-FOV = 2 arctan(s / 2f)
+\text{FOV} = 2 \arctan\left(\frac{s}{2f}\right)
 $$
 
 其中：
 
-- `s` 是传感器或胶片在某个方向上的尺寸。
-- `f` 是焦距。
+- $s$ 是传感器或胶片在某个方向上的尺寸。
+- $f$ 是焦距。
 
 | 参数变化 | FOV 变化 | 画面直觉 |
 |---|---|---|
@@ -251,9 +251,11 @@ ray direction 指向焦平面上的同一点
 
 薄透镜的经典公式是：
 
-```text
-1 / focalLength = 1 / objectDistance + 1 / imageDistance
-```
+$$
+\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}
+$$
+
+其中 $f$ 是焦距，$d_o$ 是物距，$d_i$ 是像距。
 
 含义：只有特定物距上的点，会在传感器平面上清晰汇聚。对焦就是调节镜头和传感器的相对关系，让某个深度成像清楚。
 
@@ -295,9 +297,11 @@ ray.direction = normalize(pFocus - pLens)
 
 摄影里常用 f-number：
 
-```text
-N = focalLength / apertureDiameter
-```
+$$
+N = \frac{f}{D}
+$$
+
+其中 $f$ 是焦距，$D$ 是光圈直径。
 
 | f-number | 光圈大小 | 直觉 |
 |---|---|---|
@@ -391,9 +395,9 @@ N = focalLength / apertureDiameter
 
 渲染和视觉算法中常用径向畸变近似：
 
-```text
-rDistorted = r * (1 + k1 r^2 + k2 r^4 + ...)
-```
+$$
+r_{\text{distorted}} = r \left(1 + k_1 r^2 + k_2 r^4 + \cdots\right)
+$$
 
 ### 9.2 Vignetting 暗角
 
@@ -434,9 +438,9 @@ rDistorted = r * (1 + k1 r^2 + k2 r^4 + ...)
 
 完整的 plenoptic function 可以理解为：
 
-```text
-P(x, y, z, theta, phi, wavelength, time)
-```
+$$
+P(x, y, z, \theta, \phi, \lambda, t)
+$$
 
 它描述：
 
@@ -465,17 +469,17 @@ P(x, y, z, theta, phi, wavelength, time)
 
 在没有遮挡和介质散射的自由空间中，一条光线可以用 4 个数描述。常见方法是 **two-plane parameterization / 两平面参数化**：
 
-```text
-一条 ray 穿过 UV 平面上的点 (u, v)
-同一条 ray 又穿过 ST 平面上的点 (s, t)
-所以 ray = (u, v, s, t)
-```
+一条 ray 穿过 UV 平面上的点 $(u, v)$，同一条 ray 又穿过 ST 平面上的点 $(s, t)$，所以可以用四元组表示：
+
+$$
+\text{ray} = (u, v, s, t)
+$$
 
 于是光场可以写成：
 
-```text
+$$
 L = L(u, v, s, t)
-```
+$$
 
 <LightFieldRefocusLab client:only="react" />
 

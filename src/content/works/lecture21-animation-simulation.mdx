@@ -115,9 +115,9 @@ t=0.5s: position = ???
 
 最简单的插值：
 
-```text
-lerp(a, b, t) = a + (b - a) * t
-```
+$$
+\text{lerp}(a, b, t) = a + (b - a) \cdot t
+$$
 
 优点：简单、快速。  
 缺点：速度恒定，不自然；转折处有尖角。
@@ -145,11 +145,13 @@ lerp(a, b, t) = a + (b - a) * t
 
 常见缓动函数：
 
-```text
-ease-in:  t^2
-ease-out: 1 - (1-t)^2
-ease-in-out: smoothstep(t) = 3t^2 - 2t^3
-```
+$$
+\begin{aligned}
+\text{ease-in:} \quad & t^2 \\
+\text{ease-out:} \quad & 1 - (1-t)^2 \\
+\text{ease-in-out:} \quad & \text{smoothstep}(t) = 3t^2 - 2t^3
+\end{aligned}
+$$
 
 ---
 
@@ -166,26 +168,26 @@ ease-in-out: smoothstep(t) = 3t^2 - 2t^3
 
 弹簧的力正比于形变量：
 
-```text
-F_spring = -k * (|x| - L_rest)
-```
+$$
+\mathbf{F}_{\text{spring}} = -k \cdot (|\mathbf{x}| - L_{\text{rest}}) \cdot \frac{\mathbf{x}}{|\mathbf{x}|}
+$$
 
 其中：
 
-- `k` 是弹簧刚度系数。
-- `|x|` 是当前长度。
-- `L_rest` 是静止长度。
+- $k$ 是弹簧刚度系数。
+- $|\mathbf{x}|$ 是当前长度。
+- $L_{\text{rest}}$ 是静止长度。
 - 负号表示力的方向总是试图恢复到静止长度。
 
 ### 阻尼 Damping
 
 真实弹簧会因为摩擦和空气阻力损失能量。阻尼力正比于速度：
 
-```text
-F_damping = -b * v
-```
+$$
+\mathbf{F}_{\text{damping}} = -b \cdot \mathbf{v}
+$$
 
-其中 `b` 是阻尼系数。
+其中 $b$ 是阻尼系数。
 
 ### 质点弹簧系统的应用
 
@@ -202,12 +204,14 @@ F_damping = -b * v
 
 物理模拟的核心是求解微分方程：
 
-```text
-F = ma
-a = F / m
-v' = a
-x' = v
-```
+$$
+\begin{aligned}
+\mathbf{F} &= m\mathbf{a} \\
+\mathbf{a} &= \mathbf{F} / m \\
+\mathbf{v}' &= \mathbf{a} \\
+\mathbf{x}' &= \mathbf{v}
+\end{aligned}
+$$
 
 但我们不能直接"求解"这个方程，只能用数值方法逐步逼近。
 
@@ -217,10 +221,12 @@ x' = v
 
 最简单的积分方法：
 
-```text
-v(t + Δt) = v(t) + a(t) * Δt
-x(t + Δt) = x(t) + v(t) * Δt
-```
+$$
+\begin{aligned}
+\mathbf{v}(t + \Delta t) &= \mathbf{v}(t) + \mathbf{a}(t) \cdot \Delta t \\
+\mathbf{x}(t + \Delta t) &= \mathbf{x}(t) + \mathbf{v}(t) \cdot \Delta t
+\end{aligned}
+$$
 
 优点：简单、快速。  
 缺点：不稳定，能量会爆炸增长。
@@ -229,10 +235,12 @@ x(t + Δt) = x(t) + v(t) * Δt
 
 用下一时刻的加速度更新速度：
 
-```text
-v(t + Δt) = v(t) + a(t + Δt) * Δt
-x(t + Δt) = x(t) + v(t + Δt) * Δt
-```
+$$
+\begin{aligned}
+\mathbf{v}(t + \Delta t) &= \mathbf{v}(t) + \mathbf{a}(t + \Delta t) \cdot \Delta t \\
+\mathbf{x}(t + \Delta t) &= \mathbf{x}(t) + \mathbf{v}(t + \Delta t) \cdot \Delta t
+\end{aligned}
+$$
 
 优点：稳定，能量不会爆炸。  
 缺点：需要求解方程组，计算量大。
@@ -286,11 +294,11 @@ x(t + Δt) = x(t) + v(t + Δt) * Δt
 
 | 力类型 | 公式 | 应用 |
 |---|---|---|
-| 重力 | F = m * g | 下落 |
-| 风力 | F = k * (v_wind - v) | 飘动 |
-| 阻力 | F = -b * v | 减速 |
-| 吸引/排斥 | F ∝ 1/r² | 磁场、电场 |
-| 湍流 | F = noise(x, t) | 随机扰动 |
+| 重力 | $\mathbf{F} = m \mathbf{g}$ | 下落 |
+| 风力 | $\mathbf{F} = k (\mathbf{v}_{\text{wind}} - \mathbf{v})$ | 飘动 |
+| 阻力 | $\mathbf{F} = -b \mathbf{v}$ | 减速 |
+| 吸引/排斥 | $\mathbf{F} \propto 1/r^2$ | 磁场、电场 |
+| 湍流 | $\mathbf{F} = \text{noise}(\mathbf{x}, t)$ | 随机扰动 |
 
 ### 粒子系统的应用
 
@@ -314,16 +322,14 @@ x(t + Δt) = x(t) + v(t + Δt) * Δt
 
 <ForwardKinematics3D client:only="react" />
 
-```text
-输入：关节角度 θ1, θ2, θ3, ...
-输出：末端位置 p_end
-```
+**输入：** 关节角度 $\theta_1, \theta_2, \theta_3, \ldots$  
+**输出：** 末端位置 $\mathbf{p}_{\text{end}}$
 
 FK 很简单，就是矩阵乘法：
 
-```text
-T_end = T_root * Rot(θ1) * Trans(L1) * Rot(θ2) * Trans(L2) * ...
-```
+$$
+\mathbf{T}_{\text{end}} = \mathbf{T}_{\text{root}} \cdot \text{Rot}(\theta_1) \cdot \text{Trans}(L_1) \cdot \text{Rot}(\theta_2) \cdot \text{Trans}(L_2) \cdots
+$$
 
 优点：简单、快速、稳定。  
 缺点：不直观，艺术家要调很多角度才能让手碰到目标。
@@ -334,16 +340,14 @@ T_end = T_root * Rot(θ1) * Trans(L1) * Rot(θ2) * Trans(L2) * ...
 
 <InverseKinematicsIK3D client:only="react" />
 
-```text
-输入：目标位置 p_target
-输出：关节角度 θ1, θ2, θ3, ...
-```
+**输入：** 目标位置 $\mathbf{p}_{\text{target}}$  
+**输出：** 关节角度 $\theta_1, \theta_2, \theta_3, \ldots$
 
 IK 是一个优化问题：
 
-```text
-minimize: |FK(θ) - p_target|²
-```
+$$
+\min_{\boldsymbol{\theta}} \left\| \text{FK}(\boldsymbol{\theta}) - \mathbf{p}_{\text{target}} \right\|^2
+$$
 
 常见 IK 求解方法：
 
@@ -387,27 +391,31 @@ minimize: |FK(θ) - p_target|²
 
 平动：
 
-```text
-F = m * a
-v' = F / m
-x' = v
-```
+$$
+\begin{aligned}
+\mathbf{F} &= m\mathbf{a} \\
+\mathbf{v}' &= \mathbf{F} / m \\
+\mathbf{x}' &= \mathbf{v}
+\end{aligned}
+$$
 
 转动：
 
-```text
-τ = I * α
-ω' = I⁻¹ * τ
-R' = ω × R
-```
+$$
+\begin{aligned}
+\boldsymbol{\tau} &= \mathbf{I} \boldsymbol{\alpha} \\
+\boldsymbol{\omega}' &= \mathbf{I}^{-1} \boldsymbol{\tau} \\
+\mathbf{R}' &= \boldsymbol{\omega} \times \mathbf{R}
+\end{aligned}
+$$
 
 其中：
 
-- `τ` 是力矩。
-- `I` 是惯性张量。
-- `α` 是角加速度。
-- `ω` 是角速度。
-- `R` 是旋转。
+- $\boldsymbol{\tau}$ 是力矩。
+- $\mathbf{I}$ 是惯性张量。
+- $\boldsymbol{\alpha}$ 是角加速度。
+- $\boldsymbol{\omega}$ 是角速度。
+- $\mathbf{R}$ 是旋转。
 
 ### 碰撞检测与响应
 
@@ -418,14 +426,14 @@ R' = ω × R
 
 碰撞响应：
 
-```text
-v_new = v_old + (1 + e) * J / m
-```
+$$
+\mathbf{v}_{\text{new}} = \mathbf{v}_{\text{old}} + \frac{(1 + e) \mathbf{J}}{m}
+$$
 
 其中：
 
-- `e` 是恢复系数（0=完全非弹性，1=完全弹性）。
-- `J` 是冲量。
+- $e$ 是恢复系数（0=完全非弹性，1=完全弹性）。
+- $\mathbf{J}$ 是冲量。
 
 ---
 
@@ -439,15 +447,17 @@ v_new = v_old + (1 + e) * J / m
 
 流体运动由 Navier-Stokes 方程描述：
 
-```text
-∂v/∂t + (v·∇)v = -∇p/ρ + ν∇²v + f
-∇·v = 0  (不可压缩)
-```
+$$
+\begin{aligned}
+\frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla)\mathbf{v} &= -\frac{\nabla p}{\rho} + \nu \nabla^2 \mathbf{v} + \mathbf{f} \\
+\nabla \cdot \mathbf{v} &= 0 \quad \text{(不可压缩)}
+\end{aligned}
+$$
 
 含义：
 
-- 左边：速度随时间变化 + 对流项。
-- 右边：压力梯度 + 粘性扩散 + 外力。
+- 第一行左边：速度随时间变化 + 对流项。
+- 第一行右边：压力梯度 + 粘性扩散 + 外力。
 - 第二行：不可压缩约束（密度恒定）。
 
 ### 流体模拟方法
@@ -463,14 +473,14 @@ v_new = v_old + (1 + e) * J / m
 
 SPH 用粒子表示流体，每个粒子的属性通过核函数插值：
 
-```text
-A(x) = Σ m_j * A_j / ρ_j * W(x - x_j, h)
-```
+$$
+A(\mathbf{x}) = \sum_j \frac{m_j A_j}{\rho_j} W(\mathbf{x} - \mathbf{x}_j, h)
+$$
 
 其中：
 
-- `W` 是核函数（通常是高斯或多项式）。
-- `h` 是影响半径。
+- $W$ 是核函数（通常是高斯或多项式）。
+- $h$ 是影响半径。
 
 SPH 的力包括：
 
