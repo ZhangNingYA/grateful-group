@@ -1,0 +1,519 @@
+---
+title: 'GAMES101 第22课:课程回顾与总结'
+description: 'GAMES101 第22课完整回顾:从光栅化、几何、光线追踪到材质、相机、颜色和动画,梳理整个图形学渲染管线的核心概念、关键公式和实践要点。'
+pubDate: '2026-06-01'
+---
+
+## 这节课在 GAMES101 里到底讲什么?
+
+第 22 课是整个 GAMES101 课程的**总结与回顾**。前面 21 课我们学习了计算机图形学的核心内容,从如何把三角形画到屏幕上,到如何模拟真实世界的光照、材质和运动。
+
+这一课的目标是:
+
+```text
+回顾核心概念
+-> 梳理知识脉络
+-> 理清技术选择
+-> 指明进阶方向
+```
+
+核心句:
+
+> 计算机图形学的本质是:用数学和算法,让计算机生成我们想要的图像。从光栅化到光线追踪,从几何到材质,从静态到动态,所有技术都在回答同一个问题:如何更真实、更高效、更可控地生成图像。
+
+---
+
+## 0. GAMES101 的知识地图
+
+整个课程可以分成几条主线:
+
+| 主线 | 核心问题 | 关键课程 |
+|---|---|---|
+| **光栅化管线** | 如何快速把三角形画到屏幕上 | 2-8课 |
+| **几何表示与处理** | 如何表示和操作形状 | 9-11课 |
+| **光线追踪** | 如何模拟光的物理传播 | 13-16课 |
+| **材质与外观** | 如何表示物体表面属性 | 17课 |
+| **高级渲染** | 如何处理复杂光照现象 | 18课 |
+| **相机与光场** | 如何模拟真实相机 | 19课 |
+| **颜色与感知** | 如何正确处理颜色 | 20课 |
+| **动画与模拟** | 如何让场景动起来 | 21课 |
+
+---
+
+## 1. 光栅化:实时渲染的基石
+
+### 1.1 核心流程
+
+```text
+3D 模型
+-> Model Transform (模型变换)
+-> View Transform (视图变换)
+-> Projection (投影)
+-> Viewport Transform (视口变换)
+-> Rasterization (光栅化)
+-> Fragment Shading (片元着色)
+-> Z-Buffer (深度测试)
+-> Frame Buffer (帧缓冲)
+```
+
+### 1.2 关键技术点
+
+| 技术 | 核心思想 | 关键公式/算法 |
+|---|---|---|
+| MVP 变换 | 把世界坐标变到屏幕坐标 | M_viewport · M_projection · M_view · M_model |
+| 透视投影 | 近大远小 | z' = -(n+f)/2 + nf/z |
+| 三角形光栅化 | 判断像素是否在三角形内 | 重心坐标、边函数 |
+| Z-Buffer | 解决遮挡 | 每个像素存最近深度 |
+| 抗锯齿 | 减少走样 | MSAA、SSAA、TAA |
+
+### 1.3 为什么光栅化快?
+
+- 三角形可以并行处理
+- 每个像素独立计算
+- GPU 硬件专门优化
+- 不需要递归追踪光线
+
+### 1.4 光栅化的局限
+
+- 难以处理全局光照(GI)
+- 反射和折射需要特殊技巧
+- 软阴影和焦散很难
+- 透明排序复杂
+
+---
+
+## 2. 几何:如何表示和处理形状
+
+### 2.1 几何表示方法
+
+| 表示方法 | 优点 | 缺点 | 应用 |
+|---|---|---|---|
+| 显式表示 | 直接、易渲染 | 难以判断内外 | 三角网格、点云 |
+| 隐式表示 | 易判断内外、易布尔运算 | 难以直接渲染 | SDF、CSG |
+| 参数化表示 | 平滑、可控 | 拓扑受限 | 曲线、曲面 |
+
+### 2.2 曲线与曲面
+
+**Bézier 曲线**:
+
+$$
+\mathbf{B}(t) = \sum_{i=0}^{n} \mathbf{P}_i B_i^n(t)
+$$
+
+其中 $B_i^n(t) = \binom{n}{i} t^i (1-t)^{n-i}$ 是 Bernstein 基函数。
+
+**细分曲面**:
+
+- Loop Subdivision (三角网格)
+- Catmull-Clark Subdivision (四边形网格)
+
+### 2.3 网格操作
+
+| 操作 | 目的 | 方法 |
+|---|---|---|
+| 简化 | 减少面数 | 边坍缩、二次误差度量 |
+| 细分 | 增加细节 | Loop、Catmull-Clark |
+| 正则化 | 改善网格质量 | 顶点平滑、边翻转 |
+| 重网格化 | 重新分布顶点 | 各向同性、特征对齐 |
+
+---
+
+## 3. 光线追踪:物理正确的渲染
+
+### 3.1 核心算法
+
+```text
+for each pixel:
+    ray = generateCameraRay(pixel)
+    color = traceRay(ray, depth=0)
+    
+function traceRay(ray, depth):
+    if depth > maxDepth:
+        return black
+    
+    hit = intersect(ray, scene)
+    if no hit:
+        return backgroundColor
+    
+    color = directLighting(hit)
+    
+    if material is reflective:
+        reflectRay = reflect(ray, hit.normal)
+        color += traceRay(reflectRay, depth+1)
+    
+    if material is refractive:
+        refractRay = refract(ray, hit.normal, ior)
+        color += traceRay(refractRay, depth+1)
+    
+    return color
+```
+
+### 3.2 加速结构
+
+| 结构 | 构建复杂度 | 查询复杂度 | 特点 |
+|---|---|---|---|
+| BVH | $O(n \log n)$ | $O(\log n)$ | 适合动态场景 |
+| KD-Tree | $O(n \log n)$ | $O(\log n)$ | 空间划分 |
+| Octree | $O(n)$ | $O(\log n)$ | 均匀划分 |
+
+### 3.3 渲染方程
+
+渲染方程描述了光在场景中的传播:
+
+```
+L_o(p, ω_o) = L_e(p, ω_o) + ∫_Ω f_r(p, ω_i, ω_o) L_i(p, ω_i) (n · ω_i) dω_i
+```
+
+含义:
+
+- L_o: 出射 radiance
+- L_e: 自发光
+- f_r: BRDF
+- L_i: 入射 radiance
+- n · ω_i: 余弦项
+
+### 3.4 蒙特卡洛积分
+
+$$
+\int f(x) dx \approx \frac{1}{N} \sum_{i=1}^{N} \frac{f(X_i)}{p(X_i)}
+$$
+
+关键:
+
+- 采样越多越准确
+- PDF 要匹配被积函数
+- 重要性采样减少方差
+
+---
+
+## 4. 材质:物体如何与光交互
+
+### 4.1 BRDF 模型
+
+| 模型 | 特点 | 应用 |
+|---|---|---|
+| Lambertian | 完全漫反射 | 粗糙表面 |
+| Phong | 经验模型 | 早期实时渲染 |
+| Blinn-Phong | Phong 改进 | 游戏常用 |
+| Cook-Torrance | 微表面理论 | PBR 基础 |
+| GGX | 长尾高光 | 现代 PBR |
+| Disney Principled | 艺术家友好 | 影视和游戏 |
+
+### 4.2 PBR 核心
+
+**微表面 BRDF**:
+
+```
+f_r = D(h) F(v, h) G(l, v, h) / [4 (n · l) (n · v)]
+```
+
+- D: 法线分布函数 (GGX)
+- F: Fresnel 项 (Schlick 近似)
+- G: 几何遮蔽项 (Smith)
+
+### 4.3 材质参数
+
+| 参数 | 含义 | 范围 |
+|---|---|---|
+| Base Color | 基础颜色 | RGB |
+| Metallic | 金属度 | 0-1 |
+| Roughness | 粗糙度 | 0-1 |
+| Normal | 法线扰动 | 切空间向量 |
+| Emissive | 自发光 | RGB + 强度 |
+| AO | 环境光遮蔽 | 0-1 |
+
+---
+
+## 5. 高级渲染技术
+
+### 5.1 全局光照
+
+| 技术 | 原理 | 优点 | 缺点 |
+|---|---|---|---|
+| Path Tracing | 蒙特卡洛采样 | 物理正确 | 慢、噪声 |
+| Photon Mapping | 光子存储 + 密度估计 | 处理焦散 | 有偏、参数敏感 |
+| Radiosity | 有限元方法 | 漫反射 GI | 只适合漫反射 |
+| VPL | 虚拟点光源 | 实时近似 | 奇异性问题 |
+
+### 5.2 实时 GI 近似
+
+- Screen Space GI (SSGI)
+- Voxel Cone Tracing
+- Light Propagation Volumes
+- Irradiance Probes
+- Signed Distance Field GI
+
+### 5.3 体积渲染
+
+**体积渲染方程**:
+
+```
+L_o = ∫₀ᴰ T(t) σₛ(t) Lᵢ(t) dt + T(D) L_bg
+```
+
+其中 T(t) = exp(-∫₀ᵗ σₜ(s) ds) 是透射率。
+
+应用:
+
+- 云、雾、烟
+- 次表面散射
+- 参与介质
+
+---
+
+## 6. 相机与颜色
+
+### 6.1 相机模型
+
+| 模型 | 特点 | 应用 |
+|---|---|---|
+| Pinhole | 全景深 | 基础渲染 |
+| Thin Lens | 景深、散景 | 摄影效果 |
+| Realistic Lens | 畸变、色差 | 高精度模拟 |
+
+### 6.2 颜色管线
+
+```text
+Scene-linear HDR
+-> Exposure
+-> Tone Mapping
+-> Color Grading
+-> Gamut Mapping
+-> Output Transform (sRGB/P3/Rec.2020)
+-> Display
+```
+
+### 6.3 关键概念
+
+- **线性空间**: 光照计算必须在线性空间
+- **sRGB**: 存储和显示编码,非线性
+- **HDR**: 高动态范围,需要 tone mapping
+- **色域**: 不同设备能显示的颜色范围
+- **白平衡**: 选择参考白点
+
+---
+
+## 7. 动画与模拟
+
+### 7.1 动画技术
+
+| 技术 | 控制方式 | 应用 |
+|---|---|---|
+| 关键帧动画 | 手动 | 角色动画 |
+| 物理模拟 | 自动 | 破坏、布料 |
+| 运动捕捉 | 真人表演 | 电影、AAA 游戏 |
+| 程序动画 | 算法生成 | 群体、植物 |
+
+### 7.2 物理模拟
+
+**质点弹簧系统**:
+
+```
+F = -k(|x| - L_rest) · (x/|x|) - b·v
+```
+
+**数值积分**:
+
+- 显式欧拉: 简单但不稳定
+- 隐式欧拉: 稳定但需要求解方程
+- Runge-Kutta: 高精度
+- Verlet: 保持能量
+
+### 7.3 运动学
+
+- **FK (Forward Kinematics)**: 关节角度 → 末端位置
+- **IK (Inverse Kinematics)**: 目标位置 → 关节角度
+
+---
+
+## 8. 技术选择:什么时候用什么
+
+### 8.1 光栅化 vs 光线追踪
+
+| 场景需求 | 推荐技术 | 原因 |
+|---|---|---|
+| 实时游戏 | 光栅化 + 混合光追 | 性能优先 |
+| 电影渲染 | 路径追踪 | 质量优先 |
+| 建筑可视化 | 路径追踪 | 需要准确 GI |
+| VR/AR | 光栅化 | 需要高帧率 |
+| 产品展示 | 混合 | 平衡质量和交互 |
+
+### 8.2 实时渲染优化策略
+
+```text
+1. 几何优化
+   - LOD (Level of Detail)
+   - Occlusion Culling
+   - Frustum Culling
+
+2. 光照优化
+   - Deferred Shading
+   - Forward+
+   - Clustered Shading
+
+3. 阴影优化
+   - Cascaded Shadow Maps
+   - Contact Shadows
+   - Ray Traced Shadows (混合)
+
+4. 反射优化
+   - Screen Space Reflections
+   - Reflection Probes
+   - Planar Reflections
+   - Ray Traced Reflections (混合)
+
+5. GI 优化
+   - Lightmaps (静态)
+   - Light Probes
+   - SSGI
+   - DDGI
+```
+
+---
+
+## 9. 常见问题与解决方案
+
+### 9.1 渲染问题
+
+| 问题 | 可能原因 | 解决方案 |
+|---|---|---|
+| 画面发灰 | Gamma 错误 | 检查线性/sRGB 转换 |
+| 画面太暗 | 曝光不足 | 调整 exposure |
+| 高光死白 | 缺少 tone mapping | 添加 tone mapping |
+| 锯齿严重 | 采样不足 | 增加 MSAA/TAA |
+| 阴影有锯齿 | Shadow map 分辨率低 | 提高分辨率或用 PCF |
+| 透明物体错误 | 排序问题 | 正确排序或用 OIT |
+
+### 9.2 性能问题
+
+| 症状 | 可能瓶颈 | 优化方向 |
+|---|---|---|
+| 帧率低 | GPU 计算 | 降低分辨率、简化 shader |
+| 加载慢 | I/O | 压缩、流式加载 |
+| 内存不足 | 资源过多 | LOD、纹理压缩 |
+| 卡顿 | CPU 瓶颈 | 多线程、减少 draw call |
+
+---
+
+## 10. 进阶方向
+
+### 10.1 实时渲染
+
+- **现代图形 API**: Vulkan、DirectX 12、Metal
+- **GPU 编程**: Compute Shader、CUDA
+- **实时光追**: DXR、OptiX
+- **虚幻引擎 / Unity**: 商业引擎深入
+
+### 10.2 离线渲染
+
+- **高级 Path Tracing**: Bidirectional PT、MLT
+- **渲染器开发**: PBRT、Mitsuba
+- **影视渲染**: Arnold、RenderMan、V-Ray
+- **光传输理论**: 更深入的数学
+
+### 10.3 专业领域
+
+- **游戏引擎**: 实时渲染管线
+- **电影特效**: Houdini、Nuke
+- **建筑可视化**: 照明模拟
+- **科学可视化**: 体积渲染、流场
+- **VR/AR**: 立体渲染、低延迟
+
+### 10.4 前沿研究
+
+- **神经渲染**: NeRF、Gaussian Splatting
+- **可微渲染**: 逆向渲染、参数优化
+- **实时 GI**: 新算法和硬件加速
+- **物理模拟**: MPM、SPH 改进
+- **AI 辅助**: 降噪、超分辨率、生成
+
+---
+
+## 11. 学习建议
+
+### 11.1 理论基础
+
+- **数学**: 线性代数、微积分、概率论
+- **物理**: 光学、力学
+- **算法**: 数据结构、优化
+
+### 11.2 实践项目
+
+```text
+初级:
+- 软光栅化器
+- 简单 ray tracer
+- Blinn-Phong 着色
+
+中级:
+- BVH 加速结构
+- Path tracer with GI
+- PBR 材质系统
+
+高级:
+- 完整渲染引擎
+- 实时混合渲染
+- 物理模拟系统
+```
+
+### 11.3 推荐资源
+
+**书籍**:
+- *Real-Time Rendering* (实时渲染圣经)
+- *Physically Based Rendering* (PBRT,离线渲染圣经)
+- *Computer Graphics: Principles and Practice*
+
+**课程**:
+- GAMES101 (入门)
+- GAMES202 (实时渲染)
+- GAMES103 (物理模拟)
+
+**论文**:
+- SIGGRAPH / SIGGRAPH Asia
+- Eurographics
+- I3D
+
+---
+
+## 12. 自测问题
+
+1. 光栅化和光线追踪的根本区别是什么?
+2. MVP 变换的每一步做什么?
+3. Z-Buffer 如何解决遮挡?
+4. 为什么需要重心坐标?
+5. Bézier 曲线的性质有哪些?
+6. BVH 和 KD-Tree 的区别?
+7. 渲染方程的物理含义?
+8. 什么是重要性采样?
+9. PBR 的核心思想?
+10. 为什么光照要在线性空间计算?
+11. 什么是 tone mapping?
+12. 景深是如何产生的?
+13. 显式欧拉和隐式欧拉的稳定性差异?
+14. FK 和 IK 分别适合什么场景?
+
+---
+
+## 总结
+
+GAMES101 带我们走过了计算机图形学的核心领域:
+
+**光栅化**教会我们如何快速把三角形画到屏幕上,这是实时渲染的基础。
+
+**几何**让我们理解如何表示和操作形状,从简单的三角网格到平滑的曲面。
+
+**光线追踪**展示了如何用物理方法模拟光的传播,得到真实的全局光照。
+
+**材质**解释了物体表面如何与光交互,PBR 让我们能够创建物理正确的材质。
+
+**相机与颜色**揭示了从场景到显示器的完整颜色管线,避免常见的颜色错误。
+
+**动画与模拟**让静态场景动起来,从关键帧到物理模拟。
+
+这些知识不是孤立的,而是相互关联的。理解它们之间的联系,才能在实际项目中做出正确的技术选择。
+
+图形学是一个不断发展的领域。从传统的光栅化和光线追踪,到现代的实时光追和神经渲染,技术在不断进步。但核心原理——如何用数学和算法生成图像——始终不变。
+
+掌握了 GAMES101 的内容,你已经具备了图形学的坚实基础。接下来,选择你感兴趣的方向,深入学习,动手实践,你会发现图形学的世界无比精彩。
+
+**继续探索,持续学习,享受创造的乐趣!**
