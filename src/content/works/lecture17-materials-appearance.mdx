@@ -58,7 +58,7 @@ $$
 
 学习材质时最容易迷路，因为术语很多：BRDF、BSDF、Fresnel、NDF、roughness、metallic、anisotropy、measured material……
 
-可以先用下面这张地图定位：
+
 
 ```text
 光线与表面交互
@@ -454,19 +454,41 @@ normal    决定表面朝向
 
 ## 11. 和实时 PBR 参数逐个对上
 
-第 17 课学完后，再看 PBR 参数就不再是“调参玄学”。
+**Base Color**  
+物理意义：非金属的 diffuse albedo；金属的 specular color（$ρ$ 或 $F_0$）  
+常见误区：金属的 baseColor 不是漫反射颜色
 
-| PBR 参数 | 物理意义 | 本课对应概念 | 常见误区 |
-|---|---|---|---|
-| Base Color | 非金属 diffuse albedo；金属 specular color | $ρ$ 或 $F_0$ | 金属的 baseColor 不是漫反射颜色 |
-| Metallic | 非金属和金属模型切换 | diffuse / specular 能量分配 | 不该用 0.5 做脏金属万能值 |
-| Roughness | 微表面法线分布宽度 | D 和 G | roughness 变大不是简单 blur |
-| Specular / IOR | 非金属正入射反射率 | Fresnel $F_0$ | 普通塑料 F0 通常很低 |
-| Normal Map | 改变局部法线 | 所有 dot product | normal map 不是颜色贴图 |
-| Anisotropy | 切线方向粗糙度差异 | tangent / bitangent | 没有 tangent 就不知道拉伸方向 |
-| Transmission | 透射比例 | BTDF / BSDF | 透明不等于没有反射 |
-| Emission | 自发光 | $L_e$ | emission 不是 BRDF 的一部分 |
-| Clearcoat | 额外光滑表层 | 多层 BRDF | 直接相加要注意能量守恒 |
+**Metallic**  
+物理意义：非金属和金属模型切换，控制 diffuse/specular 能量分配  
+常见误区：不该用 0.5 做”脏金属”万能值
+
+**Roughness**  
+物理意义：微表面法线分布宽度（影响 D 和 G 项）  
+常见误区：roughness 变大不是简单 blur 高光
+
+**Specular / IOR**  
+物理意义：非金属正入射反射率（Fresnel $F_0$）  
+常见误区：普通塑料 $F_0$ 通常很低（0.04 左右）
+
+**Normal Map**  
+物理意义：改变局部法线，影响所有 dot product  
+常见误区：normal map 不是颜色贴图，不能 sRGB 解码
+
+**Anisotropy**  
+物理意义：切线方向粗糙度差异（需要 tangent/bitangent）  
+常见误区：没有 tangent 就不知道拉伸方向
+
+**Transmission**  
+物理意义：透射比例（BTDF/BSDF）  
+常见误区：透明不等于没有反射（仍有 Fresnel）
+
+**Emission**  
+物理意义：自发光 $L_e$  
+常见误区：emission 不是 BRDF 的一部分
+
+**Clearcoat**  
+物理意义：额外光滑表层（多层 BRDF）  
+常见误区：直接相加要注意能量守恒
 
 简化版 microfacet PBR 伪代码：
 
@@ -560,6 +582,8 @@ BRDF 告诉渲染器：光从 wi 来到表面点 p 后，有多少 radiance 会�
 
 ## 自测问题
 
+### ⭐ 基础理解
+
 1. 为什么 BRDF 不是最终颜色？
 2. BRDF 的单位为什么是 $1 / sr$？
 3. Lambertian BRDF 为什么要写成 $ρ / π$？
@@ -568,6 +592,9 @@ BRDF 告诉渲染器：光从 wi 来到表面点 p 后，有多少 radiance 会�
 6. BRDF、BTDF、BSDF、BSSRDF 的区别是什么？
 7. 理想镜面为什么要用 delta distribution 描述？
 8. Fresnel 为什么让水面、地板、塑料边缘变亮？
+
+### 🔥 进阶思考
+
 9. Microfacet 模型中的 D、F、G 分别负责什么？
 10. GGX 为什么比传统 Phong 更适合现代 PBR？
 11. 金属和非金属的 base color 在物理意义上有什么不同？

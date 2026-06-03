@@ -72,21 +72,11 @@ $$
 \text{SDF}(\mathbf{p}) = |\mathbf{p}| - r
 $$
 
-拖动下面的 slider 改变采样点位置，观察 $f(\mathbf{p})$ 的符号如何决定内外关系：
-
 <ImplicitPointClassifier client:only="react" />
 
-**优点：**
-- 判断 inside/outside 只需计算 $f(\mathbf{p})$ 的符号
-- 对简单形状表达紧凑
-- 适合布尔运算、距离查询、拓扑变化
+**优点**：判断 inside/outside 只需计算符号；对简单形状表达紧凑；适合布尔运算、距离查询。
 
-**缺点：**
-- 看到公式不一定知道形状长什么样
-- 难以直接枚举表面点
-- 最终渲染通常仍需转换成 mesh
-
-> **自测：** 球半径 $r=1$，点 $\mathbf{p}=(0.3, 0.4, 0.5)$。计算 $f(\mathbf{p}) = 0.09 + 0.16 + 0.25 - 1 = -0.5$。因为 $f < 0$，点在球**内部**。
+**缺点**：公式不直观；难以枚举表面点；渲染通常需转换成 mesh。
 
 ---
 
@@ -99,8 +89,6 @@ $$
 **球面：** $x^2 + y^2 + z^2 - 1 = 0$
 
 **环面 Torus：** $(\sqrt{x^2 + y^2} - R)^2 + z^2 - r^2 = 0$
-
-改变方程的参数不是在移动顶点，而是在改变整个空间中的等式关系 — 所有满足新关系的点构成新的表面。
 
 <ImplicitSurfaceDemo client:only="react" />
 
@@ -125,10 +113,6 @@ CSG 和隐式表示关系紧密。对于每个点，只要知道它在 A 内还�
 - **Difference** $A - B$：属于 A 但不属于 B → SDF: $\max(d_A, -d_B)$
 
 <CSGDemo client:only="react" />
-
-这解释了为什么隐式表示适合布尔运算：因为它可以通过空间分类组合形状。显式网格做布尔运算需要计算交线、重新三角化，复杂且容易出错。
-
-> **自测：** 如果你有一个球和一个立方体的 SDF，写出"从立方体中挖去球"的 SDF 表达式。
 
 ---
 
@@ -178,7 +162,7 @@ $$
 
 <SDFBlendDemo client:only="react" />
 
-调整两个球的距离和 smoothness 参数，观察：
+
 - Hard union 有硬边连接
 - Smooth union 产生柔和过渡
 
@@ -215,7 +199,7 @@ Level Set 适合代数式不好写但可以采样成场的复杂对象：流体�
 
 <FractalRecursionViewer client:only="react" />
 
-调整递归深度，观察：
+
 - 深度 0：简单三角形
 - 深度 2-3：自相似结构显现
 - 深度 5-6：细节爆炸，线段数指数增长
@@ -313,7 +297,7 @@ Wavefront OBJ 是一种文本 mesh 格式，核心思想：
 
 **注意：OBJ 索引从 1 开始，不是从 0 开始。**
 
-点击下面 OBJ 文本的每一行，观察右侧 3D 中对应元素的高亮：
+
 
 <ObjFormatMiniLab client:only="react" />
 
