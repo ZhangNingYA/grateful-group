@@ -1,257 +1,85 @@
-const moments = [
-  {
-    label: '那一天',
-    title: '第一次相遇，时间开始有了名字',
-    detail:
-      '从这一天起，原本只是普通流动着的日子，忽然有了一个明确的起点。后来回头看，很多温柔都能顺着这条线找到来源。',
-  },
-  {
-    label: '记住的感觉',
-    title: '不是盛大的开场，但很真',
-    detail:
-      '第一次相遇未必要多戏剧化，真正珍贵的反而是那种安静又确定的感觉。像是终于和想见的人，在同一个时空里站稳了。',
-  },
-  {
-    label: '之后',
-    title: '很多故事都从这里慢慢长出来',
-    detail:
-      '后来的一起聊天、一起惦记、一起见面、一起开心，都会把这一天衬得更特别。它不是回忆的配角，而是整个时间线的起点。',
-  },
+import MemoryStoryPage from './MemoryStoryPage.jsx';
+
+const stats = [
+  { label: '写进首页的起点', value: '2025.10.18' },
+  { label: '这一页的主题', value: '第一次相遇' },
+  { label: '它留下来的意义', value: '整条时间线的第一页' },
+  { label: '后来的感觉', value: '想起就会变温柔' },
 ];
 
-const notes = [
-  '2025.10.18',
-  '第一次相遇',
-  '时间线的开始',
-  '以后每次回头看都会很重要',
+const highlights = [
+  { label: '日期', value: '2025 年 10 月 18 日' },
+  { label: '位置', value: '属于你们的开始' },
+  { label: '关键词', value: '相遇 / 靠近 / 记住' },
+  { label: '在整个栏目里的角色', value: '首页计时器的起点' },
 ];
+
+const timeline = {
+  eyebrow: 'Timeline Opening',
+  title: '这一天不吵闹，却决定了后来很多故事怎么发生。',
+  lead: '第一次相遇本身就值得单独留下，因为之后的很多幸福，都是从这一页开始往后写的。',
+  items: [
+    {
+      moment: '起点',
+      title: '时间开始有了一个可以反复确认的日子',
+      detail:
+        '原本只是普通流动着的日历，到了这一天忽然变得很具体。后来每次往回看，都会先看到它，然后才看到之后慢慢长出来的全部故事。',
+    },
+    {
+      moment: '靠近',
+      title: '第一次相遇，没有夸张，但很真',
+      detail:
+        '真正珍贵的从来不是戏剧化的开场，而是那种很安静、很确定的靠近感。像是终于和想见的人，在同一个时空里站稳了脚。',
+    },
+    {
+      moment: '之后',
+      title: '后来所有纪念，都能顺着这一天找到出处',
+      detail:
+        '一起聊天、一起想念、一起见面、一起开心，这些后来发生的事会把 10 月 18 日衬得越来越重要。它不是配角，而是最前面的那一页。',
+    },
+  ],
+};
+
+const fragments = {
+  eyebrow: 'Soft Fragments',
+  title: '有些日子不会大声提醒你，但会长期发亮。',
+  lead: '第一次相遇留下来的，不只是一个日期，还有一种很难被替代的开始感。',
+  items: [
+    {
+      title: '被首页记住',
+      detail: '你们在 `/games/` 首页看到的计时器，就是从这一天开始往后算的，所以它天然就该拥有自己的一页。',
+    },
+    {
+      title: '被后来的故事证明',
+      detail: '如果后面没有继续发生那么多靠近，这一天也许只是普通相遇。但正因为后来一直在延长，它才显得越来越珍贵。',
+    },
+    {
+      title: '被反复想起',
+      detail: '真正重要的开始，总会在不同时间重新发亮。哪怕只是在某个普通晚上回头看，也会觉得它仍然很轻，很暖，很对。',
+    },
+  ],
+};
+
+const closing = {
+  mark: 'first meeting / first page / first light',
+  title: '所以这一天不只是一个日期，它是后来整条时间线真正翻开的第一页。',
+  text: '以后继续往下写新的纪念时，这一页都会安静地待在最前面，提醒后来的所有温柔是从哪里开始的。',
+};
 
 export default function FirstMeetingMemory() {
   return (
-    <main className="fm-page">
-      <style>{styles}</style>
-
-      <section className="fm-hero">
-        <div className="fm-shell">
-          <p className="fm-kicker">The Beginning</p>
-          <div className="fm-date">2025.10.18</div>
-          <h1>第一次相遇，是后来所有纪念的起点。</h1>
-          <p className="fm-lead">
-            这一天被写在 `/games/` 首页最上面的计时器里，也应该被好好单独记下来。
-            从第一次相遇开始，后来的很多开心、想念和靠近，才有了真正的出处。
-          </p>
-        </div>
-      </section>
-
-      <section className="fm-notes">
-        <div className="fm-shell fm-notes-grid">
-          {notes.map((item) => (
-            <div className="fm-note" key={item}>
-              {item}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="fm-story">
-        <div className="fm-shell">
-          <div className="fm-head">
-            <p>时间线的开头</p>
-            <h2>有些日子并不喧哗，但会决定后面一切的语气。</h2>
-          </div>
-
-          <div className="fm-grid">
-            {moments.map((item) => (
-              <article className="fm-card" key={item.title}>
-                <span>{item.label}</span>
-                <h3>{item.title}</h3>
-                <p>{item.detail}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="fm-closing">
-        <div className="fm-shell">
-          <p className="fm-closing-mark">first meeting / first page / first light</p>
-          <h2>所以这一天不只是一个日期，它是后来整条时间线的第一页。</h2>
-        </div>
-      </section>
-    </main>
+    <MemoryStoryPage
+      headerLabel="diary · opening page"
+      meta={['2025.10.18', '第一次相遇', 'Memory Archive']}
+      title="第一次相遇，是后来所有纪念真正开始的地方。"
+      lead="这一天被写在 `/games/` 首页最上面的计时器里，也应该被单独认真留下。从第一次相遇开始，后来那些开心、想念、靠近和幸福，才真正有了出处。"
+      quote="有些开始不会很喧闹，但会让之后所有普通的日子都慢慢变得不同。"
+      stats={stats}
+      badge={{ eyebrow: 'Since', value: '10.18', label: 'first meeting' }}
+      highlights={highlights}
+      timeline={timeline}
+      fragments={fragments}
+      closing={closing}
+    />
   );
 }
-
-const styles = `
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    background:
-      radial-gradient(circle at top, rgba(245, 214, 224, 0.72), transparent 34%),
-      linear-gradient(180deg, #fffaf8 0%, #fffdfd 50%, #f7fbff 100%);
-    color: #2f2228;
-  }
-
-  .fm-shell {
-    width: min(1040px, calc(100vw - 40px));
-    margin: 0 auto;
-  }
-
-  .fm-hero,
-  .fm-notes,
-  .fm-story,
-  .fm-closing {
-    padding: 32px 0;
-  }
-
-  .fm-hero {
-    padding-top: 72px;
-    padding-bottom: 24px;
-  }
-
-  .fm-kicker,
-  .fm-head p,
-  .fm-closing-mark {
-    margin: 0 0 14px;
-    font-size: 0.84rem;
-    text-transform: uppercase;
-    color: #9b6173;
-  }
-
-  .fm-date {
-    display: inline-flex;
-    align-items: center;
-    min-height: 42px;
-    padding: 0 16px;
-    border-radius: 999px;
-    border: 1px solid rgba(160, 117, 135, 0.25);
-    background: rgba(255, 255, 255, 0.72);
-    color: #654653;
-    font-size: 0.95rem;
-  }
-
-  .fm-hero h1,
-  .fm-head h2,
-  .fm-closing h2 {
-    margin: 18px 0 0;
-    max-width: 12ch;
-    font-size: clamp(2.7rem, 5.4vw, 5rem);
-    line-height: 1.02;
-    color: #23181d;
-  }
-
-  .fm-lead,
-  .fm-card p {
-    margin: 18px 0 0;
-    max-width: 760px;
-    font-size: 1.04rem;
-    line-height: 1.8;
-    color: #5b484f;
-  }
-
-  .fm-notes-grid,
-  .fm-grid {
-    display: grid;
-    gap: 16px;
-  }
-
-  .fm-notes-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .fm-note,
-  .fm-card {
-    border-radius: 8px;
-    border: 1px solid rgba(122, 97, 106, 0.12);
-    background: rgba(255, 255, 255, 0.74);
-    box-shadow: 0 18px 40px rgba(108, 82, 91, 0.08);
-    backdrop-filter: blur(12px);
-  }
-
-  .fm-note {
-    min-height: 104px;
-    padding: 18px;
-    display: flex;
-    align-items: end;
-    font-size: 1.05rem;
-    line-height: 1.5;
-    color: #35262c;
-  }
-
-  .fm-story {
-    padding-top: 52px;
-    padding-bottom: 52px;
-  }
-
-  .fm-head h2 {
-    max-width: 11ch;
-    font-size: clamp(2rem, 4.3vw, 3.4rem);
-  }
-
-  .fm-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 28px;
-  }
-
-  .fm-card {
-    min-height: 260px;
-    padding: 22px;
-  }
-
-  .fm-card span {
-    font-size: 0.86rem;
-    color: #8f6f7a;
-  }
-
-  .fm-card h3 {
-    margin: 14px 0 0;
-    font-size: 1.4rem;
-    line-height: 1.28;
-    color: #2d1f25;
-  }
-
-  .fm-card p {
-    margin-top: 14px;
-    max-width: none;
-  }
-
-  .fm-closing {
-    padding-top: 26px;
-    padding-bottom: 86px;
-  }
-
-  .fm-closing h2 {
-    max-width: 14ch;
-    font-size: clamp(2rem, 4vw, 3.6rem);
-  }
-
-  @media (max-width: 900px) {
-    .fm-notes-grid,
-    .fm-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (max-width: 640px) {
-    .fm-shell {
-      width: min(100vw - 24px, 1040px);
-    }
-
-    .fm-hero {
-      padding-top: 42px;
-    }
-
-    .fm-notes-grid,
-    .fm-grid {
-      grid-template-columns: minmax(0, 1fr);
-    }
-
-    .fm-lead,
-    .fm-card p {
-      font-size: 0.98rem;
-    }
-  }
-`;
