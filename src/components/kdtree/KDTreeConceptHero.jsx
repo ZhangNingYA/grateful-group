@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, Line, Html, Float } from '@react-three/drei'
+import { OrbitControls, Line, Html } from '@react-three/drei'
 import { useRef, useState, useMemo } from 'react'
 import * as THREE from 'three'
 import { panelStyle, Header } from './ui.jsx'

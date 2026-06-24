@@ -17,6 +17,22 @@ export default defineConfig({
         rehypePlugins: [rehypeKatex],
     },
     integrations: [mdx(), sitemap(), react()],
+    vite: {
+        build: {
+            chunkSizeWarningLimit: 900,
+            rollupOptions: {
+                output: {
+                    manualChunks(id) {
+                        if (!id.includes('node_modules')) return undefined;
+                        if (id.includes('@react-three/fiber')) return 'react-three-fiber';
+                        if (id.includes('@react-three/drei')) return 'react-three-drei';
+                        if (id.includes('\\three\\') || id.includes('/three/')) return 'three';
+                        return undefined;
+                    },
+                },
+            },
+        },
+    },
     fonts: [
         {
             provider: fontProviders.local(),
