@@ -1,0 +1,32 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import LearningPost from '../../layouts/LearningPost.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('learning');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+
+type Props = CollectionEntry<'learning'>;
+
+const post = Astro.props;
+const { Content, headings } = await render(post);
+
+const manualHeadings: Record<string, typeof headings> = {
+  '2025-12-cet6-reading-1': [
+    { depth: 2, slug: '选词填空', text: '选词填空' },
+    { depth: 2, slug: '段落匹配', text: '段落匹配' },
+    { depth: 2, slug: '阅读理解一', text: '阅读理解一' },
+    { depth: 2, slug: '阅读理解二', text: '阅读理解二' },
+  ],
+};
+
+const tocHeadings = manualHeadings[post.id] ?? headings;
+---
+
+<LearningPost {...post.data} headings={tocHeadings}>
+  <Content />
+</LearningPost>
