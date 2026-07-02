@@ -370,17 +370,169 @@ const WORD_HINTS = {
   universal: '普遍的；全民的',
   wealthy: '富有的',
   whirlwind: '旋涡；快速变化',
+  imagine: '想象',
+  massive: '巨大的',
+  portion: '一份',
+  fried: '油炸的',
+  dessert: '甜点',
+  powerful: '强烈的',
+  urge: '冲动',
+  adults: '成年人',
+  researchers: '研究人员',
+  shown: '表明；显示',
+  linked: '相关联的',
+  phenomenon: '现象',
+  characterized: '以……为特征',
+  sedentary: '久坐不动的',
+  biologically: '生物学上',
+  ancient: '古代的',
+  calories: '卡路里；热量',
+  intake: '摄入量',
+  mechanism: '机制',
+  preventing: '防止',
+  accumulation: '累积',
+  naturally: '自然地',
+  significant: '显著的；相当多的',
+  halfway: '中途；一半',
+  session: '一次活动；一段时间',
+  sugar: '糖',
+  psychologist: '心理学家',
+  renowned: '著名的',
+  university: '大学',
+  coffee: '咖啡',
+  punishing: '惩罚性的',
+  experiments: '实验',
+  estranged: '疏远的',
+  therapists: '治疗师',
+  tendency: '倾向',
+  perfection: '完美',
+  trait: '特质',
+  anxiety: '焦虑',
+  suicide: '自杀',
+  measured: '测量；衡量',
+  prescribed: '规定的',
+  expectations: '期望',
+  unrealistic: '不现实的',
+  criticized: '被批评的',
+  spouse: '配偶',
+  chores: '家务',
+  contingent: '取决于……的',
+  assumes: '认为；假设',
+  standardized: '标准化的',
+  alerts: '提醒',
+  rival: '竞争对手',
+  eroded: '被侵蚀的',
+  marketplace: '市场',
+  ambitious: '有抱负的',
+  aggressively: '积极地；强力地',
+  setback: '挫折',
+  archive: '档案',
+  defeat: '失败',
+  attorney: '律师',
+  partner: '合伙人',
+  accomplishments: '成就',
+  audience: '观众',
+  manifests: '表现出来',
+  handicap: '妨碍；制造障碍',
+  perseverance: '毅力',
+  talent: '天赋',
+  award: '奖项',
+  intelligence: '智力',
+  qualifications: '资质',
+  logs: '记录',
+  values: '价值观',
+  yoga: '瑜伽',
+  therapy: '治疗',
+  transformation: '转变',
+  pathological: '病态的',
+  protect: '保护',
+  obsessively: '过度地；执着地',
+  harm: '伤害',
+  doctor: '医生',
+  unconstrained: '不受限制的',
+  access: '接触机会；访问',
+  advertisers: '广告商',
+  marketers: '营销人员',
+  identity: '身份认同',
+  validation: '认可；验证',
+  citizens: '公民',
+  contribute: '贡献',
+  gradually: '逐渐地',
+  assault: '攻势；攻击',
+  purchases: '购买',
+  psychologists: '心理学家',
+  emerging: '正在出现的',
+  consumerism: '消费主义',
+  depression: '抑郁',
+  manipulation: '操纵',
+  emotions: '情绪',
+  desires: '欲望',
+  possessions: '财产；拥有物',
+  viral: '病毒式传播的',
+  advertising: '广告',
+  marketing: '营销',
+  consumers: '消费者',
+  adulthood: '成年',
+  objections: '反对意见',
+  breach: '违反；侵犯',
+  corporations: '公司',
+  brainwash: '洗脑',
+  decisions: '决定',
+  pervasive: '无处不在的',
+  targeting: '针对',
+  surveillance: '监控',
+  inherent: '内在的',
+  dehumanizing: '去人性化的',
+  relentless: '持续不断的',
+  pressure: '压力',
+  firms: '公司',
+  productivity: '生产力',
+  revenue: '收入',
+  techniques: '技术；方法',
+  performance: '表现',
+  assess: '评估',
+  interacting: '互动',
+  analytics: '数据分析',
+  exhaust: '废气；残留数据',
+  messaging: '通讯',
+  equipped: '配备的',
+  devices: '设备',
+  microphones: '麦克风',
+  volume: '音量',
+  intrusive: '侵入性的',
+  bullying: '欺凌',
+  harassment: '骚扰',
+  unexpected: '意外的',
+  outperform: '表现优于',
+  undetected: '未被发现的',
+  implanted: '植入的',
+  typing: '打字',
+  biometrics: '生物识别',
+  schemes: '方案',
+  voluntary: '自愿的',
+  convenience: '便利',
+  substantial: '相当多的；大量的',
+  inserted: '插入的；植入的',
+  detrimental: '有害的',
+  autonomy: '自主权',
+  initiatives: '举措',
+  communicated: '被传达的',
+  revolts: '反抗',
+  effectively: '有效地',
+  anonymised: '匿名化的',
+  sceptical: '怀疑的',
+  liberties: '自由权利',
+  empowering: '赋能的',
+  oppression: '压迫',
+  counterproductive: '适得其反的',
 };
 
 function normalizePhrase(phrase) {
   return typeof phrase === 'string' ? { term: phrase } : phrase;
 }
 
-function getTermKind(term) {
-  return term.trim().split(/\s+/).length > 1 ? '短语' : '单词';
-}
-
-function explainPhrase(term) {
+function explainPhrase(term, phraseNotes) {
+  if (phraseNotes?.[term]) return phraseNotes[term];
   if (PHRASE_NOTES[term]) return PHRASE_NOTES[term];
   const words = term
     .toLowerCase()
@@ -389,7 +541,21 @@ function explainPhrase(term) {
     .split(/\s+/)
     .filter(Boolean);
   const hints = words.map((word) => WORD_HINTS[word]).filter(Boolean);
-  return hints.length > 0 ? `词义线索：${[...new Set(hints)].join(' / ')}` : '结合本句译文理解';
+  return hints.length > 0 ? [...new Set(hints)].join(' / ') : '重点表达';
+}
+
+function phraseMeaning(term, phraseNotes) {
+  if (phraseNotes?.[term]) return phraseNotes[term];
+  if (PHRASE_NOTES[term]) return PHRASE_NOTES[term];
+  const normalized = term.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  return WORD_HINTS[normalized];
+}
+
+function displayPhrases(item) {
+  return (item.phrases || [])
+    .map(normalizePhrase)
+    .filter((phrase) => phrase?.term)
+    .slice(0, 12);
 }
 
 function sectionId(section, index) {
@@ -400,62 +566,95 @@ function sectionId(section, index) {
     .replace(/^-+|-+$/g, '') || `section-${index + 1}`;
 }
 
-function splitSentence(en) {
-  return en
-    .replace(/[“”"]/g, '')
-    .split(/(?<=,|;|:|—)\s+|\s+(?=and\b|but\b|because\b|if\b|which\b|who\b|where\b|when\b|while\b|that\b)/i)
-    .map((part) => part.trim())
-    .filter((part) => part.length > 18)
-    .slice(0, 5);
-}
+function structureLines(item) {
+  const lines = Array.isArray(item.analysis) && item.analysis.length > 0
+    ? item.analysis
+    : [{ label: '结构分析', text: item.structure || '' }];
 
-function grammarTags(item) {
-  const text = `${item.en || ''} ${item.structure || ''}`.toLowerCase();
-  const tags = [];
-
-  if (/\b(who|which|where)\b/.test(text)) tags.push('定语从句：先找到被修饰名词，再把从句后置翻译。');
-  if (/\bit is\b.*\bthat\b|\bthat\b/.test(text)) tags.push('名词性从句 / that 结构：that 后通常承载真正说明内容。');
-  if (/\b(if|because|since|when|while|given|compared to|regardless of)\b/.test(text)) tags.push('状语信息：时间、原因、条件或让步先标出来，再回到主句。');
-  if (/\b(and|but|or|as well as|rather than)\b/.test(text)) tags.push('并列 / 转折：注意并列对象是否同级，but 后往往是作者重点。');
-  if (/\b(to [a-z]+|ing\b|by |with |for )/.test(text)) tags.push('非谓语或介词短语：多半补充目的、方式、范围或伴随状态。');
-
-  return tags.slice(0, 3);
-}
-
-function structureDetails(item) {
-  const chunks = splitSentence(item.en || '');
-  const tags = grammarTags(item);
-  return {
-    chunks,
-    tags,
-  };
+  const unique = [];
+  const seen = new Set();
+  lines.forEach((line) => {
+    const key = `${line.label}:${line.text}`;
+    if (line.text && !seen.has(key)) {
+      seen.add(key);
+      unique.push(line);
+    }
+  });
+  return unique;
 }
 
 export function PageStyles() {
   return (
     <style>{`
       :root {
-        --cet6-ink: #24211d;
-        --cet6-muted: #6b6258;
-        --cet6-faint: #aaa095;
-        --cet6-paper: #fffdf8;
-        --cet6-cream: #f7f0e4;
-        --cet6-wash: #fbf7ef;
-        --cet6-line: #e8ddcb;
-        --cet6-line-soft: #f0e8da;
-        --cet6-clay: #9f6047;
-        --cet6-clay-soft: #f2dfd3;
-        --cet6-sage: #63765a;
-        --cet6-sage-soft: #e8eddf;
-        --cet6-honey: #bd8b31;
+        --cet6-ink: #171310;
+        --cet6-muted: #5d574e;
+        --cet6-faint: #a8a092;
+        --cet6-paper: #ffffff;
+        --cet6-cream: #f7f4ee;
+        --cet6-wash: #f8f6f1;
+        --cet6-line: #eae3d8;
+        --cet6-line-soft: #f1ece2;
+        --cet6-clay: #9c5f46;
+        --cet6-clay-soft: #f1e3d9;
+        --cet6-sage: #5f7257;
+        --cet6-sage-soft: #e9eddf;
+        --cet6-honey: #b08328;
+      }
+
+      /* 这个阅读页保持白底长读，只加非常淡的流动纸纹 */
+      body:has(.cet6-review) {
+        background: #ffffff;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body:has(.cet6-review)::before,
+      body:has(.cet6-review)::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      body:has(.cet6-review)::before {
+        opacity: 0.55;
+        background-image:
+          linear-gradient(115deg, rgba(156, 95, 70, 0.045) 0 1px, transparent 1px 18px),
+          linear-gradient(115deg, rgba(95, 114, 87, 0.035) 0 1px, transparent 1px 26px);
+        background-size: 180px 180px, 260px 260px;
+        animation: cet6-paper-drift 28s linear infinite;
+      }
+
+      body:has(.cet6-review)::after {
+        opacity: 0.42;
+        background:
+          radial-gradient(circle at 18% 22%, rgba(241, 227, 217, 0.52), transparent 26%),
+          radial-gradient(circle at 82% 36%, rgba(233, 237, 223, 0.48), transparent 28%),
+          radial-gradient(circle at 50% 88%, rgba(176, 131, 40, 0.09), transparent 30%);
+        filter: blur(18px);
+        animation: cet6-light-drift 36s ease-in-out infinite alternate;
+      }
+
+      @keyframes cet6-paper-drift {
+        from { background-position: 0 0, 0 0; }
+        to { background-position: 180px 180px, -260px 260px; }
+      }
+
+      @keyframes cet6-light-drift {
+        from { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+        to { transform: translate3d(1.5%, 1%, 0) scale(1.035); }
       }
 
       .cet6-review {
-        font-family: "Georgia", "Songti SC", "STSong", "PingFang SC", "Microsoft YaHei", serif;
+        font-family: "Source Serif 4", "Charter", "Georgia", "Noto Serif SC", "Songti SC", "STSong", serif;
         color: var(--cet6-ink);
         position: relative;
-        max-width: 760px;
+        z-index: 1;
+        max-width: 720px;
         margin-inline: auto;
+        --cet6-rhythm: 1.8;
       }
 
       .cet6-review * {
@@ -493,10 +692,11 @@ export function PageStyles() {
 
       .cet6-hero h2 {
         margin: 14px 0 12px;
-        font-size: clamp(1.9rem, 3.4vw, 2.55rem);
-        line-height: 1.2;
-        letter-spacing: 0;
-        font-weight: 650;
+        font-family: "Source Serif 4", "Charter", "Georgia", "Noto Serif SC", serif;
+        font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+        line-height: 1.22;
+        letter-spacing: -0.005em;
+        font-weight: 600;
       }
 
       .cet6-hero p {
@@ -508,7 +708,7 @@ export function PageStyles() {
       }
 
       .cet6-section {
-        margin: 44px 0 58px;
+        margin: 56px 0 72px;
         scroll-margin-top: 112px;
       }
 
@@ -520,10 +720,11 @@ export function PageStyles() {
 
       .cet6-section-title {
         margin: 10px 0 8px;
-        font-size: clamp(1.32rem, 2.6vw, 1.78rem);
+        font-family: "Source Serif 4", "Charter", "Georgia", "Noto Serif SC", serif;
+        font-size: clamp(1.3rem, 2.6vw, 1.72rem);
         line-height: 1.3;
-        letter-spacing: 0;
-        font-weight: 650;
+        letter-spacing: -0.005em;
+        font-weight: 600;
       }
 
       .cet6-section-desc {
@@ -539,13 +740,13 @@ export function PageStyles() {
       }
 
       .cet6-card {
-        padding: 32px 0 34px;
+        padding: 40px 0 42px;
         border-bottom: 1px solid var(--cet6-line-soft);
-        transition: opacity 0.2s ease;
+        transition: opacity 0.35s ease;
       }
 
       .cet6-card:first-child {
-        padding-top: 8px;
+        padding-top: 12px;
       }
 
       .cet6-card:last-child {
@@ -583,63 +784,37 @@ export function PageStyles() {
         opacity: 0.5;
       }
 
-      /* 英文：阅读主角，最大字号、舒展行距 */
+      /* 英文：阅读主角，Source Serif 屏幕衬线，舒展行距，长读不累 */
       .cet6-en {
         margin: 0;
-        font-size: 1.28rem;
-        line-height: 1.92;
-        letter-spacing: 0.002em;
+        font-family: "Source Serif 4", "Charter", "Georgia", "Songti SC", serif;
+        font-size: 1.84rem;
+        line-height: 1.64;
+        letter-spacing: 0;
         color: var(--cet6-ink);
-      }
-
-      /* 中文：紧贴英文，克制的次级呈现，不再是高亮盒子 */
-      .cet6-zh {
-        margin: 12px 0 0;
-        padding-left: 16px;
-        border-left: 2px solid #ded1bf;
-        color: var(--cet6-muted);
-        font-size: 1.03rem;
-        line-height: 1.9;
-        font-family: "Songti SC", "STSong", "PingFang SC", serif;
-      }
-
-      /* 解析触发按钮 */
-      .cet6-detail-toggle {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 18px;
-        padding: 0;
-        border: none;
-        background: none;
-        color: var(--cet6-faint);
-        font-family: "Inter", "PingFang SC", sans-serif;
-        font-size: 0.76rem;
         font-weight: 650;
-        cursor: pointer;
-        transition: color 0.16s ease;
+        text-wrap: pretty;
       }
 
-      .cet6-detail-toggle:hover {
-        color: var(--cet6-clay);
+      /* 中文：紧贴英文，克制的次级呈现，柔和不抢戏 */
+      .cet6-zh {
+        margin: 16px 0 0;
+        padding-left: 18px;
+        border-left: 2px solid var(--cet6-line);
+        color: var(--cet6-muted);
+        font-size: 1.2rem;
+        line-height: 1.9;
+        font-family: "Noto Serif SC", "Songti SC", "STSong", "PingFang SC", serif;
+        text-wrap: pretty;
       }
 
-      .cet6-detail-toggle .cet6-caret {
-        transition: transform 0.2s ease;
-        font-size: 0.7rem;
-      }
-
-      .cet6-detail-toggle.is-open .cet6-caret {
-        transform: rotate(90deg);
-      }
-
-      /* 折叠区：结构 + 短语，展开才出现 */
+      /* 解析区：结构 + 短语，常驻显示 */
       .cet6-detail {
-        margin-top: 16px;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
         gap: 18px;
-        padding: 18px 0 0;
+        padding: 20px 0 0;
         border-top: 1px dashed var(--cet6-line);
         background: transparent;
         border-radius: 0;
@@ -655,15 +830,31 @@ export function PageStyles() {
         min-width: 0;
       }
 
+      .cet6-note + .cet6-note {
+        padding-top: 16px;
+        border-top: 1px solid var(--cet6-line-soft);
+      }
+
       .cet6-note-title {
-        display: block;
-        margin-bottom: 8px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
         color: var(--cet6-clay);
         font-family: "Inter", "PingFang SC", sans-serif;
         font-size: 0.68rem;
         font-weight: 800;
         letter-spacing: 0.08em;
         text-transform: uppercase;
+      }
+
+      .cet6-note-title::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: currentColor;
+        opacity: 0.65;
       }
 
       .cet6-note p {
@@ -673,88 +864,112 @@ export function PageStyles() {
         line-height: 1.74;
       }
 
-      .cet6-structure-stack {
+      .cet6-structure-lines {
         display: grid;
-        gap: 10px;
+        gap: 8px;
       }
 
-      .cet6-structure-block {
-        padding-top: 9px;
-        border-top: 1px dashed var(--cet6-line);
+      .cet6-structure-line {
+        position: relative;
+        margin: 0;
+        padding: 5px 8px 5px 10px;
+        border-radius: 8px;
+        color: var(--cet6-ink);
+        font-size: 0.94rem;
+        line-height: 1.78;
+        transition: transform 0.22s cubic-bezier(.2,.8,.2,1), color 0.2s ease, background 0.2s ease;
+      }
+
+      .cet6-structure-line:hover {
+        background: rgba(241, 227, 217, 0.42);
+        color: var(--cet6-ink);
+        transform: translateX(6px);
       }
 
       .cet6-structure-label {
-        display: block;
-        margin-bottom: 6px;
         color: var(--cet6-sage);
         font-family: "Inter", "PingFang SC", sans-serif;
-        font-size: 0.66rem;
+        font-size: 0.74rem;
         font-weight: 800;
-        letter-spacing: 0.04em;
-      }
-
-      .cet6-structure-block ol,
-      .cet6-structure-block ul {
-        margin: 0;
-        padding-left: 18px;
-        color: var(--cet6-muted);
-      }
-
-      .cet6-structure-block li {
-        margin: 4px 0;
-        font-size: 0.84rem;
-        line-height: 1.62;
+        letter-spacing: 0;
+        margin-right: 4px;
       }
 
       .cet6-phrases {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 28px;
+        row-gap: 0;
       }
 
-      /* 短语：统一中性纸调，去掉蓝色，英文中文同行排版 */
       .cet6-phrase {
-        display: flex;
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
         align-items: baseline;
-        gap: 8px;
-        padding-bottom: 8px;
-        border-bottom: 1px dashed var(--cet6-line);
+        gap: 12px;
+        min-width: 0;
+        padding: 9px 8px 10px 12px;
+        border-bottom: 1px solid var(--cet6-line-soft);
+        border-radius: 8px;
+        transition: transform 0.22s cubic-bezier(.2,.8,.2,1), border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
       }
 
-      .cet6-phrase:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
+      .cet6-phrase::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        bottom: 10px;
+        width: 2px;
+        border-radius: 999px;
+        background: var(--cet6-clay);
+        opacity: 0;
+        transform: scaleY(0.4);
+        transition: opacity 0.18s ease, transform 0.22s cubic-bezier(.2,.8,.2,1);
       }
 
-      .cet6-term-kind {
-        flex-shrink: 0;
-        width: 24px;
-        color: var(--cet6-faint);
-        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-        font-size: 0.6rem;
-        font-weight: 700;
-        line-height: 1.5;
+      .cet6-phrase:hover {
+        background: rgba(248, 246, 241, 0.92);
+        box-shadow: 0 10px 24px rgba(74, 55, 40, 0.07);
+        transform: translateY(-3px);
+        border-bottom-color: rgba(156, 95, 70, 0.32);
+      }
+
+      .cet6-phrase:hover::before {
+        opacity: 1;
+        transform: scaleY(1);
       }
 
       .cet6-phrase-en {
-        font-family: "Inter", "PingFang SC", sans-serif;
-        font-size: 0.84rem;
-        font-weight: 650;
+        min-width: 0;
+        font-family: "Source Serif 4", Georgia, serif;
+        font-size: 0.93rem;
+        font-weight: 600;
         color: var(--cet6-ink);
-        line-height: 1.4;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+        transition: color 0.18s ease;
       }
 
-      .cet6-phrase.cet6-word .cet6-phrase-en {
-        color: var(--cet6-sage);
+      .cet6-phrase:hover .cet6-phrase-en {
+        color: var(--cet6-clay);
       }
 
       .cet6-phrase-zh {
-        margin-left: auto;
+        min-width: 0;
+        margin-left: 0;
         text-align: right;
         color: var(--cet6-muted);
         font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
         font-size: 0.78rem;
-        line-height: 1.4;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+        transition: color 0.18s ease;
+      }
+
+      .cet6-phrase:hover .cet6-phrase-zh {
+        color: var(--cet6-ink);
       }
 
       /* 难度：5 个小圆点，融入顶部元信息行 */
@@ -815,19 +1030,21 @@ export function PageStyles() {
 
       /* ---------- 工具栏（粘性） ---------- */
       .cet6-toolbar {
-        position: relative;
-        top: auto;
+        position: sticky;
+        top: 12px;
         z-index: 40;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         gap: 9px 10px;
         margin: 26px 0 40px;
-        padding: 0 0 20px;
-        border-top: none;
-        border-bottom: 1px solid var(--cet6-line-soft);
-        background: transparent;
-        box-shadow: none;
+        padding: 12px 16px;
+        border: 1px solid var(--cet6-line);
+        border-radius: 14px;
+        background: rgba(255, 253, 248, 0.86);
+        backdrop-filter: blur(10px) saturate(120%);
+        -webkit-backdrop-filter: blur(10px) saturate(120%);
+        box-shadow: 0 6px 20px rgba(74, 55, 40, 0.06);
       }
 
       .cet6-tool-group {
@@ -924,7 +1141,13 @@ export function PageStyles() {
 
       /* ---------- 题型导航 ---------- */
       .cet6-nav {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        width: 100%;
+        padding-bottom: 12px;
+        margin-bottom: 2px;
+        border-bottom: 1px dashed var(--cet6-line-soft);
       }
 
       .cet6-nav a {
@@ -1045,8 +1268,6 @@ export function PageStyles() {
           top: 8px;
           padding: 10px 12px;
           margin-inline: -2px;
-          border: 1px solid var(--cet6-line);
-          border-radius: 14px;
         }
 
         .cet6-tool-spacer {
@@ -1056,6 +1277,8 @@ export function PageStyles() {
         .cet6-hero {
           padding: 20px 18px;
           border-radius: 14px;
+          background: var(--cet6-wash);
+          border: 1px solid var(--cet6-line-soft);
         }
 
         .cet6-card {
@@ -1070,6 +1293,36 @@ export function PageStyles() {
 
         .cet6-detail {
           grid-template-columns: 1fr;
+        }
+
+        .cet6-phrases {
+          grid-template-columns: 1fr;
+        }
+
+        .cet6-phrase {
+          grid-template-columns: 1fr;
+          gap: 3px;
+          padding-inline: 10px;
+        }
+
+        .cet6-phrase-zh {
+          text-align: left;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        body:has(.cet6-review)::before,
+        body:has(.cet6-review)::after {
+          animation: none !important;
+        }
+
+        .cet6-structure-line,
+        .cet6-phrase,
+        .cet6-phrase::before,
+        .cet6-phrase-en,
+        .cet6-phrase-zh {
+          transition: none !important;
+          transform: none !important;
         }
       }
     `}</style>
@@ -1123,43 +1376,67 @@ function useStoredSet(storageKey) {
 }
 
 function StructureNote({ item }) {
-  const details = structureDetails(item);
+  const lines = structureLines(item);
   return (
     <div className="cet6-note">
       <span className="cet6-note-title">结构分析</span>
-      <div className="cet6-structure-stack">
-        <p>{item.structure}</p>
-        {details.chunks.length > 1 && (
-          <div className="cet6-structure-block">
-            <span className="cet6-structure-label">断句顺序</span>
-            <ol>
-              {details.chunks.map((chunk) => (
-                <li key={chunk}>{chunk}</li>
-              ))}
-            </ol>
-          </div>
-        )}
-        {details.tags.length > 0 && (
-          <div className="cet6-structure-block">
-            <span className="cet6-structure-label">语法抓手</span>
-            <ul>
-              {details.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-          </div>
-        )}
+      <div className="cet6-structure-lines">
+        {lines.map((line) => (
+          <p className="cet6-structure-line" key={`${line.label}:${line.text}`}>
+            <span className="cet6-structure-label">{line.label}：</span>
+            {line.text}
+          </p>
+        ))}
       </div>
     </div>
   );
 }
 
-function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster }) {
+function DifficultyDots({ level }) {
+  const difficultyLevel = Math.max(1, Math.min(5, Number(level) || 1));
+  return (
+    <span className="cet6-difficulty" aria-label={`难度 ${difficultyLevel}/5`}>
+      {Array.from({ length: 5 }).map((_, dotIndex) => (
+        <span
+          key={dotIndex}
+          className={`cet6-dot${dotIndex < difficultyLevel ? ` is-on lvl-${difficultyLevel}` : ''}`}
+        />
+      ))}
+    </span>
+  );
+}
+
+// 结构分析 + 重点词汇，列表模式与专注模式共用
+function SentenceDetail({ item, className, phraseNotes }) {
+  const phrases = displayPhrases(item);
+  return (
+    <div className={`cet6-detail${className ? ` ${className}` : ''}`}>
+      <StructureNote item={item} />
+      {phrases.length > 0 && (
+        <div className="cet6-note">
+          <span className="cet6-note-title">重点单词 / 短语</span>
+          <div className="cet6-phrases">
+            {phrases.map((phrase) => {
+              const normalized = normalizePhrase(phrase);
+              const meaning = normalized.zh || phraseMeaning(normalized.term, phraseNotes) || explainPhrase(normalized.term, phraseNotes);
+              return (
+                <span className="cet6-phrase" key={normalized.term}>
+                  <span className="cet6-phrase-en">{normalized.term}</span>
+                  <span className="cet6-phrase-zh">{meaning}</span>
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster, phraseNotes }) {
   // 全局“遮译文”开启时，单卡默认遮住，点击可临时揭开
   const [revealed, setRevealed] = useState(false);
-  const [detailOpen, setDetailOpen] = useState(false);
   const showZh = !hideZh || revealed;
-  const difficultyLevel = Math.max(1, Math.min(5, Number(item.difficulty) || 1));
 
   return (
     <article className={`cet6-card${mastered ? ' is-mastered' : ''}`}>
@@ -1167,14 +1444,7 @@ function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster }
         <span className="cet6-label">{item.label || String(index + 1).padStart(2, '0')}</span>
         {item.part && <span className="cet6-part">{item.part}</span>}
         <span className="cet6-mark-sep" aria-hidden="true" />
-        <span className="cet6-difficulty" aria-label={`难度 ${difficultyLevel}/5`}>
-          {Array.from({ length: 5 }).map((_, dotIndex) => (
-            <span
-              key={dotIndex}
-              className={`cet6-dot${dotIndex < difficultyLevel ? ` is-on lvl-${difficultyLevel}` : ''}`}
-            />
-          ))}
-        </span>
+        <DifficultyDots level={item.difficulty} />
         <div className="cet6-card-actions">
           <button
             type="button"
@@ -1208,36 +1478,7 @@ function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster }
             <span>先自己翻译，点开对照译文</span>
           </div>
         )}
-        <button
-          type="button"
-          className={`cet6-detail-toggle${detailOpen ? ' is-open' : ''}`}
-          aria-expanded={detailOpen}
-          onClick={() => setDetailOpen((v) => !v)}
-        >
-          <span className="cet6-caret">›</span>
-          {detailOpen ? '收起结构与词汇' : '展开结构与词汇'}
-        </button>
-        {detailOpen && (
-          <div className="cet6-detail">
-            <StructureNote item={item} />
-            <div className="cet6-note">
-              <span className="cet6-note-title">重点单词 / 短语</span>
-              <div className="cet6-phrases">
-                {(item.phrases || []).map((phrase) => {
-                  const normalized = normalizePhrase(phrase);
-                  const kind = normalized.kind || getTermKind(normalized.term);
-                  return (
-                    <span className={`cet6-phrase ${kind === '单词' ? 'cet6-word' : 'cet6-phrase-term'}`} key={normalized.term}>
-                      <span className="cet6-term-kind">{kind}</span>
-                      <span className="cet6-phrase-en">{normalized.term}</span>
-                      <span className="cet6-phrase-zh">{normalized.zh || explainPhrase(normalized.term)}</span>
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        )}
+        <SentenceDetail item={item} phraseNotes={phraseNotes} />
       </div>
     </article>
   );
@@ -1247,6 +1488,7 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
   const reviewIntro = data?.intro ?? intro;
   const reviewSections = data?.sections ?? sections ?? [];
   const reviewStorageKey = data?.storageKey ?? storageKey ?? 'learning-reading-review';
+  const reviewPhraseNotes = data?.phraseNotes ?? {};
   const [difficulty, setDifficulty] = useState('all');
   const [hideZh, setHideZh] = useState(false);
   const [hideMastered, setHideMastered] = useState(false);
@@ -1323,7 +1565,14 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
           <h2>{reviewIntro.title}</h2>
           <p>{reviewIntro.description}</p>
           <div className="cet6-progress">
-            <div className="cet6-progress-track">
+            <div
+              className="cet6-progress-track"
+              role="progressbar"
+              aria-valuenow={masteredCount}
+              aria-valuemin={0}
+              aria-valuemax={totalCount}
+              aria-label={`已掌握 ${masteredCount} / ${totalCount} 句`}
+            >
               <div
                 className="cet6-progress-fill"
                 style={{ width: `${totalCount ? (masteredCount / totalCount) * 100 : 0}%` }}
@@ -1385,9 +1634,20 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
         </button>
       </div>
 
-      {decorated.map((s, sectionIndex) => {
-        const visible = s.items.filter(matchesFilters);
-        return (
+      {(() => {
+        const isFiltering = difficulty !== 'all' || hideMastered;
+        const rendered = decorated
+          .map((s, sectionIndex) => ({ s, sectionIndex, visible: s.items.filter(matchesFilters) }))
+          // 筛选生效时跳过空分区，避免多个空状态框堆叠
+          .filter(({ visible }) => !isFiltering || visible.length > 0);
+
+        if (rendered.length === 0) {
+          return (
+            <div className="cet6-empty">当前筛选下没有句子。试试调整难度或关闭“隐藏已掌握”。</div>
+          );
+        }
+
+        return rendered.map(({ s, sectionIndex, visible }) => (
           <section
             className="cet6-section"
             id={s.id}
@@ -1413,13 +1673,14 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
                     hideZh={hideZh}
                     mastered={mastered.has(key)}
                     onToggleMaster={toggleMaster}
+                    phraseNotes={reviewPhraseNotes}
                   />
                 ))}
               </div>
             )}
           </section>
-        );
-      })}
+        ));
+      })()}
     </div>
   );
 }
