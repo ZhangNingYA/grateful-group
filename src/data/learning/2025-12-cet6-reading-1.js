@@ -181,16 +181,20 @@ export const cet6Reading202512Set1 = {
               "zh": "人们普遍认为"
             },
             {
-              "term": "regular exercise",
-              "zh": "规律锻炼"
-            },
-            {
               "term": "an assortment of",
               "zh": "各种各样的"
             },
             {
               "term": "maintain the habit",
               "zh": "保持习惯"
+            },
+            {
+              "term": "regular exercise",
+              "zh": "规律锻炼"
+            },
+            {
+              "term": "over time",
+              "zh": "随着时间推移"
             }
           ],
           "difficulty": 3
@@ -209,6 +213,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "to start",
               "zh": "开始"
+            },
+            {
+              "term": "too late to do",
+              "zh": "太晚而不能做；来不及做"
             }
           ],
           "difficulty": 1
@@ -221,24 +229,24 @@ export const cet6Reading202512Set1 = {
           "structure": "主句是 New research looked at people；who increased... 修饰 people；and 连接第二个主句 those individuals showed declines；which were similar... 修饰 declines。",
           "phrases": [
             {
-              "term": "increase exercise levels",
-              "zh": "提高运动水平"
+              "term": "throughout their lives",
+              "zh": "贯穿一生"
             },
             {
-              "term": "beyond levels",
-              "zh": "超过……水平"
+              "term": "increase exercise levels",
+              "zh": "提高运动水平"
             },
             {
               "term": "early mortality",
               "zh": "早亡；过早死亡"
             },
             {
-              "term": "exercise consistently",
-              "zh": "持续稳定地锻炼"
+              "term": "beyond levels",
+              "zh": "超过……水平"
             },
             {
-              "term": "throughout their lives",
-              "zh": "贯穿一生"
+              "term": "exercise consistently",
+              "zh": "持续稳定地锻炼"
             }
           ],
           "difficulty": 5
@@ -255,12 +263,12 @@ export const cet6Reading202512Set1 = {
               "zh": "下降幅度为"
             },
             {
-              "term": "compared to",
-              "zh": "与……相比"
-            },
-            {
               "term": "people who did not exercise",
               "zh": "不锻炼的人"
+            },
+            {
+              "term": "compared to",
+              "zh": "与……相比"
             }
           ],
           "difficulty": 2
@@ -273,10 +281,6 @@ export const cet6Reading202512Set1 = {
           "structure": "Those who... 是主语；saw reductions 是谓语；in their incidence of... 是 reductions 的范围；which were similar... 补充说明 reductions。",
           "phrases": [
             {
-              "term": "begin exercising",
-              "zh": "开始锻炼"
-            },
-            {
               "term": "in middle age",
               "zh": "在中年时期"
             },
@@ -286,7 +290,11 @@ export const cet6Reading202512Set1 = {
             },
             {
               "term": "steady exercisers",
-              "zh": "稳定锻炼者"
+              "zh": "长期稳定锻炼者"
+            },
+            {
+              "term": "begin exercising",
+              "zh": "开始锻炼"
             }
           ],
           "difficulty": 4
@@ -299,16 +307,16 @@ export const cet6Reading202512Set1 = {
           "structure": "why bother doing...? 表示“为什么还费心做某事”；throughout your life 作时间状语。",
           "phrases": [
             {
+              "term": "throughout your life",
+              "zh": "贯穿一生"
+            },
+            {
               "term": "why bother doing",
               "zh": "为什么还费心做某事"
             },
             {
               "term": "exercise consistently",
               "zh": "持续稳定地锻炼"
-            },
-            {
-              "term": "throughout your life",
-              "zh": "贯穿你的一生"
             }
           ],
           "difficulty": 2
@@ -321,24 +329,24 @@ export const cet6Reading202512Set1 = {
           "structure": "concede 后接 that 宾语从句；interpret... to mean that... 表示“把……理解为……”；but 连接转折分句。",
           "phrases": [
             {
-              "term": "authors of the study",
-              "zh": "该研究的作者"
+              "term": "be a mistake",
+              "zh": "是错误的"
             },
             {
-              "term": "concede that",
-              "zh": "承认……"
+              "term": "authors of the study",
+              "zh": "该研究的作者"
             },
             {
               "term": "interpret findings to mean",
               "zh": "把研究发现理解为"
             },
             {
-              "term": "delay starting",
-              "zh": "推迟开始"
+              "term": "concede that",
+              "zh": "承认……"
             },
             {
-              "term": "be a mistake",
-              "zh": "是一个错误"
+              "term": "delay starting",
+              "zh": "推迟开始"
             }
           ],
           "difficulty": 4
@@ -373,12 +381,12 @@ export const cet6Reading202512Set1 = {
           "structure": "主谓宾清晰；better cognitive functioning 和 lowered risk 并列作 include 的宾语。",
           "phrases": [
             {
-              "term": "health benefits",
-              "zh": "健康益处"
-            },
-            {
               "term": "cognitive functioning",
               "zh": "认知功能"
+            },
+            {
+              "term": "health benefits",
+              "zh": "健康益处"
             },
             {
               "term": "lowered risk",
@@ -399,6 +407,10 @@ export const cet6Reading202512Set1 = {
           "structure": "The latter 指 lowered risk of gaining weight；given... 是介词短语，表示“鉴于、考虑到”。",
           "phrases": [
             {
+              "term": "global obesity epidemic",
+              "zh": "全球肥胖流行"
+            },
+            {
               "term": "the latter",
               "zh": "后者"
             },
@@ -409,10 +421,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "given",
               "zh": "鉴于；考虑到"
-            },
-            {
-              "term": "global obesity epidemic",
-              "zh": "全球肥胖流行"
             }
           ],
           "difficulty": 3
@@ -425,14 +433,6 @@ export const cet6Reading202512Set1 = {
           "structure": "assert that... 接宾语从句；because 引导原因；if...when... 构成嵌套条件与时间状语；be more likely to... 是核心判断。",
           "phrases": [
             {
-              "term": "in addition",
-              "zh": "此外"
-            },
-            {
-              "term": "assert that",
-              "zh": "断言；声称"
-            },
-            {
               "term": "make a habit of",
               "zh": "养成……习惯"
             },
@@ -443,6 +443,14 @@ export const cet6Reading202512Set1 = {
             {
               "term": "keep up patterns",
               "zh": "保持模式"
+            },
+            {
+              "term": "in addition",
+              "zh": "此外"
+            },
+            {
+              "term": "assert that",
+              "zh": "断言；声称"
             }
           ],
           "difficulty": 5
@@ -454,6 +462,10 @@ export const cet6Reading202512Set1 = {
           "zh": "因此，理想情况是人们在儿童或青少年时期就开始锻炼；无论年龄多大，始终保持积极的生活方式都是有益的。",
           "structure": "两个 it is... 结构由 and 连接；for people to start... 是真正主语；when... 作时间状语；regardless of... 作让步。",
           "phrases": [
+            {
+              "term": "at all times",
+              "zh": "始终；任何时候"
+            },
             {
               "term": "it is ideal for",
               "zh": "它适合"
@@ -467,12 +479,12 @@ export const cet6Reading202512Set1 = {
               "zh": "保持积极生活方式"
             },
             {
-              "term": "at all times",
-              "zh": "始终"
-            },
-            {
               "term": "regardless of",
               "zh": "不管；无论"
+            },
+            {
+              "term": "to start",
+              "zh": "开始"
             }
           ],
           "difficulty": 4
@@ -489,16 +501,16 @@ export const cet6Reading202512Set1 = {
               "zh": "确实表明"
             },
             {
+              "term": "in your 40s and 50s",
+              "zh": "在四五十岁时"
+            },
+            {
               "term": "have not been active",
               "zh": "一直不活跃"
             },
             {
               "term": "still benefit",
               "zh": "仍然受益"
-            },
-            {
-              "term": "in your 40s and 50s",
-              "zh": "在四五十岁时"
             }
           ],
           "difficulty": 4
@@ -541,20 +553,20 @@ export const cet6Reading202512Set1 = {
           "structure": "Since last summer 是时间状语；that 指 hard work；has meant 后接两个并列宾语：shifts 和 assignments。",
           "phrases": [
             {
-              "term": "since last summer",
-              "zh": "自去年夏天以来"
-            },
-            {
-              "term": "shifts",
-              "zh": "转变"
-            },
-            {
               "term": "as well as",
               "zh": "以及；还"
             },
             {
+              "term": "since last summer",
+              "zh": "自去年夏天以来"
+            },
+            {
               "term": "short assignments",
               "zh": "短期任务"
+            },
+            {
+              "term": "shifts",
+              "zh": "转变"
             }
           ],
           "difficulty": 3
@@ -567,16 +579,16 @@ export const cet6Reading202512Set1 = {
           "structure": "where 引导非限制性定语从句，修饰 work 的场景。",
           "phrases": [
             {
-              "term": "long hours",
-              "zh": "长时间工作"
-            },
-            {
               "term": "repetitive work",
               "zh": "重复性工作"
             },
             {
               "term": "absolute consistency",
               "zh": "绝对一致性"
+            },
+            {
+              "term": "long hours",
+              "zh": "长时间工作"
             }
           ],
           "difficulty": 2
@@ -593,12 +605,12 @@ export const cet6Reading202512Set1 = {
               "zh": "听到某人做某事"
             },
             {
-              "term": "complain",
-              "zh": "抱怨"
-            },
-            {
               "term": "in fact",
               "zh": "事实上"
+            },
+            {
+              "term": "complain",
+              "zh": "抱怨"
             }
           ],
           "difficulty": 2
@@ -611,8 +623,8 @@ export const cet6Reading202512Set1 = {
           "structure": "For 表原因；破折号解释 robot；that can... 是定语从句，内部三个动词 flip/fry、monitor、clean up 并列。",
           "phrases": [
             {
-              "term": "cloud-connected",
-              "zh": "云端连接的"
+              "term": "clean up afterwards",
+              "zh": "事后清理"
             },
             {
               "term": "mechanical arm",
@@ -627,8 +639,8 @@ export const cet6Reading202512Set1 = {
               "zh": "翻煎汉堡"
             },
             {
-              "term": "clean up afterwards",
-              "zh": "事后清理"
+              "term": "cloud-connected",
+              "zh": "云端连接的"
             }
           ],
           "difficulty": 5
@@ -645,12 +657,12 @@ export const cet6Reading202512Set1 = {
               "zh": "由……创造"
             },
             {
-              "term": "part of",
-              "zh": "……的一部分"
-            },
-            {
               "term": "be described as",
               "zh": "被描述为"
+            },
+            {
+              "term": "part of",
+              "zh": "……的一部分"
             },
             {
               "term": "happen to",
@@ -667,16 +679,16 @@ export const cet6Reading202512Set1 = {
           "structure": "that it road-tests... 修饰 machines；into which 引导非限制性定语从句，先行词是 restaurants。",
           "phrases": [
             {
-              "term": "road-test",
-              "zh": "实地测试"
-            },
-            {
               "term": "across the world",
-              "zh": "全球各地"
+              "zh": "在全球范围内"
             },
             {
               "term": "be deployed",
               "zh": "被部署"
+            },
+            {
+              "term": "road-test",
+              "zh": "实地测试"
             }
           ],
           "difficulty": 4
@@ -690,11 +702,11 @@ export const cet6Reading202512Set1 = {
           "phrases": [
             {
               "term": "not alone",
-              "zh": "并非唯一；并非孤例"
+              "zh": "并非唯一"
             },
             {
-              "term": "Flippy",
-              "zh": "文中的厨房机器人名称"
+              "term": "Flippy is not alone",
+              "zh": "Flippy 并非个例；还有类似机器人"
             }
           ],
           "difficulty": 1
@@ -729,12 +741,12 @@ export const cet6Reading202512Set1 = {
           "structure": "时间状语 Ten years ago 置前；主系表结构。",
           "phrases": [
             {
-              "term": "robot-chefs",
-              "zh": "机器人厨师"
-            },
-            {
               "term": "pure science fiction",
               "zh": "纯粹的科幻"
+            },
+            {
+              "term": "robot-chefs",
+              "zh": "机器人厨师"
             }
           ],
           "difficulty": 1
@@ -751,12 +763,12 @@ export const cet6Reading202512Set1 = {
               "zh": "现实"
             },
             {
-              "term": "at prices",
-              "zh": "以……价格"
-            },
-            {
               "term": "plausible investment",
               "zh": "合理可行的投资"
+            },
+            {
+              "term": "at prices",
+              "zh": "以……价格"
             }
           ],
           "difficulty": 3
@@ -769,20 +781,20 @@ export const cet6Reading202512Set1 = {
           "structure": "主句 Penny will be shipped；on a subscription basis 作方式状语；that offers... 修饰 basis；says... 是插入报道语。",
           "phrases": [
             {
-              "term": "be shipped",
-              "zh": "被运送；上市交付"
-            },
-            {
               "term": "on a subscription basis",
               "zh": "以订阅模式"
+            },
+            {
+              "term": "chief operating officer",
+              "zh": "首席运营官"
             },
             {
               "term": "immediate return",
               "zh": "即时回报"
             },
             {
-              "term": "chief operating officer",
-              "zh": "首席运营官"
+              "term": "be shipped",
+              "zh": "被发货；被交付"
             }
           ],
           "difficulty": 4
@@ -795,12 +807,16 @@ export const cet6Reading202512Set1 = {
           "structure": "a reported 表示“据称、据报道的”；cost 后直接接价格。",
           "phrases": [
             {
-              "term": "a reported",
-              "zh": "据报道的"
-            },
-            {
               "term": "cost $60,000 to $100,000",
               "zh": "花费 6 万到 10 万美元"
+            },
+            {
+              "term": "a reported",
+              "zh": "据称的；据报道的"
+            },
+            {
+              "term": "cost a reported",
+              "zh": "据报道花费……"
             }
           ],
           "difficulty": 2
@@ -813,16 +829,16 @@ export const cet6Reading202512Set1 = {
           "structure": "主干是 restaurants are a possibility；managed... 修饰 restaurants；破折号中的 where 从句解释餐厅运作方式。",
           "phrases": [
             {
-              "term": "fully automated",
-              "zh": "全自动化的"
-            },
-            {
               "term": "minimal human oversight",
               "zh": "最低限度人工监督"
             },
             {
               "term": "order at screens",
               "zh": "在屏幕上下单"
+            },
+            {
+              "term": "fully automated",
+              "zh": "全自动化的"
             },
             {
               "term": "pay electronically",
@@ -839,16 +855,16 @@ export const cet6Reading202512Set1 = {
           "structure": "两个分句并列；needs knitting together 是 need doing 结构；diners buy into 修饰 way。",
           "phrases": [
             {
+              "term": "buy into",
+              "zh": "接受；认同"
+            },
+            {
               "term": "knit together",
               "zh": "整合起来"
             },
             {
               "term": "cost-effectively",
               "zh": "以低成本高效方式"
-            },
-            {
-              "term": "buy into",
-              "zh": "接受；认同"
             }
           ],
           "difficulty": 4
@@ -861,12 +877,12 @@ export const cet6Reading202512Set1 = {
           "structure": "In an industry... 作背景状语；keen to... 修饰 industry；主句是 automation seems inevitable。",
           "phrases": [
             {
-              "term": "be keen to",
-              "zh": "热衷于"
-            },
-            {
               "term": "slash labour costs",
               "zh": "大幅削减劳动力成本"
+            },
+            {
+              "term": "be keen to",
+              "zh": "热衷于"
             },
             {
               "term": "increase profits",
@@ -887,16 +903,16 @@ export const cet6Reading202512Set1 = {
           "structure": "After... 作时间状语；credit A with B 表示“把 B 归功于 A”。",
           "phrases": [
             {
-              "term": "eight-month test",
-              "zh": "为期八个月的测试"
-            },
-            {
               "term": "credit A with B",
               "zh": "把 B 归功于 A"
             },
             {
               "term": "drive an increase in sales",
               "zh": "推动销售增长"
+            },
+            {
+              "term": "eight-month test",
+              "zh": "为期八个月的测试"
             }
           ],
           "difficulty": 3
@@ -909,20 +925,24 @@ export const cet6Reading202512Set1 = {
           "structure": "主语是 the self-ordering screens；that McDonald's... 修饰 screens；yielded 是谓语。",
           "phrases": [
             {
-              "term": "meanwhile",
-              "zh": "与此同时"
+              "term": "yield a rise",
+              "zh": "带来增长"
             },
             {
               "term": "self-ordering screens",
               "zh": "自助点餐屏"
             },
             {
-              "term": "yield a rise",
-              "zh": "带来增长"
-            },
-            {
               "term": "order values",
               "zh": "订单金额"
+            },
+            {
+              "term": "a reported",
+              "zh": "据称的；据报道的"
+            },
+            {
+              "term": "meanwhile",
+              "zh": "与此同时"
             }
           ],
           "difficulty": 4
@@ -935,20 +955,20 @@ export const cet6Reading202512Set1 = {
           "structure": "is seen as 是被动判断；key to... 表示“……的关键”；alongside 连接另一个关键因素。",
           "phrases": [
             {
-              "term": "personalisation",
-              "zh": "个性化"
-            },
-            {
               "term": "be seen as key to",
               "zh": "被视为……的关键"
             },
             {
-              "term": "alongside",
-              "zh": "与……一起；伴随"
-            },
-            {
               "term": "push upsells",
               "zh": "推送加购项"
+            },
+            {
+              "term": "personalisation",
+              "zh": "个性化"
+            },
+            {
+              "term": "alongside",
+              "zh": "与……一起；伴随"
             }
           ],
           "difficulty": 4
@@ -960,6 +980,10 @@ export const cet6Reading202512Set1 = {
           "zh": "不久以后，当你登录餐厅应用时，它将能够利用你的数据和购买历史向你推荐菜品，并把从天气到你的情绪等因素都考虑进去；如果你是在能识别人脸的屏幕上下单，它甚至会读取你的情绪。",
           "structure": "when 引导时间状语；it will be able to use...to recommend... 是主干；factoring in... 作伴随状语；if 从句插在 from...to... 结构中。",
           "phrases": [
+            {
+              "term": "read your face",
+              "zh": "识别你的脸"
+            },
             {
               "term": "log into",
               "zh": "登录"
@@ -975,10 +999,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "factor in",
               "zh": "把……考虑进去"
-            },
-            {
-              "term": "read your face",
-              "zh": "读取你的面部表情"
             }
           ],
           "difficulty": 5
@@ -991,12 +1011,16 @@ export const cet6Reading202512Set1 = {
           "structure": "简单句；compromise on 表示“在……方面妥协”。",
           "phrases": [
             {
+              "term": "compromise on choice",
+              "zh": "在选择上妥协"
+            },
+            {
               "term": "right now",
               "zh": "现在"
             },
             {
-              "term": "compromise on choice",
-              "zh": "在选择上妥协"
+              "term": "compromise on",
+              "zh": "在……上妥协"
             }
           ],
           "difficulty": 1
@@ -1015,6 +1039,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "one-size-fits-all menu",
               "zh": "一刀切菜单"
+            },
+            {
+              "term": "one-size-fits-all",
+              "zh": "一刀切的；通用但不个性化的"
             }
           ],
           "difficulty": 2
@@ -1026,10 +1054,6 @@ export const cet6Reading202512Set1 = {
           "zh": "归根结底，技术可以让我们做出个性化选择。",
           "structure": "allow sb. to do sth. 结构；Ultimately 表总结。",
           "phrases": [
-            {
-              "term": "ultimately",
-              "zh": "最终"
-            },
             {
               "term": "allow sb. to do",
               "zh": "允许某人做某事"
@@ -1049,20 +1073,20 @@ export const cet6Reading202512Set1 = {
           "structure": "前一句是口语化设问；Here's... 是推荐句；people like you mostly order 修饰 dish，省略关系词。",
           "phrases": [
             {
-              "term": "spicy food",
-              "zh": "辛辣食物"
-            },
-            {
               "term": "people like you",
               "zh": "像你这样的人"
             },
             {
-              "term": "mostly order",
-              "zh": "大多点餐"
-            },
-            {
               "term": "hospitality tech company",
               "zh": "餐饮服务技术公司"
+            },
+            {
+              "term": "spicy food",
+              "zh": "辛辣食物"
+            },
+            {
+              "term": "mostly order",
+              "zh": "通常点单"
             }
           ],
           "difficulty": 3
@@ -1079,16 +1103,16 @@ export const cet6Reading202512Set1 = {
               "zh": "热情谈论"
             },
             {
-              "term": "pop-up",
-              "zh": "临时店；快闪店"
-            },
-            {
               "term": "full-service restaurant",
               "zh": "全服务餐厅"
             },
             {
               "term": "delivery services",
               "zh": "配送服务"
+            },
+            {
+              "term": "pop-up",
+              "zh": "临时店；快闪店"
             }
           ],
           "difficulty": 3
@@ -1105,12 +1129,12 @@ export const cet6Reading202512Set1 = {
               "zh": "第一次"
             },
             {
-              "term": "digital",
-              "zh": "数字化的"
-            },
-            {
               "term": "new versions of restaurants",
               "zh": "新的餐厅形态"
+            },
+            {
+              "term": "digital",
+              "zh": "数字化的"
             }
           ],
           "difficulty": 3
@@ -1127,16 +1151,16 @@ export const cet6Reading202512Set1 = {
               "zh": "商业街快餐"
             },
             {
-              "term": "automation-ready",
-              "zh": "适合自动化"
+              "term": "be likely to",
+              "zh": "可能会"
             },
             {
               "term": "high-end restaurants",
               "zh": "高端餐厅"
             },
             {
-              "term": "be likely to",
-              "zh": "可能会"
+              "term": "automation-ready",
+              "zh": "适合自动化"
             }
           ],
           "difficulty": 3
@@ -1153,12 +1177,12 @@ export const cet6Reading202512Set1 = {
               "zh": "还要很久才会"
             },
             {
-              "term": "five-star robot-chef",
-              "zh": "五星级机器人厨师"
-            },
-            {
               "term": "AI and robotics",
               "zh": "人工智能与机器人学"
+            },
+            {
+              "term": "five-star robot-chef",
+              "zh": "五星级机器人厨师"
             }
           ],
           "difficulty": 3
@@ -1202,11 +1226,11 @@ export const cet6Reading202512Set1 = {
           "phrases": [
             {
               "term": "fragile foods",
-              "zh": "易碎食物"
+              "zh": "易碎/易损食物"
             },
             {
               "term": "on plates",
-              "zh": "在盘子上"
+              "zh": "在盘子里"
             },
             {
               "term": "incredibly slow",
@@ -1223,12 +1247,12 @@ export const cet6Reading202512Set1 = {
           "structure": "简单句；Currently 标示现阶段限制。",
           "phrases": [
             {
-              "term": "currently",
-              "zh": "目前"
-            },
-            {
               "term": "limited functionality",
               "zh": "功能有限"
+            },
+            {
+              "term": "robots have limited functionality",
+              "zh": "机器人功能有限"
             }
           ],
           "difficulty": 1
@@ -1263,20 +1287,20 @@ export const cet6Reading202512Set1 = {
           "structure": "地点状语置前；主语 jobs；such as topping pizzas 插入举例；are done by humans 为被动。",
           "phrases": [
             {
-              "term": "robot-powered",
-              "zh": "机器人驱动的"
-            },
-            {
-              "term": "pizza-delivery company",
-              "zh": "披萨配送公司"
+              "term": "be done by humans",
+              "zh": "由人类完成"
             },
             {
               "term": "topping pizzas",
               "zh": "给披萨加配料"
             },
             {
-              "term": "be done by humans",
-              "zh": "由人类完成"
+              "term": "pizza-delivery company",
+              "zh": "披萨配送公司"
+            },
+            {
+              "term": "robot-powered",
+              "zh": "机器人驱动的"
             }
           ],
           "difficulty": 3
@@ -1289,16 +1313,16 @@ export const cet6Reading202512Set1 = {
           "structure": "which will launch soon 修饰 Moley；offers an idea of... 表示“提供一种概念/预示”。",
           "phrases": [
             {
-              "term": "launch soon",
-              "zh": "即将推出"
+              "term": "sophistication to come",
+              "zh": "未来会出现的复杂能力"
             },
             {
               "term": "offer an idea of",
               "zh": "让人看到……的雏形"
             },
             {
-              "term": "sophistication to come",
-              "zh": "未来的复杂精细程度"
+              "term": "launch soon",
+              "zh": "即将推出"
             }
           ],
           "difficulty": 3
@@ -1311,14 +1335,6 @@ export const cet6Reading202512Set1 = {
           "structure": "Modelled on... 是过去分词状语；主句 robotic arms are fixed and programmed；to prepare... 表目的。",
           "phrases": [
             {
-              "term": "modelled on",
-              "zh": "以……为模型；模仿"
-            },
-            {
-              "term": "robotic arms",
-              "zh": "机械臂"
-            },
-            {
               "term": "be fixed over",
               "zh": "被固定在……上方"
             },
@@ -1327,8 +1343,16 @@ export const cet6Reading202512Set1 = {
               "zh": "被编程为"
             },
             {
+              "term": "modelled on",
+              "zh": "以……为模型；模仿"
+            },
+            {
               "term": "raw ingredients",
               "zh": "生食材"
+            },
+            {
+              "term": "robotic arms",
+              "zh": "机械臂"
             }
           ],
           "difficulty": 5
@@ -1341,20 +1365,20 @@ export const cet6Reading202512Set1 = {
           "structure": "but 连接转折；that opens up... 修饰 a commercial version；of restaurant kitchens automating... 是 possibility 的同位说明。",
           "phrases": [
             {
-              "term": "domestic use",
-              "zh": "家庭使用"
-            },
-            {
-              "term": "commercial version",
-              "zh": "商业版本"
-            },
-            {
               "term": "open up the possibility of",
               "zh": "开启……的可能性"
             },
             {
               "term": "technically challenging tasks",
               "zh": "技术上有挑战性的任务"
+            },
+            {
+              "term": "domestic use",
+              "zh": "家庭使用"
+            },
+            {
+              "term": "commercial version",
+              "zh": "商业版本"
             }
           ],
           "difficulty": 5
@@ -1371,16 +1395,16 @@ export const cet6Reading202512Set1 = {
               "zh": "目前"
             },
             {
+              "term": "less glamorous",
+              "zh": "不那么炫目"
+            },
+            {
               "term": "kitchen technology",
               "zh": "厨房技术"
             },
             {
               "term": "supply to",
               "zh": "供应给"
-            },
-            {
-              "term": "less glamorous",
-              "zh": "不那么炫目"
             }
           ],
           "difficulty": 3
@@ -1393,12 +1417,12 @@ export const cet6Reading202512Set1 = {
           "structure": "Rather than doing... 表替代关系；主句 system distributes orders。",
           "phrases": [
             {
-              "term": "rather than",
-              "zh": "而不是"
-            },
-            {
               "term": "shout out orders",
               "zh": "喊出订单"
+            },
+            {
+              "term": "rather than",
+              "zh": "而不是"
             },
             {
               "term": "automatically distribute",
@@ -1407,6 +1431,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "across screens",
               "zh": "分布到多个屏幕上"
+            },
+            {
+              "term": "be automatic",
+              "zh": "自动完成；无需人工操作"
             }
           ],
           "difficulty": 3
@@ -1419,20 +1447,24 @@ export const cet6Reading202512Set1 = {
           "structure": "tell chefs when to... 是“疑问词 + 不定式”作宾补；so that 引导目的/结果从句。",
           "phrases": [
             {
-              "term": "kitchen screens",
-              "zh": "厨房屏幕"
-            },
-            {
               "term": "when to start cooking",
               "zh": "何时开始烹饪"
             },
             {
-              "term": "come together",
-              "zh": "同步完成；一起出餐"
+              "term": "at the right time",
+              "zh": "在正确时间"
             },
             {
-              "term": "at the right time",
-              "zh": "在合适时间"
+              "term": "to start",
+              "zh": "开始"
+            },
+            {
+              "term": "kitchen screens",
+              "zh": "厨房屏幕"
+            },
+            {
+              "term": "come together",
+              "zh": "同步完成；一起出餐"
             }
           ],
           "difficulty": 4
@@ -1445,6 +1477,10 @@ export const cet6Reading202512Set1 = {
           "structure": "主句 is suffering...；破折号解释 shortage 的规模；according to... 标明来源。",
           "phrases": [
             {
+              "term": "a deficit of",
+              "zh": "……的缺口"
+            },
+            {
               "term": "suffer a shortage",
               "zh": "遭遇短缺"
             },
@@ -1453,12 +1489,8 @@ export const cet6Reading202512Set1 = {
               "zh": "熟练厨师"
             },
             {
-              "term": "a deficit of",
-              "zh": "……的缺口"
-            },
-            {
               "term": "according to",
-              "zh": "根据"
+              "zh": "根据；据……所说"
             }
           ],
           "difficulty": 3
@@ -1471,20 +1503,20 @@ export const cet6Reading202512Set1 = {
           "structure": "designed to... 修饰 Automation systems；make the process more idiot-proof 是 make 复合宾语；bridge that gap 是谓语核心。",
           "phrases": [
             {
-              "term": "automation systems",
-              "zh": "自动化系统"
-            },
-            {
-              "term": "idiot-proof",
-              "zh": "不易出错的；傻瓜式的"
-            },
-            {
               "term": "bridge that gap",
               "zh": "填补缺口"
             },
             {
               "term": "editor of",
               "zh": "……的编辑"
+            },
+            {
+              "term": "automation systems",
+              "zh": "自动化系统"
+            },
+            {
+              "term": "idiot-proof",
+              "zh": "不易出错的；傻瓜式的"
             }
           ],
           "difficulty": 4
@@ -1505,12 +1537,16 @@ export const cet6Reading202512Set1 = {
               "zh": "提升顾客体验"
             },
             {
-              "term": "online booking",
-              "zh": "在线预订"
+              "term": "customer experience",
+              "zh": "顾客体验"
             },
             {
               "term": "internet age",
               "zh": "互联网时代"
+            },
+            {
+              "term": "online booking",
+              "zh": "在线预订"
             }
           ],
           "difficulty": 3
@@ -1523,20 +1559,20 @@ export const cet6Reading202512Set1 = {
           "structure": "动名词短语作主语；is seen as 为被动判断。",
           "phrases": [
             {
-              "term": "at-table ordering",
-              "zh": "桌边点餐"
-            },
-            {
-              "term": "payment",
-              "zh": "支付"
-            },
-            {
               "term": "be seen as",
               "zh": "被视为"
             },
             {
+              "term": "at-table ordering",
+              "zh": "桌边点餐"
+            },
+            {
               "term": "next landmark",
-              "zh": "下一个里程碑"
+              "zh": "下一个标志性节点"
+            },
+            {
+              "term": "payment",
+              "zh": "支付"
             }
           ],
           "difficulty": 2
@@ -1549,8 +1585,8 @@ export const cet6Reading202512Set1 = {
           "structure": "Until then 作时间状语；such as... 举例；who uses... 修饰 Andy Smith；may well experience 是主干。",
           "phrases": [
             {
-              "term": "until then",
-              "zh": "在那之前"
+              "term": "lower than expected acceptance",
+              "zh": "低于预期的接受度"
             },
             {
               "term": "early adopters",
@@ -1561,8 +1597,8 @@ export const cet6Reading202512Set1 = {
               "zh": "很可能"
             },
             {
-              "term": "lower than expected acceptance",
-              "zh": "低于预期的接受度"
+              "term": "until then",
+              "zh": "在那之前"
             }
           ],
           "difficulty": 5
@@ -1575,16 +1611,16 @@ export const cet6Reading202512Set1 = {
           "structure": "主谓宾结构；hit the headlines 是习语。",
           "phrases": [
             {
+              "term": "hit the headlines",
+              "zh": "登上头条"
+            },
+            {
               "term": "embarrassing failures",
               "zh": "令人尴尬的失败"
             },
             {
               "term": "restaurant tech",
               "zh": "餐厅技术"
-            },
-            {
-              "term": "hit the headlines",
-              "zh": "登上头条"
             }
           ],
           "difficulty": 2
@@ -1597,20 +1633,20 @@ export const cet6Reading202512Set1 = {
           "structure": "这是省略谓语的举例片段；that injured... 修饰 drone；having to retreat... 修饰 Shake Shack。",
           "phrases": [
             {
-              "term": "drone",
-              "zh": "无人机"
+              "term": "retreat from plans",
+              "zh": "放弃计划"
+            },
+            {
+              "term": "cashless ordering sites",
+              "zh": "无现金点餐站点"
             },
             {
               "term": "injure a photographer",
               "zh": "弄伤摄影师"
             },
             {
-              "term": "retreat from plans",
-              "zh": "放弃计划"
-            },
-            {
-              "term": "cashless ordering sites",
-              "zh": "无现金点餐点"
+              "term": "drone",
+              "zh": "无人机"
             }
           ],
           "difficulty": 4
@@ -1651,6 +1687,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "could be useful",
               "zh": "可能有用"
+            },
+            {
+              "term": "be automatic",
+              "zh": "自动完成；无需人工操作"
             }
           ],
           "difficulty": 3
@@ -1663,16 +1703,16 @@ export const cet6Reading202512Set1 = {
           "structure": "反问句；in an expensive restaurant 作语境状语。",
           "phrases": [
             {
-              "term": "expensive restaurant",
-              "zh": "昂贵餐厅"
+              "term": "need dinner to be",
+              "zh": "需要晚餐达到……程度"
             },
             {
               "term": "how quick",
               "zh": "多快"
             },
             {
-              "term": "need dinner to be",
-              "zh": "需要晚餐变得"
+              "term": "expensive restaurant",
+              "zh": "昂贵餐厅"
             }
           ],
           "difficulty": 2
@@ -1685,20 +1725,20 @@ export const cet6Reading202512Set1 = {
           "structure": "主语 That attachment；to the human art... 修饰 attachment；who see... 修饰 staff。",
           "phrases": [
             {
-              "term": "attachment to",
-              "zh": "对……的依恋"
-            },
-            {
               "term": "human art of hospitality",
               "zh": "人性化待客艺术"
             },
             {
-              "term": "heartening",
-              "zh": "令人鼓舞的"
-            },
-            {
               "term": "a threat to jobs",
               "zh": "对就业的威胁"
+            },
+            {
+              "term": "attachment to",
+              "zh": "对……的依恋"
+            },
+            {
+              "term": "heartening",
+              "zh": "令人鼓舞的"
             }
           ],
           "difficulty": 4
@@ -1737,16 +1777,16 @@ export const cet6Reading202512Set1 = {
           "structure": "urge sb. to do sth.；ensure 后省略 that；like previous industrial revolutions 作比较。",
           "phrases": [
             {
-              "term": "urge sb. to",
-              "zh": "敦促某人做某事"
+              "term": "benefit a wealthy few",
+              "zh": "让少数富人受益"
             },
             {
               "term": "Members of Parliament",
               "zh": "议会议员"
             },
             {
-              "term": "benefit a wealthy few",
-              "zh": "让少数富人受益"
+              "term": "urge sb. to",
+              "zh": "敦促某人做某事"
             },
             {
               "term": "industrial revolutions",
@@ -1763,20 +1803,24 @@ export const cet6Reading202512Set1 = {
           "structure": "that 引导表语从句；allow it to redeploy... 是从句核心。",
           "phrases": [
             {
-              "term": "industry principle",
-              "zh": "行业原则"
-            },
-            {
               "term": "allow it to",
-              "zh": "使其能够"
+              "zh": "允许它去"
             },
             {
               "term": "redeploy staff",
               "zh": "重新配置员工"
             },
             {
+              "term": "industry principle",
+              "zh": "行业原则"
+            },
+            {
               "term": "more effectively",
               "zh": "更有效地"
+            },
+            {
+              "term": "be more effective",
+              "zh": "更有效"
             }
           ],
           "difficulty": 3
@@ -1789,16 +1833,16 @@ export const cet6Reading202512Set1 = {
           "structure": "if not... 是省略结构，表示让步或弱化。",
           "phrases": [
             {
+              "term": "decrease in number",
+              "zh": "数量减少"
+            },
+            {
               "term": "jobs will change",
               "zh": "工作会改变"
             },
             {
               "term": "if not",
               "zh": "即使不……"
-            },
-            {
-              "term": "decrease in number",
-              "zh": "数量下降"
             }
           ],
           "difficulty": 3
@@ -1811,20 +1855,20 @@ export const cet6Reading202512Set1 = {
           "structure": "第一句 mean 后接名词短语；front-of-house 作后置定语；第二句为简单过去时。",
           "phrases": [
             {
+              "term": "more demand for",
+              "zh": "对……的更多需求"
+            },
+            {
               "term": "self-order screens",
               "zh": "自助点餐屏"
             },
             {
-              "term": "more demand for",
-              "zh": "对……更多需求"
+              "term": "recruit managers",
+              "zh": "招聘经理"
             },
             {
               "term": "front-of-house",
               "zh": "前厅的；面向顾客的"
-            },
-            {
-              "term": "recruit managers",
-              "zh": "招聘经理"
             }
           ],
           "difficulty": 3
@@ -1837,20 +1881,20 @@ export const cet6Reading202512Set1 = {
           "structure": "to retrain... 是 programme 的后置定语；as 表示“成为”。",
           "phrases": [
             {
-              "term": "programme",
-              "zh": "项目；计划"
-            },
-            {
               "term": "retrain staff",
               "zh": "再培训员工"
+            },
+            {
+              "term": "chef techs",
+              "zh": "厨师技术员"
             },
             {
               "term": "robot engineers",
               "zh": "机器人工程师"
             },
             {
-              "term": "chef techs",
-              "zh": "厨师技术人员"
+              "term": "programme",
+              "zh": "项目；计划"
             }
           ],
           "difficulty": 2
@@ -1863,24 +1907,20 @@ export const cet6Reading202512Set1 = {
           "structure": "主语是 the chance to reduce overheads；by employing... 作方式；what attracts... 是表语从句。",
           "phrases": [
             {
-              "term": "ultimately",
-              "zh": "最终"
-            },
-            {
-              "term": "reduce overheads",
-              "zh": "降低管理费用"
+              "term": "at lower rates",
+              "zh": "以更低薪资"
             },
             {
               "term": "employ fewer people",
               "zh": "雇用更少的人"
             },
             {
-              "term": "at lower rates",
-              "zh": "以更低薪资"
-            },
-            {
               "term": "attract brands to technology",
               "zh": "吸引品牌采用技术"
+            },
+            {
+              "term": "reduce overheads",
+              "zh": "降低管理费用"
             }
           ],
           "difficulty": 5
@@ -1893,24 +1933,24 @@ export const cet6Reading202512Set1 = {
           "structure": "Invariably 与 over... 作状语；jobs will go 是口语化表达；because 引导原因；冒号解释 rival。",
           "phrases": [
             {
-              "term": "over the next 10 years",
-              "zh": "未来十年"
-            },
-            {
               "term": "jobs will go",
               "zh": "岗位会消失"
-            },
-            {
-              "term": "bricks-built restaurants",
-              "zh": "传统实体餐厅"
             },
             {
               "term": "not least because",
               "zh": "尤其因为"
             },
             {
+              "term": "over the next 10 years",
+              "zh": "未来十年"
+            },
+            {
               "term": "rapidly growing rival",
               "zh": "快速增长的竞争对手"
+            },
+            {
+              "term": "bricks-built restaurants",
+              "zh": "传统实体餐厅"
             }
           ],
           "difficulty": 5
@@ -1923,16 +1963,16 @@ export const cet6Reading202512Set1 = {
           "structure": "such as... 举例；have experimented with 是现在完成时；which is already legal... 补充说明 delivery。",
           "phrases": [
             {
-              "term": "experiment with",
-              "zh": "试验；尝试"
-            },
-            {
               "term": "robot and drone delivery",
               "zh": "机器人和无人机配送"
             },
             {
               "term": "already legal",
               "zh": "已经合法"
+            },
+            {
+              "term": "experiment with",
+              "zh": "试验；尝试"
             }
           ],
           "difficulty": 3
@@ -1947,10 +1987,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "food deliveries",
               "zh": "送餐"
-            },
-            {
-              "term": "the future",
-              "zh": "未来"
             }
           ],
           "difficulty": 1
@@ -1963,16 +1999,16 @@ export const cet6Reading202512Set1 = {
           "structure": "主语 ground robots；safe 和 will work 构成并列判断。",
           "phrases": [
             {
-              "term": "4mph",
-              "zh": "每小时 4 英里"
+              "term": "24 hours a day",
+              "zh": "一天 24 小时"
             },
             {
               "term": "ground robots",
               "zh": "地面机器人"
             },
             {
-              "term": "24 hours a day",
-              "zh": "一天 24 小时"
+              "term": "4mph",
+              "zh": "每小时 4 英里"
             }
           ],
           "difficulty": 2
@@ -1985,24 +2021,24 @@ export const cet6Reading202512Set1 = {
           "structure": "Combined with... 是过去分词状语；generated by... 修饰 data；主句 robot fleet could deliver。",
           "phrases": [
             {
-              "term": "combined with",
-              "zh": "与……结合"
+              "term": "anticipated order volumes",
+              "zh": "预期订单量"
             },
             {
               "term": "machine learning",
               "zh": "机器学习"
             },
             {
-              "term": "anticipated order volumes",
-              "zh": "预期订单量"
-            },
-            {
-              "term": "minute-by-minute",
-              "zh": "逐分钟的"
+              "term": "combined with",
+              "zh": "与……结合"
             },
             {
               "term": "deliver instantly",
               "zh": "即时配送"
+            },
+            {
+              "term": "minute-by-minute",
+              "zh": "逐分钟的"
             }
           ],
           "difficulty": 5
@@ -2015,20 +2051,20 @@ export const cet6Reading202512Set1 = {
           "structure": "ahead of orders coming in 是介词短语，coming in 修饰 orders；predicts... 为报道语。",
           "phrases": [
             {
-              "term": "prepare food",
-              "zh": "准备食物"
-            },
-            {
-              "term": "ahead of",
-              "zh": "在……之前"
+              "term": "director of engineering",
+              "zh": "工程总监"
             },
             {
               "term": "orders coming in",
               "zh": "传入的订单"
             },
             {
-              "term": "director of engineering",
-              "zh": "工程总监"
+              "term": "ahead of",
+              "zh": "在……之前"
+            },
+            {
+              "term": "prepare food",
+              "zh": "准备食物"
             }
           ],
           "difficulty": 3
@@ -2045,16 +2081,16 @@ export const cet6Reading202512Set1 = {
               "zh": "能够说"
             },
             {
-              "term": "intelligent assistant",
-              "zh": "智能助手"
-            },
-            {
               "term": "10 minutes later",
-              "zh": "10 分钟后"
+              "zh": "十分钟后"
             },
             {
               "term": "at my door",
-              "zh": "在我家门口"
+              "zh": "到我门口"
+            },
+            {
+              "term": "intelligent assistant",
+              "zh": "智能助手"
             }
           ],
           "difficulty": 3
@@ -2069,10 +2105,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "put an exact date on",
               "zh": "给……定下确切日期"
-            },
-            {
-              "term": "yet",
-              "zh": "然而；还"
             }
           ],
           "difficulty": 2
@@ -2085,12 +2117,12 @@ export const cet6Reading202512Set1 = {
           "structure": "两个地点状语并列置前；are coming 使用现在进行时表示趋势临近。",
           "phrases": [
             {
-              "term": "in the dining room",
-              "zh": "在餐厅用餐区"
-            },
-            {
               "term": "on your doorstep",
               "zh": "在你家门口"
+            },
+            {
+              "term": "in the dining room",
+              "zh": "在餐厅里"
             },
             {
               "term": "robots are coming",
@@ -2115,20 +2147,20 @@ export const cet6Reading202512Set1 = {
           "structure": "see A as B；冒号后用两个名词短语解释 comfort blanket。",
           "phrases": [
             {
-              "term": "see as",
-              "zh": "视为"
+              "term": "a shoulder to cry on",
+              "zh": "可依靠哭诉的肩膀"
             },
             {
               "term": "comfort blanket",
               "zh": "安慰毯；情感依靠"
             },
             {
-              "term": "a shoulder to cry on",
-              "zh": "可依靠哭诉的肩膀"
-            },
-            {
               "term": "confide in",
               "zh": "向……倾诉"
+            },
+            {
+              "term": "see as",
+              "zh": "视为"
             }
           ],
           "difficulty": 3
@@ -2145,16 +2177,20 @@ export const cet6Reading202512Set1 = {
               "zh": "往往；多半"
             },
             {
+              "term": "along the way",
+              "zh": "一路上；过程中"
+            },
+            {
               "term": "eagerness to",
               "zh": "急于……"
             },
             {
-              "term": "individual success",
-              "zh": "个人成功"
+              "term": "part of",
+              "zh": "……的一部分"
             },
             {
-              "term": "along the way",
-              "zh": "一路上；过程中"
+              "term": "individual success",
+              "zh": "个人成功"
             }
           ],
           "difficulty": 4
@@ -2167,20 +2203,20 @@ export const cet6Reading202512Set1 = {
           "structure": "主语是 The chaos and turmoil；that accompanies... 修饰 turmoil；is an obstacle 是主干。",
           "phrases": [
             {
-              "term": "never-ending turmoil",
-              "zh": "无休止的动荡"
+              "term": "in the pursuit of",
+              "zh": "在追求……的过程中"
             },
             {
               "term": "accompany everyday life",
               "zh": "伴随日常生活"
             },
             {
-              "term": "aggressive obstacle",
-              "zh": "强硬障碍"
+              "term": "never-ending turmoil",
+              "zh": "无休止的动荡"
             },
             {
-              "term": "in the pursuit of",
-              "zh": "在追求……的过程中"
+              "term": "aggressive obstacle",
+              "zh": "强硬的阻碍"
             }
           ],
           "difficulty": 4
@@ -2197,12 +2233,12 @@ export const cet6Reading202512Set1 = {
               "zh": "使用这个借口"
             },
             {
-              "term": "shrug off",
-              "zh": "轻描淡写地对待；摆脱"
-            },
-            {
               "term": "once thought to be",
               "zh": "曾被认为是"
+            },
+            {
+              "term": "shrug off",
+              "zh": "轻描淡写地对待；摆脱"
             },
             {
               "term": "loved ones",
@@ -2219,14 +2255,6 @@ export const cet6Reading202512Set1 = {
           "structure": "Instead of doing... 作对照；where 从句解释 race；主句 we must relearn to value...；we make 修饰 connections。",
           "phrases": [
             {
-              "term": "instead of",
-              "zh": "而不是"
-            },
-            {
-              "term": "view as a race",
-              "zh": "把……看成竞赛"
-            },
-            {
               "term": "on their own path",
               "zh": "在各自道路上"
             },
@@ -2236,7 +2264,15 @@ export const cet6Reading202512Set1 = {
             },
             {
               "term": "along the track",
-              "zh": "沿着轨道"
+              "zh": "沿着赛道/轨道"
+            },
+            {
+              "term": "view as a race",
+              "zh": "把……看成竞赛"
+            },
+            {
+              "term": "instead of",
+              "zh": "而不是"
             }
           ],
           "difficulty": 5
@@ -2249,16 +2285,16 @@ export const cet6Reading202512Set1 = {
           "structure": "主谓宾结构；radical, individual freedom 作 harm 的来源。",
           "phrases": [
             {
-              "term": "reevaluate",
-              "zh": "重新评估"
-            },
-            {
               "term": "the harm of",
               "zh": "……的危害"
             },
             {
               "term": "radical individual freedom",
               "zh": "激进个人自由"
+            },
+            {
+              "term": "reevaluate",
+              "zh": "重新评估"
             }
           ],
           "difficulty": 2
@@ -2293,20 +2329,20 @@ export const cet6Reading202512Set1 = {
           "structure": "argues that... 接宾语从句；for instance 插入；an example of collectivism 是 universal healthcare 的同位语。",
           "phrases": [
             {
-              "term": "for instance",
-              "zh": "例如"
+              "term": "threaten the dream of",
+              "zh": "威胁……的梦想"
             },
             {
               "term": "universal healthcare",
               "zh": "全民医疗"
             },
             {
-              "term": "collectivism",
-              "zh": "集体主义"
+              "term": "for instance",
+              "zh": "例如"
             },
             {
-              "term": "threaten the dream of",
-              "zh": "威胁……的梦想"
+              "term": "collectivism",
+              "zh": "集体主义"
             }
           ],
           "difficulty": 4
@@ -2325,6 +2361,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "individualistic culture",
               "zh": "个人主义文化"
+            },
+            {
+              "term": "many of us",
+              "zh": "我们中的许多人"
             }
           ],
           "difficulty": 2
@@ -2337,14 +2377,6 @@ export const cet6Reading202512Set1 = {
           "structure": "tends to 后接两个并列动词 celebrate 和 commend；based on... 作依据；that 引导 assumption 的同位语从句。",
           "phrases": [
             {
-              "term": "tend to",
-              "zh": "倾向于"
-            },
-            {
-              "term": "personal achievement",
-              "zh": "个人成就"
-            },
-            {
               "term": "based on the assumption that",
               "zh": "基于……的假设"
             },
@@ -2355,6 +2387,14 @@ export const cet6Reading202512Set1 = {
             {
               "term": "work harder than",
               "zh": "比……更努力"
+            },
+            {
+              "term": "tend to",
+              "zh": "倾向于"
+            },
+            {
+              "term": "personal achievement",
+              "zh": "个人成就"
             }
           ],
           "difficulty": 5
@@ -2367,12 +2407,16 @@ export const cet6Reading202512Set1 = {
           "structure": "As a society 作身份状语；of 后的动名词短语解释 concept。",
           "phrases": [
             {
-              "term": "idolize the concept of",
-              "zh": "崇拜……概念"
-            },
-            {
               "term": "on the road to success",
               "zh": "在通往成功的路上"
+            },
+            {
+              "term": "idolize the concept of",
+              "zh": "崇拜……观念"
+            },
+            {
+              "term": "losing friends",
+              "zh": "失去朋友；牺牲人际关系"
             }
           ],
           "difficulty": 3
@@ -2385,24 +2429,24 @@ export const cet6Reading202512Set1 = {
           "structure": "remember hearing 是动名词宾语；引号内容作 hearing 的内容；a sentiment... 是前文观点的同位语。",
           "phrases": [
             {
-              "term": "worry about",
-              "zh": "担心"
-            },
-            {
-              "term": "focus on",
-              "zh": "关注"
-            },
-            {
-              "term": "get into college",
-              "zh": "进入大学"
-            },
-            {
               "term": "in the long run",
               "zh": "从长远看"
             },
             {
               "term": "not unique to",
               "zh": "并非……独有"
+            },
+            {
+              "term": "get into college",
+              "zh": "进入大学"
+            },
+            {
+              "term": "worry about",
+              "zh": "担心"
+            },
+            {
+              "term": "focus on",
+              "zh": "关注；聚焦于"
             }
           ],
           "difficulty": 5
@@ -2415,20 +2459,20 @@ export const cet6Reading202512Set1 = {
           "structure": "两个被动结构由 and 连接；we see growth 修饰 the way，省略关系词。",
           "phrases": [
             {
-              "term": "be preached",
-              "zh": "被宣扬"
-            },
-            {
-              "term": "success stories",
-              "zh": "成功故事"
+              "term": "the way we see growth",
+              "zh": "我们看待成长的方式"
             },
             {
               "term": "be embedded in",
               "zh": "嵌入……之中"
             },
             {
-              "term": "the way we see growth",
-              "zh": "我们看待成长的方式"
+              "term": "be preached",
+              "zh": "被宣扬"
+            },
+            {
+              "term": "success stories",
+              "zh": "成功故事"
             }
           ],
           "difficulty": 4
@@ -2441,16 +2485,16 @@ export const cet6Reading202512Set1 = {
           "structure": "push sb. to do sth.；be complacent to... 表示对某事自满或安于现状。",
           "phrases": [
             {
-              "term": "motivational speakers",
-              "zh": "励志演讲者"
+              "term": "be complacent to",
+              "zh": "对……安然接受"
             },
             {
               "term": "push audience to",
               "zh": "促使受众去做"
             },
             {
-              "term": "be complacent to",
-              "zh": "对……安然接受"
+              "term": "motivational speakers",
+              "zh": "励志演讲者"
             },
             {
               "term": "inevitable end",
@@ -2467,16 +2511,16 @@ export const cet6Reading202512Set1 = {
           "structure": "第一句是省略主语的反问；第二句中 better utilized... 是过去分词短语修饰 time。",
           "phrases": [
             {
+              "term": "better utilized on",
+              "zh": "更好地用于"
+            },
+            {
               "term": "spend time with",
               "zh": "花时间与……相处"
             },
             {
               "term": "lose time",
               "zh": "失去时间"
-            },
-            {
-              "term": "better utilized on",
-              "zh": "更好地用于"
             },
             {
               "term": "achievements",
@@ -2499,10 +2543,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "relationships",
               "zh": "关系"
-            },
-            {
-              "term": "instead",
-              "zh": "相反；而是"
             }
           ],
           "difficulty": 2
@@ -2515,8 +2555,12 @@ export const cet6Reading202512Set1 = {
           "structure": "主语 This constant need；blind sb. from doing sth.；that accompanies... 修饰 whirlwind of change。",
           "phrases": [
             {
+              "term": "whirlwind of change",
+              "zh": "变化旋涡"
+            },
+            {
               "term": "constant need to succeed",
-              "zh": "持续成功需求"
+              "zh": "持续的成功需求"
             },
             {
               "term": "blind sb. from",
@@ -2525,10 +2569,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "see through",
               "zh": "看穿；识破"
-            },
-            {
-              "term": "whirlwind of change",
-              "zh": "变化旋涡"
             }
           ],
           "difficulty": 4
@@ -2546,11 +2586,11 @@ export const cet6Reading202512Set1 = {
             },
             {
               "term": "tangibly succeed",
-              "zh": "切实成功"
+              "zh": "取得看得见的成功"
             },
             {
               "term": "earn awards",
-              "zh": "获得奖项"
+              "zh": "获奖"
             },
             {
               "term": "higher positions",
@@ -2593,12 +2633,12 @@ export const cet6Reading202512Set1 = {
               "zh": "对……安然接受"
             },
             {
-              "term": "lose friendships",
-              "zh": "失去友谊"
-            },
-            {
               "term": "our anchors",
               "zh": "我们的锚；稳定支撑"
+            },
+            {
+              "term": "lose friendships",
+              "zh": "失去友谊"
             }
           ],
           "difficulty": 3
@@ -2613,10 +2653,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "pursue success",
               "zh": "追求成功"
-            },
-            {
-              "term": "pursue",
-              "zh": "追求"
             }
           ],
           "difficulty": 1
@@ -2633,8 +2669,8 @@ export const cet6Reading202512Set1 = {
               "zh": "挑战自己"
             },
             {
-              "term": "challenge",
-              "zh": "挑战"
+              "term": "Challenge yourself.",
+              "zh": "挑战自己；祈使句表达建议"
             }
           ],
           "difficulty": 1
@@ -2651,8 +2687,8 @@ export const cet6Reading202512Set1 = {
               "zh": "突破极限"
             },
             {
-              "term": "limits",
-              "zh": "极限；限制"
+              "term": "Push limits.",
+              "zh": "突破限制；挑战边界"
             }
           ],
           "difficulty": 1
@@ -2665,20 +2701,20 @@ export const cet6Reading202512Set1 = {
           "structure": "contrary to... 作对照状语；doing it alone 是主语；make you more successful or better 是复合宾语；who achieved... 修饰 someone。",
           "phrases": [
             {
-              "term": "contrary to",
-              "zh": "与……相反"
-            },
-            {
-              "term": "self-proclaimed",
-              "zh": "自封的"
+              "term": "with the help of others",
+              "zh": "在他人帮助下"
             },
             {
               "term": "doing it alone",
               "zh": "独自完成"
             },
             {
-              "term": "with the help of others",
-              "zh": "在他人帮助下"
+              "term": "contrary to",
+              "zh": "与……相反"
+            },
+            {
+              "term": "self-proclaimed",
+              "zh": "自封的"
             }
           ],
           "difficulty": 5
@@ -2699,12 +2735,12 @@ export const cet6Reading202512Set1 = {
               "zh": "培养健康关系"
             },
             {
-              "term": "maintain them",
-              "zh": "维持它们"
+              "term": "busy schedule",
+              "zh": "忙碌日程"
             },
             {
-              "term": "busy schedule",
-              "zh": "繁忙日程"
+              "term": "maintain them",
+              "zh": "维持它们"
             }
           ],
           "difficulty": 5
@@ -2717,24 +2753,24 @@ export const cet6Reading202512Set1 = {
           "structure": "Although 引导让步从句；that treasures... 修饰 society；having people... 是主句主语；far more important than... 是比较结构。",
           "phrases": [
             {
-              "term": "treasure",
-              "zh": "珍惜"
+              "term": "far more important than",
+              "zh": "远比……重要"
+            },
+            {
+              "term": "on the way",
+              "zh": "一路上"
+            },
+            {
+              "term": "end result",
+              "zh": "最终结果"
             },
             {
               "term": "independent pursuit",
               "zh": "独立追求"
             },
             {
-              "term": "on the way",
-              "zh": "在路上；即将到来"
-            },
-            {
-              "term": "far more important than",
-              "zh": "远比……重要"
-            },
-            {
-              "term": "end result",
-              "zh": "最终结果"
+              "term": "treasure",
+              "zh": "珍惜"
             }
           ],
           "difficulty": 5
@@ -2755,12 +2791,16 @@ export const cet6Reading202512Set1 = {
           "structure": "During... 作时间背景；said 后接直接引语；that 引导 believe 的宾语从句。",
           "phrases": [
             {
-              "term": "acceptance speech",
-              "zh": "获奖演说"
-            },
-            {
               "term": "Nobel Peace Prize",
               "zh": "诺贝尔和平奖"
+            },
+            {
+              "term": "have the final word",
+              "zh": "拥有最终发言权"
+            },
+            {
+              "term": "acceptance speech",
+              "zh": "获奖演说"
             },
             {
               "term": "unarmed truth",
@@ -2769,10 +2809,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "unconditional love",
               "zh": "无条件的爱"
-            },
-            {
-              "term": "have the final word",
-              "zh": "拥有最终发言权"
             }
           ],
           "difficulty": 4
@@ -2785,20 +2821,24 @@ export const cet6Reading202512Set1 = {
           "structure": "More than... later 作时间状语；struggle to do；两个 separate A from B 并列。",
           "phrases": [
             {
-              "term": "five decades later",
-              "zh": "五十年后"
-            },
-            {
-              "term": "struggle to",
-              "zh": "艰难地做……"
-            },
-            {
               "term": "separate truth from fantasy",
               "zh": "区分真相与幻想"
             },
             {
               "term": "fact from fiction",
               "zh": "事实与虚构"
+            },
+            {
+              "term": "five decades later",
+              "zh": "五十多年后"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
+              "term": "struggle to",
+              "zh": "艰难地做……"
             }
           ],
           "difficulty": 3
@@ -2811,20 +2851,20 @@ export const cet6Reading202512Set1 = {
           "structure": "From...to... 列举范围；how slavery is taught 是 about 的宾语从句；主句是 America is at a crossroads。",
           "phrases": [
             {
+              "term": "at a crossroads",
+              "zh": "处在十字路口"
+            },
+            {
               "term": "disputes over",
-              "zh": "围绕……的争议"
+              "zh": "围绕……的争端"
             },
             {
               "term": "debates about",
-              "zh": "关于……的争论"
+              "zh": "关于……的辩论"
             },
             {
               "term": "slavery",
               "zh": "奴隶制"
-            },
-            {
-              "term": "at a crossroads",
-              "zh": "处在十字路口"
             }
           ],
           "difficulty": 4
@@ -2863,12 +2903,12 @@ export const cet6Reading202512Set1 = {
               "zh": "一项又一项研究"
             },
             {
-              "term": "inequity",
-              "zh": "不平等"
-            },
-            {
               "term": "appalling consequences",
               "zh": "骇人的后果"
+            },
+            {
+              "term": "inequity",
+              "zh": "不平等"
             }
           ],
           "difficulty": 3
@@ -2881,24 +2921,24 @@ export const cet6Reading202512Set1 = {
           "structure": "indicated that... 接宾语从句；could have increased 表示与过去事实相反的可能；if...had been addressed 是虚拟条件。",
           "phrases": [
             {
-              "term": "lifetime incomes",
-              "zh": "终身收入"
+              "term": "over the past two decades",
+              "zh": "过去二十年里"
             },
             {
               "term": "equity issues",
               "zh": "公平问题"
             },
             {
-              "term": "higher education",
-              "zh": "高等教育"
-            },
-            {
               "term": "adequately addressed",
               "zh": "得到充分解决"
             },
             {
-              "term": "over the past two decades",
-              "zh": "过去二十年"
+              "term": "lifetime incomes",
+              "zh": "终身收入"
+            },
+            {
+              "term": "higher education",
+              "zh": "高等教育"
             }
           ],
           "difficulty": 5
@@ -2911,10 +2951,6 @@ export const cet6Reading202512Set1 = {
           "structure": "we've failed to confront 修饰 issues，省略关系词；as a nation 作身份状语。",
           "phrases": [
             {
-              "term": "statistic",
-              "zh": "统计数据"
-            },
-            {
               "term": "a flood of issues",
               "zh": "大量问题"
             },
@@ -2925,6 +2961,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "as a nation",
               "zh": "作为一个国家"
+            },
+            {
+              "term": "statistic",
+              "zh": "统计数据"
             }
           ],
           "difficulty": 4
@@ -2963,12 +3003,12 @@ export const cet6Reading202512Set1 = {
           "structure": "by doing 表方式；get our country back on the path 是复合宾语结构。",
           "phrases": [
             {
-              "term": "honor legacy",
-              "zh": "尊重遗产"
-            },
-            {
               "term": "get back on the path",
               "zh": "重新回到道路上"
+            },
+            {
+              "term": "honor legacy",
+              "zh": "尊重遗产"
             },
             {
               "term": "true equity",
@@ -2989,12 +3029,12 @@ export const cet6Reading202512Set1 = {
               "zh": "就此而言；同样"
             },
             {
-              "term": "conflicts we have today",
-              "zh": "我们今天面临的冲突"
-            },
-            {
               "term": "in the first place",
               "zh": "最初；首先"
+            },
+            {
+              "term": "conflicts we have today",
+              "zh": "我们今天面临的冲突"
             }
           ],
           "difficulty": 4
@@ -3029,20 +3069,16 @@ export const cet6Reading202512Set1 = {
           "structure": "means 后接动名词 giving；they need 修饰 tools；to address... 表用途。",
           "phrases": [
             {
+              "term": "in their own lives",
+              "zh": "在他们自己的生活中"
+            },
+            {
               "term": "give them the tools",
               "zh": "给予他们工具"
             },
             {
               "term": "address inequity",
               "zh": "处理不平等"
-            },
-            {
-              "term": "bias",
-              "zh": "偏见"
-            },
-            {
-              "term": "in their own lives",
-              "zh": "在他们自己的生活中"
             }
           ],
           "difficulty": 4
@@ -3055,6 +3091,14 @@ export const cet6Reading202512Set1 = {
           "structure": "主语 Adherence...；along with... 插入补充；help sb. do 两个并列动作 appreciate 和 see；how far... 是宾语从句。",
           "phrases": [
             {
+              "term": "yet to travel",
+              "zh": "仍需走过"
+            },
+            {
+              "term": "appreciate how far",
+              "zh": "理解已经走了多远"
+            },
+            {
               "term": "adherence to principles",
               "zh": "坚持原则"
             },
@@ -3065,14 +3109,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "truthful dialogue",
               "zh": "真实对话"
-            },
-            {
-              "term": "appreciate how far",
-              "zh": "认识到……有多远"
-            },
-            {
-              "term": "yet to travel",
-              "zh": "仍需走过"
             }
           ],
           "difficulty": 5
@@ -3085,8 +3121,16 @@ export const cet6Reading202512Set1 = {
           "structure": "With... 作方式状语；主句 we can improve...；recruiting, training, retention 三项并列。",
           "phrases": [
             {
+              "term": "across the country",
+              "zh": "全国范围内"
+            },
+            {
               "term": "truthful analysis",
               "zh": "真实分析"
+            },
+            {
+              "term": "retention strategies",
+              "zh": "留任策略"
             },
             {
               "term": "qualified educators",
@@ -3095,14 +3139,6 @@ export const cet6Reading202512Set1 = {
             {
               "term": "diverse educators",
               "zh": "多元背景教育者"
-            },
-            {
-              "term": "retention strategies",
-              "zh": "留任策略"
-            },
-            {
-              "term": "across the country",
-              "zh": "全国各地"
             }
           ],
           "difficulty": 4
@@ -3121,6 +3157,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "delay advancements",
               "zh": "延缓进步"
+            },
+            {
+              "term": "Unfortunately",
+              "zh": "不幸的是；引出负面判断"
             }
           ],
           "difficulty": 2
@@ -3133,16 +3173,16 @@ export const cet6Reading202512Set1 = {
           "structure": "found that... 接宾语从句；believe 后省略 that；more...than ever before 是比较结构。",
           "phrases": [
             {
-              "term": "recent survey",
-              "zh": "近期调查"
+              "term": "more divided than ever before",
+              "zh": "比以往更加分裂"
             },
             {
               "term": "77 percent of",
-              "zh": "……的 77%"
+              "zh": "百分之七十七的"
             },
             {
-              "term": "more divided than ever before",
-              "zh": "比以往更加分裂"
+              "term": "recent survey",
+              "zh": "近期调查"
             }
           ],
           "difficulty": 3
@@ -3155,16 +3195,16 @@ export const cet6Reading202512Set1 = {
           "structure": "persuade sb. to do sth.；look away from 表“回避、不正视”。",
           "phrases": [
             {
-              "term": "increased polarization",
-              "zh": "极化加剧"
+              "term": "look away from one another",
+              "zh": "彼此回避"
             },
             {
               "term": "persuade us to",
-              "zh": "说服我们做"
+              "zh": "说服我们去"
             },
             {
-              "term": "look away from one another",
-              "zh": "彼此回避"
+              "term": "increased polarization",
+              "zh": "极化加剧"
             }
           ],
           "difficulty": 4
@@ -3177,12 +3217,8 @@ export const cet6Reading202512Set1 = {
           "structure": "Instead 表转折替代；compel sb. to do sth.；head-on 作方式状语。",
           "phrases": [
             {
-              "term": "instead",
-              "zh": "相反；而是"
-            },
-            {
               "term": "compel us to",
-              "zh": "迫使我们做"
+              "zh": "促使我们去"
             },
             {
               "term": "shared issues",
@@ -3204,11 +3240,15 @@ export const cet6Reading202512Set1 = {
           "phrases": [
             {
               "term": "as some would suggest",
-              "zh": "正如一些人所说"
+              "zh": "正如有些人会说的"
             },
             {
               "term": "post-racial society",
               "zh": "后种族社会"
+            },
+            {
+              "term": "live in",
+              "zh": "生活在；处于某种社会状态中"
             }
           ],
           "difficulty": 3
@@ -3225,12 +3265,12 @@ export const cet6Reading202512Set1 = {
               "zh": "承担不起……的后果"
             },
             {
-              "term": "keep heads buried in the sand",
-              "zh": "把头埋进沙子；逃避现实"
-            },
-            {
               "term": "when it comes to",
               "zh": "当谈到……"
+            },
+            {
+              "term": "keep heads buried in the sand",
+              "zh": "把头埋进沙子；逃避现实"
             },
             {
               "term": "racial inequity",
@@ -3251,20 +3291,20 @@ export const cet6Reading202512Set1 = {
               "zh": "坦诚面对"
             },
             {
-              "term": "intolerance",
-              "zh": "不宽容"
+              "term": "impact the ways",
+              "zh": "影响……方式"
             },
             {
               "term": "social diseases",
               "zh": "社会疾病"
             },
             {
-              "term": "impact the ways",
-              "zh": "影响方式"
-            },
-            {
               "term": "haunt us",
               "zh": "持续困扰我们"
+            },
+            {
+              "term": "intolerance",
+              "zh": "不宽容"
             }
           ],
           "difficulty": 5
@@ -3277,12 +3317,16 @@ export const cet6Reading202512Set1 = {
           "structure": "简单句；deserve better 含省略宾语，表示“理应得到更好的待遇/处境”。",
           "phrases": [
             {
-              "term": "deserve better",
-              "zh": "理应得到更好的未来"
+              "term": "our children and grandchildren",
+              "zh": "我们的子孙后代；下一代人"
             },
             {
               "term": "children and grandchildren",
               "zh": "子女和孙辈"
+            },
+            {
+              "term": "deserve better",
+              "zh": "理应得到更好的未来"
             }
           ],
           "difficulty": 2
@@ -3295,16 +3339,16 @@ export const cet6Reading202512Set1 = {
           "structure": "On...and beyond 作时间状语；let's commit to doing；to disrupt... 表目的。",
           "phrases": [
             {
-              "term": "and beyond",
-              "zh": "以及更远；乃至更多"
-            },
-            {
               "term": "commit to working together",
               "zh": "承诺共同努力"
             },
             {
               "term": "disrupt the status quo",
               "zh": "打破现状"
+            },
+            {
+              "term": "and beyond",
+              "zh": "以及之后"
             }
           ],
           "difficulty": 3
@@ -3317,10 +3361,6 @@ export const cet6Reading202512Set1 = {
           "structure": "Let's continue to... 是祈使句；分号连接引用补充；that can live... 修饰 society。",
           "phrases": [
             {
-              "term": "inclusive nation",
-              "zh": "包容性国家"
-            },
-            {
               "term": "in the words of",
               "zh": "用……的话说"
             },
@@ -3331,6 +3371,10 @@ export const cet6Reading202512Set1 = {
             {
               "term": "live with its conscience",
               "zh": "凭良心生活"
+            },
+            {
+              "term": "inclusive nation",
+              "zh": "包容性国家"
             }
           ],
           "difficulty": 4

@@ -10,7 +10,7 @@ export const cet6Reading202512Set2 = {
       "kicker": "Section A",
       "title": "选词填空 · 原文整理",
       "navLabel": "选词填空",
-      "description": "保留原文空格编号，按阅读顺序拆分为可复盘句子。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -20,20 +20,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：but 连接两个并列分句；前半句主干是 We humans love to believe...；we are special 是 believe 的宾语从句；后半句主干是 science and technology have proved this conviction wrong。核心结构：A love to believe B, but C have proved D wrong。",
           "phrases": [
             {
-              "term": "we humans",
-              "zh": "我们人类"
-            },
-            {
               "term": "believe we are special",
               "zh": "相信自己很特别"
             },
             {
-              "term": "technology",
-              "zh": "技术"
-            },
-            {
               "term": "prove ... wrong",
               "zh": "证明……是错的"
+            },
+            {
+              "term": "we humans",
+              "zh": "我们人类"
+            },
+            {
+              "term": "technology",
+              "zh": "技术"
             },
             {
               "term": "conviction",
@@ -45,29 +45,21 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A02",
           "part": "Cloze",
-          "en": "People 26 thought that humans were the only animals to use tools, to form teams or to propagate culture, but science has shown that other animals do each of these things.",
-          "zh": "人们曾以为只有人类会使用工具、组成团队或传播文化，但科学表明其他动物也会做这些事。",
-          "structure": "结构分析：but 连接“过去认知”和“科学证明”的转折；第一个 that 引导 thought 的宾语从句；to use / to form / to propagate 并列修饰 animals；第二个 that 引导 shown 的宾语从句。核心结构：People thought that A were the only B to do C, but science has shown that D do C too。",
+          "en": "People once thought that humans were the only animals to use tools, to form teams or to propagate culture, but science has shown that other animals do each of these things.",
+          "zh": "人们曾经以为只有人类会使用工具、组成团队或传播文化，但科学表明其他动物也会做这些事。",
+          "structure": "结构分析：People once thought 是主句；that humans were... 是宾语从句；to use、to form、to propagate 并列修饰 animals；but 后转折，science has shown that... 表示科学证据改变了过去认知。",
           "phrases": [
             {
-              "term": "the only animals to",
-              "zh": "唯一会……的动物"
+              "term": "once thought that",
+              "zh": "曾经以为"
             },
             {
-              "term": "use tools",
-              "zh": "使用工具"
+              "term": "the only animals to do",
+              "zh": "唯一会做某事的动物"
             },
             {
-              "term": "form teams",
-              "zh": "组成团队"
-            },
-            {
-              "term": "propagate culture",
-              "zh": "传播文化"
-            },
-            {
-              "term": "culture",
-              "zh": "文化"
+              "term": "do each of these things",
+              "zh": "做这些事情中的每一件"
             }
           ],
           "difficulty": 2
@@ -75,29 +67,21 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A03",
           "part": "Cloze",
-          "en": "Meanwhile, technology has quashed(使无效), one by one, claims that 27 tasks require a human brain.",
-          "zh": "与此同时，技术也一个接一个地推翻了那些声称第 27 空所指任务需要人脑才能完成的说法。",
-          "structure": "结构分析：Meanwhile 承接前文；主句是 technology has quashed claims；one by one 作插入状语；that 27 tasks require a human brain 是定语从句，说明 claims 的内容。核心结构：A has quashed claims that B require C。",
+          "en": "Meanwhile, technology has quashed, one by one, claims that creative tasks require a human brain.",
+          "zh": "与此同时，技术也一个接一个地推翻了那些声称创造性任务需要人脑才能完成的说法。",
+          "structure": "结构分析：Meanwhile 承接前文；technology has quashed claims 是主干；one by one 作插入状语；that creative tasks require a human brain 是同位/内容从句，说明 claims 的内容。",
           "phrases": [
             {
-              "term": "technology",
-              "zh": "技术"
+              "term": "creative tasks",
+              "zh": "创造性任务"
             },
             {
-              "term": "quash",
-              "zh": "推翻；使无效"
-            },
-            {
-              "term": "one by one",
-              "zh": "一个接一个地"
+              "term": "quash claims that",
+              "zh": "推翻那些声称……的说法"
             },
             {
               "term": "claims that",
               "zh": "声称……的说法"
-            },
-            {
-              "term": "require a human brain",
-              "zh": "需要人脑"
             }
           ],
           "difficulty": 2
@@ -136,16 +120,12 @@ export const cet6Reading202512Set2 = {
               "zh": "过去这一年"
             },
             {
-              "term": "computer-generated",
-              "zh": "由计算机生成的"
-            },
-            {
-              "term": "work",
-              "zh": "作品"
-            },
-            {
               "term": "art contest",
               "zh": "艺术比赛"
+            },
+            {
+              "term": "computer-generated",
+              "zh": "由计算机生成的"
             }
           ],
           "difficulty": 2
@@ -153,25 +133,25 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A06",
           "part": "Cloze",
-          "en": "I believe the moment when computers meet and 28 human intelligence is on the horizon.",
-          "zh": "我认为，计算机达到并第 28 空所指程度地接近/超过人类智能的时刻已经即将到来。",
-          "structure": "结构分析：主句是 I believe...；后面省略了 that，引导 believe 的宾语从句；when computers meet and 28 human intelligence 修饰 the moment；is on the horizon 是宾语从句中的谓语。核心结构：I believe (that) the moment when A meet and B human intelligence is on the horizon。",
+          "en": "I believe the moment when computers meet and surpass human intelligence is on the horizon.",
+          "zh": "我认为，计算机达到并超越人类智能的时刻已经即将到来。",
+          "structure": "结构分析：I believe 后省略 that，引导宾语从句；the moment 是从句主语；when computers meet and surpass human intelligence 修饰 moment；is on the horizon 是谓语部分。",
           "phrases": [
-            {
-              "term": "intelligence",
-              "zh": "智能；智力"
-            },
             {
               "term": "human intelligence",
               "zh": "人类智能"
             },
             {
-              "term": "the moment when",
-              "zh": "……的时刻"
+              "term": "meet and surpass",
+              "zh": "达到并超越"
             },
             {
               "term": "on the horizon",
               "zh": "即将出现；已露端倪"
+            },
+            {
+              "term": "the moment when",
+              "zh": "……的时刻"
             }
           ],
           "difficulty": 2
@@ -184,16 +164,8 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：这是 how 引导的特殊疑问句；主干是 How will human intelligence and creativity be valued；when 引导时间状语从句；smarter and more creative than... 是比较结构。核心结构：How will A be valued when B become more C than D?",
           "phrases": [
             {
-              "term": "intelligence",
-              "zh": "智能；智力"
-            },
-            {
-              "term": "creativity",
-              "zh": "创造力"
-            },
-            {
-              "term": "be valued",
-              "zh": "被评价价值；被重视"
+              "term": "human intelligence",
+              "zh": "人类智能"
             },
             {
               "term": "the brightest people",
@@ -202,6 +174,18 @@ export const cet6Reading202512Set2 = {
             {
               "term": "more creative than",
               "zh": "比……更有创造力"
+            },
+            {
+              "term": "be valued",
+              "zh": "被评价价值；被重视"
+            },
+            {
+              "term": "intelligence",
+              "zh": "智能；智力"
+            },
+            {
+              "term": "creativity",
+              "zh": "创造力"
             }
           ],
           "difficulty": 2
@@ -231,13 +215,13 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A09",
           "part": "Cloze",
-          "en": "In some 29, people still value humans doing things, even if a computer can do it better.",
-          "zh": "在第 29 空所指的一些领域或场景中，即使计算机能做得更好，人们仍然重视由人来做这些事。",
-          "structure": "结构分析：In some 29 作句首范围状语；主句是 people still value humans doing things；humans doing things 是动名词复合结构，作 value 的宾语；even if 引导让步状语从句。核心结构：In some A, people value B doing C, even if D can do it better。",
+          "en": "In some domains, people still value humans doing things, even if a computer can do it better.",
+          "zh": "在某些领域中，即使计算机能做得更好，人们仍然重视由人来做这些事。",
+          "structure": "结构分析：In some domains 作范围状语；people still value humans doing things 是主干；humans doing things 是动名词复合结构；even if 引导让步状语从句。",
           "phrases": [
             {
-              "term": "in some ...",
-              "zh": "在某些……中"
+              "term": "in some domains",
+              "zh": "在某些领域中"
             },
             {
               "term": "value humans doing things",
@@ -246,10 +230,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "even if",
               "zh": "即使"
-            },
-            {
-              "term": "do it better",
-              "zh": "做得更好"
             }
           ],
           "difficulty": 2
@@ -283,10 +263,14 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A11",
           "part": "Cloze",
-          "en": "In other fields, human skill will seem costly and 30.",
-          "zh": "在其他领域，人类技能会显得昂贵，而且具有第 30 空所表达的那种劣势。",
-          "structure": "结构分析：In other fields 作范围状语；主句是 human skill will seem...；costly and 30 是并列表语，说明人类技能在某些领域的相对缺点。核心结构：In A, B will seem C and D。",
+          "en": "In other fields, human skill will seem costly and inferior.",
+          "zh": "在其他领域，人类技能会显得昂贵而且较为低效/劣势明显。",
+          "structure": "结构分析：In other fields 作范围状语；human skill 是主语；will seem 是系动词；costly and inferior 是并列表语，说明人类技能在某些领域相对机器的劣势。",
           "phrases": [
+            {
+              "term": "costly and inferior",
+              "zh": "成本高且处于劣势"
+            },
             {
               "term": "in other fields",
               "zh": "在其他领域"
@@ -294,14 +278,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "human skill",
               "zh": "人类技能"
-            },
-            {
-              "term": "costly",
-              "zh": "昂贵的；成本高的"
-            },
-            {
-              "term": "seem",
-              "zh": "显得；看起来"
             }
           ],
           "difficulty": 2
@@ -309,29 +285,25 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A12",
           "part": "Cloze",
-          "en": "Take illustration for example: most readers don't care whether the graphic 31 a magazine article was drawn by a person or a computer—they just want it to be relevant, new and perhaps 32 And, of course, this question isn't black or white.",
-          "zh": "以插图为例：大多数读者并不在乎一篇杂志文章的配图是由人画的还是由计算机画的，他们只是希望它相关、新颖，也许还具有第 32 空所表达的特点。当然，这个问题并不是非黑即白。",
-          "structure": "结构分析：Take illustration for example 是举例表达；冒号后展开例子；whether...or... 引导 don't care 的宾语从句；破折号后补充读者真正看重的标准；最后一句 this question isn't black or white 总结问题并不绝对。核心结构：Take A for example: B don't care whether C was done by D or E; they just want F to be G。",
+          "en": "Take illustration for example: most readers don't care whether the graphic accompanying a magazine article was drawn by a person or a computer; they just want it to be relevant, new and perhaps beautiful. And, of course, this question isn't black or white.",
+          "zh": "以插图为例：大多数读者并不在乎一篇杂志文章的配图是由人画的还是由计算机画的；他们只是希望它相关、新颖，也许还要美观。当然，这个问题并不是非黑即白。",
+          "structure": "结构分析：Take illustration for example 是举例表达；冒号后展开例子；whether...or... 引导 don't care 的宾语从句；accompanying a magazine article 修饰 graphic；分号后说明读者真正看重的标准；最后一句总结问题并不绝对。",
           "phrases": [
             {
               "term": "take ... for example",
               "zh": "以……为例"
             },
             {
-              "term": "illustration",
-              "zh": "插图；图解"
-            },
-            {
-              "term": "graphic",
-              "zh": "图像；配图"
-            },
-            {
-              "term": "relevant",
-              "zh": "相关的；切题的"
+              "term": "a graphic accompanying an article",
+              "zh": "文章配图"
             },
             {
               "term": "black or white",
               "zh": "非黑即白；绝对化"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 3
@@ -339,33 +311,21 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A13",
           "part": "Cloze",
-          "en": "Many fields will be a 33, where some humans find a lucky place, but most of the work is done by computers, like in manufacturing today, where, much of the work is accomplished by robots, but some humans must be there to 34 the machines.",
-          "zh": "许多领域将会成为第 33 空所指的混合状态：有些人类能幸运地找到自己的位置，但大部分工作会由计算机完成，就像今天的制造业一样，很多工作由机器人完成，但仍必须有人在场去第 34 空所指地处理这些机器。",
-          "structure": "结构分析：主句是 Many fields will be a 33；where 引导定语从句说明这种状态内部的分工；but most of the work... 表示转折；like in manufacturing today 举例；第二个 where 继续说明制造业中的人机分工；to 34 the machines 表示人在场的目的。核心结构：A will be B, where C, but D, like in E, where F, but G must be there to H。",
+          "en": "Many fields will be a hybrid, where some humans find a lucky place, but most of the work is done by computers, like in manufacturing today, where much of the work is accomplished by robots, but some humans must be there to monitor the machines.",
+          "zh": "许多领域将会成为一种混合状态：有些人类能幸运地找到自己的位置，但大部分工作会由计算机完成，就像今天的制造业一样，很多工作由机器人完成，但仍必须有人在场监控机器。",
+          "structure": "结构分析：Many fields will be a hybrid 是主句；where 从句说明这种混合状态内部的人机分工；like in manufacturing today 举例；第二个 where 继续说明制造业中的分工；to monitor the machines 表示人在场的目的。",
           "phrases": [
             {
-              "term": "many fields",
-              "zh": "许多领域"
+              "term": "be a hybrid",
+              "zh": "成为一种混合状态"
             },
             {
               "term": "find a lucky place",
-              "zh": "找到幸运的位置；获得少数机会"
+              "zh": "获得少数幸运位置"
             },
             {
-              "term": "most of the work",
-              "zh": "大部分工作"
-            },
-            {
-              "term": "be done by computers",
-              "zh": "由计算机完成"
-            },
-            {
-              "term": "manufacturing",
-              "zh": "制造业"
-            },
-            {
-              "term": "be accomplished by robots",
-              "zh": "由机器人完成"
+              "term": "monitor the machines",
+              "zh": "监控机器"
             }
           ],
           "difficulty": 2
@@ -373,33 +333,25 @@ export const cet6Reading202512Set2 = {
         {
           "label": "A14",
           "part": "Cloze",
-          "en": "If history is any guide, it's almost certain that advances in AI will cause more jobs to 35, that creative workers with human-only skills will become richer but fewer in number, and that those who own creative technology will become the new ultra-rich.",
-          "zh": "如果历史具有任何参考意义，那么几乎可以肯定，人工智能的进步会导致更多工作第 35 空所指地变化，拥有纯人类技能的创意工作者会变得更富有但人数更少，而拥有创造性技术的人会成为新的超级富豪。",
-          "structure": "结构分析：If history is any guide 是条件状语；主句是 it's almost certain；后面三个 that 从句并列，分别说明 AI 对工作、创意劳动者和技术拥有者的影响；who own creative technology 修饰 those。核心结构：If A, it is almost certain that B, that C, and that D。",
+          "en": "If history is any guide, it's almost certain that advances in AI will cause more jobs to disappear, that creative workers with human-only skills will become richer but fewer in number, and that those who own creative technology will become the new ultra-rich.",
+          "zh": "如果历史具有任何参考意义，那么几乎可以肯定，人工智能的进步会导致更多工作消失，拥有纯人类技能的创意工作者会变得更富有但人数更少，而拥有创造性技术的人会成为新的超级富豪。",
+          "structure": "结构分析：If history is any guide 是条件状语；主句是 it's almost certain；后面三个 that 从句并列，分别说明 AI 对工作、创意劳动者和技术拥有者的影响；who own creative technology 修饰 those。",
           "phrases": [
             {
-              "term": "technology",
-              "zh": "技术"
+              "term": "human-only skills",
+              "zh": "只有人类才具备的技能"
             },
             {
               "term": "if history is any guide",
               "zh": "如果历史可作参考"
             },
             {
-              "term": "advances in AI",
-              "zh": "人工智能的进步"
-            },
-            {
-              "term": "human-only skills",
-              "zh": "只有人类才具备的技能"
+              "term": "cause jobs to disappear",
+              "zh": "导致工作岗位消失"
             },
             {
               "term": "fewer in number",
               "zh": "数量更少"
-            },
-            {
-              "term": "ultra-rich",
-              "zh": "超级富豪"
             }
           ],
           "difficulty": 3
@@ -424,12 +376,12 @@ export const cet6Reading202512Set2 = {
               "zh": "按计划发展；按预期进行"
             },
             {
-              "term": "give up",
-              "zh": "放弃"
-            },
-            {
               "term": "not always clear",
               "zh": "并不总是清楚"
+            },
+            {
+              "term": "give up",
+              "zh": "放弃"
             }
           ],
           "difficulty": 2
@@ -446,12 +398,12 @@ export const cet6Reading202512Set2 = {
               "zh": "放弃者永远不会赢"
             },
             {
-              "term": "best decision",
-              "zh": "最好的决定"
-            },
-            {
               "term": "cut our losses",
               "zh": "及时止损"
+            },
+            {
+              "term": "best decision",
+              "zh": "最好的决定"
             },
             {
               "term": "repeatedly hear",
@@ -474,10 +426,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "run its course",
               "zh": "自然结束；走到尽头"
-            },
-            {
-              "term": "despite",
-              "zh": "尽管"
             },
             {
               "term": "make you miserable",
@@ -520,20 +468,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：while 引导让步状语从句；主句是 it may also incline you to over-invest...；that is no longer a good idea 修饰 something。核心结构：While A is B, it may incline you to C in something that D。",
           "phrases": [
             {
-              "term": "perseverance",
-              "zh": "坚持；毅力"
+              "term": "incline you to",
+              "zh": "使你倾向于"
             },
             {
               "term": "excellent quality",
               "zh": "优秀品质"
             },
             {
-              "term": "incline you to",
-              "zh": "使你倾向于"
-            },
-            {
               "term": "over-invest in",
               "zh": "过度投入于"
+            },
+            {
+              "term": "perseverance",
+              "zh": "坚持；毅力"
             }
           ],
           "difficulty": 2
@@ -546,6 +494,10 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：As an executive coach 作身份状语；主句是 I work with... leaders；who do not want to \"quit\" 是定语从句，修饰 leaders。核心结构：As A, I work with B who do not want to C。",
           "phrases": [
             {
+              "term": "do not want to quit",
+              "zh": "不想放弃"
+            },
+            {
               "term": "executive coach",
               "zh": "高管教练"
             },
@@ -556,10 +508,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "hard-working",
               "zh": "勤奋的"
-            },
-            {
-              "term": "do not want to quit",
-              "zh": "不想放弃"
             }
           ],
           "difficulty": 2
@@ -598,6 +546,10 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 We are all susceptible to...；an unconscious bias 是 sunk-cost delusion 的同位语；that leads us to persist... 修饰 bias；we have already invested...into 修饰 endeavor；even when 引导让步状语从句。核心结构：A are susceptible to B, a bias that leads A to C, even when D。",
           "phrases": [
             {
+              "term": "persist in an endeavor",
+              "zh": "坚持做一件事"
+            },
+            {
               "term": "susceptible to",
               "zh": "易受……影响"
             },
@@ -608,10 +560,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "unconscious bias",
               "zh": "无意识偏见"
-            },
-            {
-              "term": "persist in an endeavor",
-              "zh": "坚持做一件事"
             },
             {
               "term": "more beneficial",
@@ -632,10 +580,6 @@ export const cet6Reading202512Set2 = {
               "zh": "拿回已投入的资源"
             },
             {
-              "term": "persevere",
-              "zh": "坚持下去"
-            },
-            {
               "term": "should be halted",
               "zh": "本该停止"
             },
@@ -646,6 +590,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "halfway through",
               "zh": "进行到一半"
+            },
+            {
+              "term": "persevere",
+              "zh": "坚持下去"
             }
           ],
           "difficulty": 4
@@ -660,10 +608,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "not your thing",
               "zh": "不是你的风格；不是你擅长或愿意做的事"
-            },
-            {
-              "term": "especially",
-              "zh": "尤其"
             },
             {
               "term": "susceptible to this bias",
@@ -688,12 +632,12 @@ export const cet6Reading202512Set2 = {
               "zh": "我们会失去什么"
             },
             {
-              "term": "move on",
-              "zh": "继续前进；翻篇"
-            },
-            {
               "term": "costs of not moving on",
               "zh": "不继续前进的代价"
+            },
+            {
+              "term": "move on",
+              "zh": "继续前进；翻篇"
             }
           ],
           "difficulty": 2
@@ -714,12 +658,12 @@ export const cet6Reading202512Set2 = {
               "zh": "重新调整思路"
             },
             {
-              "term": "the gains",
-              "zh": "收益；好处"
-            },
-            {
               "term": "weigh the alternatives",
               "zh": "权衡各种选择"
+            },
+            {
+              "term": "the gains",
+              "zh": "收益；好处"
             }
           ],
           "difficulty": 2
@@ -732,16 +676,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Ask yourself 是祈使句；冒号后是直接问题；by cutting my losses now 作方式状语，说明 gain 的途径。核心结构：Ask yourself: What might I gain by doing A?",
           "phrases": [
             {
-              "term": "ask yourself",
-              "zh": "问问自己"
-            },
-            {
               "term": "what might I gain",
               "zh": "我可能获得什么"
             },
             {
               "term": "cutting my losses now",
               "zh": "现在及时止损"
+            },
+            {
+              "term": "ask yourself",
+              "zh": "问问自己"
             }
           ],
           "difficulty": 2
@@ -754,12 +698,12 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：这是一般疑问句；will 后连接两个并列谓语 be happier 和 have time；another (better) opportunity 是 have time for 的宾语。核心结构：Will A be B or have time for C?",
           "phrases": [
             {
-              "term": "be happier",
-              "zh": "更快乐"
-            },
-            {
               "term": "have time for",
               "zh": "有时间做；有时间投入"
+            },
+            {
+              "term": "be happier",
+              "zh": "更快乐"
             },
             {
               "term": "better opportunity",
@@ -775,10 +719,6 @@ export const cet6Reading202512Set2 = {
           "zh": "然后再问自己：硬撑下去会让我付出什么代价？",
           "structure": "结构分析：Then ask yourself 是祈使句；冒号后是疑问句；it cost me to soldier on 中 it 指继续坚持这件事；to soldier on 作真正说明。核心结构：What will it cost me to do A?",
           "phrases": [
-            {
-              "term": "then",
-              "zh": "然后"
-            },
             {
               "term": "cost me",
               "zh": "让我付出代价"
@@ -798,16 +738,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：For example 引出例子；is it possible that... 是形式主语结构；that 从句是真正主语；throwing more good money after... 表示继续把资源投进已经亏损的事情。核心结构：Is it possible that A will be doing B after C?",
           "phrases": [
             {
-              "term": "for example",
-              "zh": "比如"
-            },
-            {
               "term": "throw good money after bad",
               "zh": "在亏损后继续投入；越亏越投"
             },
             {
               "term": "what you have already lost",
               "zh": "你已经失去的东西"
+            },
+            {
+              "term": "for example",
+              "zh": "比如"
             }
           ],
           "difficulty": 2
@@ -846,20 +786,20 @@ export const cet6Reading202512Set2 = {
               "zh": "控制错觉"
             },
             {
-              "term": "interfere with",
-              "zh": "干扰"
-            },
-            {
-              "term": "best judgment",
-              "zh": "最佳判断"
-            },
-            {
               "term": "overestimate our ability",
               "zh": "高估我们的能力"
             },
             {
               "term": "attain a positive outcome",
               "zh": "获得积极结果"
+            },
+            {
+              "term": "interfere with",
+              "zh": "干扰"
+            },
+            {
+              "term": "best judgment",
+              "zh": "最佳判断"
             }
           ],
           "difficulty": 2
@@ -878,10 +818,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "promote mental health",
               "zh": "促进心理健康"
-            },
-            {
-              "term": "bias",
-              "zh": "偏见；认知偏差"
             }
           ],
           "difficulty": 2
@@ -894,20 +830,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：However 表示转折；主句是 the bias can also result in...；escalating commitment to... 是 result in 的宾语；losing 修饰 course of action。核心结构：A can result in B to C。",
           "phrases": [
             {
-              "term": "result in",
-              "zh": "导致"
-            },
-            {
-              "term": "escalating commitment",
-              "zh": "不断升级的投入；越陷越深的承诺"
-            },
-            {
               "term": "losing course of action",
               "zh": "正在失败的行动路线"
             },
             {
-              "term": "however",
-              "zh": "然而"
+              "term": "commitment to",
+              "zh": "对……的承诺"
+            },
+            {
+              "term": "result in",
+              "zh": "导致；结果是"
+            },
+            {
+              "term": "escalating commitment",
+              "zh": "不断升级的投入；越陷越深的承诺"
             }
           ],
           "difficulty": 2
@@ -958,12 +894,12 @@ export const cet6Reading202512Set2 = {
               "zh": "审视你的处境"
             },
             {
-              "term": "two-column list",
-              "zh": "两栏清单"
-            },
-            {
               "term": "in your control",
               "zh": "在你的控制之内"
+            },
+            {
+              "term": "two-column list",
+              "zh": "两栏清单"
             }
           ],
           "difficulty": 2
@@ -980,16 +916,16 @@ export const cet6Reading202512Set2 = {
               "zh": "能够影响"
             },
             {
-              "term": "various circumstances",
-              "zh": "各种情况；环境因素"
-            },
-            {
               "term": "force them to change",
               "zh": "强迫他们改变"
             },
             {
               "term": "go your way",
               "zh": "按你的方式来"
+            },
+            {
+              "term": "various circumstances",
+              "zh": "各种情况；环境因素"
             }
           ],
           "difficulty": 2
@@ -1006,12 +942,12 @@ export const cet6Reading202512Set2 = {
               "zh": "弄清楚"
             },
             {
-              "term": "quality decision",
-              "zh": "高质量决定"
-            },
-            {
               "term": "call it quits",
               "zh": "决定停止；到此为止"
+            },
+            {
+              "term": "quality decision",
+              "zh": "高质量决定"
             },
             {
               "term": "persevere",
@@ -1032,16 +968,16 @@ export const cet6Reading202512Set2 = {
               "zh": "手里有一份写下来的清单"
             },
             {
+              "term": "worth the expense",
+              "zh": "值得付出代价"
+            },
+            {
               "term": "focus on",
-              "zh": "专注于"
+              "zh": "关注；聚焦于"
             },
             {
               "term": "continued efforts",
               "zh": "持续努力"
-            },
-            {
-              "term": "worth the expense",
-              "zh": "值得付出代价"
             }
           ],
           "difficulty": 2
@@ -1084,12 +1020,12 @@ export const cet6Reading202512Set2 = {
               "zh": "研究表明"
             },
             {
-              "term": "self-identity",
-              "zh": "自我身份"
-            },
-            {
               "term": "social status",
               "zh": "社会地位"
+            },
+            {
+              "term": "self-identity",
+              "zh": "自我身份"
             },
             {
               "term": "commitments",
@@ -1106,20 +1042,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：because 引导原因状语从句；主句主语是 withdrawing from one；can feel like... 是谓语；to our identity or status 修饰 threat。核心结构：Because A identify with B, doing C can feel like D to E。",
           "phrases": [
             {
-              "term": "identify with",
-              "zh": "认同；把自己与……绑定"
-            },
-            {
-              "term": "withdraw from",
-              "zh": "退出"
-            },
-            {
               "term": "feel like a threat",
               "zh": "感觉像一种威胁"
             },
             {
               "term": "identity or status",
               "zh": "身份或地位"
+            },
+            {
+              "term": "identify with",
+              "zh": "认同；把自己与……绑定"
+            },
+            {
+              "term": "withdraw from",
+              "zh": "退出"
             }
           ],
           "difficulty": 2
@@ -1136,12 +1072,12 @@ export const cet6Reading202512Set2 = {
               "zh": "以……为例"
             },
             {
-              "term": "client",
-              "zh": "客户"
-            },
-            {
               "term": "technology company",
               "zh": "科技公司"
+            },
+            {
+              "term": "client",
+              "zh": "客户"
             },
             {
               "term": "leader",
@@ -1162,20 +1098,20 @@ export const cet6Reading202512Set2 = {
               "zh": "在……投入时间和精力"
             },
             {
-              "term": "design project",
-              "zh": "设计项目"
-            },
-            {
               "term": "deliver the needed outcomes",
               "zh": "产生所需结果"
             },
             {
-              "term": "abandoning it",
-              "zh": "放弃它"
-            },
-            {
               "term": "hard to bear",
               "zh": "难以承受"
+            },
+            {
+              "term": "design project",
+              "zh": "设计项目"
+            },
+            {
+              "term": "abandoning it",
+              "zh": "放弃它"
             }
           ],
           "difficulty": 2
@@ -1188,10 +1124,6 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：As 引导时间状语从句；whether...or... 引导 explored 的宾语从句；she had been leading 修饰 initiative；主句是 she stated。核心结构：As A explored whether B should C or D, she stated E。",
           "phrases": [
             {
-              "term": "explore whether",
-              "zh": "探讨是否"
-            },
-            {
               "term": "cancel the initiative",
               "zh": "取消这项计划"
             },
@@ -1202,6 +1134,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "not a quitter",
               "zh": "不是放弃者"
+            },
+            {
+              "term": "explore whether",
+              "zh": "探讨是否"
             }
           ],
           "difficulty": 2
@@ -1218,16 +1154,16 @@ export const cet6Reading202512Set2 = {
               "zh": "自我认知"
             },
             {
+              "term": "choices for action",
+              "zh": "行动选择"
+            },
+            {
               "term": "cloud judgment",
               "zh": "遮蔽判断；影响判断"
             },
             {
               "term": "limit choices",
               "zh": "限制选择"
-            },
-            {
-              "term": "choices for action",
-              "zh": "行动选择"
             }
           ],
           "difficulty": 2
@@ -1240,20 +1176,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 Our self-concept and identity are mental concepts；that influence our behavior 是定语从句，修饰 concepts。核心结构：A and B are C that influence D。",
           "phrases": [
             {
-              "term": "self-concept",
-              "zh": "自我概念"
-            },
-            {
-              "term": "identity",
-              "zh": "身份认同"
+              "term": "influence our behavior",
+              "zh": "影响我们的行为"
             },
             {
               "term": "mental concepts",
               "zh": "心理概念"
             },
             {
-              "term": "influence our behavior",
-              "zh": "影响我们的行为"
+              "term": "self-concept",
+              "zh": "自我概念"
             }
           ],
           "difficulty": 2
@@ -1270,16 +1202,16 @@ export const cet6Reading202512Set2 = {
               "zh": "强烈认同自己是"
             },
             {
-              "term": "end up",
-              "zh": "最终"
-            },
-            {
               "term": "stay stuck in",
               "zh": "被困在……中"
             },
             {
               "term": "narrow and rigid",
               "zh": "狭窄而僵化的"
+            },
+            {
+              "term": "end up",
+              "zh": "最终"
             }
           ],
           "difficulty": 2
@@ -1292,10 +1224,6 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：To overcome... 作目的状语；recall 是祈使句谓语；positive traits and personality characteristics 是并列宾语。核心结构：To overcome A, recall B and C。",
           "phrases": [
             {
-              "term": "overcome",
-              "zh": "克服"
-            },
-            {
               "term": "internal obstacle",
               "zh": "内部障碍"
             },
@@ -1306,6 +1234,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "personality characteristics",
               "zh": "性格特点"
+            },
+            {
+              "term": "overcome",
+              "zh": "克服"
             }
           ],
           "difficulty": 2
@@ -1318,10 +1250,6 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Ask yourself 是祈使句；冒号后是特殊疑问句；that would be helpful to employ here 修饰 strengths；or aspire to have 是插入补充。核心结构：What additional strengths do I have that would be helpful to employ here?",
           "phrases": [
             {
-              "term": "additional strengths",
-              "zh": "额外优势"
-            },
-            {
               "term": "aspire to have",
               "zh": "渴望拥有"
             },
@@ -1330,8 +1258,8 @@ export const cet6Reading202512Set2 = {
               "zh": "有助于运用"
             },
             {
-              "term": "here",
-              "zh": "在当前情境中"
+              "term": "additional strengths",
+              "zh": "额外优势"
             }
           ],
           "difficulty": 2
@@ -1348,12 +1276,12 @@ export const cet6Reading202512Set2 = {
               "zh": "积极品质"
             },
             {
-              "term": "leverage",
-              "zh": "利用；发挥"
-            },
-            {
               "term": "decision making",
               "zh": "决策"
+            },
+            {
+              "term": "leverage",
+              "zh": "利用；发挥"
             },
             {
               "term": "discernment",
@@ -1362,6 +1290,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "bravery",
               "zh": "勇气"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 2
@@ -1396,16 +1328,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：这是 what 引导的特殊疑问句；the discerning part of you 是主语；say 是谓语。核心结构：What does A say?",
           "phrases": [
             {
-              "term": "discerning",
-              "zh": "有辨识力的；有判断力的"
-            },
-            {
               "term": "part of you",
               "zh": "你身上的一部分"
             },
             {
               "term": "what does ... say",
               "zh": "……会怎么说"
+            },
+            {
+              "term": "discerning",
+              "zh": "有辨识力的；有判断力的"
             }
           ],
           "difficulty": 2
@@ -1422,12 +1354,12 @@ export const cet6Reading202512Set2 = {
               "zh": "思考你的决定"
             },
             {
-              "term": "different characteristics",
-              "zh": "不同特质"
-            },
-            {
               "term": "enable you to see",
               "zh": "使你能够看到"
+            },
+            {
+              "term": "different characteristics",
+              "zh": "不同特质"
             },
             {
               "term": "more choices",
@@ -1456,8 +1388,8 @@ export const cet6Reading202512Set2 = {
               "zh": "想法和直觉"
             },
             {
-              "term": "seek",
-              "zh": "寻求"
+              "term": "rather than",
+              "zh": "而不是"
             }
           ],
           "difficulty": 2
@@ -1492,20 +1424,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Ideally 作状语；seek out 是祈使句谓语；who are less invested... 修饰 people；than you are 是比较结构。核心结构：Seek out people who are less invested in A than B。",
           "phrases": [
             {
-              "term": "ideally",
-              "zh": "理想情况下"
+              "term": "less invested in",
+              "zh": "投入程度较低；牵涉较少"
             },
             {
               "term": "seek out",
               "zh": "寻找；找出"
             },
             {
-              "term": "less invested in",
-              "zh": "投入程度较低；牵涉较少"
-            },
-            {
               "term": "your decision",
               "zh": "你的决定"
+            },
+            {
+              "term": "ideally",
+              "zh": "理想情况下"
             }
           ],
           "difficulty": 2
@@ -1518,20 +1450,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：If 引导条件状语从句；whether to shut down... 是 considering 的宾语；主句是 reach out to...；as opposed to... 表示对比。核心结构：If A are considering whether to B, reach out to C as opposed to D。",
           "phrases": [
             {
-              "term": "shut down",
-              "zh": "关闭；终止"
-            },
-            {
-              "term": "entrepreneurial venture",
-              "zh": "创业项目"
-            },
-            {
               "term": "reach out to",
               "zh": "联系"
             },
             {
               "term": "as opposed to",
               "zh": "而不是"
+            },
+            {
+              "term": "shut down",
+              "zh": "关闭；终止"
+            },
+            {
+              "term": "entrepreneurial venture",
+              "zh": "创业项目"
             },
             {
               "term": "business partner",
@@ -1548,20 +1480,24 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Similarly 连接同类建议；if 引导条件状语从句；removed from... 修饰 someone；instead of relying... 表示替代关系。核心结构：If A are looking for B, ask someone C instead of D。",
           "phrases": [
             {
-              "term": "love advice",
-              "zh": "感情建议"
-            },
-            {
-              "term": "removed from",
-              "zh": "远离；不卷入"
-            },
-            {
               "term": "ups and downs",
               "zh": "起伏"
             },
             {
               "term": "rely only on",
               "zh": "只依赖"
+            },
+            {
+              "term": "instead of",
+              "zh": "而不是"
+            },
+            {
+              "term": "love advice",
+              "zh": "感情建议"
+            },
+            {
+              "term": "removed from",
+              "zh": "远离；不卷入"
             }
           ],
           "difficulty": 2
@@ -1600,20 +1536,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Alternately 表示另一种方法；主句是 you could seek out hard data；that illuminates... 修饰 data；whatever endeavor you are contemplating 是介词 in 的宾语。核心结构：You could seek out A that illuminates B in whatever C。",
           "phrases": [
             {
-              "term": "alternately",
-              "zh": "或者；作为另一种选择"
+              "term": "chance of success",
+              "zh": "成功机会"
             },
             {
               "term": "hard data",
               "zh": "硬数据；客观数据"
             },
             {
-              "term": "illuminate",
-              "zh": "阐明；照亮"
+              "term": "alternately",
+              "zh": "或者；作为另一种选择"
             },
             {
-              "term": "chance of success",
-              "zh": "成功机会"
+              "term": "illuminate",
+              "zh": "阐明；照亮"
             },
             {
               "term": "contemplate",
@@ -1638,12 +1574,12 @@ export const cet6Reading202512Set2 = {
               "zh": "创业项目"
             },
             {
-              "term": "numbers",
-              "zh": "数字；数据"
-            },
-            {
               "term": "best friend",
               "zh": "最可靠的帮手"
+            },
+            {
+              "term": "numbers",
+              "zh": "数字；数据"
             }
           ],
           "difficulty": 2
@@ -1660,16 +1596,16 @@ export const cet6Reading202512Set2 = {
               "zh": "让自己从……中抽离"
             },
             {
+              "term": "industry growth rates",
+              "zh": "行业增长率"
+            },
+            {
               "term": "burn rate",
               "zh": "资金消耗速度"
             },
             {
               "term": "relative to",
               "zh": "相对于；结合……来看"
-            },
-            {
-              "term": "industry growth rates",
-              "zh": "行业增长率"
             },
             {
               "term": "start-up success",
@@ -1690,16 +1626,16 @@ export const cet6Reading202512Set2 = {
               "zh": "外部信息来源"
             },
             {
+              "term": "might not have considered",
+              "zh": "可能没有考虑过"
+            },
+            {
               "term": "angles",
               "zh": "角度"
             },
             {
               "term": "possibilities",
               "zh": "可能性"
-            },
-            {
-              "term": "might not have considered",
-              "zh": "可能没有考虑过"
             }
           ],
           "difficulty": 2
@@ -1716,12 +1652,12 @@ export const cet6Reading202512Set2 = {
               "zh": "一开始很有希望"
             },
             {
-              "term": "turn out",
-              "zh": "结果是；发展成"
-            },
-            {
               "term": "the way we imagined",
               "zh": "我们想象的方式"
+            },
+            {
+              "term": "turn out",
+              "zh": "结果是；证明是"
             },
             {
               "term": "overly self-critical",
@@ -1738,16 +1674,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 Nobody likes to feel...；that they have made... 是 feel 的宾语从句；especially if 引导强调条件；you hold in high esteem 修饰 quality。核心结构：Nobody likes to feel that A, especially if B is a quality C。",
           "phrases": [
             {
+              "term": "hold in high esteem",
+              "zh": "高度看重"
+            },
+            {
               "term": "poor decision",
               "zh": "糟糕的决定"
             },
             {
               "term": "intelligent decisions",
               "zh": "明智决定"
-            },
-            {
-              "term": "hold in high esteem",
-              "zh": "高度看重"
             },
             {
               "term": "especially if",
@@ -1770,10 +1706,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "give yourself a break",
               "zh": "放过自己；别太苛责自己"
-            },
-            {
-              "term": "here",
-              "zh": "在这种情况下"
             }
           ],
           "difficulty": 2
@@ -1786,12 +1718,12 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Practicing self-compassion 是动名词短语作主语；increases 后接多个并列宾语；can boost 和 help 是并列谓语；as well as 连接附加结果。核心结构：Doing A increases B, C, and D, and can E as well as F。",
           "phrases": [
             {
-              "term": "self-compassion",
-              "zh": "自我同情；自我关怀"
+              "term": "as well as",
+              "zh": "以及；还"
             },
             {
-              "term": "resilience",
-              "zh": "韧性"
+              "term": "boost your performance",
+              "zh": "提升你的表现"
             },
             {
               "term": "emotional intelligence",
@@ -1802,8 +1734,12 @@ export const cet6Reading202512Set2 = {
               "zh": "成长型思维"
             },
             {
-              "term": "boost your performance",
-              "zh": "提升你的表现"
+              "term": "self-compassion",
+              "zh": "自我同情；自我关怀"
+            },
+            {
+              "term": "resilience",
+              "zh": "韧性"
             }
           ],
           "difficulty": 2
@@ -1816,20 +1752,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Instead of... 表示替代；deliberating and criticizing 是并列动名词；主句是 focus...；what you can learn... 是 focus on 的宾语从句。核心结构：Instead of doing A and B, focus on what C。",
           "phrases": [
             {
-              "term": "instead of",
-              "zh": "而不是"
+              "term": "learn from this situation",
+              "zh": "从这种情况中学习"
             },
             {
-              "term": "deliberate",
-              "zh": "反复思考；斟酌"
+              "term": "instead of",
+              "zh": "而不是"
             },
             {
               "term": "criticize yourself",
               "zh": "批评自己"
             },
             {
-              "term": "learn from this situation",
-              "zh": "从这种情况中学习"
+              "term": "deliberate",
+              "zh": "反复思考；斟酌"
             }
           ],
           "difficulty": 2
@@ -1842,20 +1778,24 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：For example 引出例子；主句是 Ryan recognized；she had developed... 是宾语从句；from leading... 表示来源。核心结构：A recognized that she had developed B from doing C。",
           "phrases": [
             {
-              "term": "recognize",
-              "zh": "意识到"
-            },
-            {
               "term": "various new skills",
               "zh": "各种新技能"
+            },
+            {
+              "term": "lead the design project",
+              "zh": "领导设计项目"
             },
             {
               "term": "leadership capabilities",
               "zh": "领导能力"
             },
             {
-              "term": "lead the design project",
-              "zh": "领导设计项目"
+              "term": "recognize",
+              "zh": "意识到"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 2
@@ -1868,6 +1808,14 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：despite 引导让步状语；deciding to drop it 是介词宾语；主句是 she was still happy... and grateful...；what the experience taught her 是介词 for 的宾语从句。核心结构：Despite doing A, she was happy B and grateful for C。",
           "phrases": [
             {
+              "term": "happy she had tried",
+              "zh": "很高兴自己尝试过"
+            },
+            {
+              "term": "what the experience taught her",
+              "zh": "这段经历教给她的东西"
+            },
+            {
               "term": "ultimately decide",
               "zh": "最终决定"
             },
@@ -1876,16 +1824,8 @@ export const cet6Reading202512Set2 = {
               "zh": "放弃它"
             },
             {
-              "term": "happy she had tried",
-              "zh": "很高兴自己尝试过"
-            },
-            {
               "term": "grateful for",
               "zh": "感激"
-            },
-            {
-              "term": "what the experience taught her",
-              "zh": "这段经历教给她的东西"
             }
           ],
           "difficulty": 2
@@ -1898,16 +1838,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Undeniably 作评价状语；主句是 perseverance can help us succeed；succeed 是 help 的宾语补足语。核心结构：A can help B do C。",
           "phrases": [
             {
+              "term": "help us succeed",
+              "zh": "帮助我们成功"
+            },
+            {
               "term": "undeniably",
               "zh": "不可否认地"
             },
             {
               "term": "perseverance",
               "zh": "坚持；毅力"
-            },
-            {
-              "term": "help us succeed",
-              "zh": "帮助我们成功"
             }
           ],
           "difficulty": 2
@@ -1920,10 +1860,6 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：But 表示转折；for your wellbeing 作目的/受益状语；it is important to learn... 是形式主语结构；how to distinguish A and B 是 learn 的宾语。核心结构：It is important to learn how to distinguish A and B。",
           "phrases": [
             {
-              "term": "wellbeing",
-              "zh": "身心健康；福祉"
-            },
-            {
               "term": "distinguish A and B",
               "zh": "区分 A 和 B"
             },
@@ -1932,12 +1868,16 @@ export const cet6Reading202512Set2 = {
               "zh": "过早放弃"
             },
             {
+              "term": "losing course of action",
+              "zh": "正在失败的行动路线"
+            },
+            {
               "term": "clinging to",
               "zh": "执着于；紧抓不放"
             },
             {
-              "term": "losing course of action",
-              "zh": "正在失败的行动路线"
+              "term": "wellbeing",
+              "zh": "身心健康；福祉"
             }
           ],
           "difficulty": 2
@@ -1950,6 +1890,14 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：While 引导让步状语从句；主句是 it will free up...；to imagine and pursue 表示释放空间后的目的或结果；new possibilities 和 new opportunities 对应并列。核心结构：While A can be difficult, it will free up B to C and D。",
           "phrases": [
             {
+              "term": "imagine new possibilities",
+              "zh": "想象新的可能性"
+            },
+            {
+              "term": "pursue new opportunities",
+              "zh": "追求新的机会"
+            },
+            {
               "term": "letting go",
               "zh": "放手"
             },
@@ -1960,14 +1908,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "mental space",
               "zh": "心理空间"
-            },
-            {
-              "term": "imagine new possibilities",
-              "zh": "想象新的可能性"
-            },
-            {
-              "term": "pursue new opportunities",
-              "zh": "追求新的机会"
             }
           ],
           "difficulty": 2
@@ -1988,16 +1928,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：As interdependent beings 作身份状语；主句是 we cannot thrive；independent of others 作补足说明，表示“脱离他人”。核心结构：As A, we cannot B independent of C。",
           "phrases": [
             {
+              "term": "independent of others",
+              "zh": "脱离他人；不依赖他人"
+            },
+            {
               "term": "interdependent beings",
               "zh": "相互依赖的存在"
             },
             {
               "term": "thrive",
               "zh": "兴盛；健康发展"
-            },
-            {
-              "term": "independent of others",
-              "zh": "脱离他人；不依赖他人"
             }
           ],
           "difficulty": 2
@@ -2010,10 +1950,6 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 We like to work with people；who are like-minded、with whom...、who also believe... 是并列定语，修饰 people；we are serious about 修饰 cause。核心结构：We like to work with people who A, with whom B, or who C。",
           "phrases": [
             {
-              "term": "like-minded",
-              "zh": "志同道合的"
-            },
-            {
               "term": "share a common interest",
               "zh": "有共同兴趣"
             },
@@ -2024,6 +1960,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "be serious about",
               "zh": "认真看待；重视"
+            },
+            {
+              "term": "like-minded",
+              "zh": "志同道合的"
             }
           ],
           "difficulty": 2
@@ -2084,12 +2024,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：这是 There be 变体的一般疑问句；interdependence 是主语概念；among its members 表示范围。核心结构：Is there A among B?",
           "phrases": [
             {
+              "term": "among its members",
+              "zh": "在其成员之间"
+            },
+            {
               "term": "interdependence",
               "zh": "相互依赖"
             },
             {
-              "term": "among its members",
-              "zh": "在其成员之间"
+              "term": "Is there...?",
+              "zh": "是否存在……？"
             }
           ],
           "difficulty": 2
@@ -2124,12 +2068,12 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：If 引导条件状语从句；then 引出主句；a micro version of solidarity 是 experience 的宾语。核心结构：If A are affirmative, then B are experiencing C。",
           "phrases": [
             {
-              "term": "affirmative",
-              "zh": "肯定的"
-            },
-            {
               "term": "micro version",
               "zh": "微观版本"
+            },
+            {
+              "term": "affirmative",
+              "zh": "肯定的"
             },
             {
               "term": "solidarity",
@@ -2146,12 +2090,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：这是 what 引导的定义型问题；solidarity 是被询问定义的核心概念。核心结构：What is A?",
           "phrases": [
             {
+              "term": "What is...",
+              "zh": "……是什么；定义型问题"
+            },
+            {
               "term": "solidarity",
               "zh": "团结；休戚与共"
             },
             {
-              "term": "What is...",
-              "zh": "……是什么；定义型问题"
+              "term": "What is solidarity?",
+              "zh": "什么是团结/互助？"
+            },
+            {
+              "term": "What is...?",
+              "zh": "用于要求定义或解释"
             }
           ],
           "difficulty": 2
@@ -2164,12 +2116,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 Its simplest definition is；in the dictionary 作地点/来源状语；冒号引出下一句的定义内容。核心结构：A definition is: B。",
           "phrases": [
             {
+              "term": "in the dictionary",
+              "zh": "在词典中"
+            },
+            {
               "term": "simplest definition",
               "zh": "最简单的定义"
             },
             {
-              "term": "in the dictionary",
-              "zh": "在词典中"
+              "term": "the simplest definition",
+              "zh": "最简单的定义"
             }
           ],
           "difficulty": 2
@@ -2182,20 +2138,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：这是上一句冒号后的定义内容；a unifying opinion, feeling, purpose or interest 是并列名词结构；among a group of people 表示范围。核心结构：A unifying B among C。",
           "phrases": [
             {
-              "term": "unifying",
-              "zh": "起凝聚作用的"
-            },
-            {
-              "term": "opinion",
-              "zh": "观点"
-            },
-            {
               "term": "purpose or interest",
               "zh": "目的或利益"
             },
             {
               "term": "among a group of people",
               "zh": "在一群人之间"
+            },
+            {
+              "term": "unifying",
+              "zh": "起凝聚作用的"
+            },
+            {
+              "term": "opinion",
+              "zh": "观点"
             }
           ],
           "difficulty": 2
@@ -2212,20 +2168,20 @@ export const cet6Reading202512Set2 = {
               "zh": "日益多元的社会"
             },
             {
-              "term": "take on",
-              "zh": "呈现；具有"
-            },
-            {
-              "term": "multifaceted character",
-              "zh": "多面的特征"
-            },
-            {
               "term": "bonds of interdependence",
               "zh": "相互依赖的纽带"
             },
             {
               "term": "division of labour",
               "zh": "劳动分工"
+            },
+            {
+              "term": "take on",
+              "zh": "呈现；具有"
+            },
+            {
+              "term": "multifaceted character",
+              "zh": "多面的特征"
             }
           ],
           "difficulty": 3
@@ -2298,12 +2254,12 @@ export const cet6Reading202512Set2 = {
               "zh": "社会凝聚性"
             },
             {
-              "term": "exclusiveness",
-              "zh": "排他性"
-            },
-            {
               "term": "individual differences",
               "zh": "个人差异"
+            },
+            {
+              "term": "exclusiveness",
+              "zh": "排他性"
             },
             {
               "term": "preferences",
@@ -2320,6 +2276,10 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Consequently 表示结果；主句是 individuality and autonomy is sacrificed；to maintain... 作目的状语。核心结构：A is sacrificed to maintain B。",
           "phrases": [
             {
+              "term": "maintain the unity",
+              "zh": "维持统一"
+            },
+            {
               "term": "consequently",
               "zh": "因此"
             },
@@ -2330,10 +2290,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "autonomy",
               "zh": "自主性"
-            },
-            {
-              "term": "maintain the unity",
-              "zh": "维持统一"
             }
           ],
           "difficulty": 2
@@ -2350,20 +2306,20 @@ export const cet6Reading202512Set2 = {
               "zh": "被视为"
             },
             {
-              "term": "reaction to",
-              "zh": "对……的反应"
-            },
-            {
               "term": "extreme emphasis on",
               "zh": "对……的极端强调"
             },
             {
-              "term": "individualism",
-              "zh": "个人主义"
-            },
-            {
               "term": "freedom of choice",
               "zh": "选择自由"
+            },
+            {
+              "term": "reaction to",
+              "zh": "对……的反应"
+            },
+            {
+              "term": "individualism",
+              "zh": "个人主义"
             }
           ],
           "difficulty": 2
@@ -2375,6 +2331,14 @@ export const cet6Reading202512Set2 = {
           "zh": "它违背了自由主义观念中“不受限制的个人”这一想法：这些人把社会视为对其选择自由和按自身利益行事自由的阻碍，而不管这些行为会如何影响他人。",
           "structure": "结构分析：主句是 It goes against the liberal idea；of unrestricted individuals 修饰 idea；who see society as... 修饰 individuals；to make choices and to act... 修饰 freedom；what is good for them 是 according to 的宾语；regardless of... 表示不顾影响。核心结构：A goes against B of C who see D as E to F and G regardless of H。",
           "phrases": [
+            {
+              "term": "regardless of",
+              "zh": "不管；无论"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
             {
               "term": "go against",
               "zh": "违背；反对"
@@ -2390,10 +2354,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "hindrance to",
               "zh": "对……的阻碍"
-            },
-            {
-              "term": "regardless of",
-              "zh": "不管；不顾"
             }
           ],
           "difficulty": 2
@@ -2410,6 +2370,14 @@ export const cet6Reading202512Set2 = {
               "zh": "尽管它有许多面向"
             },
             {
+              "term": "order and progress",
+              "zh": "秩序和进步"
+            },
+            {
+              "term": "factor in",
+              "zh": "把……考虑进去"
+            },
+            {
               "term": "social theorists",
               "zh": "社会理论家"
             },
@@ -2420,10 +2388,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "bring about",
               "zh": "带来；促成"
-            },
-            {
-              "term": "order and progress",
-              "zh": "秩序和进步"
             }
           ],
           "difficulty": 2
@@ -2436,24 +2400,24 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：They believe that... 是主句加宾语从句；for human society to survive 作目的/条件结构；as it becomes more diverse 是时间/原因状语；more new bonds need to be formed 是被动主干；based on the differences 修饰 bonds。核心结构：They believe that for A to survive as B, C need to be formed based on D。",
           "phrases": [
             {
-              "term": "human society",
-              "zh": "人类社会"
+              "term": "based on differences",
+              "zh": "基于差异"
             },
             {
-              "term": "survive",
-              "zh": "存续；生存"
+              "term": "human society",
+              "zh": "人类社会"
             },
             {
               "term": "more diverse",
               "zh": "更加多元"
             },
             {
-              "term": "bonds",
-              "zh": "纽带"
+              "term": "survive",
+              "zh": "存续；生存"
             },
             {
-              "term": "based on differences",
-              "zh": "基于差异"
+              "term": "bonds",
+              "zh": "纽带"
             }
           ],
           "difficulty": 2
@@ -2470,12 +2434,16 @@ export const cet6Reading202512Set2 = {
               "zh": "有鉴于此"
             },
             {
-              "term": "genuine solidarity",
-              "zh": "真正的团结"
-            },
-            {
               "term": "more than just",
               "zh": "不只是"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
+              "term": "genuine solidarity",
+              "zh": "真正的团结"
             },
             {
               "term": "shallow relationships",
@@ -2496,6 +2464,10 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 Solidarity is not just a product...；of strategic calculations 修饰 product；how much it will benefit the self 是 calculations 的内容。核心结构：A is not just a product of B of how much C will benefit D。",
           "phrases": [
             {
+              "term": "benefit the self",
+              "zh": "有利于自我"
+            },
+            {
               "term": "not just",
               "zh": "不只是"
             },
@@ -2506,10 +2478,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "strategic calculations",
               "zh": "战略性计算；利益盘算"
-            },
-            {
-              "term": "benefit the self",
-              "zh": "有利于自我"
             }
           ],
           "difficulty": 2
@@ -2522,6 +2490,10 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 It is not an exclusive class；founded on... 是过去分词短语，修饰 class；you-and-me-against-the-world principle 是复合名词。核心结构：A is not B founded on C。",
           "phrases": [
             {
+              "term": "against the world",
+              "zh": "对抗世界"
+            },
+            {
               "term": "exclusive class",
               "zh": "排他性类别"
             },
@@ -2532,10 +2504,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "principle",
               "zh": "原则"
-            },
-            {
-              "term": "against the world",
-              "zh": "对抗世界"
             }
           ],
           "difficulty": 2
@@ -2548,16 +2516,12 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：Rather 表示对比转折；主句由两个并列表语构成：inclusive 和 not forced。核心结构：Rather, A is B and is not C。",
           "phrases": [
             {
-              "term": "rather",
-              "zh": "相反"
+              "term": "not forced",
+              "zh": "不是被强迫的"
             },
             {
               "term": "inclusive",
               "zh": "包容性的"
-            },
-            {
-              "term": "not forced",
-              "zh": "不是被强迫的"
             }
           ],
           "difficulty": 2
@@ -2600,8 +2564,8 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 It is a bond；characterised by... 和 strengthened by... 是并列过去分词短语，修饰 bond；for the well-being... 表示关心的对象。核心结构：A is a bond characterised by B and strengthened by C。",
           "phrases": [
             {
-              "term": "bond",
-              "zh": "纽带"
+              "term": "well-being of others",
+              "zh": "他人福祉"
             },
             {
               "term": "characterised by",
@@ -2610,10 +2574,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "cooperative practices",
               "zh": "合作实践"
-            },
-            {
-              "term": "well-being of others",
-              "zh": "他人福祉"
             },
             {
               "term": "common good",
@@ -2630,6 +2590,10 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句有三个并列谓语：fights、listens to、acts on；for the protection of human dignity 表示奋斗目标；the cries of the most vulnerable 是后两个动作的对象。核心结构：A fights for B and listens to and acts on C。",
           "phrases": [
             {
+              "term": "the most vulnerable",
+              "zh": "最脆弱的人群"
+            },
+            {
               "term": "fight for",
               "zh": "为……而奋斗"
             },
@@ -2644,10 +2608,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "act on",
               "zh": "根据……采取行动"
-            },
-            {
-              "term": "the most vulnerable",
-              "zh": "最脆弱的人群"
             }
           ],
           "difficulty": 2
@@ -2668,20 +2628,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：People 是主语；who repeatedly give unwanted advice 是定语从句；can be 和 genuinely want 是并列谓语。核心结构：People who A can be B and want to C。",
           "phrases": [
             {
-              "term": "repeatedly",
-              "zh": "反复地"
+              "term": "genuinely want to help",
+              "zh": "真心想帮忙"
             },
             {
               "term": "unwanted advice",
               "zh": "别人不想要的建议"
             },
             {
-              "term": "well-meaning",
-              "zh": "出于好意的"
+              "term": "repeatedly",
+              "zh": "反复地"
             },
             {
-              "term": "genuinely want to help",
-              "zh": "真心想帮忙"
+              "term": "well-meaning",
+              "zh": "出于好意的"
             }
           ],
           "difficulty": 2
@@ -2694,16 +2654,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 Others might do this；out of... 表示动机来源；around the ability to influence others 修饰 sense of self-worth。核心结构：A might do this out of B around C。",
           "phrases": [
             {
-              "term": "out of",
-              "zh": "出于"
-            },
-            {
               "term": "sense of self-worth",
               "zh": "自我价值感"
             },
             {
               "term": "ability to influence others",
               "zh": "影响他人的能力"
+            },
+            {
+              "term": "out of",
+              "zh": "出于"
             }
           ],
           "difficulty": 2
@@ -2746,10 +2706,6 @@ export const cet6Reading202512Set2 = {
               "zh": "在……的外表/伪装之下"
             },
             {
-              "term": "unselfishness",
-              "zh": "无私"
-            },
-            {
               "term": "be driven to",
               "zh": "被驱使去"
             },
@@ -2760,6 +2716,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "in control",
               "zh": "掌控局面"
+            },
+            {
+              "term": "unselfishness",
+              "zh": "无私"
             }
           ],
           "difficulty": 2
@@ -2776,16 +2736,12 @@ export const cet6Reading202512Set2 = {
               "zh": "意识到"
             },
             {
-              "term": "fully",
-              "zh": "完全地"
-            },
-            {
               "term": "this drive",
               "zh": "这种驱动力"
             },
             {
-              "term": "however",
-              "zh": "不过"
+              "term": "fully",
+              "zh": "完全地"
             }
           ],
           "difficulty": 2
@@ -2798,10 +2754,6 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：主句是 These people may display...；becoming upset... and taking... 是并列现在分词短语，说明 vulnerability 的表现。核心结构：A may display B, becoming C and taking D。",
           "phrases": [
             {
-              "term": "display",
-              "zh": "表现出"
-            },
-            {
               "term": "emotional vulnerability",
               "zh": "情绪脆弱"
             },
@@ -2812,6 +2764,10 @@ export const cet6Reading202512Set2 = {
             {
               "term": "calm down",
               "zh": "平静下来"
+            },
+            {
+              "term": "display",
+              "zh": "表现出"
             }
           ],
           "difficulty": 2
@@ -2824,20 +2780,20 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：It is possible that... 是形式主语结构；when they were at their loudest 是时间状语；encouraging... 是现在分词短语，说明结果；that are excessive... 修饰 responses。核心结构：It is possible that A were validated when B, encouraging them to adopt C that D。",
           "phrases": [
             {
-              "term": "be validated",
-              "zh": "得到确认；被认可"
-            },
-            {
-              "term": "in childhood",
-              "zh": "在童年时期"
-            },
-            {
               "term": "at their loudest",
               "zh": "最强烈地表达时"
             },
             {
               "term": "responses to discomfort",
               "zh": "对不适的反应"
+            },
+            {
+              "term": "be validated",
+              "zh": "得到确认；被认可"
+            },
+            {
+              "term": "in childhood",
+              "zh": "在童年时期"
             },
             {
               "term": "excessive",
@@ -2858,16 +2814,16 @@ export const cet6Reading202512Set2 = {
               "zh": "为了"
             },
             {
-              "term": "underlying anxiety",
-              "zh": "潜在焦虑"
-            },
-            {
               "term": "recipients of the advice",
               "zh": "建议的接收者"
             },
             {
               "term": "tend to notice",
               "zh": "往往会注意到"
+            },
+            {
+              "term": "underlying anxiety",
+              "zh": "潜在焦虑"
             }
           ],
           "difficulty": 2
@@ -2884,6 +2840,10 @@ export const cet6Reading202512Set2 = {
               "zh": "很想；容易想要"
             },
             {
+              "term": "accuse A of B",
+              "zh": "指责 A 做 B"
+            },
+            {
               "term": "react harshly",
               "zh": "严厉回应"
             },
@@ -2892,12 +2852,12 @@ export const cet6Reading202512Set2 = {
               "zh": "给建议的人"
             },
             {
-              "term": "accuse A of B",
-              "zh": "指责 A 做 B"
-            },
-            {
               "term": "undesirable result",
               "zh": "不理想的结果"
+            },
+            {
+              "term": "react to",
+              "zh": "对……作出反应"
             }
           ],
           "difficulty": 2
@@ -2910,12 +2870,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：If 引导条件状语从句；主句是 an outright rejection may be perceived as a threat；后面三个现在分词短语 activating / causing / leading 说明可能后果。核心结构：If A contributes to B, C may be perceived as D, doing E, causing F, or leading to G。",
           "phrases": [
             {
-              "term": "contribute to",
-              "zh": "促成；支撑"
-            },
-            {
               "term": "feelings of self-worth",
               "zh": "自我价值感"
+            },
+            {
+              "term": "double down on",
+              "zh": "加倍投入于"
+            },
+            {
+              "term": "contribute to",
+              "zh": "促成；支撑"
             },
             {
               "term": "outright rejection",
@@ -2924,10 +2888,6 @@ export const cet6Reading202512Set2 = {
             {
               "term": "fight-or-flight response",
               "zh": "战斗或逃跑反应"
-            },
-            {
-              "term": "double down on",
-              "zh": "加倍投入于"
             },
             {
               "term": "validation-seeking behavior",
@@ -2978,12 +2938,12 @@ export const cet6Reading202512Set2 = {
               "zh": "接受一种叙事"
             },
             {
-              "term": "potentially damaging",
-              "zh": "可能有害的"
-            },
-            {
               "term": "get by without help",
               "zh": "没有帮助也能应付过去"
+            },
+            {
+              "term": "potentially damaging",
+              "zh": "可能有害的"
             }
           ],
           "difficulty": 2
@@ -2996,16 +2956,16 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：You had better say... 表示建议；something like 引出示范表达；引号内容是建议话术的开头。核心结构：A had better say something like B。",
           "phrases": [
             {
+              "term": "thanks for the idea",
+              "zh": "谢谢你的想法"
+            },
+            {
               "term": "had better",
               "zh": "最好"
             },
             {
               "term": "something like",
               "zh": "类似这样的话"
-            },
-            {
-              "term": "thanks for the idea",
-              "zh": "谢谢你的想法"
             }
           ],
           "difficulty": 2
@@ -3022,16 +2982,16 @@ export const cet6Reading202512Set2 = {
               "zh": "我自己的计划"
             },
             {
-              "term": "handle this",
-              "zh": "处理这件事"
-            },
-            {
               "term": "appreciate your perspective",
               "zh": "感谢你的视角"
             },
             {
               "term": "take it into consideration",
               "zh": "把它纳入考虑"
+            },
+            {
+              "term": "handle this",
+              "zh": "处理这件事"
             }
           ],
           "difficulty": 2
@@ -3048,12 +3008,12 @@ export const cet6Reading202512Set2 = {
               "zh": "告诉你；通知你"
             },
             {
-              "term": "need help",
-              "zh": "需要帮助"
-            },
-            {
               "term": "in the future",
               "zh": "将来"
+            },
+            {
+              "term": "need help",
+              "zh": "需要帮助"
             }
           ],
           "difficulty": 2
@@ -3100,12 +3060,12 @@ export const cet6Reading202512Set2 = {
               "zh": "尽管令人不舒服"
             },
             {
-              "term": "unwanted advice",
-              "zh": "不想要的建议"
-            },
-            {
               "term": "respond with compassion",
               "zh": "带着同情回应"
+            },
+            {
+              "term": "unwanted advice",
+              "zh": "不想要的建议"
             },
             {
               "term": "diffuse",
@@ -3178,12 +3138,12 @@ export const cet6Reading202512Set2 = {
           "structure": "结构分析：It is best to... 是形式主语结构；in a way that... 修饰 set boundaries 的方式；takes into account... 和 to avoid... 分别说明方式与目的；what they are doing 是 reasons for 的宾语。核心结构：It is best to A in a way that B to avoid C。",
           "phrases": [
             {
-              "term": "set boundaries",
-              "zh": "设定边界"
-            },
-            {
               "term": "take into account",
               "zh": "考虑到"
+            },
+            {
+              "term": "set boundaries",
+              "zh": "设定边界"
             },
             {
               "term": "underlying reasons",

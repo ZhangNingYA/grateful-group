@@ -4,9 +4,29 @@ import BaseHead from '../../components/BaseHead.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('learning')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const getCet6SortMeta = (id) => {
+  const match = id.match(/^(\d{4})-(\d{2})-cet6-reading-(\d+)$/);
+  if (!match) return null;
+
+  return {
+    period: Number(`${match[1]}${match[2]}`),
+    set: Number(match[3]),
+  };
+};
+
+const posts = (await getCollection('learning')).sort((a, b) => {
+  const aCet6 = getCet6SortMeta(a.id);
+  const bCet6 = getCet6SortMeta(b.id);
+
+  if (aCet6 && bCet6) {
+    return bCet6.period - aCet6.period || aCet6.set - bCet6.set;
+  }
+
+  if (aCet6) return -1;
+  if (bCet6) return 1;
+
+  return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+});
 
 const year = new Date().getFullYear();
 const cardTints = ['tint-leaf', 'tint-sage', 'tint-sky', 'tint-butter'];

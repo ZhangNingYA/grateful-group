@@ -10,7 +10,7 @@ export const cet6Reading202506Set2 = {
       "kicker": "Section A",
       "title": "选词填空 · 原文整理",
       "navLabel": "选词填空",
-      "description": "保留原文空格编号，按阅读顺序拆分为可复盘句子。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -37,29 +37,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A02",
           "part": "Cloze",
-          "en": "It can 26 being frozen at -272 ° Celsius, being exposed to the vacuum of outer space and even being 27 with 500 times the dose of X-rays that would kill a human.",
-          "zh": "它能够第 26 空所指地承受零下 272 摄氏度的冰冻、暴露在外太空真空中，甚至承受足以杀死人类的 500 倍剂量 X 射线的第 27 空所指处理。",
-          "structure": "结构分析：主句是 It can 26...；being frozen、being exposed、being 27 是三个并列动名词结构，作承受对象；that would kill a human 修饰 dose of X-rays。核心结构：It can A being B, being C, and being D with E that F。",
+          "en": "It can survive being frozen at -272° Celsius, being exposed to the vacuum of outer space and even being bombarded with 500 times the dose of X-rays that would kill a human.",
+          "zh": "它能够在零下 272 摄氏度的冰冻、暴露于外太空真空，甚至遭受足以杀死人类的 500 倍剂量 X 射线轰击后存活。",
+          "structure": "结构分析：It can survive 是主干；being frozen、being exposed、being bombarded 是三个并列动名词结构，作 survive 的承受对象；that would kill a human 修饰 dose of X-rays。",
           "phrases": [
             {
-              "term": "being frozen",
-              "zh": "被冰冻"
+              "term": "survive being frozen",
+              "zh": "在被冰冻后存活"
             },
             {
               "term": "be exposed to",
               "zh": "暴露于"
             },
             {
-              "term": "vacuum of outer space",
-              "zh": "外太空真空"
-            },
-            {
-              "term": "dose of X-rays",
-              "zh": "X 射线剂量"
-            },
-            {
-              "term": "would kill a human",
-              "zh": "会杀死人类"
+              "term": "be bombarded with",
+              "zh": "遭受……轰击/照射"
             }
           ],
           "difficulty": 2
@@ -76,16 +68,16 @@ export const cet6Reading202506Set2 = {
               "zh": "换句话说"
             },
             {
-              "term": "creature",
-              "zh": "生物"
+              "term": "exist on Earth",
+              "zh": "存在于地球上"
             },
             {
               "term": "endure conditions",
               "zh": "忍受环境"
             },
             {
-              "term": "exist on Earth",
-              "zh": "存在于地球上"
+              "term": "creature",
+              "zh": "生物"
             }
           ],
           "difficulty": 2
@@ -93,29 +85,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A04",
           "part": "Cloze",
-          "en": "And researchers are looking to the microscopic animals to learn how to prepare humans and crops to handle the 28 of space travel.",
-          "zh": "研究人员正在研究这些微小动物，以了解如何让人类和农作物准备好应对太空旅行的第 28 空所指挑战。",
-          "structure": "结构分析：主句是 researchers are looking to...；to learn how to... 表示目的；how to prepare... 是 learn 的宾语；to handle... 表示 prepare 的目的。核心结构：A are looking to B to learn how to prepare C to handle D。",
+          "en": "And researchers are looking to the microscopic animals to learn how to prepare humans and crops to handle the rigors of space travel.",
+          "zh": "研究人员正在研究这些微小动物，以了解如何让人类和农作物准备好应对太空旅行的严酷考验。",
+          "structure": "结构分析：researchers are looking to... 是主干；to learn how to... 表示目的；how to prepare... 是 learn 的宾语；to handle the rigors of space travel 表示准备的目标。",
           "phrases": [
             {
-              "term": "researchers",
-              "zh": "研究人员"
+              "term": "look to A to do B",
+              "zh": "寄望/研究 A 以便做 B"
             },
             {
-              "term": "microscopic animals",
-              "zh": "微小动物"
+              "term": "handle the rigors of",
+              "zh": "应对……的严酷考验"
             },
             {
-              "term": "prepare humans and crops",
-              "zh": "让人类和农作物做好准备"
-            },
-            {
-              "term": "handle",
-              "zh": "应对"
-            },
-            {
-              "term": "space travel",
-              "zh": "太空旅行"
+              "term": "prepare A to handle B",
+              "zh": "让 A 做好准备以应对 B"
             }
           ],
           "difficulty": 2
@@ -123,29 +107,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A05",
           "part": "Cloze",
-          "en": "The tardigrade’s indestructibility stems from its 29 to its environment — which may seem surprising, since it lives in 30 comfortable places, like the cool, wet patches of moss (青苔) that dot a garden wall.",
-          "zh": "缓步动物的“不可摧毁性”源于它对环境的第 29 空所指适应能力；这似乎令人惊讶，因为它生活在第 30 空所指的舒适地方，比如花园墙上那些凉爽潮湿的苔藓斑块。",
-          "structure": "结构分析：主句是 The tardigrade’s indestructibility stems from...；which may seem surprising 指代前面事实；since 引导原因状语从句；like... 举例说明 comfortable places；that dot a garden wall 修饰 patches of moss。核心结构：A stems from B, which seems C, since it lives in D like E that F。",
+          "en": "The tardigrade's indestructibility stems from its adaptation to its environment, which may seem surprising, since it lives in seemingly comfortable places, like the cool, wet patches of moss (青苔) that dot a garden wall.",
+          "zh": "缓步动物的极强生命力源于它对环境的适应能力；这似乎令人惊讶，因为它生活在看似舒适的地方，比如花园墙上那些凉爽潮湿的苔藓斑块。",
+          "structure": "结构分析：主句是 The tardigrade's indestructibility stems from...；which may seem surprising 指代前面事实；since 引导原因状语从句；like... 举例说明 comfortable places；that dot a garden wall 修饰 patches of moss。",
           "phrases": [
-            {
-              "term": "indestructibility",
-              "zh": "不可摧毁性；极强生命力"
-            },
             {
               "term": "stem from",
               "zh": "源于"
             },
             {
-              "term": "environment",
-              "zh": "环境"
+              "term": "adaptation to its environment",
+              "zh": "对其环境的适应"
             },
             {
-              "term": "patches of moss",
-              "zh": "苔藓斑块"
-            },
-            {
-              "term": "dot a garden wall",
-              "zh": "点缀在花园墙上"
+              "term": "seemingly comfortable places",
+              "zh": "看似舒适的地方"
             }
           ],
           "difficulty": 3
@@ -162,20 +138,16 @@ export const cet6Reading202506Set2 = {
               "zh": "事实证明"
             },
             {
-              "term": "damp",
-              "zh": "潮湿的"
-            },
-            {
-              "term": "mossy",
-              "zh": "长满苔藓的"
+              "term": "many times each year",
+              "zh": "每年许多次"
             },
             {
               "term": "dry out",
               "zh": "干涸"
             },
             {
-              "term": "many times each year",
-              "zh": "每年许多次"
+              "term": "mossy",
+              "zh": "长满苔藓的"
             }
           ],
           "difficulty": 2
@@ -183,21 +155,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A07",
           "part": "Cloze",
-          "en": "Drying is pretty 31 for most living things.",
-          "zh": "对大多数生物来说，干燥是相当第 31 空所指的危险/伤害。",
-          "structure": "结构分析：Drying 是动名词作主语；is pretty 31 是系表结构；for most living things 表示影响对象。核心结构：Doing A is B for C。",
+          "en": "Drying is pretty deadly for most living things.",
+          "zh": "对大多数生物来说，干燥脱水是相当致命的。",
+          "structure": "结构分析：Drying 是动名词作主语；is pretty deadly 是系表结构；for most living things 表示影响对象。",
           "phrases": [
             {
-              "term": "drying",
-              "zh": "干燥；脱水"
-            },
-            {
-              "term": "pretty",
-              "zh": "相当"
+              "term": "be deadly for",
+              "zh": "对……致命"
             },
             {
               "term": "living things",
               "zh": "生物"
+            },
+            {
+              "term": "pretty deadly",
+              "zh": "相当致命"
             }
           ],
           "difficulty": 2
@@ -214,12 +186,12 @@ export const cet6Reading202506Set2 = {
               "zh": "损伤"
             },
             {
-              "term": "cells",
-              "zh": "细胞"
-            },
-            {
               "term": "in the same ways",
               "zh": "以相同方式"
+            },
+            {
+              "term": "cells",
+              "zh": "细胞"
             },
             {
               "term": "freezing",
@@ -235,25 +207,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A09",
           "part": "Cloze",
-          "en": "Tardigrades, however, have 32 special strategies for dealing with these kinds of damage.",
-          "zh": "然而，缓步动物拥有第 32 空所指的特殊策略来应对这些类型的损伤。",
-          "structure": "结构分析：however 表示转折；主句是 Tardigrades have special strategies；for dealing with... 修饰 strategies；these kinds of damage 是介词宾语。核心结构：A have B strategies for dealing with C。",
+          "en": "Tardigrades, however, have evolved special strategies for dealing with these kinds of damage.",
+          "zh": "然而，缓步动物已经进化出特殊策略来应对这些类型的损伤。",
+          "structure": "结构分析：however 表转折；Tardigrades have evolved... 是主干；special strategies 是宾语；for dealing with... 修饰 strategies。",
           "phrases": [
             {
-              "term": "however",
-              "zh": "然而"
+              "term": "evolve special strategies",
+              "zh": "进化出特殊策略"
             },
             {
-              "term": "special strategies",
-              "zh": "特殊策略"
+              "term": "deal with damage",
+              "zh": "应对损伤"
             },
             {
-              "term": "deal with",
-              "zh": "应对；处理"
-            },
-            {
-              "term": "kinds of damage",
-              "zh": "各种损伤"
+              "term": "special strategies for",
+              "zh": "应对……的特殊策略"
             }
           ],
           "difficulty": 2
@@ -265,6 +233,10 @@ export const cet6Reading202506Set2 = {
           "zh": "当缓步动物变干时，它的细胞会产生几种奇特蛋白质，这些蛋白质不同于其他动物体内发现的任何东西。",
           "structure": "结构分析：As 引导时间状语从句；主句是 its cells produce...；that are unlike... 是定语从句，修饰 proteins；found in other animals 是过去分词短语。核心结构：As A dries out, B produce C that are unlike D。",
           "phrases": [
+            {
+              "term": "found in other animals",
+              "zh": "在其他动物体内发现的"
+            },
             {
               "term": "dry out",
               "zh": "变干"
@@ -280,10 +252,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "be unlike",
               "zh": "不同于"
-            },
-            {
-              "term": "found in other animals",
-              "zh": "在其他动物体内发现的"
             }
           ],
           "difficulty": 2
@@ -313,25 +281,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A12",
           "part": "Cloze",
-          "en": "But as water disappears, the proteins self-assemble into long fibers that fill the cell’s 33.",
-          "zh": "但随着水分消失，这些蛋白质会自我组装成长纤维，填满细胞的第 33 空所指空间。",
-          "structure": "结构分析：But 表示转折；as water disappears 是时间状语；主句是 the proteins self-assemble into long fibers；that fill... 修饰 fibers。核心结构：As A disappears, B self-assemble into C that fill D。",
+          "en": "But as water disappears, the proteins self-assemble into long fibers that fill the cell's interior.",
+          "zh": "但随着水分消失，这些蛋白质会自我组装成长纤维，填满细胞内部。",
+          "structure": "结构分析：as water disappears 是时间状语；the proteins self-assemble into long fibers 是主句；that fill the cell's interior 修饰 long fibers。",
           "phrases": [
-            {
-              "term": "water disappears",
-              "zh": "水分消失"
-            },
             {
               "term": "self-assemble into",
               "zh": "自我组装成"
             },
             {
-              "term": "long fibers",
-              "zh": "长纤维"
+              "term": "fill the cell's interior",
+              "zh": "填满细胞内部"
             },
             {
-              "term": "fill the cell’s ...",
-              "zh": "填满细胞的……"
+              "term": "as water disappears",
+              "zh": "随着水分消失"
             }
           ],
           "difficulty": 2
@@ -339,25 +303,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A13",
           "part": "Cloze",
-          "en": "The fibers support the cell’s membranes ( 细 胞 膜 ) and proteins, preventing them from breaking or 34.",
-          "zh": "这些纤维支撑细胞膜和蛋白质，防止它们破裂或第 34 空所指地受损。",
-          "structure": "结构分析：主句是 The fibers support...；preventing them from... 是现在分词短语，说明结果；breaking or 34 是并列动名词。核心结构：A support B, preventing C from D or E。",
+          "en": "The fibers support the cell's membranes (细胞膜) and proteins, preventing them from breaking or unfolding.",
+          "zh": "这些纤维支撑细胞膜和蛋白质，防止它们破裂或展开变性。",
+          "structure": "结构分析：The fibers support... 是主干；preventing them from... 是现在分词短语，说明结果；breaking or unfolding 是并列动名词，表示被防止的两种损伤。",
           "phrases": [
             {
-              "term": "fibers",
-              "zh": "纤维"
-            },
-            {
-              "term": "cell membranes",
-              "zh": "细胞膜"
-            },
-            {
-              "term": "prevent A from B",
+              "term": "prevent A from doing B",
               "zh": "防止 A 做 B"
             },
             {
-              "term": "breaking",
-              "zh": "破裂"
+              "term": "break or unfold",
+              "zh": "破裂或展开变性"
+            },
+            {
+              "term": "prevent A from doing",
+              "zh": "防止 A 做某事"
             }
           ],
           "difficulty": 2
@@ -370,16 +330,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Emulating tardigrades 是动名词短语作主语；could help 是谓语；humans colonize outer space 是 help 的复合宾语。核心结构：Doing A could help B do C。",
           "phrases": [
             {
-              "term": "emulate",
-              "zh": "模仿"
+              "term": "colonize outer space",
+              "zh": "殖民外太空"
             },
             {
               "term": "one day",
               "zh": "有一天"
             },
             {
-              "term": "colonize outer space",
-              "zh": "殖民外太空"
+              "term": "emulate",
+              "zh": "模仿"
             }
           ],
           "difficulty": 2
@@ -392,12 +352,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Food crops could be engineered 是被动主句；to produce... 表示改造目的；allowing... 是现在分词短语，说明结果；where 引导定语从句修饰 spacecraft；compared with... 表示比较。核心结构：A could be engineered to B, allowing C to D where E are elevated compared with F。",
           "phrases": [
             {
-              "term": "food crops",
-              "zh": "粮食作物"
-            },
-            {
               "term": "be engineered to",
               "zh": "被工程改造以"
+            },
+            {
+              "term": "levels of radiation",
+              "zh": "辐射水平"
+            },
+            {
+              "term": "food crops",
+              "zh": "粮食作物"
             },
             {
               "term": "tardigrade proteins",
@@ -406,10 +370,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "spacecraft",
               "zh": "航天器"
-            },
-            {
-              "term": "levels of radiation",
-              "zh": "辐射水平"
             },
             {
               "term": "elevated",
@@ -421,33 +381,21 @@ export const cet6Reading202506Set2 = {
         {
           "label": "A16",
           "part": "Cloze",
-          "en": "So if humans ever succeed in reaching the stars, they may accomplish this 35, in part, by standing on the shoulders of the tiny eight-legged endurance specialists in your backyard.",
-          "zh": "所以，如果人类有朝一日成功抵达星辰，他们或许能部分地通过站在你后院那些微小八足耐力专家的肩膀上实现这一点。",
-          "structure": "结构分析：So 引出结论；if 引导条件状语从句；主句是 they may accomplish this；in part 表示部分原因；by standing on the shoulders of... 表示方式，借用固定比喻。核心结构：If A succeed in doing B, they may accomplish C by doing D。",
+          "en": "So if humans ever succeed in reaching the stars, they may accomplish this feat, in part, by standing on the shoulders of the tiny eight-legged endurance specialists in your backyard.",
+          "zh": "所以，如果人类有朝一日成功抵达星辰，他们或许能部分地通过站在你后院那些微小八足耐力专家的肩膀上完成这一壮举。",
+          "structure": "结构分析：So 引出结论；if 引导条件状语从句；主句是 they may accomplish this feat；in part 表示部分原因；by standing on the shoulders of... 表示方式，借用固定比喻。",
           "phrases": [
             {
-              "term": "succeed in reaching the stars",
-              "zh": "成功抵达星辰"
-            },
-            {
-              "term": "accomplish this",
-              "zh": "实现这一点"
-            },
-            {
-              "term": "in part",
-              "zh": "部分地"
+              "term": "accomplish this feat",
+              "zh": "完成这一壮举"
             },
             {
               "term": "stand on the shoulders of",
               "zh": "站在……肩膀上；借助……成果"
             },
             {
-              "term": "endurance specialists",
-              "zh": "耐力专家"
-            },
-            {
-              "term": "eight-legged",
-              "zh": "八足的"
+              "term": "succeed in doing",
+              "zh": "成功做成某事"
             }
           ],
           "difficulty": 2
@@ -472,16 +420,16 @@ export const cet6Reading202506Set2 = {
               "zh": "规模和影响"
             },
             {
+              "term": "a popular target for action",
+              "zh": "常被作为行动目标"
+            },
+            {
               "term": "climate change",
               "zh": "气候变化"
             },
             {
               "term": "increasingly alarming",
               "zh": "越来越令人担忧"
-            },
-            {
-              "term": "a popular target for action",
-              "zh": "常被作为行动目标"
             }
           ],
           "difficulty": 2
@@ -494,10 +442,6 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主语是 Advocates for...；from destruction or pollution 修饰 protection；谓语是 urge；the public 是宾语；to eat less meat 是宾语补足语。核心结构：advocates urge sb. to do sth.。",
           "phrases": [
             {
-              "term": "advocates for",
-              "zh": "……的倡导者"
-            },
-            {
               "term": "protection of the natural environment",
               "zh": "自然环境保护"
             },
@@ -508,6 +452,10 @@ export const cet6Reading202506Set2 = {
             {
               "term": "urge the public to do",
               "zh": "敦促公众做某事"
+            },
+            {
+              "term": "advocates for",
+              "zh": "……的倡导者"
             }
           ],
           "difficulty": 2
@@ -520,10 +468,6 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主句是 Some activists have called for taxing meat；even 加强语气；to reduce consumption of it 表目的。核心结构：call for doing sth. to do sth.。",
           "phrases": [
             {
-              "term": "activists",
-              "zh": "活动人士"
-            },
-            {
               "term": "call for",
               "zh": "呼吁；要求"
             },
@@ -534,6 +478,10 @@ export const cet6Reading202506Set2 = {
             {
               "term": "reduce consumption",
               "zh": "减少消费"
+            },
+            {
+              "term": "activists",
+              "zh": "活动人士"
             }
           ],
           "difficulty": 2
@@ -572,12 +520,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：However 表转折；主句是 this claim is demonstrably wrong；as I will show 是说明性从句。核心结构：A is wrong, as B will show。",
           "phrases": [
             {
-              "term": "demonstrably wrong",
-              "zh": "可证明地错误；显然错误"
-            },
-            {
               "term": "as I will show",
               "zh": "正如我将说明的"
+            },
+            {
+              "term": "demonstrably wrong",
+              "zh": "可证明地错误；显然错误"
             },
             {
               "term": "this claim",
@@ -594,8 +542,8 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主语是 its persistence；has led to 是谓语；false assumptions 是宾语；about the linkage... 作后置修饰。核心结构：A has led to B about C。",
           "phrases": [
             {
-              "term": "persistence",
-              "zh": "持续存在；长期流传"
+              "term": "linkage between A and B",
+              "zh": "A 与 B 之间的联系"
             },
             {
               "term": "lead to",
@@ -606,8 +554,8 @@ export const cet6Reading202506Set2 = {
               "zh": "错误假设"
             },
             {
-              "term": "linkage between A and B",
-              "zh": "A 与 B 之间的联系"
+              "term": "persistence",
+              "zh": "持续存在；长期流传"
             }
           ],
           "difficulty": 2
@@ -672,6 +620,10 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：However 表转折；abandoning meat and meat products 是动名词主语；is not the environmental panacea 是主系表；many would have us believe 修饰 panacea，省略了关系词。核心结构：doing A is not the B (that) many would have us believe。",
           "phrases": [
             {
+              "term": "have us believe",
+              "zh": "让我们相信"
+            },
+            {
               "term": "abandoning meat",
               "zh": "放弃肉类"
             },
@@ -682,10 +634,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "environmental panacea",
               "zh": "环境问题的万灵药"
-            },
-            {
-              "term": "have us believe",
-              "zh": "让我们相信"
             }
           ],
           "difficulty": 2
@@ -702,16 +650,16 @@ export const cet6Reading202506Set2 = {
               "zh": "走向极端"
             },
             {
-              "term": "harmful",
-              "zh": "有害的"
-            },
-            {
               "term": "nutritional consequences",
               "zh": "营养方面的后果"
             },
             {
               "term": "could have",
               "zh": "可能产生"
+            },
+            {
+              "term": "harmful",
+              "zh": "有害的"
             }
           ],
           "difficulty": 2
@@ -728,16 +676,16 @@ export const cet6Reading202506Set2 = {
               "zh": "相当一部分"
             },
             {
+              "term": "the largest source of",
+              "zh": "……的最大来源"
+            },
+            {
               "term": "negative reputation",
               "zh": "负面名声"
             },
             {
               "term": "center on",
               "zh": "集中于"
-            },
-            {
-              "term": "the largest source of",
-              "zh": "……的最大来源"
             }
           ],
           "difficulty": 2
@@ -750,12 +698,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：For example 引出例证；主句是 an analysis...asserted；published in 2009 和 based in Washington, D.C. 分别修饰 analysis 与 Institute；that 从句说明 asserted 的内容。核心结构：An analysis asserted that A come from B。",
           "phrases": [
             {
-              "term": "an analysis published in 2009",
-              "zh": "2009 年发表的一项分析"
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
             },
             {
-              "term": "assert",
-              "zh": "声称；断言"
+              "term": "an analysis published in 2009",
+              "zh": "2009 年发表的一项分析"
             },
             {
               "term": "global greenhouse gas emissions",
@@ -764,6 +712,14 @@ export const cet6Reading202506Set2 = {
             {
               "term": "rearing and processing livestock",
               "zh": "饲养和加工牲畜"
+            },
+            {
+              "term": "assert",
+              "zh": "声称；断言"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 2
@@ -776,12 +732,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：According to... 是信息来源状语；主语是 the largest sources；表语由 electricity production、transportation 和 industry 三项并列构成；括号补充各自比例。核心结构：According to A, the largest sources were B, C and D。",
           "phrases": [
             {
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
+            },
+            {
               "term": "Environmental Protection Agency",
               "zh": "环境保护署"
             },
             {
               "term": "sources of emissions",
               "zh": "排放来源"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
             },
             {
               "term": "electricity production",
@@ -802,16 +766,8 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：前半句 All of agriculture accounted for...；but 引出对比；all of animal agriculture contributes... 是后半句主干；representing 3.9 percent 作结果说明。核心结构：A accounted for B, but C contributes less than D, representing E。",
           "phrases": [
             {
-              "term": "account for",
-              "zh": "占；解释"
-            },
-            {
               "term": "a total of 9 percent",
               "zh": "总计 9%"
-            },
-            {
-              "term": "animal agriculture",
-              "zh": "畜牧业"
             },
             {
               "term": "less than half of this amount",
@@ -820,6 +776,14 @@ export const cet6Reading202506Set2 = {
             {
               "term": "representing 3.9 percent",
               "zh": "占 3.9%"
+            },
+            {
+              "term": "account for",
+              "zh": "占；解释"
+            },
+            {
+              "term": "animal agriculture",
+              "zh": "畜牧业"
             }
           ],
           "difficulty": 2
@@ -836,8 +800,8 @@ export const cet6Reading202506Set2 = {
               "zh": "这样的误解"
             },
             {
-              "term": "misconception",
-              "zh": "误解；错误观念"
+              "term": "Why is there...?",
+              "zh": "为什么会有……？"
             }
           ],
           "difficulty": 2
@@ -854,16 +818,16 @@ export const cet6Reading202506Set2 = {
               "zh": "粮食及农业组织"
             },
             {
-              "term": "titled",
-              "zh": "题为"
-            },
-            {
               "term": "widespread international attention",
               "zh": "国际社会的广泛关注"
             },
             {
               "term": "receive attention",
               "zh": "受到关注"
+            },
+            {
+              "term": "titled",
+              "zh": "题为"
             }
           ],
           "difficulty": 2
@@ -876,20 +840,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主句是 It stated；that 引导宾语从句；a staggering 18 percent 强调比例之高；of the world’s greenhouse gas emissions 作范围限定。核心结构：It stated that A produced B percent of C。",
           "phrases": [
             {
-              "term": "state that",
-              "zh": "称；说明"
-            },
-            {
-              "term": "livestock",
-              "zh": "牲畜；畜牧业动物"
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
             },
             {
               "term": "a staggering 18 percent",
               "zh": "惊人的 18%"
             },
             {
-              "term": "greenhouse gas emissions",
-              "zh": "温室气体排放"
+              "term": "state that",
+              "zh": "称；说明"
             }
           ],
           "difficulty": 2
@@ -906,16 +866,16 @@ export const cet6Reading202506Set2 = {
               "zh": "得出结论"
             },
             {
-              "term": "startling",
-              "zh": "令人震惊的"
-            },
-            {
               "term": "harm the climate",
               "zh": "危害气候"
             },
             {
               "term": "all modes of transportation combined",
               "zh": "所有交通方式加在一起"
+            },
+            {
+              "term": "startling",
+              "zh": "令人震惊的"
             }
           ],
           "difficulty": 2
@@ -936,12 +896,12 @@ export const cet6Reading202506Set2 = {
               "zh": "后来已被纠正"
             },
             {
-              "term": "senior author",
-              "zh": "高级作者；主要作者"
-            },
-            {
               "term": "correct a claim",
               "zh": "纠正说法"
+            },
+            {
+              "term": "senior author",
+              "zh": "高级作者；主要作者"
             }
           ],
           "difficulty": 2
@@ -954,16 +914,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：The problem was that... 是表语从句；used...to study... 是前半主干；but a different method 省略了 used；when they analyzed transportation 是时间从句。核心结构：The problem was that A used B to study C, but D when analyzing E。",
           "phrases": [
             {
+              "term": "a different method",
+              "zh": "另一种方法"
+            },
+            {
               "term": "life-cycle assessment",
               "zh": "生命周期评估"
             },
             {
               "term": "climate impact",
               "zh": "气候影响"
-            },
-            {
-              "term": "a different method",
-              "zh": "另一种方法"
             },
             {
               "term": "analyze transportation",
@@ -1006,12 +966,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主句是 This included...；宾语由多类内容并列构成；from birth to death 限定直接排放覆盖的生命周期范围；括号解释 direct emissions 的具体来源。核心结构：This included A, B, C, and D from E to F。",
           "phrases": [
             {
-              "term": "fertilizer production",
-              "zh": "化肥生产"
+              "term": "as well as",
+              "zh": "以及；还"
             },
             {
               "term": "convert land from forests to pastures",
               "zh": "把森林转为牧场"
+            },
+            {
+              "term": "from birth to death",
+              "zh": "从出生到死亡"
+            },
+            {
+              "term": "fertilizer production",
+              "zh": "化肥生产"
             },
             {
               "term": "growing feed",
@@ -1020,10 +988,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "direct emissions",
               "zh": "直接排放"
-            },
-            {
-              "term": "from birth to death",
-              "zh": "从出生到死亡"
             }
           ],
           "difficulty": 2
@@ -1036,12 +1000,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：However 表转折；when 引导时间从句；主句是 they ignored impacts on the climate；from 后面三个动名词短语并列，说明被忽略的来源。核心结构：When A looked at B, they ignored impacts from C, D and E。",
           "phrases": [
             {
-              "term": "carbon footprint",
-              "zh": "碳足迹"
-            },
-            {
               "term": "vehicle materials and parts",
               "zh": "车辆材料和零部件"
+            },
+            {
+              "term": "carbon footprint",
+              "zh": "碳足迹"
             },
             {
               "term": "assembling vehicles",
@@ -1061,10 +1025,6 @@ export const cet6Reading202506Set2 = {
           "zh": "相反，他们只考虑了成品汽车、卡车、火车和飞机排放的尾气。",
           "structure": "结构分析：Instead 表示与上一句对照；主句是 they only considered the exhaust smoke；emitted by... 是过去分词短语修饰 smoke。核心结构：They only considered A emitted by B。",
           "phrases": [
-            {
-              "term": "instead",
-              "zh": "相反；而是"
-            },
             {
               "term": "exhaust smoke",
               "zh": "尾气"
@@ -1089,7 +1049,11 @@ export const cet6Reading202506Set2 = {
           "phrases": [
             {
               "term": "as a result",
-              "zh": "因此"
+              "zh": "因此；结果"
+            },
+            {
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
             },
             {
               "term": "comparison of A to B",
@@ -1118,16 +1082,16 @@ export const cet6Reading202506Set2 = {
               "zh": "指出这个缺陷"
             },
             {
+              "term": "a flood of media coverage",
+              "zh": "大量媒体报道"
+            },
+            {
               "term": "fellow scientists",
               "zh": "科学家同行"
             },
             {
               "term": "lead to",
               "zh": "导致；引发"
-            },
-            {
-              "term": "a flood of media coverage",
-              "zh": "大量媒体报道"
             }
           ],
           "difficulty": 2
@@ -1166,8 +1130,8 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Unfortunately 是态度状语；主语是 the agency’s initial claim；that 引导同位语从句说明 claim 内容；had already received 是过去完成时，强调在纠正前已经发生。核心结构：A claim that B had already received C。",
           "phrases": [
             {
-              "term": "initial claim",
-              "zh": "最初说法"
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
             },
             {
               "term": "be responsible for",
@@ -1176,6 +1140,10 @@ export const cet6Reading202506Set2 = {
             {
               "term": "the lion’s share",
               "zh": "最大份额；大头"
+            },
+            {
+              "term": "initial claim",
+              "zh": "最初说法"
             },
             {
               "term": "wide coverage",
@@ -1196,12 +1164,12 @@ export const cet6Reading202506Set2 = {
               "zh": "直到今天"
             },
             {
-              "term": "struggle to",
-              "zh": "难以做到"
-            },
-            {
               "term": "unring the bell",
               "zh": "让既成事实撤回影响"
+            },
+            {
+              "term": "struggle to",
+              "zh": "艰难地做……"
             },
             {
               "term": "the bell",
@@ -1217,6 +1185,10 @@ export const cet6Reading202506Set2 = {
           "zh": "在其最新评估报告中，粮农组织估计，牲畜产生的人类活动温室气体排放占全球总量的 14.5%。",
           "structure": "结构分析：In its most recent assessment report 作信息来源状语；主句是 the FAO estimated；that 引导宾语从句；from human activities 修饰 emissions。核心结构：A estimated that B produces C percent of D。",
           "phrases": [
+            {
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
+            },
             {
               "term": "assessment report",
               "zh": "评估报告"
@@ -1244,12 +1216,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：There is no... 是存在句的否定形式；comparable 修饰 assessment；for transportation 限定适用领域。核心结构：There is no comparable A for B。",
           "phrases": [
             {
-              "term": "comparable",
-              "zh": "可比较的"
-            },
-            {
               "term": "full life-cycle assessment",
               "zh": "完整生命周期评估"
+            },
+            {
+              "term": "comparable",
+              "zh": "可比较的"
             },
             {
               "term": "transportation",
@@ -1270,12 +1242,12 @@ export const cet6Reading202506Set2 = {
               "zh": "直接排放"
             },
             {
-              "term": "versus",
-              "zh": "与……相比"
-            },
-            {
               "term": "amount to",
               "zh": "达到；总计为"
+            },
+            {
+              "term": "versus",
+              "zh": "与……相比"
             },
             {
               "term": "respectively",
@@ -1296,16 +1268,16 @@ export const cet6Reading202506Set2 = {
               "zh": "仍然认为"
             },
             {
-              "term": "avoid meat",
-              "zh": "不吃肉；避开肉类"
-            },
-            {
               "term": "as infrequently as once a week",
               "zh": "低至每周一次"
             },
             {
               "term": "make a significant difference",
               "zh": "产生显著影响"
+            },
+            {
+              "term": "avoid meat",
+              "zh": "不吃肉；避开肉类"
             }
           ],
           "difficulty": 2
@@ -1318,6 +1290,10 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：But 表转折；according to one recent study 是信息来源；even if 引导让步条件从句；主句是 they would reduce emissions by only 2.6 percent。核心结构：Even if A did B, they would reduce C by only D。",
           "phrases": [
             {
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
+            },
+            {
               "term": "according to one recent study",
               "zh": "根据一项近期研究"
             },
@@ -1326,12 +1302,16 @@ export const cet6Reading202506Set2 = {
               "zh": "去除动物蛋白"
             },
             {
-              "term": "greenhouse gas emissions",
-              "zh": "温室气体排放"
-            },
-            {
               "term": "by only 2.6 percent",
               "zh": "仅减少 2.6%"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
+            {
+              "term": "even if",
+              "zh": "即使"
             }
           ],
           "difficulty": 2
@@ -1344,10 +1324,6 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：According to... 是来源状语；if 引导条件从句，且 were to be adopted 表假设；主句是 we would see a reduction。核心结构：If A were to be adopted, we would see B。",
           "phrases": [
             {
-              "term": "Meatless Monday",
-              "zh": "无肉星期一"
-            },
-            {
               "term": "be adopted by",
               "zh": "被……采用"
             },
@@ -1358,6 +1334,14 @@ export const cet6Reading202506Set2 = {
             {
               "term": "only 0.5 percent",
               "zh": "仅 0.5%"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
+            {
+              "term": "Meatless Monday",
+              "zh": "无肉星期一"
             }
           ],
           "difficulty": 2
@@ -1396,8 +1380,8 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：According to... 是来源状语；主句是 emissions have declined；by 11.3 percent 表下降幅度；while 引出对比，说明产量反而翻倍。核心结构：A have declined by B, while C has more than doubled。",
           "phrases": [
             {
-              "term": "statistical database",
-              "zh": "统计数据库"
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
             },
             {
               "term": "direct greenhouse gas emissions",
@@ -1410,6 +1394,18 @@ export const cet6Reading202506Set2 = {
             {
               "term": "more than doubled",
               "zh": "增加一倍多"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
+              "term": "statistical database",
+              "zh": "统计数据库"
             }
           ],
           "difficulty": 2
@@ -1430,10 +1426,6 @@ export const cet6Reading202506Set2 = {
               "zh": "发展中和新兴经济体"
             },
             {
-              "term": "especially",
-              "zh": "尤其"
-            },
-            {
               "term": "Southeast Asia",
               "zh": "东南亚"
             }
@@ -1448,10 +1440,6 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：For example 引出例子；raising livestock... 是动名词主语；is an important source 是主系表；of food and income 说明来源内容；for many farmers and herders 说明受益对象。核心结构：Doing A is a source of B for C。",
           "phrases": [
             {
-              "term": "raising livestock",
-              "zh": "饲养牲畜"
-            },
-            {
               "term": "such as goats",
               "zh": "例如山羊"
             },
@@ -1462,6 +1450,14 @@ export const cet6Reading202506Set2 = {
             {
               "term": "small-scale farmers and herders",
               "zh": "小农和牧民"
+            },
+            {
+              "term": "raising livestock",
+              "zh": "饲养牲畜"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 2
@@ -1478,12 +1474,12 @@ export const cet6Reading202506Set2 = {
               "zh": "人均肉类消费量"
             },
             {
-              "term": "these regions",
-              "zh": "这些地区"
-            },
-            {
               "term": "lag that of",
               "zh": "落后于……的水平"
+            },
+            {
+              "term": "these regions",
+              "zh": "这些地区"
             },
             {
               "term": "developed countries",
@@ -1504,12 +1500,12 @@ export const cet6Reading202506Set2 = {
               "zh": "年均肉类消费量"
             },
             {
-              "term": "per person",
-              "zh": "每人；人均"
-            },
-            {
               "term": "compared to",
               "zh": "与……相比"
+            },
+            {
+              "term": "per person",
+              "zh": "每人；人均"
             },
             {
               "term": "kilograms",
@@ -1530,16 +1526,16 @@ export const cet6Reading202506Set2 = {
               "zh": "考虑到预计的人口增长"
             },
             {
-              "term": "developing world",
-              "zh": "发展中世界"
-            },
-            {
               "term": "sustainable livestock rearing practices",
               "zh": "可持续畜牧饲养做法"
             },
             {
               "term": "bring ... to the table",
               "zh": "提出……供讨论或采用"
+            },
+            {
+              "term": "developing world",
+              "zh": "发展中世界"
             }
           ],
           "difficulty": 2
@@ -1551,6 +1547,10 @@ export const cet6Reading202506Set2 = {
           "zh": "把动物从美国农业中移除，会在小幅度上降低全国温室气体排放，但也会让满足人们营养需求变得更困难。",
           "structure": "结构分析：Removing animals... 是动名词主语；would lower... 是第一层结果；but 引出转折；would also make it harder to meet... 中 it 是形式宾语，真正宾语是 to meet...。核心结构：Doing A would lower B, but would also make it harder to do C。",
           "phrases": [
+            {
+              "term": "greenhouse gas emissions",
+              "zh": "温室气体排放"
+            },
             {
               "term": "remove animals from agriculture",
               "zh": "把动物从农业中移除"
@@ -1604,6 +1604,10 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：But 表转折；主句是 humans also need...；many essential micro- and macro-nutrients 是宾语；for good health 表目的或标准。核心结构：Humans need A for B。",
           "phrases": [
             {
+              "term": "for good health",
+              "zh": "为了良好健康"
+            },
+            {
               "term": "essential",
               "zh": "必需的"
             },
@@ -1614,10 +1618,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "macro-nutrients",
               "zh": "宏量营养素"
-            },
-            {
-              "term": "for good health",
-              "zh": "为了良好健康"
             }
           ],
           "difficulty": 2
@@ -1682,12 +1682,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Raising livestock 是动名词主语；is a way 是主系表；to add... 作后置定语，说明 way 的具体内容。核心结构：Doing A is a way to add B to C。",
           "phrases": [
             {
-              "term": "raising livestock",
-              "zh": "饲养牲畜"
-            },
-            {
               "term": "a way to add",
               "zh": "增加……的一种方式"
+            },
+            {
+              "term": "raising livestock",
+              "zh": "饲养牲畜"
             },
             {
               "term": "nutritional value",
@@ -1734,12 +1734,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：But 表转折；主语是 cows, sheep and other ruminant animals；can break...down and release... 是并列谓语；contained in this vast resource 修饰 solar energy。核心结构：A can break B down and release C contained in D。",
           "phrases": [
             {
-              "term": "ruminant animals",
-              "zh": "反刍动物"
-            },
-            {
               "term": "break cellulose down",
               "zh": "分解纤维素"
+            },
+            {
+              "term": "ruminant animals",
+              "zh": "反刍动物"
             },
             {
               "term": "solar energy",
@@ -1764,6 +1764,10 @@ export const cet6Reading202506Set2 = {
               "zh": "多达 70%"
             },
             {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
+            {
               "term": "agricultural land",
               "zh": "农业用地"
             },
@@ -1786,16 +1790,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主语是 The world population；is projected 是被动谓语，表示“被预计”；to reach... 是主语补足语；by 2050 表时间截止点。核心结构：A is projected to reach B by C。",
           "phrases": [
             {
-              "term": "world population",
-              "zh": "世界人口"
-            },
-            {
               "term": "be projected to",
               "zh": "预计将"
             },
             {
               "term": "reach 9.8 billion",
               "zh": "达到 98 亿"
+            },
+            {
+              "term": "world population",
+              "zh": "世界人口"
             },
             {
               "term": "by 2050",
@@ -1838,8 +1842,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：句子由 and 连接两个并列分句；第一分句是 Meat is more calorie-dense...than...；第二分句是 ruminant animals thrive on feed；that 从句修饰 feed。核心结构：A is more B than C, and D thrive on E that F。",
           "phrases": [
             {
-              "term": "calorie-dense",
-              "zh": "热量密度高的"
+              "term": "thrive on feed",
+              "zh": "靠饲料良好生长"
+            },
+            {
+              "term": "not suitable for humans",
+              "zh": "不适合人类"
             },
             {
               "term": "per serving",
@@ -1850,12 +1858,8 @@ export const cet6Reading202506Set2 = {
               "zh": "素食选择"
             },
             {
-              "term": "thrive on feed",
-              "zh": "靠饲料良好生长"
-            },
-            {
-              "term": "not suitable for humans",
-              "zh": "不适合人类"
+              "term": "calorie-dense",
+              "zh": "热量密度高的"
             }
           ],
           "difficulty": 2
@@ -1894,10 +1898,6 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Worldwide 是范围状语；主句是 livestock provides a livelihood；for 1 billion people 说明受益人群。核心结构：A provides a livelihood for B。",
           "phrases": [
             {
-              "term": "worldwide",
-              "zh": "在全球范围内"
-            },
-            {
               "term": "provide a livelihood",
               "zh": "提供生计"
             },
@@ -1906,8 +1906,8 @@ export const cet6Reading202506Set2 = {
               "zh": "10 亿人"
             },
             {
-              "term": "livestock",
-              "zh": "牲畜；畜牧业"
+              "term": "worldwide",
+              "zh": "在全球范围内"
             }
           ],
           "difficulty": 2
@@ -1924,16 +1924,16 @@ export const cet6Reading202506Set2 = {
               "zh": "需要紧急关注"
             },
             {
+              "term": "affects air, water and land",
+              "zh": "影响空气、水和土地"
+            },
+            {
               "term": "livestock industry",
               "zh": "畜牧业"
             },
             {
               "term": "environmental footprint",
               "zh": "环境足迹"
-            },
-            {
-              "term": "affects air, water and land",
-              "zh": "影响空气、水和土地"
             }
           ],
           "difficulty": 2
@@ -1946,12 +1946,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：These 是主语；combined with... 是插入式过去分词短语，补充共同因素；give us reasons 是主干；to continue to work... 修饰 reasons。核心结构：A, combined with B, give us reasons to do C。",
           "phrases": [
             {
-              "term": "combined with",
-              "zh": "与……结合；加上"
-            },
-            {
               "term": "rapidly rising world population",
               "zh": "快速增长的世界人口"
+            },
+            {
+              "term": "combined with",
+              "zh": "与……结合；加上"
             },
             {
               "term": "compelling reasons",
@@ -2008,10 +2008,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "careers",
               "zh": "职业；事业"
-            },
-            {
-              "term": "so",
-              "zh": "如此"
             }
           ],
           "difficulty": 2
@@ -2032,12 +2028,12 @@ export const cet6Reading202506Set2 = {
               "zh": "心理层面"
             },
             {
-              "term": "fears",
-              "zh": "恐惧；担忧"
-            },
-            {
               "term": "as well",
               "zh": "也"
+            },
+            {
+              "term": "fears",
+              "zh": "恐惧；担忧"
             }
           ],
           "difficulty": 2
@@ -2050,10 +2046,6 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：because 引导原因状语从句；not wrongly 是插入语；that the world is full of... 是 suspect 的宾语从句；ready to judge... 修饰 person；冒号后 a person... 对前文 person 重新定义。核心结构：We worry because we suspect that A is full of B ready to C: a person we call D。",
           "phrases": [
             {
-              "term": "not wrongly",
-              "zh": "并非错误地"
-            },
-            {
               "term": "be full of",
               "zh": "充满"
             },
@@ -2062,12 +2054,12 @@ export const cet6Reading202506Set2 = {
               "zh": "无情地评判我们"
             },
             {
-              "term": "swiftly",
-              "zh": "迅速地"
+              "term": "not wrongly",
+              "zh": "并非错误地"
             },
             {
-              "term": "snob",
-              "zh": "势利者"
+              "term": "swiftly",
+              "zh": "迅速地"
             }
           ],
           "difficulty": 3
@@ -2110,12 +2102,12 @@ export const cet6Reading202506Set2 = {
               "zh": "在过去"
             },
             {
-              "term": "ancestry",
-              "zh": "祖先；血统"
-            },
-            {
               "term": "royal connections",
               "zh": "王室关系"
+            },
+            {
+              "term": "ancestry",
+              "zh": "祖先；血统"
             }
           ],
           "difficulty": 2
@@ -2128,20 +2120,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Nowadays 作时间状语；主句是 the snob cares about one thing only；冒号后 what you do for a living 解释 one thing。核心结构：A cares about one thing only: B。",
           "phrases": [
             {
-              "term": "nowadays",
-              "zh": "如今"
-            },
-            {
-              "term": "care about",
-              "zh": "关心"
-            },
-            {
               "term": "one thing only",
               "zh": "唯一一件事"
             },
             {
               "term": "what you do for a living",
               "zh": "你以什么谋生"
+            },
+            {
+              "term": "care about",
+              "zh": "关心"
+            },
+            {
+              "term": "nowadays",
+              "zh": "如今"
             }
           ],
           "difficulty": 2
@@ -2158,12 +2150,12 @@ export const cet6Reading202506Set2 = {
               "zh": "这解释了为什么"
             },
             {
-              "term": "social context",
-              "zh": "社交场合"
-            },
-            {
               "term": "what do you do",
               "zh": "你是做什么的"
+            },
+            {
+              "term": "social context",
+              "zh": "社交场合"
             }
           ],
           "difficulty": 2
@@ -2176,20 +2168,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：According to how we answer 作依据状语；主句是 snobs will either...or...；welcome 和 leave 是并列谓语。核心结构：According to A, B will either C or D。",
           "phrases": [
             {
-              "term": "according to",
-              "zh": "根据"
-            },
-            {
-              "term": "broad smiles",
-              "zh": "灿烂笑容"
-            },
-            {
               "term": "either ... or ...",
               "zh": "要么……要么……"
             },
             {
               "term": "leave us in the cold",
               "zh": "冷落我们"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
+            {
+              "term": "broad smiles",
+              "zh": "灿烂笑容"
             }
           ],
           "difficulty": 2
@@ -2210,12 +2202,12 @@ export const cet6Reading202506Set2 = {
               "zh": "被……激发"
             },
             {
-              "term": "desperate urge",
-              "zh": "迫切冲动"
-            },
-            {
               "term": "achieve and impress",
               "zh": "取得成就并打动他人"
+            },
+            {
+              "term": "desperate urge",
+              "zh": "迫切冲动"
             }
           ],
           "difficulty": 2
@@ -2232,16 +2224,20 @@ export const cet6Reading202506Set2 = {
               "zh": "被误认为"
             },
             {
+              "term": "more than this",
+              "zh": "不止于此"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
               "term": "greed",
               "zh": "贪婪"
             },
             {
               "term": "vanity",
               "zh": "虚荣"
-            },
-            {
-              "term": "more than this",
-              "zh": "不止于此"
             }
           ],
           "difficulty": 2
@@ -2254,12 +2250,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主语是 A lot of our interest；in fancy cars, jobs and houses 修饰 interest；has nothing to do with... 是谓语。核心结构：A interest in B has nothing to do with C。",
           "phrases": [
             {
-              "term": "fancy cars",
-              "zh": "豪车"
-            },
-            {
               "term": "have nothing to do with",
               "zh": "与……无关"
+            },
+            {
+              "term": "fancy cars",
+              "zh": "豪车"
             },
             {
               "term": "materialism",
@@ -2276,20 +2272,24 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：It has to do with... 是主句；that is only available... 修饰 respect and esteem；through the acquisition... 表示获得途径。核心结构：A has to do with B that is available through C。",
           "phrases": [
             {
-              "term": "hunger for",
-              "zh": "对……的渴望"
-            },
-            {
               "term": "respect and esteem",
               "zh": "尊重和敬重"
+            },
+            {
+              "term": "acquisition of material goods",
+              "zh": "获得物质商品"
+            },
+            {
+              "term": "hunger for",
+              "zh": "对……的渴望"
             },
             {
               "term": "available through",
               "zh": "通过……获得"
             },
             {
-              "term": "acquisition of material goods",
-              "zh": "获得物质商品"
+              "term": "have to do with",
+              "zh": "与……有关"
             }
           ],
           "difficulty": 2
@@ -2302,20 +2302,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：It is not...it is... 构成强调对照；we seek 修饰 goods；we stand to gain 修饰 love；through our possession... 表示途径。核心结构：It is not A we seek; it is B we stand to gain through C。",
           "phrases": [
             {
-              "term": "goods themselves",
-              "zh": "商品本身"
-            },
-            {
-              "term": "seek",
-              "zh": "追求"
-            },
-            {
               "term": "stand to gain",
               "zh": "有可能获得"
             },
             {
               "term": "possession of them",
               "zh": "拥有它们"
+            },
+            {
+              "term": "goods themselves",
+              "zh": "商品本身"
             }
           ],
           "difficulty": 2
@@ -2332,20 +2328,16 @@ export const cet6Reading202506Set2 = {
               "zh": "下次"
             },
             {
-              "term": "condemn",
-              "zh": "谴责"
-            },
-            {
-              "term": "pity",
-              "zh": "怜悯"
-            },
-            {
               "term": "intensity of need",
               "zh": "需求的强烈程度"
             },
             {
               "term": "love from the world",
               "zh": "来自世界的爱"
+            },
+            {
+              "term": "condemn",
+              "zh": "谴责"
             }
           ],
           "difficulty": 2
@@ -2362,20 +2354,20 @@ export const cet6Reading202506Set2 = {
               "zh": "在……的根源处"
             },
             {
-              "term": "snobbery",
-              "zh": "势利"
-            },
-            {
               "term": "lack of imagination",
               "zh": "缺乏想象力"
             },
             {
-              "term": "confidence",
-              "zh": "信心"
-            },
-            {
               "term": "who is valuable",
               "zh": "谁是有价值的"
+            },
+            {
+              "term": "snobbery",
+              "zh": "势利"
+            },
+            {
+              "term": "confidence",
+              "zh": "信心"
             }
           ],
           "difficulty": 2
@@ -2392,16 +2384,16 @@ export const cet6Reading202506Set2 = {
               "zh": "被严重误导的"
             },
             {
-              "term": "slavish",
-              "zh": "盲从的"
-            },
-            {
               "term": "superior individuals",
               "zh": "优秀个体"
             },
             {
               "term": "be identified",
               "zh": "被识别"
+            },
+            {
+              "term": "slavish",
+              "zh": "盲从的"
             }
           ],
           "difficulty": 2
@@ -2414,16 +2406,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：For snobs 作立场状语；it is...who... 是强调句；already acclaimed and already successful 修饰 ones；worthy of respect 是表语。核心结构：For A, it is B who are worthy of C。",
           "phrases": [
             {
+              "term": "worthy of respect",
+              "zh": "值得尊重"
+            },
+            {
               "term": "already acclaimed",
               "zh": "已经受到赞誉的"
             },
             {
               "term": "already successful",
               "zh": "已经成功的"
-            },
-            {
-              "term": "worthy of respect",
-              "zh": "值得尊重"
             },
             {
               "term": "for snobs",
@@ -2478,16 +2470,16 @@ export const cet6Reading202506Set2 = {
               "zh": "不存在……这种东西"
             },
             {
+              "term": "outward signs of distinction",
+              "zh": "外在区别标志"
+            },
+            {
               "term": "insist that",
               "zh": "坚持认为"
             },
             {
               "term": "unexpected places",
               "zh": "意想不到的地方"
-            },
-            {
-              "term": "outward signs of distinction",
-              "zh": "外在区别标志"
             }
           ],
           "difficulty": 2
@@ -2508,16 +2500,16 @@ export const cet6Reading202506Set2 = {
               "zh": "他人的价值"
             },
             {
-              "term": "ultimate duty",
-              "zh": "最终责任"
-            },
-            {
               "term": "pretty much everyone",
               "zh": "几乎每个人"
             },
             {
               "term": "cross our path",
               "zh": "与我们相遇"
+            },
+            {
+              "term": "ultimate duty",
+              "zh": "最终责任"
             }
           ],
           "difficulty": 2
@@ -2544,6 +2536,10 @@ export const cet6Reading202506Set2 = {
             {
               "term": "following passage",
               "zh": "以下文章"
+            },
+            {
+              "term": "be based on the following passage",
+              "zh": "基于以下文章"
             }
           ],
           "difficulty": 2
@@ -2556,12 +2552,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Women 是主语；have been paid less 是现在完成时被动语态；historically 表示历史背景。核心结构：A have historically been paid less。",
           "phrases": [
             {
-              "term": "historically",
-              "zh": "从历史上看"
-            },
-            {
               "term": "be paid less",
               "zh": "薪酬更低"
+            },
+            {
+              "term": "have historically been paid less",
+              "zh": "历史上一直接受较低薪酬"
             }
           ],
           "difficulty": 2
@@ -2580,10 +2576,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "catch up",
               "zh": "追赶"
-            },
-            {
-              "term": "fast",
-              "zh": "迅速地"
             }
           ],
           "difficulty": 2
@@ -2640,16 +2632,12 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：But 表示转折；and 连接两个并列分句；remains yawning 表示差距仍然很大。核心结构：A did not continue, and B remains C。",
           "phrases": [
             {
-              "term": "trend",
-              "zh": "趋势"
-            },
-            {
-              "term": "gap",
-              "zh": "差距"
-            },
-            {
               "term": "remain yawning",
               "zh": "仍然巨大"
+            },
+            {
+              "term": "trend",
+              "zh": "趋势"
             }
           ],
           "difficulty": 2
@@ -2662,24 +2650,24 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：According to... 作来源状语；主句是 the stagnation can be put down to...；perhaps counterintuitively 作插入评价；introduction of... 是归因对象。核心结构：According to A, B can be put down to C。",
           "phrases": [
             {
+              "term": "put down to",
+              "zh": "归因于"
+            },
+            {
+              "term": "family leave policies",
+              "zh": "家庭休假政策"
+            },
+            {
               "term": "according to",
-              "zh": "根据"
+              "zh": "根据；据……所说"
             },
             {
               "term": "stagnation",
               "zh": "停滞"
             },
             {
-              "term": "put down to",
-              "zh": "归因于"
-            },
-            {
               "term": "counterintuitively",
               "zh": "违反直觉地"
-            },
-            {
-              "term": "family leave policies",
-              "zh": "家庭休假政策"
             }
           ],
           "difficulty": 2
@@ -2692,20 +2680,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：The academics argue that... 是主句加宾语从句；during the 1990s 作时间状语；as 引导时间状语从句；it was mainly women who... 是强调句。核心结构：A argue that as B began C, it was D who took advantage of E。",
           "phrases": [
             {
-              "term": "academics",
-              "zh": "学者"
-            },
-            {
               "term": "introduce leave policies",
               "zh": "引入休假政策"
+            },
+            {
+              "term": "take advantage of",
+              "zh": "利用"
             },
             {
               "term": "mainly women",
               "zh": "主要是女性"
             },
             {
-              "term": "take advantage of",
-              "zh": "利用"
+              "term": "academics",
+              "zh": "学者"
             }
           ],
           "difficulty": 2
@@ -2718,8 +2706,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：Though 引导让步状语从句；to stay... 和 instead of dropping out... 说明政策作用；主句是 those who returned saw...；their wages had increased... 是 saw 的宾语从句。核心结构：Though A might have helped B to C, those who D saw that E。",
           "phrases": [
             {
+              "term": "at lower rates",
+              "zh": "以更低薪资"
+            },
+            {
               "term": "stay in the workplace",
               "zh": "留在职场"
+            },
+            {
+              "term": "at lower rates than",
+              "zh": "以低于……的速度"
+            },
+            {
+              "term": "instead of",
+              "zh": "而不是"
             },
             {
               "term": "drop out",
@@ -2728,10 +2728,6 @@ export const cet6Reading202506Set2 = {
             {
               "term": "have families",
               "zh": "组建家庭；生育"
-            },
-            {
-              "term": "at lower rates than",
-              "zh": "以低于……的速度"
             }
           ],
           "difficulty": 3
@@ -2744,20 +2740,24 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：After... 作时间状语；in fact 作插入强调；主句有两个并列谓语 fell 和 has remained；to just 0.03 percentage points per year 表示下降后的水平。核心结构：After A, B fell to C and has remained D ever since。",
           "phrases": [
             {
-              "term": "family leave",
-              "zh": "家庭休假"
-            },
-            {
               "term": "gender wage convergence",
               "zh": "性别工资趋同"
             },
             {
-              "term": "fall to",
-              "zh": "降至"
-            },
-            {
               "term": "percentage points per year",
               "zh": "每年百分点"
+            },
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
+            {
+              "term": "family leave",
+              "zh": "家庭休假"
+            },
+            {
+              "term": "fall to",
+              "zh": "降至"
             },
             {
               "term": "ever since",
@@ -2800,16 +2800,16 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：In fact 作强调；主句是 that progress began to reverse；during the pandemic 作时间状语。核心结构：A began to reverse during B。",
           "phrases": [
             {
-              "term": "in fact",
-              "zh": "事实上"
-            },
-            {
               "term": "begin to reverse",
               "zh": "开始倒退"
             },
             {
               "term": "during the pandemic",
               "zh": "在疫情期间"
+            },
+            {
+              "term": "in fact",
+              "zh": "事实上"
             }
           ],
           "difficulty": 2
@@ -2826,16 +2826,16 @@ export const cet6Reading202506Set2 = {
               "zh": "性别薪酬差距"
             },
             {
-              "term": "outstanding examples",
-              "zh": "突出例子"
-            },
-            {
               "term": "lack of parity",
               "zh": "缺乏平等"
             },
             {
               "term": "just about everywhere",
               "zh": "几乎到处"
+            },
+            {
+              "term": "outstanding examples",
+              "zh": "突出例子"
             }
           ],
           "difficulty": 2
@@ -2848,20 +2848,20 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：主句是 The motherhood penalty has become...；for describing why 修饰 shorthand；冒号后解释 why；until 引导时间状语从句。核心结构：A has become B for describing why: in C, D earn the same as E until F。",
           "phrases": [
             {
-              "term": "motherhood penalty",
-              "zh": "母职惩罚"
+              "term": "earn the same as",
+              "zh": "收入与……相同"
             },
             {
-              "term": "shorthand",
-              "zh": "简短说法"
+              "term": "motherhood penalty",
+              "zh": "母职惩罚"
             },
             {
               "term": "childbearing years",
               "zh": "育龄期"
             },
             {
-              "term": "earn the same as",
-              "zh": "收入与……相同"
+              "term": "shorthand",
+              "zh": "简短说法"
             }
           ],
           "difficulty": 2
@@ -2940,6 +2940,10 @@ export const cet6Reading202506Set2 = {
             {
               "term": "voluntarily",
               "zh": "自愿地"
+            },
+            {
+              "term": "even if",
+              "zh": "即使"
             }
           ],
           "difficulty": 2
@@ -2956,12 +2960,12 @@ export const cet6Reading202506Set2 = {
               "zh": "会发生什么"
             },
             {
-              "term": "leave policies",
-              "zh": "休假政策"
-            },
-            {
               "term": "hadn’t been introduced",
               "zh": "没有被引入"
+            },
+            {
+              "term": "leave policies",
+              "zh": "休假政策"
             }
           ],
           "difficulty": 2
@@ -3008,12 +3012,12 @@ export const cet6Reading202506Set2 = {
               "zh": "工资平等"
             },
             {
-              "term": "stall",
-              "zh": "停滞"
-            },
-            {
               "term": "either way",
               "zh": "无论如何"
+            },
+            {
+              "term": "stall",
+              "zh": "停滞"
             }
           ],
           "difficulty": 2
@@ -3026,8 +3030,8 @@ export const cet6Reading202506Set2 = {
           "structure": "结构分析：If 引导虚拟条件从句；once 引导时间条件；there would still have been... 是主句；破折号后 who are... 修饰 women；forcing them to take breaks 是现在分词短语，说明结果；whether or not... 表示让步选择。核心结构：If A were made through B, once C had been addressed, there would still have been D with women, who E, forcing F whether or not G。",
           "phrases": [
             {
-              "term": "gains",
-              "zh": "进展；收益"
+              "term": "whether or not",
+              "zh": "是否；不管是否"
             },
             {
               "term": "erasure of bias",
@@ -3048,6 +3052,10 @@ export const cet6Reading202506Set2 = {
             {
               "term": "take breaks",
               "zh": "中断工作"
+            },
+            {
+              "term": "gains",
+              "zh": "进展；收益"
             }
           ],
           "difficulty": 5

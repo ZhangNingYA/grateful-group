@@ -168,7 +168,7 @@ export const cet6Reading202412Set1 = {
       "kicker": "Section A",
       "title": "选词填空 · 消费、节俭与借贷观念",
       "navLabel": "选词填空",
-      "description": "这一篇讨论经济发展后生活方式观念的变化，重点看“节俭是否仍是美德”和“借贷投资”的论证转折。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -184,10 +184,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "ideology",
               "zh": "观念；意识形态"
-            },
-            {
-              "term": "progress",
-              "zh": "进步；推进"
             }
           ],
           "difficulty": 2
@@ -195,21 +191,25 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A02",
           "part": "Cloze",
-          "en": "Being 26 is no longer a virtue to some people,and they are not alone in holding this view.",
-          "zh": "节俭对一些人来说不再是一种美德，而且持这种观点的人并不在少数。",
-          "structure": "主句抓 \"Being 26 is no longer a virtue to some people,and they are not alone in holding this view.\"；不定式多表示目的、结果或后置修饰。",
+          "en": "Being frugal is no longer a virtue to some people, and they are not alone in holding this view.",
+          "zh": "对一些人来说，节俭不再是一种美德，而且持这种观点的人并不在少数。",
+          "structure": "结构分析：Being frugal 是动名词短语作主语；is no longer a virtue 是系表结构；and 连接第二个分句，they are not alone in holding this view 表示这种看法并非个例。",
           "phrases": [
+            {
+              "term": "be frugal",
+              "zh": "节俭；花钱谨慎"
+            },
             {
               "term": "no longer a virtue",
               "zh": "不再是一种美德"
             },
             {
-              "term": "holding this view",
-              "zh": "持有这种看法"
+              "term": "be no longer a virtue",
+              "zh": "不再被视为美德"
             },
             {
-              "term": "virtue",
-              "zh": "美德"
+              "term": "hold this view",
+              "zh": "持有这种看法"
             }
           ],
           "difficulty": 1
@@ -217,25 +217,29 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A03",
           "part": "Cloze",
-          "en": "Each might have different viewpoints on how to lead one's lifestyle: some prefer simplicity,some love luxuries,some spend 27,some accumulate as much as they can like a country mouse.",
-          "zh": "每个人对如何生活可能都有不同看法：有些人偏爱简朴，有些人喜爱奢华，有些人大手大脚地花钱，有些人则像乡下老鼠一样尽可能多地积攒。",
-          "structure": "主句抓 \"Each might have different viewpoints on how to lead one's lifestyle: some prefer simplicity,some love luxuries,some spen\"；因果关系连接理由与结果，是理解作者论证方向的关键。；冒号、分号或破折号后的内容多为解释、举例或补充说明。；不定式多表示目的、结果或后置修饰。",
+          "en": "Each might have different viewpoints on how to lead one's lifestyle: some prefer simplicity, some love luxuries, some spend extravagantly, some accumulate as much as they can like a country mouse.",
+          "zh": "每个人对如何生活可能都有不同看法：有些人偏爱简朴，有些人喜爱奢华，有些人花钱大手大脚，有些人则像乡下老鼠一样尽可能多地积攒。",
+          "structure": "结构分析：主句是 Each might have different viewpoints；on how to lead one's lifestyle 说明观点涉及的对象；冒号后四个 some... 并列举例，形成生活方式对照。",
           "phrases": [
+            {
+              "term": "spend extravagantly",
+              "zh": "挥霍地花钱；大手大脚地消费"
+            },
             {
               "term": "lead one's lifestyle",
               "zh": "过某种生活方式"
             },
             {
-              "term": "simplicity",
-              "zh": "简朴"
+              "term": "prefer simplicity",
+              "zh": "偏爱简朴"
             },
             {
-              "term": "luxuries",
-              "zh": "奢侈品；奢华生活"
+              "term": "love luxuries",
+              "zh": "喜爱奢华/奢侈品"
             },
             {
-              "term": "accumulate",
-              "zh": "积累"
+              "term": "as much as one can",
+              "zh": "尽可能多地"
             }
           ],
           "difficulty": 4
@@ -243,25 +247,29 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A04",
           "part": "Cloze",
-          "en": "As I was born poor and in the countryside,the simple rural life seldom loses its 28 to me,but as my station changes,I have an opportunity to 29 with the newly rich,an experience which has revolutionized my view of lifestyle.",
+          "en": "As I was born poor and in the countryside, the simple rural life seldom loses its appeal to me, but as my station changes, I have an opportunity to mingle with the newly rich, an experience which has revolutionized my view of lifestyle.",
           "zh": "由于我出身贫寒、来自乡村，朴素的乡村生活对我很少失去吸引力；但随着我的处境变化，我有机会同新富阶层交往，这段经历彻底改变了我对生活方式的看法。",
-          "structure": "主句抓 \"the simple rural life seldom loses its 28 to me,but as my station changes,I have an opportunity to 29 with the newly ric\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。",
+          "structure": "结构分析：第一个 As 引导原因状语从句；主句是 the simple rural life seldom loses its appeal to me；but 后转入处境变化；to mingle with the newly rich 修饰 opportunity；which 从句补充说明这段经历的影响。",
           "phrases": [
             {
-              "term": "simple rural life",
-              "zh": "朴素的乡村生活"
+              "term": "lose its appeal to sb.",
+              "zh": "对某人失去吸引力"
             },
             {
-              "term": "newly rich",
-              "zh": "新富阶层"
+              "term": "mingle with",
+              "zh": "与……交往；混在一起"
             },
             {
-              "term": "revolutionized my view",
-              "zh": "彻底改变了我的看法"
+              "term": "be born poor",
+              "zh": "出身贫寒"
             },
             {
-              "term": "station",
-              "zh": "社会地位；处境"
+              "term": "as one's station changes",
+              "zh": "随着某人处境/社会地位变化"
+            },
+            {
+              "term": "have an opportunity to do",
+              "zh": "有机会做某事"
             }
           ],
           "difficulty": 4
@@ -291,21 +299,21 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A06",
           "part": "Cloze",
-          "en": "Actually the whole world is in a 30 to borrow and to spend,with the USA leading the trend.",
-          "zh": "事实上，整个世界都掀起了借钱和消费的热潮，而美国正引领这一趋势。",
-          "structure": "主句抓 \"Actually the whole world is in a 30 to borrow and to spend,with the USA leading the trend.\"；不定式多表示目的、结果或后置修饰。",
+          "en": "Actually the whole world is in a craze to borrow and to spend, with the USA leading the trend.",
+          "zh": "事实上，整个世界都陷入借钱和消费的热潮，而美国正引领这一趋势。",
+          "structure": "结构分析：the whole world is in a craze 是主干；to borrow and to spend 说明热潮内容；with the USA leading the trend 是 with 复合结构，补充趋势的带头者。",
           "phrases": [
             {
-              "term": "leading the trend",
-              "zh": "引领潮流"
+              "term": "be in a craze to do",
+              "zh": "陷入做某事的热潮"
             },
             {
-              "term": "actually",
-              "zh": "实际上；用于纠正或强调真实情况"
+              "term": "lead the trend",
+              "zh": "引领趋势"
             },
             {
-              "term": "leading",
-              "zh": "主要的；领先的"
+              "term": "the whole world",
+              "zh": "整个世界；用于概括全球趋势"
             }
           ],
           "difficulty": 1
@@ -313,21 +321,21 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A07",
           "part": "Cloze",
-          "en": "The USA is still the richest and most powerful country in the world,but the 31 is that they borrow money from us.",
+          "en": "The USA is still the richest and most powerful country in the world, but the irony is that they borrow money from us.",
           "zh": "美国仍然是世界上最富有、最强大的国家，但讽刺的是，他们却从我们这里借钱。",
-          "structure": "主句抓 \"The USA is still the richest and most powerful country in the world,but the 31 is that they borrow money from us.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。",
+          "structure": "结构分析：but 连接转折；前半句说美国仍然富强；后半句 the irony is that... 用表语从句点出反差：这样一个国家却向我们借钱。",
           "phrases": [
+            {
+              "term": "the irony is that",
+              "zh": "讽刺的是；矛盾之处在于"
+            },
             {
               "term": "borrow money from",
               "zh": "向……借钱"
             },
             {
-              "term": "richest",
-              "zh": "最富有的；资源最多的"
-            },
-            {
-              "term": "powerful",
-              "zh": "强大的；影响力大的"
+              "term": "richest and most powerful",
+              "zh": "最富有且最强大的"
             }
           ],
           "difficulty": 3
@@ -335,21 +343,25 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A08",
           "part": "Cloze",
-          "en": "Though a 32 of economics,at least I know that investing with borrowed money will turn the borrower into the 33 rather than the decent and kind lender.",
+          "en": "Though a layman of economics, at least I know that investing with borrowed money will turn the borrower into the predator rather than the decent and kind lender.",
           "zh": "我虽然只是经济学门外汉，但至少知道，用借来的钱投资会把借款人变成掠夺者，而不是体面善良的放贷人。",
-          "structure": "主句抓 \"at least I know that investing with borrowed money will turn the borrower into the 33 rather than the decent and kind le\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。",
+          "structure": "结构分析：Though a layman of economics 是省略结构，相当于 Though I am a layman；主句是 I know；that 从句中 investing with borrowed money 作主语；turn...into... 表示结果转变；rather than 引出被否定的对照对象。",
           "phrases": [
             {
-              "term": "borrowed money",
-              "zh": "借来的钱"
+              "term": "a layman of economics",
+              "zh": "经济学门外汉"
             },
             {
-              "term": "borrower",
-              "zh": "借款人"
+              "term": "turn A into B",
+              "zh": "把 A 变成 B"
             },
             {
-              "term": "lender",
-              "zh": "贷款人"
+              "term": "rather than",
+              "zh": "而不是"
+            },
+            {
+              "term": "invest with borrowed money",
+              "zh": "用借来的钱投资"
             }
           ],
           "difficulty": 3
@@ -366,8 +378,8 @@ export const cet6Reading202412Set1 = {
               "zh": "房地产"
             },
             {
-              "term": "apparent",
-              "zh": "明显的；表面上可见的"
+              "term": "an apparent case",
+              "zh": "一个明显的例子"
             }
           ],
           "difficulty": 1
@@ -375,21 +387,21 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A10",
           "part": "Cloze",
-          "en": "Those who are 34 and have got loans from the bank become relatively rich by selling their purchased home at a price several folds higher.",
+          "en": "Those who are shrewd and have got loans from the bank become relatively rich by selling their purchased home at a price several folds higher.",
           "zh": "那些精明并从银行获得贷款的人，通过以高出数倍的价格卖出所购房屋而变得相对富有。",
-          "structure": "主句抓 \"Those who are 34 and have got loans from the bank become relatively rich by selling their purchased home at a price seve\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
+          "structure": "结构分析：Those who... 是主语，who 从句中 are shrewd 和 have got loans 并列；become relatively rich 是谓语和表语；by selling... 说明致富方式；at a price several folds higher 说明售价幅度。",
           "phrases": [
             {
-              "term": "several folds higher",
-              "zh": "高出数倍"
+              "term": "get loans from the bank",
+              "zh": "从银行获得贷款"
             },
             {
-              "term": "relatively",
-              "zh": "相对地；比较而言"
+              "term": "at a price several folds higher",
+              "zh": "以高出数倍的价格"
             },
             {
-              "term": "selling",
-              "zh": "销售；售卖"
+              "term": "shrewd",
+              "zh": "精明的；善于判断的"
             }
           ],
           "difficulty": 3
@@ -406,8 +418,8 @@ export const cet6Reading202412Set1 = {
               "zh": "不能免于；同样受……影响"
             },
             {
-              "term": "education",
-              "zh": "教育；受教育经历"
+              "term": "be not immune from",
+              "zh": "不能免于……；也会受到……影响"
             }
           ],
           "difficulty": 1
@@ -415,21 +427,21 @@ export const cet6Reading202412Set1 = {
         {
           "label": "A12",
           "part": "Cloze",
-          "en": "Many of those poor parents who have the vision to send their children to college have benefited from this investment,even though they have to 35 a living.",
+          "en": "Many of those poor parents who have the vision to send their children to college have benefited from this investment, even though they have to scrape a living.",
           "zh": "许多有远见、愿意送孩子上大学的贫困父母都从这项投资中受益，尽管他们不得不勉强维持生计。",
-          "structure": "主句抓 \"Many of those poor parents who have the vision to send their children to college have benefited from this investment,eve\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
+          "structure": "结构分析：Many of those poor parents 是主语；who have the vision... 修饰 parents；have benefited from 是主句谓语；even though 引导让步状语从句；scrape a living 表示艰难谋生。",
           "phrases": [
             {
-              "term": "parents",
-              "zh": "父母；家长"
+              "term": "have the vision to do",
+              "zh": "有远见去做某事"
             },
             {
-              "term": "children",
-              "zh": "儿童；孩子们"
+              "term": "benefit from",
+              "zh": "从……中受益"
             },
             {
-              "term": "college",
-              "zh": "大学；高等教育阶段"
+              "term": "scrape a living",
+              "zh": "勉强维持生计"
             }
           ],
           "difficulty": 3
@@ -476,10 +488,6 @@ export const cet6Reading202412Set1 = {
               "zh": "脆的"
             },
             {
-              "term": "sour",
-              "zh": "酸的"
-            },
-            {
               "term": "profitable",
               "zh": "有利可图的"
             }
@@ -500,10 +508,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "countryside",
               "zh": "乡村；农村地区"
-            },
-            {
-              "term": "scientists",
-              "zh": "科学家；研究人员"
             }
           ],
           "difficulty": 2
@@ -515,6 +519,10 @@ export const cet6Reading202412Set1 = {
           "zh": "他们通过种植和加工所谓的\"替代\"作物（如可东当果）来突破人类饮食的界限。",
           "structure": "主句抓 \"They're pushing the boundaries of what humans eat by growing and processing so-called\"alternative\"crops—such as kedondon\"；因果关系连接理由与结果，是理解作者论证方向的关键。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
+            {
+              "term": "alternative crops",
+              "zh": "替代性作物"
+            },
             {
               "term": "boundaries",
               "zh": "边界"
@@ -570,6 +578,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "explains",
               "zh": "解释；说明"
+            },
+            {
+              "term": "be dependent on",
+              "zh": "依赖于……"
             }
           ],
           "difficulty": 5
@@ -590,8 +602,8 @@ export const cet6Reading202412Set1 = {
               "zh": "统一的；单一的"
             },
             {
-              "term": "researchers",
-              "zh": "研究人员"
+              "term": "as for",
+              "zh": "至于；关于"
             }
           ],
           "difficulty": 4
@@ -606,6 +618,14 @@ export const cet6Reading202412Set1 = {
             {
               "term": "timely quest",
               "zh": "及时的探索；在当下背景下正有必要的追寻"
+            },
+            {
+              "term": "a timely quest",
+              "zh": "一个切合时宜的追寻/探索"
+            },
+            {
+              "term": "quest",
+              "zh": "探索；追寻；寻求答案的过程"
             }
           ],
           "difficulty": 1
@@ -662,10 +682,6 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"Meeting this demand without contributing to climate change calls for urgent solutions.\"；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "meeting",
-              "zh": "满足；达到要求"
-            },
-            {
               "term": "without",
               "zh": "没有；缺少"
             },
@@ -686,10 +702,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "forgotten crops",
               "zh": "被遗忘作物"
-            },
-            {
-              "term": "forgotten",
-              "zh": "被遗忘的；长期被忽视的"
             },
             {
               "term": "answers",
@@ -838,12 +850,12 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"He came across alternative crops in the 1980s through the work of women farmers he met in Niger.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "native crops",
-              "zh": "本土作物"
-            },
-            {
               "term": "alternative crops",
               "zh": "替代性作物"
+            },
+            {
+              "term": "native crops",
+              "zh": "本土作物"
             },
             {
               "term": "alternative",
@@ -926,12 +938,8 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"Undeterred,he ploughed on.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "undeterred",
-              "zh": "未被吓倒的；没有退缩的"
-            },
-            {
-              "term": "ploughed",
-              "zh": "投入；原义为耕作，这里指把资源继续投进去"
+              "term": "plough on",
+              "zh": "坚持推进；继续做下去"
             }
           ],
           "difficulty": 1
@@ -950,10 +958,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "project",
               "zh": "项目；计划"
-            },
-            {
-              "term": "different",
-              "zh": "不同的；各不相同的"
             }
           ],
           "difficulty": 2
@@ -972,10 +976,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "question",
               "zh": "问题；疑问"
-            },
-            {
-              "term": "whether",
-              "zh": "是否；引导选择或疑问"
             }
           ],
           "difficulty": 3
@@ -1032,12 +1032,12 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"such as moringa and bambara groundnut,to make everything from instant soup to Indian snacks.\"I try to modernise forgotte\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "forgotten crops",
-              "zh": "被遗忘作物"
+              "term": "instead of",
+              "zh": "而不是"
             },
             {
-              "term": "forgotten",
-              "zh": "被遗忘的；长期被忽视的"
+              "term": "forgotten crops",
+              "zh": "被遗忘作物"
             },
             {
               "term": "moringa",
@@ -1100,6 +1100,14 @@ export const cet6Reading202412Set1 = {
             {
               "term": "connotations",
               "zh": "含义；联想"
+            },
+            {
+              "term": "run deep",
+              "zh": "根深蒂固；影响深远"
+            },
+            {
+              "term": "the roots of",
+              "zh": "……的根源"
             }
           ],
           "difficulty": 1
@@ -1200,6 +1208,14 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"Measuring crops by nutrition instead of yield is at the heart of the forgotten foods enterprise.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
+              "term": "at the heart of",
+              "zh": "处于……核心"
+            },
+            {
+              "term": "instead of",
+              "zh": "而不是"
+            },
+            {
               "term": "yield",
               "zh": "产量"
             },
@@ -1266,6 +1282,10 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"he asserts.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
+              "term": "instead of",
+              "zh": "而不是"
+            },
+            {
               "term": "forgotten crops",
               "zh": "被遗忘作物"
             },
@@ -1310,16 +1330,16 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"It's one of multiple chambers where scientists are studying the impact of higher temperatures and carbon dioxide levels \"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
             {
-              "term": "native crops",
-              "zh": "本土作物"
-            },
-            {
               "term": "alternative crops",
               "zh": "替代性作物"
             },
             {
               "term": "nutritional make-up",
               "zh": "营养构成"
+            },
+            {
+              "term": "native crops",
+              "zh": "本土作物"
             },
             {
               "term": "chambers",
@@ -1335,10 +1355,6 @@ export const cet6Reading202412Set1 = {
           "zh": "Azam-Ali说，这项研究\"改变了游戏规则\"，确保\"未来的作物\"也是温暖气候下最健康的作物。",
           "structure": "主句抓 \"This research is \"the game changer\",says Azam-Ali,ensuring that\"future crops\"are also the healthiest ones in warmer clim\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
-            {
-              "term": "research",
-              "zh": "研究；系统调查"
-            },
             {
               "term": "changer",
               "zh": "改变者；game changer 指能改变局面的因素"
@@ -1364,10 +1380,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "growing",
               "zh": "增长的；越来越多的"
-            },
-            {
-              "term": "forgotten",
-              "zh": "被遗忘的；长期被忽视的"
             }
           ],
           "difficulty": 3
@@ -1382,10 +1394,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "world's",
               "zh": "世界的；全世界范围内的"
-            },
-            {
-              "term": "research",
-              "zh": "研究；系统调查"
             },
             {
               "term": "dedicated",
@@ -1428,10 +1436,6 @@ export const cet6Reading202412Set1 = {
               "zh": "兴趣；关注；也可指利益"
             },
             {
-              "term": "forgotten",
-              "zh": "被遗忘的；长期被忽视的"
-            },
-            {
               "term": "quarters",
               "zh": "方面；群体；来源"
             }
@@ -1456,6 +1460,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "promoting",
               "zh": "推广；促进"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 5
@@ -1496,10 +1504,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "argument",
               "zh": "论点；争论中的核心理由"
-            },
-            {
-              "term": "forgotten",
-              "zh": "被遗忘的；长期被忽视的"
             }
           ],
           "difficulty": 1
@@ -1512,16 +1516,12 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"Some analysts say it is in fact inevitable.\"Climate change is going to mean almost certainly tastes are going to be forc\"；被动结构突出承受者或结果，动作发出者不是句子重点。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
+              "term": "in fact",
+              "zh": "事实上"
+            },
+            {
               "term": "analysts",
               "zh": "分析人士；研究和解读趋势的人"
-            },
-            {
-              "term": "inevitable",
-              "zh": "不可避免的；必然发生的"
-            },
-            {
-              "term": "climate",
-              "zh": "气候；长期天气条件"
             }
           ],
           "difficulty": 3
@@ -1536,6 +1536,14 @@ export const cet6Reading202412Set1 = {
             {
               "term": "staple crops",
               "zh": "主粮作物"
+            },
+            {
+              "term": "get used to doing",
+              "zh": "习惯于做某事"
+            },
+            {
+              "term": "as yields fall",
+              "zh": "随着产量下降"
             }
           ],
           "difficulty": 1
@@ -1630,8 +1638,8 @@ export const cet6Reading202412Set1 = {
               "zh": "盯着看；凝视"
             },
             {
-              "term": "rectangular",
-              "zh": "长方形的；矩形的"
+              "term": "patterns of light",
+              "zh": "光影图案"
             }
           ],
           "difficulty": 2
@@ -1688,12 +1696,12 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"Eventually,the lights come up and the rectangular screen goes black.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "eventually",
-              "zh": "最终；经过一段过程之后"
+              "term": "come up",
+              "zh": "灯光亮起；问题/话题出现"
             },
             {
-              "term": "rectangular",
-              "zh": "长方形的；矩形的"
+              "term": "go black",
+              "zh": "变黑；熄灭"
             }
           ],
           "difficulty": 1
@@ -1750,12 +1758,12 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"And why do they react so strongly to those patterns of light on a screen?\"；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "strongly",
-              "zh": "强烈地；程度很高地"
+              "term": "react to",
+              "zh": "对……作出反应"
             },
             {
-              "term": "patterns",
-              "zh": "模式；反复出现的形式"
+              "term": "patterns of light",
+              "zh": "光影图案"
             }
           ],
           "difficulty": 1
@@ -1782,6 +1790,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "paradox",
               "zh": "悖论"
+            },
+            {
+              "term": "the paradox of",
+              "zh": "……的悖论"
             }
           ],
           "difficulty": 4
@@ -1800,6 +1812,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "human nature",
               "zh": "人性；人类共有的心理倾向"
+            },
+            {
+              "term": "lie in",
+              "zh": "在于；存在于"
             }
           ],
           "difficulty": 1
@@ -1818,10 +1834,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "evolved",
               "zh": "进化出"
-            },
-            {
-              "term": "research",
-              "zh": "研究；系统调查"
             }
           ],
           "difficulty": 3
@@ -1834,12 +1846,12 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"You can see these elements of horror in children's games.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "elements",
-              "zh": "要素；组成部分"
-            },
-            {
               "term": "children's",
               "zh": "儿童的；属于孩子或面向孩子的"
+            },
+            {
+              "term": "elements of horror",
+              "zh": "恐怖元素"
             }
           ],
           "difficulty": 1
@@ -1862,6 +1874,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "hide-and-",
               "zh": "hide-and-seek 的前半，指“捉迷藏”"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 3
@@ -1968,6 +1984,14 @@ export const cet6Reading202412Set1 = {
             {
               "term": "emotion",
               "zh": "情绪；情感反应"
+            },
+            {
+              "term": "what it feels like to do",
+              "zh": "做某事是什么感觉"
+            },
+            {
+              "term": "handle negative emotion",
+              "zh": "处理负面情绪"
             }
           ],
           "difficulty": 1
@@ -1982,6 +2006,14 @@ export const cet6Reading202412Set1 = {
             {
               "term": "How does horror work",
               "zh": "恐怖如何起作用；询问恐怖体验产生快感的机制"
+            },
+            {
+              "term": "How, then, ...?",
+              "zh": "那么，……是如何起作用的？"
+            },
+            {
+              "term": "horror work",
+              "zh": "恐怖机制如何发挥作用"
             }
           ],
           "difficulty": 1
@@ -2046,12 +2078,8 @@ export const cet6Reading202412Set1 = {
               "zh": "恐怖片"
             },
             {
-              "term": "reasons",
-              "zh": "原因；理由"
-            },
-            {
-              "term": "watching",
-              "zh": "观看；注视"
+              "term": "even if",
+              "zh": "即使"
             }
           ],
           "difficulty": 1
@@ -2088,10 +2116,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "horror film",
               "zh": "恐怖片"
-            },
-            {
-              "term": "watching",
-              "zh": "观看；注视"
             },
             {
               "term": "handling",
@@ -2318,8 +2342,8 @@ export const cet6Reading202412Set1 = {
               "zh": "半机械人式外貌"
             },
             {
-              "term": "rapidly",
-              "zh": "迅速地；快速地"
+              "term": "spread rapidly",
+              "zh": "迅速传播；快速流行"
             }
           ],
           "difficulty": 1
@@ -2338,10 +2362,6 @@ export const cet6Reading202412Set1 = {
             {
               "term": "instagram face",
               "zh": "Instagram 式面孔"
-            },
-            {
-              "term": "however",
-              "zh": "然而；引出转折"
             }
           ],
           "difficulty": 1
@@ -2364,6 +2384,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "accepted",
               "zh": "被接受的；得到认可的"
+            },
+            {
+              "term": "be more effective",
+              "zh": "更有效"
             }
           ],
           "difficulty": 2
@@ -2375,6 +2399,10 @@ export const cet6Reading202412Set1 = {
           "zh": "用户的积极参与反映在社交媒体平台提供的游戏化（游戏化的）互动中，即喜欢、写评论、比较和分享的能力。",
           "structure": "主句抓 \"The active involvement of users is reflected in the gamified (游戏化的) interaction offered by the social media platforms—th\"；冒号、分号或破折号后的内容多为解释、举例或补充说明。；被动结构突出承受者或结果，动作发出者不是句子重点。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
+            {
+              "term": "gamified interaction",
+              "zh": "游戏化互动"
+            },
             {
               "term": "social media",
               "zh": "社交媒体"
@@ -2420,6 +2448,10 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"A survey conducted in the United States revealed that more than 50% filter the images before posting them.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
           "phrases": [
             {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
               "term": "conducted",
               "zh": "开展；进行研究或调查"
             },
@@ -2448,6 +2480,10 @@ export const cet6Reading202412Set1 = {
             {
               "term": "majority",
               "zh": "多数；大部分"
+            },
+            {
+              "term": "the majority of",
+              "zh": "大多数……"
             }
           ],
           "difficulty": 2
@@ -2464,8 +2500,8 @@ export const cet6Reading202412Set1 = {
               "zh": "过度使用滤镜"
             },
             {
-              "term": "significant",
-              "zh": "显著的；重要的"
+              "term": "treat as",
+              "zh": "把……视为；把……当作"
             },
             {
               "term": "consequences",
@@ -2526,8 +2562,8 @@ export const cet6Reading202412Set1 = {
           "structure": "主句抓 \"apps like Instagram,Snapchat and FaceTune allow users to achieve a level of perfection that was previously only observed\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "according",
-              "zh": "according to 的核心词，表示“根据、按照”"
+              "term": "according to",
+              "zh": "根据；据……所说"
             },
             {
               "term": "instagram",
@@ -2574,16 +2610,16 @@ export const cet6Reading202412Set1 = {
               "zh": "审美理想"
             },
             {
-              "term": "social media",
-              "zh": "社交媒体"
+              "term": "cosmetic intervention",
+              "zh": "美容干预"
             },
             {
               "term": "mental health",
               "zh": "心理健康"
             },
             {
-              "term": "cosmetic intervention",
-              "zh": "美容干预"
+              "term": "social media",
+              "zh": "社交媒体"
             }
           ],
           "difficulty": 4

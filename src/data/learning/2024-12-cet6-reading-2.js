@@ -168,7 +168,7 @@ export const cet6Reading202412Set2 = {
       "kicker": "Section A",
       "title": "选词填空 · 对话平衡与协作沟通",
       "navLabel": "选词填空",
-      "description": "这一篇说明有效对话需要积极情绪、冷静语气和话语权对称，重点看抽象名词与动词搭配。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -177,6 +177,10 @@ export const cet6Reading202412Set2 = {
           "zh": "你是否曾和在乎的人谈论重要事情，却发现讨论令人沮丧，而不是富有成效？",
           "structure": "主句抓 \"Ever been talking about something important with someone you care about and found the discussion frustrating instead of \"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
+            {
+              "term": "instead of",
+              "zh": "而不是"
+            },
             {
               "term": "fruitful",
               "zh": "有成效的"
@@ -195,21 +199,25 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A02",
           "part": "Cloze",
-          "en": "Negative energy can then cast a 26 over your efforts to build a shared understanding.",
+          "en": "Negative energy can then cast a shadow over your efforts to build a shared understanding.",
           "zh": "这种负面能量随后会给你们建立共同理解的努力蒙上阴影。",
-          "structure": "主句抓 \"Negative energy can then cast a 26 over your efforts to build a shared understanding.\"；不定式多表示目的、结果或后置修饰。",
+          "structure": "结构分析：Negative energy 是主语；cast a shadow over 表示“给……蒙上阴影”；your efforts to build a shared understanding 是宾语，to build... 说明努力的目标。",
           "phrases": [
             {
               "term": "shared understanding",
               "zh": "共同理解"
             },
             {
-              "term": "negative",
-              "zh": "负面的；消极的"
+              "term": "cast a shadow over",
+              "zh": "给……蒙上阴影；对……产生负面影响"
             },
             {
-              "term": "efforts",
-              "zh": "努力；为目标付出的行动"
+              "term": "build a shared understanding",
+              "zh": "建立共同理解"
+            },
+            {
+              "term": "efforts to build",
+              "zh": "为建立……所作的努力"
             }
           ],
           "difficulty": 1
@@ -221,6 +229,10 @@ export const cet6Reading202412Set2 = {
           "zh": "事实上，协作式解决问题的谈话需要技巧。",
           "structure": "主句抓 \"In fact collaborative problem-solving conversations require skills.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
             {
               "term": "collaborative problem-solving",
               "zh": "协作式解决问题"
@@ -239,21 +251,21 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A04",
           "part": "Cloze",
-          "en": "Strong listening skills are essential. 27 smiles,and warm comments helps.",
+          "en": "Strong listening skills are essential. Timely smiles and warm comments help.",
           "zh": "强大的倾听能力很重要；适时的微笑和温暖的评论也有帮助。",
-          "structure": "主句抓 \"Strong listening skills are essential. 27 smiles,and warm comments helps.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
+          "structure": "结构分析：第一句是主系表结构；第二句中 Timely smiles and warm comments 是并列主语，help 是谓语，说明非语言反馈和回应也能促进沟通。",
           "phrases": [
             {
-              "term": "strong listening skills",
-              "zh": "强大的倾听能力"
+              "term": "timely smiles",
+              "zh": "适时的微笑"
             },
             {
-              "term": "listening",
-              "zh": "倾听；认真听对方表达"
+              "term": "warm comments",
+              "zh": "温和、友善的评论"
             },
             {
-              "term": "essential",
-              "zh": "必不可少的；核心的"
+              "term": "listening skills",
+              "zh": "倾听能力"
             }
           ],
           "difficulty": 1
@@ -266,12 +278,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"So does the essential Sprinkling in positivity via appreciation,ability to keep your emotional tone in the calm zone.\"；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "emotional tone",
-              "zh": "情绪语调"
-            },
-            {
               "term": "calm zone",
               "zh": "冷静状态"
+            },
+            {
+              "term": "emotional tone",
+              "zh": "情绪语调"
             },
             {
               "term": "appreciation",
@@ -283,25 +295,25 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A06",
           "part": "Cloze",
-          "en": "If the tone of a dialogue heats up and anger erupts,the dialogue 28 from collaborative to adversarial,and progress is likely to come to an immediate 29 In addition,effective dialogue generally has another important characteristic: symmetry.",
-          "zh": "如果对话语气升温、愤怒爆发，对话就会从协作转向对抗，进展也很可能立即停滞；此外，有效对话通常还有另一个重要特征：对称性。",
-          "structure": "主句抓 \"the dialogue 28 from collaborative to adversarial,and progress is likely to come to an immediate 29 In addition,effectiv\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；冒号、分号或破折号后的内容多为解释、举例或补充说明。；不定式多表示目的、结果或后置修饰。",
+          "en": "If the tone of a dialogue heats up and anger erupts, the dialogue shifts from collaborative to adversarial, and progress is likely to come to an immediate halt. In addition, effective dialogue generally has another important characteristic: symmetry.",
+          "zh": "如果对话语气升温、愤怒爆发，对话就会从协作转向对抗，进展也很可能立即停滞。此外，有效对话通常还有另一个重要特征：对称性。",
+          "structure": "结构分析：If 引导条件状语从句；主句有两个并列结果：dialogue shifts... 和 progress is likely to...；from collaborative to adversarial 表示性质变化；come to an immediate halt 表示进展立即停止；冒号后点明 characteristic 的内容。",
           "phrases": [
             {
-              "term": "heats up",
-              "zh": "升温；变得激烈"
+              "term": "shift from collaborative to adversarial",
+              "zh": "从协作转向对抗"
             },
             {
-              "term": "adversarial",
-              "zh": "对抗性的"
+              "term": "shift from A to B",
+              "zh": "从 A 转向 B"
             },
             {
-              "term": "erupts",
-              "zh": "爆发"
+              "term": "come to an immediate halt",
+              "zh": "立即停止；马上停滞"
             },
             {
-              "term": "symmetry",
-              "zh": "对称"
+              "term": "in addition",
+              "zh": "此外"
             }
           ],
           "difficulty": 4
@@ -342,10 +354,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "getting",
               "zh": "获得；变得；语义随搭配变化"
-            },
-            {
-              "term": "airtime",
-              "zh": "发言时间；谈话中占用的话语空间"
             }
           ],
           "difficulty": 1
@@ -375,17 +383,21 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A10",
           "part": "Cloze",
-          "en": "The silent partner 30 tires of only listening,while the talker can feel 31.",
-          "zh": "沉默的一方会厌倦只听不说，而一直说话的人也可能感到不自在。",
-          "structure": "主句抓 \"The silent partner 30 tires of only listening,while the talker can feel 31.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
+          "en": "The silent partner eventually tires of only listening, while the talker can feel uncomfortable.",
+          "zh": "沉默的一方最终会厌倦只听不说，而一直说话的人也可能感到不自在。",
+          "structure": "结构分析：The silent partner eventually tires of... 是前半句主干；while 引出对照，说明 talker 的感受；tire of doing 表示厌倦做某事。",
           "phrases": [
             {
-              "term": "partner",
-              "zh": "伙伴；谈话或协作对象"
+              "term": "eventually tire of doing",
+              "zh": "最终厌倦做某事"
             },
             {
-              "term": "listening",
-              "zh": "倾听；认真听对方表达"
+              "term": "feel uncomfortable",
+              "zh": "感到不自在"
+            },
+            {
+              "term": "silent partner",
+              "zh": "沉默的一方；不常发言的伙伴"
             }
           ],
           "difficulty": 2
@@ -402,8 +414,8 @@ export const cet6Reading202412Set2 = {
               "zh": "相互让步与交流"
             },
             {
-              "term": "usually",
-              "zh": "通常；一般来说"
+              "term": "prefer more equal give and take",
+              "zh": "更希望有较平等的交流互动"
             }
           ],
           "difficulty": 1
@@ -411,17 +423,21 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A12",
           "part": "Cloze",
-          "en": "Different rates of speech and levels of voice volume can 32 symmetry as well.",
-          "zh": "语速不同、音量高低不同，也会影响这种对称性。",
-          "structure": "主句抓 \"Different rates of speech and levels of voice volume can 32 symmetry as well.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
+          "en": "Different rates of speech and levels of voice volume can disrupt symmetry as well.",
+          "zh": "语速不同、音量高低不同，也会破坏这种对称性。",
+          "structure": "结构分析：Different rates of speech and levels of voice volume 是并列主语；can disrupt 是谓语；symmetry 是宾语；as well 表示这也是影响对话平衡的因素。",
           "phrases": [
             {
-              "term": "symmetry",
-              "zh": "对称"
+              "term": "rates of speech",
+              "zh": "语速"
             },
             {
-              "term": "different",
-              "zh": "不同的；各不相同的"
+              "term": "levels of voice volume",
+              "zh": "音量高低"
+            },
+            {
+              "term": "disrupt symmetry",
+              "zh": "破坏对称性/平衡"
             }
           ],
           "difficulty": 1
@@ -434,12 +450,8 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"The faster or louder partner can easily begin taking up more airtime.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "partner",
-              "zh": "伙伴；谈话或协作对象"
-            },
-            {
-              "term": "airtime",
-              "zh": "发言时间；谈话中占用的话语空间"
+              "term": "take up airtime",
+              "zh": "占用更多发言时间"
             }
           ],
           "difficulty": 1
@@ -474,6 +486,10 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Conversations also lose balance when one partner's opinions count more than the other's.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
               "term": "conversations",
               "zh": "谈话；对话交流"
             },
@@ -491,21 +507,21 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A16",
           "part": "Cloze",
-          "en": "One person's input may carry more sway because their style of expression is more 33.",
+          "en": "One person's input may carry more sway because their style of expression is more forceful.",
           "zh": "一个人的意见可能更有分量，因为他的表达方式更有力量。",
-          "structure": "主句抓 \"One person's input may carry more sway because their style of expression is more 33.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
+          "structure": "结构分析：One person's input 是主语；carry more sway 表示更有影响力；because 引导原因状语从句，说明影响力来自更强势的表达方式。",
           "phrases": [
             {
               "term": "carry more sway",
-              "zh": "更有影响力"
+              "zh": "更有影响力；更有分量"
             },
             {
-              "term": "person's",
-              "zh": "某个人的；个人所属的"
+              "term": "forceful style of expression",
+              "zh": "强势有力的表达方式"
             },
             {
-              "term": "because",
-              "zh": "因为；引出原因"
+              "term": "style of expression",
+              "zh": "表达方式"
             }
           ],
           "difficulty": 2
@@ -513,21 +529,21 @@ export const cet6Reading202412Set2 = {
         {
           "label": "A17",
           "part": "Cloze",
-          "en": "One viewpoint may tend to get lost because it is expressed more 34 If either partner fairly consistently 35 or evaporates,modifying the pattern will be helpful.",
-          "zh": "某个观点也可能因为表达得较弱而被忽视；如果任一方总是退缩或消失，调整这种模式会有帮助。",
-          "structure": "主句抓 \"One viewpoint may tend to get lost because it is expressed more 34 If either partner fairly consistently 35 or evaporate\"；因果关系连接理由与结果，是理解作者论证方向的关键。；被动结构突出承受者或结果，动作发出者不是句子重点。；不定式多表示目的、结果或后置修饰。",
+          "en": "One viewpoint may tend to get lost because it is expressed more weakly. If either partner fairly consistently withdraws or evaporates, modifying the pattern will be helpful.",
+          "zh": "某个观点也可能因为表达得较弱而被忽视；如果任一方总是相当稳定地退缩或消失，调整这种模式会有帮助。",
+          "structure": "结构分析：第一句中 get lost 是被动意义，because 从句说明观点被忽视的原因；第二句 If 引导条件状语从句；withdraws or evaporates 是并列谓语；modifying the pattern 是动名词短语作主语。",
           "phrases": [
             {
-              "term": "viewpoint",
-              "zh": "观点；看法"
+              "term": "tend to get lost",
+              "zh": "容易被忽视；容易消失"
             },
             {
-              "term": "because",
-              "zh": "因为；引出原因"
+              "term": "be expressed weakly",
+              "zh": "表达得较弱"
             },
             {
-              "term": "expressed",
-              "zh": "表达；说出或显示"
+              "term": "withdraw or evaporate",
+              "zh": "退缩或消失"
             }
           ],
           "difficulty": 3
@@ -546,10 +562,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "productive",
               "zh": "有成效的；能产生结果的"
-            },
-            {
-              "term": "relationship",
-              "zh": "关系；关联"
             }
           ],
           "difficulty": 2
@@ -570,8 +582,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Blue moons,rose moons,supermoons.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "supermoons",
-              "zh": "超级月亮；月亮接近地球时显得更大的现象"
+              "term": "blue moon",
+              "zh": "蓝月；一个月中的第二次满月"
+            },
+            {
+              "term": "rose moon",
+              "zh": "玫瑰月；满月名称之一"
             }
           ],
           "difficulty": 1
@@ -610,6 +626,10 @@ export const cet6Reading202412Set2 = {
               "zh": "超级血狼月"
             },
             {
+              "term": "in fact",
+              "zh": "事实上"
+            },
+            {
               "term": "astronomical event",
               "zh": "天文事件"
             },
@@ -638,6 +658,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "nothing",
               "zh": "没有什么；并非重要内容"
+            },
+            {
+              "term": "There is nothing ... about that",
+              "zh": "那并不……；那没有任何……之处"
             }
           ],
           "difficulty": 4
@@ -672,10 +696,6 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Consider this your go-to resource for all moon-gazing news.\"；因果关系连接理由与结果，是理解作者论证方向的关键。；冒号、分号或破折号后的内容多为解释、举例或补充说明。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "consider",
-              "zh": "考虑；认为"
-            },
-            {
               "term": "resource",
               "zh": "资源；可利用的材料或信息"
             },
@@ -696,6 +716,14 @@ export const cet6Reading202412Set2 = {
             {
               "term": "latest lunar event",
               "zh": "最新月球事件；最近一次与月亮有关的天象"
+            },
+            {
+              "term": "lunar event",
+              "zh": "月球天象事件"
+            },
+            {
+              "term": "Here's what you need to know",
+              "zh": "下面是你需要知道的内容"
             }
           ],
           "difficulty": 1
@@ -710,6 +738,14 @@ export const cet6Reading202412Set2 = {
             {
               "term": "it's okay if",
               "zh": "即使……也没关系；用于安慰或降低压力"
+            },
+            {
+              "term": "It's okay if...",
+              "zh": "如果……也没关系"
+            },
+            {
+              "term": "if you don't know",
+              "zh": "如果你不知道；用于宽慰对方"
             }
           ],
           "difficulty": 1
@@ -743,6 +779,10 @@ export const cet6Reading202412Set2 = {
           "zh": "月球绕地球运行，并且处于潮汐锁定状态，也就是说它总是把同一面朝向我们，而不像地球那样自转给我们看不同面。",
           "structure": "主句抓 \"The moon orbits Earth,and it's tidally locked—that means it always shows us the same face,instead of spinning around lik\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
+            {
+              "term": "instead of",
+              "zh": "而不是"
+            },
             {
               "term": "tidally locked",
               "zh": "潮汐锁定"
@@ -794,6 +834,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "reflecting",
               "zh": "反射；也可指反映"
+            },
+            {
+              "term": "reflect light from",
+              "zh": "反射来自……的光"
             }
           ],
           "difficulty": 3
@@ -812,10 +856,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "sunlight",
               "zh": "阳光；太阳光"
-            },
-            {
-              "term": "different",
-              "zh": "不同的；各不相同的"
             }
           ],
           "difficulty": 1
@@ -878,6 +918,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "extremes",
               "zh": "极端；两个端点"
+            },
+            {
+              "term": "from one extreme to the other",
+              "zh": "从一个极端到另一个极端"
             }
           ],
           "difficulty": 1
@@ -892,10 +936,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "perfectly circular",
               "zh": "完全圆形"
-            },
-            {
-              "term": "exactly",
-              "zh": "确切地；正是"
             },
             {
               "term": "distance",
@@ -940,6 +980,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "distance",
               "zh": "距离；空间或心理上的远近"
+            },
+            {
+              "term": "ordinary change in distance",
+              "zh": "普通的距离变化"
             }
           ],
           "difficulty": 2
@@ -1128,8 +1172,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"we had our second \"blue moon\"of the year,to much acclaim.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "acclaim",
-              "zh": "称赞；关注"
+              "term": "to much acclaim",
+              "zh": "广受赞誉；受到很多称赞"
+            },
+            {
+              "term": "second blue moon of the year",
+              "zh": "一年中的第二次蓝月"
             }
           ],
           "difficulty": 1
@@ -1142,12 +1190,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"And while that's not necessarily special in an oh-gosh-get-out-and-look-at-it way,it's certainly special: a blue moon is\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "full moon",
-              "zh": "满月"
-            },
-            {
               "term": "calendar month",
               "zh": "公历月份"
+            },
+            {
+              "term": "full moon",
+              "zh": "满月"
             },
             {
               "term": "necessarily",
@@ -1166,6 +1214,14 @@ export const cet6Reading202412Set2 = {
             {
               "term": "won't have it happen again until",
               "zh": "直到……才会再次发生；强调下一次间隔很久"
+            },
+            {
+              "term": "not ... until",
+              "zh": "直到……才……"
+            },
+            {
+              "term": "have it happen again",
+              "zh": "让这种情况再次发生；再次出现这种情况"
             }
           ],
           "difficulty": 1
@@ -1204,8 +1260,12 @@ export const cet6Reading202412Set2 = {
               "zh": "新月"
             },
             {
-              "term": "average",
-              "zh": "平均的；普通水平的"
+              "term": "on average",
+              "zh": "平均而言"
+            },
+            {
+              "term": "end up with",
+              "zh": "最终得到；最终处于"
             }
           ],
           "difficulty": 2
@@ -1222,8 +1282,8 @@ export const cet6Reading202412Set2 = {
               "zh": "满月"
             },
             {
-              "term": "another",
-              "zh": "另一个；又一项"
+              "term": "every once in a while",
+              "zh": "偶尔；时不时"
             }
           ],
           "difficulty": 2
@@ -1264,6 +1324,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "individual",
               "zh": "单个的；个人的"
+            },
+            {
+              "term": "two blue moons a year",
+              "zh": "一年两次蓝月"
             }
           ],
           "difficulty": 1
@@ -1276,8 +1340,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Also,fun fact: not actually blue.\"；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
             {
-              "term": "actually",
-              "zh": "实际上；用于纠正或强调真实情况"
+              "term": "fun fact",
+              "zh": "有趣的小知识"
+            },
+            {
+              "term": "not actually blue",
+              "zh": "实际上并不是蓝色的"
             }
           ],
           "difficulty": 2
@@ -1316,10 +1384,6 @@ export const cet6Reading202412Set2 = {
               "zh": "火山喷发"
             },
             {
-              "term": "ash",
-              "zh": "灰烬"
-            },
-            {
               "term": "volcanic",
               "zh": "火山的；与火山活动有关"
             }
@@ -1340,6 +1404,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "paschal",
               "zh": "复活节的；与复活节日期相关"
+            },
+            {
+              "term": "may have heard that",
+              "zh": "可能听说过……"
             }
           ],
           "difficulty": 2
@@ -1352,8 +1420,16 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"This is true!\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "This is true",
-              "zh": "这是真的；确认前文说法无误"
+              "term": "This is true!",
+              "zh": "这是真的！用于确认前文说法"
+            },
+            {
+              "term": "be true",
+              "zh": "成立；属实"
+            },
+            {
+              "term": "confirm a point",
+              "zh": "确认一个观点/说法"
             }
           ],
           "difficulty": 1
@@ -1372,6 +1448,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "determine",
               "zh": "决定；确定"
+            },
+            {
+              "term": "be used to determine",
+              "zh": "被用来确定"
             }
           ],
           "difficulty": 3
@@ -1410,10 +1490,6 @@ export const cet6Reading202412Set2 = {
               "zh": "限定词；修饰标签"
             },
             {
-              "term": "sometimes",
-              "zh": "有时；偶尔"
-            },
-            {
               "term": "headline",
               "zh": "标题；新闻醒目文字"
             }
@@ -1428,8 +1504,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"A super blue blood worm moon,perhaps?\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "perhaps",
-              "zh": "或许；表示推测"
+              "term": "worm moon",
+              "zh": "虫月；春季满月名称"
+            },
+            {
+              "term": "super blue blood moon",
+              "zh": "超级蓝血月，叠加多种月相称呼"
             }
           ],
           "difficulty": 1
@@ -1444,6 +1524,14 @@ export const cet6Reading202412Set2 = {
             {
               "term": "super blood wolf moon",
               "zh": "超级血狼月"
+            },
+            {
+              "term": "blood wolf moon",
+              "zh": "血狼月；红色月食与狼月称呼的组合"
+            },
+            {
+              "term": "Or ...?",
+              "zh": "用于提出另一种可能说法"
             }
           ],
           "difficulty": 1
@@ -1502,6 +1590,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "full moon",
               "zh": "满月"
+            },
+            {
+              "term": "draw from",
+              "zh": "借鉴；取自"
             },
             {
               "term": "cultures",
@@ -1602,10 +1694,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "conservatism",
               "zh": "保守主义"
-            },
-            {
-              "term": "elements",
-              "zh": "要素；组成部分"
             }
           ],
           "difficulty": 2
@@ -1617,6 +1705,10 @@ export const cet6Reading202412Set2 = {
           "zh": "乡村社区遭受困境，主要正是因为后者。",
           "structure": "主句抓 \"And it is mostly due to the latter that rural communities are suffering.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
+            {
+              "term": "the latter",
+              "zh": "后者"
+            },
             {
               "term": "communities",
               "zh": "社区；有共同生活或文化的人群"
@@ -1636,12 +1728,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Attracted by the improved economics of urban areas,country-dwellers across the world are moving out,contributing to the \"；冒号、分号或破折号后的内容多为解释、举例或补充说明。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "country-dwellers",
-              "zh": "乡村居民"
-            },
-            {
               "term": "densely populated cities",
               "zh": "人口密集的城市"
+            },
+            {
+              "term": "country-dwellers",
+              "zh": "乡村居民"
             },
             {
               "term": "desolation",
@@ -1664,10 +1756,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "survival",
               "zh": "生存；存活"
-            },
-            {
-              "term": "changes",
-              "zh": "变化；改变"
             }
           ],
           "difficulty": 2
@@ -1708,10 +1796,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "dwellers",
               "zh": "居民；居住者"
-            },
-            {
-              "term": "maintaining",
-              "zh": "维持；保持"
             }
           ],
           "difficulty": 1
@@ -1724,12 +1808,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"We may be piled up like boxes in the city,but this brings energy efficiency that the countryside cannot match.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。；被动结构突出承受者或结果，动作发出者不是句子重点。",
           "phrases": [
             {
-              "term": "efficiency",
-              "zh": "效率；用更少资源完成更多事情的能力"
-            },
-            {
               "term": "countryside",
               "zh": "乡村；农村地区"
+            },
+            {
+              "term": "energy efficiency",
+              "zh": "能源效率"
             }
           ],
           "difficulty": 3
@@ -1744,6 +1828,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "carbon emissions",
               "zh": "碳排放"
+            },
+            {
+              "term": "result in",
+              "zh": "导致；结果是"
             },
             {
               "term": "emissions",
@@ -1764,12 +1852,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Protecting the countryside is a hot topic.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "protecting",
-              "zh": "保护；防止受到损害"
-            },
-            {
               "term": "countryside",
               "zh": "乡村；农村地区"
+            },
+            {
+              "term": "a hot topic",
+              "zh": "热门话题"
             }
           ],
           "difficulty": 1
@@ -1832,10 +1920,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "solution",
               "zh": "解决办法；方案"
-            },
-            {
-              "term": "challenge",
-              "zh": "挑战；需要解决的难题"
             }
           ],
           "difficulty": 2
@@ -1854,10 +1938,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "deplorable",
               "zh": "令人遗憾的"
-            },
-            {
-              "term": "believe",
-              "zh": "相信；认为"
             }
           ],
           "difficulty": 2
@@ -1962,10 +2042,6 @@ export const cet6Reading202412Set2 = {
               "zh": "考虑到；鉴于"
             },
             {
-              "term": "changes",
-              "zh": "变化；改变"
-            },
-            {
               "term": "evolving",
               "zh": "不断演变的；持续发展的"
             }
@@ -1979,10 +2055,6 @@ export const cet6Reading202412Set2 = {
           "zh": "也许乡村还应为未来大规模人口增长做好准备。",
           "structure": "主句抓 \"Perhaps the countryside should also prepare itself for massive population increases in the future.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
-            {
-              "term": "perhaps",
-              "zh": "或许；表示推测"
-            },
             {
               "term": "countryside",
               "zh": "乡村；农村地区"
@@ -2002,12 +2074,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"how will the current urban generation respond to the inevitable social changes of mass urbanisation?\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "growing",
-              "zh": "增长的；越来越多的"
+              "term": "respond to",
+              "zh": "回应；对……作出反应"
             },
             {
-              "term": "rapidly",
-              "zh": "迅速地；快速地"
+              "term": "growing",
+              "zh": "增长的；越来越多的"
             },
             {
               "term": "current",
@@ -2046,6 +2118,10 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"the voices calling for rural preservation may well grow louder.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
+              "term": "may well",
+              "zh": "很可能"
+            },
+            {
               "term": "rural preservation",
               "zh": "乡村保护"
             },
@@ -2068,8 +2144,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"But change is inevitable.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "inevitable",
-              "zh": "不可避免的；必然发生的"
+              "term": "change is inevitable",
+              "zh": "变化不可避免"
+            },
+            {
+              "term": "But change is inevitable.",
+              "zh": "但变化不可避免；用于承接转折结论"
             }
           ],
           "difficulty": 1
@@ -2140,10 +2220,6 @@ export const cet6Reading202412Set2 = {
             {
               "term": "embedded",
               "zh": "深植于；嵌入在"
-            },
-            {
-              "term": "consciousness",
-              "zh": "意识；思想觉知"
             }
           ],
           "difficulty": 2
@@ -2155,10 +2231,6 @@ export const cet6Reading202412Set2 = {
           "zh": "不过，至少对这一假设提出一点反驳可能是有用的，因为人们会以审美方式评价环境、情境和他人。",
           "structure": "主句抓 \"It might be useful,however,to at least push back on this assumption because people evaluate environment,situations,and p\"；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
-            {
-              "term": "however",
-              "zh": "然而；引出转折"
-            },
             {
               "term": "assumption",
               "zh": "假设；未经充分证明的前提"
@@ -2178,16 +2250,8 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"We may find that we still believe it is correct,but we may also find that there is a lot more to the situation than you \"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "believe",
-              "zh": "相信；认为"
-            },
-            {
               "term": "correct",
               "zh": "正确的；符合事实的"
-            },
-            {
-              "term": "situation",
-              "zh": "情形；处境"
             }
           ],
           "difficulty": 3
@@ -2226,12 +2290,12 @@ export const cet6Reading202412Set2 = {
               "zh": "审美评价"
             },
             {
-              "term": "natural objects",
-              "zh": "自然物体"
-            },
-            {
               "term": "human-made objects",
               "zh": "人造物"
+            },
+            {
+              "term": "natural objects",
+              "zh": "自然物体"
             },
             {
               "term": "artifacts",
@@ -2248,12 +2312,12 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"The study found that shared taste was most common for faces and natural landscapes,but least common among works of archi\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "shared taste",
-              "zh": "共同品味"
-            },
-            {
               "term": "natural landscapes",
               "zh": "自然景观"
+            },
+            {
+              "term": "shared taste",
+              "zh": "共同品味"
             },
             {
               "term": "natural",
@@ -2314,12 +2378,8 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"Some of the details of landscapes change,but the basics are more common,e. g.,water,open spaces,and signs of care.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "details",
-              "zh": "细节；具体信息"
-            },
-            {
-              "term": "landscapes",
-              "zh": "风景；地貌景观"
+              "term": "signs of care",
+              "zh": "有人照料的迹象；打理痕迹"
             }
           ],
           "difficulty": 2
@@ -2356,6 +2416,14 @@ export const cet6Reading202412Set2 = {
             {
               "term": "shared taste",
               "zh": "共同品味"
+            },
+            {
+              "term": "the same level of",
+              "zh": "相同程度的……"
+            },
+            {
+              "term": "do not have the same level of",
+              "zh": "不具有相同程度的……"
             }
           ],
           "difficulty": 1
@@ -2367,6 +2435,10 @@ export const cet6Reading202412Set2 = {
           "zh": "人们对人造物共同品味的一致性较低，可能更多与风格元素有关，而不是与“行为后果”有关。",
           "structure": "主句抓 \"It's possible that the lower amount of agreement in the shared taste of artifacts has to do more with elements of style,\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
+            {
+              "term": "rather than",
+              "zh": "而不是"
+            },
             {
               "term": "shared taste",
               "zh": "共同品味"
@@ -2478,12 +2550,8 @@ export const cet6Reading202412Set2 = {
           "structure": "主句抓 \"It's not exactly the same everywhere,but it is common.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "exactly",
-              "zh": "确切地；正是"
-            },
-            {
-              "term": "everywhere",
-              "zh": "到处；无处不在"
+              "term": "not exactly the same",
+              "zh": "并不完全相同"
             }
           ],
           "difficulty": 1
@@ -2504,8 +2572,8 @@ export const cet6Reading202412Set2 = {
               "zh": "相似的；类似的"
             },
             {
-              "term": "different",
-              "zh": "不同的；各不相同的"
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 1
@@ -2517,6 +2585,10 @@ export const cet6Reading202412Set2 = {
           "zh": "可能存在的普遍美学原则，如比例、适配性、光辉感等，都是一般类别，允许有广泛多样的具体体现。",
           "structure": "主句抓 \"Possible universal principles of beauty—such as proportion,fittingness,radiance,and others—are general categories,which \"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
+            {
+              "term": "a wide array of",
+              "zh": "大量的；各种各样的"
+            },
             {
               "term": "wide array of embodiments",
               "zh": "多种具体体现"
@@ -2592,10 +2664,6 @@ export const cet6Reading202412Set2 = {
               "zh": "人造物"
             },
             {
-              "term": "important",
-              "zh": "重要的；关键的"
-            },
-            {
               "term": "experience",
               "zh": "经历；体验"
             }
@@ -2616,6 +2684,10 @@ export const cet6Reading202412Set2 = {
             {
               "term": "assumptions",
               "zh": "假设；判断背后的前提"
+            },
+            {
+              "term": "question assumptions",
+              "zh": "质疑假设"
             }
           ],
           "difficulty": 1

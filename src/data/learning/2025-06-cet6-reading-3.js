@@ -10,7 +10,7 @@ export const cet6Reading202506Set3 = {
       "kicker": "Section A",
       "title": "选词填空 · 原文整理",
       "navLabel": "选词填空",
-      "description": "保留原文空格编号，按阅读顺序拆分为可复盘句子。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -50,12 +50,12 @@ export const cet6Reading202506Set3 = {
               "zh": "实现性别平等"
             },
             {
-              "term": "Congress",
-              "zh": "国会"
-            },
-            {
               "term": "important goal",
               "zh": "重要目标"
+            },
+            {
+              "term": "Congress",
+              "zh": "国会"
             }
           ],
           "difficulty": 2
@@ -63,9 +63,9 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A03",
           "part": "Cloze",
-          "en": "This is because the number of women involved in legislative decisions has significant 26 for all the policies that governments 27.",
-          "zh": "这是因为参与立法决策的女性人数，会对政府第 27 空所指的所有政策产生重大的第 26 空所指影响。",
-          "structure": "结构分析：This is because... 表原因；the number of women 是从句主语；involved in legislative decisions 修饰 women；that governments 27 修饰 policies。核心结构：This is because A has significant B for policies that C。",
+          "en": "This is because the number of women involved in legislative decisions has significant implications for all the policies that governments adopt.",
+          "zh": "这是因为参与立法决策的女性人数，会对政府采纳的所有政策产生重大影响。",
+          "structure": "结构分析：This is because... 表原因；the number of women 是从句主语；involved in legislative decisions 修饰 women；has significant implications for 是谓语搭配；that governments adopt 修饰 policies。",
           "phrases": [
             {
               "term": "legislative decisions",
@@ -78,6 +78,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "policies that governments adopt",
               "zh": "政府采纳的政策"
+            },
+            {
+              "term": "be involved in",
+              "zh": "参与；涉及"
             }
           ],
           "difficulty": 2
@@ -85,21 +89,21 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A04",
           "part": "Cloze",
-          "en": "Female legislators are more likely than men to introduce, speak about and work to pass policies that disproportionately affect women and girls, such as paid family leave, pay 28 and gender-based violence.",
-          "zh": "与男性相比，女性立法者更可能提出、谈论并努力推动那些对妇女和女孩影响格外大的政策，例如带薪家庭假、薪酬第 28 空所指问题和基于性别的暴力问题。",
-          "structure": "结构分析：Female legislators are more likely than men to... 是比较结构；introduce、speak about、work to pass 三个动作并列；that 从句修饰 policies；such as 举例。核心结构：A are more likely than B to do C that affect D。",
+          "en": "Female legislators are more likely than men to introduce, speak about and work to pass policies that disproportionately affect women and girls, such as paid family leave, pay equity and gender-based violence.",
+          "zh": "与男性相比，女性立法者更可能提出、谈论并努力推动那些对妇女和女孩影响格外大的政策，例如带薪家庭假、薪酬公平和基于性别的暴力问题。",
+          "structure": "结构分析：Female legislators are more likely than men to... 是比较结构；introduce、speak about、work to pass 三个动作并列；that 从句修饰 policies；such as 后列举政策议题。",
           "phrases": [
             {
-              "term": "female legislators",
-              "zh": "女性立法者"
+              "term": "pay equity",
+              "zh": "薪酬公平"
+            },
+            {
+              "term": "work to pass policies",
+              "zh": "努力推动政策通过"
             },
             {
               "term": "be more likely than",
               "zh": "比……更可能"
-            },
-            {
-              "term": "disproportionately affect",
-              "zh": "不成比例地影响；影响格外大"
             },
             {
               "term": "paid family leave",
@@ -120,16 +124,16 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：Having more women in Congress 是动名词主语；also fosters 是谓语；a greater sense of connection 是宾语；between...and... 说明连接双方。核心结构：Doing A fosters a sense of connection between B and C。",
           "phrases": [
             {
-              "term": "foster",
-              "zh": "促进；培养"
-            },
-            {
               "term": "a greater sense of connection",
               "zh": "更强的联系感"
             },
             {
               "term": "female voters",
               "zh": "女性选民"
+            },
+            {
+              "term": "foster",
+              "zh": "促进；培养"
             }
           ],
           "difficulty": 2
@@ -137,25 +141,25 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A06",
           "part": "Cloze",
-          "en": "In addition, it 29 women’s sense that government cares about their concerns and inspires young women to become more politically engaged.",
-          "zh": "此外，它第 29 空所指地增强女性认为政府关心她们关切的感受，并激励年轻女性更多参与政治。",
-          "structure": "结构分析：In addition 表递进；it 是主语；第 29 空处与 inspires 构成并列谓语；that government cares... 是 sense 的同位语从句；to become... 是宾补。核心结构：It A women’s sense that B and inspires C to do D。",
+          "en": "In addition, it boosts women's sense that government cares about their concerns and inspires young women to become more politically engaged.",
+          "zh": "此外，它会增强女性认为政府关心她们关切的感受，并激励年轻女性更多参与政治。",
+          "structure": "结构分析：In addition 表递进；it 是主语；boosts 和 inspires 是并列谓语；that government cares... 是 sense 的同位语从句；to become... 是宾补。",
           "phrases": [
             {
-              "term": "in addition",
-              "zh": "此外"
+              "term": "politically engaged",
+              "zh": "参与政治的"
             },
             {
-              "term": "care about concerns",
-              "zh": "关心关切的问题"
+              "term": "boost one's sense that",
+              "zh": "增强某人认为……的感受"
             },
             {
               "term": "inspire sb. to do",
               "zh": "激励某人做某事"
             },
             {
-              "term": "politically engaged",
-              "zh": "参与政治的"
+              "term": "care about concerns",
+              "zh": "关心关切的问题"
             }
           ],
           "difficulty": 2
@@ -163,21 +167,21 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A07",
           "part": "Cloze",
-          "en": "While women are underrepresented in governments around the globe, it is a particularly 30 problem in the United States.",
-          "zh": "虽然世界各地政府中女性代表都不足，但在美国，这是一个尤其第 30 空所指的问题。",
-          "structure": "结构分析：While 引导让步从句；women are underrepresented 是从句主干；主句是 it is a particularly...problem；in the United States 限定地点。核心结构：While A, B is a particularly C problem。",
+          "en": "While women are underrepresented in governments around the globe, it is a particularly acute problem in the United States.",
+          "zh": "虽然世界各地政府中女性代表都不足，但在美国，这是一个尤其严重的问题。",
+          "structure": "结构分析：While 引导让步从句；women are underrepresented 是从句主干；主句是 it is a particularly acute problem；in the United States 限定地点。",
           "phrases": [
             {
-              "term": "underrepresented",
-              "zh": "代表性不足的"
+              "term": "a particularly acute problem",
+              "zh": "一个尤其严重/尖锐的问题"
+            },
+            {
+              "term": "be underrepresented in",
+              "zh": "在……中代表性不足"
             },
             {
               "term": "around the globe",
               "zh": "在全球范围内"
-            },
-            {
-              "term": "particularly",
-              "zh": "尤其；特别"
             }
           ],
           "difficulty": 2
@@ -190,12 +194,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：Currently 是时间状语；the U.S. ranks 73rd 是主句；when it comes to... 表“就……而言”。核心结构：A ranks B when it comes to C。",
           "phrases": [
             {
-              "term": "rank 73rd",
-              "zh": "排名第 73"
+              "term": "when it comes to",
+              "zh": "当谈到……"
             },
             {
-              "term": "when it comes to",
-              "zh": "就……而言"
+              "term": "rank 73rd",
+              "zh": "排名第 73"
             },
             {
               "term": "female representation",
@@ -207,10 +211,18 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A09",
           "part": "Cloze",
-          "en": "But the reason women are so 31 underrepresented in U.S. government is not because they face resistance from voters or struggle to raise money.",
-          "zh": "但女性在美国政府中如此第 31 空所指地代表不足，并不是因为她们遭遇选民抵制或难以筹款。",
-          "structure": "结构分析：But 表转折；主语是 the reason...；women are...underrepresented 是定语从句；is not because... 是否定原因；face resistance 和 struggle to raise money 并列。核心结构：The reason A is not because B or C。",
+          "en": "But the reason women are so severely underrepresented in U.S. government is not because they face resistance from voters or struggle to raise money.",
+          "zh": "但女性在美国政府中如此严重地代表不足，并不是因为她们遭遇选民抵制或难以筹款。",
+          "structure": "结构分析：But 表转折；the reason... 是主语；women are so severely underrepresented in U.S. government 修饰 reason；is not because... 是否定原因；face resistance 和 struggle to raise money 并列。",
           "phrases": [
+            {
+              "term": "be underrepresented in",
+              "zh": "在……中代表性不足"
+            },
+            {
+              "term": "be severely underrepresented",
+              "zh": "代表性严重不足"
+            },
             {
               "term": "face resistance from voters",
               "zh": "遭遇选民抵制"
@@ -218,10 +230,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "struggle to raise money",
               "zh": "筹款困难"
-            },
-            {
-              "term": "underrepresented in government",
-              "zh": "在政府中代表不足"
             }
           ],
           "difficulty": 2
@@ -229,10 +237,18 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A10",
           "part": "Cloze",
-          "en": "On the contrary, decades of research shows that female candidates raise as much money and win as often as male politicians with similar 32.",
-          "zh": "相反，数十年的研究表明，在条件相似的情况下，女性候选人筹到的钱与男性政治人物一样多，获胜频率也一样高。",
-          "structure": "结构分析：On the contrary 表相反；decades of research shows 是主句；that 引导宾语从句；as much...and as often as... 是两个同级比较。核心结构：Research shows that A raise as much B and win as often as C。",
+          "en": "On the contrary, decades of research shows that female candidates raise as much money and win as often as male politicians with similar qualifications.",
+          "zh": "相反，数十年的研究表明，在资历相似的情况下，女性候选人筹到的钱与男性政治人物一样多，获胜频率也一样高。",
+          "structure": "结构分析：On the contrary 表相反；decades of research shows 是主句；that 引导宾语从句；raise as much money 和 win as often as... 是两个同级比较；with similar qualifications 表示比较条件。",
           "phrases": [
+            {
+              "term": "with similar qualifications",
+              "zh": "具备相似资历/条件"
+            },
+            {
+              "term": "raise as much money as",
+              "zh": "筹到与……一样多的钱"
+            },
             {
               "term": "on the contrary",
               "zh": "相反"
@@ -240,14 +256,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "decades of research",
               "zh": "数十年的研究"
-            },
-            {
-              "term": "female candidates",
-              "zh": "女性候选人"
-            },
-            {
-              "term": "with similar qualifications",
-              "zh": "具备相似条件"
             }
           ],
           "difficulty": 2
@@ -259,10 +267,6 @@ export const cet6Reading202506Set3 = {
           "zh": "确切地说，女性在政治中的进展缓慢，是两个政党之间差异造成的故事。",
           "structure": "结构分析：Rather 表纠正或转向；主语是 the slow progress of women in politics；is a tale of two political parties 是比喻表达。核心结构：A is a tale of B。",
           "phrases": [
-            {
-              "term": "rather",
-              "zh": "更确切地说；相反"
-            },
             {
               "term": "women in politics",
               "zh": "政治中的女性"
@@ -282,6 +286,10 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：In the next Congress 是时间范围；there will be 是存在句；107...and 42... 是并列存在对象；in the Senate and House combined 说明统计范围。核心结构：There will be A and B in C combined。",
           "phrases": [
             {
+              "term": "Senate and House combined",
+              "zh": "参众两院合计"
+            },
+            {
               "term": "lawmaker",
               "zh": "立法者；议员"
             },
@@ -292,10 +300,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "Republican",
               "zh": "共和党的"
-            },
-            {
-              "term": "Senate and House combined",
-              "zh": "参众两院合计"
             }
           ],
           "difficulty": 2
@@ -303,21 +307,21 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A13",
           "part": "Cloze",
-          "en": "In order for women to gain half of the seats in Congress, more women need to run, 33 on Republican tickets.",
+          "en": "In order for women to gain half of the seats in Congress, more women need to run, especially on Republican tickets.",
           "zh": "为了让女性获得国会一半席位，需要有更多女性参选，尤其是以共和党候选人身份参选。",
-          "structure": "结构分析：In order for...to... 表目的；主句是 more women need to run；第 33 空处修饰 run，强调在共和党票上参选。核心结构：In order for A to do B, more C need to do D。",
+          "structure": "结构分析：In order for...to... 表目的；主句是 more women need to run；especially on Republican tickets 强调尤其需要共和党阵营有更多女性参选。",
           "phrases": [
+            {
+              "term": "run on Republican tickets",
+              "zh": "以共和党候选人身份参选"
+            },
             {
               "term": "gain half of the seats",
               "zh": "获得一半席位"
             },
             {
-              "term": "need to run",
-              "zh": "需要参选"
-            },
-            {
-              "term": "on Republican tickets",
-              "zh": "以共和党候选人身份"
+              "term": "especially on",
+              "zh": "尤其是在……方面/以……身份"
             }
           ],
           "difficulty": 2
@@ -325,25 +329,21 @@ export const cet6Reading202506Set3 = {
         {
           "label": "A14",
           "part": "Cloze",
-          "en": "This will require the Republican Party as a whole to 34 recruiting women— and not just for one election cycle, but in a 35 way.",
-          "zh": "这将要求共和党整体第 34 空所指地招募女性，而且不是只针对一个选举周期，而是以第 35 空所指的方式持续进行。",
-          "structure": "结构分析：This will require...to... 是主干；the Republican Party as a whole 是宾语；and not just..., but... 构成递进对比，强调不是短期行为而是长期方式。核心结构：This requires A to do B, not just C but D。",
+          "en": "This will require the Republican Party as a whole to prioritize recruiting women, and not just for one election cycle, but in a sustained way.",
+          "zh": "这将要求共和党整体优先招募女性，而且不是只针对一个选举周期，而是以持续的方式推进。",
+          "structure": "结构分析：This will require...to... 是主干；the Republican Party as a whole 是宾语；prioritize recruiting women 是宾补动作；not just..., but... 构成递进对比，强调不是短期行为而是持续方式。",
           "phrases": [
             {
-              "term": "as a whole",
-              "zh": "作为整体"
-            },
-            {
-              "term": "recruit women",
-              "zh": "招募女性"
-            },
-            {
-              "term": "election cycle",
-              "zh": "选举周期"
+              "term": "prioritize doing",
+              "zh": "优先考虑/重点推进做某事"
             },
             {
               "term": "in a sustained way",
               "zh": "以持续方式"
+            },
+            {
+              "term": "election cycle",
+              "zh": "选举周期"
             }
           ],
           "difficulty": 3
@@ -388,10 +388,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "called off",
               "zh": "取消"
-            },
-            {
-              "term": "sometimes",
-              "zh": "有时"
             },
             {
               "term": "secretly",
@@ -492,6 +488,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "treat",
               "zh": "乐事；享受"
+            },
+            {
+              "term": "behind a locked door",
+              "zh": "在锁着的门后"
             }
           ],
           "difficulty": 2
@@ -504,12 +504,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：To me a punishment was being ordered to play games with my cousin Louis；修饰：句首不定式短语先交代目的。核心结构：主语 + 系动词 + 表语。",
           "phrases": [
             {
-              "term": "punishment",
-              "zh": "惩罚"
-            },
-            {
-              "term": "ordered",
-              "zh": "被命令"
+              "term": "play games with",
+              "zh": "和……一起玩游戏"
             }
           ],
           "difficulty": 2
@@ -544,20 +540,16 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Abundant research shows the harms of social isolation, considered a serious public health problem in c...；修饰：that 从句承担宾语、同位语或定语功能。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "social isolation",
-              "zh": "社会隔离"
-            },
-            {
               "term": "public health problem",
               "zh": "公共卫生问题"
             },
             {
-              "term": "Abundant",
-              "zh": "大量的"
+              "term": "social isolation",
+              "zh": "社会隔离"
             },
             {
-              "term": "research",
-              "zh": "研究"
+              "term": "Abundant",
+              "zh": "大量的"
             },
             {
               "term": "considered",
@@ -604,12 +596,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Strong social connections are important for cognitive functioning, motor function and a smoothly runni...；修饰：并列结构串联多个动作、对象或判断。核心结构：并列分句/并列成分。",
           "phrases": [
             {
-              "term": "social connections",
-              "zh": "社会联系"
-            },
-            {
               "term": "cognitive functioning",
               "zh": "认知功能"
+            },
+            {
+              "term": "social connections",
+              "zh": "社会联系"
             },
             {
               "term": "motor function",
@@ -638,10 +630,6 @@ export const cet6Reading202506Set3 = {
               "zh": "社会隔离"
             },
             {
-              "term": "especially",
-              "zh": "尤其"
-            },
-            {
               "term": "extreme",
               "zh": "极端的"
             }
@@ -655,6 +643,10 @@ export const cet6Reading202506Set3 = {
           "zh": "被囚禁的人、在虐待性孤儿院中被隔离的儿童，以及被单独监禁的囚犯等例子都表明，长期独处会导致幻觉和其他形式的精神不稳定。",
           "structure": "结构分析：主句：Examples of people kept in captivity, children kept isolated in abusive orphanages, and prisoners kept...；修饰：并列结构串联多个动作、对象或判断；to do 结构补充目的、结果或修饰对象。核心结构：并列分句/并列成分。",
           "phrases": [
+            {
+              "term": "lead to",
+              "zh": "导致；通向"
+            },
             {
               "term": "solitary confinement",
               "zh": "单独监禁"
@@ -678,12 +670,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：But these are severe and involuntary cases of aloneness；修饰：转折或让步关系提示前后观点变化；并列结构串联多个动作、对象或判断。核心结构：并列分句/并列成分。",
           "phrases": [
             {
-              "term": "involuntary",
-              "zh": "非自愿的"
-            },
-            {
-              "term": "aloneness",
-              "zh": "孤身状态"
+              "term": "involuntary cases of",
+              "zh": "非自愿的……情况"
             }
           ],
           "difficulty": 2
@@ -710,10 +698,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "emerging",
               "zh": "新兴的"
-            },
-            {
-              "term": "research",
-              "zh": "研究"
             }
           ],
           "difficulty": 3
@@ -788,10 +772,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "benefits",
               "zh": "好处"
-            },
-            {
-              "term": "learning",
-              "zh": "学习"
             }
           ],
           "difficulty": 2
@@ -848,10 +828,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "usefulness",
               "zh": "实用性"
-            },
-            {
-              "term": "University",
-              "zh": "大学"
             }
           ],
           "difficulty": 2
@@ -894,16 +870,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：In fact, Feist’s research on both artists and scientists shows that one of the most prominent features...；修饰：句首状语限定背景、范围或信息来源；that 从句承担宾语、同位语或定语功能；并列结构串联多个动作、对象或判断。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
+              "term": "in fact",
+              "zh": "事实上"
+            },
+            {
               "term": "creative folks",
               "zh": "创造性人士"
-            },
-            {
-              "term": "research",
-              "zh": "研究"
-            },
-            {
-              "term": "scientists",
-              "zh": "科学家"
             },
             {
               "term": "prominent",
@@ -930,10 +902,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "sustained",
               "zh": "持续的"
-            },
-            {
-              "term": "working",
-              "zh": "打磨；从事"
             }
           ],
           "difficulty": 2
@@ -1010,10 +978,6 @@ export const cet6Reading202506Set3 = {
               "zh": "支持理由"
             },
             {
-              "term": "University",
-              "zh": "大学"
-            },
-            {
               "term": "Buffalo",
               "zh": "布法罗"
             },
@@ -1032,12 +996,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Social withdrawal is usually categorised into three types；修饰：并列结构串联多个动作、对象或判断。核心结构：并列分句/并列成分。",
           "phrases": [
             {
-              "term": "social withdrawal",
-              "zh": "社交退缩"
-            },
-            {
               "term": "fear or anxiety",
               "zh": "恐惧或焦虑"
+            },
+            {
+              "term": "social withdrawal",
+              "zh": "社交退缩"
             },
             {
               "term": "solitude",
@@ -1072,14 +1036,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "creativity",
               "zh": "创造力"
-            },
-            {
-              "term": "unsociability",
-              "zh": "不爱社交"
-            },
-            {
-              "term": "positive",
-              "zh": "积极的"
             }
           ],
           "difficulty": 3
@@ -1104,10 +1060,6 @@ export const cet6Reading202506Set3 = {
               "zh": "回避"
             },
             {
-              "term": "unsociability",
-              "zh": "不爱社交"
-            },
-            {
               "term": "aggression",
               "zh": "攻击性"
             }
@@ -1122,24 +1074,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：This was significant because while previous research had suggested that unsociability might be harmles...；修饰：that 从句承担宾语、同位语或定语功能；转折或让步关系提示前后观点变化；并列结构串联多个动作、对象或判断。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "unsociability",
-              "zh": "不爱社交"
-            },
-            {
               "term": "beneficial",
               "zh": "有益的"
             },
             {
-              "term": "significant",
-              "zh": "重大的"
-            },
-            {
               "term": "previous",
               "zh": "先前的"
-            },
-            {
-              "term": "research",
-              "zh": "研究"
             }
           ],
           "difficulty": 2
@@ -1174,12 +1114,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：They have a preference for being alone, but they also don’t mind being with others；修饰：转折或让步关系提示前后观点变化。核心结构：主语 + have/has + 宾语。",
           "phrases": [
             {
-              "term": "being alone",
-              "zh": "独处"
-            },
-            {
               "term": "mind being with others",
               "zh": "介意与他人在一起"
+            },
+            {
+              "term": "being alone",
+              "zh": "独处"
             },
             {
               "term": "preference",
@@ -1195,6 +1135,10 @@ export const cet6Reading202506Set3 = {
           "zh": "不过，事实证明，独处的重要性并不只在于创造力。",
           "structure": "结构分析：主句：Still, it turns out that solitude is important for more than creativity；修饰：that 从句承担宾语、同位语或定语功能；转折或让步关系提示前后观点变化；比较结构突出差异或程度。核心结构：主句 + 从句修饰。",
           "phrases": [
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
             {
               "term": "solitude",
               "zh": "独处"
@@ -1240,12 +1184,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：But this depends, among other things, on the personalities of their employees；修饰：转折或让步关系提示前后观点变化。核心结构：主语 + 谓语 + 宾语。",
           "phrases": [
             {
-              "term": "depends",
-              "zh": "取决于"
-            },
-            {
-              "term": "personalities",
-              "zh": "性格"
+              "term": "among other things",
+              "zh": "除其他因素外；其中包括"
             }
           ],
           "difficulty": 2
@@ -1292,8 +1232,8 @@ export const cet6Reading202506Set3 = {
               "zh": "分店"
             },
             {
-              "term": "effective",
-              "zh": "有效的"
+              "term": "be more effective",
+              "zh": "更有效"
             }
           ],
           "difficulty": 2
@@ -1312,10 +1252,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "threatened",
               "zh": "受到威胁的"
-            },
-            {
-              "term": "personalities",
-              "zh": "性格"
             },
             {
               "term": "suggestions",
@@ -1338,6 +1274,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "to listen",
               "zh": "去倾听"
+            },
+            {
+              "term": "be more likely to listen",
+              "zh": "更有可能倾听"
             }
           ],
           "difficulty": 2
@@ -1402,12 +1342,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Recent research has given us a better understanding of why；修饰：句子为简洁主系表或主谓宾结构，重点抓主语、谓语和表语/宾语。核心结构：主语 + have/has + 宾语。",
           "phrases": [
             {
-              "term": "research",
-              "zh": "研究"
-            },
-            {
-              "term": "understanding",
-              "zh": "理解"
+              "term": "a better understanding of",
+              "zh": "对……更好的理解"
             }
           ],
           "difficulty": 2
@@ -1420,16 +1356,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：One benefit of unsociability is the brain’s state of active mental rest, which goes hand-in-hand with ...；修饰：关系从句补充说明前面的名词。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "being alone",
-              "zh": "独处"
-            },
-            {
               "term": "active mental rest",
               "zh": "积极的精神休息"
             },
             {
-              "term": "unsociability",
-              "zh": "不爱社交"
+              "term": "being alone",
+              "zh": "独处"
             },
             {
               "term": "benefit",
@@ -1454,16 +1386,8 @@ export const cet6Reading202506Set3 = {
               "zh": "分出一些注意力"
             },
             {
-              "term": "another",
-              "zh": "另一个"
-            },
-            {
               "term": "present",
               "zh": "在场的"
-            },
-            {
-              "term": "attention",
-              "zh": "注意力"
             }
           ],
           "difficulty": 2
@@ -1476,16 +1400,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：This can be a positive distraction；修饰：句子为简洁主系表或主谓宾结构，重点抓主语、谓语和表语/宾语。核心结构：主语 + 系动词 + 表语。",
           "phrases": [
             {
-              "term": "distraction",
-              "zh": "分心；干扰"
-            },
-            {
               "term": "positive distraction",
               "zh": "积极的分心"
-            },
-            {
-              "term": "positive",
-              "zh": "积极的"
             }
           ],
           "difficulty": 2
@@ -1500,10 +1416,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "still a distraction",
               "zh": "仍然是一种分心"
-            },
-            {
-              "term": "distraction",
-              "zh": "分心；干扰"
             }
           ],
           "difficulty": 2
@@ -1515,10 +1427,6 @@ export const cet6Reading202506Set3 = {
           "zh": "在没有这类干扰的情况下做白日梦，会激活大脑的默认模式网络。",
           "structure": "结构分析：主句：Daydreaming in the absence of such distractions activates the brain’s default-mode network；修饰：句子为简洁主系表或主谓宾结构，重点抓主语、谓语和表语/宾语。核心结构：主语 + 谓语 + 宾语。",
           "phrases": [
-            {
-              "term": "distraction",
-              "zh": "分心；干扰"
-            },
             {
               "term": "default-mode network",
               "zh": "默认模式网络"
@@ -1572,12 +1480,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Giving free rein to a wandering mind not only helps with focus in the long term but strengthens your s...；修饰：转折或让步关系提示前后观点变化；并列结构串联多个动作、对象或判断；to do 结构补充目的、结果或修饰对象。核心结构：not only A but B。",
           "phrases": [
             {
-              "term": "wandering mind",
-              "zh": "游移的思绪"
-            },
-            {
               "term": "in the long term",
               "zh": "从长远看"
+            },
+            {
+              "term": "wandering mind",
+              "zh": "游移的思绪"
             },
             {
               "term": "not only",
@@ -1600,6 +1508,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "solitude",
               "zh": "独处"
+            },
+            {
+              "term": "periods of solitude",
+              "zh": "独处的时段"
             }
           ],
           "difficulty": 2
@@ -1613,11 +1525,11 @@ export const cet6Reading202506Set3 = {
           "phrases": [
             {
               "term": "in the long run",
-              "zh": "从长期看"
+              "zh": "从长远看"
             },
             {
-              "term": "ultimately",
-              "zh": "最终"
+              "term": "absence of focus",
+              "zh": "注意力不集中；焦点缺失"
             }
           ],
           "difficulty": 2
@@ -1659,6 +1571,10 @@ export const cet6Reading202506Set3 = {
           "zh": "她说：“如今，我们往往认为创造力来自一种非常外放的社交过程，但事实上，它需要持续注意力和深度专注。”",
           "structure": "结构分析：主句：These days, we tend to believe that creativity emerges from a decidedly unreserved socialising process...；修饰：that 从句承担宾语、同位语或定语功能；转折或让步关系提示前后观点变化；并列结构串联多个动作、对象或判断。核心结构：主句 + 从句修饰。",
           "phrases": [
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
             {
               "term": "sustained attention",
               "zh": "持续注意力"
@@ -1704,6 +1620,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "aesthetics",
               "zh": "审美"
+            },
+            {
+              "term": "be automatic",
+              "zh": "自动完成；无需人工操作"
             }
           ],
           "difficulty": 2
@@ -1786,12 +1706,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：A disorder has to do with dysfunction；修饰：to do 结构补充目的、结果或修饰对象。核心结构：主语 + have/has + 宾语。",
           "phrases": [
             {
-              "term": "disorder",
-              "zh": "障碍"
-            },
-            {
-              "term": "dysfunction",
-              "zh": "功能失调"
+              "term": "have to do with",
+              "zh": "与……有关"
             }
           ],
           "difficulty": 2
@@ -1834,8 +1750,8 @@ export const cet6Reading202506Set3 = {
               "zh": "与……大不相同"
             },
             {
-              "term": "unsociability",
-              "zh": "不爱社交"
+              "term": "creative unsociability",
+              "zh": "创造性的非社交倾向"
             }
           ],
           "difficulty": 2
@@ -1847,6 +1763,10 @@ export const cet6Reading202506Set3 = {
           "zh": "事实上，Feist 说：“那些从不独处的人确实存在真正的危险。”",
           "structure": "结构分析：主句：In fact, Feist says, there’s a real danger with people who are never alone；修饰：句首状语限定背景、范围或信息来源；关系从句补充说明前面的名词。核心结构：主句 + 从句修饰。",
           "phrases": [
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
             {
               "term": "real danger",
               "zh": "真正的危险"
@@ -1892,12 +1812,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：In addition, introverts tend to have fewer but stronger friendships — which has been linked to greater...；修饰：句首状语限定背景、范围或信息来源；关系从句补充说明前面的名词；转折或让步关系提示前后观点变化。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "happiness",
-              "zh": "幸福"
-            },
-            {
-              "term": "friendships",
-              "zh": "友谊"
+              "term": "tend to have",
+              "zh": "倾向于拥有/出现"
             }
           ],
           "difficulty": 2
@@ -1910,12 +1826,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：As with many things, quality reigns over quantity；修饰：句首状语限定背景、范围或信息来源。核心结构：主语 + 谓语 + 宾语。",
           "phrases": [
             {
-              "term": "quality",
-              "zh": "质量"
-            },
-            {
-              "term": "quantity",
-              "zh": "数量"
+              "term": "quality reigns over quantity",
+              "zh": "质量胜过数量"
             }
           ],
           "difficulty": 2
@@ -1938,10 +1850,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "populate",
               "zh": "填满"
-            },
-            {
-              "term": "ultimately",
-              "zh": "最终"
             }
           ],
           "difficulty": 2
@@ -1954,12 +1862,16 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Thus, if your personality tends toward unsociability, you shouldn’t feel the need to change；修饰：句首状语限定背景、范围或信息来源；条件从句说明成立前提；to do 结构补充目的、结果或修饰对象。核心结构：条件/让步从句 + 主句。",
           "phrases": [
             {
-              "term": "unsociability",
-              "zh": "不爱社交"
-            },
-            {
               "term": "personality",
               "zh": "性格"
+            },
+            {
+              "term": "tend toward",
+              "zh": "倾向于……"
+            },
+            {
+              "term": "feel the need to do",
+              "zh": "觉得有必要做某事"
             }
           ],
           "difficulty": 2
@@ -1976,8 +1888,8 @@ export const cet6Reading202506Set3 = {
               "zh": "附带限定条件"
             },
             {
-              "term": "qualifications",
-              "zh": "限定条件"
+              "term": "come with qualifications",
+              "zh": "附带限制条件/保留意见"
             }
           ],
           "difficulty": 2
@@ -2000,6 +1912,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "fit a square personality into a round hole",
               "zh": "把方形性格塞进圆形孔洞；强迫自己适应不合适的模式"
+            },
+            {
+              "term": "rather than",
+              "zh": "而不是"
             },
             {
               "term": "solitude",
@@ -2028,12 +1944,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Simulators are most often utilized within industries such as nuclear power, aviation and surgery where...；修饰：关系从句补充说明前面的名词；并列结构串联多个动作、对象或判断。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "nuclear power",
-              "zh": "核电"
-            },
-            {
               "term": "aviation and surgery",
               "zh": "航空和外科手术"
+            },
+            {
+              "term": "nuclear power",
+              "zh": "核电"
             },
             {
               "term": "disastrous consequences",
@@ -2096,10 +2012,6 @@ export const cet6Reading202506Set3 = {
               "zh": "组织"
             },
             {
-              "term": "significant",
-              "zh": "重大的"
-            },
-            {
               "term": "programs",
               "zh": "项目"
             },
@@ -2117,6 +2029,10 @@ export const cet6Reading202506Set3 = {
           "zh": "这在很大程度上是因为，成功的变革需要的不只是愿景，还需要一支不仅不抵制变革、而且拥抱变革的员工队伍。",
           "structure": "结构分析：主句：That is largely because successful change requires more than a vision, it requires a workforce that no...；修饰：that 从句承担宾语、同位语或定语功能；转折或让步关系提示前后观点变化；并列结构串联多个动作、对象或判断。核心结构：not only A but B。",
           "phrases": [
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
             {
               "term": "successful change",
               "zh": "成功变革"
@@ -2156,10 +2072,6 @@ export const cet6Reading202506Set3 = {
               "zh": "实现"
             },
             {
-              "term": "success",
-              "zh": "成功"
-            },
-            {
               "term": "organization",
               "zh": "组织"
             },
@@ -2182,12 +2094,16 @@ export const cet6Reading202506Set3 = {
               "zh": "高层管理承诺"
             },
             {
-              "term": "thought leaders",
-              "zh": "思想领袖"
-            },
-            {
               "term": "wither and die",
               "zh": "枯萎并失败"
+            },
+            {
+              "term": "regardless of",
+              "zh": "不管；无论"
+            },
+            {
+              "term": "thought leaders",
+              "zh": "思想领袖"
             },
             {
               "term": "Regardless",
@@ -2224,8 +2140,8 @@ export const cet6Reading202506Set3 = {
               "zh": "员工队伍"
             },
             {
-              "term": "learning",
-              "zh": "学习"
+              "term": "enable sb. to do",
+              "zh": "使某人能够做某事"
             }
           ],
           "difficulty": 3
@@ -2274,6 +2190,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "behavioral change",
               "zh": "行为改变"
+            },
+            {
+              "term": "not easy for",
+              "zh": "对……来说并不容易"
             }
           ],
           "difficulty": 2
@@ -2285,6 +2205,10 @@ export const cet6Reading202506Set3 = {
           "zh": "讲座、培训项目和研讨会可以解释转型中的理性要素，但它们很少能有效触及重大变革行动核心处的行为层面。",
           "structure": "结构分析：主句：Lectures, training programs and workshops can explain the intellectual elements of transformation, but...；修饰：that 从句承担宾语、同位语或定语功能；转折或让步关系提示前后观点变化；并列结构串联多个动作、对象或判断。核心结构：主句 + 从句修饰。",
           "phrases": [
+            {
+              "term": "at the heart of",
+              "zh": "处于……核心"
+            },
             {
               "term": "training programs",
               "zh": "培训项目"
@@ -2318,10 +2242,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "working conditions",
               "zh": "工作条件"
-            },
-            {
-              "term": "working",
-              "zh": "打磨；从事"
             },
             {
               "term": "conditions",
@@ -2368,16 +2288,12 @@ export const cet6Reading202506Set3 = {
               "zh": "学习工具"
             },
             {
-              "term": "simulation",
-              "zh": "模拟"
-            },
-            {
               "term": "participant learning",
               "zh": "参与者学习"
             },
             {
-              "term": "effective",
-              "zh": "有效的"
+              "term": "simulation",
+              "zh": "模拟"
             },
             {
               "term": "experience",
@@ -2406,10 +2322,6 @@ export const cet6Reading202506Set3 = {
               "zh": "提供"
             },
             {
-              "term": "learning",
-              "zh": "学习"
-            },
-            {
               "term": "experience",
               "zh": "体验；经验"
             }
@@ -2434,10 +2346,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "productive",
               "zh": "有成效的"
-            },
-            {
-              "term": "learning",
-              "zh": "学习"
             }
           ],
           "difficulty": 2
@@ -2450,12 +2358,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Well-designed simulations can enable individuals and groups to develop a deep level of understanding a...；修饰：并列结构串联多个动作、对象或判断；to do 结构补充目的、结果或修饰对象。核心结构：并列分句/并列成分。",
           "phrases": [
             {
-              "term": "business stimuli",
-              "zh": "商业刺激"
-            },
-            {
               "term": "as a whole",
               "zh": "作为整体"
+            },
+            {
+              "term": "business stimuli",
+              "zh": "商业刺激"
             },
             {
               "term": "simulation",
@@ -2464,10 +2372,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "simulations",
               "zh": "模拟"
-            },
-            {
-              "term": "understanding",
-              "zh": "理解"
             }
           ],
           "difficulty": 2
@@ -2490,10 +2394,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "benefits",
               "zh": "好处"
-            },
-            {
-              "term": "however",
-              "zh": "然而"
             },
             {
               "term": "simulations",
@@ -2602,6 +2502,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "passage",
               "zh": "文章"
+            },
+            {
+              "term": "be based on the following passage",
+              "zh": "基于以下文章"
             }
           ],
           "difficulty": 2
@@ -2674,12 +2578,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：But while a sustainable economy is vital to our future, it is a means to an end, not an end in itself；修饰：转折或让步关系提示前后观点变化；to do 结构补充目的、结果或修饰对象。核心结构：主语 + 系动词 + 表语。",
           "phrases": [
             {
-              "term": "sustainable economy",
-              "zh": "可持续经济"
-            },
-            {
               "term": "means to an end",
               "zh": "达到目的的手段"
+            },
+            {
+              "term": "sustainable economy",
+              "zh": "可持续经济"
             },
             {
               "term": "sustainable",
@@ -2700,12 +2604,8 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：The idea that governments should focus on happiness has its critics；修饰：that 从句承担宾语、同位语或定语功能。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "happiness",
-              "zh": "幸福"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
+              "term": "focus on",
+              "zh": "关注；聚焦于"
             },
             {
               "term": "critics",
@@ -2721,10 +2621,6 @@ export const cet6Reading202506Set3 = {
           "zh": "人们担心幸福该如何衡量。",
           "structure": "结构分析：主句：There are concerns about how happiness can be measured；修饰：句子为简洁主系表或主谓宾结构，重点抓主语、谓语和表语/宾语。核心结构：There be + 名词 + 修饰。",
           "phrases": [
-            {
-              "term": "happiness",
-              "zh": "幸福"
-            },
             {
               "term": "concerns",
               "zh": "担忧"
@@ -2743,10 +2639,6 @@ export const cet6Reading202506Set3 = {
           "zh": "幸福难道不是一种短暂而主观的心理状态吗？",
           "structure": "结构分析：主句：Is happiness not a fleeting and subjective psychological state；修饰：并列结构串联多个动作、对象或判断。核心结构：并列分句/并列成分。",
           "phrases": [
-            {
-              "term": "happiness",
-              "zh": "幸福"
-            },
             {
               "term": "fleeting",
               "zh": "短暂的"
@@ -2770,14 +2662,6 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Don’t different people experience different levels of happiness；修饰：句子为简洁主系表或主谓宾结构，重点抓主语、谓语和表语/宾语。核心结构：主语 + 谓语 + 宾语。",
           "phrases": [
             {
-              "term": "happiness",
-              "zh": "幸福"
-            },
-            {
-              "term": "different",
-              "zh": "不同的"
-            },
-            {
               "term": "experience",
               "zh": "体验；经验"
             }
@@ -2796,16 +2680,8 @@ export const cet6Reading202506Set3 = {
               "zh": "生活满意度"
             },
             {
-              "term": "happiness",
-              "zh": "幸福"
-            },
-            {
               "term": "prosperity",
               "zh": "繁荣"
-            },
-            {
-              "term": "different",
-              "zh": "不同的"
             }
           ],
           "difficulty": 2
@@ -2820,14 +2696,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "life satisfaction",
               "zh": "生活满意度"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
-            },
-            {
-              "term": "citizens",
-              "zh": "公民"
             }
           ],
           "difficulty": 2
@@ -2844,8 +2712,8 @@ export const cet6Reading202506Set3 = {
               "zh": "协作努力"
             },
             {
-              "term": "happiness",
-              "zh": "幸福"
+              "term": "rely on",
+              "zh": "依赖；依靠"
             }
           ],
           "difficulty": 2
@@ -2868,6 +2736,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "prosperity",
               "zh": "繁荣"
+            },
+            {
+              "term": "lie in",
+              "zh": "在于；存在于"
             }
           ],
           "difficulty": 2
@@ -2886,10 +2758,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "conditions",
               "zh": "条件"
-            },
-            {
-              "term": "research",
-              "zh": "研究"
             }
           ],
           "difficulty": 2
@@ -2902,6 +2770,10 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：In a recently published article, philosopher Julian Baggini suggests we should focus on real wealth fo...；修饰：句首状语限定背景、范围或信息来源；关系从句补充说明前面的名词。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
+              "term": "focus on",
+              "zh": "关注；聚焦于"
+            },
+            {
               "term": "GDP growth",
               "zh": "GDP 增长"
             },
@@ -2912,10 +2784,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "suggests",
               "zh": "表明；建议"
-            },
-            {
-              "term": "citizens",
-              "zh": "公民"
             }
           ],
           "difficulty": 2
@@ -2934,6 +2802,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "access",
               "zh": "获取；使用权"
+            },
+            {
+              "term": "enable sb. to do",
+              "zh": "使某人能够做某事"
             }
           ],
           "difficulty": 2
@@ -2974,6 +2846,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "access",
               "zh": "获取；使用权"
+            },
+            {
+              "term": "focus on access to",
+              "zh": "关注对……的获取/使用"
             }
           ],
           "difficulty": 2
@@ -2990,8 +2866,8 @@ export const cet6Reading202506Set3 = {
               "zh": "就其本身而言"
             },
             {
-              "term": "happiness",
-              "zh": "幸福"
+              "term": "proposals tabled by",
+              "zh": "由……提出的方案/提议"
             }
           ],
           "difficulty": 2
@@ -3010,14 +2886,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "sets the bar",
               "zh": "设定标准"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
-            },
-            {
-              "term": "citizens",
-              "zh": "公民"
             }
           ],
           "difficulty": 2
@@ -3040,6 +2908,10 @@ export const cet6Reading202506Set3 = {
             {
               "term": "economy",
               "zh": "经济"
+            },
+            {
+              "term": "for example",
+              "zh": "例如；引出例子"
             }
           ],
           "difficulty": 2
@@ -3074,6 +2946,10 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：Over and above a vastly improved provision of therapeutic mental healthcare, there are preventative me...；修饰：句首状语限定背景、范围或信息来源；that 从句承担宾语、同位语或定语功能；并列结构串联多个动作、对象或判断。核心结构：There be + 名词 + 修饰。",
           "phrases": [
             {
+              "term": "therapeutic mental healthcare",
+              "zh": "治疗性心理医疗"
+            },
+            {
               "term": "mental health",
               "zh": "心理健康"
             },
@@ -3082,16 +2958,8 @@ export const cet6Reading202506Set3 = {
               "zh": "预防措施"
             },
             {
-              "term": "therapeutic mental healthcare",
-              "zh": "治疗性心理医疗"
-            },
-            {
               "term": "improved",
               "zh": "提高的"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
             }
           ],
           "difficulty": 2
@@ -3104,12 +2972,16 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：The WHO recommends establishing institutions that facilitate community participation—educational progr...；修饰：that 从句承担宾语、同位语或定语功能；关系从句补充说明前面的名词；并列结构串联多个动作、对象或判断。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "wellbeing",
-              "zh": "幸福感；身心健康"
+              "term": "mental wellbeing",
+              "zh": "心理健康；精神福祉"
             },
             {
               "term": "community participation",
               "zh": "社区参与"
+            },
+            {
+              "term": "wellbeing",
+              "zh": "幸福感；身心健康"
             },
             {
               "term": "intervention",
@@ -3142,16 +3014,8 @@ export const cet6Reading202506Set3 = {
               "zh": "经济收益"
             },
             {
-              "term": "however",
-              "zh": "然而"
-            },
-            {
               "term": "benefits",
               "zh": "好处"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
             }
           ],
           "difficulty": 2
@@ -3174,14 +3038,6 @@ export const cet6Reading202506Set3 = {
             {
               "term": "priority",
               "zh": "优先事项"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
-            },
-            {
-              "term": "citizens",
-              "zh": "公民"
             }
           ],
           "difficulty": 2
@@ -3194,24 +3050,12 @@ export const cet6Reading202506Set3 = {
           "structure": "结构分析：主句：To demand that governments set the ‘happiness’ of citizens as their highest priority is to demand that...；修饰：句首不定式短语先交代目的；that 从句承担宾语、同位语或定语功能；比较结构突出差异或程度。核心结构：主句 + 从句修饰。",
           "phrases": [
             {
-              "term": "highest priority",
-              "zh": "最高优先事项"
-            },
-            {
               "term": "ends in themselves",
               "zh": "目的本身"
             },
             {
-              "term": "happiness",
-              "zh": "幸福"
-            },
-            {
-              "term": "governments",
-              "zh": "政府"
-            },
-            {
-              "term": "citizens",
-              "zh": "公民"
+              "term": "highest priority",
+              "zh": "最高优先事项"
             }
           ],
           "difficulty": 2

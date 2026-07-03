@@ -168,7 +168,7 @@ export const cet6Reading202412Set3 = {
       "kicker": "Section A",
       "title": "选词填空 · 慈善义务与全球贫困",
       "navLabel": "选词填空",
-      "description": "这一篇讨论富裕社会、慈善责任和道德要求，重点看贫困描述、收入层级与义务范围。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -195,25 +195,29 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A02",
           "part": "Cloze",
-          "en": "In developing countries there is a low life expectancy,a high infant 26 rate,high levels of unemployment and illiteracy,nutritional levels below acceptable standards and widespread disease with very little or poor quality medical assistance.",
+          "en": "In developing countries there is a low life expectancy, a high infant mortality rate, high levels of unemployment and illiteracy, nutritional levels below acceptable standards and widespread disease with very little or poor quality medical assistance.",
           "zh": "在发展中国家，预期寿命低，婴儿死亡率高，失业和文盲水平高，营养水平低于可接受标准，并且疾病广泛存在，医疗援助很少或质量很差。",
-          "structure": "主句抓 \"a high infant 26 rate,high levels of unemployment and illiteracy,nutritional levels below acceptable standards and wides\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。",
+          "structure": "结构分析：In developing countries 是地点状语；there is 引出一串并列问题：low life expectancy、high infant mortality rate、high levels of unemployment and illiteracy、low nutritional levels 和 widespread disease。",
           "phrases": [
+            {
+              "term": "infant mortality rate",
+              "zh": "婴儿死亡率"
+            },
             {
               "term": "life expectancy",
               "zh": "预期寿命"
             },
             {
-              "term": "acceptable standards",
-              "zh": "可接受标准"
+              "term": "developing countries",
+              "zh": "发展中国家"
             },
             {
-              "term": "medical assistance",
-              "zh": "医疗援助"
+              "term": "high levels of",
+              "zh": "高水平/高程度的……"
             },
             {
-              "term": "illiteracy",
-              "zh": "文盲状态"
+              "term": "poor quality",
+              "zh": "质量差的"
             }
           ],
           "difficulty": 3
@@ -221,21 +225,21 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A03",
           "part": "Cloze",
-          "en": "Others live 27 wealthy and luxurious lives and so the wealth is distributed in a very 28 manner.",
-          "zh": "另一些人却过着富裕奢华的生活，因此财富以非常不平等的方式分配。",
-          "structure": "主句抓 \"Others live 27 wealthy and luxurious lives and so the wealth is distributed in a very 28 manner.\"；因果关系连接理由与结果，是理解作者论证方向的关键。；被动结构突出承受者或结果，动作发出者不是句子重点。",
+          "en": "Others live extremely wealthy and luxurious lives and so the wealth is distributed in a very unequal manner.",
+          "zh": "另一些人却过着极其富裕奢华的生活，因此财富以非常不平等的方式分配。",
+          "structure": "结构分析：Others live... lives 是前半句主干；and so 引出结果；the wealth is distributed 是被动结构；in a very unequal manner 说明分配方式。",
           "phrases": [
             {
-              "term": "luxurious",
-              "zh": "奢华的"
+              "term": "live wealthy and luxurious lives",
+              "zh": "过着富裕奢华的生活"
             },
             {
-              "term": "wealthy",
-              "zh": "富裕的；有钱的"
+              "term": "be distributed in an unequal manner",
+              "zh": "以不平等的方式分配"
             },
             {
-              "term": "distributed",
-              "zh": "分配；分布"
+              "term": "and so",
+              "zh": "因此；所以"
             }
           ],
           "difficulty": 1
@@ -265,21 +269,25 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A05",
           "part": "Cloze",
-          "en": "We all 29 when very rich people pledge to give away most of their billions,but they are usually left with millions to pass on,still much more than most people would expect to earn in their lifetime.",
+          "en": "We all applaud when very rich people pledge to give away most of their billions, but they are usually left with millions to pass on, still much more than most people would expect to earn in their lifetime.",
           "zh": "当非常富有的人承诺捐出他们数十亿财富中的大部分时，我们都会赞赏，但他们通常仍会留下数百万传给后代，这仍远远多于大多数人一生预期能挣到的钱。",
-          "structure": "主句抓 \"We all 29 when very rich people pledge to give away most of their billions,but they are usually left with millions to pa\"；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
+          "structure": "结构分析：when 引导时间状语从句；We all applaud 是主句；but 后转折，指出富人捐出大部分后仍留有巨额财富；to pass on 修饰 millions，表示传给后代。",
           "phrases": [
             {
               "term": "pledge to give away",
               "zh": "承诺捐出"
             },
             {
-              "term": "pledge",
-              "zh": "承诺"
+              "term": "be left with",
+              "zh": "剩有；留下"
             },
             {
-              "term": "billions",
-              "zh": "数十亿；极大的数量"
+              "term": "pass on",
+              "zh": "传给后代；传递"
+            },
+            {
+              "term": "give away",
+              "zh": "捐出；赠送"
             }
           ],
           "difficulty": 3
@@ -287,21 +295,21 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A06",
           "part": "Cloze",
-          "en": "Even comparatively 30 salaries in the west are very high when compared globally.",
-          "zh": "即使西方相对中等的薪水，放在全球范围比较时也非常高。",
-          "structure": "主句抓 \"Even comparatively 30 salaries in the west are very high when compared globally.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
+          "en": "Even comparatively modest salaries in the west are very high when compared globally.",
+          "zh": "即使西方相对普通的薪水，放在全球范围比较时也非常高。",
+          "structure": "结构分析：Even 加强让步语气；comparatively modest salaries 是主语；when compared globally 是省略结构，表示在全球范围比较时。",
           "phrases": [
             {
-              "term": "comparatively",
-              "zh": "相对地；相比之下"
+              "term": "comparatively modest salaries",
+              "zh": "相对普通/不高的薪水"
             },
             {
-              "term": "salaries",
-              "zh": "工资；薪水"
+              "term": "when compared globally",
+              "zh": "在全球范围比较时"
             },
             {
-              "term": "compared",
-              "zh": "相比；与……作比较"
+              "term": "very high when compared globally",
+              "zh": "放在全球范围比较时很高"
             }
           ],
           "difficulty": 1
@@ -320,6 +328,14 @@ export const cet6Reading202412Set3 = {
             {
               "term": "someone",
               "zh": "某人；某个个体"
+            },
+            {
+              "term": "give away",
+              "zh": "捐出；赠送"
+            },
+            {
+              "term": "have plenty to live on",
+              "zh": "有足够的钱生活"
             }
           ],
           "difficulty": 2
@@ -327,21 +343,25 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A08",
           "part": "Cloze",
-          "en": "Most people agree that giving to charity is morally 31 but charitable behaviour tends to be regarded as above and beyond the call of duty.",
+          "en": "Most people agree that giving to charity is morally praiseworthy but charitable behaviour tends to be regarded as above and beyond the call of duty.",
           "zh": "大多数人都同意捐助慈善在道德上值得称赞，但慈善行为往往被视为超出职责要求的额外善行。",
-          "structure": "主句抓 \"Most people agree that giving to charity is morally 31 but charitable behaviour tends to be regarded as above and beyond\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。",
+          "structure": "结构分析：Most people agree that... 是主干；that 从句中 giving to charity 是动名词主语；but 引出转折，说明慈善虽被赞许，却常被看作超出义务范围。",
           "phrases": [
             {
               "term": "above and beyond the call of duty",
               "zh": "超出职责要求"
             },
             {
-              "term": "charity",
-              "zh": "慈善"
+              "term": "morally praiseworthy",
+              "zh": "在道德上值得称赞"
             },
             {
-              "term": "morally",
-              "zh": "从道德上；按道德标准"
+              "term": "be regarded as",
+              "zh": "被视为；被看作"
+            },
+            {
+              "term": "above and beyond",
+              "zh": "超出……范围；超过要求"
             }
           ],
           "difficulty": 3
@@ -353,10 +373,6 @@ export const cet6Reading202412Set3 = {
           "zh": "然而，也有人认为慈善行为在道德上是必须的。",
           "structure": "主句抓 \"Some argue,however,that charitable behaviour is morally required.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
-            {
-              "term": "however",
-              "zh": "然而；引出转折"
-            },
             {
               "term": "charitable",
               "zh": "慈善的；与捐助相关的"
@@ -378,6 +394,14 @@ export const cet6Reading202412Set3 = {
             {
               "term": "charitably",
               "zh": "慈善地"
+            },
+            {
+              "term": "fail to do",
+              "zh": "未能做某事"
+            },
+            {
+              "term": "behave charitably",
+              "zh": "以慈善方式行事；做慈善"
             }
           ],
           "difficulty": 2
@@ -385,21 +409,21 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A11",
           "part": "Cloze",
-          "en": "The majority of arguments in this vein refer to giving aid to poorer nations but they may also refer to giving time within one's 32 community.",
-          "zh": "沿着这一思路的大多数论证都指向向较贫困国家提供援助，但它们也可能指向在自己社区内贡献时间。",
-          "structure": "主句抓 \"The majority of arguments in this vein refer to giving aid to poorer nations but they may also refer to giving time with\"；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
+          "en": "The majority of arguments in this vein refer to giving aid to poorer nations but they may also refer to giving time within one's local community.",
+          "zh": "沿着这一思路的大多数论证都指向向较贫困国家提供援助，但它们也可能指向在自己的本地社区内贡献时间。",
+          "structure": "结构分析：The majority of arguments 是主语；in this vein 修饰 arguments；refer to...but may also refer to... 构成并列对照，说明援助对象既可以是贫困国家，也可以是本地社区。",
           "phrases": [
             {
-              "term": "in this vein",
-              "zh": "沿着这一思路"
+              "term": "refer to",
+              "zh": "指的是；涉及；提到"
             },
             {
-              "term": "majority",
-              "zh": "多数；大部分"
+              "term": "within one's local community",
+              "zh": "在自己的本地社区内"
             },
             {
-              "term": "arguments",
-              "zh": "论据；一组支持观点的理由"
+              "term": "the majority of",
+              "zh": "大多数……"
             }
           ],
           "difficulty": 2
@@ -407,21 +431,25 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A12",
           "part": "Cloze",
-          "en": "Arguments tend to place different requirements on people in different income brackets and 33 entirely people who are merely making ends meet.",
+          "en": "Arguments tend to place different requirements on people in different income brackets and exclude entirely people who are merely making ends meet.",
           "zh": "这些论证往往会根据不同收入阶层对人们提出不同要求，并完全排除那些仅能勉强糊口的人。",
-          "structure": "主句抓 \"Arguments tend to place different requirements on people in different income brackets and 33 entirely people who are mer\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；不定式多表示目的、结果或后置修饰。",
+          "structure": "结构分析：Arguments tend to... 是主干；place requirements on people 表示对人提出要求；and 连接 exclude entirely...；who 从句修饰 people，说明这类人只是勉强维持生计。",
           "phrases": [
             {
               "term": "income brackets",
               "zh": "收入阶层"
             },
             {
-              "term": "making ends meet",
-              "zh": "勉强糊口"
+              "term": "place requirements on",
+              "zh": "对……提出要求"
             },
             {
-              "term": "arguments",
-              "zh": "论据；一组支持观点的理由"
+              "term": "exclude entirely",
+              "zh": "完全排除"
+            },
+            {
+              "term": "make ends meet",
+              "zh": "勉强维持生计"
             }
           ],
           "difficulty": 3
@@ -451,21 +479,25 @@ export const cet6Reading202412Set3 = {
         {
           "label": "A14",
           "part": "Cloze",
-          "en": "I will 34 together all those arguments that place a moral requirement on people to give to charity,despite the fact that there is wide disagreement as to the 35 of that moral requirement.",
+          "en": "I will group together all those arguments that place a moral requirement on people to give to charity, despite the fact that there is wide disagreement as to the extent of that moral requirement.",
           "zh": "我将把所有那些认为人们有道德义务向慈善捐助的论证归在一起，尽管对于这种道德要求的范围存在广泛分歧。",
-          "structure": "主句抓 \"I will 34 together all those arguments that place a moral requirement on people to give to charity,despite the fact that\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
+          "structure": "结构分析：I will group together... 是主句；that place... 修饰 arguments；to give to charity 说明 moral requirement 的内容；despite the fact that... 引导让步信息；as to the extent 表示“关于范围”。",
           "phrases": [
             {
               "term": "moral requirement",
               "zh": "道德要求"
             },
             {
-              "term": "charity",
-              "zh": "慈善"
+              "term": "group together",
+              "zh": "归在一起；归为一类"
             },
             {
-              "term": "together",
-              "zh": "一起；共同"
+              "term": "as to the extent of",
+              "zh": "关于……的范围/程度"
+            },
+            {
+              "term": "wide disagreement",
+              "zh": "广泛分歧"
             }
           ],
           "difficulty": 4
@@ -534,12 +566,12 @@ export const cet6Reading202412Set3 = {
               "zh": "国内生产者"
             },
             {
-              "term": "lost livelihoods",
-              "zh": "失去的生计"
-            },
-            {
               "term": "hollowed-out communities",
               "zh": "被掏空的社区"
+            },
+            {
+              "term": "lost livelihoods",
+              "zh": "失去的生计"
             },
             {
               "term": "protectionists",
@@ -632,6 +664,10 @@ export const cet6Reading202412Set3 = {
             {
               "term": "debates",
               "zh": "辩论；围绕议题的讨论"
+            },
+            {
+              "term": "take place",
+              "zh": "发生；进行"
             }
           ],
           "difficulty": 3
@@ -646,10 +682,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "strange",
               "zh": "奇怪的；不寻常的"
-            },
-            {
-              "term": "problem",
-              "zh": "问题；难题"
             },
             {
               "term": "dollars",
@@ -670,8 +702,8 @@ export const cet6Reading202412Set3 = {
               "zh": "虚假意识"
             },
             {
-              "term": "consciousness",
-              "zh": "意识；思想觉知"
+              "term": "a matter of",
+              "zh": "是……的问题；关乎……"
             }
           ],
           "difficulty": 1
@@ -728,12 +760,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"he notes,the division of labor was as yet undeveloped for the most part,requiring each person,family,or tribe to be rela\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "division of labor",
-              "zh": "劳动分工"
-            },
-            {
               "term": "basic material needs",
               "zh": "基本物质需求"
+            },
+            {
+              "term": "division of labor",
+              "zh": "劳动分工"
             },
             {
               "term": "primitive",
@@ -750,12 +782,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Men built their own dwellings,farmed their own land,tended to their own livestock.\"；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "livestock",
-              "zh": "牲畜"
+              "term": "farm one's land",
+              "zh": "耕种自己的土地"
             },
             {
-              "term": "dwellings",
-              "zh": "住所；住宅"
+              "term": "tend to livestock",
+              "zh": "照料牲畜"
             }
           ],
           "difficulty": 1
@@ -812,6 +844,10 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"As Tocqueville notes,\"as soon as a man begins to deal with common affairs in public,he begins to perceive that he is not\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
+              "term": "deal with",
+              "zh": "处理；应对"
+            },
+            {
               "term": "perceive",
               "zh": "意识到"
             },
@@ -856,8 +892,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Each person became more and more dependent on others for their basic needs.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "dependent",
-              "zh": "依赖的；不能独立存在的"
+              "term": "be dependent on",
+              "zh": "依赖于……"
+            },
+            {
+              "term": "basic needs",
+              "zh": "基本需求"
             }
           ],
           "difficulty": 1
@@ -892,16 +932,16 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"we become less and less conscious of our dependence on others.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "dependent",
-              "zh": "依赖的；不能独立存在的"
-            },
-            {
               "term": "conscious",
               "zh": "意识到的；有自觉认识的"
             },
             {
               "term": "dependence",
               "zh": "依赖；对他人或系统的依靠"
+            },
+            {
+              "term": "be dependent on",
+              "zh": "依赖于……"
             }
           ],
           "difficulty": 2
@@ -916,6 +956,14 @@ export const cet6Reading202412Set3 = {
             {
               "term": "paradox",
               "zh": "悖论"
+            },
+            {
+              "term": "the paradox of",
+              "zh": "……的悖论"
+            },
+            {
+              "term": "in the modern world",
+              "zh": "在现代世界中"
             }
           ],
           "difficulty": 1
@@ -928,12 +976,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"The false consciousness that this paradox generates causes havoc on the debates we have about free trade.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
           "phrases": [
             {
-              "term": "free trade",
-              "zh": "自由贸易"
-            },
-            {
               "term": "false consciousness",
               "zh": "虚假意识"
+            },
+            {
+              "term": "free trade",
+              "zh": "自由贸易"
             },
             {
               "term": "paradox",
@@ -986,6 +1034,10 @@ export const cet6Reading202412Set3 = {
             {
               "term": "foresaw",
               "zh": "预见；提前看到趋势"
+            },
+            {
+              "term": "be dependent on",
+              "zh": "依赖于……"
             }
           ],
           "difficulty": 2
@@ -1046,8 +1098,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"There are two reasons for this.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "reasons",
-              "zh": "原因；理由"
+              "term": "There are two reasons for this.",
+              "zh": "对此有两个原因"
+            },
+            {
+              "term": "reason for",
+              "zh": "……的原因"
             }
           ],
           "difficulty": 1
@@ -1060,8 +1116,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"The first,to put it bluntly,is money.\"；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "bluntly",
-              "zh": "直截了当地"
+              "term": "to put it bluntly",
+              "zh": "直截了当地说"
+            },
+            {
+              "term": "The first ... is",
+              "zh": "第一个……是；用于列举原因"
             }
           ],
           "difficulty": 1
@@ -1118,12 +1178,8 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"No relationship has to be built before an exchange can take place.\"；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "relationship",
-              "zh": "关系；关联"
-            },
-            {
-              "term": "exchange",
-              "zh": "交换；交易；互换"
+              "term": "take place",
+              "zh": "发生；进行"
             }
           ],
           "difficulty": 1
@@ -1158,12 +1214,8 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"money makes us feel more independent than we actually are.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。",
           "phrases": [
             {
-              "term": "independent",
-              "zh": "独立的；不依赖他人的"
-            },
-            {
-              "term": "actually",
-              "zh": "实际上；用于纠正或强调真实情况"
+              "term": "feel more independent than",
+              "zh": "感觉比……更独立"
             }
           ],
           "difficulty": 1
@@ -1176,8 +1228,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Each of us senses the hold that it has over our fellows.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
           "phrases": [
             {
-              "term": "fellows",
-              "zh": "同伴；同类人"
+              "term": "have a hold over",
+              "zh": "控制；支配；影响"
+            },
+            {
+              "term": "sense the hold",
+              "zh": "感觉到控制力/支配力"
             }
           ],
           "difficulty": 2
@@ -1214,6 +1270,14 @@ export const cet6Reading202412Set3 = {
             {
               "term": "kind of like magic",
               "zh": "有点像魔法；形容机制看似神奇但实际可解释"
+            },
+            {
+              "term": "kind of like",
+              "zh": "有点像"
+            },
+            {
+              "term": "in that way",
+              "zh": "在那种意义上；以那种方式"
             }
           ],
           "difficulty": 2
@@ -1228,10 +1292,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "rituals",
               "zh": "仪式；固定习俗"
-            },
-            {
-              "term": "perform",
-              "zh": "履行；执行；表演"
             },
             {
               "term": "promises",
@@ -1270,12 +1330,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Gratitude for the anonymous men and women who make up the supply chain rarely makes its way into our consciousness.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "supply chain",
-              "zh": "供应链"
-            },
-            {
               "term": "anonymous men and women",
               "zh": "匿名的普通人"
+            },
+            {
+              "term": "supply chain",
+              "zh": "供应链"
             },
             {
               "term": "gratitude",
@@ -1291,6 +1351,10 @@ export const cet6Reading202412Set3 = {
           "zh": "事实上，匿名性是自由贸易悖论的第二个根源。",
           "structure": "主句抓 \"Anonymity,in fact,is the second root cause of the free-trade paradox.\"；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
             {
               "term": "anonymity",
               "zh": "匿名性"
@@ -1320,10 +1384,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "modernity",
               "zh": "现代性；现代社会状态"
-            },
-            {
-              "term": "everyone",
-              "zh": "每个人；所有人"
             }
           ],
           "difficulty": 1
@@ -1379,6 +1439,10 @@ export const cet6Reading202412Set3 = {
           "zh": "这只是市场奇迹的阴影面；市场第一次允许陌生人彼此照料。",
           "structure": "主句抓 \"This is simply the shadow side of the miracle of markets,which,for the first time in history,have allowed strangers to l\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。；因果关系连接理由与结果，是理解作者论证方向的关键。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
+            {
+              "term": "for the first time",
+              "zh": "第一次"
+            },
             {
               "term": "miracle",
               "zh": "奇迹；难以解释的成功"
@@ -1450,8 +1514,12 @@ export const cet6Reading202412Set3 = {
               "zh": "剩余部分；其余内容"
             },
             {
-              "term": "citizens",
-              "zh": "公民；社会成员"
+              "term": "as for",
+              "zh": "至于；关于"
+            },
+            {
+              "term": "be beside sb.",
+              "zh": "在某人身边"
             }
           ],
           "difficulty": 1
@@ -1464,8 +1532,8 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"He touches them,but he does not feel them.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "touches",
-              "zh": "触及；涉及"
+              "term": "touch but not feel",
+              "zh": "接触却没有情感感知"
             }
           ],
           "difficulty": 1
@@ -1478,8 +1546,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"He exists only in and for himself.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "himself",
-              "zh": "他自己；反身指代"
+              "term": "exist in and for oneself",
+              "zh": "只为自己而存在"
+            },
+            {
+              "term": "only in and for himself",
+              "zh": "只在自己之中、只为自己而存在"
             }
           ],
           "difficulty": 1
@@ -1491,10 +1563,6 @@ export const cet6Reading202412Set3 = {
           "zh": "倒数第二句“他触碰他们，却感受不到他们”，可以说恰当地概括了我们每个人在现代经济中的运作方式。",
           "structure": "主句抓 \"The last sentence but one is as apt a summary as one could hope to come by of how each of us functions in the modern eco\"；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
-            {
-              "term": "apt",
-              "zh": "恰当的"
-            },
             {
               "term": "sentence",
               "zh": "句子；一句话"
@@ -1520,10 +1588,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "greatest",
               "zh": "最大的；最重要的"
-            },
-            {
-              "term": "challenge",
-              "zh": "挑战；需要解决的难题"
             }
           ],
           "difficulty": 1
@@ -1698,16 +1762,16 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Left-brained people are supposedly logical and excel at language and math while right-brained people are more imaginativ\"；转折或让步之后通常是语义重心，需要和前半句对照。；冒号、分号或破折号后的内容多为解释、举例或补充说明。",
           "phrases": [
             {
+              "term": "spatial reasoning",
+              "zh": "空间推理"
+            },
+            {
               "term": "right-brained",
               "zh": "右脑型"
             },
             {
               "term": "left-brained",
               "zh": "左脑型"
-            },
-            {
-              "term": "spatial reasoning",
-              "zh": "空间推理"
             },
             {
               "term": "supposedly",
@@ -1728,8 +1792,8 @@ export const cet6Reading202412Set3 = {
               "zh": "there is 的缩写，表示“有、存在”"
             },
             {
-              "term": "problem",
-              "zh": "问题；难题"
+              "term": "how brains work",
+              "zh": "大脑如何运作"
             }
           ],
           "difficulty": 3
@@ -1748,10 +1812,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "popular",
               "zh": "流行的；受欢迎的"
-            },
-            {
-              "term": "science",
-              "zh": "科学；系统知识"
             }
           ],
           "difficulty": 2
@@ -1792,10 +1852,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "dominant",
               "zh": "占主导的"
-            },
-            {
-              "term": "whether",
-              "zh": "是否；引导选择或疑问"
             }
           ],
           "difficulty": 3
@@ -1808,16 +1864,8 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"But the actual science of how the two halves of our brains work together is sometimes stranger than fiction.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
             {
-              "term": "science",
-              "zh": "科学；系统知识"
-            },
-            {
               "term": "together",
               "zh": "一起；共同"
-            },
-            {
-              "term": "sometimes",
-              "zh": "有时；偶尔"
             }
           ],
           "difficulty": 2
@@ -1836,6 +1884,10 @@ export const cet6Reading202412Set3 = {
             {
               "term": "hemispheres",
               "zh": "大脑半球；左右脑区域"
+            },
+            {
+              "term": "be divided into",
+              "zh": "被分成"
             }
           ],
           "difficulty": 1
@@ -1872,14 +1924,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "brain injuries",
               "zh": "脑损伤"
-            },
-            {
-              "term": "scientists",
-              "zh": "科学家；研究人员"
-            },
-            {
-              "term": "behaviors",
-              "zh": "行为；具体表现出来的行动方式"
             }
           ],
           "difficulty": 3
@@ -1900,8 +1944,8 @@ export const cet6Reading202412Set3 = {
               "zh": "对称"
             },
             {
-              "term": "scientists",
-              "zh": "科学家；研究人员"
+              "term": "tend toward",
+              "zh": "倾向于……"
             }
           ],
           "difficulty": 4
@@ -1913,10 +1957,6 @@ export const cet6Reading202412Set3 = {
           "zh": "神经科学家的研究揭示了大脑不同半球对不同活动的重要性。",
           "structure": "主句抓 \"Work by neuroscientists (神经科学家) has revealed the importance of different hemispheres of the brain for different activiti\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
-            {
-              "term": "neuroscientists",
-              "zh": "神经科学家"
-            },
             {
               "term": "revealed",
               "zh": "显示；揭示"
@@ -1942,10 +1982,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "left-brained",
               "zh": "左脑型"
-            },
-            {
-              "term": "however",
-              "zh": "然而；引出转折"
             }
           ],
           "difficulty": 3
@@ -2024,12 +2060,8 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Neuroscientists don't believe that and never have.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
           "phrases": [
             {
-              "term": "neuroscientists",
-              "zh": "神经科学家"
-            },
-            {
-              "term": "believe",
-              "zh": "相信；认为"
+              "term": "never have",
+              "zh": "从来没有；承接前面的否定"
             }
           ],
           "difficulty": 2
@@ -2044,14 +2076,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "hemisphere",
               "zh": "半球；大脑半球"
-            },
-            {
-              "term": "scientists",
-              "zh": "科学家；研究人员"
-            },
-            {
-              "term": "learned",
-              "zh": "学到的；后天获得的"
             }
           ],
           "difficulty": 3
@@ -2070,10 +2094,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "personality",
               "zh": "性格；人格特征"
-            },
-            {
-              "term": "whether",
-              "zh": "是否；引导选择或疑问"
             }
           ],
           "difficulty": 3
@@ -2085,10 +2105,6 @@ export const cet6Reading202412Set3 = {
           "zh": "虽然研究人员已经说明，大脑半球影响我们生活的说法存在局限，但不难理解这类想法为什么有吸引力。",
           "structure": "主句抓 \"it's not difficult to understand the appeal of such ideas.\"；句首状语先交代背景、条件、让步或方式，中文可前置处理。；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
-            {
-              "term": "researchers",
-              "zh": "研究人员"
-            },
             {
               "term": "limitations",
               "zh": "局限；限制条件"
@@ -2136,6 +2152,18 @@ export const cet6Reading202412Set3 = {
             {
               "term": "ourselves",
               "zh": "我们自己；反身指代"
+            },
+            {
+              "term": "come up",
+              "zh": "灯光亮起；问题/话题出现"
+            },
+            {
+              "term": "come up with",
+              "zh": "想出；提出"
+            },
+            {
+              "term": "be drawn to",
+              "zh": "被……吸引"
             }
           ],
           "difficulty": 2
@@ -2148,8 +2176,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"It's irresistible.\"；句子主干较直，先顺出主谓宾，再补介词短语和并列信息。",
           "phrases": [
             {
-              "term": "irresistible",
-              "zh": "不可抗拒的"
+              "term": "be irresistible",
+              "zh": "令人无法抗拒"
+            },
+            {
+              "term": "It's irresistible.",
+              "zh": "这令人无法抗拒。"
             }
           ],
           "difficulty": 1
@@ -2168,6 +2200,10 @@ export const cet6Reading202412Set3 = {
             {
               "term": "enormous",
               "zh": "巨大的；程度很高的"
+            },
+            {
+              "term": "take A with a grain of salt",
+              "zh": "对 A 持保留态度；不可全信"
             }
           ],
           "difficulty": 1
@@ -2260,10 +2296,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "piloted",
               "zh": "试行"
-            },
-            {
-              "term": "working",
-              "zh": "运转；发挥作用；工作中的"
             }
           ],
           "difficulty": 4
@@ -2300,6 +2332,14 @@ export const cet6Reading202412Set3 = {
             {
               "term": "carefully orchestrated plan",
               "zh": "精心协调的计划"
+            },
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
+            {
+              "term": "focus on",
+              "zh": "关注；聚焦于"
             },
             {
               "term": "carefully",
@@ -2352,10 +2392,6 @@ export const cet6Reading202412Set3 = {
             {
               "term": "initial",
               "zh": "最初的；开始阶段的"
-            },
-            {
-              "term": "research",
-              "zh": "研究；系统调查"
             },
             {
               "term": "suggests",
@@ -2420,10 +2456,6 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Another benefit of teams,teachers say,is that they can help each other improve their instruction.\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
           "phrases": [
             {
-              "term": "another",
-              "zh": "另一个；又一项"
-            },
-            {
               "term": "benefit",
               "zh": "好处；益处"
             },
@@ -2464,10 +2496,6 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Hall said.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "science",
-              "zh": "科学；系统知识"
-            },
-            {
               "term": "confusing",
               "zh": "令人困惑的；容易混淆的"
             },
@@ -2485,10 +2513,6 @@ export const cet6Reading202412Set3 = {
           "zh": "但他说，那位科学教师自己不会知道大家有这样的困惑。",
           "structure": "主句抓 \"But the science teacher,he said,wouldn't have known about the confusion on her own.\"；转折或让步之后通常是语义重心，需要和前半句对照。",
           "phrases": [
-            {
-              "term": "science",
-              "zh": "科学；系统知识"
-            },
             {
               "term": "teacher",
               "zh": "教师；老师"
@@ -2508,8 +2532,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"The model is not for everyone.\"；因果关系连接理由与结果，是理解作者论证方向的关键。",
           "phrases": [
             {
-              "term": "everyone",
-              "zh": "每个人；所有人"
+              "term": "not for everyone",
+              "zh": "不适合所有人"
+            },
+            {
+              "term": "for everyone",
+              "zh": "适合每个人；面向所有人"
             }
           ],
           "difficulty": 1
@@ -2544,12 +2572,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"Team teaching can also be a scheduling nightmare,especially at schools like Westwood where only some staff work in teams\"；定语从句或名词性从句补充对象、事实或判断，翻译时先确定被修饰词。",
           "phrases": [
             {
-              "term": "team teaching",
-              "zh": "团队教学"
-            },
-            {
               "term": "scheduling nightmare",
               "zh": "排课噩梦"
+            },
+            {
+              "term": "team teaching",
+              "zh": "团队教学"
             },
             {
               "term": "teaching",
@@ -2588,8 +2616,12 @@ export const cet6Reading202412Set3 = {
           "structure": "主句抓 \"But for the time being,it seems to be working.\"；因果关系连接理由与结果，是理解作者论证方向的关键。；转折或让步之后通常是语义重心，需要和前半句对照。；不定式多表示目的、结果或后置修饰。",
           "phrases": [
             {
-              "term": "working",
-              "zh": "运转；发挥作用；工作中的"
+              "term": "for the time being",
+              "zh": "暂时；眼下"
+            },
+            {
+              "term": "seems to be working",
+              "zh": "似乎正在奏效"
             }
           ],
           "difficulty": 1

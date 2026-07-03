@@ -10,7 +10,7 @@ export const cet6Reading202512Set3 = {
       "kicker": "Section A",
       "title": "选词填空 · 原文整理",
       "navLabel": "选词填空",
-      "description": "保留原文空格编号，按阅读顺序拆分为可复盘句子。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -50,6 +50,10 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Accent is not a synonym for dialect；but 连接转折分句 it's related。核心结构：not A but B，不是完全等同，而是有关联。",
           "phrases": [
             {
+              "term": "be related",
+              "zh": "有关联"
+            },
+            {
               "term": "synonym",
               "zh": "同义词"
             },
@@ -60,10 +64,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "dialect",
               "zh": "方言"
-            },
-            {
-              "term": "be related",
-              "zh": "有关联"
             }
           ],
           "difficulty": 2
@@ -106,8 +106,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句前半是 Many laymen presume...，后接两个 that 宾语从句：there is... 和 this perceived standard is...；but 后转入 linguists often point out...；point out 后的 that 从句说明语言学家的观点；as an ideal rather than a reality 作补足语。核心结构：presume that... and that...；but... point out that...。",
           "phrases": [
             {
-              "term": "laymen",
-              "zh": "外行人；非专业人士"
+              "term": "ideal rather than a reality",
+              "zh": "与其说是现实，不如说是一种理想"
+            },
+            {
+              "term": "a reality",
+              "zh": "现实"
+            },
+            {
+              "term": "rather than",
+              "zh": "而不是"
             },
             {
               "term": "presume that",
@@ -122,16 +130,16 @@ export const cet6Reading202512Set3 = {
               "zh": "被认为的标准"
             },
             {
+              "term": "laymen",
+              "zh": "外行人；非专业人士"
+            },
+            {
               "term": "inherently",
               "zh": "本质上；内在地"
             },
             {
               "term": "linguists",
               "zh": "语言学家"
-            },
-            {
-              "term": "ideal rather than a reality",
-              "zh": "与其说是现实，不如说是一种理想"
             }
           ],
           "difficulty": 3
@@ -148,20 +156,16 @@ export const cet6Reading202512Set3 = {
               "zh": "换句话说"
             },
             {
+              "term": "grammar and style books",
+              "zh": "语法书和风格指南"
+            },
+            {
               "term": "standard English",
               "zh": "标准英语"
             },
             {
-              "term": "rather",
-              "zh": "更确切地说；反而"
-            },
-            {
               "term": "imagined way",
               "zh": "想象出来的方式"
-            },
-            {
-              "term": "grammar and style books",
-              "zh": "语法书和风格指南"
             }
           ],
           "difficulty": 3
@@ -182,16 +186,16 @@ export const cet6Reading202512Set3 = {
               "zh": "多年来"
             },
             {
-              "term": "multiple",
-              "zh": "多种的；多个的"
-            },
-            {
               "term": "supposed standards",
               "zh": "所谓的标准"
             },
             {
               "term": "depending on",
               "zh": "取决于；随……而变化"
+            },
+            {
+              "term": "multiple",
+              "zh": "多种的；多个的"
             }
           ],
           "difficulty": 2
@@ -204,20 +208,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The standard... differs greatly from the standard...；for English in British newsreels from the 1950s 修饰第一个 standard；found on... 是过去分词短语，修饰第二个 standard。核心结构：A differs greatly from B。",
           "phrases": [
             {
-              "term": "newsreels",
-              "zh": "新闻短片"
-            },
-            {
-              "term": "for example",
-              "zh": "例如"
-            },
-            {
               "term": "differ greatly from",
               "zh": "与……大不相同"
             },
             {
               "term": "national news broadcasts",
               "zh": "全国新闻广播"
+            },
+            {
+              "term": "for example",
+              "zh": "例如"
+            },
+            {
+              "term": "newsreels",
+              "zh": "新闻短片"
             }
           ],
           "difficulty": 2
@@ -230,16 +234,8 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：In fact 作强调；there has never been... 是存在句；that's been fully agreed upon 修饰 standard；破折号后 and 连接并列分句，说明 broadcast outlets 的实际做法。核心结构：there has never been...；and... have never...。",
           "phrases": [
             {
-              "term": "in fact",
-              "zh": "事实上"
-            },
-            {
               "term": "fully agreed upon",
               "zh": "得到完全一致认可的"
-            },
-            {
-              "term": "broadcast outlets",
-              "zh": "广播机构；媒体播出机构"
             },
             {
               "term": "across the spectrum",
@@ -248,6 +244,14 @@ export const cet6Reading202512Set3 = {
             {
               "term": "hold to standards",
               "zh": "遵守标准"
+            },
+            {
+              "term": "in fact",
+              "zh": "事实上"
+            },
+            {
+              "term": "broadcast outlets",
+              "zh": "广播机构；媒体播出机构"
             }
           ],
           "difficulty": 3
@@ -260,16 +264,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：Even so 作让步转折；主句由 and 连接两部分：this idea... is influential 和 many environments perpetuate the idea；idea 后 that 引导同位语从句；accents 后 that deviate... 是定语从句。核心结构：the idea that...；accents that deviate from...。",
           "phrases": [
             {
-              "term": "even so",
-              "zh": "即便如此"
-            },
-            {
-              "term": "influential",
-              "zh": "有影响力的"
-            },
-            {
               "term": "perpetuate the idea",
               "zh": "不断强化这种观念"
+            },
+            {
+              "term": "even so",
+              "zh": "即便如此"
             },
             {
               "term": "deviate from",
@@ -278,6 +278,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "current standard",
               "zh": "当前标准"
+            },
+            {
+              "term": "influential",
+              "zh": "有影响力的"
             },
             {
               "term": "inappropriate",
@@ -294,16 +298,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Scholars have found；that 引导宾语从句；宾语从句中 are more accepted... but less accepted... 构成对比；such as 后列举 domains 的具体类型。核心结构：find that...；more accepted in... but less accepted in...。",
           "phrases": [
             {
-              "term": "accent features",
-              "zh": "口音特征"
-            },
-            {
               "term": "be accepted in",
               "zh": "在……中被接受"
             },
             {
-              "term": "domains",
-              "zh": "领域"
+              "term": "accent features",
+              "zh": "口音特征"
             },
             {
               "term": "service-oriented workplaces",
@@ -312,6 +312,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "technology sector",
               "zh": "科技行业"
+            },
+            {
+              "term": "domains",
+              "zh": "领域"
             }
           ],
           "difficulty": 2
@@ -323,10 +327,6 @@ export const cet6Reading202512Set3 = {
           "zh": "非标准口音的可接受程度，可能与阶层和文化差异相关；较新或声望更高的行业往往期待职场中使用更标准的语言。",
           "structure": "结构分析：主句是 The acceptability... may correlate with...；with newer... industries expecting... 是 with 复合结构，补充说明行业期待。核心结构：correlate with...；with + 名词 + doing。",
           "phrases": [
-            {
-              "term": "acceptability",
-              "zh": "可接受程度"
-            },
             {
               "term": "nonstandard accents",
               "zh": "非标准口音"
@@ -342,6 +342,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "standard speech",
               "zh": "标准语言；标准说法"
+            },
+            {
+              "term": "acceptability",
+              "zh": "可接受程度"
             }
           ],
           "difficulty": 2
@@ -376,6 +380,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "peak traffic hours",
               "zh": "交通高峰时段"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……所说"
             },
             {
               "term": "coordinate with",
@@ -418,10 +426,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：In Los Angeles, California 作地点状语；主句是 an ambitious project... cost over 400 million dollars；to go... and synchronize... 修饰 project，说明项目目标。核心结构：a project to do... cost...。",
           "phrases": [
             {
-              "term": "ambitious",
-              "zh": "雄心勃勃的"
-            },
-            {
               "term": "go a step further",
               "zh": "更进一步"
             },
@@ -432,6 +436,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "cost over",
               "zh": "花费超过"
+            },
+            {
+              "term": "ambitious",
+              "zh": "雄心勃勃的"
             }
           ],
           "difficulty": 2
@@ -452,12 +460,12 @@ export const cet6Reading202512Set3 = {
               "zh": "很可能"
             },
             {
-              "term": "saving time",
-              "zh": "节省时间"
-            },
-            {
               "term": "well worth it",
               "zh": "非常值得"
+            },
+            {
+              "term": "saving time",
+              "zh": "节省时间"
             }
           ],
           "difficulty": 2
@@ -470,6 +478,10 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：If implemented nationwide 是省略结构，完整意思是 if it is implemented nationwide；主句是 synchronization could shave...；10% off... and 20% off... 是并列宾语。核心结构：If implemented..., A could shave B off C。",
           "phrases": [
             {
+              "term": "shave ... off",
+              "zh": "减少；削减"
+            },
+            {
               "term": "traffic congestion",
               "zh": "交通拥堵"
             },
@@ -480,10 +492,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "implemented nationwide",
               "zh": "全国范围的"
-            },
-            {
-              "term": "shave ... off",
-              "zh": "减少；削减"
             },
             {
               "term": "synchronization",
@@ -500,12 +508,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Congestion costs...；time, money, and lives 是三个并列宾语，层层加重后果。核心结构：A costs B, C, and D。",
           "phrases": [
             {
+              "term": "cost lives",
+              "zh": "造成生命代价"
+            },
+            {
               "term": "congestion",
               "zh": "交通拥堵"
             },
             {
-              "term": "cost lives",
-              "zh": "造成生命代价"
+              "term": "cost time, money, and lives",
+              "zh": "耗费时间、金钱并造成生命损失"
             }
           ],
           "difficulty": 2
@@ -518,16 +530,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Big data can help improve...；how 引导宾语从句，作 improve 的宾语；millions of people 是从句主语。核心结构：help improve how...。",
           "phrases": [
             {
-              "term": "big data",
-              "zh": "大数据"
-            },
-            {
               "term": "millions of people",
               "zh": "数百万人"
             },
             {
               "term": "share the road",
               "zh": "共用道路"
+            },
+            {
+              "term": "big data",
+              "zh": "大数据"
             },
             {
               "term": "safely",
@@ -543,10 +555,6 @@ export const cet6Reading202512Set3 = {
           "zh": "然而，如果没有交通信号灯，这一切都不可能实现。",
           "structure": "结构分析：However 表示转折；none of this 是主语；without the traffic light 是介词短语，表达隐含条件。核心结构：none of this would be possible without...。",
           "phrases": [
-            {
-              "term": "however",
-              "zh": "然而"
-            },
             {
               "term": "none of this",
               "zh": "这一切都不"
@@ -570,20 +578,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句由 but 连接两个分句：The first traffic light was invented... 和 it was hardly recognizable—or effective；破折号后 effective 补充说明 hardly 的范围。核心结构：A was invented..., but it was hardly B。",
           "phrases": [
             {
-              "term": "traffic light",
-              "zh": "交通信号灯"
-            },
-            {
               "term": "in the 1860's",
               "zh": "在 19 世纪 60 年代"
             },
             {
-              "term": "hardly recognizable",
-              "zh": "几乎认不出来"
+              "term": "traffic light",
+              "zh": "交通信号灯"
             },
             {
-              "term": "effective",
-              "zh": "有效的"
+              "term": "hardly recognizable",
+              "zh": "几乎认不出来"
             }
           ],
           "difficulty": 2
@@ -626,16 +630,16 @@ export const cet6Reading202512Set3 = {
               "zh": "红色煤气灯"
             },
             {
-              "term": "signal stops",
-              "zh": "表示停止"
-            },
-            {
               "term": "green gas lights",
               "zh": "绿色煤气灯"
             },
             {
               "term": "during the daytime",
               "zh": "在白天"
+            },
+            {
+              "term": "signal stops",
+              "zh": "表示停止"
             }
           ],
           "difficulty": 2
@@ -648,20 +652,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Knight installed...；a similar gas light semaphore system 是宾语；near London's Westminster Bridge 作地点状语；in December of 1868 作时间状语。核心结构：install a system near... in...。",
           "phrases": [
             {
-              "term": "install",
-              "zh": "安装"
+              "term": "similar gas light",
+              "zh": "类似的煤气灯"
             },
             {
               "term": "semaphore system",
               "zh": "臂板信号系统"
             },
             {
-              "term": "similar gas light",
-              "zh": "类似的煤气灯"
-            },
-            {
               "term": "Westminster Bridge",
               "zh": "威斯敏斯特桥"
+            },
+            {
+              "term": "install",
+              "zh": "安装"
             }
           ],
           "difficulty": 2
@@ -696,10 +700,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 A gas leak caused...；cause sb./sth. to do 表示“导致……做某事”；within a month of being installed 作时间状语；on its police officer operator 说明爆炸波及的对象。核心结构：A caused B to explode within...。",
           "phrases": [
             {
-              "term": "gas leak",
-              "zh": "煤气泄漏"
-            },
-            {
               "term": "cause ... to explode",
               "zh": "导致……爆炸"
             },
@@ -710,6 +710,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "within a month of",
               "zh": "在……之后不到一个月内"
+            },
+            {
+              "term": "gas leak",
+              "zh": "煤气泄漏"
             }
           ],
           "difficulty": 2
@@ -726,16 +730,16 @@ export const cet6Reading202512Set3 = {
               "zh": "交通信号自动化"
             },
             {
-              "term": "stall",
-              "zh": "停滞；陷入停顿"
+              "term": "the London incident",
+              "zh": "伦敦事故"
             },
             {
               "term": "traffic signals",
               "zh": "交通信号"
             },
             {
-              "term": "the London incident",
-              "zh": "伦敦事故"
+              "term": "stall",
+              "zh": "停滞；陷入停顿"
             }
           ],
           "difficulty": 2
@@ -796,16 +800,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The United States is a car culture；like no other country 作后置修饰，强调美国汽车文化的独特性。核心结构：A is B like no other C。",
           "phrases": [
             {
-              "term": "car culture",
-              "zh": "汽车文化"
-            },
-            {
               "term": "like no other country",
               "zh": "不同于任何其他国家；独一无二"
             },
             {
               "term": "the United States",
               "zh": "美国"
+            },
+            {
+              "term": "car culture",
+              "zh": "汽车文化"
             }
           ],
           "difficulty": 2
@@ -818,6 +822,14 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：Unlike... 作句首对比状语；that started urban planning... 修饰 European cities；when horses were high-tech 是时间状语从句；主句是 many cities... were designed around...。核心结构：Unlike A, B were designed around C, D, and E。",
           "phrases": [
             {
+              "term": "be designed around",
+              "zh": "围绕……来设计"
+            },
+            {
+              "term": "when horses were high-tech",
+              "zh": "在马车还算高科技的时代"
+            },
+            {
               "term": "urban planning",
               "zh": "城市规划"
             },
@@ -828,14 +840,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "suburban tracts",
               "zh": "郊区大片住宅区"
-            },
-            {
-              "term": "be designed around",
-              "zh": "围绕……来设计"
-            },
-            {
-              "term": "when horses were high-tech",
-              "zh": "在马车还算高科技的时代"
             }
           ],
           "difficulty": 2
@@ -848,20 +852,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：As traffic and cities grew 是时间状语从句；so did... 是倒装结构，相当于 the race... grew too；to solve growing traffic problems 修饰 race。核心结构：As A grew, so did B。",
           "phrases": [
             {
-              "term": "traffic",
-              "zh": "交通"
-            },
-            {
-              "term": "so did",
-              "zh": "……也一样"
-            },
-            {
               "term": "the race to solve",
               "zh": "解决……的竞赛"
             },
             {
               "term": "growing traffic problems",
               "zh": "日益增长的交通问题"
+            },
+            {
+              "term": "so did",
+              "zh": "……也一样"
+            },
+            {
+              "term": "traffic",
+              "zh": "交通"
             }
           ],
           "difficulty": 2
@@ -878,12 +882,12 @@ export const cet6Reading202512Set3 = {
               "zh": "交通信号"
             },
             {
-              "term": "semaphores",
-              "zh": "臂板信号装置"
-            },
-            {
               "term": "the first",
               "zh": "最早的"
+            },
+            {
+              "term": "semaphores",
+              "zh": "臂板信号装置"
             }
           ],
           "difficulty": 2
@@ -896,8 +900,8 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Semaphores are towers；with moving arms 修饰 towers；signaling for traffic to stop or go 是现在分词短语，说明 moving arms 的功能。核心结构：A are towers with B doing C。",
           "phrases": [
             {
-              "term": "semaphores",
-              "zh": "臂板信号装置"
+              "term": "signal for traffic to stop or go",
+              "zh": "向车辆发出停止或通行的信号"
             },
             {
               "term": "towers with",
@@ -908,8 +912,8 @@ export const cet6Reading202512Set3 = {
               "zh": "活动臂"
             },
             {
-              "term": "signal for traffic to stop or go",
-              "zh": "向车辆发出停止或通行的信号"
+              "term": "semaphores",
+              "zh": "臂板信号装置"
             }
           ],
           "difficulty": 2
@@ -926,8 +930,12 @@ export const cet6Reading202512Set3 = {
               "zh": "手动的"
             },
             {
-              "term": "automatic",
-              "zh": "自动的"
+              "term": "be automatic",
+              "zh": "自动完成；无需人工操作"
+            },
+            {
+              "term": "manual or automatic",
+              "zh": "手动或自动的"
             }
           ],
           "difficulty": 2
@@ -940,12 +948,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：There was... 是存在句；no consistent design 是否定核心，说明设计没有固定标准。核心结构：There was no...。",
           "phrases": [
             {
-              "term": "consistent",
-              "zh": "一致的"
-            },
-            {
               "term": "consistent design",
               "zh": "统一的设计"
+            },
+            {
+              "term": "consistent",
+              "zh": "一致的"
             }
           ],
           "difficulty": 2
@@ -958,16 +966,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Various models were invented and put into place...；were invented 和 put into place 是并列被动谓语；as the need arose 是时间/原因状语从句。核心结构：A were invented and put into place as B arose。",
           "phrases": [
             {
-              "term": "various models",
-              "zh": "各种型号"
-            },
-            {
               "term": "put into place",
               "zh": "投入使用；落实"
             },
             {
               "term": "as the need arose",
               "zh": "随着需求出现"
+            },
+            {
+              "term": "various models",
+              "zh": "各种型号"
             }
           ],
           "difficulty": 2
@@ -1002,16 +1010,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 He developed...；a manually switched stop light 是宾语，其中 manually switched 修饰 stop light。核心结构：develop a manually switched...。",
           "phrases": [
             {
-              "term": "develop",
-              "zh": "研发；开发"
-            },
-            {
               "term": "manually switched",
               "zh": "手动切换的"
             },
             {
               "term": "stop light",
               "zh": "停车信号灯"
+            },
+            {
+              "term": "develop",
+              "zh": "研发；开发"
             }
           ],
           "difficulty": 2
@@ -1024,12 +1032,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句有两个并列谓语：looked like... 和 was operated...；raised on a ten-foot pole 是过去分词短语，补充说明 box 的位置。核心结构：A, raised on B, looked like C and was operated by D。",
           "phrases": [
             {
-              "term": "four-sided box",
-              "zh": "四面盒子"
-            },
-            {
               "term": "raised on a ten-foot pole",
               "zh": "架在十英尺高的杆子上"
+            },
+            {
+              "term": "four-sided box",
+              "zh": "四面盒子"
             },
             {
               "term": "looked like",
@@ -1054,12 +1062,12 @@ export const cet6Reading202512Set3 = {
               "zh": "拨动开关"
             },
             {
-              "term": "change between",
-              "zh": "在……之间切换"
-            },
-            {
               "term": "red and green lights",
               "zh": "红灯和绿灯"
+            },
+            {
+              "term": "change between",
+              "zh": "在……之间切换"
             }
           ],
           "difficulty": 2
@@ -1072,16 +1080,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：Like the 1910 semaphore 作比较状语；主句是 the first electric signal used words。核心结构：Like A, B used C。",
           "phrases": [
             {
-              "term": "like",
-              "zh": "像；和……一样"
+              "term": "electric signal",
+              "zh": "电信号灯"
             },
             {
               "term": "semaphore",
               "zh": "臂板信号装置"
-            },
-            {
-              "term": "electric signal",
-              "zh": "电信号灯"
             }
           ],
           "difficulty": 2
@@ -1094,16 +1098,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：However 表示转折；主句是 the words were no longer written...；that raised and fell 是定语从句，修饰 arms。核心结构：A were no longer written on B that...。",
           "phrases": [
             {
+              "term": "arms that raised and fell",
+              "zh": "会上下升降的臂板"
+            },
+            {
               "term": "no longer",
               "zh": "不再"
             },
             {
               "term": "written on",
               "zh": "写在……上"
-            },
-            {
-              "term": "arms that raised and fell",
-              "zh": "会上下升降的臂板"
             }
           ],
           "difficulty": 2
@@ -1122,6 +1126,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "on lights",
               "zh": "在灯上"
+            },
+            {
+              "term": "be on lights",
+              "zh": "出现在信号灯上"
             }
           ],
           "difficulty": 2
@@ -1160,8 +1168,8 @@ export const cet6Reading202512Set3 = {
               "zh": "自动化的"
             },
             {
-              "term": "though",
-              "zh": "不过；可是"
+              "term": "not automated",
+              "zh": "不是自动化的"
             }
           ],
           "difficulty": 2
@@ -1174,20 +1182,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 A booth... was required；with an operator 修饰 booth；to flip the switches 作目的/功能说明。核心结构：A was required to do B。",
           "phrases": [
             {
-              "term": "booth",
-              "zh": "岗亭；小亭"
-            },
-            {
-              "term": "operator",
-              "zh": "操作员"
-            },
-            {
               "term": "be required to",
               "zh": "需要；被要求"
             },
             {
               "term": "flip the switches",
               "zh": "拨动开关"
+            },
+            {
+              "term": "booth",
+              "zh": "岗亭；小亭"
+            },
+            {
+              "term": "operator",
+              "zh": "操作员"
             }
           ],
           "difficulty": 2
@@ -1222,16 +1230,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：From that vantage 作句首地点/视角状语；主句是 an officer could oversee the crowd。核心结构：From A, B could oversee C。",
           "phrases": [
             {
+              "term": "the crowd",
+              "zh": "人群"
+            },
+            {
               "term": "vantage",
               "zh": "有利位置；有利视角"
             },
             {
               "term": "oversee",
               "zh": "监督；俯瞰并管理"
-            },
-            {
-              "term": "the crowd",
-              "zh": "人群"
             }
           ],
           "difficulty": 2
@@ -1244,16 +1252,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：If an emergency vehicle came 是条件状语从句；主句中 flip a switch 和 clear the intersection 是并列动作；by triggering all red lights 表示方式。核心结构：If A came, B could do C and D by doing E。",
           "phrases": [
             {
-              "term": "emergency vehicle",
-              "zh": "紧急车辆"
-            },
-            {
               "term": "clear the intersection",
               "zh": "清空路口"
             },
             {
               "term": "trigger all red lights",
               "zh": "触发所有红灯"
+            },
+            {
+              "term": "emergency vehicle",
+              "zh": "紧急车辆"
             },
             {
               "term": "by doing",
@@ -1306,6 +1314,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "in 1917",
               "zh": "在 1917 年"
+            },
+            {
+              "term": "be automatic",
+              "zh": "自动完成；无需人工操作"
             }
           ],
           "difficulty": 2
@@ -1344,20 +1356,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主语是 The evolution of traffic light signals；could not have a more appropriate context than... 是比较结构，字面是否定，实际强调“再合适不过”。核心结构：could not have a more... context than...。",
           "phrases": [
             {
-              "term": "evolution",
-              "zh": "演变"
-            },
-            {
               "term": "traffic light signals",
               "zh": "交通信号灯"
+            },
+            {
+              "term": "could not have a more...",
+              "zh": "再……不过了"
             },
             {
               "term": "appropriate context",
               "zh": "合适的背景"
             },
             {
-              "term": "could not have a more...",
-              "zh": "再……不过了"
+              "term": "evolution",
+              "zh": "演变"
             }
           ],
           "difficulty": 2
@@ -1396,16 +1408,20 @@ export const cet6Reading202512Set3 = {
               "zh": "让汽车变得买得起"
             },
             {
-              "term": "common people",
-              "zh": "普通人"
-            },
-            {
               "term": "rather than the wealthy",
               "zh": "而不是富人"
             },
             {
               "term": "larger scale factory production",
               "zh": "更大规模的工厂化生产"
+            },
+            {
+              "term": "rather than",
+              "zh": "而不是"
+            },
+            {
+              "term": "common people",
+              "zh": "普通人"
             }
           ],
           "difficulty": 2
@@ -1486,16 +1502,16 @@ export const cet6Reading202512Set3 = {
               "zh": "警示性黄灯"
             },
             {
+              "term": "running red lights",
+              "zh": "闯红灯"
+            },
+            {
               "term": "driver safety",
               "zh": "驾驶安全"
             },
             {
               "term": "decrease accidents",
               "zh": "减少事故"
-            },
-            {
-              "term": "running red lights",
-              "zh": "闯红灯"
             }
           ],
           "difficulty": 2
@@ -1508,16 +1524,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Stop lights were incredibly important；in chaotic city streets 作地点/环境状语。核心结构：A were incredibly important in B。",
           "phrases": [
             {
+              "term": "chaotic city streets",
+              "zh": "混乱的城市街道"
+            },
+            {
               "term": "stop lights",
               "zh": "停车信号灯"
             },
             {
               "term": "incredibly important",
               "zh": "极其重要"
-            },
-            {
-              "term": "chaotic city streets",
-              "zh": "混乱的城市街道"
             }
           ],
           "difficulty": 2
@@ -1530,16 +1546,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Crosswalks weren't introduced；even 强调时间之晚；not... until... 表示“直到……才……”。核心结构：A weren't even introduced until B。",
           "phrases": [
             {
-              "term": "crosswalks",
-              "zh": "人行横道"
-            },
-            {
               "term": "not ... until",
               "zh": "直到……才"
             },
             {
               "term": "be introduced",
               "zh": "被引入；被采用"
+            },
+            {
+              "term": "crosswalks",
+              "zh": "人行横道"
             }
           ],
           "difficulty": 2
@@ -1552,16 +1568,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The first pedestrian fatality... was in 1899；in the United States 修饰 fatality，限定范围。核心结构：The first A in B was in C。",
           "phrases": [
             {
+              "term": "in the United States",
+              "zh": "在美国"
+            },
+            {
               "term": "pedestrian",
               "zh": "行人"
             },
             {
               "term": "fatality",
               "zh": "死亡事故"
-            },
-            {
-              "term": "in the United States",
-              "zh": "在美国"
             }
           ],
           "difficulty": 2
@@ -1600,10 +1616,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：In Cleveland 作地点状语；主句是 an African-American inventor... came up with...；named Garrett Morgan 是过去分词短语，修饰 inventor；affordable 和 patented 并列修饰 traffic signal。核心结构：A named B came up with C。",
           "phrases": [
             {
-              "term": "African-American inventor",
-              "zh": "非裔美国发明家"
-            },
-            {
               "term": "named Garrett Morgan",
               "zh": "名叫加勒特·摩根的"
             },
@@ -1612,12 +1624,16 @@ export const cet6Reading202512Set3 = {
               "zh": "想出；提出"
             },
             {
-              "term": "affordable",
-              "zh": "价格低廉的；负担得起的"
-            },
-            {
               "term": "patented traffic signal",
               "zh": "获得专利的交通信号装置"
+            },
+            {
+              "term": "African-American inventor",
+              "zh": "非裔美国发明家"
+            },
+            {
+              "term": "affordable",
+              "zh": "价格低廉的；负担得起的"
             }
           ],
           "difficulty": 2
@@ -1630,16 +1646,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The yellow light made intersections safer...；made + 宾语 + 形容词是使役结构；than 引出比较对象。核心结构：A made B safer than C。",
           "phrases": [
             {
-              "term": "yellow light",
-              "zh": "黄灯"
-            },
-            {
               "term": "make intersections safer",
               "zh": "让路口更安全"
             },
             {
               "term": "old stop and go system",
               "zh": "旧的“停与行”系统"
+            },
+            {
+              "term": "yellow light",
+              "zh": "黄灯"
             }
           ],
           "difficulty": 2
@@ -1652,16 +1668,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The new design was inexpensive enough；that 引导结果从句，说明“便宜到足以产生什么结果”；allowed the installation of... 表示让安装成为可能。核心结构：A was adj. enough that B allowed C。",
           "phrases": [
             {
-              "term": "inexpensive enough",
-              "zh": "足够便宜"
-            },
-            {
               "term": "allow the installation of",
               "zh": "使……的安装成为可能"
             },
             {
               "term": "a lot more lights",
               "zh": "更多信号灯"
+            },
+            {
+              "term": "inexpensive enough",
+              "zh": "足够便宜"
             }
           ],
           "difficulty": 2
@@ -1678,12 +1694,12 @@ export const cet6Reading202512Set3 = {
               "zh": "把专利卖给"
             },
             {
-              "term": "General Electric",
-              "zh": "通用电气"
-            },
-            {
               "term": "the spread of",
               "zh": "……的传播；推广"
+            },
+            {
+              "term": "General Electric",
+              "zh": "通用电气"
             },
             {
               "term": "green lighted",
@@ -1700,12 +1716,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：but 连接转折分句；it is best to do 是形式主语结构；to check both ways 是真正主语；that may not... or is running... 是定语从句，修饰 oncoming traffic。核心结构：It is best to check... for A that may...。",
           "phrases": [
             {
-              "term": "that simple",
-              "zh": "就是这么简单"
-            },
-            {
               "term": "check both ways",
               "zh": "两边都看"
+            },
+            {
+              "term": "running the light",
+              "zh": "闯灯"
+            },
+            {
+              "term": "that simple",
+              "zh": "就是这么简单"
             },
             {
               "term": "oncoming traffic",
@@ -1714,10 +1734,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "paying attention",
               "zh": "注意；留意"
-            },
-            {
-              "term": "running the light",
-              "zh": "闯灯"
             }
           ],
           "difficulty": 2
@@ -1730,16 +1746,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Yellow means...；slow down 和 prepare to stop 是并列动作，解释黄灯含义。核心结构：A means do B and prepare to do C。",
           "phrases": [
             {
-              "term": "yellow",
-              "zh": "黄灯"
+              "term": "prepare to stop",
+              "zh": "准备停车"
             },
             {
               "term": "slow down",
               "zh": "减速"
             },
             {
-              "term": "prepare to stop",
-              "zh": "准备停车"
+              "term": "yellow",
+              "zh": "黄灯"
             }
           ],
           "difficulty": 2
@@ -1752,16 +1768,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：It 指代前一句的 Yellow；does not mean 否定误解；full-throttle ahead 是口语化表达，表示全速前进。核心结构：A does not mean B。",
           "phrases": [
             {
-              "term": "full-throttle",
-              "zh": "全速的；油门全开的"
+              "term": "does not mean",
+              "zh": "并不意味着"
             },
             {
               "term": "full-throttle ahead",
               "zh": "全速前进"
             },
             {
-              "term": "does not mean",
-              "zh": "并不意味着"
+              "term": "full-throttle",
+              "zh": "全速的；油门全开的"
             }
           ],
           "difficulty": 2
@@ -1790,6 +1806,10 @@ export const cet6Reading202512Set3 = {
               "zh": "导致罚单"
             },
             {
+              "term": "lead to",
+              "zh": "导致；通向"
+            },
+            {
               "term": "dangerous accidents",
               "zh": "危险事故"
             }
@@ -1804,20 +1824,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Red lights are...；a clear and consistent warning 是表语；to stop 修饰 warning，说明警告内容。核心结构：A are a warning to do B。",
           "phrases": [
             {
-              "term": "red lights",
-              "zh": "红灯"
-            },
-            {
               "term": "clear and consistent",
               "zh": "明确且一致的"
             },
             {
-              "term": "consistent",
-              "zh": "一致的"
-            },
-            {
               "term": "warning to stop",
               "zh": "停车警告"
+            },
+            {
+              "term": "red lights",
+              "zh": "红灯"
+            },
+            {
+              "term": "consistent",
+              "zh": "一致的"
             }
           ],
           "difficulty": 2
@@ -1830,10 +1850,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：Even where... 是让步地点状语从句；主句是 you must come to...；before turning right 是时间状语。核心结构：Even where A are allowed, B must do C before doing D。",
           "phrases": [
             {
-              "term": "even where",
-              "zh": "即使在……的地方"
-            },
-            {
               "term": "right turns are allowed",
               "zh": "允许右转"
             },
@@ -1844,6 +1860,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "before turning right",
               "zh": "在右转之前"
+            },
+            {
+              "term": "even where",
+              "zh": "即使在……的地方"
             }
           ],
           "difficulty": 2
@@ -1856,16 +1876,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 You must also yield to...；which has the right of way 是非限制性定语从句，补充说明 through traffic 为什么优先。核心结构：yield to A, which has B。",
           "phrases": [
             {
+              "term": "right of way",
+              "zh": "通行权"
+            },
+            {
               "term": "through traffic",
               "zh": "直行车辆"
             },
             {
               "term": "yield to",
               "zh": "让行给"
-            },
-            {
-              "term": "right of way",
-              "zh": "通行权"
             }
           ],
           "difficulty": 2
@@ -1900,16 +1920,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 New York City does not allow...；a right on red 作 allow 的宾语，指红灯时右转这一行为。核心结构：A does not allow B。",
           "phrases": [
             {
-              "term": "allow",
-              "zh": "允许"
-            },
-            {
               "term": "a right on red",
               "zh": "红灯右转"
             },
             {
               "term": "New York City",
               "zh": "纽约市"
+            },
+            {
+              "term": "allow",
+              "zh": "允许"
             }
           ],
           "difficulty": 2
@@ -1922,16 +1942,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Red arrows mean...；mean 后省略 that，引出宾语从句 you cannot turn right...；in most states 作范围状语。核心结构：A mean (that) B cannot do C。",
           "phrases": [
             {
-              "term": "red arrows",
-              "zh": "箭头信号"
-            },
-            {
               "term": "turn right on a red",
               "zh": "红灯时右转"
             },
             {
               "term": "in most states",
               "zh": "在大多数州"
+            },
+            {
+              "term": "red arrows",
+              "zh": "箭头信号"
             }
           ],
           "difficulty": 2
@@ -1944,10 +1964,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The green arrow... is the only time...；in these cases 作插入状语；you can make the turn 是省略关系词的定语从句，修饰 time。核心结构：A is the only time (that) B can do C。",
           "phrases": [
             {
-              "term": "green arrow",
-              "zh": "绿色箭头"
-            },
-            {
               "term": "in these cases",
               "zh": "在这些情况下"
             },
@@ -1958,6 +1974,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "make the turn",
               "zh": "完成转弯"
+            },
+            {
+              "term": "green arrow",
+              "zh": "绿色箭头"
             }
           ],
           "difficulty": 2
@@ -1969,10 +1989,6 @@ export const cet6Reading202512Set3 = {
           "zh": "不过，在伊利诺伊、堪萨斯、路易斯安那、马里兰、密歇根、新罕布什尔、北达科他、俄勒冈、南卡罗来纳、犹他、华盛顿州和怀俄明等州，完全停下之后可以在红色箭头处右转。",
           "structure": "结构分析：However 表示例外转折；主句是 you can take a right...；after a full stop 作时间条件；in the states of... 列出适用范围。核心结构：However, A can do B after C in D。",
           "phrases": [
-            {
-              "term": "however",
-              "zh": "不过；然而"
-            },
             {
               "term": "take a right",
               "zh": "向右转"
@@ -2022,16 +2038,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：When arriving at... 是省略结构，完整意思是 when you are arriving at...；主句是祈使句 make a full and complete stop。核心结构：When doing A, do B。",
           "phrases": [
             {
-              "term": "arrive at",
-              "zh": "到达；遇到"
-            },
-            {
               "term": "flashing red light",
               "zh": "闪烁红灯"
             },
             {
               "term": "make a full and complete stop",
               "zh": "完全停下"
+            },
+            {
+              "term": "arrive at",
+              "zh": "到达；遇到"
             }
           ],
           "difficulty": 2
@@ -2048,16 +2064,16 @@ export const cet6Reading202512Set3 = {
               "zh": "闪烁红色箭头"
             },
             {
-              "term": "similarly",
-              "zh": "同样地"
+              "term": "take the turn",
+              "zh": "转弯"
             },
             {
               "term": "proceed to",
               "zh": "继续去做"
             },
             {
-              "term": "take the turn",
-              "zh": "转弯"
+              "term": "similarly",
+              "zh": "同样地"
             }
           ],
           "difficulty": 2
@@ -2074,16 +2090,16 @@ export const cet6Reading202512Set3 = {
               "zh": "闪烁黄灯"
             },
             {
-              "term": "yield",
-              "zh": "让行"
-            },
-            {
               "term": "signal caution",
               "zh": "发出警示"
             },
             {
               "term": "fire station",
               "zh": "消防站"
+            },
+            {
+              "term": "yield",
+              "zh": "让行"
             }
           ],
           "difficulty": 2
@@ -2096,20 +2112,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：There are no... 是存在句的否定；since 引导原因状语从句；it 指代 all-direction flashing yellow lights 这种设置。核心结构：There are no A, since B is prohibited。",
           "phrases": [
             {
-              "term": "all-direction",
-              "zh": "全方向的"
-            },
-            {
               "term": "flashing yellow lights",
               "zh": "闪烁黄灯"
+            },
+            {
+              "term": "in the United States",
+              "zh": "在美国"
             },
             {
               "term": "be prohibited",
               "zh": "被禁止"
             },
             {
-              "term": "in the United States",
-              "zh": "在美国"
+              "term": "all-direction",
+              "zh": "全方向的"
             }
           ],
           "difficulty": 2
@@ -2200,16 +2216,16 @@ export const cet6Reading202512Set3 = {
               "zh": "闪烁黄箭头"
             },
             {
-              "term": "be shown",
-              "zh": "出现；显示"
-            },
-            {
               "term": "take the turn",
               "zh": "转弯"
             },
             {
               "term": "yielding to pedestrians and traffic",
               "zh": "让行给行人和车辆"
+            },
+            {
+              "term": "be shown",
+              "zh": "出现；显示"
             }
           ],
           "difficulty": 2
@@ -2226,20 +2242,20 @@ export const cet6Reading202512Set3 = {
               "zh": "稳定黄箭头"
             },
             {
-              "term": "maintain",
-              "zh": "保留；维持"
-            },
-            {
               "term": "yellow light caution",
               "zh": "黄灯警示含义"
+            },
+            {
+              "term": "prepare to stop",
+              "zh": "准备停车"
             },
             {
               "term": "three-light signals",
               "zh": "三灯信号"
             },
             {
-              "term": "prepare to stop",
-              "zh": "准备停车"
+              "term": "maintain",
+              "zh": "保留；维持"
             }
           ],
           "difficulty": 2
@@ -2278,12 +2294,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The red arrow is about to start；be about to do 表示动作即将发生。核心结构：A is about to do B。",
           "phrases": [
             {
-              "term": "red arrow",
-              "zh": "红色箭头"
-            },
-            {
               "term": "be about to",
               "zh": "即将；马上要"
+            },
+            {
+              "term": "red arrow",
+              "zh": "红色箭头"
             }
           ],
           "difficulty": 2
@@ -2296,16 +2312,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Vehicles should stop；if safely possible 是省略结构，完整意思是 if it is safely possible。核心结构：A should do B if possible。",
           "phrases": [
             {
-              "term": "vehicles",
-              "zh": "车辆"
-            },
-            {
               "term": "if safely possible",
               "zh": "如果安全条件允许"
             },
             {
               "term": "should stop",
               "zh": "应当停车"
+            },
+            {
+              "term": "vehicles",
+              "zh": "车辆"
             }
           ],
           "difficulty": 2
@@ -2318,16 +2334,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Traffic tickets are possible；for running... 表示导致罚单的原因；running a steady yellow arrow 是动名词短语。核心结构：A are possible for doing B。",
           "phrases": [
             {
-              "term": "traffic tickets",
-              "zh": "交通罚单"
-            },
-            {
               "term": "running a steady yellow arrow",
               "zh": "闯稳定黄箭头"
             },
             {
               "term": "steady yellow arrow",
               "zh": "稳定黄箭头"
+            },
+            {
+              "term": "traffic tickets",
+              "zh": "交通罚单"
             }
           ],
           "difficulty": 2
@@ -2344,12 +2360,12 @@ export const cet6Reading202512Set3 = {
               "zh": "交通信号灯含义"
             },
             {
-              "term": "fairly consistent",
-              "zh": "相当一致"
-            },
-            {
               "term": "across the board",
               "zh": "全面地；总体上"
+            },
+            {
+              "term": "fairly consistent",
+              "zh": "相当一致"
             },
             {
               "term": "various deviations",
@@ -2366,16 +2382,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Green means...，后面省略 that；it's safe to proceed 是形式主语结构；though 引导让步从句。核心结构：A means (that) it is safe to do B, though C。",
           "phrases": [
             {
-              "term": "green",
-              "zh": "绿灯"
-            },
-            {
               "term": "safe to proceed",
               "zh": "可以安全前行"
             },
             {
               "term": "exercise caution",
               "zh": "保持谨慎"
+            },
+            {
+              "term": "green",
+              "zh": "绿灯"
             }
           ],
           "difficulty": 2
@@ -2410,16 +2426,8 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Red means...；danger 和 stop 是并列含义，分别表示警示和动作要求。核心结构：A means B and C。",
           "phrases": [
             {
-              "term": "red",
-              "zh": "红灯"
-            },
-            {
               "term": "danger",
               "zh": "危险"
-            },
-            {
-              "term": "stop",
-              "zh": "停车；停止"
             }
           ],
           "difficulty": 2
@@ -2438,10 +2446,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "traffic signals",
               "zh": "交通信号"
-            },
-            {
-              "term": "obey",
-              "zh": "遵守"
             }
           ],
           "difficulty": 2
@@ -2462,16 +2466,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：破折号前主句是 Mindfulness has been shown to have...；破折号后 it can help... 对 health benefits 作具体解释；reduce anxiety 和 promote healing 是并列动作；those suffering from chronic illness 指慢性病患者。核心结构：A has been shown to have B—it can help do C and D。",
           "phrases": [
             {
-              "term": "health benefits",
-              "zh": "健康益处"
-            },
-            {
-              "term": "mindfulness",
-              "zh": "正念"
+              "term": "a number of",
+              "zh": "许多；若干"
             },
             {
               "term": "has been shown to",
               "zh": "已被证明；研究表明"
+            },
+            {
+              "term": "health benefits",
+              "zh": "健康益处"
             },
             {
               "term": "reduce anxiety",
@@ -2484,6 +2488,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "chronic illness",
               "zh": "慢性疾病"
+            },
+            {
+              "term": "mindfulness",
+              "zh": "正念"
             }
           ],
           "difficulty": 3
@@ -2500,10 +2508,6 @@ export const cet6Reading202512Set3 = {
               "zh": "建立在……之上"
             },
             {
-              "term": "insight",
-              "zh": "洞见；深刻理解"
-            },
-            {
               "term": "ancient Buddhist texts",
               "zh": "古代佛教文本"
             },
@@ -2512,12 +2516,16 @@ export const cet6Reading202512Set3 = {
               "zh": "有能力做"
             },
             {
+              "term": "be caught up in",
+              "zh": "被卷入；陷入"
+            },
+            {
               "term": "observe experience",
               "zh": "观察体验"
             },
             {
-              "term": "be caught up in",
-              "zh": "被卷入；陷入"
+              "term": "insight",
+              "zh": "洞见；深刻理解"
             }
           ],
           "difficulty": 2
@@ -2529,14 +2537,6 @@ export const cet6Reading202512Set3 = {
           "zh": "简单地说，这意味着我们可以观察到自己正在产生某种渴望、愉快的念头，甚至可怕的情绪，而不必在当下以放大这种感受、或让思绪失控转向旧记忆和未来事件的方式作出反应。",
           "structure": "结构分析：主句是 This means simply that...；that 从句中 it is possible to observe... 是形式主语结构；having a craving... 列举被观察到的心理内容；without reacting... 作方式状语；that amplifies... or sends... 修饰 way。核心结构：It is possible to observe A without reacting in a way that does B or C。",
           "phrases": [
-            {
-              "term": "craving",
-              "zh": "渴望；强烈欲望"
-            },
-            {
-              "term": "scary emotion",
-              "zh": "可怕的情绪"
-            },
             {
               "term": "in the moment",
               "zh": "在当下"
@@ -2550,8 +2550,16 @@ export const cet6Reading202512Set3 = {
               "zh": "让思绪失控发散"
             },
             {
+              "term": "scary emotion",
+              "zh": "可怕的情绪"
+            },
+            {
               "term": "anticipating events",
               "zh": "预想未来事件"
+            },
+            {
+              "term": "craving",
+              "zh": "渴望；强烈欲望"
             }
           ],
           "difficulty": 3
@@ -2563,10 +2571,6 @@ export const cet6Reading202512Set3 = {
           "zh": "当我们学会不再用喜欢、不喜欢，或好坏判断去回应体验时，这种正念练习可以帮助安定身心。",
           "structure": "结构分析：主句是 This practice... can help calm...；as 引导时间/伴随状语从句；not to react to experience... 是 learn 的宾语；with likes and dislikes... 说明反应方式。核心结构：A can help calm B as we learn not to react to C with D。",
           "phrases": [
-            {
-              "term": "mindfulness",
-              "zh": "正念"
-            },
             {
               "term": "calm the mind and the body",
               "zh": "安定身心"
@@ -2582,6 +2586,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "judgments of good and bad",
               "zh": "好坏判断"
+            },
+            {
+              "term": "mindfulness",
+              "zh": "正念"
             }
           ],
           "difficulty": 2
@@ -2598,12 +2606,12 @@ export const cet6Reading202512Set3 = {
               "zh": "冷漠或无动于衷"
             },
             {
-              "term": "fully present",
-              "zh": "充分在场；活在当下"
-            },
-            {
               "term": "not ... but ...",
               "zh": "不是……而是……"
+            },
+            {
+              "term": "fully present",
+              "zh": "充分在场；活在当下"
             }
           ],
           "difficulty": 2
@@ -2616,10 +2624,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主干是 One of the challenges... is that...；of practicing mindfulness 修饰 challenges；that 引导表语从句；there has been... 是存在句。核心结构：One of the challenges of doing A is that there has been B。",
           "phrases": [
             {
-              "term": "mindfulness",
-              "zh": "正念"
-            },
-            {
               "term": "contemporary world",
               "zh": "当代世界"
             },
@@ -2630,6 +2634,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "human attention",
               "zh": "人类注意力"
+            },
+            {
+              "term": "mindfulness",
+              "zh": "正念"
             }
           ],
           "difficulty": 2
@@ -2642,20 +2650,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The artist Jenny Odell argues；that 引导宾语从句；in our attention economy 作状语；that big corporations buy and sell 修饰 commodity。核心结构：A argues that B has been transformed into C that D buy and sell。",
           "phrases": [
             {
-              "term": "attention economy",
-              "zh": "注意力经济"
-            },
-            {
               "term": "be transformed into",
               "zh": "被转化成"
             },
             {
-              "term": "commodity",
-              "zh": "商品"
+              "term": "attention economy",
+              "zh": "注意力经济"
             },
             {
               "term": "big corporations",
               "zh": "大公司"
+            },
+            {
+              "term": "commodity",
+              "zh": "商品"
             }
           ],
           "difficulty": 2
@@ -2668,6 +2676,14 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 This economy rests on...；of mobile phones and social media 修饰 revolution；that makes it possible... 修饰 revolution；it 是形式宾语，真正宾语是 for corporations to target...。核心结构：A rests on B that makes it possible for C to do D。",
           "phrases": [
             {
+              "term": "make it possible for ... to",
+              "zh": "使……能够做"
+            },
+            {
+              "term": "target our attention",
+              "zh": "瞄准我们的注意力"
+            },
+            {
               "term": "rest on",
               "zh": "建立在……之上"
             },
@@ -2678,14 +2694,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "social media",
               "zh": "社交媒体"
-            },
-            {
-              "term": "make it possible for ... to",
-              "zh": "使……能够做"
-            },
-            {
-              "term": "target our attention",
-              "zh": "瞄准我们的注意力"
             }
           ],
           "difficulty": 2
@@ -2698,16 +2706,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The devices... are a perpetual diversion...；most people use 是省略关系词的定语从句，修饰 devices；from the present moment 说明被分散离开的对象。核心结构：The devices (that) A use are B from C。",
           "phrases": [
             {
-              "term": "devices",
-              "zh": "设备"
+              "term": "the present moment",
+              "zh": "当下"
             },
             {
               "term": "perpetual diversion",
               "zh": "持续不断的干扰"
             },
             {
-              "term": "the present moment",
-              "zh": "当下"
+              "term": "devices",
+              "zh": "设备"
             }
           ],
           "difficulty": 2
@@ -2724,16 +2732,16 @@ export const cet6Reading202512Set3 = {
               "zh": "结果是"
             },
             {
-              "term": "as though",
-              "zh": "仿佛；好像"
-            },
-            {
               "term": "ability to focus",
               "zh": "专注的能力"
             },
             {
               "term": "be fully present",
               "zh": "充分活在当下"
+            },
+            {
+              "term": "as though",
+              "zh": "仿佛；好像"
             }
           ],
           "difficulty": 2
@@ -2746,16 +2754,8 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：But 表示转折；主句是 mindfulness can help us...；resist 和 relish 是并列宾语补足动作；that make life special 修饰 things；like being together... 是举例。核心结构：A can help us do B and C the things that D。",
           "phrases": [
             {
-              "term": "mindfulness",
-              "zh": "正念"
-            },
-            {
               "term": "resist the attention economy",
               "zh": "抵抗注意力经济"
-            },
-            {
-              "term": "relish",
-              "zh": "享受；珍视"
             },
             {
               "term": "make life special",
@@ -2764,6 +2764,14 @@ export const cet6Reading202512Set3 = {
             {
               "term": "being together with",
               "zh": "与……在一起"
+            },
+            {
+              "term": "mindfulness",
+              "zh": "正念"
+            },
+            {
+              "term": "relish",
+              "zh": "享受；珍视"
             }
           ],
           "difficulty": 2
@@ -2775,6 +2783,10 @@ export const cet6Reading202512Set3 = {
           "zh": "大多数正念研究关注这种练习给个人带来的益处，但一些学者认为，我们不仅可以为自己练习正念，也可以为他人练习正念。",
           "structure": "结构分析：but 连接两个分句；前半主句是 research focuses on...；后半是 scholars assert that...；that 从句中 not only... but also... 连接两个并列谓语。核心结构：A focuses on B, but C assert that we can not only do D but also do E。",
           "phrases": [
+            {
+              "term": "not only ... but also ...",
+              "zh": "不仅……而且……"
+            },
             {
               "term": "practice mindfulness",
               "zh": "练习正念"
@@ -2790,10 +2802,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "assert that",
               "zh": "声称；认为"
-            },
-            {
-              "term": "not only ... but also ...",
-              "zh": "不仅……而且……"
             }
           ],
           "difficulty": 2
@@ -2812,6 +2820,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "stronger, healthier relationships",
               "zh": "更牢固、更健康的关系"
+            },
+            {
+              "term": "help sb. build",
+              "zh": "帮助某人建立/构建"
             }
           ],
           "difficulty": 2
@@ -2846,16 +2858,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：However 表示转折；just as... 引导类比状语从句；两个 it is possible to... 都是形式主语结构；without reacting 和 without getting tied up... 分别说明“不反应”的方式。核心结构：Just as it is possible to do A without B, it is possible to do C without D。",
           "phrases": [
             {
-              "term": "just as",
-              "zh": "正如"
-            },
-            {
               "term": "watch ourselves having an experience",
               "zh": "观察自己经历某种体验"
             },
             {
               "term": "get tied up in",
               "zh": "陷入；被缠住"
+            },
+            {
+              "term": "just as",
+              "zh": "正如"
             },
             {
               "term": "reactivity",
@@ -2876,20 +2888,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The gift of mindfulness is a practice...；of listening... 修饰 practice；with compassion 说明倾听方式；to others describe... 中 listen to others describe 表示“听他人描述”。核心结构：A is a practice of listening with B to C describe D。",
           "phrases": [
             {
-              "term": "mindfulness",
-              "zh": "正念"
-            },
-            {
-              "term": "compassion",
-              "zh": "同情心；慈悲"
-            },
-            {
               "term": "listening with compassion",
               "zh": "带着同情心倾听"
             },
             {
               "term": "describe their experiences",
               "zh": "描述他们的经历"
+            },
+            {
+              "term": "mindfulness",
+              "zh": "正念"
+            },
+            {
+              "term": "compassion",
+              "zh": "同情心；慈悲"
             }
           ],
           "difficulty": 2
@@ -2928,6 +2940,14 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 It means practicing...；being fully present 和 listening to them 是并列动名词内容；with complete attention without judgment 说明倾听方式；while resisting... 表示同时进行的动作；to make... 修饰 urge。核心结构：It means practicing A and B, while resisting C to do D。",
           "phrases": [
             {
+              "term": "resist the urge to",
+              "zh": "克制想要……的冲动"
+            },
+            {
+              "term": "make the interaction about you",
+              "zh": "让互动围绕你自己展开"
+            },
+            {
               "term": "fully present",
               "zh": "全然在场"
             },
@@ -2938,14 +2958,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "without judgment",
               "zh": "不带评判"
-            },
-            {
-              "term": "resist the urge to",
-              "zh": "克制想要……的冲动"
-            },
-            {
-              "term": "make the interaction about you",
-              "zh": "让互动围绕你自己展开"
             }
           ],
           "difficulty": 2
@@ -2966,12 +2978,12 @@ export const cet6Reading202512Set3 = {
               "zh": "基于；根据"
             },
             {
-              "term": "worthless",
-              "zh": "没有价值的；一文不值的"
-            },
-            {
               "term": "distracted world",
               "zh": "充满干扰的世界"
+            },
+            {
+              "term": "worthless",
+              "zh": "没有价值的；一文不值的"
             },
             {
               "term": "precious",
@@ -3000,12 +3012,12 @@ export const cet6Reading202512Set3 = {
               "zh": "前几天"
             },
             {
-              "term": "log into",
-              "zh": "登录"
-            },
-            {
               "term": "hadn't used before",
               "zh": "以前没有使用过"
+            },
+            {
+              "term": "log into",
+              "zh": "登录"
             }
           ],
           "difficulty": 2
@@ -3018,12 +3030,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：Since I was a new user 是原因状语从句；主句是 the website decided... and so set...；that it needed... 是 decided 的宾语从句；to determine whether... 作目的状语，whether 引出二选一内容。核心结构：Since A, B decided that C and so did D to determine whether E or F。",
           "phrases": [
             {
-              "term": "new user",
-              "zh": "新用户"
-            },
-            {
               "term": "check I wasn't a robot",
               "zh": "确认我不是机器人"
+            },
+            {
+              "term": "new user",
+              "zh": "新用户"
             },
             {
               "term": "Captcha test",
@@ -3048,12 +3060,12 @@ export const cet6Reading202512Set3 = {
               "zh": "被展示；收到"
             },
             {
-              "term": "roadside scene",
-              "zh": "路边场景"
-            },
-            {
               "term": "laid a grid over",
               "zh": "在……上覆盖网格"
+            },
+            {
+              "term": "roadside scene",
+              "zh": "路边场景"
             }
           ],
           "difficulty": 2
@@ -3066,16 +3078,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 My challenge was to click...；to click... 是表语；that contained a traffic sign 是定语从句，修饰 each cell。核心结构：A was to click on each B that contained C。",
           "phrases": [
             {
-              "term": "challenge",
-              "zh": "挑战；任务"
+              "term": "cell in the grid",
+              "zh": "网格中的格子"
             },
             {
               "term": "click on",
               "zh": "点击"
-            },
-            {
-              "term": "cell in the grid",
-              "zh": "网格中的格子"
             },
             {
               "term": "traffic sign",
@@ -3091,10 +3099,6 @@ export const cet6Reading202512Set3 = {
           "zh": "我照做了，心里有点恼火。",
           "structure": "结构分析：主句是 I did so；a bit irritated 是形容词短语作伴随状语，说明做这件事时的状态。核心结构：A did so, adj.。",
           "phrases": [
-            {
-              "term": "do so",
-              "zh": "这样做；照做"
-            },
             {
               "term": "a bit irritated",
               "zh": "有点恼火"
@@ -3132,16 +3136,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：Like a lamb 是比喻性状语，表示顺从；主句是 I complied；after which 引导非限制性定语从句，指代前面整个动作之后发生的事。核心结构：A complied, after which B accepted C。",
           "phrases": [
             {
-              "term": "comply",
-              "zh": "遵从；照做"
+              "term": "accept my input",
+              "zh": "接受我的输入"
             },
             {
               "term": "after which",
               "zh": "在那之后"
             },
             {
-              "term": "accept my input",
-              "zh": "接受我的输入"
+              "term": "comply",
+              "zh": "遵从；照做"
             }
           ],
           "difficulty": 2
@@ -3154,10 +3158,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 I realised...；what I had been doing 是 realised 的宾语从句中的主语；was adding... 是表语；for training... 表示用途；that guides self-driving cars 修饰 software。核心结构：A realised what B had been doing was doing C for D that E。",
           "phrases": [
             {
-              "term": "realise",
-              "zh": "意识到"
-            },
-            {
               "term": "add to a dataset",
               "zh": "给数据集添加内容"
             },
@@ -3168,6 +3168,10 @@ export const cet6Reading202512Set3 = {
             {
               "term": "self-driving cars",
               "zh": "自动驾驶汽车"
+            },
+            {
+              "term": "realise",
+              "zh": "意识到"
             }
           ],
           "difficulty": 2
@@ -3184,12 +3188,12 @@ export const cet6Reading202512Set3 = {
               "zh": "获得使用权限；访问"
             },
             {
-              "term": "automated service",
-              "zh": "自动化服务"
-            },
-            {
               "term": "benefit financially from",
               "zh": "从……中获得经济收益"
+            },
+            {
+              "term": "automated service",
+              "zh": "自动化服务"
             },
             {
               "term": "unpaid labour",
@@ -3210,20 +3214,20 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：But note... 是祈使句；the delicious additional irony 是宾语；that the Captcha is described... 是同位语从句，解释 irony 的内容；as an automated Turing test 作宾语补足语。核心结构：Note the irony that A is described as B。",
           "phrases": [
             {
-              "term": "additional irony",
-              "zh": "额外的讽刺"
-            },
-            {
-              "term": "Captcha",
-              "zh": "验证码"
-            },
-            {
               "term": "be described as",
               "zh": "被描述为"
             },
             {
               "term": "automated Turing test",
               "zh": "自动化图灵测试"
+            },
+            {
+              "term": "additional irony",
+              "zh": "额外的讽刺"
+            },
+            {
+              "term": "Captcha",
+              "zh": "验证码"
             }
           ],
           "difficulty": 2
@@ -3236,10 +3240,6 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The Turing test was conceived...；you may recall 是插入语；as a way of enabling... 表示“被设想成一种使……成为可能的方法”；whether 引导 determine 的宾语从句；in such a way that... 表示“以至于……的方式”。核心结构：A was conceived as a way of enabling B to determine whether C could do D in such a way that E。",
           "phrases": [
             {
-              "term": "Turing test",
-              "zh": "图灵测试"
-            },
-            {
               "term": "be conceived as",
               "zh": "被设想为；被构想成"
             },
@@ -3248,12 +3248,16 @@ export const cet6Reading202512Set3 = {
               "zh": "使人类能够"
             },
             {
-              "term": "determine whether",
-              "zh": "判断是否"
-            },
-            {
               "term": "in such a way that",
               "zh": "以至于……的方式"
+            },
+            {
+              "term": "Turing test",
+              "zh": "图灵测试"
+            },
+            {
+              "term": "determine whether",
+              "zh": "判断是否"
             }
           ],
           "difficulty": 2
@@ -3266,16 +3270,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：So 承接上文；主句是 we have wandered into a world；in which 引导定语从句修饰 world；make us do tricks 是使役结构；to prove that... 作目的状语。核心结构：wander into a world in which A make B do C to prove D。",
           "phrases": [
             {
-              "term": "wander into",
-              "zh": "不知不觉走进；误入"
-            },
-            {
               "term": "a world in which",
               "zh": "一个……的世界"
             },
             {
               "term": "make us do tricks",
               "zh": "让我们做动作；让我们耍把戏"
+            },
+            {
+              "term": "wander into",
+              "zh": "不知不觉走进；误入"
             },
             {
               "term": "prove that",
@@ -3314,16 +3318,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 The metaphor... comes to mind；of the boiling frog 修饰 metaphor，说明是哪一个隐喻。核心结构：A comes to mind。",
           "phrases": [
             {
-              "term": "metaphor",
-              "zh": "隐喻；比喻"
+              "term": "come to mind",
+              "zh": "浮现在脑海中；被想到"
             },
             {
               "term": "boiling frog",
               "zh": "温水煮青蛙"
             },
             {
-              "term": "come to mind",
-              "zh": "浮现在脑海中；被想到"
+              "term": "metaphor",
+              "zh": "隐喻；比喻"
             }
           ],
           "difficulty": 2
@@ -3336,6 +3340,10 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：这是一般疑问句；主干是 Have we become... conditioned；by digital technology 表示施动来源；so... that... 构成结果结构；what's been happening to us 是 see 的宾语从句。核心结构：Have we become so A by B that we don't see C?",
           "phrases": [
             {
+              "term": "what's been happening to us",
+              "zh": "正在我们身上发生的事；正在对我们产生的影响"
+            },
+            {
               "term": "digital technology",
               "zh": "数字技术"
             },
@@ -3346,10 +3354,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "so...that...",
               "zh": "如此……以至于……"
-            },
-            {
-              "term": "what's been happening to us",
-              "zh": "正在我们身上发生的事；正在对我们产生的影响"
             }
           ],
           "difficulty": 2
@@ -3366,6 +3370,10 @@ export const cet6Reading202512Set3 = {
               "zh": "被训练到；被驯化到"
             },
             {
+              "term": "to the point where",
+              "zh": "到了……的地步"
+            },
+            {
               "term": "governed by",
               "zh": "由……支配；由……控制"
             },
@@ -3376,10 +3384,6 @@ export const cet6Reading202512Set3 = {
             {
               "term": "trade convenience",
               "zh": "以便利作交换；为了便利付出代价"
-            },
-            {
-              "term": "to the point where",
-              "zh": "到了……的地步"
             }
           ],
           "difficulty": 2
@@ -3391,6 +3395,14 @@ export const cet6Reading202512Set3 = {
           "zh": "在一本近来出版、令人震惊又发人深省的书中，两位学者——法学教授布雷特·弗里施曼和哲学家埃文·塞林格——认为，这个问题的答案是“是”。",
           "structure": "结构分析：In a recent... book 作句首状语；主句是 two scholars... argue；破折号内是两位学者身份的同位说明；that 引导 argue 的宾语从句。核心结构：In A, two scholars argue that B is yes。",
           "phrases": [
+            {
+              "term": "law professor",
+              "zh": "法学教授"
+            },
+            {
+              "term": "argue that",
+              "zh": "认为；主张"
+            },
             {
               "term": "startling",
               "zh": "令人震惊的；惊人的"
@@ -3404,16 +3416,8 @@ export const cet6Reading202512Set3 = {
               "zh": "学者"
             },
             {
-              "term": "law professor",
-              "zh": "法学教授"
-            },
-            {
               "term": "philosopher",
               "zh": "哲学家"
-            },
-            {
-              "term": "argue that",
-              "zh": "认为；主张"
             }
           ],
           "difficulty": 3
@@ -3426,12 +3430,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：There is nothing... 是存在句；technophobic 作形容词，说明“这件事并不带有技术恐惧色彩”。核心结构：There is nothing A about B。",
           "phrases": [
             {
+              "term": "nothing ... about",
+              "zh": "并没有……之处"
+            },
+            {
               "term": "technophobic",
               "zh": "技术恐惧的；排斥技术的"
             },
             {
-              "term": "nothing ... about",
-              "zh": "并没有……之处"
+              "term": "There is nothing ... about that",
+              "zh": "那并不……；那没有任何……之处"
             }
           ],
           "difficulty": 2
@@ -3444,16 +3452,16 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句由 and then 连接两个并列分句；前后宾语和主语互换，形成对称表达，强调人和工具会彼此影响。核心结构：We shape A, and then A shape us。",
           "phrases": [
             {
+              "term": "and then",
+              "zh": "然后；接着"
+            },
+            {
               "term": "shape",
               "zh": "塑造；影响形成"
             },
             {
               "term": "tools",
               "zh": "工具"
-            },
-            {
-              "term": "and then",
-              "zh": "然后；接着"
             }
           ],
           "difficulty": 2
@@ -3466,24 +3474,24 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：主句是 Technology is supposed to provide...；that serve human ends 是定语从句，修饰 tools，说明工具应该服务的对象。核心结构：A is supposed to provide B that serve C。",
           "phrases": [
             {
-              "term": "technology",
-              "zh": "技术"
-            },
-            {
               "term": "be supposed to",
               "zh": "本应；理应"
-            },
-            {
-              "term": "provide tools",
-              "zh": "提供工具"
             },
             {
               "term": "serve human ends",
               "zh": "服务于人类目的"
             },
             {
+              "term": "provide tools",
+              "zh": "提供工具"
+            },
+            {
               "term": "human ends",
               "zh": "人类目的；人的目标"
+            },
+            {
+              "term": "technology",
+              "zh": "技术"
             }
           ],
           "difficulty": 2
@@ -3496,16 +3504,8 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：But 表示转折；as the machine-learning Captcha demonstrates 是插入状语，说明依据；主句是 a significant proportion... sees (and uses) humans as means...；that are not ours 修饰 ends。核心结构：A sees and uses B as means to ends that C。",
           "phrases": [
             {
-              "term": "machine-learning Captcha",
-              "zh": "机器学习验证码"
-            },
-            {
               "term": "a significant proportion of",
               "zh": "相当大一部分"
-            },
-            {
-              "term": "digital tech",
-              "zh": "数字技术"
             },
             {
               "term": "see/use A as B",
@@ -3514,6 +3514,14 @@ export const cet6Reading202512Set3 = {
             {
               "term": "means to ends",
               "zh": "达成目的的手段"
+            },
+            {
+              "term": "machine-learning Captcha",
+              "zh": "机器学习验证码"
+            },
+            {
+              "term": "digital tech",
+              "zh": "数字技术"
             },
             {
               "term": "not ours",
@@ -3538,16 +3546,16 @@ export const cet6Reading202512Set3 = {
               "zh": "把我们降格为；使我们沦为"
             },
             {
-              "term": "cheery rats",
-              "zh": "快乐的实验鼠；这里比喻被操控的人"
-            },
-            {
               "term": "running on treadmills",
               "zh": "在跑步机上奔跑"
             },
             {
               "term": "have our interests at heart",
               "zh": "把我们的利益放在心上；真正在乎我们的利益"
+            },
+            {
+              "term": "cheery rats",
+              "zh": "快乐的实验鼠；这里比喻被操控的人"
             }
           ],
           "difficulty": 2
@@ -3560,12 +3568,12 @@ export const cet6Reading202512Set3 = {
           "structure": "结构分析：这是省略句，完整意思是 So let us go back to the frog metaphor；back to... 用来把话题拉回前文。核心结构：So, back to A。",
           "phrases": [
             {
-              "term": "back to",
-              "zh": "回到"
-            },
-            {
               "term": "frog metaphor",
               "zh": "青蛙隐喻"
+            },
+            {
+              "term": "So back to...",
+              "zh": "那么回到……；把话题拉回前文"
             }
           ],
           "difficulty": 2
@@ -3582,12 +3590,12 @@ export const cet6Reading202512Set3 = {
               "zh": "足够聪明去"
             },
             {
-              "term": "jump out",
-              "zh": "跳出去；摆脱出来"
-            },
-            {
               "term": "before it's too late",
               "zh": "在为时已晚之前"
+            },
+            {
+              "term": "jump out",
+              "zh": "跳出去；摆脱出来"
             }
           ],
           "difficulty": 2
@@ -3604,12 +3612,12 @@ export const cet6Reading202512Set3 = {
               "zh": "甚至不必"
             },
             {
-              "term": "Google it",
-              "zh": "谷歌搜索它；上网搜索它"
-            },
-            {
               "term": "know the answer",
               "zh": "知道答案"
+            },
+            {
+              "term": "Google it",
+              "zh": "谷歌搜索它；上网搜索它"
             }
           ],
           "difficulty": 2

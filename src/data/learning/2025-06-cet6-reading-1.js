@@ -10,7 +10,7 @@ export const cet6Reading202506Set1 = {
       "kicker": "Section A",
       "title": "选词填空 · 原文整理",
       "navLabel": "选词填空",
-      "description": "保留原文空格编号，按阅读顺序拆分为可复盘句子。",
+      "description": "按阅读顺序拆分为可复盘句子，补全原题空格，便于逐句精读。",
       "items": [
         {
           "label": "A01",
@@ -28,16 +28,16 @@ export const cet6Reading202506Set1 = {
               "zh": "得知；了解到"
             },
             {
-              "term": "poisonous",
-              "zh": "有毒的"
-            },
-            {
               "term": "synthetic pesticides",
               "zh": "合成杀虫剂"
             },
             {
               "term": "college campus",
               "zh": "大学校园"
+            },
+            {
+              "term": "poisonous",
+              "zh": "有毒的"
             }
           ],
           "difficulty": 2
@@ -50,10 +50,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Shocked but not surprised 是形容词短语作状语，说明主语状态；主句是 she knew；she had to do something 是 knew 的宾语从句。核心结构：A, she knew that B had to do C。",
           "phrases": [
             {
-              "term": "shocked",
-              "zh": "震惊的"
-            },
-            {
               "term": "not surprised",
               "zh": "并不意外"
             },
@@ -64,6 +60,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "do something",
               "zh": "采取行动；做点什么"
+            },
+            {
+              "term": "shocked",
+              "zh": "震惊的"
             }
           ],
           "difficulty": 2
@@ -76,10 +76,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Along with... 作伴随状语；主句有两个并列谓语 did 和 discovered；small but growing 修饰 movement；led by... 是过去分词短语，修饰 movement；to rid... 表示该运动的目的。核心结构：Along with A, B did C and discovered D led by E to rid F of G。",
           "phrases": [
             {
-              "term": "along with",
-              "zh": "和……一起"
-            },
-            {
               "term": "a quick web search",
               "zh": "一次快速网络搜索"
             },
@@ -88,12 +84,16 @@ export const cet6Reading202506Set1 = {
               "zh": "一个规模虽小但正在发展的运动"
             },
             {
-              "term": "led by",
-              "zh": "由……领导"
-            },
-            {
               "term": "rid A of B",
               "zh": "使 A 摆脱 B"
+            },
+            {
+              "term": "along with",
+              "zh": "和……一起"
+            },
+            {
+              "term": "led by",
+              "zh": "由……领导"
             },
             {
               "term": "artificial herbicides",
@@ -105,33 +105,21 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A04",
           "part": "Cloze",
-          "en": "Like many, Charlene experiences climate anxiety—a 27 fear of a climate catastrophe — and was, at the time, looking for an 28.",
-          "zh": "和许多人一样，Charlene 也有气候焦虑，也就是对气候灾难的第 27 空所指恐惧；当时她正在寻找一个第 28 空所指的出口或解决方向。",
-          "structure": "结构分析：Like many 作比较状语；主句有两个并列谓语 experiences 和 was looking for；破折号中 a 27 fear of a climate catastrophe 解释 climate anxiety；at the time 作时间插入语。核心结构：Like A, B experiences C, a D fear of E, and was looking for F。",
+          "en": "Like many, Charlene experiences climate anxiety, a chronic fear of a climate catastrophe, and was, at the time, looking for an outlet.",
+          "zh": "和许多人一样，Charlene 也有气候焦虑，也就是对气候灾难的一种长期恐惧；当时她正在寻找一个释放焦虑、采取行动的出口。",
+          "structure": "结构分析：Like many 作比较状语；主句有两个并列谓语 experiences 和 was looking for；a chronic fear of a climate catastrophe 是 climate anxiety 的同位语解释；at the time 作时间插入语。",
           "phrases": [
-            {
-              "term": "like many",
-              "zh": "和许多人一样"
-            },
             {
               "term": "climate anxiety",
               "zh": "气候焦虑"
             },
             {
-              "term": "anxiety",
-              "zh": "焦虑"
+              "term": "a chronic fear of",
+              "zh": "对……的长期恐惧"
             },
             {
-              "term": "climate catastrophe",
-              "zh": "气候灾难"
-            },
-            {
-              "term": "at the time",
-              "zh": "当时"
-            },
-            {
-              "term": "look for",
-              "zh": "寻找"
+              "term": "look for an outlet",
+              "zh": "寻找出口；寻找释放或行动渠道"
             }
           ],
           "difficulty": 3
@@ -139,33 +127,21 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A05",
           "part": "Cloze",
-          "en": "When she discovered the HFC movement, she said she felt she had found a specific area to focus on that still fit into the larger picture of fighting for a healthier, safer, cleaner 29 for all.",
-          "zh": "当她发现 HFC 运动时，她说自己感觉找到了一个可以专注投入的具体领域，而且这个领域仍然符合为所有人争取更健康、更安全、更清洁的第 29 空所指目标这一更大图景。",
-          "structure": "结构分析：When 引导时间状语从句；主句是 she said；she felt... 是 said 的宾语从句；she had found... 是 felt 的宾语从句；to focus on 修饰 area；that still fit... 修饰 area；of fighting for... 修饰 larger picture。核心结构：When A, B said C felt C had found D to focus on that fit into E。",
+          "en": "When she discovered the HFC movement, she said she felt she had found a specific area to focus on that still fit into the larger picture of fighting for a healthier, safer, cleaner future for all.",
+          "zh": "当她发现 HFC 运动时，她说自己感觉找到了一个可以专注投入的具体领域，而且这个领域仍然符合为所有人争取更健康、更安全、更清洁未来这一更大图景。",
+          "structure": "结构分析：When 引导时间状语从句；主句是 she said；she felt... 是 said 的宾语从句；she had found... 是 felt 的宾语从句；to focus on 修饰 area；that still fit... 修饰 area；of fighting for... 修饰 larger picture。",
           "phrases": [
             {
-              "term": "discover the movement",
-              "zh": "发现这项运动"
+              "term": "fit into the larger picture of",
+              "zh": "符合……的更大图景；融入整体目标"
             },
             {
-              "term": "a specific area",
-              "zh": "一个具体领域"
+              "term": "fight for a cleaner future",
+              "zh": "为更清洁的未来而努力"
             },
             {
-              "term": "focus on",
-              "zh": "专注于"
-            },
-            {
-              "term": "fit into",
-              "zh": "符合；融入"
-            },
-            {
-              "term": "the larger picture",
-              "zh": "更大的图景；整体目标"
-            },
-            {
-              "term": "fight for",
-              "zh": "为……而奋斗"
+              "term": "fit into the larger picture",
+              "zh": "符合更大的整体图景"
             }
           ],
           "difficulty": 2
@@ -178,12 +154,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主语是 Toxic herbicide use in university land care；is not unique 是系表结构，说明这种现象并非个例。核心结构：A use in B is not unique。",
           "phrases": [
             {
-              "term": "toxic herbicide",
-              "zh": "有毒除草剂"
-            },
-            {
               "term": "university land care",
               "zh": "大学土地/校园绿地养护"
+            },
+            {
+              "term": "toxic herbicide",
+              "zh": "有毒除草剂"
             },
             {
               "term": "not unique",
@@ -195,29 +171,25 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A07",
           "part": "Cloze",
-          "en": "Most institutions of higher education rely on synthetic pesticides and fertilizers to achieve 30 goals.",
-          "zh": "大多数高等教育机构依赖合成杀虫剂和化肥来实现第 30 空所指的目标。",
-          "structure": "结构分析：主句是 Most institutions... rely on...；of higher education 修饰 institutions；to achieve 30 goals 作目的状语，说明依赖这些化学品的原因。核心结构：A rely on B to achieve C。",
+          "en": "Most institutions of higher education rely on synthetic pesticides and fertilizers to achieve aesthetic goals.",
+          "zh": "大多数高等教育机构依赖合成杀虫剂和化肥来实现景观美观方面的目标。",
+          "structure": "结构分析：主句是 Most institutions of higher education rely on...；to achieve aesthetic goals 作目的状语，说明依赖这些化学品是为了达到外观和景观管理目标。",
           "phrases": [
+            {
+              "term": "aesthetic goals",
+              "zh": "美观目标"
+            },
             {
               "term": "institutions of higher education",
               "zh": "高等教育机构"
             },
             {
               "term": "rely on",
-              "zh": "依赖"
+              "zh": "依赖；依靠"
             },
             {
-              "term": "synthetic pesticides",
-              "zh": "合成杀虫剂"
-            },
-            {
-              "term": "fertilizers",
-              "zh": "肥料；化肥"
-            },
-            {
-              "term": "achieve goals",
-              "zh": "实现目标"
+              "term": "achieve aesthetic goals",
+              "zh": "实现美观目标"
             }
           ],
           "difficulty": 2
@@ -230,16 +202,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Having a \"beautiful\" campus 是动名词短语作主语；means 是谓语；green and perfectly maintained lawns、flower beds、paved sidewalks 是并列宾语内容。核心结构：Having A means B along with C and D。",
           "phrases": [
             {
-              "term": "green",
-              "zh": "绿色的；绿油油的"
+              "term": "perfectly maintained lawns",
+              "zh": "维护得很完美的草坪"
             },
             {
               "term": "beautiful campus",
               "zh": "美丽校园"
-            },
-            {
-              "term": "perfectly maintained lawns",
-              "zh": "维护得很完美的草坪"
             },
             {
               "term": "flower beds",
@@ -248,6 +216,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "paved sidewalks",
               "zh": "铺好的步道"
+            },
+            {
+              "term": "green",
+              "zh": "绿色的；绿油油的"
             }
           ],
           "difficulty": 2
@@ -255,29 +227,21 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A09",
           "part": "Cloze",
-          "en": "But these 31 managed campuses can come at a cost: increased cancer risk, 32 waterways, poisoned wildlife and lifeless soil.",
-          "zh": "但这些以第 31 空所指方式管理的校园可能要付出代价：癌症风险增加、水道受到第 32 空所指污染、野生动物中毒以及土壤失去生命力。",
-          "structure": "结构分析：But 表示转折；主句是 these 31 managed campuses can come at a cost；冒号后列举 cost 的具体内容，包括 increased cancer risk、32 waterways、poisoned wildlife 和 lifeless soil。核心结构：A can come at a cost: B, C, D and E。",
+          "en": "But these chemically managed campuses can come at a cost: increased cancer risk, contaminated waterways, poisoned wildlife and lifeless soil.",
+          "zh": "但这些以化学方式管理的校园可能要付出代价：癌症风险增加、水道受到污染、野生动物中毒以及土壤失去生命力。",
+          "structure": "结构分析：But 表转折；these chemically managed campuses 是主语；can come at a cost 是谓语部分；冒号后列举 cost 的具体内容，包括 increased cancer risk、contaminated waterways、poisoned wildlife 和 lifeless soil。",
           "phrases": [
             {
+              "term": "chemically managed campuses",
+              "zh": "以化学方式管理的校园"
+            },
+            {
               "term": "come at a cost",
-              "zh": "付出代价；带来成本"
+              "zh": "带来代价；需要付出成本"
             },
             {
-              "term": "increased cancer risk",
-              "zh": "增加的癌症风险"
-            },
-            {
-              "term": "waterways",
-              "zh": "水道；河流系统"
-            },
-            {
-              "term": "poisoned wildlife",
-              "zh": "中毒的野生动物"
-            },
-            {
-              "term": "lifeless soil",
-              "zh": "失去生命力的土壤"
+              "term": "contaminated waterways",
+              "zh": "受污染的水道"
             }
           ],
           "difficulty": 2
@@ -290,6 +254,10 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主语是 Pesticide use on college campuses；also 表示补充；contributes to 表示“促成、加剧”；our global climate crisis 是宾语。核心结构：A use on B contributes to C。",
           "phrases": [
             {
+              "term": "global climate crisis",
+              "zh": "全球气候危机"
+            },
+            {
               "term": "pesticide use",
               "zh": "杀虫剂使用"
             },
@@ -300,10 +268,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "contribute to",
               "zh": "促成；加剧"
-            },
-            {
-              "term": "global climate crisis",
-              "zh": "全球气候危机"
             }
           ],
           "difficulty": 2
@@ -311,29 +275,21 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A11",
           "part": "Cloze",
-          "en": "The use of chemicals to get rid of insects or unwanted plant life can increase indirect 33, as they can include petroleum-based ingredients.",
-          "zh": "使用化学品来清除昆虫或不需要的植物，可能会增加间接的第 33 空所指排放/影响，因为这些化学品可能含有石油基成分。",
-          "structure": "结构分析：主语是 The use of chemicals；to get rid of... 表示使用化学品的目的；主句谓语是 can increase；as 引导原因状语从句；they 指 chemicals。核心结构：The use of A to B can increase C, as A can include D。",
+          "en": "The use of chemicals to get rid of insects or unwanted plant life can increase indirect emissions, as they can include petroleum-based ingredients.",
+          "zh": "使用化学品来清除昆虫或不需要的植物，可能会增加间接排放，因为这些化学品可能含有石油基成分。",
+          "structure": "结构分析：The use of chemicals 是主语；to get rid of... 表示使用化学品的目的；can increase indirect emissions 是主干；as 引导原因状语从句，they 指 chemicals。",
           "phrases": [
             {
               "term": "get rid of",
               "zh": "清除；摆脱"
             },
             {
-              "term": "unwanted plant life",
-              "zh": "不需要的植物"
-            },
-            {
-              "term": "increase indirect ...",
-              "zh": "增加间接的……"
+              "term": "indirect emissions",
+              "zh": "间接排放"
             },
             {
               "term": "petroleum-based ingredients",
               "zh": "石油基成分"
-            },
-            {
-              "term": "as",
-              "zh": "因为；由于"
             }
           ],
           "difficulty": 2
@@ -341,13 +297,13 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A12",
           "part": "Cloze",
-          "en": "Pesticide use also decreases the life in soil, 34 the ability of soils to absorb carbon or retain water and thus reducing campuses’ ability to recover quickly from climate-related extreme weather events like droughts and floods.",
-          "zh": "杀虫剂使用还会减少土壤中的生命，第 34 空所指地影响土壤吸收碳或保持水分的能力，从而降低校园在干旱、洪水等与气候相关的极端天气事件后快速恢复的能力。",
-          "structure": "结构分析：主句是 Pesticide use decreases the life in soil；34 the ability... 与 reducing... 共同说明后续影响；to absorb carbon or retain water 修饰 ability；thus reducing... 表示结果；like droughts and floods 举例说明 extreme weather events。核心结构：A decreases B, affects C to do D, thus reducing E to recover from F。",
+          "en": "Pesticide use also decreases the life in soil, compromising the ability of soils to absorb carbon or retain water and thus reducing campuses' ability to recover quickly from climate-related extreme weather events like droughts and floods.",
+          "zh": "杀虫剂使用还会减少土壤中的生命，损害土壤吸收碳或保持水分的能力，从而降低校园在干旱、洪水等与气候相关的极端天气事件后快速恢复的能力。",
+          "structure": "结构分析：主句是 Pesticide use also decreases the life in soil；compromising... 是现在分词短语，说明进一步结果；to absorb carbon or retain water 修饰 ability；thus reducing... 继续说明最终影响。",
           "phrases": [
             {
-              "term": "life in soil",
-              "zh": "土壤中的生命"
+              "term": "compromise the ability to do",
+              "zh": "削弱/损害做某事的能力"
             },
             {
               "term": "absorb carbon",
@@ -360,14 +316,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "recover quickly from",
               "zh": "从……中快速恢复"
-            },
-            {
-              "term": "climate-related extreme weather events",
-              "zh": "与气候相关的极端天气事件"
-            },
-            {
-              "term": "droughts and floods",
-              "zh": "干旱和洪水"
             }
           ],
           "difficulty": 2
@@ -375,29 +323,25 @@ export const cet6Reading202506Set1 = {
         {
           "label": "A13",
           "part": "Cloze",
-          "en": "Instead of using toxic chemicals, students working with HFC help out with 35 the campus grounds.",
-          "zh": "与使用有毒化学品不同，与 HFC 合作的学生会帮忙以第 35 空所指方式维护校园场地。",
-          "structure": "结构分析：Instead of using toxic chemicals 作对比状语；主句是 students help out with...；working with HFC 是现在分词短语，修饰 students；35 the campus grounds 是 help out with 的具体内容。核心结构：Instead of doing A, students working with B help out with C。",
+          "en": "Instead of using toxic chemicals, students working with HFC help out with maintaining the campus grounds.",
+          "zh": "与使用有毒化学品不同，与 HFC 合作的学生会帮忙维护校园场地。",
+          "structure": "结构分析：Instead of using toxic chemicals 作对比状语；students 是主语；working with HFC 修饰 students；help out with maintaining... 表示帮忙做校园场地维护工作。",
           "phrases": [
-            {
-              "term": "instead of",
-              "zh": "而不是；与……不同"
-            },
-            {
-              "term": "toxic chemicals",
-              "zh": "有毒化学品"
-            },
-            {
-              "term": "work with HFC",
-              "zh": "与 HFC 合作"
-            },
-            {
-              "term": "help out with",
-              "zh": "帮忙做"
-            },
             {
               "term": "campus grounds",
               "zh": "校园场地；校园绿地"
+            },
+            {
+              "term": "instead of doing",
+              "zh": "而不是做某事"
+            },
+            {
+              "term": "help out with",
+              "zh": "帮忙做；协助处理"
+            },
+            {
+              "term": "maintain the campus grounds",
+              "zh": "维护校园场地/绿地"
             }
           ],
           "difficulty": 2
@@ -448,20 +392,20 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：and 连接两个并列分句；前半句主干是 Librarians know the value；后半句主干是 their patrons appreciate their importance；as well 表示“也”。核心结构：A know B, and C appreciate D as well。",
           "phrases": [
             {
-              "term": "librarians",
-              "zh": "图书馆员"
-            },
-            {
               "term": "community services",
               "zh": "社区服务"
             },
             {
-              "term": "patrons",
-              "zh": "读者；使用者"
-            },
-            {
               "term": "as well",
               "zh": "也；同样"
+            },
+            {
+              "term": "librarians",
+              "zh": "图书馆员"
+            },
+            {
+              "term": "patrons",
+              "zh": "读者；使用者"
             }
           ],
           "difficulty": 2
@@ -504,16 +448,20 @@ export const cet6Reading202506Set1 = {
               "zh": "不断缩减的市政预算"
             },
             {
+              "term": "focus on",
+              "zh": "关注；聚焦于"
+            },
+            {
               "term": "technological revolution",
               "zh": "技术革命"
             },
             {
-              "term": "face-to-face",
-              "zh": "面对面地"
-            },
-            {
               "term": "civil discourse",
               "zh": "公共讨论；公民对话"
+            },
+            {
+              "term": "face-to-face",
+              "zh": "面对面地"
             },
             {
               "term": "old-fashioned",
@@ -530,6 +478,14 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：But it is precisely...that... 是强调句；被强调部分是 shrinking budgets and the assault...；make...more important than ever 是结果。核心结构：It is precisely A that make B more C than ever。",
           "phrases": [
             {
+              "term": "technologically mediated life",
+              "zh": "由技术中介的生活"
+            },
+            {
+              "term": "more important than ever",
+              "zh": "比以往任何时候都更重要"
+            },
+            {
               "term": "precisely",
               "zh": "恰恰；正是"
             },
@@ -538,16 +494,8 @@ export const cet6Reading202506Set1 = {
               "zh": "冲击；侵袭"
             },
             {
-              "term": "technologically mediated life",
-              "zh": "由技术中介的生活"
-            },
-            {
               "term": "offerings",
               "zh": "服务；供给内容"
-            },
-            {
-              "term": "more important than ever",
-              "zh": "比以往任何时候都更重要"
             }
           ],
           "difficulty": 2
@@ -560,16 +508,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 Many people point out；the value public libraries bring... 是宾语，其中 public libraries bring to their communities 修饰 value。核心结构：A point out the value B bring to C。",
           "phrases": [
             {
+              "term": "bring value to",
+              "zh": "为……带来价值"
+            },
+            {
               "term": "point out",
               "zh": "指出"
             },
             {
               "term": "public libraries",
               "zh": "公共图书馆"
-            },
-            {
-              "term": "bring value to",
-              "zh": "为……带来价值"
             },
             {
               "term": "communities",
@@ -594,12 +542,16 @@ export const cet6Reading202506Set1 = {
               "zh": "一排排电脑"
             },
             {
-              "term": "gather",
-              "zh": "聚集"
-            },
-            {
               "term": "explore, interact, and imagine",
               "zh": "探索、互动和想象"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
+              "term": "gather",
+              "zh": "聚集"
             }
           ],
           "difficulty": 2
@@ -612,12 +564,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主语是 Some of the specific ways；in which... 修饰 ways；are 后接三个并列表语 community builders, centers for the arts, champions of youth。核心结构：Ways in which A add value and serve as B are C, D, and E。",
           "phrases": [
             {
-              "term": "specific ways",
-              "zh": "具体方式"
-            },
-            {
               "term": "add value to",
               "zh": "为……增值"
+            },
+            {
+              "term": "champions of youth",
+              "zh": "青少年的支持者"
+            },
+            {
+              "term": "specific ways",
+              "zh": "具体方式"
             },
             {
               "term": "serve as",
@@ -626,10 +582,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "community builders",
               "zh": "社区建设者"
-            },
-            {
-              "term": "champions of youth",
-              "zh": "青少年的支持者"
             }
           ],
           "difficulty": 2
@@ -648,6 +600,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "more than just",
               "zh": "不只是"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
             },
             {
               "term": "about information",
@@ -690,12 +646,12 @@ export const cet6Reading202506Set1 = {
               "zh": "从……到……"
             },
             {
-              "term": "multiple branches",
-              "zh": "多个分馆"
-            },
-            {
               "term": "across the United States",
               "zh": "遍布美国"
+            },
+            {
+              "term": "multiple branches",
+              "zh": "多个分馆"
             },
             {
               "term": "build community",
@@ -716,10 +672,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句有两个并列谓语 are inspiring 和 will encourage；interested in... 修饰 librarians；to make, share, and build 是 encourage 的宾语补足语并列。核心结构：A are B and will encourage C interested in D to E, F, and G。",
           "phrases": [
             {
-              "term": "inspiring",
-              "zh": "令人鼓舞的"
-            },
-            {
               "term": "community services",
               "zh": "社区服务"
             },
@@ -734,6 +686,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "build partnerships",
               "zh": "建立合作关系"
+            },
+            {
+              "term": "inspiring",
+              "zh": "令人鼓舞的"
             }
           ],
           "difficulty": 2
@@ -746,6 +702,10 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 Supporters...claim；that 引导宾语从句；unless 引导条件状语从句；you are to do 修饰 work，表示“应当做的”。核心结构：A claim that unless B, C are not completing D。",
           "phrases": [
             {
+              "term": "the work you are to do",
+              "zh": "你应做的工作"
+            },
+            {
               "term": "supporters of",
               "zh": "……的支持者"
             },
@@ -754,16 +714,12 @@ export const cet6Reading202506Set1 = {
               "zh": "声称；认为"
             },
             {
-              "term": "unless",
-              "zh": "除非"
-            },
-            {
               "term": "change neighborhoods",
               "zh": "改变社区"
             },
             {
-              "term": "the work you are to do",
-              "zh": "你应做的工作"
+              "term": "unless",
+              "zh": "除非"
             }
           ],
           "difficulty": 2
@@ -780,16 +736,16 @@ export const cet6Reading202506Set1 = {
               "zh": "加强社区"
             },
             {
-              "term": "champion",
-              "zh": "支持；捍卫"
-            },
-            {
               "term": "cultural lives",
               "zh": "文化生活"
             },
             {
               "term": "big responsibilities",
               "zh": "重大责任"
+            },
+            {
+              "term": "champion",
+              "zh": "支持；捍卫"
             }
           ],
           "difficulty": 2
@@ -810,16 +766,16 @@ export const cet6Reading202506Set1 = {
               "zh": "强调……的重要性"
             },
             {
-              "term": "functional",
-              "zh": "功能完善的"
-            },
-            {
               "term": "community-based places",
               "zh": "以社区为基础的场所"
             },
             {
               "term": "depressed neighborhoods",
               "zh": "萧条社区"
+            },
+            {
+              "term": "functional",
+              "zh": "功能完善的"
             }
           ],
           "difficulty": 2
@@ -858,16 +814,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：三个并列主语 Large cities, medium-sized ones, and even small towns；谓语是 have transformed；into the hubs... 表示转变结果。核心结构：A, B, and C have transformed D into E。",
           "phrases": [
             {
-              "term": "medium-sized ones",
-              "zh": "中等规模的城市"
-            },
-            {
               "term": "transform ... into",
               "zh": "把……转变为"
             },
             {
-              "term": "hubs",
-              "zh": "枢纽"
+              "term": "medium-sized ones",
+              "zh": "中等规模的城市"
             },
             {
               "term": "vibrant neighborhoods",
@@ -896,12 +848,12 @@ export const cet6Reading202506Set1 = {
               "zh": "重要参与者"
             },
             {
-              "term": "livable",
-              "zh": "宜居的"
-            },
-            {
               "term": "environmentally friendly",
               "zh": "环境友好的"
+            },
+            {
+              "term": "livable",
+              "zh": "宜居的"
             }
           ],
           "difficulty": 2
@@ -918,10 +870,6 @@ export const cet6Reading202506Set1 = {
               "zh": "发布报告"
             },
             {
-              "term": "detailing",
-              "zh": "详细说明"
-            },
-            {
               "term": "unique ways",
               "zh": "独特方式"
             },
@@ -932,6 +880,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "local level",
               "zh": "地方层面"
+            },
+            {
+              "term": "detailing",
+              "zh": "详细说明"
             }
           ],
           "difficulty": 2
@@ -948,10 +900,6 @@ export const cet6Reading202506Set1 = {
               "zh": "除了确保……之外"
             },
             {
-              "term": "environmental impact",
-              "zh": "环境影响"
-            },
-            {
               "term": "take a lead in",
               "zh": "带头做"
             },
@@ -962,6 +910,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "seed lending library",
               "zh": "种子借阅图书馆"
+            },
+            {
+              "term": "environmental impact",
+              "zh": "环境影响"
             },
             {
               "term": "community resilience",
@@ -978,14 +930,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 Archives preserve...；historic artifacts、oral histories、digital history projects、scholarly writings 是并列宾语；relevant to the community 修饰 scholarly writings；including minority groups 作补充。核心结构：A preserve B, C, D, and E relevant to F。",
           "phrases": [
             {
-              "term": "archives",
-              "zh": "档案馆；档案"
-            },
-            {
-              "term": "preserve",
-              "zh": "保存"
-            },
-            {
               "term": "historic artifacts",
               "zh": "历史文物"
             },
@@ -996,6 +940,14 @@ export const cet6Reading202506Set1 = {
             {
               "term": "minority groups",
               "zh": "少数群体"
+            },
+            {
+              "term": "archives",
+              "zh": "档案馆；档案"
+            },
+            {
+              "term": "preserve",
+              "zh": "保存"
             }
           ],
           "difficulty": 2
@@ -1008,12 +960,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Communities 是主语；lucky enough to have archivists 修饰 Communities；when it comes to... 表示“在……方面”。核心结构：A lucky enough to B have C when it comes to D。",
           "phrases": [
             {
-              "term": "lucky enough to",
-              "zh": "足够幸运能够"
+              "term": "when it comes to",
+              "zh": "当谈到……"
             },
             {
-              "term": "archivists",
-              "zh": "档案管理员"
+              "term": "lucky enough to",
+              "zh": "足够幸运能够"
             },
             {
               "term": "have a great advantage",
@@ -1022,6 +974,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "historical records",
               "zh": "历史记录"
+            },
+            {
+              "term": "archivists",
+              "zh": "档案管理员"
             },
             {
               "term": "artifacts",
@@ -1038,12 +994,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 An organized archive is a place；where 引导定语从句修饰 place；research、do、and more 是并列动作。核心结构：A is a place where people can B, C, and more。",
           "phrases": [
             {
-              "term": "organized archive",
-              "zh": "有组织的档案馆"
-            },
-            {
               "term": "research their ancestry",
               "zh": "研究自己的祖先"
+            },
+            {
+              "term": "organized archive",
+              "zh": "有组织的档案馆"
             },
             {
               "term": "immigration history",
@@ -1072,16 +1028,16 @@ export const cet6Reading202506Set1 = {
               "zh": "除其他事务外"
             },
             {
+              "term": "vital records",
+              "zh": "重要记录"
+            },
+            {
               "term": "restoration",
               "zh": "修复"
             },
             {
               "term": "digitization",
               "zh": "数字化"
-            },
-            {
-              "term": "vital records",
-              "zh": "重要记录"
             }
           ],
           "difficulty": 2
@@ -1094,20 +1050,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：With projects like... 作背景状语；主句是 evidence...is everywhere；of the importance of archives 修饰 evidence。核心结构：With A, evidence of B is everywhere。",
           "phrases": [
             {
+              "term": "importance of archives",
+              "zh": "档案的重要性"
+            },
+            {
               "term": "projects like",
               "zh": "像……这样的项目"
             },
             {
               "term": "evidence of",
               "zh": "……的证据"
-            },
-            {
-              "term": "importance of archives",
-              "zh": "档案的重要性"
-            },
-            {
-              "term": "everywhere",
-              "zh": "随处可见"
             }
           ],
           "difficulty": 2
@@ -1124,16 +1076,16 @@ export const cet6Reading202506Set1 = {
               "zh": "用……的话说"
             },
             {
-              "term": "mainly",
-              "zh": "主要地"
-            },
-            {
               "term": "look for information",
               "zh": "寻找信息"
             },
             {
               "term": "find each other",
               "zh": "找到彼此；建立联系"
+            },
+            {
+              "term": "mainly",
+              "zh": "主要地"
             }
           ],
           "difficulty": 2
@@ -1180,12 +1132,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：In libraries 作地点状语；主句是 community-building connections are happening；all the time 强调持续性。核心结构：In A, B are happening all the time。",
           "phrases": [
             {
-              "term": "community-building connections",
-              "zh": "建设社区的联系"
-            },
-            {
               "term": "happen all the time",
               "zh": "一直都在发生"
+            },
+            {
+              "term": "community-building connections",
+              "zh": "建设社区的联系"
             },
             {
               "term": "in libraries",
@@ -1224,10 +1176,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Despite... 作让步状语；主句是 public library events are offered free of charge；including... 是插入举例；enabling... 是现在分词短语，说明结果。核心结构：Despite A, B are offered C, enabling D to E。",
           "phrases": [
             {
-              "term": "despite",
-              "zh": "尽管"
-            },
-            {
               "term": "free of charge",
               "zh": "免费"
             },
@@ -1254,6 +1202,10 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：In addition 作连接；and 连接两个并列分句；allow people to... 是使役结构；introduces A to B 表示“把 A 介绍给 B”。核心结构：A allow B to C, and D introduces E to F。",
           "phrases": [
             {
+              "term": "introduce A to B",
+              "zh": "把 A 介绍给 B"
+            },
+            {
               "term": "book groups",
               "zh": "读书小组"
             },
@@ -1264,10 +1216,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "at-risk youth",
               "zh": "高风险青少年"
-            },
-            {
-              "term": "introduce A to B",
-              "zh": "把 A 介绍给 B"
             }
           ],
           "difficulty": 2
@@ -1282,10 +1230,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "the best part",
               "zh": "最好的部分"
-            },
-            {
-              "term": "free",
-              "zh": "免费的"
             },
             {
               "term": "open to the public",
@@ -1306,16 +1250,16 @@ export const cet6Reading202506Set1 = {
               "zh": "在……的时代"
             },
             {
-              "term": "educational opportunities",
-              "zh": "教育机会"
-            },
-            {
               "term": "free for all people",
               "zh": "对所有人免费"
             },
             {
               "term": "regardless of",
-              "zh": "不管"
+              "zh": "不管；无论"
+            },
+            {
+              "term": "educational opportunities",
+              "zh": "教育机会"
             },
             {
               "term": "socio-economic status",
@@ -1332,24 +1276,24 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Offered by... 是过去分词短语作状语；主句是 programs are wonderful examples；of scholar-facilitated learning opportunities 修饰 examples。核心结构：Offered by A, B programs are examples of C。",
           "phrases": [
             {
-              "term": "offered by",
-              "zh": "由……提供"
-            },
-            {
               "term": "across the country",
               "zh": "全国各地"
+            },
+            {
+              "term": "offered by",
+              "zh": "由……提供"
             },
             {
               "term": "wonderful examples",
               "zh": "绝佳例子"
             },
             {
-              "term": "scholar-facilitated",
-              "zh": "由学者引导的"
-            },
-            {
               "term": "learning opportunities",
               "zh": "学习机会"
+            },
+            {
+              "term": "scholar-facilitated",
+              "zh": "由学者引导的"
             }
           ],
           "difficulty": 2
@@ -1362,16 +1306,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：In addition 作连接；many libraries present... 和 some provide... 是并列分句；such as 引出例子。核心结构：A present B, and some provide C such as D。",
           "phrases": [
             {
+              "term": "online continuing education",
+              "zh": "在线继续教育"
+            },
+            {
               "term": "present classes",
               "zh": "开设课程"
             },
             {
               "term": "discussion programs",
               "zh": "讨论项目"
-            },
-            {
-              "term": "online continuing education",
-              "zh": "在线继续教育"
             },
             {
               "term": "database",
@@ -1414,20 +1358,20 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 Patrons use the library；to gain knowledge 表示目的；in order to create... 进一步说明获取知识的目的。核心结构：A use B to C in order to D。",
           "phrases": [
             {
-              "term": "gain knowledge",
-              "zh": "获取知识"
-            },
-            {
               "term": "in order to",
               "zh": "为了"
             },
             {
-              "term": "independent works",
-              "zh": "独立作品"
-            },
-            {
               "term": "create their own",
               "zh": "创造自己的"
+            },
+            {
+              "term": "gain knowledge",
+              "zh": "获取知识"
+            },
+            {
+              "term": "independent works",
+              "zh": "独立作品"
             }
           ],
           "difficulty": 2
@@ -1448,16 +1392,20 @@ export const cet6Reading202506Set1 = {
               "zh": "满足……的需求"
             },
             {
-              "term": "edit Wikipedia",
-              "zh": "编辑维基百科"
-            },
-            {
               "term": "set up blogs or podcasts",
               "zh": "开设博客或播客"
             },
             {
               "term": "so much more",
               "zh": "以及更多内容"
+            },
+            {
+              "term": "set up",
+              "zh": "建立；设立"
+            },
+            {
+              "term": "edit Wikipedia",
+              "zh": "编辑维基百科"
             }
           ],
           "difficulty": 2
@@ -1474,12 +1422,12 @@ export const cet6Reading202506Set1 = {
               "zh": "艺术或写作工作坊"
             },
             {
-              "term": "groups",
-              "zh": "小组"
-            },
-            {
               "term": "music practice rooms",
               "zh": "音乐练习室"
+            },
+            {
+              "term": "groups",
+              "zh": "小组"
             },
             {
               "term": "patrons",
@@ -1496,6 +1444,14 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Programs like... 是主语；provide 是谓语；that take...to a new level 修饰 models；community partnership, creativity, and creation 是并列宾语。核心结构：A provide models that take B to C。",
           "phrases": [
             {
+              "term": "creativity and creation",
+              "zh": "创造力和创作"
+            },
+            {
+              "term": "take ... to a new level",
+              "zh": "把……提升到新层次"
+            },
+            {
               "term": "programs like",
               "zh": "像……这样的项目"
             },
@@ -1506,14 +1462,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "community partnership",
               "zh": "社区合作"
-            },
-            {
-              "term": "creativity and creation",
-              "zh": "创造力和创作"
-            },
-            {
-              "term": "take ... to a new level",
-              "zh": "把……提升到新层次"
             }
           ],
           "difficulty": 2
@@ -1530,20 +1478,20 @@ export const cet6Reading202506Set1 = {
               "zh": "公共讨论的衰退"
             },
             {
-              "term": "stem from",
-              "zh": "源于"
-            },
-            {
-              "term": "in part",
-              "zh": "部分地"
-            },
-            {
               "term": "virtual and real worlds",
               "zh": "虚拟和现实世界"
             },
             {
               "term": "similar backgrounds and ideologies",
               "zh": "相似背景和意识形态"
+            },
+            {
+              "term": "stem from",
+              "zh": "源于"
+            },
+            {
+              "term": "in part",
+              "zh": "部分地"
             }
           ],
           "difficulty": 3
@@ -1564,12 +1512,12 @@ export const cet6Reading202506Set1 = {
               "zh": "由差异构成的小社区"
             },
             {
-              "term": "interact with",
-              "zh": "与……互动"
-            },
-            {
               "term": "learn from each other",
               "zh": "相互学习"
+            },
+            {
+              "term": "interact with",
+              "zh": "与……互动"
             },
             {
               "term": "through dialogue",
@@ -1586,10 +1534,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：By both...and... 作方式状语；主句是 libraries help individuals rediscover...；the importance of and increased need for... 是 rediscover 的宾语；in American life 表示范围。核心结构：By doing A and doing B, libraries help C rediscover D。",
           "phrases": [
             {
-              "term": "actively promote",
-              "zh": "积极推动"
-            },
-            {
               "term": "model and uphold",
               "zh": "示范并维护"
             },
@@ -1598,12 +1542,16 @@ export const cet6Reading202506Set1 = {
               "zh": "自由探究和表达"
             },
             {
-              "term": "rediscover",
-              "zh": "重新发现"
-            },
-            {
               "term": "increased need for",
               "zh": "日益增长的需求"
+            },
+            {
+              "term": "actively promote",
+              "zh": "积极推动"
+            },
+            {
+              "term": "rediscover",
+              "zh": "重新发现"
             }
           ],
           "difficulty": 3
@@ -1616,10 +1564,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：三个并列主语 Free tutoring, homework help programs, and summer reading programs；谓语是 help bridge；that impacts... 修饰 economic divide。核心结构：A, B, and C help bridge D that impacts E。",
           "phrases": [
             {
-              "term": "free tutoring",
-              "zh": "免费辅导"
-            },
-            {
               "term": "homework help programs",
               "zh": "作业帮助项目"
             },
@@ -1630,6 +1574,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "bridge the economic divide",
               "zh": "弥合经济鸿沟"
+            },
+            {
+              "term": "free tutoring",
+              "zh": "免费辅导"
             },
             {
               "term": "academic performance",
@@ -1676,28 +1624,28 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句前半是 programs have a positive impact；according to... 是插入信息来源；后半句 students’ reading skills get a boost... 说明研究发现。核心结构：A have B, and according to C, D get E from F。",
           "phrases": [
             {
-              "term": "annual",
-              "zh": "年度的"
-            },
-            {
               "term": "positive impact on",
               "zh": "对……的积极影响"
-            },
-            {
-              "term": "according to",
-              "zh": "根据"
-            },
-            {
-              "term": "reading skills",
-              "zh": "阅读技能"
             },
             {
               "term": "get a boost",
               "zh": "得到提升"
             },
             {
+              "term": "according to",
+              "zh": "根据；据……所说"
+            },
+            {
+              "term": "reading skills",
+              "zh": "阅读技能"
+            },
+            {
               "term": "nationwide events",
               "zh": "全国性活动"
+            },
+            {
+              "term": "annual",
+              "zh": "年度的"
             }
           ],
           "difficulty": 3
@@ -1710,6 +1658,14 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Through... 作方式状语；主句是 children learn；to share, to be engaged, to participate, to explore 是并列宾语补足语。核心结构：Through A, children learn to B, C, D, and E。",
           "phrases": [
             {
+              "term": "be engaged in",
+              "zh": "参与"
+            },
+            {
+              "term": "world at large",
+              "zh": "更广阔的世界"
+            },
+            {
               "term": "library collections",
               "zh": "图书馆馆藏"
             },
@@ -1718,16 +1674,8 @@ export const cet6Reading202506Set1 = {
               "zh": "实体空间"
             },
             {
-              "term": "be engaged in",
-              "zh": "参与"
-            },
-            {
               "term": "immediate world",
               "zh": "身边的世界"
-            },
-            {
-              "term": "world at large",
-              "zh": "更广阔的世界"
             }
           ],
           "difficulty": 2
@@ -1740,20 +1688,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：There are... 是存在句；of innovative library services 修饰 examples；including... 引出例子；which 引导定语从句修饰 Nature Explorium。核心结构：There are examples of A, including B, which C。",
           "phrases": [
             {
-              "term": "endless examples",
-              "zh": "无数例子"
-            },
-            {
               "term": "innovative library services",
               "zh": "创新图书馆服务"
             },
             {
-              "term": "including",
-              "zh": "包括"
-            },
-            {
               "term": "engage children in",
               "zh": "让儿童参与"
+            },
+            {
+              "term": "endless examples",
+              "zh": "无数例子"
             },
             {
               "term": "natural world",
@@ -1774,10 +1718,6 @@ export const cet6Reading202506Set1 = {
               "zh": "只是……中的少数"
             },
             {
-              "term": "amazing things",
-              "zh": "了不起的事情"
-            },
-            {
               "term": "around the United States",
               "zh": "在美国各地"
             },
@@ -1788,6 +1728,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "strong community connections",
               "zh": "强大的社区联系"
+            },
+            {
+              "term": "amazing things",
+              "zh": "了不起的事情"
             }
           ],
           "difficulty": 2
@@ -1812,12 +1756,12 @@ export const cet6Reading202506Set1 = {
               "zh": "说服社区领导者"
             },
             {
-              "term": "important role",
-              "zh": "重要作用"
-            },
-            {
               "term": "communities large and small",
               "zh": "大大小小的社区"
+            },
+            {
+              "term": "important role",
+              "zh": "重要作用"
             }
           ],
           "difficulty": 2
@@ -1838,20 +1782,20 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Nationally 作范围状语；主句是 one in six children miss...；15 or more days of school 是宾语；in a year 表示时间范围。核心结构：Nationally, one in A miss B in C。",
           "phrases": [
             {
-              "term": "nationally",
-              "zh": "在全国范围内"
-            },
-            {
               "term": "one in six",
               "zh": "六分之一"
+            },
+            {
+              "term": "15 or more days",
+              "zh": "15 天或更多"
             },
             {
               "term": "miss school",
               "zh": "缺课"
             },
             {
-              "term": "15 or more days",
-              "zh": "15 天或更多"
+              "term": "nationally",
+              "zh": "在全国范围内"
             }
           ],
           "difficulty": 2
@@ -1868,12 +1812,12 @@ export const cet6Reading202506Set1 = {
               "zh": "教育官员"
             },
             {
-              "term": "deplore",
-              "zh": "谴责；强烈不满"
-            },
-            {
               "term": "missed instruction",
               "zh": "错失的课堂教学"
+            },
+            {
+              "term": "deplore",
+              "zh": "谴责；强烈不满"
             }
           ],
           "difficulty": 2
@@ -1886,6 +1830,10 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 These chronically absent students suffer academically；because of... 表示原因；they miss out on 修饰 classroom instruction。核心结构：A suffer academically because of B they miss out on。",
           "phrases": [
             {
+              "term": "miss out on",
+              "zh": "错失"
+            },
+            {
               "term": "chronically absent",
               "zh": "长期缺勤的"
             },
@@ -1896,10 +1844,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "because of",
               "zh": "因为"
-            },
-            {
-              "term": "miss out on",
-              "zh": "错过"
             }
           ],
           "difficulty": 2
@@ -1942,10 +1886,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：His open letter stated that... 是主句加宾语从句；missing 10%... 是从句主语；for any reason 和 excused or unexcused 补充缺勤类型；is a primary cause... 是谓语。核心结构：A stated that doing B for any reason is C。",
           "phrases": [
             {
-              "term": "open letter",
-              "zh": "公开信"
-            },
-            {
               "term": "for any reason",
               "zh": "无论任何原因"
             },
@@ -1954,12 +1894,16 @@ export const cet6Reading202506Set1 = {
               "zh": "获准或未获准的"
             },
             {
-              "term": "primary cause",
-              "zh": "主要原因"
-            },
-            {
               "term": "low academic achievement",
               "zh": "学业成绩低下"
+            },
+            {
+              "term": "open letter",
+              "zh": "公开信"
+            },
+            {
+              "term": "primary cause",
+              "zh": "主要原因"
             }
           ],
           "difficulty": 3
@@ -2016,16 +1960,20 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：what if 引出假设性问题；about much more than... 表示“涉及的远不止”；students missing class 是动名词复合结构。核心结构：What if A is about much more than B?",
           "phrases": [
             {
+              "term": "much more than",
+              "zh": "远不只是"
+            },
+            {
+              "term": "more than",
+              "zh": "不仅仅是；多于"
+            },
+            {
               "term": "what if",
               "zh": "如果……会怎样"
             },
             {
               "term": "attendance crisis",
               "zh": "出勤危机"
-            },
-            {
-              "term": "much more than",
-              "zh": "远不只是"
             },
             {
               "term": "missing class",
@@ -2042,14 +1990,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：What if 引出连续假设；it is a reflection of... 是核心；these students face 修饰 crises；破折号后 such as 引出三个并列例子。核心结构：What if A is a reflection of B that C face, such as D, E, or F?",
           "phrases": [
             {
-              "term": "instead",
-              "zh": "相反"
-            },
-            {
-              "term": "reflection of",
-              "zh": "……的反映"
-            },
-            {
               "term": "family and community crises",
               "zh": "家庭和社区危机"
             },
@@ -2060,6 +2000,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "fear for their safety",
               "zh": "担心自身安全"
+            },
+            {
+              "term": "reflection of",
+              "zh": "……的反映"
             }
           ],
           "difficulty": 3
@@ -2076,10 +2020,6 @@ export const cet6Reading202506Set1 = {
               "zh": "社会科学家"
             },
             {
-              "term": "investigate",
-              "zh": "研究；调查"
-            },
-            {
               "term": "excused absences",
               "zh": "获准缺勤"
             },
@@ -2090,6 +2030,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "academic achievement",
               "zh": "学业成绩"
+            },
+            {
+              "term": "investigate",
+              "zh": "研究；调查"
             }
           ],
           "difficulty": 2
@@ -2136,12 +2080,12 @@ export const cet6Reading202506Set1 = {
               "zh": "等同于；相当于"
             },
             {
-              "term": "peers",
-              "zh": "同龄人"
-            },
-            {
               "term": "no absences",
               "zh": "没有缺勤"
+            },
+            {
+              "term": "peers",
+              "zh": "同龄人"
             }
           ],
           "difficulty": 3
@@ -2154,14 +2098,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Meanwhile 作转折推进；主语是 the average child with...；does much worse academically 是谓语；than peers with none 是比较结构。核心结构：A with even B does worse than C with none。",
           "phrases": [
             {
-              "term": "meanwhile",
-              "zh": "与此同时"
-            },
-            {
-              "term": "average child",
-              "zh": "普通孩子"
-            },
-            {
               "term": "even just one",
               "zh": "即使只有一次"
             },
@@ -2172,6 +2108,14 @@ export const cet6Reading202506Set1 = {
             {
               "term": "peers with none",
               "zh": "没有缺勤的同龄人"
+            },
+            {
+              "term": "average child",
+              "zh": "普通孩子"
+            },
+            {
+              "term": "meanwhile",
+              "zh": "与此同时"
             }
           ],
           "difficulty": 2
@@ -2184,12 +2128,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：We believe 后接宾语从句；unexcused absence is a strong signal 是从句主干；children and families face 修饰 challenges；including... 补充具体困难。核心结构：We believe A is a signal of B that C face, including D。",
           "phrases": [
             {
-              "term": "strong signal",
-              "zh": "强烈信号"
-            },
-            {
               "term": "challenges children and families face",
               "zh": "儿童和家庭面对的挑战"
+            },
+            {
+              "term": "strong signal",
+              "zh": "强烈信号"
             },
             {
               "term": "economic hardships",
@@ -2236,20 +2180,20 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Our evidence suggests 后接宾语从句；but 连接转折；for a different reason than... 表示原因不同。核心结构：A suggests B are problematic, but for a different reason than C。",
           "phrases": [
             {
-              "term": "evidence suggests",
-              "zh": "证据表明"
-            },
-            {
-              "term": "problematic",
-              "zh": "有问题的"
-            },
-            {
               "term": "for a different reason",
               "zh": "出于不同原因"
             },
             {
               "term": "people often think",
               "zh": "人们通常认为"
+            },
+            {
+              "term": "evidence suggests",
+              "zh": "证据表明"
+            },
+            {
+              "term": "problematic",
+              "zh": "有问题的"
             }
           ],
           "difficulty": 2
@@ -2264,10 +2208,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "absence from school",
               "zh": "缺课"
-            },
-            {
-              "term": "especially",
-              "zh": "尤其"
             },
             {
               "term": "matter mainly as",
@@ -2288,16 +2228,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：It 指 absence；matters less as a cause... 是主干；due to missed instruction 表示原因。核心结构：A matters less as a cause of B due to C。",
           "phrases": [
             {
+              "term": "lower student achievement",
+              "zh": "学生成绩较低"
+            },
+            {
               "term": "matter less",
               "zh": "重要性较小"
             },
             {
               "term": "cause of",
               "zh": "……的原因"
-            },
-            {
-              "term": "lower student achievement",
-              "zh": "学生成绩较低"
             },
             {
               "term": "due to",
@@ -2344,10 +2284,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 School attendance policies hold...accountable；for the days children miss 说明负责内容；regardless of whether... 引导让步补充。核心结构：A hold B accountable for C, regardless of whether D。",
           "phrases": [
             {
-              "term": "attendance policies",
-              "zh": "出勤政策"
-            },
-            {
               "term": "hold A accountable for B",
               "zh": "让 A 对 B 负责"
             },
@@ -2358,6 +2294,14 @@ export const cet6Reading202506Set1 = {
             {
               "term": "regardless of whether",
               "zh": "不论是否"
+            },
+            {
+              "term": "regardless of",
+              "zh": "不管；无论"
+            },
+            {
+              "term": "attendance policies",
+              "zh": "出勤政策"
             }
           ],
           "difficulty": 2
@@ -2370,12 +2314,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：These policies assume 后接宾语从句；missing school for any reason 是从句主语；because 引导原因状语从句。核心结构：A assume that doing B harms C because D。",
           "phrases": [
             {
-              "term": "assume that",
-              "zh": "假定"
-            },
-            {
               "term": "for any reason",
               "zh": "无论任何原因"
+            },
+            {
+              "term": "assume that",
+              "zh": "假定"
             },
             {
               "term": "harm academically",
@@ -2422,12 +2366,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：We find 是主句；neither to be the case 是宾语补足结构，neither 指前文两个假设。核心结构：We find neither to be the case。",
           "phrases": [
             {
+              "term": "be the case",
+              "zh": "属实；成立"
+            },
+            {
               "term": "neither",
               "zh": "两者都不"
             },
             {
-              "term": "be the case",
-              "zh": "属实；成立"
+              "term": "find A to be B",
+              "zh": "认为 A 是 B；发现 A 处于某种情况"
             }
           ],
           "difficulty": 2
@@ -2441,23 +2389,23 @@ export const cet6Reading202506Set1 = {
           "phrases": [
             {
               "term": "as a result",
-              "zh": "结果是"
+              "zh": "因此；结果"
+            },
+            {
+              "term": "pressure schools to",
+              "zh": "给学校施压去"
             },
             {
               "term": "end up",
               "zh": "最终"
             },
             {
-              "term": "disproportionately",
-              "zh": "不成比例地"
-            },
-            {
               "term": "out-of-school crises",
               "zh": "校外危机"
             },
             {
-              "term": "pressure schools to",
-              "zh": "给学校施压去"
+              "term": "disproportionately",
+              "zh": "不成比例地"
             }
           ],
           "difficulty": 2
@@ -2469,10 +2417,6 @@ export const cet6Reading202506Set1 = {
           "zh": "相反，我们建议把无故缺勤作为一种信号，用来把资源输送给最需要这些资源的儿童和家庭。",
           "structure": "结构分析：We instead suggest... 是主句；using...as a signal 是 suggest 的宾语；to channel resources... 表示目的；who need them most 修饰 children and families。核心结构：We suggest using A as B to channel C to D who E。",
           "phrases": [
-            {
-              "term": "instead",
-              "zh": "相反"
-            },
             {
               "term": "use A as a signal",
               "zh": "把 A 用作信号"
@@ -2556,12 +2500,12 @@ export const cet6Reading202506Set1 = {
               "zh": "将近十年"
             },
             {
-              "term": "encounter",
-              "zh": "遇到"
-            },
-            {
               "term": "do the same",
               "zh": "做同样的事"
+            },
+            {
+              "term": "encounter",
+              "zh": "遇到"
             }
           ],
           "difficulty": 2
@@ -2578,8 +2522,8 @@ export const cet6Reading202506Set1 = {
               "zh": "追随你的热情"
             },
             {
-              "term": "counsel",
-              "zh": "劝告；建议"
+              "term": "I counseled",
+              "zh": "我建议；我劝告"
             }
           ],
           "difficulty": 2
@@ -2598,10 +2542,6 @@ export const cet6Reading202506Set1 = {
             {
               "term": "employment stuff",
               "zh": "就业那些事"
-            },
-            {
-              "term": "later",
-              "zh": "以后"
             }
           ],
           "difficulty": 2
@@ -2622,12 +2562,12 @@ export const cet6Reading202506Set1 = {
               "zh": "职业建议"
             },
             {
-              "term": "problematic",
-              "zh": "有问题的"
-            },
-            {
               "term": "not until",
               "zh": "直到……才"
+            },
+            {
+              "term": "problematic",
+              "zh": "有问题的"
             }
           ],
           "difficulty": 2
@@ -2640,12 +2580,8 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：As a sociologist 作身份状语；主句是 I interviewed...；to learn... 作目的状语；what it really meant... 是 learn 的宾语；which 引导非限制性定语从句，指代前面理念。核心结构：As A, I interviewed B to learn what C meant, which I refer to as D。",
           "phrases": [
             {
-              "term": "sociologist",
-              "zh": "社会学家"
-            },
-            {
-              "term": "professional workers",
-              "zh": "职业工作者"
+              "term": "refer to as",
+              "zh": "把……称为；将……称作"
             },
             {
               "term": "pursue their dreams",
@@ -2656,8 +2592,20 @@ export const cet6Reading202506Set1 = {
               "zh": "把……称为"
             },
             {
+              "term": "refer to",
+              "zh": "指的是；提到；称作"
+            },
+            {
+              "term": "professional workers",
+              "zh": "职业工作者"
+            },
+            {
               "term": "passion principle",
               "zh": "热情原则"
+            },
+            {
+              "term": "sociologist",
+              "zh": "社会学家"
             }
           ],
           "difficulty": 2
@@ -2678,12 +2626,12 @@ export const cet6Reading202506Set1 = {
               "zh": "发现关于……的情况"
             },
             {
-              "term": "principle",
-              "zh": "原则"
-            },
-            {
               "term": "research for my new book",
               "zh": "为新书所做研究"
+            },
+            {
+              "term": "principle",
+              "zh": "原则"
             }
           ],
           "difficulty": 2
@@ -2696,12 +2644,12 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Surveys show 后接宾语从句；has long held...in high regard 是从句谓语；as a career decision-making priority 表示其地位。核心结构：A show B has held C in high regard as D。",
           "phrases": [
             {
-              "term": "surveys show",
-              "zh": "调查显示"
-            },
-            {
               "term": "hold ... in high regard",
               "zh": "高度重视"
+            },
+            {
+              "term": "surveys show",
+              "zh": "调查显示"
             },
             {
               "term": "career decision-making",
@@ -2722,10 +2670,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：And 承接上文；主句是 its popularity is even stronger；among those facing... 表示适用人群；facing job instability 修饰 those。核心结构：A is even stronger among those facing B。",
           "phrases": [
             {
-              "term": "popularity",
-              "zh": "受欢迎程度"
-            },
-            {
               "term": "even stronger",
               "zh": "甚至更强"
             },
@@ -2736,6 +2680,10 @@ export const cet6Reading202506Set1 = {
             {
               "term": "those facing",
               "zh": "面对……的人"
+            },
+            {
+              "term": "popularity",
+              "zh": "受欢迎程度"
             }
           ],
           "difficulty": 2
@@ -2748,24 +2696,24 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 Advocates...found it compelling；because 引导原因状语从句；that following one’s passion can provide... 是 believed 的宾语从句；with both A and B 是 provide 的复合宾语。核心结构：A found B compelling because they believed that C can provide D with both E and F。",
           "phrases": [
             {
-              "term": "advocates of",
-              "zh": "……的支持者"
-            },
-            {
-              "term": "compelling",
-              "zh": "有说服力的"
-            },
-            {
               "term": "motivation necessary to",
               "zh": "……所必需的动力"
+            },
+            {
+              "term": "following one’s passion",
+              "zh": "追随自己的热情"
+            },
+            {
+              "term": "advocates of",
+              "zh": "……的支持者"
             },
             {
               "term": "find fulfillment",
               "zh": "找到满足感"
             },
             {
-              "term": "following one’s passion",
-              "zh": "追随自己的热情"
+              "term": "compelling",
+              "zh": "有说服力的"
             }
           ],
           "difficulty": 2
@@ -2778,12 +2726,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Yet 表示转折；what I found 是主语从句；that 引导表语从句；not necessarily...but... 构成转折对照；perpetuating overwork 修饰 cultural forces。核心结构：What I found is that A does not necessarily B, but is C doing D。",
           "phrases": [
             {
-              "term": "not necessarily",
-              "zh": "不一定"
-            },
-            {
               "term": "lead to fulfillment",
               "zh": "带来满足感"
+            },
+            {
+              "term": "lead to",
+              "zh": "导致；通向"
+            },
+            {
+              "term": "not necessarily",
+              "zh": "不一定"
             },
             {
               "term": "cultural forces",
@@ -2830,20 +2782,20 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：While 引导让步状语从句；主句是 not everyone has...；to turn their passion into... 修饰 resources。核心结构：While A is popular, not everyone has B to turn C into D。",
           "phrases": [
             {
-              "term": "broadly popular",
-              "zh": "广受欢迎"
-            },
-            {
-              "term": "necessary resources",
-              "zh": "必要资源"
-            },
-            {
               "term": "turn passion into",
               "zh": "把热情转化为"
             },
             {
               "term": "stable, good-paying job",
               "zh": "稳定且薪酬良好的工作"
+            },
+            {
+              "term": "broadly popular",
+              "zh": "广受欢迎"
+            },
+            {
+              "term": "necessary resources",
+              "zh": "必要资源"
             }
           ],
           "difficulty": 2
@@ -2856,8 +2808,8 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主语是 Passion-seekers from wealthy families；are better able to wait 是谓语；until 引导时间状语从句；without worrying... 表示伴随条件。核心结构：A from B are better able to C until D without E。",
           "phrases": [
             {
-              "term": "passion-seekers",
-              "zh": "热情追求者"
+              "term": "in the meantime",
+              "zh": "与此同时"
             },
             {
               "term": "wealthy families",
@@ -2872,8 +2824,8 @@ export const cet6Reading202506Set1 = {
               "zh": "学生贷款"
             },
             {
-              "term": "in the meantime",
-              "zh": "与此同时"
+              "term": "passion-seekers",
+              "zh": "热情追求者"
             }
           ],
           "difficulty": 2
@@ -2890,16 +2842,16 @@ export const cet6Reading202506Set1 = {
               "zh": "处境更有利于"
             },
             {
-              "term": "unpaid internships",
-              "zh": "无薪实习"
-            },
-            {
               "term": "get their foot in the door",
               "zh": "迈入门槛；获得入门机会"
             },
             {
               "term": "pay their rent",
               "zh": "支付房租"
+            },
+            {
+              "term": "unpaid internships",
+              "zh": "无薪实习"
             }
           ],
           "difficulty": 2
@@ -2934,16 +2886,8 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Surveys revealed that... 是主句加宾语从句；regardless of... 是让步状语；are more likely than...to end up... 是比较结构；when they pursue... 表示条件。核心结构：A revealed that B, regardless of C, are more likely than D to E when F。",
           "phrases": [
             {
-              "term": "working-class",
-              "zh": "工人阶级的"
-            },
-            {
               "term": "first-generation college graduates",
               "zh": "第一代大学毕业生"
-            },
-            {
-              "term": "regardless of",
-              "zh": "不论"
             },
             {
               "term": "end up in",
@@ -2952,6 +2896,18 @@ export const cet6Reading202506Set1 = {
             {
               "term": "low-paying unskilled jobs",
               "zh": "低薪非技术工作"
+            },
+            {
+              "term": "regardless of",
+              "zh": "不管；无论"
+            },
+            {
+              "term": "working-class",
+              "zh": "工人阶级的"
+            },
+            {
+              "term": "be more likely than",
+              "zh": "比……更可能"
             }
           ],
           "difficulty": 2
@@ -2964,10 +2920,6 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主语是 Colleges, workplaces and career counselors；who promote... 修饰主语；without leveling... 作条件/方式状语；谓语是 help perpetuate。核心结构：A who promote B without C help perpetuate D among E。",
           "phrases": [
             {
-              "term": "career counselors",
-              "zh": "职业顾问"
-            },
-            {
               "term": "follow your passion path",
               "zh": "追随热情的道路"
             },
@@ -2976,12 +2928,20 @@ export const cet6Reading202506Set1 = {
               "zh": "拉平竞争环境"
             },
             {
+              "term": "career counselors",
+              "zh": "职业顾问"
+            },
+            {
               "term": "socioeconomic inequalities",
               "zh": "社会经济不平等"
             },
             {
               "term": "career aspirants",
               "zh": "职业追求者"
+            },
+            {
+              "term": "follow your passion",
+              "zh": "追随热情/兴趣"
             }
           ],
           "difficulty": 2
@@ -2994,16 +2954,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：It is not just...who... 是强调句；well-off passion-seekers 是被强调对象；benefit from... 表示受益来源。核心结构：It is not just A who benefit from B。",
           "phrases": [
             {
-              "term": "well-off",
-              "zh": "富裕的"
-            },
-            {
               "term": "benefit from",
               "zh": "从……中受益"
             },
             {
               "term": "passion principle",
               "zh": "热情原则"
+            },
+            {
+              "term": "well-off",
+              "zh": "富裕的"
             }
           ],
           "difficulty": 2
@@ -3016,16 +2976,16 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：Employers 是主语；of passionate workers 修饰 employers；do too 是强调性省略，等于 benefit too。核心结构：Employers of A do, too。",
           "phrases": [
             {
-              "term": "employers",
-              "zh": "雇主"
-            },
-            {
               "term": "passionate workers",
               "zh": "充满热情的员工"
             },
             {
               "term": "do, too",
               "zh": "也一样；也会受益"
+            },
+            {
+              "term": "employers",
+              "zh": "雇主"
             }
           ],
           "difficulty": 2
@@ -3038,16 +2998,8 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 Potential employers showed greater interest；in part because 引导原因状语从句；the applicants would work hard... 是 believed 的宾语从句；without expecting... 表示伴随条件。核心结构：A showed interest in B because they believed C would D without E。",
           "phrases": [
             {
-              "term": "potential employers",
-              "zh": "潜在雇主"
-            },
-            {
               "term": "show greater interest in",
               "zh": "对……表现出更大兴趣"
-            },
-            {
-              "term": "passionate applicants",
-              "zh": "有热情的申请者"
             },
             {
               "term": "in part because",
@@ -3056,6 +3008,14 @@ export const cet6Reading202506Set1 = {
             {
               "term": "increase in pay",
               "zh": "加薪"
+            },
+            {
+              "term": "potential employers",
+              "zh": "潜在雇主"
+            },
+            {
+              "term": "passionate applicants",
+              "zh": "有热情的申请者"
             }
           ],
           "difficulty": 2
@@ -3068,8 +3028,8 @@ export const cet6Reading202506Set1 = {
           "structure": "结构分析：主句是 They even sacrifice...；a good salary, job stability and leisure time 是并列宾语；to work in a job they love 作目的状语；they love 修饰 job。核心结构：A sacrifice B, C and D to work in E they love。",
           "phrases": [
             {
-              "term": "sacrifice",
-              "zh": "牺牲"
+              "term": "a job they love",
+              "zh": "他们热爱的工作"
             },
             {
               "term": "good salary",
@@ -3084,8 +3044,8 @@ export const cet6Reading202506Set1 = {
               "zh": "闲暇时间"
             },
             {
-              "term": "a job they love",
-              "zh": "他们热爱的工作"
+              "term": "sacrifice",
+              "zh": "牺牲"
             }
           ],
           "difficulty": 2
