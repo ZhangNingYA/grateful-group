@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-F6",
+  "source_section": "Para F",
+  "original_sentence": "For the first time in a few hundred years, digital is allowing us to create new versions of restaurants.",
+  "translation": "几百年来第一次，数字技术让我们能够创造新的餐厅形态。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "for the first time",
+      "meaning_cn": "第一次",
+      "usage_note": "for the first time 在本句中对应\"第一次\"。"
+    },
+    {
+      "word_or_phrase": "new versions of restaurants",
+      "meaning_cn": "新的餐厅形态",
+      "usage_note": "new versions of restaurants 在本句中对应\"新的餐厅形态\"。"
+    },
+    {
+      "word_or_phrase": "digital",
+      "meaning_cn": "数字化的",
+      "usage_note": "digital 在本句中对应\"数字化的\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "For the first time in a few hundred years, digital is allowing us to create new versions of restaurants.",
+    "structure_type": "Para F",
+    "analysis_points": [
+      {
+        "part": "For the first time in a few hundred years, digital is allowing us to create new versions of restaurants.",
+        "function": "结构分析",
+        "explanation_cn": "For the first time... 作时间状语；allowing us to create... 是核心谓语结构。"
+      }
+    ],
+    "simplified_structure_cn": "几百年来第一次，数字技术让我们能够创造新的餐厅形态。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "For the first time in a few hundred years, digital is allowing us to create new versions of restaurants."
+  }
+}

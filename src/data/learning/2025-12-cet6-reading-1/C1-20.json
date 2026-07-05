@@ -1,0 +1,48 @@
+{
+  "sentence_id": "C1-20",
+  "source_section": "Passage One",
+  "original_sentence": "We cannot be complacent with losing friendships because they are our anchors.",
+  "translation": "我们不能对失去友谊安然处之，因为友谊是我们的锚。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be complacent with",
+      "meaning_cn": "对……安然接受",
+      "usage_note": "be complacent with 在本句中对应\"对……安然接受\"。"
+    },
+    {
+      "word_or_phrase": "our anchors",
+      "meaning_cn": "我们的锚；稳定支撑",
+      "usage_note": "our anchors 在本句中对应\"我们的锚；稳定支撑\"。"
+    },
+    {
+      "word_or_phrase": "lose friendships",
+      "meaning_cn": "失去友谊",
+      "usage_note": "lose friendships 在本句中对应\"失去友谊\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "We cannot be complacent with losing friendships because they are our anchors.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "We cannot be complacent with losing friendships because they are our anchors.",
+        "function": "结构分析",
+        "explanation_cn": "because 引导原因从句；anchors 是比喻，表示稳定支撑。"
+      }
+    ],
+    "simplified_structure_cn": "我们不能对失去友谊安然处之，因为友谊是我们的锚。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "We cannot be complacent with losing friendships because they are our anchors."
+  }
+}

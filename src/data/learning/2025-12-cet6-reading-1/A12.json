@@ -1,0 +1,63 @@
+{
+  "sentence_id": "A12",
+  "source_section": "Cloze",
+  "original_sentence": "It is ideal, then, for people to start exercising when they are children or adolescents, and it is good to maintain an active lifestyle at all times regardless of your age.",
+  "translation": "因此，理想情况是人们在儿童或青少年时期就开始锻炼；无论年龄多大，始终保持积极的生活方式都是有益的。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "at all times",
+      "meaning_cn": "始终；任何时候",
+      "usage_note": "at all times 在本句中对应\"始终；任何时候\"。"
+    },
+    {
+      "word_or_phrase": "it is ideal for",
+      "meaning_cn": "它适合",
+      "usage_note": "it is ideal for 在本句中对应\"它适合\"。"
+    },
+    {
+      "word_or_phrase": "children or adolescents",
+      "meaning_cn": "儿童或青少年",
+      "usage_note": "children or adolescents 在本句中对应\"儿童或青少年\"。"
+    },
+    {
+      "word_or_phrase": "maintain an active lifestyle",
+      "meaning_cn": "保持积极生活方式",
+      "usage_note": "maintain an active lifestyle 在本句中对应\"保持积极生活方式\"。"
+    },
+    {
+      "word_or_phrase": "regardless of",
+      "meaning_cn": "不管；无论",
+      "usage_note": "regardless of 在本句中对应\"不管；无论\"。"
+    },
+    {
+      "word_or_phrase": "to start",
+      "meaning_cn": "开始",
+      "usage_note": "to start 在本句中对应\"开始\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "It is ideal, then, for people to start exercising when they are children or adolescents, and it is good to maintain an active lifestyle at all times regardless of your age.",
+    "structure_type": "Cloze",
+    "analysis_points": [
+      {
+        "part": "It is ideal, then, for people to start exercising when they are children or adolescents, and it is good to maintain an active lifestyle at all times regardless of your age.",
+        "function": "结构分析",
+        "explanation_cn": "两个 it is... 结构由 and 连接；for people to start... 是真正主语；when... 作时间状语；regardless of... 作让步。"
+      }
+    ],
+    "simplified_structure_cn": "因此，理想情况是人们在儿童或青少年时期就开始锻炼；无论年龄多大，始终保持积极的生活方式都是有益的。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "It is ideal, then, for people to start exercising when they are children or adolescents, and it is good to maintain an active lifestyle at all times regardless of your age."
+  }
+}

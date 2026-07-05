@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-I3",
+  "source_section": "Para I",
+  "original_sentence": "The kitchen screens then tell chefs when to start cooking each dish, so that your plate of fish, chips and peas comes together at the right time.",
+  "translation": "随后，厨房屏幕会告诉厨师每道菜什么时候开始做，这样你的鱼、薯条和豌豆就能在合适的时间一起出餐。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "when to start cooking",
+      "meaning_cn": "何时开始烹饪",
+      "usage_note": "when to start cooking 在本句中对应\"何时开始烹饪\"。"
+    },
+    {
+      "word_or_phrase": "at the right time",
+      "meaning_cn": "在正确时间",
+      "usage_note": "at the right time 在本句中对应\"在正确时间\"。"
+    },
+    {
+      "word_or_phrase": "to start",
+      "meaning_cn": "开始",
+      "usage_note": "to start 在本句中对应\"开始\"。"
+    },
+    {
+      "word_or_phrase": "kitchen screens",
+      "meaning_cn": "厨房屏幕",
+      "usage_note": "kitchen screens 在本句中对应\"厨房屏幕\"。"
+    },
+    {
+      "word_or_phrase": "come together",
+      "meaning_cn": "同步完成；一起出餐",
+      "usage_note": "come together 在本句中对应\"同步完成；一起出餐\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "The kitchen screens then tell chefs when to start cooking each dish, so that your plate of fish, chips and peas comes together at the right time.",
+    "structure_type": "Para I",
+    "analysis_points": [
+      {
+        "part": "The kitchen screens then tell chefs when to start cooking each dish, so that your plate of fish, chips and peas comes together at the right time.",
+        "function": "结构分析",
+        "explanation_cn": "tell chefs when to... 是“疑问词 + 不定式”作宾补；so that 引导目的/结果从句。"
+      }
+    ],
+    "simplified_structure_cn": "随后，厨房屏幕会告诉厨师每道菜什么时候开始做，这样你的鱼、薯条和豌豆就能在合适的时间一起出餐。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "The kitchen screens then tell chefs when to start cooking each dish, so that your plate of fish, chips and peas comes together at the right time."
+  }
+}

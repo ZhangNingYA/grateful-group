@@ -1,0 +1,53 @@
+{
+  "sentence_id": "A10",
+  "source_section": "Cloze",
+  "original_sentence": "The latter is particularly important given the global obesity epidemic.",
+  "translation": "考虑到全球肥胖问题日益严重，后者尤其重要。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "global obesity epidemic",
+      "meaning_cn": "全球肥胖流行",
+      "usage_note": "global obesity epidemic 在本句中对应\"全球肥胖流行\"。"
+    },
+    {
+      "word_or_phrase": "the latter",
+      "meaning_cn": "后者",
+      "usage_note": "the latter 在本句中对应\"后者\"。"
+    },
+    {
+      "word_or_phrase": "particularly important",
+      "meaning_cn": "尤其重要",
+      "usage_note": "particularly important 在本句中对应\"尤其重要\"。"
+    },
+    {
+      "word_or_phrase": "given",
+      "meaning_cn": "鉴于；考虑到",
+      "usage_note": "given 在本句中对应\"鉴于；考虑到\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "The latter is particularly important given the global obesity epidemic.",
+    "structure_type": "Cloze",
+    "analysis_points": [
+      {
+        "part": "The latter is particularly important given the global obesity epidemic.",
+        "function": "结构分析",
+        "explanation_cn": "The latter 指 lowered risk of gaining weight；given... 是介词短语，表示“鉴于、考虑到”。"
+      }
+    ],
+    "simplified_structure_cn": "考虑到全球肥胖问题日益严重，后者尤其重要。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "The latter is particularly important given the global obesity epidemic."
+  }
+}

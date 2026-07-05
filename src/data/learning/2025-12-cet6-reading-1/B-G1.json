@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-G1",
+  "source_section": "Para G",
+  "original_sentence": "If high-street fast food is automation-ready, its impact on high-end restaurants is likely to be subtler and slower.",
+  "translation": "如果商业街快餐已经适合自动化，那么自动化对高端餐厅的影响可能会更细微、更缓慢。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "high-street fast food",
+      "meaning_cn": "商业街快餐",
+      "usage_note": "high-street fast food 在本句中对应\"商业街快餐\"。"
+    },
+    {
+      "word_or_phrase": "be likely to",
+      "meaning_cn": "可能会",
+      "usage_note": "be likely to 在本句中对应\"可能会\"。"
+    },
+    {
+      "word_or_phrase": "high-end restaurants",
+      "meaning_cn": "高端餐厅",
+      "usage_note": "high-end restaurants 在本句中对应\"高端餐厅\"。"
+    },
+    {
+      "word_or_phrase": "automation-ready",
+      "meaning_cn": "适合自动化",
+      "usage_note": "automation-ready 在本句中对应\"适合自动化\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "If high-street fast food is automation-ready, its impact on high-end restaurants is likely to be subtler and slower.",
+    "structure_type": "Para G",
+    "analysis_points": [
+      {
+        "part": "If high-street fast food is automation-ready, its impact on high-end restaurants is likely to be subtler and slower.",
+        "function": "结构分析",
+        "explanation_cn": "If 引导条件状语；主句 is likely to be...；subtler and slower 并列表语。"
+      }
+    ],
+    "simplified_structure_cn": "如果商业街快餐已经适合自动化，那么自动化对高端餐厅的影响可能会更细微、更缓慢。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "If high-street fast food is automation-ready, its impact on high-end restaurants is likely to be subtler and slower."
+  }
+}

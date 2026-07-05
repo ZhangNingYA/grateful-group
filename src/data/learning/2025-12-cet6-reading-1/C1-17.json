@@ -1,0 +1,53 @@
+{
+  "sentence_id": "C1-17",
+  "source_section": "Passage One",
+  "original_sentence": "This constant need to succeed has blinded us from seeing through the whirlwind of change that accompanies our everyday lives.",
+  "translation": "这种持续不断的成功需求让我们无法看清日常生活中伴随而来的变化旋涡。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "whirlwind of change",
+      "meaning_cn": "变化旋涡",
+      "usage_note": "whirlwind of change 在本句中对应\"变化旋涡\"。"
+    },
+    {
+      "word_or_phrase": "constant need to succeed",
+      "meaning_cn": "持续的成功需求",
+      "usage_note": "constant need to succeed 在本句中对应\"持续的成功需求\"。"
+    },
+    {
+      "word_or_phrase": "blind sb. from",
+      "meaning_cn": "使某人无法看清",
+      "usage_note": "blind sb. from 在本句中对应\"使某人无法看清\"。"
+    },
+    {
+      "word_or_phrase": "see through",
+      "meaning_cn": "看穿；识破",
+      "usage_note": "see through 在本句中对应\"看穿；识破\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "This constant need to succeed has blinded us from seeing through the whirlwind of change that accompanies our everyday lives.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "This constant need to succeed has blinded us from seeing through the whirlwind of change that accompanies our everyday lives.",
+        "function": "结构分析",
+        "explanation_cn": "主语 This constant need；blind sb. from doing sth.；that accompanies... 修饰 whirlwind of change。"
+      }
+    ],
+    "simplified_structure_cn": "这种持续不断的成功需求让我们无法看清日常生活中伴随而来的变化旋涡。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "This constant need to succeed has blinded us from seeing through the whirlwind of change that accompanies our everyday lives."
+  }
+}

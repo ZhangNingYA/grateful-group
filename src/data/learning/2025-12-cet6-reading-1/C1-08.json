@@ -1,0 +1,53 @@
+{
+  "sentence_id": "C1-08",
+  "source_section": "Passage One",
+  "original_sentence": "It argues, for instance, that universal healthcare, an example of collectivism, threatened the dream of many Americans.",
+  "translation": "例如，它认为全民医疗这种集体主义的例子威胁了许多美国人的梦想。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "threaten the dream of",
+      "meaning_cn": "威胁……的梦想",
+      "usage_note": "threaten the dream of 在本句中对应\"威胁……的梦想\"。"
+    },
+    {
+      "word_or_phrase": "universal healthcare",
+      "meaning_cn": "全民医疗",
+      "usage_note": "universal healthcare 在本句中对应\"全民医疗\"。"
+    },
+    {
+      "word_or_phrase": "for instance",
+      "meaning_cn": "例如",
+      "usage_note": "for instance 在本句中对应\"例如\"。"
+    },
+    {
+      "word_or_phrase": "collectivism",
+      "meaning_cn": "集体主义",
+      "usage_note": "collectivism 在本句中对应\"集体主义\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "It argues, for instance, that universal healthcare, an example of collectivism, threatened the dream of many Americans.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "It argues, for instance, that universal healthcare, an example of collectivism, threatened the dream of many Americans.",
+        "function": "结构分析",
+        "explanation_cn": "argues that... 接宾语从句；for instance 插入；an example of collectivism 是 universal healthcare 的同位语。"
+      }
+    ],
+    "simplified_structure_cn": "例如，它认为全民医疗这种集体主义的例子威胁了许多美国人的梦想。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "It argues, for instance, that universal healthcare, an example of collectivism, threatened the dream of many Americans."
+  }
+}

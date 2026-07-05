@@ -1,0 +1,58 @@
+{
+  "sentence_id": "C2-01",
+  "source_section": "Passage Two",
+  "original_sentence": "During his acceptance speech for the Nobel Peace Prize, Martin Luther King Jr. said, \"I believe that unarmed truth and unconditional love will have the final word in reality.\"",
+  "translation": "在诺贝尔和平奖获奖演说中，马丁·路德·金说：“我相信，赤手空拳的真理和无条件的爱将在现实中拥有最终发言权。”",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "Nobel Peace Prize",
+      "meaning_cn": "诺贝尔和平奖",
+      "usage_note": "Nobel Peace Prize 在本句中对应\"诺贝尔和平奖\"。"
+    },
+    {
+      "word_or_phrase": "have the final word",
+      "meaning_cn": "拥有最终发言权",
+      "usage_note": "have the final word 在本句中对应\"拥有最终发言权\"。"
+    },
+    {
+      "word_or_phrase": "acceptance speech",
+      "meaning_cn": "获奖演说",
+      "usage_note": "acceptance speech 在本句中对应\"获奖演说\"。"
+    },
+    {
+      "word_or_phrase": "unarmed truth",
+      "meaning_cn": "赤手空拳的真理",
+      "usage_note": "unarmed truth 在本句中对应\"赤手空拳的真理\"。"
+    },
+    {
+      "word_or_phrase": "unconditional love",
+      "meaning_cn": "无条件的爱",
+      "usage_note": "unconditional love 在本句中对应\"无条件的爱\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "During his acceptance speech for the Nobel Peace Prize, Martin Luther King Jr. said, \"I believe that unarmed truth and unconditional love will have the final word in reality.\"",
+    "structure_type": "Passage Two",
+    "analysis_points": [
+      {
+        "part": "During his acceptance speech for the Nobel Peace Prize, Martin Luther King Jr. said, \"I believe that unarmed truth and unconditional love will have the final word in reality.\"",
+        "function": "结构分析",
+        "explanation_cn": "During... 作时间背景；said 后接直接引语；that 引导 believe 的宾语从句。"
+      }
+    ],
+    "simplified_structure_cn": "在诺贝尔和平奖获奖演说中，马丁·路德·金说：“我相信，赤手空拳的真理和无条件的爱将在现实中拥有最终发言权。”"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "During his acceptance speech for the Nobel Peace Prize, Martin Luther King Jr. said, \"I believe that unarmed truth and unconditional love will have the final word in reality.\""
+  }
+}

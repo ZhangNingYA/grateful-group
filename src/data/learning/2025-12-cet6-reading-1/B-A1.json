@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-A1",
+  "source_section": "Para A",
+  "original_sentence": "Like most chefs, Flippy is not afraid of hard work.",
+  "translation": "和大多数厨师一样，Flippy 不怕辛苦工作。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "like most chefs",
+      "meaning_cn": "像大多数厨师一样",
+      "usage_note": "like most chefs 在本句中对应\"像大多数厨师一样\"。"
+    },
+    {
+      "word_or_phrase": "be afraid of",
+      "meaning_cn": "害怕；畏惧",
+      "usage_note": "be afraid of 在本句中对应\"害怕；畏惧\"。"
+    },
+    {
+      "word_or_phrase": "hard work",
+      "meaning_cn": "努力工作",
+      "usage_note": "hard work 在本句中对应\"努力工作\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Like most chefs, Flippy is not afraid of hard work.",
+    "structure_type": "Para A",
+    "analysis_points": [
+      {
+        "part": "Like most chefs, Flippy is not afraid of hard work.",
+        "function": "结构分析",
+        "explanation_cn": "Like most chefs 作比较状语；主句是 Flippy is not afraid of...。"
+      }
+    ],
+    "simplified_structure_cn": "和大多数厨师一样，Flippy 不怕辛苦工作。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 1,
+    "difficulty_stars": "★☆☆☆☆",
+    "reason_cn": "原数据难度为 1/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Like most chefs, Flippy is not afraid of hard work."
+  }
+}

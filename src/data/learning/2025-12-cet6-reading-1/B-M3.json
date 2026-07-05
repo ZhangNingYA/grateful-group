@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-M3",
+  "source_section": "Para M",
+  "original_sentence": "We're urging Members of Parliament to ensure automation does not just benefit a wealthy few like previous industrial revolutions.",
+  "translation": "我们正在敦促议会议员确保自动化不要像以往工业革命那样只让少数富人受益。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "benefit a wealthy few",
+      "meaning_cn": "让少数富人受益",
+      "usage_note": "benefit a wealthy few 在本句中对应\"让少数富人受益\"。"
+    },
+    {
+      "word_or_phrase": "Members of Parliament",
+      "meaning_cn": "议会议员",
+      "usage_note": "Members of Parliament 在本句中对应\"议会议员\"。"
+    },
+    {
+      "word_or_phrase": "urge sb. to",
+      "meaning_cn": "敦促某人做某事",
+      "usage_note": "urge sb. to 在本句中对应\"敦促某人做某事\"。"
+    },
+    {
+      "word_or_phrase": "industrial revolutions",
+      "meaning_cn": "工业革命",
+      "usage_note": "industrial revolutions 在本句中对应\"工业革命\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "We're urging Members of Parliament to ensure automation does not just benefit a wealthy few like previous industrial revolutions.",
+    "structure_type": "Para M",
+    "analysis_points": [
+      {
+        "part": "We're urging Members of Parliament to ensure automation does not just benefit a wealthy few like previous industrial revolutions.",
+        "function": "结构分析",
+        "explanation_cn": "urge sb. to do sth.；ensure 后省略 that；like previous industrial revolutions 作比较。"
+      }
+    ],
+    "simplified_structure_cn": "我们正在敦促议会议员确保自动化不要像以往工业革命那样只让少数富人受益。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "We're urging Members of Parliament to ensure automation does not just benefit a wealthy few like previous industrial revolutions."
+  }
+}

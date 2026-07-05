@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-N1",
+  "source_section": "Para N",
+  "original_sentence": "The industry principle is that automation will allow it to redeploy staff more effectively.",
+  "translation": "行业原则是，自动化将使其能够更有效地重新配置员工。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "allow it to",
+      "meaning_cn": "允许它去",
+      "usage_note": "allow it to 在本句中对应\"允许它去\"。"
+    },
+    {
+      "word_or_phrase": "redeploy staff",
+      "meaning_cn": "重新配置员工",
+      "usage_note": "redeploy staff 在本句中对应\"重新配置员工\"。"
+    },
+    {
+      "word_or_phrase": "industry principle",
+      "meaning_cn": "行业原则",
+      "usage_note": "industry principle 在本句中对应\"行业原则\"。"
+    },
+    {
+      "word_or_phrase": "more effectively",
+      "meaning_cn": "更有效地",
+      "usage_note": "more effectively 在本句中对应\"更有效地\"。"
+    },
+    {
+      "word_or_phrase": "be more effective",
+      "meaning_cn": "更有效",
+      "usage_note": "be more effective 在本句中对应\"更有效\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "The industry principle is that automation will allow it to redeploy staff more effectively.",
+    "structure_type": "Para N",
+    "analysis_points": [
+      {
+        "part": "The industry principle is that automation will allow it to redeploy staff more effectively.",
+        "function": "结构分析",
+        "explanation_cn": "that 引导表语从句；allow it to redeploy... 是从句核心。"
+      }
+    ],
+    "simplified_structure_cn": "行业原则是，自动化将使其能够更有效地重新配置员工。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "The industry principle is that automation will allow it to redeploy staff more effectively."
+  }
+}

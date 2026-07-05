@@ -1,0 +1,53 @@
+{
+  "sentence_id": "C1-14",
+  "source_section": "Passage One",
+  "original_sentence": "Motivational speakers will push their audience to be complacent to the inevitable end of losing friends.",
+  "translation": "励志演讲者会促使听众对失去朋友这一所谓不可避免的结局变得麻木接受。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be complacent to",
+      "meaning_cn": "对……安然接受",
+      "usage_note": "be complacent to 在本句中对应\"对……安然接受\"。"
+    },
+    {
+      "word_or_phrase": "push audience to",
+      "meaning_cn": "促使受众去做",
+      "usage_note": "push audience to 在本句中对应\"促使受众去做\"。"
+    },
+    {
+      "word_or_phrase": "motivational speakers",
+      "meaning_cn": "励志演讲者",
+      "usage_note": "motivational speakers 在本句中对应\"励志演讲者\"。"
+    },
+    {
+      "word_or_phrase": "inevitable end",
+      "meaning_cn": "不可避免的结局",
+      "usage_note": "inevitable end 在本句中对应\"不可避免的结局\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Motivational speakers will push their audience to be complacent to the inevitable end of losing friends.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "Motivational speakers will push their audience to be complacent to the inevitable end of losing friends.",
+        "function": "结构分析",
+        "explanation_cn": "push sb. to do sth.；be complacent to... 表示对某事自满或安于现状。"
+      }
+    ],
+    "simplified_structure_cn": "励志演讲者会促使听众对失去朋友这一所谓不可避免的结局变得麻木接受。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Motivational speakers will push their audience to be complacent to the inevitable end of losing friends."
+  }
+}

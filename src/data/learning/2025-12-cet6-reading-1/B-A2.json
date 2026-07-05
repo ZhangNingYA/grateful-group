@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-A2",
+  "source_section": "Para A",
+  "original_sentence": "Since last summer, that has meant 11am until 7pm shifts at Caliburger in Pasadena, California, as well as short assignments at Chick-N-Tots at Dodger Stadium in Los Angeles.",
+  "translation": "自去年夏天以来，这意味着它要在加州帕萨迪纳的 Caliburger 上上午 11 点到晚上 7 点的班，也要在洛杉矶道奇体育场的 Chick-N-Tots 完成短期任务。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "as well as",
+      "meaning_cn": "以及；还",
+      "usage_note": "as well as 在本句中对应\"以及；还\"。"
+    },
+    {
+      "word_or_phrase": "since last summer",
+      "meaning_cn": "自去年夏天以来",
+      "usage_note": "since last summer 在本句中对应\"自去年夏天以来\"。"
+    },
+    {
+      "word_or_phrase": "short assignments",
+      "meaning_cn": "短期任务",
+      "usage_note": "short assignments 在本句中对应\"短期任务\"。"
+    },
+    {
+      "word_or_phrase": "shifts",
+      "meaning_cn": "转变",
+      "usage_note": "shifts 在本句中对应\"转变\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Since last summer, that has meant 11am until 7pm shifts at Caliburger in Pasadena, California, as well as short assignments at Chick-N-Tots at Dodger Stadium in Los Angeles.",
+    "structure_type": "Para A",
+    "analysis_points": [
+      {
+        "part": "Since last summer, that has meant 11am until 7pm shifts at Caliburger in Pasadena, California, as well as short assignments at Chick-N-Tots at Dodger Stadium in Los Angeles.",
+        "function": "结构分析",
+        "explanation_cn": "Since last summer 是时间状语；that 指 hard work；has meant 后接两个并列宾语：shifts 和 assignments。"
+      }
+    ],
+    "simplified_structure_cn": "自去年夏天以来，这意味着它要在加州帕萨迪纳的 Caliburger 上上午 11 点到晚上 7 点的班，也要在洛杉矶道奇体育场的 Chick-N-Tots 完成短期任务。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Since last summer, that has meant 11am until 7pm shifts at Caliburger in Pasadena, California, as well as short assignments at Chick-N-Tots at Dodger Stadium in Los Angeles."
+  }
+}

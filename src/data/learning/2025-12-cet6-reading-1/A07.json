@@ -1,0 +1,58 @@
+{
+  "sentence_id": "A07",
+  "source_section": "Cloze",
+  "original_sentence": "The authors of the study concede that some might interpret the study's findings to mean that they can delay starting an exercise program but this would be a mistake.",
+  "translation": "研究作者承认，有些人可能会把研究发现理解为他们可以推迟开始锻炼计划，但这种理解是错误的。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be a mistake",
+      "meaning_cn": "是错误的",
+      "usage_note": "be a mistake 在本句中对应\"是错误的\"。"
+    },
+    {
+      "word_or_phrase": "authors of the study",
+      "meaning_cn": "该研究的作者",
+      "usage_note": "authors of the study 在本句中对应\"该研究的作者\"。"
+    },
+    {
+      "word_or_phrase": "interpret findings to mean",
+      "meaning_cn": "把研究发现理解为",
+      "usage_note": "interpret findings to mean 在本句中对应\"把研究发现理解为\"。"
+    },
+    {
+      "word_or_phrase": "concede that",
+      "meaning_cn": "承认……",
+      "usage_note": "concede that 在本句中对应\"承认……\"。"
+    },
+    {
+      "word_or_phrase": "delay starting",
+      "meaning_cn": "推迟开始",
+      "usage_note": "delay starting 在本句中对应\"推迟开始\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "The authors of the study concede that some might interpret the study's findings to mean that they can delay starting an exercise program but this would be a mistake.",
+    "structure_type": "Cloze",
+    "analysis_points": [
+      {
+        "part": "The authors of the study concede that some might interpret the study's findings to mean that they can delay starting an exercise program but this would be a mistake.",
+        "function": "结构分析",
+        "explanation_cn": "concede 后接 that 宾语从句；interpret... to mean that... 表示“把……理解为……”；but 连接转折分句。"
+      }
+    ],
+    "simplified_structure_cn": "研究作者承认，有些人可能会把研究发现理解为他们可以推迟开始锻炼计划，但这种理解是错误的。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "The authors of the study concede that some might interpret the study's findings to mean that they can delay starting an exercise program but this would be a mistake."
+  }
+}

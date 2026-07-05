@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-N2",
+  "source_section": "Para N",
+  "original_sentence": "Jobs will change, if not immediately decrease in number.",
+  "translation": "岗位会发生变化，即使数量不会立刻减少。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "decrease in number",
+      "meaning_cn": "数量减少",
+      "usage_note": "decrease in number 在本句中对应\"数量减少\"。"
+    },
+    {
+      "word_or_phrase": "jobs will change",
+      "meaning_cn": "工作会改变",
+      "usage_note": "jobs will change 在本句中对应\"工作会改变\"。"
+    },
+    {
+      "word_or_phrase": "if not",
+      "meaning_cn": "即使不……",
+      "usage_note": "if not 在本句中对应\"即使不……\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Jobs will change, if not immediately decrease in number.",
+    "structure_type": "Para N",
+    "analysis_points": [
+      {
+        "part": "Jobs will change, if not immediately decrease in number.",
+        "function": "结构分析",
+        "explanation_cn": "if not... 是省略结构，表示让步或弱化。"
+      }
+    ],
+    "simplified_structure_cn": "岗位会发生变化，即使数量不会立刻减少。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Jobs will change, if not immediately decrease in number."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "sentence_id": "C1-24",
+  "source_section": "Passage One",
+  "original_sentence": "But contrary to all the self-proclaimed success experts, doing it alone does not make you more successful or any better than someone who achieved it with the help of others.",
+  "translation": "但是，与所有自封的成功专家所说相反，独自完成这件事并不会让你比那些在他人帮助下成功的人更成功或更优秀。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "with the help of others",
+      "meaning_cn": "在他人帮助下",
+      "usage_note": "with the help of others 在本句中对应\"在他人帮助下\"。"
+    },
+    {
+      "word_or_phrase": "doing it alone",
+      "meaning_cn": "独自完成",
+      "usage_note": "doing it alone 在本句中对应\"独自完成\"。"
+    },
+    {
+      "word_or_phrase": "contrary to",
+      "meaning_cn": "与……相反",
+      "usage_note": "contrary to 在本句中对应\"与……相反\"。"
+    },
+    {
+      "word_or_phrase": "self-proclaimed",
+      "meaning_cn": "自封的",
+      "usage_note": "self-proclaimed 在本句中对应\"自封的\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "But contrary to all the self-proclaimed success experts, doing it alone does not make you more successful or any better than someone who achieved it with the help of others.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "But contrary to all the self-proclaimed success experts, doing it alone does not make you more successful or any better than someone who achieved it with the help of others.",
+        "function": "结构分析",
+        "explanation_cn": "contrary to... 作对照状语；doing it alone 是主语；make you more successful or better 是复合宾语；who achieved... 修饰 someone。"
+      }
+    ],
+    "simplified_structure_cn": "但是，与所有自封的成功专家所说相反，独自完成这件事并不会让你比那些在他人帮助下成功的人更成功或更优秀。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "But contrary to all the self-proclaimed success experts, doing it alone does not make you more successful or any better than someone who achieved it with the help of others."
+  }
+}

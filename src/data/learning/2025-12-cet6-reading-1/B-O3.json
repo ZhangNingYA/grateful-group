@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-O3",
+  "source_section": "Para O",
+  "original_sentence": "Companies such as Domino and Just Eat have both experimented with robot and drone delivery, which is already legal in Reykjavik, Iceland.",
+  "translation": "Domino 和 Just Eat 等公司都已经尝试过机器人和无人机配送，而这种方式在冰岛雷克雅未克已经合法。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "robot and drone delivery",
+      "meaning_cn": "机器人和无人机配送",
+      "usage_note": "robot and drone delivery 在本句中对应\"机器人和无人机配送\"。"
+    },
+    {
+      "word_or_phrase": "already legal",
+      "meaning_cn": "已经合法",
+      "usage_note": "already legal 在本句中对应\"已经合法\"。"
+    },
+    {
+      "word_or_phrase": "experiment with",
+      "meaning_cn": "试验；尝试",
+      "usage_note": "experiment with 在本句中对应\"试验；尝试\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Companies such as Domino and Just Eat have both experimented with robot and drone delivery, which is already legal in Reykjavik, Iceland.",
+    "structure_type": "Para O",
+    "analysis_points": [
+      {
+        "part": "Companies such as Domino and Just Eat have both experimented with robot and drone delivery, which is already legal in Reykjavik, Iceland.",
+        "function": "结构分析",
+        "explanation_cn": "such as... 举例；have experimented with 是现在完成时；which is already legal... 补充说明 delivery。"
+      }
+    ],
+    "simplified_structure_cn": "Domino 和 Just Eat 等公司都已经尝试过机器人和无人机配送，而这种方式在冰岛雷克雅未克已经合法。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Companies such as Domino and Just Eat have both experimented with robot and drone delivery, which is already legal in Reykjavik, Iceland."
+  }
+}

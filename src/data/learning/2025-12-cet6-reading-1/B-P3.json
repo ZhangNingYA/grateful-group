@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-P3",
+  "source_section": "Para P",
+  "original_sentence": "\"I'll be able to say 'Let's have pizza' to my family, my intelligent assistant will hear and 10 minutes later the food will be at my door.\"",
+  "translation": "“我可以对家人说‘我们吃披萨吧’，我的智能助手会听到，10 分钟后食物就会送到我家门口。”",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be able to say",
+      "meaning_cn": "能够说",
+      "usage_note": "be able to say 在本句中对应\"能够说\"。"
+    },
+    {
+      "word_or_phrase": "10 minutes later",
+      "meaning_cn": "十分钟后",
+      "usage_note": "10 minutes later 在本句中对应\"十分钟后\"。"
+    },
+    {
+      "word_or_phrase": "at my door",
+      "meaning_cn": "到我门口",
+      "usage_note": "at my door 在本句中对应\"到我门口\"。"
+    },
+    {
+      "word_or_phrase": "intelligent assistant",
+      "meaning_cn": "智能助手",
+      "usage_note": "intelligent assistant 在本句中对应\"智能助手\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "\"I'll be able to say 'Let's have pizza' to my family, my intelligent assistant will hear and 10 minutes later the food will be at my door.\"",
+    "structure_type": "Para P",
+    "analysis_points": [
+      {
+        "part": "\"I'll be able to say 'Let's have pizza' to my family, my intelligent assistant will hear and 10 minutes later the food will be at my door.\"",
+        "function": "结构分析",
+        "explanation_cn": "三个并列分句按时间推进；be able to、will hear、will be 构成未来场景。"
+      }
+    ],
+    "simplified_structure_cn": "“我可以对家人说‘我们吃披萨吧’，我的智能助手会听到，10 分钟后食物就会送到我家门口。”"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "\"I'll be able to say 'Let's have pizza' to my family, my intelligent assistant will hear and 10 minutes later the food will be at my door.\""
+  }
+}

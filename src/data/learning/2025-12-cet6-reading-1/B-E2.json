@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-E2",
+  "source_section": "Para E",
+  "original_sentence": "Soon when you log into a restaurant app, it will be able to use your data and purchasing history to recommend dishes to you—factoring in everything from the weather to, if you are ordering at a screen that can read your face, your mood.",
+  "translation": "不久以后，当你登录餐厅应用时，它将能够利用你的数据和购买历史向你推荐菜品，并把从天气到你的情绪等因素都考虑进去；如果你是在能识别人脸的屏幕上下单，它甚至会读取你的情绪。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "read your face",
+      "meaning_cn": "识别你的脸",
+      "usage_note": "read your face 在本句中对应\"识别你的脸\"。"
+    },
+    {
+      "word_or_phrase": "log into",
+      "meaning_cn": "登录",
+      "usage_note": "log into 在本句中对应\"登录\"。"
+    },
+    {
+      "word_or_phrase": "purchasing history",
+      "meaning_cn": "购买历史",
+      "usage_note": "purchasing history 在本句中对应\"购买历史\"。"
+    },
+    {
+      "word_or_phrase": "recommend dishes",
+      "meaning_cn": "推荐菜品",
+      "usage_note": "recommend dishes 在本句中对应\"推荐菜品\"。"
+    },
+    {
+      "word_or_phrase": "factor in",
+      "meaning_cn": "把……考虑进去",
+      "usage_note": "factor in 在本句中对应\"把……考虑进去\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Soon when you log into a restaurant app, it will be able to use your data and purchasing history to recommend dishes to you—factoring in everything from the weather to, if you are ordering at a screen that can read your face, your mood.",
+    "structure_type": "Para E",
+    "analysis_points": [
+      {
+        "part": "Soon when you log into a restaurant app, it will be able to use your data and purchasing history to recommend dishes to you—factoring in everything from the weather to, if you are ordering at a screen that can read your face, your mood.",
+        "function": "结构分析",
+        "explanation_cn": "when 引导时间状语；it will be able to use...to recommend... 是主干；factoring in... 作伴随状语；if 从句插在 from...to... 结构中。"
+      }
+    ],
+    "simplified_structure_cn": "不久以后，当你登录餐厅应用时，它将能够利用你的数据和购买历史向你推荐菜品，并把从天气到你的情绪等因素都考虑进去；如果你是在能识别人脸的屏幕上下单，它甚至会读取你的情绪。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Soon when you log into a restaurant app, it will be able to use your data and purchasing history to recommend dishes to you—factoring in everything from the weather to, if you are ordering at a screen that can read your face, your mood."
+  }
+}

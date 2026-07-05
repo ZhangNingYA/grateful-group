@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-H2",
+  "source_section": "Para H",
+  "original_sentence": "A human needs to load Penny with plates that diners lift off themselves.",
+  "translation": "仍需要人把盘子装到 Penny 上，再由食客自己取下。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "load with plates",
+      "meaning_cn": "装上盘子",
+      "usage_note": "load with plates 在本句中对应\"装上盘子\"。"
+    },
+    {
+      "word_or_phrase": "lift off",
+      "meaning_cn": "取下",
+      "usage_note": "lift off 在本句中对应\"取下\"。"
+    },
+    {
+      "word_or_phrase": "themselves",
+      "meaning_cn": "他们自己",
+      "usage_note": "themselves 在本句中对应\"他们自己\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "A human needs to load Penny with plates that diners lift off themselves.",
+    "structure_type": "Para H",
+    "analysis_points": [
+      {
+        "part": "A human needs to load Penny with plates that diners lift off themselves.",
+        "function": "结构分析",
+        "explanation_cn": "need to do；load A with B；that diners lift off themselves 修饰 plates。"
+      }
+    ],
+    "simplified_structure_cn": "仍需要人把盘子装到 Penny 上，再由食客自己取下。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "A human needs to load Penny with plates that diners lift off themselves."
+  }
+}

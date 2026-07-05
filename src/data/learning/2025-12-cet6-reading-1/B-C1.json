@@ -1,0 +1,43 @@
+{
+  "sentence_id": "B-C1",
+  "source_section": "Para C",
+  "original_sentence": "Ten years ago, robot-chefs and waiters were pure science fiction.",
+  "translation": "十年前，机器人厨师和机器人服务员还完全是科幻设想。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "pure science fiction",
+      "meaning_cn": "纯粹的科幻",
+      "usage_note": "pure science fiction 在本句中对应\"纯粹的科幻\"。"
+    },
+    {
+      "word_or_phrase": "robot-chefs",
+      "meaning_cn": "机器人厨师",
+      "usage_note": "robot-chefs 在本句中对应\"机器人厨师\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Ten years ago, robot-chefs and waiters were pure science fiction.",
+    "structure_type": "Para C",
+    "analysis_points": [
+      {
+        "part": "Ten years ago, robot-chefs and waiters were pure science fiction.",
+        "function": "结构分析",
+        "explanation_cn": "时间状语 Ten years ago 置前；主系表结构。"
+      }
+    ],
+    "simplified_structure_cn": "十年前，机器人厨师和机器人服务员还完全是科幻设想。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 1,
+    "difficulty_stars": "★☆☆☆☆",
+    "reason_cn": "原数据难度为 1/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Ten years ago, robot-chefs and waiters were pure science fiction."
+  }
+}

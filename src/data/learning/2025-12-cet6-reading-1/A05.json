@@ -1,0 +1,53 @@
+{
+  "sentence_id": "A05",
+  "source_section": "Cloze",
+  "original_sentence": "Those who began exercising in middle age also saw reductions in their incidence of chronic diseases, such as heart disease and cancer, which were similar to the steady exercisers.",
+  "translation": "那些中年开始锻炼的人，慢性疾病发病率也有所下降，例如心脏病和癌症，其下降情况与长期稳定锻炼者相似。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "in middle age",
+      "meaning_cn": "在中年时期",
+      "usage_note": "in middle age 在本句中对应\"在中年时期\"。"
+    },
+    {
+      "word_or_phrase": "incidence of chronic diseases",
+      "meaning_cn": "慢性病发病率",
+      "usage_note": "incidence of chronic diseases 在本句中对应\"慢性病发病率\"。"
+    },
+    {
+      "word_or_phrase": "steady exercisers",
+      "meaning_cn": "长期稳定锻炼者",
+      "usage_note": "steady exercisers 在本句中对应\"长期稳定锻炼者\"。"
+    },
+    {
+      "word_or_phrase": "begin exercising",
+      "meaning_cn": "开始锻炼",
+      "usage_note": "begin exercising 在本句中对应\"开始锻炼\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Those who began exercising in middle age also saw reductions in their incidence of chronic diseases, such as heart disease and cancer, which were similar to the steady exercisers.",
+    "structure_type": "Cloze",
+    "analysis_points": [
+      {
+        "part": "Those who began exercising in middle age also saw reductions in their incidence of chronic diseases, such as heart disease and cancer, which were similar to the steady exercisers.",
+        "function": "结构分析",
+        "explanation_cn": "Those who... 是主语；saw reductions 是谓语；in their incidence of... 是 reductions 的范围；which were similar... 补充说明 reductions。"
+      }
+    ],
+    "simplified_structure_cn": "那些中年开始锻炼的人，慢性疾病发病率也有所下降，例如心脏病和癌症，其下降情况与长期稳定锻炼者相似。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Those who began exercising in middle age also saw reductions in their incidence of chronic diseases, such as heart disease and cancer, which were similar to the steady exercisers."
+  }
+}

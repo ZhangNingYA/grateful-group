@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-L2",
+  "source_section": "Para L",
+  "original_sentence": "The TGI Fridays drone that injured a Brooklyn Daily photographer; US burger chain Shake Shack having to retreat from plans for entirely cashless ordering sites.",
+  "translation": "比如 TGI Fridays 的无人机曾弄伤《布鲁克林日报》摄影师；美国汉堡连锁 Shake Shack 也不得不放弃完全无现金点餐门店的计划。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "retreat from plans",
+      "meaning_cn": "放弃计划",
+      "usage_note": "retreat from plans 在本句中对应\"放弃计划\"。"
+    },
+    {
+      "word_or_phrase": "cashless ordering sites",
+      "meaning_cn": "无现金点餐站点",
+      "usage_note": "cashless ordering sites 在本句中对应\"无现金点餐站点\"。"
+    },
+    {
+      "word_or_phrase": "injure a photographer",
+      "meaning_cn": "弄伤摄影师",
+      "usage_note": "injure a photographer 在本句中对应\"弄伤摄影师\"。"
+    },
+    {
+      "word_or_phrase": "drone",
+      "meaning_cn": "无人机",
+      "usage_note": "drone 在本句中对应\"无人机\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "The TGI Fridays drone that injured a Brooklyn Daily photographer; US burger chain Shake Shack having to retreat from plans for entirely cashless ordering sites.",
+    "structure_type": "Para L",
+    "analysis_points": [
+      {
+        "part": "The TGI Fridays drone that injured a Brooklyn Daily photographer; US burger chain Shake Shack having to retreat from plans for entirely cashless ordering sites.",
+        "function": "结构分析",
+        "explanation_cn": "这是省略谓语的举例片段；that injured... 修饰 drone；having to retreat... 修饰 Shake Shack。"
+      }
+    ],
+    "simplified_structure_cn": "比如 TGI Fridays 的无人机曾弄伤《布鲁克林日报》摄影师；美国汉堡连锁 Shake Shack 也不得不放弃完全无现金点餐门店的计划。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "The TGI Fridays drone that injured a Brooklyn Daily photographer; US burger chain Shake Shack having to retreat from plans for entirely cashless ordering sites."
+  }
+}

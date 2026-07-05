@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-P2",
+  "source_section": "Para P",
+  "original_sentence": "\"Restaurants will prepare food ahead of orders coming in,\" predicts Just Eat's director of engineering, Daniel Richardson.",
+  "translation": "Just Eat 工程总监 Daniel Richardson 预测：“餐厅会在订单进来之前提前准备食物。”",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "director of engineering",
+      "meaning_cn": "工程总监",
+      "usage_note": "director of engineering 在本句中对应\"工程总监\"。"
+    },
+    {
+      "word_or_phrase": "orders coming in",
+      "meaning_cn": "传入的订单",
+      "usage_note": "orders coming in 在本句中对应\"传入的订单\"。"
+    },
+    {
+      "word_or_phrase": "ahead of",
+      "meaning_cn": "在……之前",
+      "usage_note": "ahead of 在本句中对应\"在……之前\"。"
+    },
+    {
+      "word_or_phrase": "prepare food",
+      "meaning_cn": "准备食物",
+      "usage_note": "prepare food 在本句中对应\"准备食物\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "\"Restaurants will prepare food ahead of orders coming in,\" predicts Just Eat's director of engineering, Daniel Richardson.",
+    "structure_type": "Para P",
+    "analysis_points": [
+      {
+        "part": "\"Restaurants will prepare food ahead of orders coming in,\" predicts Just Eat's director of engineering, Daniel Richardson.",
+        "function": "结构分析",
+        "explanation_cn": "ahead of orders coming in 是介词短语，coming in 修饰 orders；predicts... 为报道语。"
+      }
+    ],
+    "simplified_structure_cn": "Just Eat 工程总监 Daniel Richardson 预测：“餐厅会在订单进来之前提前准备食物。”"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "\"Restaurants will prepare food ahead of orders coming in,\" predicts Just Eat's director of engineering, Daniel Richardson."
+  }
+}

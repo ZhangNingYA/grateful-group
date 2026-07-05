@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-C5",
+  "source_section": "Para C",
+  "original_sentence": "Fully automated burger restaurants managed with minimal human oversight—where customers order at screens, pay electronically and eat food cooked and delivered by robots—are now a possibility.",
+  "translation": "由极少人工监督管理的全自动汉堡餐厅如今已成为可能：顾客在屏幕上下单、电子支付，并食用由机器人烹制和递送的食物。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "minimal human oversight",
+      "meaning_cn": "最低限度人工监督",
+      "usage_note": "minimal human oversight 在本句中对应\"最低限度人工监督\"。"
+    },
+    {
+      "word_or_phrase": "order at screens",
+      "meaning_cn": "在屏幕上下单",
+      "usage_note": "order at screens 在本句中对应\"在屏幕上下单\"。"
+    },
+    {
+      "word_or_phrase": "fully automated",
+      "meaning_cn": "全自动化的",
+      "usage_note": "fully automated 在本句中对应\"全自动化的\"。"
+    },
+    {
+      "word_or_phrase": "pay electronically",
+      "meaning_cn": "电子支付",
+      "usage_note": "pay electronically 在本句中对应\"电子支付\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Fully automated burger restaurants managed with minimal human oversight—where customers order at screens, pay electronically and eat food cooked and delivered by robots—are now a possibility.",
+    "structure_type": "Para C",
+    "analysis_points": [
+      {
+        "part": "Fully automated burger restaurants managed with minimal human oversight—where customers order at screens, pay electronically and eat food cooked and delivered by robots—are now a possibility.",
+        "function": "结构分析",
+        "explanation_cn": "主干是 restaurants are a possibility；managed... 修饰 restaurants；破折号中的 where 从句解释餐厅运作方式。"
+      }
+    ],
+    "simplified_structure_cn": "由极少人工监督管理的全自动汉堡餐厅如今已成为可能：顾客在屏幕上下单、电子支付，并食用由机器人烹制和递送的食物。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Fully automated burger restaurants managed with minimal human oversight—where customers order at screens, pay electronically and eat food cooked and delivered by robots—are now a possibility."
+  }
+}

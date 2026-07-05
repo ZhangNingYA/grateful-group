@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-G2",
+  "source_section": "Para G",
+  "original_sentence": "It'll probably be a very long time before we see a five-star robot-chef, says Noel Sharkey, professor of AI and robotics at the University of Sheffield.",
+  "translation": "谢菲尔德大学人工智能与机器人学教授 Noel Sharkey 表示，可能还要很久我们才会看到五星级机器人厨师。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "a very long time before",
+      "meaning_cn": "还要很久才会",
+      "usage_note": "a very long time before 在本句中对应\"还要很久才会\"。"
+    },
+    {
+      "word_or_phrase": "AI and robotics",
+      "meaning_cn": "人工智能与机器人学",
+      "usage_note": "AI and robotics 在本句中对应\"人工智能与机器人学\"。"
+    },
+    {
+      "word_or_phrase": "five-star robot-chef",
+      "meaning_cn": "五星级机器人厨师",
+      "usage_note": "five-star robot-chef 在本句中对应\"五星级机器人厨师\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "It'll probably be a very long time before we see a five-star robot-chef, says Noel Sharkey, professor of AI and robotics at the University of Sheffield.",
+    "structure_type": "Para G",
+    "analysis_points": [
+      {
+        "part": "It'll probably be a very long time before we see a five-star robot-chef, says Noel Sharkey, professor of AI and robotics at the University of Sheffield.",
+        "function": "结构分析",
+        "explanation_cn": "It will be a long time before... 是固定时间结构；says... 为插入语。"
+      }
+    ],
+    "simplified_structure_cn": "谢菲尔德大学人工智能与机器人学教授 Noel Sharkey 表示，可能还要很久我们才会看到五星级机器人厨师。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "It'll probably be a very long time before we see a five-star robot-chef, says Noel Sharkey, professor of AI and robotics at the University of Sheffield."
+  }
+}

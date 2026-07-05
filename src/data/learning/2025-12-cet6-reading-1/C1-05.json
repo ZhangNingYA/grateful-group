@@ -1,0 +1,58 @@
+{
+  "sentence_id": "C1-05",
+  "source_section": "Passage One",
+  "original_sentence": "Instead of viewing our lives as a race, where everyone is on their own path to some form of success, we must relearn to value the connections we make along the track.",
+  "translation": "我们不应把人生看作一场竞赛，仿佛每个人都在自己的赛道上奔向某种成功；我们必须重新学会珍视一路上建立的联系。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "on their own path",
+      "meaning_cn": "在各自道路上",
+      "usage_note": "on their own path 在本句中对应\"在各自道路上\"。"
+    },
+    {
+      "word_or_phrase": "relearn to value",
+      "meaning_cn": "重新学会珍视",
+      "usage_note": "relearn to value 在本句中对应\"重新学会珍视\"。"
+    },
+    {
+      "word_or_phrase": "along the track",
+      "meaning_cn": "沿着赛道/轨道",
+      "usage_note": "along the track 在本句中对应\"沿着赛道/轨道\"。"
+    },
+    {
+      "word_or_phrase": "view as a race",
+      "meaning_cn": "把……看成竞赛",
+      "usage_note": "view as a race 在本句中对应\"把……看成竞赛\"。"
+    },
+    {
+      "word_or_phrase": "instead of",
+      "meaning_cn": "而不是",
+      "usage_note": "instead of 在本句中对应\"而不是\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Instead of viewing our lives as a race, where everyone is on their own path to some form of success, we must relearn to value the connections we make along the track.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "Instead of viewing our lives as a race, where everyone is on their own path to some form of success, we must relearn to value the connections we make along the track.",
+        "function": "结构分析",
+        "explanation_cn": "Instead of doing... 作对照；where 从句解释 race；主句 we must relearn to value...；we make 修饰 connections。"
+      }
+    ],
+    "simplified_structure_cn": "我们不应把人生看作一场竞赛，仿佛每个人都在自己的赛道上奔向某种成功；我们必须重新学会珍视一路上建立的联系。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Instead of viewing our lives as a race, where everyone is on their own path to some form of success, we must relearn to value the connections we make along the track."
+  }
+}

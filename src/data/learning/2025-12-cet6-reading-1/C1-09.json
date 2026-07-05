@@ -1,0 +1,48 @@
+{
+  "sentence_id": "C1-09",
+  "source_section": "Passage One",
+  "original_sentence": "Many of us have fallen victim to an individualistic culture.",
+  "translation": "我们许多人都成了个人主义文化的受害者。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "fall victim to",
+      "meaning_cn": "成为……的受害者",
+      "usage_note": "fall victim to 在本句中对应\"成为……的受害者\"。"
+    },
+    {
+      "word_or_phrase": "individualistic culture",
+      "meaning_cn": "个人主义文化",
+      "usage_note": "individualistic culture 在本句中对应\"个人主义文化\"。"
+    },
+    {
+      "word_or_phrase": "many of us",
+      "meaning_cn": "我们中的许多人",
+      "usage_note": "many of us 在本句中对应\"我们中的许多人\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Many of us have fallen victim to an individualistic culture.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "Many of us have fallen victim to an individualistic culture.",
+        "function": "结构分析",
+        "explanation_cn": "fall victim to 是固定搭配；现在完成时表示已形成的状态。"
+      }
+    ],
+    "simplified_structure_cn": "我们许多人都成了个人主义文化的受害者。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Many of us have fallen victim to an individualistic culture."
+  }
+}

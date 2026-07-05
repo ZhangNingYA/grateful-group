@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-C2",
+  "source_section": "Para C",
+  "original_sentence": "Today, they are a reality, and at prices that make them a plausible investment.",
+  "translation": "如今，它们已经成为现实，而且价格也让它们成为一种说得通的投资。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "a reality",
+      "meaning_cn": "现实",
+      "usage_note": "a reality 在本句中对应\"现实\"。"
+    },
+    {
+      "word_or_phrase": "plausible investment",
+      "meaning_cn": "合理可行的投资",
+      "usage_note": "plausible investment 在本句中对应\"合理可行的投资\"。"
+    },
+    {
+      "word_or_phrase": "at prices",
+      "meaning_cn": "以……价格",
+      "usage_note": "at prices 在本句中对应\"以……价格\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Today, they are a reality, and at prices that make them a plausible investment.",
+    "structure_type": "Para C",
+    "analysis_points": [
+      {
+        "part": "Today, they are a reality, and at prices that make them a plausible investment.",
+        "function": "结构分析",
+        "explanation_cn": "and 连接补充成分；that make them... 修饰 prices。"
+      }
+    ],
+    "simplified_structure_cn": "如今，它们已经成为现实，而且价格也让它们成为一种说得通的投资。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Today, they are a reality, and at prices that make them a plausible investment."
+  }
+}

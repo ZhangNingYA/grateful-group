@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-M2",
+  "source_section": "Para M",
+  "original_sentence": "\"Unite is concerned that without safeguards, any benefits will bypass workers in low-paying jobs, such as waiters,\" says the union's London regional officer, Dave Turnbull.",
+  "translation": "工会伦敦区域官员 Dave Turnbull 说：“Unite 工会担心，如果没有保障措施，任何收益都会绕过服务员等低薪岗位的劳动者。”",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be concerned that",
+      "meaning_cn": "担心……",
+      "usage_note": "be concerned that 在本句中对应\"担心……\"。"
+    },
+    {
+      "word_or_phrase": "without safeguards",
+      "meaning_cn": "没有保障措施",
+      "usage_note": "without safeguards 在本句中对应\"没有保障措施\"。"
+    },
+    {
+      "word_or_phrase": "bypass workers",
+      "meaning_cn": "绕过劳动者",
+      "usage_note": "bypass workers 在本句中对应\"绕过劳动者\"。"
+    },
+    {
+      "word_or_phrase": "low-paying jobs",
+      "meaning_cn": "低薪岗位",
+      "usage_note": "low-paying jobs 在本句中对应\"低薪岗位\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "\"Unite is concerned that without safeguards, any benefits will bypass workers in low-paying jobs, such as waiters,\" says the union's London regional officer, Dave Turnbull.",
+    "structure_type": "Para M",
+    "analysis_points": [
+      {
+        "part": "\"Unite is concerned that without safeguards, any benefits will bypass workers in low-paying jobs, such as waiters,\" says the union's London regional officer, Dave Turnbull.",
+        "function": "结构分析",
+        "explanation_cn": "is concerned that... 接宾语从句；without safeguards 作条件；such as waiters 举例。"
+      }
+    ],
+    "simplified_structure_cn": "工会伦敦区域官员 Dave Turnbull 说：“Unite 工会担心，如果没有保障措施，任何收益都会绕过服务员等低薪岗位的劳动者。”"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "\"Unite is concerned that without safeguards, any benefits will bypass workers in low-paying jobs, such as waiters,\" says the union's London regional officer, Dave Turnbull."
+  }
+}

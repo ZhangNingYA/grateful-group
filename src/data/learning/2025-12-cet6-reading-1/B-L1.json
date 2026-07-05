@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-L1",
+  "source_section": "Para L",
+  "original_sentence": "Embarrassing failures in restaurant tech frequently hit the headlines.",
+  "translation": "餐饮科技中令人尴尬的失败经常登上头条。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "hit the headlines",
+      "meaning_cn": "登上头条",
+      "usage_note": "hit the headlines 在本句中对应\"登上头条\"。"
+    },
+    {
+      "word_or_phrase": "embarrassing failures",
+      "meaning_cn": "令人尴尬的失败",
+      "usage_note": "embarrassing failures 在本句中对应\"令人尴尬的失败\"。"
+    },
+    {
+      "word_or_phrase": "restaurant tech",
+      "meaning_cn": "餐厅技术",
+      "usage_note": "restaurant tech 在本句中对应\"餐厅技术\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Embarrassing failures in restaurant tech frequently hit the headlines.",
+    "structure_type": "Para L",
+    "analysis_points": [
+      {
+        "part": "Embarrassing failures in restaurant tech frequently hit the headlines.",
+        "function": "结构分析",
+        "explanation_cn": "主谓宾结构；hit the headlines 是习语。"
+      }
+    ],
+    "simplified_structure_cn": "餐饮科技中令人尴尬的失败经常登上头条。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Embarrassing failures in restaurant tech frequently hit the headlines."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-G4",
+  "source_section": "Para G",
+  "original_sentence": "Placing fragile foods on plates would be incredibly slow.",
+  "translation": "把易碎的食物摆到盘子上会非常慢。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "fragile foods",
+      "meaning_cn": "易碎/易损食物",
+      "usage_note": "fragile foods 在本句中对应\"易碎/易损食物\"。"
+    },
+    {
+      "word_or_phrase": "on plates",
+      "meaning_cn": "在盘子里",
+      "usage_note": "on plates 在本句中对应\"在盘子里\"。"
+    },
+    {
+      "word_or_phrase": "incredibly slow",
+      "meaning_cn": "极其缓慢",
+      "usage_note": "incredibly slow 在本句中对应\"极其缓慢\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Placing fragile foods on plates would be incredibly slow.",
+    "structure_type": "Para G",
+    "analysis_points": [
+      {
+        "part": "Placing fragile foods on plates would be incredibly slow.",
+        "function": "结构分析",
+        "explanation_cn": "动名词短语 Placing... 作主语；would be 表推测。"
+      }
+    ],
+    "simplified_structure_cn": "把易碎的食物摆到盘子上会非常慢。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Placing fragile foods on plates would be incredibly slow."
+  }
+}

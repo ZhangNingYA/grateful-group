@@ -1,0 +1,48 @@
+{
+  "sentence_id": "A04",
+  "source_section": "Cloze",
+  "original_sentence": "This was a drop of 32% to 35% compared to people who did not exercise.",
+  "translation": "与不锻炼的人相比，这一下降幅度为 32% 到 35%。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "a drop of",
+      "meaning_cn": "下降幅度为",
+      "usage_note": "a drop of 在本句中对应\"下降幅度为\"。"
+    },
+    {
+      "word_or_phrase": "people who did not exercise",
+      "meaning_cn": "不锻炼的人",
+      "usage_note": "people who did not exercise 在本句中对应\"不锻炼的人\"。"
+    },
+    {
+      "word_or_phrase": "compared to",
+      "meaning_cn": "与……相比",
+      "usage_note": "compared to 在本句中对应\"与……相比\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "This was a drop of 32% to 35% compared to people who did not exercise.",
+    "structure_type": "Cloze",
+    "analysis_points": [
+      {
+        "part": "This was a drop of 32% to 35% compared to people who did not exercise.",
+        "function": "结构分析",
+        "explanation_cn": "This 指上一句的 risk declines；compared to... 是过去分词短语作比较状语；who did not exercise 修饰 people。"
+      }
+    ],
+    "simplified_structure_cn": "与不锻炼的人相比，这一下降幅度为 32% 到 35%。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "This was a drop of 32% to 35% compared to people who did not exercise."
+  }
+}

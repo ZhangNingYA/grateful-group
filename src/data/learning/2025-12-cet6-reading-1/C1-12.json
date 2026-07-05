@@ -1,0 +1,58 @@
+{
+  "sentence_id": "C1-12",
+  "source_section": "Passage One",
+  "original_sentence": "I remember hearing in high school, \"Don't worry about losing friendships, just focus on study and getting into college. That's all that will matter in the long run,\" a sentiment that is not unique to my experience.",
+  "translation": "我记得高中时听到过这样的话：“别担心失去友谊，只要专注学习、考上大学就行。从长远来看，只有这些才重要。”这种看法并非我个人经历独有。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "in the long run",
+      "meaning_cn": "从长远看",
+      "usage_note": "in the long run 在本句中对应\"从长远看\"。"
+    },
+    {
+      "word_or_phrase": "not unique to",
+      "meaning_cn": "并非……独有",
+      "usage_note": "not unique to 在本句中对应\"并非……独有\"。"
+    },
+    {
+      "word_or_phrase": "get into college",
+      "meaning_cn": "进入大学",
+      "usage_note": "get into college 在本句中对应\"进入大学\"。"
+    },
+    {
+      "word_or_phrase": "worry about",
+      "meaning_cn": "担心",
+      "usage_note": "worry about 在本句中对应\"担心\"。"
+    },
+    {
+      "word_or_phrase": "focus on",
+      "meaning_cn": "关注；聚焦于",
+      "usage_note": "focus on 在本句中对应\"关注；聚焦于\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "I remember hearing in high school, \"Don't worry about losing friendships, just focus on study and getting into college. That's all that will matter in the long run,\" a sentiment that is not unique to my experience.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "I remember hearing in high school, \"Don't worry about losing friendships, just focus on study and getting into college. That's all that will matter in the long run,\" a sentiment that is not unique to my experience.",
+        "function": "结构分析",
+        "explanation_cn": "remember hearing 是动名词宾语；引号内容作 hearing 的内容；a sentiment... 是前文观点的同位语。"
+      }
+    ],
+    "simplified_structure_cn": "我记得高中时听到过这样的话：“别担心失去友谊，只要专注学习、考上大学就行。从长远来看，只有这些才重要。”这种看法并非我个人经历独有。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "I remember hearing in high school, \"Don't worry about losing friendships, just focus on study and getting into college. That's all that will matter in the long run,\" a sentiment that is not unique to my experience."
+  }
+}

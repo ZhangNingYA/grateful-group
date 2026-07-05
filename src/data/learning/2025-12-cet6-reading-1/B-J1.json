@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-J1",
+  "source_section": "Para J",
+  "original_sentence": "The restaurant industry is currently suffering a severe shortage of skilled chefs—a deficit of 11,000, according to the skills agency People 1st.",
+  "translation": "餐饮业目前正遭遇熟练厨师严重短缺；据技能机构 People 1st 称，缺口达 1.1 万人。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "a deficit of",
+      "meaning_cn": "……的缺口",
+      "usage_note": "a deficit of 在本句中对应\"……的缺口\"。"
+    },
+    {
+      "word_or_phrase": "suffer a shortage",
+      "meaning_cn": "遭遇短缺",
+      "usage_note": "suffer a shortage 在本句中对应\"遭遇短缺\"。"
+    },
+    {
+      "word_or_phrase": "skilled chefs",
+      "meaning_cn": "熟练厨师",
+      "usage_note": "skilled chefs 在本句中对应\"熟练厨师\"。"
+    },
+    {
+      "word_or_phrase": "according to",
+      "meaning_cn": "根据；据……所说",
+      "usage_note": "according to 在本句中对应\"根据；据……所说\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "The restaurant industry is currently suffering a severe shortage of skilled chefs—a deficit of 11,000, according to the skills agency People 1st.",
+    "structure_type": "Para J",
+    "analysis_points": [
+      {
+        "part": "The restaurant industry is currently suffering a severe shortage of skilled chefs—a deficit of 11,000, according to the skills agency People 1st.",
+        "function": "结构分析",
+        "explanation_cn": "主句 is suffering...；破折号解释 shortage 的规模；according to... 标明来源。"
+      }
+    ],
+    "simplified_structure_cn": "餐饮业目前正遭遇熟练厨师严重短缺；据技能机构 People 1st 称，缺口达 1.1 万人。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "The restaurant industry is currently suffering a severe shortage of skilled chefs—a deficit of 11,000, according to the skills agency People 1st."
+  }
+}

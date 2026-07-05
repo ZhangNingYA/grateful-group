@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-P5",
+  "source_section": "Para P",
+  "original_sentence": "But in the dining room and on your doorstep, the robots are coming.",
+  "translation": "但无论是在餐厅里，还是在你家门口，机器人都正在到来。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "on your doorstep",
+      "meaning_cn": "在你家门口",
+      "usage_note": "on your doorstep 在本句中对应\"在你家门口\"。"
+    },
+    {
+      "word_or_phrase": "in the dining room",
+      "meaning_cn": "在餐厅里",
+      "usage_note": "in the dining room 在本句中对应\"在餐厅里\"。"
+    },
+    {
+      "word_or_phrase": "robots are coming",
+      "meaning_cn": "机器人正在到来",
+      "usage_note": "robots are coming 在本句中对应\"机器人正在到来\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "But in the dining room and on your doorstep, the robots are coming.",
+    "structure_type": "Para P",
+    "analysis_points": [
+      {
+        "part": "But in the dining room and on your doorstep, the robots are coming.",
+        "function": "结构分析",
+        "explanation_cn": "两个地点状语并列置前；are coming 使用现在进行时表示趋势临近。"
+      }
+    ],
+    "simplified_structure_cn": "但无论是在餐厅里，还是在你家门口，机器人都正在到来。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "But in the dining room and on your doorstep, the robots are coming."
+  }
+}

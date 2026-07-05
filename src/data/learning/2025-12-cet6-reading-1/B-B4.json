@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-B4",
+  "source_section": "Para B",
+  "original_sentence": "Also in California, Bear Robotics has developed a self-guiding robot, Penny, which has so far served 40,000 diners.",
+  "translation": "同样在加州，Bear Robotics 研发了自主导航机器人 Penny，目前它已经服务了 4 万名用餐者。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "self-guiding robot",
+      "meaning_cn": "自主导航机器人",
+      "usage_note": "self-guiding robot 在本句中对应\"自主导航机器人\"。"
+    },
+    {
+      "word_or_phrase": "so far",
+      "meaning_cn": "到目前为止",
+      "usage_note": "so far 在本句中对应\"到目前为止\"。"
+    },
+    {
+      "word_or_phrase": "serve diners",
+      "meaning_cn": "服务食客",
+      "usage_note": "serve diners 在本句中对应\"服务食客\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Also in California, Bear Robotics has developed a self-guiding robot, Penny, which has so far served 40,000 diners.",
+    "structure_type": "Para B",
+    "analysis_points": [
+      {
+        "part": "Also in California, Bear Robotics has developed a self-guiding robot, Penny, which has so far served 40,000 diners.",
+        "function": "结构分析",
+        "explanation_cn": "主句 has developed；Penny 是 robot 的同位语；which has served... 补充说明 Penny。"
+      }
+    ],
+    "simplified_structure_cn": "同样在加州，Bear Robotics 研发了自主导航机器人 Penny，目前它已经服务了 4 万名用餐者。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Also in California, Bear Robotics has developed a self-guiding robot, Penny, which has so far served 40,000 diners."
+  }
+}

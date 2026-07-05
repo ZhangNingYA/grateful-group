@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-A3",
+  "source_section": "Para A",
+  "original_sentence": "These are long hours of repetitive work, where the boss demands absolute consistency.",
+  "translation": "这是一段段漫长的重复性工作，老板要求绝对稳定一致。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "repetitive work",
+      "meaning_cn": "重复性工作",
+      "usage_note": "repetitive work 在本句中对应\"重复性工作\"。"
+    },
+    {
+      "word_or_phrase": "absolute consistency",
+      "meaning_cn": "绝对一致性",
+      "usage_note": "absolute consistency 在本句中对应\"绝对一致性\"。"
+    },
+    {
+      "word_or_phrase": "long hours",
+      "meaning_cn": "长时间工作",
+      "usage_note": "long hours 在本句中对应\"长时间工作\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "These are long hours of repetitive work, where the boss demands absolute consistency.",
+    "structure_type": "Para A",
+    "analysis_points": [
+      {
+        "part": "These are long hours of repetitive work, where the boss demands absolute consistency.",
+        "function": "结构分析",
+        "explanation_cn": "where 引导非限制性定语从句，修饰 work 的场景。"
+      }
+    ],
+    "simplified_structure_cn": "这是一段段漫长的重复性工作，老板要求绝对稳定一致。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "These are long hours of repetitive work, where the boss demands absolute consistency."
+  }
+}

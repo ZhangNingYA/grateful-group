@@ -1,0 +1,48 @@
+{
+  "sentence_id": "A08",
+  "source_section": "Cloze",
+  "original_sentence": "There are other benefits, both mental and physical, to staying consistently active that we should not disregard.",
+  "translation": "持续保持活跃还有其他益处，包括心理和身体方面的益处，我们不应忽视。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "mental and physical",
+      "meaning_cn": "心理和身体方面的",
+      "usage_note": "mental and physical 在本句中对应\"心理和身体方面的\"。"
+    },
+    {
+      "word_or_phrase": "stay consistently active",
+      "meaning_cn": "保持持续活跃",
+      "usage_note": "stay consistently active 在本句中对应\"保持持续活跃\"。"
+    },
+    {
+      "word_or_phrase": "should not disregard",
+      "meaning_cn": "不应忽视",
+      "usage_note": "should not disregard 在本句中对应\"不应忽视\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "There are other benefits, both mental and physical, to staying consistently active that we should not disregard.",
+    "structure_type": "Cloze",
+    "analysis_points": [
+      {
+        "part": "There are other benefits, both mental and physical, to staying consistently active that we should not disregard.",
+        "function": "结构分析",
+        "explanation_cn": "There are... 是存在句；both mental and physical 作插入补充；that we should not disregard 修饰 benefits。"
+      }
+    ],
+    "simplified_structure_cn": "持续保持活跃还有其他益处，包括心理和身体方面的益处，我们不应忽视。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "There are other benefits, both mental and physical, to staying consistently active that we should not disregard."
+  }
+}

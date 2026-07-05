@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-O2",
+  "source_section": "Para O",
+  "original_sentence": "Invariably, over the next 10 years, jobs will go in conventional bricks-built restaurants, not least because automation will boost their rapidly growing rival: delivery.",
+  "translation": "未来十年，传统实体餐厅的岗位必然会减少，尤其是因为自动化会推动其快速增长的竞争对手：外卖配送。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "jobs will go",
+      "meaning_cn": "岗位会消失",
+      "usage_note": "jobs will go 在本句中对应\"岗位会消失\"。"
+    },
+    {
+      "word_or_phrase": "not least because",
+      "meaning_cn": "尤其因为",
+      "usage_note": "not least because 在本句中对应\"尤其因为\"。"
+    },
+    {
+      "word_or_phrase": "over the next 10 years",
+      "meaning_cn": "未来十年",
+      "usage_note": "over the next 10 years 在本句中对应\"未来十年\"。"
+    },
+    {
+      "word_or_phrase": "rapidly growing rival",
+      "meaning_cn": "快速增长的竞争对手",
+      "usage_note": "rapidly growing rival 在本句中对应\"快速增长的竞争对手\"。"
+    },
+    {
+      "word_or_phrase": "bricks-built restaurants",
+      "meaning_cn": "传统实体餐厅",
+      "usage_note": "bricks-built restaurants 在本句中对应\"传统实体餐厅\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Invariably, over the next 10 years, jobs will go in conventional bricks-built restaurants, not least because automation will boost their rapidly growing rival: delivery.",
+    "structure_type": "Para O",
+    "analysis_points": [
+      {
+        "part": "Invariably, over the next 10 years, jobs will go in conventional bricks-built restaurants, not least because automation will boost their rapidly growing rival: delivery.",
+        "function": "结构分析",
+        "explanation_cn": "Invariably 与 over... 作状语；jobs will go 是口语化表达；because 引导原因；冒号解释 rival。"
+      }
+    ],
+    "simplified_structure_cn": "未来十年，传统实体餐厅的岗位必然会减少，尤其是因为自动化会推动其快速增长的竞争对手：外卖配送。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Invariably, over the next 10 years, jobs will go in conventional bricks-built restaurants, not least because automation will boost their rapidly growing rival: delivery."
+  }
+}

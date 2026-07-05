@@ -1,0 +1,48 @@
+{
+  "sentence_id": "C1-19",
+  "source_section": "Passage One",
+  "original_sentence": "In order to succeed, we lose friends, and that has sadly become normalized.",
+  "translation": "为了成功，我们失去朋友，而令人遗憾的是，这已经被正常化了。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "in order to",
+      "meaning_cn": "为了",
+      "usage_note": "in order to 在本句中对应\"为了\"。"
+    },
+    {
+      "word_or_phrase": "become normalized",
+      "meaning_cn": "被正常化",
+      "usage_note": "become normalized 在本句中对应\"被正常化\"。"
+    },
+    {
+      "word_or_phrase": "sadly",
+      "meaning_cn": "遗憾的是",
+      "usage_note": "sadly 在本句中对应\"遗憾的是\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "In order to succeed, we lose friends, and that has sadly become normalized.",
+    "structure_type": "Passage One",
+    "analysis_points": [
+      {
+        "part": "In order to succeed, we lose friends, and that has sadly become normalized.",
+        "function": "结构分析",
+        "explanation_cn": "In order to... 表目的；and 连接结果；has become normalized 是现在完成时被动意义。"
+      }
+    ],
+    "simplified_structure_cn": "为了成功，我们失去朋友，而令人遗憾的是，这已经被正常化了。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "In order to succeed, we lose friends, and that has sadly become normalized."
+  }
+}

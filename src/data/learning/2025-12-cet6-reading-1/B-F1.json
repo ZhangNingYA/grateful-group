@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-F1",
+  "source_section": "Para F",
+  "original_sentence": "Right now people compromise on choice.",
+  "translation": "目前，人们在选择上做出了妥协。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "compromise on choice",
+      "meaning_cn": "在选择上妥协",
+      "usage_note": "compromise on choice 在本句中对应\"在选择上妥协\"。"
+    },
+    {
+      "word_or_phrase": "right now",
+      "meaning_cn": "现在",
+      "usage_note": "right now 在本句中对应\"现在\"。"
+    },
+    {
+      "word_or_phrase": "compromise on",
+      "meaning_cn": "在……上妥协",
+      "usage_note": "compromise on 在本句中对应\"在……上妥协\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Right now people compromise on choice.",
+    "structure_type": "Para F",
+    "analysis_points": [
+      {
+        "part": "Right now people compromise on choice.",
+        "function": "结构分析",
+        "explanation_cn": "简单句；compromise on 表示“在……方面妥协”。"
+      }
+    ],
+    "simplified_structure_cn": "目前，人们在选择上做出了妥协。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 1,
+    "difficulty_stars": "★☆☆☆☆",
+    "reason_cn": "原数据难度为 1/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Right now people compromise on choice."
+  }
+}

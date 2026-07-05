@@ -1,0 +1,53 @@
+{
+  "sentence_id": "C2-03",
+  "source_section": "Passage Two",
+  "original_sentence": "From disputes over climate change to debates about how slavery is taught, America is at a crossroads.",
+  "translation": "从围绕气候变化的争端，到关于如何教授奴隶制历史的辩论，美国正处在十字路口。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "at a crossroads",
+      "meaning_cn": "处在十字路口",
+      "usage_note": "at a crossroads 在本句中对应\"处在十字路口\"。"
+    },
+    {
+      "word_or_phrase": "disputes over",
+      "meaning_cn": "围绕……的争端",
+      "usage_note": "disputes over 在本句中对应\"围绕……的争端\"。"
+    },
+    {
+      "word_or_phrase": "debates about",
+      "meaning_cn": "关于……的辩论",
+      "usage_note": "debates about 在本句中对应\"关于……的辩论\"。"
+    },
+    {
+      "word_or_phrase": "slavery",
+      "meaning_cn": "奴隶制",
+      "usage_note": "slavery 在本句中对应\"奴隶制\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "From disputes over climate change to debates about how slavery is taught, America is at a crossroads.",
+    "structure_type": "Passage Two",
+    "analysis_points": [
+      {
+        "part": "From disputes over climate change to debates about how slavery is taught, America is at a crossroads.",
+        "function": "结构分析",
+        "explanation_cn": "From...to... 列举范围；how slavery is taught 是 about 的宾语从句；主句是 America is at a crossroads。"
+      }
+    ],
+    "simplified_structure_cn": "从围绕气候变化的争端，到关于如何教授奴隶制历史的辩论，美国正处在十字路口。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 4,
+    "difficulty_stars": "★★★★☆",
+    "reason_cn": "原数据难度为 4/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "From disputes over climate change to debates about how slavery is taught, America is at a crossroads."
+  }
+}

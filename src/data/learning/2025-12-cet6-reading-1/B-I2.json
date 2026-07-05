@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-I2",
+  "source_section": "Para I",
+  "original_sentence": "Rather than having a chef shouting out diners' orders, the QSR system automatically distributes those orders across screens.",
+  "translation": "QSR 系统不再让厨师喊出食客订单，而是自动把这些订单分发到多个屏幕上。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "shout out orders",
+      "meaning_cn": "喊出订单",
+      "usage_note": "shout out orders 在本句中对应\"喊出订单\"。"
+    },
+    {
+      "word_or_phrase": "rather than",
+      "meaning_cn": "而不是",
+      "usage_note": "rather than 在本句中对应\"而不是\"。"
+    },
+    {
+      "word_or_phrase": "automatically distribute",
+      "meaning_cn": "自动分配",
+      "usage_note": "automatically distribute 在本句中对应\"自动分配\"。"
+    },
+    {
+      "word_or_phrase": "across screens",
+      "meaning_cn": "分布到多个屏幕上",
+      "usage_note": "across screens 在本句中对应\"分布到多个屏幕上\"。"
+    },
+    {
+      "word_or_phrase": "be automatic",
+      "meaning_cn": "自动完成；无需人工操作",
+      "usage_note": "be automatic 在本句中对应\"自动完成；无需人工操作\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Rather than having a chef shouting out diners' orders, the QSR system automatically distributes those orders across screens.",
+    "structure_type": "Para I",
+    "analysis_points": [
+      {
+        "part": "Rather than having a chef shouting out diners' orders, the QSR system automatically distributes those orders across screens.",
+        "function": "结构分析",
+        "explanation_cn": "Rather than doing... 表替代关系；主句 system distributes orders。"
+      }
+    ],
+    "simplified_structure_cn": "QSR 系统不再让厨师喊出食客订单，而是自动把这些订单分发到多个屏幕上。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Rather than having a chef shouting out diners' orders, the QSR system automatically distributes those orders across screens."
+  }
+}

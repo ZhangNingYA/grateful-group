@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-K1",
+  "source_section": "Para K",
+  "original_sentence": "In terms of simplifying or enhancing the customer experience, online restaurant booking has been the easily-won success of the internet age.",
+  "translation": "就简化或提升顾客体验而言，在线餐厅预订一直是互联网时代轻松取得的成功。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "in terms of",
+      "meaning_cn": "就……而言",
+      "usage_note": "in terms of 在本句中对应\"就……而言\"。"
+    },
+    {
+      "word_or_phrase": "enhance the customer experience",
+      "meaning_cn": "提升顾客体验",
+      "usage_note": "enhance the customer experience 在本句中对应\"提升顾客体验\"。"
+    },
+    {
+      "word_or_phrase": "customer experience",
+      "meaning_cn": "顾客体验",
+      "usage_note": "customer experience 在本句中对应\"顾客体验\"。"
+    },
+    {
+      "word_or_phrase": "internet age",
+      "meaning_cn": "互联网时代",
+      "usage_note": "internet age 在本句中对应\"互联网时代\"。"
+    },
+    {
+      "word_or_phrase": "online booking",
+      "meaning_cn": "在线预订",
+      "usage_note": "online booking 在本句中对应\"在线预订\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "In terms of simplifying or enhancing the customer experience, online restaurant booking has been the easily-won success of the internet age.",
+    "structure_type": "Para K",
+    "analysis_points": [
+      {
+        "part": "In terms of simplifying or enhancing the customer experience, online restaurant booking has been the easily-won success of the internet age.",
+        "function": "结构分析",
+        "explanation_cn": "In terms of... 作话题状语；主句 booking has been the success。"
+      }
+    ],
+    "simplified_structure_cn": "就简化或提升顾客体验而言，在线餐厅预订一直是互联网时代轻松取得的成功。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "In terms of simplifying or enhancing the customer experience, online restaurant booking has been the easily-won success of the internet age."
+  }
+}

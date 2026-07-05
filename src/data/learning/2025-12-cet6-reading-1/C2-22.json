@@ -1,0 +1,48 @@
+{
+  "sentence_id": "C2-22",
+  "source_section": "Passage Two",
+  "original_sentence": "But our children and our grandchildren deserve better.",
+  "translation": "但我们的子孙后代应该拥有更好的未来。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "our children and grandchildren",
+      "meaning_cn": "我们的子孙后代；下一代人",
+      "usage_note": "our children and grandchildren 在本句中对应\"我们的子孙后代；下一代人\"。"
+    },
+    {
+      "word_or_phrase": "children and grandchildren",
+      "meaning_cn": "子女和孙辈",
+      "usage_note": "children and grandchildren 在本句中对应\"子女和孙辈\"。"
+    },
+    {
+      "word_or_phrase": "deserve better",
+      "meaning_cn": "理应得到更好的未来",
+      "usage_note": "deserve better 在本句中对应\"理应得到更好的未来\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "But our children and our grandchildren deserve better.",
+    "structure_type": "Passage Two",
+    "analysis_points": [
+      {
+        "part": "But our children and our grandchildren deserve better.",
+        "function": "结构分析",
+        "explanation_cn": "简单句；deserve better 含省略宾语，表示“理应得到更好的待遇/处境”。"
+      }
+    ],
+    "simplified_structure_cn": "但我们的子孙后代应该拥有更好的未来。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "But our children and our grandchildren deserve better."
+  }
+}

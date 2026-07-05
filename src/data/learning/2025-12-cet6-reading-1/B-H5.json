@@ -1,0 +1,58 @@
+{
+  "sentence_id": "B-H5",
+  "source_section": "Para H",
+  "original_sentence": "Modelled on the movements of a MasterChef contest winner, Tim Anderson, its robotic arms are fixed over a stove and programmed to prepare dishes from raw ingredients.",
+  "translation": "它的机械臂模仿《厨艺大师》比赛冠军 Tim Anderson 的动作，被固定在炉灶上，并被编程为用生食材制作菜品。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be fixed over",
+      "meaning_cn": "被固定在……上方",
+      "usage_note": "be fixed over 在本句中对应\"被固定在……上方\"。"
+    },
+    {
+      "word_or_phrase": "be programmed to",
+      "meaning_cn": "被编程为",
+      "usage_note": "be programmed to 在本句中对应\"被编程为\"。"
+    },
+    {
+      "word_or_phrase": "modelled on",
+      "meaning_cn": "以……为模型；模仿",
+      "usage_note": "modelled on 在本句中对应\"以……为模型；模仿\"。"
+    },
+    {
+      "word_or_phrase": "raw ingredients",
+      "meaning_cn": "生食材",
+      "usage_note": "raw ingredients 在本句中对应\"生食材\"。"
+    },
+    {
+      "word_or_phrase": "robotic arms",
+      "meaning_cn": "机械臂",
+      "usage_note": "robotic arms 在本句中对应\"机械臂\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Modelled on the movements of a MasterChef contest winner, Tim Anderson, its robotic arms are fixed over a stove and programmed to prepare dishes from raw ingredients.",
+    "structure_type": "Para H",
+    "analysis_points": [
+      {
+        "part": "Modelled on the movements of a MasterChef contest winner, Tim Anderson, its robotic arms are fixed over a stove and programmed to prepare dishes from raw ingredients.",
+        "function": "结构分析",
+        "explanation_cn": "Modelled on... 是过去分词状语；主句 robotic arms are fixed and programmed；to prepare... 表目的。"
+      }
+    ],
+    "simplified_structure_cn": "它的机械臂模仿《厨艺大师》比赛冠军 Tim Anderson 的动作，被固定在炉灶上，并被编程为用生食材制作菜品。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Modelled on the movements of a MasterChef contest winner, Tim Anderson, its robotic arms are fixed over a stove and programmed to prepare dishes from raw ingredients."
+  }
+}

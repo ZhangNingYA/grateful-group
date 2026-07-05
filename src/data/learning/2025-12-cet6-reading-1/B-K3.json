@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-K3",
+  "source_section": "Para K",
+  "original_sentence": "Until then, early adopters, such as the Manchester bar owner Andy Smith, who uses the Ordoo app at his venue 33 Oldham Street, may well experience growing but lower than expected acceptance.",
+  "translation": "在那之前，早期采用者，比如曼彻斯特酒吧老板 Andy Smith，可能会看到接受度在上升，但低于预期；他在自己的 33 Oldham Street 酒吧使用 Ordoo 应用。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "lower than expected acceptance",
+      "meaning_cn": "低于预期的接受度",
+      "usage_note": "lower than expected acceptance 在本句中对应\"低于预期的接受度\"。"
+    },
+    {
+      "word_or_phrase": "early adopters",
+      "meaning_cn": "早期采用者",
+      "usage_note": "early adopters 在本句中对应\"早期采用者\"。"
+    },
+    {
+      "word_or_phrase": "may well",
+      "meaning_cn": "很可能",
+      "usage_note": "may well 在本句中对应\"很可能\"。"
+    },
+    {
+      "word_or_phrase": "until then",
+      "meaning_cn": "在那之前",
+      "usage_note": "until then 在本句中对应\"在那之前\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Until then, early adopters, such as the Manchester bar owner Andy Smith, who uses the Ordoo app at his venue 33 Oldham Street, may well experience growing but lower than expected acceptance.",
+    "structure_type": "Para K",
+    "analysis_points": [
+      {
+        "part": "Until then, early adopters, such as the Manchester bar owner Andy Smith, who uses the Ordoo app at his venue 33 Oldham Street, may well experience growing but lower than expected acceptance.",
+        "function": "结构分析",
+        "explanation_cn": "Until then 作时间状语；such as... 举例；who uses... 修饰 Andy Smith；may well experience 是主干。"
+      }
+    ],
+    "simplified_structure_cn": "在那之前，早期采用者，比如曼彻斯特酒吧老板 Andy Smith，可能会看到接受度在上升，但低于预期；他在自己的 33 Oldham Street 酒吧使用 Ordoo 应用。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 5,
+    "difficulty_stars": "★★★★★",
+    "reason_cn": "原数据难度为 5/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Until then, early adopters, such as the Manchester bar owner Andy Smith, who uses the Ordoo app at his venue 33 Oldham Street, may well experience growing but lower than expected acceptance."
+  }
+}

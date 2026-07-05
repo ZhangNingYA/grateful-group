@@ -1,0 +1,38 @@
+{
+  "sentence_id": "B-P4",
+  "source_section": "Para P",
+  "original_sentence": "No one is putting an exact date on it yet.",
+  "translation": "目前还没有人给这件事定下确切日期。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "put an exact date on",
+      "meaning_cn": "给……定下确切日期",
+      "usage_note": "put an exact date on 在本句中对应\"给……定下确切日期\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "No one is putting an exact date on it yet.",
+    "structure_type": "Para P",
+    "analysis_points": [
+      {
+        "part": "No one is putting an exact date on it yet.",
+        "function": "结构分析",
+        "explanation_cn": "put an exact date on... 是固定搭配；yet 表“尚未”。"
+      }
+    ],
+    "simplified_structure_cn": "目前还没有人给这件事定下确切日期。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "No one is putting an exact date on it yet."
+  }
+}

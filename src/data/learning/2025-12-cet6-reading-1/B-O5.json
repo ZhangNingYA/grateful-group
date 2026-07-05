@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-O5",
+  "source_section": "Para O",
+  "original_sentence": "\"Small, 4mph ground robots are safe and will work 24 hours a day.\"",
+  "translation": "“时速 4 英里的小型地面机器人很安全，而且能一天 24 小时工作。”",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "24 hours a day",
+      "meaning_cn": "一天 24 小时",
+      "usage_note": "24 hours a day 在本句中对应\"一天 24 小时\"。"
+    },
+    {
+      "word_or_phrase": "ground robots",
+      "meaning_cn": "地面机器人",
+      "usage_note": "ground robots 在本句中对应\"地面机器人\"。"
+    },
+    {
+      "word_or_phrase": "4mph",
+      "meaning_cn": "每小时 4 英里",
+      "usage_note": "4mph 在本句中对应\"每小时 4 英里\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "\"Small, 4mph ground robots are safe and will work 24 hours a day.\"",
+    "structure_type": "Para O",
+    "analysis_points": [
+      {
+        "part": "\"Small, 4mph ground robots are safe and will work 24 hours a day.\"",
+        "function": "结构分析",
+        "explanation_cn": "主语 ground robots；safe 和 will work 构成并列判断。"
+      }
+    ],
+    "simplified_structure_cn": "“时速 4 英里的小型地面机器人很安全，而且能一天 24 小时工作。”"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "\"Small, 4mph ground robots are safe and will work 24 hours a day.\""
+  }
+}

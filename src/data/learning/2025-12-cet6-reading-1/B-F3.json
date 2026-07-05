@@ -1,0 +1,43 @@
+{
+  "sentence_id": "B-F3",
+  "source_section": "Para F",
+  "original_sentence": "Ultimately, technology can allow us to make personal choices.",
+  "translation": "归根结底，技术可以让我们做出个性化选择。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "allow sb. to do",
+      "meaning_cn": "允许某人做某事",
+      "usage_note": "allow sb. to do 在本句中对应\"允许某人做某事\"。"
+    },
+    {
+      "word_or_phrase": "personal choices",
+      "meaning_cn": "个人选择",
+      "usage_note": "personal choices 在本句中对应\"个人选择\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "Ultimately, technology can allow us to make personal choices.",
+    "structure_type": "Para F",
+    "analysis_points": [
+      {
+        "part": "Ultimately, technology can allow us to make personal choices.",
+        "function": "结构分析",
+        "explanation_cn": "allow sb. to do sth. 结构；Ultimately 表总结。"
+      }
+    ],
+    "simplified_structure_cn": "归根结底，技术可以让我们做出个性化选择。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "Ultimately, technology can allow us to make personal choices."
+  }
+}

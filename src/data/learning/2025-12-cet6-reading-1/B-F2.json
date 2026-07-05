@@ -1,0 +1,48 @@
+{
+  "sentence_id": "B-F2",
+  "source_section": "Para F",
+  "original_sentence": "We're presented with a one-size-fits-all menu.",
+  "translation": "呈现在我们面前的是一种“一刀切”的菜单。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "be presented with",
+      "meaning_cn": "被呈现；面对",
+      "usage_note": "be presented with 在本句中对应\"被呈现；面对\"。"
+    },
+    {
+      "word_or_phrase": "one-size-fits-all menu",
+      "meaning_cn": "一刀切菜单",
+      "usage_note": "one-size-fits-all menu 在本句中对应\"一刀切菜单\"。"
+    },
+    {
+      "word_or_phrase": "one-size-fits-all",
+      "meaning_cn": "一刀切的；通用但不个性化的",
+      "usage_note": "one-size-fits-all 在本句中对应\"一刀切的；通用但不个性化的\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "We're presented with a one-size-fits-all menu.",
+    "structure_type": "Para F",
+    "analysis_points": [
+      {
+        "part": "We're presented with a one-size-fits-all menu.",
+        "function": "结构分析",
+        "explanation_cn": "被动语态；one-size-fits-all 作 menu 的前置定语。"
+      }
+    ],
+    "simplified_structure_cn": "呈现在我们面前的是一种“一刀切”的菜单。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 2,
+    "difficulty_stars": "★★☆☆☆",
+    "reason_cn": "原数据难度为 2/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "We're presented with a one-size-fits-all menu."
+  }
+}

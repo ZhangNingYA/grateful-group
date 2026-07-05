@@ -1,0 +1,53 @@
+{
+  "sentence_id": "B-I1",
+  "source_section": "Para I",
+  "original_sentence": "For now, the kitchen technology that QSR Automations supplies to Mitchells & Butlers' pubs or KFC is less glamorous.",
+  "translation": "目前，QSR Automations 向 Mitchells & Butlers 旗下酒吧或肯德基提供的厨房技术并没有那么炫目。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "for now",
+      "meaning_cn": "目前",
+      "usage_note": "for now 在本句中对应\"目前\"。"
+    },
+    {
+      "word_or_phrase": "less glamorous",
+      "meaning_cn": "不那么炫目",
+      "usage_note": "less glamorous 在本句中对应\"不那么炫目\"。"
+    },
+    {
+      "word_or_phrase": "kitchen technology",
+      "meaning_cn": "厨房技术",
+      "usage_note": "kitchen technology 在本句中对应\"厨房技术\"。"
+    },
+    {
+      "word_or_phrase": "supply to",
+      "meaning_cn": "供应给",
+      "usage_note": "supply to 在本句中对应\"供应给\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "For now, the kitchen technology that QSR Automations supplies to Mitchells & Butlers' pubs or KFC is less glamorous.",
+    "structure_type": "Para I",
+    "analysis_points": [
+      {
+        "part": "For now, the kitchen technology that QSR Automations supplies to Mitchells & Butlers' pubs or KFC is less glamorous.",
+        "function": "结构分析",
+        "explanation_cn": "For now 作时间状语；that QSR Automations supplies... 修饰 technology；主句是 technology is less glamorous。"
+      }
+    ],
+    "simplified_structure_cn": "目前，QSR Automations 向 Mitchells & Butlers 旗下酒吧或肯德基提供的厨房技术并没有那么炫目。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "For now, the kitchen technology that QSR Automations supplies to Mitchells & Butlers' pubs or KFC is less glamorous."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "sentence_id": "C2-02",
+  "source_section": "Passage Two",
+  "original_sentence": "More than five decades later, our society is still struggling to separate truth from fantasy, fact from fiction.",
+  "translation": "五十多年后，我们的社会仍在艰难地区分真相与幻想、事实与虚构。",
+  "key_vocabulary": [
+    {
+      "word_or_phrase": "separate truth from fantasy",
+      "meaning_cn": "区分真相与幻想",
+      "usage_note": "separate truth from fantasy 在本句中对应\"区分真相与幻想\"。"
+    },
+    {
+      "word_or_phrase": "fact from fiction",
+      "meaning_cn": "事实与虚构",
+      "usage_note": "fact from fiction 在本句中对应\"事实与虚构\"。"
+    },
+    {
+      "word_or_phrase": "five decades later",
+      "meaning_cn": "五十多年后",
+      "usage_note": "five decades later 在本句中对应\"五十多年后\"。"
+    },
+    {
+      "word_or_phrase": "more than",
+      "meaning_cn": "不仅仅是；多于",
+      "usage_note": "more than 在本句中对应\"不仅仅是；多于\"。"
+    },
+    {
+      "word_or_phrase": "struggle to",
+      "meaning_cn": "艰难地做……",
+      "usage_note": "struggle to 在本句中对应\"艰难地做……\"。"
+    }
+  ],
+  "sentence_structure": {
+    "main_structure": "More than five decades later, our society is still struggling to separate truth from fantasy, fact from fiction.",
+    "structure_type": "Passage Two",
+    "analysis_points": [
+      {
+        "part": "More than five decades later, our society is still struggling to separate truth from fantasy, fact from fiction.",
+        "function": "结构分析",
+        "explanation_cn": "More than... later 作时间状语；struggle to do；两个 separate A from B 并列。"
+      }
+    ],
+    "simplified_structure_cn": "五十多年后，我们的社会仍在艰难地区分真相与幻想、事实与虚构。"
+  },
+  "difficulty_analysis": {
+    "difficulty_level": 3,
+    "difficulty_stars": "★★★☆☆",
+    "reason_cn": "原数据难度为 3/5，主要依据句子长度、从句数量、修饰成分和词汇密度评估。"
+  },
+  "exam_focus": {
+    "tested_abilities": [
+      "理解句子主干",
+      "识别修饰成分",
+      "结合上下文翻译重点表达"
+    ],
+    "possible_paraphrase": "More than five decades later, our society is still struggling to separate truth from fantasy, fact from fiction."
+  }
+}

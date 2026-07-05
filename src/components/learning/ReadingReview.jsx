@@ -558,6 +558,28 @@ function displayPhrases(item) {
     .slice(0, 12);
 }
 
+function normalizeReviewItem(item) {
+  if (!item?.original_sentence) return item;
+
+  const analysisPoints = item.sentence_structure?.analysis_points || [];
+  return {
+    label: item.sentence_id,
+    part: item.source_section,
+    en: item.original_sentence,
+    zh: item.translation,
+    analysis: analysisPoints.map((point) => ({
+      label: point.function || point.part || '结构分析',
+      text: point.explanation_cn,
+    })),
+    structure: item.sentence_structure?.simplified_structure_cn || '',
+    phrases: (item.key_vocabulary || []).map((phrase) => ({
+      term: phrase.word_or_phrase,
+      zh: phrase.meaning_cn,
+    })),
+    difficulty: item.difficulty_analysis?.difficulty_level || 1,
+  };
+}
+
 function sectionId(section, index) {
   const key = section.navLabel || section.title || `section-${index + 1}`;
   return key
@@ -1486,7 +1508,11 @@ function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster, 
 
 export function SentenceReview({ data, intro, sections, storageKey }) {
   const reviewIntro = data?.intro ?? intro;
-  const reviewSections = data?.sections ?? sections ?? [];
+  const rawReviewSections = data?.sections ?? sections ?? [];
+  const reviewSections = rawReviewSections.map((section) => ({
+    ...section,
+    items: (section.items || []).map(normalizeReviewItem),
+  }));
   const reviewStorageKey = data?.storageKey ?? storageKey ?? 'learning-reading-review';
   const reviewPhraseNotes = data?.phraseNotes ?? {};
   const [difficulty, setDifficulty] = useState('all');
