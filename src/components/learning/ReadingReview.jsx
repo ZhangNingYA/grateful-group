@@ -577,6 +577,7 @@ function normalizeReviewItem(item) {
       zh: phrase.meaning_cn,
     })),
     difficulty: item.difficulty_analysis?.difficulty_level || 1,
+    difficultyAnalysis: item.difficulty_analysis,
   };
 }
 
@@ -1414,6 +1415,22 @@ function StructureNote({ item }) {
   );
 }
 
+function DifficultyAnalysisNote({ analysis }) {
+  if (!analysis?.reason_cn && !analysis?.difficulty_stars) return null;
+
+  return (
+    <div className="cet6-note">
+      <span className="cet6-note-title">难度分析</span>
+      <p>
+        {analysis.difficulty_stars && (
+          <span className="cet6-structure-label">{analysis.difficulty_stars}</span>
+        )}
+        {analysis.reason_cn}
+      </p>
+    </div>
+  );
+}
+
 function DifficultyDots({ level }) {
   const difficultyLevel = Math.max(1, Math.min(5, Number(level) || 1));
   return (
@@ -1434,6 +1451,7 @@ function SentenceDetail({ item, className, phraseNotes }) {
   return (
     <div className={`cet6-detail${className ? ` ${className}` : ''}`}>
       <StructureNote item={item} />
+      <DifficultyAnalysisNote analysis={item.difficultyAnalysis} />
       {phrases.length > 0 && (
         <div className="cet6-note">
           <span className="cet6-note-title">重点单词 / 短语</span>
