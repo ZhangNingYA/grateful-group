@@ -176,11 +176,6 @@
           "translation": "到现在，人们普遍认为，长期保持规律锻炼习惯的人会获得各种健康益处。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "it is generally accepted that",
-              "meaning_cn": "人们普遍认为",
-              "usage_note": "这里表示“人们普遍认为”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "an assortment of",
               "meaning_cn": "各种各样的",
               "usage_note": "这里表示“各种各样的”，翻译时应作为一个整体处理。"
@@ -194,11 +189,6 @@
               "word_or_phrase": "regular exercise",
               "meaning_cn": "规律锻炼",
               "usage_note": "这里表示“规律锻炼”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "over time",
-              "meaning_cn": "随着时间推移",
-              "usage_note": "这里表示“随着时间推移”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -232,23 +222,7 @@
           "source_section": "Cloze",
           "original_sentence": "But is it ever too late to start?",
           "translation": "但是，开始锻炼会不会真的太晚呢？",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "ever too late",
-              "meaning_cn": "是否真的太晚",
-              "usage_note": "这里表示“是否真的太晚”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "to start",
-              "meaning_cn": "开始",
-              "usage_note": "这里表示“开始”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "too late to do",
-              "meaning_cn": "太晚而不能做；来不及做",
-              "usage_note": "这里表示“太晚而不能做；来不及做”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "But is it ever too late to start?",
             "structure_type": "Cloze",
@@ -297,11 +271,6 @@
               "usage_note": "这里表示“早亡；过早死亡”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "beyond levels",
-              "meaning_cn": "超过……水平",
-              "usage_note": "这里表示“超过……水平”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "exercise consistently",
               "meaning_cn": "持续稳定地锻炼",
               "usage_note": "这里表示“持续稳定地锻炼”，翻译时应作为一个整体处理。"
@@ -342,12 +311,7 @@
             {
               "word_or_phrase": "a drop of",
               "meaning_cn": "下降幅度为",
-              "usage_note": "这里表示“下降幅度为”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "people who did not exercise",
-              "meaning_cn": "不锻炼的人",
-              "usage_note": "这里表示“不锻炼的人”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“下降幅度为”。"
             },
             {
               "word_or_phrase": "compared to",
@@ -387,16 +351,6 @@
           "original_sentence": "Those who began exercising in middle age also saw reductions in their incidence of chronic diseases, such as heart disease and cancer, which were similar to the steady exercisers.",
           "translation": "那些中年开始锻炼的人，慢性疾病发病率也有所下降，例如心脏病和癌症，其下降情况与长期稳定锻炼者相似。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "in middle age",
-              "meaning_cn": "在中年时期",
-              "usage_note": "这里表示“在中年时期”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "incidence of chronic diseases",
-              "meaning_cn": "慢性病发病率",
-              "usage_note": "这里表示“慢性病发病率”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "steady exercisers",
               "meaning_cn": "长期稳定锻炼者",
@@ -446,11 +400,6 @@
               "usage_note": "这里表示“贯穿一生”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "why bother doing",
-              "meaning_cn": "为什么还费心做某事",
-              "usage_note": "这里表示“为什么还费心做某事”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "exercise consistently",
               "meaning_cn": "持续稳定地锻炼",
               "usage_note": "这里表示“持续稳定地锻炼”，翻译时应作为一个整体处理。"
@@ -491,22 +440,7 @@
             {
               "word_or_phrase": "be a mistake",
               "meaning_cn": "是错误的",
-              "usage_note": "这里表示“是错误的”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "authors of the study",
-              "meaning_cn": "该研究的作者",
-              "usage_note": "这里表示“该研究的作者”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "interpret findings to mean",
-              "meaning_cn": "把研究发现理解为",
-              "usage_note": "这里表示“把研究发现理解为”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "concede that",
-              "meaning_cn": "承认……",
-              "usage_note": "这里表示“承认……”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“是错误的”。"
             },
             {
               "word_or_phrase": "delay starting",
@@ -603,16 +537,6 @@
               "word_or_phrase": "health benefits",
               "meaning_cn": "健康益处",
               "usage_note": "这里表示“健康益处”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "lowered risk",
-              "meaning_cn": "降低的风险",
-              "usage_note": "这里表示“降低的风险”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "gaining weight",
-              "meaning_cn": "体重增加",
-              "usage_note": "这里表示“体重增加”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -653,19 +577,9 @@
               "usage_note": "这里表示“全球肥胖流行”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "the latter",
-              "meaning_cn": "后者",
-              "usage_note": "这里表示“后者”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "particularly important",
               "meaning_cn": "尤其重要",
               "usage_note": "这里表示“尤其重要”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "given",
-              "meaning_cn": "鉴于；考虑到",
-              "usage_note": "这里表示“鉴于；考虑到”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -703,12 +617,7 @@
             {
               "word_or_phrase": "make a habit of",
               "meaning_cn": "养成……习惯",
-              "usage_note": "这里表示“养成……习惯”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "be more likely to",
-              "meaning_cn": "更有可能",
-              "usage_note": "这里表示“更有可能”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“养成……习惯”。"
             },
             {
               "word_or_phrase": "keep up patterns",
@@ -764,29 +673,14 @@
               "usage_note": "这里表示“始终；任何时候”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "it is ideal for",
-              "meaning_cn": "它适合",
-              "usage_note": "这里表示“它适合”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "children or adolescents",
               "meaning_cn": "儿童或青少年",
               "usage_note": "这里表示“儿童或青少年”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "maintain an active lifestyle",
-              "meaning_cn": "保持积极生活方式",
-              "usage_note": "这里表示“保持积极生活方式”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "regardless of",
               "meaning_cn": "不管；无论",
               "usage_note": "这里表示“不管；无论”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "to start",
-              "meaning_cn": "开始",
-              "usage_note": "这里表示“开始”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -825,21 +719,6 @@
               "word_or_phrase": "does indicate that",
               "meaning_cn": "确实表明",
               "usage_note": "这里表示“确实表明”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in your 40s and 50s",
-              "meaning_cn": "在四五十岁时",
-              "usage_note": "这里表示“在四五十岁时”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "have not been active",
-              "meaning_cn": "一直不活跃",
-              "usage_note": "这里表示“一直不活跃”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "still benefit",
-              "meaning_cn": "仍然受益",
-              "usage_note": "这里表示“仍然受益”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -883,19 +762,9 @@
           "translation": "和大多数厨师一样，Flippy 不怕辛苦工作。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "like most chefs",
-              "meaning_cn": "像大多数厨师一样",
-              "usage_note": "这里表示“像大多数厨师一样”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "be afraid of",
               "meaning_cn": "害怕；畏惧",
               "usage_note": "这里表示“害怕；畏惧”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "hard work",
-              "meaning_cn": "努力工作",
-              "usage_note": "这里表示“努力工作”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -936,19 +805,9 @@
               "usage_note": "这里表示“以及；还”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "since last summer",
-              "meaning_cn": "自去年夏天以来",
-              "usage_note": "这里表示“自去年夏天以来”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "short assignments",
               "meaning_cn": "短期任务",
               "usage_note": "这里表示“短期任务”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "shifts",
-              "meaning_cn": "转变",
-              "usage_note": "这里表示“转变”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -992,11 +851,6 @@
               "word_or_phrase": "absolute consistency",
               "meaning_cn": "绝对一致性",
               "usage_note": "这里表示“绝对一致性”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "long hours",
-              "meaning_cn": "长时间工作",
-              "usage_note": "这里表示“长时间工作”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -1035,11 +889,6 @@
               "word_or_phrase": "hear sb. do",
               "meaning_cn": "听到某人做某事",
               "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“听到某人做某事”。"
-            },
-            {
-              "word_or_phrase": "in fact",
-              "meaning_cn": "事实上",
-              "usage_note": "这里表示“事实上”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "complain",
@@ -1095,11 +944,6 @@
               "usage_note": "这里表示“热成像扫描仪”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "flip burgers",
-              "meaning_cn": "翻煎汉堡",
-              "usage_note": "这里表示“翻煎汉堡”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "cloud-connected",
               "meaning_cn": "云端连接的",
               "usage_note": "这里表示“云端连接的”，翻译时应作为一个整体处理。"
@@ -1138,19 +982,9 @@
           "translation": "Flippy 由 Miso Robotics 创造，该公司隶属于 Cali Group；其首席执行官 John Miller 将 Cali Group 描述为“一家碰巧卖芝士汉堡的科技公司”。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "be created by",
-              "meaning_cn": "由……创造",
-              "usage_note": "这里表示“由……创造”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "be described as",
               "meaning_cn": "被描述为",
               "usage_note": "这里表示“被描述为”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "part of",
-              "meaning_cn": "……的一部分",
-              "usage_note": "这里表示“……的一部分”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "happen to",
@@ -1190,11 +1024,6 @@
           "original_sentence": "Cali creates new machines that it road-tests in its Caliburger restaurants across the world, into which Flippy will be deployed this year.",
           "translation": "Cali 研发新机器，并在其全球 Caliburger 餐厅进行实地测试；Flippy 今年将被部署到这些餐厅中。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "across the world",
-              "meaning_cn": "在全球范围内",
-              "usage_note": "这里表示“在全球范围内”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "be deployed",
               "meaning_cn": "被部署",
@@ -1237,18 +1066,7 @@
           "source_section": "Para B",
           "original_sentence": "And Flippy is not alone.",
           "translation": "而且 Flippy 并不是唯一的例子。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "not alone",
-              "meaning_cn": "并非唯一",
-              "usage_note": "这里表示“并非唯一”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "Flippy is not alone",
-              "meaning_cn": "Flippy 并非个例；还有类似机器人",
-              "usage_note": "这里表示“Flippy 并非个例；还有类似机器人”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "And Flippy is not alone.",
             "structure_type": "Para B",
@@ -1285,16 +1103,6 @@
               "word_or_phrase": "self-guiding robot",
               "meaning_cn": "自主导航机器人",
               "usage_note": "这里表示“自主导航机器人”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "so far",
-              "meaning_cn": "到目前为止",
-              "usage_note": "这里表示“到目前为止”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "serve diners",
-              "meaning_cn": "服务食客",
-              "usage_note": "这里表示“服务食客”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -1329,11 +1137,6 @@
           "original_sentence": "Ten years ago, robot-chefs and waiters were pure science fiction.",
           "translation": "十年前，机器人厨师和机器人服务员还完全是科幻设想。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "pure science fiction",
-              "meaning_cn": "纯粹的科幻",
-              "usage_note": "这里表示“纯粹的科幻”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "robot-chefs",
               "meaning_cn": "机器人厨师",
@@ -1375,17 +1178,12 @@
             {
               "word_or_phrase": "a reality",
               "meaning_cn": "现实",
-              "usage_note": "这里表示“现实”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“现实”。"
             },
             {
               "word_or_phrase": "plausible investment",
               "meaning_cn": "合理可行的投资",
               "usage_note": "这里表示“合理可行的投资”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "at prices",
-              "meaning_cn": "以……价格",
-              "usage_note": "这里表示“以……价格”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -1423,7 +1221,7 @@
             {
               "word_or_phrase": "on a subscription basis",
               "meaning_cn": "以订阅模式",
-              "usage_note": "这里表示“以订阅模式”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“以订阅模式”。"
             },
             {
               "word_or_phrase": "chief operating officer",
@@ -1474,19 +1272,14 @@
           "translation": "据报道，Flippy 的价格将在 6 万到 10 万美元之间。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "cost $60,000 to $100,000",
-              "meaning_cn": "花费 6 万到 10 万美元",
-              "usage_note": "这里表示“花费 6 万到 10 万美元”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "a reported",
               "meaning_cn": "据称的；据报道的",
-              "usage_note": "这里表示“据称的；据报道的”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“据称的；据报道的”。"
             },
             {
               "word_or_phrase": "cost a reported",
               "meaning_cn": "据报道花费……",
-              "usage_note": "这里表示“据报道花费……”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“据报道花费……”。"
             }
           ],
           "sentence_structure": {
@@ -1525,11 +1318,6 @@
               "word_or_phrase": "minimal human oversight",
               "meaning_cn": "最低限度人工监督",
               "usage_note": "这里表示“最低限度人工监督”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "order at screens",
-              "meaning_cn": "在屏幕上下单",
-              "usage_note": "这里表示“在屏幕上下单”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "fully automated",
@@ -1623,11 +1411,6 @@
           "translation": "在一个热衷于削减劳动力成本、提高利润的行业中，进一步自动化似乎不可避免。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "slash labour costs",
-              "meaning_cn": "大幅削减劳动力成本",
-              "usage_note": "这里表示“大幅削减劳动力成本”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "be keen to",
               "meaning_cn": "热衷于",
               "usage_note": "这里表示“热衷于”，翻译时应作为一个整体处理。"
@@ -1681,11 +1464,6 @@
               "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“把 B 归功于 A”。"
             },
             {
-              "word_or_phrase": "drive an increase in sales",
-              "meaning_cn": "推动销售增长",
-              "usage_note": "这里表示“推动销售增长”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "eight-month test",
               "meaning_cn": "为期八个月的测试",
               "usage_note": "这里表示“为期八个月的测试”，翻译时应作为一个整体处理。"
@@ -1726,7 +1504,7 @@
             {
               "word_or_phrase": "yield a rise",
               "meaning_cn": "带来增长",
-              "usage_note": "这里表示“带来增长”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“带来增长”。"
             },
             {
               "word_or_phrase": "self-ordering screens",
@@ -1734,14 +1512,9 @@
               "usage_note": "这里表示“自助点餐屏”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "order values",
-              "meaning_cn": "订单金额",
-              "usage_note": "这里表示“订单金额”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "a reported",
               "meaning_cn": "据称的；据报道的",
-              "usage_note": "这里表示“据称的；据报道的”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“据称的；据报道的”。"
             },
             {
               "word_or_phrase": "meanwhile",
@@ -1781,16 +1554,6 @@
           "original_sentence": "Personalisation is seen as key to the appeal of this technology, alongside its ability to reliably push so-called \"upsells\" to customers.",
           "translation": "个性化被视为这项技术吸引力的关键，同时重要的还有它向顾客稳定推荐所谓“加购项”的能力。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "be seen as key to",
-              "meaning_cn": "被视为……的关键",
-              "usage_note": "这里表示“被视为……的关键”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "push upsells",
-              "meaning_cn": "推送加购项",
-              "usage_note": "这里表示“推送加购项”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "personalisation",
               "meaning_cn": "个性化",
@@ -1834,16 +1597,6 @@
           "original_sentence": "Soon when you log into a restaurant app, it will be able to use your data and purchasing history to recommend dishes to you—factoring in everything from the weather to, if you are ordering at a screen that can read your face, your mood.",
           "translation": "不久以后，当你登录餐厅应用时，它将能够利用你的数据和购买历史向你推荐菜品，并把从天气到你的情绪等因素都考虑进去；如果你是在能识别人脸的屏幕上下单，它甚至会读取你的情绪。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "read your face",
-              "meaning_cn": "识别你的脸",
-              "usage_note": "这里表示“识别你的脸”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "log into",
-              "meaning_cn": "登录",
-              "usage_note": "这里表示“登录”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "purchasing history",
               "meaning_cn": "购买历史",
@@ -1896,11 +1649,6 @@
               "word_or_phrase": "compromise on choice",
               "meaning_cn": "在选择上妥协",
               "usage_note": "这里表示“在选择上妥协”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "right now",
-              "meaning_cn": "现在",
-              "usage_note": "这里表示“现在”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "compromise on",
@@ -2032,24 +1780,9 @@
           "translation": "你喜欢辣味食物和鸡肉？那这就是像你这样的人最常点的菜，酒店科技公司 Flyt 的首席执行官 Tom Weaver 说。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "people like you",
-              "meaning_cn": "像你这样的人",
-              "usage_note": "这里表示“像你这样的人”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "hospitality tech company",
               "meaning_cn": "餐饮服务技术公司",
               "usage_note": "这里表示“餐饮服务技术公司”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "spicy food",
-              "meaning_cn": "辛辣食物",
-              "usage_note": "这里表示“辛辣食物”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "mostly order",
-              "meaning_cn": "通常点单",
-              "usage_note": "这里表示“通常点单”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -2136,23 +1869,7 @@
           "source_section": "Para F",
           "original_sentence": "For the first time in a few hundred years, digital is allowing us to create new versions of restaurants.",
           "translation": "几百年来第一次，数字技术让我们能够创造新的餐厅形态。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "for the first time",
-              "meaning_cn": "第一次",
-              "usage_note": "这里表示“第一次”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "new versions of restaurants",
-              "meaning_cn": "新的餐厅形态",
-              "usage_note": "这里表示“新的餐厅形态”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "digital",
-              "meaning_cn": "数字化的",
-              "usage_note": "这里表示“数字化的”，是理解本句含义的关键词。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "For the first time in a few hundred years, digital is allowing us to create new versions of restaurants.",
             "structure_type": "Para F",
@@ -2241,7 +1958,7 @@
             {
               "word_or_phrase": "a very long time before",
               "meaning_cn": "还要很久才会",
-              "usage_note": "这里表示“还要很久才会”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“还要很久才会”。"
             },
             {
               "word_or_phrase": "AI and robotics",
@@ -2345,16 +2062,6 @@
           "translation": "把易碎的食物摆到盘子上会非常慢。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "fragile foods",
-              "meaning_cn": "易碎/易损食物",
-              "usage_note": "这里表示“易碎/易损食物”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "on plates",
-              "meaning_cn": "在盘子里",
-              "usage_note": "这里表示“在盘子里”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "incredibly slow",
               "meaning_cn": "极其缓慢",
               "usage_note": "这里表示“极其缓慢”，翻译时应作为一个整体处理。"
@@ -2396,11 +2103,6 @@
               "word_or_phrase": "limited functionality",
               "meaning_cn": "功能有限",
               "usage_note": "这里表示“功能有限”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "robots have limited functionality",
-              "meaning_cn": "机器人功能有限",
-              "usage_note": "这里表示“机器人功能有限”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -2435,11 +2137,6 @@
           "original_sentence": "A human needs to load Penny with plates that diners lift off themselves.",
           "translation": "仍需要人把盘子装到 Penny 上，再由食客自己取下。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "load with plates",
-              "meaning_cn": "装上盘子",
-              "usage_note": "这里表示“装上盘子”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "lift off",
               "meaning_cn": "取下",
@@ -2483,16 +2180,6 @@
           "original_sentence": "At the robot-powered US pizza-delivery company Zume, the more difficult jobs, such as topping pizzas, are still done by humans.",
           "translation": "在美国机器人驱动的披萨配送公司 Zume，更困难的工作，比如给披萨加配料，仍由人类完成。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "be done by humans",
-              "meaning_cn": "由人类完成",
-              "usage_note": "这里表示“由人类完成”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "topping pizzas",
-              "meaning_cn": "给披萨加配料",
-              "usage_note": "这里表示“给披萨加配料”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "pizza-delivery company",
               "meaning_cn": "披萨配送公司",
@@ -2540,16 +2227,6 @@
               "word_or_phrase": "sophistication to come",
               "meaning_cn": "未来会出现的复杂能力",
               "usage_note": "这里表示“未来会出现的复杂能力”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "offer an idea of",
-              "meaning_cn": "让人看到……的雏形",
-              "usage_note": "这里表示“让人看到……的雏形”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "launch soon",
-              "meaning_cn": "即将推出",
-              "usage_note": "这里表示“即将推出”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -2603,11 +2280,6 @@
               "word_or_phrase": "raw ingredients",
               "meaning_cn": "生食材",
               "usage_note": "这里表示“生食材”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "robotic arms",
-              "meaning_cn": "机械臂",
-              "usage_note": "这里表示“机械臂”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -2642,11 +2314,6 @@
           "original_sentence": "It is designed for domestic use, but a commercial version is planned that opens up the possibility of restaurant kitchens automating even highly technically challenging tasks.",
           "translation": "它是为家庭使用而设计的，但商业版本也在计划中，这将开启餐厅厨房自动化完成高技术难度任务的可能性。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "open up the possibility of",
-              "meaning_cn": "开启……的可能性",
-              "usage_note": "这里表示“开启……的可能性”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "technically challenging tasks",
               "meaning_cn": "技术上有挑战性的任务",
@@ -2696,11 +2363,6 @@
           "translation": "目前，QSR Automations 向 Mitchells & Butlers 旗下酒吧或肯德基提供的厨房技术并没有那么炫目。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "for now",
-              "meaning_cn": "目前",
-              "usage_note": "这里表示“目前”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "less glamorous",
               "meaning_cn": "不那么炫目",
               "usage_note": "这里表示“不那么炫目”，翻译时应作为一个整体处理。"
@@ -2749,11 +2411,6 @@
           "translation": "QSR 系统不再让厨师喊出食客订单，而是自动把这些订单分发到多个屏幕上。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "shout out orders",
-              "meaning_cn": "喊出订单",
-              "usage_note": "这里表示“喊出订单”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "rather than",
               "meaning_cn": "而不是",
               "usage_note": "这里表示“而不是”，翻译时应作为一个整体处理。"
@@ -2762,11 +2419,6 @@
               "word_or_phrase": "automatically distribute",
               "meaning_cn": "自动分配",
               "usage_note": "这里表示“自动分配”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "across screens",
-              "meaning_cn": "分布到多个屏幕上",
-              "usage_note": "这里表示“分布到多个屏幕上”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "be automatic",
@@ -2806,26 +2458,6 @@
           "original_sentence": "The kitchen screens then tell chefs when to start cooking each dish, so that your plate of fish, chips and peas comes together at the right time.",
           "translation": "随后，厨房屏幕会告诉厨师每道菜什么时候开始做，这样你的鱼、薯条和豌豆就能在合适的时间一起出餐。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "when to start cooking",
-              "meaning_cn": "何时开始烹饪",
-              "usage_note": "这里表示“何时开始烹饪”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "at the right time",
-              "meaning_cn": "在正确时间",
-              "usage_note": "这里表示“在正确时间”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "to start",
-              "meaning_cn": "开始",
-              "usage_note": "这里表示“开始”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "kitchen screens",
-              "meaning_cn": "厨房屏幕",
-              "usage_note": "这里表示“厨房屏幕”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "come together",
               "meaning_cn": "同步完成；一起出餐",
@@ -2867,17 +2499,12 @@
             {
               "word_or_phrase": "a deficit of",
               "meaning_cn": "……的缺口",
-              "usage_note": "这里表示“……的缺口”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“……的缺口”。"
             },
             {
               "word_or_phrase": "suffer a shortage",
               "meaning_cn": "遭遇短缺",
-              "usage_note": "这里表示“遭遇短缺”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "skilled chefs",
-              "meaning_cn": "熟练厨师",
-              "usage_note": "这里表示“熟练厨师”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“遭遇短缺”。"
             },
             {
               "word_or_phrase": "according to",
@@ -2917,16 +2544,6 @@
           "original_sentence": "\"Automation systems designed to make the process more idiot-proof are trying to bridge that gap,\" says Stefan Chomka, the editor of Restaurant magazine.",
           "translation": "《Restaurant》杂志编辑 Stefan Chomka 说：“旨在让流程更不容易出错的自动化系统正在努力填补这一缺口。”",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "bridge that gap",
-              "meaning_cn": "填补缺口",
-              "usage_note": "这里表示“填补缺口”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "editor of",
-              "meaning_cn": "……的编辑",
-              "usage_note": "这里表示“……的编辑”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "automation systems",
               "meaning_cn": "自动化系统",
@@ -2976,11 +2593,6 @@
               "usage_note": "这里表示“就……而言”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "enhance the customer experience",
-              "meaning_cn": "提升顾客体验",
-              "usage_note": "这里表示“提升顾客体验”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "customer experience",
               "meaning_cn": "顾客体验",
               "usage_note": "这里表示“顾客体验”，翻译时应作为一个整体处理。"
@@ -2989,11 +2601,6 @@
               "word_or_phrase": "internet age",
               "meaning_cn": "互联网时代",
               "usage_note": "这里表示“互联网时代”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "online booking",
-              "meaning_cn": "在线预订",
-              "usage_note": "这里表示“在线预订”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -3029,11 +2636,6 @@
           "translation": "自动化桌边点餐和支付被视为下一个里程碑。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "be seen as",
-              "meaning_cn": "被视为",
-              "usage_note": "这里表示“被视为”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "at-table ordering",
               "meaning_cn": "桌边点餐",
               "usage_note": "这里表示“桌边点餐”，翻译时应作为一个整体处理。"
@@ -3042,11 +2644,6 @@
               "word_or_phrase": "next landmark",
               "meaning_cn": "下一个标志性节点",
               "usage_note": "这里表示“下一个标志性节点”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "payment",
-              "meaning_cn": "支付",
-              "usage_note": "这里表示“支付”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -3082,24 +2679,9 @@
           "translation": "在那之前，早期采用者，比如曼彻斯特酒吧老板 Andy Smith，可能会看到接受度在上升，但低于预期；他在自己的 33 Oldham Street 酒吧使用 Ordoo 应用。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "lower than expected acceptance",
-              "meaning_cn": "低于预期的接受度",
-              "usage_note": "这里表示“低于预期的接受度”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "early adopters",
               "meaning_cn": "早期采用者",
               "usage_note": "这里表示“早期采用者”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "may well",
-              "meaning_cn": "很可能",
-              "usage_note": "这里表示“很可能”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "until then",
-              "meaning_cn": "在那之前",
-              "usage_note": "这里表示“在那之前”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -3183,11 +2765,6 @@
           "translation": "比如 TGI Fridays 的无人机曾弄伤《布鲁克林日报》摄影师；美国汉堡连锁 Shake Shack 也不得不放弃完全无现金点餐门店的计划。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "retreat from plans",
-              "meaning_cn": "放弃计划",
-              "usage_note": "这里表示“放弃计划”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "cashless ordering sites",
               "meaning_cn": "无现金点餐站点",
               "usage_note": "这里表示“无现金点餐站点”，翻译时应作为一个整体处理。"
@@ -3195,12 +2772,7 @@
             {
               "word_or_phrase": "injure a photographer",
               "meaning_cn": "弄伤摄影师",
-              "usage_note": "这里表示“弄伤摄影师”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "drone",
-              "meaning_cn": "无人机",
-              "usage_note": "这里表示“无人机”，是理解本句含义的关键词。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“弄伤摄影师”。"
             }
           ],
           "sentence_structure": {
@@ -3236,19 +2808,9 @@
           "translation": "但 Chomka 说，如果这种技术只是在为“并不存在的问题提供解决方案”，它就可能不得要领。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "miss the mark",
-              "meaning_cn": "没有切中要害",
-              "usage_note": "这里表示“没有切中要害”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "offer solutions to",
               "meaning_cn": "为……提供解决方案",
               "usage_note": "这里表示“为……提供解决方案”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "problems that do not exist",
-              "meaning_cn": "并不存在的问题",
-              "usage_note": "这里表示“并不存在的问题”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -3289,11 +2851,6 @@
               "usage_note": "这里表示“自动支付”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "could be useful",
-              "meaning_cn": "可能有用",
-              "usage_note": "这里表示“可能有用”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "be automatic",
               "meaning_cn": "自动完成；无需人工操作",
               "usage_note": "这里表示“自动完成；无需人工操作”，翻译时应作为一个整体处理。"
@@ -3331,16 +2888,6 @@
           "original_sentence": "But, in an expensive restaurant, \"how quick do you need dinner to be?\"",
           "translation": "但是，在一家昂贵的餐厅里，“你真的需要晚餐快到什么程度呢？”",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "need dinner to be",
-              "meaning_cn": "需要晚餐达到……程度",
-              "usage_note": "这里表示“需要晚餐达到……程度”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "how quick",
-              "meaning_cn": "多快",
-              "usage_note": "这里表示“多快”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "expensive restaurant",
               "meaning_cn": "昂贵餐厅",
@@ -3380,14 +2927,9 @@
           "translation": "人们对人性化待客艺术的这种依恋，会让那些把自动化视为就业威胁的员工感到宽慰。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "human art of hospitality",
-              "meaning_cn": "人性化待客艺术",
-              "usage_note": "这里表示“人性化待客艺术”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "a threat to jobs",
               "meaning_cn": "对就业的威胁",
-              "usage_note": "这里表示“对就业的威胁”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“对就业的威胁”。"
             },
             {
               "word_or_phrase": "attachment to",
@@ -3443,11 +2985,6 @@
               "usage_note": "这里表示“没有保障措施”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "bypass workers",
-              "meaning_cn": "绕过劳动者",
-              "usage_note": "这里表示“绕过劳动者”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "low-paying jobs",
               "meaning_cn": "低薪岗位",
               "usage_note": "这里表示“低薪岗位”，翻译时应作为一个整体处理。"
@@ -3488,7 +3025,7 @@
             {
               "word_or_phrase": "benefit a wealthy few",
               "meaning_cn": "让少数富人受益",
-              "usage_note": "这里表示“让少数富人受益”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“让少数富人受益”。"
             },
             {
               "word_or_phrase": "Members of Parliament",
@@ -3600,16 +3137,6 @@
               "word_or_phrase": "decrease in number",
               "meaning_cn": "数量减少",
               "usage_note": "这里表示“数量减少”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "jobs will change",
-              "meaning_cn": "工作会改变",
-              "usage_note": "这里表示“工作会改变”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "if not",
-              "meaning_cn": "即使不……",
-              "usage_note": "这里表示“即使不……”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -3698,16 +3225,6 @@
           "translation": "Caliburger 有一个项目，将员工再培训为机器人工程师或“厨师技术员”。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "retrain staff",
-              "meaning_cn": "再培训员工",
-              "usage_note": "这里表示“再培训员工”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "chef techs",
-              "meaning_cn": "厨师技术员",
-              "usage_note": "这里表示“厨师技术员”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "robot engineers",
               "meaning_cn": "机器人工程师",
               "usage_note": "这里表示“机器人工程师”，翻译时应作为一个整体处理。"
@@ -3751,21 +3268,6 @@
           "translation": "但归根到底，通过雇用更少的人或以更低工资雇人来降低管理费用的机会，才会真正吸引大品牌采用技术。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "at lower rates",
-              "meaning_cn": "以更低薪资",
-              "usage_note": "这里表示“以更低薪资”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "employ fewer people",
-              "meaning_cn": "雇用更少的人",
-              "usage_note": "这里表示“雇用更少的人”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "attract brands to technology",
-              "meaning_cn": "吸引品牌采用技术",
-              "usage_note": "这里表示“吸引品牌采用技术”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "reduce overheads",
               "meaning_cn": "降低管理费用",
               "usage_note": "这里表示“降低管理费用”，翻译时应作为一个整体处理。"
@@ -3804,26 +3306,6 @@
           "translation": "未来十年，传统实体餐厅的岗位必然会减少，尤其是因为自动化会推动其快速增长的竞争对手：外卖配送。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "jobs will go",
-              "meaning_cn": "岗位会消失",
-              "usage_note": "这里表示“岗位会消失”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "not least because",
-              "meaning_cn": "尤其因为",
-              "usage_note": "这里表示“尤其因为”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "over the next 10 years",
-              "meaning_cn": "未来十年",
-              "usage_note": "这里表示“未来十年”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "rapidly growing rival",
-              "meaning_cn": "快速增长的竞争对手",
-              "usage_note": "这里表示“快速增长的竞争对手”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "bricks-built restaurants",
               "meaning_cn": "传统实体餐厅",
               "usage_note": "这里表示“传统实体餐厅”，翻译时应作为一个整体处理。"
@@ -3861,16 +3343,6 @@
           "original_sentence": "Companies such as Domino and Just Eat have both experimented with robot and drone delivery, which is already legal in Reykjavik, Iceland.",
           "translation": "Domino 和 Just Eat 等公司都已经尝试过机器人和无人机配送，而这种方式在冰岛雷克雅未克已经合法。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "robot and drone delivery",
-              "meaning_cn": "机器人和无人机配送",
-              "usage_note": "这里表示“机器人和无人机配送”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "already legal",
-              "meaning_cn": "已经合法",
-              "usage_note": "这里表示“已经合法”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "experiment with",
               "meaning_cn": "试验；尝试",
@@ -3950,17 +3422,7 @@
             {
               "word_or_phrase": "24 hours a day",
               "meaning_cn": "一天 24 小时",
-              "usage_note": "这里表示“一天 24 小时”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "ground robots",
-              "meaning_cn": "地面机器人",
-              "usage_note": "这里表示“地面机器人”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "4mph",
-              "meaning_cn": "每小时 4 英里",
-              "usage_note": "这里表示“每小时 4 英里”，是理解本句含义的关键词。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“一天 24 小时”。"
             }
           ],
           "sentence_structure": {
@@ -4062,16 +3524,6 @@
               "word_or_phrase": "orders coming in",
               "meaning_cn": "传入的订单",
               "usage_note": "这里表示“传入的订单”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "ahead of",
-              "meaning_cn": "在……之前",
-              "usage_note": "这里表示“在……之前”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "prepare food",
-              "meaning_cn": "准备食物",
-              "usage_note": "这里表示“准备食物”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4106,21 +3558,6 @@
           "original_sentence": "\"I'll be able to say 'Let's have pizza' to my family, my intelligent assistant will hear and 10 minutes later the food will be at my door.\"",
           "translation": "“我可以对家人说‘我们吃披萨吧’，我的智能助手会听到，10 分钟后食物就会送到我家门口。”",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "be able to say",
-              "meaning_cn": "能够说",
-              "usage_note": "这里表示“能够说”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "10 minutes later",
-              "meaning_cn": "十分钟后",
-              "usage_note": "这里表示“十分钟后”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "at my door",
-              "meaning_cn": "到我门口",
-              "usage_note": "这里表示“到我门口”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "intelligent assistant",
               "meaning_cn": "智能助手",
@@ -4158,13 +3595,7 @@
           "source_section": "Para P",
           "original_sentence": "No one is putting an exact date on it yet.",
           "translation": "目前还没有人给这件事定下确切日期。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "put an exact date on",
-              "meaning_cn": "给……定下确切日期",
-              "usage_note": "这里表示“给……定下确切日期”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "No one is putting an exact date on it yet.",
             "structure_type": "Para P",
@@ -4201,16 +3632,6 @@
               "word_or_phrase": "on your doorstep",
               "meaning_cn": "在你家门口",
               "usage_note": "这里表示“在你家门口”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in the dining room",
-              "meaning_cn": "在餐厅里",
-              "usage_note": "这里表示“在餐厅里”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "robots are coming",
-              "meaning_cn": "机器人正在到来",
-              "usage_note": "这里表示“机器人正在到来”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4256,7 +3677,7 @@
             {
               "word_or_phrase": "a shoulder to cry on",
               "meaning_cn": "可依靠哭诉的肩膀",
-              "usage_note": "这里表示“可依靠哭诉的肩膀”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“可依靠哭诉的肩膀”。"
             },
             {
               "word_or_phrase": "comfort blanket",
@@ -4267,11 +3688,6 @@
               "word_or_phrase": "confide in",
               "meaning_cn": "向……倾诉",
               "usage_note": "这里表示“向……倾诉”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "see as",
-              "meaning_cn": "视为",
-              "usage_note": "这里表示“视为”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4307,11 +3723,6 @@
           "translation": "然而，很多时候，在急于追求个人成功的过程中，我们一路上失去了朋友，而这已经成了这个过程的一部分。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "more often than not",
-              "meaning_cn": "往往；多半",
-              "usage_note": "这里表示“往往；多半”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "along the way",
               "meaning_cn": "一路上；过程中",
               "usage_note": "这里表示“一路上；过程中”，翻译时应作为一个整体处理。"
@@ -4320,11 +3731,6 @@
               "word_or_phrase": "eagerness to",
               "meaning_cn": "急于……",
               "usage_note": "这里表示“急于……”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "part of",
-              "meaning_cn": "……的一部分",
-              "usage_note": "这里表示“……的一部分”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "individual success",
@@ -4364,11 +3770,6 @@
           "original_sentence": "The chaos and never-ending turmoil that accompanies everyday life is an aggressive obstacle in the pursuit of stable friendships.",
           "translation": "伴随日常生活而来的混乱和无休止动荡，是追求稳定友谊时的强大障碍。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "in the pursuit of",
-              "meaning_cn": "在追求……的过程中",
-              "usage_note": "这里表示“在追求……的过程中”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "accompany everyday life",
               "meaning_cn": "伴随日常生活",
@@ -4418,16 +3819,6 @@
           "translation": "作为学生，我们用这个借口来轻描淡写地对待那些人的离去，而他们曾是我们以为亲近爱重的人。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "use this excuse",
-              "meaning_cn": "使用这个借口",
-              "usage_note": "这里表示“使用这个借口”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "once thought to be",
-              "meaning_cn": "曾被认为是",
-              "usage_note": "这里表示“曾被认为是”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "shrug off",
               "meaning_cn": "轻描淡写地对待；摆脱",
               "usage_note": "这里表示“轻描淡写地对待；摆脱”，翻译时应作为一个整体处理。"
@@ -4471,29 +3862,9 @@
           "translation": "我们不应把人生看作一场竞赛，仿佛每个人都在自己的赛道上奔向某种成功；我们必须重新学会珍视一路上建立的联系。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "on their own path",
-              "meaning_cn": "在各自道路上",
-              "usage_note": "这里表示“在各自道路上”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "relearn to value",
-              "meaning_cn": "重新学会珍视",
-              "usage_note": "这里表示“重新学会珍视”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "along the track",
-              "meaning_cn": "沿着赛道/轨道",
-              "usage_note": "这里表示“沿着赛道/轨道”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "view as a race",
               "meaning_cn": "把……看成竞赛",
-              "usage_note": "这里表示“把……看成竞赛”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "instead of",
-              "meaning_cn": "而不是",
-              "usage_note": "这里表示“而不是”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“把……看成竞赛”。"
             }
           ],
           "sentence_structure": {
@@ -4528,11 +3899,6 @@
           "original_sentence": "We must reevaluate the harm of radical, individual freedom.",
           "translation": "我们必须重新评估激进个人自由所带来的危害。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "the harm of",
-              "meaning_cn": "……的危害",
-              "usage_note": "这里表示“……的危害”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "radical individual freedom",
               "meaning_cn": "激进个人自由",
@@ -4625,11 +3991,6 @@
           "translation": "例如，它认为全民医疗这种集体主义的例子威胁了许多美国人的梦想。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "threaten the dream of",
-              "meaning_cn": "威胁……的梦想",
-              "usage_note": "这里表示“威胁……的梦想”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "universal healthcare",
               "meaning_cn": "全民医疗",
               "usage_note": "这里表示“全民医疗”，翻译时应作为一个整体处理。"
@@ -4686,11 +4047,6 @@
               "word_or_phrase": "individualistic culture",
               "meaning_cn": "个人主义文化",
               "usage_note": "这里表示“个人主义文化”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "many of us",
-              "meaning_cn": "我们中的许多人",
-              "usage_note": "这里表示“我们中的许多人”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4726,19 +4082,9 @@
           "translation": "社会倾向于赞美个人成就，并基于这样一种假设来称颂它：获胜或成功是比别人更努力的结果。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "based on the assumption that",
-              "meaning_cn": "基于……的假设",
-              "usage_note": "这里表示“基于……的假设”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "a consequence of",
               "meaning_cn": "……的结果",
-              "usage_note": "这里表示“……的结果”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "work harder than",
-              "meaning_cn": "比……更努力",
-              "usage_note": "这里表示“比……更努力”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“……的结果”。"
             },
             {
               "word_or_phrase": "tend to",
@@ -4784,16 +4130,6 @@
           "translation": "作为一个社会，我们把“在通往成功的路上失去朋友”这一观念偶像化了。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "on the road to success",
-              "meaning_cn": "在通往成功的路上",
-              "usage_note": "这里表示“在通往成功的路上”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "idolize the concept of",
-              "meaning_cn": "崇拜……观念",
-              "usage_note": "这里表示“崇拜……观念”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "losing friends",
               "meaning_cn": "失去朋友；牺牲人际关系",
               "usage_note": "这里表示“失去朋友；牺牲人际关系”，翻译时应作为一个整体处理。"
@@ -4832,19 +4168,9 @@
           "translation": "我记得高中时听到过这样的话：“别担心失去友谊，只要专注学习、考上大学就行。从长远来看，只有这些才重要。”这种看法并非我个人经历独有。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "in the long run",
-              "meaning_cn": "从长远看",
-              "usage_note": "这里表示“从长远看”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "not unique to",
               "meaning_cn": "并非……独有",
               "usage_note": "这里表示“并非……独有”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "get into college",
-              "meaning_cn": "进入大学",
-              "usage_note": "这里表示“进入大学”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "worry about",
@@ -4890,11 +4216,6 @@
           "translation": "它被许多成功故事反复宣扬，也嵌入了我们看待成长的方式中。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "the way we see growth",
-              "meaning_cn": "我们看待成长的方式",
-              "usage_note": "这里表示“我们看待成长的方式”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "be embedded in",
               "meaning_cn": "嵌入……之中",
               "usage_note": "这里表示“嵌入……之中”，翻译时应作为一个整体处理。"
@@ -4903,11 +4224,6 @@
               "word_or_phrase": "be preached",
               "meaning_cn": "被宣扬",
               "usage_note": "这里表示“被宣扬”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "success stories",
-              "meaning_cn": "成功故事",
-              "usage_note": "这里表示“成功故事”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -5006,11 +4322,6 @@
               "usage_note": "这里表示“花时间与……相处”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "lose time",
-              "meaning_cn": "失去时间",
-              "usage_note": "这里表示“失去时间”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "achievements",
               "meaning_cn": "成就",
               "usage_note": "这里表示“成就”，是理解本句含义的关键词。"
@@ -5097,19 +4408,9 @@
               "usage_note": "这里表示“变化旋涡”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "constant need to succeed",
-              "meaning_cn": "持续的成功需求",
-              "usage_note": "这里表示“持续的成功需求”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "blind sb. from",
               "meaning_cn": "使某人无法看清",
               "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“使某人无法看清”。"
-            },
-            {
-              "word_or_phrase": "see through",
-              "meaning_cn": "看穿；识破",
-              "usage_note": "这里表示“看穿；识破”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -5153,11 +4454,6 @@
               "word_or_phrase": "tangibly succeed",
               "meaning_cn": "取得看得见的成功",
               "usage_note": "这里表示“取得看得见的成功”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "earn awards",
-              "meaning_cn": "获奖",
-              "usage_note": "这里表示“获奖”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "higher positions",
@@ -5206,11 +4502,6 @@
               "word_or_phrase": "become normalized",
               "meaning_cn": "被正常化",
               "usage_note": "这里表示“被正常化”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "sadly",
-              "meaning_cn": "遗憾的是",
-              "usage_note": "这里表示“遗憾的是”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -5251,11 +4542,6 @@
               "usage_note": "这里表示“对……安然接受”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "our anchors",
-              "meaning_cn": "我们的锚；稳定支撑",
-              "usage_note": "这里表示“我们的锚；稳定支撑”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "lose friendships",
               "meaning_cn": "失去友谊",
               "usage_note": "这里表示“失去友谊”，翻译时应作为一个整体处理。"
@@ -5292,13 +4578,7 @@
           "source_section": "Passage One",
           "original_sentence": "Yes, pursue success.",
           "translation": "是的，要追求成功。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "pursue success",
-              "meaning_cn": "追求成功",
-              "usage_note": "这里表示“追求成功”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "Yes, pursue success.",
             "structure_type": "Passage One",
@@ -5375,11 +4655,6 @@
           "translation": "突破极限。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "push limits",
-              "meaning_cn": "突破极限",
-              "usage_note": "这里表示“突破极限”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "Push limits.",
               "meaning_cn": "突破限制；挑战边界",
               "usage_note": "这里表示“突破限制；挑战边界”，翻译时应作为一个整体处理。"
@@ -5417,16 +4692,6 @@
           "original_sentence": "But contrary to all the self-proclaimed success experts, doing it alone does not make you more successful or any better than someone who achieved it with the help of others.",
           "translation": "但是，与所有自封的成功专家所说相反，独自完成这件事并不会让你比那些在他人帮助下成功的人更成功或更优秀。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "with the help of others",
-              "meaning_cn": "在他人帮助下",
-              "usage_note": "这里表示“在他人帮助下”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "doing it alone",
-              "meaning_cn": "独自完成",
-              "usage_note": "这里表示“独自完成”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "contrary to",
               "meaning_cn": "与……相反",
@@ -5470,11 +4735,6 @@
           "original_sentence": "Put effort into fostering healthy relationships, and maintaining them through your busy schedule that seems like it leaves no time for anyone else.",
           "translation": "要努力培养健康的人际关系，并在忙到似乎没有时间留给任何人的日程中维系它们。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "put effort into",
-              "meaning_cn": "努力投入……",
-              "usage_note": "这里表示“努力投入……”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "foster healthy relationships",
               "meaning_cn": "培养健康关系",
@@ -5523,21 +4783,6 @@
           "original_sentence": "Although we may be living in a society that treasures the independent pursuit of achievement, having people to support and love you on the way is far more important than any end result.",
           "translation": "尽管我们可能生活在一个珍视独立追求成就的社会中，但一路上有人支持你、爱你，远比任何最终结果都重要。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "far more important than",
-              "meaning_cn": "远比……重要",
-              "usage_note": "这里表示“远比……重要”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "on the way",
-              "meaning_cn": "一路上",
-              "usage_note": "这里表示“一路上”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "end result",
-              "meaning_cn": "最终结果",
-              "usage_note": "这里表示“最终结果”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "independent pursuit",
               "meaning_cn": "独立追求",
@@ -5590,24 +4835,9 @@
           "translation": "在诺贝尔和平奖获奖演说中，马丁·路德·金说：“我相信，赤手空拳的真理和无条件的爱将在现实中拥有最终发言权。”",
           "key_vocabulary": [
             {
-              "word_or_phrase": "Nobel Peace Prize",
-              "meaning_cn": "诺贝尔和平奖",
-              "usage_note": "这里表示“诺贝尔和平奖”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "have the final word",
-              "meaning_cn": "拥有最终发言权",
-              "usage_note": "这里表示“拥有最终发言权”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "acceptance speech",
               "meaning_cn": "获奖演说",
               "usage_note": "这里表示“获奖演说”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "unarmed truth",
-              "meaning_cn": "赤手空拳的真理",
-              "usage_note": "这里表示“赤手空拳的真理”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "unconditional love",
@@ -5647,21 +4877,6 @@
           "original_sentence": "More than five decades later, our society is still struggling to separate truth from fantasy, fact from fiction.",
           "translation": "五十多年后，我们的社会仍在艰难地区分真相与幻想、事实与虚构。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "separate truth from fantasy",
-              "meaning_cn": "区分真相与幻想",
-              "usage_note": "这里表示“区分真相与幻想”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "fact from fiction",
-              "meaning_cn": "事实与虚构",
-              "usage_note": "这里表示“事实与虚构”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "five decades later",
-              "meaning_cn": "五十多年后",
-              "usage_note": "这里表示“五十多年后”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "more than",
               "meaning_cn": "不仅仅是；多于",
@@ -5708,7 +4923,7 @@
             {
               "word_or_phrase": "at a crossroads",
               "meaning_cn": "处在十字路口",
-              "usage_note": "这里表示“处在十字路口”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“处在十字路口”。"
             },
             {
               "word_or_phrase": "disputes over",
@@ -5719,11 +4934,6 @@
               "word_or_phrase": "debates about",
               "meaning_cn": "关于……的辩论",
               "usage_note": "这里表示“关于……的辩论”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "slavery",
-              "meaning_cn": "奴隶制",
-              "usage_note": "这里表示“奴隶制”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -5758,16 +4968,6 @@
           "original_sentence": "And the battle for equity is at the heart of these vital conversations.",
           "translation": "而争取公平的斗争正处在这些重要对话的核心。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "battle for equity",
-              "meaning_cn": "争取公平的斗争",
-              "usage_note": "这里表示“争取公平的斗争”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "at the heart of",
-              "meaning_cn": "处于……核心",
-              "usage_note": "这里表示“处于……核心”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "vital conversations",
               "meaning_cn": "重要对话",
@@ -5806,11 +5006,6 @@
           "original_sentence": "Study after study shows that inequity has had appalling consequences.",
           "translation": "一项又一项研究表明，不平等已经造成了骇人的后果。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "study after study",
-              "meaning_cn": "一项又一项研究",
-              "usage_note": "这里表示“一项又一项研究”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "appalling consequences",
               "meaning_cn": "骇人的后果",
@@ -5854,16 +5049,6 @@
           "original_sentence": "A 2020 report by Citi indicated that \"Black students could have increased their lifetime incomes $90-$113 billion\" if equity issues related to higher education had been adequately addressed over the past two decades.",
           "translation": "花旗 2020 年的一份报告指出，如果过去二十年里与高等教育有关的公平问题得到充分解决，“黑人学生本可以将其终身收入增加 900 亿至 1130 亿美元”。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "over the past two decades",
-              "meaning_cn": "过去二十年里",
-              "usage_note": "这里表示“过去二十年里”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "equity issues",
-              "meaning_cn": "公平问题",
-              "usage_note": "这里表示“公平问题”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "adequately addressed",
               "meaning_cn": "得到充分解决",
@@ -5915,7 +5100,7 @@
             {
               "word_or_phrase": "a flood of issues",
               "meaning_cn": "大量问题",
-              "usage_note": "这里表示“大量问题”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“大量问题”。"
             },
             {
               "word_or_phrase": "fail to confront",
@@ -5925,7 +5110,7 @@
             {
               "word_or_phrase": "as a nation",
               "meaning_cn": "作为一个国家",
-              "usage_note": "这里表示“作为一个国家”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“作为一个国家”。"
             },
             {
               "word_or_phrase": "statistic",
@@ -6017,23 +5202,7 @@
           "source_section": "Passage Two",
           "original_sentence": "However, by honoring King's legacy, we can get our country back on the path toward true equity.",
           "translation": "然而，通过尊重金的遗产，我们可以让国家重新回到通向真正公平的道路上。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "get back on the path",
-              "meaning_cn": "重新回到道路上",
-              "usage_note": "这里表示“重新回到道路上”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "honor legacy",
-              "meaning_cn": "尊重遗产",
-              "usage_note": "这里表示“尊重遗产”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "true equity",
-              "meaning_cn": "真正公平",
-              "usage_note": "这里表示“真正公平”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "However, by honoring King's legacy, we can get our country back on the path toward true equity.",
             "structure_type": "Passage Two",
@@ -6070,16 +5239,6 @@
               "word_or_phrase": "for that matter",
               "meaning_cn": "就此而言；同样",
               "usage_note": "这里表示“就此而言；同样”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in the first place",
-              "meaning_cn": "最初；首先",
-              "usage_note": "这里表示“最初；首先”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "conflicts we have today",
-              "meaning_cn": "我们今天面临的冲突",
-              "usage_note": "这里表示“我们今天面临的冲突”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -6117,17 +5276,12 @@
             {
               "word_or_phrase": "have a responsibility to",
               "meaning_cn": "有责任做……",
-              "usage_note": "这里表示“有责任做……”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“有责任做……”。"
             },
             {
               "word_or_phrase": "make connections between",
               "meaning_cn": "建立……之间的联系",
               "usage_note": "这里表示“建立……之间的联系”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "current events",
-              "meaning_cn": "当前事件",
-              "usage_note": "这里表示“当前事件”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -6162,16 +5316,6 @@
           "original_sentence": "It also means giving them the tools they need to address inequity and bias in their own lives.",
           "translation": "这也意味着要给他们工具，使他们能在自己的生活中应对不平等和偏见。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "in their own lives",
-              "meaning_cn": "在他们自己的生活中",
-              "usage_note": "这里表示“在他们自己的生活中”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "give them the tools",
-              "meaning_cn": "给予他们工具",
-              "usage_note": "这里表示“给予他们工具”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "address inequity",
               "meaning_cn": "处理不平等",
@@ -6210,11 +5354,6 @@
           "original_sentence": "Adherence to these principles, along with a commitment to truthful dialogue, can help every student better appreciate how far we've come and more clearly see the roads we have yet to travel.",
           "translation": "坚持这些原则，并承诺开展真实对话，能够帮助每个学生更好地理解我们已经走了多远，也更清楚地看到我们仍需走过的道路。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "yet to travel",
-              "meaning_cn": "仍需走过",
-              "usage_note": "这里表示“仍需走过”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "appreciate how far",
               "meaning_cn": "理解已经走了多远",
@@ -6268,11 +5407,6 @@
           "original_sentence": "With more truthful analysis of the need for more qualified, diverse educators, we can improve our recruiting, training, and retention strategies for schools across the country.",
           "translation": "通过更真实地分析对更合格、更多元教育者的需求，我们可以改善全国学校的招聘、培训和留任策略。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "across the country",
-              "meaning_cn": "全国范围内",
-              "usage_note": "这里表示“全国范围内”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "truthful analysis",
               "meaning_cn": "真实分析",
@@ -6373,23 +5507,7 @@
           "source_section": "Passage Two",
           "original_sentence": "A recent survey found that 77 percent of Americans believe the nation is \"more divided than ever before\".",
           "translation": "最近一项调查发现，77% 的美国人认为这个国家“比以往任何时候都更加分裂”。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "more divided than ever before",
-              "meaning_cn": "比以往更加分裂",
-              "usage_note": "这里表示“比以往更加分裂”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "77 percent of",
-              "meaning_cn": "百分之七十七的",
-              "usage_note": "这里表示“百分之七十七的”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "recent survey",
-              "meaning_cn": "近期调查",
-              "usage_note": "这里表示“近期调查”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "A recent survey found that 77 percent of Americans believe the nation is \"more divided than ever before\".",
             "structure_type": "Passage Two",
@@ -6422,11 +5540,6 @@
           "original_sentence": "But reports of increased polarization shouldn't persuade us to look away from one another.",
           "translation": "但有关极化加剧的报道不应说服我们彼此回避。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "look away from one another",
-              "meaning_cn": "彼此回避",
-              "usage_note": "这里表示“彼此回避”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "persuade us to",
               "meaning_cn": "说服我们去",
@@ -6476,11 +5589,6 @@
               "usage_note": "这里表示“促使我们去”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "shared issues",
-              "meaning_cn": "共同问题",
-              "usage_note": "这里表示“共同问题”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "head-on",
               "meaning_cn": "正面地",
               "usage_note": "这里表示“正面地”，翻译时应作为一个整体处理。"
@@ -6518,11 +5626,6 @@
           "original_sentence": "We are not, as some would suggest, living in a \"post-racial society\".",
           "translation": "我们并不像某些人所说，生活在一个“后种族社会”。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "as some would suggest",
-              "meaning_cn": "正如有些人会说的",
-              "usage_note": "这里表示“正如有些人会说的”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "post-racial society",
               "meaning_cn": "后种族社会",
@@ -6572,16 +5675,6 @@
               "usage_note": "这里表示“承担不起……的后果”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "when it comes to",
-              "meaning_cn": "当谈到……",
-              "usage_note": "这里表示“当谈到……”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "keep heads buried in the sand",
-              "meaning_cn": "把头埋进沙子；逃避现实",
-              "usage_note": "这里表示“把头埋进沙子；逃避现实”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "racial inequity",
               "meaning_cn": "种族不平等",
               "usage_note": "这里表示“种族不平等”，翻译时应作为一个整体处理。"
@@ -6625,19 +5718,9 @@
               "usage_note": "这里表示“坦诚面对”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "impact the ways",
-              "meaning_cn": "影响……方式",
-              "usage_note": "这里表示“影响……方式”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "social diseases",
               "meaning_cn": "社会疾病",
               "usage_note": "这里表示“社会疾病”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "haunt us",
-              "meaning_cn": "持续困扰我们",
-              "usage_note": "这里表示“持续困扰我们”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "intolerance",
@@ -6678,19 +5761,9 @@
           "translation": "但我们的子孙后代应该拥有更好的未来。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "our children and grandchildren",
-              "meaning_cn": "我们的子孙后代；下一代人",
-              "usage_note": "这里表示“我们的子孙后代；下一代人”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "children and grandchildren",
               "meaning_cn": "子女和孙辈",
               "usage_note": "这里表示“子女和孙辈”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "deserve better",
-              "meaning_cn": "理应得到更好的未来",
-              "usage_note": "这里表示“理应得到更好的未来”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -6724,23 +5797,7 @@
           "source_section": "Passage Two",
           "original_sentence": "On this Martin Luther King Day and beyond, let's commit to working together to disrupt the status quo.",
           "translation": "在这个马丁·路德·金纪念日以及今后的日子里，让我们承诺共同努力，打破现状。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "commit to working together",
-              "meaning_cn": "承诺共同努力",
-              "usage_note": "这里表示“承诺共同努力”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "disrupt the status quo",
-              "meaning_cn": "打破现状",
-              "usage_note": "这里表示“打破现状”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "and beyond",
-              "meaning_cn": "以及之后",
-              "usage_note": "这里表示“以及之后”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "On this Martin Luther King Day and beyond, let's commit to working together to disrupt the status quo.",
             "structure_type": "Passage Two",
@@ -6773,21 +5830,6 @@
           "original_sentence": "Let's continue to build a better, more inclusive nation; and in the words of Martin Luther King Jr., \"A society at peace with itself, a society that can live with its conscience.\"",
           "translation": "让我们继续建设一个更好、更具包容性的国家；用马丁·路德·金的话说，就是“一个与自身和平相处的社会，一个能凭良心生活的社会”。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "in the words of",
-              "meaning_cn": "用……的话说",
-              "usage_note": "这里表示“用……的话说”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "at peace with itself",
-              "meaning_cn": "与自身和平相处",
-              "usage_note": "这里表示“与自身和平相处”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "live with its conscience",
-              "meaning_cn": "凭良心生活",
-              "usage_note": "这里表示“凭良心生活”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "inclusive nation",
               "meaning_cn": "包容性国家",

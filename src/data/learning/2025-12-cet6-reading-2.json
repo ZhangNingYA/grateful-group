@@ -19,24 +19,9 @@
           "translation": "我们人类喜欢相信自己很特别，但科学技术一次又一次证明这种想法并不正确。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "believe we are special",
-              "meaning_cn": "相信自己很特别",
-              "usage_note": "这里表示“相信自己很特别”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "prove ... wrong",
               "meaning_cn": "证明……是错的",
               "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“证明……是错的”。"
-            },
-            {
-              "word_or_phrase": "we humans",
-              "meaning_cn": "我们人类",
-              "usage_note": "这里表示“我们人类”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "technology",
-              "meaning_cn": "技术",
-              "usage_note": "这里表示“技术”，是理解本句含义的关键词。"
             },
             {
               "word_or_phrase": "conviction",
@@ -75,23 +60,7 @@
           "source_section": "Cloze",
           "original_sentence": "People once thought that humans were the only animals to use tools, to form teams or to propagate culture, but science has shown that other animals do each of these things.",
           "translation": "人们曾经以为只有人类会使用工具、组成团队或传播文化，但科学表明其他动物也会做这些事。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "once thought that",
-              "meaning_cn": "曾经以为",
-              "usage_note": "这里表示“曾经以为”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "the only animals to do",
-              "meaning_cn": "唯一会做某事的动物",
-              "usage_note": "这里表示“唯一会做某事的动物”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "do each of these things",
-              "meaning_cn": "做这些事情中的每一件",
-              "usage_note": "这里表示“做这些事情中的每一件”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "People once thought that humans were the only animals to use tools, to form teams or to propagate culture, but science has shown that other animals do each of these things.",
             "structure_type": "Cloze",
@@ -128,16 +97,6 @@
               "word_or_phrase": "creative tasks",
               "meaning_cn": "创造性任务",
               "usage_note": "这里表示“创造性任务”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "quash claims that",
-              "meaning_cn": "推翻那些声称……的说法",
-              "usage_note": "这里表示“推翻那些声称……的说法”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "claims that",
-              "meaning_cn": "声称……的说法",
-              "usage_note": "这里表示“声称……的说法”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -181,11 +140,6 @@
               "word_or_phrase": "be invented",
               "meaning_cn": "被发明",
               "usage_note": "这里表示“被发明”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in 1623",
-              "meaning_cn": "在 1623 年",
-              "usage_note": "这里表示“在 1623 年”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -220,16 +174,6 @@
           "original_sentence": "This past year, a computer-generated work won an art contest.",
           "translation": "就在过去这一年，一件由计算机生成的作品赢得了一项艺术比赛。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "this past year",
-              "meaning_cn": "过去这一年",
-              "usage_note": "这里表示“过去这一年”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "art contest",
-              "meaning_cn": "艺术比赛",
-              "usage_note": "这里表示“艺术比赛”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "computer-generated",
               "meaning_cn": "由计算机生成的",
@@ -274,19 +218,9 @@
               "usage_note": "这里表示“人类智能”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "meet and surpass",
-              "meaning_cn": "达到并超越",
-              "usage_note": "这里表示“达到并超越”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "on the horizon",
               "meaning_cn": "即将出现；已露端倪",
               "usage_note": "这里表示“即将出现；已露端倪”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "the moment when",
-              "meaning_cn": "……的时刻",
-              "usage_note": "这里表示“……的时刻”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -345,11 +279,6 @@
               "word_or_phrase": "intelligence",
               "meaning_cn": "智能；智力",
               "usage_note": "这里表示“智能；智力”，是理解本句含义的关键词。"
-            },
-            {
-              "word_or_phrase": "creativity",
-              "meaning_cn": "创造力",
-              "usage_note": "这里表示“创造力”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -384,16 +313,6 @@
           "original_sentence": "There will likely be a spectrum.",
           "translation": "很可能会出现一个连续谱。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "there will be",
-              "meaning_cn": "将会有",
-              "usage_note": "这里表示“将会有”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "likely",
-              "meaning_cn": "很可能",
-              "usage_note": "这里表示“很可能”，是理解本句含义的关键词。"
-            },
             {
               "word_or_phrase": "spectrum",
               "meaning_cn": "连续谱；范围",
@@ -431,23 +350,7 @@
           "source_section": "Cloze",
           "original_sentence": "In some domains, people still value humans doing things, even if a computer can do it better.",
           "translation": "在某些领域中，即使计算机能做得更好，人们仍然重视由人来做这些事。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "in some domains",
-              "meaning_cn": "在某些领域中",
-              "usage_note": "这里表示“在某些领域中”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "value humans doing things",
-              "meaning_cn": "重视由人来做事",
-              "usage_note": "这里表示“重视由人来做事”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "even if",
-              "meaning_cn": "即使",
-              "usage_note": "这里表示“即使”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "In some domains, people still value humans doing things, even if a computer can do it better.",
             "structure_type": "Cloze",
@@ -483,17 +386,12 @@
             {
               "word_or_phrase": "a quarter of a century",
               "meaning_cn": "四分之一个世纪；25 年",
-              "usage_note": "这里表示“四分之一个世纪；25 年”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“四分之一个世纪；25 年”。"
             },
             {
               "word_or_phrase": "world champion",
               "meaning_cn": "世界冠军",
               "usage_note": "这里表示“世界冠军”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "human chess",
-              "meaning_cn": "人类参与的棋类对弈",
-              "usage_note": "这里表示“人类参与的棋类对弈”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "go away",
@@ -537,16 +435,6 @@
               "word_or_phrase": "costly and inferior",
               "meaning_cn": "成本高且处于劣势",
               "usage_note": "这里表示“成本高且处于劣势”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in other fields",
-              "meaning_cn": "在其他领域",
-              "usage_note": "这里表示“在其他领域”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "human skill",
-              "meaning_cn": "人类技能",
-              "usage_note": "这里表示“人类技能”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -589,7 +477,7 @@
             {
               "word_or_phrase": "a graphic accompanying an article",
               "meaning_cn": "文章配图",
-              "usage_note": "这里表示“文章配图”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“文章配图”。"
             },
             {
               "word_or_phrase": "black or white",
@@ -637,12 +525,12 @@
             {
               "word_or_phrase": "be a hybrid",
               "meaning_cn": "成为一种混合状态",
-              "usage_note": "这里表示“成为一种混合状态”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“成为一种混合状态”。"
             },
             {
               "word_or_phrase": "find a lucky place",
               "meaning_cn": "获得少数幸运位置",
-              "usage_note": "这里表示“获得少数幸运位置”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“获得少数幸运位置”。"
             },
             {
               "word_or_phrase": "monitor the machines",
@@ -686,21 +574,6 @@
               "word_or_phrase": "human-only skills",
               "meaning_cn": "只有人类才具备的技能",
               "usage_note": "这里表示“只有人类才具备的技能”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "if history is any guide",
-              "meaning_cn": "如果历史可作参考",
-              "usage_note": "这里表示“如果历史可作参考”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "cause jobs to disappear",
-              "meaning_cn": "导致工作岗位消失",
-              "usage_note": "这里表示“导致工作岗位消失”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "fewer in number",
-              "meaning_cn": "数量更少",
-              "usage_note": "这里表示“数量更少”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -744,16 +617,6 @@
           "translation": "项目、关系和工作并不总是按计划发展，而且什么时候该放弃也并不总是清楚明了。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "work out as planned",
-              "meaning_cn": "按计划发展；按预期进行",
-              "usage_note": "这里表示“按计划发展；按预期进行”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "not always clear",
-              "meaning_cn": "并不总是清楚",
-              "usage_note": "这里表示“并不总是清楚”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "give up",
               "meaning_cn": "放弃",
               "usage_note": "这里表示“放弃”，翻译时应作为一个整体处理。"
@@ -795,11 +658,6 @@
               "word_or_phrase": "quitters never win",
               "meaning_cn": "放弃者永远不会赢",
               "usage_note": "这里表示“放弃者永远不会赢”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "cut our losses",
-              "meaning_cn": "及时止损",
-              "usage_note": "这里表示“及时止损”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "best decision",
@@ -892,11 +750,6 @@
           "original_sentence": "Many of us try to hold onto the last ray of hope, thinking we can make it work, whatever \"it\" is.",
           "translation": "我们很多人都会试图抓住最后一线希望，心里想着无论那个“它”是什么，我们都能让它好起来。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "the last ray of hope",
-              "meaning_cn": "最后一线希望",
-              "usage_note": "这里表示“最后一线希望”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "make it work",
               "meaning_cn": "让它成功；让事情好起来",
@@ -999,11 +852,6 @@
           "translation": "作为一名高管教练，我与许多充满热情、工作努力且不想“放弃”的领导者合作。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "do not want to quit",
-              "meaning_cn": "不想放弃",
-              "usage_note": "这里表示“不想放弃”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "executive coach",
               "meaning_cn": "高管教练",
               "usage_note": "这里表示“高管教练”，翻译时应作为一个整体处理。"
@@ -1065,11 +913,6 @@
               "word_or_phrase": "hold onto something",
               "meaning_cn": "抓住某事不放",
               "usage_note": "这里表示“抓住某事不放”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "should not",
-              "meaning_cn": "不应该",
-              "usage_note": "这里表示“不应该”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -1104,11 +947,6 @@
           "original_sentence": "We are all susceptible to the sunk-cost delusion, an unconscious bias that leads us to persist in an endeavor we have already invested time, effort, or money into—even when abandoning it would be more beneficial.",
           "translation": "我们都会受到沉没成本错觉的影响；这是一种无意识偏见，会让我们在已经投入时间、精力或金钱的事情上继续坚持，即便放弃它其实更有利。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "persist in an endeavor",
-              "meaning_cn": "坚持做一件事",
-              "usage_note": "这里表示“坚持做一件事”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "susceptible to",
               "meaning_cn": "易受……影响",
@@ -1163,24 +1001,9 @@
           "translation": "我们意识到已经付出的资源拿不回来，于是继续坚持：继续投资一个本该停止的项目，留在一段本该结束的关系里，或者读完一本已经不再喜欢、其实该放下的书，因为我们已经读到一半了。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "get back the resources",
-              "meaning_cn": "拿回已投入的资源",
-              "usage_note": "这里表示“拿回已投入的资源”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "should be halted",
-              "meaning_cn": "本该停止",
-              "usage_note": "这里表示“本该停止”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "put down",
               "meaning_cn": "放下；停止阅读",
               "usage_note": "这里表示“放下；停止阅读”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "halfway through",
-              "meaning_cn": "进行到一半",
-              "usage_note": "这里表示“进行到一半”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "persevere",
@@ -1224,11 +1047,6 @@
               "word_or_phrase": "not your thing",
               "meaning_cn": "不是你的风格；不是你擅长或愿意做的事",
               "usage_note": "这里表示“不是你的风格；不是你擅长或愿意做的事”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "susceptible to this bias",
-              "meaning_cn": "容易受这种偏见影响",
-              "usage_note": "这里表示“容易受这种偏见影响”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -1269,16 +1087,6 @@
               "usage_note": "这里表示“过度担心”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "what we will lose",
-              "meaning_cn": "我们会失去什么",
-              "usage_note": "这里表示“我们会失去什么”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "costs of not moving on",
-              "meaning_cn": "不继续前进的代价",
-              "usage_note": "这里表示“不继续前进的代价”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "move on",
               "meaning_cn": "继续前进；翻篇",
               "usage_note": "这里表示“继续前进；翻篇”，翻译时应作为一个整体处理。"
@@ -1316,11 +1124,6 @@
           "original_sentence": "To offset this bias, deliberately refocus your thinking on the gains so you can more objectively weigh the alternatives.",
           "translation": "为了抵消这种偏见，你要有意识地把思路重新集中到收益上，这样才能更客观地权衡各种选择。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "offset this bias",
-              "meaning_cn": "抵消这种偏见",
-              "usage_note": "这里表示“抵消这种偏见”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "refocus your thinking",
               "meaning_cn": "重新调整思路",
@@ -1370,16 +1173,6 @@
           "translation": "问问自己：如果我现在及时止损，我可能会得到什么？",
           "key_vocabulary": [
             {
-              "word_or_phrase": "what might I gain",
-              "meaning_cn": "我可能获得什么",
-              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“我可能获得什么”。"
-            },
-            {
-              "word_or_phrase": "cutting my losses now",
-              "meaning_cn": "现在及时止损",
-              "usage_note": "这里表示“现在及时止损”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "ask yourself",
               "meaning_cn": "问问自己",
               "usage_note": "这里表示“问问自己”，翻译时应作为一个整体处理。"
@@ -1423,11 +1216,6 @@
               "usage_note": "这里表示“有时间做；有时间投入”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "be happier",
-              "meaning_cn": "更快乐",
-              "usage_note": "这里表示“更快乐”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "better opportunity",
               "meaning_cn": "更好的机会",
               "usage_note": "这里表示“更好的机会”，翻译时应作为一个整体处理。"
@@ -1466,11 +1254,6 @@
           "translation": "然后再问自己：硬撑下去会让我付出什么代价？",
           "key_vocabulary": [
             {
-              "word_or_phrase": "cost me",
-              "meaning_cn": "让我付出代价",
-              "usage_note": "这里表示“让我付出代价”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "soldier on",
               "meaning_cn": "硬撑下去；勉强坚持",
               "usage_note": "这里表示“硬撑下去；勉强坚持”，翻译时应作为一个整体处理。"
@@ -1507,23 +1290,7 @@
           "source_section": "Paragraph E",
           "original_sentence": "For example, is it possible that you'll be throwing more good money after what you've already lost?",
           "translation": "比如，你是否可能会在已经损失之后继续投入更多好钱？",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "throw good money after bad",
-              "meaning_cn": "在亏损后继续投入；越亏越投",
-              "usage_note": "这里表示“在亏损后继续投入；越亏越投”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "what you have already lost",
-              "meaning_cn": "你已经失去的东西",
-              "usage_note": "这里表示“你已经失去的东西”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "for example",
-              "meaning_cn": "比如",
-              "usage_note": "这里表示“比如”，翻译时应作为一个整体处理。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "For example, is it possible that you'll be throwing more good money after what you've already lost?",
             "structure_type": "Paragraph E",
@@ -1556,11 +1323,6 @@
           "original_sentence": "Or that you won't have the energy to capitalize on other promising possibilities?",
           "translation": "或者，你会不会没有精力去把握其他有前景的可能性？",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "have the energy to",
-              "meaning_cn": "有精力去",
-              "usage_note": "这里表示“有精力去”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "capitalize on",
               "meaning_cn": "利用；把握",
@@ -1617,7 +1379,7 @@
             {
               "word_or_phrase": "attain a positive outcome",
               "meaning_cn": "获得积极结果",
-              "usage_note": "这里表示“获得积极结果”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“获得积极结果”。"
             },
             {
               "word_or_phrase": "interfere with",
@@ -1666,11 +1428,6 @@
               "word_or_phrase": "sense of agency",
               "meaning_cn": "能动感；掌控感",
               "usage_note": "这里表示“能动感；掌控感”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "promote mental health",
-              "meaning_cn": "促进心理健康",
-              "usage_note": "这里表示“促进心理健康”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -1705,11 +1462,6 @@
           "original_sentence": "However, the bias can also result in escalating commitment to a losing course of action.",
           "translation": "然而，这种偏见也可能导致人们对一条正在失败的行动路线投入越来越多。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "losing course of action",
-              "meaning_cn": "正在失败的行动路线",
-              "usage_note": "这里表示“正在失败的行动路线”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "commitment to",
               "meaning_cn": "对……的承诺",
@@ -1761,17 +1513,12 @@
             {
               "word_or_phrase": "not a quitter mentality",
               "meaning_cn": "不是放弃者的心态",
-              "usage_note": "这里表示“不是放弃者的心态”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“不是放弃者的心态”。"
             },
             {
               "word_or_phrase": "have control over",
               "meaning_cn": "对……有控制力",
               "usage_note": "这里表示“对……有控制力”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "put us at risk of",
-              "meaning_cn": "使我们有……风险",
-              "usage_note": "这里表示“使我们有……风险”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "double down",
@@ -1827,11 +1574,6 @@
               "usage_note": "这里表示“审视你的处境”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "in your control",
-              "meaning_cn": "在你的控制之内",
-              "usage_note": "这里表示“在你的控制之内”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "two-column list",
               "meaning_cn": "两栏清单",
               "usage_note": "这里表示“两栏清单”，翻译时应作为一个整体处理。"
@@ -1869,21 +1611,6 @@
           "original_sentence": "While you may be able to influence other people and various circumstances, you can't force them to change or go your way.",
           "translation": "虽然你也许能够影响他人和各种环境因素，但你无法强迫他们改变或按你的方式行事。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "be able to influence",
-              "meaning_cn": "能够影响",
-              "usage_note": "这里表示“能够影响”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "force them to change",
-              "meaning_cn": "强迫他们改变",
-              "usage_note": "这里表示“强迫他们改变”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "go your way",
-              "meaning_cn": "按你的方式来",
-              "usage_note": "这里表示“按你的方式来”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "various circumstances",
               "meaning_cn": "各种情况；环境因素",
@@ -1978,12 +1705,7 @@
             {
               "word_or_phrase": "with a written list in hand",
               "meaning_cn": "手里有一份写下来的清单",
-              "usage_note": "这里表示“手里有一份写下来的清单”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "worth the expense",
-              "meaning_cn": "值得付出代价",
-              "usage_note": "这里表示“值得付出代价”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“手里有一份写下来的清单”。"
             },
             {
               "word_or_phrase": "focus on",
@@ -2028,16 +1750,6 @@
           "original_sentence": "Expending effort and emotion on things you can't control can be both draining and disempowering.",
           "translation": "把精力和情绪消耗在你无法控制的事情上，既会让人疲惫，也会削弱人的掌控感。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "expend effort and emotion",
-              "meaning_cn": "投入精力和情绪",
-              "usage_note": "这里表示“投入精力和情绪”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "things you cannot control",
-              "meaning_cn": "你无法控制的事",
-              "usage_note": "这里表示“你无法控制的事”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "draining",
               "meaning_cn": "令人疲惫的",
@@ -2087,11 +1799,6 @@
               "usage_note": "这里表示“研究表明”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "social status",
-              "meaning_cn": "社会地位",
-              "usage_note": "这里表示“社会地位”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "self-identity",
               "meaning_cn": "自我身份",
               "usage_note": "这里表示“自我身份”，翻译时应作为一个整体处理。"
@@ -2137,7 +1844,7 @@
             {
               "word_or_phrase": "feel like a threat",
               "meaning_cn": "感觉像一种威胁",
-              "usage_note": "这里表示“感觉像一种威胁”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“感觉像一种威胁”。"
             },
             {
               "word_or_phrase": "identity or status",
@@ -2196,16 +1903,6 @@
               "word_or_phrase": "technology company",
               "meaning_cn": "科技公司",
               "usage_note": "这里表示“科技公司”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "client",
-              "meaning_cn": "客户",
-              "usage_note": "这里表示“客户”，是理解本句含义的关键词。"
-            },
-            {
-              "word_or_phrase": "leader",
-              "meaning_cn": "领导者",
-              "usage_note": "这里表示“领导者”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -2240,26 +1937,6 @@
           "original_sentence": "Ryan had invested two years and a lot of effort in a design project that wasn't delivering the needed outcomes, but the thought of abandoning it after all she had put in was hard to bear.",
           "translation": "瑞安已经在一个设计项目上投入了两年时间和大量精力，但这个项目并没有产生所需结果；然而，在付出这么多之后，一想到要放弃它就让人难以承受。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "invest time and effort in",
-              "meaning_cn": "在……投入时间和精力",
-              "usage_note": "这里表示“在……投入时间和精力”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "deliver the needed outcomes",
-              "meaning_cn": "产生所需结果",
-              "usage_note": "这里表示“产生所需结果”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "hard to bear",
-              "meaning_cn": "难以承受",
-              "usage_note": "这里表示“难以承受”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "design project",
-              "meaning_cn": "设计项目",
-              "usage_note": "这里表示“设计项目”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "abandoning it",
               "meaning_cn": "放弃它",
@@ -2311,12 +1988,7 @@
             {
               "word_or_phrase": "not a quitter",
               "meaning_cn": "不是放弃者",
-              "usage_note": "这里表示“不是放弃者”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "explore whether",
-              "meaning_cn": "探讨是否",
-              "usage_note": "这里表示“探讨是否”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“不是放弃者”。"
             }
           ],
           "sentence_structure": {
@@ -2352,24 +2024,9 @@
           "translation": "这种单一而固定的自我认知正在遮蔽她的判断，并限制她可采取的行动选择。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "sense of self",
-              "meaning_cn": "自我认知",
-              "usage_note": "这里表示“自我认知”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "choices for action",
-              "meaning_cn": "行动选择",
-              "usage_note": "这里表示“行动选择”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "cloud judgment",
               "meaning_cn": "遮蔽判断；影响判断",
               "usage_note": "这里表示“遮蔽判断；影响判断”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "limit choices",
-              "meaning_cn": "限制选择",
-              "usage_note": "这里表示“限制选择”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -2463,11 +2120,6 @@
               "usage_note": "这里表示“被困在……中”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "narrow and rigid",
-              "meaning_cn": "狭窄而僵化的",
-              "usage_note": "这里表示“狭窄而僵化的”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "end up",
               "meaning_cn": "最终",
               "usage_note": "这里表示“最终”，翻译时应作为一个整体处理。"
@@ -2559,16 +2211,6 @@
           "translation": "问问自己：我还拥有哪些，或者希望拥有并且在这里有助于使用的额外优势？",
           "key_vocabulary": [
             {
-              "word_or_phrase": "aspire to have",
-              "meaning_cn": "渴望拥有",
-              "usage_note": "这里表示“渴望拥有”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "helpful to employ",
-              "meaning_cn": "有助于运用",
-              "usage_note": "这里表示“有助于运用”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "additional strengths",
               "meaning_cn": "额外优势",
               "usage_note": "这里表示“额外优势”，翻译时应作为一个整体处理。"
@@ -2627,11 +2269,6 @@
               "usage_note": "这里表示“辨识力；判断力”，是理解本句含义的关键词。"
             },
             {
-              "word_or_phrase": "bravery",
-              "meaning_cn": "勇气",
-              "usage_note": "这里表示“勇气”，是理解本句含义的关键词。"
-            },
-            {
               "word_or_phrase": "for example",
               "meaning_cn": "例如；引出例子",
               "usage_note": "这里表示“例如；引出例子”，翻译时应作为一个整体处理。"
@@ -2675,11 +2312,6 @@
               "usage_note": "这里表示“审视你的处境”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "through the lens of",
-              "meaning_cn": "通过……的视角",
-              "usage_note": "这里表示“通过……的视角”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "facets of yourself",
               "meaning_cn": "你自身的不同侧面",
               "usage_note": "这里表示“你自身的不同侧面”，翻译时应作为一个整体处理。"
@@ -2717,11 +2349,6 @@
           "original_sentence": "What does the discerning part of you say?",
           "translation": "你身上那个有辨识力的部分会怎么说？",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "part of you",
-              "meaning_cn": "你身上的一部分",
-              "usage_note": "这里表示“你身上的一部分”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "what does ... say",
               "meaning_cn": "……会怎么说",
@@ -2771,19 +2398,9 @@
               "usage_note": "这里表示“思考你的决定”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "enable you to see",
-              "meaning_cn": "使你能够看到",
-              "usage_note": "这里表示“使你能够看到”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "different characteristics",
               "meaning_cn": "不同特质",
               "usage_note": "这里表示“不同特质”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "more choices",
-              "meaning_cn": "更多选择",
-              "usage_note": "这里表示“更多选择”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -2818,11 +2435,6 @@
           "original_sentence": "It's also helpful to seek external sources of information, rather than relying solely on your thinking and instincts.",
           "translation": "寻求外部信息来源也很有帮助，而不是只依赖你自己的想法和直觉。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "external sources of information",
-              "meaning_cn": "外部信息来源",
-              "usage_note": "这里表示“外部信息来源”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "rely solely on",
               "meaning_cn": "只依赖",
@@ -2871,11 +2483,6 @@
           "original_sentence": "But it's important to think through whose opinions you solicit.",
           "translation": "但重要的是，你要想清楚自己征求的是谁的意见。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "think through",
-              "meaning_cn": "仔细想清楚",
-              "usage_note": "这里表示“仔细想清楚”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "whose opinions",
               "meaning_cn": "谁的意见",
@@ -2928,16 +2535,6 @@
               "word_or_phrase": "seek out",
               "meaning_cn": "寻找；找出",
               "usage_note": "这里表示“寻找；找出”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "your decision",
-              "meaning_cn": "你的决定",
-              "usage_note": "这里表示“你的决定”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "ideally",
-              "meaning_cn": "理想情况下",
-              "usage_note": "这里表示“理想情况下”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -3031,24 +2628,9 @@
           "translation": "同样，如果你在寻找感情建议，就去问一个远离你这段关系起伏的人，而不是只依赖你最好的朋友。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "ups and downs",
-              "meaning_cn": "起伏",
-              "usage_note": "这里表示“起伏”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "rely only on",
               "meaning_cn": "只依赖",
               "usage_note": "这里表示“只依赖”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "instead of",
-              "meaning_cn": "而不是",
-              "usage_note": "这里表示“而不是”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "love advice",
-              "meaning_cn": "感情建议",
-              "usage_note": "这里表示“感情建议”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "removed from",
@@ -3088,11 +2670,6 @@
           "original_sentence": "In all cases, I recommend describing your situation and following up with a question like: “How would you manage this situation?”",
           "translation": "在所有情况下，我都建议先描述你的处境，然后接着问一个类似这样的问题：“你会如何处理这种情况？”",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "in all cases",
-              "meaning_cn": "在所有情况下",
-              "usage_note": "这里表示“在所有情况下”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "describe your situation",
               "meaning_cn": "描述你的处境",
@@ -3141,11 +2718,6 @@
           "original_sentence": "Alternately, you could also seek out hard data that illuminates your real chance of success in whatever endeavor you are contemplating.",
           "translation": "或者，你也可以寻找硬数据，来照亮你在正在考虑的任何事情中真正的成功机会。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "chance of success",
-              "meaning_cn": "成功机会",
-              "usage_note": "这里表示“成功机会”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "hard data",
               "meaning_cn": "硬数据；客观数据",
@@ -3200,19 +2772,9 @@
           "translation": "继续用创业项目这个例子来说，数字就是你最好的朋友。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "stick with the example",
-              "meaning_cn": "继续沿用这个例子",
-              "usage_note": "这里表示“继续沿用这个例子”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "entrepreneurial venture",
               "meaning_cn": "创业项目",
               "usage_note": "这里表示“创业项目”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "best friend",
-              "meaning_cn": "最可靠的帮手",
-              "usage_note": "这里表示“最可靠的帮手”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "numbers",
@@ -3263,11 +2825,6 @@
               "usage_note": "这里表示“行业增长率”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "burn rate",
-              "meaning_cn": "资金消耗速度",
-              "usage_note": "这里表示“资金消耗速度”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "relative to",
               "meaning_cn": "相对于；结合……来看",
               "usage_note": "这里表示“相对于；结合……来看”，翻译时应作为一个整体处理。"
@@ -3311,21 +2868,6 @@
           "translation": "外部信息来源可以帮助你看到自己可能没有考虑过的角度和可能性。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "external sources of information",
-              "meaning_cn": "外部信息来源",
-              "usage_note": "这里表示“外部信息来源”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "might not have considered",
-              "meaning_cn": "可能没有考虑过",
-              "usage_note": "这里表示“可能没有考虑过”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "angles",
-              "meaning_cn": "角度",
-              "usage_note": "这里表示“角度”，是理解本句含义的关键词。"
-            },
-            {
               "word_or_phrase": "possibilities",
               "meaning_cn": "可能性",
               "usage_note": "这里表示“可能性”，是理解本句含义的关键词。"
@@ -3363,16 +2905,6 @@
           "original_sentence": "When something that seemed so promising at the start doesn't turn out the way we imagined, we can become overly self-critical.",
           "translation": "当某件一开始看起来很有希望的事没有按我们想象的方式发展时，我们可能会变得过度自责。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "promising at the start",
-              "meaning_cn": "一开始很有希望",
-              "usage_note": "这里表示“一开始很有希望”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "the way we imagined",
-              "meaning_cn": "我们想象的方式",
-              "usage_note": "这里表示“我们想象的方式”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "turn out",
               "meaning_cn": "结果是；证明是",
@@ -3416,11 +2948,6 @@
           "original_sentence": "Nobody likes to feel that they've made a poor decision, especially if making intelligent decisions is a quality you hold in high esteem.",
           "translation": "没人喜欢觉得自己做了一个糟糕的决定，尤其当“做出明智决定”是你高度看重的一项品质时。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "hold in high esteem",
-              "meaning_cn": "高度看重",
-              "usage_note": "这里表示“高度看重”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "poor decision",
               "meaning_cn": "糟糕的决定",
@@ -3477,7 +3004,7 @@
             {
               "word_or_phrase": "give yourself a break",
               "meaning_cn": "放过自己；别太苛责自己",
-              "usage_note": "这里表示“放过自己；别太苛责自己”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“放过自己；别太苛责自己”。"
             }
           ],
           "sentence_structure": {
@@ -3528,11 +3055,6 @@
               "usage_note": "这里表示“情绪智力”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "growth mindset",
-              "meaning_cn": "成长型思维",
-              "usage_note": "这里表示“成长型思维”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "self-compassion",
               "meaning_cn": "自我同情；自我关怀",
               "usage_note": "这里表示“自我同情；自我关怀”，翻译时应作为一个整体处理。"
@@ -3576,16 +3098,6 @@
           "translation": "不要反复纠结并批评自己，而要把注意力放在你能从这种情况中学到什么。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "learn from this situation",
-              "meaning_cn": "从这种情况中学习",
-              "usage_note": "这里表示“从这种情况中学习”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "instead of",
-              "meaning_cn": "而不是",
-              "usage_note": "这里表示“而不是”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "criticize yourself",
               "meaning_cn": "批评自己",
               "usage_note": "这里表示“批评自己”，翻译时应作为一个整体处理。"
@@ -3628,16 +3140,6 @@
           "original_sentence": "For example, Ryan recognized she had developed various new skills and leadership capabilities from leading the design project.",
           "translation": "比如，瑞安意识到，她通过领导这个设计项目培养出了各种新技能和领导能力。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "various new skills",
-              "meaning_cn": "各种新技能",
-              "usage_note": "这里表示“各种新技能”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "lead the design project",
-              "meaning_cn": "领导设计项目",
-              "usage_note": "这里表示“领导设计项目”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "leadership capabilities",
               "meaning_cn": "领导能力",
@@ -3687,24 +3189,9 @@
           "translation": "而且，尽管她最终决定放弃它，她仍然很高兴自己尝试过，也感激这段经历教给她的东西。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "happy she had tried",
-              "meaning_cn": "很高兴自己尝试过",
-              "usage_note": "这里表示“很高兴自己尝试过”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "what the experience taught her",
-              "meaning_cn": "这段经历教给她的东西",
-              "usage_note": "这里表示“这段经历教给她的东西”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "ultimately decide",
               "meaning_cn": "最终决定",
               "usage_note": "这里表示“最终决定”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "drop it",
-              "meaning_cn": "放弃它",
-              "usage_note": "这里表示“放弃它”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "grateful for",
@@ -3744,11 +3231,6 @@
           "original_sentence": "Undeniably, perseverance can help us succeed.",
           "translation": "不可否认，坚持能帮助我们成功。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "help us succeed",
-              "meaning_cn": "帮助我们成功",
-              "usage_note": "这里表示“帮助我们成功”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "undeniably",
               "meaning_cn": "不可否认地",
@@ -3801,11 +3283,6 @@
               "word_or_phrase": "quitting too soon",
               "meaning_cn": "过早放弃",
               "usage_note": "这里表示“过早放弃”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "losing course of action",
-              "meaning_cn": "正在失败的行动路线",
-              "usage_note": "这里表示“正在失败的行动路线”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "clinging to",
@@ -3861,19 +3338,9 @@
               "usage_note": "这里表示“追求新的机会”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "letting go",
-              "meaning_cn": "放手",
-              "usage_note": "这里表示“放手”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "free up",
               "meaning_cn": "释放；腾出",
               "usage_note": "这里表示“释放；腾出”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "mental space",
-              "meaning_cn": "心理空间",
-              "usage_note": "这里表示“心理空间”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -3967,12 +3434,12 @@
             {
               "word_or_phrase": "share a common interest",
               "meaning_cn": "有共同兴趣",
-              "usage_note": "这里表示“有共同兴趣”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“有共同兴趣”。"
             },
             {
               "word_or_phrase": "believe in a cause",
               "meaning_cn": "相信某项事业",
-              "usage_note": "这里表示“相信某项事业”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“相信某项事业”。"
             },
             {
               "word_or_phrase": "be serious about",
@@ -4031,11 +3498,6 @@
               "word_or_phrase": "collective groups",
               "meaning_cn": "集体群体",
               "usage_note": "这里表示“集体群体”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "such as",
-              "meaning_cn": "例如",
-              "usage_note": "这里表示“例如”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4079,11 +3541,6 @@
               "word_or_phrase": "collective consciousness",
               "meaning_cn": "集体意识",
               "usage_note": "这里表示“集体意识”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "shared beliefs",
-              "meaning_cn": "共同信念",
-              "usage_note": "这里表示“共同信念”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4118,11 +3575,6 @@
           "original_sentence": "Is there interdependence among its members?",
           "translation": "它的成员之间是否存在相互依赖？",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "among its members",
-              "meaning_cn": "在其成员之间",
-              "usage_note": "这里表示“在其成员之间”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "interdependence",
               "meaning_cn": "相互依赖",
@@ -4214,11 +3666,6 @@
           "original_sentence": "If your answers are affirmative, then you are experiencing a micro version of solidarity.",
           "translation": "如果你的回答是肯定的，那么你正在体验一种微观版本的团结。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "micro version",
-              "meaning_cn": "微观版本",
-              "usage_note": "这里表示“微观版本”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "affirmative",
               "meaning_cn": "肯定的",
@@ -4371,17 +3818,12 @@
             {
               "word_or_phrase": "among a group of people",
               "meaning_cn": "在一群人之间",
-              "usage_note": "这里表示“在一群人之间”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“在一群人之间”。"
             },
             {
               "word_or_phrase": "unifying",
               "meaning_cn": "起凝聚作用的",
               "usage_note": "这里表示“起凝聚作用的”，是理解本句含义的关键词。"
-            },
-            {
-              "word_or_phrase": "opinion",
-              "meaning_cn": "观点",
-              "usage_note": "这里表示“观点”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -4475,11 +3917,6 @@
           "translation": "团结的一个侧面与社群主义原则非常契合。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "one facet of",
-              "meaning_cn": "……的一个侧面",
-              "usage_note": "这里表示“……的一个侧面”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "fit well with",
               "meaning_cn": "与……契合",
               "usage_note": "这里表示“与……契合”，翻译时应作为一个整体处理。"
@@ -4528,11 +3965,6 @@
           "translation": "在这种情境下，个人会放弃自身利益，以服务公共利益。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "in this setting",
-              "meaning_cn": "在这种情境下",
-              "usage_note": "这里表示“在这种情境下”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "give up",
               "meaning_cn": "放弃",
               "usage_note": "这里表示“放弃”，翻译时应作为一个整体处理。"
@@ -4541,11 +3973,6 @@
               "word_or_phrase": "own interests",
               "meaning_cn": "自身利益",
               "usage_note": "这里表示“自身利益”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "common good",
-              "meaning_cn": "公共利益",
-              "usage_note": "这里表示“公共利益”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -4692,19 +4119,9 @@
           "translation": "团结也被视为对过度强调个人主义和选择自由的一种反应。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "be viewed as",
-              "meaning_cn": "被视为",
-              "usage_note": "这里表示“被视为”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "extreme emphasis on",
               "meaning_cn": "对……的极端强调",
               "usage_note": "这里表示“对……的极端强调”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "freedom of choice",
-              "meaning_cn": "选择自由",
-              "usage_note": "这里表示“选择自由”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "reaction to",
@@ -4765,11 +4182,6 @@
               "usage_note": "这里表示“违背；反对”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "liberal idea",
-              "meaning_cn": "自由主义观念",
-              "usage_note": "这里表示“自由主义观念”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "unrestricted individuals",
               "meaning_cn": "不受限制的个人",
               "usage_note": "这里表示“不受限制的个人”，翻译时应作为一个整体处理。"
@@ -4813,11 +4225,6 @@
           "translation": "但是，尽管团结有许多面向，社会理论家一直把它看作给社会带来秩序和进步的关键因素。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "despite its many facets",
-              "meaning_cn": "尽管它有许多面向",
-              "usage_note": "这里表示“尽管它有许多面向”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "order and progress",
               "meaning_cn": "秩序和进步",
               "usage_note": "这里表示“秩序和进步”，翻译时应作为一个整体处理。"
@@ -4831,11 +4238,6 @@
               "word_or_phrase": "social theorists",
               "meaning_cn": "社会理论家",
               "usage_note": "这里表示“社会理论家”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "key factor",
-              "meaning_cn": "关键因素",
-              "usage_note": "这里表示“关键因素”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "bring about",
@@ -4881,24 +4283,9 @@
               "usage_note": "这里表示“基于差异”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "human society",
-              "meaning_cn": "人类社会",
-              "usage_note": "这里表示“人类社会”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "more diverse",
-              "meaning_cn": "更加多元",
-              "usage_note": "这里表示“更加多元”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "survive",
               "meaning_cn": "存续；生存",
               "usage_note": "这里表示“存续；生存”，是理解本句含义的关键词。"
-            },
-            {
-              "word_or_phrase": "bonds",
-              "meaning_cn": "纽带",
-              "usage_note": "这里表示“纽带”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -4933,16 +4320,6 @@
           "original_sentence": "In the light of this, they regard a genuine solidarity as more than just shallow relationships based on common interests.",
           "translation": "有鉴于此，他们认为真正的团结不只是基于共同利益的浅层关系。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "in the light of this",
-              "meaning_cn": "有鉴于此",
-              "usage_note": "这里表示“有鉴于此”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "more than just",
-              "meaning_cn": "不只是",
-              "usage_note": "这里表示“不只是”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "more than",
               "meaning_cn": "不仅仅是；多于",
@@ -4997,21 +4374,6 @@
           "translation": "团结不只是战略性计算的产物，不只是盘算它会给自我带来多少好处。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "benefit the self",
-              "meaning_cn": "有利于自我",
-              "usage_note": "这里表示“有利于自我”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "not just",
-              "meaning_cn": "不只是",
-              "usage_note": "这里表示“不只是”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "product of",
-              "meaning_cn": "……的产物",
-              "usage_note": "这里表示“……的产物”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "strategic calculations",
               "meaning_cn": "战略性计算；利益盘算",
               "usage_note": "这里表示“战略性计算；利益盘算”，翻译时应作为一个整体处理。"
@@ -5049,11 +4411,6 @@
           "original_sentence": "It is not an exclusive class founded on the you-and-me-against-the-world principle.",
           "translation": "它不是一个建立在“你我共同对抗世界”原则上的排他性类别。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "against the world",
-              "meaning_cn": "对抗世界",
-              "usage_note": "这里表示“对抗世界”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "exclusive class",
               "meaning_cn": "排他性类别",
@@ -5103,11 +4460,6 @@
           "translation": "相反，它是包容性的，而且不是被强迫的。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "not forced",
-              "meaning_cn": "不是被强迫的",
-              "usage_note": "这里表示“不是被强迫的”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "inclusive",
               "meaning_cn": "包容性的",
               "usage_note": "这里表示“包容性的”，是理解本句含义的关键词。"
@@ -5146,29 +4498,9 @@
           "translation": "出于团结而行动，意味着支持彼此、为彼此挺身而出，并认识到一个人的命运存在于他人的命运之中。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "act out of solidarity",
-              "meaning_cn": "出于团结而行动",
-              "usage_note": "这里表示“出于团结而行动”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "support each other",
-              "meaning_cn": "支持彼此",
-              "usage_note": "这里表示“支持彼此”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "stand up for each other",
-              "meaning_cn": "为彼此挺身而出",
-              "usage_note": "这里表示“为彼此挺身而出”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "in recognition that",
               "meaning_cn": "认识到；承认",
               "usage_note": "这里表示“认识到；承认”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "one’s fate",
-              "meaning_cn": "一个人的命运",
-              "usage_note": "这里表示“一个人的命运”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -5217,11 +4549,6 @@
               "word_or_phrase": "cooperative practices",
               "meaning_cn": "合作实践",
               "usage_note": "这里表示“合作实践”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "common good",
-              "meaning_cn": "公共利益",
-              "usage_note": "这里表示“公共利益”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -5265,11 +4592,6 @@
               "word_or_phrase": "fight for",
               "meaning_cn": "为……而奋斗",
               "usage_note": "这里表示“为……而奋斗”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "human dignity",
-              "meaning_cn": "人的尊严",
-              "usage_note": "这里表示“人的尊严”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "listen to",
@@ -5323,11 +4645,6 @@
           "translation": "反复给出别人并不想要的建议的人，可能是出于好意，也真心想帮忙。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "genuinely want to help",
-              "meaning_cn": "真心想帮忙",
-              "usage_note": "这里表示“真心想帮忙”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "unwanted advice",
               "meaning_cn": "别人不想要的建议",
               "usage_note": "这里表示“别人不想要的建议”，翻译时应作为一个整体处理。"
@@ -5379,16 +4696,6 @@
               "word_or_phrase": "sense of self-worth",
               "meaning_cn": "自我价值感",
               "usage_note": "这里表示“自我价值感”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "ability to influence others",
-              "meaning_cn": "影响他人的能力",
-              "usage_note": "这里表示“影响他人的能力”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "out of",
-              "meaning_cn": "出于",
-              "usage_note": "这里表示“出于”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -5423,21 +4730,6 @@
           "original_sentence": "One study found that people with a high tendency to seek power were more likely to give advice than those with an opposite tendency.",
           "translation": "一项研究发现，权力追求倾向强的人，比倾向相反的人更可能给别人提建议。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "tendency to seek power",
-              "meaning_cn": "追求权力的倾向",
-              "usage_note": "这里表示“追求权力的倾向”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "be more likely to",
-              "meaning_cn": "更可能",
-              "usage_note": "这里表示“更可能”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "give advice",
-              "meaning_cn": "给建议",
-              "usage_note": "这里表示“给建议”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "opposite tendency",
               "meaning_cn": "相反倾向",
@@ -5477,11 +4769,6 @@
           "translation": "在无私的外表之下，人们可能会被驱使着给你不想要的建议，因为这会让他们觉得自己强大或掌控了局面。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "under the guise of",
-              "meaning_cn": "在……的外表/伪装之下",
-              "usage_note": "这里表示“在……的外表/伪装之下”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "be driven to",
               "meaning_cn": "被驱使去",
               "usage_note": "这里表示“被驱使去”，翻译时应作为一个整体处理。"
@@ -5490,11 +4777,6 @@
               "word_or_phrase": "feel powerful",
               "meaning_cn": "感觉强大",
               "usage_note": "这里表示“感觉强大”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in control",
-              "meaning_cn": "掌控局面",
-              "usage_note": "这里表示“掌控局面”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "unselfishness",
@@ -5533,23 +4815,7 @@
           "source_section": "Passage Two",
           "original_sentence": "They may not be fully aware of this drive, however.",
           "translation": "不过，他们也许并没有完全意识到这种驱动力。",
-          "key_vocabulary": [
-            {
-              "word_or_phrase": "be aware of",
-              "meaning_cn": "意识到",
-              "usage_note": "这里表示“意识到”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "this drive",
-              "meaning_cn": "这种驱动力",
-              "usage_note": "这里表示“这种驱动力”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "fully",
-              "meaning_cn": "完全地",
-              "usage_note": "这里表示“完全地”，是理解本句含义的关键词。"
-            }
-          ],
+          "key_vocabulary": [],
           "sentence_structure": {
             "main_structure": "They may not be fully aware of this drive, however.",
             "structure_type": "Passage Two",
@@ -5588,19 +4854,9 @@
               "usage_note": "这里表示“情绪脆弱”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "become upset",
-              "meaning_cn": "变得不安",
-              "usage_note": "这里表示“变得不安”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "calm down",
               "meaning_cn": "平静下来",
               "usage_note": "这里表示“平静下来”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "display",
-              "meaning_cn": "表现出",
-              "usage_note": "这里表示“表现出”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -5635,11 +4891,6 @@
           "original_sentence": "It is possible that their emotions were only validated in childhood when they were at their loudest, encouraging them to adopt responses to discomfort that are excessive in most situations.",
           "translation": "有可能他们的情绪在童年时期只有最强烈地表现出来时才得到确认，这促使他们采用在大多数情境中过度的方式来回应不适。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "at their loudest",
-              "meaning_cn": "最强烈地表达时",
-              "usage_note": "这里表示“最强烈地表达时”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "responses to discomfort",
               "meaning_cn": "对不适的反应",
@@ -5699,16 +4950,6 @@
               "usage_note": "这里表示“为了”，翻译时应作为一个整体处理。"
             },
             {
-              "word_or_phrase": "recipients of the advice",
-              "meaning_cn": "建议的接收者",
-              "usage_note": "这里表示“建议的接收者”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "tend to notice",
-              "meaning_cn": "往往会注意到",
-              "usage_note": "这里表示“往往会注意到”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "underlying anxiety",
               "meaning_cn": "潜在焦虑",
               "usage_note": "这里表示“潜在焦虑”，翻译时应作为一个整体处理。"
@@ -5755,16 +4996,6 @@
               "word_or_phrase": "accuse A of B",
               "meaning_cn": "指责 A 做 B",
               "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“指责 A 做 B”。"
-            },
-            {
-              "word_or_phrase": "react harshly",
-              "meaning_cn": "严厉回应",
-              "usage_note": "这里表示“严厉回应”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "advice giver",
-              "meaning_cn": "给建议的人",
-              "usage_note": "这里表示“给建议的人”，翻译时应作为一个整体处理。"
             },
             {
               "word_or_phrase": "undesirable result",
@@ -5833,11 +5064,6 @@
               "word_or_phrase": "fight-or-flight response",
               "meaning_cn": "战斗或逃跑反应",
               "usage_note": "这里表示“战斗或逃跑反应”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "validation-seeking behavior",
-              "meaning_cn": "寻求认可的行为",
-              "usage_note": "这里表示“寻求认可的行为”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -5872,11 +5098,6 @@
           "original_sentence": "The key is to validate without over-identifying.",
           "translation": "关键是要给予确认，但不要过度认同。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "the key is to",
-              "meaning_cn": "关键是",
-              "usage_note": "这里表示“关键是”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "validate",
               "meaning_cn": "确认；认可对方感受",
@@ -5921,24 +5142,9 @@
           "translation": "你可以让他们知道你听见了他们的话，也理解他们的出发点，同时不接受那种可能有害的叙事，即没有他们的帮助你就无法应付过去。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "let them know",
-              "meaning_cn": "让他们知道",
-              "usage_note": "这里表示“让他们知道”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "where they are coming from",
-              "meaning_cn": "他们的出发点",
-              "usage_note": "这里表示“他们的出发点”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "take on a narrative",
               "meaning_cn": "接受一种叙事",
-              "usage_note": "这里表示“接受一种叙事”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "get by without help",
-              "meaning_cn": "没有帮助也能应付过去",
-              "usage_note": "这里表示“没有帮助也能应付过去”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“接受一种叙事”。"
             },
             {
               "word_or_phrase": "potentially damaging",
@@ -5979,16 +5185,6 @@
           "translation": "你最好说类似这样的话：“谢谢你的想法。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "thanks for the idea",
-              "meaning_cn": "谢谢你的想法",
-              "usage_note": "这里表示“谢谢你的想法”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "had better",
-              "meaning_cn": "最好",
-              "usage_note": "这里表示“最好”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "something like",
               "meaning_cn": "类似这样的话",
               "usage_note": "这里表示“类似这样的话”，翻译时应作为一个整体处理。"
@@ -6027,24 +5223,9 @@
           "translation": "我有自己的处理计划，但我真的很感谢你的视角，也会把它纳入考虑。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "my own plan",
-              "meaning_cn": "我自己的计划",
-              "usage_note": "这里表示“我自己的计划”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "appreciate your perspective",
               "meaning_cn": "感谢你的视角",
               "usage_note": "这里表示“感谢你的视角”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "take it into consideration",
-              "meaning_cn": "把它纳入考虑",
-              "usage_note": "这里表示“把它纳入考虑”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "handle this",
-              "meaning_cn": "处理这件事",
-              "usage_note": "这里表示“处理这件事”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -6083,16 +5264,6 @@
               "word_or_phrase": "let you know",
               "meaning_cn": "告诉你；通知你",
               "usage_note": "这里表示“告诉你；通知你”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in the future",
-              "meaning_cn": "将来",
-              "usage_note": "这里表示“将来”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "need help",
-              "meaning_cn": "需要帮助",
-              "usage_note": "这里表示“需要帮助”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
@@ -6127,11 +5298,6 @@
           "original_sentence": "If you have trouble setting boundaries tactfully, prioritize working on your own ability to self-regulate.",
           "translation": "如果你很难得体地设定边界，就优先练习自己的自我调节能力。",
           "key_vocabulary": [
-            {
-              "word_or_phrase": "have trouble doing",
-              "meaning_cn": "做……有困难",
-              "usage_note": "这里表示“做……有困难”，翻译时应作为一个整体处理。"
-            },
             {
               "word_or_phrase": "setting boundaries",
               "meaning_cn": "设定边界",
@@ -6257,11 +5423,6 @@
               "word_or_phrase": "offended",
               "meaning_cn": "被冒犯的",
               "usage_note": "这里表示“被冒犯的”，是理解本句含义的关键词。"
-            },
-            {
-              "word_or_phrase": "annoyed",
-              "meaning_cn": "烦恼的",
-              "usage_note": "这里表示“烦恼的”，是理解本句含义的关键词。"
             }
           ],
           "sentence_structure": {
@@ -6299,12 +5460,7 @@
             {
               "word_or_phrase": "setting a boundary",
               "meaning_cn": "设定边界",
-              "usage_note": "这里表示“设定边界”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "in this regard",
-              "meaning_cn": "在这方面",
-              "usage_note": "这里表示“在这方面”，翻译时应作为一个整体处理。"
+              "usage_note": "常用于概括句中的固定表达或结构，本句可整体理解为“设定边界”。"
             },
             {
               "word_or_phrase": "perfectly reasonable",
@@ -6350,11 +5506,6 @@
           "translation": "最好以一种方式设定边界：既考虑到对方这样做背后的深层原因，又避免不必要的冲突和更多压力。",
           "key_vocabulary": [
             {
-              "word_or_phrase": "take into account",
-              "meaning_cn": "考虑到",
-              "usage_note": "这里表示“考虑到”，翻译时应作为一个整体处理。"
-            },
-            {
               "word_or_phrase": "set boundaries",
               "meaning_cn": "设定边界",
               "usage_note": "这里表示“设定边界”，翻译时应作为一个整体处理。"
@@ -6368,11 +5519,6 @@
               "word_or_phrase": "unnecessary conflict",
               "meaning_cn": "不必要的冲突",
               "usage_note": "这里表示“不必要的冲突”，翻译时应作为一个整体处理。"
-            },
-            {
-              "word_or_phrase": "more stress",
-              "meaning_cn": "更多压力",
-              "usage_note": "这里表示“更多压力”，翻译时应作为一个整体处理。"
             }
           ],
           "sentence_structure": {
