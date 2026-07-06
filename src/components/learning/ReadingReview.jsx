@@ -1406,7 +1406,9 @@ function StructureNote({ item }) {
       <div className="cet6-structure-lines">
         {lines.map((line) => (
           <p className="cet6-structure-line" key={`${line.label}:${line.text}`}>
-            <span className="cet6-structure-label">{line.label}：</span>
+            {line.label !== '结构分析' && (
+              <span className="cet6-structure-label">{line.label}：</span>
+            )}
             {line.text}
           </p>
         ))}
