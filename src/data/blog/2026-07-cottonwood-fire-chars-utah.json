@@ -1,0 +1,1644 @@
+{
+  "storageKey": "reading-2026-07-cottonwood-fire-chars-utah",
+  "intro": {
+    "kicker": "Reading · 2026-07-08 · Wildfire & Remote Sensing",
+    "title": "Cottonwood Fire Chars Utah：句句精读",
+    "description": "按原文 001-003 的顺序整理 30 个句子，包含英文原句、中文翻译、句子结构、重点词汇词组和难度标记，适合通读复盘与环境新闻精读。"
+  },
+  "sections": [
+    {
+      "kicker": "Part 001",
+      "title": "001 · Cottonwood Fire Chars Utah",
+      "navLabel": "001",
+      "description": "介绍 2026 年 7 月美国西部野火风险、Cottonwood Fire 的规模，以及 Landsat 9 假彩色图像如何呈现烧毁区域。",
+      "items": [
+        {
+          "label": "001-01",
+          "part": "Part 001",
+          "en": "After a winter of below-average snowpack and an unusually warm and dry start to summer, the National Interagency Fire Center warned that the Great Basin and parts of the Rockies faced an elevated risk of wildfires in July 2026.",
+          "zh": "在经历了一个积雪量低于平均水平的冬季，以及异常温暖干燥的初夏之后，国家跨部门消防中心警告称，2026 年 7 月，大盆地和落基山脉部分地区面临更高的野火风险。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The National Interagency Fire Center warned that the Great Basin and parts of the Rockies faced an elevated risk."
+            },
+            {
+              "label": "修饰成分",
+              "text": "After a winter of... and an unusually... start to summer 是句首时间/背景状语；that 引导 warned 的宾语从句；of wildfires 修饰 risk；in July 2026 作时间状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "句首 after 介词短语较长，内部由 a winter 和 a start to summer 两个名词短语并列；主句中 warn that 引出完整宾语从句。"
+            }
+          ],
+          "structure": "The National Interagency Fire Center warned that the Great Basin and parts of the Rockies faced an elevated risk.",
+          "phrases": [
+            {
+              "term": "below-average snowpack",
+              "zh": "低于平均水平的积雪量",
+              "note": "below-average 作复合形容词，修饰 snowpack，常用于气候、水文和环境报道。"
+            },
+            {
+              "term": "an unusually warm and dry start to summer",
+              "zh": "异常温暖干燥的初夏",
+              "note": "start to summer 指夏季开始阶段，unusually 修饰两个并列形容词 warm and dry。"
+            },
+            {
+              "term": "warn that",
+              "zh": "警告称……",
+              "note": "warn 后接 that 从句，正式报道中常用于引出机构或专家的风险判断。"
+            },
+            {
+              "term": "face an elevated risk of",
+              "zh": "面临升高的……风险",
+              "note": "elevated risk 是正式表达，of 后接风险类型。"
+            },
+            {
+              "term": "wildfire",
+              "zh": "野火；山火",
+              "note": "常指发生在森林、草地等野外区域、难以控制的火灾。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子信息量较大，难点在气候类名词短语 snowpack、start to summer 和风险表达 elevated risk。结构上需要先越过句首长状语，抓住主干 warned that...。适合六级偏难精读。"
+          }
+        },
+        {
+          "label": "001-02",
+          "part": "Part 001",
+          "en": "The warning proved accurate.",
+          "zh": "事实证明，这一警告是准确的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The warning proved accurate."
+            },
+            {
+              "label": "修饰成分",
+              "text": "本句没有复杂修饰成分；The warning 指代前一句的风险预警。"
+            },
+            {
+              "label": "语法要点",
+              "text": "prove 在这里不是及物动词“证明”，而是系动词“结果是；证明为”，后接形容词作表语。"
+            }
+          ],
+          "structure": "The warning proved accurate.",
+          "phrases": [
+            {
+              "term": "warning",
+              "zh": "警告；预警",
+              "note": "这里指上一句中消防中心对野火风险的预警。"
+            },
+            {
+              "term": "prove accurate",
+              "zh": "被证明是准确的",
+              "note": "prove 作系动词，后接形容词 accurate 表示结果。"
+            },
+            {
+              "term": "accurate",
+              "zh": "准确的；精确的",
+              "note": "常用于描述预测、数据、判断或报道的准确性。"
+            }
+          ],
+          "difficulty": 1,
+          "difficultyAnalysis": {
+            "difficulty_level": 1,
+            "difficulty_stars": "★☆☆☆☆",
+            "reason_cn": "句法简单，主要考点是 prove 的系动词用法和上下文指代。六级难度偏易。"
+          }
+        },
+        {
+          "label": "001-03",
+          "part": "Part 001",
+          "en": "By July 7, firefighters labored to contain nearly three dozen large, early-season wildland fires that raced through forests in several parts of the western U.S.",
+          "zh": "截至 7 月 7 日，消防员们正奋力控制近 36 起发生在季初的大型野外火灾，这些火灾席卷了美国西部多个地区的森林。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Firefighters labored to contain fires."
+            },
+            {
+              "label": "修饰成分",
+              "text": "By July 7 是时间状语；nearly three dozen large, early-season wildland 修饰 fires；that raced through forests... 是定语从句，修饰 fires；in several parts of the western U.S. 说明火灾发生范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "不定式 to contain 表示 labored 的目的；that 定语从句中 raced through forests 描述 fires 的动态特征。"
+            }
+          ],
+          "structure": "Firefighters labored to contain fires.",
+          "phrases": [
+            {
+              "term": "by July 7",
+              "zh": "到 7 月 7 日为止；截至 7 月 7 日",
+              "note": "by 加时间点表示到某个时间之前或截至某时的情况。"
+            },
+            {
+              "term": "labor to do sth.",
+              "zh": "努力做某事；艰难地做某事",
+              "note": "labor 作动词时比 work 更强调费力、吃力。"
+            },
+            {
+              "term": "contain a fire",
+              "zh": "控制火势",
+              "note": "消防语境中 contain 指阻止火势继续蔓延。"
+            },
+            {
+              "term": "early-season",
+              "zh": "季初的；季节早期发生的",
+              "note": "复合形容词，说明这些火灾发生在野火季较早阶段，带有“来得较早”的意味。"
+            },
+            {
+              "term": "race through",
+              "zh": "快速穿过；迅速蔓延过",
+              "note": "这里用 race 形象表示火势蔓延速度很快。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "长名词短语 nearly three dozen large, early-season wildland fires 较密集，数量、规模、发生时间和火灾类型连续叠加；contain、race through 又属于新闻和灾害语境词汇。整体为六级中等偏难。"
+          }
+        },
+        {
+          "label": "001-04",
+          "part": "Part 001",
+          "en": "Utah was among the most active states, with fires having charred 558 square miles (1,445 square kilometers) and four major fires that were not fully contained still burning.",
+          "zh": "犹他州是火情最活跃的州之一：火灾已烧毁 558 平方英里（1,445 平方公里）的土地，另有四起尚未完全受控的大火仍在燃烧。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Utah was among the most active states."
+            },
+            {
+              "label": "修饰成分",
+              "text": "with fires having charred... and four major fires... still burning 是 with 复合结构，补充说明 Utah 火情活跃的具体表现；that were not fully contained 是定语从句，修饰 four major fires。"
+            },
+            {
+              "label": "语法要点",
+              "text": "with + 名词 + 现在分词/过去分词 构成伴随或补充说明结构；having charred 强调已经造成的结果，still burning 强调仍在持续。"
+            }
+          ],
+          "structure": "Utah was among the most active states.",
+          "phrases": [
+            {
+              "term": "among the most active states",
+              "zh": "属于火情最活跃的州之一",
+              "note": "among the most... 表示处在某一最高程度群体之中。"
+            },
+            {
+              "term": "char",
+              "zh": "烧焦；烧毁",
+              "note": "charred 是过去分词，常用于描述火灾造成的地表或植被烧毁。"
+            },
+            {
+              "term": "square mile",
+              "zh": "平方英里",
+              "note": "面积单位，括号中给出平方公里换算。"
+            },
+            {
+              "term": "fully contained",
+              "zh": "完全受控的",
+              "note": "消防语境中 contained 表示火势边界已被控制。"
+            },
+            {
+              "term": "still burning",
+              "zh": "仍在燃烧",
+              "note": "现在分词短语表示持续状态。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "这是典型新闻长句，难点在 with 复合结构内部又含并列和定语从句。理解时要先抓主句 Utah was among...，再把 with 后的信息看成证据说明。六级偏难。"
+          }
+        },
+        {
+          "label": "001-05",
+          "part": "Part 001",
+          "en": "The Cottonwood fire ranked as one of Utah's--and the country's--largest and most destructive fires of the year so far.",
+          "zh": "到目前为止，Cottonwood Fire 已成为犹他州乃至全美国今年规模最大、破坏性最强的火灾之一。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The Cottonwood fire ranked as one of the largest and most destructive fires."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Utah's--and the country's--是插入式并列所有格，说明比较范围从犹他州扩大到全国；of the year so far 限定时间范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "破折号式插入语打断名词短语，需要先识别 one of...fires 的核心结构；Utah's 和 the country's 共同修饰 largest and most destructive fires。"
+            }
+          ],
+          "structure": "The Cottonwood fire ranked as one of the largest and most destructive fires.",
+          "phrases": [
+            {
+              "term": "rank as",
+              "zh": "位列；被列为",
+              "note": "用于说明某事物在某类排名或评价中的位置。"
+            },
+            {
+              "term": "one of ... largest and most destructive fires",
+              "zh": "规模最大、破坏性最强的火灾之一",
+              "note": "one of 后接复数名词，形容词最高级可并列修饰该名词。"
+            },
+            {
+              "term": "destructive",
+              "zh": "破坏性的；毁灭性的",
+              "note": "常用于描述自然灾害、战争、行为或政策造成严重损害。"
+            },
+            {
+              "term": "so far",
+              "zh": "到目前为止",
+              "note": "用于限定统计或判断截至当前时间。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子不长，但插入成分 Utah's--and the country's--容易干扰主干识别。词汇 destructive 和 rank as 属于新闻常用表达。六级中等。"
+          }
+        },
+        {
+          "label": "001-06",
+          "part": "Part 001",
+          "en": "As of July 7, it had burned 150 square miles (390 square kilometers), just shy of the Babylon fire in eastern Utah.",
+          "zh": "截至 7 月 7 日，它已烧毁 150 平方英里（390 平方公里）的土地，规模仅略低于犹他州东部的 Babylon Fire。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It had burned 150 square miles."
+            },
+            {
+              "label": "修饰成分",
+              "text": "As of July 7 是时间状语；(390 square kilometers) 是面积换算补充；just shy of the Babylon fire in eastern Utah 是省略结构，补充说明其规模接近 Babylon fire。"
+            },
+            {
+              "label": "语法要点",
+              "text": "as of 引出统计时间点；just shy of 后接名词短语，表示数量或规模上的接近但未达到。"
+            }
+          ],
+          "structure": "It had burned 150 square miles.",
+          "phrases": [
+            {
+              "term": "as of",
+              "zh": "截至；到……时",
+              "note": "常用于新闻、统计和报告中，表示数据对应的时间点。"
+            },
+            {
+              "term": "had burned",
+              "zh": "已经烧毁",
+              "note": "过去完成时，说明截至 July 7 之前已经发生的结果。"
+            },
+            {
+              "term": "just shy of",
+              "zh": "略低于；差一点达到",
+              "note": "较地道表达，常用于数量、年龄、距离或排名比较。"
+            },
+            {
+              "term": "eastern Utah",
+              "zh": "犹他州东部",
+              "note": "方位形容词 eastern 修饰地名。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子结构较清楚，主要难点是 just shy of 这一习语化数量表达，以及 it 对 Cottonwood fire 的指代。六级中等。"
+          }
+        },
+        {
+          "label": "001-07",
+          "part": "Part 001",
+          "en": "Landsat 9 captured the false-color image (bands 7-5-4) above (right) on June 29, 2026, when blackened vegetation spanned a large patch of rugged terrain along the Beaver River.",
+          "zh": "2026 年 6 月 29 日，Landsat 9 拍摄了上方右侧的假彩色图像（7-5-4 波段）；当时，被烧黑的植被覆盖了 Beaver River 沿岸一大片崎岖地形。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Landsat 9 captured the false-color image."
+            },
+            {
+              "label": "修饰成分",
+              "text": "(bands 7-5-4) above (right) 补充说明图像类型和位置；on June 29, 2026 是时间状语；when 引导非限制性时间从句，说明拍摄时的地表状况；along the Beaver River 修饰 terrain 的位置。"
+            },
+            {
+              "label": "语法要点",
+              "text": "when 从句不是简单时间点，而是补充说明主句动作发生时的背景；blackened vegetation 是过去分词作前置定语。"
+            }
+          ],
+          "structure": "Landsat 9 captured the false-color image.",
+          "phrases": [
+            {
+              "term": "capture an image",
+              "zh": "拍摄/捕捉图像",
+              "note": "capture 在遥感和摄影语境中常表示获取图像。"
+            },
+            {
+              "term": "false-color image",
+              "zh": "假彩色图像",
+              "note": "遥感术语，指用非真实可见颜色组合来突出地表特征的图像。"
+            },
+            {
+              "term": "band",
+              "zh": "波段",
+              "note": "在卫星遥感中指传感器记录的特定电磁波范围。"
+            },
+            {
+              "term": "blackened vegetation",
+              "zh": "被烧黑的植被",
+              "note": "blackened 是过去分词作定语，强调火灾后的状态。"
+            },
+            {
+              "term": "rugged terrain",
+              "zh": "崎岖地形",
+              "note": "rugged 常用于描述山地、荒野等不平坦、难以通行的地貌。"
+            },
+            {
+              "term": "span",
+              "zh": "横跨；覆盖；延伸",
+              "note": "这里指烧黑植被覆盖了一大片区域。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "遥感术语较多，如 false-color image、bands、Landsat 9，会提高理解门槛。句法上含非限制性 when 从句，适合六级偏难科技阅读训练。"
+          }
+        },
+        {
+          "label": "001-08",
+          "part": "Part 001",
+          "en": "The image on the left shows the same area on June 5, a few weeks before the fire ignited.",
+          "zh": "左侧图像显示的是 6 月 5 日的同一区域，也就是这场火灾起火前几周的情况。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The image shows the same area."
+            },
+            {
+              "label": "修饰成分",
+              "text": "on the left 修饰 The image；on June 5 是时间状语；a few weeks before the fire ignited 是同位/补充性时间说明，进一步解释 June 5 与火灾发生时间的关系。"
+            },
+            {
+              "label": "语法要点",
+              "text": "before 引导时间状语从句；the fire ignited 中 ignite 作不及物动词，表示火灾开始。"
+            }
+          ],
+          "structure": "The image shows the same area.",
+          "phrases": [
+            {
+              "term": "on the left",
+              "zh": "在左侧的",
+              "note": "介词短语作后置定语，修饰 image。"
+            },
+            {
+              "term": "the same area",
+              "zh": "同一区域",
+              "note": "same 前通常加定冠词 the。"
+            },
+            {
+              "term": "a few weeks before",
+              "zh": "在……前几周",
+              "note": "before 后可接从句，表示相对时间。"
+            },
+            {
+              "term": "ignite",
+              "zh": "点燃；起火",
+              "note": "这里是不及物用法，指火灾开始燃烧、起火；也常用于冲突或情绪被引发的语境。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句法较简单，难点主要是 ignite 在火灾语境中表示“起火”的不及物用法，以及对图像左右对比关系的理解。六级偏易。"
+          }
+        },
+        {
+          "label": "001-09",
+          "part": "Part 001",
+          "en": "In this band combination of shortwave infrared, near infrared, and visible light, unburned vegetation appears bright green, snow is blue, and clouds are white.",
+          "zh": "在这种由短波红外、近红外和可见光组成的波段组合中，未燃烧的植被呈亮绿色，积雪呈蓝色，云层呈白色。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Unburned vegetation appears bright green, snow is blue, and clouds are white."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In this band combination of... 是句首介词短语，说明颜色判断所处的图像波段条件；of shortwave infrared, near infrared, and visible light 具体解释 band combination。"
+            },
+            {
+              "label": "语法要点",
+              "text": "三个并列分句说明不同对象在图像中的颜色；appear 作系动词，含义接近 look。"
+            }
+          ],
+          "structure": "Unburned vegetation appears bright green, snow is blue, and clouds are white.",
+          "phrases": [
+            {
+              "term": "band combination",
+              "zh": "波段组合",
+              "note": "遥感图像中不同波段组合会让地表对象呈现不同颜色。"
+            },
+            {
+              "term": "shortwave infrared",
+              "zh": "短波红外",
+              "note": "常用于识别水分、火烧迹地和地表材料差异。"
+            },
+            {
+              "term": "near infrared",
+              "zh": "近红外",
+              "note": "遥感中常用来突出植被状况。"
+            },
+            {
+              "term": "visible light",
+              "zh": "可见光",
+              "note": "指人眼可见的电磁波范围。"
+            },
+            {
+              "term": "appear bright green",
+              "zh": "呈亮绿色",
+              "note": "appear 作系动词，后接形容词或颜色表达。"
+            },
+            {
+              "term": "unburned vegetation",
+              "zh": "未燃烧的植被",
+              "note": "unburned 是过去分词型形容词，加前缀 un- 表示未被烧毁。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句法不复杂，但包含多个遥感和物理词汇。阅读时要理解这些颜色并非真实颜色，而是特定波段组合下的图像表现。六级中等偏难。"
+          }
+        },
+        {
+          "label": "001-10",
+          "part": "Part 001",
+          "en": "Ponderosa pine, oak, sagebrush, and grasses were among the vegetation types that burned.",
+          "zh": "黄松、橡树、蒿属灌木和草类都属于被烧毁的植被类型。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Ponderosa pine, oak, sagebrush, and grasses were among the vegetation types."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that burned 是定语从句，修饰 vegetation types，说明这些植被类型都被火烧到。"
+            },
+            {
+              "label": "语法要点",
+              "text": "多个并列名词作主语；be among 表示包含关系；that 引导限制性定语从句。"
+            }
+          ],
+          "structure": "Ponderosa pine, oak, sagebrush, and grasses were among the vegetation types.",
+          "phrases": [
+            {
+              "term": "Ponderosa pine",
+              "zh": "黄松；西黄松",
+              "note": "北美常见松树种类，专名可保留英文或译为黄松。"
+            },
+            {
+              "term": "oak",
+              "zh": "橡树",
+              "note": "常见树种名，也可泛指橡木。"
+            },
+            {
+              "term": "sagebrush",
+              "zh": "蒿属灌木；鼠尾草灌丛",
+              "note": "美国西部常见干旱地区灌木，生态和野火报道中常见。"
+            },
+            {
+              "term": "vegetation type",
+              "zh": "植被类型",
+              "note": "环境科学常用搭配，用于按植物群落或覆盖类型分类。"
+            },
+            {
+              "term": "be among",
+              "zh": "属于……之列",
+              "note": "表示某些成员包含在更大的类别或群体中。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "语法较简单，难点主要在生态和植物词汇，尤其是 Ponderosa pine 和 sagebrush。适合六级环境类阅读词汇积累。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 002",
+      "title": "002 · Cottonwood Fire Chars Utah",
+      "navLabel": "002",
+      "description": "说明 Cottonwood Fire 造成的结构损毁、卫星火灾追踪工具 FEDS 的作用，以及遥感数据如何辅助应急响应。",
+      "items": [
+        {
+          "label": "002-11",
+          "part": "Part 002",
+          "en": "Officials with the state's forestry division told news media that the Cottonwood fire had destroyed up to 150 structures.",
+          "zh": "该州林业部门的官员告诉新闻媒体，Cottonwood Fire 已经摧毁了多达 150 座建筑物。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Officials told news media that the Cottonwood fire had destroyed up to 150 structures."
+            },
+            {
+              "label": "修饰成分",
+              "text": "with the state's forestry division 修饰 Officials，说明身份来源；that 引导 told 的宾语从句；had destroyed 是宾语从句中的谓语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "tell sb. that... 结构中，news media 作间接宾语；had destroyed 使用过去完成时，说明报道时火灾破坏已经发生。"
+            }
+          ],
+          "structure": "Officials told news media that the Cottonwood fire had destroyed up to 150 structures.",
+          "phrases": [
+            {
+              "term": "officials with",
+              "zh": "……机构的官员",
+              "note": "with 在这里表示隶属或任职关系，相当于 from 或 working for。"
+            },
+            {
+              "term": "forestry division",
+              "zh": "林业部门",
+              "note": "division 指政府或机构中的一个部门；forestry 与森林管理、林火防控相关。"
+            },
+            {
+              "term": "news media",
+              "zh": "新闻媒体",
+              "note": "集合名词，指报纸、电视、网站等新闻机构。"
+            },
+            {
+              "term": "destroy up to",
+              "zh": "摧毁多达……",
+              "note": "up to 表示最高数量或上限，常用于灾害损失统计。"
+            },
+            {
+              "term": "structure",
+              "zh": "建筑物；构筑物",
+              "note": "在灾害报道中，structure 通常泛指房屋、棚屋、设施等各类建筑。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法中等，主要难点在机构表达 officials with... 和 structure 的灾害语境含义。适合六级新闻阅读。"
+          }
+        },
+        {
+          "label": "002-12",
+          "part": "Part 002",
+          "en": "Eagle Point Ski Resort, which lost more than 100 condos and 30 cabins, also reported damage to four of its five chairlifts.",
+          "zh": "Eagle Point Ski Resort 也报告称，其五条滑雪缆车中有四条受损；该度假村还损失了 100 多套公寓和 30 栋木屋。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Eagle Point Ski Resort also reported damage to four of its five chairlifts."
+            },
+            {
+              "label": "修饰成分",
+              "text": "which lost more than 100 condos and 30 cabins 是非限制性定语从句，补充说明度假村的损失；four of its five chairlifts 表示五条中的四条。"
+            },
+            {
+              "label": "语法要点",
+              "text": "which 引导非限制性定语从句，逗号隔开，提供额外信息；of 结构 four of its five... 表示部分与整体关系。"
+            }
+          ],
+          "structure": "Eagle Point Ski Resort also reported damage to four of its five chairlifts.",
+          "phrases": [
+            {
+              "term": "ski resort",
+              "zh": "滑雪度假村",
+              "note": "resort 指度假地或度假设施，ski resort 特指滑雪场及配套度假区。"
+            },
+            {
+              "term": "condo",
+              "zh": "公寓；共有产权公寓",
+              "note": "condo 是 condominium 的缩写，北美英语常见。"
+            },
+            {
+              "term": "cabin",
+              "zh": "小木屋；山间小屋",
+              "note": "常指度假区、森林或山区中的小型房屋。"
+            },
+            {
+              "term": "report damage to",
+              "zh": "报告……受损",
+              "note": "damage to 后接受损对象，常用于事故和灾害报道。"
+            },
+            {
+              "term": "chairlift",
+              "zh": "吊椅式缆车；滑雪缆车",
+              "note": "滑雪场用于把滑雪者运到坡顶的设备。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子结构清楚，但包含度假设施词汇 condo、cabin、chairlift。非限制性定语从句插入主语后，阅读时需要先跳过从句抓主干。六级中等。"
+          }
+        },
+        {
+          "label": "002-13",
+          "part": "Part 002",
+          "en": "The damage to forests was extensive, though isolated patches survived largely unscathed, remaining as green oases within the broader burned area.",
+          "zh": "森林受损范围很广，不过一些孤立的小片区域基本未受破坏，在更大的烧毁区域中保留为绿色的“绿洲”。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The damage to forests was extensive."
+            },
+            {
+              "label": "修饰成分",
+              "text": "though isolated patches survived largely unscathed 是让步状语从句；remaining as green oases... 是现在分词短语，补充说明 isolated patches 幸存后的状态；within the broader burned area 表示位置。"
+            },
+            {
+              "label": "语法要点",
+              "text": "though 引导让步关系，形成“总体破坏严重，但局部幸存”的转折；remaining 作伴随/结果状语。"
+            }
+          ],
+          "structure": "The damage to forests was extensive.",
+          "phrases": [
+            {
+              "term": "extensive damage",
+              "zh": "大范围损害；严重破坏",
+              "note": "extensive 强调范围广，而不只是程度深。"
+            },
+            {
+              "term": "isolated patches",
+              "zh": "孤立的小片区域",
+              "note": "patch 指一小块区域，isolated 强调与周围分隔开。"
+            },
+            {
+              "term": "survive unscathed",
+              "zh": "安然幸存；未受损地保留下来",
+              "note": "unscathed 表示没有受到伤害或损坏，常作补足语。"
+            },
+            {
+              "term": "green oases",
+              "zh": "绿色绿洲",
+              "note": "oasis 本指沙漠绿洲，这里比喻烧毁区域中的绿色幸存地。"
+            },
+            {
+              "term": "broader burned area",
+              "zh": "更大范围的烧毁区域",
+              "note": "broader 表示范围更广，burned area 是火灾后常见地理描述。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子含让步从句和分词短语，信息层次较多。词汇 unscathed、oases、broader burned area 也偏书面和环境报道语境。六级偏难。"
+          }
+        },
+        {
+          "label": "002-14",
+          "part": "Part 002",
+          "en": "Among them were the forests around Tushar Campground, the site of a 4-H summer camp.",
+          "zh": "其中包括 Tushar Campground 周围的森林，那里是一处 4-H 青少年夏令营营地。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The forests around Tushar Campground were among them."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Among them 置于句首引起倒装；around Tushar Campground 修饰 forests；the site of a 4-H summer camp 是 Tushar Campground 的同位语，补充说明其用途。"
+            },
+            {
+              "label": "语法要点",
+              "text": "地点/范围介词短语 Among them 前置时，句子使用完全倒装：were the forests...；同位语用逗号隔开。"
+            }
+          ],
+          "structure": "The forests around Tushar Campground were among them.",
+          "phrases": [
+            {
+              "term": "among them",
+              "zh": "其中；在它们之中",
+              "note": "them 指代上一句中的 isolated patches，即未受严重损害的小片区域。"
+            },
+            {
+              "term": "campground",
+              "zh": "露营地",
+              "note": "指供人搭帐篷、停露营车或开展户外活动的场地。"
+            },
+            {
+              "term": "the site of",
+              "zh": "……所在地；……地点",
+              "note": "site 指某事件、建筑或活动所在的地点。"
+            },
+            {
+              "term": "summer camp",
+              "zh": "夏令营",
+              "note": "常指儿童或青少年暑期参加的户外、教育或社团活动；这里的 4-H 保留英文专名更稳妥。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "难点在倒装语序，正常语序应理解为 the forests... were among them。4-H 属于美国青少年组织背景，不确定时保留英文即可。六级中等偏难。"
+          }
+        },
+        {
+          "label": "002-15",
+          "part": "Part 002",
+          "en": "Beaver County officials credited years of forest treatments, such as clearing brush and trimming branches, with helping save the campground and surrounding forests.",
+          "zh": "Beaver County 的官员认为，这处露营地及周边森林得以保住，要归功于多年来的森林燃料治理措施，例如清理灌木和修剪树枝。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Beaver County officials credited years of forest treatments with helping save the campground and surrounding forests."
+            },
+            {
+              "label": "修饰成分",
+              "text": "such as clearing brush and trimming branches 是插入性举例，说明 forest treatments 的具体内容；and 连接 clearing 与 trimming，也连接 campground 与 surrounding forests。"
+            },
+            {
+              "label": "语法要点",
+              "text": "credit A with doing sth. 是核心结构；such as 后接动名词短语作例子。"
+            }
+          ],
+          "structure": "Beaver County officials credited years of forest treatments with helping save the campground and surrounding forests.",
+          "phrases": [
+            {
+              "term": "credit A with doing sth.",
+              "zh": "认为 A 对做成某事有功；把某事归功于 A",
+              "note": "本句中 A 是 years of forest treatments，with 后接 helping save。"
+            },
+            {
+              "term": "forest treatments",
+              "zh": "森林治理措施；森林燃料治理措施",
+              "note": "这里偏指为降低火灾风险而进行的清理灌木、修剪枝条等可燃物管理。"
+            },
+            {
+              "term": "clear brush",
+              "zh": "清理灌木丛",
+              "note": "brush 指低矮灌木或杂草，清理后可减少可燃物。"
+            },
+            {
+              "term": "trim branches",
+              "zh": "修剪树枝",
+              "note": "trim 表示修剪、整理，使树枝不易成为火势蔓延通道。"
+            },
+            {
+              "term": "surrounding forests",
+              "zh": "周边森林",
+              "note": "surrounding 作形容词，表示围绕在附近的。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子主要难点是 credit A with doing sth. 的搭配，应理解为“把功劳归于 A”，不能误解为“信用”。forest treatments 在野火语境中偏向可燃物治理，词汇较专业。六级偏难。"
+          }
+        },
+        {
+          "label": "002-16",
+          "part": "Part 002",
+          "en": "As the fire spread, NASA's Fire Events Data Suite (FEDS) tracked its progression and rate of growth.",
+          "zh": "随着火势蔓延，NASA 的 Fire Events Data Suite（FEDS）追踪了它的发展过程和扩张速度。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "NASA's Fire Events Data Suite tracked its progression and rate of growth."
+            },
+            {
+              "label": "修饰成分",
+              "text": "As the fire spread 是时间状语从句；(FEDS) 是缩写说明；its 指代 the fire。"
+            },
+            {
+              "label": "语法要点",
+              "text": "as 可表示“随着”；tracked 后接两个并列宾语 progression 和 rate of growth。"
+            }
+          ],
+          "structure": "NASA's Fire Events Data Suite tracked its progression and rate of growth.",
+          "phrases": [
+            {
+              "term": "as the fire spread",
+              "zh": "随着火势蔓延",
+              "note": "as 引导时间状语从句，表示两个过程同时发生。"
+            },
+            {
+              "term": "track",
+              "zh": "追踪；监测",
+              "note": "科技和灾害管理语境中常指持续记录对象变化。"
+            },
+            {
+              "term": "progression",
+              "zh": "发展过程；推进过程",
+              "note": "强调火势在时间和空间上的持续变化。"
+            },
+            {
+              "term": "rate of growth",
+              "zh": "增长速度；扩张速度",
+              "note": "rate 表示速率；在火灾语境中 growth 多指过火面积或火势范围扩大。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法较直接，难点在 FEDS 这一专名和 progression、rate of growth 的技术表达。六级中等。"
+          }
+        },
+        {
+          "label": "002-17",
+          "part": "Part 002",
+          "en": "The visualization above, based on the FEDS system, shows the fire surging on June 23 and tripling in size over 12 hours that day as it spread to the north, east, and south.",
+          "zh": "上方基于 FEDS 系统的可视化图像显示，6 月 23 日火势急剧扩张，并在当天 12 小时内扩大到原来的三倍，同时向北、向东和向南蔓延。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The visualization shows the fire surging and tripling in size."
+            },
+            {
+              "label": "修饰成分",
+              "text": "above 修饰 visualization；based on the FEDS system 是插入性后置定语；on June 23 和 over 12 hours that day 分别说明时间点和持续时长；as it spread... 是时间/伴随状语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "show + 宾语 + doing 结构表示“显示某对象正在/发生某动作”；surging 与 tripling 并列作宾语补足语。"
+            }
+          ],
+          "structure": "The visualization shows the fire surging and tripling in size.",
+          "phrases": [
+            {
+              "term": "visualization",
+              "zh": "可视化图像；可视化呈现",
+              "note": "指把数据或过程以图形、动画等方式呈现出来。"
+            },
+            {
+              "term": "based on",
+              "zh": "基于……",
+              "note": "过去分词短语作后置定语，说明 visualization 的数据来源。"
+            },
+            {
+              "term": "surge",
+              "zh": "激增；猛增；急剧蔓延",
+              "note": "本句指火势突然增强或迅速扩大。"
+            },
+            {
+              "term": "triple in size",
+              "zh": "规模扩大到三倍",
+              "note": "triple 可作动词，in size 表示在规模方面。"
+            },
+            {
+              "term": "over 12 hours",
+              "zh": "在 12 小时内",
+              "note": "over 加时间段表示整个持续期间。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "这是长句，难点在 show the fire surging and tripling 的宾补结构，以及多个时间状语叠加。理解时抓住 visualization shows... 这一主干即可。六级偏难。"
+          }
+        },
+        {
+          "label": "002-18",
+          "part": "Part 002",
+          "en": "It also grew rapidly on June 26, when it made a run to the north.",
+          "zh": "6 月 26 日，它也迅速扩大，当时火势向北快速推进。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It also grew rapidly."
+            },
+            {
+              "label": "修饰成分",
+              "text": "on June 26 是时间状语；when it made a run to the north 是非限制性时间从句，补充说明那天快速扩大的具体表现。"
+            },
+            {
+              "label": "语法要点",
+              "text": "when 从句补充主句发生时的情况；it 两次均指代 the fire。"
+            }
+          ],
+          "structure": "It also grew rapidly.",
+          "phrases": [
+            {
+              "term": "grow rapidly",
+              "zh": "快速增长；迅速扩大",
+              "note": "在火灾语境中指烧毁面积或火势范围迅速扩大。"
+            },
+            {
+              "term": "make a run",
+              "zh": "快速推进；突然向某方向蔓延",
+              "note": "消防语境中可指火势在短时间内快速扩展。"
+            },
+            {
+              "term": "to the north",
+              "zh": "向北",
+              "note": "to 加方位名词表示移动或扩展方向。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子短，但 make a run to the north 是较口语化、专业语境化的表达，不能直译成“跑步”。六级中等。"
+          }
+        },
+        {
+          "label": "002-19",
+          "part": "Part 002",
+          "en": "FEDS draws on data from the VIIRS (Visible Infrared Imaging Radiometer Suite) sensors aboard the Suomi NPP, NOAA-20, and NOAA-21 satellites, which detect active fires day and night by their thermal infrared signature.",
+          "zh": "FEDS 利用来自 Suomi NPP、NOAA-20 和 NOAA-21 卫星所搭载的 VIIRS（Visible Infrared Imaging Radiometer Suite）传感器的数据；这些传感器能够通过火灾的热红外特征，昼夜探测正在燃烧的火点。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "FEDS draws on data from the VIIRS sensors."
+            },
+            {
+              "label": "修饰成分",
+              "text": "(Visible Infrared Imaging Radiometer Suite) 是 VIIRS 的全称解释；aboard the Suomi NPP, NOAA-20, and NOAA-21 satellites 修饰 sensors；which detect active fires... 是非限制性定语从句，修饰 sensors。"
+            },
+            {
+              "label": "语法要点",
+              "text": "from...sensors 是 data 的来源；aboard 后接卫星名称说明传感器搭载位置；which 从句中 by their thermal infrared signature 表示探测方式。"
+            }
+          ],
+          "structure": "FEDS draws on data from the VIIRS sensors.",
+          "phrases": [
+            {
+              "term": "draw on data from",
+              "zh": "利用来自……的数据",
+              "note": "draw on 表示利用资源、经验或数据。"
+            },
+            {
+              "term": "sensor",
+              "zh": "传感器",
+              "note": "科技词汇，指检测并记录物理信号的设备。"
+            },
+            {
+              "term": "aboard",
+              "zh": "在……上；搭载于……",
+              "note": "常用于飞机、船只、航天器或卫星。"
+            },
+            {
+              "term": "active fires",
+              "zh": "正在燃烧的火点；活跃火灾",
+              "note": "遥感和消防中指当前仍有热信号的燃烧区域。"
+            },
+            {
+              "term": "day and night",
+              "zh": "昼夜；不分昼夜",
+              "note": "强调监测不受白天黑夜限制。"
+            },
+            {
+              "term": "thermal infrared signature",
+              "zh": "热红外特征",
+              "note": "signature 在科技语境中指可识别的特征信号，不是“签名”。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句科技专名和缩写密集，阅读负担较高。需要识别 FEDS draws on data 这一主干，再把 VIIRS、卫星名称、which 从句作为数据来源和功能说明。六级偏难到考研入门。"
+          }
+        },
+        {
+          "label": "002-20",
+          "part": "Part 002",
+          "en": "FEDS is one of several tools available to firefighters and emergency management officials when responding to fires.",
+          "zh": "FEDS 是消防员和应急管理官员在应对火灾时可以使用的几种工具之一。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "FEDS is one of several tools."
+            },
+            {
+              "label": "修饰成分",
+              "text": "available to firefighters and emergency management officials 是形容词短语，修饰 tools；when responding to fires 是省略结构，相当于 when they are responding to fires。"
+            },
+            {
+              "label": "语法要点",
+              "text": "available to... 作后置定语；when + doing 是状语从句省略，逻辑主语为 firefighters and officials。"
+            }
+          ],
+          "structure": "FEDS is one of several tools.",
+          "phrases": [
+            {
+              "term": "one of several tools",
+              "zh": "几种工具之一",
+              "note": "one of 后接复数名词，表示某一成员属于多个选项之一。"
+            },
+            {
+              "term": "available to",
+              "zh": "可供……使用的",
+              "note": "available to sb. 表示某人可以获得或使用。"
+            },
+            {
+              "term": "firefighters",
+              "zh": "消防员",
+              "note": "复数形式，指参与灭火和救援的人员。"
+            },
+            {
+              "term": "emergency management officials",
+              "zh": "应急管理官员",
+              "note": "指负责灾害响应、资源调度和公共安全管理的官员。"
+            },
+            {
+              "term": "respond to fires",
+              "zh": "应对火灾；响应火灾事件",
+              "note": "respond to 在灾害管理中表示采取行动处理事件。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法较清楚，难点主要在 emergency management officials 和 when responding to fires 的省略结构。六级中等。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 003",
+      "title": "003 · Cottonwood Fire Chars Utah",
+      "navLabel": "003",
+      "description": "补充火场边界测绘方式、美国西部同期野火形势，以及本季已烧毁面积相对十年平均值的变化。",
+      "items": [
+        {
+          "label": "003-21",
+          "part": "Part 003",
+          "en": "First responders often rely on higher-resolution airborne imagers or on firefighters walking fire edges to map perimeters.",
+          "zh": "一线应急人员通常依靠分辨率更高的机载成像设备，或依靠消防员沿火场边缘实地勘察，来绘制火场边界。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "First responders often rely on airborne imagers or on firefighters."
+            },
+            {
+              "label": "修饰成分",
+              "text": "higher-resolution 修饰 airborne imagers；walking fire edges 是现在分词短语，修饰 firefighters；to map perimeters 是目的状语，说明依靠这些方式的目的。"
+            },
+            {
+              "label": "语法要点",
+              "text": "or 连接两个并列的 rely on 宾语；firefighters walking fire edges 是“名词 + 现在分词”结构，表示正在沿火场边缘行走勘察的消防员。"
+            }
+          ],
+          "structure": "First responders often rely on airborne imagers or on firefighters.",
+          "phrases": [
+            {
+              "term": "first responders",
+              "zh": "一线应急人员；第一响应人员",
+              "note": "指最早到达事故或灾害现场并开展救援的人，如消防员、急救人员等。"
+            },
+            {
+              "term": "rely on",
+              "zh": "依靠；依赖",
+              "note": "后接名词、动名词或从句，表示获得信息或完成任务所依赖的手段。"
+            },
+            {
+              "term": "higher-resolution",
+              "zh": "更高分辨率的",
+              "note": "复合形容词，修饰 airborne imagers，常用于图像和遥感语境。"
+            },
+            {
+              "term": "airborne imagers",
+              "zh": "机载成像设备",
+              "note": "指安装在飞机等空中平台上的图像获取设备。"
+            },
+            {
+              "term": "fire edges",
+              "zh": "火场边缘；火线边界",
+              "note": "指火势蔓延区域的外缘，消防员可沿边界实地确认火场范围。"
+            },
+            {
+              "term": "map perimeters",
+              "zh": "绘制边界；测绘范围线",
+              "note": "perimeter 指某一区域的外边界，在火灾中指燃烧区域范围。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子不长，但专业词汇密集，尤其是 airborne imagers、fire edges、perimeters。结构难点在 firefighters walking... 这种分词后置修饰。六级偏难。"
+          }
+        },
+        {
+          "label": "003-22",
+          "part": "Part 003",
+          "en": "FEDS offers a different advantage: consistent, easily accessible data that do not need to be specially requested, according to Tempest McCabe, a University of Maryland scientist based at NASA's Goddard Space Flight Center who helped develop the tool.",
+          "zh": "据 University of Maryland 科学家 Tempest McCabe 表示，FEDS 提供了另一种优势：稳定一致、易于获取，并且不需要专门申请的数据。Tempest McCabe 任职于 NASA 的 Goddard Space Flight Center，并参与开发了这一工具。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "FEDS offers a different advantage: consistent, easily accessible data."
+            },
+            {
+              "label": "修饰成分",
+              "text": "consistent, easily accessible 修饰 data；that do not need to be specially requested 是定语从句，修饰 data；according to Tempest McCabe 是信息来源插入语；a University of Maryland scientist... 是 Tempest McCabe 的同位语；who helped develop the tool 是定语从句，修饰 scientist。"
+            },
+            {
+              "label": "语法要点",
+              "text": "冒号后解释 advantage 的具体内容；data 在正式和科技英语中常按复数处理，所以定语从句中用 do not；based at... 是过去分词短语作后置定语。"
+            }
+          ],
+          "structure": "FEDS offers a different advantage: consistent, easily accessible data.",
+          "phrases": [
+            {
+              "term": "offer an advantage",
+              "zh": "提供一种优势",
+              "note": "offer 不只表示“提供物品”，也可表示带来好处、机会或优势。"
+            },
+            {
+              "term": "consistent data",
+              "zh": "一致的数据；稳定的数据",
+              "note": "consistent 强调标准、来源或时间序列上的稳定性。"
+            },
+            {
+              "term": "easily accessible",
+              "zh": "易于获取的",
+              "note": "accessible 表示可以获得、进入或使用。"
+            },
+            {
+              "term": "specially requested",
+              "zh": "专门申请的；特别请求的",
+              "note": "request 在正式语境中表示申请、请求；specially 强调额外、专门。"
+            },
+            {
+              "term": "according to",
+              "zh": "据……所说；根据……",
+              "note": "新闻报道中常用于标明信息来源。"
+            },
+            {
+              "term": "based at",
+              "zh": "任职于；驻在",
+              "note": "用于说明个人或团队的工作地点或机构归属。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "这是本组较难的长句，冒号、定语从句、同位语和信息来源插入语叠加。阅读时要先抓住 FEDS offers...advantage: data，再处理人物身份说明。六级偏难到考研入门。"
+          }
+        },
+        {
+          "label": "003-23",
+          "part": "Part 003",
+          "en": "As a result, FEDS often detects a fire's start earlier than other sources and tracks blazes for their full duration.",
+          "zh": "因此，FEDS 往往比其他来源更早探测到火灾的开始，并能在火灾整个持续期间进行追踪。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "FEDS detects a fire's start and tracks blazes."
+            },
+            {
+              "label": "修饰成分",
+              "text": "As a result 是结果状语；often 表示频率；earlier than other sources 修饰 detects；for their full duration 修饰 tracks。"
+            },
+            {
+              "label": "语法要点",
+              "text": "detects 和 tracks 是并列谓语，共用主语 FEDS；than other sources 构成比较结构。"
+            }
+          ],
+          "structure": "FEDS detects a fire's start and tracks blazes.",
+          "phrases": [
+            {
+              "term": "as a result",
+              "zh": "因此；结果",
+              "note": "用于承接前文原因，引出结果。"
+            },
+            {
+              "term": "detect",
+              "zh": "探测；发现",
+              "note": "常用于仪器、系统或方法发现某种信号或现象。"
+            },
+            {
+              "term": "a fire's start",
+              "zh": "火灾的开始",
+              "note": "所有格表示事件的起点或发生阶段。"
+            },
+            {
+              "term": "blaze",
+              "zh": "大火；烈火",
+              "note": "新闻报道中常作 fire 的同义替换，语气更强。"
+            },
+            {
+              "term": "for their full duration",
+              "zh": "在其整个持续期间",
+              "note": "duration 指持续时间，full 强调整个过程。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "结构清晰，难点在 blaze 与 fire 的同义替换，以及 duration 这类正式抽象名词。六级中等。"
+          }
+        },
+        {
+          "label": "003-24",
+          "part": "Part 003",
+          "en": "To capitalize on strengths like these, the FEDS team is working closely with operational fire behavior analysts, with support from NASA's FireSense program, to better understand and anticipate periods of rapid fire spread.",
+          "zh": "为了充分利用这些优势，FEDS 团队正在 NASA FireSense 项目的支持下，与一线火行为分析师密切合作，以便更好地理解并预判火势快速蔓延的时段。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The FEDS team is working closely with operational fire behavior analysts."
+            },
+            {
+              "label": "修饰成分",
+              "text": "To capitalize on strengths like these 是目的状语；with support from NASA's FireSense program 是插入性介词短语，说明支持来源；to better understand and anticipate... 是目的状语，说明合作目标。"
+            },
+            {
+              "label": "语法要点",
+              "text": "句首不定式和句末不定式分别表示宏观目的和具体目标；understand 与 anticipate 是并列动词，共用 to。"
+            }
+          ],
+          "structure": "The FEDS team is working closely with operational fire behavior analysts.",
+          "phrases": [
+            {
+              "term": "capitalize on",
+              "zh": "充分利用；借助……获益",
+              "note": "后接优势、机会、趋势等，表示借助其获得更好效果。"
+            },
+            {
+              "term": "strengths like these",
+              "zh": "这些优势",
+              "note": "these 指前文提到的 FEDS 数据一致、易获取等优势。"
+            },
+            {
+              "term": "work closely with",
+              "zh": "与……密切合作",
+              "note": "closely 修饰 work，强调合作紧密。"
+            },
+            {
+              "term": "operational",
+              "zh": "业务运行中的；一线实务的",
+              "note": "这里指参与实际火灾响应和业务分析的人员，而非纯研究人员。"
+            },
+            {
+              "term": "fire behavior analysts",
+              "zh": "火行为分析师",
+              "note": "指分析火势蔓延、燃烧行为和潜在风险的专业人员。"
+            },
+            {
+              "term": "anticipate",
+              "zh": "预见；预判",
+              "note": "比 predict 更强调提前想到并准备应对。"
+            },
+            {
+              "term": "rapid fire spread",
+              "zh": "火势快速蔓延",
+              "note": "spread 作名词，表示扩散、蔓延。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子层级较多，两个 to 不定式目的状语前后呼应，中间还插入 with support...。词汇 operational、anticipate、rapid fire spread 偏正式。六级偏难。"
+          }
+        },
+        {
+          "label": "003-25",
+          "part": "Part 003",
+          "en": "A total of 1,289 firefighters have been deployed to the Cottonwood fire, according to InciWeb, a website managed by the National Interagency Fire Center.",
+          "zh": "据由 National Interagency Fire Center 管理的网站 InciWeb 称，共有 1,289 名消防员已被部署到 Cottonwood Fire 火场。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "A total of 1,289 firefighters have been deployed to the Cottonwood fire."
+            },
+            {
+              "label": "修饰成分",
+              "text": "according to InciWeb 是信息来源；a website managed by the National Interagency Fire Center 是 InciWeb 的同位语；managed by... 修饰 website。"
+            },
+            {
+              "label": "语法要点",
+              "text": "have been deployed 是现在完成时被动语态；同位语用于补充说明专名 InciWeb 的性质。"
+            }
+          ],
+          "structure": "A total of 1,289 firefighters have been deployed to the Cottonwood fire.",
+          "phrases": [
+            {
+              "term": "a total of",
+              "zh": "总共；合计",
+              "note": "用于引出统计数字，语气正式。"
+            },
+            {
+              "term": "have been deployed",
+              "zh": "已经被部署",
+              "note": "现在完成时被动语态，表示人员已被派往某地且与当前情况相关。"
+            },
+            {
+              "term": "deploy",
+              "zh": "部署；调派",
+              "note": "常用于军事、救援、消防和资源调度语境。"
+            },
+            {
+              "term": "according to",
+              "zh": "据……称；根据……",
+              "note": "用于标明信息来源。"
+            },
+            {
+              "term": "managed by",
+              "zh": "由……管理",
+              "note": "过去分词短语作后置定语，修饰 website。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法中等，主要难点在被动语态部署表达和 InciWeb 的同位语说明。灾害报道中的数字信息也需要准确对应。六级中等。"
+          }
+        },
+        {
+          "label": "003-26",
+          "part": "Part 003",
+          "en": "As of July 7, the fire was 56 percent contained, but forecasters expect a hot, dry weather pattern to persist in the coming days, with fire behavior likely to be \"very active to extreme\" over the next 72 hours.",
+          "zh": "截至 7 月 7 日，这场火灾已有 56% 受到控制；但预报员预计，未来几天炎热干燥的天气格局将持续，而未来 72 小时内火行为可能达到“非常活跃至极端”的程度。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The fire was 56 percent contained, but forecasters expect a weather pattern to persist."
+            },
+            {
+              "label": "修饰成分",
+              "text": "As of July 7 是时间状语；hot, dry 修饰 weather pattern；in the coming days 表示持续时间；with fire behavior likely to be... 是 with 复合结构，补充未来 72 小时火势可能状态。"
+            },
+            {
+              "label": "语法要点",
+              "text": "but 连接转折并列分句：虽然控制了一部分，但天气风险仍在；expect + 宾语 + to do 表示“预计……会……”；with + 名词 + 形容词/不定式结构作伴随说明。"
+            }
+          ],
+          "structure": "The fire was 56 percent contained, but forecasters expect a weather pattern to persist.",
+          "phrases": [
+            {
+              "term": "as of",
+              "zh": "截至；到……时",
+              "note": "用于说明数据或状态对应的时间点。"
+            },
+            {
+              "term": "56 percent contained",
+              "zh": "56% 已受控",
+              "note": "消防语境中 contained 表示火线被控制，百分比表示受控程度。"
+            },
+            {
+              "term": "forecasters",
+              "zh": "预报员；预测人员",
+              "note": "这里主要指天气或火险预报相关人员。"
+            },
+            {
+              "term": "weather pattern",
+              "zh": "天气格局；天气形势",
+              "note": "pattern 指一段时间内相对稳定的天气组合。"
+            },
+            {
+              "term": "persist",
+              "zh": "持续；继续存在",
+              "note": "常用于天气、趋势、问题或症状持续不变。"
+            },
+            {
+              "term": "fire behavior",
+              "zh": "火行为；火势活动特征",
+              "note": "消防专业词，指火的蔓延速度、强度、方向等表现。"
+            },
+            {
+              "term": "very active to extreme",
+              "zh": "非常活跃至极端",
+              "note": "引号内为火险/火行为评估用语，表示火势活动强度可能从很强发展到极端水平。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，含转折、预测结构和 with 复合结构。专业表达 contained、fire behavior 以及引号内等级描述都需要结合消防语境理解。六级偏难。"
+          }
+        },
+        {
+          "label": "003-27",
+          "part": "Part 003",
+          "en": "Government satellite data are part of a global system of observations used to track fire behavior and analyze emerging trends.",
+          "zh": "政府卫星数据是全球观测体系的一部分，该体系用于追踪火行为并分析正在出现的趋势。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Government satellite data are part of a global system."
+            },
+            {
+              "label": "修饰成分",
+              "text": "of observations 修饰 system；used to track fire behavior and analyze emerging trends 是过去分词短语，修饰 system of observations。"
+            },
+            {
+              "label": "语法要点",
+              "text": "data 使用复数谓语 are；used to do 在这里是过去分词短语“被用来……”，不是情态含义“过去常常”。"
+            }
+          ],
+          "structure": "Government satellite data are part of a global system.",
+          "phrases": [
+            {
+              "term": "satellite data",
+              "zh": "卫星数据",
+              "note": "data 可作复数使用，因此本句谓语为 are。"
+            },
+            {
+              "term": "a global system of observations",
+              "zh": "全球观测体系",
+              "note": "system of observations 指由多种观测数据、平台和方法构成的观测体系。"
+            },
+            {
+              "term": "track fire behavior",
+              "zh": "追踪火行为",
+              "note": "track 表示持续监测，fire behavior 指火势活动特征。"
+            },
+            {
+              "term": "emerging trends",
+              "zh": "新出现的趋势；正在形成的趋势",
+              "note": "emerging 强调刚出现或正在发展。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法相对清晰，但 data are、used to 的非“过去常常”用法容易误判。环境监测词汇也偏正式。六级中等。"
+          }
+        },
+        {
+          "label": "003-28",
+          "part": "Part 003",
+          "en": "Among the real-time wildfire monitoring tools that NASA makes available are FIRMS (Fire Information for Resource Management System), the Worldview browser, and the Fire Event Explorer.",
+          "zh": "NASA 提供的实时野火监测工具包括 FIRMS（Fire Information for Resource Management System）、Worldview 浏览器和 Fire Event Explorer。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "FIRMS, the Worldview browser, and the Fire Event Explorer are among the tools."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Among the real-time wildfire monitoring tools 置于句首，引发倒装；that NASA makes available 是定语从句，修饰 tools；括号中解释 FIRMS 全称。"
+            },
+            {
+              "label": "语法要点",
+              "text": "介词短语 Among... 前置时使用完全倒装，真正主语是 FIRMS、the Worldview browser 和 the Fire Event Explorer。"
+            }
+          ],
+          "structure": "FIRMS, the Worldview browser, and the Fire Event Explorer are among the tools.",
+          "phrases": [
+            {
+              "term": "real-time",
+              "zh": "实时的",
+              "note": "复合形容词，表示数据或信息几乎即时更新。"
+            },
+            {
+              "term": "wildfire monitoring tools",
+              "zh": "野火监测工具",
+              "note": "monitoring 作名词性修饰语，说明 tools 的用途。"
+            },
+            {
+              "term": "make available",
+              "zh": "提供；使可获得",
+              "note": "比 provide 更强调让公众或特定用户可以使用。"
+            },
+            {
+              "term": "browser",
+              "zh": "浏览器；浏览工具",
+              "note": "这里的 Worldview browser 指用于查看地球观测数据的网页工具。"
+            },
+            {
+              "term": "explorer",
+              "zh": "探索器；查询工具",
+              "note": "软件或数据平台名称中常指可浏览、查询数据的工具。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "主要难点是倒装句，不能按中文顺序误读为“在工具中是……”。此外缩写和工具名称较多，属于科技说明文常见负担。六级偏难。"
+          }
+        },
+        {
+          "label": "003-29",
+          "part": "Part 003",
+          "en": "As of July 7, 2026, fires had burned 5,265 square miles (13,636 square kilometers) across the United States, according to the National Interagency Fire Center.",
+          "zh": "据 National Interagency Fire Center 称，截至 2026 年 7 月 7 日，美国各地火灾已烧毁 5,265 平方英里（13,636 平方公里）的土地。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Fires had burned 5,265 square miles."
+            },
+            {
+              "label": "修饰成分",
+              "text": "As of July 7, 2026 是时间状语；(13,636 square kilometers) 是面积换算说明；across the United States 表示地理范围；according to the National Interagency Fire Center 是信息来源。"
+            },
+            {
+              "label": "语法要点",
+              "text": "过去完成时 had burned 与 as of 时间点配合，表示截至该日之前累计烧毁面积。"
+            }
+          ],
+          "structure": "Fires had burned 5,265 square miles.",
+          "phrases": [
+            {
+              "term": "as of July 7, 2026",
+              "zh": "截至 2026 年 7 月 7 日",
+              "note": "用于限定统计数据的时间点。"
+            },
+            {
+              "term": "had burned",
+              "zh": "已经烧毁",
+              "note": "过去完成时，强调截至某时间点前已造成的结果。"
+            },
+            {
+              "term": "square miles",
+              "zh": "平方英里",
+              "note": "面积单位，括号中给出平方公里换算。"
+            },
+            {
+              "term": "across the United States",
+              "zh": "遍布美国；在美国各地",
+              "note": "across 表示范围覆盖整个区域。"
+            },
+            {
+              "term": "according to",
+              "zh": "根据；据……称",
+              "note": "用于标明数据来源。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子结构不复杂，但数字、单位换算和信息来源较多，阅读时需要准确抓取统计对象、时间和范围。六级中等。"
+          }
+        },
+        {
+          "label": "003-30",
+          "part": "Part 003",
+          "en": "That's 46 percent more than the 10-year average (2016-2025) for that point in the season.",
+          "zh": "这比该季节同期的 10 年平均水平（2016-2025 年）高出 46%。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "That is 46 percent more than the 10-year average."
+            },
+            {
+              "label": "修饰成分",
+              "text": "(2016-2025) 补充说明 10-year average 的统计年份；for that point in the season 限定比较基准为季节中的同一时间点。"
+            },
+            {
+              "label": "语法要点",
+              "text": "That 指代上一句中的累计烧毁面积；more than 构成比较结构；10-year 作复合形容词时 year 用单数。"
+            }
+          ],
+          "structure": "That is 46 percent more than the 10-year average.",
+          "phrases": [
+            {
+              "term": "46 percent more than",
+              "zh": "比……高出 46%",
+              "note": "more than 后接比较基准，表示超出幅度。"
+            },
+            {
+              "term": "10-year average",
+              "zh": "10 年平均值",
+              "note": "复合形容词 10-year 修饰 average，year 不加复数。"
+            },
+            {
+              "term": "that point in the season",
+              "zh": "该季节的那个时间点；季节同期",
+              "note": "point 指时间点，season 指野火季。"
+            },
+            {
+              "term": "average",
+              "zh": "平均值；平均水平",
+              "note": "可作名词或形容词，本句作名词。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法简单，但统计比较容易误读：不是总量为 46%，而是比十年同期平均值高 46%。适合训练数据类新闻句子的精确理解。六级中等。"
+          }
+        }
+      ]
+    }
+  ]
+}

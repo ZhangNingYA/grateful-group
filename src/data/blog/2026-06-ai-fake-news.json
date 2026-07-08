@@ -1,0 +1,4385 @@
+{
+  "storageKey": "reading-2026-06-ai-fake-news",
+  "intro": {
+    "kicker": "Reading · 2026-06-23 · AI & Fake News",
+    "title": "AI shows promise in the fight against fake news：句句精读",
+    "description": "按原文 001-008 的顺序整理 79 个句子，包含英文原句、中文翻译、句子结构、重点词汇词组和难度标记，适合通读复盘与长难句精读。"
+  },
+  "sections": [
+    {
+      "kicker": "Part 001",
+      "title": "001 · AI shows promise in the fight against fake news",
+      "navLabel": "001",
+      "description": "开篇提出 AI 既大量制造虚假内容，也可能成为识别和理解假新闻的工具。",
+      "items": [
+        {
+          "label": "001-01",
+          "part": "Part 001",
+          "en": "Artificial intelligence doesn’t have a great reputation for veracity.",
+          "zh": "人工智能在真实性方面的名声并不太好。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Artificial intelligence doesn’t have a great reputation."
+            },
+            {
+              "label": "修饰成分",
+              "text": "for veracity 作后置介词短语，说明 reputation 的具体方面。"
+            },
+            {
+              "label": "语法要点",
+              "text": "简单句；否定助动词 doesn’t 加动词原形 have。"
+            }
+          ],
+          "structure": "Artificial intelligence doesn’t have a great reputation.",
+          "phrases": [
+            {
+              "term": "artificial intelligence",
+              "zh": "人工智能",
+              "note": "常缩写为 AI，作不可数名词或技术领域总称。"
+            },
+            {
+              "term": "have a reputation for",
+              "zh": "以……而闻名；有……的名声",
+              "note": "for 后接名词或动名词，可用于正面或负面评价。"
+            },
+            {
+              "term": "veracity",
+              "zh": "真实性；诚实性",
+              "note": "正式词，常用于新闻、证据、陈述的真实性。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句法简单，难点主要在抽象名词 veracity 和固定搭配 have a reputation for。六级难度偏易。"
+          }
+        },
+        {
+          "label": "001-02",
+          "part": "Part 001",
+          "en": "Social media abounds with AI-generated concoctions, from cute images of fake animals in fabricated settings to violent videos depicting imaginary destruction in the Middle East.",
+          "zh": "社交媒体上充斥着人工智能生成的虚构内容，从虚构场景中可爱的假动物图片，到描绘中东地区想象中破坏场面的暴力视频，不一而足。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Social media abounds with AI-generated concoctions."
+            },
+            {
+              "label": "修饰成分",
+              "text": "from ... to ... 列举 concoctions 的范围；in fabricated settings 修饰 fake animals；depicting imaginary destruction in the Middle East 是现在分词短语，修饰 violent videos。"
+            },
+            {
+              "label": "语法要点",
+              "text": "from A to B 结构表示范围跨度；分词短语 depicting... 作后置定语。"
+            }
+          ],
+          "structure": "Social media abounds with AI-generated concoctions.",
+          "phrases": [
+            {
+              "term": "abound with",
+              "zh": "充满；大量存在",
+              "note": "主语通常是地点、平台或环境，with 后接大量存在的事物。"
+            },
+            {
+              "term": "AI-generated",
+              "zh": "由人工智能生成的",
+              "note": "复合形容词，放在名词前作定语。"
+            },
+            {
+              "term": "concoction",
+              "zh": "编造物；混合物；虚构出来的东西",
+              "note": "这里带贬义，指人为制造的不真实内容。"
+            },
+            {
+              "term": "fabricated settings",
+              "zh": "虚构的场景",
+              "note": "fabricated 表示伪造的、捏造的。"
+            },
+            {
+              "term": "depict",
+              "zh": "描绘；表现",
+              "note": "常用于图片、视频、文学作品呈现某个场景。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子主干清楚，但名词短语层层修饰，且含有 from...to... 的长列举。词汇 concoctions、fabricated、depicting 提升难度。六级偏难。"
+          }
+        },
+        {
+          "label": "001-03",
+          "part": "Part 001",
+          "en": "AI has been used to create fake social media accounts that spew Russian government propaganda and to generate clickbait and misinformation for content farm sites that exist solely to collect ad revenue.",
+          "zh": "人工智能已被用来创建散布俄罗斯政府宣传内容的虚假社交媒体账号，也被用来为那些纯粹靠收取广告收入而存在的内容农场网站生成标题党内容和虚假信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "AI has been used to create ... and to generate ..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that spew Russian government propaganda 是定语从句，修饰 accounts；for content farm sites 表示 generate 的服务对象；that exist solely to collect ad revenue 是定语从句，修饰 sites。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列不定式 to create 和 to generate 共用 has been used；两个 that 定语从句分别修饰不同名词。"
+            }
+          ],
+          "structure": "AI has been used to create ... and to generate ...",
+          "phrases": [
+            {
+              "term": "has been used to",
+              "zh": "已经被用于……",
+              "note": "现在完成时的被动语态，强调过去发生并与现在有关的用途。"
+            },
+            {
+              "term": "spew",
+              "zh": "喷出；大量散布",
+              "note": "本义为喷涌，这里比喻大量发布有害或低质信息，语气较强。"
+            },
+            {
+              "term": "propaganda",
+              "zh": "宣传；政治宣传",
+              "note": "常带贬义，指有目的地影响公众观点的信息。"
+            },
+            {
+              "term": "clickbait",
+              "zh": "标题党内容；诱点击内容",
+              "note": "指用夸张标题吸引点击的低质量内容。"
+            },
+            {
+              "term": "content farm",
+              "zh": "内容农场",
+              "note": "指批量生产低质量内容以获取流量和广告收益的网站。"
+            },
+            {
+              "term": "ad revenue",
+              "zh": "广告收入",
+              "note": "revenue 是正式词，表示收入、营收。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "结构较长，包含并列不定式和两个定语从句。理解时要抓住 AI has been used to create... and to generate... 这一主干。六级偏难。"
+          }
+        },
+        {
+          "label": "001-04",
+          "part": "Part 001",
+          "en": "In 2024, thousands of New Hampshire residents received robocalls from an AI-synthesized voice of Joe Biden that discouraged them from voting in primary elections.",
+          "zh": "2024 年，数千名新罕布什尔州居民接到了使用人工智能合成声音、冒充乔·拜登的自动电话，这些电话劝阻他们不要在初选中投票。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Thousands of New Hampshire residents received robocalls."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In 2024 是时间状语；from an AI-synthesized voice of Joe Biden 修饰 robocalls 的来源，表示电话中使用了 AI 合成的拜登声音；that discouraged them from voting in primary elections 是定语从句，修饰 robocalls。"
+            },
+            {
+              "label": "语法要点",
+              "text": "过去分词 synthesized 作前置定语；discourage sb. from doing sth. 是核心动词搭配。"
+            }
+          ],
+          "structure": "Thousands of New Hampshire residents received robocalls.",
+          "phrases": [
+            {
+              "term": "resident",
+              "zh": "居民",
+              "note": "常用于正式语境，指某地居住者。"
+            },
+            {
+              "term": "robocall",
+              "zh": "自动语音电话",
+              "note": "通常指自动拨打并播放录音的电话，常用于营销或政治宣传。"
+            },
+            {
+              "term": "AI-synthesized voice",
+              "zh": "人工智能合成的声音",
+              "note": "synthesize 表示合成；这里是过去分词作定语。"
+            },
+            {
+              "term": "discourage sb. from doing sth.",
+              "zh": "劝阻某人做某事",
+              "note": "from 后接动名词。"
+            },
+            {
+              "term": "primary election",
+              "zh": "初选",
+              "note": "美国政治语境中指党内候选人选拔选举。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "难点在美国政治背景和 robocalls、primary elections 等文化词。句法中等，定语从句较直观。六级中等。"
+          }
+        },
+        {
+          "label": "001-05",
+          "part": "Part 001",
+          "en": "With so much AI-generated rubbish threatening to blur the line between reality and fiction, it may seem counterintuitive that scientists are exploring ways to use the very same technology to combat online misinformation.",
+          "zh": "面对如此多由人工智能生成、可能会模糊现实与虚构界限的垃圾内容，科学家们却在探索利用同一种技术来打击网络虚假信息，这似乎有些反直觉。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It may seem counterintuitive that scientists are exploring ways."
+            },
+            {
+              "label": "修饰成分",
+              "text": "With so much AI-generated rubbish threatening... 是 with 复合结构，作原因或背景状语；to use the very same technology 修饰 ways；to combat online misinformation 表示目的。"
+            },
+            {
+              "label": "语法要点",
+              "text": "it 作形式主语，真正主语是 that 引导的从句；with + 名词 + 现在分词构成复合结构。"
+            }
+          ],
+          "structure": "It may seem counterintuitive that scientists are exploring ways.",
+          "phrases": [
+            {
+              "term": "AI-generated rubbish",
+              "zh": "人工智能生成的垃圾内容",
+              "note": "rubbish 在英式英语中可指无价值或荒唐的信息。"
+            },
+            {
+              "term": "threaten to do sth.",
+              "zh": "有可能造成……；威胁要……",
+              "note": "不一定表示主动威胁，也可表示某事可能带来负面后果。"
+            },
+            {
+              "term": "blur the line between A and B",
+              "zh": "模糊 A 与 B 之间的界限",
+              "note": "常用于讨论真假、工作生活、现实虚拟等边界。"
+            },
+            {
+              "term": "counterintuitive",
+              "zh": "反直觉的",
+              "note": "指与一般直觉或常识预期相反。"
+            },
+            {
+              "term": "combat online misinformation",
+              "zh": "打击网络虚假信息",
+              "note": "combat 是正式动词，表示对抗、打击。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "这是典型长难句。难点在 with 复合结构、形式主语 it 和两个不定式的层级关系。适合六级精读训练，难度偏高。"
+          }
+        },
+        {
+          "label": "001-06",
+          "part": "Part 001",
+          "en": "But researchers are finding that AI’s ability to parse human language, summarize text and verify claims could be harnessed to help people identify and understand fake news — and perhaps even one day assist in combating online misinformation in a large-scale, systematic way.",
+          "zh": "但研究人员正在发现，人工智能解析人类语言、概括文本并核实主张的能力，可以被利用来帮助人们识别和理解假新闻，甚至也许有一天还能以大规模、系统化的方式协助打击网络虚假信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Researchers are finding that AI’s ability could be harnessed."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to parse..., summarize... and verify... 是不定式并列结构，修饰 ability；to help people identify and understand fake news 表示 harnessed 的目的；and perhaps even one day assist... 与 help 并列，表示进一步用途。"
+            },
+            {
+              "label": "语法要点",
+              "text": "that 引导宾语从句；ability 后接多个并列不定式；could be harnessed 是情态动词被动结构。"
+            }
+          ],
+          "structure": "Researchers are finding that AI’s ability could be harnessed.",
+          "phrases": [
+            {
+              "term": "parse human language",
+              "zh": "解析人类语言",
+              "note": "parse 原指语法分析，在自然语言处理领域指分析语言结构和含义。"
+            },
+            {
+              "term": "summarize text",
+              "zh": "概括文本",
+              "note": "summarize 是动词，summary 是名词。"
+            },
+            {
+              "term": "verify claims",
+              "zh": "核实主张/说法",
+              "note": "claim 在新闻事实核查中常指有待验证的说法。"
+            },
+            {
+              "term": "be harnessed to do sth.",
+              "zh": "被利用来做某事",
+              "note": "harness 强调把某种力量或资源加以利用。"
+            },
+            {
+              "term": "large-scale, systematic way",
+              "zh": "大规模、系统化的方式",
+              "note": "两个形容词并列修饰 way。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "信息量大，且包含多重并列：parse/summarize/verify，identify/understand，以及 help/assist。阅读时要先找出 ability could be harnessed。六级偏难到考研入门。"
+          }
+        },
+        {
+          "label": "001-07",
+          "part": "Part 001",
+          "en": "In a world where online misinformation about current events has influenced elections and incited political violence, such tools could be invaluable for journalists, fact-checkers, social media companies and others who strive to rid the web of fake news.",
+          "zh": "在这样一个世界里，关于时事的网络虚假信息已经影响了选举并煽动了政治暴力；对于记者、事实核查人员、社交媒体公司以及其他努力清除网络假新闻的人来说，这类工具可能极其宝贵。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Such tools could be invaluable."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In a world where... 是地点/背景状语，其中 where 引导定语从句修饰 world；for journalists, fact-checkers... 表示受益对象；who strive to rid the web of fake news 是定语从句，修饰 others。"
+            },
+            {
+              "label": "语法要点",
+              "text": "where 定语从句可修饰抽象地点名词 world；has influenced and incited 是现在完成时并列谓语。"
+            }
+          ],
+          "structure": "Such tools could be invaluable.",
+          "phrases": [
+            {
+              "term": "current events",
+              "zh": "时事；当前事件",
+              "note": "常用于新闻和考试阅读语境。"
+            },
+            {
+              "term": "influence elections",
+              "zh": "影响选举",
+              "note": "influence 作动词，表示对结果或行为产生影响。"
+            },
+            {
+              "term": "incite political violence",
+              "zh": "煽动政治暴力",
+              "note": "incite 常用于负面行为，表示煽动、鼓动。"
+            },
+            {
+              "term": "invaluable",
+              "zh": "极有价值的",
+              "note": "注意不是“没有价值”，而是“价值极高”。"
+            },
+            {
+              "term": "strive to do sth.",
+              "zh": "努力做某事",
+              "note": "正式表达，相当于 try hard to do。"
+            },
+            {
+              "term": "rid A of B",
+              "zh": "使 A 摆脱/清除 B",
+              "note": "这里 rid the web of fake news 表示清除网络上的假新闻。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "长句但逻辑清楚：先交代背景，再说明工具价值。难点在 invaluable 的反直觉词义和 rid A of B 的固定结构。六级偏难。"
+          }
+        },
+        {
+          "label": "001-08",
+          "part": "Part 001",
+          "en": "It’s still early days, and experts stress that these methods — like all AI tools — should never be used without some level of human supervision.",
+          "zh": "现在还处于早期阶段，专家强调，这些方法和所有人工智能工具一样，绝不应在没有一定程度人工监督的情况下使用。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It’s still early days, and experts stress that these methods should never be used."
+            },
+            {
+              "label": "修饰成分",
+              "text": "like all AI tools 是插入性介词短语，补充说明 these methods 的类别；without some level of human supervision 是方式/条件状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "and 连接两个并列分句；that 引导 stress 的宾语从句；should never be used 是情态动词被动结构。"
+            }
+          ],
+          "structure": "It’s still early days, and experts stress that these methods should never be used.",
+          "phrases": [
+            {
+              "term": "early days",
+              "zh": "早期阶段；为时尚早",
+              "note": "口语和新闻中常见，表示某事尚未成熟。"
+            },
+            {
+              "term": "stress that",
+              "zh": "强调……",
+              "note": "stress 作动词，后接 that 从句。"
+            },
+            {
+              "term": "some level of",
+              "zh": "一定程度的",
+              "note": "用于表示不需要绝对充分，但至少要有某种程度。"
+            },
+            {
+              "term": "human supervision",
+              "zh": "人工监督；人类监管",
+              "note": "supervision 表示监督、监管、指导。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法中等，破折号插入语可能打断阅读节奏。核心观点是 AI 工具需要人工监督。六级中等。"
+          }
+        },
+        {
+          "label": "001-09",
+          "part": "Part 001",
+          "en": "But researchers also see AI as an important ally against fake and misleading news, even if it was AI that made the fake news in the first place.",
+          "zh": "但研究人员也把人工智能视为对抗虚假和误导性新闻的重要盟友，即使最初制造这些假新闻的正是人工智能。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Researchers also see AI as an important ally."
+            },
+            {
+              "label": "修饰成分",
+              "text": "against fake and misleading news 修饰 ally；even if... 引导让步状语从句；it was AI that made... 是强调句结构。"
+            },
+            {
+              "label": "语法要点",
+              "text": "see A as B 是宾语加宾补结构；强调句型 it was + 被强调部分 + that... 强调 AI。"
+            }
+          ],
+          "structure": "Researchers also see AI as an important ally.",
+          "phrases": [
+            {
+              "term": "see A as B",
+              "zh": "把 A 看作 B",
+              "note": "常用于表达观点、评价或定位。"
+            },
+            {
+              "term": "ally against",
+              "zh": "对抗……的盟友",
+              "note": "ally 可指人、组织，也可比喻为有帮助的工具。"
+            },
+            {
+              "term": "misleading news",
+              "zh": "误导性新闻",
+              "note": "misleading 指容易使人产生错误理解。"
+            },
+            {
+              "term": "even if",
+              "zh": "即使",
+              "note": "引导让步状语从句。"
+            },
+            {
+              "term": "in the first place",
+              "zh": "起初；一开始",
+              "note": "常用于追溯原因或最初情况。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子不长，但 even if 从句中包含强调句，容易误读。理解重点是作者指出 AI 既是问题来源，也可能是解决工具。六级中等偏难。"
+          }
+        },
+        {
+          "label": "001-10",
+          "part": "Part 001",
+          "en": "“We should fight fire with fire,” says Jevin West, an expert on misinformation and generative AI at the University of Washington.",
+          "zh": "华盛顿大学研究虚假信息和生成式人工智能的专家杰文·韦斯特说：“我们应该以其人之道还治其人之身。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "“We should fight fire with fire,” says Jevin West."
+            },
+            {
+              "label": "修饰成分",
+              "text": "an expert on misinformation and generative AI at the University of Washington 是 Jevin West 的同位语，补充身份信息。"
+            },
+            {
+              "label": "语法要点",
+              "text": "直接引语在前，says + 主语倒装或正常语序均可；同位语用于解释人物身份。"
+            }
+          ],
+          "structure": "“We should fight fire with fire,” says Jevin West.",
+          "phrases": [
+            {
+              "term": "fight fire with fire",
+              "zh": "以火攻火；以其人之道还治其人之身",
+              "note": "习语，指用与对方相同或相似的手段来应对问题。"
+            },
+            {
+              "term": "expert on",
+              "zh": "……方面的专家",
+              "note": "on 后接研究领域或议题。"
+            },
+            {
+              "term": "misinformation",
+              "zh": "虚假信息；错误信息",
+              "note": "通常指错误或不准确的信息，不一定强调故意。"
+            },
+            {
+              "term": "generative AI",
+              "zh": "生成式人工智能",
+              "note": "指能生成文本、图片、音频、视频等内容的 AI 系统。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法较简单，主要难点是习语 fight fire with fire 的意译，以及 generative AI 的科技词汇。六级中等。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 002",
+      "title": "002 · AI shows promise in the fight against fake news",
+      "navLabel": "002",
+      "description": "介绍机器学习、社交媒体平台和大型语言模型在事实核查中的基础作用。",
+      "items": [
+        {
+          "label": "002-11",
+          "part": "Part 002",
+          "en": "Machine learning, a type of AI where computers learn patterns in data to make predictions, has long been used to identify falsehoods.",
+          "zh": "机器学习是一种人工智能，在这种技术中，计算机通过学习数据中的模式来进行预测；长期以来，它一直被用于识别虚假信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Machine learning has long been used to identify falsehoods."
+            },
+            {
+              "label": "修饰成分",
+              "text": "a type of AI 是 Machine learning 的同位语；where computers learn patterns in data to make predictions 是定语从句，修饰 AI。"
+            },
+            {
+              "label": "语法要点",
+              "text": "同位语插入在主语后；where 可引导抽象地点类定语从句；has been used 是现在完成时被动结构。"
+            }
+          ],
+          "structure": "Machine learning has long been used to identify falsehoods.",
+          "phrases": [
+            {
+              "term": "machine learning",
+              "zh": "机器学习",
+              "note": "人工智能的一个分支，指系统从数据中学习模式并据此作出判断或预测。"
+            },
+            {
+              "term": "learn patterns in data",
+              "zh": "学习数据中的模式",
+              "note": "pattern 指规律、模式，是机器学习语境中的高频词。"
+            },
+            {
+              "term": "make predictions",
+              "zh": "作出预测",
+              "note": "prediction 是名词，predict 是动词。"
+            },
+            {
+              "term": "has long been used to",
+              "zh": "长期以来一直被用于……",
+              "note": "现在完成时被动语态，long 强调持续时间很久。"
+            },
+            {
+              "term": "falsehood",
+              "zh": "谬误；虚假陈述；不实信息",
+              "note": "正式词，常用于事实核查和法律语境。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子主干不难，但主语后有较长同位语和 where 定语从句。科技背景词 machine learning、patterns、predictions 是理解关键。六级中等。"
+          }
+        },
+        {
+          "label": "002-12",
+          "part": "Part 002",
+          "en": "This entailed giving computational models claims that have been verified true or false by human fact-checkers.",
+          "zh": "这意味着要把已经由人工事实核查人员判定为真或假的说法提供给计算模型。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This entailed giving computational models claims."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that have been verified true or false by human fact-checkers 是定语从句，修饰 claims。"
+            },
+            {
+              "label": "语法要点",
+              "text": "giving computational models claims 是双宾语结构：give sb./sth. sth.；that 从句中 have been verified 是现在完成时被动语态。"
+            }
+          ],
+          "structure": "This entailed giving computational models claims.",
+          "phrases": [
+            {
+              "term": "entail doing sth.",
+              "zh": "需要做某事；意味着做某事",
+              "note": "entail 后常接名词或动名词，语气正式。"
+            },
+            {
+              "term": "computational model",
+              "zh": "计算模型",
+              "note": "指用计算方法建立的模型，可用于分析、预测或分类。"
+            },
+            {
+              "term": "claim",
+              "zh": "说法；主张；声明",
+              "note": "在事实核查语境中，claim 通常指有待验证的陈述。"
+            },
+            {
+              "term": "verified true or false",
+              "zh": "被核实为真或假",
+              "note": "verified 是过去分词，表示已经被验证。"
+            },
+            {
+              "term": "human fact-checkers",
+              "zh": "人工事实核查人员",
+              "note": "human 用来区别自动化或 AI 系统。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较短，但 entail doing 和 give models claims 的双宾语结构可能造成理解障碍。整体六级中等。"
+          }
+        },
+        {
+          "label": "002-13",
+          "part": "Part 002",
+          "en": "The models determine the textual features, patterns and phrases that correlate with the likelihood of a statement being bogus — say, overuse of capital letters, exclamation points or emotionally charged language — and use these characteristics to sort new inputs into true and false categories.",
+          "zh": "这些模型会确定哪些文本特征、模式和短语与某个陈述为假的可能性相关，例如过度使用大写字母、感叹号或带有强烈情绪色彩的语言，然后利用这些特征把新的输入内容归入真或假的类别。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The models determine the textual features, patterns and phrases and use these characteristics."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that correlate with the likelihood... 是定语从句，修饰 features, patterns and phrases；of a statement being bogus 是 likelihood 的后置修饰；say... 是插入性举例；to sort new inputs into true and false categories 是目的状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "determine 和 use 是并列谓语；破折号中的 say 表示“比如说”；a statement being bogus 是动名词复合结构。"
+            }
+          ],
+          "structure": "The models determine the textual features, patterns and phrases and use these characteristics.",
+          "phrases": [
+            {
+              "term": "textual features",
+              "zh": "文本特征",
+              "note": "textual 表示与文本有关的，feature 指特征。"
+            },
+            {
+              "term": "correlate with",
+              "zh": "与……相关",
+              "note": "correlate 强调统计或规律上的相关性，不一定表示因果关系。"
+            },
+            {
+              "term": "likelihood",
+              "zh": "可能性",
+              "note": "常接 of，表示某事发生或为真的概率。"
+            },
+            {
+              "term": "bogus",
+              "zh": "假的；伪造的；不真实的",
+              "note": "较口语化，但新闻报道中也常见。"
+            },
+            {
+              "term": "emotionally charged language",
+              "zh": "带有强烈情绪色彩的语言",
+              "note": "charged 表示充满某种情绪或意味。"
+            },
+            {
+              "term": "sort A into B",
+              "zh": "把 A 分类到 B 中",
+              "note": "sort 在这里表示分类、归类。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "这是高密度长句，包含并列谓语、定语从句、插入例子和抽象名词结构。阅读时先抓 determine... and use...，再处理破折号内例子。六级偏难到考研入门。"
+          }
+        },
+        {
+          "label": "002-14",
+          "part": "Part 002",
+          "en": "When researchers trained one such model to identify tweets containing Covid-19-related misinformation during the pandemic, “we were actually pretty efficient,” says data scientist Zois Boukouvalas of American University, who coauthored a review on misinformation detection by machine learning in the Annual Review of Statistics and Its Application.",
+          "zh": "当研究人员训练这样一个模型来识别疫情期间含有新冠相关虚假信息的推文时，美利坚大学的数据科学家 Zois Boukouvalas 说：“我们的效率其实相当高。”他曾共同撰写一篇关于利用机器学习检测虚假信息的综述，发表在《统计及其应用年度评论》上。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "“We were actually pretty efficient,” says data scientist Zois Boukouvalas."
+            },
+            {
+              "label": "修饰成分",
+              "text": "When researchers trained... 是时间状语从句；to identify tweets... 是目的状语；containing Covid-19-related misinformation 修饰 tweets；of American University 修饰 Zois Boukouvalas，表示其所属机构为美利坚大学；who coauthored... 是非限制性定语从句，补充人物背景。"
+            },
+            {
+              "label": "语法要点",
+              "text": "直接引语作为主句内容前置；When 从句放句首；who 引导非限制性定语从句，逗号隔开。"
+            }
+          ],
+          "structure": "“We were actually pretty efficient,” says data scientist Zois Boukouvalas.",
+          "phrases": [
+            {
+              "term": "train a model",
+              "zh": "训练模型",
+              "note": "机器学习常用表达，指用数据使模型学习规律。"
+            },
+            {
+              "term": "one such model",
+              "zh": "这样一个模型",
+              "note": "such 指代前文提到的同类事物。"
+            },
+            {
+              "term": "identify tweets containing...",
+              "zh": "识别含有……的推文",
+              "note": "containing 是现在分词作后置定语。"
+            },
+            {
+              "term": "during the pandemic",
+              "zh": "在疫情期间",
+              "note": "pandemic 指全球性流行病，这里指新冠疫情。"
+            },
+            {
+              "term": "coauthor",
+              "zh": "共同撰写；合著",
+              "note": "既可作名词“合著者”，也可作动词。"
+            },
+            {
+              "term": "review",
+              "zh": "综述文章；评论",
+              "note": "学术语境中常指总结某领域研究进展的综述论文。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子很长，主要是人物身份和研究背景信息叠加。真正观点只有引语部分。阅读时可先跳过 who 从句，抓住研究情境和评价。六级偏难。"
+          }
+        },
+        {
+          "label": "002-15",
+          "part": "Part 002",
+          "en": "The program agreed with human fact-checkers roughly 90 percent of the time.",
+          "zh": "这个程序与人工事实核查人员的判断大约有 90% 的时间是一致的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The program agreed with human fact-checkers."
+            },
+            {
+              "label": "修饰成分",
+              "text": "roughly 90 percent of the time 是频率状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "简单句；agreed with 后接比较对象。"
+            }
+          ],
+          "structure": "The program agreed with human fact-checkers.",
+          "phrases": [
+            {
+              "term": "agree with",
+              "zh": "与……一致；同意……",
+              "note": "这里不是“赞同某人观点”，而是指判断结果一致。"
+            },
+            {
+              "term": "roughly",
+              "zh": "大约；大致",
+              "note": "表示估算，相当于 approximately。"
+            },
+            {
+              "term": "90 percent of the time",
+              "zh": "在 90% 的情况下",
+              "note": "of the time 表示发生频率。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句法和词汇都较简单。需要注意 agreed with 在此表示判断一致，而非情感上的同意。六级偏易。"
+          }
+        },
+        {
+          "label": "002-16",
+          "part": "Part 002",
+          "en": "But because machine learning models have typically been trained on well-curated datasets that tend to capture only particular time periods, topics or social media platforms, they don’t have the flexibility to be useful in real-world situations, says Dorsaf Sallami, an AI and information integrity researcher at McGill University and Mila, an AI research institute, in Montreal.",
+          "zh": "但是，麦吉尔大学和蒙特利尔人工智能研究机构 Mila 的人工智能与信息完整性研究员多尔萨夫·萨拉米表示，由于机器学习模型通常是在精心整理的数据集上训练的，而这些数据集往往只覆盖特定的时间段、主题或社交媒体平台，所以它们没有足够的灵活性，无法在现实世界的情境中发挥作用。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "They don’t have the flexibility."
+            },
+            {
+              "label": "修饰成分",
+              "text": "because machine learning models have typically been trained... 是原因状语从句；that tend to capture... 是定语从句，修饰 datasets；to be useful in real-world situations 修饰 flexibility；says Dorsaf Sallami 是新闻报道中的引用标记；后面的 an AI... researcher... 是同位语，说明人物身份。"
+            },
+            {
+              "label": "语法要点",
+              "text": "because 从句前置导致主句延后；have been trained 是现在完成时被动；多个地点和机构同位语叠加。"
+            }
+          ],
+          "structure": "They don’t have the flexibility.",
+          "phrases": [
+            {
+              "term": "typically",
+              "zh": "通常；一般来说",
+              "note": "用于概括常见情况。"
+            },
+            {
+              "term": "be trained on",
+              "zh": "基于……进行训练",
+              "note": "机器学习语境中，on 后接数据或数据集。"
+            },
+            {
+              "term": "well-curated datasets",
+              "zh": "精心整理的数据集",
+              "note": "curated 表示经过筛选、整理和维护的。"
+            },
+            {
+              "term": "tend to do sth.",
+              "zh": "往往会做某事；倾向于做某事",
+              "note": "表示一般倾向，而非绝对情况。"
+            },
+            {
+              "term": "capture",
+              "zh": "涵盖；捕捉；记录",
+              "note": "这里指数据集覆盖某些时间、主题或平台。"
+            },
+            {
+              "term": "real-world situations",
+              "zh": "现实世界的情境",
+              "note": "常与实验环境或理想数据集形成对比。"
+            },
+            {
+              "term": "information integrity",
+              "zh": "信息完整性；信息可信度维护",
+              "note": "指确保信息准确、可靠、不被操纵的研究或实践领域。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句是 002 中难度最高的句子之一。原因从句很长，主句 they don’t have the flexibility 容易被淹没。理解时先找 because... they... 的因果框架。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "002-17",
+          "part": "Part 002",
+          "en": "She and other researchers have turned to the large language models (LLMs) that power AI chatbots like ChatGPT, which are trained on massive amounts of public internet content, among other sources.",
+          "zh": "她和其他研究人员转而求助于大型语言模型，也就是为 ChatGPT 这类人工智能聊天机器人提供能力的模型；这些模型是在海量公共互联网内容以及其他来源的数据上训练出来的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "She and other researchers have turned to the large language models."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that power AI chatbots like ChatGPT 是定语从句，修饰 large language models；which are trained... 是非限制性定语从句，继续补充说明 LLMs。"
+            },
+            {
+              "label": "语法要点",
+              "text": "have turned to 是现在完成时；that 引导限制性定语从句；which 引导非限制性定语从句。"
+            }
+          ],
+          "structure": "She and other researchers have turned to the large language models.",
+          "phrases": [
+            {
+              "term": "turn to",
+              "zh": "转向；求助于",
+              "note": "可表示改变方法，也可表示向某人或某物寻求帮助。"
+            },
+            {
+              "term": "large language model (LLM)",
+              "zh": "大型语言模型",
+              "note": "驱动许多 AI 聊天机器人和文本生成系统的基础模型。"
+            },
+            {
+              "term": "power",
+              "zh": "为……提供动力/能力；驱动",
+              "note": "作动词时常用于技术语境，如 models power chatbots。"
+            },
+            {
+              "term": "massive amounts of",
+              "zh": "大量的；海量的",
+              "note": "amounts 修饰不可数名词或抽象数据量。"
+            },
+            {
+              "term": "among other sources",
+              "zh": "以及其他来源",
+              "note": "补充说明所列内容不是全部来源。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子结构层级清楚，但包含两个连续定语从句和 LLM 技术背景。注意 power 作动词的意思。六级中等偏难。"
+          }
+        },
+        {
+          "label": "002-18",
+          "part": "Part 002",
+          "en": "These LLMs analyze the relationships between words, phrases, concepts and contexts to build knowledge about language patterns and use that to generate new text.",
+          "zh": "这些大型语言模型会分析词语、短语、概念和语境之间的关系，从而建立关于语言模式的知识，并利用这些知识生成新的文本。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "These LLMs analyze the relationships and use that."
+            },
+            {
+              "label": "修饰成分",
+              "text": "between words, phrases, concepts and contexts 修饰 relationships；to build knowledge... 是目的状语；about language patterns 修饰 knowledge；to generate new text 是 use that 的目的。"
+            },
+            {
+              "label": "语法要点",
+              "text": "analyze 和 use 是并列谓语；that 指代前面的 knowledge about language patterns。"
+            }
+          ],
+          "structure": "These LLMs analyze the relationships and use that.",
+          "phrases": [
+            {
+              "term": "analyze the relationships between...",
+              "zh": "分析……之间的关系",
+              "note": "between 后可以连接多个并列名词。"
+            },
+            {
+              "term": "concept",
+              "zh": "概念",
+              "note": "抽象名词，常用于学术和科技文章。"
+            },
+            {
+              "term": "context",
+              "zh": "语境；背景",
+              "note": "语言学和阅读理解中高频词。"
+            },
+            {
+              "term": "language patterns",
+              "zh": "语言模式",
+              "note": "指词语、语法、语义搭配等规律。"
+            },
+            {
+              "term": "generate new text",
+              "zh": "生成新文本",
+              "note": "generate 是 AI 写作和生成式模型中的核心动词。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "语法不复杂，但抽象名词密集。理解重点是 LLM 的工作流程：分析关系，形成语言模式知识，再生成文本。六级中等。"
+          }
+        },
+        {
+          "label": "002-19",
+          "part": "Part 002",
+          "en": "Another advantage is that many newer LLMs have built-in ways to also analyze image- and audio-based data.",
+          "zh": "另一个优势是，许多较新的大型语言模型还内置了分析基于图像和音频的数据的方法。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Another advantage is that many newer LLMs have built-in ways."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to also analyze image- and audio-based data 是不定式短语，修饰 ways。"
+            },
+            {
+              "label": "语法要点",
+              "text": "that 引导表语从句；image- and audio-based 是并列复合形容词的省略写法。"
+            }
+          ],
+          "structure": "Another advantage is that many newer LLMs have built-in ways.",
+          "phrases": [
+            {
+              "term": "another advantage is that...",
+              "zh": "另一个优势是……",
+              "note": "常用于说明一项技术或方案的优点。"
+            },
+            {
+              "term": "built-in",
+              "zh": "内置的",
+              "note": "复合形容词，通常放在名词前。"
+            },
+            {
+              "term": "image-based data",
+              "zh": "基于图像的数据",
+              "note": "image- and audio-based data 是省略结构，完整理解为 image-based and audio-based data。"
+            },
+            {
+              "term": "audio-based data",
+              "zh": "基于音频的数据",
+              "note": "audio 表示音频，based 表示以……为基础。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较短，难点在 image- and audio-based 这种英文省略式复合形容词。六级中等偏易。"
+          }
+        },
+        {
+          "label": "002-20",
+          "part": "Part 002",
+          "en": "Thanks to their deep understanding of human language, LLMs can help with analyzing claims, says AI research scientist Thanh Thi Nguyen of the University of the Sunshine Coast in Australia.",
+          "zh": "澳大利亚阳光海岸大学的人工智能研究科学家 Thanh Thi Nguyen 表示，得益于它们对人类语言的深度理解，大型语言模型能够帮助分析各种说法。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "LLMs can help with analyzing claims."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Thanks to their deep understanding of human language 是原因状语；says AI research scientist... 是引用标记；of the University... 修饰人物身份。"
+            },
+            {
+              "label": "语法要点",
+              "text": "thanks to 短语置于句首；can help with doing 是情态动词加固定搭配；新闻报道中 says... 可放在句末。"
+            }
+          ],
+          "structure": "LLMs can help with analyzing claims.",
+          "phrases": [
+            {
+              "term": "thanks to",
+              "zh": "由于；多亏",
+              "note": "可表示正面原因，也可中性地表示原因。"
+            },
+            {
+              "term": "deep understanding of",
+              "zh": "对……的深入理解",
+              "note": "understanding 后常接 of 表示理解对象。"
+            },
+            {
+              "term": "help with doing sth.",
+              "zh": "帮助做某事",
+              "note": "with 后接名词或动名词。"
+            },
+            {
+              "term": "analyze claims",
+              "zh": "分析说法/主张",
+              "note": "在事实核查中，claim 指需要判断真伪的陈述。"
+            },
+            {
+              "term": "research scientist",
+              "zh": "研究科学家",
+              "note": "常用于高校、研究机构或企业研究岗位。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "结构相对清楚，重点在 thanks to 引出的原因关系和 help with doing 的搭配。六级中等。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 003",
+      "title": "003 · AI shows promise in the fight against fake news",
+      "navLabel": "003",
+      "description": "讨论 LLM 判断真假时依赖模式学习的机制，以及人们为何可能信任机器。",
+      "items": [
+        {
+          "label": "003-21",
+          "part": "Part 003",
+          "en": "Ask them whether something is true or not, and they reply based on the patterns they’ve learned from ingesting massive amounts of online information.",
+          "zh": "你问它们某件事是真是假，它们就会根据自己从海量网络信息中吸收并学到的模式作出回答。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Ask them whether something is true or not, and they reply."
+            },
+            {
+              "label": "修饰成分",
+              "text": "based on the patterns... 修饰 reply；they’ve learned from ingesting... 是定语从句，修饰 patterns；from ingesting... 表示学习模式的来源。"
+            },
+            {
+              "label": "语法要点",
+              "text": "祈使句 + and + 陈述句结构，表示“如果你……，它们就……”；whether 引导宾语从句。"
+            }
+          ],
+          "structure": "Ask them whether something is true or not, and they reply.",
+          "phrases": [
+            {
+              "term": "whether ... or not",
+              "zh": "是否……",
+              "note": "用于引导宾语从句，强调真假、是非两种可能。"
+            },
+            {
+              "term": "reply based on",
+              "zh": "基于……作出回答",
+              "note": "based on 是过去分词短语，说明回答依据。"
+            },
+            {
+              "term": "patterns",
+              "zh": "模式；规律",
+              "note": "AI 和机器学习语境中的核心词，指从数据中提取出的规律。"
+            },
+            {
+              "term": "ingest",
+              "zh": "摄取；吸收；导入",
+              "note": "在 AI 语境中常指模型吸收、处理大量数据。"
+            },
+            {
+              "term": "massive amounts of",
+              "zh": "海量的；大量的",
+              "note": "amounts of 常修饰不可数名词或数据量。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法看似口语化，但包含祈使句条件含义和多层后置修饰。难点在 ingest 的技术语义。六级中等。"
+          }
+        },
+        {
+          "label": "003-22",
+          "part": "Part 003",
+          "en": "But because they’re much more like language imitation machines than lie detectors, they can also produce false information, he says: When given ambiguous or insufficient information, they’re prone to confidently concocting their own misinformed responses in a process known as hallucination.",
+          "zh": "但他说，由于它们更像是语言模仿机器，而不是测谎仪，它们也可能生成虚假信息：当得到含糊或不充分的信息时，它们往往会自信地编造出错误回答，这一过程被称为“幻觉”。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "They can also produce false information."
+            },
+            {
+              "label": "修饰成分",
+              "text": "because they’re much more like... 是原因状语从句；he says 是插入性引述标记；冒号后解释 false information 的产生机制；When given... 是省略结构，相当于 when they are given...；known as hallucination 修饰 process。"
+            },
+            {
+              "label": "语法要点",
+              "text": "more like A than B 表示“与其说是 B，不如说更像 A”；when + 过去分词构成状语从句省略。"
+            }
+          ],
+          "structure": "They can also produce false information.",
+          "phrases": [
+            {
+              "term": "language imitation machines",
+              "zh": "语言模仿机器",
+              "note": "用比喻说明 LLM 本质上是在模仿语言模式，而不是直接判断真伪。"
+            },
+            {
+              "term": "lie detector",
+              "zh": "测谎仪",
+              "note": "这里比喻能判断真假的工具。"
+            },
+            {
+              "term": "ambiguous",
+              "zh": "含糊的；有歧义的",
+              "note": "常用于信息、表达、证据不清楚的情况。"
+            },
+            {
+              "term": "insufficient",
+              "zh": "不足的；不充分的",
+              "note": "正式词，反义词是 sufficient。"
+            },
+            {
+              "term": "be prone to doing sth.",
+              "zh": "容易做某事；倾向于做某事",
+              "note": "常用于负面倾向。"
+            },
+            {
+              "term": "concoct",
+              "zh": "编造；捏造",
+              "note": "带贬义，指凭空制造不真实内容。"
+            },
+            {
+              "term": "hallucination",
+              "zh": "幻觉；AI 幻觉",
+              "note": "AI 领域指模型生成看似可信但实际错误或无依据的信息。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "长句且信息密集，含原因从句、冒号解释、状语从句省略和术语 hallucination。理解时先抓住“LLM 不是测谎仪，所以会生成错误信息”。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "003-23",
+          "part": "Part 003",
+          "en": "In the context of misinformation, this issue partly arises because LLMs are not necessarily trained on the latest current events and not all can do live searches.",
+          "zh": "在虚假信息这一语境中，这个问题部分源于大型语言模型不一定接受过最新时事的训练，而且并非所有模型都能进行实时搜索。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This issue partly arises."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In the context of misinformation 是范围状语；because 引导原因状语从句，里面包含两个并列原因：LLMs are not necessarily trained... and not all can do live searches。"
+            },
+            {
+              "label": "语法要点",
+              "text": "not all 表示部分否定，意思是“并非所有”；trained on 后接训练数据或内容。"
+            }
+          ],
+          "structure": "This issue partly arises.",
+          "phrases": [
+            {
+              "term": "in the context of",
+              "zh": "在……背景下；就……而言",
+              "note": "用于限定讨论范围。"
+            },
+            {
+              "term": "partly arise because",
+              "zh": "部分源于……",
+              "note": "arise 表示问题、情况出现或产生。"
+            },
+            {
+              "term": "not necessarily",
+              "zh": "不一定",
+              "note": "表示并非必然如此，不等于 necessarily not。"
+            },
+            {
+              "term": "latest current events",
+              "zh": "最新时事",
+              "note": "current events 指当前发生的新闻事件。"
+            },
+            {
+              "term": "live searches",
+              "zh": "实时搜索",
+              "note": "指模型连接网络并检索最新信息的能力。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子长度适中，难点在部分否定 not all 和 not necessarily 的准确理解。六级中等。"
+          }
+        },
+        {
+          "label": "003-24",
+          "part": "Part 003",
+          "en": "The American public may not be fully comfortable with the facts presented by large language models — the technology underlying AI chatbots, assistants and summaries generated as part of web search results.",
+          "zh": "美国公众可能并不完全放心接受大型语言模型呈现的事实；大型语言模型正是支撑人工智能聊天机器人、助手以及网络搜索结果中生成式摘要的技术。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The American public may not be fully comfortable with the facts."
+            },
+            {
+              "label": "修饰成分",
+              "text": "presented by large language models 修饰 facts；破折号后 the technology... 是 large language models 的同位解释；underlying... 是现在分词短语，修饰 technology；generated as part of web search results 修饰 summaries。"
+            },
+            {
+              "label": "语法要点",
+              "text": "破折号引出解释说明；may not be fully 表示委婉的否定。"
+            }
+          ],
+          "structure": "The American public may not be fully comfortable with the facts.",
+          "phrases": [
+            {
+              "term": "the American public",
+              "zh": "美国公众",
+              "note": "public 作集合名词，指公众群体。"
+            },
+            {
+              "term": "be comfortable with",
+              "zh": "对……感到放心；接受……",
+              "note": "不只表示身体舒服，也可表示心理上接受。"
+            },
+            {
+              "term": "presented by",
+              "zh": "由……呈现的",
+              "note": "过去分词短语作后置定语，修饰 facts。"
+            },
+            {
+              "term": "underlying",
+              "zh": "构成基础的；底层的",
+              "note": "常用于说明某技术或现象背后的基础机制。"
+            },
+            {
+              "term": "web search results",
+              "zh": "网络搜索结果",
+              "note": "search results 指搜索引擎返回的信息列表或摘要。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句中破折号后的同位解释较长，容易打断主干。核心意思是公众对 LLM 提供的事实仍有疑虑。六级偏难。"
+          }
+        },
+        {
+          "label": "003-25",
+          "part": "Part 003",
+          "en": "A 2025 survey by the Pew Research Center, for instance, found that only about one in five US adults who have come across AI-generated web summaries say they find these extremely or very useful, and only 6 percent say they trust them a lot (though 48 percent have at least some trust in them).",
+          "zh": "例如，皮尤研究中心 2025 年的一项调查发现，在见过人工智能生成的网页摘要的美国成年人中，只有大约五分之一的人表示他们觉得这些摘要极其有用或非常有用，只有 6% 的人表示非常信任它们，不过有 48% 的人至少对它们有一定信任。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "A 2025 survey found that..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "by the Pew Research Center 修饰 survey；for instance 是插入语；that 引导宾语从句；who have come across... 是定语从句，修饰 US adults；though 48 percent... 是让步状语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "宾语从句内部有两个并列谓语 say... and say...；only about one in five 和 only 6 percent 构成数据对比。"
+            }
+          ],
+          "structure": "A 2025 survey found that...",
+          "phrases": [
+            {
+              "term": "survey",
+              "zh": "调查",
+              "note": "可作名词或动词，本文中为名词。"
+            },
+            {
+              "term": "for instance",
+              "zh": "例如",
+              "note": "用于引出例证，相当于 for example。"
+            },
+            {
+              "term": "one in five",
+              "zh": "五分之一",
+              "note": "表示比例，即 20%。"
+            },
+            {
+              "term": "come across",
+              "zh": "遇到；碰到",
+              "note": "常表示偶然看到或遇见。"
+            },
+            {
+              "term": "AI-generated web summaries",
+              "zh": "人工智能生成的网页摘要",
+              "note": "web summaries 指搜索或网页中给出的摘要内容。"
+            },
+            {
+              "term": "at least some trust",
+              "zh": "至少有一定信任",
+              "note": "some 在这里表示一定量、某种程度。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "长句主要难在数据、定语从句和让步括注同时出现。理解时抓住调查发现的两组低信任/低有用性数据。六级偏难。"
+          }
+        },
+        {
+          "label": "003-26",
+          "part": "Part 003",
+          "en": "Other research suggests that trust in AI is improving, however, at least among some groups.",
+          "zh": "不过，其他研究表明，至少在某些群体中，人们对人工智能的信任正在提高。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Other research suggests that trust in AI is improving."
+            },
+            {
+              "label": "修饰成分",
+              "text": "however 是转折插入语；at least among some groups 限定适用范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "that 引导宾语从句；is improving 是现在进行时，表示趋势变化。"
+            }
+          ],
+          "structure": "Other research suggests that trust in AI is improving.",
+          "phrases": [
+            {
+              "term": "suggest that",
+              "zh": "表明；显示",
+              "note": "学术写作中常表示研究结果暗示或证明某种趋势。"
+            },
+            {
+              "term": "trust in AI",
+              "zh": "对人工智能的信任",
+              "note": "trust 后接 in 表示对某人或某物的信任。"
+            },
+            {
+              "term": "improve",
+              "zh": "改善；提高",
+              "note": "这里指信任程度上升。"
+            },
+            {
+              "term": "at least among some groups",
+              "zh": "至少在某些群体中",
+              "note": "用于限制结论范围，避免过度概括。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子较短，逻辑功能是转折：从公众不完全信任转向某些群体信任增加。六级偏易。"
+          }
+        },
+        {
+          "label": "003-27",
+          "part": "Part 003",
+          "en": "In one study, 1,450 Republican participants scrolled through a simulated social media feed populated with posts featuring actual quotes from Donald Trump, including many containing misinformation.",
+          "zh": "在一项研究中，1450 名共和党籍受试者浏览了一个模拟的社交媒体信息流，其中填充着包含唐纳德·特朗普真实言论的帖子，而其中许多帖子含有虚假信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "1,450 Republican participants scrolled through a simulated social media feed."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In one study 是背景状语；populated with posts... 是过去分词短语，修饰 feed；featuring actual quotes... 修饰 posts；including many containing misinformation 补充说明 posts 中很多含有虚假信息。"
+            },
+            {
+              "label": "语法要点",
+              "text": "多个分词短语连续后置修饰，形成名词短语链。"
+            }
+          ],
+          "structure": "1,450 Republican participants scrolled through a simulated social media feed.",
+          "phrases": [
+            {
+              "term": "participant",
+              "zh": "参与者；受试者",
+              "note": "研究或实验语境中的常用词；此处指参与实验的 Republican 受试者。"
+            },
+            {
+              "term": "scroll through",
+              "zh": "滚动浏览",
+              "note": "常用于手机或网页界面。"
+            },
+            {
+              "term": "simulated",
+              "zh": "模拟的",
+              "note": "表示人为构造、仿真的实验环境。"
+            },
+            {
+              "term": "social media feed",
+              "zh": "社交媒体信息流",
+              "note": "feed 指平台连续推送的帖子流。"
+            },
+            {
+              "term": "populated with",
+              "zh": "填充有；布满",
+              "note": "常用于描述页面、数据库、列表中包含某些内容。"
+            },
+            {
+              "term": "featuring",
+              "zh": "以……为特色；包含",
+              "note": "现在分词作后置定语，修饰 posts。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子主干简单，但后置分词层层叠加。阅读时先抓实验动作：参与者浏览模拟信息流。六级偏难。"
+          }
+        },
+        {
+          "label": "003-28",
+          "part": "Part 003",
+          "en": "Participants were less likely to repost, comment on, or otherwise interact with the posts flagged as “false\" by an AI fact-checker than they were if posts were identified as misinformation by a human fact-checker or another user.",
+          "zh": "当帖子被人工智能事实核查器标记为“虚假”时，参与者转发、评论或以其他方式互动的可能性更低；相比之下，如果帖子是由人工事实核查员或其他用户认定为虚假信息，这种抑制作用反而较弱。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Participants were less likely to repost, comment on, or interact with the posts than they were..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "flagged as “false” by an AI fact-checker 是过去分词短语，修饰 posts；if posts were identified... 是条件状语从句，说明比较对象。"
+            },
+            {
+              "label": "语法要点",
+              "text": "less likely... than... 是比较结构；repost, comment on, interact with 三个动作并列；flagged as “false” by an AI fact-checker 与 identified as misinformation by a human fact-checker or another user 形成比较。"
+            }
+          ],
+          "structure": "Participants were less likely to repost, comment on, or interact with the posts than they were...",
+          "phrases": [
+            {
+              "term": "be less likely to do sth.",
+              "zh": "做某事的可能性更低",
+              "note": "常用于研究结果和概率比较。"
+            },
+            {
+              "term": "repost",
+              "zh": "转发；重新发布",
+              "note": "社交媒体语境高频词。"
+            },
+            {
+              "term": "interact with",
+              "zh": "与……互动",
+              "note": "可指点赞、评论、转发、点击等行为。"
+            },
+            {
+              "term": "flagged as",
+              "zh": "被标记为……",
+              "note": "flag 作动词表示标出、标记、提醒注意。"
+            },
+            {
+              "term": "identified as",
+              "zh": "被认定为……",
+              "note": "identify as 表示确认某物属于某类。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "比较结构较长，容易把 than they were if... 读乱。核心结论是：AI 标记比人类或用户标记更能降低互动意愿。六级偏难。"
+          }
+        },
+        {
+          "label": "003-29",
+          "part": "Part 003",
+          "en": "“AI has now become so normalized in our everyday experiences that I think the trust and credibility that a lot of people assign to it has probably increased,” says political scientist Isolde Hegemann at the London School of Economics and Political Science, who conducted the 2025 study, which has not yet been published.",
+          "zh": "伦敦政治经济学院的政治学家伊索尔德·黑格曼说：“人工智能如今在我们的日常体验中已经变得如此常态化，以至于我认为许多人赋予它的信任和可信度可能已经提高了。”她进行了这项 2025 年的研究，而该研究尚未发表。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "“AI has now become so normalized ... that ...,” says political scientist Isolde Hegemann."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that a lot of people assign to it 是定语从句，修饰 trust and credibility；who conducted the 2025 study 是非限制性定语从句，修饰 Hegemann；which has not yet been published 修饰 the 2025 study。"
+            },
+            {
+              "label": "语法要点",
+              "text": "直接引语中包含 so...that 结果结构；定语从句嵌套在宾语从句中；句末连续两个非限制性定语从句。"
+            }
+          ],
+          "structure": "“AI has now become so normalized ... that ...,” says political scientist Isolde Hegemann.",
+          "phrases": [
+            {
+              "term": "become normalized",
+              "zh": "变得常态化",
+              "note": "表示某事从新奇变为日常、普遍接受。"
+            },
+            {
+              "term": "everyday experiences",
+              "zh": "日常体验",
+              "note": "everyday 是形容词，表示日常的。"
+            },
+            {
+              "term": "so ... that ...",
+              "zh": "如此……以至于……",
+              "note": "结果状语从句结构。"
+            },
+            {
+              "term": "credibility",
+              "zh": "可信度；公信力",
+              "note": "常用于媒体、证据、机构或技术的可信程度。"
+            },
+            {
+              "term": "assign A to B",
+              "zh": "把 A 赋予 B",
+              "note": "这里 assign trust and credibility to it 表示人们把信任和可信度给 AI。"
+            },
+            {
+              "term": "has not yet been published",
+              "zh": "尚未发表",
+              "note": "现在完成时被动语态，yet 强调到目前为止尚未发生。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "长句且从句层级多。要先理解引语核心：AI 日常化可能提升信任。后半部分只是人物和研究发表状态补充。六级偏难到考研入门。"
+          }
+        },
+        {
+          "label": "003-30",
+          "part": "Part 003",
+          "en": "This notion aligns with a psychological phenomenon known as the machine heuristic, says Thomas Costello of Carnegie Mellon University, whose own research found that even people who said they didn’t trust AI were willing to reconsider their beliefs in conspiracy theories after conversing about them with chatbots.",
+          "zh": "卡内基梅隆大学的托马斯·科斯特洛说，这一观点与一种被称为“机器启发式”的心理现象相吻合；他自己的研究发现，即使是那些声称不信任人工智能的人，在与聊天机器人讨论阴谋论之后，也愿意重新考虑自己对这些阴谋论的信念。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This notion aligns with a psychological phenomenon."
+            },
+            {
+              "label": "修饰成分",
+              "text": "known as the machine heuristic 是过去分词短语，修饰 phenomenon；says Thomas Costello... 是引述标记；whose own research found that... 是非限制性定语从句，修饰 Thomas Costello；that 引导 found 的宾语从句；who said... 是定语从句，修饰 people；after conversing... 是时间状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "句子包含多层从句：whose 从句内又含 that 宾语从句和 who 定语从句。known as 表示“被称为”。"
+            }
+          ],
+          "structure": "This notion aligns with a psychological phenomenon.",
+          "phrases": [
+            {
+              "term": "notion",
+              "zh": "观点；看法；概念",
+              "note": "指前文提出的想法或判断。"
+            },
+            {
+              "term": "align with",
+              "zh": "与……一致；与……相符",
+              "note": "常用于观点、数据、理论之间的一致性。"
+            },
+            {
+              "term": "psychological phenomenon",
+              "zh": "心理现象",
+              "note": "phenomenon 单数，复数是 phenomena。"
+            },
+            {
+              "term": "heuristic",
+              "zh": "启发式方法；经验判断法",
+              "note": "心理学中指人们快速做判断时依赖的心理捷径。"
+            },
+            {
+              "term": "be willing to do sth.",
+              "zh": "愿意做某事",
+              "note": "表示意愿或开放态度。"
+            },
+            {
+              "term": "conspiracy theory",
+              "zh": "阴谋论",
+              "note": "指认为重大事件背后有秘密操纵的理论或信念。"
+            },
+            {
+              "term": "converse with",
+              "zh": "与……交谈",
+              "note": "正式表达，相当于 talk with。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "这是典型学术新闻长句，从句嵌套明显。阅读时可拆成两层：观点符合心理现象；研究发现人们会改变阴谋论信念。六级偏难到考研水平。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 004",
+      "title": "004 · AI shows promise in the fight against fake news",
+      "navLabel": "004",
+      "description": "分析“机器更客观”的心理预期、事实核查目标和语境依赖问题。",
+      "items": [
+        {
+          "label": "004-31",
+          "part": "Part 004",
+          "en": "“It’s the idea that people seem to trust machines to be more objective and fair and unbiased than humans.",
+          "zh": "“这种‘机器启发式’指的是这样一种想法：人们似乎认为机器比人类更客观、更公平，也更没有偏见。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It’s the idea."
+            },
+            {
+              "label": "修饰成分",
+              "text": "It 指上一句中的 the machine heuristic；that people seem to trust machines... 是同位语从句，解释 idea；to be more objective and fair and unbiased than humans 是宾语补足语，说明 people trust machines 具备的特征。"
+            },
+            {
+              "label": "语法要点",
+              "text": "trust + 宾语 + to be... 构成复合宾语；more... than... 表示比较。"
+            }
+          ],
+          "structure": "It’s the idea.",
+          "phrases": [
+            {
+              "term": "the idea that...",
+              "zh": "……这种想法",
+              "note": "that 引导同位语从句，解释 idea 的内容。"
+            },
+            {
+              "term": "seem to do sth.",
+              "zh": "似乎做某事",
+              "note": "用于表达观察到的倾向，而非绝对判断。"
+            },
+            {
+              "term": "objective",
+              "zh": "客观的",
+              "note": "指不受个人情绪或立场影响。"
+            },
+            {
+              "term": "fair",
+              "zh": "公平的",
+              "note": "与 biased/unbiased 常搭配讨论判断是否公正。"
+            },
+            {
+              "term": "unbiased",
+              "zh": "无偏见的",
+              "note": "前缀 un- 表示否定；biased 表示有偏见的。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "该句是直接引语的一部分，句法中等。难点在 trust machines to be... 的复合宾语结构。六级中等。"
+          }
+        },
+        {
+          "label": "004-32",
+          "part": "Part 004",
+          "en": "Who knows why that is?",
+          "zh": "谁知道这是为什么呢？",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Who knows?"
+            },
+            {
+              "label": "修饰成分",
+              "text": "why that is 是 knows 的宾语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "宾语从句中不用疑问倒装，that is 保持陈述语序。"
+            }
+          ],
+          "structure": "Who knows?",
+          "phrases": [
+            {
+              "term": "Who knows?",
+              "zh": "谁知道呢？",
+              "note": "常用于表示原因不明或不确定。"
+            },
+            {
+              "term": "why that is",
+              "zh": "为什么会这样",
+              "note": "why 引导宾语从句，语序为陈述语序。"
+            }
+          ],
+          "difficulty": 1,
+          "difficultyAnalysis": {
+            "difficulty_level": 1,
+            "difficulty_stars": "★☆☆☆☆",
+            "reason_cn": "短句，难度低。注意这是承接上一句的口语化反问。六级偏易。"
+          }
+        },
+        {
+          "label": "004-33",
+          "part": "Part 004",
+          "en": "Maybe we think that they don’t have any ulterior motive.”",
+          "zh": "也许我们认为机器没有任何不可告人的动机。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Maybe we think that they don’t have any ulterior motive."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that they don’t have... 是 think 的宾语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "they 指代上一句中的 machines；that 引导宾语从句。"
+            }
+          ],
+          "structure": "Maybe we think that they don’t have any ulterior motive.",
+          "phrases": [
+            {
+              "term": "maybe",
+              "zh": "也许；可能",
+              "note": "用于表达推测，语气较口语。"
+            },
+            {
+              "term": "ulterior motive",
+              "zh": "不可告人的动机；隐秘目的",
+              "note": "常用于怀疑某人表面行为背后另有目的。"
+            },
+            {
+              "term": "not have any",
+              "zh": "没有任何……",
+              "note": "否定句中 any 表示“任何”。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较短，难点集中在固定表达 ulterior motive。六级中等偏易。"
+          }
+        },
+        {
+          "label": "004-34",
+          "part": "Part 004",
+          "en": "To contend with this issue, Sallami has developed a fact-checking browser extension that enables an LLM to search the web for up-to-date information before generating an answer (in the same way as many publicly available chatbots, such as Grok).",
+          "zh": "为应对这一问题，萨拉米开发了一个事实核查浏览器扩展，使大型语言模型能够在生成答案之前搜索网络上的最新信息，方式与许多公开可用的聊天机器人相同，例如 Grok。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Sallami has developed a fact-checking browser extension."
+            },
+            {
+              "label": "修饰成分",
+              "text": "To contend with this issue 是目的状语；that enables an LLM... 是定语从句，修饰 extension；before generating an answer 是时间状语；括号中 in the same way... 补充说明方式。"
+            },
+            {
+              "label": "语法要点",
+              "text": "不定式短语置于句首表示目的；enable + 宾语 + to do；before 后接动名词。"
+            }
+          ],
+          "structure": "Sallami has developed a fact-checking browser extension.",
+          "phrases": [
+            {
+              "term": "contend with",
+              "zh": "应对；处理；与……作斗争",
+              "note": "通常指处理困难、挑战或问题。"
+            },
+            {
+              "term": "fact-checking",
+              "zh": "事实核查的",
+              "note": "复合形容词，修饰 browser extension。"
+            },
+            {
+              "term": "browser extension",
+              "zh": "浏览器扩展程序",
+              "note": "指安装在浏览器中增加功能的小程序。"
+            },
+            {
+              "term": "enable sb./sth. to do sth.",
+              "zh": "使……能够做某事",
+              "note": "常用于说明工具功能。"
+            },
+            {
+              "term": "up-to-date information",
+              "zh": "最新信息",
+              "note": "up-to-date 是复合形容词，表示及时更新的。"
+            },
+            {
+              "term": "publicly available",
+              "zh": "公开可用的",
+              "note": "指公众可以获取或使用。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长但层级清楚。难点在技术词 browser extension 和定语从句较长。六级偏难。"
+          }
+        },
+        {
+          "label": "004-35",
+          "part": "Part 004",
+          "en": "But this strategy isn’t bulletproof.",
+          "zh": "但这种策略并非万无一失。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This strategy isn’t bulletproof."
+            },
+            {
+              "label": "修饰成分",
+              "text": "But 表示与上一句的积极描述形成转折。"
+            },
+            {
+              "label": "语法要点",
+              "text": "简单句；isn’t 构成系表否定结构。"
+            }
+          ],
+          "structure": "This strategy isn’t bulletproof.",
+          "phrases": [
+            {
+              "term": "strategy",
+              "zh": "策略；方法",
+              "note": "指为实现目标而采用的方案。"
+            },
+            {
+              "term": "bulletproof",
+              "zh": "防弹的；万无一失的",
+              "note": "本义为防弹，引申为不会失败、没有漏洞。"
+            }
+          ],
+          "difficulty": 1,
+          "difficultyAnalysis": {
+            "difficulty_level": 1,
+            "difficulty_stars": "★☆☆☆☆",
+            "reason_cn": "句子很短，难点在 bulletproof 的引申义。六级偏易。"
+          }
+        },
+        {
+          "label": "004-36",
+          "part": "Part 004",
+          "en": "One preliminary study found that an early 2025 version of Grok, for instance, agreed with human fact-checkers only roughly 55 percent of the time when asked by users to verify claims.",
+          "zh": "一项初步研究发现，例如，2025 年初版本的 Grok 在用户要求其核实说法时，只有大约 55% 的情况下与人工事实核查人员的判断一致。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "One preliminary study found that an early 2025 version of Grok agreed with human fact-checkers."
+            },
+            {
+              "label": "修饰成分",
+              "text": "for instance 是插入语；only roughly 55 percent of the time 是频率状语；when asked by users to verify claims 是省略结构，补充发生条件。"
+            },
+            {
+              "label": "语法要点",
+              "text": "that 引导宾语从句；when asked 相当于 when it was asked；only 限定比例，强调准确性不高。"
+            }
+          ],
+          "structure": "One preliminary study found that an early 2025 version of Grok agreed with human fact-checkers.",
+          "phrases": [
+            {
+              "term": "preliminary study",
+              "zh": "初步研究",
+              "note": "表示研究结果尚处早期，可能需要进一步验证。"
+            },
+            {
+              "term": "for instance",
+              "zh": "例如",
+              "note": "插入语，用来举例。"
+            },
+            {
+              "term": "agree with",
+              "zh": "与……一致",
+              "note": "这里指判断结果一致。"
+            },
+            {
+              "term": "roughly 55 percent of the time",
+              "zh": "约 55% 的情况下",
+              "note": "of the time 表示频率。"
+            },
+            {
+              "term": "verify claims",
+              "zh": "核实说法",
+              "note": "claim 是需要验证的陈述或主张。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "数据句不算难，但需要理解省略结构 when asked by users。作者用 55% 说明该策略可靠性有限。六级中等。"
+          }
+        },
+        {
+          "label": "004-37",
+          "part": "Part 004",
+          "en": "Human fact-checkers agreed with other fact-checkers on the accuracy of claims 64 percent of the time — an illustration of just how challenging the task can be.",
+          "zh": "人工事实核查人员与其他事实核查人员在判断说法准确性上也只有 64% 的情况下达成一致，这说明这项任务本身有多么具有挑战性。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Human fact-checkers agreed with other fact-checkers."
+            },
+            {
+              "label": "修饰成分",
+              "text": "on the accuracy of claims 表示一致的方面；64 percent of the time 是频率状语；破折号后 an illustration... 是对前面数据的解释。"
+            },
+            {
+              "label": "语法要点",
+              "text": "破折号后的名词短语不是完整句，而是总结评价；how challenging the task can be 是宾语从句。"
+            }
+          ],
+          "structure": "Human fact-checkers agreed with other fact-checkers.",
+          "phrases": [
+            {
+              "term": "accuracy of claims",
+              "zh": "说法的准确性",
+              "note": "accuracy 指准确程度。"
+            },
+            {
+              "term": "64 percent of the time",
+              "zh": "64% 的情况下",
+              "note": "用于描述一致发生的频率。"
+            },
+            {
+              "term": "an illustration of",
+              "zh": "……的一个说明/例证",
+              "note": "illustration 不一定是图片，也可指例子或证明。"
+            },
+            {
+              "term": "challenging",
+              "zh": "具有挑战性的；困难的",
+              "note": "比 difficult 更强调需要能力和努力。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法中等，关键是理解数据的论证作用：即使人类之间一致率也有限，所以核查任务本身困难。六级中等。"
+          }
+        },
+        {
+          "label": "004-38",
+          "part": "Part 004",
+          "en": "Sallami points to one reason for current shortcomings in accuracy: LLMs often struggle when they’re given ambiguous information.",
+          "zh": "萨拉米指出了当前准确性不足的一个原因：大型语言模型在获得含糊信息时常常会表现吃力。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Sallami points to one reason."
+            },
+            {
+              "label": "修饰成分",
+              "text": "for current shortcomings in accuracy 修饰 reason；冒号后 LLMs often struggle... 解释这个原因；when they’re given ambiguous information 是时间/条件状语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "冒号用于引出解释；when 从句中 they 指 LLMs。"
+            }
+          ],
+          "structure": "Sallami points to one reason.",
+          "phrases": [
+            {
+              "term": "point to",
+              "zh": "指出；表明",
+              "note": "可指指向某个原因、证据或趋势。"
+            },
+            {
+              "term": "shortcoming",
+              "zh": "缺陷；不足",
+              "note": "常用于评价系统、方法或人的不足。"
+            },
+            {
+              "term": "accuracy",
+              "zh": "准确性",
+              "note": "事实核查和模型评估中的核心指标。"
+            },
+            {
+              "term": "struggle",
+              "zh": "吃力；难以应对",
+              "note": "作不及物动词，常接 with 或 when 从句。"
+            },
+            {
+              "term": "ambiguous information",
+              "zh": "含糊信息；有歧义的信息",
+              "note": "ambiguous 表示可作多种理解。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "结构清楚，冒号前后是“提出原因”和“具体原因”的关系。词汇 shortcomings、ambiguous 稍有难度。六级中等。"
+          }
+        },
+        {
+          "label": "004-39",
+          "part": "Part 004",
+          "en": "So they might flounder when they find contradictory evidence on the web, or misinterpret the evidence if the context for a claim isn’t clear.",
+          "zh": "因此，当它们在网上发现相互矛盾的证据时，可能会不知所措；如果某个说法的语境不清楚，它们也可能误解证据。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "They might flounder, or misinterpret the evidence."
+            },
+            {
+              "label": "修饰成分",
+              "text": "when they find contradictory evidence on the web 是时间状语从句；if the context for a claim isn’t clear 是条件状语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "might 表示可能性；flounder 和 misinterpret 是并列谓语，分别对应 when 和 if 两种情况。"
+            }
+          ],
+          "structure": "They might flounder, or misinterpret the evidence.",
+          "phrases": [
+            {
+              "term": "flounder",
+              "zh": "挣扎；不知所措；表现吃力",
+              "note": "比 struggle 更形象，指面对困难时笨拙或无效地应对。"
+            },
+            {
+              "term": "contradictory evidence",
+              "zh": "相互矛盾的证据",
+              "note": "contradictory 表示彼此冲突、相互否定。"
+            },
+            {
+              "term": "misinterpret",
+              "zh": "误解；错误解读",
+              "note": "前缀 mis- 表示错误地。"
+            },
+            {
+              "term": "context for a claim",
+              "zh": "某个说法的语境",
+              "note": "context 决定 claim 是否准确或适用。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "句子逻辑清晰，但 flounder 和 contradictory 属于较高级词汇。重点理解两个问题来源：证据冲突和语境不清。六级中等偏难。"
+          }
+        },
+        {
+          "label": "004-40",
+          "part": "Part 004",
+          "en": "The statement “Mark Carney is prime minister,” for example, is true only in Canada.",
+          "zh": "例如，“马克·卡尼是总理”这一说法只有在加拿大才是真的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The statement is true."
+            },
+            {
+              "label": "修饰成分",
+              "text": "“Mark Carney is prime minister” 是 statement 的同位内容；for example 是插入语；only in Canada 限定 true 的适用范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "引号中的完整句作 statement 的内容；only 的位置影响语义范围。"
+            }
+          ],
+          "structure": "The statement is true.",
+          "phrases": [
+            {
+              "term": "statement",
+              "zh": "陈述；说法",
+              "note": "在事实核查中常指可判断真假的句子。"
+            },
+            {
+              "term": "for example",
+              "zh": "例如",
+              "note": "用于引出具体例子。"
+            },
+            {
+              "term": "prime minister",
+              "zh": "总理；首相",
+              "note": "不同国家政治制度中对应译法可能不同。"
+            },
+            {
+              "term": "only in Canada",
+              "zh": "只在加拿大",
+              "note": "only 限定事实成立的范围。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子本身简单，但用于说明事实判断依赖语境。难点在理解“同一句话在不同国家语境下真假不同”。六级中等偏易。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 005",
+      "title": "005 · AI shows promise in the fight against fake news",
+      "navLabel": "005",
+      "description": "呈现 AmbiFC 和社媒内容分析项目，说明 AI 如何处理模糊声明与多模态线索。",
+      "items": [
+        {
+          "label": "005-41",
+          "part": "Part 005",
+          "en": "Instead of forcing her model to immediately produce an answer as to whether a claim is correct or not, she’s training it to recognize when a claim is ambiguous and to ask the user for more information.",
+          "zh": "她没有强迫自己的模型立即判断某个说法是否正确，而是在训练它识别某个说法何时含糊不清，并向用户询问更多信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "She’s training it to recognize... and to ask..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Instead of forcing... 是对比状语；as to whether a claim is correct or not 修饰 answer；when a claim is ambiguous 是 recognize 的宾语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "instead of 引出被放弃的做法；to recognize 和 to ask 是并列不定式，说明训练目标。"
+            }
+          ],
+          "structure": "She’s training it to recognize... and to ask...",
+          "phrases": [
+            {
+              "term": "instead of doing sth.",
+              "zh": "不是做某事；而不是做某事",
+              "note": "后接名词或动名词。"
+            },
+            {
+              "term": "force sb./sth. to do sth.",
+              "zh": "迫使……做某事",
+              "note": "这里指让模型必须立即输出答案。"
+            },
+            {
+              "term": "as to whether",
+              "zh": "关于是否……",
+              "note": "正式表达，用来引出疑问内容。"
+            },
+            {
+              "term": "ambiguous",
+              "zh": "含糊的；有歧义的",
+              "note": "指信息或说法缺少明确语境。"
+            },
+            {
+              "term": "ask the user for more information",
+              "zh": "向用户询问更多信息",
+              "note": "ask sb. for sth. 表示向某人请求某物。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长但逻辑很清楚：不是立即回答，而是先判断是否含糊并追问信息。难点在 as to whether 和并列不定式。六级偏难。"
+          }
+        },
+        {
+          "label": "005-42",
+          "part": "Part 005",
+          "en": "Some developers explicitly instruct their LLMs to state when there is insufficient evidence to back up a claim, says Lademi Aborisade, an investigative journalist at the Nigerian nonprofit Center for Journalism Innovation and Development.",
+          "zh": "尼日利亚非营利组织“新闻创新与发展中心”的调查记者拉德米·阿博里萨德说，一些开发者会明确指示他们的大型语言模型，在没有足够证据支持某个说法时说明这一点。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Some developers explicitly instruct their LLMs to state..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "when there is insufficient evidence... 是 state 的宾语从句；to back up a claim 修饰 evidence；says Lademi Aborisade 是引述标记；an investigative journalist... 是同位语，说明人物身份。"
+            },
+            {
+              "label": "语法要点",
+              "text": "instruct + 宾语 + to do；there be 结构表示存在；句末同位语较长。"
+            }
+          ],
+          "structure": "Some developers explicitly instruct their LLMs to state...",
+          "phrases": [
+            {
+              "term": "explicitly",
+              "zh": "明确地；清楚地",
+              "note": "强调指令或表达不是含蓄的。"
+            },
+            {
+              "term": "instruct sb./sth. to do sth.",
+              "zh": "指示……做某事",
+              "note": "常用于命令、程序、模型提示等语境。"
+            },
+            {
+              "term": "insufficient evidence",
+              "zh": "证据不足",
+              "note": "insufficient 是正式词，表示不充分。"
+            },
+            {
+              "term": "back up a claim",
+              "zh": "支持某个说法",
+              "note": "back up 在这里表示用证据支撑。"
+            },
+            {
+              "term": "investigative journalist",
+              "zh": "调查记者",
+              "note": "指从事深度调查报道的记者。"
+            },
+            {
+              "term": "nonprofit",
+              "zh": "非营利组织",
+              "note": "可作名词或形容词。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "主干不难，但引用标记和人物身份拉长句子。核心做法是让 LLM 在证据不足时承认不足。六级中等偏难。"
+          }
+        },
+        {
+          "label": "005-43",
+          "part": "Part 005",
+          "en": "In 2024, the organization launched the Dubawa fact-checking bot, an LLM-based tool people can message on WhatsApp that cross-checks claims with articles from reputable media sources.",
+          "zh": "2024 年，该组织推出了 Dubawa 事实核查机器人，这是一个基于大型语言模型的工具，人们可以在 WhatsApp 上给它发消息；它会用可靠媒体来源的文章来核对这些说法。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The organization launched the Dubawa fact-checking bot."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In 2024 是时间状语；an LLM-based tool... 是 bot 的同位语；people can message on WhatsApp 是省略了 that/which 的定语从句，修饰 tool；that cross-checks... 也是定语从句，修饰 tool。"
+            },
+            {
+              "label": "语法要点",
+              "text": "同位语解释产品性质；tool 后连续接两个定语从句，分别说明用户如何使用它，以及它如何核查 claims。"
+            }
+          ],
+          "structure": "The organization launched the Dubawa fact-checking bot.",
+          "phrases": [
+            {
+              "term": "launch",
+              "zh": "推出；发布",
+              "note": "常用于产品、项目或服务上线。"
+            },
+            {
+              "term": "fact-checking bot",
+              "zh": "事实核查机器人",
+              "note": "bot 指自动化程序或聊天机器人。"
+            },
+            {
+              "term": "LLM-based",
+              "zh": "基于大型语言模型的",
+              "note": "复合形容词，说明工具的技术基础。"
+            },
+            {
+              "term": "message",
+              "zh": "给……发消息",
+              "note": "message 可作动词，尤其用于社交软件语境。"
+            },
+            {
+              "term": "cross-check",
+              "zh": "交叉核对；多方核查",
+              "note": "指用另一个来源或多种来源来验证某个说法是否可靠。"
+            },
+            {
+              "term": "reputable media sources",
+              "zh": "可靠的媒体来源",
+              "note": "reputable 指有良好声誉、可信的。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句法核心简单，但 tool 后修饰较多。注意 message 作动词，以及 cross-checks claims with articles 的工具功能。六级偏难。"
+          }
+        },
+        {
+          "label": "005-44",
+          "part": "Part 005",
+          "en": "If there’s no available information, “the bot lets you know that there is insufficient evidence for the claim” rather than attempting a response, she says.",
+          "zh": "她说，如果没有可用信息，“这个机器人会让你知道该说法证据不足”，而不是试图给出回答。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The bot lets you know..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "If there’s no available information 是条件状语从句；that there is insufficient evidence... 是 know 的宾语从句；rather than attempting a response 说明 bot 选择告知证据不足，而不是硬给答案；she says 是引述标记。"
+            },
+            {
+              "label": "语法要点",
+              "text": "if 引导条件；rather than 后接动名词，并与 lets you know 形成行为对比；引号中的句子是直接引语。"
+            }
+          ],
+          "structure": "The bot lets you know...",
+          "phrases": [
+            {
+              "term": "available information",
+              "zh": "可用信息",
+              "note": "available 表示可获得、可使用。"
+            },
+            {
+              "term": "let sb. know",
+              "zh": "告知某人",
+              "note": "口语和书面语都常用。"
+            },
+            {
+              "term": "insufficient evidence for",
+              "zh": "支持……的证据不足",
+              "note": "for 后接需要证据支撑的对象。"
+            },
+            {
+              "term": "rather than doing sth.",
+              "zh": "而不是做某事",
+              "note": "用来对比实际选择和被避免的做法。"
+            },
+            {
+              "term": "attempt a response",
+              "zh": "尝试作答",
+              "note": "attempt 作动词，表示试图完成某事。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子逻辑清楚，关键是 rather than 对比“承认证据不足”和“硬答”。六级中等。"
+          }
+        },
+        {
+          "label": "005-45",
+          "part": "Part 005",
+          "en": "In such cases, Aborisade and her colleagues can then thoroughly investigate claims and publish their findings online.",
+          "zh": "在这种情况下，阿博里萨德和她的同事随后可以彻底调查这些说法，并在线发布他们的发现。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Aborisade and her colleagues can investigate claims and publish their findings."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In such cases 是条件/情境状语；then 表示时间顺序；thoroughly 修饰 investigate；online 修饰 publish。"
+            },
+            {
+              "label": "语法要点",
+              "text": "investigate 和 publish 是并列谓语，共用情态动词 can。"
+            }
+          ],
+          "structure": "Aborisade and her colleagues can investigate claims and publish their findings.",
+          "phrases": [
+            {
+              "term": "in such cases",
+              "zh": "在这种情况下",
+              "note": "用于承接上一句提到的场景。"
+            },
+            {
+              "term": "thoroughly",
+              "zh": "彻底地；全面地",
+              "note": "强调调查细致、完整。"
+            },
+            {
+              "term": "investigate claims",
+              "zh": "调查各种说法",
+              "note": "investigate 常用于新闻、法律和研究语境。"
+            },
+            {
+              "term": "publish findings",
+              "zh": "发表调查结果",
+              "note": "findings 指研究或调查所得结论。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子较简单，体现 AI 工具与人工调查之间的衔接。词汇 findings 值得注意。六级偏易。"
+          }
+        },
+        {
+          "label": "005-46",
+          "part": "Part 005",
+          "en": "Other groups are using LLMs to analyze claims not for what is being said, but for how it is said.",
+          "zh": "其他团队正在使用大型语言模型分析各种说法，不过他们关注的不是说了什么，而是这些话是如何说出来的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Other groups are using LLMs to analyze claims."
+            },
+            {
+              "label": "修饰成分",
+              "text": "not for what is being said, but for how it is said 是目的/角度状语，说明分析重点。"
+            },
+            {
+              "label": "语法要点",
+              "text": "not...but... 构成对比结构；what 和 how 分别引导名词性从句。"
+            }
+          ],
+          "structure": "Other groups are using LLMs to analyze claims.",
+          "phrases": [
+            {
+              "term": "not for..., but for...",
+              "zh": "不是为了/针对……，而是为了/针对……",
+              "note": "用于强调关注点或目的的转移。"
+            },
+            {
+              "term": "what is being said",
+              "zh": "所说的内容",
+              "note": "现在进行时被动，强调正在被表达的内容。"
+            },
+            {
+              "term": "how it is said",
+              "zh": "表达方式；如何说",
+              "note": "指语气、措辞、修辞策略等。"
+            },
+            {
+              "term": "analyze claims",
+              "zh": "分析说法",
+              "note": "claim 在此指需要判断或研究的陈述。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子不长，但抽象对比很重要：内容真实性之外，还可分析语言表达方式。六级中等。"
+          }
+        },
+        {
+          "label": "005-47",
+          "part": "Part 005",
+          "en": "A project called AI4Trust, a collaboration funded by 15 European research institutions, developed such AI-based tools to fight disinformation — misinformation that is deliberately created and spread.",
+          "zh": "一个名为 AI4Trust 的项目开发了这类基于人工智能的工具，用来打击虚假宣传；这是一个由 15 家欧洲研究机构资助的合作项目。这里的虚假宣传指的是被故意制造和传播的错误信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "A project called AI4Trust developed such AI-based tools."
+            },
+            {
+              "label": "修饰成分",
+              "text": "a collaboration funded by... 是 AI4Trust 的同位语，说明项目性质和资金来源；to fight disinformation 是目的状语；破折号后 misinformation that... 解释 disinformation 的含义。"
+            },
+            {
+              "label": "语法要点",
+              "text": "called 和 funded by 都是过去分词作定语；that is deliberately created and spread 是定语从句。"
+            }
+          ],
+          "structure": "A project called AI4Trust developed such AI-based tools.",
+          "phrases": [
+            {
+              "term": "a project called...",
+              "zh": "一个名为……的项目",
+              "note": "called 作过去分词，修饰 project。"
+            },
+            {
+              "term": "collaboration",
+              "zh": "合作项目；协作",
+              "note": "这里指多个机构共同参与的项目。"
+            },
+            {
+              "term": "funded by",
+              "zh": "由……资助",
+              "note": "过去分词短语作后置定语。"
+            },
+            {
+              "term": "AI-based tools",
+              "zh": "基于人工智能的工具",
+              "note": "复合形容词 AI-based 修饰 tools。"
+            },
+            {
+              "term": "disinformation",
+              "zh": "虚假宣传；故意制造和传播的虚假信息",
+              "note": "强调信息的制造或传播具有故意性，与不一定故意的 misinformation 不完全相同。"
+            },
+            {
+              "term": "deliberately",
+              "zh": "故意地；有意地",
+              "note": "用于强调行为是有意为之。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "本句难点在 disinformation 与 misinformation 的概念区分，以及同位语和破折号解释。六级偏难。"
+          }
+        },
+        {
+          "label": "005-48",
+          "part": "Part 005",
+          "en": "Its platform includes video and audio analysis tools that look for signs of tampering or being AI-generated.",
+          "zh": "该平台包含视频和音频分析工具，用来寻找内容被篡改或由人工智能生成的迹象。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Its platform includes video and audio analysis tools."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that look for signs... 是定语从句，修饰 tools；of tampering or being AI-generated 修饰 signs，表示寻找“内容被篡改或由 AI 生成”的迹象。"
+            },
+            {
+              "label": "语法要点",
+              "text": "look for signs of 后接两个并列对象：tampering 和 being AI-generated；being AI-generated 是动名词的被动形式。"
+            }
+          ],
+          "structure": "Its platform includes video and audio analysis tools.",
+          "phrases": [
+            {
+              "term": "platform",
+              "zh": "平台",
+              "note": "可指软件系统、服务平台或技术平台。"
+            },
+            {
+              "term": "analysis tools",
+              "zh": "分析工具",
+              "note": "用于检测、识别或评估数据。"
+            },
+            {
+              "term": "look for signs of",
+              "zh": "寻找……的迹象",
+              "note": "signs of 后接名词或动名词。"
+            },
+            {
+              "term": "tampering",
+              "zh": "篡改；做手脚",
+              "note": "常用于文件、证据、图像、音频或系统被非法修改的情况。"
+            },
+            {
+              "term": "being AI-generated",
+              "zh": "由人工智能生成",
+              "note": "being + 过去分词构成动名词被动形式。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "结构清楚，难点是 tampering 和 being AI-generated 这两个检测对象。六级中等。"
+          }
+        },
+        {
+          "label": "005-49",
+          "part": "Part 005",
+          "en": "For one tool, experts prompted an LLM to sniff out 42 common characteristics of disinformation, such as alluding to a secret group of conspirators or using emotionally manipulative language.",
+          "zh": "对于其中一个工具，专家向一个大型语言模型输入指令，让它识别虚假宣传的 42 个常见特征，例如影射存在一个秘密阴谋集团，或使用操纵情绪的语言。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Experts prompted an LLM to sniff out 42 common characteristics."
+            },
+            {
+              "label": "修饰成分",
+              "text": "For one tool 是范围状语；of disinformation 修饰 characteristics；such as... 引出例子，alluding 和 using 是并列动名词短语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "prompt + 宾语 + to do 表示“指令某对象去做”；such as 后接并列动名词结构。"
+            }
+          ],
+          "structure": "Experts prompted an LLM to sniff out 42 common characteristics.",
+          "phrases": [
+            {
+              "term": "prompt an LLM to do sth.",
+              "zh": "向大型语言模型输入提示/指令，让它做某事",
+              "note": "prompt 在 AI 语境中作动词，指通过提示词或指令引导模型完成任务。"
+            },
+            {
+              "term": "sniff out",
+              "zh": "查出；揪出；识别出",
+              "note": "非正式表达，这里指让模型识别不易察觉的虚假宣传特征。"
+            },
+            {
+              "term": "characteristics",
+              "zh": "特征；特点",
+              "note": "常用于描述可识别的属性。"
+            },
+            {
+              "term": "allude to",
+              "zh": "暗指；影射",
+              "note": "比 refer to 更含蓄。"
+            },
+            {
+              "term": "conspirators",
+              "zh": "阴谋者；共谋者",
+              "note": "与 conspiracy theory 同源。"
+            },
+            {
+              "term": "emotionally manipulative language",
+              "zh": "操纵情绪的语言",
+              "note": "指故意激发恐惧、愤怒等情绪以影响判断的表达。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子信息量较大，词汇 sniff out、alluding、conspirators 较难。结构上重点把 examples 与 characteristics 对应起来。六级偏难。"
+          }
+        },
+        {
+          "label": "005-50",
+          "part": "Part 005",
+          "en": "“We give very detailed instructions on what we want to detect in the text,” says Georgios Petasis of Demokritos, the National Center for Scientific Research in Greece, who led the project’s text content analysis.",
+          "zh": "希腊国家科学研究中心 Demokritos 的乔治奥斯·佩塔西斯说：“我们会给出非常详细的指令，说明希望在文本中检测什么。”他负责该项目的文本内容分析。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "“We give very detailed instructions,” says Georgios Petasis."
+            },
+            {
+              "label": "修饰成分",
+              "text": "on what we want to detect in the text 修饰 instructions；of Demokritos... 修饰人物所属机构；the National Center... 是 Demokritos 的同位语；who led... 是非限制性定语从句，补充人物职责。"
+            },
+            {
+              "label": "语法要点",
+              "text": "what 引导宾语从句，作介词 on 的宾语；who 引导非限制性定语从句。"
+            }
+          ],
+          "structure": "“We give very detailed instructions,” says Georgios Petasis.",
+          "phrases": [
+            {
+              "term": "detailed instructions",
+              "zh": "详细指令",
+              "note": "在 AI 提示语和实验设计中常见。"
+            },
+            {
+              "term": "detect",
+              "zh": "检测；发现",
+              "note": "常用于技术系统识别某种信号、风险或特征。"
+            },
+            {
+              "term": "text content analysis",
+              "zh": "文本内容分析",
+              "note": "指分析文本中的主题、语气、特征或模式。"
+            },
+            {
+              "term": "lead",
+              "zh": "领导；负责",
+              "note": "led 是 lead 的过去式。"
+            },
+            {
+              "term": "National Center for Scientific Research",
+              "zh": "国家科学研究中心",
+              "note": "机构名称，作为 Demokritos 的解释说明。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子不算特别难，但人名、机构名和同位语较多。核心是他们通过详细指令让模型识别文本特征。六级中等偏难。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 006",
+      "title": "006 · AI shows promise in the fight against fake news",
+      "navLabel": "006",
+      "description": "比较 LLM 与人工事实核查员，并讨论平台使用自动化工具时的透明度问题。",
+      "items": [
+        {
+          "label": "006-51",
+          "part": "Part 006",
+          "en": "When compared with human fact-checkers, the LLM was in agreement 70 percent of the time.",
+          "zh": "与人工事实核查人员的判断相比，这个大型语言模型有 70% 的情况下与他们一致。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The LLM was in agreement."
+            },
+            {
+              "label": "修饰成分",
+              "text": "When compared with human fact-checkers 是时间/条件状语；70 percent of the time 是频率状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "when + 过去分词是省略结构；be in agreement 表示结果一致。"
+            }
+          ],
+          "structure": "The LLM was in agreement.",
+          "phrases": [
+            {
+              "term": "when compared with",
+              "zh": "当与……比较时",
+              "note": "这是状语从句的省略形式，完整结构可理解为 when it was compared with..."
+            },
+            {
+              "term": "human fact-checkers",
+              "zh": "人工事实核查人员",
+              "note": "human 用来区别 AI 或自动化系统。"
+            },
+            {
+              "term": "be in agreement",
+              "zh": "一致；意见相同",
+              "note": "这里指判断结果一致，不一定是主动同意某观点。"
+            },
+            {
+              "term": "70 percent of the time",
+              "zh": "70% 的情况下",
+              "note": "of the time 表示某种情况发生的频率。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较短，难点在 when compared with 的省略结构和 be in agreement 的表达。六级中等偏易。"
+          }
+        },
+        {
+          "label": "006-52",
+          "part": "Part 006",
+          "en": "That’s enough to help journalists and fact-checkers flag suspicious claims that may be worth investigating further, says Petasis.",
+          "zh": "佩塔西斯说，这已经足以帮助记者和事实核查人员标记出可疑说法，而这些说法可能值得进一步调查。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "That’s enough."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to help journalists and fact-checkers flag suspicious claims 是结果/程度补足；that may be worth investigating further 是定语从句，修饰 suspicious claims；says Petasis 是引述标记。"
+            },
+            {
+              "label": "语法要点",
+              "text": "help + 宾语 + 动词原形；worth 后接 investigating；that 指代前一句 70% 一致率。"
+            }
+          ],
+          "structure": "That’s enough.",
+          "phrases": [
+            {
+              "term": "be enough to do sth.",
+              "zh": "足以做某事",
+              "note": "表示达到某个最低有效程度。"
+            },
+            {
+              "term": "flag",
+              "zh": "标记；提醒注意",
+              "note": "作动词时表示把某事标出来，提示需要关注或处理。"
+            },
+            {
+              "term": "suspicious claims",
+              "zh": "可疑说法",
+              "note": "suspicious 表示可疑的、值得怀疑的。"
+            },
+            {
+              "term": "be worth doing",
+              "zh": "值得做某事",
+              "note": "worth 后接动名词。"
+            },
+            {
+              "term": "investigate further",
+              "zh": "进一步调查",
+              "note": "further 作副词，表示更进一步。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "结构不复杂，但 that 的指代和 flag 的动词含义需要注意。核心意思是准确率不完美，但足够用于初筛。六级中等。"
+          }
+        },
+        {
+          "label": "006-53",
+          "part": "Part 006",
+          "en": "Experts suspect that social media companies already use LLMs to detect misinformation.",
+          "zh": "专家推测，社交媒体公司已经在使用大型语言模型来检测虚假信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Experts suspect that social media companies already use LLMs."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to detect misinformation 是目的状语，说明使用 LLMs 的目的。"
+            },
+            {
+              "label": "语法要点",
+              "text": "that 引导 suspect 的宾语从句；already 表示动作可能已经在进行。"
+            }
+          ],
+          "structure": "Experts suspect that social media companies already use LLMs.",
+          "phrases": [
+            {
+              "term": "suspect that",
+              "zh": "推测；认为可能",
+              "note": "这里不是负面意义的“怀疑有罪”，而是表示专家认为某事可能已经发生。"
+            },
+            {
+              "term": "social media companies",
+              "zh": "社交媒体公司",
+              "note": "指运营社交平台的公司。"
+            },
+            {
+              "term": "detect misinformation",
+              "zh": "检测虚假信息",
+              "note": "detect 强调发现、识别某种内容或风险。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "简单句加宾语从句，难点较少。注意 suspect 在新闻语境中可译为“推测”。六级偏易。"
+          }
+        },
+        {
+          "label": "006-54",
+          "part": "Part 006",
+          "en": "But the abundance of fake news on social media raises the question of whether the technology is effective or used extensively enough, or if companies are taking sufficient action against such content.",
+          "zh": "但社交媒体上假新闻的大量存在引出了一个问题：这项技术是否有效，是否被足够广泛地使用，以及这些公司是否正在对这类内容采取充分行动。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The abundance of fake news raises the question."
+            },
+            {
+              "label": "修饰成分",
+              "text": "on social media 修饰 fake news；of whether... or..., or if... 说明 question 的具体内容；such content 指 fake news 或 misleading content。"
+            },
+            {
+              "label": "语法要点",
+              "text": "whether 引导介词 of 的宾语从句；effective、used extensively enough、companies are taking sufficient action 构成三个并列疑问点。"
+            }
+          ],
+          "structure": "The abundance of fake news raises the question.",
+          "phrases": [
+            {
+              "term": "abundance of",
+              "zh": "大量；丰富",
+              "note": "这里指假新闻数量很多，带负面语境。"
+            },
+            {
+              "term": "raise the question of",
+              "zh": "引出……问题；使人质疑……",
+              "note": "常用于提出尚未解决或值得讨论的问题。"
+            },
+            {
+              "term": "effective",
+              "zh": "有效的",
+              "note": "指能产生预期效果。"
+            },
+            {
+              "term": "extensively enough",
+              "zh": "足够广泛地",
+              "note": "extensively 表示大范围地、广泛地；enough 后置修饰副词。"
+            },
+            {
+              "term": "take sufficient action against",
+              "zh": "对……采取充分行动",
+              "note": "sufficient 表示足够的；against 表示针对某问题。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "抽象名词和并列问题较多。理解时抓住主干“假新闻很多，因此让人质疑技术是否有效/使用是否充分/公司行动是否足够”。六级偏难。"
+          }
+        },
+        {
+          "label": "006-55",
+          "part": "Part 006",
+          "en": "While social media companies have taken a step back from moderating content on their platforms in recent years, West says, he suspects they may step it up again after recent court cases in California and New Mexico found Meta and Google liable for causing harm to young users.",
+          "zh": "韦斯特说，虽然近年来社交媒体公司在平台内容审核方面有所退缩，但他怀疑，在加利福尼亚州和新墨西哥州近期的法院案件认定 Meta 和 Google 因伤害年轻用户而负有责任之后，这些公司可能会再次加强内容审核。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "West says he suspects they may step it up again."
+            },
+            {
+              "label": "修饰成分",
+              "text": "While social media companies have taken a step back... 是让步状语从句；from moderating content... 修饰 taken a step back；after recent court cases... found Meta and Google liable... 是时间状语从句，说明可能加强行动的背景；for causing harm to young users 说明 liable 的原因。"
+            },
+            {
+              "label": "语法要点",
+              "text": "while 引导让步状语从句，表示“虽然”；says 插入在从句和主句之间；find + 宾语 + 形容词 liable 构成宾语补足语结构。"
+            }
+          ],
+          "structure": "West says he suspects they may step it up again.",
+          "phrases": [
+            {
+              "term": "take a step back from",
+              "zh": "从……后退一步；减少参与；有所退缩",
+              "note": "这里指公司减少或放松内容审核。"
+            },
+            {
+              "term": "moderate content",
+              "zh": "审核内容；管理内容",
+              "note": "平台语境中指删除、限制、标记或降权违规内容。"
+            },
+            {
+              "term": "step it up",
+              "zh": "加强；加大力度",
+              "note": "it 指前文的内容审核或相关治理行动。"
+            },
+            {
+              "term": "court case",
+              "zh": "法院案件；诉讼案件",
+              "note": "指进入法院审理的法律案件。"
+            },
+            {
+              "term": "find sb. liable for",
+              "zh": "认定某人/某机构对……负有法律责任",
+              "note": "liable 是法律语境常用词，表示应承担责任。"
+            },
+            {
+              "term": "cause harm to",
+              "zh": "对……造成伤害",
+              "note": "harm 可作名词，表示损害或伤害。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "这是本组最难句之一。句子包含让步、引述、推测和法律结果四层信息。阅读时先抓主干：West suspects companies may step it up again。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "006-56",
+          "part": "Part 006",
+          "en": "Though these court cases centered on the safety and addictive design of social media platforms, West reckons they may affect how companies address related problems like the amplification of misinformation on social media.",
+          "zh": "虽然这些法院案件的焦点是社交媒体平台的安全性和令人上瘾的设计，但韦斯特认为，它们可能会影响公司处理相关问题的方式，比如社交媒体上虚假信息被放大的问题。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "West reckons they may affect how companies address related problems."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Though these court cases centered on... 是让步状语从句；how companies address related problems 是 affect 的宾语从句；like the amplification... 举例说明 related problems。"
+            },
+            {
+              "label": "语法要点",
+              "text": "though 引导让步；how 引导名词性从句；they 指代 these court cases。"
+            }
+          ],
+          "structure": "West reckons they may affect how companies address related problems.",
+          "phrases": [
+            {
+              "term": "center on",
+              "zh": "以……为中心；聚焦于",
+              "note": "也可写作 centre on，表示讨论或案件关注的核心。"
+            },
+            {
+              "term": "addictive design",
+              "zh": "令人上瘾的设计",
+              "note": "指产品设计诱导用户持续使用或沉迷。"
+            },
+            {
+              "term": "reckon",
+              "zh": "认为；估计",
+              "note": "较口语化，相当于 think 或 believe。"
+            },
+            {
+              "term": "address problems",
+              "zh": "处理问题；应对问题",
+              "note": "address 作动词时不是“地址”，而是“处理、着手解决”。"
+            },
+            {
+              "term": "amplification of misinformation",
+              "zh": "虚假信息的放大传播",
+              "note": "amplification 指平台机制使信息传播范围扩大。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子逻辑清楚，但抽象表达较多。难点在 address 和 amplification 的准确理解。六级偏难。"
+          }
+        },
+        {
+          "label": "006-57",
+          "part": "Part 006",
+          "en": "(The issue of liability for AI-generated falsehoods, as delivered by AI overviews in search engines like Google, also reared its head in a June German court ruling.)",
+          "zh": "（由 Google 等搜索引擎中的 AI 概览所呈现的 AI 生成虚假信息，其相关责任问题也在德国 6 月的一项法院裁决中浮现出来。）",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The issue of liability also reared its head."
+            },
+            {
+              "label": "修饰成分",
+              "text": "for AI-generated falsehoods 修饰 liability；as delivered by AI overviews... 是插入性说明，解释这些虚假内容的呈现方式；in a June German court ruling 是地点/事件背景状语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "括号表示补充信息；rear its head 是习语；as delivered by... 是省略结构，可理解为 as they are delivered by..."
+            }
+          ],
+          "structure": "The issue of liability also reared its head.",
+          "phrases": [
+            {
+              "term": "liability",
+              "zh": "法律责任；责任",
+              "note": "法律语境中指应承担的责任或赔偿义务。"
+            },
+            {
+              "term": "AI-generated falsehoods",
+              "zh": "AI 生成的虚假内容",
+              "note": "falsehood 指虚假陈述或不实内容。"
+            },
+            {
+              "term": "as delivered by",
+              "zh": "以……方式呈现/传递",
+              "note": "这里说明 falsehoods 是通过搜索引擎的 AI 概览呈现给用户的。"
+            },
+            {
+              "term": "AI overviews",
+              "zh": "AI 概览",
+              "note": "指搜索引擎用 AI 生成的摘要式答案或概览。"
+            },
+            {
+              "term": "rear its head",
+              "zh": "冒头；浮现；再次出现",
+              "note": "常用于问题、风险或争议突然出现。"
+            },
+            {
+              "term": "court ruling",
+              "zh": "法院裁决",
+              "note": "ruling 指法院或官方机构的裁定。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句法不算复杂，但法律词 liability 和习语 rear its head 较难。括号内容是补充说明，不是主线论证。六级偏难。"
+          }
+        },
+        {
+          "label": "006-58",
+          "part": "Part 006",
+          "en": "A statement from YouTube said the platform uses a combination of advanced detection systems and human reviewers to enforce its misinformation policies, which forbid certain types of misleading or deceptive content with serious risk of egregious harm, such as promoting harmful remedies or interfering with democratic processes.",
+          "zh": "YouTube 的一份声明称，该平台结合使用先进检测系统和人工审核员来执行其虚假信息政策；这些政策禁止某些存在造成严重危害风险的误导性或欺骗性内容，例如宣传有害疗法或干扰民主进程。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "A statement from YouTube said the platform uses a combination of systems and reviewers."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to enforce its misinformation policies 是目的状语；which forbid... 是非限制性定语从句，修饰 policies；with serious risk of egregious harm 修饰 content，说明这类内容存在造成严重危害的风险；such as promoting... or interfering... 举例说明被禁止内容的类型。"
+            },
+            {
+              "label": "语法要点",
+              "text": "said 后接宾语从句；use a combination of A and B；which 引导非限制性定语从句；such as 后接并列动名词。"
+            }
+          ],
+          "structure": "A statement from YouTube said the platform uses a combination of systems and reviewers.",
+          "phrases": [
+            {
+              "term": "a statement from",
+              "zh": "来自……的一份声明",
+              "note": "新闻报道中常用于引用机构回应。"
+            },
+            {
+              "term": "a combination of A and B",
+              "zh": "A 和 B 的结合",
+              "note": "表示同时使用两种手段。"
+            },
+            {
+              "term": "advanced detection systems",
+              "zh": "先进检测系统",
+              "note": "指自动化或技术化的内容识别系统。"
+            },
+            {
+              "term": "human reviewers",
+              "zh": "人工审核员",
+              "note": "指由人来审查平台内容。"
+            },
+            {
+              "term": "enforce policies",
+              "zh": "执行政策",
+              "note": "enforce 强调使规则真正生效。"
+            },
+            {
+              "term": "misleading or deceptive content",
+              "zh": "误导性或欺骗性内容",
+              "note": "misleading 强调误导，deceptive 更强调欺骗性。"
+            },
+            {
+              "term": "egregious harm",
+              "zh": "严重危害；恶劣伤害",
+              "note": "egregious 是正式词，强调严重到恶劣、不可接受的程度。"
+            },
+            {
+              "term": "democratic processes",
+              "zh": "民主进程",
+              "note": "通常指选举、投票、政治参与等民主制度运行过程。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句很长，政策和法律表达密集。主干是 YouTube 声明其用技术系统和人工审核执行政策；后半句解释这些政策禁止什么。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "006-59",
+          "part": "Part 006",
+          "en": "In the last quarter of 2025, the platform removed 11,337 videos for violating its misinformation policies.",
+          "zh": "在 2025 年最后一个季度，该平台因这些视频违反其虚假信息政策而移除了 11,337 个视频。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The platform removed 11,337 videos."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In the last quarter of 2025 是时间状语；for violating its misinformation policies 是原因状语，说明视频被移除的原因。"
+            },
+            {
+              "label": "语法要点",
+              "text": "for + 动名词可表示原因；removed 的宾语是 11,337 videos。"
+            }
+          ],
+          "structure": "The platform removed 11,337 videos.",
+          "phrases": [
+            {
+              "term": "the last quarter of 2025",
+              "zh": "2025 年最后一个季度",
+              "note": "quarter 指一年中的一个季度。"
+            },
+            {
+              "term": "remove videos",
+              "zh": "移除视频；下架视频",
+              "note": "平台语境中指删除或下架内容。"
+            },
+            {
+              "term": "violate policies",
+              "zh": "违反政策",
+              "note": "violate 常用于违反法律、规则、政策。"
+            },
+            {
+              "term": "misinformation policies",
+              "zh": "虚假信息政策",
+              "note": "指平台针对虚假信息制定的规则。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较简单，主要是平台治理和数字信息。注意 for violating 表示原因。六级中等偏易。"
+          }
+        },
+        {
+          "label": "006-60",
+          "part": "Part 006",
+          "en": "TikTok, Meta and X did not respond to requests for comment.",
+          "zh": "TikTok、Meta 和 X 没有回应记者的置评请求。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "TikTok, Meta and X did not respond."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to requests for comment 是介词短语，说明回应对象。"
+            },
+            {
+              "label": "语法要点",
+              "text": "did not + 动词原形构成一般过去时否定；respond to 是固定搭配。"
+            }
+          ],
+          "structure": "TikTok, Meta and X did not respond.",
+          "phrases": [
+            {
+              "term": "respond to",
+              "zh": "回应；答复",
+              "note": "respond 是不及物动词，后接 to。"
+            },
+            {
+              "term": "request for comment",
+              "zh": "置评请求；请求发表评论",
+              "note": "新闻报道常用表达，表示记者请相关方回应。"
+            },
+            {
+              "term": "X",
+              "zh": "X 平台",
+              "note": "原 Twitter，现名 X。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "短句，难度低。request for comment 是新闻报道固定表达，值得掌握。六级偏易。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 007",
+      "title": "007 · AI shows promise in the fight against fake news",
+      "navLabel": "007",
+      "description": "说明 LLM 如何整理在线声明、辅助理解争议，并用对话改变错误信念。",
+      "items": [
+        {
+          "label": "007-61",
+          "part": "Part 007",
+          "en": "LLMs can be helpful not only in identifying dis- and misinformation, but also in merely making sense of the vast hodgepodge of claims flitting about online.",
+          "zh": "大型语言模型不仅有助于识别虚假宣传和错误信息，也有助于理解网上四处流动的海量杂乱说法。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "LLMs can be helpful not only..., but also..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "in identifying dis- and misinformation 和 in making sense of... 是两个并列介词短语；of claims 修饰 hodgepodge；flitting about online 是现在分词短语，修饰 claims。"
+            },
+            {
+              "label": "语法要点",
+              "text": "not only in..., but also in... 构成平行结构；dis- and misinformation 是共享 misinformation 后半部分的省略形式。"
+            }
+          ],
+          "structure": "LLMs can be helpful not only..., but also...",
+          "phrases": [
+            {
+              "term": "not only..., but also...",
+              "zh": "不仅……而且……",
+              "note": "用于并列两个功能或特点。"
+            },
+            {
+              "term": "dis- and misinformation",
+              "zh": "虚假宣传和错误信息",
+              "note": "disinformation 强调故意制造和传播，misinformation 不一定强调故意；dis- and misinformation 是省略写法。"
+            },
+            {
+              "term": "make sense of",
+              "zh": "理解；弄懂；理清",
+              "note": "常用于面对复杂、混乱信息时设法理解其含义。"
+            },
+            {
+              "term": "hodgepodge",
+              "zh": "杂乱混合物；大杂烩",
+              "note": "带有混乱、无序的意味。"
+            },
+            {
+              "term": "flit about",
+              "zh": "四处掠过；快速移动",
+              "note": "这里形象地指各种说法在网上快速传播和流动。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子结构清楚，但词汇较难，尤其 hodgepodge 和 flitting about。核心意思是 LLM 不只做识别，也能帮助梳理混乱信息。六级偏难。"
+          }
+        },
+        {
+          "label": "007-62",
+          "part": "Part 007",
+          "en": "West and his colleagues, for instance, are using LLMs to track clusters of social media posts that spread misleading or false narratives and observe how those stories emerge, proliferate and evolve over time.",
+          "zh": "例如，韦斯特和他的同事正在使用大型语言模型追踪成组的社交媒体帖子，这些帖子传播误导性或虚假的叙事；他们还观察这些故事如何出现、扩散并随着时间演变。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "West and his colleagues are using LLMs to track clusters and observe how those stories emerge, proliferate and evolve."
+            },
+            {
+              "label": "修饰成分",
+              "text": "for instance 是插入语；of social media posts 修饰 clusters；that spread... 是定语从句，修饰 posts；over time 修饰 emerge, proliferate and evolve。"
+            },
+            {
+              "label": "语法要点",
+              "text": "to track 和 observe 是并列不定式，说明使用 LLMs 的两个目的；how 引导 observe 的宾语从句。"
+            }
+          ],
+          "structure": "West and his colleagues are using LLMs to track clusters and observe how those stories emerge, proliferate and evolve.",
+          "phrases": [
+            {
+              "term": "for instance",
+              "zh": "例如",
+              "note": "用于引出具体例子。"
+            },
+            {
+              "term": "track clusters of",
+              "zh": "追踪成组的/聚集的……",
+              "note": "cluster 指一组彼此相关或聚集在一起的事物。"
+            },
+            {
+              "term": "misleading or false narratives",
+              "zh": "误导性或虚假的叙事",
+              "note": "narrative 指一套故事框架或解释方式，不只是单个句子。"
+            },
+            {
+              "term": "emerge",
+              "zh": "出现；浮现",
+              "note": "常用于趋势、问题、故事线开始出现。"
+            },
+            {
+              "term": "proliferate",
+              "zh": "迅速扩散；激增",
+              "note": "正式词，指数量快速增加或传播范围扩大。"
+            },
+            {
+              "term": "evolve over time",
+              "zh": "随着时间演变",
+              "note": "用于描述观点、故事或系统逐渐变化。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "长句但逻辑清晰，主要难点在 track clusters、narratives、proliferate 等学术新闻词汇。六级偏难。"
+          }
+        },
+        {
+          "label": "007-63",
+          "part": "Part 007",
+          "en": "One US example is the “stop the steal” conspiracy theory that became widespread after Joe Biden was elected president in 2020; numerous posts contained false allegations of widespread voter fraud as well as real but misleading information, such as a video that showed poll watchers being denied access to a polling station but not their later admission once officials realized they had made an error.",
+          "zh": "美国的一个例子是“Stop the Steal”（停止偷窃选举）阴谋论，它在乔·拜登于 2020 年当选总统后广泛传播；大量帖子既包含关于大规模选民舞弊的虚假指控，也包含真实但具有误导性的信息，比如一段视频显示投票监督员曾被拒绝进入投票站，却没有显示官员意识到出错后随后允许他们进入。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "One US example is the conspiracy theory; numerous posts contained false allegations as well as real but misleading information."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that became widespread... 是定语从句，修饰 conspiracy theory；after Joe Biden was elected... 是时间状语从句；of widespread voter fraud 修饰 allegations；such as a video... 举例说明 real but misleading information；that showed... 是定语从句，修饰 video；once officials realized... 是时间状语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "分号连接两个相关但独立的分句；as well as 连接 false allegations 和 real but misleading information；but not their later admission 省略了 showed，表示视频没有显示后续允许进入的部分。"
+            }
+          ],
+          "structure": "One US example is the conspiracy theory; numerous posts contained false allegations as well as real but misleading information.",
+          "phrases": [
+            {
+              "term": "stop the steal",
+              "zh": "停止偷窃选举",
+              "note": "美国政治语境中的口号，指围绕 2020 年大选结果的阴谋论叙事。"
+            },
+            {
+              "term": "conspiracy theory",
+              "zh": "阴谋论",
+              "note": "指认为某事件背后存在秘密操纵或阴谋的说法。"
+            },
+            {
+              "term": "become widespread",
+              "zh": "广泛传播；变得普遍",
+              "note": "widespread 表示传播范围广或影响面大。"
+            },
+            {
+              "term": "false allegations",
+              "zh": "虚假指控",
+              "note": "allegation 指未经证实或被指称的指控。"
+            },
+            {
+              "term": "voter fraud",
+              "zh": "选民舞弊；投票舞弊",
+              "note": "美国选举语境高频表达。"
+            },
+            {
+              "term": "as well as",
+              "zh": "以及；也包括",
+              "note": "连接并列信息，强调两类内容都存在。"
+            },
+            {
+              "term": "poll watchers",
+              "zh": "投票监督员；监票人员",
+              "note": "指观察投票过程以监督选举程序的人。"
+            },
+            {
+              "term": "be denied access to",
+              "zh": "被拒绝进入/访问……",
+              "note": "access 后常接 to。"
+            },
+            {
+              "term": "polling station",
+              "zh": "投票站",
+              "note": "指选民投票的地点。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "这是本组最难句之一，背景、选举词汇和多层从句都较密集。理解关键是区分“完全虚假指控”和“真实但断章取义的信息”。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "007-64",
+          "part": "Part 007",
+          "en": "Summarizing the larger narrative beneath those countless individual posts is challenging, but West finds that LLMs are fairly good at this kind of labeling task.",
+          "zh": "概括这些无数单个帖子背后的更大叙事并不容易，但韦斯特发现，大型语言模型相当擅长这类标签归类任务。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Summarizing the larger narrative is challenging, but West finds that LLMs are good at this task."
+            },
+            {
+              "label": "修饰成分",
+              "text": "beneath those countless individual posts 修饰 larger narrative；that LLMs are fairly good... 是 finds 的宾语从句；this kind of labeling task 指前面的概括和归类工作。"
+            },
+            {
+              "label": "语法要点",
+              "text": "动名词短语 Summarizing... 作主语；but 连接转折分句；fairly 表示“相当”。"
+            }
+          ],
+          "structure": "Summarizing the larger narrative is challenging, but West finds that LLMs are good at this task.",
+          "phrases": [
+            {
+              "term": "summarize",
+              "zh": "概括；总结",
+              "note": "指提炼主要内容或核心观点。"
+            },
+            {
+              "term": "larger narrative",
+              "zh": "更大的叙事；整体叙事框架",
+              "note": "指许多零散说法背后共同构成的故事线或解释框架。"
+            },
+            {
+              "term": "beneath",
+              "zh": "在……之下；隐藏在……背后",
+              "note": "这里不是物理位置，而是抽象层面的“背后”。"
+            },
+            {
+              "term": "countless individual posts",
+              "zh": "无数单个帖子",
+              "note": "countless 强调数量极多。"
+            },
+            {
+              "term": "be good at",
+              "zh": "擅长……",
+              "note": "at 后接名词或动名词。"
+            },
+            {
+              "term": "labeling task",
+              "zh": "标签归类任务；标注任务",
+              "note": "机器学习中常指给文本、图片或数据贴标签、分类。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "结构中等，难点在 larger narrative 和 labeling task 这两个抽象概念。六级中等偏难。"
+          }
+        },
+        {
+          "label": "007-65",
+          "part": "Part 007",
+          "en": "Where crisis managers, journalists and fact-checkers don’t have the resources to tackle each individual claim, LLMs can help by quickly characterizing the big-picture narrative so it can be evaluated and, if needed, debunked.",
+          "zh": "在危机管理人员、记者和事实核查人员没有资源逐一处理每个说法的情况下，大型语言模型可以通过快速概括整体叙事来提供帮助，使这一叙事能够被评估，并在必要时被驳斥。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "LLMs can help."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Where crisis managers... don’t have the resources... 是情境状语从句；to tackle each individual claim 修饰 resources；by quickly characterizing... 表示帮助的方式；so it can be evaluated and debunked 是结果状语从句；if needed 是插入性省略结构。"
+            },
+            {
+              "label": "语法要点",
+              "text": "where 可表示抽象情境；by + 动名词表示方式；so 引导结果；it 指 big-picture narrative。"
+            }
+          ],
+          "structure": "LLMs can help.",
+          "phrases": [
+            {
+              "term": "where",
+              "zh": "在……情况下",
+              "note": "这里 where 引导情境状语，不是具体地点。"
+            },
+            {
+              "term": "crisis managers",
+              "zh": "危机管理人员",
+              "note": "指处理突发事件、公共危机或舆情风险的人。"
+            },
+            {
+              "term": "have the resources to do sth.",
+              "zh": "有资源做某事",
+              "note": "resources 可指时间、人力、资金、专业能力等。"
+            },
+            {
+              "term": "tackle each individual claim",
+              "zh": "逐一处理每个说法",
+              "note": "tackle 表示处理、应对问题。"
+            },
+            {
+              "term": "characterize",
+              "zh": "描述……的特征；概括刻画",
+              "note": "这里指快速概括某种整体叙事的性质。"
+            },
+            {
+              "term": "big-picture narrative",
+              "zh": "整体叙事；大局层面的故事线",
+              "note": "big-picture 强调整体视角，而非细节。"
+            },
+            {
+              "term": "debunk",
+              "zh": "揭穿；驳斥",
+              "note": "常用于揭穿谣言、神话或错误观点。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "长句但逻辑严密：人力不足时，LLM 可先概括整体叙事，供人评估或驳斥。难点在 where 的抽象用法和 characterize/debunk。六级偏难。"
+          }
+        },
+        {
+          "label": "007-66",
+          "part": "Part 007",
+          "en": "“If you can address the large-scale narrative of what’s going on,” West says, “then it helps you address a much bigger thing.”",
+          "zh": "韦斯特说：“如果你能回应关于整个事件的大规模叙事，那就能帮助你应对一个更大的问题。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "If you can address..., then it helps you address..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "of what’s going on 修饰 narrative；West says 是引述标记，插入在直接引语中间；much 修饰 bigger，表示程度更强。"
+            },
+            {
+              "label": "语法要点",
+              "text": "if...then... 条件结构；两个 address 含义相同，分别对应“处理叙事”和“处理更大问题”。"
+            }
+          ],
+          "structure": "If you can address..., then it helps you address...",
+          "phrases": [
+            {
+              "term": "address",
+              "zh": "处理；应对；着手解决",
+              "note": "address 在这里不是“地址”，而是“处理问题”。"
+            },
+            {
+              "term": "large-scale narrative",
+              "zh": "大规模叙事；宏观叙事",
+              "note": "指多个帖子或说法共同构成的整体故事线。"
+            },
+            {
+              "term": "what’s going on",
+              "zh": "正在发生的事情",
+              "note": "口语化表达，指当前局势或事件。"
+            },
+            {
+              "term": "a much bigger thing",
+              "zh": "更大的事情/问题",
+              "note": "thing 口语化，可指一个更大的问题、局面或挑战。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子不难，但 address 和 narrative 是理解重点。直接引语被 West says 插入，需要还原为完整条件句。六级中等。"
+          }
+        },
+        {
+          "label": "007-67",
+          "part": "Part 007",
+          "en": "Researchers have found that AI can not merely clarify, but also change, people’s misinformed beliefs.",
+          "zh": "研究人员发现，人工智能不仅能够澄清人们被错误信息影响的信念，还能够改变这些信念。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Researchers have found that AI can clarify and change beliefs."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that AI can... 是 found 的宾语从句；not merely clarify, but also change 构成并列谓语；people’s misinformed beliefs 是 clarify 和 change 的共同宾语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "not merely..., but also... 构成递进关系；have found 是现在完成时，强调已有研究发现。"
+            }
+          ],
+          "structure": "Researchers have found that AI can clarify and change beliefs.",
+          "phrases": [
+            {
+              "term": "not merely..., but also...",
+              "zh": "不仅……而且……",
+              "note": "与 not only..., but also... 类似，merely 更正式。"
+            },
+            {
+              "term": "clarify",
+              "zh": "澄清；使清楚",
+              "note": "指让模糊或错误的内容变得清楚。"
+            },
+            {
+              "term": "misinformed beliefs",
+              "zh": "受错误信息影响的信念；错误信念",
+              "note": "misinformed 表示基于错误信息形成的。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "结构清楚，难点在 misinformed beliefs 的准确翻译。核心转折是 AI 不只解释，还可能改变信念。六级中等。"
+          }
+        },
+        {
+          "label": "007-68",
+          "part": "Part 007",
+          "en": "In one 2024 study in Science, 2,190 Americans who believed in a conspiracy theory such as the Moon landing being a hoax chatted with a version of ChatGPT that had been instructed to change the person’s mind.",
+          "zh": "在 2024 年发表于《科学》的一项研究中，2190 名相信某种阴谋论的美国人，比如认为登月是一场骗局的人，与一个被指示去改变他们想法的 ChatGPT 版本进行了聊天。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "2,190 Americans chatted with a version of ChatGPT."
+            },
+            {
+              "label": "修饰成分",
+              "text": "In one 2024 study in Science 是背景状语；who believed in a conspiracy theory... 是定语从句，修饰 Americans；such as the Moon landing being a hoax 举例说明 conspiracy theory；that had been instructed... 是定语从句，修饰 a version of ChatGPT。"
+            },
+            {
+              "label": "语法要点",
+              "text": "who 和 that 分别引导两个定语从句；the Moon landing being a hoax 是动名词复合结构，作 such as 的宾语。"
+            }
+          ],
+          "structure": "2,190 Americans chatted with a version of ChatGPT.",
+          "phrases": [
+            {
+              "term": "study in Science",
+              "zh": "发表于《科学》期刊的研究",
+              "note": "Science 是国际知名学术期刊名。"
+            },
+            {
+              "term": "believe in",
+              "zh": "相信；信奉",
+              "note": "believe in a theory 表示相信某种理论或说法。"
+            },
+            {
+              "term": "the Moon landing",
+              "zh": "登月",
+              "note": "通常指人类登上月球的历史事件。"
+            },
+            {
+              "term": "hoax",
+              "zh": "骗局；恶作剧式骗局",
+              "note": "指故意制造的虚假事件或欺骗。"
+            },
+            {
+              "term": "chat with",
+              "zh": "与……聊天",
+              "note": "这里指与聊天机器人进行对话。"
+            },
+            {
+              "term": "be instructed to do sth.",
+              "zh": "被指示去做某事",
+              "note": "被动语态，说明 ChatGPT 版本被设定了特定任务。"
+            },
+            {
+              "term": "change the person’s mind",
+              "zh": "改变某人的想法",
+              "note": "固定表达，指让某人改变观点或信念。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，包含研究背景、受试者条件、阴谋论例子和聊天机器人设定。抓住主干“2190 名美国人与一个 ChatGPT 版本聊天”即可。六级偏难。"
+          }
+        },
+        {
+          "label": "007-69",
+          "part": "Part 007",
+          "en": "Remarkably, the chatbot reduced people’s belief in the theory on average by 20 percent, a higher success rate than other interventions like therapy targeting the underlying psychology that promotes conspiracy adherence.",
+          "zh": "值得注意的是，这个聊天机器人使人们对该理论的相信程度平均降低了 20%，这一成功率高于其他干预方式，例如针对促使人们坚持相信阴谋论的深层心理机制的治疗。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The chatbot reduced people’s belief in the theory."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Remarkably 是评价性状语；on average by 20 percent 表示平均变化幅度；a higher success rate than... 是前面结果的同位评价；like therapy... 举例说明 other interventions；targeting... 是现在分词短语，修饰 therapy；that promotes conspiracy adherence 是定语从句，修饰 psychology。"
+            },
+            {
+              "label": "语法要点",
+              "text": "reduce A by B 表示下降幅度；同位语 a higher success rate 对 20% 效果作评价；targeting 和 that 从句形成多层后置修饰。"
+            }
+          ],
+          "structure": "The chatbot reduced people’s belief in the theory.",
+          "phrases": [
+            {
+              "term": "remarkably",
+              "zh": "值得注意的是；显著地",
+              "note": "用于强调结果令人意外或值得关注。"
+            },
+            {
+              "term": "reduce ... by 20 percent",
+              "zh": "使……降低 20%",
+              "note": "by 表示变化幅度。"
+            },
+            {
+              "term": "on average",
+              "zh": "平均而言",
+              "note": "用于描述平均结果。"
+            },
+            {
+              "term": "intervention",
+              "zh": "干预措施",
+              "note": "研究和心理学语境中指为改变行为或结果而采取的方法。"
+            },
+            {
+              "term": "therapy",
+              "zh": "治疗；心理治疗",
+              "note": "这里指心理干预或治疗方式。"
+            },
+            {
+              "term": "underlying psychology",
+              "zh": "深层心理机制",
+              "note": "underlying 表示位于表象背后的、根本的。"
+            },
+            {
+              "term": "conspiracy adherence",
+              "zh": "对阴谋论的坚持；持续相信阴谋论",
+              "note": "adherence 指对某种信念的坚持或依附，这里指持续相信阴谋论。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "句子词汇和结构都偏难，尤其 intervention、underlying psychology、conspiracy adherence。理解重点是：聊天机器人的效果高于某些传统干预。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "007-70",
+          "part": "Part 007",
+          "en": "(Science recently alerted readers to issues with the study’s data; the authors have submitted corrected data and report that the original results still stand.)",
+          "zh": "（《科学》最近提醒读者注意该研究数据存在的问题；作者已经提交了修正后的数据，并报告称原始结果仍然成立。）",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Science alerted readers; the authors have submitted data and report..."
+            },
+            {
+              "label": "修饰成分",
+              "text": "recently 是时间状语；to issues with the study’s data 是 alert 的补足成分；corrected 修饰 data；that the original results still stand 是 report 的宾语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "分号连接两个相关分句；alert sb. to sth. 是固定结构；have submitted 和 report 是并列谓语。"
+            }
+          ],
+          "structure": "Science alerted readers; the authors have submitted data and report...",
+          "phrases": [
+            {
+              "term": "alert readers to",
+              "zh": "提醒读者注意……",
+              "note": "alert sb. to sth. 表示使某人注意到某事。"
+            },
+            {
+              "term": "issues with data",
+              "zh": "数据存在的问题",
+              "note": "issue 在这里指问题或争议。"
+            },
+            {
+              "term": "submit corrected data",
+              "zh": "提交修正后的数据",
+              "note": "corrected 表示已更正的。"
+            },
+            {
+              "term": "original results",
+              "zh": "原始结果；最初结果",
+              "note": "指研究最初报告的结论或统计结果。"
+            },
+            {
+              "term": "still stand",
+              "zh": "仍然成立；依然有效",
+              "note": "stand 在这里表示结论经得住检验、没有被推翻。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子中等难度，主要是学术出版语境。括号内容提示研究数据曾有问题，但作者称结论仍成立。六级中等。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 008",
+      "title": "008 · AI shows promise in the fight against fake news",
+      "navLabel": "008",
+      "description": "收束到应用边界、人工监督和文章更正说明，强调 AI 工具仍需谨慎使用。",
+      "items": [
+        {
+          "label": "008-71",
+          "part": "Part 008",
+          "en": "Computational social scientist Thomas Costello of Carnegie Mellon University, who co-led the study, says this result shows that fact-based arguments can work as long as time and effort is spent on conducting them, which is possible given the infinite patience of LLMs.",
+          "zh": "共同领导这项研究的卡内基梅隆大学计算社会科学家 Thomas Costello 表示，这一结果表明，基于事实的论证是可以发挥作用的，只要投入时间和精力去进行这种论证；考虑到大型语言模型可以不知疲倦地持续对话，这一点是可能做到的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Thomas Costello says this result shows that fact-based arguments can work."
+            },
+            {
+              "label": "修饰成分",
+              "text": "of Carnegie Mellon University 修饰 Thomas Costello；who co-led the study 是非限制性定语从句；that fact-based arguments can work 是 shows 的宾语从句；as long as... 是条件状语从句；which is possible... 指前面“投入时间和精力进行论证”这件事。"
+            },
+            {
+              "label": "语法要点",
+              "text": "多层宾语从句嵌套：says + shows + can work；which 引导非限制性定语从句，指代前面整个条件实现的可能性；given 在这里表示“考虑到”。"
+            }
+          ],
+          "structure": "Thomas Costello says this result shows that fact-based arguments can work.",
+          "phrases": [
+            {
+              "term": "computational social scientist",
+              "zh": "计算社会科学家",
+              "note": "指使用计算方法研究社会现象的学者。"
+            },
+            {
+              "term": "co-led the study",
+              "zh": "共同领导这项研究",
+              "note": "co- 表示共同、联合。"
+            },
+            {
+              "term": "fact-based arguments",
+              "zh": "基于事实的论证",
+              "note": "argument 在这里不是争吵，而是论点、论证。"
+            },
+            {
+              "term": "as long as",
+              "zh": "只要",
+              "note": "引导条件状语从句。"
+            },
+            {
+              "term": "spend time and effort on doing sth.",
+              "zh": "花时间和精力做某事",
+              "note": "on 后接名词或动名词。"
+            },
+            {
+              "term": "given",
+              "zh": "考虑到；鉴于",
+              "note": "介词用法，用来引出前提或背景。"
+            },
+            {
+              "term": "infinite patience",
+              "zh": "无限的耐心；不知疲倦的持续对话能力",
+              "note": "这里是比喻说法，指 LLM 可以持续对话，不会像人一样疲惫或不耐烦。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "长句且抽象，包含人物同位信息、宾语从句、条件从句和 which 指代整件事。理解重点是：事实论证有效，但需要持续投入，而 LLM 的耐心让这种持续对话成为可能。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "008-72",
+          "part": "Part 008",
+          "en": "“They’re actually incredibly good at using reason and evidence to talk someone out of a particular belief,” Costello says.",
+          "zh": "Costello 说：“它们实际上非常擅长运用理性和证据来说服某人放弃某个特定信念。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "They’re good at using reason and evidence."
+            },
+            {
+              "label": "修饰成分",
+              "text": "actually 和 incredibly 修饰 good；to talk someone out of a particular belief 是目的状语；Costello says 是引述标记。"
+            },
+            {
+              "label": "语法要点",
+              "text": "using reason and evidence 是动名词短语，作 at 的宾语；talk someone out of... 是动词短语。"
+            }
+          ],
+          "structure": "They’re good at using reason and evidence.",
+          "phrases": [
+            {
+              "term": "be good at doing sth.",
+              "zh": "擅长做某事",
+              "note": "at 后接名词或动名词。"
+            },
+            {
+              "term": "incredibly",
+              "zh": "极其；非常",
+              "note": "加强语气，比 very 更强。"
+            },
+            {
+              "term": "reason and evidence",
+              "zh": "理性和证据",
+              "note": "reason 在这里指理性推理，不是“原因”。"
+            },
+            {
+              "term": "talk someone out of sth.",
+              "zh": "说服某人放弃某事",
+              "note": "固定搭配，out of 后接名词或动名词。"
+            },
+            {
+              "term": "particular belief",
+              "zh": "某个特定信念",
+              "note": "particular 表示具体的、特定的。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较短，难点主要在 reason 的词义和 talk someone out of 这个固定搭配。六级中等。"
+          }
+        },
+        {
+          "label": "008-73",
+          "part": "Part 008",
+          "en": "Even with AI’s growing ability to research and reason, however, experts generally don’t believe that this technology could — or should — be treated as a reliable substitute for professional human fact-checking, whether the goal is to dissuade, detect, debunk, label or restrict.",
+          "zh": "然而，即使人工智能研究和推理的能力不断增强，专家们通常也不认为这项技术能够，或者应该，被视为专业人工事实核查的可靠替代品，无论目标是劝阻、检测、驳斥、标记还是限制相关内容。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Experts generally don’t believe that this technology could or should be treated as a reliable substitute."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Even with AI’s growing ability... 是让步状语；however 是转折插入语；for professional human fact-checking 修饰 substitute；whether the goal is... 是让步/范围从句，说明无论目标是哪一种治理任务。"
+            },
+            {
+              "label": "语法要点",
+              "text": "that 引导 believe 的宾语从句；be treated as 是被动结构；破折号插入 or should 强调“能不能”和“该不该”是两回事。"
+            }
+          ],
+          "structure": "Experts generally don’t believe that this technology could or should be treated as a reliable substitute.",
+          "phrases": [
+            {
+              "term": "even with",
+              "zh": "即使有；尽管有",
+              "note": "引出让步背景。"
+            },
+            {
+              "term": "growing ability",
+              "zh": "不断增强的能力",
+              "note": "growing 表示逐渐增加或发展。"
+            },
+            {
+              "term": "could — or should —",
+              "zh": "能够，或者应该",
+              "note": "破折号强调 should，表示作者区分“能不能做到”和“是否应该这样做”两个问题。"
+            },
+            {
+              "term": "reliable substitute for",
+              "zh": "……的可靠替代品",
+              "note": "substitute for 表示替代某物或某人。"
+            },
+            {
+              "term": "professional human fact-checking",
+              "zh": "专业人工事实核查",
+              "note": "强调由专业人员进行，而非自动化系统。"
+            },
+            {
+              "term": "dissuade",
+              "zh": "劝阻；使打消念头",
+              "note": "常用于 dissuade sb. from doing sth.。"
+            },
+            {
+              "term": "debunk",
+              "zh": "揭穿；驳斥",
+              "note": "常用于揭穿谣言、错误观念或阴谋论。"
+            },
+            {
+              "term": "restrict",
+              "zh": "限制",
+              "note": "这里可能指限制虚假信息传播或平台可见性。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句是结论段核心长句。难点在让步结构、否定宾语从句、破折号插入和一串并列动词。核心观点是：AI 有用，但不能也不应替代专业人工核查。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "008-74",
+          "part": "Part 008",
+          "en": "Rather, most scientists see AI primarily as a way to sift through the ever-growing barrage of misinformation and flag content that journalists, fact-checkers or online platforms can further investigate.",
+          "zh": "相反，大多数科学家主要把人工智能视为一种筛查工具，用来从不断增长的虚假信息洪流中筛选内容，并标记出记者、事实核查人员或网络平台可以进一步调查的内容。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Most scientists see AI as a way."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Rather 表示与上一句形成转折；to sift through... and flag content 是不定式短语，修饰 way；that journalists... can further investigate 是定语从句，修饰 content。"
+            },
+            {
+              "label": "语法要点",
+              "text": "see A as B 是复合宾语结构；to sift 和 flag 是并列不定式；ever-growing 是复合形容词。"
+            }
+          ],
+          "structure": "Most scientists see AI as a way.",
+          "phrases": [
+            {
+              "term": "rather",
+              "zh": "相反；更确切地说",
+              "note": "用于纠正或替代前一种说法。"
+            },
+            {
+              "term": "see A as B",
+              "zh": "把 A 看作 B",
+              "note": "表示观点或定位。"
+            },
+            {
+              "term": "primarily",
+              "zh": "主要地",
+              "note": "强调主要用途或核心作用。"
+            },
+            {
+              "term": "sift through",
+              "zh": "筛查；仔细翻检",
+              "note": "原指筛东西，引申为在大量信息中筛选有用内容。"
+            },
+            {
+              "term": "ever-growing barrage",
+              "zh": "不断增长的猛烈冲击/海量涌入",
+              "note": "barrage 原指密集炮火，引申为大量信息不断袭来。"
+            },
+            {
+              "term": "flag content",
+              "zh": "标记内容",
+              "note": "指提示某些内容需要关注或进一步处理。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子中等偏难，词汇 barrage、sift through 较形象。理解重点是 AI 的定位：不是最终裁判，而是帮助筛选和标记。六级偏难。"
+          }
+        },
+        {
+          "label": "008-75",
+          "part": "Part 008",
+          "en": "After all, blindly trusting the outputs of AI tools like LLMs — which are just as biased as the human-compiled data they were trained on — is one big part of what gets us into trouble with misinformation in the first place.",
+          "zh": "毕竟，盲目信任大型语言模型等人工智能工具的输出，本来就是让我们在虚假信息问题上陷入麻烦的一个重要原因；这些工具的偏见程度与其训练所用的人类编制数据一样严重。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Blindly trusting the outputs of AI tools is one big part."
+            },
+            {
+              "label": "修饰成分",
+              "text": "After all 是解释性连接词；like LLMs 举例说明 AI tools；which are just as biased... 是非限制性定语从句，修饰 AI tools like LLMs；they were trained on 是定语从句，修饰 data；of what gets us into trouble... 修饰 part。"
+            },
+            {
+              "label": "语法要点",
+              "text": "动名词短语 Blindly trusting... 作主语；just as...as... 表示同等程度；what 引导宾语从句，作 of 的宾语。"
+            }
+          ],
+          "structure": "Blindly trusting the outputs of AI tools is one big part.",
+          "phrases": [
+            {
+              "term": "after all",
+              "zh": "毕竟",
+              "note": "用于补充一个解释性或总结性的理由。"
+            },
+            {
+              "term": "blindly trust",
+              "zh": "盲目信任",
+              "note": "blindly 表示不加判断地。"
+            },
+            {
+              "term": "outputs of AI tools",
+              "zh": "AI 工具的输出",
+              "note": "outputs 指系统生成的文本、判断、摘要等结果。"
+            },
+            {
+              "term": "biased",
+              "zh": "有偏见的；存在偏差的",
+              "note": "既可指社会偏见，也可指数据或模型偏差。"
+            },
+            {
+              "term": "human-compiled data",
+              "zh": "由人类编制的数据",
+              "note": "compiled 表示收集、整理、汇编。"
+            },
+            {
+              "term": "get sb. into trouble",
+              "zh": "使某人陷入麻烦",
+              "note": "这里指导致社会在虚假信息问题上出现困境。"
+            },
+            {
+              "term": "in the first place",
+              "zh": "一开始；本来",
+              "note": "用于追溯问题的根源。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "长句且有插入定语从句。核心逻辑是：不能盲信 AI，因为 AI 的偏见来自训练数据，而盲信正是虚假信息问题的一部分。六级偏难到考研水平。"
+          }
+        },
+        {
+          "label": "008-76",
+          "part": "Part 008",
+          "en": "“We cannot just rely only on the AI,” says Nguyen, who likens training AI models to raising a child.",
+          "zh": "Nguyen 说：“我们不能完全只依赖人工智能。”他把训练人工智能模型比作养育孩子。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "“We cannot just rely only on the AI,” says Nguyen."
+            },
+            {
+              "label": "修饰成分",
+              "text": "who likens training AI models to raising a child 是非限制性定语从句，补充 Nguyen 的类比；training AI models 和 raising a child 都是动名词短语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "直接引语在前；who 引导非限制性定语从句；liken A to B 是固定结构。"
+            }
+          ],
+          "structure": "“We cannot just rely only on the AI,” says Nguyen.",
+          "phrases": [
+            {
+              "term": "rely on",
+              "zh": "依赖；依靠",
+              "note": "固定搭配，on 后接依赖对象。"
+            },
+            {
+              "term": "not just rely only on",
+              "zh": "不能完全只依赖",
+              "note": "just 和 only 都强调排他性，原句用来加强“不能只靠 AI”这一语气。"
+            },
+            {
+              "term": "liken A to B",
+              "zh": "把 A 比作 B",
+              "note": "正式表达，用于类比。"
+            },
+            {
+              "term": "raise a child",
+              "zh": "养育孩子",
+              "note": "raise 在美式英语中常表示抚养、养育。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子不长，难点在 liken A to B。观点非常明确：AI 需要人类监管，不能单独依赖。六级中等。"
+          }
+        },
+        {
+          "label": "008-77",
+          "part": "Part 008",
+          "en": "“Of course we want the child to be autonomous, but we need to observe the behavior of the system and try to correct and guide it.”",
+          "zh": "“当然，我们希望这个孩子能够自主，但我们需要观察这个系统的行为，并努力纠正和引导它。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "We want the child to be autonomous, but we need to observe and try."
+            },
+            {
+              "label": "修饰成分",
+              "text": "the child 延续上一句中“训练 AI 像养育孩子”的比喻；of the system 修饰 behavior；to correct and guide it 是 try 的宾语补足/目的内容。"
+            },
+            {
+              "label": "语法要点",
+              "text": "want + 宾语 + to do；but 连接转折；observe 和 try 是并列谓语，correct 和 guide 是并列动词。"
+            }
+          ],
+          "structure": "We want the child to be autonomous, but we need to observe and try.",
+          "phrases": [
+            {
+              "term": "of course",
+              "zh": "当然",
+              "note": "用于承认一个显而易见或合理的观点。"
+            },
+            {
+              "term": "autonomous",
+              "zh": "自主的；自治的",
+              "note": "在 AI 语境中指系统能够独立运行或决策。"
+            },
+            {
+              "term": "observe the behavior",
+              "zh": "观察行为",
+              "note": "behavior 可指人、动物或系统的行为表现。"
+            },
+            {
+              "term": "correct and guide",
+              "zh": "纠正并引导",
+              "note": "两个动词并列，说明人类监督的两种作用。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句法中等，关键是理解 child 与 system 的类比关系。该句强调自主并不等于放任，仍需要观察、纠正和引导。六级中等。"
+          }
+        },
+        {
+          "label": "008-78",
+          "part": "Part 008",
+          "en": "(Knowable Magazine’s journalism is fact-checked by humans.)",
+          "zh": "（《Knowable Magazine》的新闻报道由人工进行事实核查。）",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Knowable Magazine’s journalism is fact-checked."
+            },
+            {
+              "label": "修饰成分",
+              "text": "by humans 是施事状语，说明事实核查由人完成。"
+            },
+            {
+              "label": "语法要点",
+              "text": "is fact-checked 是一般现在时被动语态；括号内容是作者或刊物的补充说明。"
+            }
+          ],
+          "structure": "Knowable Magazine’s journalism is fact-checked.",
+          "phrases": [
+            {
+              "term": "journalism",
+              "zh": "新闻报道；新闻业",
+              "note": "这里指该刊物发布的新闻内容。"
+            },
+            {
+              "term": "fact-check",
+              "zh": "事实核查",
+              "note": "可作动词，表示核实内容是否准确。"
+            },
+            {
+              "term": "by humans",
+              "zh": "由人类/人工完成",
+              "note": "强调不是完全由 AI 自动完成。"
+            }
+          ],
+          "difficulty": 1,
+          "difficultyAnalysis": {
+            "difficulty_level": 1,
+            "difficulty_stars": "★☆☆☆☆",
+            "reason_cn": "句子很短，难度低。它与全文结论呼应：事实核查仍需要人。六级偏易。"
+          }
+        },
+        {
+          "label": "008-79",
+          "part": "Part 008",
+          "en": "Editor’s note: This article was amended on June 26, 2026, to clarify that large language models use machine learning.",
+          "zh": "编者按：本文于 2026 年 6 月 26 日修订，以澄清大型语言模型使用机器学习这一点。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This article was amended."
+            },
+            {
+              "label": "修饰成分",
+              "text": "on June 26, 2026 是时间状语；to clarify... 是目的状语；that large language models use machine learning 是 clarify 的宾语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "was amended 是一般过去时被动语态；to clarify 表示修订目的。"
+            }
+          ],
+          "structure": "This article was amended.",
+          "phrases": [
+            {
+              "term": "Editor’s note",
+              "zh": "编者按",
+              "note": "用于说明文章后续修订、补充或更正信息。"
+            },
+            {
+              "term": "be amended",
+              "zh": "被修订；被修改",
+              "note": "amend 常用于正式修改文本、法律、文章。"
+            },
+            {
+              "term": "clarify",
+              "zh": "澄清；说明清楚",
+              "note": "指使模糊或可能误解的内容变得明确。"
+            },
+            {
+              "term": "large language models",
+              "zh": "大型语言模型",
+              "note": "常缩写为 LLMs。"
+            },
+            {
+              "term": "machine learning",
+              "zh": "机器学习",
+              "note": "人工智能的一个重要分支，大型语言模型属于机器学习系统。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子较简单，属于编辑说明。注意 amended 和 clarify 是正式书面表达。六级中等偏易。"
+          }
+        }
+      ]
+    }
+  ]
+}
