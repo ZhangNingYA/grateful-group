@@ -1,0 +1,1869 @@
+{
+  "storageKey": "reading-2026-07-nasa-tess-planetary-system",
+  "intro": {
+    "kicker": "Reading · 2026-07-01 · NASA TESS & Exoplanets",
+    "title": "NASA's TESS Mission Finds Planetary System in New Way：句句精读",
+    "description": "按原文 001-005 的顺序整理 46 个句子，包含英文原句、中文翻译、句子结构、重点词汇词组和难度标记，适合通读复盘与天文科技新闻精读。"
+  },
+  "sections": [
+    {
+      "kicker": "Part 001",
+      "title": "001 · NASA's TESS Mission Finds Planetary System in New Way",
+      "navLabel": "001",
+      "description": "介绍 TESS 首次借助时空涟漪识别系外行星，以及 Gaia23bra b 的发现背景。",
+      "items": [
+        {
+          "label": "001-01",
+          "part": "Part 001",
+          "en": "For the first time, NASA's TESS (Transiting Exoplanet Survey Satellite) mission has identified a planet orbiting a distant star thanks to ripples in space-time.",
+          "zh": "NASA 的 TESS（凌日系外行星巡天卫星）任务首次借助时空涟漪，发现了一颗围绕遥远恒星运行的行星。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "NASA's TESS mission has identified a planet."
+            },
+            {
+              "label": "修饰成分",
+              "text": "For the first time 作句首时间/范围状语；(Transiting Exoplanet Survey Satellite) 解释 TESS 全称；orbiting a distant star 是现在分词短语修饰 planet；thanks to... 说明发现得以实现的原因。"
+            },
+            {
+              "label": "语法要点",
+              "text": "现在完成时 has identified 强调首次发现的结果；thanks to 后接名词短语表示原因。"
+            }
+          ],
+          "structure": "NASA's TESS mission has identified a planet.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "ripples in space-time",
+              "zh": "时空涟漪",
+              "note": "指引力造成的时空变化，这里与微引力透镜现象有关。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "001-02",
+          "part": "Part 001",
+          "en": "Unlike the star-hugging transiting planets TESS regularly reveals, the newfound world is a super-Jupiter orbiting far from its host star.",
+          "zh": "不同于 TESS 经常发现的那些紧贴恒星运行的凌日行星，这个新发现的天体是一颗远离其主恒星运行的超级木星。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The newfound world is a super-Jupiter."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Unlike... 是句首对比状语；TESS regularly reveals 是省略关系代词的定语从句，修饰 planets；orbiting far from its host star 修饰 super-Jupiter。"
+            },
+            {
+              "label": "语法要点",
+              "text": "unlike 引出对比；现在分词 orbiting 作后置定语，说明行星运行位置。"
+            }
+          ],
+          "structure": "The newfound world is a super-Jupiter.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "super-Jupiter",
+              "zh": "超级木星",
+              "note": "质量大于木星或接近木星的大型气态行星。"
+            },
+            {
+              "term": "host star",
+              "zh": "主恒星",
+              "note": "行星围绕运行的恒星。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "001-03",
+          "part": "Part 001",
+          "en": "\"When TESS launched, no one expected it to ever be capable of finding this kind of planet,\" said Diana Dragomir, a professor at the University of New Mexico in Albuquerque and co-author of a paper describing the results.",
+          "zh": "University of New Mexico in Albuquerque 教授、相关论文共同作者 Diana Dragomir 说：“TESS 发射时，没有人预料到它竟然有能力发现这种行星。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "No one expected it to be capable of finding this kind of planet, said Diana Dragomir."
+            },
+            {
+              "label": "修饰成分",
+              "text": "When TESS launched 是时间状语从句；a professor... and co-author... 是 Diana Dragomir 的同位语；describing the results 修饰 paper。"
+            },
+            {
+              "label": "语法要点",
+              "text": "expect sb./sth. to do 结构；be capable of 后接动名词；人物身份同位语较长，需要先抓引语主干。"
+            }
+          ],
+          "structure": "No one expected it to be capable of finding this kind of planet, said Diana Dragomir.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "001-04",
+          "part": "Part 001",
+          "en": "At 1.6 times Jupiter's mass and a similar orbital distance, it would be extremely unlikely to find such a planet via the primary detection method TESS was designed for.",
+          "zh": "这颗行星质量为木星的 1.6 倍，轨道距离也相近，因此用 TESS 原本设计的主要探测方法来发现这样的行星，可能性极低。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It would be extremely unlikely to find such a planet."
+            },
+            {
+              "label": "修饰成分",
+              "text": "At 1.6 times Jupiter's mass and a similar orbital distance 是句首条件/背景状语；via... method 表示方式；TESS was designed for 是省略关系词的定语从句，修饰 method。"
+            },
+            {
+              "label": "语法要点",
+              "text": "it 是形式主语，真正主语是 to find such a planet；designed for 作后置定语。"
+            }
+          ],
+          "structure": "It would be extremely unlikely to find such a planet.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "001-05",
+          "part": "Part 001",
+          "en": "\"The discovery implies that there are probably other so-called microlensing planets hiding in TESS's data that we hadn't previously thought to look for.\"",
+          "zh": "“这一发现意味着，TESS 数据中很可能还隐藏着其他所谓的微引力透镜行星，而我们此前并没有想到要去寻找它们。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The discovery implies that there are probably other microlensing planets."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that 引导 implies 的宾语从句；hiding in TESS's data 是现在分词短语修饰 planets；that we hadn't previously thought to look for 是定语从句，修饰 planets。"
+            },
+            {
+              "label": "语法要点",
+              "text": "there be 句型嵌入宾语从句；过去完成时 hadn't thought 表示此前未曾考虑。"
+            }
+          ],
+          "structure": "The discovery implies that there are probably other microlensing planets.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "001-06",
+          "part": "Part 001",
+          "en": "Astronomers found the first hint of the planet, called Gaia23bra b, in 2023 using ESA's (European Space Agency) now-retired Gaia space telescope.",
+          "zh": "2023 年，天文学家利用 ESA（欧洲航天局）现已退役的 Gaia 太空望远镜，首次发现了这颗名为 Gaia23bra b 的行星线索。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Astronomers found the first hint of the planet."
+            },
+            {
+              "label": "修饰成分",
+              "text": "called Gaia23bra b 是过去分词短语补充说明 planet；in 2023 是时间状语；using ESA's... Gaia space telescope 是方式状语；now-retired 修饰 Gaia space telescope。"
+            },
+            {
+              "label": "语法要点",
+              "text": "过去分词 called 作后置定语；using 分词短语说明发现手段。"
+            }
+          ],
+          "structure": "Astronomers found the first hint of the planet.",
+          "phrases": [
+            {
+              "term": "identify",
+              "zh": "发现；识别",
+              "note": "科技报道中常表示通过观测或数据分析确认某物。"
+            },
+            {
+              "term": "orbit",
+              "zh": "围绕……运行",
+              "note": "可作动词或名词，描述天体绕另一星体运动。"
+            },
+            {
+              "term": "reveal",
+              "zh": "揭示；显示",
+              "note": "常用于研究、数据或观测结果说明新发现。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "001-07",
+          "part": "Part 001",
+          "en": "Gaia's alert system flagged a star that brightened — something that can happen when a foreground star passes in front of a more distant one and magnifies its light through gravitational microlensing.",
+          "zh": "Gaia 的警报系统标记了一颗变亮的恒星；当前景恒星从更遥远的恒星前方经过，并通过引力微透镜放大其光线时，就可能出现这种现象。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Gaia's alert system flagged a star."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that brightened 是定语从句修饰 star；破折号后 something... 解释变亮现象；when 引导时间状语从句；and magnifies 与 passes 并列。"
+            },
+            {
+              "label": "语法要点",
+              "text": "破折号后的解释结构较长；foreground/more distant 构成空间关系对比。"
+            }
+          ],
+          "structure": "Gaia's alert system flagged a star.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "foreground star",
+              "zh": "前景恒星",
+              "note": "位于观察者和更远背景恒星之间的恒星。"
+            },
+            {
+              "term": "gravitational microlensing",
+              "zh": "引力微透镜",
+              "note": "由较近天体引力造成的微弱透镜放大效应。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "001-08",
+          "part": "Part 001",
+          "en": "Researchers later looked back through archived TESS data and found TESS had caught it too.",
+          "zh": "研究人员后来回看归档的 TESS 数据，发现 TESS 也捕捉到了这一事件。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Researchers looked back and found TESS had caught it too."
+            },
+            {
+              "label": "修饰成分",
+              "text": "later 修饰 looked back；through archived TESS data 表示查找范围；had caught 是 found 后宾语从句中的过去完成时。"
+            },
+            {
+              "label": "语法要点",
+              "text": "look back through 表示回看资料；found 后省略 that，引出宾语从句。"
+            }
+          ],
+          "structure": "Researchers looked back and found TESS had caught it too.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "001-09",
+          "part": "Part 001",
+          "en": "\"Gaia's observations were too sparse to pick up on the planet,\" said Mallory Harris, a Ph.D. candidate at the University of New Mexico, who led the study.",
+          "zh": "主导该研究的 University of New Mexico 博士候选人 Mallory Harris 说：“Gaia 的观测太稀疏，无法捕捉到这颗行星。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Gaia's observations were too sparse, said Mallory Harris."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to pick up on the planet 是结果/程度补足；a Ph.D. candidate... 是 Harris 的同位语；who led the study 是非限制性定语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "too...to... 表示“太……以至于不能……”；引语后的人物说明含同位语和定语从句。"
+            }
+          ],
+          "structure": "Gaia's observations were too sparse, said Mallory Harris.",
+          "phrases": [
+            {
+              "term": "identify",
+              "zh": "发现；识别",
+              "note": "科技报道中常表示通过观测或数据分析确认某物。"
+            },
+            {
+              "term": "orbit",
+              "zh": "围绕……运行",
+              "note": "可作动词或名词，描述天体绕另一星体运动。"
+            },
+            {
+              "term": "reveal",
+              "zh": "揭示；显示",
+              "note": "常用于研究、数据或观测结果说明新发现。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "001-10",
+          "part": "Part 001",
+          "en": "\"The TESS spacecraft happened to be monitoring the same area of the sky during the event, and its denser time coverage showed extra features in the light curve caused by a planet.\"",
+          "zh": "“TESS 航天器碰巧在这一事件发生期间监测同一片天空区域，而它更密集的时间覆盖显示出光变曲线中由行星造成的额外特征。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The TESS spacecraft happened to be monitoring the same area, and its denser time coverage showed extra features."
+            },
+            {
+              "label": "修饰成分",
+              "text": "during the event 是时间状语；in the light curve 修饰 features 的位置；caused by a planet 是过去分词短语，说明 features 来源。"
+            },
+            {
+              "label": "语法要点",
+              "text": "happen to do 表示“碰巧做”；and 连接两个并列分句。"
+            }
+          ],
+          "structure": "The TESS spacecraft happened to be monitoring the same area, and its denser time coverage showed extra features.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "light curve",
+              "zh": "光变曲线",
+              "note": "天体亮度随时间变化的记录，是寻找行星信号的重要依据。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 002",
+      "title": "002 · NASA's TESS Mission Finds Planetary System in New Way",
+      "navLabel": "002",
+      "description": "说明该行星距离、质量、轨道特征，以及 TESS 常用凌日法的适用范围。",
+      "items": [
+        {
+          "label": "002-11",
+          "part": "Part 002",
+          "en": "The team's analysis, published July 1 in The Astrophysical Journal Letters, revealed that Gaia23bra b, which orbits an orange dwarf star that's about 80 percent of the Sun's mass, is nearly 40,000 light-years away from Earth, far exceeding TESS's usual search radius of about 150 light-years.",
+          "zh": "研究团队 7 月 1 日发表在《The Astrophysical Journal Letters》上的分析显示，Gaia23bra b 围绕一颗橙矮星运行，这颗恒星质量约为太阳的 80%；该行星距离地球近 4 万光年，远远超出 TESS 通常约 150 光年的搜索半径。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The team's analysis revealed that Gaia23bra b is nearly 40,000 light-years away."
+            },
+            {
+              "label": "修饰成分",
+              "text": "published July 1... 是过去分词短语修饰 analysis；that 引导宾语从句；which orbits... 是非限制性定语从句；far exceeding... 是现在分词短语说明距离超出通常范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "长句主干是 analysis revealed that...；多个插入和从句补充发表信息、恒星特征和距离比较。"
+            }
+          ],
+          "structure": "The team's analysis revealed that Gaia23bra b is nearly 40,000 light-years away.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "orange dwarf star",
+              "zh": "橙矮星",
+              "note": "质量和温度低于太阳的一类恒星。"
+            },
+            {
+              "term": "light-years",
+              "zh": "光年",
+              "note": "天文学距离单位，表示光在一年中行进的距离。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "002-12",
+          "part": "Part 002",
+          "en": "Out of more than 6,000 known exoplanets (worlds outside our solar system), about three-fourths were discovered via the transit method, TESS's typical planet-hunting technique.",
+          "zh": "在 6000 多颗已知系外行星（太阳系外的世界）中，约四分之三是通过凌日法发现的；凌日法也是 TESS 典型的行星搜寻技术。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "About three-fourths were discovered via the transit method."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Out of more than 6,000 known exoplanets 是范围状语；括号解释 exoplanets；TESS's typical planet-hunting technique 是 transit method 的同位语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "分数 three-fourths 作主语；via 表示通过某种方法。"
+            }
+          ],
+          "structure": "About three-fourths were discovered via the transit method.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "exoplanets",
+              "zh": "系外行星",
+              "note": "太阳系以外、围绕其他恒星运行的行星。"
+            },
+            {
+              "term": "transit method",
+              "zh": "凌日法",
+              "note": "通过行星经过恒星前方导致亮度下降来探测行星的方法。"
+            },
+            {
+              "term": "planet-hunting",
+              "zh": "搜寻行星的",
+              "note": "复合形容词，说明某技术或任务的用途。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "002-13",
+          "part": "Part 002",
+          "en": "Astronomers monitor hordes of stars, watching for ones that periodically dim as orbiting planets cross in front of them — an event called a transit.",
+          "zh": "天文学家监测大量恒星，寻找那些因轨道行星从其前方经过而周期性变暗的恒星，这一事件被称为凌日。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Astronomers monitor hordes of stars."
+            },
+            {
+              "label": "修饰成分",
+              "text": "watching for ones... 是伴随分词短语；that periodically dim 是定语从句修饰 ones；as orbiting planets cross... 是时间/原因状语；破折号后解释 transit。"
+            },
+            {
+              "label": "语法要点",
+              "text": "monitor..., watching... 表示同步动作；as 引导事件发生条件。"
+            }
+          ],
+          "structure": "Astronomers monitor hordes of stars.",
+          "phrases": [
+            {
+              "term": "hordes of stars",
+              "zh": "大量恒星",
+              "note": "hordes 强调数量很多，在此为略口语化表达。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-14",
+          "part": "Part 002",
+          "en": "Microlensing has revealed less than 5% of known exoplanets.",
+          "zh": "微引力透镜发现的已知系外行星不到 5%。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Microlensing has revealed less than 5% of known exoplanets."
+            },
+            {
+              "label": "修饰成分",
+              "text": "less than 5% 是宾语；of known exoplanets 限定比例对象。"
+            },
+            {
+              "label": "语法要点",
+              "text": "现在完成时强调截至目前的累计发现；percentage + of 表示整体中的比例。"
+            }
+          ],
+          "structure": "Microlensing has revealed less than 5% of known exoplanets.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "exoplanets",
+              "zh": "系外行星",
+              "note": "太阳系以外、围绕其他恒星运行的行星。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-15",
+          "part": "Part 002",
+          "en": "This light-bending phenomenon occurs when two stars align closely from our vantage point.",
+          "zh": "当两颗恒星从我们的视角看几乎对齐时，就会出现这种使光弯曲的现象。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This light-bending phenomenon occurs."
+            },
+            {
+              "label": "修饰成分",
+              "text": "when two stars align closely... 是时间/条件状语从句；from our vantage point 说明观察视角。"
+            },
+            {
+              "label": "语法要点",
+              "text": "phenomenon 是主语；when 从句解释现象发生条件。"
+            }
+          ],
+          "structure": "This light-bending phenomenon occurs.",
+          "phrases": [
+            {
+              "term": "vantage point",
+              "zh": "观察视角",
+              "note": "指观察者所在的位置或角度。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-16",
+          "part": "Part 002",
+          "en": "Light from the more distant star curves as it travels through the warped space-time caused by the nearer star's mass.",
+          "zh": "来自更遥远恒星的光在传播时会发生弯曲，因为较近恒星的质量扭曲了时空。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Light from the more distant star curves."
+            },
+            {
+              "label": "修饰成分",
+              "text": "from the more distant star 修饰 Light；as it travels... 是时间状语；through the warped space-time 表示路径；caused by... 是过去分词短语修饰 space-time。"
+            },
+            {
+              "label": "语法要点",
+              "text": "as 引导过程同步；过去分词 caused 表示被动来源。"
+            }
+          ],
+          "structure": "Light from the more distant star curves.",
+          "phrases": [
+            {
+              "term": "warped space-time",
+              "zh": "被扭曲的时空",
+              "note": "质量会弯曲时空，这是引力透镜效应的基础。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-17",
+          "part": "Part 002",
+          "en": "If the alignment is especially close, the nearer star acts like a cosmic lens, focusing and magnifying light from the background star.",
+          "zh": "如果对齐程度特别高，较近的恒星就会像宇宙透镜一样，聚焦并放大背景恒星的光。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The nearer star acts like a cosmic lens."
+            },
+            {
+              "label": "修饰成分",
+              "text": "If the alignment is especially close 是条件状语从句；focusing and magnifying... 是并列现在分词，补充说明 lens 的作用。"
+            },
+            {
+              "label": "语法要点",
+              "text": "if 条件句引出物理机制；act like 表示“像……一样发挥作用”。"
+            }
+          ],
+          "structure": "The nearer star acts like a cosmic lens.",
+          "phrases": [
+            {
+              "term": "cosmic lens",
+              "zh": "宇宙透镜",
+              "note": "比喻前景天体像透镜一样放大背景光。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-18",
+          "part": "Part 002",
+          "en": "Planets orbiting the foreground star may also modify the distant star's light, acting as their own tiny lenses.",
+          "zh": "围绕前景恒星运行的行星也可能改变远处恒星的光，像微小透镜一样发挥作用。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Planets may also modify the distant star's light."
+            },
+            {
+              "label": "修饰成分",
+              "text": "orbiting the foreground star 修饰 Planets；acting as their own tiny lenses 是伴随分词短语，说明行星如何影响光线。"
+            },
+            {
+              "label": "语法要点",
+              "text": "情态动词 may 表示可能性；两个分词短语分别修饰主语和补充结果。"
+            }
+          ],
+          "structure": "Planets may also modify the distant star's light.",
+          "phrases": [
+            {
+              "term": "foreground star",
+              "zh": "前景恒星",
+              "note": "位于观察者和更远背景恒星之间的恒星。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-19",
+          "part": "Part 002",
+          "en": "Astronomers see the effect as a spike in the star's brightness.",
+          "zh": "天文学家会把这种效应看作恒星亮度中的一次尖峰。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Astronomers see the effect as a spike."
+            },
+            {
+              "label": "修饰成分",
+              "text": "in the star's brightness 修饰 spike，说明尖峰出现在哪个指标上。"
+            },
+            {
+              "label": "语法要点",
+              "text": "see A as B 表示“把 A 看作 B”；spike 在数据语境中指突然上升。"
+            }
+          ],
+          "structure": "Astronomers see the effect as a spike.",
+          "phrases": [
+            {
+              "term": "spike",
+              "zh": "尖峰；骤升",
+              "note": "数据图中突然升高的点或峰值。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "002-20",
+          "part": "Part 002",
+          "en": "The transit method is best at finding large planets orbiting very close to their host stars; large planets block the most starlight, while close-in planets are more likely to pass in front of the host star.",
+          "zh": "凌日法最擅长发现非常靠近主恒星运行的大行星；大行星会遮挡最多的星光，而近距离行星也更可能从主恒星前方经过。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The transit method is best at finding large planets; large planets block the most starlight."
+            },
+            {
+              "label": "修饰成分",
+              "text": "orbiting very close... 修饰 planets；while 引导对比分句；close-in planets 是后半句主语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "分号连接两个解释关系紧密的分句；be best at 后接动名词。"
+            }
+          ],
+          "structure": "The transit method is best at finding large planets; large planets block the most starlight.",
+          "phrases": [
+            {
+              "term": "host star",
+              "zh": "主恒星",
+              "note": "行星围绕运行的恒星。"
+            },
+            {
+              "term": "transit method",
+              "zh": "凌日法",
+              "note": "通过行星经过恒星前方导致亮度下降来探测行星的方法。"
+            },
+            {
+              "term": "close-in planets",
+              "zh": "近距离行星",
+              "note": "轨道非常靠近主恒星的行星。"
+            },
+            {
+              "term": "starlight",
+              "zh": "星光",
+              "note": "来自恒星的光；凌日法依赖星光变暗。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 003",
+      "title": "003 · NASA's TESS Mission Finds Planetary System in New Way",
+      "navLabel": "003",
+      "description": "比较凌日法与微引力透镜法，解释为什么后者能发现更遥远、更类太阳系的行星。",
+      "items": [
+        {
+          "label": "003-21",
+          "part": "Part 003",
+          "en": "These gargantuan, steamy worlds are fascinating to scientists, but astronomers want to find planets like those in our solar system, too.",
+          "zh": "这些巨大而炽热的世界令科学家着迷，但天文学家也想找到像我们太阳系中那样的行星。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "These worlds are fascinating, but astronomers want to find planets like those in our solar system."
+            },
+            {
+              "label": "修饰成分",
+              "text": "gargantuan, steamy 并列修饰 worlds；like those... 修饰 planets；too 表示“也”。"
+            },
+            {
+              "label": "语法要点",
+              "text": "but 连接转折：先承认热木星类天体有吸引力，再指出研究目标不止于此。"
+            }
+          ],
+          "structure": "These worlds are fascinating, but astronomers want to find planets like those in our solar system.",
+          "phrases": [
+            {
+              "term": "gargantuan",
+              "zh": "巨大的",
+              "note": "正式或文学化词汇，强调体积极大。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-22",
+          "part": "Part 003",
+          "en": "That's microlensing's specialty.",
+          "zh": "这正是微引力透镜的专长。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "That is microlensing's specialty."
+            },
+            {
+              "label": "修饰成分",
+              "text": "That 指代前一句“寻找类似太阳系的行星”这一目标。"
+            },
+            {
+              "label": "语法要点",
+              "text": "代词指代是理解关键；specialty 表示某方法特别擅长的领域。"
+            }
+          ],
+          "structure": "That is microlensing's specialty.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-23",
+          "part": "Part 003",
+          "en": "With microlensing, we can find smaller planets with greater orbital distances, including worlds in the habitable zone of their star and even farther away.",
+          "zh": "借助微引力透镜，我们可以发现轨道距离更远的小型行星，包括位于恒星宜居带内甚至更远处的世界。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "We can find smaller planets."
+            },
+            {
+              "label": "修饰成分",
+              "text": "With microlensing 是方式状语；with greater orbital distances 修饰 planets；including... 是现在分词短语列举具体类型；in the habitable zone... 修饰 worlds。"
+            },
+            {
+              "label": "语法要点",
+              "text": "介词 with 在句首表示借助手段；including 用于补充举例。"
+            }
+          ],
+          "structure": "We can find smaller planets.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "habitable zone",
+              "zh": "宜居带",
+              "note": "恒星周围可能允许液态水存在的区域。"
+            },
+            {
+              "term": "orbital distances",
+              "zh": "轨道距离",
+              "note": "行星与其主恒星之间的运行距离。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "003-24",
+          "part": "Part 003",
+          "en": "Microlensing isn't well suited to finding huge, close-in planets because their gravitational signals would just blur together.",
+          "zh": "微引力透镜并不适合寻找巨大且近距离运行的行星，因为它们的引力信号会混在一起、变得模糊。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Microlensing isn't well suited to finding huge planets."
+            },
+            {
+              "label": "修饰成分",
+              "text": "close-in 修饰 planets；because 引导原因状语从句；would just blur together 描述引力信号混杂的结果。"
+            },
+            {
+              "label": "语法要点",
+              "text": "be suited to 后接动名词；because 从句解释方法局限。"
+            }
+          ],
+          "structure": "Microlensing isn't well suited to finding huge planets.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "close-in planets",
+              "zh": "近距离行星",
+              "note": "轨道非常靠近主恒星的行星。"
+            },
+            {
+              "term": "gravitational signals",
+              "zh": "引力信号",
+              "note": "由天体引力造成、可被观测到的效应。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-25",
+          "part": "Part 003",
+          "en": "\"Transits and microlensing are complementary because they each reveal a category of planet the other may not be able to detect,\" Dragomir said.",
+          "zh": "Dragomir 说：“凌日法和微引力透镜是互补的，因为它们各自能揭示另一种方法可能无法探测到的一类行星。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Transits and microlensing are complementary, Dragomir said."
+            },
+            {
+              "label": "修饰成分",
+              "text": "because 引导原因从句；they each reveal... 是原因从句主干；the other may not be able to detect 是定语从句，修饰 category of planet。"
+            },
+            {
+              "label": "语法要点",
+              "text": "complementary 表示互补；each 强调两种方法各有覆盖范围。"
+            }
+          ],
+          "structure": "Transits and microlensing are complementary, Dragomir said.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "complementary",
+              "zh": "互补的",
+              "note": "表示两种方法各有优势，可以相互补充。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-26",
+          "part": "Part 003",
+          "en": "\"And they offer different details.",
+          "zh": "“而且它们提供的是不同细节。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "They offer different details."
+            },
+            {
+              "label": "修饰成分",
+              "text": "different 修饰 details，承接上一句说明两种方法不仅发现对象不同，信息类型也不同。"
+            },
+            {
+              "label": "语法要点",
+              "text": "简单句，但逻辑上承接前文的互补关系。"
+            }
+          ],
+          "structure": "They offer different details.",
+          "phrases": [
+            {
+              "term": "identify",
+              "zh": "发现；识别",
+              "note": "科技报道中常表示通过观测或数据分析确认某物。"
+            },
+            {
+              "term": "orbit",
+              "zh": "围绕……运行",
+              "note": "可作动词或名词，描述天体绕另一星体运动。"
+            },
+            {
+              "term": "reveal",
+              "zh": "揭示；显示",
+              "note": "常用于研究、数据或观测结果说明新发现。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-27",
+          "part": "Part 003",
+          "en": "Transits give us the size of a planet, and in concert with other methods we can determine its mass and density.",
+          "zh": "凌日能告诉我们行星的大小，并且结合其他方法，我们可以确定它的质量和密度。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Transits give us the size, and we can determine its mass and density."
+            },
+            {
+              "label": "修饰成分",
+              "text": "of a planet 修饰 size；in concert with other methods 是插入状语；and 连接两个并列分句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "give sb. sth. 双宾结构；in concert with 表示“与……配合”。"
+            }
+          ],
+          "structure": "Transits give us the size, and we can determine its mass and density.",
+          "phrases": [
+            {
+              "term": "in concert with",
+              "zh": "与……配合",
+              "note": "表示多个方法或因素共同发挥作用。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-28",
+          "part": "Part 003",
+          "en": "Microlensing gives us masses and orbital distances for planets we'd otherwise never see.\"",
+          "zh": "微引力透镜则能提供行星的质量和轨道距离，而这些行星否则我们永远看不到。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Microlensing gives us masses and orbital distances."
+            },
+            {
+              "label": "修饰成分",
+              "text": "for planets... 修饰 masses and orbital distances 的适用对象；we'd otherwise never see 是省略关系词的定语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "otherwise 表示“否则”；would 表示假设条件下的结果。"
+            }
+          ],
+          "structure": "Microlensing gives us masses and orbital distances.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "orbital distances",
+              "zh": "轨道距离",
+              "note": "行星与其主恒星之间的运行距离。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-29",
+          "part": "Part 003",
+          "en": "But microlensing observations are time-limited opportunities.",
+          "zh": "不过，微引力透镜观测是有时间限制的机会。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Microlensing observations are time-limited opportunities."
+            },
+            {
+              "label": "修饰成分",
+              "text": "But 表示转折，从方法优势转向观测限制；time-limited 修饰 opportunities。"
+            },
+            {
+              "label": "语法要点",
+              "text": "复合形容词 time-limited 说明机会窗口短。"
+            }
+          ],
+          "structure": "Microlensing observations are time-limited opportunities.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "003-30",
+          "part": "Part 003",
+          "en": "Microlensing events happen once and they're gone — they don't repeat.",
+          "zh": "微引力透镜事件只发生一次，然后就消失了；它们不会重复。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Microlensing events happen once and they're gone."
+            },
+            {
+              "label": "修饰成分",
+              "text": "破折号后 they don't repeat 对前半句作解释；once 表示只发生一次。"
+            },
+            {
+              "label": "语法要点",
+              "text": "and 连接连续结果；破折号用于强调不可重复性。"
+            }
+          ],
+          "structure": "Microlensing events happen once and they're gone.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 004",
+      "title": "004 · NASA's TESS Mission Finds Planetary System in New Way",
+      "navLabel": "004",
+      "description": "讨论微引力透镜事件不可重复的特点，以及多望远镜协同观测对确认行星的重要性。",
+      "items": [
+        {
+          "label": "004-31",
+          "part": "Part 004",
+          "en": "I like to joke that we'll probably find the first Earth analog with microlensing, and then wave at it as it goes by because we'll never see it again.",
+          "zh": "我喜欢开玩笑说，我们很可能会用微引力透镜发现第一个地球类似物，然后在它经过时挥手告别，因为我们再也见不到它了。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "I like to joke that we'll probably find the first Earth analog and then wave at it."
+            },
+            {
+              "label": "修饰成分",
+              "text": "that 引导 joke 的宾语从句；with microlensing 是方式状语；as it goes by 是时间状语；because 引导原因状语从句。"
+            },
+            {
+              "label": "语法要点",
+              "text": "宾语从句内部含并列动作 find 和 wave；because 解释为什么只能“挥手告别”。"
+            }
+          ],
+          "structure": "I like to joke that we'll probably find the first Earth analog and then wave at it.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "Earth analog",
+              "zh": "地球类似物",
+              "note": "与地球在大小、轨道或宜居条件上相似的行星。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "004-32",
+          "part": "Part 004",
+          "en": "That makes detailed observations of microlensing planets tough.",
+          "zh": "这使得对微引力透镜行星进行详细观测变得很困难。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "That makes detailed observations tough."
+            },
+            {
+              "label": "修饰成分",
+              "text": "That 指代微引力透镜事件不可重复这一事实；of microlensing planets 修饰 observations。"
+            },
+            {
+              "label": "语法要点",
+              "text": "make + 宾语 + 形容词 表示“使……变得……”。"
+            }
+          ],
+          "structure": "That makes detailed observations tough.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "004-33",
+          "part": "Part 004",
+          "en": "However, the method can serve as a powerful demographics tool that offers broad information about planetary populations.",
+          "zh": "然而，这种方法可以成为一种强大的人口统计工具，提供关于行星群体的广泛信息。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The method can serve as a powerful demographics tool."
+            },
+            {
+              "label": "修饰成分",
+              "text": "However 表示转折；that offers... 是定语从句修饰 tool；about planetary populations 修饰 information。"
+            },
+            {
+              "label": "语法要点",
+              "text": "serve as 表示“充当”；demographics tool 指用于统计群体特征的工具。"
+            }
+          ],
+          "structure": "The method can serve as a powerful demographics tool.",
+          "phrases": [
+            {
+              "term": "demographics tool",
+              "zh": "群体统计工具",
+              "note": "用于研究整体数量、分布和类型特征的工具。"
+            },
+            {
+              "term": "planetary populations",
+              "zh": "行星群体",
+              "note": "某一范围内行星的整体类型和分布。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "004-34",
+          "part": "Part 004",
+          "en": "\"This is a bit like a preview of the microlensing NASA's Nancy Grace Roman Space Telescope will do,\" said Michael Fausnaugh, a professor at Texas Tech University in Lubbock and a co-author of the study.",
+          "zh": "Texas Tech University in Lubbock 教授、该研究共同作者 Michael Fausnaugh 说：“这有点像预览 NASA 的 Nancy Grace Roman Space Telescope 将要开展的微引力透镜观测。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This is a bit like a preview, said Michael Fausnaugh."
+            },
+            {
+              "label": "修饰成分",
+              "text": "of the microlensing... 修饰 preview；NASA's Nancy Grace Roman Space Telescope will do 是定语从句，修饰 microlensing；a professor... and co-author... 是人物同位语。"
+            },
+            {
+              "label": "语法要点",
+              "text": "like 表示类比；引语主干被人物身份说明扩展。"
+            }
+          ],
+          "structure": "This is a bit like a preview, said Michael Fausnaugh.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "Roman",
+              "zh": "Roman 太空望远镜",
+              "note": "NASA 的 Nancy Grace Roman Space Telescope，计划用于大规模天文巡天。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "004-35",
+          "part": "Part 004",
+          "en": "On track for launch on August 30, 2026, Roman will observe the center of the Milky Way galaxy for one of its core surveys, revealing an estimated 1,000 microlensing planets and around 100,000 transiting planets.",
+          "zh": "Roman 计划于 2026 年 8 月 30 日发射，它将观测银河系中心，作为其核心巡天之一，预计揭示约 1000 颗微引力透镜行星和约 10 万颗凌日行星。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Roman will observe the center of the Milky Way galaxy."
+            },
+            {
+              "label": "修饰成分",
+              "text": "On track for launch... 是句首背景状语；for one of its core surveys 表示目的/项目；revealing... 是现在分词短语，说明预期结果。"
+            },
+            {
+              "label": "语法要点",
+              "text": "will 表示计划；现在分词 revealing 作结果状语。"
+            }
+          ],
+          "structure": "Roman will observe the center of the Milky Way galaxy.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "Roman",
+              "zh": "Roman 太空望远镜",
+              "note": "NASA 的 Nancy Grace Roman Space Telescope，计划用于大规模天文巡天。"
+            },
+            {
+              "term": "Milky Way",
+              "zh": "银河系",
+              "note": "太阳系所在的星系。"
+            },
+            {
+              "term": "core surveys",
+              "zh": "核心巡天项目",
+              "note": "任务中的主要系统性观测项目。"
+            },
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "004-36",
+          "part": "Part 004",
+          "en": "Roman will specifically target the heart of the galaxy because stars are packed so tightly together there, increasing the odds of seeing microlensing events.",
+          "zh": "Roman 将专门瞄准银河系中心，因为那里的恒星非常密集，从而增加了看到微引力透镜事件的概率。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Roman will target the heart of the galaxy."
+            },
+            {
+              "label": "修饰成分",
+              "text": "specifically 修饰 target；because 引导原因从句；increasing the odds... 是现在分词短语，说明恒星密集带来的结果。"
+            },
+            {
+              "label": "语法要点",
+              "text": "because 从句解释观测目标选择；odds of doing 表示某事发生的概率。"
+            }
+          ],
+          "structure": "Roman will target the heart of the galaxy.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "Roman",
+              "zh": "Roman 太空望远镜",
+              "note": "NASA 的 Nancy Grace Roman Space Telescope，计划用于大规模天文巡天。"
+            },
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "004-37",
+          "part": "Part 004",
+          "en": "While that crowding would make many stars blend together in TESS's larger pixels, TESS looks at nearly the whole sky, where stars are more spread out.",
+          "zh": "虽然这种拥挤会让许多恒星在 TESS 较大的像素中混在一起，但 TESS 观察几乎整个天空，而那里的恒星分布更分散。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "TESS looks at nearly the whole sky."
+            },
+            {
+              "label": "修饰成分",
+              "text": "While 引导让步/对比从句；that crowding 是从句主语；where stars are more spread out 是定语从句，修饰 sky。"
+            },
+            {
+              "label": "语法要点",
+              "text": "while 表示对比；where 可引导地点定语从句。"
+            }
+          ],
+          "structure": "TESS looks at nearly the whole sky.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "004-38",
+          "part": "Part 004",
+          "en": "\"Since TESS looks elsewhere in the galactic plane, it can naturally find microlensing planets in other parts of the galaxy, as demonstrated by this first microlensing planetary system,\" Dragomir said.",
+          "zh": "Dragomir 说：“由于 TESS 观察的是银河平面中的其他区域，它自然可以在银河系其他部分发现微引力透镜行星，这一点已由第一个微引力透镜行星系统证明。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "It can naturally find microlensing planets, Dragomir said."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Since TESS looks elsewhere... 是原因状语从句；in other parts of the galaxy 表示地点；as demonstrated by... 是省略结构，说明证据。"
+            },
+            {
+              "label": "语法要点",
+              "text": "since 表示原因；as demonstrated by 表示“正如……所证明”。"
+            }
+          ],
+          "structure": "It can naturally find microlensing planets, Dragomir said.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            },
+            {
+              "term": "galactic plane",
+              "zh": "银河平面",
+              "note": "银河系盘面所在的区域。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "004-39",
+          "part": "Part 004",
+          "en": "\"That means it could help us study planets in regions with different conditions.\"",
+          "zh": "“这意味着它可以帮助我们研究不同条件区域中的行星。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "That means it could help us study planets."
+            },
+            {
+              "label": "修饰成分",
+              "text": "That 指代上一句 TESS 可在银河系其他区域发现行星；in regions with different conditions 修饰 planets。"
+            },
+            {
+              "label": "语法要点",
+              "text": "mean 后接宾语从句省略 that；could 表示潜在作用。"
+            }
+          ],
+          "structure": "That means it could help us study planets.",
+          "phrases": [
+            {
+              "term": "identify",
+              "zh": "发现；识别",
+              "note": "科技报道中常表示通过观测或数据分析确认某物。"
+            },
+            {
+              "term": "orbit",
+              "zh": "围绕……运行",
+              "note": "可作动词或名词，描述天体绕另一星体运动。"
+            },
+            {
+              "term": "reveal",
+              "zh": "揭示；显示",
+              "note": "常用于研究、数据或观测结果说明新发现。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "004-40",
+          "part": "Part 004",
+          "en": "That could have implications for the search for habitable worlds.",
+          "zh": "这可能会影响对宜居世界的搜寻。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "That could have implications."
+            },
+            {
+              "label": "修饰成分",
+              "text": "That 指代前文在不同区域研究行星；for the search for habitable worlds 说明影响对象。"
+            },
+            {
+              "label": "语法要点",
+              "text": "have implications for 表示“对……有影响/启示”。"
+            }
+          ],
+          "structure": "That could have implications.",
+          "phrases": [
+            {
+              "term": "habitable worlds",
+              "zh": "宜居世界",
+              "note": "可能具备生命存在条件的行星或天体。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 005",
+      "title": "005 · NASA's TESS Mission Finds Planetary System in New Way",
+      "navLabel": "005",
+      "description": "收束到银河系不同区域的宜居环境、行星系统差异，以及微引力透镜未来的科学价值。",
+      "items": [
+        {
+          "label": "005-41",
+          "part": "Part 005",
+          "en": "The bustling galaxy center is rife with radiation from more frequent supernova explosions, which could sterilize planets.",
+          "zh": "繁忙的银河系中心充满了更频繁超新星爆发带来的辐射，而这些辐射可能会使行星失去生命存在的可能。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The bustling galaxy center is rife with radiation."
+            },
+            {
+              "label": "修饰成分",
+              "text": "from more frequent supernova explosions 修饰 radiation；which could sterilize planets 是非限制性定语从句，说明辐射后果。"
+            },
+            {
+              "label": "语法要点",
+              "text": "be rife with 表示“充满”；which 从句补充说明前面整类 radiation。"
+            }
+          ],
+          "structure": "The bustling galaxy center is rife with radiation.",
+          "phrases": [
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            },
+            {
+              "term": "supernova explosions",
+              "zh": "超新星爆发",
+              "note": "大质量恒星生命末期的剧烈爆炸。"
+            },
+            {
+              "term": "sterilize planets",
+              "zh": "使行星失去生命存在可能",
+              "note": "这里指强辐射可能破坏生命环境。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "005-42",
+          "part": "Part 005",
+          "en": "And gravitational encounters between crowded stars may disrupt planetary systems.",
+          "zh": "拥挤恒星之间的引力相遇也可能扰乱行星系统。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Gravitational encounters may disrupt planetary systems."
+            },
+            {
+              "label": "修饰成分",
+              "text": "between crowded stars 修饰 encounters，说明相遇发生的对象。"
+            },
+            {
+              "label": "语法要点",
+              "text": "may 表示可能性；disrupt 表示扰乱系统稳定性。"
+            }
+          ],
+          "structure": "Gravitational encounters may disrupt planetary systems.",
+          "phrases": [
+            {
+              "term": "gravitational encounters",
+              "zh": "引力相遇",
+              "note": "天体近距离经过并通过引力相互影响。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "005-43",
+          "part": "Part 005",
+          "en": "Observations from TESS focus on a milder part of the galaxy.",
+          "zh": "TESS 的观测则聚焦在银河系中较温和的一部分。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "Observations from TESS focus on a milder part."
+            },
+            {
+              "label": "修饰成分",
+              "text": "from TESS 修饰 Observations；of the galaxy 修饰 part；milder 与前文辐射强、恒星拥挤的中心区域形成对比。"
+            },
+            {
+              "label": "语法要点",
+              "text": "focus on 表示研究或观测集中于；comparative adjective milder 暗含对比。"
+            }
+          ],
+          "structure": "Observations from TESS focus on a milder part.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "005-44",
+          "part": "Part 005",
+          "en": "\"The key to Roman's microlensing survey is its dense time coverage targeting the galactic bulge,\" Fausnaugh said.",
+          "zh": "Fausnaugh 说：“Roman 微引力透镜巡天的关键，在于它针对银河核球的密集时间覆盖。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The key to Roman's survey is its dense time coverage."
+            },
+            {
+              "label": "修饰成分",
+              "text": "to Roman's microlensing survey 修饰 key；targeting the galactic bulge 是现在分词短语，修饰 coverage 或 survey 的具体指向。"
+            },
+            {
+              "label": "语法要点",
+              "text": "key to 表示“……的关键”；动名词/分词 targeting 说明覆盖对象。"
+            }
+          ],
+          "structure": "The key to Roman's survey is its dense time coverage.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "Roman",
+              "zh": "Roman 太空望远镜",
+              "note": "NASA 的 Nancy Grace Roman Space Telescope，计划用于大规模天文巡天。"
+            },
+            {
+              "term": "galactic bulge",
+              "zh": "银河核球",
+              "note": "银河系中心附近恒星密集的膨大区域。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "本句主要难点在天文学术语和上下文指代，句法层级相对清楚。适合六级科技阅读词汇和句法训练。"
+          }
+        },
+        {
+          "label": "005-45",
+          "part": "Part 005",
+          "en": "\"The TESS mission uniquely provides these rapid observations for stars in other parts of the galaxy, and pairing the two opens up prospects for understanding planet formation in a diverse population of stars.",
+          "zh": "“TESS 任务独特地为银河系其他区域的恒星提供了这些快速观测，而把两者结合起来，为理解不同恒星群体中的行星形成打开了前景。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "The TESS mission provides observations, and pairing the two opens up prospects."
+            },
+            {
+              "label": "修饰成分",
+              "text": "uniquely 修饰 provides；for stars in other parts... 说明观测对象；for understanding planet formation... 修饰 prospects；in a diverse population of stars 表示研究范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "and 连接两个并列分句；pairing the two 是动名词短语作主语。"
+            }
+          ],
+          "structure": "The TESS mission provides observations, and pairing the two opens up prospects.",
+          "phrases": [
+            {
+              "term": "TESS",
+              "zh": "凌日系外行星巡天卫星",
+              "note": "NASA 的系外行星探测任务，主要通过恒星亮度变化寻找行星。"
+            },
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            },
+            {
+              "term": "planet formation",
+              "zh": "行星形成",
+              "note": "行星从尘埃、气体盘中形成和演化的过程。"
+            },
+            {
+              "term": "diverse population",
+              "zh": "多样化群体",
+              "note": "类型、环境或特征差异较大的整体。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        },
+        {
+          "label": "005-46",
+          "part": "Part 005",
+          "en": "Since microlensing finds solar system-like planets, this offers a new chance to understand how planetary systems like our own vary in different regions of the galaxy.\"",
+          "zh": "由于微引力透镜能发现类似太阳系的行星，这为理解像我们这样的行星系统在银河系不同区域如何变化提供了新机会。”",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "This offers a new chance to understand how planetary systems vary."
+            },
+            {
+              "label": "修饰成分",
+              "text": "Since microlensing finds... 是原因状语从句；like our own 修饰 planetary systems；in different regions... 表示变化发生的空间范围。"
+            },
+            {
+              "label": "语法要点",
+              "text": "since 表示原因；how 引导宾语从句，作 understand 的宾语。"
+            }
+          ],
+          "structure": "This offers a new chance to understand how planetary systems vary.",
+          "phrases": [
+            {
+              "term": "microlensing",
+              "zh": "微引力透镜",
+              "note": "前景天体的引力弯曲并放大背景天体光线的现象。"
+            },
+            {
+              "term": "galaxy",
+              "zh": "星系；银河系",
+              "note": "由恒星、气体、尘埃和暗物质组成的大型天体系统。"
+            }
+          ],
+          "difficulty": 5,
+          "difficultyAnalysis": {
+            "difficulty_level": 5,
+            "difficulty_stars": "★★★★★",
+            "reason_cn": "本句信息密度较高，含插入语、从句或分词结构，并叠加天文学术语。理解时需要先抓主干，再处理观测方法和天体特征，适合六级偏难到考研入门精读。"
+          }
+        }
+      ]
+    }
+  ]
+}

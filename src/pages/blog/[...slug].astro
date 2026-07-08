@@ -31,9 +31,18 @@ const cottonwoodFireHeadings = [
 	{ depth: 2, slug: '003', text: '003' },
 ] satisfies typeof headings;
 
+const nasaTessHeadings = [
+	{ depth: 2, slug: '001', text: '001' },
+	{ depth: 2, slug: '002', text: '002' },
+	{ depth: 2, slug: '003', text: '003' },
+	{ depth: 2, slug: '004', text: '004' },
+	{ depth: 2, slug: '005', text: '005' },
+] satisfies typeof headings;
+
 const manualHeadings: Record<string, typeof headings> = {
 	'2026-06-ai-fake-news': aiFakeNewsHeadings,
 	'2026-07-cottonwood-fire-chars-utah': cottonwoodFireHeadings,
+	'2026-07-nasa-tess-planetary-system': nasaTessHeadings,
 };
 
 const tocHeadings = manualHeadings[post.id] ?? headings;
