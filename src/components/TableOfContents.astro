@@ -10,403 +10,309 @@ interface Props {
 }
 
 const { headings } = Astro.props;
-
-// 只保留 h2 和 h3
-const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const tocHeadings = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
 ---
 
 {tocHeadings.length > 0 && (
   <>
-    {/* 桌面端固定 TOC */}
-    <nav class="toc-fixed" aria-label="目录导航">
-      <div class="toc-title">目录</div>
-      <ul class="toc-list">
-        {tocHeadings.map((heading) => (
-          <li class={`toc-item toc-depth-${heading.depth}`}>
+    <nav class="toc-rail" aria-label="文章目录">
+      <p class="toc-title">On this page</p>
+      <ol class="toc-list">
+        {tocHeadings.map((heading, index) => (
+          <li class:list={['toc-item', `toc-depth-${heading.depth}`, { 'is-numeric': /^\d+$/.test(heading.text) }]}>
             <a href={`#${heading.slug}`} data-toc-link data-slug={heading.slug}>
-              {heading.text}
+              {!/^\d+$/.test(heading.text) && <span class="toc-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>}
+              <span class="toc-text">{/^\d+$/.test(heading.text) ? `Part ${heading.text}` : heading.text}</span>
             </a>
           </li>
         ))}
-      </ul>
+      </ol>
     </nav>
 
-    {/* 移动端浮动按钮 + 面板 */}
-    <button class="toc-fab" aria-label="打开目录" data-toc-fab>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="12" x2="15" y2="12"></line>
-        <line x1="3" y1="18" x2="12" y2="18"></line>
+    <button
+      class="toc-trigger"
+      type="button"
+      aria-label="打开文章目录"
+      aria-expanded="false"
+      aria-controls="toc-mobile-panel"
+      title="文章目录"
+      data-toc-trigger
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 6h13M8 12h13M8 18h13"></path>
+        <circle cx="3.5" cy="6" r=".5"></circle>
+        <circle cx="3.5" cy="12" r=".5"></circle>
+        <circle cx="3.5" cy="18" r=".5"></circle>
       </svg>
     </button>
 
-    <div class="toc-overlay" data-toc-overlay>
-      <div class="toc-panel" data-toc-panel>
-        <div class="toc-panel-header">
-          <span class="toc-panel-title">目录</span>
-          <button class="toc-panel-close" data-toc-close aria-label="关闭目录">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
+    <div class="toc-overlay" data-toc-overlay hidden>
+      <div class="toc-panel" id="toc-mobile-panel" role="dialog" aria-modal="true" aria-labelledby="toc-panel-title">
+        <header class="toc-panel-header">
+          <div>
+            <span class="toc-kicker">Navigation</span>
+            <h2 id="toc-panel-title">文章目录</h2>
+          </div>
+          <button class="toc-close" type="button" aria-label="关闭文章目录" title="关闭" data-toc-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
           </button>
-        </div>
-        <ul class="toc-panel-list">
-          {tocHeadings.map((heading) => (
-            <li class={`toc-item toc-depth-${heading.depth}`}>
+        </header>
+        <ol class="toc-panel-list">
+          {tocHeadings.map((heading, index) => (
+            <li class:list={['toc-item', `toc-depth-${heading.depth}`, { 'is-numeric': /^\d+$/.test(heading.text) }]}>
               <a href={`#${heading.slug}`} data-toc-link data-slug={heading.slug}>
-                {heading.text}
+                {!/^\d+$/.test(heading.text) && <span class="toc-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>}
+                <span class="toc-text">{/^\d+$/.test(heading.text) ? `Part ${heading.text}` : heading.text}</span>
               </a>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </div>
   </>
 )}
 
 <style>
-  /* ===== 桌面端固定 TOC（position: fixed） ===== */
-  .toc-fixed {
+  .toc-rail {
     position: fixed;
-    top: 80px;
-    right: calc((100vw - 1080px) / 2 - 220px);
-    width: 200px;
-    max-height: calc(100vh - 120px);
+    top: 104px;
+    left: calc(50% + 598px);
+    z-index: 40;
+    width: 210px;
+    max-height: calc(100vh - 136px);
     overflow-y: auto;
-    padding: 0 0 20px;
-    z-index: 50;
+    padding-left: 16px;
+    border-left: 1px solid #dfe3e0;
     scrollbar-width: thin;
-    scrollbar-color: #e2e8f0 transparent;
+    scrollbar-color: #c9ceca transparent;
   }
 
-  .toc-fixed::-webkit-scrollbar {
-    width: 3px;
-  }
-  .toc-fixed::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .toc-fixed::-webkit-scrollbar-thumb {
-    background: #e2e8f0;
-    border-radius: 3px;
-  }
-
-  .toc-title {
-    font-size: 0.7rem;
-    font-weight: 600;
+  .toc-title,
+  .toc-kicker {
+    margin: 0 0 12px;
+    color: #7a827d;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #94a3b8;
-    margin-bottom: 12px;
-    padding-left: 12px;
   }
 
-  .toc-list {
-    list-style: none;
+  .toc-list,
+  .toc-panel-list {
+    margin: 0;
     padding: 0;
-    margin: 0;
-    border-left: 1px solid #f1f5f9;
-  }
-
-  .toc-item {
-    margin: 0;
+    list-style: none;
   }
 
   .toc-item a {
-    display: block;
-    padding: 5px 12px;
-    font-size: 0.78rem;
-    line-height: 1.5;
-    color: #94a3b8;
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 6px;
+    padding: 7px 8px;
+    color: #7a827d;
+    font-size: 0.76rem;
+    line-height: 1.45;
     text-decoration: none;
-    border-left: 2px solid transparent;
-    margin-left: -1px;
-    transition: all 0.15s ease;
+    transition: color 150ms ease, background-color 150ms ease;
+  }
+
+  .toc-index {
+    color: #a7ada9;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .toc-item.is-numeric a { grid-template-columns: minmax(0, 1fr); }
+
+  .toc-text {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  .toc-depth-3 a {
-    padding-left: 24px;
-    font-size: 0.74rem;
-  }
-
-  .toc-item a:hover {
-    color: #6366f1;
-    border-left-color: #c7d2fe;
-  }
+  .toc-depth-3 a { padding-left: 20px; font-size: 0.72rem; }
+  .toc-item a:hover { color: #17201c; background: #eef1ee; }
 
   :global(.toc-item a.active) {
-    color: #6366f1;
-    border-left-color: #6366f1;
-    font-weight: 500;
-    background: rgba(99, 102, 241, 0.04);
+    color: #b34f39;
+    background: #f8e6e1;
+    font-weight: 700;
   }
 
-  /* ===== 移动端浮动按钮 ===== */
-  .toc-fab {
-    display: none;
+  :global(.toc-item a.active .toc-index) { color: #e06b4f; }
+
+  .toc-trigger {
     position: fixed;
-    bottom: 24px;
-    right: 24px;
-    z-index: 200;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #6366f1;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
-    transition: all 0.2s ease;
-  }
-
-  .toc-fab:hover {
-    transform: scale(1.08);
-    box-shadow: 0 6px 24px rgba(99, 102, 241, 0.45);
-  }
-
-  .toc-fab:active {
-    transform: scale(0.95);
-  }
-
-  /* ===== 移动端 Overlay + Panel ===== */
-  .toc-overlay {
+    right: 20px;
+    bottom: 20px;
+    z-index: 90;
     display: none;
+    width: 46px;
+    height: 46px;
+    place-items: center;
+    border: 1px solid #17201c;
+    border-radius: 50%;
+    background: #17201c;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(23, 32, 28, 0.18);
+    cursor: pointer;
+  }
+
+  .toc-trigger svg,
+  .toc-close svg {
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+  }
+
+  .toc-overlay[hidden] { display: none; }
+
+  .toc-overlay {
     position: fixed;
     inset: 0;
     z-index: 300;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2px);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-
-  :global(.toc-overlay.open) {
-    opacity: 1;
+    display: grid;
+    align-items: end;
+    background: rgba(23, 32, 28, 0.5);
+    padding: 16px;
   }
 
   .toc-panel {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-height: 65vh;
-    background: #fff;
-    border-radius: 20px 20px 0 0;
-    padding: 20px 24px 32px;
+    width: min(620px, 100%);
+    max-height: min(70vh, 620px);
+    margin: 0 auto;
     overflow-y: auto;
-    transform: translateY(100%);
-    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
-    box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.1);
-  }
-
-  :global(.toc-overlay.open .toc-panel) {
-    transform: translateY(0);
+    border-radius: 8px;
+    background: #f8f9f7;
+    box-shadow: 0 18px 60px rgba(23, 32, 28, 0.25);
   }
 
   .toc-panel-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #f1f5f9;
+    gap: 24px;
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid #dfe3e0;
+    background: #f8f9f7;
   }
 
-  .toc-panel-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #1e293b;
-  }
+  .toc-kicker { display: block; margin-bottom: 3px; }
+  .toc-panel-header h2 { margin: 0; color: #17201c; font-size: 1.1rem; }
 
-  .toc-panel-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    border: none;
-    background: #f1f5f9;
-    color: #64748b;
+  .toc-close {
+    display: grid;
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 1px solid #d7dcd8;
+    border-radius: 50%;
+    background: #fff;
+    color: #4f5953;
     cursor: pointer;
-    transition: all 0.15s ease;
   }
 
-  .toc-panel-close:hover {
-    background: #e2e8f0;
-    color: #1e293b;
+  .toc-panel-list { padding: 10px; }
+  .toc-panel-list .toc-item a { padding: 11px 10px; font-size: 0.9rem; }
+  .toc-panel-list .toc-depth-3 a { padding-left: 30px; font-size: 0.84rem; }
+  .toc-panel-list .toc-text { white-space: normal; }
+
+  :is(.toc-item a, .toc-trigger, .toc-close):focus-visible {
+    outline: 3px solid rgba(224, 107, 79, 0.35);
+    outline-offset: 3px;
   }
 
-  .toc-panel-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  @media (max-width: 1500px) {
+    .toc-rail { display: none; }
+    .toc-trigger { display: grid; }
   }
 
-  .toc-panel-list .toc-item a {
-    padding: 8px 12px;
-    font-size: 0.88rem;
-    border-left: none;
-    border-radius: 8px;
-    white-space: normal;
+  @media (max-width: 720px) {
+    .toc-overlay { padding: 8px; }
+    .toc-panel { max-height: 76vh; }
+    .toc-trigger { right: 16px; bottom: 16px; }
   }
 
-  .toc-panel-list .toc-depth-3 a {
-    padding-left: 28px;
-    font-size: 0.82rem;
-  }
-
-  .toc-panel-list .toc-item a:hover {
-    background: #f8fafc;
-  }
-
-  :global(.toc-panel-list .toc-item a.active) {
-    background: rgba(99, 102, 241, 0.06);
-    color: #6366f1;
-    font-weight: 500;
-    border-left: none;
-  }
-
-  /* ===== 响应式 ===== */
-  @media (max-width: 1400px) {
-    .toc-fixed {
-      /* 当视口不够宽时，贴近右边距 */
-      right: 20px;
-    }
-  }
-
-  @media (max-width: 1100px) {
-    .toc-fixed {
-      display: none;
-    }
-
-    .toc-fab {
-      display: flex;
-    }
-
-    .toc-overlay {
-      display: block;
-      pointer-events: none;
-    }
-
-    :global(.toc-overlay.open) {
-      pointer-events: auto;
-    }
+  @media (prefers-reduced-motion: reduce) {
+    .toc-item a { transition: none; }
   }
 </style>
 
 <script>
-  // IntersectionObserver: 高亮当前可见标题
   function initTOC() {
-    const tocLinks = document.querySelectorAll('[data-toc-link]');
-    if (tocLinks.length === 0) return;
+    const root = document.querySelector<HTMLElement>('[data-toc-trigger]');
+    if (!root || root.dataset.initialized === 'true') return;
+    root.dataset.initialized = 'true';
 
-    const headingElements: Element[] = [];
-    tocLinks.forEach((link) => {
-      const slug = link.getAttribute('data-slug');
-      if (slug) {
-        const el = document.getElementById(slug);
-        if (el) headingElements.push(el);
-      }
-    });
+    const tocLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]'));
+    const headings = Array.from(new Set(
+      tocLinks
+        .map((link) => document.getElementById(link.dataset.slug ?? ''))
+        .filter((heading): heading is HTMLElement => Boolean(heading)),
+    ));
+    const overlay = document.querySelector<HTMLElement>('[data-toc-overlay]');
+    const closeButton = document.querySelector<HTMLButtonElement>('[data-toc-close]');
 
-    if (headingElements.length === 0) return;
+    const setActive = (slug: string) => {
+      tocLinks.forEach((link) => link.classList.toggle('active', link.dataset.slug === slug));
+    };
 
-    let currentActiveSlug = '';
-
-    function setActive(slug: string) {
-      if (slug === currentActiveSlug) return;
-      currentActiveSlug = slug;
-      tocLinks.forEach((link) => {
-        if (link.getAttribute('data-slug') === slug) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntries = entries.filter((e) => e.isIntersecting);
-        if (visibleEntries.length > 0) {
-          visibleEntries.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-          const topEntry = visibleEntries[0];
-          setActive(topEntry.target.id);
-        } else {
-          // 找最近的已经滚过去的标题
-          const scrollTop = window.scrollY;
-          let closestAbove: Element | null = null;
-          let closestDist = Infinity;
-          headingElements.forEach((el) => {
-            const rect = el.getBoundingClientRect();
-            const elTop = rect.top + scrollTop;
-            const dist = scrollTop - elTop;
-            if (dist >= 0 && dist < closestDist) {
-              closestDist = dist;
-              closestAbove = el;
-            }
-          });
-          if (closestAbove) {
-            setActive((closestAbove as HTMLElement).id);
-          }
-        }
-      },
-      {
-        rootMargin: '-60px 0px -75% 0px',
-        threshold: 0,
-      }
-    );
-
-    headingElements.forEach((el) => observer.observe(el));
-
-    // 点击 TOC 链接平滑滚动
-    tocLinks.forEach((link) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const slug = link.getAttribute('data-slug');
-        if (!slug) return;
-        const target = document.getElementById(slug);
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          // 关闭移动端面板
-          const overlay = document.querySelector('[data-toc-overlay]');
-          if (overlay) overlay.classList.remove('open');
-        }
-      });
-    });
-
-    // 移动端 FAB 按钮
-    const fab = document.querySelector('[data-toc-fab]');
-    const overlay = document.querySelector('[data-toc-overlay]');
-    const closeBtn = document.querySelector('[data-toc-close]');
-
-    if (fab && overlay) {
-      fab.addEventListener('click', () => {
-        overlay.classList.add('open');
-      });
-
-      overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) {
-          overlay.classList.remove('open');
-        }
-      });
-
-      if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-          overlay.classList.remove('open');
+    if (headings.length > 0) {
+      const observer = new IntersectionObserver(() => {
+        const offset = 120;
+        let current = headings[0];
+        headings.forEach((heading) => {
+          if (heading.getBoundingClientRect().top <= offset) current = heading;
         });
-      }
+        setActive(current.id);
+      }, { rootMargin: '-80px 0px -70% 0px' });
+      headings.forEach((heading) => observer.observe(heading));
+      setActive(headings[0].id);
     }
+
+    const closePanel = () => {
+      if (!overlay || overlay.hidden) return;
+      overlay.hidden = true;
+      root.setAttribute('aria-expanded', 'false');
+      document.body.style.removeProperty('overflow');
+      root.focus();
+    };
+
+    const openPanel = () => {
+      if (!overlay) return;
+      overlay.hidden = false;
+      root.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      closeButton?.focus();
+    };
+
+    root.addEventListener('click', openPanel);
+    closeButton?.addEventListener('click', closePanel);
+    overlay?.addEventListener('click', (event) => {
+      if (event.target === overlay) closePanel();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closePanel();
+    });
+
+    tocLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const target = document.getElementById(link.dataset.slug ?? '');
+        if (!target) return;
+        event.preventDefault();
+        closePanel();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${target.id}`);
+      });
+    });
   }
 
-  // 在页面加载完成后初始化
   document.addEventListener('DOMContentLoaded', initTOC);
-  // Astro 的视图转换支持
   document.addEventListener('astro:page-load', initTOC);
 </script>

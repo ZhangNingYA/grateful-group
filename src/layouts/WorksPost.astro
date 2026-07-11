@@ -2,8 +2,10 @@
 import type { CollectionEntry } from 'astro:content';
 import type { MarkdownHeading } from 'astro';
 import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import TableOfContents from '../components/TableOfContents.astro';
+import '../styles/editorial.css';
 
 type Props = CollectionEntry<'works'>['data'] & {
   headings?: MarkdownHeading[];
@@ -12,380 +14,343 @@ type Props = CollectionEntry<'works'>['data'] & {
 const { title, description, pubDate, updatedDate, headings = [] } = Astro.props;
 ---
 
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <BaseHead title={title} description={description} />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
-      integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" />
   </head>
+  <body class="editorial-page works-article-page">
+    <div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
+    <BlogHeader active="works" />
 
-  <body>
-    <a href="/works" class="back-btn" aria-label="返回 Works 列表">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </a>
-
-    <main class="page">
-      <header class="article-header">
-        <div class="article-meta">
-          <span class="meta-tag">Works</span>
-          <span class="meta-sep">·</span>
-          <FormattedDate date={pubDate} />
-          {updatedDate && (
-            <>
-              <span class="meta-sep">·</span>
-              <span>更新于 <FormattedDate date={updatedDate} /></span>
-            </>
-          )}
+    <main class="works-page">
+      <header class="works-header">
+        <a class="back-link" href="/works/">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg>
+          Works
+        </a>
+        <div class="works-meta">
+          <span>Published <FormattedDate date={pubDate} /></span>
+          {updatedDate && <span>Updated <FormattedDate date={updatedDate} /></span>}
         </div>
-        <h1 class="article-title">{title}</h1>
-        {description && <p class="article-desc">{description}</p>}
+        <h1>{title}</h1>
+        <p>{description}</p>
       </header>
 
-      <article class="article-body">
+      <article class="works-body">
         <slot />
       </article>
 
-      <footer class="article-footer">
-        <a href="/works" class="footer-back">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-          返回 Works 列表
-        </a>
+      <footer class="works-footer">
+        <span>Continue exploring</span>
+        <a href="/works/">查看全部 Works</a>
       </footer>
     </main>
 
-    <!-- TOC 固定定位，脱离文档流 -->
-    {headings.length > 0 && (
-      <TableOfContents headings={headings} />
-    )}
+    {headings.length > 0 && <TableOfContents headings={headings} />}
+
+    <script>
+      const progressBar = document.querySelector<HTMLElement>('[data-reading-progress]');
+      const updateProgress = () => {
+        if (!progressBar) return;
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+        progressBar.style.transform = `scaleX(${progress})`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    </script>
   </body>
 </html>
 
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #fafbfd;
-    color: #1a1a2e;
-    min-height: 100vh;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* 固定返回按钮 */
-  .back-btn {
+  .reading-progress {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background: #fff;
-    border: 1px solid #eef2ff;
-    color: #6366f1;
-    text-decoration: none;
-    box-shadow: 0 2px 12px rgba(99, 102, 241, 0.08);
-    transition: all 0.2s ease;
-  }
-  .back-btn:hover {
-    border-color: #c7d2fe;
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15);
-    transform: scale(1.05);
+    inset: 0 0 auto;
+    z-index: 200;
+    height: 3px;
+    pointer-events: none;
   }
 
-  /* Page */
-  .page {
+  .reading-progress span {
+    display: block;
     width: 100%;
-    max-width: 1080px;
+    height: 100%;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .works-page {
+    width: min(1160px, calc(100% - 48px));
     margin: 0 auto;
-    padding: 48px 36px 80px;
+    padding-bottom: 72px;
   }
 
-  /* Header */
-  .article-header {
-    margin-bottom: 40px;
-    padding-left: 4px;
-    max-width: 1080px;
+  .works-header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 0 44px;
+    border-bottom: 1px solid var(--ink);
   }
 
-  .article-meta {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 12px;
-    font-size: 0.8rem;
-    color: #94a3b8;
-  }
-  .meta-tag {
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: #eef2ff;
-    color: #6366f1;
-    font-weight: 500;
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-  .meta-sep { color: #cbd5e1; }
-
-  .article-title {
-    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: #0f0f23;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-
-  .article-desc {
-    font-size: 0.95rem;
-    color: #64748b;
-    line-height: 1.6;
-    max-width: 600px;
-  }
-
-  /* Body */
-  .article-body {
-    animation: fade-in 0.5s ease both;
-  }
-
-  :global(.article-body > :first-child) { margin-top: 0; }
-
-  :global(.article-body p) {
-    margin: 1.1rem 0;
-    font-size: 0.96rem;
-    line-height: 1.85;
-    color: #374151;
-  }
-
-  :global(.article-body h2) {
-    margin: 2.8rem 0 0.9rem;
-    font-size: clamp(1.35rem, 3vw, 1.75rem);
-    font-weight: 700;
-    color: #0f0f23;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #f1f5f9;
-  }
-
-  :global(.article-body h3) {
-    margin: 2rem 0 0.7rem;
-    font-size: clamp(1.08rem, 2.2vw, 1.3rem);
-    font-weight: 650;
-    color: #1e293b;
-    line-height: 1.35;
-  }
-
-  :global(.article-body h4) {
-    margin: 1.5rem 0 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #334155;
-  }
-
-  :global(.article-body ul),
-  :global(.article-body ol) {
-    margin: 1rem 0;
-    padding-left: 1.4rem;
-    color: #374151;
-  }
-  :global(.article-body li) {
-    margin: 0.35rem 0;
-    line-height: 1.8;
-    font-size: 0.95rem;
-  }
-  :global(.article-body li::marker) { color: #c7d2fe; }
-
-  :global(.article-body strong) {
-    color: #0f0f23;
-    font-weight: 600;
-  }
-
-  :global(.article-body a) {
-    color: #6366f1;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(99, 102, 241, 0.25);
-    transition: all 0.15s ease;
-  }
-  :global(.article-body a:hover) {
-    color: #4f46e5;
-    border-bottom-color: rgba(79, 70, 229, 0.5);
-  }
-
-  :global(.article-body blockquote) {
-    margin: 1.4rem 0;
-    padding: 0.9rem 1.1rem;
-    border-left: 3px solid #c7d2fe;
-    border-radius: 0 10px 10px 0;
-    background: #f8faff;
-    color: #475569;
-    font-size: 0.93rem;
-  }
-  :global(.article-body blockquote p) {
-    margin: 0.3rem 0;
-    color: #475569;
-  }
-
-  :global(.article-body hr) {
-    margin: 2.4rem 0;
-    border: none;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
-  }
-
-  :global(.article-body img) {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1.5rem auto;
-    border-radius: 12px;
-    border: 1px solid #f1f5f9;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
-  }
-
-  :global(.article-body pre),
-  :global(.article-body pre.astro-code),
-  :global(.article-body .astro-code),
-  :global(.article-body .github-dark) {
-    margin: 1.3rem 0;
-    padding: 1rem 1.2rem;
-    overflow-x: auto;
-    border-radius: 12px;
-    border: 1px solid #dbeafe;
-    background: #f8fbff !important;
-    color: #0f172a !important;
-    box-shadow: 0 1px 8px rgba(37, 99, 235, 0.08);
-  }
-
-  :global(.article-body code) {
-    font-size: 0.86em;
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  }
-  :global(.article-body pre code),
-  :global(.article-body pre code span),
-  :global(.article-body .astro-code code),
-  :global(.article-body .astro-code span) {
-    color: #0f172a !important;
-    background: transparent !important;
-  }
-  :global(.article-body :not(pre) > code) {
-    padding: 2px 6px;
-    border-radius: 5px;
-    background: #f1f5f9;
-    color: #6366f1;
-    font-size: 0.84em;
-  }
-
-  /* 表格 */
-  :global(.article-body table) {
-    width: 100%;
-    margin: 1.3rem 0;
-    border-collapse: collapse;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #f1f5f9;
-    font-size: 0.88rem;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
-  }
-  :global(.article-body th),
-  :global(.article-body td) {
-    padding: 9px 14px;
-    text-align: left;
-    border-bottom: 1px solid #f1f5f9;
-  }
-  :global(.article-body th) {
-    background: #f8faff;
-    font-weight: 600;
-    color: #1e293b;
-    font-size: 0.8rem;
-  }
-  :global(.article-body td) { color: #475569; }
-  :global(.article-body tr:last-child td) { border-bottom: none; }
-
-  /* KaTeX */
-  :global(.article-body .katex-display) {
-    margin: 1.55rem 0;
-    padding: 1.05rem 1.25rem;
-    overflow-x: auto;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
-    border: 1px solid #dbeafe;
-    box-shadow: 0 10px 28px rgba(37, 99, 235, 0.08);
-  }
-  :global(.article-body .katex-display > .katex) {
-    display: block;
-    text-align: center;
-    font-size: 1.08em;
-    line-height: 1.7;
-  }
-  :global(.article-body .katex) {
-    color: #0f172a;
-    font-size: 1.03em;
-  }
-
-  /* R3F / interactive container — let the component decide */
-  :global(.article-body > div) { margin: 2rem 0; }
-
-  /* Footer */
-  .article-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #f1f5f9;
-  }
-  .footer-back {
+  .back-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 16px 8px 12px;
-    border-radius: 100px;
-    background: #fff;
-    border: 1px solid #eef2ff;
+    gap: 8px;
+    margin-bottom: 38px;
+    color: var(--muted);
     font-size: 0.82rem;
-    font-weight: 500;
-    color: #6366f1;
+    font-weight: 700;
     text-decoration: none;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 10px rgba(99, 102, 241, 0.06);
-  }
-  .footer-back:hover {
-    border-color: #c7d2fe;
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.12);
-    transform: translateY(-1px);
   }
 
-  @keyframes fade-in {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
+  .back-link:hover {
+    color: var(--accent);
   }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .page { padding: 36px 20px 60px; }
-    .back-btn { top: 14px; left: 14px; width: 32px; height: 32px; }
+  .back-link svg {
+    width: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
-  @media (max-width: 480px) {
-    .page { padding: 28px 14px 48px; }
-    .article-title { font-size: 1.5rem; }
-    :global(.article-body > div) { margin: 1.5rem -6px; }
+  .works-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .works-header h1 {
+    margin: 0 0 22px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.35rem, 4.6vw, 4rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: 0;
+  }
+
+  .works-header > p {
+    max-width: 680px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .works-body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 44px 0 72px;
+    color: #2a332e;
+    font-size: 1.04rem;
+    line-height: 1.9;
+  }
+
+  .works-body > :global(p:first-child) {
+    margin-bottom: 1.65rem;
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.18rem;
+    line-height: 1.8;
+  }
+
+  .works-body :global(h2),
+  .works-body :global(h3) {
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    scroll-margin-top: 92px;
+  }
+
+  .works-body :global(h2) {
+    position: relative;
+    margin: 4rem 0 1.35rem;
+    padding-top: 1.55rem;
+    border-top: 1px solid var(--line);
+    font-size: clamp(1.65rem, 3vw, 2.1rem);
+    line-height: 1.2;
+  }
+
+  .works-body :global(h2::before) {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 48px;
+    height: 3px;
+    background: var(--accent);
+  }
+
+  .works-body :global(h3) {
+    margin: 2.2rem 0 0.9rem;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .works-body :global(p) {
+    margin: 0 0 1.5rem;
+  }
+
+  .works-body :global(a) {
+    color: #b64f39;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .works-body :global(strong) {
+    color: var(--ink);
+  }
+
+  .works-body :global(ul),
+  .works-body :global(ol) {
+    margin: 0 0 1.7rem;
+    padding-left: 1.3rem;
+  }
+
+  .works-body :global(li) {
+    margin-bottom: 0.65rem;
+    padding-left: 0.35rem;
+  }
+
+  .works-body :global(li::marker) {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .works-body :global(blockquote) {
+    margin: 2.2rem 0;
+    padding: 1.15rem 1.25rem;
+    border-left: 3px solid var(--accent);
+    background: #f0f3f0;
+    color: #4f5953;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.14rem;
+    line-height: 1.7;
+  }
+
+  .works-body :global(blockquote p) {
+    margin: 0;
+  }
+
+  .works-body :global(pre) {
+    margin: 2rem 0;
+    padding: 22px 24px;
+    overflow-x: auto;
+    border: 1px solid #27302b;
+    border-radius: 6px;
+    background: #17201c;
+    color: #edf1ee;
+    font-size: 0.86rem;
+    line-height: 1.7;
+  }
+
+  .works-body :global(:not(pre) > code) {
+    padding: 0.12em 0.36em;
+    border: 1px solid #d8ddd9;
+    border-radius: 4px;
+    background: #eef1ee;
+    font-size: 0.9em;
+  }
+
+  .works-body :global(table) {
+    display: table;
+    width: 100%;
+    margin: 2.2rem 0 2.4rem;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .works-body :global(th),
+  .works-body :global(td) {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .works-body :global(th) {
+    border-top: 1px solid var(--ink);
+    background: #eef1ee;
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .works-body :global(td:first-child) {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .works-footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    border-top: 1px solid var(--ink);
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .works-footer a {
+    color: var(--ink);
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 720px) {
+    .works-page {
+      width: min(100% - 32px, 1160px);
+    }
+
+    .works-header {
+      padding: 44px 0 36px;
+    }
+
+    .back-link {
+      margin-bottom: 36px;
+    }
+
+    .works-header h1 {
+      font-size: 2.35rem;
+    }
+
+    .works-body {
+      padding: 36px 0 56px;
+      font-size: 0.98rem;
+      line-height: 1.82;
+    }
+
+    .works-body > :global(p:first-child) {
+      font-size: 1.08rem;
+      line-height: 1.72;
+    }
+
+    .works-body :global(h2) {
+      margin-top: 3.2rem;
+    }
+
+    .works-body :global(table) {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .works-body :global(th),
+    .works-body :global(td) {
+      padding: 10px 12px;
+    }
   }
 </style>

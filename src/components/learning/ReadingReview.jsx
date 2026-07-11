@@ -675,7 +675,7 @@ export function PageStyles() {
         color: var(--cet6-ink);
         position: relative;
         z-index: 1;
-        max-width: 720px;
+        max-width: 760px;
         margin-inline: auto;
         --cet6-rhythm: 1.8;
       }
@@ -731,7 +731,7 @@ export function PageStyles() {
       }
 
       .cet6-section {
-        margin: 56px 0 72px;
+        margin: 50px 0 64px;
         scroll-margin-top: 112px;
       }
 
@@ -763,7 +763,7 @@ export function PageStyles() {
       }
 
       .cet6-card {
-        padding: 40px 0 42px;
+        padding: 32px 0 36px;
         border-bottom: 1px solid var(--cet6-line-soft);
         transition: opacity 0.35s ease;
       }
@@ -811,33 +811,33 @@ export function PageStyles() {
       .cet6-en {
         margin: 0;
         font-family: "Source Serif 4", "Charter", "Georgia", "Songti SC", serif;
-        font-size: 1.84rem;
-        line-height: 1.64;
+        font-size: 1.34rem;
+        line-height: 1.72;
         letter-spacing: 0;
         color: var(--cet6-ink);
-        font-weight: 650;
+        font-weight: 600;
         text-wrap: pretty;
       }
 
       /* 中文：紧贴英文，克制的次级呈现，柔和不抢戏 */
       .cet6-zh {
-        margin: 16px 0 0;
-        padding-left: 18px;
+        margin: 12px 0 0;
+        padding-left: 14px;
         border-left: 2px solid var(--cet6-line);
         color: var(--cet6-muted);
-        font-size: 1.2rem;
-        line-height: 1.9;
+        font-size: 1.02rem;
+        line-height: 1.82;
         font-family: "Noto Serif SC", "Songti SC", "STSong", "PingFang SC", serif;
         text-wrap: pretty;
       }
 
       /* 解析区：结构 + 短语，常驻显示 */
       .cet6-detail {
-        margin-top: 24px;
+        margin-top: 22px;
         display: flex;
         flex-direction: column;
-        gap: 18px;
-        padding: 20px 0 0;
+        gap: 16px;
+        padding: 18px 0 0;
         border-top: 1px dashed var(--cet6-line);
         background: transparent;
         border-radius: 0;
@@ -883,8 +883,8 @@ export function PageStyles() {
       .cet6-note p {
         margin: 0;
         color: var(--cet6-muted);
-        font-size: 0.88rem;
-        line-height: 1.74;
+        font-size: 0.94rem;
+        line-height: 1.76;
       }
 
       .cet6-structure-lines {
@@ -895,18 +895,18 @@ export function PageStyles() {
       .cet6-structure-line {
         position: relative;
         margin: 0;
-        padding: 5px 8px 5px 10px;
-        border-radius: 8px;
+        padding: 4px 0;
+        border-radius: 0;
         color: var(--cet6-ink);
         font-size: 0.94rem;
         line-height: 1.78;
-        transition: transform 0.22s cubic-bezier(.2,.8,.2,1), color 0.2s ease, background 0.2s ease;
+        transition: color 0.18s ease;
       }
 
       .cet6-structure-line:hover {
-        background: rgba(241, 227, 217, 0.42);
+        background: transparent;
         color: var(--cet6-ink);
-        transform: translateX(6px);
+        transform: none;
       }
 
       .cet6-structure-label {
@@ -920,57 +920,35 @@ export function PageStyles() {
 
       .cet6-phrases {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 28px;
+        grid-template-columns: minmax(0, 1fr);
         row-gap: 0;
+        border-top: 1px solid var(--cet6-line-soft);
       }
 
       .cet6-phrase {
         position: relative;
         display: grid;
-        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-        align-items: baseline;
-        gap: 12px;
+        grid-template-columns: minmax(180px, 0.65fr) minmax(0, 1.35fr);
+        align-items: start;
+        gap: 22px;
         min-width: 0;
-        padding: 9px 8px 10px 12px;
+        padding: 12px 4px;
         border-bottom: 1px solid var(--cet6-line-soft);
-        border-radius: 8px;
-        transition: transform 0.22s cubic-bezier(.2,.8,.2,1), border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
-      }
-
-      .cet6-phrase::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 10px;
-        bottom: 10px;
-        width: 2px;
-        border-radius: 999px;
-        background: var(--cet6-clay);
-        opacity: 0;
-        transform: scaleY(0.4);
-        transition: opacity 0.18s ease, transform 0.22s cubic-bezier(.2,.8,.2,1);
+        border-radius: 0;
+        transition: color 0.18s ease, background 0.18s ease;
       }
 
       .cet6-phrase:hover {
-        background: rgba(248, 246, 241, 0.92);
-        box-shadow: 0 10px 24px rgba(74, 55, 40, 0.07);
-        transform: translateY(-3px);
-        border-bottom-color: rgba(156, 95, 70, 0.32);
-      }
-
-      .cet6-phrase:hover::before {
-        opacity: 1;
-        transform: scaleY(1);
+        background: rgba(248, 246, 241, 0.74);
       }
 
       .cet6-phrase-en {
         min-width: 0;
         font-family: "Source Serif 4", Georgia, serif;
-        font-size: 0.93rem;
-        font-weight: 600;
+        font-size: 1rem;
+        font-weight: 650;
         color: var(--cet6-ink);
-        line-height: 1.35;
+        line-height: 1.45;
         overflow-wrap: anywhere;
         transition: color 0.18s ease;
       }
@@ -982,17 +960,30 @@ export function PageStyles() {
       .cet6-phrase-zh {
         min-width: 0;
         margin-left: 0;
-        text-align: right;
+        text-align: left;
         color: var(--cet6-muted);
         font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-        font-size: 0.78rem;
-        line-height: 1.5;
+        font-size: 0.9rem;
+        line-height: 1.6;
         overflow-wrap: anywhere;
         transition: color 0.18s ease;
       }
 
       .cet6-phrase:hover .cet6-phrase-zh {
         color: var(--cet6-ink);
+      }
+
+      .cet6-phrase-copy {
+        display: grid;
+        min-width: 0;
+        gap: 3px;
+      }
+
+      .cet6-phrase-note {
+        color: var(--cet6-faint);
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 0.78rem;
+        line-height: 1.6;
       }
 
       /* 难度：5 个小圆点，融入顶部元信息行 */
@@ -1068,6 +1059,26 @@ export function PageStyles() {
         backdrop-filter: blur(10px) saturate(120%);
         -webkit-backdrop-filter: blur(10px) saturate(120%);
         box-shadow: 0 6px 20px rgba(74, 55, 40, 0.06);
+      }
+
+      /* Blog 阅读模式：保留章节与难度导航，弱化学习工具面板感。 */
+      .cet6-review.is-reading-only .cet6-hero {
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--cet6-line);
+      }
+
+      .cet6-review.is-reading-only .cet6-toolbar {
+        top: 76px;
+        margin: 22px 0 44px;
+        padding: 12px 0 14px;
+        border-width: 0 0 1px;
+        border-radius: 0;
+        background: rgba(248, 249, 247, 0.94);
+        box-shadow: none;
+      }
+
+      .cet6-review.is-reading-only .cet6-section:first-of-type {
+        margin-top: 44px;
       }
 
       .cet6-tool-group {
@@ -1304,6 +1315,19 @@ export function PageStyles() {
           border: 1px solid var(--cet6-line-soft);
         }
 
+        .cet6-review.is-reading-only .cet6-hero {
+          padding: 0 0 26px;
+          border-width: 0 0 1px;
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .cet6-review.is-reading-only .cet6-toolbar {
+          top: 106px;
+          margin-inline: 0;
+          padding-inline: 0;
+        }
+
         .cet6-card {
           padding: 24px 0 26px;
         }
@@ -1324,8 +1348,8 @@ export function PageStyles() {
 
         .cet6-phrase {
           grid-template-columns: 1fr;
-          gap: 3px;
-          padding-inline: 10px;
+          gap: 5px;
+          padding: 12px 2px;
         }
 
         .cet6-phrase-zh {
@@ -1365,21 +1389,26 @@ function makeItemKey(sectionIndex, item, index) {
   return `${sectionIndex}:${item.label || index}`;
 }
 
-function useStoredSet(storageKey) {
+function useStoredSet(storageKey, enabled = true) {
   const [set, setSet] = useState(() => new Set());
 
   // 挂载后再读 localStorage，避免 SSR / 注水不一致
   useEffect(() => {
+    if (!enabled) {
+      setSet(new Set());
+      return;
+    }
     try {
       const raw = window.localStorage.getItem(storageKey);
       if (raw) setSet(new Set(JSON.parse(raw)));
     } catch {
       /* localStorage 不可用时静默降级 */
     }
-  }, [storageKey]);
+  }, [storageKey, enabled]);
 
   const toggle = useCallback(
     (key) => {
+      if (!enabled) return;
       setSet((prev) => {
         const next = new Set(prev);
         if (next.has(key)) next.delete(key);
@@ -1392,7 +1421,7 @@ function useStoredSet(storageKey) {
         return next;
       });
     },
-    [storageKey],
+    [storageKey, enabled],
   );
 
   return [set, toggle];
@@ -1464,7 +1493,10 @@ function SentenceDetail({ item, className, phraseNotes }) {
               return (
                 <span className="cet6-phrase" key={normalized.term}>
                   <span className="cet6-phrase-en">{normalized.term}</span>
-                  <span className="cet6-phrase-zh">{meaning}</span>
+                  <span className="cet6-phrase-copy">
+                    <span className="cet6-phrase-zh">{meaning}</span>
+                    {normalized.note && <span className="cet6-phrase-note">{normalized.note}</span>}
+                  </span>
                 </span>
               );
             })}
@@ -1475,28 +1507,30 @@ function SentenceDetail({ item, className, phraseNotes }) {
   );
 }
 
-function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster, phraseNotes }) {
+function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster, phraseNotes, studyTools }) {
   // 全局“遮译文”开启时，单卡默认遮住，点击可临时揭开
   const [revealed, setRevealed] = useState(false);
   const showZh = !hideZh || revealed;
 
   return (
-    <article className={`cet6-card${mastered ? ' is-mastered' : ''}`}>
+    <article className={`cet6-card${studyTools && mastered ? ' is-mastered' : ''}`}>
       <div className="cet6-card-mark">
         <span className="cet6-label">{item.label || String(index + 1).padStart(2, '0')}</span>
         {item.part && <span className="cet6-part">{item.part}</span>}
         <span className="cet6-mark-sep" aria-hidden="true" />
         <DifficultyDots level={item.difficulty} />
-        <div className="cet6-card-actions">
-          <button
-            type="button"
-            className={`cet6-mini-btn${mastered ? ' is-on' : ''}`}
-            aria-pressed={mastered}
-            onClick={() => onToggleMaster(itemKey)}
-          >
-            {mastered ? '✓ 已掌握' : '标记掌握'}
-          </button>
-        </div>
+        {studyTools && (
+          <div className="cet6-card-actions">
+            <button
+              type="button"
+              className={`cet6-mini-btn${mastered ? ' is-on' : ''}`}
+              aria-pressed={mastered}
+              onClick={() => onToggleMaster(itemKey)}
+            >
+              {mastered ? '✓ 已掌握' : '标记掌握'}
+            </button>
+          </div>
+        )}
       </div>
 
       <div>
@@ -1526,7 +1560,7 @@ function SentenceCard({ item, index, itemKey, hideZh, mastered, onToggleMaster, 
   );
 }
 
-export function SentenceReview({ data, intro, sections, storageKey }) {
+export function SentenceReview({ data, intro, sections, storageKey, studyTools = true }) {
   const reviewIntro = data?.intro ?? intro;
   const rawReviewSections = data?.sections ?? sections ?? [];
   const reviewSections = rawReviewSections.map((section) => ({
@@ -1539,7 +1573,7 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
   const [hideZh, setHideZh] = useState(false);
   const [hideMastered, setHideMastered] = useState(false);
   const [currentSection, setCurrentSection] = useState(0);
-  const [mastered, toggleMaster] = useStoredSet(`${reviewStorageKey}:mastered`);
+  const [mastered, toggleMaster] = useStoredSet(`${reviewStorageKey}:mastered`, studyTools);
 
   // 给每个 section / item 预计算稳定 id 与 key
   const decorated = useMemo(
@@ -1571,15 +1605,15 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
     return counts;
   }, [decorated, totalCount]);
 
-  const masteredCount = mastered.size;
+  const masteredCount = studyTools ? mastered.size : 0;
 
   const matchesFilters = useCallback(
     ({ item, key }) => {
       if (difficulty !== 'all' && String(item.difficulty) !== difficulty) return false;
-      if (hideMastered && mastered.has(key)) return false;
+      if (studyTools && hideMastered && mastered.has(key)) return false;
       return true;
     },
-    [difficulty, hideMastered, mastered],
+    [difficulty, hideMastered, mastered, studyTools],
   );
 
   // 滚动高亮当前 section
@@ -1604,13 +1638,13 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
   }, [decorated]);
 
   return (
-    <div className="cet6-review">
+    <div className={`cet6-review${studyTools ? '' : ' is-reading-only'}`}>
       {reviewIntro && (
         <section className="cet6-hero">
           <span className="cet6-hero-kicker">{reviewIntro.kicker}</span>
           <h2>{reviewIntro.title}</h2>
           <p>{reviewIntro.description}</p>
-          <div className="cet6-progress">
+          {studyTools && <div className="cet6-progress">
             <div
               className="cet6-progress-track"
               role="progressbar"
@@ -1628,7 +1662,7 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
               已掌握 {masteredCount} / {totalCount} 句
               {masteredCount > 0 && ` · ${Math.round((masteredCount / totalCount) * 100)}%`}
             </span>
-          </div>
+          </div>}
         </section>
       )}
 
@@ -1658,30 +1692,33 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
           ))}
         </div>
 
-        <div className="cet6-tool-spacer" />
-
-        <button
-          type="button"
-          className={`cet6-toggle${hideZh ? ' is-on' : ''}`}
-          aria-pressed={hideZh}
-          onClick={() => setHideZh((v) => !v)}
-        >
-          <span className="cet6-toggle-dot" />
-          遮住译文自测
-        </button>
-        <button
-          type="button"
-          className={`cet6-toggle${hideMastered ? ' is-on' : ''}`}
-          aria-pressed={hideMastered}
-          onClick={() => setHideMastered((v) => !v)}
-        >
-          <span className="cet6-toggle-dot" />
-          隐藏已掌握
-        </button>
+        {studyTools && (
+          <>
+            <div className="cet6-tool-spacer" />
+            <button
+              type="button"
+              className={`cet6-toggle${hideZh ? ' is-on' : ''}`}
+              aria-pressed={hideZh}
+              onClick={() => setHideZh((v) => !v)}
+            >
+              <span className="cet6-toggle-dot" />
+              遮住译文自测
+            </button>
+            <button
+              type="button"
+              className={`cet6-toggle${hideMastered ? ' is-on' : ''}`}
+              aria-pressed={hideMastered}
+              onClick={() => setHideMastered((v) => !v)}
+            >
+              <span className="cet6-toggle-dot" />
+              隐藏已掌握
+            </button>
+          </>
+        )}
       </div>
 
       {(() => {
-        const isFiltering = difficulty !== 'all' || hideMastered;
+        const isFiltering = difficulty !== 'all' || (studyTools && hideMastered);
         const rendered = decorated
           .map((s, sectionIndex) => ({ s, sectionIndex, visible: s.items.filter(matchesFilters) }))
           // 筛选生效时跳过空分区，避免多个空状态框堆叠
@@ -1689,7 +1726,7 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
 
         if (rendered.length === 0) {
           return (
-            <div className="cet6-empty">当前筛选下没有句子。试试调整难度或关闭“隐藏已掌握”。</div>
+            <div className="cet6-empty">当前筛选下没有句子，请调整难度筛选。</div>
           );
         }
 
@@ -1707,7 +1744,7 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
             </div>
 
             {visible.length === 0 ? (
-              <div className="cet6-empty">当前筛选下没有句子。试试调整难度或关闭“隐藏已掌握”。</div>
+              <div className="cet6-empty">当前筛选下没有句子，请调整难度筛选。</div>
             ) : (
               <div className="cet6-list">
                 {visible.map(({ item, index, key }) => (
@@ -1720,6 +1757,7 @@ export function SentenceReview({ data, intro, sections, storageKey }) {
                     mastered={mastered.has(key)}
                     onToggleMaster={toggleMaster}
                     phraseNotes={reviewPhraseNotes}
+                    studyTools={studyTools}
                   />
                 ))}
               </div>

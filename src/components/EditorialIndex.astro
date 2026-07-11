@@ -1,0 +1,105 @@
+---
+import BaseHead from './BaseHead.astro';
+import BlogHeader from './blog/BlogHeader.astro';
+import FormattedDate from './FormattedDate.astro';
+import '../styles/editorial.css';
+
+type ActiveSection = 'works' | 'journal' | 'papers' | 'about';
+
+export interface EditorialEntry {
+  href: string;
+  title: string;
+  description: string;
+  date: Date;
+  meta?: string;
+}
+
+interface Props {
+  pageTitle: string;
+  description: string;
+  active?: ActiveSection;
+  eyebrow: string;
+  title: string;
+  lede: string;
+  edition: string;
+  editionLabel: string;
+  sectionTitle: string;
+  sectionNote: string;
+  entries: EditorialEntry[];
+}
+
+const {
+  pageTitle,
+  description,
+  active,
+  eyebrow,
+  title,
+  lede,
+  edition,
+  editionLabel,
+  sectionTitle,
+  sectionNote,
+  entries,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <BaseHead title={pageTitle} description={description} />
+  </head>
+  <body class="editorial-page">
+    <BlogHeader {active} />
+
+    <main class="editorial-shell">
+      <header class="editorial-hero">
+        <div class="editorial-hero-copy">
+          <p class="editorial-eyebrow">{eyebrow} / {String(entries.length).padStart(2, '0')} entries</p>
+          <h1 class="editorial-title">{title}</h1>
+          <p class="editorial-lede">{lede}</p>
+        </div>
+        <div class="editorial-edition" aria-label="栏目信息">
+          <span>Quiet Lab</span>
+          <strong>{edition}</strong>
+          <span>{editionLabel}</span>
+        </div>
+      </header>
+
+      <section class="editorial-index" aria-labelledby="editorial-list-heading">
+        <div class="editorial-section-heading">
+          <h2 id="editorial-list-heading">{sectionTitle}</h2>
+          <span>{sectionNote}</span>
+        </div>
+
+        <div class="editorial-list">
+          {entries.map((entry, index) => (
+            <article class="editorial-row">
+              <a href={entry.href}>
+                <span class="editorial-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                <div class="editorial-row-copy">
+                  <div class="editorial-meta">
+                    <FormattedDate date={entry.date} />
+                    {entry.meta && <span class="editorial-meta-extra">{entry.meta}</span>}
+                  </div>
+                  <h3>{entry.title}</h3>
+                  <p>{entry.description}</p>
+                </div>
+                <span class="editorial-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </span>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <footer class="editorial-footer">
+      <span>© {new Date().getFullYear()} Quiet Lab</span>
+      <span class="editorial-footer-links">
+        <a href="/">Home</a>
+        <a href="/rss.xml">RSS</a>
+      </span>
+    </footer>
+  </body>
+</html>

@@ -14,6 +14,13 @@ type Props = CollectionEntry<'blog'>;
 const post = Astro.props;
 const { Content, headings } = await render(post);
 
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const postIndex = posts.findIndex((entry) => entry.id === post.id);
+const previousPost = posts[postIndex + 1];
+const nextPost = posts[postIndex - 1];
+
 const aiFakeNewsHeadings = [
 	{ depth: 2, slug: '001', text: '001' },
 	{ depth: 2, slug: '002', text: '002' },
@@ -66,6 +73,11 @@ const manualHeadings: Record<string, typeof headings> = {
 const tocHeadings = manualHeadings[post.id] ?? headings;
 ---
 
-<BlogPost {...post.data} headings={tocHeadings}>
+<BlogPost
+	{...post.data}
+	headings={tocHeadings}
+	previousPost={previousPost && { id: previousPost.id, title: previousPost.data.title }}
+	nextPost={nextPost && { id: nextPost.id, title: nextPost.data.title }}
+>
 	<Content />
 </BlogPost>

@@ -2,404 +2,442 @@
 import type { CollectionEntry } from 'astro:content';
 import type { MarkdownHeading } from 'astro';
 import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 
-type Props = CollectionEntry<'blog'>['data'] & {
-  headings?: MarkdownHeading[];
+type LinkedPost = {
+  id: string;
+  title: string;
 };
 
-const { title, description, pubDate, updatedDate, headings = [], hideHeader = false } = Astro.props;
+type Props = CollectionEntry<'blog'>['data'] & {
+  headings?: MarkdownHeading[];
+  previousPost?: LinkedPost;
+  nextPost?: LinkedPost;
+};
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  headings = [],
+  hideHeader = false,
+  previousPost,
+  nextPost,
+} = Astro.props;
 ---
 
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <BaseHead title={title} description={description} />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- 固定返回按钮 -->
-    <a href="/blog" class="back-btn" aria-label="返回博客列表">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </a>
+    <div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
+    <BlogHeader active="journal" />
 
-    <main class="page">
-      <!-- Article Header -->
+    <main class:list={['page', { 'page--embedded': hideHeader }]}>
       {!hideHeader && (
         <header class="article-header">
+          <a class="back-link" href="/blog/">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg>
+            Journal
+          </a>
           <div class="article-meta">
-            <FormattedDate date={pubDate} />
+            <span>Published <FormattedDate date={pubDate} /></span>
             {updatedDate && (
-              <span class="meta-sep">·</span>
-              <span>更新于 <FormattedDate date={updatedDate} /></span>
+              <>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>Updated <FormattedDate date={updatedDate} /></span>
+              </>
             )}
           </div>
-          <h1 class="article-title">{title}</h1>
-          {description && (
-            <p class="article-desc">{description}</p>
-          )}
+          <h1>{title}</h1>
+          <p class="article-description">{description}</p>
         </header>
       )}
 
-      <!-- Article Body -->
       <article class="article-body">
         <slot />
       </article>
 
-      <!-- Footer -->
       <footer class="article-footer">
-        <a href="/blog" class="footer-back">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-          返回文章列表
-        </a>
+        <div class="footer-heading">
+          <span>Continue reading</span>
+          <a href="/blog/">查看全部文章</a>
+        </div>
+        <nav class="post-navigation" aria-label="相邻文章">
+          {previousPost ? (
+            <a class="post-link previous" href={`/blog/${previousPost.id}/`}>
+              <span class="post-direction">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg>
+                上一篇
+              </span>
+              <strong>{previousPost.title}</strong>
+            </a>
+          ) : <span class="post-link is-empty" aria-hidden="true"></span>}
+
+          {nextPost ? (
+            <a class="post-link next" href={`/blog/${nextPost.id}/`}>
+              <span class="post-direction">
+                下一篇
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+              </span>
+              <strong>{nextPost.title}</strong>
+            </a>
+          ) : <span class="post-link is-empty" aria-hidden="true"></span>}
+        </nav>
       </footer>
     </main>
 
-    <!-- TOC 固定定位，脱离文档流 -->
-    {headings.length > 0 && (
-      <TableOfContents headings={headings} />
-    )}
+    {headings.length > 0 && <TableOfContents headings={headings} />}
+
+    <script>
+      const progressBar = document.querySelector<HTMLElement>('[data-reading-progress]');
+
+      function updateReadingProgress() {
+        if (!progressBar) return;
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+        progressBar.style.transform = `scaleX(${progress})`;
+      }
+
+      updateReadingProgress();
+      window.addEventListener('scroll', updateReadingProgress, { passive: true });
+      window.addEventListener('resize', updateReadingProgress);
+    </script>
   </body>
 </html>
 
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --paper: #f8f9f7;
+    --surface: #fff;
+    --ink: #17201c;
+    --muted: #626b66;
+    --line: #dfe3e0;
+    --accent: #e06b4f;
+    --accent-soft: #f8e6e1;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    background: var(--paper);
+    scroll-padding-top: 88px;
+  }
 
   body {
-    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #fafbfd;
-    color: #1a1a2e;
+    margin: 0;
+    min-width: 320px;
     min-height: 100vh;
     overflow-x: hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-atkinson), 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* 固定返回按钮 — 左上角小圆钮 */
-  .back-btn {
+  .reading-progress {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background: #fff;
-    border: 1px solid #eef2ff;
-    color: #6366f1;
-    text-decoration: none;
-    box-shadow: 0 2px 12px rgba(99, 102, 241, 0.08);
-    transition: all 0.2s ease;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    height: 3px;
+    pointer-events: none;
   }
 
-  .back-btn:hover {
-    border-color: #c7d2fe;
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15);
-    transform: scale(1.05);
-  }
-
-  /* Page */
-  .page {
+  .reading-progress span {
+    display: block;
     width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 48px 36px 80px;
+    height: 100%;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    will-change: transform;
   }
 
-  /* Article Header */
-  .article-header {
-    margin-bottom: 40px;
-    padding-left: 4px;
-    max-width: 1080px;
+  .page {
+    width: min(1160px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 0 0 80px;
   }
+
+  .article-header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 0 48px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 54px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .back-link svg,
+  .post-direction svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .back-link:hover { color: var(--accent); }
 
   .article-meta {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 6px;
-    margin-bottom: 12px;
-    font-size: 0.8rem;
-    color: #94a3b8;
-  }
-
-  .meta-sep {
-    color: #cbd5e1;
-  }
-
-  .article-title {
-    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+    gap: 8px;
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 0.74rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
-    color: #0f0f23;
-    line-height: 1.2;
-    margin-bottom: 10px;
+    text-transform: uppercase;
   }
 
-  .article-desc {
-    font-size: 0.95rem;
-    color: #64748b;
-    line-height: 1.6;
-    max-width: 600px;
+  .meta-sep { color: #aeb5b0; }
+
+  .article-header h1 {
+    margin: 0 0 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(2.35rem, 5vw, 4.4rem);
+    font-weight: 500;
+    line-height: 1.04;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
   }
 
-  /* Article Body */
+  .article-description {
+    max-width: 680px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
   .article-body {
-    animation: fade-in 0.5s ease both;
+    padding-top: 48px;
+    animation: article-in 420ms ease both;
   }
 
-  :global(.article-body > :first-child) {
-    margin-top: 0;
+  .page:not(.page--embedded) .article-body { max-width: 760px; margin: 0 auto; }
+  .page--embedded .article-body { padding-top: 28px; }
+
+  .page:not(.page--embedded) :global(.article-body > :first-child) { margin-top: 0; }
+
+  .page:not(.page--embedded) :global(.article-body p) {
+    margin: 1.15rem 0;
+    color: #343d38;
+    font-size: 1rem;
+    line-height: 1.9;
   }
 
-  :global(.article-body p) {
-    margin: 1.1rem 0;
-    font-size: 0.96rem;
-    line-height: 1.85;
-    color: #374151;
+  .page:not(.page--embedded) :global(.article-body h2),
+  .page:not(.page--embedded) :global(.article-body h3),
+  .page:not(.page--embedded) :global(.article-body h4) {
+    color: var(--ink);
+    scroll-margin-top: 88px;
   }
 
-  :global(.article-body h2) {
-    margin: 2.8rem 0 0.9rem;
-    font-size: clamp(1.35rem, 3vw, 1.75rem);
-    font-weight: 700;
-    color: #0f0f23;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #f1f5f9;
+  .page:not(.page--embedded) :global(.article-body h2) {
+    margin: 3.2rem 0 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0;
   }
 
-  :global(.article-body h3) {
-    margin: 2rem 0 0.7rem;
-    font-size: clamp(1.08rem, 2.2vw, 1.3rem);
-    font-weight: 650;
-    color: #1e293b;
+  .page:not(.page--embedded) :global(.article-body h3) {
+    margin: 2.2rem 0 0.75rem;
+    font-size: 1.25rem;
     line-height: 1.35;
   }
 
-  :global(.article-body h4) {
-    margin: 1.5rem 0 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #334155;
-  }
+  .page:not(.page--embedded) :global(.article-body h4) { margin: 1.8rem 0 0.6rem; font-size: 1.05rem; }
 
-  :global(.article-body ul),
-  :global(.article-body ol) {
+  .page:not(.page--embedded) :global(.article-body ul),
+  .page:not(.page--embedded) :global(.article-body ol) {
     margin: 1rem 0;
     padding-left: 1.4rem;
-    color: #374151;
+    color: #343d38;
   }
 
-  :global(.article-body li) {
-    margin: 0.35rem 0;
-    line-height: 1.8;
-    font-size: 0.95rem;
+  .page:not(.page--embedded) :global(.article-body li) { margin: 0.45rem 0; font-size: 0.98rem; line-height: 1.8; }
+  .page:not(.page--embedded) :global(.article-body li::marker) { color: var(--accent); }
+  .page:not(.page--embedded) :global(.article-body strong) { color: var(--ink); font-weight: 700; }
+
+  .page:not(.page--embedded) :global(.article-body a) {
+    color: #b34f39;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
   }
 
-  :global(.article-body li::marker) {
-    color: #c7d2fe;
+  .page:not(.page--embedded) :global(.article-body a:hover) { color: #793323; }
+
+  .page:not(.page--embedded) :global(.article-body blockquote) {
+    margin: 1.6rem 0;
+    padding: 0.9rem 1.2rem;
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    color: #4a514d;
   }
 
-  :global(.article-body strong) {
-    color: #0f0f23;
-    font-weight: 600;
-  }
+  .page:not(.page--embedded) :global(.article-body blockquote p) { margin: 0.3rem 0; color: inherit; }
 
-  :global(.article-body a) {
-    color: #6366f1;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(99, 102, 241, 0.25);
-    transition: all 0.15s ease;
-  }
-
-  :global(.article-body a:hover) {
-    color: #4f46e5;
-    border-bottom-color: rgba(79, 70, 229, 0.5);
-  }
-
-  :global(.article-body blockquote) {
-    margin: 1.4rem 0;
-    padding: 0.9rem 1.1rem;
-    border-left: 3px solid #c7d2fe;
-    border-radius: 0 10px 10px 0;
-    background: #f8faff;
-    color: #475569;
-    font-size: 0.93rem;
-  }
-
-  :global(.article-body blockquote p) {
-    margin: 0.3rem 0;
-    color: #475569;
-  }
-
-  :global(.article-body hr) {
-    margin: 2.4rem 0;
-    border: none;
+  .page:not(.page--embedded) :global(.article-body hr) {
     height: 1px;
-    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+    margin: 2.8rem 0;
+    border: 0;
+    background: var(--line);
   }
 
-  :global(.article-body img) {
+  .page:not(.page--embedded) :global(.article-body img) {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 1.5rem auto;
-    border-radius: 12px;
-    border: 1px solid #f1f5f9;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+    margin: 1.8rem auto;
+    border: 1px solid var(--line);
+    border-radius: 6px;
   }
 
-  :global(.article-body pre) {
-    margin: 1.3rem 0;
-    padding: 1rem 1.2rem;
+  .page:not(.page--embedded) :global(.article-body pre) {
+    margin: 1.5rem 0;
+    padding: 1.1rem 1.25rem;
     overflow-x: auto;
-    border-radius: 12px;
-    border: 1px solid #f1f5f9;
-    background: #fafbfd;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+    border: 1px solid #303a35;
+    border-radius: 6px;
+    background: #202824;
+    color: #edf1ee;
   }
 
-  :global(.article-body code) {
-    font-size: 0.86em;
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  }
+  .page:not(.page--embedded) :global(.article-body code) { font-family: 'Cascadia Code', 'SFMono-Regular', monospace; font-size: 0.86em; }
+  .page:not(.page--embedded) :global(.article-body :not(pre) > code) { padding: 2px 6px; border-radius: 4px; background: #e9ece9; color: #8d3e2d; }
 
-  :global(.article-body pre code) {
-    color: #334155;
-  }
-
-  :global(.article-body :not(pre) > code) {
-    padding: 2px 6px;
-    border-radius: 5px;
-    background: #f1f5f9;
-    color: #6366f1;
-    font-size: 0.84em;
-  }
-
-  /* 表格 */
-  :global(.article-body table) {
+  .page:not(.page--embedded) :global(.article-body table) {
     width: 100%;
-    margin: 1.3rem 0;
+    margin: 1.5rem 0;
+    border: 1px solid var(--line);
     border-collapse: collapse;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #f1f5f9;
-    font-size: 0.88rem;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+    font-size: 0.9rem;
   }
 
-  :global(.article-body th),
-  :global(.article-body td) {
-    padding: 9px 14px;
-    text-align: left;
-    border-bottom: 1px solid #f1f5f9;
-  }
+  .page:not(.page--embedded) :global(.article-body th),
+  .page:not(.page--embedded) :global(.article-body td) { padding: 10px 14px; border-bottom: 1px solid var(--line); text-align: left; }
+  .page:not(.page--embedded) :global(.article-body th) { background: #eef1ee; color: var(--ink); font-weight: 700; }
+  .page:not(.page--embedded) :global(.article-body td) { color: #4c5650; }
 
-  :global(.article-body th) {
-    background: #f8faff;
-    font-weight: 600;
-    color: #1e293b;
-    font-size: 0.8rem;
-  }
-
-  :global(.article-body td) {
-    color: #475569;
-  }
-
-  :global(.article-body tr:last-child td) {
-    border-bottom: none;
-  }
-
-  /* KaTeX */
-  :global(.article-body .katex-display) {
-    margin: 1.4rem 0;
-    padding: 0.9rem 1.1rem;
+  .page:not(.page--embedded) :global(.article-body .katex-display) {
+    margin: 1.5rem 0;
+    padding: 1rem;
     overflow-x: auto;
-    border-radius: 10px;
-    background: #f8faff;
-    border: 1px solid #eef2ff;
-  }
-
-  :global(.article-body .katex) {
-    color: #1e293b;
-  }
-
-  /* R3F 组件容器 — 不限制，让组件自己控制 */
-  :global(.article-body > div) {
-    margin: 2rem 0;
-  }
-
-  /* Footer */
-  .article-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #f1f5f9;
-  }
-
-  .footer-back {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 16px 8px 12px;
-    border-radius: 100px;
+    border: 1px solid var(--line);
     background: #fff;
-    border: 1px solid #eef2ff;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #6366f1;
+  }
+
+  .article-footer {
+    max-width: 960px;
+    margin: 80px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--ink);
+  }
+
+  .footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .footer-heading a { color: var(--muted); text-transform: none; }
+
+  .post-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .post-link {
+    min-height: 142px;
+    padding: 22px 24px;
+    color: inherit;
     text-decoration: none;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 10px rgba(99, 102, 241, 0.06);
+    transition: background-color 160ms ease;
   }
 
-  .footer-back:hover {
-    border-color: #c7d2fe;
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.12);
-    transform: translateY(-1px);
+  .post-link + .post-link { border-left: 1px solid var(--line); }
+  .post-link:hover { background: #fff; }
+
+  .post-direction {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 14px;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
   }
 
-  /* Animations */
-  @keyframes fade-in {
+  .post-link.next { text-align: right; }
+  .post-link.next .post-direction { justify-content: flex-end; }
+
+  .post-link strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  :is(.back-link, .footer-heading a, .post-link):focus-visible {
+    outline: 3px solid rgba(224, 107, 79, 0.3);
+    outline-offset: 4px;
+  }
+
+  @keyframes article-in {
     from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .page {
-      padding: 36px 20px 60px;
-    }
-
-    .back-btn {
-      top: 14px;
-      left: 14px;
-      width: 32px;
-      height: 32px;
-    }
+  @media (max-width: 720px) {
+    .page { width: min(100% - 32px, 1160px); padding-bottom: 56px; }
+    .article-header { padding: 44px 0 36px; }
+    .back-link { margin-bottom: 40px; }
+    .article-header h1 { font-size: 2.35rem; }
+    .article-body { padding-top: 36px; }
+    .page--embedded .article-body { padding-top: 16px; }
+    .article-footer { margin-top: 56px; }
+    .post-navigation { grid-template-columns: 1fr; }
+    .post-link { min-height: 0; padding: 20px 0; }
+    .post-link + .post-link { border-top: 1px solid var(--line); border-left: 0; }
+    .post-link.is-empty { display: none; }
+    .post-link.next, .post-link.next .post-direction { text-align: left; justify-content: flex-start; }
   }
 
-  @media (max-width: 480px) {
-    .page {
-      padding: 28px 14px 48px;
-    }
-
-    .article-title {
-      font-size: 1.5rem;
-    }
-
-    :global(.article-body > div) {
-      margin: 1.5rem -6px;
-    }
+  @media (prefers-reduced-motion: reduce) {
+    .article-body { animation: none; }
   }
 </style>
