@@ -50,11 +50,17 @@ const soilMicroplasticsHeadings = [
 	{ depth: 2, slug: '008', text: '008' },
 ] satisfies typeof headings;
 
+const superTyphoonBaviHeadings = [
+	{ depth: 2, slug: '001', text: '001' },
+	{ depth: 2, slug: '002', text: '002' },
+] satisfies typeof headings;
+
 const manualHeadings: Record<string, typeof headings> = {
 	'2026-06-ai-fake-news': aiFakeNewsHeadings,
 	'2026-07-cottonwood-fire-chars-utah': cottonwoodFireHeadings,
 	'2026-07-nasa-tess-planetary-system': nasaTessHeadings,
 	'2026-07-soil-microplastics': soilMicroplasticsHeadings,
+	'2026-07-super-typhoon-bavi': superTyphoonBaviHeadings,
 };
 
 const tocHeadings = manualHeadings[post.id] ?? headings;
