@@ -12,7 +12,7 @@ function difficultyLevel(reason = '') {
   if (/极难|很难|高难/.test(reason)) return 5;
   if (/较难|偏难/.test(reason)) return 4;
   if (/略难|中等|适中/.test(reason)) return 3;
-  if (/较易|简单|基础/.test(reason)) return 2;
+  if (/较易|偏易|简单|基础/.test(reason)) return 2;
   return 1;
 }
 
@@ -72,7 +72,7 @@ const sections = sourceFiles.map((fileName) => {
 const output = {
   storageKey: `reading-${slug}`,
   intro: {
-    kicker: `Reading · ${date} · Super Typhoon Bavi`,
+    kicker: `Reading · ${date} · ${title.replace(/：句句精读$/, '')}`,
     title,
     description: `按原文 ${sourceFiles[0].replace('.json', '')}-${sourceFiles.at(-1).replace('.json', '')} 的顺序整理 ${sentenceCount} 个句子，包含英文原句、中文翻译、句子结构、重点词汇词组和难度标记。`,
   },

@@ -1,0 +1,890 @@
+{
+  "storageKey": "reading-2021-12-automation-economic-security",
+  "intro": {
+    "kicker": "Reading · 2021-12-01 · Automation and Economic Security",
+    "title": "Automation and Economic Security：句句精读",
+    "description": "按原文 001-003 的顺序整理 24 个句子，包含英文原句、中文翻译、句子结构、重点词汇词组和难度标记。"
+  },
+  "sections": [
+    {
+      "kicker": "Part 001",
+      "title": "001",
+      "navLabel": "001",
+      "description": "阅读材料第 001 部分，共 10 句。",
+      "items": [
+        {
+          "label": "001-01",
+          "part": "Part 001",
+          "en": "The subject of automation and its role in our economy has taken hold in American public discourse.",
+          "zh": "自动化主题及其在我们经济中的作用已经在美国公共话语中占据了一席之地。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“The subject of automation and its role in our economy”，主要谓语以“has”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "完成时强调过去情况与当前论述的联系；并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“The subject of automation and its role in our economy”，主要谓语以“has”为中心展开。",
+          "phrases": [
+            {
+              "term": "public discourse",
+              "zh": "公共话语；公共讨论",
+              "note": "指社会公众围绕议题展开的讨论。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "001-02",
+          "part": "Part 001",
+          "en": "Technology broadly and automation specifically are dramatically reshaping the way we work.",
+          "zh": "从广义上讲，技术和自动化正在极大地重塑我们的工作方式。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“Technology broadly and automation specifically”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“Technology broadly and automation specifically”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "specifically",
+              "zh": "具体地说",
+              "note": "在原句中表示“具体地说”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "001-03",
+          "part": "Part 001",
+          "en": "And we need to have a plan for what's still to come.",
+          "zh": "我们需要为未来制定一个计划。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“And we need to”，主要谓语以“have”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "不定式短语表示目的、结果或作名词的后置修饰。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“And we need to”，主要谓语以“have”为中心展开。",
+          "phrases": [
+            {
+              "term": "And we need",
+              "zh": "我们需要",
+              "note": "在原句中表示“我们需要”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "001-04",
+          "part": "Part 001",
+          "en": "We don't have to look further than our own communities to see the devastating impact of automation.",
+          "zh": "要看到自动化造成的严重冲击，我们无须把目光投向比自己所在社区更远的地方。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“We don't”，主要谓语以“have”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "不定式短语表示目的、结果或作名词的后置修饰。"
+            },
+            {
+              "label": "语法要点",
+              "text": "比较结构用于突出程度或对象差异。"
+            }
+          ],
+          "structure": "核心主语是“We don't”，主要谓语以“have”为中心展开。",
+          "phrases": [
+            {
+              "term": "devastating impact",
+              "zh": "毁灭性影响；严重冲击",
+              "note": "devastating 强调后果极其严重。"
+            },
+            {
+              "term": "look further than",
+              "zh": "把目光投向比……更远的地方",
+              "note": "否定形式表示眼前即可找到证据。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "001-05",
+          "part": "Part 001",
+          "en": "From automated warehouses to cashierless grocery stores to neighborhood libraries that offer self-checkout lanes instead of employing real people—automation is increasingly replacing jobs and leaving too few good new jobs behind.",
+          "zh": "从自动化仓库到无收银员的杂货店，再到提供自助结账通道而不是真正雇佣人员的社区图书馆，自动化正在越来越多地取代工作岗位，留下的新工作岗位太少。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“句子的核心主语”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容；不定式短语表示目的、结果或作名词的后置修饰；括号或破折号部分提供解释、插入说明或强调。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“句子的核心主语”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "cashierless grocery stores",
+              "zh": "无人收银杂货店",
+              "note": "指通过自动化系统完成结账的商店。"
+            },
+            {
+              "term": "self-checkout lanes",
+              "zh": "自助结账通道",
+              "note": "顾客自行扫描商品并付款的结账设施。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，包含多层从句、并列或插入成分，需要先定位主干再逐层还原。整体属于六级偏难。"
+          }
+        },
+        {
+          "label": "001-06",
+          "part": "Part 001",
+          "en": "The statistics in manufacturing are staggering.",
+          "zh": "制造业的统计数据令人震惊。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“The statistics in manufacturing”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“The statistics in manufacturing”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "staggering",
+              "zh": "惊人的",
+              "note": "表示数量或程度大得令人震惊。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "001-07",
+          "part": "Part 001",
+          "en": "Despite the widespread fears about trade, a recent report showed that just 13 percent of jobs lost in manufacturing are due to trade—the rest of the losses have been due to advances in technology.",
+          "zh": "尽管对贸易普遍存在担忧，但最近的一份报告显示，制造业失去的工作岗位中只有13%是由于贸易造成的，其余的损失是由于技术进步造成的。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“句子的核心主语”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容；不定式短语表示目的、结果或作名词的后置修饰；括号或破折号部分提供解释、插入说明或强调。"
+            },
+            {
+              "label": "语法要点",
+              "text": "完成时强调过去情况与当前论述的联系。"
+            }
+          ],
+          "structure": "核心主语是“句子的核心主语”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "advances in technology",
+              "zh": "技术进步",
+              "note": "advance 作名词，常用复数表示发展成果。"
+            },
+            {
+              "term": "widespread fears",
+              "zh": "普遍的担忧",
+              "note": "widespread 表示分布广、影响面大。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，包含多层从句、并列或插入成分，需要先定位主干再逐层还原。整体属于六级偏难。"
+          }
+        },
+        {
+          "label": "001-08",
+          "part": "Part 001",
+          "en": "That is why more people are criticizing the ever-increasing role of technology in our economy.",
+          "zh": "这就是为什么越来越多的人批评技术在我们经济中的作用越来越大。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“That”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容。"
+            },
+            {
+              "label": "语法要点",
+              "text": "比较结构用于突出程度或对象差异。"
+            }
+          ],
+          "structure": "核心主语是“That”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "ever-increasing",
+              "zh": "不断增加的",
+              "note": "复合形容词，强调持续增长。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "001-09",
+          "part": "Part 001",
+          "en": "Our country is manufacturing more than ever before, but we are doing it with fewer workers.",
+          "zh": "我国的制造业比以往任何时候都多，但我们用更少的工人来做。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“Our country”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "比较结构用于突出程度或对象差异；并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“Our country”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "manufacturing",
+              "zh": "制造业",
+              "note": "在原句中表示“制造业”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "001-10",
+          "part": "Part 001",
+          "en": "However, it's not just factories that are seeing losses—software and information technology are also having a dramatic impact on jobs most people think are secure from the forces of a rapidly changing economy.",
+          "zh": "然而，遭受损失的不只是工厂——软件和信息技术也在强烈冲击着那些大多数人原以为不会受到快速变化的经济力量影响的工作。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“it's not just factories that”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容；括号或破折号部分提供解释、插入说明或强调。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“it's not just factories that”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "information",
+              "zh": "信息",
+              "note": "在原句中表示“信息”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，包含多层从句、并列或插入成分，需要先定位主干再逐层还原。整体属于六级偏难。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 002",
+      "title": "002",
+      "navLabel": "002",
+      "description": "阅读材料第 002 部分，共 10 句。",
+      "items": [
+        {
+          "label": "002-11",
+          "part": "Part 002",
+          "en": "Something transformative is happening in America that is having an adverse effect on American families.",
+          "zh": "美国正在发生一些变革性的事情，这对美国家庭产生了不利影响。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“Something transformative”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“Something transformative”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "transformative",
+              "zh": "带来根本改变的",
+              "note": "表示具有改变体系或生活方式的力量。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "002-12",
+          "part": "Part 002",
+          "en": "Whether policymakers and politicians admit it or not, workers have made clear their feelings about their economic insecurity and desire to keep good jobs in America.",
+          "zh": "无论政策制定者和政治人物是否承认，劳动者都已明确表达了对经济不安全感的担忧，以及希望把优质工作岗位留在美国的愿望。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“workers”，主要谓语以“have”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含状语从句或逻辑连接成分，交代条件、时间、让步、原因或结果；不定式短语表示目的、结果或作名词的后置修饰。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“workers”，主要谓语以“have”为中心展开。",
+          "phrases": [
+            {
+              "term": "economic insecurity",
+              "zh": "经济上的不安全感",
+              "note": "指对收入、工作或未来经济状况缺乏稳定预期。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，包含多层从句、并列或插入成分，需要先定位主干再逐层还原。整体属于六级偏难。"
+          }
+        },
+        {
+          "label": "002-13",
+          "part": "Part 002",
+          "en": "So why are people so insistent on ignoring the perils of automation?",
+          "zh": "那么，为什么人们如此坚持忽视自动化的危险呢？",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“So why”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“So why”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "perils",
+              "zh": "危险；风险",
+              "note": "正式且语气较强，常用复数。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "002-14",
+          "part": "Part 002",
+          "en": "They are failing to look ahead at a time when planning for the future is more important than ever.",
+          "zh": "在规划未来比以往任何时候都更加重要的时候，他们未能展望未来。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“句子的核心主语”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含状语从句或逻辑连接成分，交代条件、时间、让步、原因或结果；不定式短语表示目的、结果或作名词的后置修饰。"
+            },
+            {
+              "label": "语法要点",
+              "text": "比较结构用于突出程度或对象差异。"
+            }
+          ],
+          "structure": "核心主语是“句子的核心主语”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "important",
+              "zh": "important",
+              "note": "在原句中表示“important”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "002-15",
+          "part": "Part 002",
+          "en": "Resisting automation is futile: it is as inevitable as industrialization was before it.",
+          "zh": "抵制自动化是徒劳的：它与之前的工业化一样不可避免。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“Resisting automation”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“Resisting automation”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "inevitable",
+              "zh": "不可避免的",
+              "note": "表示无论如何都会发生。"
+            },
+            {
+              "term": "futile",
+              "zh": "徒劳的",
+              "note": "表示某种努力不可能成功。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "002-16",
+          "part": "Part 002",
+          "en": "I sincerely hope that those who assert that automation will make us more effective and pave the way for new occupations are right, but the reality of automation's detrimental effects on workers makes me skeptical.",
+          "zh": "我真诚地希望那些断言自动化将使我们更有效并为新职业铺平道路的人是对的，但自动化对工人的不利影响的现实让我持怀疑态度。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“句子的核心主语”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容。"
+            },
+            {
+              "label": "语法要点",
+              "text": "比较结构用于突出程度或对象差异；并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“句子的核心主语”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "detrimental effects",
+              "zh": "有害影响",
+              "note": "detrimental 是正式形容词，常与 effect 搭配。"
+            },
+            {
+              "term": "pave the way for",
+              "zh": "为……铺平道路",
+              "note": "表示为后续发展创造条件。"
+            },
+            {
+              "term": "occupation",
+              "zh": "职业；工作",
+              "note": "此处指一个人从事的工作类型。"
+            },
+            {
+              "term": "skeptical",
+              "zh": "持怀疑态度的",
+              "note": "常与 of/about 连用，也可接从句。"
+            }
+          ],
+          "difficulty": 4,
+          "difficultyAnalysis": {
+            "difficulty_level": 4,
+            "difficulty_stars": "★★★★☆",
+            "reason_cn": "句子较长，包含多层从句、并列或插入成分，需要先定位主干再逐层还原。整体属于六级偏难。"
+          }
+        },
+        {
+          "label": "002-17",
+          "part": "Part 002",
+          "en": "No one can currently say where the new jobs are coming from or when, and any sensible company or country should prepare for all alternatives.",
+          "zh": "目前没有人能够说清新的工作岗位将来自哪里、何时出现；任何理性的公司或国家都应为各种可能情况做好准备。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“No one can currently say where the new jobs”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容；含状语从句或逻辑连接成分，交代条件、时间、让步、原因或结果。"
+            },
+            {
+              "label": "语法要点",
+              "text": "情态动词表达可能、能力、必要性或作者态度；并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“No one can currently say where the new jobs”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "prepare for all alternatives",
+              "zh": "为所有可能情况做准备",
+              "note": "alternative 在这里指不同的未来情形。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "002-18",
+          "part": "Part 002",
+          "en": "I'm not overstating the danger: look at what's happened to the labor force.",
+          "zh": "我并没有夸大危险：看看劳动力发生了什么。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“I'm not overstating the danger”，主要谓语以“look”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "不定式短语表示目的、结果或作名词的后置修饰。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“I'm not overstating the danger”，主要谓语以“look”为中心展开。",
+          "phrases": [
+            {
+              "term": "overstating",
+              "zh": "夸大其词",
+              "note": "在原句中表示“夸大其词”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "002-19",
+          "part": "Part 002",
+          "en": "According to economic research, one in six working-age men, 25—54, doesn't have a job.",
+          "zh": "根据经济研究，六分之一的工作年龄男性（ 25—54岁）没有工作。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“doesn't”，主要谓语以“have”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "不定式短语表示目的、结果或作名词的后置修饰；括号或破折号部分提供解释、插入说明或强调；多个逗号划分插入语、并列成分或较长修饰层级。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“doesn't”，主要谓语以“have”为中心展开。",
+          "phrases": [
+            {
+              "term": "working-age",
+              "zh": "劳动年龄的",
+              "note": "作复合形容词，修饰处于通常就业年龄的人群。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "002-20",
+          "part": "Part 002",
+          "en": "Fifty years ago, nearly 100 percent of men that age were working.",
+          "zh": "五十年前，这个年龄段的男性几乎100%都在工作。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“nearly 100 percent of men that age”，主要谓语以“were”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容。"
+            },
+            {
+              "label": "语法要点",
+              "text": "以一般陈述句结构为主，重点辨认主谓宾及介词搭配。"
+            }
+          ],
+          "structure": "核心主语是“nearly 100 percent of men that age”，主要谓语以“were”为中心展开。",
+          "phrases": [
+            {
+              "term": "Fifty years ago",
+              "zh": "五十年前",
+              "note": "在原句中表示“五十年前”；学习时需结合上下文辨认其词性及常见搭配。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        }
+      ]
+    },
+    {
+      "kicker": "Part 003",
+      "title": "003",
+      "navLabel": "003",
+      "description": "阅读材料第 003 部分，共 4 句。",
+      "items": [
+        {
+          "label": "003-21",
+          "part": "Part 003",
+          "en": "Women's labor force participation, meanwhile, has slipped back to the level it was at in the late 1980s.",
+          "zh": "与此同时，女性的劳动力参与率已经回落到20世纪80年代末的水平。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“has slipped back to the level it”，主要谓语以“was”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "不定式短语表示目的、结果或作名词的后置修饰；多个逗号划分插入语、并列成分或较长修饰层级。"
+            },
+            {
+              "label": "语法要点",
+              "text": "完成时强调过去情况与当前论述的联系。"
+            }
+          ],
+          "structure": "核心主语是“has slipped back to the level it”，主要谓语以“was”为中心展开。",
+          "phrases": [
+            {
+              "term": "labor force participation",
+              "zh": "劳动力参与率",
+              "note": "指劳动年龄人口中就业或积极求职者所占比例。"
+            }
+          ],
+          "difficulty": 2,
+          "difficultyAnalysis": {
+            "difficulty_level": 2,
+            "difficulty_stars": "★★☆☆☆",
+            "reason_cn": "句子主干较直接，学习重点主要是核心搭配、语境含义和表达习惯。整体属于六级偏易。"
+          }
+        },
+        {
+          "label": "003-22",
+          "part": "Part 003",
+          "en": "American families and prominent business leaders are aware that there's a big problem with automation.",
+          "zh": "美国家庭和杰出的商界领袖都意识到自动化存在一个大问题。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“American families and prominent business leaders”，主要谓语以“are”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“American families and prominent business leaders”，主要谓语以“are”为中心展开。",
+          "phrases": [
+            {
+              "term": "prominent",
+              "zh": "著名的；重要的",
+              "note": "用于形容地位突出的人或事物。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "003-23",
+          "part": "Part 003",
+          "en": "The value of a college degree is diminishing, and our upward mobility is declining.",
+          "zh": "大学学位的价值正在下降，我们的向上流动性正在下降。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“The value of a college degree”，主要谓语以“is”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "修饰层级较少，主要按正常主谓顺序理解。"
+            },
+            {
+              "label": "语法要点",
+              "text": "并列连接词组织对照、递进或选择关系。"
+            }
+          ],
+          "structure": "核心主语是“The value of a college degree”，主要谓语以“is”为中心展开。",
+          "phrases": [
+            {
+              "term": "upward mobility",
+              "zh": "向上流动",
+              "note": "指个人提升经济或社会地位的可能性。"
+            },
+            {
+              "term": "diminish",
+              "zh": "减小；降低",
+              "note": "表示价值、程度或影响逐渐下降。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        },
+        {
+          "label": "003-24",
+          "part": "Part 003",
+          "en": "If we want an economy that allows everyone to be economically secure, we need to start thinking about how we can rightfully address automation.",
+          "zh": "如果我们希望建立一种能让每个人都获得经济保障的经济体系，就需要开始思考如何妥善应对自动化。",
+          "analysis": [
+            {
+              "label": "主干",
+              "text": "核心主语是“we need to start thinking about how we”，主要谓语以“can”为中心展开。"
+            },
+            {
+              "label": "修饰成分",
+              "text": "含关系词引导的从句，用来限定名词或补充陈述内容；含状语从句或逻辑连接成分，交代条件、时间、让步、原因或结果；不定式短语表示目的、结果或作名词的后置修饰。"
+            },
+            {
+              "label": "语法要点",
+              "text": "情态动词表达可能、能力、必要性或作者态度。"
+            }
+          ],
+          "structure": "核心主语是“we need to start thinking about how we”，主要谓语以“can”为中心展开。",
+          "phrases": [
+            {
+              "term": "economically secure",
+              "zh": "经济上有保障的",
+              "note": "secure 表示稳定且免于风险。"
+            }
+          ],
+          "difficulty": 3,
+          "difficultyAnalysis": {
+            "difficulty_level": 3,
+            "difficulty_stars": "★★★☆☆",
+            "reason_cn": "句子含一定修饰层级和抽象表达，需结合连接词辨认逻辑关系。整体属于六级中等。"
+          }
+        }
+      ]
+    }
+  ]
+}
