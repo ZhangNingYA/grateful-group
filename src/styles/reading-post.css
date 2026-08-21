@@ -3,7 +3,6 @@
   --reading-ink: #17201c;
   --reading-muted: #626b66;
   --reading-line: #dfe3e0;
-  --reading-accent: #d9654b;
 }
 
 * { box-sizing: border-box; }
@@ -32,7 +31,7 @@ body.reading-post-page {
 }
 
 .reading-back {
-  color: var(--reading-accent);
+  color: var(--reading-muted);
   font-size: 0.72rem;
   font-weight: 700;
   text-decoration: none;
