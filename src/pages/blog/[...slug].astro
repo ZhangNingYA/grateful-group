@@ -3,16 +3,36 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import ReadingPost from '../../layouts/ReadingPost.astro';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('reading');
-  return entries.map((entry) => ({ params: { slug: entry.id }, props: entry }));
+  const entries = (await getCollection('reading')).sort(
+    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf() || a.id.localeCompare(b.id),
+  );
+  return entries.map((entry, index) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      archiveCount: entries.length,
+      previous: entries[index - 1]
+        ? { href: `/blog/${entries[index - 1].id}/`, title: entries[index - 1].data.title }
+        : undefined,
+      next: entries[index + 1]
+        ? { href: `/blog/${entries[index + 1].id}/`, title: entries[index + 1].data.title }
+        : undefined,
+    },
+  }));
 }
 
-type Props = CollectionEntry<'reading'>;
+type ReadingLink = { href: string; title: string };
+type Props = {
+  entry: CollectionEntry<'reading'>;
+  archiveCount: number;
+  previous?: ReadingLink;
+  next?: ReadingLink;
+};
 
-const entry = Astro.props;
+const { entry, archiveCount, previous, next } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<ReadingPost {...entry.data}>
+<ReadingPost {...entry.data} {archiveCount} {previous} {next}>
   <Content />
 </ReadingPost>

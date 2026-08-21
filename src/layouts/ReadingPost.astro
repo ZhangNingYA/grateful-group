@@ -5,9 +5,14 @@ import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import '../styles/reading-post.css';
 
-type Props = CollectionEntry<'reading'>['data'];
+type ReadingLink = { href: string; title: string };
+type Props = CollectionEntry<'reading'>['data'] & {
+  archiveCount: number;
+  previous?: ReadingLink;
+  next?: ReadingLink;
+};
 
-const { title, description, pubDate, sourceUrl } = Astro.props;
+const { title, description, pubDate, sourceUrl, archiveCount, previous, next } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,7 +25,7 @@ const { title, description, pubDate, sourceUrl } = Astro.props;
 
     <main class="reading-post-shell">
       <header class="reading-post-header">
-        <a class="reading-back" href="/blog/">Reading / Archive 01</a>
+        <a class="reading-back" href="/blog/">Reading / Archive {String(archiveCount).padStart(2, '0')}</a>
         <h1>{title}</h1>
         <p>{description}</p>
         <div class="reading-post-meta">
@@ -60,10 +65,17 @@ const { title, description, pubDate, sourceUrl } = Astro.props;
       </div>
     </main>
 
-    <footer class="reading-post-footer">
-      <span>© {new Date().getFullYear()} Tend</span>
-      <a href="/blog/">All reading</a>
-    </footer>
+    <nav class="reading-post-navigation" aria-label="Reading navigation">
+      {previous ? (
+        <a href={previous.href} rel="prev"><span>Previous</span><strong>{previous.title}</strong></a>
+      ) : <span aria-hidden="true"></span>}
+      <a class="reading-post-navigation-all" href="/blog/">All reading</a>
+      {next ? (
+        <a href={next.href} rel="next"><span>Next</span><strong>{next.title}</strong></a>
+      ) : <span aria-hidden="true"></span>}
+    </nav>
+
+    <footer class="reading-post-footer"><span>© {new Date().getFullYear()} Tend</span></footer>
 
     <script>
       const headings = Array.from(
