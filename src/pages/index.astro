@@ -23,9 +23,9 @@ const sections = [
   },
   {
     href: '/blog/',
-    label: 'Journal',
+    label: 'Reading',
     count: blog.length,
-    description: 'Long-form observations across science, technology, and language.',
+    description: 'English texts studied closely, sentence by sentence.',
   },
   {
     href: '/learning/',
@@ -48,7 +48,7 @@ const sections = [
 ];
 
 const recent = [
-  ...blog.map((entry) => ({ ...entry, href: `/blog/${entry.id}/`, section: 'Journal' })),
+  ...blog.map((entry) => ({ ...entry, href: `/blog/${entry.id}/`, section: 'Reading' })),
   ...works.map((entry) => ({ ...entry, href: `/works/${entry.id}/`, section: 'Projects' })),
 ]
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -102,7 +102,7 @@ const recent = [
       <section class="editorial-index recent-index" aria-labelledby="recent-heading">
         <div class="editorial-section-heading">
           <h2 id="recent-heading">Recently published</h2>
-          <span>Journal & Projects</span>
+          <span>Reading & Projects</span>
         </div>
 
         <div class="editorial-list">

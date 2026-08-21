@@ -16,39 +16,49 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
 <html lang="zh-CN">
   <head>
     <BaseHead
-      title={`Journal | ${SITE_TITLE}`}
-      description="Tend 的长篇阅读与研究笔记，记录科学、技术与视觉计算中的关键问题。"
+      title={`Reading | ${SITE_TITLE}`}
+      description="English texts, studied sentence by sentence."
     />
   </head>
 
   <body>
-    <BlogHeader active="journal" />
+    <BlogHeader active="reading" />
 
     <main>
-      <header class="journal-head">
-        <div class="journal-copy">
-          <p class="eyebrow">Journal / {String(posts.length).padStart(2, '0')} entries</p>
-          <h1>Reading notes for curious minds.</h1>
-          <p class="lede">
-            拆解科学与技术文章中的复杂表达，保留值得反复阅读的句子、结构和上下文。
-          </p>
+      <header class="reading-head">
+        <div class="reading-copy">
+          <p class="eyebrow">Reading / {String(posts.length).padStart(2, '0')} texts</p>
+          <h1>Read with attention.</h1>
+          <p class="lede">English texts, studied sentence by sentence.</p>
         </div>
-        <div class="edition" aria-label="期刊信息">
-          <span>Tend</span>
-          <strong>01</strong>
-          <span>Notes & studies</span>
+        <div class="reading-focus" aria-hidden="true">
+          <div class="focus-heading">
+            <span>Reading focus</span>
+            <span>01-04</span>
+          </div>
+          <div class="focus-lines">
+            <div class="focus-cursor"></div>
+            <span><i>01</i><b></b></span>
+            <span><i>02</i><b></b></span>
+            <span><i>03</i><b></b></span>
+            <span><i>04</i><b></b></span>
+          </div>
+          <p>Sentence by sentence</p>
         </div>
       </header>
 
       <section class="article-index" aria-labelledby="latest-heading">
         <div class="section-heading">
-          <h2 id="latest-heading">Latest entries</h2>
-          <span>按发布日期排序</span>
+          <h2 id="latest-heading">Reading archive</h2>
+          <span>Latest first</span>
         </div>
 
         <div class="post-list">
           {posts.map((post, index) => (
-            <article class={`post-row accent-${accents[index % accents.length]}`}>
+            <article
+              class={`post-row accent-${accents[index % accents.length]}`}
+              style={`--row-index: ${index}`}
+            >
               <a href={`/blog/${post.id}/`}>
                 <span class="post-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 <div class="post-copy">
@@ -106,22 +116,26 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
     margin: 0 auto;
   }
 
-  .journal-head {
+  .reading-head {
     min-height: 380px;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 180px;
-    align-items: end;
-    gap: 64px;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+    align-items: stretch;
+    gap: 72px;
     padding: 72px 0 54px;
     border-bottom: 1px solid var(--ink);
   }
 
-  .journal-copy { max-width: 780px; }
+  .reading-copy {
+    max-width: 780px;
+    align-self: end;
+  }
 
   .eyebrow,
   .section-heading span,
   .post-meta,
-  .edition span {
+  .focus-heading,
+  .reading-focus > p {
     margin: 0;
     color: var(--muted);
     font-size: 0.74rem;
@@ -148,21 +162,71 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
     line-height: 1.75;
   }
 
-  .edition {
-    min-height: 180px;
-    padding: 16px 0;
+  .reading-focus {
+    min-height: 210px;
+    padding-left: 28px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    border-left: 1px solid var(--line);
+  }
+
+  .focus-heading {
+    display: flex;
     justify-content: space-between;
-    border-top: 4px solid var(--coral);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .focus-lines {
+    position: relative;
+    padding: 8px 0;
+    overflow: hidden;
     border-bottom: 1px solid var(--line);
   }
 
-  .edition strong {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 1;
+  .focus-lines > span {
+    position: relative;
+    z-index: 1;
+    height: 32px;
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+  }
+
+  .focus-lines i {
+    color: #89908c;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.62rem;
+    font-style: normal;
+  }
+
+  .focus-lines b {
+    display: block;
+    height: 1px;
+    background: #7d8781;
+  }
+
+  .focus-lines > span:nth-of-type(1) b { width: 94%; }
+  .focus-lines > span:nth-of-type(2) b { width: 72%; }
+  .focus-lines > span:nth-of-type(3) b { width: 86%; }
+  .focus-lines > span:nth-of-type(4) b { width: 58%; }
+
+  .focus-cursor {
+    position: absolute;
+    z-index: 0;
+    top: 8px;
+    right: 0;
+    left: 26px;
+    height: 32px;
+    border-left: 3px solid var(--coral);
+    background: rgba(79, 120, 163, 0.09);
+    animation: reading-focus 7.2s ease-in-out infinite alternate;
+  }
+
+  .reading-focus > p {
+    padding-top: 12px;
   }
 
   .article-index { padding: 52px 0 72px; }
@@ -183,7 +247,12 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
 
   .post-list { border-top: 1px solid var(--ink); }
 
-  .post-row { --accent: var(--coral); }
+  .post-row {
+    --accent: var(--coral);
+    opacity: 0;
+    animation: row-arrive 480ms ease-out forwards;
+    animation-delay: calc(var(--row-index) * 55ms);
+  }
   .post-row.accent-blue { --accent: #4f78a3; }
   .post-row.accent-green { --accent: #4e8068; }
   .post-row.accent-yellow { --accent: #c2942f; }
@@ -303,14 +372,26 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
 
   .site-footer a { color: inherit; }
 
+  @keyframes reading-focus {
+    0%, 18% { transform: translateY(0); }
+    29%, 47% { transform: translateY(32px); }
+    58%, 76% { transform: translateY(64px); }
+    87%, 100% { transform: translateY(96px); }
+  }
+
+  @keyframes row-arrive {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   @media (max-width: 720px) {
     main,
     .site-footer { width: min(100% - 32px, 1160px); }
 
-    .journal-head {
+    .reading-head {
       min-height: 0;
       grid-template-columns: 1fr;
-      gap: 36px;
+      gap: 32px;
       padding: 54px 0 38px;
     }
 
@@ -320,19 +401,9 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
       line-height: 1.02;
     }
 
-    .edition {
+    .reading-focus {
       min-height: 0;
-      padding: 12px 0;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 4px 16px;
-    }
-
-    .edition strong {
-      grid-row: 1 / 3;
-      grid-column: 2;
-      font-size: 3rem;
+      padding-left: 18px;
     }
 
     .article-index { padding: 38px 0 56px; }
@@ -352,6 +423,12 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
   }
 
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    *, *::before, *::after {
+      scroll-behavior: auto !important;
+      transition: none !important;
+      animation: none !important;
+    }
+
+    .post-row { opacity: 1; }
   }
 </style>
