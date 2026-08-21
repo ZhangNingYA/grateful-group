@@ -167,11 +167,11 @@ body.reading-post-page {
   }
 
   .reading-post-rail nav {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .reading-post-rail a {
-    padding-right: 12px;
+    padding: 10px 0;
     font-size: 0.72rem;
   }
 

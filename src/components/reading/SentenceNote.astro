@@ -1,17 +1,15 @@
 ---
 interface Props {
   number: string;
-  analysis: string;
 }
 
-const { number, analysis } = Astro.props;
+const { number } = Astro.props;
 ---
 
 <div class="sentence-note">
   <span class="sentence-number" aria-hidden="true">{number}</span>
   <div class="sentence-content">
     <div class="sentence-original"><slot /></div>
-    <p class="sentence-analysis"><span>Analysis</span>{analysis}</p>
   </div>
 </div>
 
@@ -44,24 +42,6 @@ const { number, analysis } = Astro.props;
 
   .sentence-original :global(p) { margin: 0; }
 
-  .sentence-analysis {
-    display: grid;
-    grid-template-columns: 76px minmax(0, 1fr);
-    gap: 12px;
-    margin: 13px 0 0;
-    color: #626b66;
-    font-size: 0.87rem;
-    line-height: 1.72;
-  }
-
-  .sentence-analysis span {
-    padding-top: 1px;
-    color: #4f78a3;
-    font-size: 0.66rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   .sentence-original :global(mark) {
     padding: 0 0.12em;
     color: inherit;
@@ -77,10 +57,5 @@ const { number, analysis } = Astro.props;
 
     .sentence-original { font-size: 1.05rem; }
 
-    .sentence-analysis {
-      grid-template-columns: 1fr;
-      gap: 4px;
-      font-size: 0.84rem;
-    }
   }
 </style>
