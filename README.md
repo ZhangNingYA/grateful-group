@@ -8,11 +8,11 @@ Live site: [www.fulafu.com](https://www.fulafu.com/)
 
 ## What is inside
 
-- English reading and close-reading notes
+- A dedicated space for future close-reading notes
 - Interactive learning material
 - Three.js and React Three Fiber experiments
 - Project, paper, and game collections
-- RSS and sitemap generation
+- Sitemap generation
 
 ## Stack
 
@@ -48,7 +48,7 @@ src/components/ Shared UI components
 src/content/    Site content collections
 src/data/       Structured learning and visualization data
 src/layouts/    Page layouts
-src/pages/      Routes and RSS endpoint
+src/pages/      Site routes
 src/styles/     Shared styles
 ```
 

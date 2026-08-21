@@ -1,15 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/blog/BlogHeader.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const textCount = 0;
 
-const accents = ['coral', 'blue', 'green', 'yellow'];
 ---
 
 <!doctype html>
@@ -27,16 +22,16 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
     <main>
       <header class="reading-head">
         <div class="reading-copy">
-          <p class="eyebrow">Reading / {String(posts.length).padStart(2, '0')} texts</p>
+          <p class="eyebrow">Reading / {String(textCount).padStart(2, '0')} texts</p>
           <h1>Read with <span class="attention-word">attention.<span class="attention-rule" aria-hidden="true"></span></span></h1>
           <p class="lede">English texts, studied sentence by sentence.</p>
         </div>
-        <aside class="reading-index" aria-label={`${posts.length} texts in the reading archive`}>
+        <aside class="reading-index" aria-label={`${textCount} texts in the reading archive`}>
           <div class="reading-index-top">
             <span>Reading archive</span>
-            <span>Vol. 01</span>
+            <span>Open</span>
           </div>
-          <strong>{String(posts.length).padStart(2, '0')}</strong>
+          <strong>{String(textCount).padStart(2, '0')}</strong>
           <div class="reading-index-bottom">
             <span>English texts</span>
             <span>Close study</span>
@@ -44,43 +39,19 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
         </aside>
       </header>
 
-      <section class="article-index" aria-labelledby="latest-heading">
-        <div class="section-heading">
-          <h2 id="latest-heading">Reading archive</h2>
-          <span>Latest first</span>
-        </div>
-
-        <div class="post-list">
-          {posts.map((post, index) => (
-            <article
-              class={`post-row accent-${accents[index % accents.length]}`}
-              style={`--row-index: ${index}`}
-            >
-              <a href={`/blog/${post.id}/`}>
-                <span class="post-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-                <div class="post-copy">
-                  <div class="post-meta">
-                    <FormattedDate date={post.data.pubDate} />
-                    {index === 0 && <span class="latest-label">Latest</span>}
-                  </div>
-                  <h3>{post.data.title}</h3>
-                  <p>{post.data.description}</p>
-                </div>
-                <span class="post-arrow" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M5 12h14M13 6l6 6-6 6"></path>
-                  </svg>
-                </span>
-              </a>
-            </article>
-          ))}
+      <section class="empty-archive" aria-labelledby="archive-heading">
+        <span class="empty-count" aria-hidden="true">00</span>
+        <div class="empty-copy">
+          <p class="empty-kicker">Reading archive</p>
+          <h2 id="archive-heading">No texts yet.</h2>
+          <p>The archive is ready for its next close reading.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>© {new Date().getFullYear()} Tend</span>
-      <a href="/rss.xml">RSS</a>
+      <a href="/about/">About</a>
     </footer>
   </body>
 </html>
@@ -129,10 +100,9 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
   }
 
   .eyebrow,
-  .section-heading span,
-  .post-meta,
   .reading-index-top,
-  .reading-index-bottom {
+  .reading-index-bottom,
+  .empty-kicker {
     margin: 0;
     color: var(--muted);
     font-size: 0.74rem;
@@ -210,136 +180,36 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
     border-top: 1px solid var(--line);
   }
 
-  .article-index { padding: 52px 0 72px; }
-
-  .section-heading {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 24px;
-    margin-bottom: 16px;
-  }
-
-  .section-heading h2 {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-
-  .post-list { border-top: 1px solid var(--ink); }
-
-  .post-row {
-    --accent: var(--coral);
-    opacity: 0;
-    animation: row-arrive 480ms ease-out forwards;
-    animation-delay: calc(var(--row-index) * 55ms);
-  }
-  .post-row.accent-blue { --accent: #4f78a3; }
-  .post-row.accent-green { --accent: #4e8068; }
-  .post-row.accent-yellow { --accent: #c2942f; }
-
-  .post-row a {
-    position: relative;
+  .empty-archive {
     display: grid;
-    grid-template-columns: 72px minmax(0, 1fr) 48px;
+    grid-template-columns: 72px minmax(0, 1fr);
     gap: 24px;
-    align-items: start;
-    min-height: 190px;
-    padding: 28px 0;
+    min-height: 220px;
+    padding: 48px 0 72px;
     border-bottom: 1px solid var(--line);
-    color: inherit;
-    text-decoration: none;
-    transition: background-color 180ms ease;
   }
 
-  .post-row a::before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: -16px;
-    width: 4px;
-    background: var(--accent);
-    transform: scaleY(0);
-    transition: transform 180ms ease;
-  }
-
-  .post-row a:hover { background: #fff; }
-  .post-row a:hover::before { transform: scaleY(1); }
-
-  .post-number {
-    color: var(--accent);
-    font-family: Georgia, 'Times New Roman', serif;
+  .empty-count {
+    color: var(--coral);
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
     font-size: 1.45rem;
   }
 
-  .post-copy { max-width: 780px; }
+  .empty-kicker { margin-bottom: 10px; }
 
-  .post-meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-
-  .latest-label {
-    padding-left: 10px;
-    border-left: 1px solid var(--line);
-    color: var(--accent);
-  }
-
-  .post-copy h3 {
+  .empty-copy h2 {
     margin: 0 0 10px;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(1.35rem, 2.4vw, 2rem);
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.22;
-    letter-spacing: 0;
+    line-height: 1.2;
   }
 
-  .post-copy p {
-    display: -webkit-box;
-    max-width: 720px;
+  .empty-copy > p:last-child {
     margin: 0;
-    overflow: hidden;
     color: var(--muted);
     font-size: 0.92rem;
     line-height: 1.65;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-
-  .post-arrow {
-    display: grid;
-    width: 40px;
-    height: 40px;
-    place-items: center;
-    justify-self: end;
-    border: 1px solid var(--line);
-    border-radius: 50%;
-    background: var(--paper);
-    transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
-  }
-
-  .post-arrow svg {
-    width: 18px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .post-row a:hover .post-arrow {
-    border-color: var(--accent);
-    background: var(--accent);
-    color: #fff;
-    transform: translateX(3px);
-  }
-
-  .post-row a:focus-visible {
-    outline: 3px solid rgba(217, 101, 75, 0.28);
-    outline-offset: 4px;
   }
 
   .site-footer {
@@ -357,11 +227,6 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
     0%, 8% { opacity: 0; transform: scaleX(0); }
     18%, 72% { opacity: 1; transform: scaleX(1); }
     86%, 100% { opacity: 0; transform: scaleX(1); }
-  }
-
-  @keyframes row-arrive {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
   }
 
   @media (max-width: 720px) {
@@ -400,20 +265,15 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
       padding: 9px 0;
     }
 
-    .article-index { padding: 38px 0 56px; }
-
-    .section-heading span { display: none; }
-
-    .post-row a {
+    .empty-archive {
       grid-template-columns: 38px minmax(0, 1fr);
       gap: 12px;
-      min-height: 0;
-      padding: 24px 0;
+      min-height: 190px;
+      padding: 38px 0 56px;
     }
 
-    .post-arrow { display: none; }
-    .post-number { font-size: 1.1rem; }
-    .post-copy h3 { font-size: 1.34rem; }
+    .empty-count { font-size: 1.1rem; }
+    .empty-copy h2 { font-size: 1.6rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -422,8 +282,6 @@ const accents = ['coral', 'blue', 'green', 'yellow'];
       transition: none !important;
       animation: none !important;
     }
-
-    .post-row { opacity: 1; }
 
     .attention-rule {
       opacity: 1;

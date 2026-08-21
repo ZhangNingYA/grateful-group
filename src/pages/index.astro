@@ -6,8 +6,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import '../styles/editorial.css';
 
-const [blog, works, learning, papers, threeD] = await Promise.all([
-  getCollection('blog'),
+const [works, learning, papers, threeD] = await Promise.all([
   getCollection('works'),
   getCollection('learning'),
   getCollection('papers'),
@@ -24,7 +23,7 @@ const sections = [
   {
     href: '/blog/',
     label: 'Reading',
-    count: blog.length,
+    count: 0,
     description: 'English texts studied closely, sentence by sentence.',
   },
   {
@@ -48,7 +47,6 @@ const sections = [
 ];
 
 const recent = [
-  ...blog.map((entry) => ({ ...entry, href: `/blog/${entry.id}/`, section: 'Reading' })),
   ...works.map((entry) => ({ ...entry, href: `/works/${entry.id}/`, section: 'Projects' })),
 ]
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -132,7 +130,6 @@ const recent = [
       <span>© {new Date().getFullYear()} Tend</span>
       <span class="editorial-footer-links">
         <a href="/about/">About</a>
-        <a href="/rss.xml">RSS</a>
       </span>
     </footer>
   </body>

@@ -1,5 +1,5 @@
 ---
-import { Menu, Rss, X } from 'lucide-astro';
+import { Menu, X } from 'lucide-astro';
 import TendWordmark from '../TendWordmark.astro';
 
 interface Props {
@@ -21,17 +21,7 @@ const { active, theme = 'light' } = Astro.props;
       <a href="/blog/" aria-current={active === 'reading' ? 'page' : undefined}>Reading</a>
       <a href="/papers/" aria-current={active === 'papers' ? 'page' : undefined}>Papers</a>
       <a href="/about/" aria-current={active === 'about' ? 'page' : undefined}>About</a>
-      <a class="mobile-rss" href="/rss.xml">
-        <Rss size={16} stroke-width={1.8} aria-hidden="true" />
-        <span>RSS</span>
-      </a>
     </nav>
-
-    <span class="header-divider" aria-hidden="true"></span>
-
-    <a class="rss-link" href="/rss.xml" aria-label="Subscribe via RSS" title="RSS">
-      <Rss size={18} stroke-width={1.8} aria-hidden="true" />
-    </a>
 
     <button
       class="menu-toggle"
@@ -156,16 +146,6 @@ const { active, theme = 'light' } = Astro.props;
     transform: translateX(-50%) scaleX(1);
   }
 
-  .site-nav a.mobile-rss { display: none; }
-
-  .header-divider {
-    width: 1px;
-    height: 18px;
-    margin: 0 16px 0 20px;
-    background: #d7dcd8;
-  }
-
-  .rss-link,
   .menu-toggle {
     width: 34px;
     height: 34px;
@@ -177,12 +157,6 @@ const { active, theme = 'light' } = Astro.props;
     transition: color 160ms ease, background-color 160ms ease;
   }
 
-  .rss-link {
-    display: grid;
-    flex: 0 0 34px;
-  }
-
-  .rss-link:hover,
   .menu-toggle:hover {
     color: #19201c;
     background: #ecefeb;
@@ -210,17 +184,13 @@ const { active, theme = 'light' } = Astro.props;
   .theme-dark .brand { color: #eef4ff; }
   .theme-dark .brand:hover { color: #ffd8cf; }
   .theme-dark .site-nav a,
-  .theme-dark .rss-link,
   .theme-dark .menu-toggle { color: #aebbd2; }
   .theme-dark .site-nav a:hover,
   .theme-dark .site-nav a[aria-current='page'],
-  .theme-dark .rss-link:hover,
   .theme-dark .menu-toggle:hover { color: #ffffff; }
-  .theme-dark .rss-link:hover,
   .theme-dark .menu-toggle:hover { background: rgba(255, 255, 255, 0.08); }
-  .theme-dark .header-divider { background: rgba(190, 213, 255, 0.18); }
 
-  :is(.brand, .site-nav a, .rss-link, .menu-toggle):focus-visible {
+  :is(.brand, .site-nav a, .menu-toggle):focus-visible {
     outline: 3px solid rgba(217, 101, 75, 0.3);
     outline-offset: 3px;
   }
@@ -235,9 +205,6 @@ const { active, theme = 'light' } = Astro.props;
     .brand { font-size: 1.375rem; }
 
     .menu-toggle { display: grid; }
-
-    .header-divider,
-    .rss-link { display: none; }
 
     .site-nav {
       position: absolute;
@@ -269,8 +236,7 @@ const { active, theme = 'light' } = Astro.props;
     .site-header.is-menu-open .menu-open-icon { display: none; }
     .site-header.is-menu-open .menu-close-icon { display: grid; }
 
-    .site-nav a,
-    .site-nav a.mobile-rss {
+    .site-nav a {
       display: flex;
       min-height: 48px;
       justify-content: space-between;
@@ -292,13 +258,6 @@ const { active, theme = 'light' } = Astro.props;
     .site-nav a[aria-current='page']::after {
       transform: translateY(50%) scale(1);
     }
-
-    .site-nav a.mobile-rss {
-      justify-content: flex-start;
-      gap: 10px;
-    }
-
-    .site-nav a.mobile-rss::after { display: none; }
 
     .theme-dark .site-nav {
       border-bottom-color: rgba(190, 213, 255, 0.16);
