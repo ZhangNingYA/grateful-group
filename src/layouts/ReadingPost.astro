@@ -29,13 +29,28 @@ const { title, description, pubDate, sourceUrl } = Astro.props;
         </div>
       </header>
 
+      <nav class="reading-mobile-toc" aria-label="Page sections" data-reading-toc>
+        <a href="#word-bank-cloze" aria-current="location">Cloze</a>
+        <a href="#paragraph-matching">Matching</a>
+        <a href="#reading-passages">Passages</a>
+      </nav>
+
       <div class="reading-post-grid">
         <aside class="reading-post-rail" aria-label="Page sections">
-          <p>On this page</p>
-          <nav>
-            <a href="#word-bank-cloze">Word Bank Cloze</a>
-            <a href="#paragraph-matching">Paragraph Matching</a>
-            <a href="#reading-passages">Reading Passages</a>
+          <p>Contents <span>3 sections</span></p>
+          <nav data-reading-toc>
+            <a href="#word-bank-cloze" aria-current="location">
+              <span>01</span>
+              Word Bank Cloze
+            </a>
+            <a href="#paragraph-matching">
+              <span>02</span>
+              Paragraph Matching
+            </a>
+            <a href="#reading-passages">
+              <span>03</span>
+              Reading Passages
+            </a>
           </nav>
         </aside>
 
@@ -49,5 +64,33 @@ const { title, description, pubDate, sourceUrl } = Astro.props;
       <span>© {new Date().getFullYear()} Tend</span>
       <a href="/blog/">All reading</a>
     </footer>
+
+    <script>
+      const headings = Array.from(
+        document.querySelectorAll<HTMLElement>('.reading-article > h2[id]'),
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll<HTMLAnchorElement>('[data-reading-toc] a'),
+      );
+
+      const updateCurrentSection = () => {
+        if (!headings.length) return;
+
+        let currentId = headings[0].id;
+        for (const heading of headings) {
+          if (heading.getBoundingClientRect().top <= 150) currentId = heading.id;
+        }
+
+        tocLinks.forEach((link) => {
+          const isCurrent = link.hash === `#${currentId}`;
+          if (isCurrent) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      };
+
+      updateCurrentSection();
+      window.addEventListener('scroll', updateCurrentSection, { passive: true });
+      window.addEventListener('resize', updateCurrentSection);
+    </script>
   </body>
 </html>
