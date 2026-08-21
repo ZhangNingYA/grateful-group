@@ -6,7 +6,8 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import '../styles/editorial.css';
 
-const [works, learning, papers, threeD] = await Promise.all([
+const [reading, works, learning, papers, threeD] = await Promise.all([
+  getCollection('reading'),
   getCollection('works'),
   getCollection('learning'),
   getCollection('papers'),
@@ -23,7 +24,7 @@ const sections = [
   {
     href: '/blog/',
     label: 'Reading',
-    count: 0,
+    count: reading.length,
     description: 'English texts studied closely, sentence by sentence.',
   },
   {
@@ -47,6 +48,7 @@ const sections = [
 ];
 
 const recent = [
+  ...reading.map((entry) => ({ ...entry, href: `/blog/${entry.id}/`, section: 'Reading' })),
   ...works.map((entry) => ({ ...entry, href: `/works/${entry.id}/`, section: 'Projects' })),
 ]
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())

@@ -1,0 +1,53 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/blog/BlogHeader.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import '../styles/reading-post.css';
+
+type Props = CollectionEntry<'reading'>['data'];
+
+const { title, description, pubDate, sourceUrl } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <BaseHead {title} {description} />
+  </head>
+  <body class="reading-post-page">
+    <BlogHeader active="reading" />
+
+    <main class="reading-post-shell">
+      <header class="reading-post-header">
+        <a class="reading-back" href="/blog/">Reading / Archive 01</a>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <div class="reading-post-meta">
+          <span><FormattedDate date={pubDate} /></span>
+          {sourceUrl && <a href={sourceUrl}>Source <span aria-hidden="true">↗</span></a>}
+        </div>
+      </header>
+
+      <div class="reading-post-grid">
+        <aside class="reading-post-rail" aria-label="Page sections">
+          <p>On this page</p>
+          <nav>
+            <a href="#word-bank-cloze">Word Bank Cloze</a>
+            <a href="#paragraph-matching">Paragraph Matching</a>
+            <a href="#reading-passages">Reading Passages</a>
+          </nav>
+        </aside>
+
+        <article class="reading-article">
+          <slot />
+        </article>
+      </div>
+    </main>
+
+    <footer class="reading-post-footer">
+      <span>© {new Date().getFullYear()} Tend</span>
+      <a href="/blog/">All reading</a>
+    </footer>
+  </body>
+</html>

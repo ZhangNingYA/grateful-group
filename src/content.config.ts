@@ -2,6 +2,16 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const reading = defineCollection({
+    loader: glob({ base: './src/content/reading', pattern: '**/*.{md,mdx}' }),
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        pubDate: z.coerce.date(),
+        sourceUrl: z.string().url().optional(),
+    }),
+});
+
 const games = defineCollection({
     // 注意这里路径改成了 ./src/content/games
     loader: glob({ base: './src/content/games', pattern: '**/*.{md,mdx}' }),
@@ -73,4 +83,4 @@ const papers = defineCollection({
         }),
 });
 
-export const collections = { games, learning, threeD, works, papers };
+export const collections = { reading, games, learning, threeD, works, papers };

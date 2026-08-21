@@ -8,7 +8,7 @@ Live site: [www.fulafu.com](https://www.fulafu.com/)
 
 ## What is inside
 
-- A dedicated space for future close-reading notes
+- Sentence-by-sentence English close-reading notes
 - Interactive learning material
 - Three.js and React Three Fiber experiments
 - Project, paper, and game collections
