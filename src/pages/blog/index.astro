@@ -22,30 +22,15 @@ const textCount = 0;
     <main>
       <header class="reading-head">
         <div class="reading-copy">
-          <p class="eyebrow">Reading / {String(textCount).padStart(2, '0')} texts</p>
+          <p class="eyebrow">Reading</p>
           <h1>Read with <span class="attention-word">attention.<span class="attention-rule" aria-hidden="true"></span></span></h1>
           <p class="lede">English texts, studied sentence by sentence.</p>
         </div>
-        <aside class="reading-index" aria-label={`${textCount} texts in the reading archive`}>
-          <div class="reading-index-top">
-            <span>Reading archive</span>
-            <span>Open</span>
-          </div>
-          <strong>{String(textCount).padStart(2, '0')}</strong>
-          <div class="reading-index-bottom">
-            <span>English texts</span>
-            <span>Close study</span>
-          </div>
-        </aside>
       </header>
 
-      <section class="empty-archive" aria-labelledby="archive-heading">
-        <span class="empty-count" aria-hidden="true">00</span>
-        <div class="empty-copy">
-          <p class="empty-kicker">Reading archive</p>
-          <h2 id="archive-heading">No texts yet.</h2>
-          <p>The archive is ready for its next close reading.</p>
-        </div>
+      <section class="archive-line" aria-label="Reading archive status">
+        <span>Archive</span>
+        <span>{String(textCount).padStart(2, '0')} texts</span>
       </section>
     </main>
 
@@ -85,24 +70,31 @@ const textCount = 0;
   }
 
   .reading-head {
-    min-height: 380px;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
-    align-items: stretch;
-    gap: 72px;
-    padding: 72px 0 54px;
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    align-items: flex-end;
+    padding: 68px 0 50px;
     border-bottom: 1px solid var(--ink);
+  }
+
+  .reading-head::before {
+    position: absolute;
+    top: 68px;
+    bottom: 50px;
+    left: 0;
+    width: 1px;
+    background: var(--line);
+    content: '';
   }
 
   .reading-copy {
     max-width: 780px;
-    align-self: end;
+    padding-left: 32px;
   }
 
   .eyebrow,
-  .reading-index-top,
-  .reading-index-bottom,
-  .empty-kicker {
+  .archive-line {
     margin: 0;
     color: var(--muted);
     font-size: 0.74rem;
@@ -115,7 +107,7 @@ const textCount = 0;
     max-width: 760px;
     margin: 18px 0 24px;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(2.8rem, 6vw, 5.2rem);
+    font-size: 4.5rem;
     font-weight: 500;
     line-height: 0.98;
     letter-spacing: 0;
@@ -147,69 +139,12 @@ const textCount = 0;
     line-height: 1.75;
   }
 
-  .reading-index {
-    min-height: 210px;
-    padding-left: 28px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    border-left: 1px solid var(--line);
-  }
-
-  .reading-index-top,
-  .reading-index-bottom {
+  .archive-line {
     display: flex;
+    min-height: 104px;
+    align-items: flex-start;
     justify-content: space-between;
-  }
-
-  .reading-index-top {
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--ink);
-  }
-
-  .reading-index strong {
-    align-self: center;
-    color: #4f78a3;
-    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
-    font-size: 4.75rem;
-    font-weight: 450;
-    line-height: 1;
-  }
-
-  .reading-index-bottom {
-    padding-top: 12px;
-    border-top: 1px solid var(--line);
-  }
-
-  .empty-archive {
-    display: grid;
-    grid-template-columns: 72px minmax(0, 1fr);
-    gap: 24px;
-    min-height: 220px;
-    padding: 48px 0 72px;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .empty-count {
-    color: var(--coral);
-    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
-    font-size: 1.45rem;
-  }
-
-  .empty-kicker { margin-bottom: 10px; }
-
-  .empty-copy h2 {
-    margin: 0 0 10px;
-    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-
-  .empty-copy > p:last-child {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.92rem;
-    line-height: 1.65;
+    padding: 24px 0 56px;
   }
 
   .site-footer {
@@ -234,10 +169,17 @@ const textCount = 0;
     .site-footer { width: min(100% - 32px, 1160px); }
 
     .reading-head {
-      min-height: 0;
-      grid-template-columns: 1fr;
-      gap: 32px;
-      padding: 54px 0 38px;
+      min-height: 300px;
+      padding: 48px 0 38px;
+    }
+
+    .reading-head::before {
+      top: 48px;
+      bottom: 38px;
+    }
+
+    .reading-copy {
+      padding-left: 20px;
     }
 
     h1 {
@@ -246,34 +188,7 @@ const textCount = 0;
       line-height: 1.02;
     }
 
-    .reading-index {
-      min-height: 0;
-      padding-left: 18px;
-      grid-template-columns: auto minmax(0, 1fr);
-      grid-template-rows: auto auto;
-      column-gap: 24px;
-    }
-
-    .reading-index strong {
-      grid-row: 1 / 3;
-      font-size: 3.6rem;
-    }
-
-    .reading-index-top,
-    .reading-index-bottom {
-      grid-column: 2;
-      padding: 9px 0;
-    }
-
-    .empty-archive {
-      grid-template-columns: 38px minmax(0, 1fr);
-      gap: 12px;
-      min-height: 190px;
-      padding: 38px 0 56px;
-    }
-
-    .empty-count { font-size: 1.1rem; }
-    .empty-copy h2 { font-size: 1.6rem; }
+    .archive-line { padding: 20px 0 48px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
