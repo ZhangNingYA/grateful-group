@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "cloze": {
+      "title": "Everyday chemicals and children's developing brains",
+      "sentences": [
+        "According to a report from the Harvard School of Public Health, many everyday products, including some bug sprays and cleaning fluids, could lead to an increased risk of brain and behavioral disorders in children.",
+        "The developing brain, the report says, is particularly vulnerable to the toxic effects of certain chemicals these products may contain, and the damage they cause can be permanent.",
+        "The official policy, however, is still evolving.",
+        "Health and environmental advocates have long urged US government agencies to tighten the use of some of the 11 chemicals the report cites and called for more studies on their long-term effects.",
+        "In 2001, for example, the Environmental Protection Agency restricted the type and amount of lead that could be present in paint and soil in homes and child-care facilities, after concerns were raised about lead poisoning.",
+        "The agency is now investigating the toxic effects of some of the chemicals in the latest report.",
+        "But the threshold for regulation is high.",
+        "Because children’s brain and behavioral disorders, like hyperactivity and lower grades, can also be linked to social and genetic factors, it's tough to pin them on exposure to specific chemicals with solid statistical evidence, which is what the EPA requires.",
+        "Even the Harvard study did not prove a direct correlation but noted strong associations between exposure and risk of behavioral issues.",
+        "Nonetheless, it’s smart to exercise caution.",
+        "While it may be impossible to prevent kids from drinking tap water that may contain trace amounts of chemicals, keeping kids away from lawns recently sprayed with chemicals and freshly dry-cleaned clothes can’t hurt."
+      ]
+    },
+    "matching": {
+      "title": "Paragraph Matching · The Impossibility of Rapid Energy Transitions",
+      "paragraphs": [
+        {
+          "label": "A",
+          "sentences": [
+            "Politicians are fond of promising rapid energy transitions.",
+            "Whether it is a transition from imported to domestic oil or from coal-powered electricity production to natural-gas power plants, politicians love to talk big.",
+            "Unfortunately for them (and often the taxpayers), our energy systems are a bit like an aircraft carrier: they are unbelievably expensive, they are built to last for a very long time, they have a huge amount of inertia (meaning it takes a lot of energy to set them moving), and they have a lot of momentum once they are set in motion.",
+            "No matter how hard you try, you can’t turn something that large on a dime, or even a few thousand dimes."
+          ]
+        },
+        {
+          "label": "B",
+          "sentences": [
+            "In physics, moving objects have two characteristics relevant to understanding the dynamics of energy systems: inertia and momentum.",
+            "Inertia is the resistance of objects to efforts to change their state of motion.",
+            "If you try to push a boulder, it pushes you back.",
+            "Once you have started the boulder rolling, it develops momentum, which is defined by its mass and velocity.",
+            "Momentum is said to be “conserved,” that is, once you build it up, it has to go somewhere.",
+            "So a heavy object, like a football player moving at a high speed, has a lot of momentum—that is, once he is moving, it is hard to change his state of motion.",
+            "If you want to change his course, you have only a few choices: you can stop him, transferring (possibly painfully) some of his kinetic energy to your own body, or you can approach alongside and slowly apply pressure to gradually alter his course."
+          ]
+        },
+        {
+          "label": "C",
+          "sentences": [
+            "But there are other kinds of momentum as well.",
+            "After all, we don’t speak only of objects or people as having momentum; we speak of entire systems having momentum.",
+            "Whether it’s a sports team or a presidential campaign, everybody relishes having the big momentum, because it makes them harder to stop or change direction."
+          ]
+        },
+        {
+          "label": "D",
+          "sentences": [
+            "One kind of momentum is technological momentum.",
+            "When a technology is deployed, its impacts reach far beyond itself.",
+            "Consider the incandescent bulb, an object currently hated by many environmentalists and energy-efficiency advocates.",
+            "The incandescent light bulb, invented by Thomas Edison, which came to be the symbol of inspiration, has been developed into hundreds, if not thousands, of forms.",
+            "Today, a visit to a lighting store reveals a stunning array of choices.",
+            "There are standard-shaped bulbs, flame-shaped bulbs, colored globe-shaped bulbs, and more.",
+            "It is quite easy, with all that choice, to change a light bulb."
+          ]
+        },
+        {
+          "label": "E",
+          "sentences": [
+            "But the momentum of incandescent lighting does not stop there.",
+            "All of those specialized bulbs led to the building of specialized light fixtures, from the desk lamp you study by, to the ugly but beloved hand-painted Chinese lamp you inherited from your grandmother, to the ceiling fixture in your closet, to the light in your oven or refrigerator, and to the light that the dentist points at you.",
+            "It is easy to change a light bulb, sure, but it is harder to change the bulb and its fixture."
+          ]
+        },
+        {
+          "label": "F",
+          "sentences": [
+            "And there is more to the story, because not only are the devices that house incandescent bulbs shaped to their underlying characteristics, but rooms and entire buildings have been designed in accordance with how incandescent lighting reflects off walls and windows."
+          ]
+        },
+        {
+          "label": "G",
+          "sentences": [
+            "As lighting expert Howard Brandston points out, “Generally, there are no bad light sources, only bad applications.”",
+            "There are some very commendable characteristics of the CFL [compact fluorescent light bulb], yet the selection of any light source remains inseparable from the luminaire that houses it, along with the space in which both are installed, and lighting requirements that need to be satisfied.",
+            "The lamp, the fixture, and the room, all three must work in concert and for the true benefits of end-users.",
+            "If the CFL should be used for lighting a particular space, or an object within that space, the fixture must be designed to work with that lamp, and that fixture with the room.",
+            "It is a symbiotic relationship.",
+            "A CFL cannot be simply installed in an incandescent fixture and then expected to produce a visual appearance that is more than washed out, foggy, and dim.",
+            "The whole fixture must be replaced—light source and luminaire—and this is never an inexpensive proposition."
+          ]
+        },
+        {
+          "label": "H",
+          "sentences": [
+            "And Brandston knows a thing or two about lighting, being the man who illuminated the Statue of Liberty."
+          ]
+        },
+        {
+          "label": "I",
+          "sentences": [
+            "Another type of momentum we have to think about when planning for changes in our energy systems is labor-pool momentum.",
+            "It is one thing to say that we are going to shift 30 percent of our electricity supply from, say, coal to nuclear power in 20 years.",
+            "But it is another thing to have a supply of trained talent that could let you carry out this promise.",
+            "That is because the engineers, designers, regulators, operators, and all of the other skilled people needed for the new energy industry are specialists who have to be trained first (or retrained, if they are the ones being laid off in some related industry), and education, like any other complicated endeavor, takes time.",
+            "And not only do our prospective new energy workers have to be trained, they have to be trained in the right sequence.",
+            "One needs the designers, and perhaps the regulators, before the builders and operators, and each group of workers in training has to know there is work waiting beyond graduation.",
+            "In some cases, colleges and universities might have to change their training programs, adding another layer of difficulty."
+          ]
+        },
+        {
+          "label": "J",
+          "sentences": [
+            "By far the biggest type of momentum that comes into play when it comes to changing our energy systems is economic momentum.",
+            "The major components of our energy systems, such as fuel production, refining, electrical generation and distribution, are costly installations that have lengthy life spans.",
+            "They have to operate for long periods of time before the costs of development have been recovered.",
+            "When investors put up money to build, say, a nuclear power plant, they expect to earn that money back over the planned life of the plant, which is typically between 40 and 60 years.",
+            "Some coal power plants in the United States have operated for more than 70 years!",
+            "The oldest continuously operated commercial hydro-electric plant in the United States is on New York’s Hudson River, and it went into commercial service in 1898."
+          ]
+        },
+        {
+          "label": "K",
+          "sentences": [
+            "As Vaclav Smil points out, “All the forecasts, plans, and anticipations cited above have failed so miserably because their authors and promoters thought the transitions they hoped to implement would proceed unlike all previous energy transitions, and that their progress could be accelerated in an unprecedented manner.”"
+          ]
+        },
+        {
+          "label": "L",
+          "sentences": [
+            "When you hear people speaking of making a rapid transition toward any type of energy, whether it is a switch from coal to nuclear power, or a switch from gasoline-powered cars to electric cars, or even a switch from an incandescent to a fluorescent light, understanding energy system inertia and momentum can help you decide whether their plans are feasible."
+          ]
+        }
+      ]
+    },
+    "passageOne": {
+      "title": "Passage One · The language of racial identity",
+      "sentences": [
+        "One hundred years ago, “Colored” was the typical way of referring to Americans of African descent.",
+        "Twenty years later, it was purposefully dropped to make way for “Negro.”",
+        "By the late 1960s, that term was overtaken by “Black.”",
+        "And then, at a press conference in Chicago in 1988, Jesse Jackson declared that “African American” was the term to embrace.",
+        "This one was chosen because it echoed the labels of groups, such as “Italian Americans” and “Irish Americans,” that had already been freed of widespread discrimination.",
+        "A century’s worth of calculated name changes point to the fact that naming any group is a politically freighted exercise.",
+        "A 2001 study cataloged all the ways in which the term “Black” carried connotations that were more negative than those of “African American.”",
+        "But if it was known that “Black” people were viewed differently from “African Americans,” researchers, until now, hadn’t identified what that gap in perception was derived from.",
+        "A recent study, conducted by Emory University’s Erika Hall, found that “Black” people are viewed more negatively than “African Americans” because of a perceived difference in socioeconomic status.",
+        "As a result, “Black” people are thought of as less competent and as having colder personalities.",
+        "The study’s most striking findings shed light on the racial biases permeating the professional world.",
+        "Even seemingly harmless details on a resume, it appears, can tap into recruiters’ biases.",
+        "A job application might mention affiliations with groups such as the “Wisconsin Association of African-American Lawyers” or the “National Black Employees Association,” the names of which apparently have consequences, and are also beyond their members’ control.",
+        "In one of the study’s experiments, subjects were given a brief description of a man from Chicago with the last name Williams.",
+        "To one group, he was identified as “African-American,” and another was told he was “Black.”",
+        "With little else to go on, they were asked to estimate Mr. Williams’s salary, professional standing, and educational background.",
+        "The “African-American” group estimated that he earned about $37,000 a year and had a two-year college degree.",
+        "The “Black” group, on the other hand, put his salary at about $29,000, and guessed that he had only “some” college experience.",
+        "Nearly three-quarters of the first group guessed that Mr. Williams worked at a managerial level, while only 38.5 percent of the second group thought so.",
+        "Hall’s findings suggest there’s an argument to be made for electing to use “African American,” though one can’t help but get the sense that it’s a decision that papers over the urgency of continued progress.",
+        "Perhaps a new phrase is needed, one that can bring everyone one big step closer to realizing Du Bois’s original, idealistic hope: “It’s not the name—it’s the Thing that counts.”"
+      ]
+    },
+    "passageTwo": {
+      "title": "Passage Two · Are colleges preparing students for life after graduation?",
+      "sentences": [
+        "Across the board, American colleges and universities are not doing a very good job of preparing their students for the workplace or their post-graduation lives.",
+        "This was made clear by the work of two sociologists, Richard Arum and Josipa Roksa.",
+        "In 2011 they released a landmark study titled “Academically Adrift,” which documented the lack of intellectual growth experienced by many people enrolled in college.",
+        "In particular, Arum and Roksa found, college students were not developing the critical thinking, analytic reasoning and other higher-level skills that are necessary to thrive in today’s knowledge-based economy and to lead our nation in a time of complex challenges and dynamic change.",
+        "Arum and Roksa placed the blame for students’ lack of learning on a watered-down college curriculum and lowered undergraduate work standards.",
+        "Although going to college is supposed to be a full-time job, students spent, on average, only 12 to 14 hours a week studying and many were skating through their semesters without doing a significant amount of reading and writing.",
+        "Students who take more challenging classes and spend more time studying do learn more.",
+        "But the priorities of many undergraduates are with extracurricular activities, playing sports, and partying and socializing.",
+        "Laura Hamilton, the author of a study on parents who pay for college, will argue in a forthcoming book that college administrations are overly concerned with the social and athletic activities of their students.",
+        "In Paying for the Party, Hamilton describes what she calls the “party pathway,” which eases many students through college, helped along by various clubs that send students into the party scene and a host of easier majors.",
+        "By sanctioning this watered-down version of college, universities are “catering to the social and educational needs of wealthy students at the expense of others” who won’t enjoy the financial backing or social connections of richer students once they graduate.",
+        "These students need to build skills and knowledge during college if they are to use their degrees as a stepping-stone to middle-class mobility.",
+        "But more privileged students must not waste this opportunity either.",
+        "As recent graduates can testify, the job market isn’t kind to candidates who can’t demonstrate genuine competence, along with a well-cultivated willingness to work hard.",
+        "Nor is the global economy forgiving of an American workforce with increasingly weak literacy, math and science abilities.",
+        "College graduates will still fare better than those with only a high school education, of course.",
+        "But a university degree unaccompanied by a gain in knowledge or skills is an empty achievement indeed.",
+        "For students who have been coasting through college, and for American universities that have been demanding less work, offering more attractions and charging higher tuition, the party may soon be over."
+      ]
+    }
+  }
+}

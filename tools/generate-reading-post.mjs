@@ -11,10 +11,27 @@ if (!slugMatch) {
 }
 
 const [, year, month, setNumber] = slugMatch;
-const inputFile = path.join(root, 'src', 'data', 'learning', `${sourceSlug}.json`);
+const inputFiles = [
+  path.join(root, 'src', 'data', 'reading', `${sourceSlug}.json`),
+  path.join(root, 'src', 'data', 'learning', `${sourceSlug}.json`),
+];
 const outputSlug = sourceSlug.replace('-reading-', '-');
 const outputFile = path.join(root, 'src', 'content', 'reading', `${outputSlug}.mdx`);
-const data = JSON.parse(await readFile(inputFile, 'utf8'));
+
+let inputFile;
+let data;
+for (const candidate of inputFiles) {
+  try {
+    data = JSON.parse(await readFile(candidate, 'utf8'));
+    inputFile = candidate;
+    break;
+  } catch (error) {
+    if (error?.code !== 'ENOENT') throw error;
+  }
+}
+if (!data || !inputFile) {
+  throw new Error(`No reading data found for ${sourceSlug}`);
+}
 
 const sectionTitles = {
   '2025-12-cet6-reading-2': {
@@ -57,15 +74,44 @@ function matchingNotes(items) {
   return blocks.join('\n\n');
 }
 
-const [cloze, matching, passageOne, passageTwo] = data.sections || [];
+function sentenceItems(sentences, sourceSection, prefix) {
+  return sentences.map((originalSentence, index) => ({
+    sentence_id: `${prefix}${String(index + 1).padStart(2, '0')}`,
+    source_section: sourceSection,
+    original_sentence: originalSentence,
+  }));
+}
+
+function normalizeCompactSections(sections) {
+  const matchingItems = sections.matching.paragraphs.flatMap(({ label, sentences }) =>
+    sentenceItems(sentences, `Paragraph ${label}`, `M-${label}`),
+  );
+
+  return [
+    { items: sentenceItems(sections.cloze.sentences, 'Cloze', 'C') },
+    { title: sections.matching.title, items: matchingItems },
+    { items: sentenceItems(sections.passageOne.sentences, 'Passage One', 'R1-') },
+    { items: sentenceItems(sections.passageTwo.sentences, 'Passage Two', 'R2-') },
+  ];
+}
+
+const compactSections = !Array.isArray(data.sections) && data.sections;
+const normalizedSections = compactSections ? normalizeCompactSections(compactSections) : data.sections;
+const [cloze, matching, passageOne, passageTwo] = normalizedSections || [];
 if (![cloze, matching, passageOne, passageTwo].every((section) => Array.isArray(section?.items))) {
   throw new Error(`${inputFile} does not have the expected four reading sections`);
 }
 
-const ids = data.sections.flatMap((section) => section.items.map((item) => item.sentence_id));
+const ids = normalizedSections.flatMap((section) => section.items.map((item) => item.sentence_id));
 if (new Set(ids).size !== ids.length) throw new Error(`${inputFile} contains duplicate sentence IDs`);
 
-const titles = sectionTitles[sourceSlug];
+const titles = compactSections
+  ? {
+      cloze: compactSections.cloze.title,
+      passageOne: compactSections.passageOne.title,
+      passageTwo: compactSections.passageTwo.title,
+    }
+  : sectionTitles[sourceSlug];
 if (!titles) throw new Error(`Add section titles for ${sourceSlug} before generating the public reading post`);
 
 const body = [
