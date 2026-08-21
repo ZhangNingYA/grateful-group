@@ -264,6 +264,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     'We',
     'are presented',
     'with a one-size-fits-all menu',
+    { predicate: ["'re presented"] },
   ),
   'M-F03': note(
     '最终，技术能让我们做出个性化选择。',
@@ -459,7 +460,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     'you',
     'do need',
     'dinner to be how quick',
-    { object: ['dinner to be'] },
+    { predicate: ['do', 'need'], object: ['dinner to be'] },
   ),
 
   'M-M01': note(
@@ -481,6 +482,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     'We',
     'are urging',
     'Members of Parliament to ensure automation does not just benefit a wealthy few like previous industrial revolutions',
+    { predicate: ["'re urging"] },
   ),
 
   'M-N01': note(
@@ -569,7 +571,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     'I',
     'will be able to say',
     "Let's have pizza",
-    { object: ["'Let's have pizza'"] },
+    { predicate: ["'ll be able to say"], object: ["'Let's have pizza'"] },
   ),
   'M-P04': note(
     '目前还没有人为它给出确切日期。',
@@ -680,6 +682,8 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     ['be preached — 被反复宣扬', 'be embedded in — 深植于', 'see growth — 看待成长'],
     'It',
     'is preached',
+    '—',
+    { predicate: ["'s preached"] },
   ),
   'R1-15': note(
     '励志演讲者会促使听众安然接受失去朋友这个所谓不可避免的结局。',
@@ -694,6 +698,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     '(you, implied)',
     'spend',
     'too much time with friends',
+    { predicate: ['Spend'] },
   ),
   'R1-17': note(
     '你正在浪费本可更好用于取得成就的时间。',
@@ -701,6 +706,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     'You',
     'are losing',
     'time better utilized on your achievements',
+    { predicate: ["'re losing"] },
   ),
   'R1-18': note(
     '在你的人际关系中投入时间？',
@@ -708,6 +714,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     '(you, implied)',
     'invest',
     'time in your relationships',
+    { predicate: ['Invest'] },
   ),
   'R1-19': note(
     '不如把时间投入工作。',
@@ -736,6 +743,7 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     ['we', 'that'],
     ['lose', 'has become'],
     ['friends', '—'],
+    { predicate: ['lose', 'has sadly become'] },
   ),
   'R1-23': note(
     '我们不能安然接受友谊的流失，因为朋友是我们的锚。',
@@ -918,6 +926,8 @@ export const sentenceCloseReadings: Record<string, SentenceCloseReading> = {
     ['as some would suggest — 正如某些人所称', 'post-racial society — 后种族社会'],
     'We',
     'are not living',
+    '—',
+    { predicate: ['are not', 'living'] },
   ),
   'R2-20': note(
     '在种族不平等问题上，我们实在无法承受继续逃避现实的后果。',
