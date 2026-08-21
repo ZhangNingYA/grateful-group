@@ -10,7 +10,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://ZhangNingYA.github.io',
+    site: 'https://www.fulafu.com',
     base: '/',
     markdown: {
         remarkPlugins: [remarkMath],

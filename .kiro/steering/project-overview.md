@@ -4,7 +4,7 @@ inclusion: always
 
 # Project Overview
 
-This is an **Astro + React + Three.js** project (site name: grateful-group).
+This is an **Astro + React + Three.js** project named **Tend**.
 
 ## Tech Stack
 
@@ -39,7 +39,7 @@ The production build output directory is **`dist/`**.
 The current `astro.config.mjs` has `site` and `base` configured and working correctly for GitHub Pages. **Do not change these values** unless explicitly instructed by the user:
 
 ```js
-site: 'https://ZhangNingYA.github.io',
+site: 'https://www.fulafu.com',
 base: '/',
 ```
 
