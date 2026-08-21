@@ -4,7 +4,7 @@
   --ink: #17201c;
   --muted: #626b66;
   --line: #dfe3e0;
-  --accent: #e06b4f;
+  --accent: #d9654b;
   --accent-blue: #4f78a3;
   --accent-green: #4e8068;
   --accent-yellow: #c2942f;
@@ -243,7 +243,7 @@ body.editorial-page {
 .editorial-row > a:focus-visible,
 .editorial-footer a:focus-visible,
 .editorial-inline-link:focus-visible {
-  outline: 3px solid rgba(224, 107, 79, 0.28);
+  outline: 3px solid rgba(217, 101, 75, 0.28);
   outline-offset: 4px;
 }
 

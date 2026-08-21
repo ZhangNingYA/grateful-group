@@ -1,0 +1,135 @@
+---
+interface Props {
+  accent?: string;
+  glow?: string;
+}
+
+const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
+---
+
+<span
+  class="tend-wordmark"
+  aria-hidden="true"
+  style={`--tend-accent: ${accent}; --tend-glow: ${glow};`}
+>
+  <span class="tend-text">Ten<span class="tend-d">d<span class="tend-mark"></span></span></span>
+  <span class="care-line"></span>
+</span>
+
+<style>
+  .tend-wordmark {
+    position: relative;
+    display: inline-flex;
+    width: max-content;
+    height: 26px;
+    align-items: center;
+    color: currentColor;
+    font: inherit;
+    line-height: 1;
+    white-space: nowrap;
+    isolation: isolate;
+  }
+
+  .tend-text {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    font: inherit;
+    line-height: 24px;
+  }
+
+  .tend-d {
+    position: relative;
+    display: inline-block;
+    font: inherit;
+  }
+
+  .care-line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 1.5px;
+    border-radius: 99px;
+    background: var(--tend-accent);
+    box-shadow: 0 0 8px var(--tend-glow);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: care-line-cycle 9s ease-in-out infinite;
+  }
+
+  .tend-mark {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--tend-accent);
+    box-shadow: 0 0 0 2px var(--tend-glow), 0 0 8px var(--tend-glow);
+    opacity: 0.55;
+    transform: translateX(-50%) scale(0.76);
+    transform-origin: center;
+    animation: care-mark-cycle 9s ease-in-out infinite;
+  }
+
+  @keyframes care-line-cycle {
+    0%, 20%, 100% { opacity: 0; transform: scaleX(0); }
+    23% { opacity: 0.72; transform: scaleX(0.04); }
+    42%, 52% { opacity: 0.72; transform: scaleX(1); }
+    60% { opacity: 0; transform: scaleX(1); }
+  }
+
+  @keyframes care-mark-cycle {
+    0%, 35%, 100% { opacity: 0.5; transform: translateX(-50%) scale(0.72); }
+    43% { opacity: 1; transform: translateX(-50%) scale(1.16); }
+    51% { opacity: 0.72; transform: translateX(-50%) scale(0.82); }
+    59% { opacity: 1; transform: translateX(-50%) scale(1.06); }
+    69%, 90% { opacity: 0.58; transform: translateX(-50%) scale(0.76); }
+  }
+
+  @keyframes care-line-hover {
+    0% { opacity: 0; transform: scaleX(0); }
+    12% { opacity: 0.8; }
+    72% { opacity: 0.8; transform: scaleX(1); }
+    100% { opacity: 0; transform: scaleX(1); }
+  }
+
+  @keyframes care-mark-hover {
+    0%, 45%, 100% { opacity: 0.58; transform: translateX(-50%) scale(0.76); }
+    72% { opacity: 1; transform: translateX(-50%) scale(1.16); }
+  }
+
+  @media (hover: hover) {
+    :global(.brand:hover) .care-line {
+      animation: care-line-hover 1.5s ease-in-out both;
+    }
+
+    :global(.brand:hover) .tend-mark {
+      animation: care-mark-hover 1.5s ease-in-out both;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .care-line,
+    .tend-mark {
+      animation: none;
+    }
+
+    .care-line {
+      opacity: 0.55;
+      transform: scaleX(0.24);
+    }
+
+    .tend-mark {
+      opacity: 0.82;
+      transform: translateX(-50%) scale(0.82);
+    }
+  }
+</style>
