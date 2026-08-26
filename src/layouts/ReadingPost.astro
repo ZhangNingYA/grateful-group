@@ -1,18 +1,39 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import '../styles/reading-post.css';
 
 type ReadingLink = { href: string; title: string };
-type Props = CollectionEntry<'reading'>['data'] & {
-  archiveCount: number;
+type Props = {
+  title: string;
+  description: string;
+  pubDate: Date;
+  archiveCount?: number;
   previous?: ReadingLink;
   next?: ReadingLink;
+  archiveHref?: string;
+  archiveLabel?: string;
+  allLabel?: string;
+  markReadingNav?: boolean;
+  showHeader?: boolean;
 };
 
-const { title, description, pubDate, sourceUrl, archiveCount, previous, next } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  archiveCount,
+  previous,
+  next,
+  archiveHref = '/blog/',
+  archiveLabel = archiveCount === undefined
+    ? 'Reading / Archive'
+    : `Reading / Archive ${String(archiveCount).padStart(2, '0')}`,
+  allLabel = 'All reading',
+  markReadingNav = true,
+  showHeader = true,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -20,17 +41,16 @@ const { title, description, pubDate, sourceUrl, archiveCount, previous, next } =
   <head>
     <BaseHead {title} {description} />
   </head>
-  <body class="reading-post-page">
-    <BlogHeader active="reading" />
+  <body class:list={['reading-post-page', !showHeader && 'reading-post-page--headerless']}>
+    {showHeader && <BlogHeader active={markReadingNav ? 'reading' : undefined} />}
 
     <main class="reading-post-shell">
       <header class="reading-post-header">
-        <a class="reading-back" href="/blog/">Reading / Archive {String(archiveCount).padStart(2, '0')}</a>
+        <a class="reading-back" href={archiveHref}>{archiveLabel}</a>
         <h1>{title}</h1>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
         <div class="reading-post-meta">
           <span><FormattedDate date={pubDate} /></span>
-          {sourceUrl && <a href={sourceUrl}>Source <span aria-hidden="true">↗</span></a>}
         </div>
       </header>
 
@@ -69,7 +89,7 @@ const { title, description, pubDate, sourceUrl, archiveCount, previous, next } =
       {previous ? (
         <a href={previous.href} rel="prev"><span>Previous</span><strong>{previous.title}</strong></a>
       ) : <span aria-hidden="true"></span>}
-      <a class="reading-post-navigation-all" href="/blog/">All reading</a>
+      <a class="reading-post-navigation-all" href={archiveHref}>{allLabel}</a>
       {next ? (
         <a href={next.href} rel="next"><span>Next</span><strong>{next.title}</strong></a>
       ) : <span aria-hidden="true"></span>}

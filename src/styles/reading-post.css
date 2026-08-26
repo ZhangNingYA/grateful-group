@@ -90,6 +90,11 @@ body.reading-post-page {
   overflow-y: auto;
 }
 
+.reading-post-page--headerless .reading-post-rail {
+  top: 32px;
+  max-height: calc(100vh - 64px);
+}
+
 .reading-post-rail p {
   display: flex;
   justify-content: space-between;
@@ -280,6 +285,8 @@ body.reading-post-page {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+
+  .reading-post-page--headerless .reading-mobile-toc { top: 0; }
 
   .reading-mobile-toc a {
     position: relative;

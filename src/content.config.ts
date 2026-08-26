@@ -8,20 +8,17 @@ const reading = defineCollection({
         title: z.string(),
         description: z.string(),
         pubDate: z.coerce.date(),
-        sourceUrl: z.string().url().optional(),
     }),
 });
 
 const games = defineCollection({
-    // 注意这里路径改成了 ./src/content/games
     loader: glob({ base: './src/content/games', pattern: '**/*.{md,mdx}' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            description: z.string(),
-            pubDate: z.coerce.date(),
-            // 你可以根据 games 栏目的实际情况增减字段
-        }),
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        pubDate: z.coerce.date(),
+        pageLayout: z.enum(['experience', 'reading']).optional(),
+    }),
 });
 
 const learning = defineCollection({

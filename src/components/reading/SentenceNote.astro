@@ -1,17 +1,150 @@
 ---
+import { BookOpenText } from 'lucide-astro';
+import type { CloseReading, SentenceRole } from '../../types/closeReading';
+
 interface Props {
   number: string;
+  sentence?: string;
+  closeReading?: CloseReading;
 }
 
-const { number } = Astro.props;
+const { number, sentence, closeReading } = Astro.props;
+const detailId = `close-reading-${number.toLowerCase().replace(/[^a-z0-9-]/g, '-')}`;
+
+const roleLabels: Record<SentenceRole, string> = {
+  subject: '主语',
+  predicate: '谓语',
+  object: '宾语',
+  complement: '表语 / 补语',
+  adverbial: '状语',
+};
+
+interface SentencePart {
+  text: string;
+  role?: SentenceRole;
+}
+
+const normalizeForMatch = (value: string) => value
+  .replace(/[‘’]/g, "'")
+  .replace(/[“”]/g, '"');
+
+const buildSentenceParts = (): SentencePart[] => {
+  if (!sentence || !closeReading) return sentence ? [{ text: sentence }] : [];
+
+  const normalizedSentence = normalizeForMatch(sentence);
+  const matches: Array<{ start: number; end: number; role: SentenceRole }> = [];
+  let searchFrom = 0;
+
+  closeReading.highlights.forEach((highlight) => {
+    const normalizedText = normalizeForMatch(highlight.text);
+    let start = normalizedSentence.indexOf(normalizedText, searchFrom);
+    if (start === -1) start = normalizedSentence.indexOf(normalizedText);
+    if (start === -1) return;
+
+    matches.push({ start, end: start + normalizedText.length, role: highlight.role });
+    searchFrom = start + normalizedText.length;
+  });
+
+  const parts: SentencePart[] = [];
+  let cursor = 0;
+  matches.sort((a, b) => a.start - b.start || a.end - b.end).forEach((match) => {
+    if (match.start < cursor) return;
+    if (match.start > cursor) parts.push({ text: sentence.slice(cursor, match.start) });
+    parts.push({ text: sentence.slice(match.start, match.end), role: match.role });
+    cursor = match.end;
+  });
+  if (cursor < sentence.length) parts.push({ text: sentence.slice(cursor) });
+  return parts;
+};
+
+const sentenceParts = buildSentenceParts();
 ---
 
-<div class="sentence-note">
+<div
+  class:list={['sentence-note', closeReading && 'has-close-reading']}
+  data-sentence-note={closeReading ? true : undefined}
+>
   <span class="sentence-number" aria-hidden="true">{number}</span>
   <div class="sentence-content">
-    <div class="sentence-original"><slot /></div>
+    <div class="sentence-original">
+      {sentence ? (
+        <span class="sentence-text">
+          {sentenceParts.map((part) => part.role ? (
+            <span class={`grammar-role grammar-${part.role}`}>{part.text}</span>
+          ) : part.text)}
+        </span>
+      ) : <slot />}
+      {closeReading && (
+        <button
+          class="close-reading-mark"
+          type="button"
+          aria-expanded="false"
+          aria-controls={detailId}
+          aria-label="展开精读"
+          title="精读"
+          data-close-reading-toggle
+        >
+          <BookOpenText size={14} stroke-width={1.8} aria-hidden="true" />
+        </button>
+      )}
+    </div>
+
+    {closeReading && (
+      <div
+        class="close-reading-detail"
+        id={detailId}
+        aria-hidden="true"
+        data-close-reading-detail
+      >
+        <div class="close-reading-detail-inner">
+          <section class="close-reading-block translation-block">
+            <p class="close-reading-label"><span>01</span>句子翻译</p>
+            <p lang="zh-CN">{closeReading.translation}</p>
+          </section>
+
+          <section class="close-reading-block vocabulary-block">
+            <p class="close-reading-label"><span>02</span>重点单词短语</p>
+            <ul lang="zh-CN">
+              {closeReading.vocabulary.map((item) => (
+                <li><strong>{item.term}</strong><span>{item.explanation}</span></li>
+              ))}
+            </ul>
+          </section>
+
+          <section class="close-reading-block structure-block">
+            <p class="close-reading-label"><span>03</span>句子结构</p>
+            <p class="sentence-pattern">{closeReading.structure.pattern}</p>
+            <p lang="zh-CN">{closeReading.structure.explanation}</p>
+            <ul class="role-legend" aria-label="句子成分颜色">
+              {[...new Set(closeReading.highlights.map((item) => item.role))].map((role) => (
+                <li class={`role-${role}`}><span aria-hidden="true"></span>{roleLabels[role]}</li>
+              ))}
+            </ul>
+          </section>
+        </div>
+      </div>
+    )}
   </div>
 </div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-sentence-note]').forEach((note) => {
+    if (note.dataset.closeReadingBound === 'true') return;
+
+    const toggle = note.querySelector<HTMLButtonElement>('[data-close-reading-toggle]');
+    const detail = note.querySelector<HTMLElement>('[data-close-reading-detail]');
+    if (!toggle || !detail) return;
+
+    note.dataset.closeReadingBound = 'true';
+    toggle.addEventListener('click', () => {
+      const open = !note.hasAttribute('data-open');
+      note.toggleAttribute('data-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? '收起精读' : '展开精读');
+      detail.setAttribute('aria-hidden', String(!open));
+    });
+  });
+</script>
 
 <style>
   .sentence-note {
@@ -42,6 +175,220 @@ const { number } = Astro.props;
 
   .sentence-original :global(p) { margin: 0; }
 
+  .has-close-reading .sentence-original :global(p) { display: inline; }
+
+  .close-reading-mark {
+    display: inline-grid;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 0.55em;
+    padding: 0;
+    place-items: center;
+    border: 1px solid #d9dedb;
+    border-radius: 50%;
+    color: #66706a;
+    background: #f1f3f1;
+    line-height: 1;
+    vertical-align: -0.28em;
+    cursor: pointer;
+    transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease, transform 160ms ease;
+  }
+
+  .close-reading-mark:hover {
+    border-color: #aab3ad;
+    color: #17201c;
+    background: #e6ebe7;
+    transform: translateY(-1px);
+  }
+
+  [data-open] .close-reading-mark {
+    border-color: #17201c;
+    color: #fff;
+    background: #17201c;
+  }
+
+  .close-reading-mark:focus-visible {
+    border-radius: 2px;
+    outline: 3px solid rgba(49, 95, 155, 0.2);
+    outline-offset: 3px;
+  }
+
+  .close-reading-detail {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 220ms ease, opacity 160ms ease;
+  }
+
+  .close-reading-detail-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    margin-top: 18px;
+    overflow: hidden;
+    border: 1px solid #d8ded9;
+    border-radius: 12px;
+    background: #fafbf9;
+    box-shadow: 0 12px 30px rgba(32, 45, 37, 0.07);
+  }
+
+  [data-open] .close-reading-detail {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .close-reading-block {
+    min-width: 0;
+    padding: 18px 20px 20px;
+  }
+
+  .close-reading-block + .close-reading-block {
+    border-top: 1px solid #e1e5e2;
+  }
+
+  .close-reading-label {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin: 0 0 12px;
+    color: #59625d;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+  }
+
+  .close-reading-label span {
+    display: inline-grid;
+    width: 24px;
+    height: 18px;
+    place-items: center;
+    border-radius: 99px;
+    color: #78817c;
+    background: #edf0ed;
+    font-size: 0.56rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+  }
+
+  .close-reading-block > p:not(.close-reading-label) {
+    margin: 0;
+    color: #3e4742;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+
+  .translation-block > p:last-child {
+    color: #27312b;
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .vocabulary-block ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .vocabulary-block li {
+    display: grid;
+    gap: 2px;
+    padding: 10px 12px;
+    border: 1px solid #e1e5e2;
+    border-radius: 8px;
+    color: #59625d;
+    background: #fff;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.74rem;
+    line-height: 1.45;
+  }
+
+  .vocabulary-block strong {
+    color: #27302b;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .sentence-pattern {
+    display: inline-flex;
+    margin-bottom: 10px !important;
+    padding: 5px 9px;
+    border: 1px solid #d9dedb;
+    border-radius: 99px;
+    color: #202924 !important;
+    background: #fff;
+    font-weight: 700;
+    line-height: 1.35 !important;
+  }
+
+  .role-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .role-legend li {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    color: #67706b;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.65rem;
+  }
+
+  .role-legend li > span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  .role-subject { color: #087f5b !important; }
+  .role-predicate { color: #1864ab !important; }
+  .role-object { color: #c2410c !important; }
+  .role-complement { color: #7e22ce !important; }
+  .role-adverbial { color: #be123c !important; }
+
+  [data-open] .sentence-original :global(.grammar-role) {
+    border-radius: 2px;
+    padding: 0.06em 0.1em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  [data-open] .sentence-original :global(.grammar-subject) {
+    color: #087f5b;
+    background: #d8f3e8;
+  }
+
+  [data-open] .sentence-original :global(.grammar-predicate) {
+    color: #1864ab;
+    background: #dcecff;
+  }
+
+  [data-open] .sentence-original :global(.grammar-object) {
+    color: #c2410c;
+    background: #ffeadb;
+  }
+
+  [data-open] .sentence-original :global(.grammar-complement) {
+    color: #7e22ce;
+    background: #f2e4ff;
+  }
+
+  [data-open] .sentence-original :global(.grammar-adverbial) {
+    color: #be123c;
+    background: #ffe1e8;
+  }
+
   @media (max-width: 640px) {
     .sentence-note {
       grid-template-columns: 42px minmax(0, 1fr);
@@ -51,5 +398,15 @@ const { number } = Astro.props;
 
     .sentence-original { font-size: 1.05rem; }
 
+    .close-reading-detail-inner { border-radius: 10px; }
+
+    .close-reading-block { padding: 15px 15px 17px; }
+
+    .vocabulary-block ul { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .close-reading-mark,
+    .close-reading-detail { transition: none; }
   }
 </style>

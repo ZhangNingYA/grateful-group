@@ -1,0 +1,72 @@
+---
+import SentenceNote from './SentenceNote.astro';
+import type { CloseReading } from '../../types/closeReading';
+
+interface Passage {
+  title: string;
+  sentences: readonly string[];
+}
+
+interface MatchingParagraph {
+  label: string;
+  sentences: readonly string[];
+}
+
+interface Props {
+  cloze: Passage;
+  matching: {
+    title: string;
+    paragraphs: readonly MatchingParagraph[];
+  };
+  passages: readonly Passage[];
+  closeReadings?: Readonly<Record<string, CloseReading>>;
+}
+
+const { cloze, matching, passages, closeReadings } = Astro.props;
+const noteNumber = (prefix: string, index: number) =>
+  `${prefix}${String(index + 1).padStart(2, '0')}`;
+---
+
+<h2 id="word-bank-cloze">Word Bank Cloze</h2>
+
+<h3>{cloze.title}</h3>
+
+{cloze.sentences.map((sentence, index) => (
+  <SentenceNote
+    number={noteNumber('C', index)}
+    sentence={sentence}
+    closeReading={closeReadings?.[noteNumber('C', index)]}
+  />
+))}
+
+<h2 id="paragraph-matching">Paragraph Matching</h2>
+
+<h3>{matching.title}</h3>
+
+{matching.paragraphs.map((paragraph) => (
+  <>
+    <h3>Paragraph {paragraph.label}</h3>
+    {paragraph.sentences.map((sentence, index) => (
+      <SentenceNote
+        number={noteNumber(`M-${paragraph.label}`, index)}
+        {sentence}
+        closeReading={closeReadings?.[noteNumber(`M-${paragraph.label}`, index)]}
+      />
+    ))}
+  </>
+))}
+
+<h2 id="reading-passages">Reading Passages</h2>
+
+{passages.map((passage, passageIndex) => (
+  <>
+    <h3>{passage.title}</h3>
+    {passage.sentences.map((sentence, sentenceIndex) => (
+      <SentenceNote
+        number={noteNumber(`R${passageIndex + 1}-`, sentenceIndex)}
+        {sentence}
+        closeReading={closeReadings?.[noteNumber(`R${passageIndex + 1}-`, sentenceIndex)]}
+      />
+    ))}
+  </>
+))}

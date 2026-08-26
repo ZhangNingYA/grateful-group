@@ -119,7 +119,6 @@ const body = [
   `title: '${year}-${month} CET6 Reading · Set ${setNumber}'`,
   "description: 'The cloze, paragraph-matching text, and two reading passages, arranged sentence by sentence.'",
   `pubDate: '${year}-${month}-01'`,
-  `sourceUrl: 'https://pastpapers.cn/paper/${year}-${month}-cet6-${setNumber}'`,
   '---',
   '',
   "import SentenceNote from '../../components/reading/SentenceNote.astro';",
