@@ -19,6 +19,14 @@ const roleLabels: Record<SentenceRole, string> = {
   adverbial: '状语',
 };
 
+const roleHelp: Record<SentenceRole, string> = {
+  subject: '谁 / 什么',
+  predicate: '做什么 / 怎么样',
+  object: '动作作用到谁 / 什么',
+  complement: '补充说明结果或状态',
+  adverbial: '时间 / 原因 / 条件 / 方式',
+};
+
 interface SentencePart {
   text: string;
   role?: SentenceRole;
@@ -58,6 +66,15 @@ const buildSentenceParts = (): SentencePart[] => {
 };
 
 const sentenceParts = buildSentenceParts();
+const trunkHighlights = closeReading
+  ? closeReading.trunk ?? closeReading.highlights.filter((item) => item.role !== 'adverbial')
+  : [];
+const visibleTrunk = trunkHighlights.length > 0
+  ? trunkHighlights
+  : closeReading?.highlights ?? [];
+const translationStep = closeReading?.segments?.length ? '03' : '02';
+const vocabularyStep = closeReading?.segments?.length ? '04' : '03';
+const structureStep = closeReading?.segments?.length ? '05' : '04';
 ---
 
 <div
@@ -97,13 +114,36 @@ const sentenceParts = buildSentenceParts();
         data-close-reading-detail
       >
         <div class="close-reading-detail-inner">
+          <section class="close-reading-block trunk-block">
+            <p class="close-reading-label"><span>01</span>先抓一句话主干</p>
+            <div class="sentence-trunk" lang="en">
+              {visibleTrunk.map((item) => (
+                <span class={`grammar-role grammar-${item.role}`}>
+                  <small>{roleHelp[item.role]}</small>{item.text}
+                </span>
+              ))}
+            </div>
+            <p class="beginner-tip">先只读这些核心成分，再回到上方原句补上时间、原因、条件和修饰信息。</p>
+          </section>
+
+          {closeReading.segments && closeReading.segments.length > 0 && (
+            <section class="close-reading-block segments-block">
+              <p class="close-reading-label"><span>02</span>中英意群对照</p>
+              <ol>
+                {closeReading.segments.map((segment) => (
+                  <li><span lang="en">{segment.source}</span><span lang="zh-CN">{segment.translation}</span></li>
+                ))}
+              </ol>
+            </section>
+          )}
+
           <section class="close-reading-block translation-block">
-            <p class="close-reading-label"><span>01</span>句子翻译</p>
+            <p class="close-reading-label"><span>{translationStep}</span>自然翻译</p>
             <p lang="zh-CN">{closeReading.translation}</p>
           </section>
 
           <section class="close-reading-block vocabulary-block">
-            <p class="close-reading-label"><span>02</span>重点单词短语</p>
+            <p class="close-reading-label"><span>{vocabularyStep}</span>重点单词短语</p>
             <ul lang="zh-CN">
               {closeReading.vocabulary.map((item) => (
                 <li><strong>{item.term}</strong><span>{item.explanation}</span></li>
@@ -112,9 +152,17 @@ const sentenceParts = buildSentenceParts();
           </section>
 
           <section class="close-reading-block structure-block">
-            <p class="close-reading-label"><span>03</span>句子结构</p>
+            <p class="close-reading-label"><span>{structureStep}</span>完整句子结构</p>
             <p class="sentence-pattern">{closeReading.structure.pattern}</p>
             <p lang="zh-CN">{closeReading.structure.explanation}</p>
+            <div class="structure-rows">
+              {closeReading.highlights.map((item) => (
+                <div class={`structure-row role-${item.role}`}>
+                  <span><i aria-hidden="true"></i>{roleLabels[item.role]}<small>{roleHelp[item.role]}</small></span>
+                  <code lang="en">{item.text}</code>
+                </div>
+              ))}
+            </div>
             <ul class="role-legend" aria-label="句子成分颜色">
               {[...new Set(closeReading.highlights.map((item) => item.role))].map((role) => (
                 <li class={`role-${role}`}><span aria-hidden="true"></span>{roleLabels[role]}</li>
@@ -178,6 +226,7 @@ const sentenceParts = buildSentenceParts();
   .has-close-reading .sentence-original :global(p) { display: inline; }
 
   .close-reading-mark {
+    position: relative;
     display: inline-grid;
     width: 25px;
     height: 25px;
@@ -192,6 +241,12 @@ const sentenceParts = buildSentenceParts();
     vertical-align: -0.28em;
     cursor: pointer;
     transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease, transform 160ms ease;
+  }
+
+  .close-reading-mark::before {
+    position: absolute;
+    inset: -8px;
+    content: '';
   }
 
   .close-reading-mark:hover {
@@ -275,8 +330,86 @@ const sentenceParts = buildSentenceParts();
     margin: 0;
     color: #3e4742;
     font-family: 'Inter Variable', Inter, sans-serif;
-    font-size: 0.84rem;
+    font-size: 0.9rem;
     line-height: 1.65;
+  }
+
+  .sentence-trunk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: stretch;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+  }
+
+  .sentence-trunk .grammar-role {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    min-height: 46px;
+    padding: 7px 11px 8px;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 590;
+    line-height: 1.35;
+  }
+
+  .sentence-trunk .grammar-role small {
+    color: currentColor;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 750;
+    letter-spacing: 0.02em;
+    opacity: 0.72;
+  }
+
+  .sentence-trunk .grammar-subject { color: #087f5b; background: #e2f7ef; }
+  .sentence-trunk .grammar-predicate { color: #1864ab; background: #e6f1ff; }
+  .sentence-trunk .grammar-object { color: #c2410c; background: #fff0e5; }
+  .sentence-trunk .grammar-complement { color: #7e22ce; background: #f5eaff; }
+  .sentence-trunk .grammar-adverbial { color: #be123c; background: #ffe9ee; }
+
+  .beginner-tip {
+    margin-top: 10px !important;
+    color: #69716c !important;
+    font-size: 0.78rem !important;
+  }
+
+  .segments-block ol {
+    display: grid;
+    gap: 7px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: sense-group;
+  }
+
+  .segments-block li {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 12px;
+    align-items: baseline;
+    padding: 8px 11px;
+    border-left: 3px solid #cad3cd;
+    border-radius: 0 6px 6px 0;
+    background: #fff;
+    counter-increment: sense-group;
+  }
+
+  .segments-block li > span:first-child {
+    color: #27312b;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .segments-block li > span:last-child {
+    color: #646d68;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.55;
   }
 
   .translation-block > p:last-child {
@@ -303,7 +436,7 @@ const sentenceParts = buildSentenceParts();
     color: #59625d;
     background: #fff;
     font-family: 'Inter Variable', Inter, sans-serif;
-    font-size: 0.74rem;
+    font-size: 0.8rem;
     line-height: 1.45;
   }
 
@@ -324,6 +457,56 @@ const sentenceParts = buildSentenceParts();
     background: #fff;
     font-weight: 700;
     line-height: 1.35 !important;
+  }
+
+  .structure-rows {
+    display: grid;
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .structure-row {
+    display: grid;
+    grid-template-columns: minmax(155px, 0.34fr) minmax(0, 1fr);
+    gap: 12px;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #e1e5e2;
+    border-radius: 7px;
+    background: #fff;
+  }
+
+  .structure-row > span {
+    display: grid;
+    grid-template-columns: 8px auto;
+    column-gap: 7px;
+    align-items: center;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 750;
+  }
+
+  .structure-row > span i {
+    grid-row: 1 / 3;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  .structure-row > span small {
+    color: #747d77;
+    font-size: 0.62rem;
+    font-weight: 550;
+  }
+
+  .structure-row code {
+    overflow-wrap: anywhere;
+    color: #303a34;
+    background: transparent;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 0.91rem;
+    line-height: 1.45;
   }
 
   .role-legend {
@@ -403,6 +586,9 @@ const sentenceParts = buildSentenceParts();
     .close-reading-block { padding: 15px 15px 17px; }
 
     .vocabulary-block ul { grid-template-columns: 1fr; }
+
+    .segments-block li,
+    .structure-row { grid-template-columns: 1fr; }
   }
 
   @media (prefers-reduced-motion: reduce) {

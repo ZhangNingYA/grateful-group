@@ -15,6 +15,11 @@ export interface CloseReadingVocabulary {
   explanation: string;
 }
 
+export interface CloseReadingSegment {
+  source: string;
+  translation: string;
+}
+
 export interface CloseReading {
   translation: string;
   vocabulary: CloseReadingVocabulary[];
@@ -23,4 +28,6 @@ export interface CloseReading {
     explanation: string;
   };
   highlights: CloseReadingHighlight[];
+  trunk?: CloseReadingHighlight[];
+  segments?: CloseReadingSegment[];
 }

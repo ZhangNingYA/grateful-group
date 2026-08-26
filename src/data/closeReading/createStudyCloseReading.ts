@@ -2,19 +2,7 @@ import type { CloseReading, SentenceRole } from '../../types/closeReading';
 
 type VocabularyItem = readonly [term: string, explanation: string];
 type HighlightItem = readonly [role: SentenceRole, text: string];
-
-const roleLabels: Record<SentenceRole, string> = {
-  subject: '主语',
-  predicate: '谓语',
-  object: '宾语',
-  complement: '表语或补足语',
-  adverbial: '状语',
-};
-
-const summarizeHighlights = (highlights: readonly HighlightItem[]) =>
-  highlights
-    .map(([role, text]) => `“${text}”是${roleLabels[role]}`)
-    .join('；');
+type SegmentItem = readonly [source: string, translation: string];
 
 export const createStudyCloseReading = (
   translation: string,
@@ -22,12 +10,17 @@ export const createStudyCloseReading = (
   pattern: string,
   highlights: readonly HighlightItem[],
   note?: string,
+  segments?: readonly SegmentItem[],
 ): CloseReading => ({
   translation,
   vocabulary: vocabulary.map(([term, explanation]) => ({ term, explanation })),
   structure: {
     pattern,
-    explanation: `${summarizeHighlights(highlights)}。${note ?? ''}`,
+    explanation: note ?? '先抓住主句主干，再把时间、原因、条件和补充说明放回原句。',
   },
   highlights: highlights.map(([role, text]) => ({ role, text })),
+  segments: segments?.map(([source, segmentTranslation]) => ({
+    source,
+    translation: segmentTranslation,
+  })),
 });
