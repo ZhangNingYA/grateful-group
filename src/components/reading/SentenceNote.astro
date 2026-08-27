@@ -1,15 +1,29 @@
 ---
 import { BookOpenText } from 'lucide-astro';
-import type { CloseReading, SentenceRole } from '../../types/closeReading';
+import type {
+  CloseReading,
+  CloseReadingVocabulary,
+  InlineGlossary,
+  SentenceRole,
+} from '../../types/closeReading';
 
 interface Props {
   number: string;
   sentence?: string;
   closeReading?: CloseReading;
+  inlineGlossary?: InlineGlossary;
+  sharedGlossaryPhrases?: readonly CloseReadingVocabulary[];
 }
 
-const { number, sentence, closeReading } = Astro.props;
+const {
+  number,
+  sentence,
+  closeReading,
+  inlineGlossary,
+  sharedGlossaryPhrases = [],
+} = Astro.props;
 const detailId = `close-reading-${number.toLowerCase().replace(/[^a-z0-9-]/g, '-')}`;
+const glossaryId = `${detailId}-glossary`;
 
 const roleLabels: Record<SentenceRole, string> = {
   subject: '主语',
@@ -30,6 +44,16 @@ const roleHelp: Record<SentenceRole, string> = {
 interface SentencePart {
   text: string;
   role?: SentenceRole;
+  start: number;
+}
+
+interface SentenceRun {
+  text: string;
+  glossary?: {
+    term: string;
+    explanation: string;
+    partOfSpeech: string;
+  };
 }
 
 const normalizeForMatch = (value: string) => value
@@ -37,7 +61,7 @@ const normalizeForMatch = (value: string) => value
   .replace(/[“”]/g, '"');
 
 const buildSentenceParts = (): SentencePart[] => {
-  if (!sentence || !closeReading) return sentence ? [{ text: sentence }] : [];
+  if (!sentence || !closeReading) return sentence ? [{ text: sentence, start: 0 }] : [];
 
   const normalizedSentence = normalizeForMatch(sentence);
   const matches: Array<{ start: number; end: number; role: SentenceRole }> = [];
@@ -57,15 +81,264 @@ const buildSentenceParts = (): SentencePart[] => {
   let cursor = 0;
   matches.sort((a, b) => a.start - b.start || a.end - b.end).forEach((match) => {
     if (match.start < cursor) return;
-    if (match.start > cursor) parts.push({ text: sentence.slice(cursor, match.start) });
-    parts.push({ text: sentence.slice(match.start, match.end), role: match.role });
+    if (match.start > cursor) parts.push({ text: sentence.slice(cursor, match.start), start: cursor });
+    parts.push({ text: sentence.slice(match.start, match.end), role: match.role, start: match.start });
     cursor = match.end;
   });
-  if (cursor < sentence.length) parts.push({ text: sentence.slice(cursor) });
+  if (cursor < sentence.length) parts.push({ text: sentence.slice(cursor), start: cursor });
   return parts;
 };
 
-const sentenceParts = buildSentenceParts();
+const rawSentenceParts = buildSentenceParts();
+
+interface GlossaryMatch {
+  start: number;
+  end: number;
+  term: string;
+  explanation: string;
+  partOfSpeech: string;
+  priority: number;
+}
+
+const wordTokens = (value: string) => Array.from(
+  value.matchAll(/(?<![A-Za-z0-9])[A-Za-z]+(?:['’][A-Za-z]+)?(?![A-Za-z0-9])/g),
+  (match) => ({
+    text: normalizeForMatch(match[0]).toLowerCase(),
+    raw: match[0],
+    start: match.index,
+    end: match.index + match[0].length,
+  }),
+);
+
+const irregularLemmas: Record<string, string> = {
+  am: 'be', is: 'be', are: 'be', was: 'be', were: 'be', been: 'be', being: 'be',
+  did: 'do', done: 'do', does: 'do',
+  "don't": 'not', "doesn't": 'not', "didn't": 'not', "isn't": 'not', "aren't": 'not',
+  "wasn't": 'not', "weren't": 'not', "can't": 'not', "couldn't": 'not', "won't": 'not',
+  fell: 'fall', fallen: 'fall', rose: 'rise', risen: 'rise', sank: 'sink', sunk: 'sink',
+  gave: 'give', given: 'give', found: 'find', made: 'make',
+  took: 'take', taken: 'take', thought: 'think',
+};
+
+const wordForms = (word: string) => {
+  const forms = new Set<string>([word]);
+  if (irregularLemmas[word]) forms.add(irregularLemmas[word]);
+  if (word.endsWith('ies') && word.length > 4) forms.add(`${word.slice(0, -3)}y`);
+  if (word.endsWith('ied') && word.length > 4) forms.add(`${word.slice(0, -3)}y`);
+  if (word.endsWith('ing') && word.length > 5) {
+    forms.add(word.slice(0, -3));
+    forms.add(`${word.slice(0, -3)}e`);
+  }
+  if (word.endsWith('ed') && word.length > 4) {
+    forms.add(word.slice(0, -2));
+    forms.add(`${word.slice(0, -1)}`);
+  }
+  if (word.endsWith('es') && word.length > 4) forms.add(word.slice(0, -2));
+  if (word.endsWith('s') && word.length > 3) forms.add(word.slice(0, -1));
+  return forms;
+};
+
+const wordsEquivalent = (source: string, term: string) => {
+  const determiners = new Set(['a', 'an', 'the', 'some']);
+  if (determiners.has(source) && determiners.has(term)) return true;
+  const sourceForms = wordForms(source);
+  const termForms = wordForms(term);
+  return [...sourceForms].some((form) => termForms.has(form));
+};
+
+const inlineGlossaryEntry = (value: string) =>
+  inlineGlossary?.words[normalizeForMatch(value).toLowerCase()];
+
+const partOfSpeechLabel = (value: string) => ({
+  n: '名词',
+  v: '动词',
+  vt: '及物动词',
+  vi: '不及物动词',
+  adj: '形容词',
+  adv: '副词',
+  prep: '介词',
+  conj: '连词',
+  pron: '代词',
+  det: '限定词',
+  num: '数词',
+  abbr: '缩写',
+  contr: '缩写',
+  int: '感叹词',
+}[value] ?? value);
+
+const glossaryMatches = (): Array<{
+  start: number;
+  end: number;
+  term: string;
+  explanation: string;
+  partOfSpeech: string;
+}> => {
+  if (!sentence || !closeReading || !inlineGlossary) return [];
+
+  const normalizedSentence = normalizeForMatch(sentence).toLowerCase();
+  const sentenceWords = wordTokens(sentence);
+  const candidates: GlossaryMatch[][] = [];
+  const vocabulary = [
+    ...closeReading.vocabulary.map((item) => ({ ...item, allowFlexibleMatch: true })),
+    ...sharedGlossaryPhrases.map((item) => ({ ...item, allowFlexibleMatch: false })),
+  ]
+    .filter((item, index, all) => all.findIndex((candidate) => (
+      normalizeForMatch(candidate.term).toLowerCase() === normalizeForMatch(item.term).toLowerCase()
+    )) === index);
+
+  vocabulary
+    .filter((item) => item.term && /[A-Za-z]/.test(item.term))
+    .forEach((item) => {
+      const normalizedTerm = normalizeForMatch(item.term).toLowerCase();
+      const termTokenCount = wordTokens(item.term).length;
+      let from = 0;
+      let foundExact = false;
+      while (from < normalizedSentence.length) {
+        const start = normalizedSentence.indexOf(normalizedTerm, from);
+        if (start === -1) break;
+        const end = start + normalizedTerm.length;
+        const before = normalizedSentence[start - 1] ?? '';
+        const after = normalizedSentence[end] ?? '';
+        const boundary = !/[a-z0-9]/.test(before) && !/[a-z0-9]/.test(after);
+        if (boundary) {
+          candidates.push([{
+            start,
+            end,
+            term: item.term,
+            explanation: item.explanation,
+            partOfSpeech: !item.allowFlexibleMatch || termTokenCount > 1
+              ? '短语'
+              : partOfSpeechLabel(inlineGlossaryEntry(item.term)?.partOfSpeech ?? '词汇'),
+            priority: termTokenCount * 1000 + 500 + end - start,
+          }]);
+          foundExact = true;
+        }
+        from = end;
+      }
+
+      if (foundExact) return;
+      if (!item.allowFlexibleMatch) return;
+      const hasFlexibleGap = /\.{3}|…|\bsome(?:one|thing)\b|\bA\b|\bB\b/.test(item.term);
+      const termWords = wordTokens(item.term)
+        .filter((token, index, all) => {
+          if (/^[AB]$/.test(token.raw)) return false;
+          if (/^some(?:one|thing)$/i.test(token.text) || token.text === "one's") return false;
+          if (token.text === 'be' && index === 0 && all.length > 1) return false;
+          if (token.text === 'a' && /\bsomething\b/i.test(item.term)) return false;
+          return !(token.text === 'do' && index === all.length - 1 && all.length > 1)
+            && !(token.text === 'done' && index === all.length - 1 && /\bhave done$/i.test(item.term));
+        });
+      if (termWords.length === 0) return;
+
+      for (let startIndex = 0; startIndex < sentenceWords.length; startIndex += 1) {
+        if (!wordsEquivalent(sentenceWords[startIndex].text, termWords[0].text)) continue;
+        const selected = [sentenceWords[startIndex]];
+        let sentenceIndex = startIndex + 1;
+        let matched = true;
+        for (let termIndex = 1; termIndex < termWords.length; termIndex += 1) {
+          const maxGap = hasFlexibleGap ? 18 : 4;
+          const foundIndex = sentenceWords.findIndex((sourceWord, index) => (
+            index >= sentenceIndex
+            && index <= sentenceIndex + maxGap
+            && wordsEquivalent(sourceWord.text, termWords[termIndex].text)
+          ));
+          if (foundIndex === -1) {
+            matched = false;
+            break;
+          }
+          selected.push(sentenceWords[foundIndex]);
+          sentenceIndex = foundIndex + 1;
+        }
+        if (!matched) continue;
+
+        candidates.push(selected.map((token) => ({
+          start: token.start,
+          end: token.end,
+          term: item.term,
+          explanation: item.explanation,
+          partOfSpeech: !item.allowFlexibleMatch || termTokenCount > 1
+            ? '短语'
+              : partOfSpeechLabel(inlineGlossaryEntry(token.text)?.partOfSpeech ?? '词汇'),
+          priority: termTokenCount * 1000 + 100,
+        })));
+        break;
+      }
+    });
+
+  const claimedGroups: GlossaryMatch[][] = [];
+  candidates
+    .sort((a, b) => b[0].priority - a[0].priority || a[0].start - b[0].start)
+    .forEach((candidate) => {
+      const overlapsClaimed = candidate.some((match) => claimedGroups.some((group) => (
+        group.some((previous) => match.start < previous.end && match.end > previous.start)
+      )));
+      if (!overlapsClaimed) claimedGroups.push(candidate);
+    });
+
+  const claimedMatches = claimedGroups
+    .flat()
+    .sort((a, b) => a.start - b.start);
+
+  const singleWordMatches = sentenceWords
+    .filter((token) => !claimedMatches.some((match) => (
+      token.start < match.end && token.end > match.start
+    )))
+    .map((token) => {
+      const entry = inlineGlossaryEntry(token.text);
+      return {
+        start: token.start,
+        end: token.end,
+        term: token.raw,
+        explanation: entry?.meaning ?? '本句中的词义',
+        partOfSpeech: partOfSpeechLabel(entry?.partOfSpeech ?? '词汇'),
+        priority: 0,
+      };
+    });
+
+  return [...claimedMatches, ...singleWordMatches]
+    .sort((a, b) => a.start - b.start || b.end - a.end)
+    .map(({ start, end, term, explanation, partOfSpeech }) => ({
+      start,
+      end,
+      term,
+      explanation,
+      partOfSpeech,
+    }));
+};
+
+const sentenceGlossaryMatches = glossaryMatches();
+
+const addGlossaryRuns = (part: SentencePart): SentencePart & { runs: SentenceRun[] } => {
+  const partEnd = part.start + part.text.length;
+  const matches = sentenceGlossaryMatches
+    .filter((match) => match.start < partEnd && match.end > part.start)
+    .map((match) => ({
+      ...match,
+      start: Math.max(match.start, part.start),
+      end: Math.min(match.end, partEnd),
+    }))
+    .filter((match) => /[A-Za-z]/.test(sentence!.slice(match.start, match.end)));
+  if (matches.length === 0) return { ...part, runs: [{ text: part.text }] };
+
+  const runs: SentenceRun[] = [];
+  let cursor = part.start;
+  matches.forEach((match) => {
+    if (match.start > cursor) runs.push({ text: sentence!.slice(cursor, match.start) });
+    runs.push({
+      text: sentence!.slice(match.start, match.end),
+      glossary: {
+        term: match.term,
+        explanation: match.explanation,
+        partOfSpeech: match.partOfSpeech,
+      },
+    });
+    cursor = match.end;
+  });
+  if (cursor < part.start + part.text.length) runs.push({ text: sentence!.slice(cursor, part.start + part.text.length) });
+  return { ...part, runs };
+};
+
+const sentenceParts = rawSentenceParts.map(addGlossaryRuns);
 const trunkHighlights = closeReading
   ? closeReading.trunk ?? closeReading.highlights.filter((item) => item.role !== 'adverbial')
   : [];
@@ -86,9 +359,23 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     <div class="sentence-original">
       {sentence ? (
         <span class="sentence-text">
-          {sentenceParts.map((part) => part.role ? (
-            <span class={`grammar-role grammar-${part.role}`}>{part.text}</span>
-          ) : part.text)}
+          {sentenceParts.map((part) => {
+            const content = part.runs.map((run) => run.glossary ? (
+              <button
+                class="inline-glossary-term"
+                type="button"
+                data-glossary-term={run.glossary.term}
+                data-glossary-meaning={run.glossary.explanation}
+                data-glossary-pos={run.glossary.partOfSpeech}
+                aria-label={`查看 ${run.glossary.term} 的释义`}
+                aria-controls={glossaryId}
+                aria-expanded="false"
+              >{run.text}</button>
+            ) : run.text);
+            return part.role ? (
+              <span class={`grammar-role grammar-${part.role}`}>{content}</span>
+            ) : content;
+          })}
         </span>
       ) : <slot />}
       {closeReading && (
@@ -105,6 +392,16 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
         </button>
       )}
     </div>
+
+    {inlineGlossary && closeReading && (
+      <div class="inline-glossary-popover" id={glossaryId} role="status" aria-live="polite" aria-hidden="true" data-inline-glossary-popover>
+        <span class="inline-glossary-popover-head">
+          <strong class="inline-glossary-popover-term" data-inline-glossary-term></strong>
+          <span class="inline-glossary-popover-pos" data-inline-glossary-pos></span>
+        </span>
+        <span class="inline-glossary-popover-meaning" data-inline-glossary-meaning></span>
+      </div>
+    )}
 
     {closeReading && (
       <div
@@ -176,21 +473,76 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
 </div>
 
 <script>
+  let activeGlossaryPopover: HTMLElement | null = null;
+  let activeGlossaryButton: HTMLButtonElement | null = null;
+
+  const closeActiveGlossary = () => {
+    activeGlossaryPopover?.setAttribute('aria-hidden', 'true');
+    activeGlossaryButton?.setAttribute('aria-expanded', 'false');
+    activeGlossaryPopover = null;
+    activeGlossaryButton = null;
+  };
+
+  document.addEventListener('click', (event) => {
+    if (!(event.target as Element).closest?.('[data-glossary-term]')) closeActiveGlossary();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeActiveGlossary();
+  });
+  window.addEventListener('resize', closeActiveGlossary);
+  window.addEventListener('scroll', closeActiveGlossary, { passive: true, capture: true });
+
   document.querySelectorAll<HTMLElement>('[data-sentence-note]').forEach((note) => {
     if (note.dataset.closeReadingBound === 'true') return;
 
     const toggle = note.querySelector<HTMLButtonElement>('[data-close-reading-toggle]');
     const detail = note.querySelector<HTMLElement>('[data-close-reading-detail]');
+    const glossaryPopover = note.querySelector<HTMLElement>('[data-inline-glossary-popover]');
+    const glossaryTerm = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-term]');
+    const glossaryPos = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-pos]');
+    const glossaryMeaning = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-meaning]');
+    const glossaryButtons = note.querySelectorAll<HTMLButtonElement>('[data-glossary-term]');
     if (!toggle || !detail) return;
 
     note.dataset.closeReadingBound = 'true';
     toggle.addEventListener('click', () => {
+      closeActiveGlossary();
       const open = !note.hasAttribute('data-open');
       note.toggleAttribute('data-open', open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? '收起精读' : '展开精读');
       detail.setAttribute('aria-hidden', String(!open));
     });
+
+    if (glossaryPopover && glossaryTerm && glossaryPos && glossaryMeaning) {
+      glossaryButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+          event.stopPropagation();
+          if (note.hasAttribute('data-open')) return;
+          const alreadyOpen = activeGlossaryButton === button;
+          if (alreadyOpen) {
+            closeActiveGlossary();
+            return;
+          }
+
+          closeActiveGlossary();
+          glossaryTerm.textContent = button.dataset.glossaryTerm ?? '';
+          glossaryPos.textContent = button.dataset.glossaryPos ?? '';
+          glossaryMeaning.textContent = button.dataset.glossaryMeaning ?? '';
+          glossaryPopover.setAttribute('aria-hidden', 'false');
+          button.setAttribute('aria-expanded', 'true');
+          activeGlossaryPopover = glossaryPopover;
+          activeGlossaryButton = button;
+          const original = note.querySelector<HTMLElement>('.sentence-original');
+          if (!original) return;
+          const buttonRect = button.getBoundingClientRect();
+          const originalRect = original.getBoundingClientRect();
+          const maxLeft = Math.max(8, original.clientWidth - glossaryPopover.offsetWidth - 8);
+          glossaryPopover.style.left = `${Math.min(Math.max(8, buttonRect.left - originalRect.left), maxLeft)}px`;
+          glossaryPopover.style.top = `${buttonRect.bottom - originalRect.top + 10}px`;
+        });
+      });
+    }
   });
 </script>
 
@@ -211,7 +563,10 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     font-weight: 650;
   }
 
-  .sentence-content { min-width: 0; }
+  .sentence-content {
+    position: relative;
+    min-width: 0;
+  }
 
   .sentence-original {
     color: #17201c;
@@ -224,6 +579,95 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
   .sentence-original :global(p) { margin: 0; }
 
   .has-close-reading .sentence-original :global(p) { display: inline; }
+
+  .inline-glossary-term {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: transparent;
+    font: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 140ms ease, box-shadow 140ms ease, color 140ms ease;
+  }
+
+  .inline-glossary-term:hover,
+  .inline-glossary-term:focus-visible {
+    color: #17201c;
+    background: #eef2ef;
+    box-shadow: 0 1px 0 #aebbb2;
+    outline: none;
+  }
+
+  [data-open] .inline-glossary-term {
+    background: transparent;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  .inline-glossary-popover {
+    position: absolute;
+    z-index: 5;
+    display: grid;
+    gap: 5px;
+    width: max-content;
+    max-width: min(320px, calc(100% - 16px));
+    padding: 9px 11px 10px;
+    border: 1px solid #e2ce91;
+    border-radius: 8px;
+    color: #3c3522;
+    background: #fffdf5;
+    box-shadow: 0 9px 24px rgba(69, 57, 22, 0.16);
+    font-family: 'Inter Variable', Inter, sans-serif;
+    pointer-events: none;
+    transform-origin: top left;
+    transition: opacity 120ms ease, transform 120ms ease;
+  }
+
+  .inline-glossary-popover-head {
+    display: flex;
+    gap: 7px;
+    align-items: baseline;
+  }
+
+  .inline-glossary-popover[aria-hidden='true'] {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+
+  .inline-glossary-popover[aria-hidden='false'] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .inline-glossary-popover-term {
+    color: #6a4d00;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 0.98rem;
+    font-weight: 650;
+    line-height: 1.35;
+  }
+
+  .inline-glossary-popover-pos {
+    padding: 1px 5px;
+    border-radius: 99px;
+    color: #806a3e;
+    background: #f4eedf;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .inline-glossary-popover-meaning {
+    color: #5e5847;
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
 
   .close-reading-mark {
     position: relative;
@@ -593,6 +1037,8 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
 
   @media (prefers-reduced-motion: reduce) {
     .close-reading-mark,
-    .close-reading-detail { transition: none; }
+    .close-reading-detail,
+    .inline-glossary-term,
+    .inline-glossary-popover { transition: none; }
   }
 </style>

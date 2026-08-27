@@ -15,6 +15,16 @@ export interface CloseReadingVocabulary {
   explanation: string;
 }
 
+export interface InlineGlossaryEntry {
+  partOfSpeech: string;
+  meaning: string;
+}
+
+export interface InlineGlossary {
+  words: Readonly<Record<string, InlineGlossaryEntry>>;
+  phrases?: readonly CloseReadingVocabulary[];
+}
+
 export interface CloseReadingSegment {
   source: string;
   translation: string;

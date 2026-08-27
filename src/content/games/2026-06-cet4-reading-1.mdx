@@ -6,6 +6,7 @@ pageLayout: 'reading'
 ---
 
 import ReadingPractice from '../../components/reading/ReadingPractice.astro';
+import { cet4InlineGlossary202606Set1 } from '../../data/cet4InlineGlossary202606Set1';
 import {
   cet4CloseReadings202606Set1,
   cet4Reading202606Set1,
@@ -14,4 +15,5 @@ import {
 <ReadingPractice
   {...cet4Reading202606Set1}
   closeReadings={cet4CloseReadings202606Set1}
+  inlineGlossary={cet4InlineGlossary202606Set1}
 />
