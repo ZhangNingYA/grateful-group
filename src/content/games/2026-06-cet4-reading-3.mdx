@@ -1,0 +1,19 @@
+---
+title: '2026-06 Reading Practice · Set 3'
+description: ''
+pubDate: '2026-08-28'
+pageLayout: 'reading'
+---
+
+import ReadingPractice from '../../components/reading/ReadingPractice.astro';
+import { cet4InlineGlossary202606Set3 } from '../../data/cet4InlineGlossary202606Set3';
+import {
+  cet4CloseReadings202606Set3,
+  cet4Reading202606Set3,
+} from '../../data/cet4Reading202606Set3';
+
+<ReadingPractice
+  {...cet4Reading202606Set3}
+  closeReadings={cet4CloseReadings202606Set3}
+  inlineGlossary={cet4InlineGlossary202606Set3}
+/>
