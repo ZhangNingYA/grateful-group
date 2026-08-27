@@ -7,6 +7,7 @@ pubDate: '2015-12-01'
 import ReadingPractice from '../../components/reading/ReadingPractice.astro';
 import paper from '../../data/reading/2015-12-cet6-reading-1.json';
 import { cet6CloseReadings201512Set1 } from '../../data/closeReading/2015DecemberSet1';
+import { cet6InlineGlossary2015 } from '../../data/cet6InlineGlossary2015';
 
 <ReadingPractice
   cloze={paper.sections.cloze}
@@ -16,4 +17,5 @@ import { cet6CloseReadings201512Set1 } from '../../data/closeReading/2015Decembe
   }}
   passages={[paper.sections.passageOne, paper.sections.passageTwo]}
   closeReadings={cet6CloseReadings201512Set1}
+  inlineGlossary={cet6InlineGlossary2015}
 />
