@@ -1,10 +1,13 @@
 ---
 import SentenceNote from './SentenceNote.astro';
+import ReadingQuestions from './ReadingQuestions.astro';
 import type { CloseReading, InlineGlossary } from '../../types/closeReading';
+import type { ReadingQuestion } from '../../types/readingQuestion';
 
 interface Passage {
   title: string;
   sentences: readonly string[];
+  questions?: readonly ReadingQuestion[];
 }
 
 interface MatchingParagraph {
@@ -85,5 +88,8 @@ const sharedGlossaryPhrases = inlineGlossary
         {sharedGlossaryPhrases}
       />
     ))}
+    {passage.questions && passage.questions.length > 0 && (
+      <ReadingQuestions questions={passage.questions} />
+    )}
   </>
 ))}

@@ -524,6 +524,158 @@ export const cet4Reading202606Set1 = {
         'Organic farming is much less efficient when it comes to land use, although yields vary considerably depending on the crop.',
         'On the other hand, advocates of organic farming argue yields and efficiency could be significantly improved if the food industry devoted as much research and money to organic farming as it does conventional agriculture.',
       ],
+      questions: [
+        {
+          number: 46,
+          prompt: 'What is the classic grocery store dilemma?',
+          translation: '经典的杂货店购物两难是什么？',
+          answer: 'D',
+          evidence: 'On the one hand, your family dinner table deserves only the best. On the other hand, your wallet can only stretch so far.',
+          analysis: '题干中的 “classic grocery store dilemma” 直接对应首段的 on the one hand / on the other hand 对照：消费者想给家人最好的食物，但预算有限。D 同时保留了这两个相互冲突的方面。',
+          options: [
+            {
+              key: 'A',
+              text: 'Whether or not one should eat organic food.',
+              explanation: '错误。文章讨论的是要不要“购买”价格更高的有机食品，而不是要不要“吃”有机食品；该选项也遗漏了品质诉求与预算之间的矛盾。',
+            },
+            {
+              key: 'B',
+              text: 'Whether or not one can stretch their wallet far.',
+              explanation: '错误。wallet can only stretch so far 只是两难中的预算一面，选项没有体现消费者同时又想给家人最好食物的另一面。',
+            },
+            {
+              key: 'C',
+              text: 'Organic food costs more but it certainly tastes better.',
+              explanation: '错误。原文提到有机食品价格更高，却没有说它味道一定更好；certainly tastes better 是无依据的绝对化表述。',
+            },
+            {
+              key: 'D',
+              text: 'One wants the best food but their budget is limited.',
+              explanation: '正确。the best food 对应 “deserves only the best”，budget is limited 对应 “wallet can only stretch so far”，完整概括了首段的两难。',
+            },
+          ],
+        },
+        {
+          number: 47,
+          prompt: 'What do we learn about organic food from science?',
+          translation: '关于有机食品，我们从科学研究中了解到什么？',
+          answer: 'A',
+          evidence: 'Science won’t give a clear-cut answer to the question of whether organic food is “better.”',
+          analysis: 'clear-cut answer 表示明确无疑的答案；won’t give a clear-cut answer 即科学尚不能断定有机食品是否更好。A 用 remains uncertain 准确改写这一点。',
+          options: [
+            {
+              key: 'A',
+              text: 'Whether it is any better remains uncertain.',
+              explanation: '正确。remains uncertain 与 “won’t give a clear-cut answer” 同义，且 any better 对应原文带引号的 “better”。',
+            },
+            {
+              key: 'B',
+              text: 'Whether it is healthier is under consideration.',
+              explanation: '错误。原文讨论的是综合意义上的 “better”，并非只讨论是否更健康；under consideration 也不是原文所说的结论不确定。',
+            },
+            {
+              key: 'C',
+              text: 'Whether it is more nutritious than conventional food is arguable.',
+              explanation: '错误。下文明确说有机食品与传统种植食品 “equally nutritious”，营养价值相同，并不存在是否更有营养的争议。',
+            },
+            {
+              key: 'D',
+              text: 'Whether it is going to replace conventional food is still unclear.',
+              explanation: '错误。文章没有讨论有机食品会不会取代传统食品，replace conventional food 属于原文未提及的信息。',
+            },
+          ],
+        },
+        {
+          number: 48,
+          prompt: 'What does the passage say about organic and non-organic products as far as food safety is concerned?',
+          translation: '就食品安全而言，文章如何评价有机产品与非有机产品？',
+          answer: 'D',
+          evidence: 'There is also no big difference between organic and non-organic products from a food-safety perspective.',
+          analysis: '题干中的 as far as food safety is concerned 与原文 from a food-safety perspective 完全对应；no big difference 被 D 的 no substantial difference 同义替换。',
+          options: [
+            {
+              key: 'A',
+              text: 'Their difference is the conventions used to test them.',
+              explanation: '错误。原文只说检测显示传统种植产品几乎没有农药残留，没有说两类产品采用不同的检测惯例；conventions used to test them 是无中生有。',
+            },
+            {
+              key: 'B',
+              text: 'They differ in how much pesticide remains on them.',
+              explanation: '错误。文中没有给出两类产品农药残留量的稳定对比，反而明确总结二者在食品安全方面没有明显差别。',
+            },
+            {
+              key: 'C',
+              text: 'One relies on pesticides whereas the other does not.',
+              explanation: '错误。原文明确说 “Even organic growers use pesticides”，有机种植者同样使用杀虫剂，因此不是一方使用而另一方不用。',
+            },
+            {
+              key: 'D',
+              text: 'There is no substantial difference between the two.',
+              explanation: '正确。no substantial difference 是 no big difference 的准确同义改写，完整对应文章对食品安全的总体判断。',
+            },
+          ],
+        },
+        {
+          number: 49,
+          prompt: 'What does the author say about organic farming?',
+          translation: '关于有机农业，作者说了什么？',
+          answer: 'C',
+          evidence: 'On the whole, organic agriculture may have a smaller environmental footprint.',
+          analysis: 'smaller environmental footprint 表示对环境造成的总体影响可能更小。C 将其改写为 may impact the environment less，语气中的 may 也与原文一致。',
+          options: [
+            {
+              key: 'A',
+              text: 'It may be blamed for the shrinking bee populations in the world.',
+              explanation: '错误。原文说导致蜜蜂数量下降的 neonics 从未被有机农户使用，因此不能把这一问题归咎于有机农业。',
+            },
+            {
+              key: 'B',
+              text: 'It minimizes the use of controversial pesticides in its operations.',
+              explanation: '错误。文章只明确指出有机农户从不使用 neonics 这一类有争议的杀虫剂，并未概括为把所有有争议杀虫剂的用量降至最低。',
+            },
+            {
+              key: 'C',
+              text: 'It may impact the environment less than conventional farming.',
+              explanation: '正确。impact the environment less 对应 smaller environmental footprint；比较对象由上下文可知是 conventional farming。',
+            },
+            {
+              key: 'D',
+              text: 'It contaminates groundwater as much as conventional farming.',
+              explanation: '错误。原文说有机农业造成地下水污染的风险更低，而不是与传统农业一样高。',
+            },
+          ],
+        },
+        {
+          number: 50,
+          prompt: 'What do advocates of organic farming argue about its yields and efficiency?',
+          translation: '有机农业的支持者如何看待其产量和效率？',
+          answer: 'B',
+          evidence: 'Advocates of organic farming argue yields and efficiency could be significantly improved if the food industry devoted as much research and money to organic farming as it does conventional agriculture.',
+          analysis: '条件句说明，只要食品行业投入与传统农业同等多的研究和资金，有机农业的产量和效率就能显著提高。B 中 more research and investment 与 research and money 对应。',
+          options: [
+            {
+              key: 'A',
+              text: 'They would increase quickly with the emergence of new technologies.',
+              explanation: '错误。原文提出的条件是增加研究和资金投入，没有提到新技术的出现，也没有使用 quickly 这一速度判断。',
+            },
+            {
+              key: 'B',
+              text: 'They would improve remarkably with more research and investment.',
+              explanation: '正确。improve remarkably 对应 significantly improved，more research and investment 对应投入更多 research and money。',
+            },
+            {
+              key: 'C',
+              text: 'They would be achieved along with enormous health benefits.',
+              explanation: '错误。文章没有把产量和效率的提高与巨大的健康益处联系起来；前文反而说明两类食品营养价值相同。',
+            },
+            {
+              key: 'D',
+              text: 'They would considerably lower the cost to the environment.',
+              explanation: '错误。题目问产量和效率如何改善，原文的条件是研究和资金投入；该选项把结果偷换成降低环境代价。',
+            },
+          ],
+        },
+      ],
     },
     {
       title: 'Passage Two · Are humans generous or selfish?',
@@ -551,6 +703,158 @@ export const cet4Reading202606Set1 = {
         'Yet almost no behavior is entirely genetic, even among identical twins.',
         'Culture, schooling and parenting are important determinants of cooperation.',
         'Thus, the degree to which we act cooperatively or selfishly is unique to each individual and depends on a variety of genetic and environmental influences.',
+      ],
+      questions: [
+        {
+          number: 51,
+          prompt: 'What is the finding of one recent study about being selfish?',
+          translation: '一项近期研究对自私行为得出了什么发现？',
+          answer: 'A',
+          evidence: 'It found that being selfish was more advantageous than cooperating. The benefit may be short-lived, however.',
+          analysis: '研究发现自私比合作更有利，但紧接着用 however 限定这种 benefit 可能很短暂。因此应同时保留“有一定好处”和“只在短期内”两层信息。',
+          options: [
+            {
+              key: 'A',
+              text: 'It may bring certain benefits in the short term.',
+              explanation: '正确。certain benefits 对应 more advantageous，in the short term 对应 the benefit may be short-lived，是对两句话的合并概括。',
+            },
+            {
+              key: 'B',
+              text: 'It usually yields more disadvantages than advantages.',
+              explanation: '错误。原文说研究中自私比合作更有利，并没有说其弊大于利；该选项把 advantageous 的方向完全颠倒。',
+            },
+            {
+              key: 'C',
+              text: 'It serves individual interest rather than a collective’s.',
+              explanation: '错误。这是对“自私”概念的一般描述，不是该研究报告的具体发现；研究发现强调的是它短期内更有利。',
+            },
+            {
+              key: 'D',
+              text: 'It may give way to cooperating in the long run.',
+              explanation: '错误。另一项研究发现合作者长期表现更好，但原文没有说自私行为会逐渐“让位于”合作，give way to 添加了不存在的变化过程。',
+            },
+          ],
+        },
+        {
+          number: 52,
+          prompt: 'What have researchers found by studying identical and non-identical twins?',
+          translation: '研究人员通过研究同卵双胞胎和异卵双胞胎发现了什么？',
+          answer: 'B',
+          evidence: 'Researchers have found overwhelming evidence for genetic effects on behaviors.',
+          analysis: '双胞胎研究通过比较基因共享程度不同的两组人，发现了基因影响行为的强有力证据。B 的 genetic traits determine behavior 是四个选项中对这一结论的对应表达。',
+          options: [
+            {
+              key: 'A',
+              text: 'They are overwhelmingly different in the amounts of genes.',
+              explanation: '错误。overwhelming 修饰的是 evidence，而不是两类双胞胎的基因数量差异；原文说的是基因共享比例约为 100% 和一半。',
+            },
+            {
+              key: 'B',
+              text: 'One’s behavior is largely determined by their genetic traits.',
+              explanation: '正确。该选项概括了 “overwhelming evidence for genetic effects on behaviors”。这里 largely 表示基因作用显著，并不等于排除后文所说的环境影响。',
+            },
+            {
+              key: 'C',
+              text: 'One’s biological roots can be identified by their genes.',
+              explanation: '错误。原文是借双胞胎研究寻找亲社会与自私特征的生物根源，不是通过基因“识别一个人的生物根源”；表述对象被偷换。',
+            },
+            {
+              key: 'D',
+              text: 'They differ from each other in their behavior patterns.',
+              explanation: '错误。文章没有把研究结论概括为两类双胞胎的行为模式不同，重点是比较结果证明基因会影响行为。',
+            },
+          ],
+        },
+        {
+          number: 53,
+          prompt: 'What did the author and colleagues identify in their recent research?',
+          translation: '作者及其同事在近期研究中识别出了什么？',
+          answer: 'C',
+          evidence: 'My colleagues and I recently identified a gene linked to altruistic behavior and found that a particular variant of it was associated with more selfish behavior in preschoolers.',
+          analysis: '题干中的 identified 可直接回原文定位。其宾语是 a gene linked to altruistic behavior；后半句关于某个变体与自私行为相关，是对这个基因的进一步发现。',
+          options: [
+            {
+              key: 'A',
+              text: 'A gene-related selfish behavior in preschool children.',
+              explanation: '错误。研究人员识别出的是一个基因，不是一种“与基因有关的自私行为”；幼儿的自私行为只是与该基因的特定变体相关。',
+            },
+            {
+              key: 'B',
+              text: 'Key factors that determine one’s altruistic behavior.',
+              explanation: '错误。原文只识别出一个与利他行为相关的基因，没有找出决定利他行为的多个关键因素，determine 也把相关性夸成了决定关系。',
+            },
+            {
+              key: 'C',
+              text: 'A specific gene associated with altruistic behavior.',
+              explanation: '正确。a specific gene associated with altruistic behavior 准确对应 a gene linked to altruistic behavior。',
+            },
+            {
+              key: 'D',
+              text: 'Roles played by genes in shaping one’s character.',
+              explanation: '错误。这是过于宽泛的概括；该项研究的明确识别对象是一个与利他行为相关的具体基因，而不是基因塑造性格的各种作用。',
+            },
+          ],
+        },
+        {
+          number: 54,
+          prompt: 'What do we learn from evolutionary scientists about cooperative behavior?',
+          translation: '关于合作行为，我们从进化科学家的观点中了解到什么？',
+          answer: 'A',
+          evidence: 'Cooperative behavior may have evolved first among relatives to promote the continuation of their genetic line.',
+          analysis: 'evolved first among relatives 表明合作行为最初可能出现在亲属之间；relatives 与 linked by blood 构成同义替换，因此 A 正确。',
+          options: [
+            {
+              key: 'A',
+              text: 'It may have initially originated in individuals linked by blood.',
+              explanation: '正确。initially originated 对应 evolved first，individuals linked by blood 对应 relatives，语气 may 也与原文一致。',
+            },
+            {
+              key: 'B',
+              text: 'It may have caused the diversification of communities.',
+              explanation: '错误。原文说随着群体变得多样化，互助范围可能扩大；并没有说合作行为导致了群体多样化，因果关系被倒置。',
+            },
+            {
+              key: 'C',
+              text: 'It helps to build relationships among blood-related people.',
+              explanation: '错误。原文说亲属间的合作有助于延续其遗传谱系，不是说它用于建立亲属关系；亲属关系本来就已经存在。',
+            },
+            {
+              key: 'D',
+              text: 'It guarantees the achievement of goals otherwise unattainable.',
+              explanation: '错误。文章只说高合作群体可以共同完成低合作群体难以实现的目标，并提高生存机会；guarantees 是原文没有的绝对化说法。',
+            },
+          ],
+        },
+        {
+          number: 55,
+          prompt: 'What can we infer from the last paragraph?',
+          translation: '从最后一段可以推断出什么？',
+          answer: 'D',
+          evidence: 'Culture, schooling and parenting are important determinants of cooperation.',
+          analysis: '末段强调合作并非完全由基因决定，文化、学校教育和家庭教养都会影响它。既然后天环境能够塑造合作程度，就可以推断合作行为能够被培养。',
+          options: [
+            {
+              key: 'A',
+              text: 'Cooperative behavior is evident among identical twins.',
+              explanation: '错误。末段提到同卵双胞胎只是为了说明即使基因相同，行为也不完全由基因决定，并没有说合作行为在同卵双胞胎中尤其明显。',
+            },
+            {
+              key: 'B',
+              text: 'One is born either cooperative or non-cooperative.',
+              explanation: '错误。文章明确指出行为几乎都不是完全由遗传决定，合作程度还受文化、学校和家庭教育影响，因此不是出生时就非此即彼地固定。',
+            },
+            {
+              key: 'C',
+              text: 'Genes determine one’s tendency to cooperate.',
+              explanation: '错误。基因会产生影响，但末段特意否定 entirely genetic，并列出多种环境因素；determine 把多因素影响误写成基因单独决定。',
+            },
+            {
+              key: 'D',
+              text: 'Cooperative behavior may be cultivated.',
+              explanation: '正确。文化、学校教育和家庭教养都是可施加的后天影响，因此可以合理推断合作行为能够通过环境和教育加以培养。',
+            },
+          ],
+        },
       ],
     },
   ],

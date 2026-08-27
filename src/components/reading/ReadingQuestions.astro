@@ -1,0 +1,508 @@
+---
+import type { ReadingQuestion } from '../../types/readingQuestion';
+
+interface Props {
+  questions: readonly ReadingQuestion[];
+}
+
+const { questions } = Astro.props;
+const firstQuestion = questions.at(0)?.number;
+const lastQuestion = questions.at(-1)?.number;
+const rangeLabel = firstQuestion === lastQuestion
+  ? String(firstQuestion)
+  : `${firstQuestion}–${lastQuestion}`;
+---
+
+<section class="reading-questions" aria-label={`Questions ${rangeLabel}`}>
+  <header class="reading-questions-header">
+    <div>
+      <p>Comprehension Check</p>
+      <h4>Questions {rangeLabel}</h4>
+    </div>
+    <span>{questions.length} Questions</span>
+  </header>
+
+  <ol class="reading-question-list">
+    {questions.map((question) => {
+      const translationId = `question-${question.number}-translation`;
+      const feedbackId = `question-${question.number}-feedback`;
+
+      return (
+        <li
+          class="reading-question"
+          data-reading-question
+          data-answer={question.answer}
+        >
+          <span class="reading-question-number" aria-hidden="true">{question.number}</span>
+          <div class="reading-question-content">
+            <p class="reading-question-prompt" lang="en">
+              {question.prompt}
+              <button
+                class="question-translation-toggle"
+                type="button"
+                aria-label={`查看第 ${question.number} 题题干翻译`}
+                aria-controls={translationId}
+                aria-expanded="false"
+                data-question-translation-toggle
+              >译</button>
+            </p>
+            <div
+              class="question-translation"
+              id={translationId}
+              aria-hidden="true"
+              data-question-translation
+            >
+              <p lang="zh-CN">{question.translation}</p>
+            </div>
+
+            <div class="reading-question-options" role="group" aria-label={`Question ${question.number} options`}>
+              {question.options.map((option) => (
+                <button
+                  class="reading-question-option"
+                  type="button"
+                  aria-pressed="false"
+                  aria-controls={feedbackId}
+                  data-question-option={option.key}
+                  data-correct={option.key === question.answer ? 'true' : 'false'}
+                >
+                  <span>{option.key}</span>
+                  <span lang="en">{option.text}</span>
+                  <i aria-hidden="true"></i>
+                </button>
+              ))}
+            </div>
+
+            <div
+              class="reading-question-feedback"
+              id={feedbackId}
+              aria-live="polite"
+              aria-hidden="true"
+              data-question-feedback
+            >
+              <div class="question-feedback-summary">
+                <strong data-question-result></strong>
+                <span>Answer · {question.answer}</span>
+              </div>
+              {question.options.map((option) => (
+                <p
+                  class="question-option-explanation"
+                  data-option-explanation={option.key}
+                  hidden
+                  lang="zh-CN"
+                >{option.explanation}</p>
+              ))}
+              <div class="question-solution-grid">
+                <section>
+                  <span>Evidence</span>
+                  <blockquote lang="en">{question.evidence}</blockquote>
+                </section>
+                <section>
+                  <span>Reasoning</span>
+                  <p lang="zh-CN">{question.analysis}</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+      );
+    })}
+  </ol>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-reading-question]').forEach((question) => {
+    if (question.dataset.questionBound === 'true') return;
+
+    const answer = question.dataset.answer;
+    const translationToggle = question.querySelector<HTMLButtonElement>('[data-question-translation-toggle]');
+    const translation = question.querySelector<HTMLElement>('[data-question-translation]');
+    const options = Array.from(question.querySelectorAll<HTMLButtonElement>('[data-question-option]'));
+    const feedback = question.querySelector<HTMLElement>('[data-question-feedback]');
+    const result = question.querySelector<HTMLElement>('[data-question-result]');
+    const explanations = Array.from(question.querySelectorAll<HTMLElement>('[data-option-explanation]'));
+
+    question.dataset.questionBound = 'true';
+
+    translationToggle?.addEventListener('click', () => {
+      if (!translation) return;
+      const open = translation.getAttribute('aria-hidden') === 'true';
+      translation.setAttribute('aria-hidden', String(!open));
+      translationToggle.setAttribute('aria-expanded', String(open));
+      translationToggle.classList.toggle('is-open', open);
+    });
+
+    options.forEach((option) => {
+      option.addEventListener('click', () => {
+        const selected = option.dataset.questionOption;
+        const isCorrect = selected === answer;
+
+        question.toggleAttribute('data-answered', true);
+        question.toggleAttribute('data-selected-correct', isCorrect);
+        options.forEach((candidate) => {
+          const active = candidate === option;
+          candidate.classList.toggle('is-selected', active);
+          candidate.setAttribute('aria-pressed', String(active));
+        });
+        explanations.forEach((explanation) => {
+          explanation.hidden = explanation.dataset.optionExplanation !== selected;
+        });
+
+        if (result) result.textContent = isCorrect ? 'Correct' : 'Incorrect';
+        feedback?.setAttribute('aria-hidden', 'false');
+      });
+    });
+  });
+</script>
+
+<style>
+  .reading-questions {
+    margin: 38px 0 66px;
+    border-top: 2px solid #17201c;
+  }
+
+  .reading-questions-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+    padding: 20px 0 17px;
+    border-bottom: 1px solid #dfe3e0;
+  }
+
+  .reading-questions-header p,
+  .reading-questions-header h4 {
+    margin: 0;
+  }
+
+  .reading-questions-header p {
+    margin-bottom: 5px;
+    color: #728079;
+    font-size: 0.65rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .reading-questions-header h4 {
+    color: #17201c;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 560;
+    line-height: 1.2;
+  }
+
+  .reading-questions-header > span {
+    padding-bottom: 3px;
+    color: #7b847f;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .reading-question-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .reading-question {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 20px;
+    padding: 25px 0 28px;
+    border-bottom: 1px solid #dfe3e0;
+  }
+
+  .reading-question-number {
+    padding-top: 5px;
+    color: #68716c;
+    font-size: 0.69rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .reading-question-content {
+    min-width: 0;
+  }
+
+  .reading-question-prompt {
+    margin: 0;
+    color: #17201c;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 1.12rem;
+    font-weight: 560;
+    line-height: 1.58;
+  }
+
+  .question-translation-toggle {
+    position: relative;
+    display: inline-grid;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 0.55em;
+    padding: 0;
+    place-items: center;
+    border: 1px solid #d9dedb;
+    border-radius: 50%;
+    color: #66706a;
+    background: #f1f3f1;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 750;
+    line-height: 1;
+    vertical-align: 0.04em;
+    cursor: pointer;
+    transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+  }
+
+  .question-translation-toggle::before {
+    position: absolute;
+    inset: -7px;
+    content: '';
+  }
+
+  .question-translation-toggle:hover,
+  .question-translation-toggle.is-open {
+    border-color: #17201c;
+    color: #fff;
+    background: #17201c;
+  }
+
+  .question-translation-toggle:focus-visible,
+  .reading-question-option:focus-visible {
+    outline: 3px solid rgba(49, 95, 155, 0.2);
+    outline-offset: 2px;
+  }
+
+  .question-translation {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 180ms ease, opacity 140ms ease;
+  }
+
+  .question-translation p {
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #5e6862;
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+
+  .question-translation[aria-hidden='false'] {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .question-translation[aria-hidden='false'] p {
+    padding-top: 8px;
+  }
+
+  .reading-question-options {
+    display: grid;
+    gap: 7px;
+    margin-top: 17px;
+  }
+
+  .reading-question-option {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) 18px;
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dfe3e0;
+    border-radius: 9px;
+    color: #3f4943;
+    background: #fff;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 0.95rem;
+    line-height: 1.48;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+  }
+
+  .reading-question-option:hover {
+    border-color: #aeb7b1;
+    background: #fafbf9;
+  }
+
+  .reading-question-option > span:first-child {
+    display: grid;
+    width: 24px;
+    height: 24px;
+    place-items: center;
+    border: 1px solid #d6dcd8;
+    border-radius: 50%;
+    color: #69736d;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.64rem;
+    font-weight: 750;
+    line-height: 1;
+  }
+
+  .reading-question-option > i {
+    display: none;
+    width: 8px;
+    height: 8px;
+    margin-top: 8px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  [data-answered] .reading-question-option[data-correct='true'] {
+    border-color: #7fba9f;
+    color: #17633f;
+    background: #edf8f2;
+  }
+
+  [data-answered] .reading-question-option[data-correct='true'] > span:first-child {
+    border-color: #4d9873;
+    color: #fff;
+    background: #287956;
+  }
+
+  [data-answered] .reading-question-option[data-correct='true'] > i,
+  [data-answered]:not([data-selected-correct]) .reading-question-option.is-selected > i {
+    display: block;
+  }
+
+  [data-answered]:not([data-selected-correct]) .reading-question-option.is-selected {
+    border-color: #d69b9b;
+    color: #8b2929;
+    background: #fdf1f1;
+  }
+
+  [data-answered]:not([data-selected-correct]) .reading-question-option.is-selected > span:first-child {
+    border-color: #b95858;
+    color: #fff;
+    background: #aa4242;
+  }
+
+  .reading-question-feedback {
+    display: none;
+    margin-top: 12px;
+    overflow: hidden;
+    border: 1px solid #d8ded9;
+    border-radius: 11px;
+    background: #fafbf9;
+    box-shadow: 0 10px 26px rgba(32, 45, 37, 0.06);
+  }
+
+  .reading-question-feedback[aria-hidden='false'] {
+    display: block;
+  }
+
+  .question-feedback-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+    padding: 12px 14px;
+    border-bottom: 1px solid #e0e5e1;
+  }
+
+  .question-feedback-summary strong {
+    color: #17633f;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  [data-answered]:not([data-selected-correct]) .question-feedback-summary strong {
+    color: #9c3838;
+  }
+
+  .question-feedback-summary span {
+    color: #737d77;
+    font-size: 0.65rem;
+    font-weight: 720;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .question-option-explanation {
+    margin: 0;
+    padding: 14px 14px 15px;
+    color: #354039;
+    font-size: 0.86rem;
+    line-height: 1.68;
+  }
+
+  .question-solution-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    border-top: 1px solid #e0e5e1;
+  }
+
+  .question-solution-grid section {
+    min-width: 0;
+    padding: 14px;
+  }
+
+  .question-solution-grid section + section {
+    border-left: 1px solid #e0e5e1;
+  }
+
+  .question-solution-grid section > span {
+    display: block;
+    margin-bottom: 7px;
+    color: #7a847e;
+    font-size: 0.61rem;
+    font-weight: 780;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .question-solution-grid blockquote,
+  .question-solution-grid p {
+    margin: 0;
+    color: #4c5751;
+    font-size: 0.79rem;
+    line-height: 1.62;
+  }
+
+  .question-solution-grid blockquote {
+    padding-left: 10px;
+    border-left: 2px solid #aeb9b2;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-style: normal;
+  }
+
+  @media (max-width: 640px) {
+    .reading-questions { margin-top: 30px; }
+
+    .reading-question {
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 10px;
+      padding: 22px 0 25px;
+    }
+
+    .reading-question-prompt { font-size: 1.03rem; }
+
+    .reading-question-option {
+      grid-template-columns: 27px minmax(0, 1fr) 12px;
+      gap: 8px;
+      padding: 9px 10px;
+      font-size: 0.91rem;
+    }
+
+    .question-solution-grid { grid-template-columns: 1fr; }
+
+    .question-solution-grid section + section {
+      border-top: 1px solid #e0e5e1;
+      border-left: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .question-translation,
+    .question-translation-toggle,
+    .reading-question-option { transition: none; }
+  }
+</style>
