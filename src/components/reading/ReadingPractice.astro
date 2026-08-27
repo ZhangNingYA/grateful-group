@@ -89,7 +89,11 @@ const sharedGlossaryPhrases = inlineGlossary
       />
     ))}
     {passage.questions && passage.questions.length > 0 && (
-      <ReadingQuestions questions={passage.questions} />
+      <ReadingQuestions
+        questions={passage.questions}
+        {inlineGlossary}
+        {sharedGlossaryPhrases}
+      />
     )}
   </>
 ))}

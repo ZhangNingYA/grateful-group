@@ -1,3 +1,5 @@
+import type { CloseReading } from './closeReading';
+
 export type ReadingOptionKey = 'A' | 'B' | 'C' | 'D';
 
 export interface ReadingQuestionOption {
@@ -9,7 +11,7 @@ export interface ReadingQuestionOption {
 export interface ReadingQuestion {
   number: number;
   prompt: string;
-  translation: string;
+  closeReading: CloseReading;
   answer: ReadingOptionKey;
   evidence: string;
   analysis: string;

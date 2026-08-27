@@ -1,11 +1,15 @@
 ---
 import type { ReadingQuestion } from '../../types/readingQuestion';
+import SentenceNote from './SentenceNote.astro';
+import type { InlineGlossary } from '../../types/closeReading';
 
 interface Props {
   questions: readonly ReadingQuestion[];
+  inlineGlossary?: InlineGlossary;
+  sharedGlossaryPhrases?: readonly { term: string; explanation: string }[];
 }
 
-const { questions } = Astro.props;
+const { questions, inlineGlossary, sharedGlossaryPhrases = [] } = Astro.props;
 const firstQuestion = questions.at(0)?.number;
 const lastQuestion = questions.at(-1)?.number;
 const rangeLabel = firstQuestion === lastQuestion
@@ -24,7 +28,6 @@ const rangeLabel = firstQuestion === lastQuestion
 
   <ol class="reading-question-list">
     {questions.map((question) => {
-      const translationId = `question-${question.number}-translation`;
       const feedbackId = `question-${question.number}-feedback`;
 
       return (
@@ -33,74 +36,58 @@ const rangeLabel = firstQuestion === lastQuestion
           data-reading-question
           data-answer={question.answer}
         >
-          <span class="reading-question-number" aria-hidden="true">{question.number}</span>
           <div class="reading-question-content">
-            <p class="reading-question-prompt" lang="en">
-              {question.prompt}
-              <button
-                class="question-translation-toggle"
-                type="button"
-                aria-label={`查看第 ${question.number} 题题干翻译`}
-                aria-controls={translationId}
-                aria-expanded="false"
-                data-question-translation-toggle
-              >译</button>
-            </p>
-            <div
-              class="question-translation"
-              id={translationId}
-              aria-hidden="true"
-              data-question-translation
-            >
-              <p lang="zh-CN">{question.translation}</p>
-            </div>
+            <SentenceNote
+              number={`Q${question.number}`}
+              sentence={question.prompt}
+              closeReading={question.closeReading}
+              {inlineGlossary}
+              {sharedGlossaryPhrases}
+            />
 
             <div class="reading-question-options" role="group" aria-label={`Question ${question.number} options`}>
               {question.options.map((option) => (
-                <button
-                  class="reading-question-option"
-                  type="button"
-                  aria-pressed="false"
-                  aria-controls={feedbackId}
-                  data-question-option={option.key}
-                  data-correct={option.key === question.answer ? 'true' : 'false'}
-                >
-                  <span>{option.key}</span>
-                  <span lang="en">{option.text}</span>
-                  <i aria-hidden="true"></i>
-                </button>
+                <div class="reading-question-option-item">
+                  <button
+                    class="reading-question-option"
+                    type="button"
+                    aria-pressed="false"
+                    aria-controls={`${feedbackId}-${option.key}`}
+                    data-question-option={option.key}
+                    data-correct={option.key === question.answer ? 'true' : 'false'}
+                  >
+                    <span>{option.key}</span>
+                    <span lang="en">{option.text}</span>
+                    <i aria-hidden="true"></i>
+                  </button>
+                  <div
+                    class="question-option-feedback"
+                    id={`${feedbackId}-${option.key}`}
+                    aria-live="polite"
+                    aria-hidden="true"
+                    data-option-feedback={option.key}
+                    data-option-correct={option.key === question.answer ? 'true' : 'false'}
+                  >
+                    <div class="question-option-feedback-inner">
+                      <div class="question-feedback-summary">
+                        <strong data-question-result>{option.key === question.answer ? 'Correct' : 'Incorrect'}</strong>
+                        <span>Correct answer · {question.answer}</span>
+                      </div>
+                      <p class="question-option-explanation" lang="zh-CN">{option.explanation}</p>
+                      <div class="question-solution-grid">
+                        <section>
+                          <span>Evidence</span>
+                          <blockquote lang="en">{question.evidence}</blockquote>
+                        </section>
+                        <section>
+                          <span>Reasoning</span>
+                          <p lang="zh-CN">{question.analysis}</p>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </div>
-
-            <div
-              class="reading-question-feedback"
-              id={feedbackId}
-              aria-live="polite"
-              aria-hidden="true"
-              data-question-feedback
-            >
-              <div class="question-feedback-summary">
-                <strong data-question-result></strong>
-                <span>Answer · {question.answer}</span>
-              </div>
-              {question.options.map((option) => (
-                <p
-                  class="question-option-explanation"
-                  data-option-explanation={option.key}
-                  hidden
-                  lang="zh-CN"
-                >{option.explanation}</p>
-              ))}
-              <div class="question-solution-grid">
-                <section>
-                  <span>Evidence</span>
-                  <blockquote lang="en">{question.evidence}</blockquote>
-                </section>
-                <section>
-                  <span>Reasoning</span>
-                  <p lang="zh-CN">{question.analysis}</p>
-                </section>
-              </div>
             </div>
           </div>
         </li>
@@ -114,41 +101,27 @@ const rangeLabel = firstQuestion === lastQuestion
     if (question.dataset.questionBound === 'true') return;
 
     const answer = question.dataset.answer;
-    const translationToggle = question.querySelector<HTMLButtonElement>('[data-question-translation-toggle]');
-    const translation = question.querySelector<HTMLElement>('[data-question-translation]');
     const options = Array.from(question.querySelectorAll<HTMLButtonElement>('[data-question-option]'));
-    const feedback = question.querySelector<HTMLElement>('[data-question-feedback]');
-    const result = question.querySelector<HTMLElement>('[data-question-result]');
-    const explanations = Array.from(question.querySelectorAll<HTMLElement>('[data-option-explanation]'));
+    const feedbacks = Array.from(question.querySelectorAll<HTMLElement>('[data-option-feedback]'));
 
     question.dataset.questionBound = 'true';
-
-    translationToggle?.addEventListener('click', () => {
-      if (!translation) return;
-      const open = translation.getAttribute('aria-hidden') === 'true';
-      translation.setAttribute('aria-hidden', String(!open));
-      translationToggle.setAttribute('aria-expanded', String(open));
-      translationToggle.classList.toggle('is-open', open);
-    });
 
     options.forEach((option) => {
       option.addEventListener('click', () => {
         const selected = option.dataset.questionOption;
         const isCorrect = selected === answer;
 
-        question.toggleAttribute('data-answered', true);
-        question.toggleAttribute('data-selected-correct', isCorrect);
+        question.setAttribute('data-answered', 'true');
+        question.setAttribute('data-selected-correct', String(isCorrect));
         options.forEach((candidate) => {
           const active = candidate === option;
           candidate.classList.toggle('is-selected', active);
           candidate.setAttribute('aria-pressed', String(active));
         });
-        explanations.forEach((explanation) => {
-          explanation.hidden = explanation.dataset.optionExplanation !== selected;
+        feedbacks.forEach((feedback) => {
+          const active = feedback.dataset.optionFeedback === selected;
+          feedback.setAttribute('aria-hidden', String(!active));
         });
-
-        if (result) result.textContent = isCorrect ? 'Correct' : 'Incorrect';
-        feedback?.setAttribute('aria-hidden', 'false');
       });
     });
   });
@@ -208,103 +181,28 @@ const rangeLabel = firstQuestion === lastQuestion
   }
 
   .reading-question {
-    display: grid;
-    grid-template-columns: 58px minmax(0, 1fr);
-    gap: 20px;
+    display: block;
     padding: 25px 0 28px;
     border-bottom: 1px solid #dfe3e0;
-  }
-
-  .reading-question-number {
-    padding-top: 5px;
-    color: #68716c;
-    font-size: 0.69rem;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
   }
 
   .reading-question-content {
     min-width: 0;
   }
 
-  .reading-question-prompt {
-    margin: 0;
-    color: #17201c;
-    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
-    font-size: 1.12rem;
-    font-weight: 560;
-    line-height: 1.58;
-  }
-
-  .question-translation-toggle {
-    position: relative;
-    display: inline-grid;
-    width: 25px;
-    height: 25px;
-    margin: 0 0 0 0.55em;
-    padding: 0;
-    place-items: center;
-    border: 1px solid #d9dedb;
-    border-radius: 50%;
-    color: #66706a;
-    background: #f1f3f1;
-    font-family: 'Inter Variable', Inter, sans-serif;
-    font-size: 0.65rem;
-    font-weight: 750;
-    line-height: 1;
-    vertical-align: 0.04em;
-    cursor: pointer;
-    transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
-  }
-
-  .question-translation-toggle::before {
-    position: absolute;
-    inset: -7px;
-    content: '';
-  }
-
-  .question-translation-toggle:hover,
-  .question-translation-toggle.is-open {
-    border-color: #17201c;
-    color: #fff;
-    background: #17201c;
-  }
-
-  .question-translation-toggle:focus-visible,
   .reading-question-option:focus-visible {
     outline: 3px solid rgba(49, 95, 155, 0.2);
     outline-offset: 2px;
   }
 
-  .question-translation {
-    display: grid;
-    grid-template-rows: 0fr;
-    opacity: 0;
-    transition: grid-template-rows 180ms ease, opacity 140ms ease;
-  }
-
-  .question-translation p {
-    min-height: 0;
-    margin: 0;
-    overflow: hidden;
-    color: #5e6862;
-    font-size: 0.84rem;
-    line-height: 1.65;
-  }
-
-  .question-translation[aria-hidden='false'] {
-    grid-template-rows: 1fr;
-    opacity: 1;
-  }
-
-  .question-translation[aria-hidden='false'] p {
-    padding-top: 8px;
-  }
-
   .reading-question-options {
     display: grid;
-    gap: 7px;
-    margin-top: 17px;
+    gap: 9px;
+    margin-top: 18px;
+  }
+
+  .reading-question-option-item {
+    min-width: 0;
   }
 
   .reading-question-option {
@@ -367,34 +265,44 @@ const rangeLabel = firstQuestion === lastQuestion
   }
 
   [data-answered] .reading-question-option[data-correct='true'] > i,
-  [data-answered]:not([data-selected-correct]) .reading-question-option.is-selected > i {
+  [data-answered][data-selected-correct='false'] .reading-question-option.is-selected > i {
     display: block;
   }
 
-  [data-answered]:not([data-selected-correct]) .reading-question-option.is-selected {
+  [data-answered][data-selected-correct='false'] .reading-question-option.is-selected {
     border-color: #d69b9b;
     color: #8b2929;
     background: #fdf1f1;
   }
 
-  [data-answered]:not([data-selected-correct]) .reading-question-option.is-selected > span:first-child {
+  [data-answered][data-selected-correct='false'] .reading-question-option.is-selected > span:first-child {
     border-color: #b95858;
     color: #fff;
     background: #aa4242;
   }
 
-  .reading-question-feedback {
-    display: none;
-    margin-top: 12px;
+  .question-option-feedback {
+    display: grid;
+    grid-template-rows: 0fr;
+    margin-top: 0;
     overflow: hidden;
     border: 1px solid #d8ded9;
     border-radius: 11px;
     background: #fafbf9;
     box-shadow: 0 10px 26px rgba(32, 45, 37, 0.06);
+    opacity: 0;
+    transition: grid-template-rows 220ms ease, opacity 150ms ease, margin-top 180ms ease;
   }
 
-  .reading-question-feedback[aria-hidden='false'] {
-    display: block;
+  .question-option-feedback[aria-hidden='false'] {
+    grid-template-rows: 1fr;
+    margin-top: 7px;
+    opacity: 1;
+  }
+
+  .question-option-feedback-inner {
+    min-height: 0;
+    overflow: hidden;
   }
 
   .question-feedback-summary {
@@ -402,6 +310,7 @@ const rangeLabel = firstQuestion === lastQuestion
     justify-content: space-between;
     gap: 14px;
     align-items: center;
+    min-height: 0;
     padding: 12px 14px;
     border-bottom: 1px solid #e0e5e1;
   }
@@ -414,7 +323,7 @@ const rangeLabel = firstQuestion === lastQuestion
     text-transform: uppercase;
   }
 
-  [data-answered]:not([data-selected-correct]) .question-feedback-summary strong {
+  .question-option-feedback[data-option-correct='false'] .question-feedback-summary strong {
     color: #9c3838;
   }
 
@@ -427,6 +336,8 @@ const rangeLabel = firstQuestion === lastQuestion
   }
 
   .question-option-explanation {
+    min-height: 0;
+    overflow: hidden;
     margin: 0;
     padding: 14px 14px 15px;
     color: #354039;
@@ -435,6 +346,8 @@ const rangeLabel = firstQuestion === lastQuestion
   }
 
   .question-solution-grid {
+    min-height: 0;
+    overflow: hidden;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     border-top: 1px solid #e0e5e1;
@@ -478,12 +391,8 @@ const rangeLabel = firstQuestion === lastQuestion
     .reading-questions { margin-top: 30px; }
 
     .reading-question {
-      grid-template-columns: 42px minmax(0, 1fr);
-      gap: 10px;
       padding: 22px 0 25px;
     }
-
-    .reading-question-prompt { font-size: 1.03rem; }
 
     .reading-question-option {
       grid-template-columns: 27px minmax(0, 1fr) 12px;
@@ -501,8 +410,7 @@ const rangeLabel = firstQuestion === lastQuestion
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .question-translation,
-    .question-translation-toggle,
+    .question-option-feedback,
     .reading-question-option { transition: none; }
   }
 </style>

@@ -2,6 +2,7 @@ import type { CloseReading } from '../types/closeReading';
 import { cet4Set1MatchingCloseReadings } from './closeReading/cet4Set1Matching';
 import { cet4Set1PassageOneCloseReadings } from './closeReading/cet4Set1PassageOne';
 import { cet4Set1PassageTwoCloseReadings } from './closeReading/cet4Set1PassageTwo';
+import { cet4Set1QuestionCloseReadings } from './closeReading/cet4Set1Questions';
 
 export const cet4CloseReadings202606Set1 = {
   C01: {
@@ -528,7 +529,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 46,
           prompt: 'What is the classic grocery store dilemma?',
-          translation: '经典的杂货店购物两难是什么？',
+          closeReading: cet4Set1QuestionCloseReadings[46],
           answer: 'D',
           evidence: 'On the one hand, your family dinner table deserves only the best. On the other hand, your wallet can only stretch so far.',
           analysis: '题干中的 “classic grocery store dilemma” 直接对应首段的 on the one hand / on the other hand 对照：消费者想给家人最好的食物，但预算有限。D 同时保留了这两个相互冲突的方面。',
@@ -558,7 +559,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 47,
           prompt: 'What do we learn about organic food from science?',
-          translation: '关于有机食品，我们从科学研究中了解到什么？',
+          closeReading: cet4Set1QuestionCloseReadings[47],
           answer: 'A',
           evidence: 'Science won’t give a clear-cut answer to the question of whether organic food is “better.”',
           analysis: 'clear-cut answer 表示明确无疑的答案；won’t give a clear-cut answer 即科学尚不能断定有机食品是否更好。A 用 remains uncertain 准确改写这一点。',
@@ -588,7 +589,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 48,
           prompt: 'What does the passage say about organic and non-organic products as far as food safety is concerned?',
-          translation: '就食品安全而言，文章如何评价有机产品与非有机产品？',
+          closeReading: cet4Set1QuestionCloseReadings[48],
           answer: 'D',
           evidence: 'There is also no big difference between organic and non-organic products from a food-safety perspective.',
           analysis: '题干中的 as far as food safety is concerned 与原文 from a food-safety perspective 完全对应；no big difference 被 D 的 no substantial difference 同义替换。',
@@ -618,7 +619,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 49,
           prompt: 'What does the author say about organic farming?',
-          translation: '关于有机农业，作者说了什么？',
+          closeReading: cet4Set1QuestionCloseReadings[49],
           answer: 'C',
           evidence: 'On the whole, organic agriculture may have a smaller environmental footprint.',
           analysis: 'smaller environmental footprint 表示对环境造成的总体影响可能更小。C 将其改写为 may impact the environment less，语气中的 may 也与原文一致。',
@@ -648,7 +649,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 50,
           prompt: 'What do advocates of organic farming argue about its yields and efficiency?',
-          translation: '有机农业的支持者如何看待其产量和效率？',
+          closeReading: cet4Set1QuestionCloseReadings[50],
           answer: 'B',
           evidence: 'Advocates of organic farming argue yields and efficiency could be significantly improved if the food industry devoted as much research and money to organic farming as it does conventional agriculture.',
           analysis: '条件句说明，只要食品行业投入与传统农业同等多的研究和资金，有机农业的产量和效率就能显著提高。B 中 more research and investment 与 research and money 对应。',
@@ -708,7 +709,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 51,
           prompt: 'What is the finding of one recent study about being selfish?',
-          translation: '一项近期研究对自私行为得出了什么发现？',
+          closeReading: cet4Set1QuestionCloseReadings[51],
           answer: 'A',
           evidence: 'It found that being selfish was more advantageous than cooperating. The benefit may be short-lived, however.',
           analysis: '研究发现自私比合作更有利，但紧接着用 however 限定这种 benefit 可能很短暂。因此应同时保留“有一定好处”和“只在短期内”两层信息。',
@@ -738,7 +739,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 52,
           prompt: 'What have researchers found by studying identical and non-identical twins?',
-          translation: '研究人员通过研究同卵双胞胎和异卵双胞胎发现了什么？',
+          closeReading: cet4Set1QuestionCloseReadings[52],
           answer: 'B',
           evidence: 'Researchers have found overwhelming evidence for genetic effects on behaviors.',
           analysis: '双胞胎研究通过比较基因共享程度不同的两组人，发现了基因影响行为的强有力证据。B 的 genetic traits determine behavior 是四个选项中对这一结论的对应表达。',
@@ -768,7 +769,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 53,
           prompt: 'What did the author and colleagues identify in their recent research?',
-          translation: '作者及其同事在近期研究中识别出了什么？',
+          closeReading: cet4Set1QuestionCloseReadings[53],
           answer: 'C',
           evidence: 'My colleagues and I recently identified a gene linked to altruistic behavior and found that a particular variant of it was associated with more selfish behavior in preschoolers.',
           analysis: '题干中的 identified 可直接回原文定位。其宾语是 a gene linked to altruistic behavior；后半句关于某个变体与自私行为相关，是对这个基因的进一步发现。',
@@ -798,7 +799,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 54,
           prompt: 'What do we learn from evolutionary scientists about cooperative behavior?',
-          translation: '关于合作行为，我们从进化科学家的观点中了解到什么？',
+          closeReading: cet4Set1QuestionCloseReadings[54],
           answer: 'A',
           evidence: 'Cooperative behavior may have evolved first among relatives to promote the continuation of their genetic line.',
           analysis: 'evolved first among relatives 表明合作行为最初可能出现在亲属之间；relatives 与 linked by blood 构成同义替换，因此 A 正确。',
@@ -828,7 +829,7 @@ export const cet4Reading202606Set1 = {
         {
           number: 55,
           prompt: 'What can we infer from the last paragraph?',
-          translation: '从最后一段可以推断出什么？',
+          closeReading: cet4Set1QuestionCloseReadings[55],
           answer: 'D',
           evidence: 'Culture, schooling and parenting are important determinants of cooperation.',
           analysis: '末段强调合作并非完全由基因决定，文化、学校教育和家庭教养都会影响它。既然后天环境能够塑造合作程度，就可以推断合作行为能够被培养。',
