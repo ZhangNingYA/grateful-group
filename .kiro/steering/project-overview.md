@@ -4,13 +4,12 @@ inclusion: always
 
 # Project Overview
 
-This is an **Astro + React + Three.js** project named **Tend**.
+This is an **Astro + React** project named **Tend**.
 
 ## Tech Stack
 
 - **Astro 6** — Static site generator (core framework)
 - **React 19** — Interactive UI components via `@astrojs/react`
-- **Three.js / React Three Fiber / Drei** — 3D rendering
 - **MDX** — Markdown with JSX support
 - **Vite** — Bundler (built into Astro)
 - **Sharp** — Image optimization
@@ -47,12 +46,11 @@ base: '/',
 
 - `src/pages/` — Astro pages (file-based routing)
 - `src/components/` — Astro and React components
-- `src/components/r3f/` — React Three Fiber 3D components
-- `src/content/` — Content collections (blog, games)
+- `src/content/` — Content collections (blog, games, works, papers)
 - `src/layouts/` — Page layouts
 - `src/styles/` — CSS stylesheets
-- `src/data/` — Data files (e.g. 3D model configs)
-- `public/` — Static assets served as-is (models, music, favicon)
+- `src/data/` — Structured data for reading and interactive content
+- `public/` — Static assets served as-is (music and favicon)
 
 ## Rules
 

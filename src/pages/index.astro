@@ -6,11 +6,10 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import '../styles/editorial.css';
 
-const [reading, works, papers, threeD] = await Promise.all([
+const [reading, works, papers] = await Promise.all([
   getCollection('reading'),
   getCollection('works'),
   getCollection('papers'),
-  getCollection('threeD'),
 ]);
 
 const sections = [
@@ -31,12 +30,6 @@ const sections = [
     label: 'Papers',
     count: papers.length,
     description: 'Context notes on papers, methods, and lines of research.',
-  },
-  {
-    href: '/threeD/',
-    label: 'ThreeD',
-    count: threeD.length,
-    description: 'Experiments in Three.js and real-time three-dimensional interfaces.',
   },
 ];
 

@@ -10,7 +10,6 @@ Live site: [www.fulafu.com](https://www.fulafu.com/)
 
 - Sentence-by-sentence English close-reading notes
 - Interactive learning material
-- Three.js and React Three Fiber experiments
 - Project, paper, and game collections
 - Sitemap generation
 
@@ -18,7 +17,6 @@ Live site: [www.fulafu.com](https://www.fulafu.com/)
 
 - Astro 6 and MDX
 - React 19
-- Three.js, React Three Fiber, and Drei
 - TypeScript
 
 ## Development
