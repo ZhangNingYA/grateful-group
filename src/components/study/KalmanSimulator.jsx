@@ -161,8 +161,8 @@ export default function KalmanSimulator() {
       <div className="simulator-legend" aria-hidden="true">
         <span className="legend-measurement">测量 <StudyMath expression="z_k" /></span>
         <span className="legend-truth">真实状态 <StudyMath expression="x_k" /></span>
-        <span className="legend-estimate">估计 <StudyMath expression="\\hat x_{k|k}" /></span>
-        <span className="legend-band"><StudyMath expression="\\pm2\\sigma_k" /> 置信带</span>
+        <span className="legend-estimate">估计 <StudyMath expression={'\\hat x_{k|k}'} /></span>
+        <span className="legend-band"><StudyMath expression={'\\pm2\\sigma_k'} /> 置信带</span>
       </div>
 
       <div className="simulator-controls">
@@ -179,10 +179,10 @@ export default function KalmanSimulator() {
       </div>
 
       <div className="simulator-stats">
-        <div><span>测量 <StudyMath expression="\\operatorname{RMSE}(z)" /></span><StudyMath expression={result.measurementError.toFixed(2)} /></div>
-        <div><span>估计 <StudyMath expression="\\operatorname{RMSE}(\\hat x)" /></span><StudyMath expression={result.estimateError.toFixed(2)} /></div>
-        <div><span>平均 <StudyMath expression="\\bar K" /></span><StudyMath expression={result.averageGain.toFixed(3)} /></div>
-        <div><span>末步 <StudyMath expression="\\sigma" /></span><StudyMath expression={Math.sqrt(result.latest.covariance).toFixed(2)} /></div>
+        <div><span>测量 <StudyMath expression={'\\operatorname{RMSE}(z)'} /></span><StudyMath expression={result.measurementError.toFixed(2)} /></div>
+        <div><span>估计 <StudyMath expression={'\\operatorname{RMSE}(\\hat x)'} /></span><StudyMath expression={result.estimateError.toFixed(2)} /></div>
+        <div><span>平均 <StudyMath expression={'\\bar K'} /></span><StudyMath expression={result.averageGain.toFixed(3)} /></div>
+        <div><span>末步 <StudyMath expression={'\\sigma'} /></span><StudyMath expression={Math.sqrt(result.latest.covariance).toFixed(2)} /></div>
       </div>
       <p className="simulator-interpretation"><b>读图提示：</b><StudyRichText>{interpretation}</StudyRichText> 调参时测量点保持不变，因此你看到的是滤波器信念的改变。置信带表达的是滤波器自己的不确定性，不是“真实值一定在里面”的保证。</p>
     </section>

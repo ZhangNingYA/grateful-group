@@ -84,7 +84,7 @@ export default function KalmanStoryBoard() {
       <div className="storyboard-legend" aria-hidden="true">
         <span className="storyboard-legend-truth">隐藏真实状态 <StudyMath expression="x_k" /></span>
         <span className="storyboard-legend-measurement">传感器测量 <StudyMath expression="z_k" /></span>
-        <span className="storyboard-legend-estimate">滤波估计 <StudyMath expression="\\hat x_{k|k}" /></span>
+        <span className="storyboard-legend-estimate">滤波估计 <StudyMath expression={'\\hat x_{k|k}'} /></span>
       </div>
 
       <div className="storyboard-caption">

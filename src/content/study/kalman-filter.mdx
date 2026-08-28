@@ -12,7 +12,7 @@ import KalmanStepExplorer from '../../components/study/KalmanStepExplorer.jsx';
 import KalmanFormulaAtlas from '../../components/study/KalmanFormulaAtlas.jsx';
 import KalmanStoryBoard from '../../components/study/KalmanStoryBoard.jsx';
 import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
-import StudyCoach from '../../components/study/StudyCoach.jsx';
+import KalmanPractice from '../../components/study/KalmanPractice.jsx';
 import StudyReflection from '../../components/study/StudyReflection.jsx';
 
 卡尔曼滤波不是一条“消除噪声的平滑公式”。它是一个**递归的贝叶斯估计器**：在一个线性、带高斯噪声的动态系统中，把模型给出的先验分布与传感器提供的新证据融合，得到状态的后验分布。
@@ -448,19 +448,35 @@ $$
   <strong>科学边界</strong><br />卡尔曼滤波在满足线性—高斯假设时给出精确的贝叶斯递推；在线性但非高斯情形下，它仍是线性最小均方误差估计器，但不能再声称完整后验一定是高斯分布。
 </div>
 
-## 07 / AI 导学：用问题检查自己的模型
+## 07 / 练习台：先算，再揭晓
 
-AI 在这类学习中最适合扮演“口试老师”，而不是替你生成一段更长的摘要。向它描述你在某个参数实验中的观察，让它追问因果关系、检查单位，或者要求你从极限情况解释公式。
+前面的推导已经给出完整公式，但真正掌握它还需要一次“闭卷”计算。下面的练习把同一条递推拆成四个检查点：先找创新，再找创新方差，接着求增益，最后更新状态。先凭自己的纸笔计算，卡住时只展开一个提示；提交后再对照分步答案。
 
-<StudyCoach client:visible />
+<KalmanPractice client:visible />
 
-当前页面的回复是本地教学演示，未调用外部模型。真正接入 AI 时，应把当前章节、实验参数、已完成检查题和你的原始解释作为受控上下文发送到服务端；API Key 不能放在静态前端。
+### 迁移练习：用极限情况检查答案
 
-你可以用下面三个标准检查 AI 的回答：
+完成数值题后，不要只看小数是否相同，还要检查答案是否满足结构约束。设先验均值为 $hat x^-$，测量为 $z$，且 $z>hat x^-$：
 
-1. 是否明确区分了状态、测量、估计与各自的不确定性；
-2. 是否说明结论依赖哪些模型假设，而不是把经验规律写成永恒定律；
-3. 是否能通过公式、单位或极限情况交叉验证，而不只是给出听起来顺畅的比喻。
+<div className="practice-checklist">
+  <div><span>位置约束</span><strong>$hat x^-<hat x^+<z$</strong><p>当 $0<K<1$ 时，后验是先验与测量之间的凸组合。</p></div>
+  <div><span>不确定性约束</span><strong>$0<P^+<P^-$</strong><p>吸收一个独立测量后，模型记录的不确定性不应增加。</p></div>
+  <div><span>极限约束</span><strong>$R\to0\Rightarrow K\to1$</strong><p>测量几乎完美时，后验应贴近测量；反之则贴近预测。</p></div>
+</div>
+
+<div className="worked-example">
+  <span>口算例题 · 先判断方向</span>
+  <p>若 $P^-=1$、$R=9$ 且创新 $y=4$，无需完整计算也能判断：$K=1/(1+9)=0.1$，所以状态只向测量方向移动约 $0.4$ 个单位，而不是移动完整的 $4$ 个单位。若你算出移动量大于 $4$，应先检查是否把 $K$ 和 $y$ 的角色写反。</p>
+</div>
+
+<div className="worked-example">
+  <span>反例练习 · 找出不可能的结果</span>
+  <p>某次更新得到 $hat x^-=6$、$z=8$、$K=0.25$，但记录的后验是 $hat x^+=9$。这不可能符合 $hat x^+=\hat x^-+K(z-\hat x^-)$：正确的移动量是 $0.25\times2=0.5$，因此后验应为 $6.5$。先用区间和量纲做快速筛查，再回到代数细算。</p>
+</div>
+
+<div className="study-note">
+  <strong>自测清单</strong><br />合上答案后，尝试不看页面写出五行递推；为每个量标注所在空间和单位；最后分别把 $R$ 调到极大、把 $Q$ 调到极大，用一句话预测曲线会怎样变化。能解释“为什么”，比记住一个小数更重要。
+</div>
 
 ## 08 / 总结：把递推压缩成一张地图
 

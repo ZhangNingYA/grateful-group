@@ -38,7 +38,12 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body class="textbook-page">
+  <body
+    class="textbook-page"
+    data-study-page
+    data-study-course={Astro.url.pathname}
+    data-study-title={title}
+  >
     <BlogHeader active="study" />
 
     <header class="textbook-cover">
@@ -92,7 +97,12 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
         </div>
       </aside>
 
-      <article class="textbook-content">
+      <article
+        class="textbook-content"
+        data-study-document
+        data-study-title={title}
+        data-study-description={description}
+      >
         <div class="textbook-introduction">
           <span class="textbook-label">How to use this chapter</span>
           <p>把它当成一本可以操作的教科书：先形成预测，再让数据反驳它；先写下自己的解释，再查看下一层公式。页面会记住你看过的章节和留下的笔记。</p>
@@ -129,6 +139,17 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
       </aside>
     </main>
 
+    <script
+      type="application/json"
+      id="study-document-meta"
+      set:html={JSON.stringify({
+        title,
+        description,
+        course: Astro.url.pathname,
+        sections: sections.map((section) => ({ id: section.slug, title: section.text })),
+      })}
+    ></script>
+
     <script define:vars={{ sectionCount: sections.length, sectionSlugs: sections.map((section) => section.slug) }}>
       const progressKey = `textbook-progress:${window.location.pathname}`;
       const headings = Array.from(document.querySelectorAll('.textbook-content h2'));
@@ -138,6 +159,10 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
       const progressPercent = document.querySelector('[data-study-progress-percent]');
       const progressCount = document.querySelector('[data-study-progress-count]');
       const currentLabel = document.querySelector('[data-study-current]');
+
+      document.querySelectorAll('.textbook-content h2').forEach((heading) => {
+        if (heading.id) heading.dataset.studySection = heading.id;
+      });
 
       try {
         JSON.parse(window.localStorage.getItem(progressKey) || '[]').forEach((key) => completed.add(key));

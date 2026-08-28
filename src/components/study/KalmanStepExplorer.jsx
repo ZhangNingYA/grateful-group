@@ -104,13 +104,13 @@ export default function KalmanStepExplorer() {
           <i className="step-uncertainty prior" style={{ left: position(current.prior), width: intervalWidth(priorUncertainty) }} />
           <i className="step-uncertainty posterior" style={{ left: position(current.estimate), width: intervalWidth(uncertainty) }} />
           <span className="step-marker prior" style={{ left: position(current.prior) }}>
-            <b>预测 <StudyMath expression="\\hat x_k^-" /></b><StudyMath expression={format(current.prior)} />
+            <b>预测 <StudyMath expression={'\\hat x_k^-'} /></b><StudyMath expression={format(current.prior)} />
           </span>
           <span className="step-marker measurement" style={{ left: position(current.measurement) }}>
             <b>测量 <StudyMath expression="z_k" /></b><StudyMath expression={format(current.measurement)} />
           </span>
           <span className="step-marker posterior" style={{ left: position(current.estimate) }}>
-            <b>更新 <StudyMath expression="\\hat x_k^+" /></b><StudyMath expression={format(current.estimate)} />
+            <b>更新 <StudyMath expression={'\\hat x_k^+'} /></b><StudyMath expression={format(current.estimate)} />
           </span>
         </div>
       </div>
