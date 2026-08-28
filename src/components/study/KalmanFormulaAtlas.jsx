@@ -171,7 +171,7 @@ export default function KalmanFormulaAtlas() {
             <dl>
               {active.terms.map(([symbol, name, meaning]) => (
                 <div key={symbol}>
-                  <dt><StudyMath expression={symbol} /><span>{name}</span></dt>
+                  <dt><StudyMath expression={symbol} /><span className="formula-term-name">{name}</span></dt>
                   <dd><StudyRichText>{meaning}</StudyRichText></dd>
                 </div>
               ))}

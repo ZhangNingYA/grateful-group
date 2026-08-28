@@ -10,6 +10,7 @@ subject: 'State Estimation / Control'
 import KalmanSimulator from '../../components/study/KalmanSimulator.jsx';
 import KalmanStepExplorer from '../../components/study/KalmanStepExplorer.jsx';
 import KalmanFormulaAtlas from '../../components/study/KalmanFormulaAtlas.jsx';
+import KalmanStoryBoard from '../../components/study/KalmanStoryBoard.jsx';
 import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 import StudyCoach from '../../components/study/StudyCoach.jsx';
 import StudyReflection from '../../components/study/StudyReflection.jsx';
@@ -33,6 +34,8 @@ import StudyReflection from '../../components/study/StudyReflection.jsx';
     <p>卡尔曼增益 $K_k$ 随 $P$、$Q$、$R$ 动态变化，不是手调常数。</p>
   </div>
 </div>
+
+<KalmanStoryBoard client:visible />
 
 ## 01 / 问题：看不见的状态
 

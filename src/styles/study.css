@@ -141,7 +141,7 @@
 .diagram-orbit-one { inset: 30px 0; }
 .diagram-orbit-two { inset: 0 48px; transform: rotate(42deg); }
 .diagram-core { position: absolute; top: 50%; left: 50%; display: grid; width: 98px; height: 98px; place-content: center; border: 1px solid #f17c63; border-radius: 50%; background: #21395f; box-shadow: 0 0 0 12px rgba(216, 93, 73, 0.1), 0 0 45px rgba(241, 124, 99, 0.25); text-align: center; transform: translate(-50%, -50%); }
-.diagram-core span { font-family: var(--textbook-serif); font-size: 2.4rem; line-height: 1; }
+.diagram-core > .study-math { font-family: var(--textbook-serif); font-size: 2.4rem; line-height: 1; }
 .diagram-core small { margin-top: 5px; color: #a9b8cf; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .diagram-label { position: absolute; color: #a9b8cf; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; }
 .diagram-label-top { top: 7px; left: 50%; transform: translateX(-50%); }
@@ -149,6 +149,33 @@
 .diagram-label-bottom { bottom: 7px; left: 50%; transform: translateX(-50%); }
 .textbook-cover-footer { display: flex; flex-wrap: wrap; gap: 28px; padding: 16px 0 20px; border-top: 1px solid #304568; color: #91a4c0; font-size: 0.69rem; }
 .textbook-cover-footer span:last-child { margin-left: auto; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .diagram-orbit-one { animation: textbook-orbit-one 16s linear infinite; }
+  .diagram-orbit-two { animation: textbook-orbit-two 20s linear infinite reverse; }
+  .storyboard-current-estimate { animation: storyboard-pulse 1.6s ease-in-out infinite; }
+  .study-card, .storyboard, .formula-atlas { animation: textbook-rise 460ms ease both; }
+}
+
+@keyframes textbook-orbit-one {
+  from { transform: rotate(-22deg); }
+  to { transform: rotate(338deg); }
+}
+
+@keyframes textbook-orbit-two {
+  from { transform: rotate(42deg); }
+  to { transform: rotate(402deg); }
+}
+
+@keyframes storyboard-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.65; transform: scale(1.35); }
+}
+
+@keyframes textbook-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .textbook-layout { display: grid; grid-template-columns: 210px minmax(0, 770px) 210px; gap: 44px; width: min(1280px, calc(100% - 64px)); margin: 0 auto; padding: 60px 0 100px; align-items: start; }
 .textbook-rail, .textbook-inspector { min-width: 0; }
@@ -240,7 +267,7 @@
 .symbol-grid > div { display: grid; grid-template-columns: minmax(120px, 0.8fr) minmax(100px, 0.6fr) minmax(0, 1.3fr); gap: 11px; align-items: center; padding: 12px 13px; border: 1px solid var(--textbook-line); background: var(--textbook-surface); }
 .symbol-formula { color: var(--textbook-blue); font-size: 0.8rem; }
 .symbol-grid strong { font-size: 0.76rem; }
-.symbol-grid span { color: var(--textbook-muted); font-size: 0.68rem; line-height: 1.45; }
+.symbol-grid > div > span { color: var(--textbook-muted); font-size: 0.68rem; line-height: 1.45; }
 .assumption-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 1.8rem 0 2.2rem; }
 .assumption-grid > div { padding: 14px 15px; border: 1px solid #d8d6e6; background: #faf9ff; }
 .assumption-grid > div > div { min-height: 35px; overflow-x: auto; color: var(--textbook-violet); font-size: 0.78rem; }
@@ -252,17 +279,57 @@
 .worked-example p:last-child { margin-bottom: 0; }
 .worked-example ol { margin: 9px 0 13px; padding-left: 1.3rem; }
 .derivation-stack { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 1.7rem 0 2.1rem; }
-.derivation-stack > div { padding: 14px; border: 1px solid #cbd9e2; background: #f6f9fb; }
-.derivation-stack span { display: block; margin-bottom: 8px; color: var(--textbook-muted); font-size: 0.62rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
-.derivation-formula { min-height: 32px; color: var(--textbook-blue); font-size: 0.9rem; }
+.derivation-stack > div { position: relative; display: grid; align-content: start; min-width: 0; padding: 14px; border: 1px solid #cbd9e2; background: #f6f9fb; transition: transform 160ms ease, box-shadow 160ms ease; }
+.derivation-stack > div:nth-child(1) { border-top: 3px solid var(--textbook-violet); }
+.derivation-stack > div:nth-child(2) { border-top: 3px solid var(--textbook-coral); }
+.derivation-stack > div:nth-child(3) { border-top: 3px solid var(--textbook-teal); }
+.derivation-stack > div:hover { box-shadow: 0 5px 0 rgba(47, 110, 158, 0.08); transform: translateY(-2px); }
+.derivation-stack > div:nth-child(1)::after, .derivation-stack > div:nth-child(2)::after { position: absolute; top: 50%; right: -15px; z-index: 1; display: grid; width: 22px; height: 22px; place-items: center; border: 1px solid #cbd9e2; border-radius: 50%; background: var(--textbook-paper); color: var(--textbook-blue); content: '+'; font-family: var(--textbook-serif); font-size: 0.9rem; transform: translateY(-50%); }
+.derivation-stack > div:nth-child(2)::after { content: '='; }
+.derivation-stack > div > span { display: block; margin-bottom: 8px; color: var(--textbook-muted); font-size: 0.62rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+.derivation-formula { min-width: 0; min-height: 32px; overflow-x: auto; color: var(--textbook-blue); font-size: 0.9rem; }
 .derivation-stack p { margin: 7px 0 0; color: var(--textbook-muted); font-size: 0.7rem; line-height: 1.5; }
 .algorithm-map { display: grid; gap: 7px; margin: 2rem 0 2.6rem; counter-reset: algorithm; }
 .algorithm-map > div { display: grid; grid-template-columns: 105px 230px minmax(0, 1fr); gap: 16px; align-items: center; padding: 13px 15px; border: 1px solid var(--textbook-line); background: var(--textbook-surface); }
 .algorithm-map > div:nth-child(odd) { border-left: 3px solid var(--textbook-teal); }
 .algorithm-map > div:nth-child(even) { border-left: 3px solid var(--textbook-blue); }
-.algorithm-map span { color: var(--textbook-muted); font-size: 0.67rem; font-weight: 750; }
+.algorithm-map > div > span { color: var(--textbook-muted); font-size: 0.67rem; font-weight: 750; }
 .algorithm-formula { color: var(--textbook-ink); font-size: 0.8rem; }
 .algorithm-map p { margin: 0; color: var(--textbook-muted); font-size: 0.7rem; line-height: 1.5; }
+
+/* A small visual story keeps the abstract symbols attached to a moving scene. */
+.storyboard { position: relative; margin: 2.5rem 0 3.3rem; padding: 22px; border: 1px solid #cfd7df; background: #fffefa; box-shadow: 8px 8px 0 rgba(216, 93, 73, 0.1); }
+.storyboard::before { position: absolute; top: 0; right: 0; width: 42%; height: 4px; background: linear-gradient(90deg, var(--textbook-coral), var(--textbook-gold)); content: ''; }
+.storyboard-head { display: flex; align-items: start; justify-content: space-between; gap: 20px; }
+.storyboard-head h3 { margin: 7px 0 0; color: var(--textbook-ink); font-size: 1.5rem; }
+.storyboard-play { flex-shrink: 0; padding: 8px 11px; border: 1px solid var(--textbook-coral); border-radius: 5px; background: var(--textbook-coral-soft); color: #9b4334; cursor: pointer; font: inherit; font-size: 0.7rem; font-weight: 700; }
+.storyboard-play:hover { background: #ffe3dc; transform: translateY(-1px); }
+.storyboard-intro { max-width: 650px; margin: 12px 0 17px; color: var(--textbook-muted); font-size: 0.78rem; line-height: 1.65; }
+.storyboard-chart { display: block; width: 100%; height: auto; min-height: 205px; border: 1px solid #dce3e8; background: #f7f9f8; }
+.storyboard-grid { stroke: #dfe6e9; stroke-width: 1; }
+.storyboard-truth { fill: none; stroke: #627386; stroke-dasharray: 5 5; stroke-width: 2; }
+.storyboard-estimate { fill: none; stroke: var(--textbook-teal); stroke-width: 3; }
+.storyboard-measurement { fill: var(--textbook-coral); opacity: 0.65; transition: r 240ms ease, opacity 240ms ease; }
+.storyboard-measurement.is-current { opacity: 1; }
+.storyboard-cursor { stroke: var(--textbook-coral); stroke-dasharray: 3 4; stroke-width: 1; opacity: 0.8; }
+.storyboard-current-truth { fill: #fff; stroke: #627386; stroke-width: 2; }
+.storyboard-current-estimate { fill: var(--textbook-teal); stroke: #fff; stroke-width: 2; }
+.storyboard-legend { display: flex; flex-wrap: wrap; gap: 9px 18px; margin-top: 10px; color: var(--textbook-muted); font-size: 0.67rem; }
+.storyboard-legend > span::before { display: inline-block; width: 18px; height: 2px; margin: 0 6px 3px 0; background: currentColor; content: ''; }
+.storyboard-legend-truth::before { background: #627386 !important; }
+.storyboard-legend-measurement::before { width: 7px !important; height: 7px !important; margin-bottom: 1px !important; border-radius: 50%; background: var(--textbook-coral) !important; }
+.storyboard-legend-estimate::before { height: 3px !important; background: var(--textbook-teal) !important; }
+.storyboard-caption { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) auto; gap: 18px; align-items: center; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--textbook-line); }
+.storyboard-caption > div:first-child { display: grid; gap: 4px; }
+.storyboard-caption > div:first-child > span { color: var(--textbook-coral); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.storyboard-caption > div:first-child .study-math { color: var(--textbook-ink); font-size: 0.83rem; }
+.storyboard-caption p { margin: 0; color: var(--textbook-ink-soft); font-size: 0.78rem; line-height: 1.6; }
+.storyboard-numbers { display: grid; gap: 5px; color: var(--textbook-muted); font-size: 0.67rem; white-space: nowrap; }
+.storyboard-timeline { display: grid; gap: 5px; margin-top: 18px; color: var(--textbook-muted); font-size: 0.66rem; }
+.storyboard-timeline input { width: 100%; accent-color: var(--textbook-coral); }
+.storyboard-timeline > div { display: flex; justify-content: space-between; color: #a0acb7; font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.62rem; }
+.storyboard-timeline i { font-style: normal; }
+.storyboard-timeline i.is-active { color: var(--textbook-coral); font-weight: 800; }
 
 /* Interactive formula atlas */
 .formula-atlas { margin: 2.7rem 0 3.2rem; border: 1px solid #b8cce0; background: #f7faff; box-shadow: 8px 8px 0 rgba(47, 110, 158, 0.1); }
@@ -287,7 +354,7 @@
 .formula-atlas-symbols dl { display: grid; gap: 7px; margin: 0; }
 .formula-atlas-symbols dl div { padding: 10px 11px; border: 1px solid #d7e0e9; background: white; }
 .formula-atlas-symbols dt { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; color: var(--textbook-blue); font-size: 0.73rem; }
-.formula-atlas-symbols dt span { color: var(--textbook-muted); font-size: 0.63rem; }
+.formula-atlas-symbols dt .formula-term-name { color: var(--textbook-muted); font-size: 0.63rem; }
 .formula-atlas-symbols dd { margin: 5px 0 0; color: var(--textbook-muted); font-size: 0.67rem; line-height: 1.5; }
 .formula-atlas-derivation ol { display: grid; gap: 9px; margin: 0; padding-left: 1.25rem; }
 .formula-atlas-derivation li { margin: 0; color: #50637a; font-size: 0.72rem; line-height: 1.6; }
@@ -338,7 +405,7 @@
 .step-equation-accent { border-top: 3px solid var(--textbook-coral); }
 .step-insight { display: grid; gap: 4px; margin-top: 12px; padding: 13px 15px; border-left: 3px solid var(--textbook-teal); background: var(--textbook-teal-soft); color: #315a58; font-size: 0.78rem; line-height: 1.55; }
 .step-insight strong { color: var(--textbook-teal); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
-.step-insight span { color: #587a76; font-size: 0.7rem; }
+.step-insight > span { color: #587a76; font-size: 0.7rem; }
 
 /* Simulator */
 .simulator-card { margin: 2.5rem 0 3rem; padding: 22px; border: 1px solid #b8d8d1; background: #fbfffd; box-shadow: 7px 7px 0 rgba(25, 125, 114, 0.09); }
@@ -360,7 +427,7 @@
 .chart-truth { fill: none; stroke: #536e83; stroke-dasharray: 6 5; stroke-width: 2; }
 .chart-estimate { fill: none; stroke: var(--textbook-teal); stroke-width: 3; }
 .simulator-legend { display: flex; flex-wrap: wrap; gap: 10px 19px; margin-top: 10px; color: var(--textbook-muted); font-size: 0.68rem; }
-.simulator-legend span::before { display: inline-block; width: 19px; height: 2px; margin: 0 6px 3px 0; background: currentColor; content: ''; }
+.simulator-legend > span::before { display: inline-block; width: 19px; height: 2px; margin: 0 6px 3px 0; background: currentColor; content: ''; }
 .simulator-legend .legend-measurement::before { width: 7px; height: 7px; margin-bottom: 1px; border-radius: 50%; background: var(--textbook-coral); }
 .simulator-legend .legend-truth::before { background: #536e83; }
 .simulator-legend .legend-estimate::before { height: 3px; background: var(--textbook-teal); }
@@ -369,7 +436,7 @@
 .simulator-controls small { color: #75877f; font-size: 0.66rem; }
 .simulator-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; margin-top: 18px; }
 .simulator-stats div { padding: 11px; background: #eaf5f0; }
-.simulator-stats span { display: block; color: var(--textbook-muted); font-size: 0.64rem; }
+.simulator-stats > div > span { display: block; color: var(--textbook-muted); font-size: 0.64rem; }
 .simulator-stats strong, .simulator-stats > div > .study-math { display: block; margin-top: 4px; color: var(--textbook-ink); font-size: 0.95rem; }
 .simulator-interpretation { margin: 16px 0 0; color: #426866; font-size: 0.75rem; line-height: 1.65; }
 .simulator-interpretation b { color: var(--textbook-teal); }
@@ -467,10 +534,13 @@
   .study-lead-grid, .study-reflection-grid { grid-template-columns: 1fr; }
   .study-equation-card { grid-template-columns: 1fr; }
   .study-equation-side { padding: 12px 0 0; border-top: 1px solid #abd0c6; border-left: 0; }
+  .storyboard-caption { grid-template-columns: 1fr; gap: 9px; }
+  .storyboard-numbers { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
   .notation-guide dl, .symbol-grid, .assumption-grid, .formula-atlas-details { grid-template-columns: 1fr; }
   .notation-guide dl div, .notation-guide dl div:nth-child(odd), .notation-guide dl div:nth-last-child(-n + 2) { border-right: 0; border-bottom: 1px solid #e0e5e9; }
   .notation-guide dl div:last-child { border-bottom: 0; }
   .derivation-stack { grid-template-columns: 1fr; }
+  .derivation-stack > div:nth-child(1)::after, .derivation-stack > div:nth-child(2)::after { display: none; }
   .algorithm-map > div { grid-template-columns: 95px 210px minmax(0, 1fr); }
 }
 
@@ -496,6 +566,11 @@
   .formula-atlas-panel { padding: 15px; }
   .algorithm-map > div { grid-template-columns: 1fr; gap: 6px; }
   .algorithm-formula { font-size: 0.76rem; }
+  .storyboard { padding: 15px; }
+  .storyboard-head { display: block; }
+  .storyboard-play { margin-top: 12px; }
+  .storyboard-chart { min-height: 170px; }
+  .storyboard-numbers { display: flex; flex-wrap: wrap; gap: 7px 12px; }
   .step-explorer-head, .simulator-heading { display: block; }
   .step-explorer-head p { max-width: none; margin-top: 9px; text-align: left; }
   .step-explorer-controls, .step-equations, .simulator-controls, .simulator-stats { grid-template-columns: 1fr; }
