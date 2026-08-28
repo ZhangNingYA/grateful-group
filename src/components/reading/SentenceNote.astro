@@ -422,20 +422,29 @@ const glossaryMatches = (): Array<{
       const firstFallbackToken = sortedFallbackTokens[0];
       const lastFallbackToken = sortedFallbackTokens.at(-1);
       if (!firstFallbackToken || !lastFallbackToken) return;
-      const keepNearbyContentTogether = (
+      // Keep a transformed phrase as one glossary target. If its arguments
+      // are separated or reordered in the sentence, anchor the target on the
+      // first meaningful lexical item rather than creating several buttons
+      // for one phrase.
+      const firstLiteralToken = termWords.find((token, index) => (
+        !isPlaceholder(token, index) && !fallbackStopWords.has(token.text)
+      ));
+      const anchorToken = firstLiteralToken
+        ? fallbackTokens.find((token) => wordsEquivalent(token.text, firstLiteralToken.text))
+        : undefined;
+      const fallbackRange = anchorToken && (
         lastFallbackToken.sentenceTokenIndex - firstFallbackToken.sentenceTokenIndex <= 8
-      );
+      )
+        ? { start: firstFallbackToken.start, end: lastFallbackToken.end }
+        : { start: (anchorToken ?? firstFallbackToken).start, end: (anchorToken ?? firstFallbackToken).end };
 
-      const fallbackRanges = keepNearbyContentTogether
-        ? [{ start: firstFallbackToken.start, end: lastFallbackToken.end }]
-        : fallbackTokens.map((token) => ({ start: token.start, end: token.end }));
-      fallbackRanges.forEach((range) => candidates.push([{
-        ...range,
+      candidates.push([{
+        ...fallbackRange,
         term: item.term,
         explanation: item.explanation,
         partOfSpeech: '短语',
         priority: phrasePriorityBase + contextPriority + termTokenCount * 1000 + 50,
-      }]));
+      }]);
     });
 
   const claimedGroups: GlossaryMatch[][] = [];
@@ -455,7 +464,7 @@ const glossaryMatches = (): Array<{
           });
         });
 
-        return ranges.flatMap((range) => {
+        const usableRanges = ranges.flatMap((range) => {
           const tokens = sentenceWords.filter((token) => (
             token.start < range.end && token.end > range.start
           ));
@@ -476,6 +485,13 @@ const glossaryMatches = (): Array<{
           if (!containsLiteralPart) return [];
           return [{ ...match, start: firstToken.start, end: lastToken.end }];
         });
+        if (usableRanges.length <= 1) return usableRanges;
+        // A higher-priority phrase may sit inside this range. Keep the
+        // largest remaining piece as a single target instead of splitting one
+        // glossary entry into multiple disconnected buttons.
+        return [usableRanges.sort((a, b) => (
+          (b.end - b.start) - (a.end - a.start) || a.start - b.start
+        ))[0]];
       });
       if (remaining.length > 0) claimedGroups.push(remaining);
     });
