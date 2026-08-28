@@ -256,6 +256,34 @@ body.reading-post-page {
 
 .reading-post-footer a { color: inherit; }
 
+@media (min-width: 761px) {
+  body.reading-post-page:not(.reading-post-page--headerless) .reading-post-grid {
+    grid-template-columns: clamp(132px, 13vw, 150px) minmax(0, 900px);
+    column-gap: clamp(28px, 3.5vw, 40px);
+  }
+
+  body.reading-post-page:not(.reading-post-page--headerless) .reading-post-rail p {
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 0.67rem;
+  }
+
+  body.reading-post-page:not(.reading-post-page--headerless) .reading-post-rail nav {
+    padding-left: 14px;
+  }
+
+  body.reading-post-page:not(.reading-post-page--headerless) .reading-post-rail a {
+    grid-template-columns: 21px minmax(0, 1fr);
+    gap: 5px;
+    padding: 8px 0;
+    font-size: 0.75rem;
+  }
+
+  body.reading-post-page:not(.reading-post-page--headerless) .reading-post-rail a::before {
+    left: -14px;
+  }
+}
+
 @media (max-width: 760px) {
   .reading-post-shell,
   .reading-post-navigation,
