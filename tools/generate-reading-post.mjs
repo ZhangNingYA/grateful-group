@@ -11,25 +11,15 @@ if (!slugMatch) {
 }
 
 const [, year, month, setNumber] = slugMatch;
-const inputFiles = [
-  path.join(root, 'src', 'data', 'reading', `${sourceSlug}.json`),
-  path.join(root, 'src', 'data', 'learning', `${sourceSlug}.json`),
-];
+const inputFile = path.join(root, 'src', 'data', 'reading', `${sourceSlug}.json`);
 const outputSlug = sourceSlug.replace('-reading-', '-');
 const outputFile = path.join(root, 'src', 'content', 'reading', `${outputSlug}.mdx`);
 
-let inputFile;
 let data;
-for (const candidate of inputFiles) {
-  try {
-    data = JSON.parse(await readFile(candidate, 'utf8'));
-    inputFile = candidate;
-    break;
-  } catch (error) {
-    if (error?.code !== 'ENOENT') throw error;
-  }
-}
-if (!data || !inputFile) {
+try {
+  data = JSON.parse(await readFile(inputFile, 'utf8'));
+} catch (error) {
+  if (error?.code !== 'ENOENT') throw error;
   throw new Error(`No reading data found for ${sourceSlug}`);
 }
 

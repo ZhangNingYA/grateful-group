@@ -21,20 +21,6 @@ const games = defineCollection({
     }),
 });
 
-const learning = defineCollection({
-    loader: glob({ base: './src/content/learning', pattern: '**/*.{md,mdx}' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            description: z.string(),
-            pubDate: z.coerce.date(),
-            updatedDate: z.coerce.date().optional(),
-            heroImage: z.optional(image()),
-            hideHeader: z.boolean().optional(),
-            hideTopbar: z.boolean().optional(),
-        }),
-});
-
 const threeD = defineCollection({
     loader: glob({ base: './src/content/threeD', pattern: '**/*.{md,mdx}' }),
     schema: ({ image }) =>
@@ -80,4 +66,4 @@ const papers = defineCollection({
         }),
 });
 
-export const collections = { reading, games, learning, threeD, works, papers };
+export const collections = { reading, games, threeD, works, papers };

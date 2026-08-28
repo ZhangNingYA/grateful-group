@@ -6,10 +6,9 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import '../styles/editorial.css';
 
-const [reading, works, learning, papers, threeD] = await Promise.all([
+const [reading, works, papers, threeD] = await Promise.all([
   getCollection('reading'),
   getCollection('works'),
-  getCollection('learning'),
   getCollection('papers'),
   getCollection('threeD'),
 ]);
@@ -26,12 +25,6 @@ const sections = [
     label: 'Reading',
     count: reading.length,
     description: 'English texts studied closely, sentence by sentence.',
-  },
-  {
-    href: '/learning/',
-    label: 'Learning',
-    count: learning.length,
-    description: 'Reading practice, concept maps, and an evolving learning archive.',
   },
   {
     href: '/papers/',
