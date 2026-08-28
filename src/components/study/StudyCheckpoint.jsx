@@ -1,9 +1,19 @@
 import { useEffect, useState } from 'react';
+import StudyRichText from './StudyRichText.jsx';
 
-export default function StudyCheckpoint({ id, question, options, answer, explanation }) {
+export default function StudyCheckpoint({
+  id,
+  question,
+  options,
+  answer,
+  explanation,
+  hint,
+  wrongFeedback = '还差一点。重新检查每个选项背后的假设，再试一次。',
+}) {
   const storageKey = `study-checkpoint:${id}`;
   const [selected, setSelected] = useState(null);
   const [result, setResult] = useState(null);
+  const [showHint, setShowHint] = useState(false);
 
   useEffect(() => {
     try {
@@ -35,8 +45,10 @@ export default function StudyCheckpoint({ id, question, options, answer, explana
         <h3 id={`${id}-title`}>停下来，先做一个判断</h3>
         <span>Checkpoint</span>
       </div>
-      <p className="study-checkpoint-question">{question}</p>
+      <p className="study-checkpoint-question"><StudyRichText>{question}</StudyRichText></p>
       <form onSubmit={checkAnswer}>
+        <fieldset className="checkpoint-fieldset">
+          <legend className="sr-only">选择一个答案</legend>
         <div className="study-checkpoint-options">
           {options.map((option, index) => (
             <label className="study-checkpoint-option" key={option}>
@@ -47,17 +59,26 @@ export default function StudyCheckpoint({ id, question, options, answer, explana
                 checked={selected !== null && Number(selected) === index}
                 onChange={() => setSelected(index)}
               />
-              <span>{option}</span>
+              <span><StudyRichText>{option}</StudyRichText></span>
             </label>
           ))}
         </div>
-        <button className="study-checkpoint-submit" type="submit">检查我的判断</button>
+        </fieldset>
+        <div className="checkpoint-actions">
+          <button className="study-checkpoint-submit" type="submit" disabled={selected === null}>检查我的判断</button>
+          {hint && (
+            <button className="study-checkpoint-hint" type="button" onClick={() => setShowHint((value) => !value)}>
+              {showHint ? '收起提示' : '我需要一个提示'}
+            </button>
+          )}
+        </div>
       </form>
+      {showHint && hint && <p className="study-checkpoint-hint-copy"><b>提示：</b><StudyRichText>{hint}</StudyRichText></p>}
       {result === 'correct' && (
-        <p className="study-checkpoint-result success" role="status">判断正确。{explanation}</p>
+        <p className="study-checkpoint-result success" role="status">判断正确。<StudyRichText>{explanation}</StudyRichText></p>
       )}
       {result === 'wrong' && (
-        <p className="study-checkpoint-result" role="status">还差一点。回到模拟器，再观察一次 Q 和 R 的变化。</p>
+        <p className="study-checkpoint-result" role="status"><StudyRichText>{wrongFeedback}</StudyRichText></p>
       )}
     </section>
   );

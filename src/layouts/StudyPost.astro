@@ -4,6 +4,8 @@ import type { MarkdownHeading } from 'astro';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import StudyMath from '../components/study/StudyMath.jsx';
+import 'katex/dist/katex.min.css';
 import '../styles/study.css';
 
 type Props = CollectionEntry<'study'>['data'] & {
@@ -28,6 +30,7 @@ const modeLabels = {
 } as const;
 
 const sections = headings.filter((heading) => heading.depth === 2);
+const estimatedMinutes = Math.max(45, sections.length * 10);
 ---
 
 <!doctype html>
@@ -35,148 +38,154 @@ const sections = headings.filter((heading) => heading.depth === 2);
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body class="study-lab-page">
+  <body class="textbook-page">
     <BlogHeader active="study" />
 
-    <header class="study-lab-header">
-      <a class="study-back-link" href="/study/">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg>
-        Study desk
-      </a>
-
-      <div class="study-lab-title-row">
-        <div>
-          <p class="study-lab-kicker">{modeLabels[mode]} / {subject}</p>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </div>
-        <div class="study-lab-intent" aria-label="学习方式">
-          <span class="study-lab-stat-label">The loop</span>
-          <strong>Try → explain</strong>
-          <span>让理解在反馈中变得可见</span>
-        </div>
-      </div>
-
-      <div class="study-lab-stats">
-        <div class="study-lab-stat">
-          <span class="study-lab-stat-label">Published</span>
-          <span class="study-lab-stat-value"><FormattedDate date={pubDate} /></span>
-        </div>
-        <div class="study-lab-stat">
-          <span class="study-lab-stat-label">Units</span>
-          <span class="study-lab-stat-value">{String(sections.length).padStart(2, '0')}</span>
-        </div>
-        <div class="study-lab-stat">
-          <span class="study-lab-stat-label">Mode</span>
-          <span class="study-lab-stat-value">{modeLabels[mode]}</span>
-        </div>
-        {updatedDate && (
-          <div class="study-lab-stat">
-            <span class="study-lab-stat-label">Updated</span>
-            <span class="study-lab-stat-value"><FormattedDate date={updatedDate} /></span>
+    <header class="textbook-cover">
+      <div class="textbook-cover-inner">
+        <a class="textbook-back" href="/study/">
+          <span aria-hidden="true">←</span> Study desk
+        </a>
+        <div class="textbook-cover-grid">
+          <div class="textbook-cover-copy">
+            <div class="textbook-overline"><span>Chapter 01</span><span>{modeLabels[mode]}</span><span>{subject}</span></div>
+            <h1>{title}</h1>
+            <p class="textbook-subtitle">{description}</p>
+            <div class="textbook-cover-actions">
+              <a class="textbook-primary-action" href={`#${sections[0]?.slug ?? ''}`}>从第一节开始 <span aria-hidden="true">↓</span></a>
+              <span class="textbook-reading-time">约 {estimatedMinutes} 分钟 · {sections.length} 个单元</span>
+            </div>
           </div>
-        )}
+          <div class="textbook-cover-diagram" aria-label="本章学习循环">
+            <div class="diagram-orbit diagram-orbit-one"></div>
+            <div class="diagram-orbit diagram-orbit-two"></div>
+            <div class="diagram-core"><StudyMath expression={'\\hat x'} /><small>estimate</small></div>
+            <span class="diagram-label diagram-label-top">model</span>
+            <span class="diagram-label diagram-label-right">evidence</span>
+            <span class="diagram-label diagram-label-bottom">feedback</span>
+          </div>
+        </div>
+        <div class="textbook-cover-footer">
+          <span>Published <FormattedDate date={pubDate} /></span>
+          {updatedDate && <span>Updated <FormattedDate date={updatedDate} /></span>}
+          <span>阅读时请打开实验，边看边改参数。</span>
+        </div>
       </div>
     </header>
 
-    <main class="study-lab-grid">
-      <aside class="study-roadmap" aria-label="学习路线">
-        <p class="study-roadmap-kicker">Route map</p>
-        <ol>
-          {sections.map((heading, index) => (
-            <li>
-              <a href={`#${heading.slug}`} data-study-nav-link={heading.slug}>
-                <span class="study-roadmap-index">{String(index + 1).padStart(2, '0')}</span>
-                {heading.text}
-              </a>
-            </li>
-          ))}
-        </ol>
+    <main class="textbook-layout">
+      <aside class="textbook-rail" aria-label="章节导航">
+        <div class="rail-sticky">
+          <div class="rail-heading"><span>Contents</span><b>{String(sections.length).padStart(2, '0')}</b></div>
+          <ol>
+            {sections.map((heading, index) => (
+              <li>
+                <a href={`#${heading.slug}`} data-study-nav-link={heading.slug}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <em>{heading.text.replace(/^\d+\s*\/\s*/, '')}</em>
+                </a>
+              </li>
+            ))}
+          </ol>
+          <div class="rail-rule"></div>
+          <p class="rail-note">这不是线性文章。可以先实验，再回到公式；每次回来都从上次留下的问题继续。</p>
+        </div>
       </aside>
 
-      <article class="study-body">
+      <article class="textbook-content">
+        <div class="textbook-introduction">
+          <span class="textbook-label">How to use this chapter</span>
+          <p>把它当成一本可以操作的教科书：先形成预测，再让数据反驳它；先写下自己的解释，再查看下一层公式。页面会记住你看过的章节和留下的笔记。</p>
+        </div>
         <slot />
+        <footer class="textbook-endnote">
+          <span>End of chapter</span>
+          <a href="/study/">回到 Study desk →</a>
+        </footer>
       </article>
 
-      <aside class="study-status" aria-label="学习进度">
-        <div class="study-status-card">
-          <p class="study-status-kicker">Your state</p>
-          <h2>这一次走到哪里了？</h2>
-          <div class="study-status-bar"><span data-study-progress-bar></span></div>
-          <div class="study-status-copy">
-            <span data-study-progress-count>00 / {String(sections.length).padStart(2, '0')} units</span>
-            <span data-study-progress-percent>0%</span>
+      <aside class="textbook-inspector" aria-label="学习状态">
+        <div class="inspector-sticky">
+          <div class="inspector-card inspector-progress">
+            <div class="inspector-card-head"><span>Chapter progress</span><b data-study-progress-percent>0%</b></div>
+            <div class="inspector-progress-track"><span data-study-progress-bar></span></div>
+            <p><strong data-study-progress-count>00</strong> / {String(sections.length).padStart(2, '0')} sections explored</p>
           </div>
-          <p class="study-status-note">完成检查题或进入一个实验单元后，进度会保存在当前浏览器。</p>
+          <div class="inspector-card inspector-current">
+            <span class="textbook-label">现在所在</span>
+            <strong data-study-current>开篇</strong>
+            <span>滚动到下一节，页面会自动更新。</span>
+          </div>
+          <div class="inspector-card inspector-glossary">
+            <span class="textbook-label">本章词典</span>
+            <dl>
+              <div><dt>状态 <StudyMath expression="x_k" /></dt><dd>真正想知道的量</dd></div>
+              <div><dt>测量 <StudyMath expression="z_k" /></dt><dd>传感器给出的证据</dd></div>
+              <div><dt>协方差 <StudyMath expression="P_k" /></dt><dd>对估计不确定性的量化</dd></div>
+              <div><dt>增益 <StudyMath expression="K_k" /></dt><dd>这次如何映射创新</dd></div>
+            </dl>
+          </div>
         </div>
       </aside>
     </main>
 
-    <footer class="study-index-footer">
-      <span>Study desk · Tend</span>
-      <a href="/study/">返回全部学习实验</a>
-    </footer>
-
     <script define:vars={{ sectionCount: sections.length, sectionSlugs: sections.map((section) => section.slug) }}>
-      const pathKey = `study-progress:${window.location.pathname}`;
-      const stepElements = Array.from(document.querySelectorAll('[data-study-step]'));
-      const progressBar = document.querySelector('[data-study-progress-bar]');
-      const progressCount = document.querySelector('[data-study-progress-count]');
-      const progressPercent = document.querySelector('[data-study-progress-percent]');
+      const progressKey = `textbook-progress:${window.location.pathname}`;
+      const headings = Array.from(document.querySelectorAll('.textbook-content h2'));
       const navLinks = Array.from(document.querySelectorAll('[data-study-nav-link]'));
       const completed = new Set();
+      const progressBar = document.querySelector('[data-study-progress-bar]');
+      const progressPercent = document.querySelector('[data-study-progress-percent]');
+      const progressCount = document.querySelector('[data-study-progress-count]');
+      const currentLabel = document.querySelector('[data-study-current]');
 
       try {
-        JSON.parse(window.localStorage.getItem(pathKey) || '[]').forEach((key) => completed.add(key));
+        JSON.parse(window.localStorage.getItem(progressKey) || '[]').forEach((key) => completed.add(key));
       } catch {
-        // The study page remains usable when browser storage is disabled.
+        // The textbook remains usable when storage is disabled.
       }
 
       const updateProgress = () => {
-        const total = Math.max(stepElements.length, sectionCount, 1);
-        const amount = Math.min(completed.size, total);
-        const percent = Math.round((amount / total) * 100);
+        const amount = Math.min(completed.size, sectionCount);
+        const percent = sectionCount ? Math.round((amount / sectionCount) * 100) : 0;
         if (progressBar) progressBar.style.width = `${percent}%`;
-        if (progressCount) progressCount.textContent = `${String(amount).padStart(2, '0')} / ${String(total).padStart(2, '0')} units`;
         if (progressPercent) progressPercent.textContent = `${percent}%`;
+        if (progressCount) progressCount.textContent = String(amount).padStart(2, '0');
       };
 
-      const markComplete = (element) => {
-        const key = element.getAttribute('data-study-step');
-        if (!key) return;
-        completed.add(key);
+      const markComplete = (slug) => {
+        if (!slug) return;
+        completed.add(slug);
         try {
-          window.localStorage.setItem(pathKey, JSON.stringify([...completed]));
+          window.localStorage.setItem(progressKey, JSON.stringify([...completed]));
         } catch {
           // Ignore persistence failures.
         }
         updateProgress();
       };
 
+      const setCurrent = (slug) => {
+        const heading = document.getElementById(slug);
+        if (!heading) return;
+        navLinks.forEach((link) => link.classList.toggle('is-current', link.dataset.studyNavLink === slug));
+        if (currentLabel) currentLabel.textContent = heading.textContent || '当前章节';
+      };
+
       if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (!entry.isIntersecting) return;
-            markComplete(entry.target);
-            observer.unobserve(entry.target);
+            const slug = entry.target.getAttribute('id');
+            markComplete(slug);
+            setCurrent(slug);
           });
-        }, { threshold: 0.35 });
-        stepElements.forEach((element) => observer.observe(element));
+        }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
+        headings.forEach((heading) => observer.observe(heading));
       }
 
-      const setCurrentLink = () => {
-        const scrollPosition = window.scrollY + 130;
-        let current = '';
-        sectionSlugs.forEach((slug) => {
-          const heading = document.getElementById(slug);
-          if (heading && heading.offsetTop <= scrollPosition) current = slug;
-        });
-        navLinks.forEach((link) => link.classList.toggle('is-current', link.dataset.studyNavLink === current));
-      };
-
+      navLinks.forEach((link) => link.addEventListener('click', () => setCurrent(link.dataset.studyNavLink)));
       updateProgress();
-      setCurrentLink();
-      window.addEventListener('scroll', setCurrentLink, { passive: true });
+      setCurrent(sectionSlugs[0]);
     </script>
   </body>
 </html>

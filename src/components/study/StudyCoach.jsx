@@ -1,20 +1,21 @@
 import { useState } from 'react';
+import StudyRichText from './StudyRichText.jsx';
 
 const quickPrompts = [
-  '用一句话解释 Q 和 R 的区别',
+  '用一句话解释 $Q$ 和 $R$ 的区别',
   '给我一个不直接揭晓答案的提示',
-  '为什么 Kalman Gain 会逐渐稳定？',
+  '为什么 $K_k$ 会逐渐稳定？',
 ];
 
 const demoReply = (question) => {
-  if (/q|r|过程噪声|测量噪声/.test(question.toLowerCase())) {
-    return '把 Q 想成“运动模型有多不可靠”，把 R 想成“传感器有多不可靠”。Q 变大，估计会更愿意跟随新测量；R 变大，估计会更坚持自己的预测。先回到上面的两个滑块验证这个关系。';
+  if (/\b(?:q|r)\b|过程噪声|测量噪声/.test(question.toLowerCase())) {
+    return '在本页 $H=1$ 的标量模型中，把 $Q$ 想成“运动模型有多不可靠”，把 $R$ 想成“传感器有多不可靠”。$Q$ 变大，估计会更愿意跟随新测量；$R$ 变大，估计会更坚持自己的预测。先回到上面的两个滑块验证这个关系。';
   }
   if (/gain|增益|相信|权重/.test(question.toLowerCase())) {
-    return 'Kalman Gain 不是固定权重，它由当前不确定性和测量不确定性共同决定。预测越不确定，Gain 越大；测量越不可靠，Gain 越小。';
+    return '$K_k$ 不是固定权重，它由当前预测协方差 $P_k^-$ 和测量协方差 $R_k$ 共同决定。预测越不确定，$K_k$ 越大；测量越不可靠，$K_k$ 越小。';
   }
   if (/提示|hint|帮助/.test(question.toLowerCase())) {
-    return '先观察一个极端：把 R 调得很大，再把 Q 调得很大。分别看绿色估计线更像谁，然后用“谁更不可靠”来解释它。';
+    return '先观察两个极端：分别令 $R\\gg Q$ 与 $Q\\gg R$。看估计线更接近预测还是测量，再用“哪一方更不可靠”解释。';
   }
   return '这是一个很好的问题。先把它拆成两件事：算法此刻对自己的预测有多确定，以及传感器这次读数有多可信。你可以告诉我你观察到的曲线变化，我会继续追问。';
 };
@@ -50,6 +51,7 @@ export default function StudyCoach({ endpoint = '' }) {
         });
         if (!response.ok) throw new Error('Coach request failed');
         const data = await response.json();
+        if (!data.reply) throw new Error('Empty coach response');
         reply = data.reply;
       } catch {
         reply = `${demoReply(question)}\n\n（暂时无法连接 AI 服务，以上是本地演示提示。）`;
@@ -74,13 +76,13 @@ export default function StudyCoach({ endpoint = '' }) {
       <p className="study-coach-intro">AI 只看当前学习单元和你的问题，优先给提示、追问和误区反馈。数值模拟仍由页面程序计算。</p>
       <div className="study-coach-messages" aria-live="polite">
         {messages.map((message, index) => (
-          <div className={`study-coach-message ${message.role}`} key={`${message.role}-${index}`}>{message.text}</div>
+          <div className={`study-coach-message ${message.role}`} key={`${message.role}-${index}`}><StudyRichText>{message.text}</StudyRichText></div>
         ))}
         {pending && <div className="study-coach-message assistant">正在整理一个不会直接剧透的提示…</div>}
       </div>
       <div className="study-coach-quick">
         {quickPrompts.map((prompt) => (
-          <button key={prompt} type="button" onClick={(event) => ask(event, prompt)}>{prompt}</button>
+          <button key={prompt} type="button" onClick={(event) => ask(event, prompt)}><StudyRichText>{prompt}</StudyRichText></button>
         ))}
       </div>
       <form className="study-coach-form" onSubmit={ask}>
