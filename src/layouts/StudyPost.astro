@@ -1,0 +1,182 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { MarkdownHeading } from 'astro';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/blog/BlogHeader.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import '../styles/study.css';
+
+type Props = CollectionEntry<'study'>['data'] & {
+  headings?: MarkdownHeading[];
+};
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  mode = 'lab',
+  subject = 'Guided study',
+  headings = [],
+} = Astro.props;
+
+const modeLabels = {
+  lab: 'Concept lab',
+  reading: 'Close reading',
+  derivation: 'Derivation notebook',
+  build: 'Build lab',
+} as const;
+
+const sections = headings.filter((heading) => heading.depth === 2);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body class="study-lab-page">
+    <BlogHeader active="study" />
+
+    <header class="study-lab-header">
+      <a class="study-back-link" href="/study/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg>
+        Study desk
+      </a>
+
+      <div class="study-lab-title-row">
+        <div>
+          <p class="study-lab-kicker">{modeLabels[mode]} / {subject}</p>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+        <div class="study-lab-intent" aria-label="学习方式">
+          <span class="study-lab-stat-label">The loop</span>
+          <strong>Try → explain</strong>
+          <span>让理解在反馈中变得可见</span>
+        </div>
+      </div>
+
+      <div class="study-lab-stats">
+        <div class="study-lab-stat">
+          <span class="study-lab-stat-label">Published</span>
+          <span class="study-lab-stat-value"><FormattedDate date={pubDate} /></span>
+        </div>
+        <div class="study-lab-stat">
+          <span class="study-lab-stat-label">Units</span>
+          <span class="study-lab-stat-value">{String(sections.length).padStart(2, '0')}</span>
+        </div>
+        <div class="study-lab-stat">
+          <span class="study-lab-stat-label">Mode</span>
+          <span class="study-lab-stat-value">{modeLabels[mode]}</span>
+        </div>
+        {updatedDate && (
+          <div class="study-lab-stat">
+            <span class="study-lab-stat-label">Updated</span>
+            <span class="study-lab-stat-value"><FormattedDate date={updatedDate} /></span>
+          </div>
+        )}
+      </div>
+    </header>
+
+    <main class="study-lab-grid">
+      <aside class="study-roadmap" aria-label="学习路线">
+        <p class="study-roadmap-kicker">Route map</p>
+        <ol>
+          {sections.map((heading, index) => (
+            <li>
+              <a href={`#${heading.slug}`} data-study-nav-link={heading.slug}>
+                <span class="study-roadmap-index">{String(index + 1).padStart(2, '0')}</span>
+                {heading.text}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </aside>
+
+      <article class="study-body">
+        <slot />
+      </article>
+
+      <aside class="study-status" aria-label="学习进度">
+        <div class="study-status-card">
+          <p class="study-status-kicker">Your state</p>
+          <h2>这一次走到哪里了？</h2>
+          <div class="study-status-bar"><span data-study-progress-bar></span></div>
+          <div class="study-status-copy">
+            <span data-study-progress-count>00 / {String(sections.length).padStart(2, '0')} units</span>
+            <span data-study-progress-percent>0%</span>
+          </div>
+          <p class="study-status-note">完成检查题或进入一个实验单元后，进度会保存在当前浏览器。</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="study-index-footer">
+      <span>Study desk · Tend</span>
+      <a href="/study/">返回全部学习实验</a>
+    </footer>
+
+    <script define:vars={{ sectionCount: sections.length, sectionSlugs: sections.map((section) => section.slug) }}>
+      const pathKey = `study-progress:${window.location.pathname}`;
+      const stepElements = Array.from(document.querySelectorAll('[data-study-step]'));
+      const progressBar = document.querySelector('[data-study-progress-bar]');
+      const progressCount = document.querySelector('[data-study-progress-count]');
+      const progressPercent = document.querySelector('[data-study-progress-percent]');
+      const navLinks = Array.from(document.querySelectorAll('[data-study-nav-link]'));
+      const completed = new Set();
+
+      try {
+        JSON.parse(window.localStorage.getItem(pathKey) || '[]').forEach((key) => completed.add(key));
+      } catch {
+        // The study page remains usable when browser storage is disabled.
+      }
+
+      const updateProgress = () => {
+        const total = Math.max(stepElements.length, sectionCount, 1);
+        const amount = Math.min(completed.size, total);
+        const percent = Math.round((amount / total) * 100);
+        if (progressBar) progressBar.style.width = `${percent}%`;
+        if (progressCount) progressCount.textContent = `${String(amount).padStart(2, '0')} / ${String(total).padStart(2, '0')} units`;
+        if (progressPercent) progressPercent.textContent = `${percent}%`;
+      };
+
+      const markComplete = (element) => {
+        const key = element.getAttribute('data-study-step');
+        if (!key) return;
+        completed.add(key);
+        try {
+          window.localStorage.setItem(pathKey, JSON.stringify([...completed]));
+        } catch {
+          // Ignore persistence failures.
+        }
+        updateProgress();
+      };
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            markComplete(entry.target);
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.35 });
+        stepElements.forEach((element) => observer.observe(element));
+      }
+
+      const setCurrentLink = () => {
+        const scrollPosition = window.scrollY + 130;
+        let current = '';
+        sectionSlugs.forEach((slug) => {
+          const heading = document.getElementById(slug);
+          if (heading && heading.offsetTop <= scrollPosition) current = slug;
+        });
+        navLinks.forEach((link) => link.classList.toggle('is-current', link.dataset.studyNavLink === current));
+      };
+
+      updateProgress();
+      setCurrentLink();
+      window.addEventListener('scroll', setCurrentLink, { passive: true });
+    </script>
+  </body>
+</html>

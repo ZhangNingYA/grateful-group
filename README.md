@@ -10,6 +10,7 @@ Live site: [www.fulafu.com](https://www.fulafu.com/)
 
 - Sentence-by-sentence English close-reading notes
 - Interactive learning material
+- Guided study labs with experiments and checkpoints
 - Project, paper, and game collections
 - Sitemap generation
 
@@ -43,7 +44,7 @@ npm run astro -- --help
 ```text
 public/          Static assets
 src/components/ Shared UI components
-src/content/    Site content collections
+src/content/    Site content collections (blog, games, study, works, papers)
 src/data/       Structured learning and visualization data
 src/layouts/    Page layouts
 src/pages/      Site routes

@@ -1,0 +1,100 @@
+---
+title: '卡尔曼滤波：让估计值和噪声对话'
+description: '从一个带噪声的位置传感器开始，用模拟器、推导、检查题和 AI 教练建立卡尔曼滤波的第一层直觉。'
+pubDate: '2026-08-28'
+mode: 'lab'
+subject: 'Estimation / Control'
+---
+
+import KalmanSimulator from '../../components/study/KalmanSimulator.jsx';
+import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
+import StudyCoach from '../../components/study/StudyCoach.jsx';
+import StudyReflection from '../../components/study/StudyReflection.jsx';
+
+这不是一篇把公式从头推到尾的文章，而是一间可以反复回来的小实验室。先让问题变得可见，再让公式解释你已经观察到的变化。
+
+<div className="study-lead-grid">
+  <div className="study-lead-card">
+    <span>01</span>
+    <strong>一个真实问题</strong>
+    <p>GPS 每次都在测量，但每次都不完全可靠。</p>
+  </div>
+  <div className="study-lead-card">
+    <span>02</span>
+    <strong>一条可见曲线</strong>
+    <p>真实状态、测量值和估计值同时出现。</p>
+  </div>
+  <div className="study-lead-card">
+    <span>03</span>
+    <strong>一次可回看的记录</strong>
+    <p>把今天的误区和下一步留在页面里。</p>
+  </div>
+</div>
+
+## 01 / 先看见问题
+
+假设一辆车沿着一条直线移动。我们看不到它真正的位置，只能收到一个有噪声的传感器读数。
+
+如果只相信测量，轨迹会很抖；如果只相信预测，车辆一旦改变运动状态，估计就会慢慢偏离。卡尔曼滤波要做的事情很朴素：根据两种不确定性，在每一步重新分配信任。
+
+> 先记住这句话：`Q` 描述模型有多不可靠，`R` 描述测量有多不可靠。
+
+## 02 / 把直觉写成模型
+
+先从最小的一维模型开始。这里的状态只有一个数字：位置。
+
+<div className="study-equation-card">
+  <div>
+    <code>xₖ = xₖ₋₁ + wₖ</code>
+    <p>状态会延续，但过程本身带有不确定性。</p>
+  </div>
+  <div className="study-equation-side"><strong>状态</strong><br />我们真正想知道的东西。</div>
+</div>
+
+<div className="study-equation-card">
+  <div>
+    <code>zₖ = xₖ + vₖ</code>
+    <p>传感器读到的，是状态加上测量误差。</p>
+  </div>
+  <div className="study-equation-side"><strong>测量</strong><br />传感器提供的证据。</div>
+</div>
+
+预测阶段把不确定性向前传播，更新阶段再用新测量修正它。真正值得追踪的不是某个孤立公式，而是每一步“我现在有多确定”。
+
+## 03 / 调节两种不确定性
+
+下面的模拟器使用一个简化的一维滤波器。绿色曲线是估计值，橙色圆点是测量值，灰色虚线是真实状态。
+
+<KalmanSimulator client:load />
+
+试着做两次极端实验：先把 `R` 调得很大，再把 `Q` 调得很大。不要急着记结论，分别观察绿色曲线更愿意跟随谁。
+
+## 04 / 让 AI 追问，而不是代替思考
+
+一个好的学习助手不应该把整章内容重新朗读一遍。它应该知道你当前在哪个单元，先给一个足够小的提示，再根据你的回答继续追问。
+
+<StudyCoach client:load />
+
+当前组件使用本地演示回复，接口已经按 `courseId`、`blockId` 和 `mode` 预留。接入后端 AI 时，可以让它读取当前实验参数、用户答案和历史误区，而不是接收整本教材。
+
+## 05 / 检查、解释、留下下一步
+
+<StudyCheckpoint
+  client:load
+  id="measurement-noise"
+  question="如果传感器变得更不可靠，R 应该如何变化？"
+  options={['增大 R，因为测量误差变大', '减小 R，让算法更快跟随测量', 'R 不变，只调整 Q']}
+  answer={0}
+  explanation="R 越大，算法越不相信当前测量，估计值会更依赖预测。"
+/>
+
+<StudyCheckpoint
+  client:load
+  id="process-noise"
+  question="如果车辆突然加速，但模型仍假设它匀速，哪个参数更应该增大？"
+  options={['R，表示 GPS 更准确', 'Q，表示运动模型更不可靠', '两个参数必须同时增大']}
+  answer={1}
+  explanation="Q 增大后，滤波器会承认模型可能没有描述好真实运动。"
+/>
+
+<StudyReflection client:load />

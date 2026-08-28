@@ -21,6 +21,18 @@ const games = defineCollection({
     }),
 });
 
+const study = defineCollection({
+    loader: glob({ base: './src/content/study', pattern: '**/*.{md,mdx}' }),
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        pubDate: z.coerce.date(),
+        updatedDate: z.coerce.date().optional(),
+        mode: z.enum(['lab', 'reading', 'derivation', 'build']).default('lab'),
+        subject: z.string().optional(),
+    }),
+});
+
 const works = defineCollection({
     loader: glob({ base: './src/content/works', pattern: '**/*.{md,mdx}' }),
     schema: ({ image }) =>
@@ -52,4 +64,4 @@ const papers = defineCollection({
         }),
 });
 
-export const collections = { reading, games, works, papers };
+export const collections = { reading, games, study, works, papers };
