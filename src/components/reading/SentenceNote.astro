@@ -101,7 +101,7 @@ interface GlossaryMatch {
 }
 
 const wordTokens = (value: string) => Array.from(
-  value.matchAll(/(?<![A-Za-z0-9])[A-Za-z]+(?:['’][A-Za-z]+)?(?![A-Za-z0-9])/g),
+  value.matchAll(/(?<![A-Za-z0-9])(?:[A-Za-z]+(?:['’][A-Za-z]+)?|\$?\d+(?:[.,]\d+)*(?:%|s|st|nd|rd|th)?)(?![A-Za-z0-9])/g),
   (match) => ({
     text: normalizeForMatch(match[0]).toLowerCase(),
     raw: match[0],
@@ -116,6 +116,8 @@ const irregularLemmas: Record<string, string> = {
   "don't": 'not', "doesn't": 'not', "didn't": 'not', "isn't": 'not', "aren't": 'not',
   "wasn't": 'not', "weren't": 'not', "can't": 'not', "couldn't": 'not', "won't": 'not',
   fell: 'fall', fallen: 'fall', rose: 'rise', risen: 'rise', sank: 'sink', sunk: 'sink',
+  swept: 'sweep', came: 'come', grown: 'grow', paid: 'pay', drew: 'draw', swung: 'swing',
+  brought: 'bring', led: 'lead',
   gave: 'give', given: 'give', found: 'find', made: 'make',
   took: 'take', taken: 'take', thought: 'think',
 };
@@ -123,15 +125,31 @@ const irregularLemmas: Record<string, string> = {
 const wordForms = (word: string) => {
   const forms = new Set<string>([word]);
   if (irregularLemmas[word]) forms.add(irregularLemmas[word]);
+  if (/^(?:aren't|isn't|wasn't|weren't|we're|they're|you're|he's|she's|it's|there's)$/.test(word)) {
+    forms.add('be');
+  }
+  const addStem = (stem: string) => {
+    forms.add(stem);
+    if (/(.)\1$/.test(stem)) forms.add(stem.slice(0, -1));
+  };
   if (word.endsWith('ies') && word.length > 4) forms.add(`${word.slice(0, -3)}y`);
   if (word.endsWith('ied') && word.length > 4) forms.add(`${word.slice(0, -3)}y`);
-  if (word.endsWith('ing') && word.length > 5) {
-    forms.add(word.slice(0, -3));
-    forms.add(`${word.slice(0, -3)}e`);
+  if (word.endsWith('ing') && word.length > 4) {
+    const stem = word.slice(0, -3);
+    addStem(stem);
+    forms.add(`${stem}e`);
   }
   if (word.endsWith('ed') && word.length > 4) {
-    forms.add(word.slice(0, -2));
+    addStem(word.slice(0, -2));
     forms.add(`${word.slice(0, -1)}`);
+  }
+  if (word.endsWith('est') && word.length > 5) {
+    addStem(word.slice(0, -3));
+    forms.add(word.slice(0, -2));
+  }
+  if (word.endsWith('er') && word.length > 4) {
+    addStem(word.slice(0, -2));
+    forms.add(word.slice(0, -1));
   }
   if (word.endsWith('es') && word.length > 4) forms.add(word.slice(0, -2));
   if (word.endsWith('s') && word.length > 3) forms.add(word.slice(0, -1));
@@ -191,6 +209,16 @@ const glossaryMatches = (): Array<{
     .forEach((item) => {
       const normalizedTerm = normalizeForMatch(item.term).toLowerCase();
       const termTokenCount = wordTokens(item.term).length;
+      const hasTemplateSlots = (
+        /\.{3}|…|\bsome(?:one|thing)\b|\bone(?:['’]s|self)\b/i.test(item.term)
+        || /\b[AB]\b/.test(item.term)
+        || /\bone\s+can\b/i.test(item.term)
+        || /\bdo(?:ing)?$/i.test(item.term)
+      );
+      const phrasePriorityBase = termTokenCount < 2
+        ? 0
+        : hasTemplateSlots ? 100_000 : 200_000;
+      const contextPriority = item.allowFlexibleMatch ? 10_000 : 0;
       let from = 0;
       let foundExact = false;
       while (from < normalizedSentence.length) {
@@ -209,7 +237,7 @@ const glossaryMatches = (): Array<{
             partOfSpeech: !item.allowFlexibleMatch || termTokenCount > 1
               ? '短语'
               : partOfSpeechLabel(inlineGlossaryEntry(item.term)?.partOfSpeech ?? '词汇'),
-            priority: termTokenCount * 1000 + 500 + end - start,
+            priority: phrasePriorityBase + contextPriority + termTokenCount * 1000 + 500 + end - start,
           }]);
           foundExact = true;
         }
@@ -218,24 +246,100 @@ const glossaryMatches = (): Array<{
 
       if (foundExact) return;
       if (!item.allowFlexibleMatch) return;
-      const hasFlexibleGap = /\.{3}|…|\bsome(?:one|thing)\b|\bA\b|\bB\b/.test(item.term);
-      const termWords = wordTokens(item.term)
-        .filter((token, index, all) => {
-          if (/^[AB]$/.test(token.raw)) return false;
-          if (/^some(?:one|thing)$/i.test(token.text) || token.text === "one's") return false;
-          if (token.text === 'be' && index === 0 && all.length > 1) return false;
-          if (token.text === 'a' && /\bsomething\b/i.test(item.term)) return false;
-          return !(token.text === 'do' && index === all.length - 1 && all.length > 1)
-            && !(token.text === 'done' && index === all.length - 1 && /\bhave done$/i.test(item.term));
-        });
+      const hasFlexibleGap = hasTemplateSlots;
+      const termWords = wordTokens(item.term);
       if (termWords.length === 0) return;
 
+      const isPlaceholder = (token: { text: string; raw: string }, termIndex: number) => (
+        /^some(?:one|thing)$/i.test(token.text)
+        || token.text === "one's"
+        || token.text === 'oneself'
+        || token.text === 'one'
+        || /^[AB]$/.test(token.raw)
+        || (/^do(?:ing)?$/i.test(token.text) && termIndex === termWords.length - 1)
+      );
+
+      const isActionPlaceholder = (token: { text: string }, termIndex: number) => (
+        /^do(?:ing)?$/i.test(token.text) && termIndex === termWords.length - 1
+      );
+
+      const consumePlaceholder = (
+        termIndex: number,
+        sentenceIndex: number,
+      ): number => {
+        if (isActionPlaceholder(termWords[termIndex], termIndex)) return sentenceIndex;
+        if (termWords[termIndex].text === 'oneself') {
+          const reflexives = new Set([
+            'myself', 'yourself', 'himself', 'herself', 'itself',
+            'ourselves', 'yourselves', 'themselves',
+          ]);
+          if (!reflexives.has(sentenceWords[sentenceIndex]?.text ?? '')) return sentenceIndex;
+          const connector = sentenceWords[sentenceIndex + 1]?.text;
+          const coordinatedReflexive = sentenceWords[sentenceIndex + 2]?.text;
+          return (connector === 'or' || connector === 'and')
+            && reflexives.has(coordinatedReflexive ?? '')
+            ? sentenceIndex + 2
+            : sentenceIndex;
+        }
+
+        const nextLiteralOffset = termWords.slice(termIndex + 1)
+          .findIndex((token, index) => !isPlaceholder(token, termIndex + index + 1));
+        const nextLiteral = nextLiteralOffset >= 0
+          ? termWords[termIndex + nextLiteralOffset + 1]
+          : undefined;
+        if (nextLiteral) {
+          const nextLiteralIndex = sentenceWords.findIndex((sourceWord, index) => (
+            index >= sentenceIndex && wordsEquivalent(sourceWord.text, nextLiteral.text)
+          ));
+          return nextLiteralIndex > sentenceIndex ? nextLiteralIndex - 1 : sentenceIndex;
+        }
+
+        const currentPart = rawSentenceParts.find((part) => (
+          sentenceWords[sentenceIndex]
+          && sentenceWords[sentenceIndex].start >= part.start
+          && sentenceWords[sentenceIndex].start < part.start + part.text.length
+        ));
+        if (!currentPart) return sentenceIndex;
+
+        let index = sentenceIndex;
+        while (index + 1 < sentenceWords.length) {
+          const nextWord = sentenceWords[index + 1];
+          if (!nextWord || nextWord.start >= currentPart.start + currentPart.text.length) break;
+          index += 1;
+        }
+        return index;
+      };
+
+      const flexibleMatches: Array<{
+        match: GlossaryMatch;
+        omittedLeadingBe: boolean;
+      }> = [];
       for (let startIndex = 0; startIndex < sentenceWords.length; startIndex += 1) {
-        if (!wordsEquivalent(sentenceWords[startIndex].text, termWords[0].text)) continue;
+        let firstTermIndex = 0;
+        if (!wordsEquivalent(sentenceWords[startIndex].text, termWords[0].text)) {
+          const canOmitLeadingBe = termWords[0].text === 'be'
+            && termWords[1]
+            && wordsEquivalent(sentenceWords[startIndex].text, termWords[1].text);
+          if (!canOmitLeadingBe) continue;
+          firstTermIndex = 1;
+        }
+
         const selected = [sentenceWords[startIndex]];
         let sentenceIndex = startIndex + 1;
         let matched = true;
-        for (let termIndex = 1; termIndex < termWords.length; termIndex += 1) {
+        for (let termIndex = firstTermIndex + 1; termIndex < termWords.length; termIndex += 1) {
+          if (isPlaceholder(termWords[termIndex], termIndex)) {
+            const foundIndex = consumePlaceholder(termIndex, sentenceIndex);
+            const sourceWord = sentenceWords[foundIndex];
+            if (!sourceWord) {
+              matched = false;
+              break;
+            }
+            selected.push(sourceWord);
+            sentenceIndex = foundIndex + 1;
+            continue;
+          }
+
           const maxGap = hasFlexibleGap ? 18 : 4;
           const foundIndex = sentenceWords.findIndex((sourceWord, index) => (
             index >= sentenceIndex
@@ -251,28 +355,129 @@ const glossaryMatches = (): Array<{
         }
         if (!matched) continue;
 
-        candidates.push(selected.map((token) => ({
-          start: token.start,
-          end: token.end,
-          term: item.term,
-          explanation: item.explanation,
-          partOfSpeech: !item.allowFlexibleMatch || termTokenCount > 1
-            ? '短语'
-              : partOfSpeechLabel(inlineGlossaryEntry(token.text)?.partOfSpeech ?? '词汇'),
-          priority: termTokenCount * 1000 + 100,
-        })));
-        break;
+        const firstToken = selected[0];
+        const lastToken = selected[selected.length - 1];
+        if (!firstToken || !lastToken) return;
+
+        flexibleMatches.push({
+          omittedLeadingBe: firstTermIndex === 1,
+          match: {
+            // Keep a flexible phrase as one clickable range, including any
+            // words between its matched parts (for example, "cost people
+            // their jobs" for "cost someone something").
+            start: firstToken.start,
+            end: lastToken.end,
+            term: item.term,
+            explanation: item.explanation,
+            partOfSpeech: !item.allowFlexibleMatch || termTokenCount > 1
+              ? '短语'
+              : partOfSpeechLabel(inlineGlossaryEntry(firstToken.text)?.partOfSpeech ?? '词汇'),
+            priority: phrasePriorityBase + contextPriority
+              + termTokenCount * 1000 + (hasFlexibleGap ? 700 : 100),
+          },
+        });
       }
+
+      const bestFlexibleMatch = flexibleMatches
+        .sort((a, b) => (
+          Number(a.omittedLeadingBe) - Number(b.omittedLeadingBe)
+          || (a.match.end - a.match.start) - (b.match.end - b.match.start)
+          || a.match.start - b.match.start
+        ))[0]?.match;
+      if (bestFlexibleMatch) {
+        candidates.push([bestFlexibleMatch]);
+        return;
+      }
+      if (termTokenCount < 2) return;
+
+      // Some curated phrases are transformed by the sentence: a passive can
+      // reverse the object and verb ("the effect ... be obtained"), and a
+      // relative clause can move a preposition before its object. In those
+      // cases, keep the phrase meaning on its content-word anchor instead of
+      // falling back to an unrelated single-word definition.
+      const fallbackStopWords = new Set([
+        'a', 'an', 'the', 'be', 'do', 'doing', 'one', "one's", 'oneself',
+        'to', 'of', 'in', 'on', 'for', 'with', 'from', 'as', 'at', 'by',
+        'and', 'or', 'not', 'just', 'can', 'someone', 'something',
+      ]);
+      const usedSentenceIndexes = new Set<number>();
+      const fallbackTokens = termWords
+        .filter((token, index) => (
+          !isPlaceholder(token, index) && !fallbackStopWords.has(token.text)
+        ))
+        .map((termToken) => {
+          const sentenceTokenIndex = sentenceWords.findIndex((sourceToken, index) => (
+            !usedSentenceIndexes.has(index)
+            && wordsEquivalent(sourceToken.text, termToken.text)
+          ));
+          if (sentenceTokenIndex < 0) return undefined;
+          usedSentenceIndexes.add(sentenceTokenIndex);
+          return { ...sentenceWords[sentenceTokenIndex], sentenceTokenIndex };
+        })
+        .filter((token) => token !== undefined);
+      if (fallbackTokens.length === 0) return;
+
+      const sortedFallbackTokens = [...fallbackTokens]
+        .sort((a, b) => a.sentenceTokenIndex - b.sentenceTokenIndex);
+      const firstFallbackToken = sortedFallbackTokens[0];
+      const lastFallbackToken = sortedFallbackTokens.at(-1);
+      if (!firstFallbackToken || !lastFallbackToken) return;
+      const keepNearbyContentTogether = (
+        lastFallbackToken.sentenceTokenIndex - firstFallbackToken.sentenceTokenIndex <= 8
+      );
+
+      const fallbackRanges = keepNearbyContentTogether
+        ? [{ start: firstFallbackToken.start, end: lastFallbackToken.end }]
+        : fallbackTokens.map((token) => ({ start: token.start, end: token.end }));
+      fallbackRanges.forEach((range) => candidates.push([{
+        ...range,
+        term: item.term,
+        explanation: item.explanation,
+        partOfSpeech: '短语',
+        priority: phrasePriorityBase + contextPriority + termTokenCount * 1000 + 50,
+      }]));
     });
 
   const claimedGroups: GlossaryMatch[][] = [];
   candidates
     .sort((a, b) => b[0].priority - a[0].priority || a[0].start - b[0].start)
     .forEach((candidate) => {
-      const overlapsClaimed = candidate.some((match) => claimedGroups.some((group) => (
-        group.some((previous) => match.start < previous.end && match.end > previous.start)
-      )));
-      if (!overlapsClaimed) claimedGroups.push(candidate);
+      const claimedMatches = claimedGroups.flat();
+      const remaining = candidate.flatMap((match) => {
+        let ranges = [{ start: match.start, end: match.end }];
+        claimedMatches.forEach((previous) => {
+          ranges = ranges.flatMap((range) => {
+            if (range.start >= previous.end || range.end <= previous.start) return [range];
+            const pieces: Array<{ start: number; end: number }> = [];
+            if (range.start < previous.start) pieces.push({ start: range.start, end: previous.start });
+            if (range.end > previous.end) pieces.push({ start: previous.end, end: range.end });
+            return pieces;
+          });
+        });
+
+        return ranges.flatMap((range) => {
+          const tokens = sentenceWords.filter((token) => (
+            token.start < range.end && token.end > range.start
+          ));
+          const firstToken = tokens[0];
+          const lastToken = tokens.at(-1);
+          if (!firstToken || !lastToken) return [];
+          const termTokens = wordTokens(match.term);
+          const literalTermTokens = termTokens.filter((token, index) => (
+            !/^some(?:one|thing)$/i.test(token.text)
+            && token.text !== "one's"
+            && token.text !== 'oneself'
+            && !/^[AB]$/.test(token.raw)
+            && !(/^do(?:ing)?$/i.test(token.text) && index === termTokens.length - 1)
+          ));
+          const containsLiteralPart = tokens.some((sourceToken) => (
+            literalTermTokens.some((termToken) => wordsEquivalent(sourceToken.text, termToken.text))
+          ));
+          if (!containsLiteralPart) return [];
+          return [{ ...match, start: firstToken.start, end: lastToken.end }];
+        });
+      });
+      if (remaining.length > 0) claimedGroups.push(remaining);
     });
 
   const claimedMatches = claimedGroups
@@ -280,6 +485,9 @@ const glossaryMatches = (): Array<{
     .sort((a, b) => a.start - b.start);
 
   const singleWordMatches = sentenceWords
+    // Number tokens are needed to fill phrase patterns such as “multiply A
+    // by B”, but they are not standalone vocabulary entries.
+    .filter((token) => /[A-Za-z]/.test(token.raw))
     .filter((token) => !claimedMatches.some((match) => (
       token.start < match.end && token.end > match.start
     )))
@@ -308,37 +516,72 @@ const glossaryMatches = (): Array<{
 
 const sentenceGlossaryMatches = glossaryMatches();
 
-const addGlossaryRuns = (part: SentencePart): SentencePart & { runs: SentenceRun[] } => {
-  const partEnd = part.start + part.text.length;
-  const matches = sentenceGlossaryMatches
-    .filter((match) => match.start < partEnd && match.end > part.start)
-    .map((match) => ({
-      ...match,
-      start: Math.max(match.start, part.start),
-      end: Math.min(match.end, partEnd),
-    }))
-    .filter((match) => /[A-Za-z]/.test(sentence!.slice(match.start, match.end)));
-  if (matches.length === 0) return { ...part, runs: [{ text: part.text }] };
+interface RenderSegment {
+  text: string;
+  role?: SentenceRole;
+  glossary?: SentenceRun['glossary'];
+}
 
-  const runs: SentenceRun[] = [];
-  let cursor = part.start;
-  matches.forEach((match) => {
-    if (match.start > cursor) runs.push({ text: sentence!.slice(cursor, match.start) });
-    runs.push({
-      text: sentence!.slice(match.start, match.end),
-      glossary: {
+interface RenderGroup {
+  glossary?: SentenceRun['glossary'];
+  matchIndex: number;
+  segments: RenderSegment[];
+}
+
+const sentenceRenderGroups = (): RenderGroup[] => {
+  if (!sentence) return [];
+
+  const boundaries = new Set<number>([0, sentence.length]);
+  rawSentenceParts.forEach((part) => {
+    boundaries.add(part.start);
+    boundaries.add(part.start + part.text.length);
+  });
+  sentenceGlossaryMatches.forEach((match) => {
+    boundaries.add(match.start);
+    boundaries.add(match.end);
+  });
+
+  const sortedBoundaries = [...boundaries].sort((a, b) => a - b);
+  const segments: Array<RenderSegment & { matchIndex: number }> = [];
+  for (let index = 0; index < sortedBoundaries.length - 1; index += 1) {
+    const start = sortedBoundaries[index];
+    const end = sortedBoundaries[index + 1];
+    if (end <= start) continue;
+
+    const part = rawSentenceParts.find((candidate) => (
+      start >= candidate.start && start < candidate.start + candidate.text.length
+    ));
+    const matchIndex = sentenceGlossaryMatches.findIndex((candidate) => (
+      start >= candidate.start && end <= candidate.end
+    ));
+    const match = matchIndex >= 0 ? sentenceGlossaryMatches[matchIndex] : undefined;
+    segments.push({
+      text: sentence.slice(start, end),
+      role: part?.role,
+      glossary: match ? {
         term: match.term,
         explanation: match.explanation,
         partOfSpeech: match.partOfSpeech,
-      },
+      } : undefined,
+      matchIndex,
     });
-    cursor = match.end;
+  }
+
+  const groups: RenderGroup[] = [];
+  segments.forEach((segment) => {
+    const previous = groups.at(-1);
+    const canMerge = previous && (
+      segment.matchIndex === previous.matchIndex
+        && (segment.matchIndex >= 0 || previous.segments.at(-1)?.role === segment.role)
+    );
+
+    if (canMerge) previous.segments.push(segment);
+    else groups.push({ glossary: segment.glossary, matchIndex: segment.matchIndex, segments: [segment] });
   });
-  if (cursor < part.start + part.text.length) runs.push({ text: sentence!.slice(cursor, part.start + part.text.length) });
-  return { ...part, runs };
+  return groups;
 };
 
-const sentenceParts = rawSentenceParts.map(addGlossaryRuns);
+const sentenceRender = sentenceRenderGroups();
 const trunkHighlights = closeReading
   ? closeReading.trunk ?? closeReading.highlights.filter((item) => item.role !== 'adverbial')
   : [];
@@ -359,21 +602,21 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     <div class="sentence-original">
       {sentence ? (
         <span class="sentence-text">
-          {sentenceParts.map((part) => {
-            const content = part.runs.map((run) => run.glossary ? (
+          {sentenceRender.map((group) => {
+            const content = group.segments.map((segment) => segment.role ? (
+              <span class={`grammar-role grammar-${segment.role}`}>{segment.text}</span>
+            ) : segment.text);
+            return group.glossary ? (
               <button
                 class="inline-glossary-term"
                 type="button"
-                data-glossary-term={run.glossary.term}
-                data-glossary-meaning={run.glossary.explanation}
-                data-glossary-pos={run.glossary.partOfSpeech}
-                aria-label={`查看 ${run.glossary.term} 的释义`}
+                data-glossary-term={group.glossary.term}
+                data-glossary-meaning={group.glossary.explanation}
+                data-glossary-pos={group.glossary.partOfSpeech}
+                aria-label={`查看 ${group.glossary.term} 的释义`}
                 aria-controls={glossaryId}
                 aria-expanded="false"
-              >{run.text}</button>
-            ) : run.text);
-            return part.role ? (
-              <span class={`grammar-role grammar-${part.role}`}>{content}</span>
+              >{content}</button>
             ) : content;
           })}
         </span>
