@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import { PanelLeftClose, PanelLeftOpen } from 'lucide-astro';
 import '../styles/reading-post.css';
 
 type ReadingLink = { href: string; title: string };
@@ -60,10 +61,24 @@ const {
         <a href="#reading-passages">Passages</a>
       </nav>
 
-      <div class="reading-post-grid">
+      <div class="reading-post-grid" data-reading-layout>
         <aside class="reading-post-rail" aria-label="Page sections">
+          {showHeader && (
+            <button
+              class="reading-post-rail-toggle"
+              type="button"
+              aria-controls="reading-page-sections"
+              aria-expanded="true"
+              aria-label="Hide contents"
+              title="Hide contents"
+              data-reading-rail-toggle
+            >
+              <PanelLeftClose class="rail-toggle-hide-icon" size={15} stroke-width={1.8} aria-hidden="true" />
+              <PanelLeftOpen class="rail-toggle-show-icon" size={15} stroke-width={1.8} aria-hidden="true" />
+            </button>
+          )}
           <p>Contents <span>3 sections</span></p>
-          <nav data-reading-toc>
+          <nav id="reading-page-sections" data-reading-toc>
             <a href="#word-bank-cloze" aria-current="location">
               <span>01</span>
               Word Bank Cloze
@@ -123,6 +138,19 @@ const {
       updateCurrentSection();
       window.addEventListener('scroll', updateCurrentSection, { passive: true });
       window.addEventListener('resize', updateCurrentSection);
+
+      const readingLayout = document.querySelector<HTMLElement>('[data-reading-layout]');
+      const railToggle = document.querySelector<HTMLButtonElement>('[data-reading-rail-toggle]');
+
+      railToggle?.addEventListener('click', () => {
+        if (!readingLayout) return;
+
+        const collapsed = !readingLayout.hasAttribute('data-rail-collapsed');
+        readingLayout.toggleAttribute('data-rail-collapsed', collapsed);
+        railToggle.setAttribute('aria-expanded', String(!collapsed));
+        railToggle.setAttribute('aria-label', collapsed ? 'Show contents' : 'Hide contents');
+        railToggle.setAttribute('title', collapsed ? 'Show contents' : 'Hide contents');
+      });
     </script>
   </body>
 </html>
