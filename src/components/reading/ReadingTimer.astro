@@ -43,7 +43,7 @@ const initialDifficultyScore = 3;
       <span class="reading-timer-kicker">Reading timer</span>
       <strong>{label}</strong>
     </div>
-    <span class="reading-timer-word-count"><b data-timer-word-count>—</b> words</span>
+    <span class="reading-timer-word-count"><b data-timer-word-count>{initialWordCount ?? '—'}</b> words</span>
   </div>
 
   <div class="reading-timer-guides" aria-label="推荐阅读时间">
