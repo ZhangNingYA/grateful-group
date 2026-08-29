@@ -1,0 +1,4197 @@
+{
+  "C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语 + 状语",
+    "explanation": "As引导的从句整体作状语；that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "sleep"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "so undervalued that getting by on fewer hours has become a badge of honor"
+      },
+      {
+        "role": "object",
+        "text": "that getting by on fewer hours has become a badge of honor",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "As it is",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "sleep"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "so undervalued that getting by on fewer hours has become a badge of honor"
+      }
+    ]
+  },
+  "C02": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "live"
+      },
+      {
+        "role": "adverbial",
+        "text": "in a culture that caters to the late-nighter, from 24-hour grocery stores to online shopping sites that never close"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "live"
+      }
+    ]
+  },
+  "C03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "’s"
+      },
+      {
+        "role": "complement",
+        "text": "no surprise, then"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "’s"
+      },
+      {
+        "role": "complement",
+        "text": "no surprise, then"
+      }
+    ]
+  },
+  "C04": {
+    "pattern": "谓语 + 表语 / 补语 + 状语",
+    "explanation": "Whether引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a hotly debated topic among sleep researchers"
+      },
+      {
+        "role": "adverbial",
+        "text": "Whether or not we can catch up on sleep—on the weekend",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a hotly debated topic among sleep researchers"
+      }
+    ]
+  },
+  "C05": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The latest evidence"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that while it isn’t ideal, it might help",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The latest evidence"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "C06": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "When引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      },
+      {
+        "role": "object",
+        "text": "improvements in the ability of insulin to process blood sugar"
+      },
+      {
+        "role": "adverbial",
+        "text": "When Liu, the UCLA sleep researcher and professor of medicine, brought chronically sleep-restricted people into the lab for a weekend of sleep during which they logged about 10 hours per night",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      },
+      {
+        "role": "object",
+        "text": "improvements in the ability of insulin to process blood sugar"
+      }
+    ]
+  },
+  "C07": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that catch-up sleep may undo some but not all of the damage that sleep deprivation causes, which is encouraging given how many adults don’t get the hours they need each night",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "C08": {
+    "pattern": "谓语 + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Still"
+      },
+      {
+        "role": "subject",
+        "text": "’t"
+      },
+      {
+        "role": "predicate",
+        "text": "eady"
+      },
+      {
+        "role": "complement",
+        "text": "dy to endorse the habit of sleeping less and ma"
+      },
+      {
+        "role": "complement",
+        "text": "rse the habit of sleeping less and making up for it later."
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Still"
+      },
+      {
+        "role": "subject",
+        "text": "’t"
+      },
+      {
+        "role": "predicate",
+        "text": "eady"
+      },
+      {
+        "role": "complement",
+        "text": "dy to endorse the habit of sleeping less and ma"
+      },
+      {
+        "role": "complement",
+        "text": "rse the habit of sleeping less and making up for it later."
+      }
+    ]
+  },
+  "C09": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Sleeping pills, while helpful for some"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      },
+      {
+        "role": "complement",
+        "text": "not necessarily an effective remedy either"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Sleeping pills, while helpful for some"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      },
+      {
+        "role": "complement",
+        "text": "not necessarily an effective remedy either"
+      }
+    ]
+  },
+  "C10": {
+    "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "because引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A sleeping pill"
+      },
+      {
+        "role": "predicate",
+        "text": "will target"
+      },
+      {
+        "role": "object",
+        "text": "one area of the brain"
+      },
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "’s never going"
+      },
+      {
+        "role": "complement",
+        "text": "to be a perfect sleeping pill"
+      },
+      {
+        "role": "adverbial",
+        "text": "because you couldn’t really replicate the different chemicals moving in and out of different parts of the brain to go through the different stages of sleep",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A sleeping pill"
+      },
+      {
+        "role": "predicate",
+        "text": "will target"
+      },
+      {
+        "role": "object",
+        "text": "one area of the brain"
+      },
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "’s never going"
+      },
+      {
+        "role": "complement",
+        "text": "to be a perfect sleeping pill"
+      }
+    ]
+  },
+  "M-A01": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The road to climate hell"
+      },
+      {
+        "role": "predicate",
+        "text": "is paved"
+      },
+      {
+        "role": "adverbial",
+        "text": "with our good intentions"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The road to climate hell"
+      },
+      {
+        "role": "predicate",
+        "text": "is paved"
+      }
+    ]
+  },
+  "M-A02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "while引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Politicians"
+      },
+      {
+        "role": "predicate",
+        "text": "may tackle"
+      },
+      {
+        "role": "object",
+        "text": "polluters"
+      },
+      {
+        "role": "adverbial",
+        "text": "while scientists do battle with carbon emissions",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Politicians"
+      },
+      {
+        "role": "predicate",
+        "text": "may tackle"
+      },
+      {
+        "role": "object",
+        "text": "polluters"
+      }
+    ]
+  },
+  "M-A03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the most pervasive problem"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "less obvious: our own behaviour"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the most pervasive problem"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "less obvious: our own behaviour"
+      }
+    ]
+  },
+  "M-A04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      },
+      {
+        "role": "complement",
+        "text": "distracted"
+      },
+      {
+        "role": "adverbial",
+        "text": "before we can turn down the heating",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      },
+      {
+        "role": "complement",
+        "text": "distracted"
+      }
+    ]
+  },
+  "M-A05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "break"
+      },
+      {
+        "role": "object",
+        "text": "our promise"
+      },
+      {
+        "role": "adverbial",
+        "text": "not to fly after hearing about a neighbour’s trip to India",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "break"
+      },
+      {
+        "role": "object",
+        "text": "our promise"
+      }
+    ]
+  },
+  "M-A06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "can’t be bothered"
+      },
+      {
+        "role": "complement",
+        "text": "to change our attitude"
+      },
+      {
+        "role": "adverbial",
+        "text": "Ultimately"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "can’t be bothered"
+      },
+      {
+        "role": "complement",
+        "text": "to change our attitude"
+      }
+    ]
+  },
+  "M-A07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "social science and behavioural economics"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      },
+      {
+        "role": "complement",
+        "text": "able to do that for us"
+      },
+      {
+        "role": "complement",
+        "text": "to do that for us"
+      },
+      {
+        "role": "adverbial",
+        "text": "Fortunately"
+      },
+      {
+        "role": "adverbial",
+        "text": "for the planet"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "social science and behavioural economics"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      },
+      {
+        "role": "complement",
+        "text": "able to do that for us"
+      },
+      {
+        "role": "complement",
+        "text": "to do that for us"
+      }
+    ]
+  },
+  "M-B01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "most people"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "complement",
+        "text": "hard to believe that global warming will affect them personally"
+      },
+      {
+        "role": "adverbial",
+        "text": "Despite mournful polar bears and charts showing carbon emissions soaring"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "most people"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "complement",
+        "text": "hard to believe that global warming will affect them personally"
+      }
+    ]
+  },
+  "M-B02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Recent polls by the Pew Research Centre in Washington, DC"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that 75-80 percent of participants regarded climate change as an important issue",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Recent polls by the Pew Research Centre in Washington, DC"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      }
+    ]
+  },
+  "M-B03": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "respondents"
+      },
+      {
+        "role": "predicate",
+        "text": "ranked"
+      },
+      {
+        "role": "object",
+        "text": "it"
+      },
+      {
+        "role": "complement",
+        "text": "last"
+      },
+      {
+        "role": "adverbial",
+        "text": "on a list of priorities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "respondents"
+      },
+      {
+        "role": "predicate",
+        "text": "ranked"
+      },
+      {
+        "role": "object",
+        "text": "it"
+      },
+      {
+        "role": "complement",
+        "text": "last"
+      }
+    ]
+  },
+  "M-C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This inconsistency"
+      },
+      {
+        "role": "predicate",
+        "text": "stems"
+      },
+      {
+        "role": "complement",
+        "text": "from a feeling of powerlessness"
+      },
+      {
+        "role": "adverbial",
+        "text": "largely"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This inconsistency"
+      },
+      {
+        "role": "predicate",
+        "text": "stems"
+      },
+      {
+        "role": "complement",
+        "text": "from a feeling of powerlessness"
+      }
+    ]
+  },
+  "M-C02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "When引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tom Crompton, change strategist for the environmental organization World Wide Fund for Nature"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "When we can’t actually remove the source of our fear, we tend to adapt psychologically by adopting a range of defense mechanisms",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Tom Crompton, change strategist for the environmental organization World Wide Fund for Nature"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-D01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Part of the fault"
+      },
+      {
+        "role": "predicate",
+        "text": "lies"
+      },
+      {
+        "role": "complement",
+        "text": "with our inner caveman"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Part of the fault"
+      },
+      {
+        "role": "predicate",
+        "text": "lies"
+      },
+      {
+        "role": "complement",
+        "text": "with our inner caveman"
+      }
+    ]
+  },
+  "M-D02": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Evolution"
+      },
+      {
+        "role": "predicate",
+        "text": "has programmed"
+      },
+      {
+        "role": "object",
+        "text": "humans"
+      },
+      {
+        "role": "complement",
+        "text": "to pay most attention to issues that will have an immediate impact"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Evolution"
+      },
+      {
+        "role": "predicate",
+        "text": "has programmed"
+      },
+      {
+        "role": "object",
+        "text": "humans"
+      },
+      {
+        "role": "complement",
+        "text": "to pay most attention to issues that will have an immediate impact"
+      }
+    ]
+  },
+  "M-D03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语；because引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Professor Elke Weber of the Centre for Research on Environmental Decisions at Columbia University in New York"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "We worry most about now",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "object",
+        "text": "because if we don’t survive for the next minute, we’re not going to be around in ten years’ time",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Professor Elke Weber of the Centre for Research on Environmental Decisions at Columbia University in New York"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-D04": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "If引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Londoners"
+      },
+      {
+        "role": "predicate",
+        "text": "would face"
+      },
+      {
+        "role": "adverbial",
+        "text": "If the Thames were lapping around Big Ben",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "to the problem of emissions"
+      },
+      {
+        "role": "adverbial",
+        "text": "pretty quickly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Londoners"
+      },
+      {
+        "role": "predicate",
+        "text": "would face"
+      }
+    ]
+  },
+  "M-D05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "our brain"
+      },
+      {
+        "role": "predicate",
+        "text": "discounts"
+      },
+      {
+        "role": "object",
+        "text": "the risks—and benefits—associated with issues that lie some way ahead"
+      },
+      {
+        "role": "adverbial",
+        "text": "in practice"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "our brain"
+      },
+      {
+        "role": "predicate",
+        "text": "discounts"
+      },
+      {
+        "role": "object",
+        "text": "the risks—and benefits—associated with issues that lie some way ahead"
+      }
+    ]
+  },
+  "M-E01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Matthew Rushworth, of the Department of Experimental Psychology at the University of Oxford"
+      },
+      {
+        "role": "predicate",
+        "text": "sees"
+      },
+      {
+        "role": "object",
+        "text": "this"
+      },
+      {
+        "role": "adverbial",
+        "text": "in his lab"
+      },
+      {
+        "role": "adverbial",
+        "text": "every day"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Matthew Rushworth, of the Department of Experimental Psychology at the University of Oxford"
+      },
+      {
+        "role": "predicate",
+        "text": "sees"
+      },
+      {
+        "role": "object",
+        "text": "this"
+      }
+    ]
+  },
+  "M-E02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "One of the ways in which all agents seem to make decisions is that they assign a lower weighting to outcomes that are going to be further away in the future",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-E03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a very sensible way for an animal to make decisions in the wild"
+      },
+      {
+        "role": "predicate",
+        "text": "would have been"
+      },
+      {
+        "role": "complement",
+        "text": "very helpful for humans for thousands of years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a very sensible way for an animal to make decisions in the wild"
+      },
+      {
+        "role": "predicate",
+        "text": "would have been"
+      },
+      {
+        "role": "complement",
+        "text": "very helpful for humans for thousands of years"
+      }
+    ]
+  },
+  "M-F01": {
+    "pattern": "谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Not"
+      },
+      {
+        "role": "predicate",
+        "text": "longer"
+      },
+      {
+        "role": "adverbial",
+        "text": "any"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Not"
+      },
+      {
+        "role": "predicate",
+        "text": "longer"
+      }
+    ]
+  },
+  "M-F02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "could"
+      },
+      {
+        "role": "predicate",
+        "text": "be"
+      },
+      {
+        "role": "complement",
+        "text": "too late"
+      },
+      {
+        "role": "adverbial",
+        "text": "By the time we wake up to the threat posed by climate change"
+      },
+      {
+        "role": "adverbial",
+        "text": "well"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "could"
+      },
+      {
+        "role": "predicate",
+        "text": "be"
+      },
+      {
+        "role": "complement",
+        "text": "too late"
+      }
+    ]
+  },
+  "M-F03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "if引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "others"
+      },
+      {
+        "role": "predicate",
+        "text": "may have"
+      },
+      {
+        "role": "complement",
+        "text": "to help us to do so"
+      },
+      {
+        "role": "adverbial",
+        "text": "if we’re not going to make rational decisions about the future",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "others"
+      },
+      {
+        "role": "predicate",
+        "text": "may have"
+      },
+      {
+        "role": "complement",
+        "text": "to help us to do so"
+      }
+    ]
+  },
+  "M-G01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Few political libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "without a copy of Nudge: Improving Decisions About Health, Wealth and Happiness, by Richard Thaler"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Few political libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "without a copy of Nudge: Improving Decisions About Health, Wealth and Happiness, by Richard Thaler"
+      }
+    ]
+  },
+  "M-G02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "argue"
+      },
+      {
+        "role": "object",
+        "text": "that governments should persuade us into making better decisions—such as saving more in our pension plans—by changing the default options",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "argue"
+      }
+    ]
+  },
+  "M-G03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Professor Weber"
+      },
+      {
+        "role": "predicate",
+        "text": "believes"
+      },
+      {
+        "role": "object",
+        "text": "that environmental policy can make use of similar tactics",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Professor Weber"
+      },
+      {
+        "role": "predicate",
+        "text": "believes"
+      }
+    ]
+  },
+  "M-G04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "If引导的从句整体作状语；该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "most developers"
+      },
+      {
+        "role": "predicate",
+        "text": "would be"
+      },
+      {
+        "role": "complement",
+        "text": "too lazy"
+      },
+      {
+        "role": "adverbial",
+        "text": "If, for example, building codes included green construction guidelines",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "to challenge them",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "most developers"
+      },
+      {
+        "role": "predicate",
+        "text": "would be"
+      },
+      {
+        "role": "complement",
+        "text": "too lazy"
+      }
+    ]
+  },
+  "M-H01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Defaults"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "certainly part of the solution"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Defaults"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "certainly part of the solution"
+      }
+    ]
+  },
+  "M-H02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "social scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "most concerned"
+      },
+      {
+        "role": "adverbial",
+        "text": "about crafting messages that exploit our group mentality",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "social scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "most concerned"
+      }
+    ]
+  },
+  "M-H03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "what引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Professor Neil Adger, of the Tyndall Centre for Climate Change Research in Norwich"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "We need to understand what motivates people, what it is that allows them to make change",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Professor Neil Adger, of the Tyndall Centre for Climate Change Research in Norwich"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-H04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "actually about what their peers think of them, what"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "actually about what their peers think of them, what"
+      }
+    ]
+  },
+  "M-H05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "what引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "our inner caveman"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "looking"
+      },
+      {
+        "role": "complement",
+        "text": "In other words"
+      },
+      {
+        "role": "complement",
+        "text": "over his shoulder"
+      },
+      {
+        "role": "adverbial",
+        "text": "continually"
+      },
+      {
+        "role": "adverbial",
+        "text": "to see what the rest of the tribe are up to",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "our inner caveman"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "looking"
+      },
+      {
+        "role": "complement",
+        "text": "In other words"
+      },
+      {
+        "role": "complement",
+        "text": "over his shoulder"
+      }
+    ]
+  },
+  "M-I01": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The passive attitude we have to climate change"
+      },
+      {
+        "role": "predicate",
+        "text": "can be altered"
+      },
+      {
+        "role": "adverbial",
+        "text": "by counting us in—and measuring us against—our peer group",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The passive attitude we have to climate change"
+      },
+      {
+        "role": "predicate",
+        "text": "can be altered"
+      }
+    ]
+  },
+  "M-I02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Dr. Robert Cialdini, author of Influence: The Psychology of Persuasion"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "Social norms are primitive and elemental",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Dr. Robert Cialdini, author of Influence: The Psychology of Persuasion"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-I03": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Birds"
+      },
+      {
+        "role": "predicate",
+        "text": "flock"
+      },
+      {
+        "role": "adverbial",
+        "text": "together"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Birds"
+      },
+      {
+        "role": "predicate",
+        "text": "flock"
+      }
+    ]
+  },
+  "M-J01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These norms"
+      },
+      {
+        "role": "predicate",
+        "text": "can take"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "adverbial",
+        "text": "beyond good intentions"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "These norms"
+      },
+      {
+        "role": "predicate",
+        "text": "can take"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      }
+    ]
+  },
+  "M-J02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Cialdini"
+      },
+      {
+        "role": "predicate",
+        "text": "conducted"
+      },
+      {
+        "role": "object",
+        "text": "a study in San Diego in which coat hangers bearing messages about saving energy were hung on people’s doors"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Cialdini"
+      },
+      {
+        "role": "predicate",
+        "text": "conducted"
+      },
+      {
+        "role": "object",
+        "text": "a study in San Diego in which coat hangers bearing messages about saving energy were hung on people’s doors"
+      }
+    ]
+  },
+  "M-J03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some of the messages"
+      },
+      {
+        "role": "predicate",
+        "text": "mentioned"
+      },
+      {
+        "role": "object",
+        "text": "the environment, some financial savings, others social responsibility"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some of the messages"
+      },
+      {
+        "role": "predicate",
+        "text": "mentioned"
+      },
+      {
+        "role": "object",
+        "text": "the environment, some financial savings, others social responsibility"
+      }
+    ]
+  },
+  "M-J04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "the ones that mentioned the actions of neighbours that drove down power use"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "the ones that mentioned the actions of neighbours that drove down power use"
+      }
+    ]
+  },
+  "M-K01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Other studies"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      },
+      {
+        "role": "object",
+        "text": "that simply providing the facility for people to compare their energy use with the local average is enough to cause them to modify their behaviour",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Other studies"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      }
+    ]
+  },
+  "M-K02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The Conservatives"
+      },
+      {
+        "role": "predicate",
+        "text": "plan"
+      },
+      {
+        "role": "complement",
+        "text": "to adopt this strategy by making utility companies print the average local electricity and gas usage on people’s bills"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The Conservatives"
+      },
+      {
+        "role": "predicate",
+        "text": "plan"
+      },
+      {
+        "role": "complement",
+        "text": "to adopt this strategy by making utility companies print the average local electricity and gas usage on people’s bills"
+      }
+    ]
+  },
+  "M-L01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "how引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Social science"
+      },
+      {
+        "role": "predicate",
+        "text": "can also teach"
+      },
+      {
+        "role": "object",
+        "text": "politicians"
+      },
+      {
+        "role": "object",
+        "text": "how to avoid our collective capacity for self-destructive behaviour",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Social science"
+      },
+      {
+        "role": "predicate",
+        "text": "can also teach"
+      },
+      {
+        "role": "object",
+        "text": "politicians"
+      }
+    ]
+  },
+  "M-L02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Environmental campaigns that tell us how many people drive SUVs"
+      },
+      {
+        "role": "predicate",
+        "text": "imply"
+      },
+      {
+        "role": "object",
+        "text": "that this behaviour is widespread and thus permissible",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "unwittingly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Environmental campaigns that tell us how many people drive SUVs"
+      },
+      {
+        "role": "predicate",
+        "text": "imply"
+      }
+    ]
+  },
+  "M-L03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Cialdini"
+      },
+      {
+        "role": "predicate",
+        "text": "recommends"
+      },
+      {
+        "role": "object",
+        "text": "some careful framing of the message"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Cialdini"
+      },
+      {
+        "role": "predicate",
+        "text": "recommends"
+      },
+      {
+        "role": "object",
+        "text": "some careful framing of the message"
+      }
+    ]
+  },
+  "M-L04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语；that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the message"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "to marginalise it, for example"
+      },
+      {
+        "role": "adverbial",
+        "text": "Instead of normalising the undesirable behaviour",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "by stating that if even one person buys yet another SUV, it reduces our ability to be energy-independent",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the message"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "to marginalise it, for example"
+      }
+    ]
+  },
+  "M-M01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "how引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tapping into how we already see ourselves",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "crucial"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "crucial"
+      }
+    ]
+  },
+  "M-M02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The most successful environmental strategy"
+      },
+      {
+        "role": "predicate",
+        "text": "will marry"
+      },
+      {
+        "role": "object",
+        "text": "the green message"
+      },
+      {
+        "role": "adverbial",
+        "text": "to our own sense of identity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The most successful environmental strategy"
+      },
+      {
+        "role": "predicate",
+        "text": "will marry"
+      },
+      {
+        "role": "object",
+        "text": "the green message"
+      }
+    ]
+  },
+  "M-M03": {
+    "pattern": "谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Take"
+      },
+      {
+        "role": "object",
+        "text": "your average trade union member"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Take"
+      },
+      {
+        "role": "object",
+        "text": "your average trade union member"
+      }
+    ]
+  },
+  "M-M04": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "is setting"
+      },
+      {
+        "role": "object",
+        "text": "one of 1,100 action groups with the support of Climate Solidarity, a two-year environmental campaign aimed at trade unionists"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "is setting"
+      },
+      {
+        "role": "object",
+        "text": "one of 1,100 action groups with the support of Climate Solidarity, a two-year environmental campaign aimed at trade unionists"
+      }
+    ]
+  },
+  "M-N01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Erica"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "proof that a great-grandmother can help to lead the revolution"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Erica"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "proof that a great-grandmother can help to lead the revolution"
+      }
+    ]
+  },
+  "M-N02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "I think it’s a terrific idea",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "of the campaign"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-N03": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "members"
+      },
+      {
+        "role": "complement",
+        "text": "think there must be something in it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "members"
+      },
+      {
+        "role": "complement",
+        "text": "think there must be something in it"
+      }
+    ]
+  },
+  "M-N04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "is expecting"
+      },
+      {
+        "role": "object",
+        "text": "up to 20 people"
+      },
+      {
+        "role": "adverbial",
+        "text": "at the first meeting she has called"
+      },
+      {
+        "role": "adverbial",
+        "text": "at her local pub in the Cornish village of Polperro"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "is expecting"
+      },
+      {
+        "role": "object",
+        "text": "up to 20 people"
+      }
+    ]
+  },
+  "M-O01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "where引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nick Perks, project director for Climate Solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "believes"
+      },
+      {
+        "role": "object",
+        "text": "this sort of activity is where the future of environmental action lies",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nick Perks, project director for Climate Solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "believes"
+      }
+    ]
+  },
+  "M-O02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "Using existing civil society structures or networks is a more effective way of creating change... and obviously trade unions are one of the biggest civil society networks in the UK",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-O03": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The “Love Food, Hate Waste” campaign"
+      },
+      {
+        "role": "predicate",
+        "text": "entered"
+      },
+      {
+        "role": "adverbial",
+        "text": "into a collaboration last year"
+      },
+      {
+        "role": "adverbial",
+        "text": "with another such network—the Women’s Institute"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The “Love Food, Hate Waste” campaign"
+      },
+      {
+        "role": "predicate",
+        "text": "entered"
+      }
+    ]
+  },
+  "M-O04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Londoner Rachel Taylor"
+      },
+      {
+        "role": "predicate",
+        "text": "joined"
+      },
+      {
+        "role": "object",
+        "text": "the campaign"
+      },
+      {
+        "role": "adverbial",
+        "text": "with the aim of making new friends"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Londoner Rachel Taylor"
+      },
+      {
+        "role": "predicate",
+        "text": "joined"
+      },
+      {
+        "role": "object",
+        "text": "the campaign"
+      }
+    ]
+  },
+  "M-O05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "have made"
+      },
+      {
+        "role": "object",
+        "text": "lasting changes to what she throws away in her kitchen"
+      },
+      {
+        "role": "adverbial",
+        "text": "A year on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "have made"
+      },
+      {
+        "role": "object",
+        "text": "lasting changes to what she throws away in her kitchen"
+      }
+    ]
+  },
+  "M-O06": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "if引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "It’s always more of an incentive if you’re doing it with other people",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-O07": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "if引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "motivates"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      },
+      {
+        "role": "object",
+        "text": "more"
+      },
+      {
+        "role": "adverbial",
+        "text": "if you know that you’ve got to provide feedback to a group",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "motivates"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      },
+      {
+        "role": "object",
+        "text": "more"
+      }
+    ]
+  },
+  "M-P01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The power of such simple psychology in fighting climate change"
+      },
+      {
+        "role": "predicate",
+        "text": "is attracting"
+      },
+      {
+        "role": "object",
+        "text": "attention"
+      },
+      {
+        "role": "adverbial",
+        "text": "across the political establishment"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The power of such simple psychology in fighting climate change"
+      },
+      {
+        "role": "predicate",
+        "text": "is attracting"
+      },
+      {
+        "role": "object",
+        "text": "attention"
+      }
+    ]
+  },
+  "M-P02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the House of Representatives Science Committee"
+      },
+      {
+        "role": "predicate",
+        "text": "has approved"
+      },
+      {
+        "role": "object",
+        "text": "a bill allocating $10 million a year to studying energy-related behaviour"
+      },
+      {
+        "role": "adverbial",
+        "text": "In the US"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the House of Representatives Science Committee"
+      },
+      {
+        "role": "predicate",
+        "text": "has approved"
+      },
+      {
+        "role": "object",
+        "text": "a bill allocating $10 million a year to studying energy-related behaviour"
+      }
+    ]
+  },
+  "M-P03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语 + 主语 + 谓语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "new studies"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "in development"
+      },
+      {
+        "role": "adverbial",
+        "text": "In the UK"
+      },
+      {
+        "role": "subject",
+        "text": "social scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "spotted"
+      },
+      {
+        "role": "adverbial",
+        "text": "regularly"
+      },
+      {
+        "role": "adverbial",
+        "text": "in British government offices"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "new studies"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "in development"
+      },
+      {
+        "role": "subject",
+        "text": "social scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "spotted"
+      }
+    ]
+  },
+  "M-P04": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "adverbial",
+        "text": "With the help of psychologists"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "cognitive scientists John Bransford and Daniel Schwartz, both then at Vanderbilt University"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that what distinguished young adults from children was not the ability to retain facts or apply prior knowledge to a new situation but a quality they called “preparation for future learning.”",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "More than a decade ago"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "cognitive scientists John Bransford and Daniel Schwartz, both then at Vanderbilt University"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      }
+    ]
+  },
+  "R1-02": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "asked"
+      },
+      {
+        "role": "object",
+        "text": "fifth graders and college students"
+      },
+      {
+        "role": "complement",
+        "text": "to create a recovery plan to protect bald eagles from extinction"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "asked"
+      },
+      {
+        "role": "object",
+        "text": "fifth graders and college students"
+      },
+      {
+        "role": "complement",
+        "text": "to create a recovery plan to protect bald eagles from extinction"
+      }
+    ]
+  },
+  "R1-03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "though引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the two groups"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      },
+      {
+        "role": "complement",
+        "text": "with plans of similar quality"
+      },
+      {
+        "role": "adverbial",
+        "text": "Shockingly"
+      },
+      {
+        "role": "adverbial",
+        "text": "though the college students had better spelling skills",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the two groups"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      },
+      {
+        "role": "complement",
+        "text": "with plans of similar quality"
+      }
+    ]
+  },
+  "R1-04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "this outcome"
+      },
+      {
+        "role": "predicate",
+        "text": "indicated"
+      },
+      {
+        "role": "object",
+        "text": "that schooling had failed to help students think about ecosystems and extinction, major scientific ideas",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "From the standpoint of a traditional educator"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this outcome"
+      },
+      {
+        "role": "predicate",
+        "text": "indicated"
+      }
+    ]
+  },
+  "R1-05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "decided"
+      },
+      {
+        "role": "complement",
+        "text": "to go deeper"
+      },
+      {
+        "role": "adverbial",
+        "text": "however"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "decided"
+      },
+      {
+        "role": "complement",
+        "text": "to go deeper"
+      }
+    ]
+  },
+  "R1-06": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "asked"
+      },
+      {
+        "role": "object",
+        "text": "both groups"
+      },
+      {
+        "role": "complement",
+        "text": "to generate questions about important issues needed to create recovery plans"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "asked"
+      },
+      {
+        "role": "object",
+        "text": "both groups"
+      },
+      {
+        "role": "complement",
+        "text": "to generate questions about important issues needed to create recovery plans"
+      }
+    ]
+  },
+  "R1-07": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "large differences"
+      },
+      {
+        "role": "adverbial",
+        "text": "On this task"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "large differences"
+      }
+    ]
+  },
+  "R1-08": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "College students"
+      },
+      {
+        "role": "predicate",
+        "text": "focused"
+      },
+      {
+        "role": "complement",
+        "text": "on critical issues of interdependence between eagles and their habitat"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "College students"
+      },
+      {
+        "role": "predicate",
+        "text": "focused"
+      },
+      {
+        "role": "complement",
+        "text": "on critical issues of interdependence between eagles and their habitat"
+      }
+    ]
+  },
+  "R1-09": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Fifth graders"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to focus on features of individual eagles (“How big are they?” and “What do they eat?”)"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "predicate",
+        "text": "eat"
+      },
+      {
+        "role": "object",
+        "text": "What"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Fifth graders"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to focus on features of individual eagles (“How big are they?” and “What do they eat?”)"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "predicate",
+        "text": "eat"
+      },
+      {
+        "role": "object",
+        "text": "What"
+      }
+    ]
+  },
+  "R1-10": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The college students"
+      },
+      {
+        "role": "predicate",
+        "text": "had cultivated"
+      },
+      {
+        "role": "object",
+        "text": "the ability to ask questions, the cornerstone of critical thinking"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The college students"
+      },
+      {
+        "role": "predicate",
+        "text": "had cultivated"
+      },
+      {
+        "role": "object",
+        "text": "the ability to ask questions, the cornerstone of critical thinking"
+      }
+    ]
+  },
+  "R1-11": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "had learned"
+      },
+      {
+        "role": "object",
+        "text": "how to learn"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "had learned"
+      },
+      {
+        "role": "object",
+        "text": "how to learn"
+      }
+    ]
+  },
+  "R1-12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Museums and other institutions of informal learning"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      },
+      {
+        "role": "predicate",
+        "text": "suited"
+      },
+      {
+        "role": "complement",
+        "text": "to teach this skill than elementary and secondary schools"
+      },
+      {
+        "role": "adverbial",
+        "text": "better"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Museums and other institutions of informal learning"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      },
+      {
+        "role": "predicate",
+        "text": "suited"
+      },
+      {
+        "role": "complement",
+        "text": "to teach this skill than elementary and secondary schools"
+      }
+    ]
+  },
+  "R1-13": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "how引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "studied"
+      },
+      {
+        "role": "object",
+        "text": "how learning to ask good questions can affect the quality of people’s scientific inquiry",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "At the Exploratorium in San Francisco"
+      },
+      {
+        "role": "adverbial",
+        "text": "recently"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "studied"
+      }
+    ]
+  },
+  "R1-14": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that when we taught participants to ask “What if?” and “How can?” questions that nobody present would know the answer to and that would spark exploration, they engaged in better inquiry at the next exhibit—asking more questions, performing more experiments and making better interpretations of their results",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      }
+    ]
+  },
+  "R1-15": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "their questions"
+      },
+      {
+        "role": "predicate",
+        "text": "became"
+      },
+      {
+        "role": "complement",
+        "text": "more comprehensive at the new exhibit"
+      },
+      {
+        "role": "adverbial",
+        "text": "Specifically"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "their questions"
+      },
+      {
+        "role": "predicate",
+        "text": "became"
+      },
+      {
+        "role": "complement",
+        "text": "more comprehensive at the new exhibit"
+      }
+    ]
+  },
+  "R1-16": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to include both cause and effect in their question"
+      },
+      {
+        "role": "adverbial",
+        "text": "Rather than merely asking about something they wanted to try",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to include both cause and effect in their question"
+      }
+    ]
+  },
+  "R1-17": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "该从句引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Asking juicy questions",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "appears"
+      },
+      {
+        "role": "complement",
+        "text": "to be a transferable skill for deepening collaborative inquiry into the science content found in exhibits"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "appears"
+      },
+      {
+        "role": "complement",
+        "text": "to be a transferable skill for deepening collaborative inquiry into the science content found in exhibits"
+      }
+    ]
+  },
+  "R1-18": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This type of learning"
+      },
+      {
+        "role": "predicate",
+        "text": "is not confined"
+      },
+      {
+        "role": "adverbial",
+        "text": "to museums or institutional settings"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This type of learning"
+      },
+      {
+        "role": "predicate",
+        "text": "is not confined"
+      }
+    ]
+  },
+  "R1-19": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Informal learning environments"
+      },
+      {
+        "role": "predicate",
+        "text": "tolerate"
+      },
+      {
+        "role": "object",
+        "text": "failure better than schools"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Informal learning environments"
+      },
+      {
+        "role": "predicate",
+        "text": "tolerate"
+      },
+      {
+        "role": "object",
+        "text": "failure better than schools"
+      }
+    ]
+  },
+  "R1-20": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "too little time to allow students to form and pursue their own questions and too much ground to cover in the curriculum"
+      },
+      {
+        "role": "adverbial",
+        "text": "Perhaps"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "too little time to allow students to form and pursue their own questions and too much ground to cover in the curriculum"
+      }
+    ]
+  },
+  "R1-21": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "must acquire"
+      },
+      {
+        "role": "object",
+        "text": "this skill"
+      },
+      {
+        "role": "adverbial",
+        "text": "somewhere"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "must acquire"
+      },
+      {
+        "role": "object",
+        "text": "this skill"
+      }
+    ]
+  },
+  "R1-22": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "what引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Our society"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      },
+      {
+        "role": "adverbial",
+        "text": "on them being able to make critical decisions about their own medical treatment, say, or what we must do about global energy needs and demands",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Our society"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      }
+    ]
+  },
+  "R1-23": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "a robust informal system that gives no grades, takes all comers, and is available even on holidays and weekends"
+      },
+      {
+        "role": "adverbial",
+        "text": "For that"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "a robust informal system that gives no grades, takes all comers, and is available even on holidays and weekends"
+      }
+    ]
+  },
+  "R2-01": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "’s"
+      },
+      {
+        "role": "adverbial",
+        "text": "in the space world"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "’s"
+      }
+    ]
+  },
+  "R2-02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "George Whitesides, chief executive of space-tourism firm Virgin Galactic"
+      },
+      {
+        "role": "predicate",
+        "text": "was placing"
+      },
+      {
+        "role": "object",
+        "text": "his company"
+      },
+      {
+        "role": "adverbial",
+        "text": "In an interview last year with The Economist"
+      },
+      {
+        "role": "adverbial",
+        "text": "in the latter category"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "George Whitesides, chief executive of space-tourism firm Virgin Galactic"
+      },
+      {
+        "role": "predicate",
+        "text": "was placing"
+      },
+      {
+        "role": "object",
+        "text": "his company"
+      }
+    ]
+  },
+  "R2-03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "insurance"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "cold comfort following the failure on October 31st of VSS Enterprise, resulting in the death of one pilot"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "insurance"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "cold comfort following the failure on October 31st of VSS Enterprise, resulting in the death of one pilot"
+      }
+    ]
+  },
+  "R2-04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the accident in California"
+      },
+      {
+        "role": "predicate",
+        "text": "will cast"
+      },
+      {
+        "role": "object",
+        "text": "a long shadow"
+      },
+      {
+        "role": "adverbial",
+        "text": "On top of the tragic loss of life"
+      },
+      {
+        "role": "adverbial",
+        "text": "over the future of space tourism"
+      },
+      {
+        "role": "adverbial",
+        "text": "even before it has properly begun",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the accident in California"
+      },
+      {
+        "role": "predicate",
+        "text": "will cast"
+      },
+      {
+        "role": "object",
+        "text": "a long shadow"
+      }
+    ]
+  },
+  "R2-05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The notion of space tourism"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "hold"
+      },
+      {
+        "role": "adverbial",
+        "text": "in 2001"
+      },
+      {
+        "role": "adverbial",
+        "text": "with a $20 million flight aboard a Russian spacecraft by Dennis Tito, a millionaire engineer with an adventurous streak"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The notion of space tourism"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "hold"
+      }
+    ]
+  },
+  "R2-06": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Just half a dozen holiday-makers"
+      },
+      {
+        "role": "predicate",
+        "text": "have reached"
+      },
+      {
+        "role": "object",
+        "text": "orbit"
+      },
+      {
+        "role": "complement",
+        "text": "since then"
+      },
+      {
+        "role": "complement",
+        "text": "for similarly astronomical price tags"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Just half a dozen holiday-makers"
+      },
+      {
+        "role": "predicate",
+        "text": "have reached"
+      },
+      {
+        "role": "object",
+        "text": "orbit"
+      },
+      {
+        "role": "complement",
+        "text": "since then"
+      },
+      {
+        "role": "complement",
+        "text": "for similarly astronomical price tags"
+      }
+    ]
+  },
+  "R2-07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "companies"
+      },
+      {
+        "role": "predicate",
+        "text": "have begun"
+      },
+      {
+        "role": "complement",
+        "text": "to plan more affordable “suborbital” flights—briefer ventures just to the edge of space’s vast darkness"
+      },
+      {
+        "role": "adverbial",
+        "text": "more recently"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "companies"
+      },
+      {
+        "role": "predicate",
+        "text": "have begun"
+      },
+      {
+        "role": "complement",
+        "text": "to plan more affordable “suborbital” flights—briefer ventures just to the edge of space’s vast darkness"
+      }
+    ]
+  },
+  "R2-08": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Virgin Galactic"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "predicate",
+        "text": "seemed"
+      },
+      {
+        "role": "complement",
+        "text": "closest to starting regular flights"
+      },
+      {
+        "role": "adverbial",
+        "text": "prior to this week’s accident"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Virgin Galactic"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "predicate",
+        "text": "seemed"
+      },
+      {
+        "role": "complement",
+        "text": "closest to starting regular flights"
+      }
+    ]
+  },
+  "R2-09": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The company"
+      },
+      {
+        "role": "predicate",
+        "text": "has already taken"
+      },
+      {
+        "role": "object",
+        "text": "deposits"
+      },
+      {
+        "role": "adverbial",
+        "text": "from around 800 would-be space tourists, including Stephen Hawking"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The company"
+      },
+      {
+        "role": "predicate",
+        "text": "has already taken"
+      },
+      {
+        "role": "object",
+        "text": "deposits"
+      }
+    ]
+  },
+  "R2-10": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语；that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Sir Richard Branson, Virgin Galactic’s founder"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "predicate",
+        "text": "suggested"
+      },
+      {
+        "role": "object",
+        "text": "that a SpaceShipTwo craft would carry its first paying customers as soon as February 2015",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "After being dogged by technical delays for years",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "recently"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Sir Richard Branson, Virgin Galactic’s founder"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "predicate",
+        "text": "suggested"
+      }
+    ]
+  },
+  "R2-11": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "an impossible timeline"
+      },
+      {
+        "role": "adverbial",
+        "text": "now"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "an impossible timeline"
+      }
+    ]
+  },
+  "R2-12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a sister craft of the crashed spaceplane"
+      },
+      {
+        "role": "predicate",
+        "text": "was reported"
+      },
+      {
+        "role": "complement",
+        "text": "to be about half-finished"
+      },
+      {
+        "role": "adverbial",
+        "text": "In July"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a sister craft of the crashed spaceplane"
+      },
+      {
+        "role": "predicate",
+        "text": "was reported"
+      },
+      {
+        "role": "complement",
+        "text": "to be about half-finished"
+      }
+    ]
+  },
+  "R2-13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "as引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The other half"
+      },
+      {
+        "role": "predicate",
+        "text": "will have"
+      },
+      {
+        "role": "complement",
+        "text": "to wait"
+      },
+      {
+        "role": "adverbial",
+        "text": "as authorities of America’s Federal Aviation Administration (FAA) and National Transportation Safety Board work out what went wrong",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The other half"
+      },
+      {
+        "role": "predicate",
+        "text": "will have"
+      },
+      {
+        "role": "complement",
+        "text": "to wait"
+      }
+    ]
+  },
+  "R2-14": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the entire space tourism industry"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "on tenterhooks"
+      },
+      {
+        "role": "adverbial",
+        "text": "In the meantime"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the entire space tourism industry"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "on tenterhooks"
+      }
+    ]
+  },
+  "R2-15": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "unless引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The 2004 Commercial Space Launch Amendments Act, intended to encourage private space vehicles and services"
+      },
+      {
+        "role": "predicate",
+        "text": "prohibits"
+      },
+      {
+        "role": "object",
+        "text": "the transportation secretary (and thereby the FAA)"
+      },
+      {
+        "role": "adverbial",
+        "text": "from regulating the design or operation of private spacecraft, unless they have resulted in a serious or fatal injury to crew or passengers",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The 2004 Commercial Space Launch Amendments Act, intended to encourage private space vehicles and services"
+      },
+      {
+        "role": "predicate",
+        "text": "prohibits"
+      },
+      {
+        "role": "object",
+        "text": "the transportation secretary (and thereby the FAA)"
+      }
+    ]
+  },
+  "R2-16": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "object",
+        "text": "that the FAA could suspend Virgin Galactic’s license to fly",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      }
+    ]
+  },
+  "R2-17": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "as引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "could also insist"
+      },
+      {
+        "role": "adverbial",
+        "text": "on checking private manned spacecraft as thoroughly as it does commercial aircraft",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "could also insist"
+      }
+    ]
+  },
+  "R2-18": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "While引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "would add"
+      },
+      {
+        "role": "object",
+        "text": "significant cost and complexity"
+      },
+      {
+        "role": "adverbial",
+        "text": "While that may make suborbital travel safer",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "to an emerging industry that has until now operated largely as the playground of billionaires and dreamy engineers"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "would add"
+      },
+      {
+        "role": "object",
+        "text": "significant cost and complexity"
+      }
+    ]
+  },
+  "R2-19": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "whether引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Virgin Galactic, regulators and the public respond to this most recent tragedy"
+      },
+      {
+        "role": "predicate",
+        "text": "will determine"
+      },
+      {
+        "role": "object",
+        "text": "How"
+      },
+      {
+        "role": "object",
+        "text": "whether and how soon private space travel can transcend that playground",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Virgin Galactic, regulators and the public respond to this most recent tragedy"
+      },
+      {
+        "role": "predicate",
+        "text": "will determine"
+      },
+      {
+        "role": "object",
+        "text": "How"
+      }
+    ]
+  },
+  "R2-20": {
+    "pattern": "主语 + 谓语 + 主语 + 表语 / 补语 + 宾语",
+    "explanation": "该从句引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "subject",
+        "text": "to pioneer a new mode of travel",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "complement",
+        "text": "to face those risks"
+      },
+      {
+        "role": "object",
+        "text": "those risks"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to face those risks"
+      },
+      {
+        "role": "object",
+        "text": "those risks"
+      }
+    ]
+  }
+}

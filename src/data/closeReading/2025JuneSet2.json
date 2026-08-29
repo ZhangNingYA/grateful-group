@@ -1,0 +1,2915 @@
+{
+  "C01": {
+    "translation": "地球上没有任何野兽比微小的缓步类动物更坚强。",
+    "vocabulary": [
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "No beast on Earth"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C02": {
+    "translation": "它可以在-272°C的冷冻条件下、暴露在外太空的真空中、甚至在足以杀死人类的500倍X射线照射下生存。",
+    "vocabulary": [
+      {
+        "term": "vacuum",
+        "explanation": "真空"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "C03": {
+    "translation": "换句话说，这种生物可以忍受地球上不存在的条件。",
+    "vocabulary": [
+      {
+        "term": "endure",
+        "explanation": "忍受；承受"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In other words"
+      },
+      {
+        "role": "subject",
+        "text": "the creature"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "C04": {
+    "translation": "研究人员正在研究微观动物，以了解如何让人类和农作物做好准备以应对太空旅行的严酷考验。",
+    "vocabulary": [
+      {
+        "term": "microscopic",
+        "explanation": "微小的；显微镜下的"
+      },
+      {
+        "term": "rigors",
+        "explanation": "严酷考验"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "C05": {
+    "translation": "缓步动物的坚不可摧源于它对环境的适应——这似乎令人惊讶，因为它生活在看似舒适的地方，比如点缀在花园墙上的凉爽潮湿的青苔。",
+    "vocabulary": [
+      {
+        "term": "indestructibility",
+        "explanation": "坚不可摧性"
+      },
+      {
+        "term": "adaptations",
+        "explanation": "适应性特征"
+      },
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The tardigrade’s indestructibility"
+      },
+      {
+        "role": "predicate",
+        "text": "stems"
+      }
+    ]
+  },
+  "C06": {
+    "translation": "但事实证明，缓步动物潮湿、长满青苔的家园每年都会多次变干。",
+    "vocabulary": [
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      },
+      {
+        "term": "moss",
+        "explanation": "苔藓"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But it"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      }
+    ]
+  },
+  "C07": {
+    "translation": "干燥对于大多数生物来说都是灾难性的。",
+    "vocabulary": [
+      {
+        "term": "catastrophic",
+        "explanation": "灾难性的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Drying"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C08": {
+    "translation": "它会以与冷冻、真空和辐射相似的方式损伤细胞。",
+    "vocabulary": [
+      {
+        "term": "radiation",
+        "explanation": "辐射"
+      },
+      {
+        "term": "vacuum",
+        "explanation": "真空"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "does"
+      }
+    ]
+  },
+  "C09": {
+    "translation": "然而，缓步动物已经进化出特殊的策略来应对此类伤害。",
+    "vocabulary": [
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tardigrades, however"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "C10": {
+    "translation": "当缓步动物变干时，它的细胞会产生几种奇怪的蛋白质，这些蛋白质与其他动物中发现的任何蛋白质都不同。",
+    "vocabulary": [
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As a tardigrade"
+      },
+      {
+        "role": "predicate",
+        "text": "dries"
+      }
+    ]
+  },
+  "C11": {
+    "translation": "在水中，蛋白质是无形状的。",
+    "vocabulary": [
+      {
+        "term": "proteins",
+        "explanation": "蛋白质"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In water"
+      },
+      {
+        "role": "subject",
+        "text": "the proteins"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "C12": {
+    "translation": "但随着水消失，蛋白质会自组装成长纤维，填充细胞内部。",
+    "vocabulary": [
+      {
+        "term": "fibers",
+        "explanation": "纤维"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "But as water disappears"
+      },
+      {
+        "role": "subject",
+        "text": "the proteins self-assemble into long fibers that"
+      },
+      {
+        "role": "predicate",
+        "text": "fill"
+      }
+    ]
+  },
+  "C13": {
+    "translation": "这些纤维支撑细胞膜（细胞膜）和蛋白质，防止它们破裂或展开。",
+    "vocabulary": [
+      {
+        "term": "unfolding",
+        "explanation": "展开；变性"
+      },
+      {
+        "term": "membrane",
+        "explanation": "膜"
+      },
+      {
+        "term": "fibers",
+        "explanation": "纤维"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The fibers"
+      },
+      {
+        "role": "predicate",
+        "text": "support"
+      }
+    ]
+  },
+  "C14": {
+    "translation": "有一天，模仿缓步动物可能会帮助人类殖民外太空。",
+    "vocabulary": [
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Emulating tardigrades"
+      },
+      {
+        "role": "predicate",
+        "text": "could"
+      }
+    ]
+  },
+  "C15": {
+    "translation": "粮食作物可以被改造为产生缓步动物蛋白质，使这些生物体能够在辐射水平高于地球的航天器上更有效地生长。",
+    "vocabulary": [
+      {
+        "term": "tardigrade",
+        "explanation": "缓步动物"
+      },
+      {
+        "term": "spacecraft",
+        "explanation": "航天器"
+      },
+      {
+        "term": "radiation",
+        "explanation": "辐射"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Food crops"
+      },
+      {
+        "role": "predicate",
+        "text": "could be"
+      }
+    ]
+  },
+  "C16": {
+    "translation": "因此，如果人类成功到达星星，他们可能会通过站在后院微小的八足耐力专家的肩膀上来完成这一壮举。",
+    "vocabulary": [
+      {
+        "term": "succeed",
+        "explanation": "成功"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "So if humans ever succeed in reaching the stars"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "may"
+      }
+    ]
+  },
+  "M-A01": {
+    "translation": "随着气候变化的规模和影响变得越来越令人担忧，肉类成为受欢迎的行动目标。",
+    "vocabulary": [
+      {
+        "term": "impacts",
+        "explanation": "影响"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As the scale and"
+      },
+      {
+        "role": "predicate",
+        "text": "impacts"
+      }
+    ]
+  },
+  "M-A02": {
+    "translation": "保护自然环境免遭破坏或污染的倡导者敦促公众少吃肉。",
+    "vocabulary": [
+      {
+        "term": "Advocates",
+        "explanation": "倡导者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Advocates for the protection of the natural environment from destruction or pollution"
+      },
+      {
+        "role": "predicate",
+        "text": "urge"
+      }
+    ]
+  },
+  "M-A03": {
+    "translation": "一些活动人士甚至呼吁对肉类征税以减少肉类消费。",
+    "vocabulary": [
+      {
+        "term": "activists",
+        "explanation": "活动人士"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some activists"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-B01": {
+    "translation": "这些论点背后的一个关键主张是，在全球范围内，肉类生产产生的温室气体比整个运输部门产生的温室气体还要多。",
+    "vocabulary": [
+      {
+        "term": "transportation sector",
+        "explanation": "交通运输部门"
+      },
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A key"
+      },
+      {
+        "role": "predicate",
+        "text": "claim"
+      }
+    ]
+  },
+  "M-B02": {
+    "translation": "然而，正如我将证明的那样，这种说法显然是错误的。",
+    "vocabulary": [
+      {
+        "term": "However",
+        "explanation": "然而"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "However, this"
+      },
+      {
+        "role": "predicate",
+        "text": "claim is"
+      }
+    ]
+  },
+  "M-B03": {
+    "translation": "而这种说法持续存在，导致人们错误地认识肉类与气候变化之间的联系。",
+    "vocabulary": [
+      {
+        "term": "persistence",
+        "explanation": "持续存在"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And its persistence"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "M-C01": {
+    "translation": "我最近的研究重点是畜牧业影响空气质量和气候变化的方式。",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "研究"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "My recent research"
+      },
+      {
+        "role": "predicate",
+        "text": "focuses"
+      }
+    ]
+  },
+  "M-C02": {
+    "translation": "在我看来，选择动物蛋白或素食有很多理由。",
+    "vocabulary": [
+      {
+        "term": "reasons",
+        "explanation": "原因"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "In my"
+      },
+      {
+        "role": "predicate",
+        "text": "view"
+      }
+    ]
+  },
+  "M-C03": {
+    "translation": "然而，放弃肉类和肉制品并不是许多人想让我们相信的万灵药。",
+    "vocabulary": [
+      {
+        "term": "environmental panacea",
+        "explanation": "环境万能药"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "However, abandoning meat and meat products"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "M-C04": {
+    "translation": "如果走向极端，它还可能产生有害的营养后果。",
+    "vocabulary": [
+      {
+        "term": "extreme",
+        "explanation": "极端的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "And if taken to an extreme"
+      },
+      {
+        "role": "subject",
+        "text": "it also"
+      },
+      {
+        "role": "predicate",
+        "text": "could have"
+      }
+    ]
+  },
+  "M-D01": {
+    "translation": "肉类负面声誉的一个健康部分集中在这样的断言上：牲畜是全球最大的温室气体来源。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A healthy portion of meat’s negative reputation centers on the assertion that livestock"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-D02": {
+    "translation": "例如，总部位于华盛顿特区的世界观察研究所 2009 年发表的一份分析报告称，全球温室气体排放量的 51% 来自牲畜饲养和加工。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For example"
+      },
+      {
+        "role": "subject",
+        "text": "an analysis published in 2009 by the World Watch Institute based in Washington, D.C. asserted that 51 percent of global greenhouse gas emissions"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      }
+    ]
+  },
+  "M-D03": {
+    "translation": "根据美国环境保护署的数据，2016年美国温室气体排放的最大来源是电力生产（占总排放量的28%）、交通运输（28%）和工业（22%）。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "According to the U.S. Environmental Protection Agency"
+      },
+      {
+        "role": "subject",
+        "text": "the largest sources of U.S. greenhouse gas emissions in 2016"
+      },
+      {
+        "role": "predicate",
+        "text": "were"
+      }
+    ]
+  },
+  "M-D04": {
+    "translation": "所有农业总计占 9%，但所有畜牧业的排放量还不到这一数字的一半，占美国温室气体排放总量的 3.9%。",
+    "vocabulary": [
+      {
+        "term": "agriculture",
+        "explanation": "农业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "All of agriculture"
+      },
+      {
+        "role": "predicate",
+        "text": "accounted"
+      }
+    ]
+  },
+  "M-D05": {
+    "translation": "这与声称牲畜与运输同等重要或更多的说法截然不同。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-E01": {
+    "translation": "为什么会有这样的误解呢？",
+    "vocabulary": [
+      {
+        "term": "misconception",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Why"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-E02": {
+    "translation": "2006年，联合国粮食及农业组织（FAO）发表了题为“牲畜的长影”的研究，受到国际广泛关注。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "In 2006"
+      },
+      {
+        "role": "predicate",
+        "text": "the"
+      }
+    ]
+  },
+  "M-E03": {
+    "translation": "报告指出，畜牧业产生的温室气体排放量占全球温室气体排放量的 18%，这一比例令人震惊。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "stated"
+      }
+    ]
+  },
+  "M-E04": {
+    "translation": "该机构得出了一个令人震惊的结论：牲畜对气候的危害比所有运输方式的总和还多。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The agency"
+      },
+      {
+        "role": "predicate",
+        "text": "drew"
+      }
+    ]
+  },
+  "M-E05": {
+    "translation": "后一种说法是错误的，该报告的资深作者亨宁·斯坦菲尔德已纠正了这一说法。",
+    "vocabulary": [
+      {
+        "term": "corrected",
+        "explanation": "已纠正的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This latter"
+      },
+      {
+        "role": "predicate",
+        "text": "claim was"
+      }
+    ]
+  },
+  "M-F01": {
+    "translation": "问题在于，粮农组织的分析人员使用了全面的生命周期评估来研究牲畜对气候的影响，但在分析运输时却采用了不同的方法。",
+    "vocabulary": [
+      {
+        "term": "life-cycle assessment",
+        "explanation": "生命周期评估"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The problem"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "M-F02": {
+    "translation": "对于牲畜，他们考虑了与生产肉类相关的每一个因素。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "For"
+      },
+      {
+        "role": "predicate",
+        "text": "livestock"
+      }
+    ]
+  },
+  "M-F03": {
+    "translation": "这包括化肥生产、将土地从森林转变为牧场、种植饲料的排放，以及动物从出生到死亡的直接排放（粪便以及胃中排出的气体）。",
+    "vocabulary": [
+      {
+        "term": "direct emissions",
+        "explanation": "直接排放"
+      },
+      {
+        "term": "fertilizer",
+        "explanation": "肥料"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "included"
+      }
+    ]
+  },
+  "M-G01": {
+    "translation": "然而，当他们研究交通运输的碳足迹时，他们忽略了制造汽车材料和零部件、组装车辆以及维护道路、桥梁和机场对气候的影响。",
+    "vocabulary": [
+      {
+        "term": "However",
+        "explanation": "然而"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "However, when they"
+      },
+      {
+        "role": "predicate",
+        "text": "looked"
+      }
+    ]
+  },
+  "M-G02": {
+    "translation": "相反，他们只考虑成品汽车、卡车、火车和飞机排放的废气。",
+    "vocabulary": [
+      {
+        "term": "Instead",
+        "explanation": "而不是；反而"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Instead"
+      },
+      {
+        "role": "subject",
+        "text": "they only considered the exhaust smoke emitted by finished cars, trucks,"
+      },
+      {
+        "role": "predicate",
+        "text": "trains"
+      }
+    ]
+  },
+  "M-G03": {
+    "translation": "因此，粮农组织将牲畜产生的温室气体排放与交通运输产生的排放进行比较，这种比较被严重扭曲了。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As a result"
+      },
+      {
+        "role": "subject",
+        "text": "the FAO’s comparison of greenhouse gas emissions from livestock to those from transportation"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "M-H01": {
+    "translation": "2010年3月22日，我在旧金山向科学家同行发表演讲时指出了这个缺陷，引起了媒体的大量报道。",
+    "vocabulary": [
+      {
+        "term": "pointed",
+        "explanation": "指出"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "pointed"
+      }
+    ]
+  },
+  "M-H02": {
+    "translation": "值得赞扬的是，粮农组织立即承认了自己的错误。",
+    "vocabulary": [
+      {
+        "term": "immediately",
+        "explanation": "立即"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To"
+      },
+      {
+        "role": "predicate",
+        "text": "its"
+      }
+    ]
+  },
+  "M-H03": {
+    "translation": "遗憾的是，该机构最初声称牲畜占全球温室气体排放的大部分，这一说法已经被广泛传播。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Unfortunately, the agency’s initial"
+      },
+      {
+        "role": "predicate",
+        "text": "claim"
+      }
+    ]
+  },
+  "M-H04": {
+    "translation": "直到今天，我们仍在努力“敲响”警钟。",
+    "vocabulary": [
+      {
+        "term": "struggle",
+        "explanation": "努力；挣扎"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To"
+      },
+      {
+        "role": "predicate",
+        "text": "this"
+      }
+    ]
+  },
+  "M-H05": {
+    "translation": "粮农组织在其最新评估报告中估计，畜牧业产生的温室气体排放量占人类活动全球温室气体排放量的 14.5%。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In its most recent assessment report"
+      },
+      {
+        "role": "subject",
+        "text": "the FAO"
+      },
+      {
+        "role": "predicate",
+        "text": "estimated"
+      }
+    ]
+  },
+  "M-H06": {
+    "translation": "目前还没有可比的运输全生命周期评估。",
+    "vocabulary": [
+      {
+        "term": "life-cycle assessment",
+        "explanation": "生命周期评估"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-H07": {
+    "translation": "然而，正如斯坦菲尔德指出的那样，交通运输和牲畜产生的直接排放量可以进行比较，分别达到 14% 和 5%。",
+    "vocabulary": [
+      {
+        "term": "direct emissions",
+        "explanation": "直接排放"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "However, as Steinfeld"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "M-I01": {
+    "translation": "许多人仍然认为，每周少吃一次肉就会对气候产生重大影响。",
+    "vocabulary": [
+      {
+        "term": "continue",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many people"
+      },
+      {
+        "role": "predicate",
+        "text": "continue"
+      }
+    ]
+  },
+  "M-I02": {
+    "translation": "但根据最近的一项研究，即使美国人从饮食中消除所有动物蛋白，他们也只能将美国温室气体排放量减少 2.6%。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "But according to one recent study"
+      },
+      {
+        "role": "subject",
+        "text": "even if Americans"
+      },
+      {
+        "role": "predicate",
+        "text": "eliminated"
+      }
+    ]
+  },
+  "M-I03": {
+    "translation": "根据我们在加州大学戴维斯分校的研究，如果所有美国人都采用周一无肉的做法，我们只会看到减少 0.5%。",
+    "vocabulary": [
+      {
+        "term": "meatless monday",
+        "explanation": "无肉星期一"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "According to our research at the University of California"
+      },
+      {
+        "role": "subject",
+        "text": "Davis, if the"
+      },
+      {
+        "role": "predicate",
+        "text": "practice"
+      }
+    ]
+  },
+  "M-J01": {
+    "translation": "此外，过去 70 年来美国农业在技术、遗传和管理方面发生的变化使畜牧业生产效率更高，温室气体排放量更少。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Moreover, technological, genetic and management changes that"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-J02": {
+    "translation": "根据联合国粮农组织的统计数据库，自1961年以来，美国牲畜的直接温室气体排放总量下降了11.3%，而牲畜肉类产量却增加了一倍多。",
+    "vocabulary": [
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "According to the FAO’s statistical database"
+      },
+      {
+        "role": "subject",
+        "text": "total direct greenhouse gas emissions from U.S. livestock"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-K01": {
+    "translation": "发展中经济体和新兴经济体对肉类的需求正在上升，特别是在中东、北非和东南亚。",
+    "vocabulary": [
+      {
+        "term": "developing",
+        "explanation": "发展中的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Demand"
+      },
+      {
+        "role": "predicate",
+        "text": "for"
+      }
+    ]
+  },
+  "M-K02": {
+    "translation": "例如，在肯尼亚饲养山羊等牲畜是许多小规模农牧民的重要食物和收入来源。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For example"
+      },
+      {
+        "role": "subject",
+        "text": "raising livestock such as goats in Kenya"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-K03": {
+    "translation": "但这些地区的人均肉类消费量仍落后于发达国家。",
+    "vocabulary": [
+      {
+        "term": "consumption",
+        "explanation": "消费；摄入"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But"
+      },
+      {
+        "role": "predicate",
+        "text": "meat"
+      }
+    ]
+  },
+  "M-K04": {
+    "translation": "2015年，发达国家人均肉类年消费量为92公斤，而中东和北非为24公斤，东南亚为18公斤。",
+    "vocabulary": [
+      {
+        "term": "average",
+        "explanation": "平均的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In 2015"
+      },
+      {
+        "role": "subject",
+        "text": "average annual meat consumption per person in developed countries"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "M-K05": {
+    "translation": "尽管如此，考虑到发展中国家预计的人口增长，美国等国家肯定有机会将其可持续牲畜饲养实践摆上桌面。",
+    "vocabulary": [
+      {
+        "term": "sustainable",
+        "explanation": "可持续的"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Still, given projected population growth in the developing world, there"
+      },
+      {
+        "role": "predicate",
+        "text": "will"
+      }
+    ]
+  },
+  "M-L01": {
+    "translation": "将动物从美国农业中剔除会在一定程度上降低国家温室气体排放，但也会让满足人们的营养需求变得更加困难。",
+    "vocabulary": [
+      {
+        "term": "nutritional requirements",
+        "explanation": "营养需求"
+      },
+      {
+        "term": "greenhouse gas",
+        "explanation": "温室气体"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Removing animals from U.S. agriculture"
+      },
+      {
+        "role": "predicate",
+        "text": "would"
+      }
+    ]
+  },
+  "M-L02": {
+    "translation": "许多畜牧业批评者很快指出，如果农民只种植植物，他们每人可以生产更多磅的食物和更多的卡路里。",
+    "vocabulary": [
+      {
+        "term": "critics",
+        "explanation": "批评者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many critics of animal agriculture"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-L03": {
+    "translation": "但人类还需要许多必需的微量和大量营养素来保持健康。",
+    "vocabulary": [
+      {
+        "term": "essential",
+        "explanation": "必不可少的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But humans also"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      }
+    ]
+  },
+  "M-L04": {
+    "translation": "鉴于美国全国成人和儿童肥胖率很高，很难提出令人信服的论据来证明美国存在卡路里短缺。",
+    "vocabulary": [
+      {
+        "term": "compelling",
+        "explanation": "令人信服的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It’s hard to make a compelling argument that the United"
+      },
+      {
+        "role": "predicate",
+        "text": "States has"
+      }
+    ]
+  },
+  "M-L05": {
+    "translation": "此外，并非所有植物部分都是可食用或理想的。",
+    "vocabulary": [
+      {
+        "term": "Moreover",
+        "explanation": "此外"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Moreover, not all plant parts"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-L06": {
+    "translation": "饲养牲畜是增加植物农业营养和经济价值的一种方式。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Raising livestock"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-M01": {
+    "translation": "举个例子，牲畜消耗的植物中的能量通常包含在纤维素中，而人类和许多其他哺乳动物无法消化纤维素。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As one example"
+      },
+      {
+        "role": "subject",
+        "text": "the energy in plants that livestock"
+      },
+      {
+        "role": "predicate",
+        "text": "consume is"
+      }
+    ]
+  },
+  "M-M02": {
+    "translation": "但牛、羊和其他反刍动物可以分解纤维素并释放这一巨大资源中所含的太阳能。",
+    "vocabulary": [
+      {
+        "term": "ruminant",
+        "explanation": "反刍动物"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "But cows"
+      },
+      {
+        "role": "subject",
+        "text": "sheep and other ruminant (反刍的) animals"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "M-M03": {
+    "translation": "据联合国粮农组织称，全球 70% 的农业用地都是牧场，只能用作反刍牲畜的牧场。",
+    "vocabulary": [
+      {
+        "term": "grazing land",
+        "explanation": "放牧地"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      },
+      {
+        "term": "ruminant",
+        "explanation": "反刍动物"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "According to the FAO"
+      },
+      {
+        "role": "subject",
+        "text": "as much as 70 percent of all agricultural land globally"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-N01": {
+    "translation": "目前预计到 2050 年世界人口将达到 98 亿。",
+    "vocabulary": [
+      {
+        "term": "population",
+        "explanation": "人口"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The world population"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-N02": {
+    "translation": "养活这么多人将带来巨大的挑战。",
+    "vocabulary": [
+      {
+        "term": "Feeding",
+        "explanation": "喂养；供养"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Feeding this many people"
+      },
+      {
+        "role": "predicate",
+        "text": "will"
+      }
+    ]
+  },
+  "M-N03": {
+    "translation": "每份肉类的热量密度比素食更高，而反刍动物主要依靠不适合人类的饲料来茁壮成长。",
+    "vocabulary": [
+      {
+        "term": "calorie-dense",
+        "explanation": "高热量的"
+      },
+      {
+        "term": "ruminant",
+        "explanation": "反刍动物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Meat"
+      },
+      {
+        "role": "predicate",
+        "text": "is more"
+      }
+    ]
+  },
+  "M-N04": {
+    "translation": "饲养牲畜还为发展中国家的小农提供了急需的收入。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Raising livestock also"
+      },
+      {
+        "role": "predicate",
+        "text": "offers"
+      }
+    ]
+  },
+  "M-N05": {
+    "translation": "在世界范围内，畜牧业为 10 亿人提供了生计。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Worldwide, livestock"
+      },
+      {
+        "role": "predicate",
+        "text": "provides"
+      }
+    ]
+  },
+  "M-O01": {
+    "translation": "气候变化需要迫切关注，畜牧业对空气、水和土地的总体环境足迹很大。",
+    "vocabulary": [
+      {
+        "term": "livestock",
+        "explanation": "牲畜；畜牧业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Climate change"
+      },
+      {
+        "role": "predicate",
+        "text": "demands"
+      }
+    ]
+  },
+  "M-O02": {
+    "translation": "这些，再加上世界人口的迅速增长，给了我们充足的理由继续努力提高畜牧业的效率。",
+    "vocabulary": [
+      {
+        "term": "combined",
+        "explanation": "结合的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These, combined with a rapidly rising world population"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      }
+    ]
+  },
+  "M-O03": {
+    "translation": "我相信首先要从基于科学的事实开始。",
+    "vocabulary": [
+      {
+        "term": "believe",
+        "explanation": "相信"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      }
+    ]
+  },
+  "R1-01": {
+    "translation": "除了金钱之外，是什么让我们如此担忧自己的职业生涯？",
+    "vocabulary": [
+      {
+        "term": "worried",
+        "explanation": "担忧的"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Why"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R1-02": {
+    "translation": "部分原因与金钱有关，但我们的恐惧也有心理方面的原因。",
+    "vocabulary": [
+      {
+        "term": "psychological",
+        "explanation": "心理的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Partly"
+      },
+      {
+        "role": "predicate",
+        "text": "it’s"
+      }
+    ]
+  },
+  "R1-03": {
+    "translation": "我们担心是因为我们怀疑——这并没有错——世界上充满了一种可怕的人，他们准备无情而迅速地评判我们：我们可以称之为势利小人。",
+    "vocabulary": [
+      {
+        "term": "ruthlessly",
+        "explanation": "无情地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "worry"
+      }
+    ]
+  },
+  "R1-04": {
+    "translation": "势利小人是指那些占据我们相对较小部分的人，并用它来得出我们应该得到多少他们的关注的严格结论。",
+    "vocabulary": [
+      {
+        "term": "relatively",
+        "explanation": "相对地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A snob"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-05": {
+    "translation": "在过去，这可能是你的血统和皇室​​关系。",
+    "vocabulary": [
+      {
+        "term": "ancestry",
+        "explanation": "祖先；家族谱系"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In the past"
+      },
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "might be"
+      }
+    ]
+  },
+  "R1-06": {
+    "translation": "如今，势利小人只关心一件事：你以什么为生。",
+    "vocabulary": [
+      {
+        "term": "Nowadays",
+        "explanation": "如今"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Nowadays"
+      },
+      {
+        "role": "subject",
+        "text": "the snob"
+      },
+      {
+        "role": "predicate",
+        "text": "cares"
+      }
+    ]
+  },
+  "R1-07": {
+    "translation": "这就解释了为什么我们在任何新的社会环境中都会被问到的第一个问题是“你是做什么的？”而根据​​我们如何回答，势利小人要么微笑着欢迎我们，要么对我们冷落。",
+    "vocabulary": [
+      {
+        "term": "explains",
+        "explanation": "解释"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "explains"
+      }
+    ]
+  },
+  "R1-08": {
+    "translation": "这就是为什么我们如此迫切地渴望取得成就并给人留下深刻印象。",
+    "vocabulary": [
+      {
+        "term": "desperate",
+        "explanation": "绝望的；迫切的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And that"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-09": {
+    "translation": "有时我们的行为会被误认为是贪婪和虚荣，但事实还不止于此。",
+    "vocabulary": [
+      {
+        "term": "Sometimes",
+        "explanation": "有时"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Sometimes our behaviour"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-10": {
+    "translation": "我们对豪华汽车、工作和房屋的很多兴趣与物质主义无关。",
+    "vocabulary": [
+      {
+        "term": "materialism",
+        "explanation": "物质主义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A lot of our interest in fancy cars, jobs and houses"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "R1-11": {
+    "translation": "它与对尊重和尊重的渴望有关，而这种渴望在我们的社会中只能通过获得物质财富才能获得。",
+    "vocabulary": [
+      {
+        "term": "acquisition",
+        "explanation": "获得；取得"
+      },
+      {
+        "term": "esteem",
+        "explanation": "尊重；敬意"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "R1-12": {
+    "translation": "我们寻求的不是物品本身，而是我们通过拥有它们而获得的爱。",
+    "vocabulary": [
+      {
+        "term": "themselves",
+        "explanation": "他们自己"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It isn’t the goods themselves we"
+      },
+      {
+        "role": "predicate",
+        "text": "seek"
+      }
+    ]
+  },
+  "R1-13": {
+    "translation": "下次当我们看到有人驾驶法拉利时，我们不应该谴责他们的贪婪，我们应该怜悯他们对世界爱的强烈需求。",
+    "vocabulary": [
+      {
+        "term": "someone",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The next time we"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      }
+    ]
+  },
+  "R1-14": {
+    "translation": "势利的根源在于缺乏想象力和信心，不知道该如何判断谁在这个世界上有价值。",
+    "vocabulary": [
+      {
+        "term": "snobbery",
+        "explanation": "势利；势利行为"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "At the root of snobbery"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-15": {
+    "translation": "势利者对于如何识别优秀人士的看法极其错误，而且盲目服从这种看法。",
+    "vocabulary": [
+      {
+        "term": "brutally",
+        "explanation": "残酷地；极其"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The snobs"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R1-16": {
+    "translation": "对于势利小人来说，只有那些已经广受赞誉、已经成功的人才是唯一值得尊重的人。",
+    "vocabulary": [
+      {
+        "term": "acclaimed",
+        "explanation": "广受赞誉的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For snobs"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-17": {
+    "translation": "在他们胆怯、受管制的头脑中，没有空间去想象一个人可能聪明、善良或善良，但不知何故却被社会完全忽视了，他们的品质隐藏在陌生的面纱下，至今还没有发现明显的出路。",
+    "vocabulary": [
+      {
+        "term": "regimented",
+        "explanation": "刻板有序的"
+      },
+      {
+        "term": "outlet",
+        "explanation": "出口；发泄渠道"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-18": {
+    "translation": "对势利的真正回答并不是说没有好人或坏人之分，而是坚持认为好人或坏人总是存在于意想不到的地方，并且没有任何外在的区别标志。",
+    "vocabulary": [
+      {
+        "term": "distinction",
+        "explanation": "显著差别；卓越"
+      },
+      {
+        "term": "snobbery",
+        "explanation": "势利；势利行为"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The true answer to snobbery"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "R1-19": {
+    "translation": "因为我们对其他人的价值判断能力很差，所以我们的最终责任仍然是对几乎所有遇到我们的人表现出友善、善良、好奇和富有想象力。",
+    "vocabulary": [
+      {
+        "term": "because",
+        "explanation": "因为"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And because we"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R2-01": {
+    "translation": "从历史上看，女性的工资一直较低。",
+    "vocabulary": [
+      {
+        "term": "historically",
+        "explanation": "历史上"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Women"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "R2-02": {
+    "translation": "但在 20 世纪 80 年代的美国，他们开始快速迎头赶上。",
+    "vocabulary": [
+      {
+        "term": "catch up",
+        "explanation": "追赶；缩小差距"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But"
+      },
+      {
+        "role": "predicate",
+        "text": "in"
+      }
+    ]
+  },
+  "R2-03": {
+    "translation": "在那十年里，性别工资差距每年缩小约一个百分点。",
+    "vocabulary": [
+      {
+        "term": "gender pay gap",
+        "explanation": "性别薪酬差距"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "During that decade"
+      },
+      {
+        "role": "subject",
+        "text": "the gender"
+      },
+      {
+        "role": "predicate",
+        "text": "pay"
+      }
+    ]
+  },
+  "R2-04": {
+    "translation": "如果这种趋势持续下去，性别工资差距到 2017 年就会缩小。",
+    "vocabulary": [
+      {
+        "term": "continued",
+        "explanation": "持续的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Had"
+      },
+      {
+        "role": "predicate",
+        "text": "that"
+      }
+    ]
+  },
+  "R2-05": {
+    "translation": "但这种趋势并没有持续下去，而且差距仍然在扩大。",
+    "vocabulary": [
+      {
+        "term": "continue",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But the trend didn’t"
+      },
+      {
+        "role": "predicate",
+        "text": "continue"
+      }
+    ]
+  },
+  "R2-06": {
+    "translation": "根据哈佛大学学者的一项新研究，这种停滞可以归因于州和联邦家庭休假政策的出台，这或许与直觉相反。",
+    "vocabulary": [
+      {
+        "term": "family leave",
+        "explanation": "家庭休假"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "According to a new study from academics at Harvard"
+      },
+      {
+        "role": "subject",
+        "text": "the stagnation"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "R2-07": {
+    "translation": "学者们认为，在 20 世纪 90 年代，当政府开始引入休假政策时，主要是女性利用了这些政策。",
+    "vocabulary": [
+      {
+        "term": "academics",
+        "explanation": "学者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The academics argue that during the 1990s, as governments began to introduce leave policies, it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "R2-08": {
+    "translation": "尽管休假政策可能有助于这些女性留在工作场所，而不是为了组建家庭而辍学，但那些回来的女性发现她们的工资增幅低于男性。",
+    "vocabulary": [
+      {
+        "term": "policies",
+        "explanation": "政策"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Though the leave policies"
+      },
+      {
+        "role": "predicate",
+        "text": "might have"
+      }
+    ]
+  },
+  "R2-09": {
+    "translation": "事实上，在美国引入家事假后，性别工资趋同速度每年下降至仅 0.03 个百分点，并且此后一直保持这一水平。",
+    "vocabulary": [
+      {
+        "term": "wage convergence",
+        "explanation": "工资趋同"
+      },
+      {
+        "term": "family leave",
+        "explanation": "家庭休假"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "After family leave"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "R2-10": {
+    "translation": "那些监控工作中薪资公平进程的人们长期以来一直关注着世界上许多国家的进展放缓。",
+    "vocabulary": [
+      {
+        "term": "monitoring",
+        "explanation": "监测"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Those monitoring the process towards salary equity at"
+      },
+      {
+        "role": "predicate",
+        "text": "work have"
+      }
+    ]
+  },
+  "R2-11": {
+    "translation": "事实上，这种进展在大流行病期间开始逆转。",
+    "vocabulary": [
+      {
+        "term": "progress",
+        "explanation": "进展"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "In"
+      },
+      {
+        "role": "predicate",
+        "text": "fact"
+      }
+    ]
+  },
+  "R2-12": {
+    "translation": "性别工资差距是缺乏平等的最突出的例子之一，而且几乎在任何地方仍然存在。",
+    "vocabulary": [
+      {
+        "term": "gender pay gap",
+        "explanation": "性别薪酬差距"
+      },
+      {
+        "term": "parity",
+        "explanation": "平等；同等地位"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The gender"
+      },
+      {
+        "role": "predicate",
+        "text": "pay"
+      }
+    ]
+  },
+  "R2-13": {
+    "translation": "母亲的惩罚已成为描述其原因的简写：在许多地方，尤其是富裕国家，女性在达到育龄之前的收入与男性相同。",
+    "vocabulary": [
+      {
+        "term": "motherhood penalty",
+        "explanation": "母职惩罚"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The motherhood penalty"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "R2-14": {
+    "translation": "有孩子的女性开始发现她们的工资落后于男性。",
+    "vocabulary": [
+      {
+        "term": "children",
+        "explanation": "儿童"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Women who"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "R2-15": {
+    "translation": "部分原因在于，女性在家中承担了更多无偿劳动，这会占用她们用于工作和职业发展的时间与精力。",
+    "vocabulary": [
+      {
+        "term": "unpaid labor",
+        "explanation": "无偿劳动"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Part of this"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-16": {
+    "translation": "但这也是因为母亲在加薪和晋升方面被忽视，而且因为离开工作场所的时间会让女性退缩，即使这些时间是自愿占用的，并得到公司或政府政策的支持。",
+    "vocabulary": [
+      {
+        "term": "promotion",
+        "explanation": "晋升"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But it’s also because mothers"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R2-17": {
+    "translation": "如果没有出台休假政策，会发生什么？",
+    "vocabulary": [
+      {
+        "term": "happened",
+        "explanation": "发生"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "What"
+      },
+      {
+        "role": "predicate",
+        "text": "would have"
+      }
+    ]
+  },
+  "R2-18": {
+    "translation": "这项研究没有探讨这个问题，只是说如果 20 世纪 80 年代的趋势继续下去，我们现在已经处于平等地位了。",
+    "vocabulary": [
+      {
+        "term": "parity",
+        "explanation": "平等；同等地位"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The study doesn’t"
+      },
+      {
+        "role": "predicate",
+        "text": "go"
+      }
+    ]
+  },
+  "R2-19": {
+    "translation": "然而，无论哪种方式，实现工资平等的进程都有可能陷入停滞。",
+    "vocabulary": [
+      {
+        "term": "wage parity",
+        "explanation": "工资平等"
+      },
+      {
+        "term": "parity",
+        "explanation": "平等；同等地位"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It’s possible, however, that the journey towards wage parity"
+      },
+      {
+        "role": "predicate",
+        "text": "would have"
+      }
+    ]
+  },
+  "R2-20": {
+    "translation": "如果 20 世纪 80 年代女性的进步是通过消除偏见等问题取得的，那么一旦那些不那么无法控制的问题得到解决，女性仍然会面临一个问题——由于母乳喂养能力等生物学因素，她们是生育孩子并​​在出生后几周照顾孩子的人，迫使她们休息，无论这些休息是否是强制性的。",
+    "vocabulary": [
+      {
+        "term": "biological factors",
+        "explanation": "生理因素"
+      },
+      {
+        "term": "breastfeed",
+        "explanation": "母乳喂养"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "If women’s"
+      },
+      {
+        "role": "predicate",
+        "text": "gains"
+      }
+    ]
+  }
+}

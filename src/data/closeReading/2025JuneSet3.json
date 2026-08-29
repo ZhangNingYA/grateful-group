@@ -1,0 +1,3194 @@
+{
+  "C01": {
+    "translation": "女性在民选职位上的进展缓慢，这让一些政治观察家和专家（包括我本人）感到沮丧。",
+    "vocabulary": [
+      {
+        "term": "elective office",
+        "explanation": "民选职位"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The slow progress of women in elective office"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C02": {
+    "translation": "在国会实现性别平等是一个重要目标。",
+    "vocabulary": [
+      {
+        "term": "gender equality",
+        "explanation": "性别平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Achieving gender equality in Congress"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C03": {
+    "translation": "这是因为参与立法决策的妇女人数对政府制定的所有政策都有重大影响。",
+    "vocabulary": [
+      {
+        "term": "legislative",
+        "explanation": "立法的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C04": {
+    "translation": "女性立法者比男性更有可能提出、谈论和努力通过对妇女和女童影响更大的政策，例如带薪家庭假、薪酬公平和性别暴力。",
+    "vocabulary": [
+      {
+        "term": "family leave",
+        "explanation": "家庭休假"
+      },
+      {
+        "term": "legislator",
+        "explanation": "立法者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Female legislators"
+      },
+      {
+        "role": "predicate",
+        "text": "are more"
+      }
+    ]
+  },
+  "C05": {
+    "translation": "国会中女性人数的增加还可以增强女性选民与政府之间的联系感。",
+    "vocabulary": [
+      {
+        "term": "Congress",
+        "explanation": "国会"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Having more women in Congress also"
+      },
+      {
+        "role": "predicate",
+        "text": "fosters"
+      }
+    ]
+  },
+  "C06": {
+    "translation": "此外，它还增强了妇女的政府关心她们的问题的感觉，并激励年轻女性更多地参与政治。",
+    "vocabulary": [
+      {
+        "term": "addition",
+        "explanation": "此外；增加"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In addition"
+      },
+      {
+        "role": "subject",
+        "text": "it bolsters women’s sense that government"
+      },
+      {
+        "role": "predicate",
+        "text": "cares"
+      }
+    ]
+  },
+  "C07": {
+    "translation": "尽管女性在全球政府中的代表性不足，但这在美国是一个尤为严峻的问题。",
+    "vocabulary": [
+      {
+        "term": "underrepresented",
+        "explanation": "代表性不足的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "While women"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "C08": {
+    "translation": "目前，美国在政府中的女性代表人数方面排名世界第 73 位。",
+    "vocabulary": [
+      {
+        "term": "Currently",
+        "explanation": "目前"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Currently"
+      },
+      {
+        "role": "subject",
+        "text": "the U.S."
+      },
+      {
+        "role": "predicate",
+        "text": "ranks"
+      }
+    ]
+  },
+  "C09": {
+    "translation": "但女性在美国政府中的代表性严重不足的原因并不是因为她们面临选民的抵制或难以筹集资金。",
+    "vocabulary": [
+      {
+        "term": "underrepresented",
+        "explanation": "代表性不足的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But the reason women"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "C10": {
+    "translation": "相反，数十年的研究表明，女性候选人筹集的资金和获胜的次数与具有类似资历的男性政治家一样多。",
+    "vocabulary": [
+      {
+        "term": "credentials",
+        "explanation": "资历；资格"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "On the contrary"
+      },
+      {
+        "role": "subject",
+        "text": "decades of research"
+      },
+      {
+        "role": "predicate",
+        "text": "shows"
+      }
+    ]
+  },
+  "C11": {
+    "translation": "相反，女性在政治上的缓慢进步是两个政党的故事。",
+    "vocabulary": [
+      {
+        "term": "progress",
+        "explanation": "进展"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Rather"
+      },
+      {
+        "role": "subject",
+        "text": "the slow progress of women in politics"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C12": {
+    "translation": "在下一届国会中，参众两院将有 107 名女性民主党议员和 42 名共和党女议员。",
+    "vocabulary": [
+      {
+        "term": "Congress",
+        "explanation": "国会"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In the next Congress"
+      },
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      }
+    ]
+  },
+  "C13": {
+    "translation": "为了让女性在国会获得一半席位，需要更多女性参与竞选，尤其是共和党候选人。",
+    "vocabulary": [
+      {
+        "term": "Republican ticket",
+        "explanation": "共和党候选名单"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In order for women to gain half of the seats in Congress"
+      },
+      {
+        "role": "subject",
+        "text": "more women"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      }
+    ]
+  },
+  "C14": {
+    "translation": "这将要求共和党作为一个整体优先考虑招募女性——而且不仅仅是在一个选举周期内，而是以一种持续的方式。",
+    "vocabulary": [
+      {
+        "term": "prioritize",
+        "explanation": "优先考虑"
+      },
+      {
+        "term": "sustained",
+        "explanation": "持续的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "will"
+      }
+    ]
+  },
+  "M-A01": {
+    "translation": "我可能是一个不情愿的社交者。",
+    "vocabulary": [
+      {
+        "term": "reluctant",
+        "explanation": "不情愿的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "M-A02": {
+    "translation": "当社交计划被取消时，我有时会暗自高兴。",
+    "vocabulary": [
+      {
+        "term": "sometimes",
+        "explanation": "有时"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I’m sometimes secretly pleased when social plans"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-A03": {
+    "translation": "出去玩几个小时后我会变得焦躁不安。",
+    "vocabulary": [
+      {
+        "term": "restless",
+        "explanation": "坐立不安的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      }
+    ]
+  },
+  "M-A04": {
+    "translation": "我什至曾经参加过一次为期十天的免费冥想静修——不是为了冥想，而是为了安静。",
+    "vocabulary": [
+      {
+        "term": "meditation",
+        "explanation": "冥想"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I even once"
+      },
+      {
+        "role": "predicate",
+        "text": "went"
+      }
+    ]
+  },
+  "M-B01": {
+    "translation": "所以，我能理解作家安妮莉·鲁弗斯的感受。她在《独身者宣言》中写道：“当电视节目里的父母罚孩子回自己的房间时，我感到很困惑。”",
+    "vocabulary": [
+      {
+        "term": "Manifesto",
+        "explanation": "宣言"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "So I"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "M-B02": {
+    "translation": "我喜欢我的房间。",
+    "vocabulary": [
+      {
+        "term": "love",
+        "explanation": "喜欢；喜爱"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "loved"
+      }
+    ]
+  },
+  "M-B03": {
+    "translation": "呆在锁着的门后面是一种享受。",
+    "vocabulary": [
+      {
+        "term": "behind a locked door",
+        "explanation": "在一扇锁着的门后"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Being"
+      },
+      {
+        "role": "predicate",
+        "text": "there"
+      }
+    ]
+  },
+  "M-B04": {
+    "translation": "对我来说，惩罚就是被命令和我的表弟路易斯一起玩游戏。”",
+    "vocabulary": [
+      {
+        "term": "punishment",
+        "explanation": "惩罚"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To me a punishment"
+      },
+      {
+        "role": "predicate",
+        "text": "was being"
+      }
+    ]
+  },
+  "M-C01": {
+    "translation": "像这样的不合群倾向往往远非理想。",
+    "vocabulary": [
+      {
+        "term": "Unsocial",
+        "explanation": "不合群的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Unsocial tendencies like these"
+      },
+      {
+        "role": "predicate",
+        "text": "are often"
+      }
+    ]
+  },
+  "M-C02": {
+    "translation": "大量研究表明社会孤立的危害，在人口迅速老龄化的国家中，社会孤立被认为是一个严重的公共卫生问题（尽管“孤独流行病”的说法可能有些夸张）。",
+    "vocabulary": [
+      {
+        "term": "social isolation",
+        "explanation": "社会隔离"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Abundant research"
+      },
+      {
+        "role": "predicate",
+        "text": "shows"
+      }
+    ]
+  },
+  "M-C03": {
+    "translation": "在英国，皇家全科医生学院表示，孤独与糖尿病具有相同的过早死亡风险水平。",
+    "vocabulary": [
+      {
+        "term": "premature death",
+        "explanation": "过早死亡"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In the UK"
+      },
+      {
+        "role": "subject",
+        "text": "the Royal College of General Practitioners"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-C04": {
+    "translation": "牢固的社会联系对于认知功能、运动功能和免疫系统的平稳运行非常重要。",
+    "vocabulary": [
+      {
+        "term": "cognitive functioning",
+        "explanation": "认知功能"
+      },
+      {
+        "term": "motor function",
+        "explanation": "运动功能"
+      },
+      {
+        "term": "immune system",
+        "explanation": "免疫系统"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Strong social connections"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-D01": {
+    "translation": "这一点在极端社会孤立的案例中尤其明显。",
+    "vocabulary": [
+      {
+        "term": "social isolation",
+        "explanation": "社会隔离"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-D02": {
+    "translation": "被囚禁的人、被隔离在虐待儿童的孤儿院以及被单独监禁的囚犯的例子都表明，长时间的孤独会导致幻觉和其他形式的精神不稳定。",
+    "vocabulary": [
+      {
+        "term": "hallucination",
+        "explanation": "幻觉"
+      },
+      {
+        "term": "captivity",
+        "explanation": "囚禁"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Examples of people kept in captivity, children kept isolated in abusive orphanages, and prisoners kept in solitary confinement all"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      }
+    ]
+  },
+  "M-E01": {
+    "translation": "但这些都是严重的、非自愿的孤独案例。",
+    "vocabulary": [
+      {
+        "term": "involuntary",
+        "explanation": "非自愿的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But these"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-E02": {
+    "translation": "对于我们这些喜欢独处时间的人来说，新兴研究提出了一些好消息：独处对于我们的工作生活和情感健康都有好处。",
+    "vocabulary": [
+      {
+        "term": "emotional well-being",
+        "explanation": "情绪健康"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For those of us who just prefer plenty of alone time"
+      },
+      {
+        "role": "subject",
+        "text": "emerging research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "M-F01": {
+    "translation": "独处是反思的时刻，是更深入思考事物的时刻。",
+    "vocabulary": [
+      {
+        "term": "reflection",
+        "explanation": "反思"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Solitude"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-F02": {
+    "translation": "在这个日益重视速度和竞争力的世界里，独处十分珍贵，值得我们珍惜。",
+    "vocabulary": [
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "In a world increasingly"
+      },
+      {
+        "role": "predicate",
+        "text": "focused"
+      }
+    ]
+  },
+  "M-F03": {
+    "translation": "学会热爱孤独是有好处的。",
+    "vocabulary": [
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And there"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-G01": {
+    "translation": "独处的一大好处是提高创造力。",
+    "vocabulary": [
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One key benefit of solitude"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-G02": {
+    "translation": "加州圣何塞州立大学专注于创造力心理学的格雷戈里·费斯特（Gregory Feist）将创造力定义为具有两个关键要素的思维或活动：原创性和实用性。",
+    "vocabulary": [
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Gregory Feist, who"
+      },
+      {
+        "role": "predicate",
+        "text": "focuses"
+      }
+    ]
+  },
+  "M-G03": {
+    "translation": "他发现，通常与创造力相关的人格特质是开放性（接受新思想和新经验）、自信和自主——其中可能包括“不关心社会规范”和“偏好独处”。",
+    "vocabulary": [
+      {
+        "term": "social norms",
+        "explanation": "社会规范"
+      },
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      },
+      {
+        "term": "autonomy",
+        "explanation": "自主性"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "M-G04": {
+    "translation": "事实上，费斯特对艺术家和科学家的研究表明，富有创造力的人最显着的特征之一是他们对社交不太感兴趣。",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "研究"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In fact"
+      },
+      {
+        "role": "subject",
+        "text": "Feist’s research on both artists and scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "shows"
+      }
+    ]
+  },
+  "M-H01": {
+    "translation": "原因之一是这些人可能会花持续的时间独自工作。",
+    "vocabulary": [
+      {
+        "term": "sustained",
+        "explanation": "持续的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One reason for this"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-H02": {
+    "translation": "另外，费斯特说，许多艺术家“正在试图理解他们的内部世界和许多内部个人经历，他们试图通过他们的艺术表达和意义。”",
+    "vocabulary": [
+      {
+        "term": "artists",
+        "explanation": "艺术家"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Plus, Feist"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-H03": {
+    "translation": "独处可以进行创作过程中必要的反思和观察。",
+    "vocabulary": [
+      {
+        "term": "reflection",
+        "explanation": "反思"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Solitude"
+      },
+      {
+        "role": "predicate",
+        "text": "allows"
+      }
+    ]
+  },
+  "M-I01": {
+    "translation": "布法罗大学心理学家朱莉·鲍克最近对这些想法进行了论证，她研究社交退缩。",
+    "vocabulary": [
+      {
+        "term": "social withdrawal",
+        "explanation": "社交退缩"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A recent justification of these ideas"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      }
+    ]
+  },
+  "M-I02": {
+    "translation": "社交退缩通常分为三种类型：由于恐惧或焦虑而导致的害羞；",
+    "vocabulary": [
+      {
+        "term": "social withdrawal",
+        "explanation": "社交退缩"
+      },
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Social withdrawal"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-I03": {
+    "translation": "鲍克及其同事的一篇论文首次表明，某种社交退缩可能产生积极影响——他们发现，创造力与不合群之间存在特定联系。",
+    "vocabulary": [
+      {
+        "term": "social withdrawal",
+        "explanation": "社交退缩"
+      },
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      },
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A paper by Bowker and her colleagues"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "M-I04": {
+    "translation": "他们还发现，不合群与攻击性没有相关性（害羞和回避却与此相关）。",
+    "vocabulary": [
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      },
+      {
+        "term": "aggression",
+        "explanation": "攻击性"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They also"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      }
+    ]
+  },
+  "M-I05": {
+    "translation": "这很重要，因为虽然之前的研究表明不社交可能是无害的，但鲍克和同事的论文表明它实际上可能是有益的。",
+    "vocabulary": [
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "M-I06": {
+    "translation": "鲍克说，不善交际的人可能“只有足够的互动”。",
+    "vocabulary": [
+      {
+        "term": "Unsociable",
+        "explanation": "不合群的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Unsociable people"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-I07": {
+    "translation": "“他们喜欢独处，但也不介意与他人在一起。”",
+    "vocabulary": [
+      {
+        "term": "preference",
+        "explanation": "偏好"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“They"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-J01": {
+    "translation": "尽管如此，事实证明，孤独比创造力更重要。",
+    "vocabulary": [
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Still, it"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      }
+    ]
+  },
+  "M-J02": {
+    "translation": "人们普遍认为领导者需要善于交际。",
+    "vocabulary": [
+      {
+        "term": "commonly",
+        "explanation": "通常"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It’s commonly"
+      },
+      {
+        "role": "predicate",
+        "text": "believed"
+      }
+    ]
+  },
+  "M-J03": {
+    "translation": "但这除其他外还取决于员工的个性。",
+    "vocabulary": [
+      {
+        "term": "depends",
+        "explanation": "取决于"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But this"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      }
+    ]
+  },
+  "M-J04": {
+    "translation": "2011 年的一项研究表明，在一家披萨连锁店的分店中，员工较为被动，离职的老板与更高的利润相关。",
+    "vocabulary": [
+      {
+        "term": "branches",
+        "explanation": "分支；分店"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One 2011 study"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      }
+    ]
+  },
+  "M-J05": {
+    "translation": "但在员工更加活跃的分支机构中，内向的领导者效率更高。",
+    "vocabulary": [
+      {
+        "term": "introverted",
+        "explanation": "内向的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But in branches where employees"
+      },
+      {
+        "role": "predicate",
+        "text": "were more"
+      }
+    ]
+  },
+  "M-J06": {
+    "translation": "原因之一是内向的人不太可能感受到强烈的个性和建议的威胁。",
+    "vocabulary": [
+      {
+        "term": "introverted",
+        "explanation": "内向的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One reason for this"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-J07": {
+    "translation": "他们也更有可能倾听。",
+    "vocabulary": [
+      {
+        "term": "likely to",
+        "explanation": "很可能"
+      },
+      {
+        "term": "listen",
+        "explanation": "倾听"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They’re"
+      },
+      {
+        "role": "predicate",
+        "text": "also more"
+      }
+    ]
+  },
+  "M-K01": {
+    "translation": "与此同时，自古以来，人们就意识到孤立与精神集中之间的联系。",
+    "vocabulary": [
+      {
+        "term": "mental focus",
+        "explanation": "精神专注"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Since ancient times"
+      },
+      {
+        "role": "subject",
+        "text": "meanwhile, people"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      }
+    ]
+  },
+  "M-K02": {
+    "translation": "毕竟，具有宗教隐士传统的文化认为，孤独对于启蒙很重要。",
+    "vocabulary": [
+      {
+        "term": "enlightenment",
+        "explanation": "启蒙；顿悟"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "After all"
+      },
+      {
+        "role": "subject",
+        "text": "cultures with traditions of religious hermits (隐士)"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      }
+    ]
+  },
+  "M-K03": {
+    "translation": "最近的研究让我们更好地理解了其中的原因。",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "研究"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Recent research"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "M-K04": {
+    "translation": "不合群的好处之一是大脑处于积极的精神休息状态，这与独处时的宁静是相辅相成的。",
+    "vocabulary": [
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One benefit of unsociability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-K05": {
+    "translation": "当另一个人在场时，你的大脑会情不自禁地集中注意力。",
+    "vocabulary": [
+      {
+        "term": "another",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When another person"
+      },
+      {
+        "role": "subject",
+        "text": "present"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-K06": {
+    "translation": "这可能是一种积极的分散注意力的方法。",
+    "vocabulary": [
+      {
+        "term": "positive",
+        "explanation": "积极的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "M-K07": {
+    "translation": "但这仍然是一种干扰。",
+    "vocabulary": [
+      {
+        "term": "distraction",
+        "explanation": "干扰"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But"
+      },
+      {
+        "role": "predicate",
+        "text": "it’s still"
+      }
+    ]
+  },
+  "M-L01": {
+    "translation": "在没有此类干扰的情况下做白日梦会激活大脑的默认模式网络。",
+    "vocabulary": [
+      {
+        "term": "default-mode network",
+        "explanation": "默认模式网络"
+      },
+      {
+        "term": "daydreaming",
+        "explanation": "白日梦"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Daydreaming"
+      },
+      {
+        "role": "predicate",
+        "text": "in"
+      }
+    ]
+  },
+  "M-L02": {
+    "translation": "除其他功能外，该网络有助于巩固记忆和理解他人的情绪。",
+    "vocabulary": [
+      {
+        "term": "consolidate memory",
+        "explanation": "巩固记忆"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Among other functions, this network"
+      },
+      {
+        "role": "predicate",
+        "text": "helps"
+      }
+    ]
+  },
+  "M-L03": {
+    "translation": "放任思绪自由漫游不仅有助于长期保持专注，还能增强你对自己和他人的认识。",
+    "vocabulary": [
+      {
+        "term": "wandering",
+        "explanation": "漫游的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Giving free rein to a wandering mind not only"
+      },
+      {
+        "role": "predicate",
+        "text": "helps"
+      }
+    ]
+  },
+  "M-L04": {
+    "translation": "因此，矛盾的是，当需要再次社交时，一段时间的独处实际上有所帮助。",
+    "vocabulary": [
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Paradoxically, therefore, periods of solitude actually"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      }
+    ]
+  },
+  "M-L05": {
+    "translation": "从长远来看，偶尔的注意力不集中最终有助于集中注意力。",
+    "vocabulary": [
+      {
+        "term": "occasional",
+        "explanation": "偶尔的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And the occasional absence of"
+      },
+      {
+        "role": "predicate",
+        "text": "focus"
+      }
+    ]
+  },
+  "M-M01": {
+    "translation": "苏珊·凯恩（Susan Cain）是最近提倡深思熟虑和富有成效的独处的人，她是《安静：内向者在一个无法停止说话的世界中的力量》一书的作者，也是安静革命的创始人，该公司致力于提倡安静和内向者友好的工作场所。",
+    "vocabulary": [
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A more recent advocate of thoughtful and productive solitude"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-M02": {
+    "translation": "“如今，我们倾向于认为创造力是从毫无保留的社交过程中产生的，但事实上它需要持续的关注和深度关注，”她说。",
+    "vocabulary": [
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      },
+      {
+        "term": "sustained",
+        "explanation": "持续的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“These days, we tend to believe that creativity emerges from a decidedly unreserved socialising process, but in fact it requires sustained attention and deep"
+      },
+      {
+        "role": "predicate",
+        "text": "focus"
+      }
+    ]
+  },
+  "M-M03": {
+    "translation": "“此外，人类是一种善于吸收他人的社会生物，当我们周围都是他人时，我们会自动吸收他们的观点和审美观。",
+    "vocabulary": [
+      {
+        "term": "aesthetics",
+        "explanation": "审美观"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“Also, humans"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-M04": {
+    "translation": "为了真正规划我们自己的道路或愿景，我们必须愿意孤立自己，至少在一段时间内如此。”",
+    "vocabulary": [
+      {
+        "term": "willing",
+        "explanation": "愿意的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To truly chart our own path or vision, we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-N01": {
+    "translation": "尽管如此，有用的独处和危险的孤立之间的界限仍然很模糊。",
+    "vocabulary": [
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Still, the line between useful solitude and dangerous isolation"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "M-N02": {
+    "translation": "费斯特说：“几乎任何事情都可能具有适应性，也可能具有不适应性，这取决于它们发展到何种极端程度。”",
+    "vocabulary": [
+      {
+        "term": "adaptive",
+        "explanation": "适应性的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“Almost anything"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "M-N03": {
+    "translation": "疾病与功能障碍有关。",
+    "vocabulary": [
+      {
+        "term": "dysfunction",
+        "explanation": "功能障碍"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A disorder"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      }
+    ]
+  },
+  "M-N04": {
+    "translation": "如果某人不再关心他人并切断所有联系，这可能表明对社会关系的非理性忽视。",
+    "vocabulary": [
+      {
+        "term": "someone",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If someone stops caring about people and cuts off all contact"
+      },
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "could"
+      }
+    ]
+  },
+  "M-N05": {
+    "translation": "但创造性的不合群与此相去甚远。",
+    "vocabulary": [
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But creative unsociability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-N06": {
+    "translation": "事实上，费斯特说，“对于那些从不孤单的人来说，确实存在危险。”",
+    "vocabulary": [
+      {
+        "term": "real danger",
+        "explanation": "真正的危险"
+      },
+      {
+        "term": "alone",
+        "explanation": "独处的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In fact"
+      },
+      {
+        "role": "subject",
+        "text": "Feist"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-N07": {
+    "translation": "除非偶尔独处，否则很难审视自己的想法、感受和动机，很难有自我意识，也很难完全放松。",
+    "vocabulary": [
+      {
+        "term": "self-aware",
+        "explanation": "有自我意识的"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It’s hard to examine one’s own thoughts, feelings and motives, to be self-aware, and fully relaxed unless you"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-N08": {
+    "translation": "此外，内向的人往往拥有较少但更牢固的友谊——这与更大的幸福感有关。",
+    "vocabulary": [
+      {
+        "term": "addition",
+        "explanation": "此外；增加"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In addition"
+      },
+      {
+        "role": "subject",
+        "text": "introverts tend to have fewer but stronger friendships — which"
+      },
+      {
+        "role": "predicate",
+        "text": "has been"
+      }
+    ]
+  },
+  "M-O01": {
+    "translation": "与许多事情一样，质量胜过数量。",
+    "vocabulary": [
+      {
+        "term": "quality",
+        "explanation": "质量"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As"
+      },
+      {
+        "role": "predicate",
+        "text": "with"
+      }
+    ]
+  },
+  "M-O02": {
+    "translation": "培养一些牢固的关系，而不需要不断地用无休止的聊天来充实你的生活，最终可能对你更好。",
+    "vocabulary": [
+      {
+        "term": "Nurturing",
+        "explanation": "培养；培育"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nurturing a few solid relationships without feeling the"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      }
+    ]
+  },
+  "M-P01": {
+    "translation": "因此，如果你的性格倾向于不合群，你不应该觉得需要改变。",
+    "vocabulary": [
+      {
+        "term": "unsociability",
+        "explanation": "不合群；不喜社交"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Thus"
+      },
+      {
+        "role": "subject",
+        "text": "if your personality tends toward unsociability, you shouldn’t feel the"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      }
+    ]
+  },
+  "M-P02": {
+    "translation": "当然，这是有资格的。",
+    "vocabulary": [
+      {
+        "term": "qualifications",
+        "explanation": "限制条件；资格"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Of course, that"
+      },
+      {
+        "role": "predicate",
+        "text": "comes"
+      }
+    ]
+  },
+  "M-P03": {
+    "translation": "但只要你有定期的社交接触，你是选择独处而不是被迫独处，你至少有几个好朋友，而且你的独处有利于你的幸福或生产力，那么就没有必要苦恼如何将方形性格融入圆形孔中。",
+    "vocabulary": [
+      {
+        "term": "productivity",
+        "explanation": "生产力"
+      },
+      {
+        "term": "solitude",
+        "explanation": "独处"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But as long as you"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "R1-01": {
+    "translation": "模拟器最常用于核电、航空和外科等行业，这些行业的故障会导致灾难性的后果。",
+    "vocabulary": [
+      {
+        "term": "disastrous consequences",
+        "explanation": "灾难性后果"
+      },
+      {
+        "term": "nuclear power",
+        "explanation": "核能"
+      },
+      {
+        "term": "aviation",
+        "explanation": "航空"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Simulators"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R1-02": {
+    "translation": "为了最大限度地发挥模拟学习体验的价值，参与者应立即直接将他们的学习成果应用到组织内的特定干预措施中。",
+    "vocabulary": [
+      {
+        "term": "intervention",
+        "explanation": "干预"
+      },
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To maximize the value from a simulation learning"
+      },
+      {
+        "role": "predicate",
+        "text": "experience"
+      }
+    ]
+  },
+  "R1-03": {
+    "translation": "大多数组织都渴望部署重大变革计划，但却发现它们几乎不可能实施。",
+    "vocabulary": [
+      {
+        "term": "organizations",
+        "explanation": "组织"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Most"
+      },
+      {
+        "role": "predicate",
+        "text": "organizations"
+      }
+    ]
+  },
+  "R1-04": {
+    "translation": "这主要是因为成功的变革需要的不仅仅是愿景，它还需要一支不仅不抵制变革而且拥抱变革的员工队伍。",
+    "vocabulary": [
+      {
+        "term": "workforce",
+        "explanation": "劳动力；员工队伍"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-05": {
+    "translation": "为了取得成功，组织必须制定一个转型计划，使变革能够在其各个部门和各个层面快速推进。",
+    "vocabulary": [
+      {
+        "term": "achieve",
+        "explanation": "实现"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To achieve success, an organization"
+      },
+      {
+        "role": "predicate",
+        "text": "must"
+      }
+    ]
+  },
+  "R1-06": {
+    "translation": "无论高级管理层的承诺程度如何，除非各级关键思想领袖都接受变革，否则这一举措将会枯萎和消亡。",
+    "vocabulary": [
+      {
+        "term": "Regardless",
+        "explanation": "不论；无论"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Regardless of the"
+      },
+      {
+        "role": "predicate",
+        "text": "level"
+      }
+    ]
+  },
+  "R1-07": {
+    "translation": "为了创造这种广泛的热情，学习型领导者必须让员工了解可能发生的事情，这将使他们能够重新思考他们的思维模式，使他们能够摆脱根深蒂固的范式并拥抱学习的机会。",
+    "vocabulary": [
+      {
+        "term": "workforce",
+        "explanation": "劳动力；员工队伍"
+      },
+      {
+        "term": "paradigm",
+        "explanation": "范式"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To create this kind of widespread passion, learning leaders"
+      },
+      {
+        "role": "predicate",
+        "text": "must"
+      }
+    ]
+  },
+  "R1-08": {
+    "translation": "允许参与者进入模拟环境为他们提供了体验替代现实的机会，这可以促使他们重新思考他们当前的信念。",
+    "vocabulary": [
+      {
+        "term": "Allowing",
+        "explanation": "允许；使得"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Allowing participants to enter a simulated environment"
+      },
+      {
+        "role": "predicate",
+        "text": "provides"
+      }
+    ]
+  },
+  "R1-09": {
+    "translation": "对于大多数成年人来说，改变行为并不容易。",
+    "vocabulary": [
+      {
+        "term": "behavioral change",
+        "explanation": "行为改变"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Behavioral change"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "R1-10": {
+    "translation": "讲座、培训计划和研讨会可以解释转型的智力要素，但它们很少能有效地了解作为重大变革举措核心的行为方面。",
+    "vocabulary": [
+      {
+        "term": "Lectures",
+        "explanation": "讲座；演讲"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Lectures, training programs and workshops"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "R1-11": {
+    "translation": "此外，在正常工作条件下，管理者很少看到员工发展努力的全部效果。",
+    "vocabulary": [
+      {
+        "term": "Further",
+        "explanation": "进一步"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Further, under normal working conditions, managers rarely"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      }
+    ]
+  },
+  "R1-12": {
+    "translation": "因此，像模拟这样的干预可以为改变提供刺激。",
+    "vocabulary": [
+      {
+        "term": "intervention",
+        "explanation": "干预"
+      },
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      },
+      {
+        "term": "stimulus",
+        "explanation": "刺激；诱因"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As such"
+      },
+      {
+        "role": "subject",
+        "text": "an intervention like a simulation"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "R1-13": {
+    "translation": "作为一种学习工具，有效的模拟可能比体验更好，因为它加速了时间，压缩了空间，并且与现实不同，它是专门为最大限度地提高参与者的学习而设计的。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An effective simulation"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "R1-14": {
+    "translation": "模拟提供了一种身临其境的学习体验，其中技能、流程和知识都可以以现实无法做到的方式突出显示。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      },
+      {
+        "term": "immersive",
+        "explanation": "沉浸式的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Simulations"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      }
+    ]
+  },
+  "R1-15": {
+    "translation": "在无限、无风险的模型中探索、实验和重复应用新知识的能力使模拟成为最富有成效的学习形式之一。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      },
+      {
+        "term": "risk-free",
+        "explanation": "无风险的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The ability to explore"
+      },
+      {
+        "role": "predicate",
+        "text": "experiment"
+      }
+    ]
+  },
+  "R1-16": {
+    "translation": "精心设计的模拟可以使个人和团体深入了解他们的决策和对业务刺激的直观反应如何影响其他参与者和整个组织。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Well-designed simulations"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "R1-17": {
+    "translation": "然而，为了获得好处，模拟必须感觉像现实。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To reap the benefits, however, simulations"
+      },
+      {
+        "role": "predicate",
+        "text": "must"
+      }
+    ]
+  },
+  "R1-18": {
+    "translation": "成功模拟结束后，参与者必须声明“这就是我们”。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "At the"
+      },
+      {
+        "role": "predicate",
+        "text": "end"
+      }
+    ]
+  },
+  "R1-19": {
+    "translation": "如果不这样做，他们会将这种体验视为一种游戏，这可能很难应用于工作中，或者更糟糕的是，与日常工作任务无关。",
+    "vocabulary": [
+      {
+        "term": "experience",
+        "explanation": "经历；体验"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If they don’t"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "will"
+      }
+    ]
+  },
+  "R1-20": {
+    "translation": "为了最大限度地从模拟中获益，参与者应该立即应用从经验中学到的知识，在学习和实践之间建立顺畅的联系。",
+    "vocabulary": [
+      {
+        "term": "simulation",
+        "explanation": "模拟"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To maximize benefits from simulation, participants"
+      },
+      {
+        "role": "predicate",
+        "text": "should"
+      }
+    ]
+  },
+  "R2-01": {
+    "translation": "GDP 增长并不是衡量一个国家表现如何的良好指标，也不应该成为政府的首要目标。",
+    "vocabulary": [
+      {
+        "term": "GDP growth",
+        "explanation": "国内生产总值增长"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "GDP growth"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "R2-02": {
+    "translation": "无限增长是不可持续的，经济思维正在转向我们应该以经济模式的可持续性为目标的想法。",
+    "vocabulary": [
+      {
+        "term": "sustainability",
+        "explanation": "可持续性"
+      },
+      {
+        "term": "sustainable",
+        "explanation": "可持续的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Unlimited growth"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "R2-03": {
+    "translation": "尽管可持续经济对我们的未来至关重要，但它只是达到目的的手段，而不是目的本身。",
+    "vocabulary": [
+      {
+        "term": "sustainable",
+        "explanation": "可持续的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But while a sustainable economy"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-04": {
+    "translation": "政府应该关注幸福的想法受到了批评。",
+    "vocabulary": [
+      {
+        "term": "governments",
+        "explanation": "政府"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The idea that governments"
+      },
+      {
+        "role": "predicate",
+        "text": "should"
+      }
+    ]
+  },
+  "R2-05": {
+    "translation": "人们担心如何衡量幸福。",
+    "vocabulary": [
+      {
+        "term": "concerns",
+        "explanation": "担忧；关切"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R2-06": {
+    "translation": "幸福难道不是一种转瞬即逝的主观心理状态吗？",
+    "vocabulary": [
+      {
+        "term": "happiness",
+        "explanation": "幸福"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构 + 并列成分",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Is"
+      },
+      {
+        "role": "predicate",
+        "text": "happiness not"
+      }
+    ]
+  },
+  "R2-07": {
+    "translation": "难道不同的人体验到的幸福程度不一样吗？",
+    "vocabulary": [
+      {
+        "term": "different",
+        "explanation": "不同的"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Don’t different people"
+      },
+      {
+        "role": "predicate",
+        "text": "experience"
+      }
+    ]
+  },
+  "R2-08": {
+    "translation": "即使将“幸福”最广泛地解释为繁荣或“生活满意度”，人们想要的东西也不同。",
+    "vocabulary": [
+      {
+        "term": "life satisfaction",
+        "explanation": "生活满意度"
+      },
+      {
+        "term": "prosperity",
+        "explanation": "繁荣"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Even on the broadest interpretation of ‘happiness’ as prosperity or ‘life satisfaction’, people"
+      },
+      {
+        "role": "predicate",
+        "text": "want"
+      }
+    ]
+  },
+  "R2-09": {
+    "translation": "当然，政府不能把生活满意度强加给公民。",
+    "vocabulary": [
+      {
+        "term": "life satisfaction",
+        "explanation": "生活满意度"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Of course, governments cannot"
+      },
+      {
+        "role": "predicate",
+        "text": "impose"
+      }
+    ]
+  },
+  "R2-10": {
+    "translation": "但我们的幸福依赖于整个社会的共同努力。",
+    "vocabulary": [
+      {
+        "term": "happiness",
+        "explanation": "幸福"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But our happiness"
+      },
+      {
+        "role": "predicate",
+        "text": "relies"
+      }
+    ]
+  },
+  "R2-11": {
+    "translation": "政府的义务在于创造促进繁荣的条件。",
+    "vocabulary": [
+      {
+        "term": "prosperity",
+        "explanation": "繁荣"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A"
+      },
+      {
+        "role": "predicate",
+        "text": "government’s"
+      }
+    ]
+  },
+  "R2-12": {
+    "translation": "我们有充分的理由认为这些条件存在、在全球范围内适用并且可以通过研究发现。",
+    "vocabulary": [
+      {
+        "term": "suppose",
+        "explanation": "假设；认为"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-13": {
+    "translation": "在最近发表的一篇文章中，哲学家朱利安·巴吉尼建议我们应该关注公民的“实际财富”，这不依赖于 GDP 增长。",
+    "vocabulary": [
+      {
+        "term": "real wealth",
+        "explanation": "真实财富"
+      },
+      {
+        "term": "GDP growth",
+        "explanation": "国内生产总值增长"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In a recently published article"
+      },
+      {
+        "role": "subject",
+        "text": "philosopher Julian Baggini"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "R2-14": {
+    "translation": "获取是关键：人们不需要拥有，而是需要获取使他们能够过上美好生活的东西。",
+    "vocabulary": [
+      {
+        "term": "access",
+        "explanation": "获取；使用权"
+      },
+      {
+        "term": "own",
+        "explanation": "拥有"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Access"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-15": {
+    "translation": "技术进步和社会行为的变化使我们能够更有效地利用已有资产。",
+    "vocabulary": [
+      {
+        "term": "Technological",
+        "explanation": "技术的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Technological advances and changes in social behavior"
+      },
+      {
+        "role": "predicate",
+        "text": "enable"
+      }
+    ]
+  },
+  "R2-16": {
+    "translation": "关注人们获得更好生活所需的资源可能有助于减少不平等。",
+    "vocabulary": [
+      {
+        "term": "inequality",
+        "explanation": "不平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And focusing on access to the resources people"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      }
+    ]
+  },
+  "R2-17": {
+    "translation": "就目前而言，这与“幸福”倡导者提出的建议有很多共同之处。",
+    "vocabulary": [
+      {
+        "term": "proposals",
+        "explanation": "提议"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As far as it"
+      },
+      {
+        "role": "predicate",
+        "text": "goes"
+      }
+    ]
+  },
+  "R2-18": {
+    "translation": "但对于政府能够而且应该为公民做的事情来说，它设定的门槛太低了。",
+    "vocabulary": [
+      {
+        "term": "governments",
+        "explanation": "政府"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But it"
+      },
+      {
+        "role": "predicate",
+        "text": "sets"
+      }
+    ]
+  },
+  "R2-19": {
+    "translation": "例如，目前尚不清楚“真正的财富”经济将如何纠正困扰我们社会的精神疾病流行病。",
+    "vocabulary": [
+      {
+        "term": "mental ill-health",
+        "explanation": "心理健康问题"
+      },
+      {
+        "term": "real wealth",
+        "explanation": "真实财富"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For example"
+      },
+      {
+        "role": "subject",
+        "text": "it’s not clear how a ‘real wealth’ economy"
+      },
+      {
+        "role": "predicate",
+        "text": "would"
+      }
+    ]
+  },
+  "R2-20": {
+    "translation": "至少在西方国家，心理健康状况不佳对福祉的危害比贫困更大。",
+    "vocabulary": [
+      {
+        "term": "wellbeing",
+        "explanation": "福祉；幸福感"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In Western countries"
+      },
+      {
+        "role": "subject",
+        "text": "at least—poor mental health"
+      },
+      {
+        "role": "predicate",
+        "text": "is more"
+      }
+    ]
+  },
+  "R2-21": {
+    "translation": "除了大大改善治疗性心理保健的提供之外，政府可以而且应该采取改善心理健康的预防措施。",
+    "vocabulary": [
+      {
+        "term": "preventative",
+        "explanation": "预防性的"
+      },
+      {
+        "term": "therapeutic",
+        "explanation": "治疗性的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Over and above a vastly improved provision of therapeutic mental healthcare"
+      },
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R2-22": {
+    "translation": "世界卫生组织建议建立促进社区参与的机构——提供促进心理健康技能的教育计划和干预措施。",
+    "vocabulary": [
+      {
+        "term": "community participation",
+        "explanation": "社区参与"
+      },
+      {
+        "term": "intervention",
+        "explanation": "干预"
+      },
+      {
+        "term": "wellbeing",
+        "explanation": "福祉；幸福感"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The WHO recommends establishing institutions that facilitate community participation—educational programs and interventions that"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      }
+    ]
+  },
+  "R2-23": {
+    "translation": "然而，它充分说明了世界卫生组织认为有必要利用改善心理健康的经济效益来说服各国政府，采取拟议措施的成本是合理的。",
+    "vocabulary": [
+      {
+        "term": "however",
+        "explanation": "然而"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "R2-24": {
+    "translation": "只要经济是他们的首要任务，政府就只需确保公民的持续生产力即可。",
+    "vocabulary": [
+      {
+        "term": "productivity",
+        "explanation": "生产力"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As long as the economy"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-25": {
+    "translation": "要求政府将公民的“幸福”作为最高优先事项，就是要求他们将公民视为自己的目的。",
+    "vocabulary": [
+      {
+        "term": "ends in themselves",
+        "explanation": "本身就是目的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "To demand that governments"
+      },
+      {
+        "role": "predicate",
+        "text": "set"
+      }
+    ]
+  }
+}

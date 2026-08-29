@@ -1,0 +1,3584 @@
+{
+  "C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to be a law in the technology industry that leading companies eventually lose their positions, often quickly and brutally"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to be a law in the technology industry that leading companies eventually lose their positions, often quickly and brutally"
+      }
+    ]
+  },
+  "C02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Mobile phone champion Nokia, one of Europe’s biggest technology success stories"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "no exception, losing its market share in just a few years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Mobile phone champion Nokia, one of Europe’s biggest technology success stories"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "no exception, losing its market share in just a few years"
+      }
+    ]
+  },
+  "C03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nokia"
+      },
+      {
+        "role": "predicate",
+        "text": "accounted"
+      },
+      {
+        "role": "complement",
+        "text": "In 2007"
+      },
+      {
+        "role": "complement",
+        "text": "for more than 40% of mobile phone sales"
+      },
+      {
+        "role": "adverbial",
+        "text": "worldwide"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nokia"
+      },
+      {
+        "role": "predicate",
+        "text": "accounted"
+      },
+      {
+        "role": "complement",
+        "text": "In 2007"
+      },
+      {
+        "role": "complement",
+        "text": "for more than 40% of mobile phone sales"
+      }
+    ]
+  },
+  "C04": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "consumers’ preferences"
+      },
+      {
+        "role": "predicate",
+        "text": "were already shifting"
+      },
+      {
+        "role": "adverbial",
+        "text": "toward touch-screen smartphones"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "consumers’ preferences"
+      },
+      {
+        "role": "predicate",
+        "text": "were already shifting"
+      }
+    ]
+  },
+  "C05": {
+    "pattern": "主语 + 谓语 + 状语 + 主语 + 谓语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nokia’s market share"
+      },
+      {
+        "role": "predicate",
+        "text": "shrank"
+      },
+      {
+        "role": "adverbial",
+        "text": "With the introduction of Apple’s iPhone in the middle of that year"
+      },
+      {
+        "role": "adverbial",
+        "text": "rapidly"
+      },
+      {
+        "role": "subject",
+        "text": "revenue"
+      },
+      {
+        "role": "predicate",
+        "text": "plunged"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nokia’s market share"
+      },
+      {
+        "role": "predicate",
+        "text": "shrank"
+      },
+      {
+        "role": "subject",
+        "text": "revenue"
+      },
+      {
+        "role": "predicate",
+        "text": "plunged"
+      }
+    ]
+  },
+  "C06": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nokia"
+      },
+      {
+        "role": "predicate",
+        "text": "had sold"
+      },
+      {
+        "role": "object",
+        "text": "its phone business"
+      },
+      {
+        "role": "adverbial",
+        "text": "By the end of 2013"
+      },
+      {
+        "role": "adverbial",
+        "text": "to Microsoft"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nokia"
+      },
+      {
+        "role": "predicate",
+        "text": "had sold"
+      },
+      {
+        "role": "object",
+        "text": "its phone business"
+      }
+    ]
+  },
+  "C07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "What sealed Nokia’s fate"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a series of decisions made by Stephen Elop in his position as CEO, which he assumed in October 2010"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "What sealed Nokia’s fate"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a series of decisions made by Stephen Elop in his position as CEO, which he assumed in October 2010"
+      }
+    ]
+  },
+  "C08": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the company’s market value"
+      },
+      {
+        "role": "predicate",
+        "text": "declined"
+      },
+      {
+        "role": "adverbial",
+        "text": "Each day that Elop spent in charge of Nokia"
+      },
+      {
+        "role": "adverbial",
+        "text": "by $23 million"
+      },
+      {
+        "role": "adverbial",
+        "text": "making him, by the numbers, one of the worst CEOs in history",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the company’s market value"
+      },
+      {
+        "role": "predicate",
+        "text": "declined"
+      }
+    ]
+  },
+  "C09": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Elop"
+      },
+      {
+        "role": "predicate",
+        "text": "was not"
+      },
+      {
+        "role": "complement",
+        "text": "not the only person at fault"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Elop"
+      },
+      {
+        "role": "predicate",
+        "text": "was not"
+      },
+      {
+        "role": "complement",
+        "text": "not the only person at fault"
+      }
+    ]
+  },
+  "C10": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nokia’s board"
+      },
+      {
+        "role": "predicate",
+        "text": "resisted"
+      },
+      {
+        "role": "object",
+        "text": "change"
+      },
+      {
+        "role": "adverbial",
+        "text": "making it impossible for the company to adapt to rapid shifts in the industry",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nokia’s board"
+      },
+      {
+        "role": "predicate",
+        "text": "resisted"
+      },
+      {
+        "role": "object",
+        "text": "change"
+      }
+    ]
+  },
+  "C11": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jorma Ollila, who had led Nokia’s transition from an industrial company to a technology giant"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "predicate",
+        "text": "fascinated"
+      },
+      {
+        "role": "adverbial",
+        "text": "Most notably"
+      },
+      {
+        "role": "adverbial",
+        "text": "too"
+      },
+      {
+        "role": "adverbial",
+        "text": "by the company’s previous success to recognize the change that was needed to sustain its competitiveness"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jorma Ollila, who had led Nokia’s transition from an industrial company to a technology giant"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "predicate",
+        "text": "fascinated"
+      }
+    ]
+  },
+  "C12": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The company"
+      },
+      {
+        "role": "predicate",
+        "text": "also embarked"
+      },
+      {
+        "role": "adverbial",
+        "text": "on a desperate cost-cutting program, which included the elimination of thousands of jobs"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The company"
+      },
+      {
+        "role": "predicate",
+        "text": "also embarked"
+      }
+    ]
+  },
+  "C13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "contributed"
+      },
+      {
+        "role": "complement",
+        "text": "to the deterioration of the company’s once-spirited culture, which had motivated employees to take risks and make miracles"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "contributed"
+      },
+      {
+        "role": "complement",
+        "text": "to the deterioration of the company’s once-spirited culture, which had motivated employees to take risks and make miracles"
+      }
+    ]
+  },
+  "C14": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Good leaders"
+      },
+      {
+        "role": "predicate",
+        "text": "left"
+      },
+      {
+        "role": "object",
+        "text": "the company"
+      },
+      {
+        "role": "adverbial",
+        "text": "taking Nokia’s sense of vision and direction with them",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Good leaders"
+      },
+      {
+        "role": "predicate",
+        "text": "left"
+      },
+      {
+        "role": "object",
+        "text": "the company"
+      }
+    ]
+  },
+  "C15": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "much of Nokia’s most valuable design and programming talent"
+      },
+      {
+        "role": "predicate",
+        "text": "left"
+      },
+      {
+        "role": "adverbial",
+        "text": "Not surprisingly"
+      },
+      {
+        "role": "adverbial",
+        "text": "as well"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "much of Nokia’s most valuable design and programming talent"
+      },
+      {
+        "role": "predicate",
+        "text": "left"
+      }
+    ]
+  },
+  "M-A01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "When引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "academically unprepared for the rigors of higher education"
+      },
+      {
+        "role": "adverbial",
+        "text": "When Nijay Williams entered college last fall as a first-generation student and Jamaican immigrant",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "academically unprepared for the rigors of higher education"
+      }
+    ]
+  },
+  "M-A02": {
+    "pattern": "主语 + 谓语 + 状语 + 谓语 + 宾语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "enrolled"
+      },
+      {
+        "role": "adverbial",
+        "text": "Like many first-generation students"
+      },
+      {
+        "role": "adverbial",
+        "text": "in a medium-sized state university"
+      },
+      {
+        "role": "predicate",
+        "text": "received"
+      },
+      {
+        "role": "object",
+        "text": "a Pell Grant"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "some small federal loans"
+      },
+      {
+        "role": "adverbial",
+        "text": "to cover other costs",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "enrolled"
+      },
+      {
+        "role": "predicate",
+        "text": "received"
+      },
+      {
+        "role": "object",
+        "text": "a Pell Grant"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "some small federal loans"
+      }
+    ]
+  },
+  "M-A03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "chose"
+      },
+      {
+        "role": "complement",
+        "text": "to live at home and worked between 30 and 40 hours a week while taking a full class schedule"
+      },
+      {
+        "role": "adverbial",
+        "text": "Given the high price of room and board and the closeness of the school to his family"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "chose"
+      },
+      {
+        "role": "complement",
+        "text": "to live at home and worked between 30 and 40 hours a week while taking a full class schedule"
+      }
+    ]
+  },
+  "M-B01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "What Nijay didn’t realize about his school—Tennessee State University"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "its frighteningly low graduation rate—a mere 29 percent for its first-generation students"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "What Nijay didn’t realize about his school—Tennessee State University"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "its frighteningly low graduation rate—a mere 29 percent for its first-generation students"
+      }
+    ]
+  },
+  "M-B02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nijay"
+      },
+      {
+        "role": "predicate",
+        "text": "lost"
+      },
+      {
+        "role": "object",
+        "text": "his Pell Grant"
+      },
+      {
+        "role": "adverbial",
+        "text": "At the end of his first year"
+      },
+      {
+        "role": "adverbial",
+        "text": "of over $5,000"
+      },
+      {
+        "role": "adverbial",
+        "text": "after narrowly missing the 2.0 GPA cut-off",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "making it impossible for him to continue paying for school",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nijay"
+      },
+      {
+        "role": "predicate",
+        "text": "lost"
+      },
+      {
+        "role": "object",
+        "text": "his Pell Grant"
+      }
+    ]
+  },
+  "M-C01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nijay"
+      },
+      {
+        "role": "predicate",
+        "text": "represents"
+      },
+      {
+        "role": "object",
+        "text": "a large and growing group of Americans: first-generation college students who enter school unprepared or behind"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nijay"
+      },
+      {
+        "role": "predicate",
+        "text": "represents"
+      },
+      {
+        "role": "object",
+        "text": "a large and growing group of Americans: first-generation college students who enter school unprepared or behind"
+      }
+    ]
+  },
+  "M-C02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "these schools"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "predicate",
+        "text": "equipped"
+      },
+      {
+        "role": "complement",
+        "text": "to graduate these students—young adults who face specific challenges and obstacles"
+      },
+      {
+        "role": "adverbial",
+        "text": "To make matters worse",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "ill-"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "these schools"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "predicate",
+        "text": "equipped"
+      },
+      {
+        "role": "complement",
+        "text": "to graduate these students—young adults who face specific challenges and obstacles"
+      }
+    ]
+  },
+  "M-C03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "carry"
+      },
+      {
+        "role": "object",
+        "text": "financial burdens that outweigh those of their peers"
+      },
+      {
+        "role": "adverbial",
+        "text": "typically"
+      },
+      {
+        "role": "predicate",
+        "text": "require"
+      },
+      {
+        "role": "object",
+        "text": "significant academic remediation"
+      },
+      {
+        "role": "adverbial",
+        "text": "often"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "carry"
+      },
+      {
+        "role": "object",
+        "text": "financial burdens that outweigh those of their peers"
+      },
+      {
+        "role": "predicate",
+        "text": "require"
+      },
+      {
+        "role": "object",
+        "text": "significant academic remediation"
+      }
+    ]
+  },
+  "M-D01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Matt Rubinoff"
+      },
+      {
+        "role": "predicate",
+        "text": "directs"
+      },
+      {
+        "role": "object",
+        "text": "I’m First, a nonprofit organization launched last October to reach out to this specific population of students",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Matt Rubinoff"
+      },
+      {
+        "role": "predicate",
+        "text": "directs"
+      }
+    ]
+  },
+  "M-D02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "hopes"
+      },
+      {
+        "role": "complement",
+        "text": "to distribute this information and help prospective college-goers find the best post-secondary fit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "hopes"
+      },
+      {
+        "role": "complement",
+        "text": "to distribute this information and help prospective college-goers find the best post-secondary fit"
+      }
+    ]
+  },
+  "M-D03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "while引导的从句整体作状语；that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "that number isn’t high enough",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "while Rubinoff believes there are a good number of four-year schools that truly care about these students and set aside significant resources and programs for them",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-E01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语；that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Rubinoff"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "It’s not only the selective and elite institutions that provide those opportunities for a small subset of this population",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "adding that a majority of first-generation undergraduates tend toward options such as online programs, two-year colleges, and commuter state schools",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Rubinoff"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "M-E02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "tends"
+      },
+      {
+        "role": "complement",
+        "text": "to be a lack of information and support to help students think bigger and broader"
+      },
+      {
+        "role": "adverbial",
+        "text": "Unfortunately"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "tends"
+      },
+      {
+        "role": "complement",
+        "text": "to be a lack of information and support to help students think bigger and broader"
+      }
+    ]
+  },
+  "M-F01": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many students"
+      },
+      {
+        "role": "predicate",
+        "text": "are still drawn"
+      },
+      {
+        "role": "adverbial",
+        "text": "Despite this problem"
+      },
+      {
+        "role": "adverbial",
+        "text": "to these institutions—and two-year schools in particular"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many students"
+      },
+      {
+        "role": "predicate",
+        "text": "are still drawn"
+      }
+    ]
+  },
+  "M-F02": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "saw"
+      },
+      {
+        "role": "object",
+        "text": "students"
+      },
+      {
+        "role": "complement",
+        "text": "choose familiar, cheaper options year after year"
+      },
+      {
+        "role": "adverbial",
+        "text": "As a former high school teacher"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "saw"
+      },
+      {
+        "role": "object",
+        "text": "students"
+      },
+      {
+        "role": "complement",
+        "text": "choose familiar, cheaper options year after year"
+      }
+    ]
+  },
+  "M-F03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "chose"
+      },
+      {
+        "role": "object",
+        "text": "community colleges or state schools"
+      },
+      {
+        "role": "adverbial",
+        "text": "Instead of skipping out on higher education altogether",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "with low bars for admittance"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "chose"
+      },
+      {
+        "role": "object",
+        "text": "community colleges or state schools"
+      }
+    ]
+  },
+  "M-G01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "when引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Dave Jarrat, a marketing executive for Inside Track, a for-profit organization that specializes in coaching low-income students and supporting colleges in order to help students thrive"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "They underestimate themselves when selecting a university",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Dave Jarrat, a marketing executive for Inside Track, a for-profit organization that specializes in coaching low-income students and supporting colleges in order to help students thrive"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "M-G02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The reality of it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "could be"
+      },
+      {
+        "role": "complement",
+        "text": "that a lot of low-income kids could be going to elite universities on a full ride scholarship"
+      },
+      {
+        "role": "predicate",
+        "text": "don’t"
+      },
+      {
+        "role": "predicate",
+        "text": "realize"
+      },
+      {
+        "role": "object",
+        "text": "it"
+      },
+      {
+        "role": "adverbial",
+        "text": "even"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The reality of it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "could be"
+      },
+      {
+        "role": "complement",
+        "text": "that a lot of low-income kids could be going to elite universities on a full ride scholarship"
+      },
+      {
+        "role": "predicate",
+        "text": "don’t"
+      },
+      {
+        "role": "predicate",
+        "text": "realize"
+      },
+      {
+        "role": "object",
+        "text": "it"
+      }
+    ]
+  },
+  "M-H01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many students"
+      },
+      {
+        "role": "predicate",
+        "text": "are coming"
+      },
+      {
+        "role": "complement",
+        "text": "from a situation where no one around them has the experience of successfully completing higher education"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Many students"
+      },
+      {
+        "role": "predicate",
+        "text": "are coming"
+      },
+      {
+        "role": "complement",
+        "text": "from a situation where no one around them has the experience of successfully completing higher education"
+      }
+    ]
+  },
+  "M-H02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "helps"
+      },
+      {
+        "role": "complement",
+        "text": "explain why, as I’m First’s Rubinoff indicated, the schools to which these students end up resorting can end up being some of the poorest matches for them"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "helps"
+      },
+      {
+        "role": "complement",
+        "text": "explain why, as I’m First’s Rubinoff indicated, the schools to which these students end up resorting can end up being some of the poorest matches for them"
+      }
+    ]
+  },
+  "M-H03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The University of Tennessee in Knoxville"
+      },
+      {
+        "role": "predicate",
+        "text": "offers"
+      },
+      {
+        "role": "object",
+        "text": "one example of this dilemma"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The University of Tennessee in Knoxville"
+      },
+      {
+        "role": "predicate",
+        "text": "offers"
+      },
+      {
+        "role": "object",
+        "text": "one example of this dilemma"
+      }
+    ]
+  },
+  "M-H04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the school"
+      },
+      {
+        "role": "predicate",
+        "text": "graduates"
+      },
+      {
+        "role": "object",
+        "text": "just 16 percent of its first-generation students"
+      },
+      {
+        "role": "adverbial",
+        "text": "despite its overall graduation rate of 71 percent"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the school"
+      },
+      {
+        "role": "predicate",
+        "text": "graduates"
+      },
+      {
+        "role": "object",
+        "text": "just 16 percent of its first-generation students"
+      }
+    ]
+  },
+  "M-H05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The University of Tennessee and Tennessee State"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "worth comparing"
+      },
+      {
+        "role": "complement",
+        "text": "comparing"
+      },
+      {
+        "role": "adverbial",
+        "text": "Located only a few hours apart",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The University of Tennessee and Tennessee State"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "worth comparing"
+      },
+      {
+        "role": "complement",
+        "text": "comparing"
+      }
+    ]
+  },
+  "M-H06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tennessee State’s overall graduation rate"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a tiny 39 percent"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "a smaller gap between the outcomes for first-generation students and those of their peers"
+      },
+      {
+        "role": "adverbial",
+        "text": "at least"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Tennessee State’s overall graduation rate"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a tiny 39 percent"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "a smaller gap between the outcomes for first-generation students and those of their peers"
+      }
+    ]
+  },
+  "M-I01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the University of Tennessee"
+      },
+      {
+        "role": "predicate",
+        "text": "deserves"
+      },
+      {
+        "role": "object",
+        "text": "credit"
+      },
+      {
+        "role": "adverbial",
+        "text": "for being transparent",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the University of Tennessee"
+      },
+      {
+        "role": "predicate",
+        "text": "deserves"
+      },
+      {
+        "role": "object",
+        "text": "credit"
+      }
+    ]
+  },
+  "M-I02": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语 + 表语 / 补语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many large institutions"
+      },
+      {
+        "role": "predicate",
+        "text": "keep"
+      },
+      {
+        "role": "object",
+        "text": "this kind of data secret"
+      },
+      {
+        "role": "predicate",
+        "text": "make"
+      },
+      {
+        "role": "object",
+        "text": "it"
+      },
+      {
+        "role": "complement",
+        "text": "incredibly difficult to find"
+      },
+      {
+        "role": "adverbial",
+        "text": "at least"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Many large institutions"
+      },
+      {
+        "role": "predicate",
+        "text": "keep"
+      },
+      {
+        "role": "object",
+        "text": "this kind of data secret"
+      },
+      {
+        "role": "predicate",
+        "text": "make"
+      },
+      {
+        "role": "object",
+        "text": "it"
+      },
+      {
+        "role": "complement",
+        "text": "incredibly difficult to find"
+      }
+    ]
+  },
+  "M-I03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The University of North Carolina at Chapel Hill"
+      },
+      {
+        "role": "predicate",
+        "text": "admits only"
+      },
+      {
+        "role": "object",
+        "text": "that the graduation rate for its first-generation pupils is “much lower” than the percentage of all students who graduate within four years (81 percent)",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "for instance"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The University of North Carolina at Chapel Hill"
+      },
+      {
+        "role": "predicate",
+        "text": "admits only"
+      }
+    ]
+  },
+  "M-J01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "actually quite difficult"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "actually quite difficult"
+      }
+    ]
+  },
+  "M-J02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Higher education institutions"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "predicate",
+        "text": "required"
+      },
+      {
+        "role": "complement",
+        "text": "to report graduation rates"
+      },
+      {
+        "role": "adverbial",
+        "text": "under federal law"
+      },
+      {
+        "role": "subject",
+        "text": "these reports"
+      },
+      {
+        "role": "predicate",
+        "text": "only include"
+      },
+      {
+        "role": "object",
+        "text": "Pell recipient numbers—not necessarily rates specific to first-generation students"
+      },
+      {
+        "role": "adverbial",
+        "text": "typically"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Higher education institutions"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "predicate",
+        "text": "required"
+      },
+      {
+        "role": "complement",
+        "text": "to report graduation rates"
+      },
+      {
+        "role": "subject",
+        "text": "these reports"
+      },
+      {
+        "role": "predicate",
+        "text": "only include"
+      },
+      {
+        "role": "object",
+        "text": "Pell recipient numbers—not necessarily rates specific to first-generation students"
+      }
+    ]
+  },
+  "M-J03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Other initiatives"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      },
+      {
+        "role": "complement",
+        "text": "to break down the data"
+      },
+      {
+        "role": "adverbial",
+        "text": "too"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Other initiatives"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      },
+      {
+        "role": "complement",
+        "text": "to break down the data"
+      }
+    ]
+  },
+  "M-J04": {
+    "pattern": "谓语 + 宾语",
+    "explanation": "how引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Imagine"
+      },
+      {
+        "role": "object",
+        "text": "how intimidating it can be for prospective students unfamiliar with the complexities of higher education to navigate this kind of information and then identify which schools are the best fit",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Imagine"
+      }
+    ]
+  },
+  "M-K01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "this lack of information that prompted the launch of I’m First in 2013, originally as an arm of its umbrella organization, the Center For Student Opportunity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "this lack of information that prompted the launch of I’m First in 2013, originally as an arm of its umbrella organization, the Center For Student Opportunity"
+      }
+    ]
+  },
+  "M-K02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "If引导的从句整体作宾语；该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Rubinoff"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "If we can help to direct students to more of these types of campuses and help students to understand them to be realistic and accessible places, have them apply to these schools at greater frequency and ultimately get in and enroll, we are going to raise the success rate",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "citing a variety of colleges ranging from large state institutions to smaller private schools",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Rubinoff"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "M-L01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Chelsea Jones, who now directs student programming at I’m First"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a first-generation college student at Howard"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Chelsea Jones, who now directs student programming at I’m First"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a first-generation college student at Howard"
+      }
+    ]
+  },
+  "M-L02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "she often struggled on her path to college, “There wasn’t really a college-bound culture at my high school,”",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "Like other students new to the intimidating higher-education world"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "M-L03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "wanted"
+      },
+      {
+        "role": "complement",
+        "text": "to go to college"
+      },
+      {
+        "role": "predicate",
+        "text": "didn’t"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "the process"
+      },
+      {
+        "role": "adverbial",
+        "text": "really"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "wanted"
+      },
+      {
+        "role": "complement",
+        "text": "to go to college"
+      },
+      {
+        "role": "predicate",
+        "text": "didn’t"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "the process"
+      }
+    ]
+  },
+  "M-L04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jones"
+      },
+      {
+        "role": "predicate",
+        "text": "became"
+      },
+      {
+        "role": "complement",
+        "text": "involved with a college-access program through Princeton University in high school"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jones"
+      },
+      {
+        "role": "predicate",
+        "text": "became"
+      },
+      {
+        "role": "complement",
+        "text": "involved with a college-access program through Princeton University in high school"
+      }
+    ]
+  },
+  "M-L05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "attributes"
+      },
+      {
+        "role": "object",
+        "text": "much of her understanding of college"
+      },
+      {
+        "role": "adverbial",
+        "text": "Now"
+      },
+      {
+        "role": "adverbial",
+        "text": "to that"
+      },
+      {
+        "role": "subject",
+        "text": "d"
+      },
+      {
+        "role": "predicate",
+        "text": "e f"
+      },
+      {
+        "role": "complement",
+        "text": "“But once I got to campus, it was a completely different ball game that no one really prepared me for.”"
+      },
+      {
+        "role": "adverbial",
+        "text": "no one really prepa",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "attributes"
+      },
+      {
+        "role": "object",
+        "text": "much of her understanding of college"
+      },
+      {
+        "role": "subject",
+        "text": "d"
+      },
+      {
+        "role": "predicate",
+        "text": "e f"
+      },
+      {
+        "role": "complement",
+        "text": "“But once I got to campus, it was a completely different ball game that no one really prepared me for.”"
+      }
+    ]
+  },
+  "M-M01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "fortunate, though"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "fortunate, though"
+      }
+    ]
+  },
+  "M-M02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Howard, a well-regarded historically black college"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "an array of resources for its first-generation students, including matching kids with counselors, connecting first-generation students to one another, and TRIO, a national program that supported 200 students on Howard’s campus"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Howard, a well-regarded historically black college"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "an array of resources for its first-generation students, including matching kids with counselors, connecting first-generation students to one another, and TRIO, a national program that supported 200 students on Howard’s campus"
+      }
+    ]
+  },
+  "M-M03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jones"
+      },
+      {
+        "role": "predicate",
+        "text": "represents"
+      },
+      {
+        "role": "object",
+        "text": "a small percentage of first-generation students who are able to gain entry into more elite universities, which are often known for robust financial aid packages and remarkably high graduation rates for first-generation students"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jones"
+      },
+      {
+        "role": "predicate",
+        "text": "represents"
+      },
+      {
+        "role": "object",
+        "text": "a small percentage of first-generation students who are able to gain entry into more elite universities, which are often known for robust financial aid packages and remarkably high graduation rates for first-generation students"
+      }
+    ]
+  },
+  "M-M04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Harvard"
+      },
+      {
+        "role": "predicate",
+        "text": "boasts"
+      },
+      {
+        "role": "object",
+        "text": "a six-year graduation rate"
+      },
+      {
+        "role": "adverbial",
+        "text": "for example"
+      },
+      {
+        "role": "adverbial",
+        "text": "for underrepresented minority groups of 98 percent"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Harvard"
+      },
+      {
+        "role": "predicate",
+        "text": "boasts"
+      },
+      {
+        "role": "object",
+        "text": "a six-year graduation rate"
+      }
+    ]
+  },
+  "M-N01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Christian Vazquez, a first-generation Yale graduate"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "another exception, his success story setting him far apart from students such as Nijay"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Christian Vazquez, a first-generation Yale graduate"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "another exception, his success story setting him far apart from students such as Nijay"
+      }
+    ]
+  },
+  "M-N02": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-N03": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Students"
+      },
+      {
+        "role": "predicate",
+        "text": "are placed"
+      },
+      {
+        "role": "adverbial",
+        "text": "in small groups with counselors (trained seniors on campus)"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Students"
+      },
+      {
+        "role": "predicate",
+        "text": "are placed"
+      }
+    ]
+  },
+  "M-O01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作宾语；who引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "Our support structure was more like: ‘You are going to get through Yale; you are going to do well",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "hinting at mentors, staff, and professors who all provided significant support for students who lacked confidence about “belonging” at such a top institution",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "R1-01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语；that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "some of the most influential medical groups in the nation"
+      },
+      {
+        "role": "predicate",
+        "text": "are recommending"
+      },
+      {
+        "role": "object",
+        "text": "that doctors weigh the costs, not just the effectiveness of treatments, as they make decisions about patient care",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "Saying they can no longer ignore the rising price of health care",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "some of the most influential medical groups in the nation"
+      },
+      {
+        "role": "predicate",
+        "text": "are recommending"
+      }
+    ]
+  },
+  "R1-02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The shift, little noticed outside the medical establishment but already controversial inside it"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that doctors are starting to redefine their roles, from being concerned exclusively about individual patients to exerting influence on how healthcare dollars are spent",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The shift, little noticed outside the medical establishment but already controversial inside it"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "R1-03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the new guidelines being developed"
+      },
+      {
+        "role": "predicate",
+        "text": "could result"
+      },
+      {
+        "role": "complement",
+        "text": "In practical terms"
+      },
+      {
+        "role": "adverbial",
+        "text": "in doctors choosing one drug over another for cost reasons or even deciding that a particular treatment—at the end of life, for example—is too expensive",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the new guidelines being developed"
+      },
+      {
+        "role": "predicate",
+        "text": "could result"
+      },
+      {
+        "role": "complement",
+        "text": "In practical terms"
+      }
+    ]
+  },
+  "R1-04": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "some critics"
+      },
+      {
+        "role": "predicate",
+        "text": "have said"
+      },
+      {
+        "role": "object",
+        "text": "that making treatment decisions based on cost is a form of rationing",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "In the extreme"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "some critics"
+      },
+      {
+        "role": "predicate",
+        "text": "have said"
+      }
+    ]
+  },
+  "R1-05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "guidelines"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "predicate",
+        "text": "influenced"
+      },
+      {
+        "role": "object",
+        "text": "the practice of medicine"
+      },
+      {
+        "role": "adverbial",
+        "text": "Traditionally"
+      },
+      {
+        "role": "adverbial",
+        "text": "heavily"
+      },
+      {
+        "role": "subject",
+        "text": "the latest ones"
+      },
+      {
+        "role": "predicate",
+        "text": "are expected"
+      },
+      {
+        "role": "complement",
+        "text": "to make doctors more conscious of the economic consequences of their decisions, even though there’s no obligation to follow them"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "guidelines"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "predicate",
+        "text": "influenced"
+      },
+      {
+        "role": "object",
+        "text": "the practice of medicine"
+      },
+      {
+        "role": "subject",
+        "text": "the latest ones"
+      },
+      {
+        "role": "predicate",
+        "text": "are expected"
+      },
+      {
+        "role": "complement",
+        "text": "to make doctors more conscious of the economic consequences of their decisions, even though there’s no obligation to follow them"
+      }
+    ]
+  },
+  "R1-06": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Medical society guidelines"
+      },
+      {
+        "role": "predicate",
+        "text": "are also used"
+      },
+      {
+        "role": "adverbial",
+        "text": "by insurance companies"
+      },
+      {
+        "role": "adverbial",
+        "text": "to help determine reimbursement policies",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Medical society guidelines"
+      },
+      {
+        "role": "predicate",
+        "text": "are also used"
+      }
+    ]
+  },
+  "R1-07": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some doctors"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      },
+      {
+        "role": "object",
+        "text": "a potential conflict in trying to be both providers of patient care and financial overseers"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some doctors"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      },
+      {
+        "role": "object",
+        "text": "a potential conflict in trying to be both providers of patient care and financial overseers"
+      }
+    ]
+  },
+  "R1-08": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "who引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Dr. Martin Samuels"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "There should be forces in society who should be concerned about the budget, but they shouldn’t be functioning simultaneously as doctors",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "at a Boston hospital"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Dr. Martin Samuels"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "R1-09": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "if引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "doctors risked losing the trust of patients if they told patients",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "R1-10": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Doctors"
+      },
+      {
+        "role": "predicate",
+        "text": "can face"
+      },
+      {
+        "role": "object",
+        "text": "some grim trade-offs"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Doctors"
+      },
+      {
+        "role": "predicate",
+        "text": "can face"
+      },
+      {
+        "role": "object",
+        "text": "some grim trade-offs"
+      }
+    ]
+  },
+  "R1-11": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Studies"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "for example, that two drugs are about equally effective in treating macular degeneration, an eye disease",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Studies"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      }
+    ]
+  },
+  "R1-12": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "one"
+      },
+      {
+        "role": "predicate",
+        "text": "costs"
+      },
+      {
+        "role": "object",
+        "text": "$50 a dose"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "one"
+      },
+      {
+        "role": "predicate",
+        "text": "costs"
+      },
+      {
+        "role": "object",
+        "text": "$50 a dose"
+      }
+    ]
+  },
+  "R1-13": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "if引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Medicare"
+      },
+      {
+        "role": "predicate",
+        "text": "could save"
+      },
+      {
+        "role": "object",
+        "text": "hundreds of millions of dollars"
+      },
+      {
+        "role": "adverbial",
+        "text": "a year"
+      },
+      {
+        "role": "adverbial",
+        "text": "if everyone used the cheaper drug, Avastin, instead of the costlier one, Lucentis",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Medicare"
+      },
+      {
+        "role": "predicate",
+        "text": "could save"
+      },
+      {
+        "role": "object",
+        "text": "hundreds of millions of dollars"
+      }
+    ]
+  },
+  "R1-14": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the Food and Drug Administration"
+      },
+      {
+        "role": "predicate",
+        "text": "has not approved"
+      },
+      {
+        "role": "object",
+        "text": "Avastin"
+      },
+      {
+        "role": "adverbial",
+        "text": "for use in the eye"
+      },
+      {
+        "role": "subject",
+        "text": "using it rather than the alternative, Lucentis",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "might carry"
+      },
+      {
+        "role": "object",
+        "text": "an additional"
+      },
+      {
+        "role": "adverbial",
+        "text": "although slight, safety risk"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the Food and Drug Administration"
+      },
+      {
+        "role": "predicate",
+        "text": "has not approved"
+      },
+      {
+        "role": "object",
+        "text": "Avastin"
+      },
+      {
+        "role": "predicate",
+        "text": "might carry"
+      },
+      {
+        "role": "object",
+        "text": "an additional"
+      }
+    ]
+  },
+  "R1-15": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "what引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "doctors"
+      },
+      {
+        "role": "predicate",
+        "text": "Should"
+      },
+      {
+        "role": "predicate",
+        "text": "consider"
+      },
+      {
+        "role": "object",
+        "text": "Medicare’s budget"
+      },
+      {
+        "role": "adverbial",
+        "text": "in deciding what to use",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "doctors"
+      },
+      {
+        "role": "predicate",
+        "text": "Should"
+      },
+      {
+        "role": "predicate",
+        "text": "consider"
+      },
+      {
+        "role": "object",
+        "text": "Medicare’s budget"
+      }
+    ]
+  },
+  "R1-16": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "as引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Dr. Donald Jensen"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "I think ethically we are just worried about the patient in front of us and not trying to save money for the insurance industry or society as a whole",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Dr. Donald Jensen"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "R1-17": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "some analysts"
+      },
+      {
+        "role": "predicate",
+        "text": "say"
+      },
+      {
+        "role": "object",
+        "text": "that there’s a role for doctors to play in cost analysis because not many others are doing so",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "some analysts"
+      },
+      {
+        "role": "predicate",
+        "text": "say"
+      }
+    ]
+  },
+  "R1-18": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Dr. Daniel Sulmasy"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "it represents a failure of wider society to take up the issue",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "In some ways"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Dr. Daniel Sulmasy"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "R2-01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Economic inequality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the “defining challenge of our time,” President Barack Obama declared in a speech last month to the Center for American Progress"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Economic inequality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the “defining challenge of our time,” President Barack Obama declared in a speech last month to the Center for American Progress"
+      }
+    ]
+  },
+  "R2-02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "because引导的从句整体作状语；该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Inequality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "dangerous, he argued"
+      },
+      {
+        "role": "adverbial",
+        "text": "not merely because it doesn’t look good to have a large gap between the rich and the poor",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "inequality itself"
+      },
+      {
+        "role": "predicate",
+        "text": "destroys"
+      },
+      {
+        "role": "object",
+        "text": "upward mobility"
+      },
+      {
+        "role": "adverbial",
+        "text": "making it harder for the poor to escape from poverty",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Inequality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "dangerous, he argued"
+      },
+      {
+        "role": "subject",
+        "text": "inequality itself"
+      },
+      {
+        "role": "predicate",
+        "text": "destroys"
+      },
+      {
+        "role": "object",
+        "text": "upward mobility"
+      }
+    ]
+  },
+  "R2-03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "Increased inequality and decreasing mobility pose a fundamental threat to the American Dream",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "R2-04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Obama"
+      },
+      {
+        "role": "predicate",
+        "text": "is only"
+      },
+      {
+        "role": "complement",
+        "text": "only the most prominent public figure to declare inequality Public Enemy No. 1"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Obama"
+      },
+      {
+        "role": "predicate",
+        "text": "is only"
+      },
+      {
+        "role": "complement",
+        "text": "only the most prominent public figure to declare inequality Public Enemy No. 1"
+      }
+    ]
+  },
+  "R2-05": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A number of prominent economists"
+      },
+      {
+        "role": "predicate",
+        "text": "have also argued"
+      },
+      {
+        "role": "object",
+        "text": "that it’s harder for the poor to climb the economic ladder today because the rungs in that ladder have grown farther apart",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A number of prominent economists"
+      },
+      {
+        "role": "predicate",
+        "text": "have also argued"
+      }
+    ]
+  },
+  "R2-06": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a new dataset from the Equality of Opportunity Project at Harvard and Berkeley"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that, if we care about upward mobility overall, we’re vastly exaggerating the dangers of the rich-poor gap",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "For all the new attention devoted to the 1 percent"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a new dataset from the Equality of Opportunity Project at Harvard and Berkeley"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "R2-07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "as引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Inequality itself"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "not a particularly strong predictor of economic mobility"
+      },
+      {
+        "role": "adverbial",
+        "text": "as sociologist Scott Winship noted in a recent article based on his analysis of this data",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Inequality itself"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "not a particularly strong predictor of economic mobility"
+      }
+    ]
+  },
+  "R2-08": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "if引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "what factors"
+      },
+      {
+        "role": "predicate",
+        "text": "do predict"
+      },
+      {
+        "role": "object",
+        "text": "if poor children will move up the economic ladder as adults",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "So"
+      },
+      {
+        "role": "adverbial",
+        "text": "at the community level"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "what factors"
+      },
+      {
+        "role": "predicate",
+        "text": "do predict"
+      }
+    ]
+  },
+  "R2-09": {
+    "pattern": "谓语 + 表语 / 补语 + 状语",
+    "explanation": "What引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "one of the least likely"
+      },
+      {
+        "role": "adverbial",
+        "text": "What explains, for instance, why the Salt Lake City metro area is one of the 100 largest metropolitan areas most likely to lift the fortunes of the poor and the Atlanta metro area",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "for instance"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "one of the least likely"
+      }
+    ]
+  },
+  "R2-10": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Harvard economist Raj Chetty"
+      },
+      {
+        "role": "predicate",
+        "text": "has pointed"
+      },
+      {
+        "role": "complement",
+        "text": "to economic and racial segregation, community density, the size of a community’s middle class, the quality of schools, community religiosity, and family structure, which he calls the “single strongest correlate of upward mobility.”"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Harvard economist Raj Chetty"
+      },
+      {
+        "role": "predicate",
+        "text": "has pointed"
+      },
+      {
+        "role": "complement",
+        "text": "to economic and racial segregation, community density, the size of a community’s middle class, the quality of schools, community religiosity, and family structure, which he calls the “single strongest correlate of upward mobility.”"
+      }
+    ]
+  },
+  "R2-11": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Chetty"
+      },
+      {
+        "role": "predicate",
+        "text": "finds"
+      },
+      {
+        "role": "object",
+        "text": "that communities like Salt Lake City, with high levels of two-parent families and religiosity, are much more likely to see poor children get ahead than communities like Atlanta, with high levels of racial and economic segregation",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Chetty"
+      },
+      {
+        "role": "predicate",
+        "text": "finds"
+      }
+    ]
+  },
+  "R2-12": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Chetty"
+      },
+      {
+        "role": "predicate",
+        "text": "has not"
+      },
+      {
+        "role": "predicate",
+        "text": "issued"
+      },
+      {
+        "role": "object",
+        "text": "a comprehensive analysis of the relative predictive power of each of these factors"
+      },
+      {
+        "role": "adverbial",
+        "text": "yet"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Chetty"
+      },
+      {
+        "role": "predicate",
+        "text": "has not"
+      },
+      {
+        "role": "predicate",
+        "text": "issued"
+      },
+      {
+        "role": "object",
+        "text": "a comprehensive analysis of the relative predictive power of each of these factors"
+      }
+    ]
+  },
+  "R2-13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the following three"
+      },
+      {
+        "role": "predicate",
+        "text": "seem"
+      },
+      {
+        "role": "complement",
+        "text": "to be most predictive of upward mobility in a given community"
+      },
+      {
+        "role": "adverbial",
+        "text": "Based",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "on my analyses of the data"
+      },
+      {
+        "role": "adverbial",
+        "text": "of the factors that Chetty has highlighted"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the following three"
+      },
+      {
+        "role": "predicate",
+        "text": "seem"
+      },
+      {
+        "role": "complement",
+        "text": "to be most predictive of upward mobility in a given community"
+      }
+    ]
+  },
+  "R2-14": {
+    "pattern": "谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "growth"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "growth"
+      }
+    ]
+  },
+  "R2-15": {
+    "pattern": "谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Prevalence"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Prevalence"
+      }
+    ]
+  },
+  "R2-16": {
+    "pattern": "谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "spending"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "spending"
+      }
+    ]
+  },
+  "R2-17": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "communities with high levels of per-capita income growth, high percentages of two-parent families, and high local government spending—which may stand for good schools"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "the most likely to help poor children relive the Horatio Alger’s rags-to-riches story"
+      },
+      {
+        "role": "complement",
+        "text": "to help poor children relive the Horatio Alger’s rags-to-riches story"
+      },
+      {
+        "role": "adverbial",
+        "text": "In other words"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "communities with high levels of per-capita income growth, high percentages of two-parent families, and high local government spending—which may stand for good schools"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "the most likely to help poor children relive the Horatio Alger’s rags-to-riches story"
+      },
+      {
+        "role": "complement",
+        "text": "to help poor children relive the Horatio Alger’s rags-to-riches story"
+      }
+    ]
+  }
+}

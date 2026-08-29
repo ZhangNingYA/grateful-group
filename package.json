@@ -7,8 +7,9 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run validate:reading && astro build",
     "generate:reading": "node tools/generate-reading-post.mjs",
+    "validate:reading": "node tools/validate-reading.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -27,5 +28,8 @@
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.7"
   }
 }

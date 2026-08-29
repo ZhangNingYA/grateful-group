@@ -1,0 +1,4194 @@
+{
+  "C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Charlene Duong"
+      },
+      {
+        "role": "predicate",
+        "text": "learned"
+      },
+      {
+        "role": "complement",
+        "text": "In her second year"
+      },
+      {
+        "role": "complement",
+        "text": "of the use of poisonous, synthetic pesticides on her college campus"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Charlene Duong"
+      },
+      {
+        "role": "predicate",
+        "text": "learned"
+      },
+      {
+        "role": "complement",
+        "text": "In her second year"
+      },
+      {
+        "role": "complement",
+        "text": "of the use of poisonous, synthetic pesticides on her college campus"
+      }
+    ]
+  },
+  "C02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语；该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "knew"
+      },
+      {
+        "role": "object",
+        "text": "she had to do something",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "Shocked but not surprised",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "knew"
+      }
+    ]
+  },
+  "C03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "did"
+      },
+      {
+        "role": "object",
+        "text": "a quick web search"
+      },
+      {
+        "role": "adverbial",
+        "text": "Along with a couple of classmates"
+      },
+      {
+        "role": "predicate",
+        "text": "discovered"
+      },
+      {
+        "role": "object",
+        "text": "a small but growing movement led by the organization, Herbicide-Free Campus (HFC)"
+      },
+      {
+        "role": "adverbial",
+        "text": "to rid college campuses of artificial herbicides (灭草剂)",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "did"
+      },
+      {
+        "role": "object",
+        "text": "a quick web search"
+      },
+      {
+        "role": "predicate",
+        "text": "discovered"
+      },
+      {
+        "role": "object",
+        "text": "a small but growing movement led by the organization, Herbicide-Free Campus (HFC)"
+      }
+    ]
+  },
+  "C04": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "were intrigued"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "were intrigued"
+      }
+    ]
+  },
+  "C05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 谓语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "experiences"
+      },
+      {
+        "role": "object",
+        "text": "climate anxiety—a chronic fear of a climate catastrophe"
+      },
+      {
+        "role": "adverbial",
+        "text": "Like many"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "predicate",
+        "text": "looking"
+      },
+      {
+        "role": "complement",
+        "text": "at the time"
+      },
+      {
+        "role": "complement",
+        "text": "for an outlet"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "experiences"
+      },
+      {
+        "role": "object",
+        "text": "climate anxiety—a chronic fear of a climate catastrophe"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "predicate",
+        "text": "looking"
+      },
+      {
+        "role": "complement",
+        "text": "at the time"
+      },
+      {
+        "role": "complement",
+        "text": "for an outlet"
+      }
+    ]
+  },
+  "C06": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "When引导的从句整体作状语；that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "she felt she “had found a specific area to focus on that still fit into the larger picture of fighting for a healthier, safer, cleaner environment for all.”",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "When she discovered the HFC movement",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "C07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Toxic herbicide use in university land care"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "not unique"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Toxic herbicide use in university land care"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "not unique"
+      }
+    ]
+  },
+  "C08": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Most institutions of higher education"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      },
+      {
+        "role": "complement",
+        "text": "on synthetic pesticides and fertilizers"
+      },
+      {
+        "role": "adverbial",
+        "text": "to achieve aesthetic goals",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Most institutions of higher education"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      },
+      {
+        "role": "complement",
+        "text": "on synthetic pesticides and fertilizers"
+      }
+    ]
+  },
+  "C09": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Having a “beautiful” campus",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "object",
+        "text": "green and perfectly maintained lawns"
+      },
+      {
+        "role": "adverbial",
+        "text": "along with flower beds and paved sidewalks"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "object",
+        "text": "green and perfectly maintained lawns"
+      }
+    ]
+  },
+  "C10": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "these conventionally managed campuses"
+      },
+      {
+        "role": "predicate",
+        "text": "can come"
+      },
+      {
+        "role": "complement",
+        "text": "at a cost: increased cancer risk, contaminated waterways, poisoned wildlife and lifeless soil"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "these conventionally managed campuses"
+      },
+      {
+        "role": "predicate",
+        "text": "can come"
+      },
+      {
+        "role": "complement",
+        "text": "at a cost: increased cancer risk, contaminated waterways, poisoned wildlife and lifeless soil"
+      }
+    ]
+  },
+  "C11": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Pesticide use on college campuses"
+      },
+      {
+        "role": "predicate",
+        "text": "also contributes"
+      },
+      {
+        "role": "complement",
+        "text": "to our global climate crisis"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Pesticide use on college campuses"
+      },
+      {
+        "role": "predicate",
+        "text": "also contributes"
+      },
+      {
+        "role": "complement",
+        "text": "to our global climate crisis"
+      }
+    ]
+  },
+  "C12": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "as引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The use of chemicals to get rid of insects or unwanted plant life"
+      },
+      {
+        "role": "predicate",
+        "text": "can increase"
+      },
+      {
+        "role": "object",
+        "text": "indirect emissions"
+      },
+      {
+        "role": "adverbial",
+        "text": "as they can include petroleum-based ingredients",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The use of chemicals to get rid of insects or unwanted plant life"
+      },
+      {
+        "role": "predicate",
+        "text": "can increase"
+      },
+      {
+        "role": "object",
+        "text": "indirect emissions"
+      }
+    ]
+  },
+  "C13": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Pesticide use"
+      },
+      {
+        "role": "predicate",
+        "text": "also decreases"
+      },
+      {
+        "role": "object",
+        "text": "the life in soil"
+      },
+      {
+        "role": "adverbial",
+        "text": "hampering the ability of soils to absorb carbon or retain water and thus reducing campuses’ ability to recover quickly from climate-related extreme weather events like droughts and floods",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Pesticide use"
+      },
+      {
+        "role": "predicate",
+        "text": "also decreases"
+      },
+      {
+        "role": "object",
+        "text": "the life in soil"
+      }
+    ]
+  },
+  "C14": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "students working with HFC"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "adverbial",
+        "text": "Instead of using toxic chemicals",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "with weeding the campus grounds",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "students working with HFC"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      }
+    ]
+  },
+  "C15": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "as引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "This work reminds me to be in the present moment as I play my role in reducing herbicide use and keeping my campus safe and healthy",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-A01": {
+    "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Librarians"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "the value of their community services"
+      },
+      {
+        "role": "subject",
+        "text": "their patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "appreciate"
+      },
+      {
+        "role": "object",
+        "text": "their importance"
+      },
+      {
+        "role": "adverbial",
+        "text": "as well"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Librarians"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "the value of their community services"
+      },
+      {
+        "role": "subject",
+        "text": "their patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "appreciate"
+      },
+      {
+        "role": "object",
+        "text": "their importance"
+      }
+    ]
+  },
+  "M-A02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      },
+      {
+        "role": "object",
+        "text": "the role of libraries as community and cultural centers"
+      },
+      {
+        "role": "adverbial",
+        "text": "in an increasingly digital world"
+      },
+      {
+        "role": "adverbial",
+        "text": "at times undervalued",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      },
+      {
+        "role": "object",
+        "text": "the role of libraries as community and cultural centers"
+      }
+    ]
+  },
+  "M-A03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "When引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "public library services that focus on building communities face-to-face, inspiring and educating patrons about art, literature, and music, and helping patrons engage in civil discourse"
+      },
+      {
+        "role": "predicate",
+        "text": "can seem"
+      },
+      {
+        "role": "complement",
+        "text": "old-fashioned"
+      },
+      {
+        "role": "adverbial",
+        "text": "When shrinking municipal budgets combine with the nonstop technological revolution",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "public library services that focus on building communities face-to-face, inspiring and educating patrons about art, literature, and music, and helping patrons engage in civil discourse"
+      },
+      {
+        "role": "predicate",
+        "text": "can seem"
+      },
+      {
+        "role": "complement",
+        "text": "old-fashioned"
+      }
+    ]
+  },
+  "M-A04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "precisely those shrinking budgets"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "precisely those shrinking budgets"
+      }
+    ]
+  },
+  "M-B01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many people"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      },
+      {
+        "role": "object",
+        "text": "the value public libraries bring to their communities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Many people"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      },
+      {
+        "role": "object",
+        "text": "the value public libraries bring to their communities"
+      }
+    ]
+  },
+  "M-B02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are still"
+      },
+      {
+        "role": "complement",
+        "text": "still places where individuals gather"
+      },
+      {
+        "role": "adverbial",
+        "text": "More than just books and banks of computers"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are still"
+      },
+      {
+        "role": "complement",
+        "text": "still places where individuals gather"
+      }
+    ]
+  },
+  "M-B03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some of the specific ways in which libraries add value to our communities and serve as cultural centers for our patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "community builders"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some of the specific ways in which libraries add value to our communities and serve as cultural centers for our patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "community builders"
+      }
+    ]
+  },
+  "M-B04": {
+    "pattern": "主语 + 谓语 + 状语 + 谓语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "serve"
+      },
+      {
+        "role": "adverbial",
+        "text": "in these capacities"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "more than just about information"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "serve"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "more than just about information"
+      }
+    ]
+  },
+  "M-C01": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "community builders libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are engaged"
+      },
+      {
+        "role": "adverbial",
+        "text": "in incredible work"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "community builders libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are engaged"
+      }
+    ]
+  },
+  "M-C02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "libraries across the United States"
+      },
+      {
+        "role": "predicate",
+        "text": "are building"
+      },
+      {
+        "role": "object",
+        "text": "community"
+      },
+      {
+        "role": "adverbial",
+        "text": "From tiny public libraries to huge city institutions with multiple branches"
+      },
+      {
+        "role": "predicate",
+        "text": "supporting"
+      },
+      {
+        "role": "object",
+        "text": "local culture"
+      },
+      {
+        "role": "adverbial",
+        "text": "in exciting ways"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "libraries across the United States"
+      },
+      {
+        "role": "predicate",
+        "text": "are building"
+      },
+      {
+        "role": "object",
+        "text": "community"
+      },
+      {
+        "role": "predicate",
+        "text": "supporting"
+      },
+      {
+        "role": "object",
+        "text": "local culture"
+      }
+    ]
+  },
+  "M-C03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "inspiring"
+      },
+      {
+        "role": "predicate",
+        "text": "will encourage"
+      },
+      {
+        "role": "object",
+        "text": "librarians interested in community services and cultural outreach to make connections with each other, share ideas, and build partnerships"
+      },
+      {
+        "role": "adverbial",
+        "text": "hopefully"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "These"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "inspiring"
+      },
+      {
+        "role": "predicate",
+        "text": "will encourage"
+      },
+      {
+        "role": "object",
+        "text": "librarians interested in community services and cultural outreach to make connections with each other, share ideas, and build partnerships"
+      }
+    ]
+  },
+  "M-C04": {
+    "pattern": "谓语 + 状语",
+    "explanation": "as引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Supporters"
+      },
+      {
+        "role": "adverbial",
+        "text": "as community builders claim that unless you are out there changing neighborhoods, you are not completing the work you are to do",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Supporters"
+      }
+    ]
+  },
+  "M-C05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "该从句引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Strengthening neighborhoods and championing the cultural lives of communities",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "big responsibilities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "big responsibilities"
+      }
+    ]
+  },
+  "M-D01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Place-based economic development"
+      },
+      {
+        "role": "predicate",
+        "text": "stresses"
+      },
+      {
+        "role": "object",
+        "text": "the importance of offering attractive, functional, and community-based places, such as libraries, in town squares and depressed neighborhoods"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Place-based economic development"
+      },
+      {
+        "role": "predicate",
+        "text": "stresses"
+      },
+      {
+        "role": "object",
+        "text": "the importance of offering attractive, functional, and community-based places, such as libraries, in town squares and depressed neighborhoods"
+      }
+    ]
+  },
+  "M-D02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "attract"
+      },
+      {
+        "role": "object",
+        "text": "large numbers of people"
+      },
+      {
+        "role": "adverbial",
+        "text": "Like a major department store in a mall"
+      },
+      {
+        "role": "adverbial",
+        "text": "creating economic opportunities for numerous businesses and organizations in the surrounding area",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "attract"
+      },
+      {
+        "role": "object",
+        "text": "large numbers of people"
+      }
+    ]
+  },
+  "M-D03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Large cities, medium-sized ones, and even small towns"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "predicate",
+        "text": "transformed"
+      },
+      {
+        "role": "object",
+        "text": "their libraries"
+      },
+      {
+        "role": "adverbial",
+        "text": "successfully"
+      },
+      {
+        "role": "adverbial",
+        "text": "into the hubs (枢纽) of vibrant neighborhoods"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Large cities, medium-sized ones, and even small towns"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "predicate",
+        "text": "transformed"
+      },
+      {
+        "role": "object",
+        "text": "their libraries"
+      }
+    ]
+  },
+  "M-E01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "major players in creating livable, environmentally friendly cities"
+      },
+      {
+        "role": "adverbial",
+        "text": "As key municipal agencies, and focal points for community education"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "major players in creating livable, environmentally friendly cities"
+      }
+    ]
+  },
+  "M-E02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The Urban Libraries Council"
+      },
+      {
+        "role": "predicate",
+        "text": "released"
+      },
+      {
+        "role": "object",
+        "text": "a report detailing the unique ways in which libraries can further sustainability at the local level"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The Urban Libraries Council"
+      },
+      {
+        "role": "predicate",
+        "text": "released"
+      },
+      {
+        "role": "object",
+        "text": "a report detailing the unique ways in which libraries can further sustainability at the local level"
+      }
+    ]
+  },
+  "M-E03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "can take"
+      },
+      {
+        "role": "object",
+        "text": "a lead in supporting local foods and craftsmen"
+      },
+      {
+        "role": "adverbial",
+        "text": "Beyond ensuring that library construction projects consider environmental impact",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "can take"
+      },
+      {
+        "role": "object",
+        "text": "a lead in supporting local foods and craftsmen"
+      }
+    ]
+  },
+  "M-F01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Archives"
+      },
+      {
+        "role": "predicate",
+        "text": "preserve"
+      },
+      {
+        "role": "object",
+        "text": "historic artifacts, oral histories, digital history projects, and scholarly writings relevant to the community, including minority groups"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Archives"
+      },
+      {
+        "role": "predicate",
+        "text": "preserve"
+      },
+      {
+        "role": "object",
+        "text": "historic artifacts, oral histories, digital history projects, and scholarly writings relevant to the community, including minority groups"
+      }
+    ]
+  },
+  "M-F02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "when引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Communities lucky enough to have archivists"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "a great advantage"
+      },
+      {
+        "role": "adverbial",
+        "text": "when it comes to organizing historical records and artifacts",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Communities lucky enough to have archivists"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "a great advantage"
+      }
+    ]
+  },
+  "M-F03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An organized archive"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a place where people can research their ancestry"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "An organized archive"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a place where people can research their ancestry"
+      }
+    ]
+  },
+  "M-F04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An archivist"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an advocate for preservation who, among other things, coordinates the restoration of maps"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "An archivist"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an advocate for preservation who, among other things, coordinates the restoration of maps"
+      }
+    ]
+  },
+  "M-F05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "evidence of the importance of archives"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "everywhere"
+      },
+      {
+        "role": "adverbial",
+        "text": "With projects like the Massachusetts Memories Road Show and the Veterans History Project"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "evidence of the importance of archives"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "everywhere"
+      }
+    ]
+  },
+  "M-G01": {
+    "pattern": "主语 + 谓语 + 状语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "People"
+      },
+      {
+        "role": "predicate",
+        "text": "may go"
+      },
+      {
+        "role": "adverbial",
+        "text": "In the words of Robert Putnam"
+      },
+      {
+        "role": "adverbial",
+        "text": "to the library"
+      },
+      {
+        "role": "adverbial",
+        "text": "looking mainly for information",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "each other"
+      },
+      {
+        "role": "adverbial",
+        "text": "there"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "People"
+      },
+      {
+        "role": "predicate",
+        "text": "may go"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "each other"
+      }
+    ]
+  },
+  "M-G02": {
+    "pattern": "主语 + 谓语 + 状语 + 主语 + 谓语 + 宾语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "New moms"
+      },
+      {
+        "role": "predicate",
+        "text": "connect"
+      },
+      {
+        "role": "adverbial",
+        "text": "at baby story-times"
+      },
+      {
+        "role": "subject",
+        "text": "elderly people, often facing difficult life transitions"
+      },
+      {
+        "role": "predicate",
+        "text": "attend"
+      },
+      {
+        "role": "object",
+        "text": "events"
+      },
+      {
+        "role": "subject",
+        "text": "readers"
+      },
+      {
+        "role": "predicate",
+        "text": "discuss"
+      },
+      {
+        "role": "object",
+        "text": "current events"
+      },
+      {
+        "role": "adverbial",
+        "text": "in the periodicals room"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "New moms"
+      },
+      {
+        "role": "predicate",
+        "text": "connect"
+      },
+      {
+        "role": "subject",
+        "text": "elderly people, often facing difficult life transitions"
+      },
+      {
+        "role": "predicate",
+        "text": "attend"
+      },
+      {
+        "role": "object",
+        "text": "events"
+      },
+      {
+        "role": "subject",
+        "text": "readers"
+      },
+      {
+        "role": "predicate",
+        "text": "discuss"
+      },
+      {
+        "role": "object",
+        "text": "current events"
+      }
+    ]
+  },
+  "M-G03": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "community-building connections"
+      },
+      {
+        "role": "predicate",
+        "text": "are happening"
+      },
+      {
+        "role": "adverbial",
+        "text": "In libraries"
+      },
+      {
+        "role": "adverbial",
+        "text": "all the time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "community-building connections"
+      },
+      {
+        "role": "predicate",
+        "text": "are happening"
+      }
+    ]
+  },
+  "M-H01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "As引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The public library"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the great equalizer"
+      },
+      {
+        "role": "adverbial",
+        "text": "As Keith Richards said",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The public library"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the great equalizer"
+      }
+    ]
+  },
+  "M-H02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "public library events (including concerts, author visits, and gallery displays)"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "predicate",
+        "text": "offered"
+      },
+      {
+        "role": "complement",
+        "text": "free of charge"
+      },
+      {
+        "role": "adverbial",
+        "text": "Despite the rising costs of concert and theater tickets"
+      },
+      {
+        "role": "adverbial",
+        "text": "often"
+      },
+      {
+        "role": "adverbial",
+        "text": "enabling people of any income level to attend",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "public library events (including concerts, author visits, and gallery displays)"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "predicate",
+        "text": "offered"
+      },
+      {
+        "role": "complement",
+        "text": "free of charge"
+      }
+    ]
+  },
+  "M-H03": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 状语 + 主语 + 谓语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "library book groups"
+      },
+      {
+        "role": "predicate",
+        "text": "allow"
+      },
+      {
+        "role": "object",
+        "text": "people"
+      },
+      {
+        "role": "complement",
+        "text": "to explore and discuss the literary arts"
+      },
+      {
+        "role": "adverbial",
+        "text": "In addition"
+      },
+      {
+        "role": "subject",
+        "text": "the Great Stories Club"
+      },
+      {
+        "role": "predicate",
+        "text": "introduces"
+      },
+      {
+        "role": "adverbial",
+        "text": "at-risk youth"
+      },
+      {
+        "role": "adverbial",
+        "text": "to literature"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "library book groups"
+      },
+      {
+        "role": "predicate",
+        "text": "allow"
+      },
+      {
+        "role": "object",
+        "text": "people"
+      },
+      {
+        "role": "complement",
+        "text": "to explore and discuss the literary arts"
+      },
+      {
+        "role": "subject",
+        "text": "the Great Stories Club"
+      },
+      {
+        "role": "predicate",
+        "text": "introduces"
+      }
+    ]
+  },
+  "M-H04": {
+    "pattern": "谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "part"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "part"
+      }
+    ]
+  },
+  "M-I01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "public libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "information and educational opportunities free for all people"
+      },
+      {
+        "role": "adverbial",
+        "text": "In a time when education is increasingly expensive"
+      },
+      {
+        "role": "adverbial",
+        "text": "regardless of their socio-economic status"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "public libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "information and educational opportunities free for all people"
+      }
+    ]
+  },
+  "M-I02": {
+    "pattern": "谓语 + 宾语 + 表语 / 补语 + 主语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Let"
+      },
+      {
+        "role": "object",
+        "text": "’s"
+      },
+      {
+        "role": "complement",
+        "text": "Talk about"
+      },
+      {
+        "role": "subject",
+        "text": "ries."
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Let"
+      },
+      {
+        "role": "object",
+        "text": "’s"
+      },
+      {
+        "role": "complement",
+        "text": "Talk about"
+      },
+      {
+        "role": "subject",
+        "text": "ries."
+      }
+    ]
+  },
+  "M-I03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "present"
+      },
+      {
+        "role": "object",
+        "text": "classes and discussion programs"
+      },
+      {
+        "role": "adverbial",
+        "text": "In addition"
+      },
+      {
+        "role": "subject",
+        "text": "some"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "online continuing education courses such as the Universal Class database"
+      },
+      {
+        "role": "adverbial",
+        "text": "even"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "present"
+      },
+      {
+        "role": "object",
+        "text": "classes and discussion programs"
+      },
+      {
+        "role": "subject",
+        "text": "some"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "online continuing education courses such as the Universal Class database"
+      }
+    ]
+  },
+  "M-J01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Librarians"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "that patrons aren’t just information consumers",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Librarians"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      }
+    ]
+  },
+  "M-J02": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "the library"
+      },
+      {
+        "role": "adverbial",
+        "text": "to gain knowledge in order to create their own new and independent works",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "the library"
+      }
+    ]
+  },
+  "M-J03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Increasing numbers of libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "spaces and services that meet the needs of people who want to learn how to edit Wikipedia, set up blogs or podcasts, create their own magazines, and so much more"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Increasing numbers of libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "spaces and services that meet the needs of people who want to learn how to edit Wikipedia, set up blogs or podcasts, create their own magazines, and so much more"
+      }
+    ]
+  },
+  "M-J04": {
+    "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 宾语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "offer"
+      },
+      {
+        "role": "object",
+        "text": "art or writing workshops and groups"
+      },
+      {
+        "role": "subject",
+        "text": "some"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "music practice rooms for patrons"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Many libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "offer"
+      },
+      {
+        "role": "object",
+        "text": "art or writing workshops and groups"
+      },
+      {
+        "role": "subject",
+        "text": "some"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "music practice rooms for patrons"
+      }
+    ]
+  },
+  "M-J05": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Programs like ImaginOn in Charlotte, North Carolina"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "exciting models that take community partnership, creativity, and creation to a new level"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Programs like ImaginOn in Charlotte, North Carolina"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      },
+      {
+        "role": "object",
+        "text": "exciting models that take community partnership, creativity, and creation to a new level"
+      }
+    ]
+  },
+  "M-K01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The decline of civil discourse"
+      },
+      {
+        "role": "predicate",
+        "text": "stems"
+      },
+      {
+        "role": "complement",
+        "text": "in part"
+      },
+      {
+        "role": "complement",
+        "text": "from the fact that it is so easy for people to watch news about, buy products from, and engage—in both the virtual and real worlds — only with those of similar backgrounds and ideologies"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The decline of civil discourse"
+      },
+      {
+        "role": "predicate",
+        "text": "stems"
+      },
+      {
+        "role": "complement",
+        "text": "in part"
+      },
+      {
+        "role": "complement",
+        "text": "from the fact that it is so easy for people to watch news about, buy products from, and engage—in both the virtual and real worlds — only with those of similar backgrounds and ideologies"
+      }
+    ]
+  },
+  "M-K02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Public libraries, through such programs as The Human Library and Socrates Café"
+      },
+      {
+        "role": "predicate",
+        "text": "can help"
+      },
+      {
+        "role": "complement",
+        "text": "build small communities of difference that encourage people to interact with and learn from each other through dialogue"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Public libraries, through such programs as The Human Library and Socrates Café"
+      },
+      {
+        "role": "predicate",
+        "text": "can help"
+      },
+      {
+        "role": "complement",
+        "text": "build small communities of difference that encourage people to interact with and learn from each other through dialogue"
+      }
+    ]
+  },
+  "M-K03": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "object",
+        "text": "individuals"
+      },
+      {
+        "role": "complement",
+        "text": "rediscover the importance of and increased need for civil discourse in American life"
+      },
+      {
+        "role": "adverbial",
+        "text": "By both actively promoting civil discourse through these programs, and modeling and upholding the principles of free inquiry and expression for all",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "object",
+        "text": "individuals"
+      },
+      {
+        "role": "complement",
+        "text": "rediscover the importance of and increased need for civil discourse in American life"
+      }
+    ]
+  },
+  "M-L01": {
+    "pattern": "主语 + 谓语 + 宾语 + 主语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Free tutoring, homework"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "object",
+        "text": "programs"
+      },
+      {
+        "role": "subject",
+        "text": "and summer reading programs for kids and teens"
+      },
+      {
+        "role": "complement",
+        "text": "bridge the economic divide that impacts students’ academic performance"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Free tutoring, homework"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "object",
+        "text": "programs"
+      },
+      {
+        "role": "subject",
+        "text": "and summer reading programs for kids and teens"
+      },
+      {
+        "role": "complement",
+        "text": "bridge the economic divide that impacts students’ academic performance"
+      }
+    ]
+  },
+  "M-L02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The cost of hiring a private tutor"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "well beyond what many library patrons can afford, so libraries offer homework help and tutoring online, by phone"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The cost of hiring a private tutor"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "well beyond what many library patrons can afford, so libraries offer homework help and tutoring online, by phone"
+      }
+    ]
+  },
+  "M-L03": {
+    "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 宾语 + 状语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Annual summer reading programs"
+      },
+      {
+        "role": "predicate",
+        "text": "also have"
+      },
+      {
+        "role": "object",
+        "text": "a positive impact on student performance"
+      },
+      {
+        "role": "subject",
+        "text": "students’ reading skills"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      },
+      {
+        "role": "object",
+        "text": "a boost from these popular nationwide events"
+      },
+      {
+        "role": "adverbial",
+        "text": "according to a 2010 study conducted by Dominican University’s Graduate School of Library and Information Science"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Annual summer reading programs"
+      },
+      {
+        "role": "predicate",
+        "text": "also have"
+      },
+      {
+        "role": "object",
+        "text": "a positive impact on student performance"
+      },
+      {
+        "role": "subject",
+        "text": "students’ reading skills"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      },
+      {
+        "role": "object",
+        "text": "a boost from these popular nationwide events"
+      }
+    ]
+  },
+  "M-M01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "children"
+      },
+      {
+        "role": "predicate",
+        "text": "learn"
+      },
+      {
+        "role": "complement",
+        "text": "Through library collections, programs, and physical spaces"
+      },
+      {
+        "role": "complement",
+        "text": "to share, to be engaged in their communities, to participate in the arts, and to explore their immediate world and the world at large"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "children"
+      },
+      {
+        "role": "predicate",
+        "text": "learn"
+      },
+      {
+        "role": "complement",
+        "text": "Through library collections, programs, and physical spaces"
+      },
+      {
+        "role": "complement",
+        "text": "to share, to be engaged in their communities, to participate in the arts, and to explore their immediate world and the world at large"
+      }
+    ]
+  },
+  "M-M02": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "adverbial",
+        "text": "surely"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-N01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These examples"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "just a few of the many amazing things that public libraries around the United States (and the world) are doing"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "These examples"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "just a few of the many amazing things that public libraries around the United States (and the world) are doing"
+      }
+    ]
+  },
+  "M-N02": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "encourage"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      },
+      {
+        "role": "complement",
+        "text": "to try some of these ideas in your own libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "hope"
+      },
+      {
+        "role": "object",
+        "text": "that these ideas will help you be better able to convince your community leaders of the important role that public libraries play in communities large and small",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "encourage"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      },
+      {
+        "role": "complement",
+        "text": "to try some of these ideas in your own libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "hope"
+      }
+    ]
+  },
+  "R1-01": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "one in six children"
+      },
+      {
+        "role": "predicate",
+        "text": "miss"
+      },
+      {
+        "role": "object",
+        "text": "15 or more days of school"
+      },
+      {
+        "role": "adverbial",
+        "text": "Nationally"
+      },
+      {
+        "role": "adverbial",
+        "text": "in a year"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "one in six children"
+      },
+      {
+        "role": "predicate",
+        "text": "miss"
+      },
+      {
+        "role": "object",
+        "text": "15 or more days of school"
+      }
+    ]
+  },
+  "R1-02": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Education officials"
+      },
+      {
+        "role": "predicate",
+        "text": "have deplored"
+      },
+      {
+        "role": "object",
+        "text": "all this missed instruction"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Education officials"
+      },
+      {
+        "role": "predicate",
+        "text": "have deplored"
+      },
+      {
+        "role": "object",
+        "text": "all this missed instruction"
+      }
+    ]
+  },
+  "R1-03": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These chronically absent students"
+      },
+      {
+        "role": "predicate",
+        "text": "suffer"
+      },
+      {
+        "role": "adverbial",
+        "text": "academically"
+      },
+      {
+        "role": "adverbial",
+        "text": "because of all the classroom instruction they miss out on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "These chronically absent students"
+      },
+      {
+        "role": "predicate",
+        "text": "suffer"
+      }
+    ]
+  },
+  "R1-04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the U.S. secretary of education"
+      },
+      {
+        "role": "predicate",
+        "text": "responded"
+      },
+      {
+        "role": "complement",
+        "text": "In 2015"
+      },
+      {
+        "role": "complement",
+        "text": "to this crisis"
+      },
+      {
+        "role": "adverbial",
+        "text": "urging communities to support every student to attend every day and be successful in school",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the U.S. secretary of education"
+      },
+      {
+        "role": "predicate",
+        "text": "responded"
+      },
+      {
+        "role": "complement",
+        "text": "In 2015"
+      },
+      {
+        "role": "complement",
+        "text": "to this crisis"
+      }
+    ]
+  },
+  "R1-05": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "His open letter"
+      },
+      {
+        "role": "predicate",
+        "text": "stated"
+      },
+      {
+        "role": "object",
+        "text": "that missing 10% of school days in a year for any reason—excused or unexcused—is a primary cause of low academic achievement",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "His open letter"
+      },
+      {
+        "role": "predicate",
+        "text": "stated"
+      }
+    ]
+  },
+  "R1-06": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "whether引导的从句整体作主语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Worrying about whether children attend school",
+        "label": "主语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "sense"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "sense"
+      }
+    ]
+  },
+  "R1-07": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "if引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "can’t teach"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      },
+      {
+        "role": "adverbial",
+        "text": "After all"
+      },
+      {
+        "role": "adverbial",
+        "text": "if students don’t show up",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "can’t teach"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ]
+  },
+  "R1-08": {
+    "pattern": "谓语 + 状语",
+    "explanation": "if引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "what"
+      },
+      {
+        "role": "adverbial",
+        "text": "if America’s attendance crisis is about much more than students missing class",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "what"
+      }
+    ]
+  },
+  "R1-09": {
+    "pattern": "谓语 + 状语",
+    "explanation": "if引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "What"
+      },
+      {
+        "role": "adverbial",
+        "text": "if, instead, it is a reflection of family and community crises these students face—such as being ejected from the family apartment, fearing for their safety in their neighborhood or suffering an illness",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "What"
+      }
+    ]
+  },
+  "R1-10": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "As引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "how excused and unexcused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "relate"
+      },
+      {
+        "role": "adverbial",
+        "text": "As social scientists we investigated",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "to children’s academic achievement"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "how excused and unexcused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "relate"
+      }
+    ]
+  },
+  "R1-11": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "that absences excused by a parent do little to harm children’s learning",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      }
+    ]
+  },
+  "R1-12": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "children with no unexcused absences — but 15 to 18 excused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "test scores equal to their peers who have no absences"
+      },
+      {
+        "role": "adverbial",
+        "text": "In fact"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "children with no unexcused absences — but 15 to 18 excused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "test scores equal to their peers who have no absences"
+      }
+    ]
+  },
+  "R1-13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the average child with even just one unexcused absence"
+      },
+      {
+        "role": "predicate",
+        "text": "does"
+      },
+      {
+        "role": "complement",
+        "text": "much worse academically than peers"
+      },
+      {
+        "role": "adverbial",
+        "text": "Meanwhile"
+      },
+      {
+        "role": "adverbial",
+        "text": "with none"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the average child with even just one unexcused absence"
+      },
+      {
+        "role": "predicate",
+        "text": "does"
+      },
+      {
+        "role": "complement",
+        "text": "much worse academically than peers"
+      }
+    ]
+  },
+  "R1-14": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      },
+      {
+        "role": "object",
+        "text": "unexcused absence is a strong signal of the many challenges children and families face, including economic and medical hardships",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      }
+    ]
+  },
+  "R1-15": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Unexcused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "a powerful signal of how those out-of-school challenges affect children’s academic progress"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Unexcused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "a powerful signal of how those out-of-school challenges affect children’s academic progress"
+      }
+    ]
+  },
+  "R1-16": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Our evidence"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "unexcused absences are problematic, but for a different reason than people often think",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Our evidence"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "R1-17": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Absence from school, and especially unexcused absence"
+      },
+      {
+        "role": "predicate",
+        "text": "matters"
+      },
+      {
+        "role": "adverbial",
+        "text": "mainly"
+      },
+      {
+        "role": "adverbial",
+        "text": "as a signal of many crises children and their families may be facing"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Absence from school, and especially unexcused absence"
+      },
+      {
+        "role": "predicate",
+        "text": "matters"
+      }
+    ]
+  },
+  "R1-18": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "matters"
+      },
+      {
+        "role": "adverbial",
+        "text": "less"
+      },
+      {
+        "role": "adverbial",
+        "text": "as a cause of lower student achievement"
+      },
+      {
+        "role": "adverbial",
+        "text": "due to missed instruction"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "matters"
+      }
+    ]
+  },
+  "R1-19": {
+    "pattern": "谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "matters"
+      },
+      {
+        "role": "adverbial",
+        "text": "How we choose to think of school absences"
+      },
+      {
+        "role": "adverbial",
+        "text": "for educational policy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "matters"
+      }
+    ]
+  },
+  "R1-20": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "School attendance policies"
+      },
+      {
+        "role": "predicate",
+        "text": "hold"
+      },
+      {
+        "role": "object",
+        "text": "schools and families accountable for the days children miss"
+      },
+      {
+        "role": "adverbial",
+        "text": "typically"
+      },
+      {
+        "role": "adverbial",
+        "text": "regardless of whether they were excused or unexcused absences"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "School attendance policies"
+      },
+      {
+        "role": "predicate",
+        "text": "hold"
+      },
+      {
+        "role": "object",
+        "text": "schools and families accountable for the days children miss"
+      }
+    ]
+  },
+  "R1-21": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These policies"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      },
+      {
+        "role": "object",
+        "text": "that missing school for any reason harms children academically because they are missing classroom instruction",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "These policies"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      }
+    ]
+  },
+  "R1-22": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "also assume"
+      },
+      {
+        "role": "object",
+        "text": "that schools will be able to effectively intervene by reducing student absences",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "also assume"
+      }
+    ]
+  },
+  "R1-23": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "neither"
+      },
+      {
+        "role": "complement",
+        "text": "to be the case"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "neither"
+      },
+      {
+        "role": "complement",
+        "text": "to be the case"
+      }
+    ]
+  },
+  "R1-24": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "these attendance policies"
+      },
+      {
+        "role": "predicate",
+        "text": "end"
+      },
+      {
+        "role": "complement",
+        "text": "disproportionately punishing families dealing with out-of-school crises in their lives and pressuring schools who serve them to get students to school more often"
+      },
+      {
+        "role": "adverbial",
+        "text": "As a result"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "these attendance policies"
+      },
+      {
+        "role": "predicate",
+        "text": "end"
+      },
+      {
+        "role": "complement",
+        "text": "disproportionately punishing families dealing with out-of-school crises in their lives and pressuring schools who serve them to get students to school more often"
+      }
+    ]
+  },
+  "R1-25": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "suggest"
+      },
+      {
+        "role": "complement",
+        "text": "using unexcused absence from school as a signal to channel resources to the children and families who need them most"
+      },
+      {
+        "role": "adverbial",
+        "text": "instead"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "suggest"
+      },
+      {
+        "role": "complement",
+        "text": "using unexcused absence from school as a signal to channel resources to the children and families who need them most"
+      }
+    ]
+  },
+  "R2-01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "determined to do what I love"
+      },
+      {
+        "role": "complement",
+        "text": "to do what I love"
+      },
+      {
+        "role": "adverbial",
+        "text": "After earning a bachelor’s degree",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "determined to do what I love"
+      },
+      {
+        "role": "complement",
+        "text": "to do what I love"
+      }
+    ]
+  },
+  "R2-02": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "headed"
+      },
+      {
+        "role": "adverbial",
+        "text": "straight"
+      },
+      {
+        "role": "adverbial",
+        "text": "to graduate school"
+      },
+      {
+        "role": "adverbial",
+        "text": "to investigate the social problems that fascinated me",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "headed"
+      }
+    ]
+  },
+  "R2-03": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "told"
+      },
+      {
+        "role": "object",
+        "text": "everyone"
+      },
+      {
+        "role": "object",
+        "text": "I encountered that they should do the same",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "For almost a decade"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "told"
+      },
+      {
+        "role": "object",
+        "text": "everyone"
+      }
+    ]
+  },
+  "R2-04": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "该从句引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "counseled"
+      },
+      {
+        "role": "object",
+        "text": "Follow your passion",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "counseled"
+      }
+    ]
+  },
+  "R2-05": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "can figure"
+      },
+      {
+        "role": "object",
+        "text": "the employment stuff"
+      },
+      {
+        "role": "adverbial",
+        "text": "later"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "can figure"
+      },
+      {
+        "role": "object",
+        "text": "the employment stuff"
+      }
+    ]
+  },
+  "R2-06": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "that引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "adverbial",
+        "text": "n’t until I began to research this widely accepted career advice that I understood how problematic it really was",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "R2-07": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "what引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "interviewed"
+      },
+      {
+        "role": "object",
+        "text": "college students and professional workers"
+      },
+      {
+        "role": "adverbial",
+        "text": "As a sociologist"
+      },
+      {
+        "role": "adverbial",
+        "text": "to learn what it really meant to pursue their dreams, which I will refer to here as the passion principle",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "interviewed"
+      },
+      {
+        "role": "object",
+        "text": "college students and professional workers"
+      }
+    ]
+  },
+  "R2-08": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "was stunned"
+      },
+      {
+        "role": "adverbial",
+        "text": "by what I found out about this principle in the research for my new book"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "was stunned"
+      }
+    ]
+  },
+  "R2-09": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "as引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Surveys"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      },
+      {
+        "role": "object",
+        "text": "the American public has long held the passion principle in high regard as a career decision-making priority",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Surveys"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      }
+    ]
+  },
+  "R2-10": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "its popularity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "even stronger among those facing job instability"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "its popularity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "even stronger among those facing job instability"
+      }
+    ]
+  },
+  "R2-11": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "because引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Advocates of the passion principle"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "complement",
+        "text": "compelling"
+      },
+      {
+        "role": "adverbial",
+        "text": "because they believed that following one’s passion can provide workers with both the motivation necessary to work hard and a place to find fulfillment",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Advocates of the passion principle"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "complement",
+        "text": "compelling"
+      }
+    ]
+  },
+  "R2-12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "句中包含并列主句；分别抓住每个主句的主语、谓语和宾语或表语，再合并理解。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "what I found"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "does not"
+      },
+      {
+        "role": "complement",
+        "text": "that following one’s passion does not necessarily lead to fulfillment"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most powerful cultural forces perpetuating overwork"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "what I found"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "does not"
+      },
+      {
+        "role": "complement",
+        "text": "that following one’s passion does not necessarily lead to fulfillment"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most powerful cultural forces perpetuating overwork"
+      }
+    ]
+  },
+  "R2-13": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "also found"
+      },
+      {
+        "role": "object",
+        "text": "that promoting the pursuit of one’s passion helps perpetuate social inequalities due to the fact that not everyone has the same economic resources to allow them to pursue their passion with ease",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "also found"
+      }
+    ]
+  },
+  "R2-14": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "While引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "not everyone"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "the necessary resources to turn their passion into a stable, good-paying job"
+      },
+      {
+        "role": "adverbial",
+        "text": "While the passion principle is broadly popular",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "not everyone"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "the necessary resources to turn their passion into a stable, good-paying job"
+      }
+    ]
+  },
+  "R2-15": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Passion-seekers from wealthy families"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "better able to wait until a job they are passionate about"
+      },
+      {
+        "role": "complement",
+        "text": "to wait until a job they are passionate about comes along without worrying about student loans in the meantime"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Passion-seekers from wealthy families"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "better able to wait until a job they are passionate about"
+      },
+      {
+        "role": "complement",
+        "text": "to wait until a job they are passionate about comes along without worrying about student loans in the meantime"
+      }
+    ]
+  },
+  "R2-16": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "are also"
+      },
+      {
+        "role": "predicate",
+        "text": "situated"
+      },
+      {
+        "role": "complement",
+        "text": "to take unpaid internships to get their foot in the door while their parents pay their rent"
+      },
+      {
+        "role": "adverbial",
+        "text": "better"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "are also"
+      },
+      {
+        "role": "predicate",
+        "text": "situated"
+      },
+      {
+        "role": "complement",
+        "text": "to take unpaid internships to get their foot in the door while their parents pay their rent"
+      }
+    ]
+  },
+  "R2-17": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "access to parents’ social networks"
+      },
+      {
+        "role": "adverbial",
+        "text": "often"
+      },
+      {
+        "role": "adverbial",
+        "text": "to help them find jobs",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "access to parents’ social networks"
+      }
+    ]
+  },
+  "R2-18": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "that引导的从句整体作宾语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Surveys"
+      },
+      {
+        "role": "predicate",
+        "text": "revealed"
+      },
+      {
+        "role": "object",
+        "text": "that working-class and first-generation college graduates, regardless of their career field, are more likely than their wealthier peers to end up in low-paying unskilled jobs when they pursue their passion",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Surveys"
+      },
+      {
+        "role": "predicate",
+        "text": "revealed"
+      }
+    ]
+  },
+  "R2-19": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Colleges, workplaces and career counselors who promote the “follow your passion” path for everyone, without leveling the playing field"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "complement",
+        "text": "perpetuate socioeconomic inequalities among career aspirants"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Colleges, workplaces and career counselors who promote the “follow your passion” path for everyone, without leveling the playing field"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      },
+      {
+        "role": "complement",
+        "text": "perpetuate socioeconomic inequalities among career aspirants"
+      }
+    ]
+  },
+  "R2-20": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "’s not"
+      },
+      {
+        "role": "complement",
+        "text": "not just well-off passion-seekers who benefit from the passion principle"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "’s not"
+      },
+      {
+        "role": "complement",
+        "text": "not just well-off passion-seekers who benefit from the passion principle"
+      }
+    ]
+  },
+  "R2-21": {
+    "pattern": "主语 + 谓语 + 状语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；其余时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Employers of passionate workers"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "adverbial",
+        "text": "too"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Employers of passionate workers"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      }
+    ]
+  },
+  "R2-22": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "because引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Potential employers"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      },
+      {
+        "role": "object",
+        "text": "greater interest in passionate applicants"
+      },
+      {
+        "role": "adverbial",
+        "text": "in part"
+      },
+      {
+        "role": "adverbial",
+        "text": "because they believed the applicants would work hard at their jobs without expecting an increase in pay",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Potential employers"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      },
+      {
+        "role": "object",
+        "text": "greater interest in passionate applicants"
+      }
+    ]
+  },
+  "R2-23": {
+    "pattern": "主语 + 谓语 + 宾语 + 状语",
+    "explanation": "该从句引导的从句整体作状语，从句作为整体理解，不再拆分内部成分。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "sacrifice"
+      },
+      {
+        "role": "object",
+        "text": "a good salary, job stability and leisure time"
+      },
+      {
+        "role": "adverbial",
+        "text": "even"
+      },
+      {
+        "role": "adverbial",
+        "text": "to work in a job they love",
+        "label": "状语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "sacrifice"
+      },
+      {
+        "role": "object",
+        "text": "a good salary, job stability and leisure time"
+      }
+    ]
+  }
+}

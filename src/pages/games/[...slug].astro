@@ -4,14 +4,37 @@ import Lazy from '../../layouts/lazy.astro';
 import ReadingPost from '../../layouts/ReadingPost.astro';
 export async function getStaticPaths() {
 	const posts = await getCollection('games');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
+	const readingPosts = posts
+		.filter((post) => post.data.pageLayout === 'reading')
+		.sort((a, b) => (
+			a.data.pubDate.valueOf() - b.data.pubDate.valueOf() || a.id.localeCompare(b.id)
+		));
+	return posts.map((post) => {
+		const readingIndex = readingPosts.indexOf(post);
+		const previousPost = readingIndex > 0 ? readingPosts[readingIndex - 1] : undefined;
+		const nextPost = readingIndex >= 0 ? readingPosts[readingIndex + 1] : undefined;
+		return {
+			params: { slug: post.id },
+			props: {
+				post,
+				previous: previousPost
+					? { href: `/games/${previousPost.id}/`, title: previousPost.data.title }
+					: undefined,
+				next: nextPost
+					? { href: `/games/${nextPost.id}/`, title: nextPost.data.title }
+					: undefined,
+			},
+		};
+	});
 }
-type Props = CollectionEntry<'games'>;
+type ReadingLink = { href: string; title: string };
+type Props = {
+	post: CollectionEntry<'games'>;
+	previous?: ReadingLink;
+	next?: ReadingLink;
+};
 
-const post = Astro.props;
+const { post, previous, next } = Astro.props;
 const { Content } = await render(post);
 ---
 
@@ -23,6 +46,9 @@ const { Content } = await render(post);
 		allLabel="Back to games"
 		markReadingNav={false}
 		showHeader={false}
+		metaDescription="2026 年 6 月大学英语四级阅读练习，包含选词填空、段落匹配、阅读文章、逐句翻译与句子结构精读。"
+		{previous}
+		{next}
 	>
 		<Content />
 	</ReadingPost>

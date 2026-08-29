@@ -18,6 +18,7 @@ type Props = {
   allLabel?: string;
   markReadingNav?: boolean;
   showHeader?: boolean;
+  metaDescription?: string;
 };
 
 const {
@@ -34,13 +35,14 @@ const {
   allLabel = 'All reading',
   markReadingNav = true,
   showHeader = true,
+  metaDescription = description || `${title} — English reading practice with sentence-by-sentence close reading.`,
 } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead {title} {description} />
+    <BaseHead {title} description={metaDescription} />
   </head>
   <body class:list={['reading-post-page', !showHeader && 'reading-post-page--headerless']}>
     {showHeader && <BlogHeader active={markReadingNav ? 'reading' : undefined} />}
@@ -63,20 +65,18 @@ const {
 
       <div class="reading-post-grid" data-reading-layout>
         <aside class="reading-post-rail" aria-label="Page sections">
-          {showHeader && (
-            <button
-              class="reading-post-rail-toggle"
-              type="button"
-              aria-controls="reading-page-sections"
-              aria-expanded="true"
-              aria-label="Hide contents"
-              title="Hide contents"
-              data-reading-rail-toggle
-            >
-              <PanelLeftClose class="rail-toggle-hide-icon" size={15} stroke-width={1.8} aria-hidden="true" />
-              <PanelLeftOpen class="rail-toggle-show-icon" size={15} stroke-width={1.8} aria-hidden="true" />
-            </button>
-          )}
+          <button
+            class="reading-post-rail-toggle"
+            type="button"
+            aria-controls="reading-page-sections"
+            aria-expanded="true"
+            aria-label="Hide contents"
+            title="Hide contents"
+            data-reading-rail-toggle
+          >
+            <PanelLeftClose class="rail-toggle-hide-icon" size={15} stroke-width={1.8} aria-hidden="true" />
+            <PanelLeftOpen class="rail-toggle-show-icon" size={15} stroke-width={1.8} aria-hidden="true" />
+          </button>
           <p>Contents <span>3 sections</span></p>
           <nav id="reading-page-sections" data-reading-toc>
             <a href="#word-bank-cloze" aria-current="location">
@@ -111,6 +111,21 @@ const {
     </nav>
 
     <footer class="reading-post-footer"><span>© {new Date().getFullYear()} Tend</span></footer>
+
+    <div
+      class="inline-glossary-popover"
+      id="reading-inline-glossary-popover"
+      role="status"
+      aria-live="polite"
+      aria-hidden="true"
+      data-inline-glossary-popover
+    >
+      <span class="inline-glossary-popover-head">
+        <strong class="inline-glossary-popover-term" data-inline-glossary-term></strong>
+        <span class="inline-glossary-popover-pos" data-inline-glossary-pos></span>
+      </span>
+      <span class="inline-glossary-popover-meaning" data-inline-glossary-meaning></span>
+    </div>
 
     <script>
       const headings = Array.from(
@@ -151,6 +166,78 @@ const {
         railToggle.setAttribute('aria-label', collapsed ? 'Show contents' : 'Hide contents');
         railToggle.setAttribute('title', collapsed ? 'Show contents' : 'Hide contents');
       });
+
+      const readingStateKey = `reading-state:${window.location.pathname}`;
+      type ReadingState = {
+        scrollY?: number;
+        openNotes?: string[];
+        answers?: Record<string, string>;
+        railCollapsed?: boolean;
+      };
+
+      const readState = (): ReadingState => {
+        try {
+          return JSON.parse(sessionStorage.getItem(readingStateKey) ?? '{}') as ReadingState;
+        } catch {
+          return {};
+        }
+      };
+
+      const saveState = () => {
+        const openNotes = Array.from(
+          document.querySelectorAll<HTMLElement>('[data-sentence-note][data-open]'),
+        ).map((note) => note.dataset.noteNumber).filter((number): number is string => Boolean(number));
+        const answers = Object.fromEntries(
+          Array.from(document.querySelectorAll<HTMLElement>('[data-reading-question][data-answered]'))
+            .flatMap((question) => {
+              const number = question.dataset.questionNumber;
+              const selected = question.querySelector<HTMLElement>('[data-question-option].is-selected')
+                ?.dataset.questionOption;
+              return number && selected ? [[number, selected]] : [];
+            }),
+        );
+
+        try {
+          sessionStorage.setItem(readingStateKey, JSON.stringify({
+            scrollY: window.scrollY,
+            openNotes,
+            answers,
+            railCollapsed: readingLayout?.hasAttribute('data-rail-collapsed') ?? false,
+          } satisfies ReadingState));
+        } catch {
+          // Reading remains fully functional when storage is unavailable.
+        }
+      };
+
+      let saveFrame = 0;
+      const scheduleSave = () => {
+        cancelAnimationFrame(saveFrame);
+        saveFrame = requestAnimationFrame(saveState);
+      };
+
+      document.addEventListener('click', (event) => {
+        const target = event.target as Element;
+        if (target.closest('[data-close-reading-toggle], [data-question-option], [data-reading-rail-toggle]')) {
+          scheduleSave();
+        }
+      });
+      window.addEventListener('pagehide', saveState);
+
+      const savedState = readState();
+      if (savedState.railCollapsed && readingLayout && railToggle) railToggle.click();
+      savedState.openNotes?.forEach((number) => {
+        document.querySelector<HTMLElement>(
+          `[data-sentence-note][data-note-number="${CSS.escape(number)}"] [data-close-reading-toggle]`,
+        )?.click();
+      });
+      Object.entries(savedState.answers ?? {}).forEach(([number, answer]) => {
+        document.querySelector<HTMLElement>(
+          `[data-reading-question][data-question-number="${CSS.escape(number)}"] [data-question-option="${CSS.escape(answer)}"]`,
+        )?.click();
+      });
+      if (!window.location.hash && typeof savedState.scrollY === 'number') {
+        requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, savedState.scrollY ?? 0)));
+      }
     </script>
   </body>
 </html>

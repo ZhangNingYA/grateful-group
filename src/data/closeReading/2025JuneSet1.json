@@ -1,0 +1,2746 @@
+{
+  "C01": {
+    "translation": "在大二的时候，Charlene Duong 了解到她的大学校园里使用了有毒的合成农药。",
+    "vocabulary": [
+      {
+        "term": "pesticides",
+        "explanation": "农药"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In her second year"
+      },
+      {
+        "role": "subject",
+        "text": "Charlene Duong"
+      },
+      {
+        "role": "predicate",
+        "text": "learned"
+      }
+    ]
+  },
+  "C02": {
+    "translation": "她感到震惊，但并不惊讶，她知道自己必须做点什么。",
+    "vocabulary": [
+      {
+        "term": "Shocked",
+        "explanation": "震惊的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Shocked but not surprised"
+      },
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "knew"
+      }
+    ]
+  },
+  "C03": {
+    "translation": "夏琳和几个同学一起快速进行了网络搜索，发现了由“无除草剂校园”（HFC）组织领导的一项规模虽小但不断发展的运动，旨在消除大学校园中的人工除草剂（灭草剂）。",
+    "vocabulary": [
+      {
+        "term": "herbicides",
+        "explanation": "除草剂"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Along with a couple of classmates"
+      },
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "did"
+      }
+    ]
+  },
+  "C04": {
+    "translation": "他们很感兴趣。",
+    "vocabulary": [
+      {
+        "term": "intrigued",
+        "explanation": "感兴趣的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "were"
+      }
+    ]
+  },
+  "C05": {
+    "translation": "和许多人一样，夏琳也经历过气候焦虑——对气候灾难的长期恐惧——并且当时正在寻找发泄的途径。",
+    "vocabulary": [
+      {
+        "term": "climate catastrophe",
+        "explanation": "气候灾难"
+      },
+      {
+        "term": "climate anxiety",
+        "explanation": "气候焦虑"
+      },
+      {
+        "term": "outlet",
+        "explanation": "出口；发泄渠道"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Like many"
+      },
+      {
+        "role": "subject",
+        "text": "Charlene"
+      },
+      {
+        "role": "predicate",
+        "text": "experiences"
+      }
+    ]
+  },
+  "C06": {
+    "translation": "当她发现 HFC 运动时，她说她觉得自己“找到了一个值得关注的特定领域，该领域仍然适合为所有人争取更健康、更安全、更清洁的环境的大局。”",
+    "vocabulary": [
+      {
+        "term": "discovered",
+        "explanation": "发现"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When she discovered the HFC movement, she said she felt she “"
+      },
+      {
+        "role": "subject",
+        "text": "found"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      }
+    ]
+  },
+  "C07": {
+    "translation": "大学校园土地维护中使用有毒除草剂的现象并非独一无二。",
+    "vocabulary": [
+      {
+        "term": "herbicide",
+        "explanation": "除草剂"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Toxic herbicide"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      }
+    ]
+  },
+  "C08": {
+    "translation": "大多数高等教育机构依靠合成农药和化肥来实现美观目标。",
+    "vocabulary": [
+      {
+        "term": "pesticides",
+        "explanation": "农药"
+      },
+      {
+        "term": "fertilizer",
+        "explanation": "肥料"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Most institutions of higher education"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      }
+    ]
+  },
+  "C09": {
+    "translation": "拥有“美丽”的校园意味着绿色且维护良好的草坪、花坛和铺好的人行道。",
+    "vocabulary": [
+      {
+        "term": "beautiful",
+        "explanation": "美丽的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Having a “beautiful” campus"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      }
+    ]
+  },
+  "C10": {
+    "translation": "但这些传统管理的校园可能会付出代价：癌症风险增加、水道被污染、野生动物中毒和土壤毫无生气。",
+    "vocabulary": [
+      {
+        "term": "conventionally managed",
+        "explanation": "按传统方式管理的"
+      },
+      {
+        "term": "contaminated",
+        "explanation": "受污染的"
+      },
+      {
+        "term": "waterway",
+        "explanation": "水道"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But these conventionally managed campuses"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "C11": {
+    "translation": "大学校园使用杀虫剂也加剧了我们的全球气候危机。",
+    "vocabulary": [
+      {
+        "term": "pesticide",
+        "explanation": "农药"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Pesticide"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      }
+    ]
+  },
+  "C12": {
+    "translation": "使用化学品来消灭昆虫或不需要的植物会增加间接排放，因为它们可能包含石油基成分。",
+    "vocabulary": [
+      {
+        "term": "direct emissions",
+        "explanation": "直接排放"
+      },
+      {
+        "term": "emissions",
+        "explanation": "排放物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The use of chemicals to get rid of insects or unwanted plant life"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "C13": {
+    "translation": "农药的使用还会减少土壤的寿命，阻碍土壤吸收碳或保留水分的能力，从而降低校园从干旱和洪水等与气候相关的极端天气事件中快速恢复的能力。",
+    "vocabulary": [
+      {
+        "term": "pesticide",
+        "explanation": "农药"
+      },
+      {
+        "term": "hampering",
+        "explanation": "妨碍；阻碍"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Pesticide"
+      },
+      {
+        "role": "predicate",
+        "text": "use also"
+      }
+    ]
+  },
+  "C14": {
+    "translation": "使用 HFC 的学生不使用有毒化学品，而是帮助清理校园的杂草。",
+    "vocabulary": [
+      {
+        "term": "campus grounds",
+        "explanation": "校园场地"
+      },
+      {
+        "term": "weeding",
+        "explanation": "除草"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Instead of using toxic chemicals"
+      },
+      {
+        "role": "subject",
+        "text": "students working with HFC"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      }
+    ]
+  },
+  "C15": {
+    "translation": "“这项工作提醒我要活在当下，在减少除草剂使用和保持校园安全健康方面发挥自己的作用，”夏琳说。",
+    "vocabulary": [
+      {
+        "term": "herbicide",
+        "explanation": "除草剂"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“This"
+      },
+      {
+        "role": "predicate",
+        "text": "work"
+      }
+    ]
+  },
+  "M-A01": {
+    "translation": "图书馆员知道他们的社区服务的价值，他们的顾客也认识到它们的重要性。",
+    "vocabulary": [
+      {
+        "term": "patrons",
+        "explanation": "读者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Librarians"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      }
+    ]
+  },
+  "M-A02": {
+    "translation": "但在日益数字化的世界中，我们发现图书馆作为社区和文化中心的作用有时被低估。",
+    "vocabulary": [
+      {
+        "term": "undervalued",
+        "explanation": "被低估的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "But in an increasingly digital world"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      }
+    ]
+  },
+  "M-A03": {
+    "translation": "当不断缩减的市政预算与不间断的技术革命相结合时，专注于面对面建设社区、启发和教育顾客有关艺术、文学和音乐以及帮助顾客参与公民对话的公共图书馆服务似乎已经过时了。",
+    "vocabulary": [
+      {
+        "term": "municipal budget",
+        "explanation": "市政预算"
+      },
+      {
+        "term": "civil discourse",
+        "explanation": "公共讨论"
+      },
+      {
+        "term": "face-to-face",
+        "explanation": "面对面的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When shrinking municipal budgets combine with the nonstop technological revolution, public library services that focus on building communities face-to-face, inspiring and educating patrons about art, literature, and music, and helping patrons engage in civil discourse"
+      },
+      {
+        "role": "subject",
+        "text": "seem"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "M-A04": {
+    "translation": "但正是预算的缩减和以技术为媒介的生活的冲击，使得公共图书馆的文化和社区服务比以往任何时候都更加重要。",
+    "vocabulary": [
+      {
+        "term": "precisely",
+        "explanation": "恰恰；准确地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-B01": {
+    "translation": "许多人指出公共图书馆为其社区带来的价值。",
+    "vocabulary": [
+      {
+        "term": "libraries",
+        "explanation": "图书馆"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many people"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      }
+    ]
+  },
+  "M-B02": {
+    "translation": "图书馆不仅仅是书籍和电脑库，它仍然是人们聚集探索、互动和想象的地方。",
+    "vocabulary": [
+      {
+        "term": "computers",
+        "explanation": "计算机"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "More than just books and banks of computers, libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are still"
+      }
+    ]
+  },
+  "M-B03": {
+    "translation": "图书馆为我们的社区增值并为我们的读者提供文化中心的一些具体方式包括社区建设者、艺术中心和青年倡导者。",
+    "vocabulary": [
+      {
+        "term": "community builder",
+        "explanation": "社区建设者"
+      },
+      {
+        "term": "patrons",
+        "explanation": "读者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some of the specific ways in which libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "add"
+      }
+    ]
+  },
+  "M-B04": {
+    "translation": "图书馆在这些方面发挥作用，不仅仅是提供信息。",
+    "vocabulary": [
+      {
+        "term": "Libraries",
+        "explanation": "图书馆"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "serve"
+      }
+    ]
+  },
+  "M-C01": {
+    "translation": "作为社区建设者，图书馆正在从事令人难以置信的工作。",
+    "vocabulary": [
+      {
+        "term": "community builder",
+        "explanation": "社区建设者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As community builders libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-C02": {
+    "translation": "从小型公共图书馆到拥有多个分支机构的大型城市机构，美国各地的图书馆正在以令人兴奋的方式建立社区并支持当地文化。",
+    "vocabulary": [
+      {
+        "term": "libraries",
+        "explanation": "图书馆"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "From tiny public libraries to huge city institutions with multiple branches, libraries across the United"
+      },
+      {
+        "role": "predicate",
+        "text": "States are"
+      }
+    ]
+  },
+  "M-C03": {
+    "translation": "这些都是鼓舞人心的，希望能够鼓励对社区服务和文化推广感兴趣的图书馆员相互联系、分享想法并建立伙伴关系。",
+    "vocabulary": [
+      {
+        "term": "cultural outreach",
+        "explanation": "文化推广"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-C04": {
+    "translation": "图书馆作为社区建设者的支持者声称，除非你在那里改变社区，否则你没有完成你要做的工作。",
+    "vocabulary": [
+      {
+        "term": "community builder",
+        "explanation": "社区建设者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Supporters of libraries as community builders"
+      },
+      {
+        "role": "predicate",
+        "text": "claim"
+      }
+    ]
+  },
+  "M-C05": {
+    "translation": "加强社区建设和倡导社区文化生活是一项重大责任。",
+    "vocabulary": [
+      {
+        "term": "Strengthening",
+        "explanation": "加强；巩固"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Strengthening neighborhoods and championing the cultural"
+      },
+      {
+        "role": "predicate",
+        "text": "lives"
+      }
+    ]
+  },
+  "M-D01": {
+    "translation": "以地方为基础的经济发展强调在城镇广场和萧条社区提供有吸引力的、功能齐全的、以社区为基础的场所的重要性，例如图书馆。",
+    "vocabulary": [
+      {
+        "term": "place-based economic development",
+        "explanation": "基于地方的经济发展"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Place"
+      },
+      {
+        "role": "predicate",
+        "text": "based"
+      }
+    ]
+  },
+  "M-D02": {
+    "translation": "像商场里的大型百货商店一样，图书馆吸引了大量的人，为周边地区的众多企业和组织创造了经济机会。",
+    "vocabulary": [
+      {
+        "term": "department",
+        "explanation": "部门"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Like"
+      },
+      {
+        "role": "predicate",
+        "text": "a"
+      }
+    ]
+  },
+  "M-D03": {
+    "translation": "大城市、中型城市甚至小城镇都成功地将图书馆转变为充满活力的社区的枢纽。",
+    "vocabulary": [
+      {
+        "term": "successfully",
+        "explanation": "成功地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Large cities, medium-sized ones, and even small towns"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-E01": {
+    "translation": "作为重要的市政机构和社区教育的协调中心，图书馆是创造宜居、环保城市和城镇的主要参与者。",
+    "vocabulary": [
+      {
+        "term": "focal point",
+        "explanation": "焦点；中心"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As key municipal agencies"
+      },
+      {
+        "role": "subject",
+        "text": "and focal"
+      },
+      {
+        "role": "predicate",
+        "text": "points"
+      }
+    ]
+  },
+  "M-E02": {
+    "translation": "城市图书馆理事会发布了一份报告，详细介绍了图书馆在地方一级促进可持续发展的独特方式。",
+    "vocabulary": [
+      {
+        "term": "sustainability",
+        "explanation": "可持续性"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The Urban Libraries Council released a report detailing the unique ways in which libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "M-E03": {
+    "translation": "除了确保图书馆建设项目考虑环境影响外，图书馆还可以带头支持当地的食品和工匠，例如皮博迪学院图书馆与当地企业合作，在院子里开辟农贸市场，或里士满公共图书馆的种子借阅图书馆，该图书馆“培育适合当地的植物品种，并培养社区复原力（韧性），自力更生和分享文化。”",
+    "vocabulary": [
+      {
+        "term": "resilience",
+        "explanation": "韧性"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Beyond ensuring that library construction projects consider environmental"
+      },
+      {
+        "role": "predicate",
+        "text": "impact"
+      }
+    ]
+  },
+  "M-F01": {
+    "translation": "档案馆保存与社区（包括少数群体）相关的历史文物、口述历史、数字历史项目和学术著作。",
+    "vocabulary": [
+      {
+        "term": "Archives",
+        "explanation": "档案；档案馆"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Archives"
+      },
+      {
+        "role": "predicate",
+        "text": "preserve"
+      }
+    ]
+  },
+  "M-F02": {
+    "translation": "幸运地拥有档案管理员的社区在组织历史记录和文物方面具有巨大的优势。",
+    "vocabulary": [
+      {
+        "term": "archivist",
+        "explanation": "档案管理员"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Communities lucky enough to have archivists"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-F03": {
+    "translation": "有组织的档案馆是人们可以研究其祖先和移民历史、进行环境研究等活动的地方。",
+    "vocabulary": [
+      {
+        "term": "immigration history",
+        "explanation": "移民史"
+      },
+      {
+        "term": "ancestry",
+        "explanation": "祖先；家族谱系"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An"
+      },
+      {
+        "role": "predicate",
+        "text": "organized"
+      }
+    ]
+  },
+  "M-F04": {
+    "translation": "档案保管员是保护主义的倡导者，负责协调地图和绘画的修复、重要记录的数字化以及口述历史项目的创建。",
+    "vocabulary": [
+      {
+        "term": "oral history",
+        "explanation": "口述史"
+      },
+      {
+        "term": "archivist",
+        "explanation": "档案管理员"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An archivist"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-F05": {
+    "translation": "马萨诸塞州记忆路演(Massachusetts Memories Road Show)和退伍军人历史项目(Veterans History Project)等项目证明了档案的重要性。",
+    "vocabulary": [
+      {
+        "term": "projects",
+        "explanation": "项目"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "With projects like the Massachusetts Memories Road"
+      },
+      {
+        "role": "predicate",
+        "text": "Show"
+      }
+    ]
+  },
+  "M-G01": {
+    "translation": "用罗伯特·普特南（Robert Putnam）的话来说， “人们可能会去图书馆主要寻找信息，但他们会在那里找到彼此。”",
+    "vocabulary": [
+      {
+        "term": "library",
+        "explanation": "图书馆"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In the words of Robert Putnam"
+      },
+      {
+        "role": "subject",
+        "text": "“People"
+      },
+      {
+        "role": "predicate",
+        "text": "may"
+      }
+    ]
+  },
+  "M-G02": {
+    "translation": "新妈妈们在给宝宝讲故事的时候互相交流；",
+    "vocabulary": [
+      {
+        "term": "connect",
+        "explanation": "连接"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "New moms"
+      },
+      {
+        "role": "predicate",
+        "text": "connect"
+      }
+    ]
+  },
+  "M-G03": {
+    "translation": "在图书馆，社区建设联系一直在发生。",
+    "vocabulary": [
+      {
+        "term": "libraries",
+        "explanation": "图书馆"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In libraries"
+      },
+      {
+        "role": "subject",
+        "text": "community-building connections"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-H01": {
+    "translation": "正如基思·理查兹（Keith Richards）所说， “公共图书馆是伟大的均衡器。”",
+    "vocabulary": [
+      {
+        "term": "equalizer",
+        "explanation": "平等器；消除差距的力量"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As Keith Richards"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      }
+    ]
+  },
+  "M-H02": {
+    "translation": "尽管音乐会和剧院门票的成本不断上涨，但公共图书馆活动（包括音乐会、作家参观和画廊展示）通常是免费提供的，使任何收入水平的人都可以参加。",
+    "vocabulary": [
+      {
+        "term": "Despite",
+        "explanation": "尽管"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Despite the rising"
+      },
+      {
+        "role": "predicate",
+        "text": "costs"
+      }
+    ]
+  },
+  "M-H03": {
+    "translation": "此外，图书馆图书小组让人们探索和讨论文学艺术，而伟大的故事俱乐部则向处于危险中的年轻人介绍文学。",
+    "vocabulary": [
+      {
+        "term": "at-risk youth",
+        "explanation": "高风险青少年"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In addition"
+      },
+      {
+        "role": "subject",
+        "text": "library book groups"
+      },
+      {
+        "role": "predicate",
+        "text": "allow"
+      }
+    ]
+  },
+  "M-H04": {
+    "translation": "最好的部分是：一切都是免费的并向公众开放。",
+    "vocabulary": [
+      {
+        "term": "best part",
+        "explanation": "最精彩之处"
+      },
+      {
+        "term": "open to the public",
+        "explanation": "向公众开放"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The best part: it’s all free and"
+      },
+      {
+        "role": "predicate",
+        "text": "open"
+      }
+    ]
+  },
+  "M-I01": {
+    "translation": "在教育日益昂贵的时代，公共图书馆为所有人提供免费的信息和教育机会，无论其社会经济地位如何。",
+    "vocabulary": [
+      {
+        "term": "socio-economic status",
+        "explanation": "社会经济地位"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "In a time when education"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-I02": {
+    "translation": "美国图书馆协会（American Library Association）的“让我们谈谈吧” （Let's Talk about It）计划由全国各地的图书馆提供，是图书馆学者促进学习机会的绝佳范例。",
+    "vocabulary": [
+      {
+        "term": "Offered",
+        "explanation": "提供的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Offered"
+      },
+      {
+        "role": "predicate",
+        "text": "by"
+      }
+    ]
+  },
+  "M-I03": {
+    "translation": "此外，许多图书馆提供课程和讨论计划，有些甚至提供在线继续教育课程，如通用课程数据库。",
+    "vocabulary": [
+      {
+        "term": "continuing education",
+        "explanation": "继续教育"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In addition"
+      },
+      {
+        "role": "subject",
+        "text": "many libraries present classes and discussion programs, and some even"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      }
+    ]
+  },
+  "M-J01": {
+    "translation": "图书馆员知道，读者不仅仅是信息消费者，他们还是信息生产者。",
+    "vocabulary": [
+      {
+        "term": "information producer",
+        "explanation": "信息生产者"
+      },
+      {
+        "term": "patrons",
+        "explanation": "读者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Librarians"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      }
+    ]
+  },
+  "M-J02": {
+    "translation": "读者利用图书馆获取知识，以便创作自己的新的独立作品。",
+    "vocabulary": [
+      {
+        "term": "patrons",
+        "explanation": "读者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Patrons"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      }
+    ]
+  },
+  "M-J03": {
+    "translation": "越来越多的图书馆提供空间和服务，满足那些想要学习如何编辑维基百科、建立博客或播客、创建自己的杂志等等的人们的需求。",
+    "vocabulary": [
+      {
+        "term": "Increasing",
+        "explanation": "不断增加的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Increasing numbers of libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      }
+    ]
+  },
+  "M-J04": {
+    "translation": "许多图书馆提供艺术或写作工作坊和团体，有些还为读者提供音乐练习室。",
+    "vocabulary": [
+      {
+        "term": "patrons",
+        "explanation": "读者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "offer"
+      }
+    ]
+  },
+  "M-J05": {
+    "translation": "像北卡罗来纳州夏洛特市的 ImaginOn 这样的项目提供了令人兴奋的模式，将社区合作、创造力和创造提升到一个新的水平。",
+    "vocabulary": [
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Programs like ImaginOn in Charlotte, North Carolina"
+      },
+      {
+        "role": "predicate",
+        "text": "provide"
+      }
+    ]
+  },
+  "M-K01": {
+    "translation": "公共讨论的衰落部分源于这样一个事实，即人们很容易观看关于虚拟和现实世界的新闻，购买来自虚拟和现实世界的产品，并参与其中—只有具有相似背景和意识形态的世界。",
+    "vocabulary": [
+      {
+        "term": "civil discourse",
+        "explanation": "公共讨论"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The decline of civil discourse"
+      },
+      {
+        "role": "predicate",
+        "text": "stems"
+      }
+    ]
+  },
+  "M-K02": {
+    "translation": "公共图书馆通过人类图书馆和苏格拉底咖啡馆等项目，可以帮助建立差异化的小社区，鼓励人们通过对话进行互动和相互学习。",
+    "vocabulary": [
+      {
+        "term": "libraries",
+        "explanation": "图书馆"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Public libraries, through such programs as The Human Library and Socrates Café"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "M-K03": {
+    "translation": "图书馆通过这些计划积极促进公民话语，并模仿和维护所有人自由探究和表达的原则，帮助个人重新发现公民话语在美国生活中的重要性和日益增长的需求。",
+    "vocabulary": [
+      {
+        "term": "civil discourse",
+        "explanation": "公共讨论"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "By both actively promoting civil discourse through these programs"
+      },
+      {
+        "role": "subject",
+        "text": "and modeling and upholding the principles of free inquiry and expression for all, libraries"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      }
+    ]
+  },
+  "M-L01": {
+    "translation": "免费辅导、家庭作业帮助计划和儿童和青少年暑期阅读计划有助于弥合影响学生学习成绩的经济鸿沟。",
+    "vocabulary": [
+      {
+        "term": "economic divide",
+        "explanation": "经济鸿沟"
+      },
+      {
+        "term": "tutoring",
+        "explanation": "辅导；家教"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Free tutoring, homework"
+      },
+      {
+        "role": "predicate",
+        "text": "help"
+      }
+    ]
+  },
+  "M-L02": {
+    "translation": "聘请私人导师的成本远远超出了许多图书馆读者的负担能力，因此图书馆可以在线、通过电话、亲自，甚至通过社交媒体和家庭作业应用程序提供家庭作业帮助和辅导。",
+    "vocabulary": [
+      {
+        "term": "tutoring",
+        "explanation": "辅导；家教"
+      },
+      {
+        "term": "patrons",
+        "explanation": "读者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The"
+      },
+      {
+        "role": "predicate",
+        "text": "cost"
+      }
+    ]
+  },
+  "M-L03": {
+    "translation": "一年一度的夏季阅读计划也对学生的表现产生积极影响，根据多米尼加大学图书馆和信息科学研究生院 2010 年进行的一项研究，学生的阅读技能从这些受欢迎的全国性活动中得到了提高。",
+    "vocabulary": [
+      {
+        "term": "reading",
+        "explanation": "阅读"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Annual summer reading programs also"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "M-M01": {
+    "translation": "通过图书馆藏品、项目和物理空间，孩子们学会分享、参与社区、参与艺术，并探索他们眼前的世界和整个世界。",
+    "vocabulary": [
+      {
+        "term": "Through",
+        "explanation": "通过"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Through library collections, programs, and physical spaces, children"
+      },
+      {
+        "role": "predicate",
+        "text": "learn"
+      }
+    ]
+  },
+  "M-M02": {
+    "translation": "为儿童提供创新图书馆服务的例子肯定不胜枚举，其中包括中部国家公共图书馆的自然探索馆，它让孩子们了解自然世界。",
+    "vocabulary": [
+      {
+        "term": "endless",
+        "explanation": "无穷无尽的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-N01": {
+    "translation": "这些例子只是美国（和世界各地）公共图书馆为建立和维护强大的社区联系所做的众多令人惊叹的事情中的一小部分。",
+    "vocabulary": [
+      {
+        "term": "examples",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These examples"
+      },
+      {
+        "role": "predicate",
+        "text": "are just"
+      }
+    ]
+  },
+  "M-N02": {
+    "translation": "我们鼓励您在自己的图书馆中尝试其中的一些想法，我们希望这些想法能帮助您更好地说服社区领袖，让他们相信公共图书馆在大小社区中发挥的重要作用。",
+    "vocabulary": [
+      {
+        "term": "encourage",
+        "explanation": "鼓励"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We encourage you to try some of these ideas in your own libraries, and we hope that these ideas"
+      },
+      {
+        "role": "predicate",
+        "text": "will"
+      }
+    ]
+  },
+  "R1-01": {
+    "translation": "在全国范围内，六分之一的儿童在一年内缺课15天或更长时间。",
+    "vocabulary": [
+      {
+        "term": "Nationally",
+        "explanation": "全国范围内"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Nationally"
+      },
+      {
+        "role": "subject",
+        "text": "one in six children"
+      },
+      {
+        "role": "predicate",
+        "text": "miss"
+      }
+    ]
+  },
+  "R1-02": {
+    "translation": "教育官员对所有这些错过的指导表示遗憾。",
+    "vocabulary": [
+      {
+        "term": "Education",
+        "explanation": "教育"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Education officials"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "R1-03": {
+    "translation": "这些长期缺席的学生由于错过了所有的课堂教学而在学业上受到影响。",
+    "vocabulary": [
+      {
+        "term": "chronically",
+        "explanation": "长期地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These chronically absent students"
+      },
+      {
+        "role": "predicate",
+        "text": "suffer"
+      }
+    ]
+  },
+  "R1-04": {
+    "translation": "2015年，美国教育部长回应了这场危机，敦促社区支持每个学生每天上学并在学校取得成功。",
+    "vocabulary": [
+      {
+        "term": "secretary",
+        "explanation": "秘书"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In 2015"
+      },
+      {
+        "role": "subject",
+        "text": "the U.S. secretary of education"
+      },
+      {
+        "role": "predicate",
+        "text": "responded"
+      }
+    ]
+  },
+  "R1-05": {
+    "translation": "他的公开信指出，一年中因任何原因（有理由或无理由）错过10%的上学日是学业成绩低下的主要原因。",
+    "vocabulary": [
+      {
+        "term": "missing",
+        "explanation": "缺席；错过"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "His"
+      },
+      {
+        "role": "predicate",
+        "text": "open"
+      }
+    ]
+  },
+  "R1-06": {
+    "translation": "担心孩子们是否上学是有道理的。",
+    "vocabulary": [
+      {
+        "term": "Worrying",
+        "explanation": "担忧；令人担忧的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Worrying about whether children"
+      },
+      {
+        "role": "predicate",
+        "text": "attend"
+      }
+    ]
+  },
+  "R1-07": {
+    "translation": "毕竟，如果学生不出现，老师就无法教他们。",
+    "vocabulary": [
+      {
+        "term": "students",
+        "explanation": "学生"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "After all"
+      },
+      {
+        "role": "subject",
+        "text": "if students don’t"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      }
+    ]
+  },
+  "R1-08": {
+    "translation": "但如果美国的出勤危机不仅仅是学生缺课呢？",
+    "vocabulary": [
+      {
+        "term": "America",
+        "explanation": "美国"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "But what if America’s attendance crisis"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-09": {
+    "translation": "相反，如果这反映了这些学生所面临的家庭和社区危机，例如被逐出家庭公寓，担心他们在社区的安全或生病，该怎么办？",
+    "vocabulary": [
+      {
+        "term": "reflection",
+        "explanation": "反思"
+      }
+    ],
+    "structure": {
+      "pattern": "疑问句核心结构 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "What if, instead, it"
+      },
+      {
+        "role": "subject",
+        "text": "a"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-10": {
+    "translation": "作为社会科学家，我们研究了有故和无故缺勤与儿童学业成绩的关系。",
+    "vocabulary": [
+      {
+        "term": "scientists",
+        "explanation": "科学家"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "As"
+      },
+      {
+        "role": "predicate",
+        "text": "social"
+      }
+    ]
+  },
+  "R1-11": {
+    "translation": "我们发现，父母的缺席对孩子的学习没有什么影响。",
+    "vocabulary": [
+      {
+        "term": "absences",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      }
+    ]
+  },
+  "R1-12": {
+    "translation": "事实上，没有无故缺席的儿童--但有15至18次免责缺席--的考试成绩与没有缺席的同龄人相当。",
+    "vocabulary": [
+      {
+        "term": "children",
+        "explanation": "儿童"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In fact"
+      },
+      {
+        "role": "subject",
+        "text": "children with no unexcused absences — but 15 to 18 excused absences—"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "R1-13": {
+    "translation": "与此同时，即使只有一次无故缺勤的孩子，其学业成绩也比没有缺勤的同龄人要差得多。",
+    "vocabulary": [
+      {
+        "term": "Meanwhile",
+        "explanation": "与此同时"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Meanwhile"
+      },
+      {
+        "role": "subject",
+        "text": "the average child with even just one unexcused absence"
+      },
+      {
+        "role": "predicate",
+        "text": "does"
+      }
+    ]
+  },
+  "R1-14": {
+    "translation": "我们认为，无故缺勤是一个强有力的信号，表明儿童和家庭面临许多挑战，包括经济和医疗困难。",
+    "vocabulary": [
+      {
+        "term": "believe",
+        "explanation": "相信"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      }
+    ]
+  },
+  "R1-15": {
+    "translation": "无故缺课可能是这些失学挑战如何影响儿童学业进步的有力信号。",
+    "vocabulary": [
+      {
+        "term": "Unexcused",
+        "explanation": "未经批准的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Unexcused absences"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "R1-16": {
+    "translation": "我们的证据表明，无故缺勤是有问题的，但原因与人们通常认为的不同。",
+    "vocabulary": [
+      {
+        "term": "evidence",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Our evidence"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      }
+    ]
+  },
+  "R1-17": {
+    "translation": "缺课，特别是无故缺课，主要是儿童及其家庭可能面临许多危机的信号。",
+    "vocabulary": [
+      {
+        "term": "Absence",
+        "explanation": "缺席；缺课"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Absence from school, and especially unexcused absence"
+      },
+      {
+        "role": "predicate",
+        "text": "matters"
+      }
+    ]
+  },
+  "R1-18": {
+    "translation": "由于缺课而导致学生成绩下降，这并不重要。",
+    "vocabulary": [
+      {
+        "term": "matters",
+        "explanation": "重要；有影响"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "matters less"
+      }
+    ]
+  },
+  "R1-19": {
+    "translation": "我们如何选择对缺课的看法对教育政策很重要。",
+    "vocabulary": [
+      {
+        "term": "absences",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "How we"
+      },
+      {
+        "role": "predicate",
+        "text": "choose"
+      }
+    ]
+  },
+  "R1-20": {
+    "translation": "出勤政策通常要求学校和家庭对孩子们错过的日子负责，无论他们是被原谅还是无故缺席。",
+    "vocabulary": [
+      {
+        "term": "attendance",
+        "explanation": "出勤；到校"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "School attendance policies typically"
+      },
+      {
+        "role": "predicate",
+        "text": "hold"
+      }
+    ]
+  },
+  "R1-21": {
+    "translation": "这些政策假设由于任何原因缺课会损害儿童的学业，因为他们缺少课堂教学。",
+    "vocabulary": [
+      {
+        "term": "policies",
+        "explanation": "政策"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These policies"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      }
+    ]
+  },
+  "R1-22": {
+    "translation": "他们还认为，学校将能够通过减少学生缺勤率进行有效干预。",
+    "vocabulary": [
+      {
+        "term": "schools",
+        "explanation": "学校"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They also"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      }
+    ]
+  },
+  "R1-23": {
+    "translation": "我们发现情况并非如此。",
+    "vocabulary": [
+      {
+        "term": "neither",
+        "explanation": "两者都不"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      }
+    ]
+  },
+  "R1-24": {
+    "translation": "因此，这些出勤政策最终会不成比例地惩罚那些在生活中面临失学危机的家庭，并迫使为他们提供服务的学校让学生更频繁地上学。",
+    "vocabulary": [
+      {
+        "term": "attendance",
+        "explanation": "出勤；到校"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As a result"
+      },
+      {
+        "role": "subject",
+        "text": "these attendance policies"
+      },
+      {
+        "role": "predicate",
+        "text": "end"
+      }
+    ]
+  },
+  "R1-25": {
+    "translation": "相反，我们建议使用无故缺勤作为信号，将资源分配给最需要资源的儿童和家庭。",
+    "vocabulary": [
+      {
+        "term": "instead",
+        "explanation": "而不是；反而"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We instead"
+      },
+      {
+        "role": "predicate",
+        "text": "suggest"
+      }
+    ]
+  },
+  "R2-01": {
+    "translation": "获得学士学位后，我决心做自己喜欢的事情。",
+    "vocabulary": [
+      {
+        "term": "earning",
+        "explanation": "获得；赚取"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "After earning a bachelor’s degree"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "R2-02": {
+    "translation": "我直奔研究生院，调查令我着迷的社会问题。",
+    "vocabulary": [
+      {
+        "term": "straight",
+        "explanation": "直接地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "headed"
+      }
+    ]
+  },
+  "R2-03": {
+    "translation": "近十年来，我告诉遇到的每个人，他们也应该这样做。",
+    "vocabulary": [
+      {
+        "term": "everyone",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For almost a decade"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "told"
+      }
+    ]
+  },
+  "R2-04": {
+    "translation": "“追随你的热情，”我建议道。",
+    "vocabulary": [
+      {
+        "term": "passion",
+        "explanation": "热情；激情"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“Follow"
+      },
+      {
+        "role": "predicate",
+        "text": "your"
+      }
+    ]
+  },
+  "R2-05": {
+    "translation": "“你可以稍后再弄清楚就业问题。”",
+    "vocabulary": [
+      {
+        "term": "employment",
+        "explanation": "就业"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "“You"
+      },
+      {
+        "role": "predicate",
+        "text": "can"
+      }
+    ]
+  },
+  "R2-06": {
+    "translation": "直到我开始研究这个被广泛接受的职业建议，我才明白它的问题到底有多大。",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "研究"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It wasn’t until I began to research this widely accepted career advice that I understood how problematic it really"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "R2-07": {
+    "translation": "作为一名社会学家，我采访了大学生和专业工作者，以了解追求梦想的真正含义，我在这里称之为激情原则。",
+    "vocabulary": [
+      {
+        "term": "sociologist",
+        "explanation": "社会学家"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As a sociologist"
+      },
+      {
+        "role": "subject",
+        "text": "I interviewed college students and professional workers to learn what it really"
+      },
+      {
+        "role": "predicate",
+        "text": "meant"
+      }
+    ]
+  },
+  "R2-08": {
+    "translation": "我在新书的研究中发现了这一原理，这让我感到震惊。",
+    "vocabulary": [
+      {
+        "term": "stunned",
+        "explanation": "震惊的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "R2-09": {
+    "translation": "调查显示，美国公众长期以来一直高度重视激情原则，并将其作为职业决策的优先事项。",
+    "vocabulary": [
+      {
+        "term": "Surveys",
+        "explanation": "调查"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Surveys"
+      },
+      {
+        "role": "predicate",
+        "text": "show"
+      }
+    ]
+  },
+  "R2-10": {
+    "translation": "在那些面临工作不稳定的人中，它的受欢迎程度甚至更高。",
+    "vocabulary": [
+      {
+        "term": "popularity",
+        "explanation": "流行度"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And its popularity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-11": {
+    "translation": "激情原则的倡导者发现它很有吸引力，因为他们相信追随激情可以为员工提供努力工作所需的动力和找到成就感的地方。",
+    "vocabulary": [
+      {
+        "term": "Advocates",
+        "explanation": "倡导者"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Advocates of the passion principle"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      }
+    ]
+  },
+  "R2-12": {
+    "translation": "然而，我发现追随自己的热情并不一定会带来成就感，但却是导致过度劳累的最强大的文化力量之一。",
+    "vocabulary": [
+      {
+        "term": "following",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Yet"
+      },
+      {
+        "role": "subject",
+        "text": "what I"
+      },
+      {
+        "role": "predicate",
+        "text": "found is"
+      }
+    ]
+  },
+  "R2-13": {
+    "translation": "我还发现，促进个人对激情的追求有助于延续社会不平等，因为并不是每个人都拥有相同的经济资源来让他们轻松地追求自己的激情。",
+    "vocabulary": [
+      {
+        "term": "promoting",
+        "explanation": "促进"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I also"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      }
+    ]
+  },
+  "R2-14": {
+    "translation": "虽然激情原则广为流行，但并不是每个人都有必要的资源将他们的激情转化为稳定、高薪的工作。",
+    "vocabulary": [
+      {
+        "term": "passion",
+        "explanation": "热情；激情"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "While the passion principle"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-15": {
+    "translation": "来自富裕家庭的追求激情的人能够更好地等待他们热爱的工作出现，而不必担心学生贷款。",
+    "vocabulary": [
+      {
+        "term": "Passion",
+        "explanation": "热情；激情"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Passion-seekers from wealthy families"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R2-16": {
+    "translation": "他们也更有能力接受无薪实习，以便在父母支付房租的同时踏入职场。",
+    "vocabulary": [
+      {
+        "term": "situated",
+        "explanation": "处于；位于"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "are also"
+      }
+    ]
+  },
+  "R2-17": {
+    "translation": "他们经常可以访问父母的社交网络来帮助他们找到工作。",
+    "vocabulary": [
+      {
+        "term": "parents",
+        "explanation": "结合上下文理解该词在句中的含义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "And they often"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      }
+    ]
+  },
+  "R2-18": {
+    "translation": "调查显示，工人阶级和第一代大学毕业生，无论其职业领域如何，在追求自己的热情时，都比富裕的同龄人更有可能从事低薪非技术工作。",
+    "vocabulary": [
+      {
+        "term": "Surveys",
+        "explanation": "调查"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句 + 从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Surveys revealed that working-class and first-generation college graduates, regardless of their career field"
+      },
+      {
+        "role": "predicate",
+        "text": "are more"
+      }
+    ]
+  },
+  "R2-19": {
+    "translation": "大学、工作场所和职业顾问为每个人提倡“追随你的激情”道路，却没有提供公平的竞争环境，这导致了职业抱负者之间长期存在的社会经济不平等。",
+    "vocabulary": [
+      {
+        "term": "Colleges",
+        "explanation": "大学"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分 + 定语从句",
+      "explanation": "关系从句补充说明前面的名词，先抓主句再读从句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Colleges, workplaces and career counselors who promote the “"
+      },
+      {
+        "role": "predicate",
+        "text": "follow"
+      }
+    ]
+  },
+  "R2-20": {
+    "translation": "受益于激情原则的不仅仅是富裕的激情追求者。",
+    "vocabulary": [
+      {
+        "term": "passion",
+        "explanation": "热情；激情"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 定语从句",
+      "explanation": "此句为特殊结构，先结合自然翻译理解整体意思，再回看句中核心成分。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It’s"
+      },
+      {
+        "role": "predicate",
+        "text": "not just"
+      }
+    ]
+  },
+  "R2-21": {
+    "translation": "拥有热情员工的雇主也是如此。",
+    "vocabulary": [
+      {
+        "term": "Employers",
+        "explanation": "雇主"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Employers of passionate workers"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      }
+    ]
+  },
+  "R2-22": {
+    "translation": "潜在雇主对充满热情的求职者表现出更大的兴趣，部分原因是他们相信求职者会在工作中努力工作，而不期望加薪。",
+    "vocabulary": [
+      {
+        "term": "Potential",
+        "explanation": "潜在的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 从句",
+      "explanation": "从句交代时间、原因、条件或让步，主句是理解重点。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Potential employers"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      }
+    ]
+  },
+  "R2-23": {
+    "translation": "他们甚至牺牲优厚的薪水、工作的稳定性和闲暇时间来从事自己喜欢的工作。",
+    "vocabulary": [
+      {
+        "term": "sacrifice",
+        "explanation": "牺牲"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 并列成分",
+      "explanation": "先定位主语和谓语，再把其余修饰信息放回原句。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They even"
+      },
+      {
+        "role": "predicate",
+        "text": "sacrifice"
+      }
+    ]
+  }
+}

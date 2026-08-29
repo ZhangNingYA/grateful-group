@@ -2,6 +2,7 @@ import type { InlineGlossary } from '../types/closeReading';
 
 export const cet4InlineGlossary202606Set1 = {
   words: {
+  "1970s": { partOfSpeech: "n", meaning: "20 世纪 70 年代" },
   "a": { partOfSpeech: "冠词", meaning: "一个；某个（泛指）" },
   "about": { partOfSpeech: "介词 / 副词", meaning: "关于；大约" },
   "according": { partOfSpeech: "prep", meaning: "按照，根据，依照（according to，后接名词或名词短语）" },
@@ -281,6 +282,7 @@ export const cet4InlineGlossary202606Set1 = {
   "fiji": { partOfSpeech: "专有名词", meaning: "斐济（太平洋岛国）" },
   "finally": { partOfSpeech: "副词", meaning: "最后；终于" },
   "find": { partOfSpeech: "v", meaning: "找到，找回" },
+  "finding": { partOfSpeech: "n", meaning: "研究发现；调查结果" },
   "first": { partOfSpeech: "det", meaning: "第一位的，最先的" },
   "fish": { partOfSpeech: "n", meaning: "鱼" },
   "fishing": { partOfSpeech: "n", meaning: "钓鱼，捕鱼" },
@@ -374,6 +376,7 @@ export const cet4InlineGlossary202606Set1 = {
   "i've": { partOfSpeech: "缩写", meaning: "I have：我已经" },
   "identical": { partOfSpeech: "adj", meaning: "完全相同的" },
   "identified": { partOfSpeech: "v", meaning: "发现；识别（identify 的过去式）" },
+  "identify": { partOfSpeech: "v", meaning: "识别；确认" },
   "identifying": { partOfSpeech: "v", meaning: "确认，识别" },
   "if": { partOfSpeech: "连词", meaning: "如果；假如" },
   "impact": { partOfSpeech: "n", meaning: "撞击，冲击力" },
@@ -696,7 +699,7 @@ export const cet4InlineGlossary202606Set1 = {
   "split": { partOfSpeech: "v", meaning: "（使）分裂，（使）产生分歧" },
   "spots": { partOfSpeech: "n", meaning: "地点；场所（spot 的复数）" },
   "spread": { partOfSpeech: "v", meaning: "展开，打开" },
-  "squeezed": { partOfSpeech: "词汇", meaning: "挤压；塞进" },
+  "squeezed": { partOfSpeech: "v", meaning: "挤压；榨取（squeeze 的过去式或过去分词）" },
   "st": { partOfSpeech: "abbr", meaning: "Saint（圣）的缩写，用于人名、地名、教堂名等专有名称前" },
   "stages": { partOfSpeech: "n", meaning: "[计]阶段（stage 的复数）" },
   "standard": { partOfSpeech: "n", meaning: "（品质的）标准，水平，规范" },

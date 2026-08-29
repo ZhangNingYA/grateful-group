@@ -13,6 +13,7 @@ interface Props {
   closeReading?: CloseReading;
   inlineGlossary?: InlineGlossary;
   sharedGlossaryPhrases?: readonly CloseReadingVocabulary[];
+  experience?: 'blog' | 'game';
 }
 
 const {
@@ -21,9 +22,12 @@ const {
   closeReading,
   inlineGlossary,
   sharedGlossaryPhrases = [],
+  experience = 'blog',
 } = Astro.props;
+const isBlogExperience = experience === 'blog';
+const semanticAnalysis = isBlogExperience ? closeReading?.analysis : undefined;
 const detailId = `close-reading-${number.toLowerCase().replace(/[^a-z0-9-]/g, '-')}`;
-const glossaryId = `${detailId}-glossary`;
+const glossaryId = 'reading-inline-glossary-popover';
 
 const roleLabels: Record<SentenceRole, string> = {
   subject: '主语',
@@ -67,7 +71,7 @@ const buildSentenceParts = (): SentencePart[] => {
   const matches: Array<{ start: number; end: number; role: SentenceRole }> = [];
   let searchFrom = 0;
 
-  closeReading.highlights.forEach((highlight) => {
+  (semanticAnalysis?.highlights ?? closeReading.highlights).forEach((highlight) => {
     const normalizedText = normalizeForMatch(highlight.text);
     let start = normalizedSentence.indexOf(normalizedText, searchFrom);
     if (start === -1) start = normalizedSentence.indexOf(normalizedText);
@@ -599,25 +603,285 @@ const sentenceRenderGroups = (): RenderGroup[] => {
 
 const sentenceRender = sentenceRenderGroups();
 const trunkHighlights = closeReading
-  ? closeReading.trunk ?? closeReading.highlights.filter((item) => item.role !== 'adverbial')
+  ? semanticAnalysis?.trunk
+    ?? closeReading.trunk
+    ?? closeReading.highlights.filter((item) => item.role !== 'adverbial')
   : [];
-const visibleTrunk = trunkHighlights.length > 0
-  ? trunkHighlights
-  : closeReading?.highlights ?? [];
-const translationStep = closeReading?.segments?.length ? '03' : '02';
-const vocabularyStep = closeReading?.segments?.length ? '04' : '03';
-const structureStep = closeReading?.segments?.length ? '05' : '04';
+const mergePredicateHighlights = (items: CloseReading['highlights']) => {
+  const merged: CloseReading['highlights'] = [];
+  items.forEach((item) => {
+    const previous = merged.at(-1);
+    if (previous?.role === 'predicate' && item.role === 'predicate') {
+      const separator = /^(?:n[’']t\b|'[a-z]+\b|’[a-z]+\b)/i.test(item.text) ? '' : ' ';
+      previous.text = `${previous.text}${separator}${item.text}`;
+    } else {
+      merged.push({ ...item });
+    }
+  });
+  return merged;
+};
+const mergedTrunk = isBlogExperience ? mergePredicateHighlights(
+  trunkHighlights.length > 0 ? trunkHighlights : closeReading?.highlights ?? [],
+) : trunkHighlights;
+const sentenceWordCount = sentence?.match(/[A-Za-z]+(?:['’][A-Za-z]+)?/g)?.length ?? 0;
+const segmentGuide = closeReading?.segments
+  && closeReading.segments.length >= (isBlogExperience ? 2 : 3)
+  && sentenceWordCount >= 18
+  ? closeReading.segments
+  : [];
+const hasSegmentGuide = segmentGuide.length > 0;
+const translationStep = hasSegmentGuide ? '03' : '02';
+const vocabularyStep = hasSegmentGuide ? '04' : '03';
+const structureStep = hasSegmentGuide ? '05' : '04';
+
+interface LocatedStructureComponent {
+  role: SentenceRole;
+  text: string;
+  start: number;
+  end: number;
+  label?: string;
+}
+
+interface ReportedQuoteAnalysis {
+  highlights: LocatedStructureComponent[];
+  trunk: CloseReading['highlights'];
+  pattern: string;
+  explanation: string;
+}
+
+const locateHighlights = (items: CloseReading['highlights']) => {
+  if (!sentence) return [];
+  const normalizedSentence = normalizeForMatch(sentence).toLowerCase();
+  const located: LocatedStructureComponent[] = [];
+  let searchFrom = 0;
+
+  for (const item of items) {
+    const normalizedText = normalizeForMatch(item.text).toLowerCase();
+    let start = normalizedSentence.indexOf(normalizedText, searchFrom);
+    if (start === -1) start = normalizedSentence.indexOf(normalizedText);
+    if (start === -1) continue;
+    const end = start + item.text.length;
+    located.push({
+      role: item.role,
+      text: sentence.slice(start, end),
+      start,
+      end,
+      label: item.label,
+    });
+    searchFrom = end;
+  }
+  return located;
+};
+
+const buildReportedQuoteAnalysis = (): ReportedQuoteAnalysis | undefined => {
+  if (!isBlogExperience || !sentence || !closeReading) return undefined;
+  const quoteSpans = Array.from(sentence.matchAll(/“[^”]*”/g), (match) => ({
+    start: match.index,
+    end: match.index + match[0].length,
+    text: match[0],
+  }));
+  if (quoteSpans.length === 0) return undefined;
+
+  const firstQuote = quoteSpans[0];
+  const reportingMatch = Array.from(
+    sentence.matchAll(/\b(?:said|says|continued|declared|argued|added|replied|asked|noted)\b/gi),
+  ).find((match) => (
+    match.index > firstQuote.start
+    && !quoteSpans.some((quote) => match.index >= quote.start && match.index < quote.end)
+  ));
+  if (!reportingMatch) return undefined;
+
+  const reportingStart = reportingMatch.index;
+  const reportingEnd = reportingStart + reportingMatch[0].length;
+  const locatedHighlights = locateHighlights(
+    semanticAnalysis?.highlights ?? closeReading.highlights,
+  );
+  const outsideQuotes = (item: LocatedStructureComponent) => !quoteSpans.some((quote) => (
+    item.start < quote.end && item.end > quote.start
+  ));
+  const reportingSubject = locatedHighlights
+    .filter((item) => item.role === 'subject' && outsideQuotes(item))
+    .map((item) => ({
+      item,
+      distance: item.end <= reportingStart
+        ? reportingStart - item.end
+        : item.start >= reportingEnd ? item.start - reportingEnd : Number.POSITIVE_INFINITY,
+    }))
+    .sort((a, b) => a.distance - b.distance)[0]?.item;
+  if (!reportingSubject) return undefined;
+
+  const prefixBeforeQuote = sentence.slice(0, firstQuote.start).trimEnd();
+  const quoteStartsNewStatement = firstQuote.start === 0 || prefixBeforeQuote.endsWith(',');
+  const objectStart = quoteStartsNewStatement ? firstQuote.start : 0;
+  const quotesBeforeReporter = quoteSpans.filter((quote) => quote.end <= reportingStart);
+  const firstQuoteAfterReporter = quoteSpans.find((quote) => quote.start >= reportingEnd);
+  const followingQuoteContinuesStatement = firstQuoteAfterReporter
+    && reportingStart > firstQuote.end
+    && firstQuoteAfterReporter.start - reportingEnd < 80;
+  const directQuoteSpans = followingQuoteContinuesStatement
+    ? [...quotesBeforeReporter, firstQuoteAfterReporter]
+    : quotesBeforeReporter;
+  const lastQuote = directQuoteSpans.at(-1) ?? firstQuote;
+  const reporterInterruptsQuote = directQuoteSpans.length > 1
+    && reportingStart > directQuoteSpans[0].end
+    && reportingStart < lastQuote.start;
+  const objectText = reporterInterruptsQuote
+    ? directQuoteSpans.map((quote) => quote.text).join(' … ')
+    : sentence.slice(objectStart, lastQuote.end);
+
+  const prefixHighlights = objectStart > 0
+    ? locatedHighlights.filter((item) => item.end <= objectStart)
+    : [];
+  const mergedPrefix: LocatedStructureComponent[] = [];
+  prefixHighlights.forEach((item) => {
+    const previous = mergedPrefix.at(-1);
+    if (previous?.role === item.role) {
+      previous.text = sentence.slice(previous.start, item.end).replace(/[\s,]+$/, '');
+      previous.end = item.end;
+    } else {
+      mergedPrefix.push({ ...item, text: item.text.replace(/[\s,]+$/, '') });
+    }
+  });
+  mergedPrefix.forEach((item) => {
+    item.label = `叙述主句·${roleLabels[item.role]}`;
+  });
+
+  const reportSubject: LocatedStructureComponent = {
+    ...reportingSubject,
+    label: '报道句·主语',
+  };
+  const reportPredicate: LocatedStructureComponent = {
+    role: 'predicate',
+    text: sentence.slice(reportingStart, reportingEnd),
+    start: reportingStart,
+    end: reportingEnd,
+    label: '报道句·谓语',
+  };
+  const reportObject: LocatedStructureComponent = {
+    role: 'object',
+    text: objectText,
+    start: objectStart,
+    end: lastQuote.end,
+    label: '报道句·宾语（直接引语整体）',
+  };
+  const reportRows = [reportSubject, reportPredicate, reportObject];
+  const suffixHighlights = locatedHighlights
+    .filter((item) => (
+      outsideQuotes(item)
+      && item.start >= reportingEnd
+      && item !== reportingSubject
+      && !(item.start < reportObject.end && item.end > reportObject.start)
+    ))
+    .map((item) => ({ ...item, label: `报道句·${roleLabels[item.role]}` }));
+  const reporter = reportSubject.text;
+  const predicate = reportPredicate.text;
+
+  return {
+    highlights: [...mergedPrefix, ...reportRows, ...suffixHighlights],
+    trunk: [
+      ...mergedPrefix.filter((item) => item.role === 'subject' || item.role === 'predicate')
+        .map(({ role, text }) => ({ role, text })),
+      { role: 'subject', text: reporter },
+      { role: 'predicate', text: predicate },
+    ],
+    pattern: mergedPrefix.length > 0
+      ? '叙述主句 + 引语报道句（SVO）'
+      : '主语 + 谓语 + 直接引语宾语（SVO）',
+    explanation: `${mergedPrefix.length > 0 ? '前半句先叙述人物经历；随后' : ''}由 ${reporter} + ${predicate} 构成报道句，直接引语整体作 ${predicate} 的宾语，引语内部不再拆分。${suffixHighlights.length > 0 ? '报道句后的分词等成分整体补充说明。' : ''}`,
+  };
+};
+
+const reportedQuoteAnalysis = buildReportedQuoteAnalysis();
+
+const buildStructureHighlights = () => {
+  if (!sentence || !closeReading) return closeReading?.highlights ?? [];
+  if (!isBlogExperience) return closeReading.highlights;
+  if (reportedQuoteAnalysis) return reportedQuoteAnalysis.highlights;
+  if (semanticAnalysis?.highlights.length) {
+    return mergePredicateHighlights(semanticAnalysis.highlights);
+  }
+  if (!closeReading.trunk?.length) return closeReading.highlights;
+  const normalizedSentence = normalizeForMatch(sentence);
+  const located: LocatedStructureComponent[] = [];
+  let searchFrom = 0;
+
+  for (const item of closeReading.trunk) {
+    const normalizedPart = normalizeForMatch(item.text);
+    let start = normalizedSentence.toLowerCase().indexOf(normalizedPart.toLowerCase(), searchFrom);
+    if (start === -1) start = normalizedSentence.toLowerCase().indexOf(normalizedPart.toLowerCase());
+    if (start === -1) return closeReading.highlights;
+    const end = start + normalizedPart.length;
+    searchFrom = end;
+    located.push({ role: item.role, text: sentence.slice(start, end), start, end });
+  }
+
+  const merged: LocatedStructureComponent[] = [];
+  located.forEach((component) => {
+    const previous = merged.at(-1);
+    if (previous?.role === 'predicate' && component.role === 'predicate') {
+      const separator = /^(?:n[’']t\b|'[a-z]+\b|’[a-z]+\b)/i.test(component.text) ? '' : ' ';
+      previous.text = `${previous.text}${separator}${component.text}`;
+      previous.end = component.end;
+    } else {
+      merged.push({ ...component });
+    }
+  });
+
+  const mainPredicate = merged.find((item) => item.role === 'predicate');
+  if (mainPredicate) {
+    const linkingPredicate = /^(?:am|is|are|was|were|be|been|being|seem(?:s|ed)?|become(?:s|came)?|remain(?:s|ed)?)\b/i
+      .test(mainPredicate.text.trim());
+    for (const component of merged) {
+      if (!['object', 'complement'].includes(component.role) || component.start <= mainPredicate.end) continue;
+      const gap = sentence.slice(mainPredicate.end, component.start);
+      const clauseMarker = /\b(?:that|whether|if|what|how|why|where|when|who(?:m|se)?|which)\b/i;
+      const marker = clauseMarker.exec(gap);
+      const componentStartsClause = new RegExp(`^${clauseMarker.source}`, 'i').test(component.text.trim());
+      if (!marker && !componentStartsClause) continue;
+
+      const clauseStart = componentStartsClause ? component.start : mainPredicate.end + marker!.index;
+      component.text = sentence.slice(clauseStart).replace(/[.!?]\s*$/, '');
+      component.start = clauseStart;
+      component.end = sentence.length;
+      if (linkingPredicate) component.role = 'complement';
+      component.label = component.role === 'complement' ? '表语从句（整体）' : '宾语从句（整体）';
+      break;
+    }
+  }
+
+  return merged;
+};
+
+const structureHighlights = buildStructureHighlights();
+const visibleTrunk = reportedQuoteAnalysis?.trunk ?? mergedTrunk;
+const structurePattern = reportedQuoteAnalysis?.pattern
+  ?? semanticAnalysis?.pattern
+  ?? closeReading?.structure.pattern;
+const fallbackStructureExplanation = (
+  closeReading?.structure.explanation
+    .replace(/^主干可先读作[“"].+?[”"]。?/, '')
+    .trim()
+  || closeReading?.structure.explanation
+);
+const structureExplanation = reportedQuoteAnalysis?.explanation
+  ?? semanticAnalysis?.explanation
+  ?? fallbackStructureExplanation;
 ---
 
 <div
   class:list={['sentence-note', closeReading && 'has-close-reading']}
   data-sentence-note={closeReading ? true : undefined}
+  data-note-number={number}
 >
   <span class="sentence-number" aria-hidden="true">{number}</span>
   <div class="sentence-content">
-    <div class="sentence-original">
+    <div
+      class="sentence-original"
+      role={sentence ? 'group' : undefined}
+      aria-label={sentence ? `${number}. ${sentence}` : undefined}
+    >
       {sentence ? (
-        <span class="sentence-text">
+        <span class="sentence-text" lang="en">
           {sentenceRender.map((group) => {
             const content = group.segments.map((segment) => segment.role ? (
               <span class={`grammar-role grammar-${segment.role}`}>{segment.text}</span>
@@ -652,24 +916,18 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
       )}
     </div>
 
-    {inlineGlossary && closeReading && (
-      <div class="inline-glossary-popover" id={glossaryId} role="status" aria-live="polite" aria-hidden="true" data-inline-glossary-popover>
-        <span class="inline-glossary-popover-head">
-          <strong class="inline-glossary-popover-term" data-inline-glossary-term></strong>
-          <span class="inline-glossary-popover-pos" data-inline-glossary-pos></span>
-        </span>
-        <span class="inline-glossary-popover-meaning" data-inline-glossary-meaning></span>
-      </div>
-    )}
-
     {closeReading && (
-      <div
-        class="close-reading-detail"
-        id={detailId}
-        aria-hidden="true"
-        data-close-reading-detail
-      >
-        <div class="close-reading-detail-inner">
+      <>
+        <div
+          class="close-reading-detail"
+          id={detailId}
+          aria-hidden="true"
+          lang="zh-CN"
+          data-close-reading-detail
+        >
+          <div class="close-reading-detail-inner" data-close-reading-detail-inner></div>
+        </div>
+        <template data-close-reading-template>
           <section class="close-reading-block trunk-block">
             <p class="close-reading-label"><span>01</span>先抓一句话主干</p>
             <div class="sentence-trunk" lang="en">
@@ -682,14 +940,38 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
             <p class="beginner-tip">先只读这些核心成分，再回到上方原句补上时间、原因、条件和修饰信息。</p>
           </section>
 
-          {closeReading.segments && closeReading.segments.length > 0 && (
+          {hasSegmentGuide && (
             <section class="close-reading-block segments-block">
-              <p class="close-reading-label"><span>02</span>中英意群对照</p>
-              <ol>
-                {closeReading.segments.map((segment) => (
-                  <li><span lang="en">{segment.source}</span><span lang="zh-CN">{segment.translation}</span></li>
-                ))}
-              </ol>
+              {isBlogExperience ? (
+                <>
+                  <p class="close-reading-label"><span>02</span>中英意群对照</p>
+                  <ol class="sense-group-list">
+                    {segmentGuide.map((segment, index) => (
+                      <li>
+                        <span class="sense-group-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                        <span class="sense-group-copy">
+                          <span lang="en">{segment.source.trim()}</span>
+                          <span lang="zh-CN">{segment.translation.trim()}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                  <p class="sense-group-tip">按编号依次读英文，再用下一行中文确认这一意群的意思。</p>
+                </>
+              ) : (
+                <>
+                  <p class="close-reading-label"><span>02</span>按意群停顿</p>
+                  <p class="sense-group-line" lang="en">
+                    {segmentGuide.map((segment, index) => (
+                      <>
+                        <span>{segment.source.trim()}</span>
+                        {index < segmentGuide.length - 1 && <i aria-hidden="true">/</i>}
+                      </>
+                    ))}
+                  </p>
+                  <p class="sense-group-tip">先按斜线自然停顿读一遍，再看下方整句翻译。</p>
+                </>
+              )}
             </section>
           )}
 
@@ -709,24 +991,24 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
 
           <section class="close-reading-block structure-block">
             <p class="close-reading-label"><span>{structureStep}</span>完整句子结构</p>
-            <p class="sentence-pattern">{closeReading.structure.pattern}</p>
-            <p lang="zh-CN">{closeReading.structure.explanation}</p>
+            <p class="sentence-pattern">{structurePattern}</p>
+            <p lang="zh-CN">{structureExplanation}</p>
             <div class="structure-rows">
-              {closeReading.highlights.map((item) => (
+              {structureHighlights.map((item) => (
                 <div class={`structure-row role-${item.role}`}>
-                  <span><i aria-hidden="true"></i>{roleLabels[item.role]}<small>{roleHelp[item.role]}</small></span>
+                  <span><i aria-hidden="true"></i>{item.label ?? roleLabels[item.role]}<small>{roleHelp[item.role]}</small></span>
                   <code lang="en">{item.text}</code>
                 </div>
               ))}
             </div>
             <ul class="role-legend" aria-label="句子成分颜色">
-              {[...new Set(closeReading.highlights.map((item) => item.role))].map((role) => (
+              {[...new Set(structureHighlights.map((item) => item.role))].map((role) => (
                 <li class={`role-${role}`}><span aria-hidden="true"></span>{roleLabels[role]}</li>
               ))}
             </ul>
           </section>
-        </div>
-      </div>
+        </template>
+      </>
     )}
   </div>
 </div>
@@ -751,57 +1033,65 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
   window.addEventListener('resize', closeActiveGlossary);
   window.addEventListener('scroll', closeActiveGlossary, { passive: true, capture: true });
 
-  document.querySelectorAll<HTMLElement>('[data-sentence-note]').forEach((note) => {
-    if (note.dataset.closeReadingBound === 'true') return;
+  const hydrateCloseReading = (note: HTMLElement) => {
+    const detailInner = note.querySelector<HTMLElement>('[data-close-reading-detail-inner]');
+    const template = note.querySelector<HTMLTemplateElement>('[data-close-reading-template]');
+    if (!detailInner || !template) return;
+    detailInner.append(template.content.cloneNode(true));
+    template.remove();
+  };
 
-    const toggle = note.querySelector<HTMLButtonElement>('[data-close-reading-toggle]');
-    const detail = note.querySelector<HTMLElement>('[data-close-reading-detail]');
-    const glossaryPopover = note.querySelector<HTMLElement>('[data-inline-glossary-popover]');
-    const glossaryTerm = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-term]');
-    const glossaryPos = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-pos]');
-    const glossaryMeaning = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-meaning]');
-    const glossaryButtons = note.querySelectorAll<HTMLButtonElement>('[data-glossary-term]');
-    if (!toggle || !detail) return;
-
-    note.dataset.closeReadingBound = 'true';
-    toggle.addEventListener('click', () => {
+  document.addEventListener('click', (event) => {
+    const target = event.target as Element;
+    const toggle = target.closest<HTMLButtonElement>('[data-close-reading-toggle]');
+    if (toggle) {
+      const note = toggle.closest<HTMLElement>('[data-sentence-note]');
+      const detail = note?.querySelector<HTMLElement>('[data-close-reading-detail]');
+      if (!note || !detail) return;
       closeActiveGlossary();
+      hydrateCloseReading(note);
       const open = !note.hasAttribute('data-open');
       note.toggleAttribute('data-open', open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? '收起精读' : '展开精读');
       detail.setAttribute('aria-hidden', String(!open));
-    });
-
-    if (glossaryPopover && glossaryTerm && glossaryPos && glossaryMeaning) {
-      glossaryButtons.forEach((button) => {
-        button.addEventListener('click', (event) => {
-          event.stopPropagation();
-          if (note.hasAttribute('data-open')) return;
-          const alreadyOpen = activeGlossaryButton === button;
-          if (alreadyOpen) {
-            closeActiveGlossary();
-            return;
-          }
-
-          closeActiveGlossary();
-          glossaryTerm.textContent = button.dataset.glossaryTerm ?? '';
-          glossaryPos.textContent = button.dataset.glossaryPos ?? '';
-          glossaryMeaning.textContent = button.dataset.glossaryMeaning ?? '';
-          glossaryPopover.setAttribute('aria-hidden', 'false');
-          button.setAttribute('aria-expanded', 'true');
-          activeGlossaryPopover = glossaryPopover;
-          activeGlossaryButton = button;
-          const original = note.querySelector<HTMLElement>('.sentence-original');
-          if (!original) return;
-          const buttonRect = button.getBoundingClientRect();
-          const originalRect = original.getBoundingClientRect();
-          const maxLeft = Math.max(8, original.clientWidth - glossaryPopover.offsetWidth - 8);
-          glossaryPopover.style.left = `${Math.min(Math.max(8, buttonRect.left - originalRect.left), maxLeft)}px`;
-          glossaryPopover.style.top = `${buttonRect.bottom - originalRect.top + 10}px`;
-        });
-      });
+      return;
     }
+
+    const button = target.closest<HTMLButtonElement>('[data-glossary-term]');
+    if (!button) return;
+    event.stopPropagation();
+    const note = button.closest<HTMLElement>('[data-sentence-note]');
+    if (!note || note.hasAttribute('data-open')) return;
+    if (activeGlossaryButton === button) {
+      closeActiveGlossary();
+      return;
+    }
+
+    const glossaryPopover = document.querySelector<HTMLElement>('[data-inline-glossary-popover]');
+    const glossaryTerm = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-term]');
+    const glossaryPos = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-pos]');
+    const glossaryMeaning = glossaryPopover?.querySelector<HTMLElement>('[data-inline-glossary-meaning]');
+    if (!glossaryPopover || !glossaryTerm || !glossaryPos || !glossaryMeaning) return;
+
+    closeActiveGlossary();
+    glossaryTerm.textContent = button.dataset.glossaryTerm ?? '';
+    glossaryPos.textContent = button.dataset.glossaryPos ?? '';
+    glossaryMeaning.textContent = button.dataset.glossaryMeaning ?? '';
+    glossaryPopover.setAttribute('aria-hidden', 'false');
+    button.setAttribute('aria-expanded', 'true');
+    activeGlossaryPopover = glossaryPopover;
+    activeGlossaryButton = button;
+
+    const buttonRect = button.getBoundingClientRect();
+    const maxLeft = Math.max(8, window.innerWidth - glossaryPopover.offsetWidth - 8);
+    const left = Math.min(Math.max(8, buttonRect.left), maxLeft);
+    const roomBelow = buttonRect.bottom + glossaryPopover.offsetHeight + 18 <= window.innerHeight;
+    const top = roomBelow
+      ? buttonRect.bottom + 10
+      : Math.max(8, buttonRect.top - glossaryPopover.offsetHeight - 10);
+    glossaryPopover.style.left = `${left}px`;
+    glossaryPopover.style.top = `${top}px`;
   });
 </script>
 
@@ -867,9 +1157,9 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     pointer-events: none;
   }
 
-  .inline-glossary-popover {
-    position: absolute;
-    z-index: 5;
+  :global(.inline-glossary-popover) {
+    position: fixed;
+    z-index: 120;
     display: grid;
     gap: 5px;
     width: max-content;
@@ -886,23 +1176,23 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     transition: opacity 120ms ease, transform 120ms ease;
   }
 
-  .inline-glossary-popover-head {
+  :global(.inline-glossary-popover-head) {
     display: flex;
     gap: 7px;
     align-items: baseline;
   }
 
-  .inline-glossary-popover[aria-hidden='true'] {
+  :global(.inline-glossary-popover[aria-hidden='true']) {
     opacity: 0;
     transform: translateY(-4px) scale(0.98);
   }
 
-  .inline-glossary-popover[aria-hidden='false'] {
+  :global(.inline-glossary-popover[aria-hidden='false']) {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
 
-  .inline-glossary-popover-term {
+  :global(.inline-glossary-popover-term) {
     color: #6a4d00;
     font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
     font-size: 0.98rem;
@@ -910,7 +1200,7 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     line-height: 1.35;
   }
 
-  .inline-glossary-popover-pos {
+  :global(.inline-glossary-popover-pos) {
     padding: 1px 5px;
     border-radius: 99px;
     color: #806a3e;
@@ -922,7 +1212,7 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     white-space: nowrap;
   }
 
-  .inline-glossary-popover-meaning {
+  :global(.inline-glossary-popover-meaning) {
     color: #5e5847;
     font-size: 0.78rem;
     line-height: 1.5;
@@ -1080,39 +1370,84 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     font-size: 0.78rem !important;
   }
 
-  .segments-block ol {
+  .sense-group-list {
     display: grid;
     gap: 7px;
     margin: 0;
     padding: 0;
     list-style: none;
-    counter-reset: sense-group;
   }
 
-  .segments-block li {
+  .sense-group-list li {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-    gap: 12px;
-    align-items: baseline;
-    padding: 8px 11px;
-    border-left: 3px solid #cad3cd;
-    border-radius: 0 6px 6px 0;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+    padding: 9px 11px 10px;
+    border: 1px solid #e1e5e2;
+    border-left: 3px solid #bdc9c1;
+    border-radius: 0 8px 8px 0;
     background: #fff;
-    counter-increment: sense-group;
   }
 
-  .segments-block li > span:first-child {
+  .sense-group-index {
+    padding-top: 3px;
+    color: #8a948e;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.62rem;
+    font-weight: 720;
+    letter-spacing: 0.04em;
+  }
+
+  .sense-group-copy {
+    display: grid;
+    gap: 3px;
+  }
+
+  .sense-group-copy > span:first-child {
     color: #27312b;
     font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.98rem;
+    line-height: 1.55;
   }
 
-  .segments-block li > span:last-child {
-    color: #646d68;
-    font-family: 'Inter Variable', Inter, sans-serif;
+  .sense-group-copy > span:last-child {
+    color: #68716c;
     font-size: 0.8rem;
     line-height: 1.55;
+  }
+
+  .sense-group-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 9px;
+    align-items: baseline;
+    margin: 0;
+    color: #27312b;
+    font-family: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;
+    font-size: 0.97rem;
+    line-height: 1.65;
+  }
+
+  .sense-group-line span {
+    padding: 4px 8px 5px;
+    border: 1px solid #e1e5e2;
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  .sense-group-line i {
+    color: #d9654b;
+    font-family: 'Inter Variable', Inter, sans-serif;
+    font-size: 0.82rem;
+    font-style: normal;
+    font-weight: 750;
+  }
+
+  .sense-group-tip {
+    margin-top: 9px !important;
+    color: #69716c !important;
+    font-size: 0.76rem !important;
   }
 
   .translation-block > p:last-child {
@@ -1290,7 +1625,6 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
 
     .vocabulary-block ul { grid-template-columns: 1fr; }
 
-    .segments-block li,
     .structure-row { grid-template-columns: 1fr; }
   }
 
@@ -1298,6 +1632,6 @@ const structureStep = closeReading?.segments?.length ? '05' : '04';
     .close-reading-mark,
     .close-reading-detail,
     .inline-glossary-term,
-    .inline-glossary-popover { transition: none; }
+    :global(.inline-glossary-popover) { transition: none; }
   }
 </style>

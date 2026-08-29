@@ -1,6 +1,7 @@
 ---
 import SentenceNote from './SentenceNote.astro';
 import ReadingQuestions from './ReadingQuestions.astro';
+import ReadingTimer from './ReadingTimer.astro';
 import type { CloseReading, InlineGlossary } from '../../types/closeReading';
 import type { ReadingQuestion } from '../../types/readingQuestion';
 
@@ -24,9 +25,10 @@ interface Props {
   passages: readonly Passage[];
   closeReadings?: Readonly<Record<string, CloseReading>>;
   inlineGlossary?: InlineGlossary;
+  experience?: 'blog' | 'game';
 }
 
-const { cloze, matching, passages, closeReadings, inlineGlossary } = Astro.props;
+const { cloze, matching, passages, closeReadings, inlineGlossary, experience = 'blog' } = Astro.props;
 const noteNumber = (prefix: string, index: number) =>
   `${prefix}${String(index + 1).padStart(2, '0')}`;
 const sharedGlossaryPhrases = inlineGlossary
@@ -45,6 +47,8 @@ const sharedGlossaryPhrases = inlineGlossary
 
 <h3>{cloze.title}</h3>
 
+{experience === 'blog' && <ReadingTimer timerId="cloze" label={cloze.title} />}
+
 {cloze.sentences.map((sentence, index) => (
   <SentenceNote
     number={noteNumber('C', index)}
@@ -52,12 +56,15 @@ const sharedGlossaryPhrases = inlineGlossary
     closeReading={closeReadings?.[noteNumber('C', index)]}
     {inlineGlossary}
     {sharedGlossaryPhrases}
+    {experience}
   />
 ))}
 
 <h2 id="paragraph-matching">Paragraph Matching</h2>
 
 <h3>{matching.title}</h3>
+
+{experience === 'blog' && <ReadingTimer timerId="matching" label={matching.title} />}
 
 {matching.paragraphs.map((paragraph) => (
   <>
@@ -69,6 +76,7 @@ const sharedGlossaryPhrases = inlineGlossary
         closeReading={closeReadings?.[noteNumber(`M-${paragraph.label}`, index)]}
         {inlineGlossary}
         {sharedGlossaryPhrases}
+        {experience}
       />
     ))}
   </>
@@ -79,6 +87,9 @@ const sharedGlossaryPhrases = inlineGlossary
 {passages.map((passage, passageIndex) => (
   <>
     <h3>{passage.title}</h3>
+    {experience === 'blog' && (
+      <ReadingTimer timerId={`passage-${passageIndex + 1}`} label={passage.title} />
+    )}
     {passage.sentences.map((sentence, sentenceIndex) => (
       <SentenceNote
         number={noteNumber(`R${passageIndex + 1}-`, sentenceIndex)}
@@ -86,6 +97,7 @@ const sharedGlossaryPhrases = inlineGlossary
         closeReading={closeReadings?.[noteNumber(`R${passageIndex + 1}-`, sentenceIndex)]}
         {inlineGlossary}
         {sharedGlossaryPhrases}
+        {experience}
       />
     ))}
     {passage.questions && passage.questions.length > 0 && (
@@ -93,6 +105,7 @@ const sharedGlossaryPhrases = inlineGlossary
         questions={passage.questions}
         {inlineGlossary}
         {sharedGlossaryPhrases}
+        {experience}
       />
     )}
   </>

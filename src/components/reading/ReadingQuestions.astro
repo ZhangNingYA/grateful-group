@@ -7,9 +7,10 @@ interface Props {
   questions: readonly ReadingQuestion[];
   inlineGlossary?: InlineGlossary;
   sharedGlossaryPhrases?: readonly { term: string; explanation: string }[];
+  experience?: 'blog' | 'game';
 }
 
-const { questions, inlineGlossary, sharedGlossaryPhrases = [] } = Astro.props;
+const { questions, inlineGlossary, sharedGlossaryPhrases = [], experience = 'blog' } = Astro.props;
 const firstQuestion = questions.at(0)?.number;
 const lastQuestion = questions.at(-1)?.number;
 const rangeLabel = firstQuestion === lastQuestion
@@ -35,6 +36,7 @@ const rangeLabel = firstQuestion === lastQuestion
           class="reading-question"
           data-reading-question
           data-answer={question.answer}
+          data-question-number={question.number}
         >
           <div class="reading-question-content">
             <SentenceNote
@@ -43,51 +45,54 @@ const rangeLabel = firstQuestion === lastQuestion
               closeReading={question.closeReading}
               {inlineGlossary}
               {sharedGlossaryPhrases}
+              {experience}
             />
 
-            <div class="reading-question-options" role="group" aria-label={`Question ${question.number} options`}>
-              {question.options.map((option) => (
+            <div class="reading-question-options" role="radiogroup" aria-label={`Question ${question.number} options`}>
+              {question.options.map((option, optionIndex) => (
                 <div class="reading-question-option-item">
                   <button
                     class="reading-question-option"
                     type="button"
-                    aria-pressed="false"
-                    aria-controls={`${feedbackId}-${option.key}`}
+                    role="radio"
+                    aria-checked="false"
+                    aria-controls={feedbackId}
+                    tabindex={optionIndex === 0 ? 0 : -1}
                     data-question-option={option.key}
+                    data-option-explanation={option.explanation}
                     data-correct={option.key === question.answer ? 'true' : 'false'}
                   >
                     <span>{option.key}</span>
                     <span lang="en">{option.text}</span>
                     <i aria-hidden="true"></i>
                   </button>
-                  <div
-                    class="question-option-feedback"
-                    id={`${feedbackId}-${option.key}`}
-                    aria-live="polite"
-                    aria-hidden="true"
-                    data-option-feedback={option.key}
-                    data-option-correct={option.key === question.answer ? 'true' : 'false'}
-                  >
-                    <div class="question-option-feedback-inner">
-                      <div class="question-feedback-summary">
-                        <strong data-question-result>{option.key === question.answer ? 'Correct' : 'Incorrect'}</strong>
-                        <span>Correct answer · {question.answer}</span>
-                      </div>
-                      <p class="question-option-explanation" lang="zh-CN">{option.explanation}</p>
-                      <div class="question-solution-grid">
-                        <section>
-                          <span>Evidence</span>
-                          <blockquote lang="en">{question.evidence}</blockquote>
-                        </section>
-                        <section>
-                          <span>Reasoning</span>
-                          <p lang="zh-CN">{question.analysis}</p>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               ))}
+              <div
+                class="question-option-feedback"
+                id={feedbackId}
+                aria-live="polite"
+                aria-hidden="true"
+                data-option-feedback
+              >
+                <div class="question-option-feedback-inner">
+                  <div class="question-feedback-summary">
+                    <strong data-question-result></strong>
+                    <span>Correct answer · {question.answer}</span>
+                  </div>
+                  <p class="question-option-explanation" lang="zh-CN" data-question-explanation></p>
+                  <div class="question-solution-grid">
+                    <section>
+                      <span>Evidence</span>
+                      <blockquote lang="en">{question.evidence}</blockquote>
+                    </section>
+                    <section>
+                      <span>Reasoning</span>
+                      <p lang="zh-CN">{question.analysis}</p>
+                    </section>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </li>
@@ -97,33 +102,49 @@ const rangeLabel = firstQuestion === lastQuestion
 </section>
 
 <script>
-  document.querySelectorAll<HTMLElement>('[data-reading-question]').forEach((question) => {
-    if (question.dataset.questionBound === 'true') return;
-
-    const answer = question.dataset.answer;
+  const selectReadingOption = (option: HTMLButtonElement) => {
+    const question = option.closest<HTMLElement>('[data-reading-question]');
+    if (!question) return;
+    const selected = option.dataset.questionOption;
+    const isCorrect = selected === question.dataset.answer;
     const options = Array.from(question.querySelectorAll<HTMLButtonElement>('[data-question-option]'));
-    const feedbacks = Array.from(question.querySelectorAll<HTMLElement>('[data-option-feedback]'));
+    const feedback = question.querySelector<HTMLElement>('[data-option-feedback]');
+    const result = feedback?.querySelector<HTMLElement>('[data-question-result]');
+    const explanation = feedback?.querySelector<HTMLElement>('[data-question-explanation]');
 
-    question.dataset.questionBound = 'true';
-
-    options.forEach((option) => {
-      option.addEventListener('click', () => {
-        const selected = option.dataset.questionOption;
-        const isCorrect = selected === answer;
-
-        question.setAttribute('data-answered', 'true');
-        question.setAttribute('data-selected-correct', String(isCorrect));
-        options.forEach((candidate) => {
-          const active = candidate === option;
-          candidate.classList.toggle('is-selected', active);
-          candidate.setAttribute('aria-pressed', String(active));
-        });
-        feedbacks.forEach((feedback) => {
-          const active = feedback.dataset.optionFeedback === selected;
-          feedback.setAttribute('aria-hidden', String(!active));
-        });
-      });
+    question.setAttribute('data-answered', 'true');
+    question.setAttribute('data-selected-correct', String(isCorrect));
+    options.forEach((candidate) => {
+      const active = candidate === option;
+      candidate.classList.toggle('is-selected', active);
+      candidate.setAttribute('aria-checked', String(active));
+      candidate.tabIndex = active ? 0 : -1;
     });
+    if (!feedback || !result || !explanation) return;
+    feedback.dataset.optionCorrect = String(isCorrect);
+    result.textContent = isCorrect ? 'Correct' : 'Incorrect';
+    explanation.textContent = option.dataset.optionExplanation ?? '';
+    option.closest('.reading-question-option-item')?.append(feedback);
+    feedback.setAttribute('aria-hidden', 'false');
+  };
+
+  document.addEventListener('click', (event) => {
+    const option = (event.target as Element).closest<HTMLButtonElement>('[data-question-option]');
+    if (option) selectReadingOption(option);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    const option = (event.target as Element).closest<HTMLButtonElement>('[data-question-option]');
+    if (!option || !['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft'].includes(event.key)) return;
+    const question = option.closest<HTMLElement>('[data-reading-question]');
+    const options = Array.from(question?.querySelectorAll<HTMLButtonElement>('[data-question-option]') ?? []);
+    const currentIndex = options.indexOf(option);
+    if (currentIndex < 0 || options.length === 0) return;
+    event.preventDefault();
+    const direction = event.key === 'ArrowDown' || event.key === 'ArrowRight' ? 1 : -1;
+    const nextOption = options[(currentIndex + direction + options.length) % options.length];
+    nextOption.focus();
+    nextOption.click();
   });
 </script>
 

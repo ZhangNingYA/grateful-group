@@ -8,6 +8,8 @@ export type SentenceRole =
 export interface CloseReadingHighlight {
   role: SentenceRole;
   text: string;
+  /** Optional learner-facing label for a clause kept as one component. */
+  label?: string;
 }
 
 export interface CloseReadingVocabulary {
@@ -30,6 +32,13 @@ export interface CloseReadingSegment {
   translation: string;
 }
 
+export interface CloseReadingAnalysis {
+  pattern: string;
+  explanation: string;
+  highlights: CloseReadingHighlight[];
+  trunk?: CloseReadingHighlight[];
+}
+
 export interface CloseReading {
   translation: string;
   vocabulary: CloseReadingVocabulary[];
@@ -40,4 +49,6 @@ export interface CloseReading {
   highlights: CloseReadingHighlight[];
   trunk?: CloseReadingHighlight[];
   segments?: CloseReadingSegment[];
+  /** Blog-only semantic analysis, separate from the inline colour ranges. */
+  analysis?: CloseReadingAnalysis;
 }
