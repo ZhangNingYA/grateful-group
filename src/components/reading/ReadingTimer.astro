@@ -8,6 +8,25 @@ interface Props {
 }
 
 const { timerId, label, wordCount: providedWordCount } = Astro.props;
+const initialWordCount = typeof providedWordCount === 'number' && Number.isFinite(providedWordCount)
+  ? Math.max(0, providedWordCount)
+  : null;
+const recommendationSeconds = (wordCount: number, wordsPerMinute: number) => Math.max(
+  30,
+  Math.ceil((wordCount / wordsPerMinute) * 4) * 15,
+);
+const formatGuideDuration = (seconds: number) => {
+  const minutes = Math.floor(seconds / 60);
+  const remainder = seconds % 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainder).padStart(2, '0')}`;
+};
+const nativeGuideInitial = initialWordCount === null
+  ? '—'
+  : formatGuideDuration(recommendationSeconds(initialWordCount, 200));
+const learnerGuideInitial = initialWordCount === null
+  ? '—'
+  : formatGuideDuration(recommendationSeconds(initialWordCount, 100));
+const initialDifficultyScore = 3;
 ---
 
 <section
@@ -29,16 +48,22 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
 
   <div class="reading-timer-guides" aria-label="推荐阅读时间">
     <div>
-      <span>美国成年人参考</span>
-      <strong data-timer-native-guide>—</strong>
-      <small>约 200 WPM</small>
+      <span>难度评分</span>
+      <strong data-timer-difficulty>{initialDifficultyScore.toFixed(1)} / 5</strong>
+      <small>词汇与句法估算</small>
     </div>
     <div>
-      <span>普通学习者建议</span>
-      <strong data-timer-learner-guide>—</strong>
-      <small>约 100 WPM</small>
+      <span>美国成年人推荐用时</span>
+      <strong data-timer-native-guide>{nativeGuideInitial}</strong>
+      <small>通读理解参考</small>
+    </div>
+    <div>
+      <span>普通学习者推荐用时</span>
+      <strong data-timer-learner-guide>{learnerGuideInitial}</strong>
+      <small>通读理解参考</small>
     </div>
   </div>
+  <p class="reading-timer-method">推荐用时会结合篇幅、平均句长和长词比例估算，用于首次通读，不是官方考试限时。</p>
 
   <div class="reading-timer-main">
     <div class="reading-timer-clock">
@@ -131,7 +156,7 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
     Math.ceil((wordCount / wordsPerMinute) * 4) * 15,
   );
 
-  const timerWordCount = (root: HTMLElement) => {
+  const timerSentences = (root: HTMLElement) => {
     const sentences: string[] = [];
     let sibling = root.nextElementSibling;
     while (sibling && !sibling.matches('[data-reading-timer], h2')) {
@@ -147,7 +172,29 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
       });
       sibling = sibling.nextElementSibling;
     }
-    return sentences.join(' ').match(/[A-Za-z]+(?:['’][A-Za-z]+)?/g)?.length ?? 0;
+    return sentences;
+  };
+
+  const countWords = (sentences: string[]) => sentences.join(' ').match(
+    /[A-Za-z]+(?:['’][A-Za-z]+)?/g,
+  )?.length ?? 0;
+
+  const estimateDifficulty = (sentences: string[], wordCount: number) => {
+    if (wordCount <= 0 || sentences.length === 0) return 3;
+    const words = sentences.join(' ').match(/[A-Za-z]+(?:['’][A-Za-z]+)?/g) ?? [];
+    const averageSentenceLength = wordCount / sentences.length;
+    const longWordRatio = words.filter((word) => word.length >= 8).length / Math.max(1, words.length);
+    const joined = sentences.join(' ');
+    const clauseMarkers = joined.match(/\b(?:although|because|while|which|that|when|where|who|whose|if|unless|since|as|even|than)\b/gi)?.length ?? 0;
+    const sentenceLoad = Math.min(1, Math.max(0, (averageSentenceLength - 12) / 22));
+    const vocabularyLoad = Math.min(1, Math.max(0, (longWordRatio - 0.08) / 0.22));
+    const clauseLoad = Math.min(1, clauseMarkers / Math.max(1, sentences.length * 1.2));
+    const score = 2.4 + sentenceLoad * 0.9 + vocabularyLoad * 1.1 + clauseLoad * 0.6;
+    return Math.round(Math.min(5, Math.max(1, score)) * 10) / 10;
+  };
+
+  const timerWordCount = (root: HTMLElement) => {
+    return countWords(timerSentences(root));
   };
 
   const hideFloatingBars = () => {
@@ -162,18 +209,23 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
     root.dataset.timerReady = 'true';
     const timerId = root.dataset.timerId ?? 'reading';
     const storageKey = `reading-timer:v1:${window.location.pathname}:${timerId}`;
+    const sentences = timerSentences(root);
+    const providedWordCount = Number(root.dataset.timerWordCountProvided);
     const wordCount = Number.isFinite(providedWordCount)
-      ? Math.max(0, providedWordCount ?? 0)
+      ? Math.max(0, providedWordCount)
       : timerWordCount(root);
+    const difficultyScore = estimateDifficulty(sentences, wordCount);
+    const difficultyFactor = 1 + (difficultyScore - 3) * 0.1;
     // These are practical CET-6 "first pass" benchmarks rather than
     // speed-reading targets: a fluent native reader around 200 WPM and a
     // typical Chinese English learner around 100 WPM.  Keeping the result
     // rounded to 15-second increments makes the guide easy to use while
     // preserving a 30-second floor for very short cloze passages.
-    const nativeGuideMs = recommendationSeconds(wordCount, 200) * 1000;
-    const learnerGuideMs = recommendationSeconds(wordCount, 100) * 1000;
+    const nativeGuideMs = recommendationSeconds(wordCount, 200 / difficultyFactor) * 1000;
+    const learnerGuideMs = recommendationSeconds(wordCount, 100 / difficultyFactor) * 1000;
 
     const wordCountNode = root.querySelector<HTMLElement>('[data-timer-word-count]');
+    const difficultyNode = root.querySelector<HTMLElement>('[data-timer-difficulty]');
     const nativeGuideNode = root.querySelector<HTMLElement>('[data-timer-native-guide]');
     const learnerGuideNode = root.querySelector<HTMLElement>('[data-timer-learner-guide]');
     const displayNode = root.querySelector<HTMLTimeElement>('[data-timer-display]');
@@ -203,6 +255,7 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
     ) return;
 
     if (wordCountNode) wordCountNode.textContent = String(wordCount);
+    if (difficultyNode) difficultyNode.textContent = `${difficultyScore.toFixed(1)} / 5`;
     if (nativeGuideNode) nativeGuideNode.textContent = formatDuration(nativeGuideMs);
     if (learnerGuideNode) learnerGuideNode.textContent = formatDuration(learnerGuideMs);
 
@@ -450,7 +503,7 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
 
   .reading-timer-guides {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1px;
     border-bottom: 1px solid #e4e9e5;
     background: #e4e9e5;
@@ -483,6 +536,14 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
   .reading-timer-guides small {
     color: #98a099;
     font-size: 0.6rem;
+  }
+
+  .reading-timer-method {
+    margin: 0;
+    padding: 8px 20px 0;
+    color: #89938c;
+    font-size: 0.62rem;
+    line-height: 1.5;
   }
 
   .reading-timer-main {
@@ -747,6 +808,7 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
     .reading-timer { margin: 16px 0 26px; border-radius: 14px; }
     .reading-timer-head { padding: 15px 16px 13px; }
     .reading-timer-head strong { white-space: normal; }
+    .reading-timer-guides { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .reading-timer-guides > div { padding: 11px 14px; }
     .reading-timer-guides strong { font-size: 0.95rem; }
     .reading-timer-main {
@@ -784,6 +846,7 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
 
   @media (max-width: 420px) {
     .reading-timer-guides { grid-template-columns: 1fr; }
+    .reading-timer-method { padding-right: 16px; padding-left: 16px; }
     .reading-timer-actions { grid-template-columns: 1fr 1fr; }
   }
 
