@@ -78,6 +78,21 @@ const { timerId, label } = Astro.props;
     <span><small>已记录</small><strong><b data-timer-count>0</b> 次</strong></span>
     <p data-timer-message>完成后会保存在这台设备上，方便比较每次阅读速度。</p>
   </div>
+
+  <div class="reading-timer-floating" data-timer-floating aria-hidden="true">
+    <span class="reading-timer-floating-pulse" aria-hidden="true"></span>
+    <span class="reading-timer-floating-label" data-floating-label>{label}</span>
+    <time data-floating-display datetime="PT0S">00:00</time>
+    <span class="reading-timer-floating-state" data-floating-state>准备开始</span>
+    <button type="button" data-floating-action="toggle" aria-label="暂停或继续计时">
+      <Play class="floating-play-icon" size={14} stroke-width={2.2} aria-hidden="true" />
+      <Pause class="floating-pause-icon" size={14} stroke-width={2.2} aria-hidden="true" />
+    </button>
+    <button type="button" data-floating-action="finish" aria-label="完成并记录" title="完成并记录">
+      <Check size={14} stroke-width={2.2} aria-hidden="true" />
+    </button>
+    <button type="button" data-floating-action="expand" aria-label="展开对应计时卡" title="展开对应计时卡">↗</button>
+  </div>
 </section>
 
 <script>
@@ -133,6 +148,14 @@ const { timerId, label } = Astro.props;
     return sentences.join(' ').match(/[A-Za-z]+(?:['’][A-Za-z]+)?/g)?.length ?? 0;
   };
 
+  const hideFloatingBars = () => {
+    document.querySelectorAll<HTMLElement>('[data-timer-floating]').forEach((bar) => {
+      bar.setAttribute('aria-hidden', 'true');
+    });
+  };
+
+  let floatingShownOnLoad = false;
+
   timerRoots.forEach((root) => {
     root.dataset.timerReady = 'true';
     const timerId = root.dataset.timerId ?? 'reading';
@@ -156,11 +179,18 @@ const { timerId, label } = Astro.props;
     const bestNode = root.querySelector<HTMLElement>('[data-timer-best]');
     const countNode = root.querySelector<HTMLElement>('[data-timer-count]');
     const messageNode = root.querySelector<HTMLElement>('[data-timer-message]');
+    const floatingBar = root.querySelector<HTMLElement>('[data-timer-floating]');
+    const floatingDisplay = root.querySelector<HTMLElement>('[data-floating-display]');
+    const floatingState = root.querySelector<HTMLElement>('[data-floating-state]');
+    const floatingToggle = root.querySelector<HTMLButtonElement>('[data-floating-action="toggle"]');
+    const floatingFinish = root.querySelector<HTMLButtonElement>('[data-floating-action="finish"]');
+    const floatingExpand = root.querySelector<HTMLButtonElement>('[data-floating-action="expand"]');
 
     if (
       !displayNode || !statusNode || !toggleButton || !toggleLabel || !finishButton
       || !restartButton || !clearButton || !progressNode || !lastNode || !bestNode
-      || !countNode || !messageNode
+      || !countNode || !messageNode || !floatingBar || !floatingDisplay || !floatingState
+      || !floatingToggle || !floatingFinish || !floatingExpand
     ) return;
 
     if (wordCountNode) wordCountNode.textContent = String(wordCount);
@@ -213,6 +243,13 @@ const { timerId, label } = Astro.props;
       progressNode.style.width = `${progress * 100}%`;
       root.toggleAttribute('data-over-guide', current > learnerGuideMs);
 
+      floatingDisplay.textContent = formatDuration(current);
+      floatingDisplay.setAttribute('datetime', `PT${Math.floor(current / 1000)}S`);
+      floatingState.textContent = statusMessage;
+      floatingToggle.setAttribute('aria-label', running ? '暂停计时' : '继续计时');
+      floatingFinish.disabled = finishButton.disabled;
+      floatingBar.toggleAttribute('data-floating-over-guide', current > learnerGuideMs);
+
       lastNode.textContent = records[0] ? formatDuration(records[0]) : '—';
       bestNode.textContent = records.length ? formatDuration(Math.min(...records)) : '—';
       countNode.textContent = String(records.length);
@@ -253,6 +290,7 @@ const { timerId, label } = Astro.props;
     timerControllers.push(controller);
 
     const start = () => {
+      hideFloatingBars();
       timerControllers.forEach((item) => {
         if (item !== controller) item.pause('已自动暂停');
       });
@@ -263,11 +301,26 @@ const { timerId, label } = Astro.props;
       startInterval();
       persist();
       render();
+      floatingBar.setAttribute('aria-hidden', 'false');
     };
 
     toggleButton.addEventListener('click', () => {
       if (running) pause();
       else start();
+    });
+
+    floatingToggle.addEventListener('click', () => {
+      if (running) pause();
+      else start();
+    });
+
+    floatingFinish.addEventListener('click', () => finishButton.click());
+    floatingExpand.addEventListener('click', () => {
+      root.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      root.animate(
+        [{ boxShadow: '0 0 0 0 rgba(47,111,88,0)' }, { boxShadow: '0 0 0 5px rgba(47,111,88,.16)' }, { boxShadow: '0 0 0 0 rgba(47,111,88,0)' }],
+        { duration: 700, easing: 'ease-out' },
+      );
     });
 
     finishButton.addEventListener('click', () => {
@@ -311,9 +364,15 @@ const { timerId, label } = Astro.props;
         // Nothing else is required when local storage is unavailable.
       }
       render();
+      floatingBar.setAttribute('aria-hidden', 'true');
     });
 
-    if (running) startInterval();
+    if (running || (!floatingShownOnLoad && elapsedMs > 0)) {
+      hideFloatingBars();
+      floatingBar.setAttribute('aria-hidden', 'false');
+      floatingShownOnLoad = true;
+      if (running) startInterval();
+    }
     render();
   });
 
@@ -568,6 +627,113 @@ const { timerId, label } = Astro.props;
     text-align: right;
   }
 
+  .reading-timer-floating {
+    position: fixed;
+    right: max(20px, env(safe-area-inset-right));
+    bottom: max(20px, env(safe-area-inset-bottom));
+    z-index: 120;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    max-width: min(520px, calc(100vw - 40px));
+    padding: 8px 9px 8px 13px;
+    border: 1px solid rgba(207, 220, 212, 0.96);
+    border-radius: 13px;
+    color: #24332a;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 12px 34px rgba(28, 48, 37, 0.16), 0 2px 8px rgba(28, 48, 37, 0.08);
+    backdrop-filter: blur(16px) saturate(1.12);
+    -webkit-backdrop-filter: blur(16px) saturate(1.12);
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .reading-timer-floating[aria-hidden='true'] {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  .reading-timer-floating-pulse {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #aab5ae;
+  }
+
+  [data-timer-state='running'] .reading-timer-floating-pulse {
+    background: #3c9b72;
+    box-shadow: 0 0 0 4px rgba(60, 155, 114, 0.13);
+  }
+
+  .reading-timer-floating-label {
+    min-width: 0;
+    overflow: hidden;
+    color: #68736c;
+    font-size: 0.65rem;
+    font-weight: 650;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .reading-timer-floating time {
+    color: #17231c;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 720;
+    letter-spacing: -0.025em;
+    white-space: nowrap;
+  }
+
+  .reading-timer-floating-state {
+    max-width: 92px;
+    overflow: hidden;
+    color: #87918a;
+    font-size: 0.61rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .reading-timer-floating button {
+    display: grid;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 auto;
+    padding: 0;
+    place-items: center;
+    border: 1px solid #dce4de;
+    border-radius: 8px;
+    color: #4b5c51;
+    background: #f8faf8;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease, transform 150ms ease;
+  }
+
+  .reading-timer-floating button:hover:not(:disabled) {
+    border-color: #b8c9bc;
+    color: #244e3d;
+    background: #edf5f0;
+    transform: translateY(-1px);
+  }
+
+  .reading-timer-floating button:focus-visible {
+    outline: 3px solid rgba(47, 111, 88, 0.18);
+    outline-offset: 2px;
+  }
+
+  .reading-timer-floating button:disabled { cursor: not-allowed; opacity: 0.36; }
+  .floating-pause-icon { display: none; }
+  [data-timer-state='running'] .floating-play-icon { display: none; }
+  [data-timer-state='running'] .floating-pause-icon { display: block; }
+  [data-floating-over-guide] .reading-timer-floating-pulse { background: #d28b55; }
+
   @media (max-width: 640px) {
     .reading-timer { margin: 16px 0 26px; border-radius: 14px; }
     .reading-timer-head { padding: 15px 16px 13px; }
@@ -594,6 +760,17 @@ const { timerId, label } = Astro.props;
       grid-column: 1 / -1;
       text-align: left;
     }
+
+    .reading-timer-floating {
+      right: max(12px, env(safe-area-inset-right));
+      bottom: max(12px, env(safe-area-inset-bottom));
+      left: max(12px, env(safe-area-inset-left));
+      max-width: none;
+      padding: 8px 9px 8px 11px;
+    }
+
+    .reading-timer-floating-label { flex: 1 1 auto; }
+    .reading-timer-floating-state { display: none; }
   }
 
   @media (max-width: 420px) {
@@ -603,6 +780,8 @@ const { timerId, label } = Astro.props;
 
   @media (prefers-reduced-motion: reduce) {
     .reading-timer-actions button,
-    .reading-timer-progress span { transition: none; }
+    .reading-timer-progress span,
+    .reading-timer-floating,
+    .reading-timer-floating button { transition: none; }
   }
 </style>
