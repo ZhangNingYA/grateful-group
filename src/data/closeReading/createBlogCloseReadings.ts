@@ -63,8 +63,8 @@ const normalizeAnalysis = (
       .filter((item) => item.role !== 'adverbial')
       .map(({ role, text, label }) => ({ role, text, ...(label ? { label } : {}) }));
   return {
-    pattern: override?.pattern ?? derivePattern(highlights),
-    explanation: override?.explanation ?? deriveExplanation(highlights),
+    pattern: override?.pattern ?? generated.pattern ?? derivePattern(highlights),
+    explanation: override?.explanation ?? generated.explanation ?? deriveExplanation(highlights),
     highlights,
     trunk,
   };

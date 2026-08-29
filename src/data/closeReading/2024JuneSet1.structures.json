@@ -1,0 +1,3809 @@
+{
+  "C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "quite remarkable"
+      },
+      {
+        "role": "object",
+        "text": "how different genres of music can spark unique feelings, emotions, and memories",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "quite remarkable"
+      },
+      {
+        "role": "object",
+        "text": "how different genres of music can spark unique feelings, emotions, and memories",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C02": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Studies"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "that music can reduce stress and anxiety before surgeries and we are all attracted toward our own unique life soundtrack",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Studies"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "that music can reduce stress and anxiety before surgeries and we are all attracted toward our own unique life soundtrack",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C03": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you're looking to alleviate stress",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might want"
+      },
+      {
+        "role": "complement",
+        "text": "to give classical music a try"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might want"
+      },
+      {
+        "role": "complement",
+        "text": "to give classical music a try"
+      }
+    ]
+  },
+  "C04": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The sounds"
+      },
+      {
+        "role": "predicate",
+        "text": "produce"
+      },
+      {
+        "role": "object",
+        "text": "a calming effect"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The sounds"
+      },
+      {
+        "role": "predicate",
+        "text": "produce"
+      },
+      {
+        "role": "object",
+        "text": "a calming effect"
+      }
+    ]
+  },
+  "C05": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can also turn"
+      },
+      {
+        "role": "object",
+        "text": "the body's stress response"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can also turn"
+      },
+      {
+        "role": "object",
+        "text": "the body's stress response"
+      }
+    ]
+  },
+  "C06": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "a pleasant mood can lead to clarity in a person's thinking",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "a pleasant mood can lead to clarity in a person's thinking",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C07": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Although there are many great composers of classical music like Bach, Beethoven and Handel",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "none"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to have the same health effects as Mozart's does"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "none"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to have the same health effects as Mozart's does"
+      }
+    ]
+  },
+  "C08": {
+    "pattern": "主语成分（整体） + 谓语 + 宾语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "listening to Mozart",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "can increase"
+      },
+      {
+        "role": "object",
+        "text": "brain wave activity"
+      },
+      {
+        "role": "predicate",
+        "text": "improve"
+      },
+      {
+        "role": "object",
+        "text": "cognitive function"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "listening to Mozart",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "can increase"
+      },
+      {
+        "role": "object",
+        "text": "brain wave activity"
+      },
+      {
+        "role": "predicate",
+        "text": "improve"
+      },
+      {
+        "role": "object",
+        "text": "cognitive function"
+      }
+    ]
+  },
+  "C09": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Another study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that the distinctive features of Mozart's music trigger parts of the brain that are responsible for high-level mental functions",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Another study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that the distinctive features of Mozart's music trigger parts of the brain that are responsible for high-level mental functions",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C10": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Even maternity wards"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "Mozart"
+      },
+      {
+        "role": "complement",
+        "text": "to help newborn babies adapt to life outside of the mother's belly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Even maternity wards"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "Mozart"
+      },
+      {
+        "role": "complement",
+        "text": "to help newborn babies adapt to life outside of the mother's belly"
+      }
+    ]
+  },
+  "C11": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "has been found"
+      },
+      {
+        "role": "object",
+        "text": "that listening to classical music significantly reduces a person's blood pressure",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "has been found"
+      },
+      {
+        "role": "object",
+        "text": "that listening to classical music significantly reduces a person's blood pressure",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C12": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      },
+      {
+        "role": "object",
+        "text": "that the calming sounds of classical music may help your heart recover from stress",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      },
+      {
+        "role": "object",
+        "text": "that the calming sounds of classical music may help your heart recover from stress",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Classical music"
+      },
+      {
+        "role": "predicate",
+        "text": "can also be"
+      },
+      {
+        "role": "complement",
+        "text": "a great tool"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Classical music"
+      },
+      {
+        "role": "predicate",
+        "text": "can also be"
+      },
+      {
+        "role": "complement",
+        "text": "a great tool"
+      }
+    ]
+  },
+  "C14": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that students who had trouble sleeping slept better while they were listening to classical music",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that students who had trouble sleeping slept better while they were listening to classical music",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C15": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Whether classical music is something that you listen to on a regular basis or not",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "wouldn't hurt"
+      },
+      {
+        "role": "complement",
+        "text": "to take time out of your day to listen to music that you find soothing"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "wouldn't hurt"
+      },
+      {
+        "role": "complement",
+        "text": "to take time out of your day to listen to music that you find soothing"
+      }
+    ]
+  },
+  "C16": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "surprised at how good it makes you feel"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "surprised at how good it makes you feel"
+      }
+    ]
+  },
+  "M-A01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "exists"
+      },
+      {
+        "role": "object",
+        "text": "a rather curious local landmark—a large white oak that is almost universally stated to own itself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "exists"
+      },
+      {
+        "role": "object",
+        "text": "a rather curious local landmark—a large white oak that is almost universally stated to own itself"
+      }
+    ]
+  },
+  "M-A02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is considered"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most famous trees in the world"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is considered"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most famous trees in the world"
+      }
+    ]
+  },
+  "M-A03": {
+    "pattern": "省略式回答 / 标题式片段",
+    "explanation": "这是省略式或标题式表达，不强行补出主谓宾，按完整意群理解。",
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "So how did this treecome to own itself and the land around it",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "complement",
+        "text": "So how did this treecome to own itself and the land around it",
+        "label": "省略式表达（整体）"
+      }
+    ]
+  },
+  "M-B01": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a Georgian"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "a liking"
+      },
+      {
+        "role": "complement",
+        "text": "to the said tree"
+      },
+      {
+        "role": "predicate",
+        "text": "endeavored"
+      },
+      {
+        "role": "complement",
+        "text": "to protect it from any danger"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a Georgian"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "a liking"
+      },
+      {
+        "role": "complement",
+        "text": "to the said tree"
+      },
+      {
+        "role": "predicate",
+        "text": "endeavored"
+      },
+      {
+        "role": "complement",
+        "text": "to protect it from any danger"
+      }
+    ]
+  },
+  "M-B02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the earliest documented account"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an anonymously written front page article in the Athens Weekly Banner published on August 12,1890"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the earliest documented account"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an anonymously written front page article in the Athens Weekly Banner published on August 12,1890"
+      }
+    ]
+  },
+  "M-B03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "states"
+      },
+      {
+        "role": "object",
+        "text": "Col"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "states"
+      },
+      {
+        "role": "object",
+        "text": "Col"
+      }
+    ]
+  },
+  "M-B04": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体） + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "had watched"
+      },
+      {
+        "role": "object",
+        "text": "the tree grow from his childhood",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "grew"
+      },
+      {
+        "role": "complement",
+        "text": "to love it almost as he would a human"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "had watched"
+      },
+      {
+        "role": "object",
+        "text": "the tree grow from his childhood",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "grew"
+      },
+      {
+        "role": "complement",
+        "text": "to love it almost as he would a human"
+      }
+    ]
+  },
+  "M-B05": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Its luxuriant leaves"
+      },
+      {
+        "role": "predicate",
+        "text": "had often protected"
+      },
+      {
+        "role": "object",
+        "text": "him"
+      },
+      {
+        "role": "complement",
+        "text": "from the heavy rains"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "many a time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Its luxuriant leaves"
+      },
+      {
+        "role": "predicate",
+        "text": "had often protected"
+      },
+      {
+        "role": "object",
+        "text": "him"
+      },
+      {
+        "role": "complement",
+        "text": "from the heavy rains"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "many a time"
+      }
+    ]
+  },
+  "M-B06": {
+    "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "watched"
+      },
+      {
+        "role": "object",
+        "text": "its growth"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "was pained"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "watched"
+      },
+      {
+        "role": "object",
+        "text": "its growth"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "was pained"
+      }
+    ]
+  },
+  "M-C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "transferred"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree itself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "transferred"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree itself"
+      }
+    ]
+  },
+  "M-C02": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "read"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "read"
+      }
+    ]
+  },
+  "M-D01": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      }
+    ]
+  },
+  "M-D02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "started"
+      },
+      {
+        "role": "complement",
+        "text": "showing signs of its slow death"
+      },
+      {
+        "role": "complement",
+        "text": "with little that could be done about it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "started"
+      },
+      {
+        "role": "complement",
+        "text": "showing signs of its slow death"
+      },
+      {
+        "role": "complement",
+        "text": "with little that could be done about it"
+      }
+    ]
+  },
+  "M-D03": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Father time comes for us all eventually, even our often long lived, tall and leafy fellow custodians(看管者) of Earth"
+      },
+      {
+        "role": "predicate",
+        "text": "comes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Father time comes for us all eventually, even our often long lived, tall and leafy fellow custodians(看管者) of Earth"
+      },
+      {
+        "role": "predicate",
+        "text": "comes"
+      }
+    ]
+  },
+  "M-D04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "rumor"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "as a result of a severe windstorm"
+      },
+      {
+        "role": "complement",
+        "text": "via having previously died"
+      },
+      {
+        "role": "subject",
+        "text": "its roots"
+      },
+      {
+        "role": "predicate",
+        "text": "rotted"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "rumor"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "as a result of a severe windstorm"
+      },
+      {
+        "role": "complement",
+        "text": "via having previously died"
+      },
+      {
+        "role": "subject",
+        "text": "its roots"
+      },
+      {
+        "role": "predicate",
+        "text": "rotted"
+      }
+    ]
+  },
+  "M-E01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "members"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree"
+      },
+      {
+        "role": "complement",
+        "text": "before its unfortunate death"
+      },
+      {
+        "role": "predicate",
+        "text": "tracked"
+      },
+      {
+        "role": "object",
+        "text": "a small tree grown from a nut taken from the original tree"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "members"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree"
+      },
+      {
+        "role": "complement",
+        "text": "before its unfortunate death"
+      },
+      {
+        "role": "predicate",
+        "text": "tracked"
+      },
+      {
+        "role": "object",
+        "text": "a small tree grown from a nut taken from the original tree"
+      }
+    ]
+  },
+  "M-E02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "that"
+      },
+      {
+        "role": "complement",
+        "text": "on October 9,1946"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "that"
+      },
+      {
+        "role": "complement",
+        "text": "on October 9,1946"
+      }
+    ]
+  },
+  "M-E03": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "an official ceremony"
+      },
+      {
+        "role": "predicate",
+        "text": "was held"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "an official ceremony"
+      },
+      {
+        "role": "predicate",
+        "text": "was held"
+      }
+    ]
+  },
+  "M-F01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This new tree"
+      },
+      {
+        "role": "predicate",
+        "text": "became known"
+      },
+      {
+        "role": "complement",
+        "text": "as The Son of the Tree That Owns Itself"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was assumed"
+      },
+      {
+        "role": "object",
+        "text": "that, as the original tree's heir, it naturally inherited the land it stood on",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This new tree"
+      },
+      {
+        "role": "predicate",
+        "text": "became known"
+      },
+      {
+        "role": "complement",
+        "text": "as The Son of the Tree That Owns Itself"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was assumed"
+      },
+      {
+        "role": "object",
+        "text": "that, as the original tree's heir, it naturally inherited the land it stood on",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-F02": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "as people taking a nut from it to grow elsewhere",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a certainty"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a certainty"
+      }
+    ]
+  },
+  "M-F03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "all good"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "all good"
+      }
+    ]
+  },
+  "M-F04": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The Son"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The Son"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      }
+    ]
+  },
+  "M-G01": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Thisall"
+      },
+      {
+        "role": "predicate",
+        "text": "brings"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "to whether Jackson ever actually gave legal ownership of the tree to itself in the first place and whether such a deed is legally binding"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Thisall"
+      },
+      {
+        "role": "predicate",
+        "text": "brings"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "to whether Jackson ever actually gave legal ownership of the tree to itself in the first place and whether such a deed is legally binding"
+      }
+    ]
+  },
+  "M-H01": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "to begin with",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "Jackson only spent about three years of his life in Athens, starting at the age of 43 from 1829 to 1832, sort of dismissing the idea that he loved the tree from spending time under it as a child and watching it grow, and then worrying about what would happen to it after he died",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "Jackson only spent about three years of his life in Athens, starting at the age of 43 from 1829 to 1832, sort of dismissing the idea that he loved the tree from spending time under it as a child and watching it grow, and then worrying about what would happen to it after he died",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-H02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "an extensive search"
+      },
+      {
+        "role": "predicate",
+        "text": "does not seem"
+      },
+      {
+        "role": "complement",
+        "text": "to indicate Jackson ever owned the land the tree sits on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "an extensive search"
+      },
+      {
+        "role": "predicate",
+        "text": "does not seem"
+      },
+      {
+        "role": "complement",
+        "text": "to indicate Jackson ever owned the land the tree sits on"
+      }
+    ]
+  },
+  "M-I01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "did live"
+      },
+      {
+        "role": "complement",
+        "text": "on a lot of land"
+      },
+      {
+        "role": "complement",
+        "text": "for those three years"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "owned"
+      },
+      {
+        "role": "object",
+        "text": "that land"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "did live"
+      },
+      {
+        "role": "complement",
+        "text": "on a lot of land"
+      },
+      {
+        "role": "complement",
+        "text": "for those three years"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "owned"
+      },
+      {
+        "role": "object",
+        "text": "that land"
+      }
+    ]
+  },
+  "M-I02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the neighboring land Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "lived"
+      },
+      {
+        "role": "complement",
+        "text": "among others"
+      },
+      {
+        "role": "predicate",
+        "text": "was sold"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the neighboring land Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "lived"
+      },
+      {
+        "role": "complement",
+        "text": "among others"
+      },
+      {
+        "role": "predicate",
+        "text": "was sold"
+      }
+    ]
+  },
+  "M-I03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Wardwas"
+      },
+      {
+        "role": "predicate",
+        "text": "required"
+      },
+      {
+        "role": "complement",
+        "text": "to pay Jackson a sum of $1,200(about $31,000 today)"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Wardwas"
+      },
+      {
+        "role": "predicate",
+        "text": "required"
+      },
+      {
+        "role": "complement",
+        "text": "to pay Jackson a sum of $1,200(about $31,000 today)"
+      }
+    ]
+  },
+  "M-I04": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "whether he ever owned the neighboring lot or was simply allowed to use it while he allegedly worked at the University",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "never owned"
+      },
+      {
+        "role": "object",
+        "text": "the lot the tree grew on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "never owned"
+      },
+      {
+        "role": "object",
+        "text": "the lot the tree grew on"
+      }
+    ]
+  },
+  "M-J01": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "After Professor Ward purchased the land",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "purchased"
+      },
+      {
+        "role": "object",
+        "text": "a 655 acre parcel"
+      },
+      {
+        "role": "predicate",
+        "text": "moved"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "purchased"
+      },
+      {
+        "role": "object",
+        "text": "a 655 acre parcel"
+      },
+      {
+        "role": "predicate",
+        "text": "moved"
+      }
+    ]
+  },
+  "M-J02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "seemed"
+      },
+      {
+        "role": "complement",
+        "text": "to have come into financial difficulties"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "his little plantation seized by the Clarke County Sheriff's office"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "seemed"
+      },
+      {
+        "role": "complement",
+        "text": "to have come into financial difficulties"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "his little plantation seized by the Clarke County Sheriff's office"
+      }
+    ]
+  },
+  "M-J03": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "would have sold"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "it takenas well",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "would have sold"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "it takenas well",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-K01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "would have known"
+      },
+      {
+        "role": "object",
+        "text": "property taxes needed to be paid on the deeded land for the tree to be truly secure in its future"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "would have known"
+      },
+      {
+        "role": "object",
+        "text": "property taxes needed to be paid on the deeded land for the tree to be truly secure in its future"
+      }
+    ]
+  },
+  "M-K02": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "no account"
+      },
+      {
+        "role": "predicate",
+        "text": "indicates"
+      },
+      {
+        "role": "object",
+        "text": "any trust or the like was set up to facilitate this",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "no account"
+      },
+      {
+        "role": "predicate",
+        "text": "indicates"
+      },
+      {
+        "role": "object",
+        "text": "any trust or the like was set up to facilitate this",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-L01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "no hard evidence such a deed ever existed, despite the fact that deed records in Athens go back many decades before Jackson's death in 1876 and that it was supposed to have existed in 1890 in the archives according to the original anonymous news reporter who claims to have seen it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "no hard evidence such a deed ever existed, despite the fact that deed records in Athens go back many decades before Jackson's death in 1876 and that it was supposed to have existed in 1890 in the archives according to the original anonymous news reporter who claims to have seen it"
+      }
+    ]
+  },
+  "M-M01": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As you might imagine from all of this",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "few"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      },
+      {
+        "role": "object",
+        "text": "credit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "few"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      },
+      {
+        "role": "object",
+        "text": "credit"
+      }
+    ]
+  },
+  "M-M02": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "all"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "all"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      }
+    ]
+  },
+  "M-N01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is speculated"
+      },
+      {
+        "role": "complement",
+        "text": "to have been invented by the imagination of the said anonymous author at the Athens Weekly Banner in the aforementioned 1890 front page article titled “Deeded to Itself”, which by the way contained several elements that are much more easily proved to be false"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is speculated"
+      },
+      {
+        "role": "complement",
+        "text": "to have been invented by the imagination of the said anonymous author at the Athens Weekly Banner in the aforementioned 1890 front page article titled “Deeded to Itself”, which by the way contained several elements that are much more easily proved to be false"
+      }
+    ]
+  },
+  "M-N02": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s speculated"
+      },
+      {
+        "role": "object",
+        "text": "perhaps it was a 19th century version of a click-bait thought exercise on whether it would be legal for someone to deed such a non-conscious living thing to itselfor not",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s speculated"
+      },
+      {
+        "role": "object",
+        "text": "perhaps it was a 19th century version of a click-bait thought exercise on whether it would be legal for someone to deed such a non-conscious living thing to itselfor not",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-O01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the case, the next known instance of the Tree That Owns Itselfbeing mentioned"
+      },
+      {
+        "role": "predicate",
+        "text": "wasn't"
+      },
+      {
+        "role": "complement",
+        "text": "until 1901"
+      },
+      {
+        "role": "complement",
+        "text": "in the Centennial Edition of that same paper"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the case, the next known instance of the Tree That Owns Itselfbeing mentioned"
+      },
+      {
+        "role": "predicate",
+        "text": "wasn't"
+      },
+      {
+        "role": "complement",
+        "text": "until 1901"
+      },
+      {
+        "role": "complement",
+        "text": "in the Centennial Edition of that same paper"
+      }
+    ]
+  },
+  "M-O02": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "featured"
+      },
+      {
+        "role": "object",
+        "text": "another account"
+      },
+      {
+        "role": "predicate",
+        "text": "reworded"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "featured"
+      },
+      {
+        "role": "object",
+        "text": "another account"
+      },
+      {
+        "role": "predicate",
+        "text": "reworded"
+      }
+    ]
+  },
+  "M-O03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The next account"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "in 1906"
+      },
+      {
+        "role": "complement",
+        "text": "again in the Athens Weekly Banner"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The next account"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "in 1906"
+      },
+      {
+        "role": "complement",
+        "text": "again in the Athens Weekly Banner"
+      }
+    ]
+  },
+  "R1-01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "irrefutable"
+      },
+      {
+        "role": "object",
+        "text": "that employees know the difference between right and wrong",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "irrefutable"
+      },
+      {
+        "role": "object",
+        "text": "that employees know the difference between right and wrong",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-02": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "more employees"
+      },
+      {
+        "role": "predicate",
+        "text": "intervene"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "more employees"
+      },
+      {
+        "role": "predicate",
+        "text": "intervene"
+      }
+    ]
+  },
+  "R1-03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "a number of factors that influence whether people intervene"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "a number of factors that influence whether people intervene"
+      }
+    ]
+  },
+  "R1-04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to be able to see a risky situation beginning to unfold"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to be able to see a risky situation beginning to unfold"
+      }
+    ]
+  },
+  "R1-05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the company's culture"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "to make them feel safe to speak up"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the company's culture"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "to make them feel safe to speak up"
+      }
+    ]
+  },
+  "R1-06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to have the communication skills to say something effectively"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to have the communication skills to say something effectively"
+      }
+    ]
+  },
+  "R1-07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a growing problem off the job"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a growing problem off the job"
+      }
+    ]
+  },
+  "R1-08": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "witness"
+      },
+      {
+        "role": "object",
+        "text": "things"
+      },
+      {
+        "role": "complement",
+        "text": "on the street"
+      },
+      {
+        "role": "predicate",
+        "text": "choose"
+      },
+      {
+        "role": "complement",
+        "text": "to stand idly by"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "witness"
+      },
+      {
+        "role": "object",
+        "text": "things"
+      },
+      {
+        "role": "complement",
+        "text": "on the street"
+      },
+      {
+        "role": "predicate",
+        "text": "choose"
+      },
+      {
+        "role": "complement",
+        "text": "to stand idly by"
+      }
+    ]
+  },
+  "R1-09": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the more people"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to help the victim"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the more people"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to help the victim"
+      }
+    ]
+  },
+  "R1-10": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The psychology"
+      },
+      {
+        "role": "predicate",
+        "text": "is called"
+      },
+      {
+        "role": "complement",
+        "text": "diffusion of responsibility"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The psychology"
+      },
+      {
+        "role": "predicate",
+        "text": "is called"
+      },
+      {
+        "role": "complement",
+        "text": "diffusion of responsibility"
+      }
+    ]
+  },
+  "R1-11": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the larger the crowd"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      },
+      {
+        "role": "object",
+        "text": "that someone else will take care of it—meaning no one effectively intervenes or acts in a moment of need",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the larger the crowd"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      },
+      {
+        "role": "object",
+        "text": "that someone else will take care of it—meaning no one effectively intervenes or acts in a moment of need",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This crowd mentality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "strong enough for people to evade their known responsibilities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This crowd mentality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "strong enough for people to evade their known responsibilities"
+      }
+    ]
+  },
+  "R1-13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "frontline workers who don't make safety interventions in the workplace"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "frontline workers who don't make safety interventions in the workplace"
+      }
+    ]
+  },
+  "R1-14": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "instances where supervisors do not intervene either"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "instances where supervisors do not intervene either"
+      }
+    ]
+  },
+  "R1-15": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When a group of employees sees unsafe behavior not being addressed at a leadership level",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "the precedent that this is how these situations should be addressed, thus defining the safety culture for everyone"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "the precedent that this is how these situations should be addressed, thus defining the safety culture for everyone"
+      }
+    ]
+  },
+  "R1-16": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "happens"
+      },
+      {
+        "role": "object",
+        "text": "less than half of the time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "happens"
+      },
+      {
+        "role": "object",
+        "text": "less than half of the time"
+      }
+    ]
+  },
+  "R1-17": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Fear"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the ultimate factor"
+      },
+      {
+        "role": "complement",
+        "text": "in not intervening"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Fear"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the ultimate factor"
+      },
+      {
+        "role": "complement",
+        "text": "in not intervening"
+      }
+    ]
+  },
+  "R1-18": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a fear of penalty"
+      },
+      {
+        "role": "complement",
+        "text": "a fear that they'll have to do more work if they intervene"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a fear of penalty"
+      },
+      {
+        "role": "complement",
+        "text": "a fear that they'll have to do more work if they intervene"
+      }
+    ]
+  },
+  "R1-19": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to prefer to defer that action to someone else for all future situations"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to prefer to defer that action to someone else for all future situations"
+      }
+    ]
+  },
+  "R1-20": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "competent workers"
+      },
+      {
+        "role": "predicate",
+        "text": "must be appointed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "competent workers"
+      },
+      {
+        "role": "predicate",
+        "text": "must be appointed"
+      }
+    ]
+  },
+  "R1-21": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Part"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to intervene when workers perform a taskwithoutthe proper equipment or if the conditions are unsafe"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Part"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to intervene when workers perform a taskwithoutthe proper equipment or if the conditions are unsafe"
+      }
+    ]
+  },
+  "R1-22": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Competentworkers"
+      },
+      {
+        "role": "predicate",
+        "text": "are alsorequired"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Competentworkers"
+      },
+      {
+        "role": "predicate",
+        "text": "are alsorequired"
+      }
+    ]
+  },
+  "R1-23": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "play"
+      },
+      {
+        "role": "object",
+        "text": "a critical role"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "play"
+      },
+      {
+        "role": "object",
+        "text": "a critical role"
+      }
+    ]
+  },
+  "R1-24": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Even if a competent person isn't required",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "object",
+        "text": "a broad set of skills"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "object",
+        "text": "a broad set of skills"
+      }
+    ]
+  },
+  "R1-25": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "important"
+      },
+      {
+        "role": "complement",
+        "text": "to educate everyone within the organization that they are obliged to intervene if they witness a possible unsafe act"
+      },
+      {
+        "role": "object",
+        "text": "whether you're adesignated competent person, a supervisoror a frontline worker",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "important"
+      },
+      {
+        "role": "complement",
+        "text": "to educate everyone within the organization that they are obliged to intervene if they witness a possible unsafe act"
+      },
+      {
+        "role": "object",
+        "text": "whether you're adesignated competent person, a supervisoror a frontline worker",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The term “environmentalist”"
+      },
+      {
+        "role": "predicate",
+        "text": "can mean"
+      },
+      {
+        "role": "object",
+        "text": "different things"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The term “environmentalist”"
+      },
+      {
+        "role": "predicate",
+        "text": "can mean"
+      },
+      {
+        "role": "object",
+        "text": "different things"
+      }
+    ]
+  },
+  "R2-02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "used"
+      },
+      {
+        "role": "complement",
+        "text": "to refer to people trying to protect wildlife and natural ecosystems"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "used"
+      },
+      {
+        "role": "complement",
+        "text": "to refer to people trying to protect wildlife and natural ecosystems"
+      }
+    ]
+  },
+  "R2-03": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the term"
+      },
+      {
+        "role": "predicate",
+        "text": "has evolved"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the term"
+      },
+      {
+        "role": "predicate",
+        "text": "has evolved"
+      }
+    ]
+  },
+  "R2-04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The distinction"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the cause of a split within the scientific community about nuclear energy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The distinction"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the cause of a split within the scientific community about nuclear energy"
+      }
+    ]
+  },
+  "R2-05": {
+    "pattern": "地点状语前置倒装：谓语 + 主语",
+    "explanation": "地点状语位于句首引起倒装；还原后主干是后面的名词短语 + are。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "purists who believe nuclear power isn't worth the risk and the exclusive solution to the climate crisis is renewable energy"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "purists who believe nuclear power isn't worth the risk and the exclusive solution to the climate crisis is renewable energy"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "R2-06": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体） + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The opposing side"
+      },
+      {
+        "role": "predicate",
+        "text": "agrees"
+      },
+      {
+        "role": "object",
+        "text": "that renewables are crucial",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "society needs an amount of power available to meet consumers'basic demands when the sun isn't shining and the wind isn't blowing",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The opposing side"
+      },
+      {
+        "role": "predicate",
+        "text": "agrees"
+      },
+      {
+        "role": "object",
+        "text": "that renewables are crucial",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "society needs an amount of power available to meet consumers'basic demands when the sun isn't shining and the wind isn't blowing",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a natural option, especially where hydroelectric capacity is limited"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a natural option, especially where hydroelectric capacity is limited"
+      }
+    ]
+  },
+  "R2-08": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Leon Clarke"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "an uncritical supporter of nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "it's a valuable option to have if we're serious about reaching carbon neutrality",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Leon Clarke"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "an uncritical supporter of nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "it's a valuable option to have if we're serious about reaching carbon neutrality",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-09": {
+    "pattern": "主语 + 谓语 + 直接引语（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "“Core to all of this is the degree to which you think we can actually meet climate goals with 100% renewables,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "“Core to all of this is the degree to which you think we can actually meet climate goals with 100% renewables,”",
+        "label": "直接引语（整体）"
+      }
+    ]
+  },
+  "R2-10": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you don't believe we can do it, and you care about the climate",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "are forced"
+      },
+      {
+        "role": "complement",
+        "text": "to think about something like nuclear"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "are forced"
+      },
+      {
+        "role": "complement",
+        "text": "to think about something like nuclear"
+      }
+    ]
+  },
+  "R2-11": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The achievability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "similarly contentious"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The achievability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "similarly contentious"
+      }
+    ]
+  },
+  "R2-12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      },
+      {
+        "role": "complement",
+        "text": "“100% renewable” for years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      },
+      {
+        "role": "complement",
+        "text": "“100% renewable” for years"
+      }
+    ]
+  },
+  "R2-13": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "these cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "small populations"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "these cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "small populations"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      }
+    ]
+  },
+  "R2-14": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "countries"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "object",
+        "text": "thanks to extraordinary hydroelectric capabilities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "countries"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "object",
+        "text": "thanks to extraordinary hydroelectric capabilities"
+      }
+    ]
+  },
+  "R2-15": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Germany"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      },
+      {
+        "role": "complement",
+        "text": "as the best case study for a large, industrialized country pushing into green energy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Germany"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      },
+      {
+        "role": "complement",
+        "text": "as the best case study for a large, industrialized country pushing into green energy"
+      }
+    ]
+  },
+  "R2-16": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Chancellor Angela Merkel"
+      },
+      {
+        "role": "predicate",
+        "text": "announced"
+      },
+      {
+        "role": "object",
+        "text": "Energiewende, an energy transition that would phase out nuclear and coal while phasing in renewables"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Chancellor Angela Merkel"
+      },
+      {
+        "role": "predicate",
+        "text": "announced"
+      },
+      {
+        "role": "object",
+        "text": "Energiewende, an energy transition that would phase out nuclear and coal while phasing in renewables"
+      }
+    ]
+  },
+  "R2-17": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Wind"
+      },
+      {
+        "role": "predicate",
+        "text": "has increased"
+      },
+      {
+        "role": "complement",
+        "text": "since 2010"
+      },
+      {
+        "role": "subject",
+        "text": "renewables"
+      },
+      {
+        "role": "predicate",
+        "text": "provided"
+      },
+      {
+        "role": "object",
+        "text": "46% of the country's electricity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Wind"
+      },
+      {
+        "role": "predicate",
+        "text": "has increased"
+      },
+      {
+        "role": "complement",
+        "text": "since 2010"
+      },
+      {
+        "role": "subject",
+        "text": "renewables"
+      },
+      {
+        "role": "predicate",
+        "text": "provided"
+      },
+      {
+        "role": "object",
+        "text": "46% of the country's electricity"
+      }
+    ]
+  },
+  "R2-18": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "progress"
+      },
+      {
+        "role": "predicate",
+        "text": "has halted"
+      },
+      {
+        "role": "complement",
+        "text": "in recent years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "progress"
+      },
+      {
+        "role": "predicate",
+        "text": "has halted"
+      },
+      {
+        "role": "complement",
+        "text": "in recent years"
+      }
+    ]
+  },
+  "R2-19": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The instability"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't just mean"
+      },
+      {
+        "role": "object",
+        "text": "energy is often not produced at night, but also that solar and wind can overwhelm the grid during the day, forcing utilities to pay customers to use their electricity",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The instability"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't just mean"
+      },
+      {
+        "role": "object",
+        "text": "energy is often not produced at night, but also that solar and wind can overwhelm the grid during the day, forcing utilities to pay customers to use their electricity",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-20": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many factories"
+      },
+      {
+        "role": "predicate",
+        "text": "run"
+      },
+      {
+        "role": "complement",
+        "text": "on coal and gas"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many factories"
+      },
+      {
+        "role": "predicate",
+        "text": "run"
+      },
+      {
+        "role": "complement",
+        "text": "on coal and gas"
+      }
+    ]
+  },
+  "R2-21": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The political limit"
+      },
+      {
+        "role": "predicate",
+        "text": "has also been reached"
+      },
+      {
+        "role": "complement",
+        "text": "in some places"
+      },
+      {
+        "role": "complement",
+        "text": "with citizens meeting the construction of new wind turbines with loud protests"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The political limit"
+      },
+      {
+        "role": "predicate",
+        "text": "has also been reached"
+      },
+      {
+        "role": "complement",
+        "text": "in some places"
+      },
+      {
+        "role": "complement",
+        "text": "with citizens meeting the construction of new wind turbines with loud protests"
+      }
+    ]
+  },
+  "R2-22": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The result"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that Germany's greenhouse gas emissions have fallen by around 11.5% since 2010—slower than the EU average of 13.5%",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The result"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that Germany's greenhouse gas emissions have fallen by around 11.5% since 2010—slower than the EU average of 13.5%",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  }
+}

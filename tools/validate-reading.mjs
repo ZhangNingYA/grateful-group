@@ -245,6 +245,16 @@ const blogSpecifications = [
     reading: path.join(projectRoot, `src/data/reading/${date}-cet6-reading-${set}.json`),
     semantic: date === '2015-12',
   }))),
+  ...['2024-06', '2024-12'].flatMap((date) => [1, 2, 3].map((set) => ({
+    paper: `${date} CET6 Set ${set}`,
+    module: path.join(
+      projectRoot,
+      `src/data/closeReading/2024${date === '2024-06' ? 'June' : 'December'}Set${set}.ts`,
+    ),
+    exportName: `cet6CloseReadings${date.replace('-', '')}Set${set}`,
+    reading: path.join(projectRoot, `src/data/reading/${date}-cet6-reading-${set}.json`),
+    semantic: true,
+  }))),
   ...[1, 2, 3].map((set) => ({
     paper: `2025-06 CET6 Set ${set}`,
     module: path.join(projectRoot, `src/data/closeReading/2025JuneSet${set}.ts`),

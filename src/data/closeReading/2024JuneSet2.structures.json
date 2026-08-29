@@ -1,0 +1,4567 @@
+{
+  "C01": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The Sun"
+      },
+      {
+        "role": "predicate",
+        "text": "Is"
+      },
+      {
+        "role": "object",
+        "text": "a Star is a truly lovely story of love, romance, fate, and destiny",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The Sun"
+      },
+      {
+        "role": "predicate",
+        "text": "Is"
+      },
+      {
+        "role": "object",
+        "text": "a Star is a truly lovely story of love, romance, fate, and destiny",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Natasha"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a Jamaican-born immigrant living illegally in America"
+      },
+      {
+        "role": "complement",
+        "text": "not by choice exactly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Natasha"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a Jamaican-born immigrant living illegally in America"
+      },
+      {
+        "role": "complement",
+        "text": "not by choice exactly"
+      }
+    ]
+  },
+  "C03": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Her parents"
+      },
+      {
+        "role": "predicate",
+        "text": "brought"
+      },
+      {
+        "role": "object",
+        "text": "her"
+      },
+      {
+        "role": "predicate",
+        "text": "created"
+      },
+      {
+        "role": "object",
+        "text": "the situation she strives to be out of"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Her parents"
+      },
+      {
+        "role": "predicate",
+        "text": "brought"
+      },
+      {
+        "role": "object",
+        "text": "her"
+      },
+      {
+        "role": "predicate",
+        "text": "created"
+      },
+      {
+        "role": "object",
+        "text": "the situation she strives to be out of"
+      }
+    ]
+  },
+  "C04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Daniel"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an American born of Korean immigrants"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Daniel"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an American born of Korean immigrants"
+      }
+    ]
+  },
+  "C05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "believes"
+      },
+      {
+        "role": "complement",
+        "text": "in true love"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "believes"
+      },
+      {
+        "role": "complement",
+        "text": "in true love"
+      }
+    ]
+  },
+  "C06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Daniel"
+      },
+      {
+        "role": "predicate",
+        "text": "meet"
+      },
+      {
+        "role": "complement",
+        "text": "by coincidence"
+      },
+      {
+        "role": "complement",
+        "text": "on the streets of New York"
+      },
+      {
+        "role": "complement",
+        "text": "on the day that she is to be deported"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Daniel"
+      },
+      {
+        "role": "predicate",
+        "text": "meet"
+      },
+      {
+        "role": "complement",
+        "text": "by coincidence"
+      },
+      {
+        "role": "complement",
+        "text": "on the streets of New York"
+      },
+      {
+        "role": "complement",
+        "text": "on the day that she is to be deported"
+      }
+    ]
+  },
+  "C07": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't tll"
+      },
+      {
+        "role": "object",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "does allow"
+      },
+      {
+        "role": "object",
+        "text": "him to keep her company while he tries to get her to fall in love with him over the course of the day",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't tll"
+      },
+      {
+        "role": "object",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "does allow"
+      },
+      {
+        "role": "object",
+        "text": "him to keep her company while he tries to get her to fall in love with him over the course of the day",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C08": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Natasha"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "me"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Natasha"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "me"
+      }
+    ]
+  },
+  "C09": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "her so similar to myself",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "her so similar to myself",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C10": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "scientifically-minded, practical, somewhat cynical, and always skeptical"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "scientifically-minded, practical, somewhat cynical, and always skeptical"
+      }
+    ]
+  },
+  "C11": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Her obsession"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "infectious"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "adore"
+      },
+      {
+        "role": "object",
+        "text": "Daniel seeing that too",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Her obsession"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "infectious"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "adore"
+      },
+      {
+        "role": "object",
+        "text": "Daniel seeing that too",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Daniel"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "charming and passionate"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "a way with words that even cracks Natasha's tough outer shell"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Daniel"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "charming and passionate"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "a way with words that even cracks Natasha's tough outer shell"
+      }
+    ]
+  },
+  "C13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "fell"
+      },
+      {
+        "role": "complement",
+        "text": "in love with both of them"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "fell"
+      },
+      {
+        "role": "complement",
+        "text": "in love with both of them"
+      }
+    ]
+  },
+  "C14": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "used"
+      },
+      {
+        "role": "complement",
+        "text": "to find romance stories to always be cheap or laughable"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "used"
+      },
+      {
+        "role": "complement",
+        "text": "to find romance stories to always be cheap or laughable"
+      }
+    ]
+  },
+  "C15": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "object",
+        "text": "I can see the value in escaping into a story of pure optimism",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "object",
+        "text": "I can see the value in escaping into a story of pure optimism",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C16": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "got lost"
+      },
+      {
+        "role": "complement",
+        "text": "in The Sun"
+      },
+      {
+        "role": "predicate",
+        "text": "finished"
+      },
+      {
+        "role": "object",
+        "text": "it cover to cover in a weekend",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "got lost"
+      },
+      {
+        "role": "complement",
+        "text": "in The Sun"
+      },
+      {
+        "role": "predicate",
+        "text": "finished"
+      },
+      {
+        "role": "object",
+        "text": "it cover to cover in a weekend",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "C17": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "couldn't wait"
+      },
+      {
+        "role": "complement",
+        "text": "to get to what I hoped would be a happy ending"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "couldn't wait"
+      },
+      {
+        "role": "complement",
+        "text": "to get to what I hoped would be a happy ending"
+      }
+    ]
+  },
+  "C18": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "nice"
+      },
+      {
+        "role": "complement",
+        "text": "to give in to magic"
+      },
+      {
+        "role": "complement",
+        "text": "in a while"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "nice"
+      },
+      {
+        "role": "complement",
+        "text": "to give in to magic"
+      },
+      {
+        "role": "complement",
+        "text": "in a while"
+      }
+    ]
+  },
+  "C19": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "the magic found between two people who just have that special something"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "the magic found between two people who just have that special something"
+      }
+    ]
+  },
+  "C20": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "chemistry"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "chemistry"
+      }
+    ]
+  },
+  "M-A01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "behavioral change"
+      },
+      {
+        "role": "predicate",
+        "text": "involves"
+      },
+      {
+        "role": "object",
+        "text": "physical changes in the brain"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "behavioral change"
+      },
+      {
+        "role": "predicate",
+        "text": "involves"
+      },
+      {
+        "role": "object",
+        "text": "physical changes in the brain"
+      }
+    ]
+  },
+  "M-A02": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "that when it comes to the duration of making a new behavior a deep-rooted habit there is not a simple answer",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "that when it comes to the duration of making a new behavior a deep-rooted habit there is not a simple answer",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-A03": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "more than an overnight effort"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "more than an overnight effort"
+      }
+    ]
+  },
+  "M-A04": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Once we've successfully made that change",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "complement",
+        "text": "to make other adjustments to our lives to ensure that we continue to maintain it, which is often a whole other challenge in itself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "complement",
+        "text": "to make other adjustments to our lives to ensure that we continue to maintain it, which is often a whole other challenge in itself"
+      }
+    ]
+  },
+  "M-B01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "success"
+      },
+      {
+        "role": "predicate",
+        "text": "occurs"
+      },
+      {
+        "role": "complement",
+        "text": "without the introduction of some sort of system"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "success"
+      },
+      {
+        "role": "predicate",
+        "text": "occurs"
+      },
+      {
+        "role": "complement",
+        "text": "without the introduction of some sort of system"
+      }
+    ]
+  },
+  "M-B02": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When there isn't the right framework in place",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "face"
+      },
+      {
+        "role": "object",
+        "text": "a greater likelihood ofderailing our hard-earned progress"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "face"
+      },
+      {
+        "role": "object",
+        "text": "a greater likelihood ofderailing our hard-earned progress"
+      }
+    ]
+  },
+  "M-B03": {
+    "pattern": "状语从句（整体） + 主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "To ensure success in changing and maintaining a behavior",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "should stay"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "should stay"
+      }
+    ]
+  },
+  "M-C01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "one"
+      },
+      {
+        "role": "predicate",
+        "text": "is relying"
+      },
+      {
+        "role": "complement",
+        "text": "on willpower"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "one"
+      },
+      {
+        "role": "predicate",
+        "text": "is relying"
+      },
+      {
+        "role": "complement",
+        "text": "on willpower"
+      }
+    ]
+  },
+  "M-C02": {
+    "pattern": "省略式回答 / 祈使句",
+    "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      },
+      {
+        "role": "complement",
+        "text": "about the last time you vowed to resist a temptation"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      },
+      {
+        "role": "complement",
+        "text": "about the last time you vowed to resist a temptation"
+      }
+    ]
+  },
+  "M-C03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "didn't want"
+      },
+      {
+        "role": "complement",
+        "text": "to check your phone every 15 minutes"
+      },
+      {
+        "role": "predicate",
+        "text": "were"
+      },
+      {
+        "role": "complement",
+        "text": "determined not to reach for a chocolate bar at 3 p.m."
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "didn't want"
+      },
+      {
+        "role": "complement",
+        "text": "to check your phone every 15 minutes"
+      },
+      {
+        "role": "predicate",
+        "text": "were"
+      },
+      {
+        "role": "complement",
+        "text": "determined not to reach for a chocolate bar at 3 p.m."
+      }
+    ]
+  },
+  "M-C04": {
+    "pattern": "省略式回答 / 祈使句",
+    "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      },
+      {
+        "role": "complement",
+        "text": "about how difficult it must have been not to glance at your phone when it was within reach, ornot to walk to the vending machine when your afternoon slump hit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      },
+      {
+        "role": "complement",
+        "text": "about how difficult it must have been not to glance at your phone when it was within reach, ornot to walk to the vending machine when your afternoon slump hit"
+      }
+    ]
+  },
+  "M-D01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The research"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "inconclusive"
+      },
+      {
+        "role": "subject",
+        "text": "experts"
+      },
+      {
+        "role": "predicate",
+        "text": "do generally agree"
+      },
+      {
+        "role": "object",
+        "text": "that you can't change and sustain a habit if you rely on your willpower alone",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The research"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "inconclusive"
+      },
+      {
+        "role": "subject",
+        "text": "experts"
+      },
+      {
+        "role": "predicate",
+        "text": "do generally agree"
+      },
+      {
+        "role": "object",
+        "text": "that you can't change and sustain a habit if you rely on your willpower alone",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-D02": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "The old military saying “You never rise to the occasion, you only sink to the level of training”",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "sink"
+      },
+      {
+        "role": "complement",
+        "text": "to the level of training"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "sink"
+      },
+      {
+        "role": "complement",
+        "text": "to the level of training"
+      }
+    ]
+  },
+  "M-D03": {
+    "pattern": "主语 + 谓语 + 宾语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "repeat"
+      },
+      {
+        "role": "object",
+        "text": "something"
+      },
+      {
+        "role": "object",
+        "text": "that it becomes automatic",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "repeat"
+      },
+      {
+        "role": "object",
+        "text": "something"
+      },
+      {
+        "role": "object",
+        "text": "that it becomes automatic",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-E01": {
+    "pattern": "省略式回答 / 祈使句",
+    "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      },
+      {
+        "role": "complement",
+        "text": "about what else you can change about your surrounding that makes it easier for you to perform this change on a daily basis"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      },
+      {
+        "role": "complement",
+        "text": "about what else you can change about your surrounding that makes it easier for you to perform this change on a daily basis"
+      }
+    ]
+  },
+  "M-E02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a trigger"
+      },
+      {
+        "role": "complement",
+        "text": "to perform that particular habit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a trigger"
+      },
+      {
+        "role": "complement",
+        "text": "to perform that particular habit"
+      }
+    ]
+  },
+  "M-E03": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you don't want to reach for a sugary treat at 3 p.m.",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "a box of herbal tea ready at your desk"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "a box of herbal tea ready at your desk"
+      }
+    ]
+  },
+  "M-E04": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When 3 p.m. comes around",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "your cue"
+      },
+      {
+        "role": "complement",
+        "text": "to pouryourself a cup of hot water and drink that tea"
+      },
+      {
+        "role": "complement",
+        "text": "instead of walking to the vending machine"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "your cue"
+      },
+      {
+        "role": "complement",
+        "text": "to pouryourself a cup of hot water and drink that tea"
+      },
+      {
+        "role": "complement",
+        "text": "instead of walking to the vending machine"
+      }
+    ]
+  },
+  "M-F01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The second one"
+      },
+      {
+        "role": "predicate",
+        "text": "is focusing"
+      },
+      {
+        "role": "complement",
+        "text": "on negative goals"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The second one"
+      },
+      {
+        "role": "predicate",
+        "text": "is focusing"
+      },
+      {
+        "role": "complement",
+        "text": "on negative goals"
+      }
+    ]
+  },
+  "M-F02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "your process that lets you down"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "your process that lets you down"
+      }
+    ]
+  },
+  "M-F03": {
+    "pattern": "主语成分（整体） + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "not eating chocolate to beat your afternoon slump",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a harder goal than swapping chocolate for herbal tea when you reach the designated time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "not eating chocolate to beat your afternoon slump",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a harder goal than swapping chocolate for herbal tea when you reach the designated time"
+      }
+    ]
+  },
+  "M-F04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Your brain"
+      },
+      {
+        "role": "predicate",
+        "text": "wants"
+      },
+      {
+        "role": "complement",
+        "text": "to find routines that have succeeded in the past and allow you to repeat those actions again in the future without having to think about them explicitly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Your brain"
+      },
+      {
+        "role": "predicate",
+        "text": "wants"
+      },
+      {
+        "role": "complement",
+        "text": "to find routines that have succeeded in the past and allow you to repeat those actions again in the future without having to think about them explicitly"
+      }
+    ]
+  },
+  "M-F05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "this habit-learning system"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "effective"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this habit-learning system"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "effective"
+      }
+    ]
+  },
+  "M-F06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "complement",
+        "text": "about introducing something in its place"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "complement",
+        "text": "about introducing something in its place"
+      }
+    ]
+  },
+  "M-F07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Focus"
+      },
+      {
+        "role": "predicate",
+        "text": "will ultimately conflict"
+      },
+      {
+        "role": "complement",
+        "text": "with the behaviors you want to stop"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Focus"
+      },
+      {
+        "role": "predicate",
+        "text": "will ultimately conflict"
+      },
+      {
+        "role": "complement",
+        "text": "with the behaviors you want to stop"
+      }
+    ]
+  },
+  "M-F08": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When your attention is on doing something new",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      },
+      {
+        "role": "object",
+        "text": "a chance to operate"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      },
+      {
+        "role": "object",
+        "text": "a chance to operate"
+      }
+    ]
+  },
+  "M-G01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The third one"
+      },
+      {
+        "role": "predicate",
+        "text": "is using"
+      },
+      {
+        "role": "object",
+        "text": "the same strategies in different circumstances"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The third one"
+      },
+      {
+        "role": "predicate",
+        "text": "is using"
+      },
+      {
+        "role": "object",
+        "text": "the same strategies in different circumstances"
+      }
+    ]
+  },
+  "M-G02": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Because we are creatures of habit",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "natural"
+      },
+      {
+        "role": "complement",
+        "text": "to assume that when we do manage to adopt and sustain a desirable behavior, that same strategy will work when we want to make another behavior change"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "natural"
+      },
+      {
+        "role": "complement",
+        "text": "to assume that when we do manage to adopt and sustain a desirable behavior, that same strategy will work when we want to make another behavior change"
+      }
+    ]
+  },
+  "M-G03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "the case"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "the case"
+      }
+    ]
+  },
+  "M-G04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the system"
+      },
+      {
+        "role": "predicate",
+        "text": "might not work"
+      },
+      {
+        "role": "complement",
+        "text": "for another"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the system"
+      },
+      {
+        "role": "predicate",
+        "text": "might not work"
+      },
+      {
+        "role": "complement",
+        "text": "for another"
+      }
+    ]
+  },
+  "M-H01": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "become"
+      },
+      {
+        "role": "complement",
+        "text": "accustomed to relying on our guts when it comes to decision-making"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "become"
+      },
+      {
+        "role": "complement",
+        "text": "accustomed to relying on our guts when it comes to decision-making"
+      }
+    ]
+  },
+  "M-H02": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "serves"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "in certain situations"
+      },
+      {
+        "role": "predicate",
+        "text": "can hinder"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "serves"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "in certain situations"
+      },
+      {
+        "role": "predicate",
+        "text": "can hinder"
+      }
+    ]
+  },
+  "M-H03": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "if you want to stop checking your email first thing in the morning",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might decide"
+      },
+      {
+        "role": "complement",
+        "text": "to substitute another activity in its place"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might decide"
+      },
+      {
+        "role": "complement",
+        "text": "to substitute another activity in its place"
+      }
+    ]
+  },
+  "M-H04": {
+    "pattern": "状语从句（整体） + 主语成分（整体） + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "if you want to stop indulging in video games",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "simply deciding you will go for a run",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "might not be"
+      },
+      {
+        "role": "complement",
+        "text": "as effective"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "simply deciding you will go for a run",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "might not be"
+      },
+      {
+        "role": "complement",
+        "text": "as effective"
+      }
+    ]
+  },
+  "M-H05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "might need"
+      },
+      {
+        "role": "complement",
+        "text": "to introduce another reinforcement, such as meetinga friend and booking an exercise class together"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "might need"
+      },
+      {
+        "role": "complement",
+        "text": "to introduce another reinforcement, such as meetinga friend and booking an exercise class together"
+      }
+    ]
+  },
+  "M-I01": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The fourth one"
+      },
+      {
+        "role": "predicate",
+        "text": "is not forgiving"
+      },
+      {
+        "role": "object",
+        "text": "ourselves"
+      },
+      {
+        "role": "complement",
+        "text": "for slipping up"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The fourth one"
+      },
+      {
+        "role": "predicate",
+        "text": "is not forgiving"
+      },
+      {
+        "role": "object",
+        "text": "ourselves"
+      },
+      {
+        "role": "complement",
+        "text": "for slipping up"
+      }
+    ]
+  },
+  "M-I02": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "even the best-laid plans"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "even the best-laid plans"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      }
+    ]
+  },
+  "M-I03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "might have stuck"
+      },
+      {
+        "role": "complement",
+        "text": "to your screen-free nighttime routine"
+      },
+      {
+        "role": "complement",
+        "text": "for five days"
+      },
+      {
+        "role": "subject",
+        "text": "a big project"
+      },
+      {
+        "role": "predicate",
+        "text": "landed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "might have stuck"
+      },
+      {
+        "role": "complement",
+        "text": "to your screen-free nighttime routine"
+      },
+      {
+        "role": "complement",
+        "text": "for five days"
+      },
+      {
+        "role": "subject",
+        "text": "a big project"
+      },
+      {
+        "role": "predicate",
+        "text": "landed"
+      }
+    ]
+  },
+  "M-I04": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "prepared"
+      },
+      {
+        "role": "object",
+        "text": "meals on Sunday"
+      },
+      {
+        "role": "predicate",
+        "text": "stuck"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "yourself so exhausted",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "prepared"
+      },
+      {
+        "role": "object",
+        "text": "meals on Sunday"
+      },
+      {
+        "role": "predicate",
+        "text": "stuck"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "yourself so exhausted",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-I05": {
+    "pattern": "主语 + 谓语 + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Life"
+      },
+      {
+        "role": "predicate",
+        "text": "happens"
+      },
+      {
+        "role": "subject",
+        "text": "every single day"
+      },
+      {
+        "role": "predicate",
+        "text": "can prove"
+      },
+      {
+        "role": "complement",
+        "text": "pretty inflexible"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Life"
+      },
+      {
+        "role": "predicate",
+        "text": "happens"
+      },
+      {
+        "role": "subject",
+        "text": "every single day"
+      },
+      {
+        "role": "predicate",
+        "text": "can prove"
+      },
+      {
+        "role": "complement",
+        "text": "pretty inflexible"
+      }
+    ]
+  },
+  "M-I06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The perfectionist"
+      },
+      {
+        "role": "predicate",
+        "text": "might be screaming"
+      },
+      {
+        "role": "complement",
+        "text": "to abandon your goals altogether"
+      },
+      {
+        "role": "predicate",
+        "text": "try"
+      },
+      {
+        "role": "complement",
+        "text": "to see it in the bigger picture"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The perfectionist"
+      },
+      {
+        "role": "predicate",
+        "text": "might be screaming"
+      },
+      {
+        "role": "complement",
+        "text": "to abandon your goals altogether"
+      },
+      {
+        "role": "predicate",
+        "text": "try"
+      },
+      {
+        "role": "complement",
+        "text": "to see it in the bigger picture"
+      }
+    ]
+  },
+  "M-I07": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Just because you might have temporarily strayed off course",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't mean"
+      },
+      {
+        "role": "object",
+        "text": "you can't start afresh the next day",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't mean"
+      },
+      {
+        "role": "object",
+        "text": "you can't start afresh the next day",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-J01": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The final one"
+      },
+      {
+        "role": "predicate",
+        "text": "is discounting"
+      },
+      {
+        "role": "object",
+        "text": "small progress"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The final one"
+      },
+      {
+        "role": "predicate",
+        "text": "is discounting"
+      },
+      {
+        "role": "object",
+        "text": "small progress"
+      }
+    ]
+  },
+  "M-J02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a habit that many perfectionists tend to fall into when they try to establish a behavior change"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a habit that many perfectionists tend to fall into when they try to establish a behavior change"
+      }
+    ]
+  },
+  "M-J03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "focus"
+      },
+      {
+        "role": "complement",
+        "text": "on the big goal"
+      },
+      {
+        "role": "predicate",
+        "text": "don't take"
+      },
+      {
+        "role": "object",
+        "text": "the time"
+      },
+      {
+        "role": "complement",
+        "text": "to celebrate the small progress they make in the process"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "focus"
+      },
+      {
+        "role": "complement",
+        "text": "on the big goal"
+      },
+      {
+        "role": "predicate",
+        "text": "don't take"
+      },
+      {
+        "role": "object",
+        "text": "the time"
+      },
+      {
+        "role": "complement",
+        "text": "to celebrate the small progress they make in the process"
+      }
+    ]
+  },
+  "M-J04": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Your brain"
+      },
+      {
+        "role": "predicate",
+        "text": "responds"
+      },
+      {
+        "role": "complement",
+        "text": "to rewards"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Your brain"
+      },
+      {
+        "role": "predicate",
+        "text": "responds"
+      },
+      {
+        "role": "complement",
+        "text": "to rewards"
+      }
+    ]
+  },
+  "M-J05": {
+    "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The basal ganglia"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "most active"
+      },
+      {
+        "role": "complement",
+        "text": "at the beginning of a behavior"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s rewarded"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The basal ganglia"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "most active"
+      },
+      {
+        "role": "complement",
+        "text": "at the beginning of a behavior"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s rewarded"
+      }
+    ]
+  },
+  "M-J06": {
+    "pattern": "谓语 + 宾语从句（整体） + 主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Say"
+      },
+      {
+        "role": "object",
+        "text": "your goal is to run five miles three times a week",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "ran"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Say"
+      },
+      {
+        "role": "object",
+        "text": "your goal is to run five miles three times a week",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "ran"
+      }
+    ]
+  },
+  "M-J07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "complement",
+        "text": "about how you can reward yourself for the progress you've made"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "complement",
+        "text": "about how you can reward yourself for the progress you've made"
+      }
+    ]
+  },
+  "M-J08": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "something as simple as making your favorite fruit juice after your run"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "something as simple as making your favorite fruit juice after your run"
+      }
+    ]
+  },
+  "M-J09": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "to be more than just the activity itself to get you going"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "to be more than just the activity itself to get you going"
+      }
+    ]
+  },
+  "M-K01": {
+    "pattern": "主语成分（整体） + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Initiating a new behavior",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "like the hardest part of the process of change"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Initiating a new behavior",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "like the hardest part of the process of change"
+      }
+    ]
+  },
+  "M-K02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      },
+      {
+        "role": "complement",
+        "text": "to adequately prepare for maintaining it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      },
+      {
+        "role": "complement",
+        "text": "to adequately prepare for maintaining it"
+      }
+    ]
+  },
+  "M-K03": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-K04": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "won't"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "won't"
+      }
+    ]
+  },
+  "M-K05": {
+    "pattern": "主语成分（整体） + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "continually manifesting",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "requires"
+      },
+      {
+        "role": "object",
+        "text": "that we maintain a positive outlook",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "continually manifesting",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "requires"
+      },
+      {
+        "role": "object",
+        "text": "that we maintain a positive outlook",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-K06": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If our mood is low",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the wisdom"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to disappear"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "go"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the wisdom"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to disappear"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "go"
+      }
+    ]
+  },
+  "M-K07": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The key"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to be happy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The key"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to be happy"
+      }
+    ]
+  },
+  "M-K08": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Which"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "why it's so hard to maintain new behaviors",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Which"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "why it's so hard to maintain new behaviors",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "M-L01": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 宾语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "can benefit"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "in the long run"
+      },
+      {
+        "role": "predicate",
+        "text": "can improve"
+      },
+      {
+        "role": "object",
+        "text": "our physical and mental health"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "can benefit"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "in the long run"
+      },
+      {
+        "role": "predicate",
+        "text": "can improve"
+      },
+      {
+        "role": "object",
+        "text": "our physical and mental health"
+      }
+    ]
+  },
+  "M-L02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "No one"
+      },
+      {
+        "role": "predicate",
+        "text": "was born"
+      },
+      {
+        "role": "complement",
+        "text": "with habits"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "No one"
+      },
+      {
+        "role": "predicate",
+        "text": "was born"
+      },
+      {
+        "role": "complement",
+        "text": "with habits"
+      }
+    ]
+  },
+  "M-L03": {
+    "pattern": "主语 + 谓语",
+    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "were all learned"
+      },
+      {
+        "role": "predicate",
+        "text": "unlearned"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "were all learned"
+      },
+      {
+        "role": "predicate",
+        "text": "unlearned"
+      }
+    ]
+  },
+  "M-L04": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The question"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "how badly do you really want to change",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The question"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "how badly do you really want to change",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-01": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The “American Dream”"
+      },
+      {
+        "role": "predicate",
+        "text": "promises"
+      },
+      {
+        "role": "object",
+        "text": "that in the Land of Opportunity, any individual can climb the economic ladder and prosper through hard work and ambition alone",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The “American Dream”"
+      },
+      {
+        "role": "predicate",
+        "text": "promises"
+      },
+      {
+        "role": "object",
+        "text": "that in the Land of Opportunity, any individual can climb the economic ladder and prosper through hard work and ambition alone",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "young Americans"
+      },
+      {
+        "role": "predicate",
+        "text": "are struggling"
+      },
+      {
+        "role": "complement",
+        "text": "to earn more thantheir parents did at the same age"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "young Americans"
+      },
+      {
+        "role": "predicate",
+        "text": "are struggling"
+      },
+      {
+        "role": "complement",
+        "text": "to earn more thantheir parents did at the same age"
+      }
+    ]
+  },
+  "R1-03": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the idea"
+      },
+      {
+        "role": "predicate",
+        "text": "persist"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the idea"
+      },
+      {
+        "role": "predicate",
+        "text": "persist"
+      }
+    ]
+  },
+  "R1-04": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A new study in the American Journal of Political Science identifies one factor that has been overlooked: the influence of reality TV"
+      },
+      {
+        "role": "predicate",
+        "text": "identifies"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A new study in the American Journal of Political Science identifies one factor that has been overlooked: the influence of reality TV"
+      },
+      {
+        "role": "predicate",
+        "text": "identifies"
+      }
+    ]
+  },
+  "R1-05": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Eunji Kimfrom Vanderbilt University"
+      },
+      {
+        "role": "predicate",
+        "text": "notes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Eunji Kimfrom Vanderbilt University"
+      },
+      {
+        "role": "predicate",
+        "text": "notes"
+      }
+    ]
+  },
+  "R1-06": {
+    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "feature"
+      },
+      {
+        "role": "object",
+        "text": "ordinary Americans"
+      },
+      {
+        "role": "complement",
+        "text": "whowork hard to achieve great economic success"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "feature"
+      },
+      {
+        "role": "object",
+        "text": "ordinary Americans"
+      },
+      {
+        "role": "complement",
+        "text": "whowork hard to achieve great economic success"
+      }
+    ]
+  },
+  "R1-07": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 宾语从句（整体） + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "while these programmes are regularly among the most-watched shows",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "news broadcasts"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      },
+      {
+        "role": "object",
+        "text": "a much smaller proportion of the viewership Rags-to-riches stories"
+      },
+      {
+        "role": "object",
+        "text": "are wbiquitous(无处不在的) on TV",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "does watching"
+      },
+      {
+        "role": "object",
+        "text": "these programmes actually convince people that economic mobility is easily attainable",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "news broadcasts"
+      },
+      {
+        "role": "predicate",
+        "text": "get"
+      },
+      {
+        "role": "object",
+        "text": "a much smaller proportion of the viewership Rags-to-riches stories"
+      },
+      {
+        "role": "object",
+        "text": "are wbiquitous(无处不在的) on TV",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "does watching"
+      },
+      {
+        "role": "object",
+        "text": "these programmes actually convince people that economic mobility is easily attainable",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-08": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "To find out",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Kim's team"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "participants watch a 5-minute clip from a reality show with a rags-to-riches storyline",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Kim's team"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "participants watch a 5-minute clip from a reality show with a rags-to-riches storyline",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-09": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Control participants"
+      },
+      {
+        "role": "predicate",
+        "text": "watched"
+      },
+      {
+        "role": "object",
+        "text": "a clip from a reality show that didn't have a rags-to-riches story"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Control participants"
+      },
+      {
+        "role": "predicate",
+        "text": "watched"
+      },
+      {
+        "role": "object",
+        "text": "a clip from a reality show that didn't have a rags-to-riches story"
+      }
+    ]
+  },
+  "R1-10": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The results"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      },
+      {
+        "role": "object",
+        "text": "that those who'd watched a rags-to-riches clip did indeed have a significantly greater belief in the American Dream",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The results"
+      },
+      {
+        "role": "predicate",
+        "text": "showed"
+      },
+      {
+        "role": "object",
+        "text": "that those who'd watched a rags-to-riches clip did indeed have a significantly greater belief in the American Dream",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-11": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "when participants were separated by party affliation",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "this effect"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "significant among Republicans but not Democrats"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this effect"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "significant among Republicans but not Democrats"
+      }
+    ]
+  },
+  "R1-12": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Kim"
+      },
+      {
+        "role": "predicate",
+        "text": "conducted"
+      },
+      {
+        "role": "object",
+        "text": "a survey of 3,000 US residents"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Kim"
+      },
+      {
+        "role": "predicate",
+        "text": "conducted"
+      },
+      {
+        "role": "object",
+        "text": "a survey of 3,000 US residents"
+      }
+    ]
+  },
+  "R1-13": {
+    "pattern": "主语 + 谓语 + 宾语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "rated"
+      },
+      {
+        "role": "object",
+        "text": "the extent to which they believed success in life"
+      },
+      {
+        "role": "object",
+        "text": "is related to various internal factors (such as ambition) and external factors (such as family wealth)",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "rated"
+      },
+      {
+        "role": "object",
+        "text": "the extent to which they believed success in life"
+      },
+      {
+        "role": "object",
+        "text": "is related to various internal factors (such as ambition) and external factors (such as family wealth)",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-14": {
+    "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "read"
+      },
+      {
+        "role": "object",
+        "text": "a list of TV programmes"
+      },
+      {
+        "role": "predicate",
+        "text": "indicated"
+      },
+      {
+        "role": "object",
+        "text": "which they regularly watched",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "read"
+      },
+      {
+        "role": "object",
+        "text": "a list of TV programmes"
+      },
+      {
+        "role": "predicate",
+        "text": "indicated"
+      },
+      {
+        "role": "object",
+        "text": "which they regularly watched",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-15": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Participants whowere heavy viewers"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "a stronger belief in the American Dream than those who never watched such shows"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Participants whowere heavy viewers"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "a stronger belief in the American Dream than those who never watched such shows"
+      }
+    ]
+  },
+  "R1-16": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Kim"
+      },
+      {
+        "role": "predicate",
+        "text": "concludes"
+      },
+      {
+        "role": "object",
+        "text": "that “rags-to-riches entertainment media are an important cultural force that promotes and perpetuates beliefs in upward mobility”",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Kim"
+      },
+      {
+        "role": "predicate",
+        "text": "concludes"
+      },
+      {
+        "role": "object",
+        "text": "that “rags-to-riches entertainment media are an important cultural force that promotes and perpetuates beliefs in upward mobility”",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R1-17": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "if people mistakenly believe that hard work is all that is needed for individuals to make a better life for themselves",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      },
+      {
+        "role": "complement",
+        "text": "less supportive of policies that could actually combat inequality"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      },
+      {
+        "role": "complement",
+        "text": "less supportive of policies that could actually combat inequality"
+      }
+    ]
+  },
+  "R1-18": {
+    "pattern": "主语 + 谓语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Kim"
+      },
+      {
+        "role": "predicate",
+        "text": "writes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Kim"
+      },
+      {
+        "role": "predicate",
+        "text": "writes"
+      }
+    ]
+  },
+  "R1-19": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Its political consequences"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "anythingbut trivial"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Its political consequences"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "anythingbut trivial"
+      }
+    ]
+  },
+  "R2-01": {
+    "pattern": "主语 + 谓语 + 宾语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "someone"
+      },
+      {
+        "role": "predicate",
+        "text": "asks"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "object",
+        "text": "what do you do?'we nearly always reply with our occupation",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "someone"
+      },
+      {
+        "role": "predicate",
+        "text": "asks"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "object",
+        "text": "what do you do?'we nearly always reply with our occupation",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-02": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Work"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "much more than a job"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Work"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "much more than a job"
+      }
+    ]
+  },
+  "R2-03": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the defining aspect of our identity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the defining aspect of our identity"
+      }
+    ]
+  },
+  "R2-04": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体） + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that we can define ourselves",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "complement",
+        "text": "through our job"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that we can define ourselves",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "complement",
+        "text": "through our job"
+      }
+    ]
+  },
+  "R2-05": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Without myjob I don't know who I am",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a sentence that has been uttered on more than a handful of occasions from my office chair"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a sentence that has been uttered on more than a handful of occasions from my office chair"
+      }
+    ]
+  },
+  "R2-06": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most challenging aspects I work on with clients who have lost or been forced into changing their jobs"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most challenging aspects I work on with clients who have lost or been forced into changing their jobs"
+      }
+    ]
+  },
+  "R2-07": {
+    "pattern": "主语 + 谓语 + 宾语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This loss"
+      },
+      {
+        "role": "predicate",
+        "text": "provokes"
+      },
+      {
+        "role": "object",
+        "text": "an identity crisis much greater than the loss of thejob itself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This loss"
+      },
+      {
+        "role": "predicate",
+        "text": "provokes"
+      },
+      {
+        "role": "object",
+        "text": "an identity crisis much greater than the loss of thejob itself"
+      }
+    ]
+  },
+  "R2-08": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that our identity is much more complex than we recognise at first glance",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that our identity is much more complex than we recognise at first glance",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-09": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If we take the time to reflect",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "might recognise"
+      },
+      {
+        "role": "object",
+        "text": "that as well as our work we can also identify as a friend, a spouse, a sonor daughter, a parent, a member of a sports team or religious community",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "might recognise"
+      },
+      {
+        "role": "object",
+        "text": "that as well as our work we can also identify as a friend, a spouse, a sonor daughter, a parent, a member of a sports team or religious community",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-10": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "may recognise"
+      },
+      {
+        "role": "object",
+        "text": "that we feel and act differently in these roles and relationships than we do at work",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "may recognise"
+      },
+      {
+        "role": "object",
+        "text": "that we feel and act differently in these roles and relationships than we do at work",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-11": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The passive daughter"
+      },
+      {
+        "role": "predicate",
+        "text": "becomes"
+      },
+      {
+        "role": "complement",
+        "text": "an assertive leader at work"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The passive daughter"
+      },
+      {
+        "role": "predicate",
+        "text": "becomes"
+      },
+      {
+        "role": "complement",
+        "text": "an assertive leader at work"
+      }
+    ]
+  },
+  "R2-12": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "our identities"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      },
+      {
+        "role": "complement",
+        "text": "static"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "our identities"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      },
+      {
+        "role": "complement",
+        "text": "static"
+      }
+    ]
+  },
+  "R2-13": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "change"
+      },
+      {
+        "role": "complement",
+        "text": "over time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "change"
+      },
+      {
+        "role": "complement",
+        "text": "over time"
+      }
+    ]
+  },
+  "R2-14": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I myself"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      },
+      {
+        "role": "complement",
+        "text": "a shop assistant, a waitress, a student, a graduate, and a clinical psychologist"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I myself"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      },
+      {
+        "role": "complement",
+        "text": "a shop assistant, a waitress, a student, a graduate, and a clinical psychologist"
+      }
+    ]
+  },
+  "R2-15": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "my ability"
+      },
+      {
+        "role": "predicate",
+        "text": "has been"
+      },
+      {
+        "role": "complement",
+        "text": "crucial to my wellbeing"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "my ability"
+      },
+      {
+        "role": "predicate",
+        "text": "has been"
+      },
+      {
+        "role": "complement",
+        "text": "crucial to my wellbeing"
+      }
+    ]
+  },
+  "R2-16": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "like"
+      },
+      {
+        "role": "complement",
+        "text": "to eliminate uncertainty in our lives at some level we have to manage uncertainty, especially in today's volatile and ever-shifting job market"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "like"
+      },
+      {
+        "role": "complement",
+        "text": "to eliminate uncertainty in our lives at some level we have to manage uncertainty, especially in today's volatile and ever-shifting job market"
+      }
+    ]
+  },
+  "R2-17": {
+    "pattern": "主语成分（整体） + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "How we see ourselves",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "central to the issue"
+      },
+      {
+        "role": "complement",
+        "text": "ofour identity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "How we see ourselves",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "central to the issue"
+      },
+      {
+        "role": "complement",
+        "text": "ofour identity"
+      }
+    ]
+  },
+  "R2-18": {
+    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When we tell ourselves “I'm good at starting projects but not so great at seeing them through”",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can become"
+      },
+      {
+        "role": "complement",
+        "text": "part ofour belief system"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "can become"
+      },
+      {
+        "role": "complement",
+        "text": "part ofour belief system"
+      }
+    ]
+  },
+  "R2-19": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "will need"
+      },
+      {
+        "role": "complement",
+        "text": "to examine those beliefs to see how grounded in reality they are"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "will need"
+      },
+      {
+        "role": "complement",
+        "text": "to examine those beliefs to see how grounded in reality they are"
+      }
+    ]
+  },
+  "R2-20": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "will be required"
+      },
+      {
+        "role": "complement",
+        "text": "to ask yourself how helpful these beliefs are and consider personal change We can change our beliefs, behaviours and emotional experience at any time through experimentation, practice and conscious self-discipline"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "will be required"
+      },
+      {
+        "role": "complement",
+        "text": "to ask yourself how helpful these beliefs are and consider personal change We can change our beliefs, behaviours and emotional experience at any time through experimentation, practice and conscious self-discipline"
+      }
+    ]
+  },
+  "R2-21": {
+    "pattern": "主语 + 谓语 + 表语 / 补语",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "more important"
+      },
+      {
+        "role": "complement",
+        "text": "to challenge our sense of self and explore whether you can create a new experience ofyour identity by changing the beliefs you hold about yourself in orderto"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "more important"
+      },
+      {
+        "role": "complement",
+        "text": "to challenge our sense of self and explore whether you can create a new experience ofyour identity by changing the beliefs you hold about yourself in orderto"
+      }
+    ]
+  },
+  "R2-22": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "who define who you are",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "who define who you are",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  },
+  "R2-23": {
+    "pattern": "主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "object",
+        "text": "your job ifyou let it be so",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "object",
+        "text": "your job ifyou let it be so",
+        "label": "宾语从句（整体）"
+      }
+    ]
+  }
+}

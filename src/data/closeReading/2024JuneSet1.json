@@ -1,0 +1,5050 @@
+{
+  "C01": {
+    "translation": "不同类型的音乐能够激发独特的感受、情感和记忆，这是非常了不起的。",
+    "vocabulary": [
+      {
+        "term": "feelings",
+        "explanation": "感觉，感触"
+      },
+      {
+        "term": "memories",
+        "explanation": "记忆力，记性"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "quite remarkable"
+      },
+      {
+        "role": "object",
+        "text": "how different genres of music can spark unique feelings, emotions, and memories",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "quite remarkable"
+      },
+      {
+        "role": "object",
+        "text": "how different genres of music can spark unique feelings, emotions, and memories",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C02": {
+    "translation": "研究表明，音乐可以减轻手术前的压力和焦虑，我们都被自己独特的生活配乐所吸引。",
+    "vocabulary": [
+      {
+        "term": "attracted",
+        "explanation": "吸引，引起……的兴趣"
+      },
+      {
+        "term": "Studies",
+        "explanation": "研究"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Studies"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "that music can reduce stress and anxiety before surgeries and we are all attracted toward our own unique life soundtrack",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Studies"
+      },
+      {
+        "role": "predicate",
+        "text": "have shown"
+      },
+      {
+        "role": "object",
+        "text": "that music can reduce stress and anxiety before surgeries and we are all attracted toward our own unique life soundtrack",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C03": {
+    "translation": "如果您想缓解压力，您可能想尝试一下古典音乐。",
+    "vocabulary": [
+      {
+        "term": "looking",
+        "explanation": "看"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you're looking to alleviate stress",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might want"
+      },
+      {
+        "role": "complement",
+        "text": "to give classical music a try"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might want"
+      },
+      {
+        "role": "complement",
+        "text": "to give classical music a try"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C04": {
+    "translation": "古典音乐的声音会产生镇静效果，释放大脑中令人愉悦的多巴胺（多巴胺），有助于控制注意力、学习和情绪反应。",
+    "vocabulary": [
+      {
+        "term": "attention",
+        "explanation": "注意"
+      },
+      {
+        "term": "responses",
+        "explanation": "反应，响应"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The sounds"
+      },
+      {
+        "role": "predicate",
+        "text": "produce"
+      },
+      {
+        "role": "object",
+        "text": "a calming effect"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The sounds"
+      },
+      {
+        "role": "predicate",
+        "text": "produce"
+      },
+      {
+        "role": "object",
+        "text": "a calming effect"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C05": {
+    "translation": "它还可以降低身体的压力反应，从而带来整体快乐的心情。",
+    "vocabulary": [
+      {
+        "term": "resulting",
+        "explanation": "发生，产生"
+      },
+      {
+        "term": "response",
+        "explanation": "反应，响应"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can also turn"
+      },
+      {
+        "role": "object",
+        "text": "the body's stress response"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can also turn"
+      },
+      {
+        "role": "object",
+        "text": "the body's stress response"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C06": {
+    "translation": "事实证明，愉快的心情可以使人的思维清晰。",
+    "vocabulary": [
+      {
+        "term": "thinking",
+        "explanation": "想法，见解"
+      },
+      {
+        "term": "person",
+        "explanation": "人"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "a pleasant mood can lead to clarity in a person's thinking",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "a pleasant mood can lead to clarity in a person's thinking",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C07": {
+    "translation": "尽管有许多伟大的古典音乐作曲家，如巴赫、贝多芬和亨德尔，但这些艺术家的音乐似乎都没有莫扎特的音乐具有同样的健康功效。",
+    "vocabulary": [
+      {
+        "term": "effects",
+        "explanation": "影响，效果，结果"
+      },
+      {
+        "term": "artists",
+        "explanation": "艺术家，设计师（artist 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Although there are many great composers of classical music like Bach, Beethoven and Handel",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "none"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to have the same health effects as Mozart's does"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "none"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to have the same health effects as Mozart's does"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C08": {
+    "translation": "研究人员称，听莫扎特可以增加脑电波活动并改善认知功能。",
+    "vocabulary": [
+      {
+        "term": "researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      },
+      {
+        "term": "According",
+        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "listening to Mozart",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "can increase"
+      },
+      {
+        "role": "object",
+        "text": "brain wave activity"
+      },
+      {
+        "role": "predicate",
+        "text": "improve"
+      },
+      {
+        "role": "object",
+        "text": "cognitive function"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "listening to Mozart",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "can increase"
+      },
+      {
+        "role": "object",
+        "text": "brain wave activity"
+      },
+      {
+        "role": "predicate",
+        "text": "improve"
+      },
+      {
+        "role": "object",
+        "text": "cognitive function"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "C09": {
+    "translation": "另一项研究发现，莫扎特音乐的独特特征会触发大脑中负责高级心理功能的部分。",
+    "vocabulary": [
+      {
+        "term": "functions",
+        "explanation": "功能，作用，职责"
+      },
+      {
+        "term": "features",
+        "explanation": "产品特点，特征，特性"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Another study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that the distinctive features of Mozart's music trigger parts of the brain that are responsible for high-level mental functions",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Another study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that the distinctive features of Mozart's music trigger parts of the brain that are responsible for high-level mental functions",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C10": {
+    "translation": "甚至产科病房也用莫扎特来帮助新生婴儿适应母亲肚子外的生活。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Even maternity wards"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "Mozart"
+      },
+      {
+        "role": "complement",
+        "text": "to help newborn babies adapt to life outside of the mother's belly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Even maternity wards"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "Mozart"
+      },
+      {
+        "role": "complement",
+        "text": "to help newborn babies adapt to life outside of the mother's belly"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C11": {
+    "translation": "研究发现，听古典音乐可以显着降低人的血压。",
+    "vocabulary": [
+      {
+        "term": "pressure",
+        "explanation": "压力，挤压"
+      },
+      {
+        "term": "reduces",
+        "explanation": "降低，减少"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "has been found"
+      },
+      {
+        "role": "object",
+        "text": "that listening to classical music significantly reduces a person's blood pressure",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "has been found"
+      },
+      {
+        "role": "object",
+        "text": "that listening to classical music significantly reduces a person's blood pressure",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C12": {
+    "translation": "研究人员认为，古典音乐的平静声音可能有助于您的心脏从压力中恢复过来。",
+    "vocabulary": [
+      {
+        "term": "Researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      },
+      {
+        "term": "believe",
+        "explanation": "相信"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      },
+      {
+        "role": "object",
+        "text": "that the calming sounds of classical music may help your heart recover from stress",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      },
+      {
+        "role": "object",
+        "text": "that the calming sounds of classical music may help your heart recover from stress",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C13": {
+    "translation": "古典音乐也是帮助睡眠困难的人的好工具。",
+    "vocabulary": [
+      {
+        "term": "sleeping",
+        "explanation": "睡觉，入睡（sleep 的现在分词）"
+      },
+      {
+        "term": "trouble",
+        "explanation": "困难，难题，苦恼"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Classical music"
+      },
+      {
+        "role": "predicate",
+        "text": "can also be"
+      },
+      {
+        "role": "complement",
+        "text": "a great tool"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Classical music"
+      },
+      {
+        "role": "predicate",
+        "text": "can also be"
+      },
+      {
+        "role": "complement",
+        "text": "a great tool"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C14": {
+    "translation": "一项研究发现，睡眠困难的学生在听古典音乐时睡得更好。",
+    "vocabulary": [
+      {
+        "term": "students",
+        "explanation": "学生（student 的复数）"
+      },
+      {
+        "term": "sleeping",
+        "explanation": "睡觉，入睡（sleep 的现在分词）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that students who had trouble sleeping slept better while they were listening to classical music",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that students who had trouble sleeping slept better while they were listening to classical music",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C15": {
+    "translation": "无论您是否经常听古典音乐，每天抽出时间来听一些让您感到舒缓的音乐都没有什么坏处。",
+    "vocabulary": [
+      {
+        "term": "regular",
+        "explanation": "定期的，规律的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Whether classical music is something that you listen to on a regular basis or not",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "wouldn't hurt"
+      },
+      {
+        "role": "complement",
+        "text": "to take time out of your day to listen to music that you find soothing"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "wouldn't hurt"
+      },
+      {
+        "role": "complement",
+        "text": "to take time out of your day to listen to music that you find soothing"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C16": {
+    "translation": "您会惊讶地发现它让您感觉如此良好以及对您的健康带来潜在的积极变化。",
+    "vocabulary": [
+      {
+        "term": "health",
+        "explanation": "身体状况"
+      },
+      {
+        "term": "change",
+        "explanation": "改变，变化"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "surprised at how good it makes you feel"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "surprised at how good it makes you feel"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A01": {
+    "translation": "在佐治亚州雅典市，有一个相当奇怪的当地地标——一棵几乎普遍声称拥有自己的大白橡树。",
+    "vocabulary": [
+      {
+        "term": "universally",
+        "explanation": "普遍地，人人"
+      },
+      {
+        "term": "landmark",
+        "explanation": "陆标，地标"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "exists"
+      },
+      {
+        "role": "object",
+        "text": "a rather curious local landmark—a large white oak that is almost universally stated to own itself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "exists"
+      },
+      {
+        "role": "object",
+        "text": "a rather curious local landmark—a large white oak that is almost universally stated to own itself"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A02": {
+    "translation": "因此，它被认为是世界上最著名的树木之一。",
+    "vocabulary": [
+      {
+        "term": "considered",
+        "explanation": "深思熟虑的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is considered"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most famous trees in the world"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is considered"
+      },
+      {
+        "role": "complement",
+        "text": "one of the most famous trees in the world"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A03": {
+    "translation": "那么这棵树是如何拥有自己和它周围的土地的呢？",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "So how did this treecome to own itself and the land around it",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "complement",
+        "text": "So how did this treecome to own itself and the land around it",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 标题式片段",
+      "explanation": "这是省略式或标题式表达，不强行补出主谓宾，按完整意群理解。"
+    }
+  },
+  "M-B01": {
+    "translation": "据报道，在十九世纪的某个时候，一位名叫威廉·杰克逊上校的格鲁吉亚人很喜欢这棵树，并努力保护它免受任何危险。",
+    "vocabulary": [
+      {
+        "term": "endeavored",
+        "explanation": "努力"
+      },
+      {
+        "term": "protect",
+        "explanation": "保护，防护"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a Georgian"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "a liking"
+      },
+      {
+        "role": "complement",
+        "text": "to the said tree"
+      },
+      {
+        "role": "predicate",
+        "text": "endeavored"
+      },
+      {
+        "role": "complement",
+        "text": "to protect it from any danger"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a Georgian"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "a liking"
+      },
+      {
+        "role": "complement",
+        "text": "to the said tree"
+      },
+      {
+        "role": "predicate",
+        "text": "endeavored"
+      },
+      {
+        "role": "complement",
+        "text": "to protect it from any danger"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-B02": {
+    "translation": "至于他为何如此喜爱这个故事，最早记录这个故事的是1890年8月12日出版的《雅典旗帜周刊》头版一篇匿名文章。",
+    "vocabulary": [
+      {
+        "term": "documented",
+        "explanation": "有文件证明的"
+      },
+      {
+        "term": "article",
+        "explanation": "文章，论文"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the earliest documented account"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an anonymously written front page article in the Athens Weekly Banner published on August 12,1890"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the earliest documented account"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an anonymously written front page article in the Athens Weekly Banner published on August 12,1890"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B03": {
+    "translation": "它指出，“上校。",
+    "vocabulary": [
+      {
+        "term": "states",
+        "explanation": "州；国家；陈述（state 的复数或第三人称单数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "states"
+      },
+      {
+        "role": "object",
+        "text": "Col"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "states"
+      },
+      {
+        "role": "object",
+        "text": "Col"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B04": {
+    "translation": "杰克逊从小就看着这棵树长大，并且逐渐爱上它，几乎就像他爱人类一样。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "had watched"
+      },
+      {
+        "role": "object",
+        "text": "the tree grow from his childhood",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "grew"
+      },
+      {
+        "role": "complement",
+        "text": "to love it almost as he would a human"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "had watched"
+      },
+      {
+        "role": "object",
+        "text": "the tree grow from his childhood",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "grew"
+      },
+      {
+        "role": "complement",
+        "text": "to love it almost as he would a human"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-B05": {
+    "translation": "它茂密的叶子和粗壮的枝干经常为他遮风挡雨，他也曾多次从它最高的树枝上得到羽毛歌手的蛋。",
+    "vocabulary": [
+      {
+        "term": "protected",
+        "explanation": "受保护的"
+      },
+      {
+        "term": "leaves",
+        "explanation": "（leaf 的复数）树叶，叶片"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Its luxuriant leaves"
+      },
+      {
+        "role": "predicate",
+        "text": "had often protected"
+      },
+      {
+        "role": "object",
+        "text": "him"
+      },
+      {
+        "role": "complement",
+        "text": "from the heavy rains"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "many a time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Its luxuriant leaves"
+      },
+      {
+        "role": "predicate",
+        "text": "had often protected"
+      },
+      {
+        "role": "object",
+        "text": "him"
+      },
+      {
+        "role": "complement",
+        "text": "from the heavy rains"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "many a time"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-B06": {
+    "translation": "他看着它的生长，当他年老时，他看到这棵树以其宏伟的比例矗立着，他痛苦地想到在他死后它会落入那些可能摧毁它的人的手中。",
+    "vocabulary": [
+      {
+        "term": "standing",
+        "explanation": "永久的，长期的，常设的"
+      },
+      {
+        "term": "growth",
+        "explanation": "成长，生长"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "watched"
+      },
+      {
+        "role": "object",
+        "text": "its growth"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "was pained"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "watched"
+      },
+      {
+        "role": "object",
+        "text": "its growth"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "was pained"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-C01": {
+    "translation": "为此，杰克逊通过契约将这棵树及其周围的一小块土地的所有权转让给了这棵树本身。",
+    "vocabulary": [
+      {
+        "term": "transferred",
+        "explanation": "（使）转移，搬迁"
+      },
+      {
+        "term": "little",
+        "explanation": "小的，比较小的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "transferred"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree itself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "transferred"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree itself"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C02": {
+    "translation": "契约上写着：“W.H.杰克逊出于并考虑到他对这棵树的深厚感情，以及他希望看到这棵树得到保护的强烈愿望，已经将这棵橡树完全拥有了它本身以及周围八英尺范围内的所有土地。”",
+    "vocabulary": [
+      {
+        "term": "consideration",
+        "explanation": "考虑，斟酌"
+      },
+      {
+        "term": "protected",
+        "explanation": "受保护的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "read"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "read"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D01": {
+    "translation": "随着时间的推移，这棵树成为了一个旅游景点，被称为“拥有自己的树”。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D02": {
+    "translation": "然而，在 20 世纪初，这棵树开始出现缓慢死亡的迹象，但对此却无能为力。",
+    "vocabulary": [
+      {
+        "term": "started",
+        "explanation": "开始，着手"
+      },
+      {
+        "term": "showing",
+        "explanation": "显示；表明（show 的现在分词）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "started"
+      },
+      {
+        "role": "complement",
+        "text": "showing signs of its slow death"
+      },
+      {
+        "role": "complement",
+        "text": "with little that could be done about it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the tree"
+      },
+      {
+        "role": "predicate",
+        "text": "started"
+      },
+      {
+        "role": "complement",
+        "text": "showing signs of its slow death"
+      },
+      {
+        "role": "complement",
+        "text": "with little that could be done about it"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D03": {
+    "translation": "我们所有人的父亲时代最终都会到来，甚至包括我们那些长寿、高大、绿叶的地球守护者同伴。",
+    "vocabulary": [
+      {
+        "term": "eventually",
+        "explanation": "最终，结果"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Father time comes for us all eventually, even our often long lived, tall and leafy fellow custodians(看管者) of Earth"
+      },
+      {
+        "role": "predicate",
+        "text": "comes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Father time comes for us all eventually, even our often long lived, tall and leafy fellow custodians(看管者) of Earth"
+      },
+      {
+        "role": "predicate",
+        "text": "comes"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D04": {
+    "translation": "最终，1942 年 10 月 9 日，这棵 30 多米高、200-400 年树龄的树倒塌了，有传言称，这是由于一场严重的风暴和/或之前已经死亡且根腐烂了。",
+    "vocabulary": [
+      {
+        "term": "previously",
+        "explanation": "以前地，先前地"
+      },
+      {
+        "term": "result",
+        "explanation": "结果，后果"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "rumor"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "as a result of a severe windstorm"
+      },
+      {
+        "role": "complement",
+        "text": "via having previously died"
+      },
+      {
+        "role": "subject",
+        "text": "its roots"
+      },
+      {
+        "role": "predicate",
+        "text": "rotted"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "rumor"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "as a result of a severe windstorm"
+      },
+      {
+        "role": "complement",
+        "text": "via having previously died"
+      },
+      {
+        "role": "subject",
+        "text": "its roots"
+      },
+      {
+        "role": "predicate",
+        "text": "rotted"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-E01": {
+    "translation": "大约四年后，少年女士花园俱乐部的成员（在这棵树不幸死亡之前一直在照顾这棵树）找到了一棵小树，它是用从原来的树上取下的坚果长成的。",
+    "vocabulary": [
+      {
+        "term": "members",
+        "explanation": "（社团、政党等组织的）成员，会员"
+      },
+      {
+        "term": "tended",
+        "explanation": "往往会；倾向于（tend 的过去式）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "members"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree"
+      },
+      {
+        "role": "complement",
+        "text": "before its unfortunate death"
+      },
+      {
+        "role": "predicate",
+        "text": "tracked"
+      },
+      {
+        "role": "object",
+        "text": "a small tree grown from a nut taken from the original tree"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "members"
+      },
+      {
+        "role": "predicate",
+        "text": "tended"
+      },
+      {
+        "role": "complement",
+        "text": "to the tree"
+      },
+      {
+        "role": "complement",
+        "text": "before its unfortunate death"
+      },
+      {
+        "role": "predicate",
+        "text": "tracked"
+      },
+      {
+        "role": "object",
+        "text": "a small tree grown from a nut taken from the original tree"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-E02": {
+    "translation": "就这样，1946年10月9日，在佐治亚大学农学院罗伊·鲍登教授的指导下，这棵小树被移植到了它祖先的位置。",
+    "vocabulary": [
+      {
+        "term": "direction",
+        "explanation": "方向，方位"
+      },
+      {
+        "term": "little",
+        "explanation": "小的，比较小的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "that"
+      },
+      {
+        "role": "complement",
+        "text": "on October 9,1946"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "that"
+      },
+      {
+        "role": "complement",
+        "text": "on October 9,1946"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E03": {
+    "translation": "几个月后，雅典市长罗伯特·L·麦克沃特 (Robert L Mc Whorter) 出席了一场正式仪式来纪念这一时刻。",
+    "vocabulary": [
+      {
+        "term": "featuring",
+        "explanation": "特点，特征"
+      },
+      {
+        "term": "months",
+        "explanation": "月份（month 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "an official ceremony"
+      },
+      {
+        "role": "predicate",
+        "text": "was held"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "an official ceremony"
+      },
+      {
+        "role": "predicate",
+        "text": "was held"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-F01": {
+    "translation": "这棵新树被称为“拥有自己的树的儿子”，人们认为，作为原始树的继承人，它自然继承了它所站立的土地。",
+    "vocabulary": [
+      {
+        "term": "inherited",
+        "explanation": "（疾病或特点）遗传的"
+      },
+      {
+        "term": "assumed",
+        "explanation": "假定的，假设的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This new tree"
+      },
+      {
+        "role": "predicate",
+        "text": "became known"
+      },
+      {
+        "role": "complement",
+        "text": "as The Son of the Tree That Owns Itself"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was assumed"
+      },
+      {
+        "role": "object",
+        "text": "that, as the original tree's heir, it naturally inherited the land it stood on",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This new tree"
+      },
+      {
+        "role": "predicate",
+        "text": "became known"
+      },
+      {
+        "role": "complement",
+        "text": "as The Son of the Tree That Owns Itself"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was assumed"
+      },
+      {
+        "role": "object",
+        "text": "that, as the original tree's heir, it naturally inherited the land it stood on",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-F02": {
+    "translation": "当然，还有许多其他已知的树是从原始树衍生而来的，因为人们肯定会从中取出坚果种植在其他地方。",
+    "vocabulary": [
+      {
+        "term": "taking",
+        "explanation": "取得"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "as people taking a nut from it to grow elsewhere",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a certainty"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a certainty"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-F03": {
+    "translation": "也就是说，到目前为止，原树的其他孩子都没有向法院请求获得他们的土地份额，所以看起来一切都很好。",
+    "vocabulary": [
+      {
+        "term": "children",
+        "explanation": "child 的复数形式"
+      },
+      {
+        "term": "original",
+        "explanation": "起初的，原先的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "all good"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "all good"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-F04": {
+    "translation": "无论如何，“拥有自己的树之子”至今仍然屹立不倒，尽管经常被简单地称为“拥有自己的树”。",
+    "vocabulary": [
+      {
+        "term": "stands",
+        "explanation": "（stand 的复数）看台，观众席"
+      },
+      {
+        "term": "simply",
+        "explanation": "仅仅，只，不过"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The Son"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The Son"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G01": {
+    "translation": "这一切让我们思考杰克逊是否真的曾经真正将这棵树的合法所有权归于自己，以及这样的契约是否具有法律约束力。",
+    "vocabulary": [
+      {
+        "term": "actually",
+        "explanation": "实际上，事实上"
+      },
+      {
+        "term": "binding",
+        "explanation": "(协议，承诺）有约束力的，必须遵守的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Thisall"
+      },
+      {
+        "role": "predicate",
+        "text": "brings"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "to whether Jackson ever actually gave legal ownership of the tree to itself in the first place and whether such a deed is legally binding"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Thisall"
+      },
+      {
+        "role": "predicate",
+        "text": "brings"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      },
+      {
+        "role": "complement",
+        "text": "to whether Jackson ever actually gave legal ownership of the tree to itself in the first place and whether such a deed is legally binding"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H01": {
+    "translation": "好吧，首先，事实证明，杰克逊从 43 岁开始，从 1829 年到 1832 年，只在雅典度过了大约三年的时间，他在某种程度上否认了他热爱这棵树的想法，因为他小时候在这棵树下度过了时光，看着它长大，然后担心他死后它会发生什么。",
+    "vocabulary": [
+      {
+        "term": "starting",
+        "explanation": "开始（start 的现在分词）"
+      },
+      {
+        "term": "spending",
+        "explanation": "（尤指政府或组织的）支出，开销，花费"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "to begin with",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "Jackson only spent about three years of his life in Athens, starting at the age of 43 from 1829 to 1832, sort of dismissing the idea that he loved the tree from spending time under it as a child and watching it grow, and then worrying about what would happen to it after he died",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "turns"
+      },
+      {
+        "role": "object",
+        "text": "Jackson only spent about three years of his life in Athens, starting at the age of 43 from 1829 to 1832, sort of dismissing the idea that he loved the tree from spending time under it as a child and watching it grow, and then worrying about what would happen to it after he died",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H02": {
+    "translation": "此外，对雅典土地所有权记录的广泛搜索似乎并没有表明杰克逊曾经拥有这棵树所在的土地。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "an extensive search"
+      },
+      {
+        "role": "predicate",
+        "text": "does not seem"
+      },
+      {
+        "role": "complement",
+        "text": "to indicate Jackson ever owned the land the tree sits on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "an extensive search"
+      },
+      {
+        "role": "predicate",
+        "text": "does not seem"
+      },
+      {
+        "role": "complement",
+        "text": "to indicate Jackson ever owned the land the tree sits on"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I01": {
+    "translation": "那三年来，他确实住在紧邻的很多土地上，但他是否拥有那块土地还不清楚。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "did live"
+      },
+      {
+        "role": "complement",
+        "text": "on a lot of land"
+      },
+      {
+        "role": "complement",
+        "text": "for those three years"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "owned"
+      },
+      {
+        "role": "object",
+        "text": "that land"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "did live"
+      },
+      {
+        "role": "complement",
+        "text": "on a lot of land"
+      },
+      {
+        "role": "complement",
+        "text": "for those three years"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "owned"
+      },
+      {
+        "role": "object",
+        "text": "that land"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-I02": {
+    "translation": "不管怎样，1832 年，一块四英亩的土地（其中包括这棵树所在的土地和杰克逊居住的邻近土地等）被卖给了大学教授马尔萨斯·沃德 (Malthus A Ward)。",
+    "vocabulary": [
+      {
+        "term": "professor",
+        "explanation": "教授"
+      },
+      {
+        "term": "included",
+        "explanation": "包括在内的，包含在内的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the neighboring land Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "lived"
+      },
+      {
+        "role": "complement",
+        "text": "among others"
+      },
+      {
+        "role": "predicate",
+        "text": "was sold"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the neighboring land Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "lived"
+      },
+      {
+        "role": "complement",
+        "text": "among others"
+      },
+      {
+        "role": "predicate",
+        "text": "was sold"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-I03": {
+    "translation": "在交易中，沃德被要求向杰克逊支付 1,200 美元（相当于今天的 31,000 美元），要么是为了房产本身，要么只是为了补偿杰克逊对该地块所做的改进。",
+    "vocabulary": [
+      {
+        "term": "improvements",
+        "explanation": "提高，改进（improvement 的复数）"
+      },
+      {
+        "term": "transaction",
+        "explanation": "交易，买卖，业务"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Wardwas"
+      },
+      {
+        "role": "predicate",
+        "text": "required"
+      },
+      {
+        "role": "complement",
+        "text": "to pay Jackson a sum of $1,200(about $31,000 today)"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Wardwas"
+      },
+      {
+        "role": "predicate",
+        "text": "required"
+      },
+      {
+        "role": "complement",
+        "text": "to pay Jackson a sum of $1,200(about $31,000 today)"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I04": {
+    "translation": "最后，无论他曾经拥有邻近的土地，还是只是在他据称在大学工作期间被允许使用它，他绝对从未拥有这棵树生长的土地，这是当前话题中最重要的一点。",
+    "vocabulary": [
+      {
+        "term": "allowed",
+        "explanation": "allow 的过去式和过去分词：允许，认可"
+      },
+      {
+        "term": "worked",
+        "explanation": "工作"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "whether he ever owned the neighboring lot or was simply allowed to use it while he allegedly worked at the University",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "never owned"
+      },
+      {
+        "role": "object",
+        "text": "the lot the tree grew on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "never owned"
+      },
+      {
+        "role": "object",
+        "text": "the lot the tree grew on"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-J01": {
+    "translation": "沃德教授购买了这块土地后，杰克逊和他的家人在几英里外购买了一块 655 英亩的土地并搬到了那里。",
+    "vocabulary": [
+      {
+        "term": "family",
+        "explanation": "家，家庭"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "After Professor Ward purchased the land",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "purchased"
+      },
+      {
+        "role": "object",
+        "text": "a 655 acre parcel"
+      },
+      {
+        "role": "predicate",
+        "text": "moved"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "purchased"
+      },
+      {
+        "role": "object",
+        "text": "a 655 acre parcel"
+      },
+      {
+        "role": "predicate",
+        "text": "moved"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-J02": {
+    "translation": "十年后，即 1844 年，杰克逊似乎陷入了财务困难，他的小种植园被克拉克县治安官办公室没收并拍卖以偿还抵押贷款。",
+    "vocabulary": [
+      {
+        "term": "difficulties",
+        "explanation": "难题，困难"
+      },
+      {
+        "term": "financial",
+        "explanation": "财政的，金融的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "seemed"
+      },
+      {
+        "role": "complement",
+        "text": "to have come into financial difficulties"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "his little plantation seized by the Clarke County Sheriff's office"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "seemed"
+      },
+      {
+        "role": "complement",
+        "text": "to have come into financial difficulties"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "his little plantation seized by the Clarke County Sheriff's office"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-J03": {
+    "translation": "因此，如果他在雅典拥有一些土地，包括这棵树所在的土地，他可能会出售它以筹集资金，或者以其他方式将其夺走。",
+    "vocabulary": [
+      {
+        "term": "including",
+        "explanation": "包括，包含"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "would have sold"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "it takenas well",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "would have sold"
+      },
+      {
+        "role": "predicate",
+        "text": "had"
+      },
+      {
+        "role": "object",
+        "text": "it takenas well",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-K01": {
+    "translation": "不管情况如何，杰克逊都会知道，为了让这棵树在未来真正安全，需要在契约土地上缴纳财产税。",
+    "vocabulary": [
+      {
+        "term": "needed",
+        "explanation": "需要"
+      },
+      {
+        "term": "future",
+        "explanation": "未来，将来"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "would have known"
+      },
+      {
+        "role": "object",
+        "text": "property taxes needed to be paid on the deeded land for the tree to be truly secure in its future"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jackson"
+      },
+      {
+        "role": "predicate",
+        "text": "would have known"
+      },
+      {
+        "role": "object",
+        "text": "property taxes needed to be paid on the deeded land for the tree to be truly secure in its future"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-K02": {
+    "translation": "然而，没有任何账户或记录表明任何信托或类似机构是为了促进这一目的而设立的",
+    "vocabulary": [
+      {
+        "term": "account",
+        "explanation": "账户，户头"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "no account"
+      },
+      {
+        "role": "predicate",
+        "text": "indicates"
+      },
+      {
+        "role": "object",
+        "text": "any trust or the like was set up to facilitate this",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "no account"
+      },
+      {
+        "role": "predicate",
+        "text": "indicates"
+      },
+      {
+        "role": "object",
+        "text": "any trust or the like was set up to facilitate this",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-L01": {
+    "translation": "最重要的是，没有确凿的证据证明这样的契约曾经存在过，尽管事实上雅典的契约记录可以追溯到 1876 年杰克逊去世之前的几十年，而且根据最初声称见过它的匿名新闻记者的说法，它应该在 1890 年就存在于档案中。",
+    "vocabulary": [
+      {
+        "term": "according",
+        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
+      },
+      {
+        "term": "supposed",
+        "explanation": "假定的，据说的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "no hard evidence such a deed ever existed, despite the fact that deed records in Athens go back many decades before Jackson's death in 1876 and that it was supposed to have existed in 1890 in the archives according to the original anonymous news reporter who claims to have seen it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "no hard evidence such a deed ever existed, despite the fact that deed records in Athens go back many decades before Jackson's death in 1876 and that it was supposed to have existed in 1890 in the archives according to the original anonymous news reporter who claims to have seen it"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-M01": {
+    "translation": "正如你可能从这一切中想象到的那样，很少有人相信故事的这一面。",
+    "vocabulary": [
+      {
+        "term": "imagine",
+        "explanation": "想象，设想"
+      },
+      {
+        "term": "credit",
+        "explanation": "信用，信贷，赊购"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As you might imagine from all of this",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "few"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      },
+      {
+        "role": "object",
+        "text": "credit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "few"
+      },
+      {
+        "role": "predicate",
+        "text": "give"
+      },
+      {
+        "role": "object",
+        "text": "credit"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-M02": {
+    "translation": "那么这一切是怎么发生的呢？",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "all"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "all"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-N01": {
+    "translation": "据推测，它是由《雅典周刊横幅》上上述 1890 年头版文章中那位匿名作者的想象力发明的，题为“契约本身”，顺便说一下，该文章包含了一些更容易被证明是错误的元素。",
+    "vocabulary": [
+      {
+        "term": "invented",
+        "explanation": "发明，创造"
+      },
+      {
+        "term": "contained",
+        "explanation": "包含，容纳"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is speculated"
+      },
+      {
+        "role": "complement",
+        "text": "to have been invented by the imagination of the said anonymous author at the Athens Weekly Banner in the aforementioned 1890 front page article titled “Deeded to Itself”, which by the way contained several elements that are much more easily proved to be false"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is speculated"
+      },
+      {
+        "role": "complement",
+        "text": "to have been invented by the imagination of the said anonymous author at the Athens Weekly Banner in the aforementioned 1890 front page article titled “Deeded to Itself”, which by the way contained several elements that are much more easily proved to be false"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-N02": {
+    "translation": "至于作者为什么要这样做，据推测，这可能是 19 世纪版本的点击诱饵思维练习，即某人对自己做这样一个无意识的生物是否合法。",
+    "vocabulary": [
+      {
+        "term": "exercise",
+        "explanation": "运动，锻炼"
+      },
+      {
+        "term": "version",
+        "explanation": "（同一种物件稍有不同的）样式，型号"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s speculated"
+      },
+      {
+        "role": "object",
+        "text": "perhaps it was a 19th century version of a click-bait thought exercise on whether it would be legal for someone to deed such a non-conscious living thing to itselfor not",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s speculated"
+      },
+      {
+        "role": "object",
+        "text": "perhaps it was a 19th century version of a click-bait thought exercise on whether it would be legal for someone to deed such a non-conscious living thing to itselfor not",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-O01": {
+    "translation": "不管怎样，下一个已知的“拥有自己的树”实例直到 1901 年才出现在同一份报纸《雅典旗帜周刊》的百年纪念版中。",
+    "vocabulary": [
+      {
+        "term": "mentioned",
+        "explanation": "提及，说起，谈到（mention 的过去式和过去分词）"
+      },
+      {
+        "term": "instance",
+        "explanation": "例子，实例"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the case, the next known instance of the Tree That Owns Itselfbeing mentioned"
+      },
+      {
+        "role": "predicate",
+        "text": "wasn't"
+      },
+      {
+        "role": "complement",
+        "text": "until 1901"
+      },
+      {
+        "role": "complement",
+        "text": "in the Centennial Edition of that same paper"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the case, the next known instance of the Tree That Owns Itselfbeing mentioned"
+      },
+      {
+        "role": "predicate",
+        "text": "wasn't"
+      },
+      {
+        "role": "complement",
+        "text": "until 1901"
+      },
+      {
+        "role": "complement",
+        "text": "in the Centennial Edition of that same paper"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-O02": {
+    "translation": "这篇文章非常清楚地介绍了另一个帐户，只是复制了大约十年前发表的原始文章，只是稍微改写了措辞。",
+    "vocabulary": [
+      {
+        "term": "featured",
+        "explanation": "特点，特征"
+      },
+      {
+        "term": "article",
+        "explanation": "文章，论文"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "featured"
+      },
+      {
+        "role": "object",
+        "text": "another account"
+      },
+      {
+        "role": "predicate",
+        "text": "reworded"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "featured"
+      },
+      {
+        "role": "object",
+        "text": "another account"
+      },
+      {
+        "role": "predicate",
+        "text": "reworded"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-O03": {
+    "translation": "下一个报道发生在 1906 年，再次出现在《雅典周刊横幅》中，再次非常清楚地复制了原始报道，只是稍微改写了措辞，相当于 19 世纪当观众已经忘记了原始报道时的重新发布。",
+    "vocabulary": [
+      {
+        "term": "audience",
+        "explanation": "观众，听众"
+      },
+      {
+        "term": "century",
+        "explanation": "世纪"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The next account"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "in 1906"
+      },
+      {
+        "role": "complement",
+        "text": "again in the Athens Weekly Banner"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The next account"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "in 1906"
+      },
+      {
+        "role": "complement",
+        "text": "again in the Athens Weekly Banner"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-01": {
+    "translation": "无可辩驳的是，员工知道是非之分。",
+    "vocabulary": [
+      {
+        "term": "difference",
+        "explanation": "差异，不同之处"
+      },
+      {
+        "term": "employees",
+        "explanation": "员工"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "irrefutable"
+      },
+      {
+        "role": "object",
+        "text": "that employees know the difference between right and wrong",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "irrefutable"
+      },
+      {
+        "role": "object",
+        "text": "that employees know the difference between right and wrong",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-02": {
+    "translation": "那么，当更多的员工看到有人在工作场所表现出危险行为时，为什么不进行干预呢？",
+    "vocabulary": [
+      {
+        "term": "workplace",
+        "explanation": "（办公室，工厂）等工作场所"
+      },
+      {
+        "term": "employees",
+        "explanation": "员工"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "more employees"
+      },
+      {
+        "role": "predicate",
+        "text": "intervene"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "more employees"
+      },
+      {
+        "role": "predicate",
+        "text": "intervene"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-03": {
+    "translation": "有很多因素会影响人们是否干预。",
+    "vocabulary": [
+      {
+        "term": "influence",
+        "explanation": "影响，作用"
+      },
+      {
+        "term": "factors",
+        "explanation": "因素，要素（factor 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "a number of factors that influence whether people intervene"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "a number of factors that influence whether people intervene"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-04": {
+    "translation": "首先，他们需要能够看到危险局势开始显现。",
+    "vocabulary": [
+      {
+        "term": "situation",
+        "explanation": "情况，形势"
+      },
+      {
+        "term": "beginning",
+        "explanation": "开始，开端"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to be able to see a risky situation beginning to unfold"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to be able to see a risky situation beginning to unfold"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-05": {
+    "translation": "其次，公司文化需要让他们感到可以安全地畅所欲言。",
+    "vocabulary": [
+      {
+        "term": "culture",
+        "explanation": "文化，文明"
+      },
+      {
+        "term": "company",
+        "explanation": "公司"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the company's culture"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "to make them feel safe to speak up"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the company's culture"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "to make them feel safe to speak up"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-06": {
+    "translation": "第三，他们需要具备有效表达能力的沟通技巧。",
+    "vocabulary": [
+      {
+        "term": "effectively",
+        "explanation": "有效地"
+      },
+      {
+        "term": "skills",
+        "explanation": "（特定的）技术，技能，技巧（skill 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to have the communication skills to say something effectively"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "complement",
+        "text": "to have the communication skills to say something effectively"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-07": {
+    "translation": "严格来说，这并不是一个工作场所问题；而是一个问题。这在工作之外也是一个日益严重的问题。",
+    "vocabulary": [
+      {
+        "term": "workplace",
+        "explanation": "（办公室，工厂）等工作场所"
+      },
+      {
+        "term": "problem",
+        "explanation": "问题，难题，困难"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a growing problem off the job"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a growing problem off the job"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-08": {
+    "translation": "每天，人们都会在街上目睹事情的发生，然后选择袖手旁观。",
+    "vocabulary": [
+      {
+        "term": "things",
+        "explanation": "事物，东西（thing 的复数形式）"
+      },
+      {
+        "term": "street",
+        "explanation": "街道，街"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "witness"
+      },
+      {
+        "role": "object",
+        "text": "things"
+      },
+      {
+        "role": "complement",
+        "text": "on the street"
+      },
+      {
+        "role": "predicate",
+        "text": "choose"
+      },
+      {
+        "role": "complement",
+        "text": "to stand idly by"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "witness"
+      },
+      {
+        "role": "object",
+        "text": "things"
+      },
+      {
+        "role": "complement",
+        "text": "on the street"
+      },
+      {
+        "role": "predicate",
+        "text": "choose"
+      },
+      {
+        "role": "complement",
+        "text": "to stand idly by"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-09": {
+    "translation": "这被称为旁观者效应——目击事件的人越多，该群体中帮助受害者的可能性就越小。",
+    "vocabulary": [
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      },
+      {
+        "term": "effect",
+        "explanation": "作用，影响"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the more people"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to help the victim"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the more people"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to help the victim"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-10": {
+    "translation": "这背后的心理学称为责任分散。",
+    "vocabulary": [
+      {
+        "term": "responsibility",
+        "explanation": "责任，负责"
+      },
+      {
+        "term": "psychology",
+        "explanation": "心理学"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The psychology"
+      },
+      {
+        "role": "predicate",
+        "text": "is called"
+      },
+      {
+        "role": "complement",
+        "text": "diffusion of responsibility"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The psychology"
+      },
+      {
+        "role": "predicate",
+        "text": "is called"
+      },
+      {
+        "role": "complement",
+        "text": "diffusion of responsibility"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-11": {
+    "translation": "基本上，人群越多，就越多的人认为会有其他人来处理这件事——这意味着没有人在需要的时候有效干预或采取行动。",
+    "vocabulary": [
+      {
+        "term": "effectively",
+        "explanation": "有效地"
+      },
+      {
+        "term": "meaning",
+        "explanation": "意思，意义，含义"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the larger the crowd"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      },
+      {
+        "role": "object",
+        "text": "that someone else will take care of it—meaning no one effectively intervenes or acts in a moment of need",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the larger the crowd"
+      },
+      {
+        "role": "predicate",
+        "text": "assume"
+      },
+      {
+        "role": "object",
+        "text": "that someone else will take care of it—meaning no one effectively intervenes or acts in a moment of need",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-12": {
+    "translation": "这种从众心态足以让人们逃避自己已知的责任。",
+    "vocabulary": [
+      {
+        "term": "responsibilities",
+        "explanation": "责任，负责"
+      },
+      {
+        "term": "mentality",
+        "explanation": "心态，思维方式"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This crowd mentality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "strong enough for people to evade their known responsibilities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This crowd mentality"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "strong enough for people to evade their known responsibilities"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-13": {
+    "translation": "但不仅仅是一线工人没有在工作场所进行安全干预。",
+    "vocabulary": [
+      {
+        "term": "interventions",
+        "explanation": "干预，干涉，介入（intervention 的复数）"
+      },
+      {
+        "term": "workplace",
+        "explanation": "（办公室，工厂）等工作场所"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "frontline workers who don't make safety interventions in the workplace"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "frontline workers who don't make safety interventions in the workplace"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-14": {
+    "translation": "也有主管人员不干预的情况。",
+    "vocabulary": [
+      {
+        "term": "instances",
+        "explanation": "例子，实例"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "instances where supervisors do not intervene either"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "instances where supervisors do not intervene either"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-15": {
+    "translation": "当一群员工发现领导层没有解决不安全行为时，就会开创先例，表明这些情况应该如何解决，从而为每个人定义安全文化。",
+    "vocabulary": [
+      {
+        "term": "situations",
+        "explanation": "情况，状况，局面（situation 的复数形式）"
+      },
+      {
+        "term": "employees",
+        "explanation": "员工"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When a group of employees sees unsafe behavior not being addressed at a leadership level",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "the precedent that this is how these situations should be addressed, thus defining the safety culture for everyone"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "the precedent that this is how these situations should be addressed, thus defining the safety culture for everyone"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-16": {
+    "translation": "尽管鼓励工人在观察到不安全操作时进行干预，但这种情况发生的情况还不到一半。",
+    "vocabulary": [
+      {
+        "term": "operations",
+        "explanation": "运作，实施"
+      },
+      {
+        "term": "encouraged",
+        "explanation": "鼓励，激励"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "happens"
+      },
+      {
+        "role": "object",
+        "text": "less than half of the time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "happens"
+      },
+      {
+        "role": "object",
+        "text": "less than half of the time"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-17": {
+    "translation": "恐惧是不干预的最终因素。",
+    "vocabulary": [
+      {
+        "term": "ultimate",
+        "explanation": "最终的，最后的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Fear"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the ultimate factor"
+      },
+      {
+        "role": "complement",
+        "text": "in not intervening"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Fear"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the ultimate factor"
+      },
+      {
+        "role": "complement",
+        "text": "in not intervening"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-18": {
+    "translation": "人们担心受到惩罚，担心如果他们干预，他们将不得不做更多的工作。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a fear of penalty"
+      },
+      {
+        "role": "complement",
+        "text": "a fear that they'll have to do more work if they intervene"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a fear of penalty"
+      },
+      {
+        "role": "complement",
+        "text": "a fear that they'll have to do more work if they intervene"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-19": {
+    "translation": "过去不成功的尝试是人们不干预的另一个重要因素——他们倾向于将这种行动推迟到其他人来应对未来的所有情况。",
+    "vocabulary": [
+      {
+        "term": "situations",
+        "explanation": "情况，状况，局面（situation 的复数形式）"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to prefer to defer that action to someone else for all future situations"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to prefer to defer that action to someone else for all future situations"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-20": {
+    "translation": "在许多工作场所，必须任命有能力的工人。",
+    "vocabulary": [
+      {
+        "term": "workers",
+        "explanation": "工作者，工作人员"
+      },
+      {
+        "term": "competent",
+        "explanation": "能干的，能胜任的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "competent workers"
+      },
+      {
+        "role": "predicate",
+        "text": "must be appointed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "competent workers"
+      },
+      {
+        "role": "predicate",
+        "text": "must be appointed"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-21": {
+    "translation": "他们的部分工作是在工人在没有适当设备的情况下执行任务或条件不安全时进行干预。",
+    "vocabulary": [
+      {
+        "term": "conditions",
+        "explanation": "状况，状态"
+      },
+      {
+        "term": "workers",
+        "explanation": "工作者，工作人员"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Part"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to intervene when workers perform a taskwithoutthe proper equipment or if the conditions are unsafe"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Part"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to intervene when workers perform a taskwithoutthe proper equipment or if the conditions are unsafe"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-22": {
+    "translation": "当出现危险时，合格的工人也必须停止继续工作。",
+    "vocabulary": [
+      {
+        "term": "continuing",
+        "explanation": "（使）继续，（使）延续"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Competentworkers"
+      },
+      {
+        "role": "predicate",
+        "text": "are alsorequired"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Competentworkers"
+      },
+      {
+        "role": "predicate",
+        "text": "are alsorequired"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-23": {
+    "translation": "主管也发挥着关键作用。",
+    "vocabulary": [
+      {
+        "term": "critical",
+        "explanation": "批判的，爱挑剔的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "play"
+      },
+      {
+        "role": "object",
+        "text": "a critical role"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "play"
+      },
+      {
+        "role": "object",
+        "text": "a critical role"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-24": {
+    "translation": "即使不需要有能力的人员，主管也需要广泛的技能，不仅可以识别和减轻工作场所的危险，还可以在团队内部建立一个安全氛围，支持他们之间的干预和开放的沟通。",
+    "vocabulary": [
+      {
+        "term": "workplace",
+        "explanation": "（办公室，工厂）等工作场所"
+      },
+      {
+        "term": "required",
+        "explanation": "必需的，规定的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Even if a competent person isn't required",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "object",
+        "text": "a broad set of skills"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "supervisors"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "object",
+        "text": "a broad set of skills"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-25": {
+    "translation": "除了有能力的工人和主管之外，重要的是要教育组织内的每个人，如果他们目睹了可能的不安全行为，无论您是指定的有能力的人员、主管还是一线工人，他们都有义务进行干预",
+    "vocabulary": [
+      {
+        "term": "organization",
+        "explanation": "组织，机构"
+      },
+      {
+        "term": "workers",
+        "explanation": "工作者，工作人员"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "important"
+      },
+      {
+        "role": "complement",
+        "text": "to educate everyone within the organization that they are obliged to intervene if they witness a possible unsafe act"
+      },
+      {
+        "role": "object",
+        "text": "whether you're adesignated competent person, a supervisoror a frontline worker",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "important"
+      },
+      {
+        "role": "complement",
+        "text": "to educate everyone within the organization that they are obliged to intervene if they witness a possible unsafe act"
+      },
+      {
+        "role": "object",
+        "text": "whether you're adesignated competent person, a supervisoror a frontline worker",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-01": {
+    "translation": "“环保主义者”一词可以有不同的含义。",
+    "vocabulary": [
+      {
+        "term": "environmentalist",
+        "explanation": "环境保护主义者，环境保护论者"
+      },
+      {
+        "term": "things",
+        "explanation": "事物，东西（thing 的复数形式）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The term “environmentalist”"
+      },
+      {
+        "role": "predicate",
+        "text": "can mean"
+      },
+      {
+        "role": "object",
+        "text": "different things"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The term “environmentalist”"
+      },
+      {
+        "role": "predicate",
+        "text": "can mean"
+      },
+      {
+        "role": "object",
+        "text": "different things"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-02": {
+    "translation": "它曾经指的是努力保护野生动物和自然生态系统的人们。",
+    "vocabulary": [
+      {
+        "term": "ecosystems",
+        "explanation": "生态系统（ecosystem 的复数）"
+      },
+      {
+        "term": "protect",
+        "explanation": "保护，防护"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "used"
+      },
+      {
+        "role": "complement",
+        "text": "to refer to people trying to protect wildlife and natural ecosystems"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "used"
+      },
+      {
+        "role": "complement",
+        "text": "to refer to people trying to protect wildlife and natural ecosystems"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-03": {
+    "translation": "在 21 世纪，这个术语已经演变为反映应对人为气候变化的需要。",
+    "vocabulary": [
+      {
+        "term": "climate",
+        "explanation": "气候"
+      },
+      {
+        "term": "century",
+        "explanation": "世纪"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the term"
+      },
+      {
+        "role": "predicate",
+        "text": "has evolved"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the term"
+      },
+      {
+        "role": "predicate",
+        "text": "has evolved"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-04": {
+    "translation": "这两种环保主义之间的区别是科学界内部关于核能的分歧的原因。",
+    "vocabulary": [
+      {
+        "term": "distinction",
+        "explanation": "差别，区分"
+      },
+      {
+        "term": "community",
+        "explanation": "社区，社会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The distinction"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the cause of a split within the scientific community about nuclear energy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The distinction"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the cause of a split within the scientific community about nuclear energy"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-05": {
+    "translation": "一方面是纯粹主义者，他们认为核电不值得冒险，而解决气候危机的唯一解决方案是可再生能源。",
+    "vocabulary": [
+      {
+        "term": "solution",
+        "explanation": "（问题、困难等的）解决办法"
+      },
+      {
+        "term": "climate",
+        "explanation": "气候"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "purists who believe nuclear power isn't worth the risk and the exclusive solution to the climate crisis is renewable energy"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "purists who believe nuclear power isn't worth the risk and the exclusive solution to the climate crisis is renewable energy"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ],
+    "structure": {
+      "pattern": "地点状语前置倒装：谓语 + 主语",
+      "explanation": "地点状语位于句首引起倒装；还原后主干是后面的名词短语 + are。"
+    }
+  },
+  "R2-06": {
+    "translation": "反对方同意可再生能源至关重要，但表示社会需要足够的电力来满足消费者在没有阳光和风的情况下的基本需求。",
+    "vocabulary": [
+      {
+        "term": "society",
+        "explanation": "社会（以群体形式生活在一起的人的总称）"
+      },
+      {
+        "term": "shining",
+        "explanation": "发光的，反光的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The opposing side"
+      },
+      {
+        "role": "predicate",
+        "text": "agrees"
+      },
+      {
+        "role": "object",
+        "text": "that renewables are crucial",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "society needs an amount of power available to meet consumers'basic demands when the sun isn't shining and the wind isn't blowing",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The opposing side"
+      },
+      {
+        "role": "predicate",
+        "text": "agrees"
+      },
+      {
+        "role": "object",
+        "text": "that renewables are crucial",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "society needs an amount of power available to meet consumers'basic demands when the sun isn't shining and the wind isn't blowing",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-07": {
+    "translation": "核能比石油、天然气和煤炭清洁得多，是一种自然的选择，特别是在水力发电能力有限的情况下。",
+    "vocabulary": [
+      {
+        "term": "capacity",
+        "explanation": "能力，才能"
+      },
+      {
+        "term": "especially",
+        "explanation": "尤其，特别"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a natural option, especially where hydroelectric capacity is limited"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a natural option, especially where hydroelectric capacity is limited"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-08": {
+    "translation": "帮助撰写联合国政府间气候变化专门委员会报告的莱昂·克拉克并不是核能的不加批判的支持者，但他表示，如果我们认真实现碳中和，那么核能是一个有价值的选择。",
+    "vocabulary": [
+      {
+        "term": "reports",
+        "explanation": "报告"
+      },
+      {
+        "term": "helped",
+        "explanation": "帮助（help 的过去分词）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Leon Clarke"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "an uncritical supporter of nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "it's a valuable option to have if we're serious about reaching carbon neutrality",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Leon Clarke"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "an uncritical supporter of nuclear energy"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "it's a valuable option to have if we're serious about reaching carbon neutrality",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-09": {
+    "translation": "“所有这一切的核心是你认为我们能够在多大程度上利用 100% 可再生能源真正实现气候目标，”他说。",
+    "vocabulary": [
+      {
+        "term": "climate",
+        "explanation": "气候"
+      },
+      {
+        "term": "degree",
+        "explanation": "度，度数（温度单位）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "“Core to all of this is the degree to which you think we can actually meet climate goals with 100% renewables,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "“Core to all of this is the degree to which you think we can actually meet climate goals with 100% renewables,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-10": {
+    "translation": "“如果你不相信我们能做到这一点，而你又关心气候，那么你就被迫考虑核能之类的东西。”",
+    "vocabulary": [
+      {
+        "term": "climate",
+        "explanation": "气候"
+      },
+      {
+        "term": "believe",
+        "explanation": "相信"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you don't believe we can do it, and you care about the climate",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "are forced"
+      },
+      {
+        "role": "complement",
+        "text": "to think about something like nuclear"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "are forced"
+      },
+      {
+        "role": "complement",
+        "text": "to think about something like nuclear"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-11": {
+    "translation": "普遍 100% 可再生性的实现同样存在争议。",
+    "vocabulary": [
+      {
+        "term": "universal",
+        "explanation": "普遍的，全体的，全世界的"
+      },
+      {
+        "term": "similarly",
+        "explanation": "相似地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The achievability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "similarly contentious"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The achievability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "similarly contentious"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-12": {
+    "translation": "佛蒙特州伯灵顿等城市多年来一直“100%可再生能源”。",
+    "vocabulary": [
+      {
+        "term": "Cities",
+        "explanation": "城市（city 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      },
+      {
+        "role": "complement",
+        "text": "“100% renewable” for years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have been"
+      },
+      {
+        "role": "complement",
+        "text": "“100% renewable” for years"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-13": {
+    "translation": "但这些城市往往人口较少，有时仍然依赖化石燃料能源，并且拥有大量可立即使用的可再生资源。",
+    "vocabulary": [
+      {
+        "term": "populations",
+        "explanation": "（地区、国家等的）人口，人口数量"
+      },
+      {
+        "term": "resources",
+        "explanation": "资源，物力，财力（resource 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "these cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "small populations"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "these cities"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "small populations"
+      },
+      {
+        "role": "predicate",
+        "text": "rely"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-14": {
+    "translation": "与此同时，能够利用可再生能源的国家通常要归功于非凡的水力发电能力。",
+    "vocabulary": [
+      {
+        "term": "countries",
+        "explanation": "国家（country 的复数）"
+      },
+      {
+        "term": "typically",
+        "explanation": "典型地，有代表性地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "countries"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "object",
+        "text": "thanks to extraordinary hydroelectric capabilities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "countries"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "object",
+        "text": "thanks to extraordinary hydroelectric capabilities"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-15": {
+    "translation": "德国是工业化大国推动绿色能源发展的最佳案例。",
+    "vocabulary": [
+      {
+        "term": "pushing",
+        "explanation": "接近（某个年龄）"
+      },
+      {
+        "term": "country",
+        "explanation": "国，国家"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Germany"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      },
+      {
+        "role": "complement",
+        "text": "as the best case study for a large, industrialized country pushing into green energy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Germany"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      },
+      {
+        "role": "complement",
+        "text": "as the best case study for a large, industrialized country pushing into green energy"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-16": {
+    "translation": "德国总理安格拉·默克尔 (Angela Merkel) 于 2011 年宣布了能源转型计划，这是一项能源转型计划，将逐步淘汰核电和煤炭，同时逐步采用可再生能源。",
+    "vocabulary": [
+      {
+        "term": "transition",
+        "explanation": "过渡，转变"
+      },
+      {
+        "term": "nuclear",
+        "explanation": "核子的，原子核的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Chancellor Angela Merkel"
+      },
+      {
+        "role": "predicate",
+        "text": "announced"
+      },
+      {
+        "role": "object",
+        "text": "Energiewende, an energy transition that would phase out nuclear and coal while phasing in renewables"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Chancellor Angela Merkel"
+      },
+      {
+        "role": "predicate",
+        "text": "announced"
+      },
+      {
+        "role": "object",
+        "text": "Energiewende, an energy transition that would phase out nuclear and coal while phasing in renewables"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-17": {
+    "translation": "自 2010 年以来，风能和太阳能发电量增长了 400% 以上，2019 年可再生能源提供了该国电力的 46%。",
+    "vocabulary": [
+      {
+        "term": "electricity",
+        "explanation": "电，电流，电力"
+      },
+      {
+        "term": "generation",
+        "explanation": "一代（人）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Wind"
+      },
+      {
+        "role": "predicate",
+        "text": "has increased"
+      },
+      {
+        "role": "complement",
+        "text": "since 2010"
+      },
+      {
+        "role": "subject",
+        "text": "renewables"
+      },
+      {
+        "role": "predicate",
+        "text": "provided"
+      },
+      {
+        "role": "object",
+        "text": "46% of the country's electricity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Wind"
+      },
+      {
+        "role": "predicate",
+        "text": "has increased"
+      },
+      {
+        "role": "complement",
+        "text": "since 2010"
+      },
+      {
+        "role": "subject",
+        "text": "renewables"
+      },
+      {
+        "role": "predicate",
+        "text": "provided"
+      },
+      {
+        "role": "object",
+        "text": "46% of the country's electricity"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-18": {
+    "translation": "但近年来进展已经停止。",
+    "vocabulary": [
+      {
+        "term": "progress",
+        "explanation": "进步，进展"
+      },
+      {
+        "term": "recent",
+        "explanation": "最近的，最新的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "progress"
+      },
+      {
+        "role": "predicate",
+        "text": "has halted"
+      },
+      {
+        "role": "complement",
+        "text": "in recent years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "progress"
+      },
+      {
+        "role": "predicate",
+        "text": "has halted"
+      },
+      {
+        "role": "complement",
+        "text": "in recent years"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-19": {
+    "translation": "可再生能源的不稳定不仅意味着能源通常不会在夜间产生，而且太阳能和风能可能会在白天压垮电网，迫使公用事业公司向客户付费。",
+    "vocabulary": [
+      {
+        "term": "electricity",
+        "explanation": "电，电流，电力"
+      },
+      {
+        "term": "customers",
+        "explanation": "顾客，客户（customer 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The instability"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't just mean"
+      },
+      {
+        "role": "object",
+        "text": "energy is often not produced at night, but also that solar and wind can overwhelm the grid during the day, forcing utilities to pay customers to use their electricity",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The instability"
+      },
+      {
+        "role": "predicate",
+        "text": "doesn't just mean"
+      },
+      {
+        "role": "object",
+        "text": "energy is often not produced at night, but also that solar and wind can overwhelm the grid during the day, forcing utilities to pay customers to use their electricity",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-20": {
+    "translation": "落后的电网基础设施难以将过剩的绿色能源从德国北部输送到工业南部，这意味着许多工厂仍然依靠煤炭和天然气运行。",
+    "vocabulary": [
+      {
+        "term": "infrastructure",
+        "explanation": "下面结构"
+      },
+      {
+        "term": "transport",
+        "explanation": "运输，运送"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many factories"
+      },
+      {
+        "role": "predicate",
+        "text": "run"
+      },
+      {
+        "role": "complement",
+        "text": "on coal and gas"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many factories"
+      },
+      {
+        "role": "predicate",
+        "text": "run"
+      },
+      {
+        "role": "complement",
+        "text": "on coal and gas"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-21": {
+    "translation": "一些地方也达到了政治极限，民众对新建风力发电机组的建设提出了强烈抗议。",
+    "vocabulary": [
+      {
+        "term": "construction",
+        "explanation": "建造，建筑"
+      },
+      {
+        "term": "citizens",
+        "explanation": "公民（citizen 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The political limit"
+      },
+      {
+        "role": "predicate",
+        "text": "has also been reached"
+      },
+      {
+        "role": "complement",
+        "text": "in some places"
+      },
+      {
+        "role": "complement",
+        "text": "with citizens meeting the construction of new wind turbines with loud protests"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The political limit"
+      },
+      {
+        "role": "predicate",
+        "text": "has also been reached"
+      },
+      {
+        "role": "complement",
+        "text": "in some places"
+      },
+      {
+        "role": "complement",
+        "text": "with citizens meeting the construction of new wind turbines with loud protests"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-22": {
+    "translation": "结果是，自 2010 年以来，德国的温室气体排放量下降了约 11.5%，低于欧盟 13.5% 的平均水平。",
+    "vocabulary": [
+      {
+        "term": "emissions",
+        "explanation": "排放"
+      },
+      {
+        "term": "average",
+        "explanation": "平均水平，一般标准"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The result"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that Germany's greenhouse gas emissions have fallen by around 11.5% since 2010—slower than the EU average of 13.5%",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The result"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that Germany's greenhouse gas emissions have fallen by around 11.5% since 2010—slower than the EU average of 13.5%",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  }
+}

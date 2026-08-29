@@ -6,9 +6,11 @@ pubDate: '2024-12-01'
 
 import ReadingPractice from '../../components/reading/ReadingPractice.astro';
 import paper from '../../data/reading/2024-12-cet6-reading-3.json';
+import { cet6CloseReadings202412Set3 } from '../../data/closeReading/2024DecemberSet3';
 
 <ReadingPractice
   cloze={paper.sections.cloze}
   matching={paper.sections.matching}
   passages={[paper.sections.passageOne, paper.sections.passageTwo]}
+  closeReadings={cet6CloseReadings202412Set3}
 />

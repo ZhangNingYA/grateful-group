@@ -1,0 +1,5698 @@
+{
+  "C01": {
+    "translation": "全球约 23% 的人口生活在绝对贫困之中。",
+    "vocabulary": [
+      {
+        "term": "population",
+        "explanation": "（地区、国家等的）人口，人口数量"
+      },
+      {
+        "term": "poverty",
+        "explanation": "贫穷，贫困"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "About 23%"
+      },
+      {
+        "role": "predicate",
+        "text": "lives"
+      },
+      {
+        "role": "complement",
+        "text": "in absolute poverty"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "About 23%"
+      },
+      {
+        "role": "predicate",
+        "text": "lives"
+      },
+      {
+        "role": "complement",
+        "text": "in absolute poverty"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C02": {
+    "translation": "在发展中国家，预期寿命低，婴儿死亡率高，失业率和文盲率高，营养水平低于可接受的标准，疾病广泛传播，而医疗援助却很少或质量很差。",
+    "vocabulary": [
+      {
+        "term": "unemployment",
+        "explanation": "失业人数，失业率"
+      },
+      {
+        "term": "developing",
+        "explanation": "（国家）发展中的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a low life expectancy, a high infant mortality rate, high levels of unemployment and illiteracy, nutritional levels below acceptable standards and widespread disease with very little or poor quality medical assistance"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a low life expectancy, a high infant mortality rate, high levels of unemployment and illiteracy, nutritional levels below acceptable standards and widespread disease with very little or poor quality medical assistance"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C03": {
+    "translation": "其他人过着极其富裕和奢华的生活，因此财富的分配方式非常不平等。",
+    "vocabulary": [
+      {
+        "term": "distributed",
+        "explanation": "分发，分配"
+      },
+      {
+        "term": "incredibly",
+        "explanation": "难以置信地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Others"
+      },
+      {
+        "role": "predicate",
+        "text": "live"
+      },
+      {
+        "role": "object",
+        "text": "incredibly wealthy and luxurious lives"
+      },
+      {
+        "role": "subject",
+        "text": "the wealth"
+      },
+      {
+        "role": "predicate",
+        "text": "is distributed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Others"
+      },
+      {
+        "role": "predicate",
+        "text": "live"
+      },
+      {
+        "role": "object",
+        "text": "incredibly wealthy and luxurious lives"
+      },
+      {
+        "role": "subject",
+        "text": "the wealth"
+      },
+      {
+        "role": "predicate",
+        "text": "is distributed"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "C04": {
+    "translation": "这些是慈善问题的核心问题，尽管慈善还包括许多其他领域，例如帮助老年人。",
+    "vocabulary": [
+      {
+        "term": "questions",
+        "explanation": "问题，疑问（question 的复数）"
+      },
+      {
+        "term": "problems",
+        "explanation": "问题"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "the central problems to questions of charity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "These"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "the central problems to questions of charity"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C05": {
+    "translation": "当非常富有的人承诺捐出大部分数十亿美元时，我们都会鼓掌，但他们通常会留下数百万美元可以传承，仍然远远超过大多数人一生的预期收入。",
+    "vocabulary": [
+      {
+        "term": "millions",
+        "explanation": "数百万"
+      },
+      {
+        "term": "billions",
+        "explanation": "数十亿（billion 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We all"
+      },
+      {
+        "role": "predicate",
+        "text": "applaud"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are usually left"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We all"
+      },
+      {
+        "role": "predicate",
+        "text": "applaud"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are usually left"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "C06": {
+    "translation": "与全球相比，即使是西方相对中等的工资也非常高。",
+    "vocabulary": [
+      {
+        "term": "compared",
+        "explanation": "compare 的过去式和过去分词：比较，对照"
+      },
+      {
+        "term": "salaries",
+        "explanation": "薪金，薪水"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Even comparatively moderate salaries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "very high"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Even comparatively moderate salaries"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "very high"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C07": {
+    "translation": "拥有 20,000 法郎的人可以轻松承担每年赠送 2,000 法郎的费用，并且仍然有足够的生活费和一些奢侈品。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Someone"
+      },
+      {
+        "role": "predicate",
+        "text": "could easily afford"
+      },
+      {
+        "role": "complement",
+        "text": "to give away f2,000 per year and still have plenty to live on plus some luxuries"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Someone"
+      },
+      {
+        "role": "predicate",
+        "text": "could easily afford"
+      },
+      {
+        "role": "complement",
+        "text": "to give away f2,000 per year and still have plenty to live on plus some luxuries"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C08": {
+    "translation": "大多数人都认为，慈善捐赠在道德上是值得赞扬的，但慈善行为往往被认为超出了职责范围。",
+    "vocabulary": [
+      {
+        "term": "behaviour",
+        "explanation": "行为，举止，态度"
+      },
+      {
+        "term": "regarded",
+        "explanation": "认为，把……看作"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Most people"
+      },
+      {
+        "role": "predicate",
+        "text": "agree"
+      },
+      {
+        "role": "object",
+        "text": "that giving to charity is morally praiseworthy",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "charitable behaviour"
+      },
+      {
+        "role": "predicate",
+        "text": "tends"
+      },
+      {
+        "role": "complement",
+        "text": "to be regarded as above and beyond the call of duty"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Most people"
+      },
+      {
+        "role": "predicate",
+        "text": "agree"
+      },
+      {
+        "role": "object",
+        "text": "that giving to charity is morally praiseworthy",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "charitable behaviour"
+      },
+      {
+        "role": "predicate",
+        "text": "tends"
+      },
+      {
+        "role": "complement",
+        "text": "to be regarded as above and beyond the call of duty"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C09": {
+    "translation": "然而，有些人认为慈善行为是道德上所必需的。",
+    "vocabulary": [
+      {
+        "term": "behaviour",
+        "explanation": "行为，举止，态度"
+      },
+      {
+        "term": "required",
+        "explanation": "必需的，规定的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some"
+      },
+      {
+        "role": "predicate",
+        "text": "argue"
+      },
+      {
+        "role": "object",
+        "text": "that charitable behaviour is morally required",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some"
+      },
+      {
+        "role": "predicate",
+        "text": "argue"
+      },
+      {
+        "role": "object",
+        "text": "that charitable behaviour is morally required",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C10": {
+    "translation": "这意味着不表现慈善行为就是错误的。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "object",
+        "text": "that to fail to behave charitably would be wrong",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "object",
+        "text": "that to fail to behave charitably would be wrong",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C11": {
+    "translation": "这方面的大多数论点都涉及向较贫穷的国家提供援助，但它们也可能涉及在一个人的直接社区中给予时间。",
+    "vocabulary": [
+      {
+        "term": "community",
+        "explanation": "社区，社会"
+      },
+      {
+        "term": "majority",
+        "explanation": "大多数"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The majority"
+      },
+      {
+        "role": "predicate",
+        "text": "may also refer"
+      },
+      {
+        "role": "complement",
+        "text": "to giving time within one's immediate community"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The majority"
+      },
+      {
+        "role": "predicate",
+        "text": "may also refer"
+      },
+      {
+        "role": "complement",
+        "text": "to giving time within one's immediate community"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C12": {
+    "translation": "争论往往对不同收入阶层的人提出不同的要求，并完全排除那些仅仅维持收支平衡的人。",
+    "vocabulary": [
+      {
+        "term": "requirements",
+        "explanation": "要求，规定，必备条件（requirement 的复数）"
+      },
+      {
+        "term": "Arguments",
+        "explanation": "争论，争吵"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Arguments"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to place different requirements on people in different income brackets and exclude entirely people who are merely making ends meet"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Arguments"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to place different requirements on people in different income brackets and exclude entirely people who are merely making ends meet"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C13": {
+    "translation": "一些人认为，人们都应该贡献其收入的一定比例。",
+    "vocabulary": [
+      {
+        "term": "percentage",
+        "explanation": "百分比，百分率"
+      },
+      {
+        "term": "contribute",
+        "explanation": "捐赠，捐助"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some"
+      },
+      {
+        "role": "predicate",
+        "text": "argue"
+      },
+      {
+        "role": "object",
+        "text": "that people should all contribute a certain percentage of their earnings",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some"
+      },
+      {
+        "role": "predicate",
+        "text": "argue"
+      },
+      {
+        "role": "object",
+        "text": "that people should all contribute a certain percentage of their earnings",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C14": {
+    "translation": "我将把所有那些对人们捐赠慈善事业提出道德要求的论点放在一起，尽管事实上人们对于道德要求的程度存在广泛的分歧。",
+    "vocabulary": [
+      {
+        "term": "arguments",
+        "explanation": "争论，争吵"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "will group"
+      },
+      {
+        "role": "object",
+        "text": "all those arguments that place a moral requirement on people to give to charity"
+      },
+      {
+        "role": "complement",
+        "text": "despite the fact that there is wide disagreement as to the extent of that moral requirement"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "will group"
+      },
+      {
+        "role": "object",
+        "text": "all those arguments that place a moral requirement on people to give to charity"
+      },
+      {
+        "role": "complement",
+        "text": "despite the fact that there is wide disagreement as to the extent of that moral requirement"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A01": {
+    "translation": "贸易是民粹主义者与古典自由主义者之间敌对最为明显的政策领域之一。",
+    "vocabulary": [
+      {
+        "term": "hostility",
+        "explanation": "敌意，对抗"
+      },
+      {
+        "term": "policy",
+        "explanation": "政策，方针"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Trade"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "one of the policy areas where the hostility that exists between populists(民粹主义者) and classical liberals is most visible"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Trade"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "one of the policy areas where the hostility that exists between populists(民粹主义者) and classical liberals is most visible"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A02": {
+    "translation": "自由贸易者指出，免关税贸易为世界各地的消费者带来了不可否认的好处，并且在世界各个角落，以前封闭的市场被开放后，贫困现象明显减轻。",
+    "vocabulary": [
+      {
+        "term": "consumers",
+        "explanation": "消费者，消耗者"
+      },
+      {
+        "term": "previously",
+        "explanation": "以前地，先前地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Free-traders"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      },
+      {
+        "role": "complement",
+        "text": "to the undeniable good that tariff-free trade has done for consumers across the world and to the observable alleviation of poverty in corners of the world where previously closed markets have been opened up"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Free-traders"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      },
+      {
+        "role": "complement",
+        "text": "to the undeniable good that tariff-free trade has done for consumers across the world and to the observable alleviation of poverty in corners of the world where previously closed markets have been opened up"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A03": {
+    "translation": "保护主义者指出，国内生产者为全球化经济付出了失去生计和社区空心化的代价。",
+    "vocabulary": [
+      {
+        "term": "communities",
+        "explanation": "社区"
+      },
+      {
+        "term": "economy",
+        "explanation": "经济"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Protectionists"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      },
+      {
+        "role": "complement",
+        "text": "to the domestic producers who've paid the price for this globalized economy in the form of lost livelihoods and hollowed-out communities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Protectionists"
+      },
+      {
+        "role": "predicate",
+        "text": "point"
+      },
+      {
+        "role": "complement",
+        "text": "to the domestic producers who've paid the price for this globalized economy in the form of lost livelihoods and hollowed-out communities"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B01": {
+    "translation": "持续不断的保守派内战常常会演变成毫无内容的部落战争，但贸易是一个罕见的例外。",
+    "vocabulary": [
+      {
+        "term": "exception",
+        "explanation": "例外，除外"
+      },
+      {
+        "term": "content",
+        "explanation": "满足的，满意的，甘愿的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The ongoing conservative civil war"
+      },
+      {
+        "role": "predicate",
+        "text": "degenerates"
+      },
+      {
+        "role": "complement",
+        "text": "into content-free tribal warfare"
+      },
+      {
+        "role": "subject",
+        "text": "trade"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a rare exception"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The ongoing conservative civil war"
+      },
+      {
+        "role": "predicate",
+        "text": "degenerates"
+      },
+      {
+        "role": "complement",
+        "text": "into content-free tribal warfare"
+      },
+      {
+        "role": "subject",
+        "text": "trade"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a rare exception"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-B02": {
+    "translation": "争论双方都提出了实质性的、经过深思熟虑的政策建议。",
+    "vocabulary": [
+      {
+        "term": "argument",
+        "explanation": "争论，争吵"
+      },
+      {
+        "term": "thought",
+        "explanation": "想法，看法，主意"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "substantial, thought-out policy proposals on both sides of the argument"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "substantial, thought-out policy proposals on both sides of the argument"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C01": {
+    "translation": "因此，贸易作为一个讨论话题为自由主义者和民粹主义者提供了真正达成共识的机会。",
+    "vocabulary": [
+      {
+        "term": "opportunity",
+        "explanation": "时机，机会"
+      },
+      {
+        "term": "provides",
+        "explanation": "提供，供给"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "trade"
+      },
+      {
+        "role": "predicate",
+        "text": "provides"
+      },
+      {
+        "role": "object",
+        "text": "an opportunity for liberals"
+      },
+      {
+        "role": "predicate",
+        "text": "populists"
+      },
+      {
+        "role": "complement",
+        "text": "to have a real meeting of minds"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "trade"
+      },
+      {
+        "role": "predicate",
+        "text": "provides"
+      },
+      {
+        "role": "object",
+        "text": "an opportunity for liberals"
+      },
+      {
+        "role": "predicate",
+        "text": "populists"
+      },
+      {
+        "role": "complement",
+        "text": "to have a real meeting of minds"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-C02": {
+    "translation": "富有成效的辩论实际上可能会在这一领域发生，而不是我们已经习惯的谴责与反谴责的熟悉仪式。",
+    "vocabulary": [
+      {
+        "term": "familiar",
+        "explanation": "熟悉的"
+      },
+      {
+        "term": "actually",
+        "explanation": "实际上，事实上"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Fruitful debates"
+      },
+      {
+        "role": "predicate",
+        "text": "might actually take"
+      },
+      {
+        "role": "object",
+        "text": "place"
+      },
+      {
+        "role": "complement",
+        "text": "in this area"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Fruitful debates"
+      },
+      {
+        "role": "predicate",
+        "text": "might actually take"
+      },
+      {
+        "role": "object",
+        "text": "place"
+      },
+      {
+        "role": "complement",
+        "text": "in this area"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D01": {
+    "translation": "尽管听起来很奇怪，但现代世界的贸易问题并不是美元和美分的问题。",
+    "vocabulary": [
+      {
+        "term": "problem",
+        "explanation": "问题，难题，困难"
+      },
+      {
+        "term": "dollars",
+        "explanation": "美元（dollar 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Strange as it might sound",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the problem"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "a matter of dollars and cents"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the problem"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "a matter of dollars and cents"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-D02": {
+    "translation": "这是错误意识的问题。",
+    "vocabulary": [
+      {
+        "term": "matter",
+        "explanation": "事情，问题"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a matter of false consciousness"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a matter of false consciousness"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D03": {
+    "translation": "这一观察必然会给一些读者敲响马克思主义的警钟，但它是由亚历克西斯·德·托克维尔于 1840 年首次提出的。",
+    "vocabulary": [
+      {
+        "term": "readers",
+        "explanation": "reader 的复数形式：读者"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This observation"
+      },
+      {
+        "role": "predicate",
+        "text": "is bound"
+      },
+      {
+        "role": "complement",
+        "text": "to set Marxist alarm bells ringing in the minds of some readers"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was first made"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This observation"
+      },
+      {
+        "role": "predicate",
+        "text": "is bound"
+      },
+      {
+        "role": "complement",
+        "text": "to set Marxist alarm bells ringing in the minds of some readers"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "was first made"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-E01": {
+    "translation": "托克维尔追踪人类从原始社会到现代社会的经济发展，观察到几个世纪以来随着经济现实和人类对这些现实的经验越来越背离而出现的悖论。",
+    "vocabulary": [
+      {
+        "term": "development",
+        "explanation": "发育，成长，发达"
+      },
+      {
+        "term": "experience",
+        "explanation": "经历，往事"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Tracking the economic development of mankind from primitive to modern societies",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Tocqueville"
+      },
+      {
+        "role": "predicate",
+        "text": "observed"
+      },
+      {
+        "role": "object",
+        "text": "a paradox unfolding over the centuries"
+      },
+      {
+        "role": "complement",
+        "text": "as economic realities and human experience of those realities strayed further and further from each other"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Tocqueville"
+      },
+      {
+        "role": "predicate",
+        "text": "observed"
+      },
+      {
+        "role": "object",
+        "text": "a paradox unfolding over the centuries"
+      },
+      {
+        "role": "complement",
+        "text": "as economic realities and human experience of those realities strayed further and further from each other"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-E02": {
+    "translation": "他指出，在原始社会，劳动分工在很大程度上尚未发展，要求每个人、家庭或部落在满足自己的基本物质需求时相对独立。",
+    "vocabulary": [
+      {
+        "term": "independent",
+        "explanation": "自治的，独立的"
+      },
+      {
+        "term": "division",
+        "explanation": "分开，分配"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the division"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "as yet undeveloped for the most part"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the division"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "as yet undeveloped for the most part"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E03": {
+    "translation": "人们建造自己的住宅，耕种自己的土地，饲养自己的牲畜。",
+    "vocabulary": [
+      {
+        "term": "tended",
+        "explanation": "往往会；倾向于（tend 的过去式）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Men"
+      },
+      {
+        "role": "predicate",
+        "text": "built"
+      },
+      {
+        "role": "object",
+        "text": "their own dwellings"
+      },
+      {
+        "role": "predicate",
+        "text": "farmed"
+      },
+      {
+        "role": "object",
+        "text": "their own land"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Men"
+      },
+      {
+        "role": "predicate",
+        "text": "built"
+      },
+      {
+        "role": "object",
+        "text": "their own dwellings"
+      },
+      {
+        "role": "predicate",
+        "text": "farmed"
+      },
+      {
+        "role": "object",
+        "text": "their own land"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-E04": {
+    "translation": "这并不是否认基本形式的贸易的存在，但在大多数情况下，我们的原始祖先过着相当自力更生的生活，尽管生活极其贫困。",
+    "vocabulary": [
+      {
+        "term": "primitive",
+        "explanation": "原始的，远古的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "to deny that basic forms of trade took place"
+      },
+      {
+        "role": "subject",
+        "text": "our primitive ancestors"
+      },
+      {
+        "role": "predicate",
+        "text": "lived"
+      },
+      {
+        "role": "complement",
+        "text": "fairly self-reliant"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "to deny that basic forms of trade took place"
+      },
+      {
+        "role": "subject",
+        "text": "our primitive ancestors"
+      },
+      {
+        "role": "predicate",
+        "text": "lived"
+      },
+      {
+        "role": "complement",
+        "text": "fairly self-reliant"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-F01": {
+    "translation": "然而，古代和史前世界经济和政治组织的独特的地方性和面对面的性质不断地给这些原始民族留下深刻的印象：他人及其需求的现实是无法控制的。",
+    "vocabulary": [
+      {
+        "term": "organization",
+        "explanation": "组织，机构"
+      },
+      {
+        "term": "impressed",
+        "explanation": "钦佩的，印象深刻的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "However, the exclusively local and face-to-face nature of economic and political organization in the ancient and prehistoric worlds constantly impressed upon these primitive peoples the uncontrollable reality of others and their needs",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "complement",
+        "text": "However, the exclusively local and face-to-face nature of economic and political organization in the ancient and prehistoric worlds constantly impressed upon these primitive peoples the uncontrollable reality of others and their needs",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 标题式片段",
+      "explanation": "这是省略式或标题式表达，不强行补出主谓宾，按完整意群理解。"
+    }
+  },
+  "M-F02": {
+    "translation": "正如托克维尔所指出的，“一个人一旦开始在公共场合处理公共事务，他就开始意识到自己并不像他最初想象的那样独立于同胞，为了获得他们的支持，他必须经常与他们合作。”",
+    "vocabulary": [
+      {
+        "term": "perceive",
+        "explanation": "认为，理解"
+      },
+      {
+        "term": "independent",
+        "explanation": "自治的，独立的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As Tocqueville notes,\"as soon as a man begins to deal with common affairs in public",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "begins"
+      },
+      {
+        "role": "complement",
+        "text": "to perceive that he is not so independent of his fellow men as he had first imagined"
+      },
+      {
+        "role": "predicate",
+        "text": "must often lend"
+      },
+      {
+        "role": "object",
+        "text": "his cooperation"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "begins"
+      },
+      {
+        "role": "complement",
+        "text": "to perceive that he is not so independent of his fellow men as he had first imagined"
+      },
+      {
+        "role": "predicate",
+        "text": "must often lend"
+      },
+      {
+        "role": "object",
+        "text": "his cooperation"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-G01": {
+    "translation": "随着现代世界的到来，劳动分工在整个社会中越来越广泛地蔓延。",
+    "vocabulary": [
+      {
+        "term": "division",
+        "explanation": "分开，分配"
+      },
+      {
+        "term": "society",
+        "explanation": "社会（以群体形式生活在一起的人的总称）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the division"
+      },
+      {
+        "role": "predicate",
+        "text": "spread"
+      },
+      {
+        "role": "complement",
+        "text": "throughout society"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the division"
+      },
+      {
+        "role": "predicate",
+        "text": "spread"
+      },
+      {
+        "role": "complement",
+        "text": "throughout society"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G02": {
+    "translation": "每个人的基本需求都变得越来越依赖他人。",
+    "vocabulary": [
+      {
+        "term": "person",
+        "explanation": "人"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Each person"
+      },
+      {
+        "role": "predicate",
+        "text": "became"
+      },
+      {
+        "role": "complement",
+        "text": "more and more dependent on others"
+      },
+      {
+        "role": "complement",
+        "text": "for their basic needs"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Each person"
+      },
+      {
+        "role": "predicate",
+        "text": "became"
+      },
+      {
+        "role": "complement",
+        "text": "more and more dependent on others"
+      },
+      {
+        "role": "complement",
+        "text": "for their basic needs"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G03": {
+    "translation": "然而，由于我们的祖先因环境而被迫与邻居和当地社区进行接触，我们感到自己越来越独立。",
+    "vocabulary": [
+      {
+        "term": "communities",
+        "explanation": "社区"
+      },
+      {
+        "term": "neighbors",
+        "explanation": "街坊邻里，邻居"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "yet, robbed of the engagement with our neighbors and with our local communities that our ancestors were forced into by circumstance",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "feel"
+      },
+      {
+        "role": "object",
+        "text": "ourselves to be more and more independent of one another",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "feel"
+      },
+      {
+        "role": "object",
+        "text": "ourselves to be more and more independent of one another",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-G04": {
+    "translation": "当我们越来越依赖他人时，我们就会越来越不意识到自己对他人的依赖。",
+    "vocabulary": [
+      {
+        "term": "conscious",
+        "explanation": "意识到的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As we become more and more dependent on others",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "become"
+      },
+      {
+        "role": "complement",
+        "text": "less and less conscious of our dependence on others"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "become"
+      },
+      {
+        "role": "complement",
+        "text": "less and less conscious of our dependence on others"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-G05": {
+    "translation": "这就是现代世界贸易的悖论。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the paradox of trade in the modern world"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the paradox of trade in the modern world"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H01": {
+    "translation": "这种悖论产生的错误意识对我们关于自由贸易的辩论造成了严重破坏。",
+    "vocabulary": [
+      {
+        "term": "generates",
+        "explanation": "产生，引起"
+      },
+      {
+        "term": "causes",
+        "explanation": "原因"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The false consciousness"
+      },
+      {
+        "role": "predicate",
+        "text": "causes"
+      },
+      {
+        "role": "object",
+        "text": "havoc"
+      },
+      {
+        "role": "complement",
+        "text": "on the debates we have"
+      },
+      {
+        "role": "complement",
+        "text": "about free trade"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The false consciousness"
+      },
+      {
+        "role": "predicate",
+        "text": "causes"
+      },
+      {
+        "role": "object",
+        "text": "havoc"
+      },
+      {
+        "role": "complement",
+        "text": "on the debates we have"
+      },
+      {
+        "role": "complement",
+        "text": "about free trade"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H02": {
+    "translation": "在任何一个美国家庭中，几乎没有一种商品的制造和销售不依赖于分布在全球各地的数十个不同的人，通过一个或另一个供应链。",
+    "vocabulary": [
+      {
+        "term": "commodity",
+        "explanation": "商品，货物"
+      },
+      {
+        "term": "supply",
+        "explanation": "供给量，储备"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a single commodity in any American household that isn't dependent for its manufacture and sale"
+      },
+      {
+        "role": "complement",
+        "text": "through one supply chain or another"
+      },
+      {
+        "role": "complement",
+        "text": "on scores of different people spread out across the entire globe"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a single commodity in any American household that isn't dependent for its manufacture and sale"
+      },
+      {
+        "role": "complement",
+        "text": "through one supply chain or another"
+      },
+      {
+        "role": "complement",
+        "text": "on scores of different people spread out across the entire globe"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H03": {
+    "translation": "但正如托克维尔在 1840 年就预见到的那样，我们并不觉得自己的生活方式依赖于这些陌生人。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "as Tocqueville already foresaw in 1840",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "do not feel"
+      },
+      {
+        "role": "complement",
+        "text": "dependent on these strangers"
+      },
+      {
+        "role": "complement",
+        "text": "for our way of life"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "do not feel"
+      },
+      {
+        "role": "complement",
+        "text": "dependent on these strangers"
+      },
+      {
+        "role": "complement",
+        "text": "for our way of life"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H04": {
+    "translation": "我们的民族意识从未意识到我们自己的物质福利依赖于他们的工作。",
+    "vocabulary": [
+      {
+        "term": "welfare",
+        "explanation": "幸福，安康"
+      },
+      {
+        "term": "strikes",
+        "explanation": "击，撞"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "No sense"
+      },
+      {
+        "role": "predicate",
+        "text": "strikes"
+      },
+      {
+        "role": "object",
+        "text": "our national consciousness"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "No sense"
+      },
+      {
+        "role": "predicate",
+        "text": "strikes"
+      },
+      {
+        "role": "object",
+        "text": "our national consciousness"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H05": {
+    "translation": "我们很少怀着感激之情思考自由贸易的全球化途径。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "contemplate"
+      },
+      {
+        "role": "object",
+        "text": "the globalized avenues of free trade"
+      },
+      {
+        "role": "complement",
+        "text": "with gratitude"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "contemplate"
+      },
+      {
+        "role": "object",
+        "text": "the globalized avenues of free trade"
+      },
+      {
+        "role": "complement",
+        "text": "with gratitude"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H06": {
+    "translation": "D 造成这种情况的原因有两个。",
+    "vocabulary": [
+      {
+        "term": "reasons",
+        "explanation": "原因（reason 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "two reasons for this"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "two reasons for this"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H07": {
+    "translation": "第一个，说白了就是钱。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "first"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "money"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "first"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "money"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H08": {
+    "translation": "金钱让我们能够购买他人的作品，而不用将他们视为人。",
+    "vocabulary": [
+      {
+        "term": "thought",
+        "explanation": "想法，看法，主意"
+      },
+      {
+        "term": "beings",
+        "explanation": "（任何真实或虚构的）生物"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Money"
+      },
+      {
+        "role": "predicate",
+        "text": "allows"
+      },
+      {
+        "role": "object",
+        "text": "us to purchase the work of others without giving any thought to them as human beings",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Money"
+      },
+      {
+        "role": "predicate",
+        "text": "allows"
+      },
+      {
+        "role": "object",
+        "text": "us to purchase the work of others without giving any thought to them as human beings",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H09": {
+    "translation": "与我们在原始乡镇的祖先不同，我们很少需要面对面地见到发明、建造、运输或供应我们商品的人们。",
+    "vocabulary": [
+      {
+        "term": "invented",
+        "explanation": "发明，创造"
+      },
+      {
+        "term": "supplied",
+        "explanation": "供给量，储备"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "complement",
+        "text": "to meet face-to-face the people who've invented, built, shipped, or supplied our goods"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "complement",
+        "text": "to meet face-to-face the people who've invented, built, shipped, or supplied our goods"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H10": {
+    "translation": "在进行交换之前无需建立任何关系。",
+    "vocabulary": [
+      {
+        "term": "relationship",
+        "explanation": "（人、团体、国家等相互间的）关系"
+      },
+      {
+        "term": "exchange",
+        "explanation": "交换，互换"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "No relationship"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "to be built before an exchange can take place"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "No relationship"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "complement",
+        "text": "to be built before an exchange can take place"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H11": {
+    "translation": "只需商定价格，您就可以拥有您想要的任何商品，而无需再考虑交易另一方的人员。",
+    "vocabulary": [
+      {
+        "term": "transaction",
+        "explanation": "交易，买卖，业务"
+      },
+      {
+        "term": "involved",
+        "explanation": "复杂的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "agree"
+      },
+      {
+        "role": "complement",
+        "text": "on a price"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "can have"
+      },
+      {
+        "role": "object",
+        "text": "any goods you wish"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "agree"
+      },
+      {
+        "role": "complement",
+        "text": "on a price"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "can have"
+      },
+      {
+        "role": "object",
+        "text": "any goods you wish"
+      }
+    ],
+    "structure": {
+      "pattern": "谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-H12": {
+    "translation": "这样，金钱让我们感觉比实际更独立。",
+    "vocabulary": [
+      {
+        "term": "independent",
+        "explanation": "自治的，独立的"
+      },
+      {
+        "term": "actually",
+        "explanation": "实际上，事实上"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "money"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "us feel more independent than we actually are",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "money"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "us feel more independent than we actually are",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H13": {
+    "translation": "我们每个人都感觉到它对我们同胞的控制力。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Each"
+      },
+      {
+        "role": "predicate",
+        "text": "senses"
+      },
+      {
+        "role": "object",
+        "text": "the hold that it has over our fellows"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Each"
+      },
+      {
+        "role": "predicate",
+        "text": "senses"
+      },
+      {
+        "role": "object",
+        "text": "the hold that it has over our fellows"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H14": {
+    "translation": "我们知道，如果我们出价足够高，我们就可以摆脱建立关系的耗时劳动。",
+    "vocabulary": [
+      {
+        "term": "relationships",
+        "explanation": "（人、团体、国家等相互间的）关系"
+      },
+      {
+        "term": "building",
+        "explanation": "建筑物，房屋，楼房"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "that if we bid highly enough we can buy ourselves out of the time-consuming labor of building relationships",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "that if we bid highly enough we can buy ourselves out of the time-consuming labor of building relationships",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H15": {
+    "translation": "从这个角度来看，金钱有点像魔法。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Money"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "kind of like magic"
+      },
+      {
+        "role": "complement",
+        "text": "in that way"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Money"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "kind of like magic"
+      },
+      {
+        "role": "complement",
+        "text": "in that way"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H16": {
+    "translation": "它为我们提供了一套要执行的仪式，并承诺如果我们这样做，我们将能够对他人行使权力。",
+    "vocabulary": [
+      {
+        "term": "promises",
+        "explanation": "承诺，保证"
+      },
+      {
+        "term": "perform",
+        "explanation": "演出，表演"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "gives"
+      },
+      {
+        "role": "object",
+        "text": "a set of rituals to perform and promises that if we do so we'll be able to wield power over others"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "gives"
+      },
+      {
+        "role": "object",
+        "text": "a set of rituals to perform and promises that if we do so we'll be able to wield power over others"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H17": {
+    "translation": "这就产生了一种错觉，认为有足够的钱买东西就相当于知道如何自己制作东西。",
+    "vocabulary": [
+      {
+        "term": "created",
+        "explanation": "创造"
+      },
+      {
+        "term": "having",
+        "explanation": "有，拥有（have 的现在分词）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The illusion"
+      },
+      {
+        "role": "predicate",
+        "text": "is created"
+      },
+      {
+        "role": "object",
+        "text": "that having enough money to buy something is the equivalent of knowing how to make it yourself",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The illusion"
+      },
+      {
+        "role": "predicate",
+        "text": "is created"
+      },
+      {
+        "role": "object",
+        "text": "that having enough money to buy something is the equivalent of knowing how to make it yourself",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H18": {
+    "translation": "我们很少意识到对构成供应链的匿名男女的感激之情。",
+    "vocabulary": [
+      {
+        "term": "supply",
+        "explanation": "供给量，储备"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Gratitude"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "its way"
+      },
+      {
+        "role": "complement",
+        "text": "into our consciousness"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Gratitude"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "its way"
+      },
+      {
+        "role": "complement",
+        "text": "into our consciousness"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I01": {
+    "translation": "事实上，匿名是自由贸易悖论的第二个根本原因。",
+    "vocabulary": [
+      {
+        "term": "second",
+        "explanation": "第二（的），第二个（的）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Anonymity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the second root cause of the free-trade paradox"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Anonymity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the second root cause of the free-trade paradox"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I02": {
+    "translation": "现代性将每个人从地点和社区的限制中解放出来。",
+    "vocabulary": [
+      {
+        "term": "community",
+        "explanation": "社区，社会"
+      },
+      {
+        "term": "limits",
+        "explanation": "范围"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Modernity"
+      },
+      {
+        "role": "predicate",
+        "text": "has emancipated"
+      },
+      {
+        "role": "object",
+        "text": "everyone from the limits of location and community"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Modernity"
+      },
+      {
+        "role": "predicate",
+        "text": "has emancipated"
+      },
+      {
+        "role": "object",
+        "text": "everyone from the limits of location and community"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I03": {
+    "translation": "总的来说，当我们进行交易时，我们是在与陌生人进行交易；当我们投票时，我们投票给陌生人；当我们看、读或听故事时，故事的讲述者都是陌生人。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      },
+      {
+        "term": "tellers",
+        "explanation": "银行柜员；出纳员（teller 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the tellers"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "strangers"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the tellers"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "strangers"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I04": {
+    "translation": "与托克维尔将我们比作的祖先相反，我们不了解我们必须与之打交道的人，无论是在经济领域还是在政治领域。",
+    "vocabulary": [
+      {
+        "term": "compares",
+        "explanation": "比较，对比"
+      },
+      {
+        "term": "sphere",
+        "explanation": "（活动、兴趣、专业知识的）范围，领域"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "do not know"
+      },
+      {
+        "role": "object",
+        "text": "the people with whom we have to do"
+      },
+      {
+        "role": "complement",
+        "text": "in either the economic or the political sphere"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "do not know"
+      },
+      {
+        "role": "object",
+        "text": "the people with whom we have to do"
+      },
+      {
+        "role": "complement",
+        "text": "in either the economic or the political sphere"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I05": {
+    "translation": "这只是市场奇迹的阴暗面，历史上第一次让陌生人能够互相照顾。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      },
+      {
+        "term": "markets",
+        "explanation": "市场，集市（market 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the shadow side of the miracle of markets, which, for the first time in history, have allowed strangers to look after each other"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the shadow side of the miracle of markets, which, for the first time in history, have allowed strangers to look after each other"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I06": {
+    "translation": "它们还让我们每个人越来越多地以陌生人的身份过着自己的生活。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      },
+      {
+        "term": "exclusively",
+        "explanation": "仅仅，单独地，专门地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "'ve also allowed"
+      },
+      {
+        "role": "object",
+        "text": "each of us to live more and more of our lives exclusively as strangers to other people",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "'ve also allowed"
+      },
+      {
+        "role": "object",
+        "text": "each of us to live more and more of our lives exclusively as strangers to other people",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-I07": {
+    "translation": "托克维尔是这样相当悲观地描述我们的：每个人，孤立无援，对他人的命运都像陌生人一样；每个人都对他人的命运感到陌生。他的孩子和私人朋友为他构成了整个人类。",
+    "vocabulary": [
+      {
+        "term": "describes",
+        "explanation": "（describe 的第三人称单数形式）：描述，叙述，记述"
+      },
+      {
+        "term": "standing",
+        "explanation": "永久的，长期的，常设的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "how Tocqueville—rather pessimistically—describes us",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Each"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "how Tocqueville—rather pessimistically—describes us",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Each"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 主语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-I08": {
+    "translation": "至于其余的同胞，他就在他们旁边，但他看不到他们。",
+    "vocabulary": [
+      {
+        "term": "citizens",
+        "explanation": "公民（citizen 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "beside them"
+      },
+      {
+        "role": "predicate",
+        "text": "does not see"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "beside them"
+      },
+      {
+        "role": "predicate",
+        "text": "does not see"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-I09": {
+    "translation": "他触摸它们，但感觉不到它们。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "touches"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "does not feel"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "touches"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "does not feel"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-I10": {
+    "translation": "他只存在于他自己之中并为他自己而存在。",
+    "vocabulary": [
+      {
+        "term": "exists",
+        "explanation": "存在量词（exist 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "exists"
+      },
+      {
+        "role": "complement",
+        "text": "only in and for himself"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "exists"
+      },
+      {
+        "role": "complement",
+        "text": "only in and for himself"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-J01": {
+    "translation": "最后一句话非常贴切地概括了我们每个人在现代经济中的运作方式：“他触摸了它们，但他感觉不到它们。”",
+    "vocabulary": [
+      {
+        "term": "functions",
+        "explanation": "功能，作用，职责"
+      },
+      {
+        "term": "economy",
+        "explanation": "经济"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The last sentence"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "does not feel"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The last sentence"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "does not feel"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-K01": {
+    "translation": "这是自由贸易捍卫者面临的最大挑战。",
+    "vocabulary": [
+      {
+        "term": "challenge",
+        "explanation": "挑战，难题"
+      },
+      {
+        "term": "greatest",
+        "explanation": "最伟大的，最杰出的，最好的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the greatest challenge facing defenders of free trade"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the greatest challenge facing defenders of free trade"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-K02": {
+    "translation": "人类很难对陌生人心存感激，而全球市场让我们变得如此富有，也让我们彼此变得陌生。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      },
+      {
+        "term": "difficult",
+        "explanation": "困难的，费力的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "exceedingly difficult"
+      },
+      {
+        "role": "subject",
+        "text": "the global marketplace"
+      },
+      {
+        "role": "predicate",
+        "text": "has also made"
+      },
+      {
+        "role": "object",
+        "text": "us strangers",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "exceedingly difficult"
+      },
+      {
+        "role": "subject",
+        "text": "the global marketplace"
+      },
+      {
+        "role": "predicate",
+        "text": "has also made"
+      },
+      {
+        "role": "object",
+        "text": "us strangers",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-K03": {
+    "translation": "我们的大脑天生适合部落生活，而部落不会善待陌生人。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Our brains"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "hardwired for tribal life"
+      },
+      {
+        "role": "subject",
+        "text": "tribes"
+      },
+      {
+        "role": "predicate",
+        "text": "do not take"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Our brains"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "hardwired for tribal life"
+      },
+      {
+        "role": "subject",
+        "text": "tribes"
+      },
+      {
+        "role": "predicate",
+        "text": "do not take"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-K04": {
+    "translation": "因此，让外国人对陌生人产生依赖感和感激之情是一项艰巨的任务。",
+    "vocabulary": [
+      {
+        "term": "strangers",
+        "explanation": "陌生人"
+      },
+      {
+        "term": "foreign",
+        "explanation": "外国的，来自国外的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Impressing a sense of dependence upon and gratitude toward foreign strangers",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an uphill task"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Impressing a sense of dependence upon and gratitude toward foreign strangers",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an uphill task"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-L01": {
+    "translation": "如果自由贸易者想要在未来赢得政策争论，他们就必须找到一种在美国消费者和外国生产商之间建立感情纽带的方法。",
+    "vocabulary": [
+      {
+        "term": "consumers",
+        "explanation": "消费者，消耗者"
+      },
+      {
+        "term": "arguments",
+        "explanation": "争论，争吵"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If free-traders are going to win policy arguments in the future",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "'ll have"
+      },
+      {
+        "role": "complement",
+        "text": "to find a way of forging bonds of affection between American consumers and foreign producers"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "'ll have"
+      },
+      {
+        "role": "complement",
+        "text": "to find a way of forging bonds of affection between American consumers and foreign producers"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-L02": {
+    "translation": "只有消除向我们提供海外商品和服务的人们的匿名性，并建立超越经济利益的跨国界团结和关系，自由贸易才能赢得胜利。",
+    "vocabulary": [
+      {
+        "term": "relationship",
+        "explanation": "（人、团体、国家等相互间的）关系"
+      },
+      {
+        "term": "solidarity",
+        "explanation": "团结一致"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "can free"
+      },
+      {
+        "role": "object",
+        "text": "trade win the day"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "can free"
+      },
+      {
+        "role": "object",
+        "text": "trade win the day"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-L03": {
+    "translation": "否则，保护主义者以民族主义团结的形式所拥有的先天生物学优势必然会在投票箱中获胜。",
+    "vocabulary": [
+      {
+        "term": "solidarity",
+        "explanation": "团结一致"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the inborn biological upper hand"
+      },
+      {
+        "role": "predicate",
+        "text": "is bound"
+      },
+      {
+        "role": "complement",
+        "text": "to win the day at the ballot box"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the inborn biological upper hand"
+      },
+      {
+        "role": "predicate",
+        "text": "is bound"
+      },
+      {
+        "role": "complement",
+        "text": "to win the day at the ballot box"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-01": {
+    "translation": "网上有数百个性格测验，声称它们可以确定你的右半脑或左半脑占主导地位。",
+    "vocabulary": [
+      {
+        "term": "hundreds",
+        "explanation": "数百，成百上千，许多，大量（常与 of 连用）"
+      },
+      {
+        "term": "online",
+        "explanation": "（产品、服务或信息）在线的，网上的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "hundreds of personality quizzes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "hundreds of personality quizzes"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-02": {
+    "translation": "左脑型的人被认为逻辑性强，擅长语言和数学，而右脑型的人则更具想象力、情商和空间推理能力。",
+    "vocabulary": [
+      {
+        "term": "reasoning",
+        "explanation": "推理，推论"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Left-brained people"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "supposedly logical"
+      },
+      {
+        "role": "predicate",
+        "text": "excel"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Left-brained people"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "supposedly logical"
+      },
+      {
+        "role": "predicate",
+        "text": "excel"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-03": {
+    "translation": "只有一个问题：大脑不是这样工作的。",
+    "vocabulary": [
+      {
+        "term": "problem",
+        "explanation": "问题，难题，困难"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "object",
+        "text": "how brains work",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "object",
+        "text": "how brains work",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-04": {
+    "translation": "科普爱好者们接受了这个想法并付诸实践，它现在已经融入流行文化中，而且不会消失。",
+    "vocabulary": [
+      {
+        "term": "science",
+        "explanation": "科学，科学知识"
+      },
+      {
+        "term": "culture",
+        "explanation": "文化，文明"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Popular science enthusiasts"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "this idea"
+      },
+      {
+        "role": "predicate",
+        "text": "ran"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s become"
+      },
+      {
+        "role": "complement",
+        "text": "woven in popular culture"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Popular science enthusiasts"
+      },
+      {
+        "role": "predicate",
+        "text": "took"
+      },
+      {
+        "role": "object",
+        "text": "this idea"
+      },
+      {
+        "role": "predicate",
+        "text": "ran"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s become"
+      },
+      {
+        "role": "complement",
+        "text": "woven in popular culture"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-05": {
+    "translation": "尽管有这种持久的信念，但并不存在“右脑”或“左脑”之类的东西。",
+    "vocabulary": [
+      {
+        "term": "belief",
+        "explanation": "相信，信心"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "no such thing as being “right-brained” or “left-brained”"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "no such thing as being “right-brained” or “left-brained”"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-06": {
+    "translation": "无论你是更倾向于创造力还是更倾向于逻辑，这与你的大脑半球是否优于另一半球无关。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Whether you're someone who tends more towards creativity or logic",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "nothing to do with one hemisphere of your brain being dominant over the other"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Whether you're someone who tends more towards creativity or logic",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "nothing to do with one hemisphere of your brain being dominant over the other"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-07": {
+    "translation": "但关于我们大脑的两半部分如何协同工作的实际科学有时比小说更奇怪。",
+    "vocabulary": [
+      {
+        "term": "science",
+        "explanation": "科学，科学知识"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the actual science"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "sometimes stranger than fiction"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the actual science"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "sometimes stranger than fiction"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-08": {
+    "translation": "人的大脑分为两个半球，左脑和右脑。",
+    "vocabulary": [
+      {
+        "term": "divided",
+        "explanation": "分裂的，有分歧的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The human brain is divided into two hemispheres, the left and right"
+      },
+      {
+        "role": "predicate",
+        "text": "is divided"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The human brain is divided into two hemispheres, the left and right"
+      },
+      {
+        "role": "predicate",
+        "text": "is divided"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-09": {
+    "translation": "在所有脊椎动物中，右半球控制身体的左侧，反之亦然。",
+    "vocabulary": [
+      {
+        "term": "controls",
+        "explanation": "（对国家、地区、机构等的）控制权，支配权"
+      },
+      {
+        "term": "animals",
+        "explanation": "动物"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the right hemisphere"
+      },
+      {
+        "role": "predicate",
+        "text": "controls"
+      },
+      {
+        "role": "object",
+        "text": "the left side of the body and vice versa"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the right hemisphere"
+      },
+      {
+        "role": "predicate",
+        "text": "controls"
+      },
+      {
+        "role": "object",
+        "text": "the left side of the body and vice versa"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-10": {
+    "translation": "科学家们早就知道，由于脑损伤患者的行为，大脑的不同区域会做不同的事情。",
+    "vocabulary": [
+      {
+        "term": "scientists",
+        "explanation": "科学家（scientist 的复数）"
+      },
+      {
+        "term": "patients",
+        "explanation": "病人，患者"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "different areas"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "object",
+        "text": "different things"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "different areas"
+      },
+      {
+        "role": "predicate",
+        "text": "do"
+      },
+      {
+        "role": "object",
+        "text": "different things"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-11": {
+    "translation": "但许多科学家对这个想法感到困惑，因为左右半脑运作方式不同的建议破坏了自然趋于完美对称的观点。",
+    "vocabulary": [
+      {
+        "term": "scientists",
+        "explanation": "科学家（scientist 的复数）"
+      },
+      {
+        "term": "struggled",
+        "explanation": "（struggle 的过去式和过去分词）挣扎"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "struggled"
+      },
+      {
+        "role": "complement",
+        "text": "with this idea"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "struggled"
+      },
+      {
+        "role": "complement",
+        "text": "with this idea"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-12": {
+    "translation": "神经科学家的工作揭示了大脑不同半球对于不同活动的重要性。",
+    "vocabulary": [
+      {
+        "term": "activities",
+        "explanation": "活动（activity 的复数）"
+      },
+      {
+        "term": "revealed",
+        "explanation": "揭露，透露"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Work"
+      },
+      {
+        "role": "predicate",
+        "text": "has revealed"
+      },
+      {
+        "role": "object",
+        "text": "the importance of different hemispheres of the brain for different activities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Work"
+      },
+      {
+        "role": "predicate",
+        "text": "has revealed"
+      },
+      {
+        "role": "object",
+        "text": "the importance of different hemispheres of the brain for different activities"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-13": {
+    "translation": "然而，他们的研究很快就引起了公众的一些误解：一些人认为富有创造力的人必须是右脑型的，而逻辑型的人必须是左脑型的。",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+      },
+      {
+        "term": "public",
+        "explanation": "公众的，大众的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "must be"
+      },
+      {
+        "role": "complement",
+        "text": "right-brained and logical people left-brained"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "must be"
+      },
+      {
+        "role": "complement",
+        "text": "right-brained and logical people left-brained"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-14": {
+    "translation": "事实证明，不仅性格与大脑的不同半球无关，而且人们一开始就不是真正的右脑或左脑。",
+    "vocabulary": [
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      },
+      {
+        "term": "different",
+        "explanation": "不同的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is proven"
+      },
+      {
+        "role": "object",
+        "text": "that not only is personality unrelated to the different halves of the brain",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "aren't"
+      },
+      {
+        "role": "complement",
+        "text": "right-or left-brained"
+      },
+      {
+        "role": "complement",
+        "text": "to begin with"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is proven"
+      },
+      {
+        "role": "object",
+        "text": "that not only is personality unrelated to the different halves of the brain",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "aren't"
+      },
+      {
+        "role": "complement",
+        "text": "right-or left-brained"
+      },
+      {
+        "role": "complement",
+        "text": "to begin with"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-15": {
+    "translation": "认为我们有左主导的人和右主导的人，并且这与性格有关的想法是绝对错误的。",
+    "vocabulary": [
+      {
+        "term": "related",
+        "explanation": "相关的，有联系的"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The idea"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "categorically false"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The idea"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "categorically false"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-16": {
+    "translation": "这在神经科学界从未得到支持。",
+    "vocabulary": [
+      {
+        "term": "supported",
+        "explanation": "被支持的（得到帮助、资助或证据支持的）"
+      },
+      {
+        "term": "community",
+        "explanation": "社区，社会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "'s never been supported"
+      },
+      {
+        "role": "complement",
+        "text": "in the neuroscience community"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "'s never been supported"
+      },
+      {
+        "role": "complement",
+        "text": "in the neuroscience community"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-17": {
+    "translation": "神经科学家不相信这一点，也从未相信过。",
+    "vocabulary": [
+      {
+        "term": "believe",
+        "explanation": "相信"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Neuroscientists"
+      },
+      {
+        "role": "predicate",
+        "text": "don't believe"
+      },
+      {
+        "role": "object",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "never have"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Neuroscientists"
+      },
+      {
+        "role": "predicate",
+        "text": "don't believe"
+      },
+      {
+        "role": "object",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "never have"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-18": {
+    "translation": "科学家们了解到，左半球和右半球之间确实存在重要差异。",
+    "vocabulary": [
+      {
+        "term": "differences",
+        "explanation": "偏差，差异（difference 复数形式）"
+      },
+      {
+        "term": "scientists",
+        "explanation": "科学家（scientist 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "What scientists learned",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that there are really important differences between the left hemisphere and the right hemisphere",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "What scientists learned",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that there are really important differences between the left hemisphere and the right hemisphere",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-19": {
+    "translation": "只是它们与个性无关，也与认知策略是否更具逻辑性、自由精神或创造性无关。",
+    "vocabulary": [
+      {
+        "term": "strategy",
+        "explanation": "（尤指为获得某物制定长期的）策略，行动计划"
+      },
+      {
+        "term": "cognitive",
+        "explanation": "认识的，认知的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "object",
+        "text": "that they have nothing to do with personality or whether cognitive strategy is more logical or free spirited or creative",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "object",
+        "text": "that they have nothing to do with personality or whether cognitive strategy is more logical or free spirited or creative",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-20": {
+    "translation": "虽然研究人员已经证明了大脑半球影响我们生活的局限性，但不难理解这些想法的吸引力。",
+    "vocabulary": [
+      {
+        "term": "researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      },
+      {
+        "term": "understand",
+        "explanation": "理解，懂得"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "While researchers have shown the limitations of how the hemispheres of our brains influence our lives",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "difficult"
+      },
+      {
+        "role": "complement",
+        "text": "to understand the appeal of such ideas"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "difficult"
+      },
+      {
+        "role": "complement",
+        "text": "to understand the appeal of such ideas"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-21": {
+    "translation": "人们对自己和朋友有着无尽的着迷，人们看待世界的细微差别对他们来说确实很有意义。",
+    "vocabulary": [
+      {
+        "term": "differences",
+        "explanation": "偏差，差异（difference 复数形式）"
+      },
+      {
+        "term": "fascinated",
+        "explanation": "入迷的，极感兴趣的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "People"
+      },
+      {
+        "role": "predicate",
+        "text": "are endlessly fascinated"
+      },
+      {
+        "role": "subject",
+        "text": "the subtle differences"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "meaningful to them"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "People"
+      },
+      {
+        "role": "predicate",
+        "text": "are endlessly fascinated"
+      },
+      {
+        "role": "subject",
+        "text": "the subtle differences"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "meaningful to them"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-22": {
+    "translation": "当你想出一个在线测验来告诉我们一些关于我们自己的事情时，我们就会被它吸引。",
+    "vocabulary": [
+      {
+        "term": "online",
+        "explanation": "（产品、服务或信息）在线的，网上的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When you come up with an online quiz that tells us something about ourselves",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "'re drawn"
+      },
+      {
+        "role": "complement",
+        "text": "to that"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "'re drawn"
+      },
+      {
+        "role": "complement",
+        "text": "to that"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-23": {
+    "translation": "这是不可抗拒的。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "irresistible"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "irresistible"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-24": {
+    "translation": "但你必须对此持保留态度。",
+    "vocabulary": [
+      {
+        "term": "enormous",
+        "explanation": "巨大的，极大的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "complement",
+        "text": "to take it with an enormous grain of salt"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "complement",
+        "text": "to take it with an enormous grain of salt"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-01": {
+    "translation": "一百三十五名学生、四名教师、一间巨大的教室：这就是韦斯特伍德高中九年级的样子，该高中位于亚利桑那州梅萨最大的学校系统。",
+    "vocabulary": [
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      },
+      {
+        "term": "students",
+        "explanation": "学生（student 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "what 9th grade looks like at Westwood High School, in Mesa, Arizona's largest school system",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "what 9th grade looks like at Westwood High School, in Mesa, Arizona's largest school system",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-02": {
+    "translation": "在那里，一种创新的教学模式已经形成，并正在推广到该地区及其他地区的其他学校。",
+    "vocabulary": [
+      {
+        "term": "schools",
+        "explanation": "（中、小）学校"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "an innovative teaching model"
+      },
+      {
+        "role": "predicate",
+        "text": "has taken"
+      },
+      {
+        "role": "object",
+        "text": "hold"
+      },
+      {
+        "role": "predicate",
+        "text": "is spreading"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "an innovative teaching model"
+      },
+      {
+        "role": "predicate",
+        "text": "has taken"
+      },
+      {
+        "role": "object",
+        "text": "hold"
+      },
+      {
+        "role": "predicate",
+        "text": "is spreading"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-03": {
+    "translation": "五年前，面对教师流动率高和学生入学率下降的情况，韦斯特伍德的领导者决定尝试一些不同的东西。",
+    "vocabulary": [
+      {
+        "term": "declining",
+        "explanation": "越来越少的，越来越差的"
+      },
+      {
+        "term": "teacher",
+        "explanation": "教师"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "faced with high teacher turnover and declining student enrollment",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Westwood's leaders"
+      },
+      {
+        "role": "predicate",
+        "text": "decided"
+      },
+      {
+        "role": "complement",
+        "text": "to try something different"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Westwood's leaders"
+      },
+      {
+        "role": "predicate",
+        "text": "decided"
+      },
+      {
+        "role": "complement",
+        "text": "to try something different"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-04": {
+    "translation": "他们与亚利桑那州立大学师范学院的教授合作，试行了一种称为团队教学的课堂模式，该模式允许教师消除物理或年级分隔班级的墙壁。",
+    "vocabulary": [
+      {
+        "term": "professors",
+        "explanation": "教授（professor 的复数）"
+      },
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Working with professors at Arizona State University's teachers college",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "piloted"
+      },
+      {
+        "role": "object",
+        "text": "a classroom model known as team teaching, which allows teachers to dissolve the walls that separate their classes across physical or grade divides"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "piloted"
+      },
+      {
+        "role": "object",
+        "text": "a classroom model known as team teaching, which allows teachers to dissolve the walls that separate their classes across physical or grade divides"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-05": {
+    "translation": "教师们与一大群学生（有时 100 名或更多）一起轮流进行小组教学、一对一干预、小型学习小组或教师团队一致同意的当天优先事项。",
+    "vocabulary": [
+      {
+        "term": "interventions",
+        "explanation": "干预，干涉，介入（intervention 的复数）"
+      },
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "share"
+      },
+      {
+        "role": "object",
+        "text": "large groups of students-"
+      },
+      {
+        "role": "predicate",
+        "text": "rotate"
+      },
+      {
+        "role": "subject",
+        "text": "agree"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a priority that day"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "share"
+      },
+      {
+        "role": "object",
+        "text": "large groups of students-"
+      },
+      {
+        "role": "predicate",
+        "text": "rotate"
+      },
+      {
+        "role": "subject",
+        "text": "agree"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a priority that day"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-06": {
+    "translation": "有时看似混乱的事情实际上是一个精心策划的计划：每天早上，Westwood 团队都会开会，为团队当天关注的每个学生制定个性化计划。",
+    "vocabulary": [
+      {
+        "term": "student",
+        "explanation": "学生"
+      },
+      {
+        "term": "program",
+        "explanation": "（计算机）程序（=programme）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the Westwood teams"
+      },
+      {
+        "role": "predicate",
+        "text": "meet"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the Westwood teams"
+      },
+      {
+        "role": "predicate",
+        "text": "meet"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-07": {
+    "translation": "梅萨的管理人员希望通过为教师提供更多合作机会来填补人员缺口，提高教师士气和保留率。",
+    "vocabulary": [
+      {
+        "term": "opportunity",
+        "explanation": "时机，机会"
+      },
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Mesa's administrators"
+      },
+      {
+        "role": "predicate",
+        "text": "hoped"
+      },
+      {
+        "role": "complement",
+        "text": "to fill staffing gaps and boost teacher morale and retention"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Mesa's administrators"
+      },
+      {
+        "role": "predicate",
+        "text": "hoped"
+      },
+      {
+        "role": "complement",
+        "text": "to fill staffing gaps and boost teacher morale and retention"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-08": {
+    "translation": "初步研究表明，这场赌博可能会得到回报。",
+    "vocabulary": [
+      {
+        "term": "suggests",
+        "explanation": "表明；暗示；建议（suggest 的第三人称单数）"
+      },
+      {
+        "term": "research",
+        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Initial research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "the gamble could pay off",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Initial research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "the gamble could pay off",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-09": {
+    "translation": "梅萨公立学校的校长安迪·福利斯 (Andi Fourlis) 表示：“老师们正在做着很棒的事情，但很少有老师走进另一个房间来看看发生了什么。”",
+    "vocabulary": [
+      {
+        "term": "Teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      },
+      {
+        "term": "teacher",
+        "explanation": "教师"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "are doing"
+      },
+      {
+        "role": "object",
+        "text": "fantastic things"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "very rare"
+      },
+      {
+        "role": "object",
+        "text": "a teacher walks into another room to see what's happening,\"said Andi Fourlis, superintendent of Mesa Public Schools",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "are doing"
+      },
+      {
+        "role": "object",
+        "text": "fantastic things"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "very rare"
+      },
+      {
+        "role": "object",
+        "text": "a teacher walks into another room to see what's happening,\"said Andi Fourlis, superintendent of Mesa Public Schools",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-10": {
+    "translation": "“我们的职业发展如此缓慢，因为我们是孤立工作的。",
+    "vocabulary": [
+      {
+        "term": "working",
+        "explanation": "有工作的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Our profession"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "slow to advance"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Our profession"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "slow to advance"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-11": {
+    "translation": "当然，彻底改革教学方法并不能解决教师面临的所有挫折，例如工资低，但梅萨的早期结果显示，团队教学可能有助于扭转低落的士气。",
+    "vocabulary": [
+      {
+        "term": "frustrations",
+        "explanation": "挫折，令人懊恼（或沮丧）的事物（frustration 的复数）"
+      },
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "overhauling teaching approaches",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "can't fix"
+      },
+      {
+        "role": "object",
+        "text": "all the frustrations teachers have, such as low pay"
+      },
+      {
+        "role": "subject",
+        "text": "early results"
+      },
+      {
+        "role": "predicate",
+        "text": "may be helping"
+      },
+      {
+        "role": "complement",
+        "text": "to reverse low morale"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "overhauling teaching approaches",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "can't fix"
+      },
+      {
+        "role": "object",
+        "text": "all the frustrations teachers have, such as low pay"
+      },
+      {
+        "role": "subject",
+        "text": "early results"
+      },
+      {
+        "role": "predicate",
+        "text": "may be helping"
+      },
+      {
+        "role": "complement",
+        "text": "to reverse low morale"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-12": {
+    "translation": "在对该学区数百名教师的调查中，研究人员发现，那些以团队形式工作的教师的工作满意度更高，与同事的合作更频繁，与学生的互动也更积极。",
+    "vocabulary": [
+      {
+        "term": "collaborations",
+        "explanation": "合作，协作"
+      },
+      {
+        "term": "researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "those who worked on teams reported greater job satisfaction, more frequent collaborations with colleagues, and more positive interactions with students",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "those who worked on teams reported greater job satisfaction, more frequent collaborations with colleagues, and more positive interactions with students",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-13": {
+    "translation": "老师们说，团队的另一个好处是他们可以互相帮助改进教学。",
+    "vocabulary": [
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      },
+      {
+        "term": "improve",
+        "explanation": "康复，健康好转"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Another benefit"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that they can help each other improve their instruction",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Another benefit"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that they can help each other improve their instruction",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-14": {
+    "translation": "在一次计划会议上，英语老师杰夫·霍尔与一位科学老师分享了一个绩效评估：她最近关于她所谓的“生物学中心教条”的讲座让他和他们的其他队友感到困惑。",
+    "vocabulary": [
+      {
+        "term": "performance",
+        "explanation": "表演，演出"
+      },
+      {
+        "term": "planning",
+        "explanation": "计划，规划"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Her recent lecture"
+      },
+      {
+        "role": "predicate",
+        "text": "bewildered"
+      },
+      {
+        "role": "object",
+        "text": "him and their other teammates"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Her recent lecture"
+      },
+      {
+        "role": "predicate",
+        "text": "bewildered"
+      },
+      {
+        "role": "object",
+        "text": "him and their other teammates"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-15": {
+    "translation": "“如果科学对我来说太令人困惑，你能想象你小时候感受到的挫败感吗？”霍尔说。",
+    "vocabulary": [
+      {
+        "term": "science",
+        "explanation": "科学，科学知识"
+      },
+      {
+        "term": "imagine",
+        "explanation": "想象，设想"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Hall"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "“If the science is too confusing for me, can you imagine the frustration you feel as kids?”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Hall"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "“If the science is too confusing for me, can you imagine the frustration you feel as kids?”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-16": {
+    "translation": "但他说，科学老师自己不会知道这种混乱。",
+    "vocabulary": [
+      {
+        "term": "teacher",
+        "explanation": "教师"
+      },
+      {
+        "term": "science",
+        "explanation": "科学，科学知识"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the science teacher"
+      },
+      {
+        "role": "predicate",
+        "text": "wouldn't have known"
+      },
+      {
+        "role": "complement",
+        "text": "about the confusion on her own"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the science teacher"
+      },
+      {
+        "role": "predicate",
+        "text": "wouldn't have known"
+      },
+      {
+        "role": "complement",
+        "text": "about the confusion on her own"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-17": {
+    "translation": "该模型并不适合所有人。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The model"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "for everyone"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The model"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "for everyone"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-18": {
+    "translation": "一些寻求加入团队志愿者的老师表示，他们更喜欢单独工作。",
+    "vocabulary": [
+      {
+        "term": "approached",
+        "explanation": "approach 的过去式和过去分词：接近，走近"
+      },
+      {
+        "term": "teachers",
+        "explanation": "教师，老师（teacher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "approached"
+      },
+      {
+        "role": "complement",
+        "text": "about volunteering for a team"
+      },
+      {
+        "role": "predicate",
+        "text": "have said"
+      },
+      {
+        "role": "object",
+        "text": "they prefer to work alone",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some teachers"
+      },
+      {
+        "role": "predicate",
+        "text": "approached"
+      },
+      {
+        "role": "complement",
+        "text": "about volunteering for a team"
+      },
+      {
+        "role": "predicate",
+        "text": "have said"
+      },
+      {
+        "role": "object",
+        "text": "they prefer to work alone",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-19": {
+    "translation": "团队教学也可能是日程安排的噩梦，尤其是在像 Westwood 这样的学校，那里只有一些教职员工以团队形式工作。",
+    "vocabulary": [
+      {
+        "term": "nightmare",
+        "explanation": "噩梦"
+      },
+      {
+        "term": "schools",
+        "explanation": "（中、小）学校"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Team teaching"
+      },
+      {
+        "role": "predicate",
+        "text": "can also be"
+      },
+      {
+        "role": "complement",
+        "text": "a scheduling nightmare"
+      },
+      {
+        "role": "complement",
+        "text": "especially at schools like Westwood where only some staff work in teams"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Team teaching"
+      },
+      {
+        "role": "predicate",
+        "text": "can also be"
+      },
+      {
+        "role": "complement",
+        "text": "a scheduling nightmare"
+      },
+      {
+        "role": "complement",
+        "text": "especially at schools like Westwood where only some staff work in teams"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-20": {
+    "translation": "还有一些棘手的问题，比如如何根据 135 名学生的表现来评估 4 名老师。",
+    "vocabulary": [
+      {
+        "term": "performance",
+        "explanation": "表演，演出"
+      },
+      {
+        "term": "questions",
+        "explanation": "问题，疑问（question 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "thorny questions like how to evaluate four teachers on the performance of 135 students"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "thorny questions like how to evaluate four teachers on the performance of 135 students"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-21": {
+    "translation": "但就目前而言，它似乎正在发挥作用。",
+    "vocabulary": [
+      {
+        "term": "working",
+        "explanation": "有工作的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to be working"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "to be working"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  }
+}

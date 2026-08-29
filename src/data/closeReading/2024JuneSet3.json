@@ -1,0 +1,5352 @@
+{
+  "C01": {
+    "translation": "彩虹是一种出现在天空中的多色弧形现象。",
+    "vocabulary": [
+      {
+        "term": "shaped",
+        "explanation": "具有（或呈）……形状的"
+      },
+      {
+        "term": "colored",
+        "explanation": "有色人种的（历史上的旧称，现通常视为不合时宜）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a multi-colored, arc-shaped phenomenon that can appear in the sky"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a multi-colored, arc-shaped phenomenon that can appear in the sky"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C02": {
+    "translation": "彩虹的颜色是由光通过大气中的水滴反射和色散而产生的。",
+    "vocabulary": [
+      {
+        "term": "reflection",
+        "explanation": "（光、热或声音的）反射"
+      },
+      {
+        "term": "produced",
+        "explanation": "引起，造成"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The colors"
+      },
+      {
+        "role": "predicate",
+        "text": "are produced"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The colors"
+      },
+      {
+        "role": "predicate",
+        "text": "are produced"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C03": {
+    "translation": "观察者可能会认为彩虹位于附近或远处，但这种现象实际上并不位于任何特定地点。",
+    "vocabulary": [
+      {
+        "term": "perceive",
+        "explanation": "认为，理解"
+      },
+      {
+        "term": "located",
+        "explanation": "位于，坐落在"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An observer"
+      },
+      {
+        "role": "predicate",
+        "text": "may perceive"
+      },
+      {
+        "role": "object",
+        "text": "a rainbow to be located either near or far away"
+      },
+      {
+        "role": "subject",
+        "text": "this phenomenon"
+      },
+      {
+        "role": "predicate",
+        "text": "is not actually located"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "An observer"
+      },
+      {
+        "role": "predicate",
+        "text": "may perceive"
+      },
+      {
+        "role": "object",
+        "text": "a rainbow to be located either near or far away"
+      },
+      {
+        "role": "subject",
+        "text": "this phenomenon"
+      },
+      {
+        "role": "predicate",
+        "text": "is not actually located"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "C04": {
+    "translation": "相反，彩虹的出现完全取决于观察者相对于光方向的位置。",
+    "vocabulary": [
+      {
+        "term": "appearance",
+        "explanation": "露面，演出"
+      },
+      {
+        "term": "direction",
+        "explanation": "方向，方位"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the appearance"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      },
+      {
+        "role": "complement",
+        "text": "upon the position of the observer in relation to the direction of light"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the appearance"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      },
+      {
+        "role": "complement",
+        "text": "upon the position of the observer in relation to the direction of light"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C05": {
+    "translation": "从本质上讲，彩虹是一种视错觉。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an optical illusion"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an optical illusion"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C06": {
+    "translation": "彩虹呈现出由七种颜色按特定顺序组成的光谱。",
+    "vocabulary": [
+      {
+        "term": "present",
+        "explanation": "（人）在场的，出席的"
+      },
+      {
+        "term": "specific",
+        "explanation": "明确的，具体的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Rainbows"
+      },
+      {
+        "role": "predicate",
+        "text": "present"
+      },
+      {
+        "role": "object",
+        "text": "a spectrum made up of seven colors in a specific order"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Rainbows"
+      },
+      {
+        "role": "predicate",
+        "text": "present"
+      },
+      {
+        "role": "object",
+        "text": "a spectrum made up of seven colors in a specific order"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C07": {
+    "translation": "事实上，许多英语国家的学童都被教导记住“Roy G.Biv”这个名字，以帮助记住彩虹的颜色及其顺序。",
+    "vocabulary": [
+      {
+        "term": "countries",
+        "explanation": "国家（country 的复数）"
+      },
+      {
+        "term": "speaking",
+        "explanation": "说话"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "school children"
+      },
+      {
+        "role": "predicate",
+        "text": "are taught"
+      },
+      {
+        "role": "complement",
+        "text": "to remember the name “Roy G.Biv” as an aid for remembering the colors of a rainbow and their order"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "school children"
+      },
+      {
+        "role": "predicate",
+        "text": "are taught"
+      },
+      {
+        "role": "complement",
+        "text": "to remember the name “Roy G.Biv” as an aid for remembering the colors of a rainbow and their order"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C08": {
+    "translation": "Roy G. Biv 代表红、橙、黄、绿、蓝、靛、紫。",
+    "vocabulary": [
+      {
+        "term": "stands",
+        "explanation": "（stand 的复数）看台，观众席"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Roy G. Biv"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      },
+      {
+        "role": "complement",
+        "text": "for red, orange, yellow, green, blue, indigo, and violet"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Roy G. Biv"
+      },
+      {
+        "role": "predicate",
+        "text": "stands"
+      },
+      {
+        "role": "complement",
+        "text": "for red, orange, yellow, green, blue, indigo, and violet"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C09": {
+    "translation": "彩虹弧的外缘是红色，内缘是紫色。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The outer edge"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "red"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The outer edge"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "red"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C10": {
+    "translation": "当光（通常是阳光）穿过悬挂在大气中的水滴时，就会形成彩虹。",
+    "vocabulary": [
+      {
+        "term": "generally",
+        "explanation": "笼统地，大概"
+      },
+      {
+        "term": "formed",
+        "explanation": "成形的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is formed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is formed"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C11": {
+    "translation": "光波穿过水滴时改变方向，导致两个过程：反射和折射。",
+    "vocabulary": [
+      {
+        "term": "resulting",
+        "explanation": "发生，产生"
+      },
+      {
+        "term": "direction",
+        "explanation": "方向，方位"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The light waves"
+      },
+      {
+        "role": "predicate",
+        "text": "change"
+      },
+      {
+        "role": "object",
+        "text": "direction as they pass through the water droplets, resulting in two processes: reflction and refraction ( 折射 )"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The light waves"
+      },
+      {
+        "role": "predicate",
+        "text": "change"
+      },
+      {
+        "role": "object",
+        "text": "direction as they pass through the water droplets, resulting in two processes: reflction and refraction ( 折射 )"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C12": {
+    "translation": "当光从水滴反射时，它只是从其来源的相反方向反射回来。",
+    "vocabulary": [
+      {
+        "term": "direction",
+        "explanation": "方向，方位"
+      },
+      {
+        "term": "reflects",
+        "explanation": "reflect 的第三人称单数形式：反射（光、热或声音）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When light reflects off a water droplet",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "bounces"
+      },
+      {
+        "role": "complement",
+        "text": "in the opposite direction from where it originates"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "bounces"
+      },
+      {
+        "role": "complement",
+        "text": "in the opposite direction from where it originates"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C13": {
+    "translation": "当光折射时，它会转向不同的方向。",
+    "vocabulary": [
+      {
+        "term": "direction",
+        "explanation": "方向，方位"
+      },
+      {
+        "term": "different",
+        "explanation": "不同的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When light refracts",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "a different direction"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "a different direction"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C14": {
+    "translation": "有些人将折射光称为“弯曲光波”。彩虹的形成是因为白光进入水滴，并在水滴中向几个不同的方向弯曲。",
+    "vocabulary": [
+      {
+        "term": "individuals",
+        "explanation": "个人"
+      },
+      {
+        "term": "directions",
+        "explanation": "方向，方位"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is formed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A rainbow"
+      },
+      {
+        "role": "predicate",
+        "text": "is formed"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C15": {
+    "translation": "当这些弯曲的光波到达水滴的另一侧时，它们会从水滴中反射回来，而不是完全穿过水。",
+    "vocabulary": [
+      {
+        "term": "passing",
+        "explanation": "（时间、岁月的）流逝，推移"
+      },
+      {
+        "term": "completely",
+        "explanation": "完全地，彻底地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When these bent light waves reach the other side of the water droplet",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "reflect"
+      },
+      {
+        "role": "complement",
+        "text": "out of the droplet instead of"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "reflect"
+      },
+      {
+        "role": "complement",
+        "text": "out of the droplet instead of"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C16": {
+    "translation": "由于白光在水中被分离，因此折射光在人眼看来表现为不同的颜色。",
+    "vocabulary": [
+      {
+        "term": "separated",
+        "explanation": "单独的，分开的"
+      },
+      {
+        "term": "appears",
+        "explanation": "出现"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Since the white light is separated inside of the water",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the refracted light"
+      },
+      {
+        "role": "predicate",
+        "text": "appears"
+      },
+      {
+        "role": "complement",
+        "text": "as separate colors to the human eye"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the refracted light"
+      },
+      {
+        "role": "predicate",
+        "text": "appears"
+      },
+      {
+        "role": "complement",
+        "text": "as separate colors to the human eye"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-A01": {
+    "translation": "菲利斯·哈特曼（Phyllis Hartman）深知在办公室会议地狱的深处摸索到底是什么感觉。",
+    "vocabulary": [
+      {
+        "term": "meeting",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Phyllis Hartman"
+      },
+      {
+        "role": "predicate",
+        "text": "knows"
+      },
+      {
+        "role": "object",
+        "text": "what it's like to make one's way through the depths of office meeting hell",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Phyllis Hartman"
+      },
+      {
+        "role": "predicate",
+        "text": "knows"
+      },
+      {
+        "role": "object",
+        "text": "what it's like to make one's way through the depths of office meeting hell",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-A02": {
+    "translation": "她以前从事人力资源工作的经理安排了太多会议，以至于与会者会在桌子上睡着或故意迟到。",
+    "vocabulary": [
+      {
+        "term": "resources",
+        "explanation": "资源，物力，财力（resource 的复数）"
+      },
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Managers"
+      },
+      {
+        "role": "predicate",
+        "text": "arranged"
+      },
+      {
+        "role": "object",
+        "text": "many meetings that attendees would fall asleep at the table or intentionally arrive late"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Managers"
+      },
+      {
+        "role": "predicate",
+        "text": "arranged"
+      },
+      {
+        "role": "object",
+        "text": "many meetings that attendees would fall asleep at the table or intentionally arrive late"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A03": {
+    "translation": "由于一天中的几个小时都被不必要的会议所占用，她经常被迫加班来补工作。",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "blocked",
+        "explanation": "封锁的，闭塞的， 堵住的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "With hours of her day blocked up with unnecessary meetings",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "was often forced"
+      },
+      {
+        "role": "complement",
+        "text": "to make up herwork during overtime"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "was often forced"
+      },
+      {
+        "role": "complement",
+        "text": "to make up herwork during overtime"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-A04": {
+    "translation": "宾夕法尼亚州匹兹堡 PGHR Consulting 的创始人兼总裁 Hartman 表示：“实际上，我的工作时间比完成工作所需的时间还要长。”",
+    "vocabulary": [
+      {
+        "term": "president",
+        "explanation": "总统，国家主席"
+      },
+      {
+        "term": "working",
+        "explanation": "有工作的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Hartman"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“I was actually working more hoursthan I probably would have needed to get the work done,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Hartman"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“I was actually working more hoursthan I probably would have needed to get the work done,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-B01": {
+    "translation": "她并不是唯一一个感到沮丧的人。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "alone"
+      },
+      {
+        "role": "complement",
+        "text": "in her frustration"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "She"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "alone"
+      },
+      {
+        "role": "complement",
+        "text": "in her frustration"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B02": {
+    "translation": "美国每天召开 1100 万到 5500 万次会议，大多数组织的人事预算花费在 7% 到 15% 之间。",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "budgets",
+        "explanation": "预算"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Between 11 million and 55 million meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "are held"
+      },
+      {
+        "role": "complement",
+        "text": "in the United States"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Between 11 million and 55 million meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "are held"
+      },
+      {
+        "role": "complement",
+        "text": "in the United States"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B03": {
+    "translation": "员工每周开会的时间约为 6 小时，而经理平均开会的时间高达 23 小时。",
+    "vocabulary": [
+      {
+        "term": "employees",
+        "explanation": "员工"
+      },
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "employees"
+      },
+      {
+        "role": "predicate",
+        "text": "spend"
+      },
+      {
+        "role": "object",
+        "text": "about six hours in meetings"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "employees"
+      },
+      {
+        "role": "predicate",
+        "text": "spend"
+      },
+      {
+        "role": "object",
+        "text": "about six hours in meetings"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C01": {
+    "translation": "尽管专家们一致认为传统会议对于制定某些决策和制定战略至关重要，但一些员工认为它们是工作日中最不必要的部分之一。",
+    "vocabulary": [
+      {
+        "term": "developing",
+        "explanation": "（国家）发展中的"
+      },
+      {
+        "term": "employees",
+        "explanation": "员工"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "though experts agree that traditional meetings are essential for making certain decisions and developing strategy",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "some employees"
+      },
+      {
+        "role": "predicate",
+        "text": "view"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      },
+      {
+        "role": "complement",
+        "text": "as one of the most unnecessary parts of the workday"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "some employees"
+      },
+      {
+        "role": "predicate",
+        "text": "view"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      },
+      {
+        "role": "complement",
+        "text": "as one of the most unnecessary parts of the workday"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-C02": {
+    "translation": "结果不仅浪费了数千亿美元，而且带来了组织心理学家所说的“会议恢复综合症（MRS）”的烦恼：在一场无用的会议之后，需要花时间冷静下来并重新集中注意力。",
+    "vocabulary": [
+      {
+        "term": "psychologists",
+        "explanation": "心理学家（psychologist 的复数形式）"
+      },
+      {
+        "term": "recovery",
+        "explanation": "康复，痊愈"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "time"
+      },
+      {
+        "role": "predicate",
+        "text": "spent"
+      },
+      {
+        "role": "complement",
+        "text": "cooling off and regaining focus after a useless meeting"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "time"
+      },
+      {
+        "role": "predicate",
+        "text": "spent"
+      },
+      {
+        "role": "complement",
+        "text": "cooling off and regaining focus after a useless meeting"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C03": {
+    "translation": "如果您在一次令人沮丧的会议后跑到办公室厨房与同事一起放松一下，您可能正在经历会议恢复综合症。",
+    "vocabulary": [
+      {
+        "term": "experiencing",
+        "explanation": "经历，往事"
+      },
+      {
+        "term": "recovery",
+        "explanation": "康复，痊愈"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you run to the office kitchen to get some relief with colleagues after a frustrating meeting",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "'re likely experiencing"
+      },
+      {
+        "role": "object",
+        "text": "meeting recovery syndrome"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "'re likely experiencing"
+      },
+      {
+        "role": "object",
+        "text": "meeting recovery syndrome"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-D01": {
+    "translation": "遇到恢复综合症是一个几乎所有从事过正式工作的人都应该熟悉的概念。",
+    "vocabulary": [
+      {
+        "term": "recovery",
+        "explanation": "康复，痊愈"
+      },
+      {
+        "term": "Meeting",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Meeting recovery syndrome"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a concept that should be familiar to almost anyone who has held a formal job"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Meeting recovery syndrome"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a concept that should be familiar to almost anyone who has held a formal job"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D02": {
+    "translation": "说员工在会议后感到疲劳的说法并不具有开创性，但直到最近几十年，科学家才认为这种情况值得进一步研究。",
+    "vocabulary": [
+      {
+        "term": "scientists",
+        "explanation": "科学家（scientist 的复数）"
+      },
+      {
+        "term": "condition",
+        "explanation": "状况，状态"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "ground-breaking"
+      },
+      {
+        "role": "complement",
+        "text": "to say workers feel fatigued after a meeting"
+      },
+      {
+        "role": "subject",
+        "text": "scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "deemed"
+      },
+      {
+        "role": "object",
+        "text": "the condition worthy of further investigation"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "isn't"
+      },
+      {
+        "role": "complement",
+        "text": "ground-breaking"
+      },
+      {
+        "role": "complement",
+        "text": "to say workers feel fatigued after a meeting"
+      },
+      {
+        "role": "subject",
+        "text": "scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "deemed"
+      },
+      {
+        "role": "object",
+        "text": "the condition worthy of further investigation"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-D03": {
+    "translation": "由于与组织效率和员工福祉相关，MRS 引起了心理学家的注意，他们意识到有必要了解其确切原因和治疗方法",
+    "vocabulary": [
+      {
+        "term": "psychologists",
+        "explanation": "心理学家（psychologist 的复数形式）"
+      },
+      {
+        "term": "understand",
+        "explanation": "理解，懂得"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "MRS"
+      },
+      {
+        "role": "predicate",
+        "text": "has atracted"
+      },
+      {
+        "role": "object",
+        "text": "the attention of psychologists aware of the need to understand its precise causes and cures"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "MRS"
+      },
+      {
+        "role": "predicate",
+        "text": "has atracted"
+      },
+      {
+        "role": "object",
+        "text": "the attention of psychologists aware of the need to understand its precise causes and cures"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E01": {
+    "translation": "如今，就研究人员的假设而言，MRS 最容易被理解为有限精神和体力资源的缓慢更新。",
+    "vocabulary": [
+      {
+        "term": "researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      },
+      {
+        "term": "understood",
+        "explanation": "被充分理解的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "MRS"
+      },
+      {
+        "role": "predicate",
+        "text": "is most easily understood"
+      },
+      {
+        "role": "complement",
+        "text": "as a slow renewal of finite mental and physical resources"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "MRS"
+      },
+      {
+        "role": "predicate",
+        "text": "is most easily understood"
+      },
+      {
+        "role": "complement",
+        "text": "as a slow renewal of finite mental and physical resources"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E02": {
+    "translation": "当员工坐在一场无效的会议上时，他们的脑力基本上就被耗尽了。",
+    "vocabulary": [
+      {
+        "term": "essentially",
+        "explanation": "本质上，根本上"
+      },
+      {
+        "term": "meeting",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When an employee sits through an ineffective meeting",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "their brain power"
+      },
+      {
+        "role": "predicate",
+        "text": "is essentially being drained"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "their brain power"
+      },
+      {
+        "role": "predicate",
+        "text": "is essentially being drained"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-E03": {
+    "translation": "如果会议持续时间太长、无法吸引员工或变成片面的讲座，就会耗尽活力。",
+    "vocabulary": [
+      {
+        "term": "employees",
+        "explanation": "员工"
+      },
+      {
+        "term": "vitality",
+        "explanation": "活力，热情"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "drain"
+      },
+      {
+        "role": "object",
+        "text": "vitality"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      },
+      {
+        "role": "complement",
+        "text": "to engage employees or turn into one-sided lectures"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "drain"
+      },
+      {
+        "role": "object",
+        "text": "vitality"
+      },
+      {
+        "role": "predicate",
+        "text": "fail"
+      },
+      {
+        "role": "complement",
+        "text": "to engage employees or turn into one-sided lectures"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-E04": {
+    "translation": "资源守恒理论最初由 Stevan Hobfoll 博士于 1989 年提出，指出当一个人的资源受到威胁或丧失时，就会产生心理压力。",
+    "vocabulary": [
+      {
+        "term": "psychological",
+        "explanation": "心理的，精神的"
+      },
+      {
+        "term": "resources",
+        "explanation": "资源，物力，财力（resource 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The conservation"
+      },
+      {
+        "role": "predicate",
+        "text": "states"
+      },
+      {
+        "role": "object",
+        "text": "that psychological stress occurs when a person's resources are threatened or lost",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The conservation"
+      },
+      {
+        "role": "predicate",
+        "text": "states"
+      },
+      {
+        "role": "object",
+        "text": "that psychological stress occurs when a person's resources are threatened or lost",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-E05": {
+    "translation": "当资源不足时，人们会转入防御以保存剩余的供应。",
+    "vocabulary": [
+      {
+        "term": "resources",
+        "explanation": "资源，物力，财力（resource 的复数）"
+      },
+      {
+        "term": "supply",
+        "explanation": "供给量，储备"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When resources are low",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "a person"
+      },
+      {
+        "role": "predicate",
+        "text": "will shift"
+      },
+      {
+        "role": "complement",
+        "text": "into defence"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a person"
+      },
+      {
+        "role": "predicate",
+        "text": "will shift"
+      },
+      {
+        "role": "complement",
+        "text": "into defence"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-E06": {
+    "translation": "在办公室会议中，员工最宝贵的资源是他们的注意力、警觉性和积极性，这可能意味着生产力突然停止，因为他们需要时间来恢复。",
+    "vocabulary": [
+      {
+        "term": "productivity",
+        "explanation": "生产率，生产力"
+      },
+      {
+        "term": "resources",
+        "explanation": "资源，物力，财力（resource 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "can mean"
+      },
+      {
+        "role": "object",
+        "text": "an abrupt halt in productivity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this"
+      },
+      {
+        "role": "predicate",
+        "text": "can mean"
+      },
+      {
+        "role": "object",
+        "text": "an abrupt halt in productivity"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-F01": {
+    "translation": "作为人类，当我们在工作中从一项任务过渡到另一项任务时（例如从参加会议到从事正常工作），需要付出努力的认知转换。",
+    "vocabulary": [
+      {
+        "term": "transition",
+        "explanation": "过渡，转变"
+      },
+      {
+        "term": "meeting",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "when we transition from one task to another on the job",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "say"
+      },
+      {
+        "role": "object",
+        "text": "from sitting in a meeting to doing normal work—it takes an effortful cognitive switch",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "say"
+      },
+      {
+        "role": "object",
+        "text": "from sitting in a meeting to doing normal work—it takes an effortful cognitive switch",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-F02": {
+    "translation": "我们必须把自己从之前的任务中抽离出来，花费大量的精力继续前进。",
+    "vocabulary": [
+      {
+        "term": "significant",
+        "explanation": "显著的，相当数量的"
+      },
+      {
+        "term": "energy",
+        "explanation": "能力，力气"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "must detach"
+      },
+      {
+        "role": "object",
+        "text": "ourselves"
+      },
+      {
+        "role": "complement",
+        "text": "from the previous task"
+      },
+      {
+        "role": "predicate",
+        "text": "expend"
+      },
+      {
+        "role": "object",
+        "text": "significant mental energy"
+      },
+      {
+        "role": "complement",
+        "text": "to move on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "must detach"
+      },
+      {
+        "role": "object",
+        "text": "ourselves"
+      },
+      {
+        "role": "complement",
+        "text": "from the previous task"
+      },
+      {
+        "role": "predicate",
+        "text": "expend"
+      },
+      {
+        "role": "object",
+        "text": "significant mental energy"
+      },
+      {
+        "role": "complement",
+        "text": "to move on"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-F03": {
+    "translation": "如果我们已经精疲力竭到危险的程度，那么将精神转向下一件事情就格外困难。",
+    "vocabulary": [
+      {
+        "term": "switch",
+        "explanation": "开关，电闸"
+      },
+      {
+        "term": "making",
+        "explanation": "制作，生产"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If we are already drained to dangerous levels",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "then making the mental switch to the next thing",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "extra tough"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "then making the mental switch to the next thing",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "extra tough"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语成分（整体） + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-F04": {
+    "translation": "人们在一次令人沮丧的会议后上网闲逛、去喝咖啡、打断同事并向他们讲述会议的情况等是很常见的。",
+    "vocabulary": [
+      {
+        "term": "telling",
+        "explanation": "生动的，显露真实面目的"
+      },
+      {
+        "term": "meeting",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "common"
+      },
+      {
+        "role": "complement",
+        "text": "to see people cyber-loafing after a frustrating meeting, going and getting coffee, interrupting a colleague and telling them about the meeting, and so on"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "common"
+      },
+      {
+        "role": "complement",
+        "text": "to see people cyber-loafing after a frustrating meeting, going and getting coffee, interrupting a colleague and telling them about the meeting, and so on"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G01": {
+    "translation": "每个人从可怕的会议中恢复的能力是不同的。",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "ability",
+        "explanation": "能力，能够"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Each person's ability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "different"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Each person's ability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "different"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G02": {
+    "translation": "有些人可以很快恢复，而另一些人则带着疲劳直到工作日结束。",
+    "vocabulary": [
+      {
+        "term": "quickly",
+        "explanation": "快速地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some"
+      },
+      {
+        "role": "predicate",
+        "text": "can bounce"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some"
+      },
+      {
+        "role": "predicate",
+        "text": "can bounce"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G03": {
+    "translation": "然而，虽然目前还没有正式的 MRS 研究正在进行，但人们可以粗略地推测一名员工平均滞后时间的长度。",
+    "vocabulary": [
+      {
+        "term": "studies",
+        "explanation": "研究"
+      },
+      {
+        "term": "currently",
+        "explanation": "现时，当前"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "while no formal MRS studies are currently underway",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "one"
+      },
+      {
+        "role": "predicate",
+        "text": "can loosely speculate"
+      },
+      {
+        "role": "complement",
+        "text": "on the length of an average employee's lag time"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "one"
+      },
+      {
+        "role": "predicate",
+        "text": "can loosely speculate"
+      },
+      {
+        "role": "complement",
+        "text": "on the length of an average employee's lag time"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-G04": {
+    "translation": "非MRS条件下切换任务大约需要10到15分钟。",
+    "vocabulary": [
+      {
+        "term": "condition",
+        "explanation": "状况，状态"
+      },
+      {
+        "term": "minutes",
+        "explanation": "分，分钟"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Switching tasks in a non-MRS condition",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "about 10 to 15 minutes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Switching tasks in a non-MRS condition",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "about 10 to 15 minutes"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G05": {
+    "translation": "使用 MRS，平均可能需要长达 45 分钟的时间。如果员工要召开多个会议，而会议的时间间隔为 30 分钟，情况就更糟了。",
+    "vocabulary": [
+      {
+        "term": "separated",
+        "explanation": "单独的，分开的"
+      },
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "even worse"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "even worse"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G06": {
+    "translation": "“在非 MRS 情况下，没有足够的时间来完成任何事情，而在 MRS 情况下，则没有足够的时间恢复到下一次会议，”研究员约瑟夫·艾伦 (Joseph Allen) 说。",
+    "vocabulary": [
+      {
+        "term": "transition",
+        "explanation": "过渡，转变"
+      },
+      {
+        "term": "researcher",
+        "explanation": "研究人员"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "researcher Joseph Allen"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“Not enough time to transition in a non-MRS situation to get anything done, and in an MRS situation, not quite enough time to recover for the next meeting,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "researcher Joseph Allen"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“Not enough time to transition in a non-MRS situation to get anything done, and in an MRS situation, not quite enough time to recover for the next meeting,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-G07": {
+    "translation": "“然后，再加上连续两场糟糕的会议，我们可能会面临一场流行病。”",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "add"
+      },
+      {
+        "role": "object",
+        "text": "the compounding of back-to-back bad meetings"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "may have"
+      },
+      {
+        "role": "object",
+        "text": "an epidemic on our hands"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "add"
+      },
+      {
+        "role": "object",
+        "text": "the compounding of back-to-back bad meetings"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "may have"
+      },
+      {
+        "role": "object",
+        "text": "an epidemic on our hands"
+      }
+    ],
+    "structure": {
+      "pattern": "谓语 + 宾语 + 主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-H01": {
+    "translation": "为了对抗 MRS 的副作用，Allen 与内布拉斯加大学奥马哈分校的研究员 Joseph Mroz 及其同事发表了一项研究，详细介绍了避免常见陷阱的最佳方法，包括适用于任何工作场所的简要清单。",
+    "vocabulary": [
+      {
+        "term": "researcher",
+        "explanation": "研究人员"
+      },
+      {
+        "term": "workplace",
+        "explanation": "（办公室，工厂）等工作场所"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "along with researcher Joseph Mroz and colleagues at the University of Nebraska-Omaha"
+      },
+      {
+        "role": "predicate",
+        "text": "published"
+      },
+      {
+        "role": "object",
+        "text": "a study detailing the best ways to avoid common traps, including a concise checklist of do's and don'ts applicable to any workplace"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "along with researcher Joseph Mroz and colleagues at the University of Nebraska-Omaha"
+      },
+      {
+        "role": "predicate",
+        "text": "published"
+      },
+      {
+        "role": "object",
+        "text": "a study detailing the best ways to avoid common traps, including a concise checklist of do's and don'ts applicable to any workplace"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H02": {
+    "translation": "Mroz 和他的团队根据大约 200 篇论文编制了综合清单，现在可能找到了解决 MRS 很大程度上未定义问题的方法。",
+    "vocabulary": [
+      {
+        "term": "comprehensive",
+        "explanation": "综合性的，全面的"
+      },
+      {
+        "term": "problem",
+        "explanation": "问题，难题，困难"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Drawing from around 200 papers to compile their comprehensive list, Mroz and his team",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "may now hold"
+      },
+      {
+        "role": "object",
+        "text": "a remedy"
+      },
+      {
+        "role": "complement",
+        "text": "to the largely undefined problem of MRS"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Drawing from around 200 papers to compile their comprehensive list, Mroz and his team",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "may now hold"
+      },
+      {
+        "role": "object",
+        "text": "a remedy"
+      },
+      {
+        "role": "complement",
+        "text": "to the largely undefined problem of MRS"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I01": {
+    "translation": "姆罗兹说，一个好的起点是首先问问自己我们的会议是否有必要。",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "necessary",
+        "explanation": "必要的，必需的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Mroz"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "a good place to startis asking ourselves ifour meetings are even necessary in the first place",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Mroz"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "a good place to startis asking ourselves ifour meetings are even necessary in the first place",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-I02": {
+    "translation": "如果议程上的所有内容都是快速跟进或一些非紧急信息共享，则可能更适合小组发送电子邮件。",
+    "vocabulary": [
+      {
+        "term": "information",
+        "explanation": "消息，资料，情报"
+      },
+      {
+        "term": "sharing",
+        "explanation": "公用，共享，共有"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If all that's on the agenda is a quick catch-up, or some non-urgent information sharing",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "may better suit"
+      },
+      {
+        "role": "object",
+        "text": "the group"
+      },
+      {
+        "role": "complement",
+        "text": "to send around an email instead"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "may better suit"
+      },
+      {
+        "role": "object",
+        "text": "the group"
+      },
+      {
+        "role": "complement",
+        "text": "to send around an email instead"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-I03": {
+    "translation": "“我始终建议的第二件事是会议规模尽可能小，”姆罗兹说。",
+    "vocabulary": [
+      {
+        "term": "meeting",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "second",
+        "explanation": "第二（的），第二个（的）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Mroz"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“The second thing I would always recommend is keep the meeting as small as possible,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Mroz"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“The second thing I would always recommend is keep the meeting as small as possible,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-I04": {
+    "translation": "“如果他们实际上没有某种即时输入，那么他们可以稍后跟进。",
+    "vocabulary": [
+      {
+        "term": "follow",
+        "explanation": "跟着，跟随"
+      },
+      {
+        "term": "actually",
+        "explanation": "实际上，事实上"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If they don't actually have some kind ofimmediate input",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "can follow"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "can follow"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-I05": {
+    "translation": "他们不需要参加这个长达一个小时的会议。”减少会议时间最终会提高员工在会议中的参与度，专家们认为这是针对 MRS 的有效补救措施。",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "ultimately",
+        "explanation": "最终，最后"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Less time"
+      },
+      {
+        "role": "predicate",
+        "text": "meetingswould ultimately lead"
+      },
+      {
+        "role": "complement",
+        "text": "to more employee engagement in the meetings theydo attend, which experts agree is a proven remedy for MRS"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Less time"
+      },
+      {
+        "role": "predicate",
+        "text": "meetingswould ultimately lead"
+      },
+      {
+        "role": "complement",
+        "text": "to more employee engagement in the meetings theydo attend, which experts agree is a proven remedy for MRS"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-J01": {
+    "translation": "组织学教授克里夫·斯科特（Cliff Scott）表示，当员工被邀请一起参加不能激发参与的会议时，他们也会感到负担重。",
+    "vocabulary": [
+      {
+        "term": "professor",
+        "explanation": "教授"
+      },
+      {
+        "term": "Employees",
+        "explanation": "员工"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Cliff Scott, professor of organisational science"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Cliff Scott, professor of organisational science"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-J02": {
+    "translation": "在一场毫无意义的会议之后，他们需要宝贵的时间来发泄情绪、抱怨并试图重新集中注意力——这是 MRS 的主要陷阱之一。",
+    "vocabulary": [
+      {
+        "term": "meeting",
+        "explanation": "会议，集会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "precious time"
+      },
+      {
+        "role": "predicate",
+        "text": "complain"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "takes"
+      },
+      {
+        "role": "object",
+        "text": "precious time"
+      },
+      {
+        "role": "predicate",
+        "text": "complain"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-J03": {
+    "translation": "随着时间的推移，随着员工发现自己被越来越多不必要的会议所困扰，并因此应对 MRS 带来的越来越多的滞后时间，浪费工作日时间可能会让人感到侮辱。",
+    "vocabulary": [
+      {
+        "term": "increasing",
+        "explanation": "增长，增强，增大（increase 的现在分词）"
+      },
+      {
+        "term": "employees",
+        "explanation": "员工"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "thus dealing with increasing lag times from MRS",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the waste"
+      },
+      {
+        "role": "predicate",
+        "text": "can feel"
+      },
+      {
+        "role": "complement",
+        "text": "insulting"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the waste"
+      },
+      {
+        "role": "predicate",
+        "text": "can feel"
+      },
+      {
+        "role": "complement",
+        "text": "insulting"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-K01": {
+    "translation": "尽管这个主题背后的研究相对缺乏，哈特曼还是自学了许多莫罗兹研究中提出的相同技巧，并且自从她被困在不必要的会议中以来已经取得了很大的进步。",
+    "vocabulary": [
+      {
+        "term": "suggested",
+        "explanation": "建议，提议"
+      },
+      {
+        "term": "research",
+        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Hartman"
+      },
+      {
+        "role": "predicate",
+        "text": "has taught"
+      },
+      {
+        "role": "object",
+        "text": "many of the same tricks suggested in Mroz's study"
+      },
+      {
+        "role": "predicate",
+        "text": "has come"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Hartman"
+      },
+      {
+        "role": "predicate",
+        "text": "has taught"
+      },
+      {
+        "role": "object",
+        "text": "many of the same tricks suggested in Mroz's study"
+      },
+      {
+        "role": "predicate",
+        "text": "has come"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-K02": {
+    "translation": "她今天邀请参加会议的人不仅包括重要员工，还包括可能与当前问题有利害关系的每个部门的代表。",
+    "vocabulary": [
+      {
+        "term": "representatives",
+        "explanation": "代表"
+      },
+      {
+        "term": "department",
+        "explanation": "（组织或机构中的）部，司，系，处，科"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The people"
+      },
+      {
+        "role": "predicate",
+        "text": "include"
+      },
+      {
+        "role": "object",
+        "text": "not just the essential employees, but also representatives from every department that might have a stake in the issue at hand"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The people"
+      },
+      {
+        "role": "predicate",
+        "text": "include"
+      },
+      {
+        "role": "object",
+        "text": "not just the essential employees, but also representatives from every department that might have a stake in the issue at hand"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-K03": {
+    "translation": "她说，像她这样的管理者甚至会寻求非专家的意见来制定决策，因此可以从员工那里找到更多的支持和合作。",
+    "vocabulary": [
+      {
+        "term": "workforce",
+        "explanation": "（国家或地区的）劳动力，劳动人口"
+      },
+      {
+        "term": "decisions",
+        "explanation": "决策"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-L01": {
+    "translation": "Mroz 表示，如果一个组织采纳 Mroz 和 Allen 调查结果中的全部 22 条建议，最明显的区别将是日程安排上的会议总数明显减少。",
+    "vocabulary": [
+      {
+        "term": "difference",
+        "explanation": "差异，不同之处"
+      },
+      {
+        "term": "schedule",
+        "explanation": "计划（表），进度表"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Mroz"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Mroz"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-L02": {
+    "translation": "减少会议时间最终会提高生产力，这是召开会议的最终目标。",
+    "vocabulary": [
+      {
+        "term": "productivity",
+        "explanation": "生产率，生产力"
+      },
+      {
+        "term": "objective",
+        "explanation": "目的，目标"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Less time"
+      },
+      {
+        "role": "predicate",
+        "text": "would ultimately lead"
+      },
+      {
+        "role": "complement",
+        "text": "to increased productivity, which is the ultimate objective of convening a meeting"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Less time"
+      },
+      {
+        "role": "predicate",
+        "text": "would ultimately lead"
+      },
+      {
+        "role": "complement",
+        "text": "to increased productivity, which is the ultimate objective of convening a meeting"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-L03": {
+    "translation": "艾伦表示，尽管尚未对任何反 MRS 的想法进行过实证检验，但有一个有希望的技巧是让员工找出能够迅速将他们的情绪从消极转变为积极的事物。",
+    "vocabulary": [
+      {
+        "term": "employees",
+        "explanation": "员工"
+      },
+      {
+        "term": "identify",
+        "explanation": "认出，识别"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "While none of the counter-MRS ideas have been tested empirically yet",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Allen"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "one trick with promise is for employees to identify things that quickly change their mood from negative to positive",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Allen"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "one trick with promise is for employees to identify things that quickly change their mood from negative to positive",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-L04": {
+    "translation": "听起来很简单，找到一个个人快乐的地方，去那里然后直接回去工作可能是促进康复的关键。",
+    "vocabulary": [
+      {
+        "term": "recovery",
+        "explanation": "康复，痊愈"
+      },
+      {
+        "term": "coming",
+        "explanation": "即将发生的，下一个的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As simple as it sounds",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "finding a personal happy place, going there and then coming straight back to work",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "might be"
+      },
+      {
+        "role": "complement",
+        "text": "key to facilitating recovery"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "finding a personal happy place, going there and then coming straight back to work",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "might be"
+      },
+      {
+        "role": "complement",
+        "text": "key to facilitating recovery"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语成分（整体） + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-M01": {
+    "translation": "《会议的惊人科学》一书的作者史蒂文·罗格尔伯格补充道，领导者还应该将自己视为“其他人宝贵时间的管理者”。",
+    "vocabulary": [
+      {
+        "term": "Leaders",
+        "explanation": "领袖（leader 的复数）"
+      },
+      {
+        "term": "author",
+        "explanation": "作者，著者"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Steven Rogelberg, author of The Surprising Science of Meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Steven Rogelberg, author of The Surprising Science of Meetings"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-M02": {
+    "translation": "拥有预见潜在陷阱并谨慎对待员工耐力的技能，领导者可以为 MRS 提供有效的短期威慑。",
+    "vocabulary": [
+      {
+        "term": "employees",
+        "explanation": "员工"
+      },
+      {
+        "term": "provide",
+        "explanation": "提供，供给"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Having the skills to foresee potential trapsand treat employees' endurance with care",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "allows"
+      },
+      {
+        "role": "object",
+        "text": "leaders to provide effective short-term deterrents to MRS",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Having the skills to foresee potential trapsand treat employees' endurance with care",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "allows"
+      },
+      {
+        "role": "object",
+        "text": "leaders to provide effective short-term deterrents to MRS",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-N01": {
+    "translation": "然而，最重要的是让组织意识到会议灵活的概念，艾伦说。",
+    "vocabulary": [
+      {
+        "term": "meetings",
+        "explanation": "会议，集会"
+      },
+      {
+        "term": "important",
+        "explanation": "重要的，重大的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Allen"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Allen"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-N02": {
+    "translation": "通过重塑员工时间的优先顺序，公司可以消除 MRS 的根源",
+    "vocabulary": [
+      {
+        "term": "companies",
+        "explanation": "公司，企业"
+      },
+      {
+        "term": "sources",
+        "explanation": "来源，出处"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "companies"
+      },
+      {
+        "role": "predicate",
+        "text": "can eliminate"
+      },
+      {
+        "role": "object",
+        "text": "the very sources of MRS"
+      },
+      {
+        "role": "complement",
+        "text": "in their tracks"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "companies"
+      },
+      {
+        "role": "predicate",
+        "text": "can eliminate"
+      },
+      {
+        "role": "object",
+        "text": "the very sources of MRS"
+      },
+      {
+        "role": "complement",
+        "text": "in their tracks"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-01": {
+    "translation": "讽刺和爵士乐有一些令人惊讶的共同点：当你听到它们时你就知道它们。",
+    "vocabulary": [
+      {
+        "term": "surprisingly",
+        "explanation": "惊人地，出人意料地"
+      },
+      {
+        "term": "common",
+        "explanation": "共同的，共享的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-02": {
+    "translation": "讽刺主要是通过语气来理解的，语气用来描绘与字面意思相反的意思。",
+    "vocabulary": [
+      {
+        "term": "understood",
+        "explanation": "被充分理解的"
+      },
+      {
+        "term": "opposite",
+        "explanation": "完全相反的，截然不同的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "is mostly understood"
+      },
+      {
+        "role": "complement",
+        "text": "through tone of voice, which is used to portray the opposite of the literal words"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "is mostly understood"
+      },
+      {
+        "role": "complement",
+        "text": "through tone of voice, which is used to portray the opposite of the literal words"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-03": {
+    "translation": "例如，当有人说“嗯，这正是我现在需要的”时，他们的语气可以告诉你这根本不是他们需要的。",
+    "vocabulary": [
+      {
+        "term": "example",
+        "explanation": "例子，例证"
+      },
+      {
+        "term": "exactly",
+        "explanation": "精确地，确切地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "their tone"
+      },
+      {
+        "role": "predicate",
+        "text": "can tell"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      },
+      {
+        "role": "object",
+        "text": "it's not what they need at all",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "their tone"
+      },
+      {
+        "role": "predicate",
+        "text": "can tell"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      },
+      {
+        "role": "object",
+        "text": "it's not what they need at all",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-04": {
+    "translation": "最常见的是，讽刺会凸显一种刺激，或者很简单，意味着刻薄。如果你想更快乐并改善人际关系，那就停止讽刺。",
+    "vocabulary": [
+      {
+        "term": "relationships",
+        "explanation": "（人、团体、国家等相互间的）关系"
+      },
+      {
+        "term": "improve",
+        "explanation": "康复，健康好转"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "highlights"
+      },
+      {
+        "role": "object",
+        "text": "an irritation"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "mean"
+      },
+      {
+        "role": "predicate",
+        "text": "cut"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "highlights"
+      },
+      {
+        "role": "object",
+        "text": "an irritation"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "predicate",
+        "text": "mean"
+      },
+      {
+        "role": "predicate",
+        "text": "cut"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-05": {
+    "translation": "为什么？",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "Why",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "complement",
+        "text": "Why",
+        "label": "省略式表达（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 标题式片段",
+      "explanation": "这是省略式或标题式表达，不强行补出主谓宾，按完整意群理解。"
+    }
+  },
+  "R1-06": {
+    "translation": "因为讽刺实际上是伪装成幽默的敌意。",
+    "vocabulary": [
+      {
+        "term": "hostility",
+        "explanation": "敌意，对抗"
+      },
+      {
+        "term": "actually",
+        "explanation": "实际上，事实上"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "hostility disguised as humor"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "hostility disguised as humor"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-07": {
+    "translation": "尽管表面上微笑，但许多收到讽刺评论的人会感到沮丧，并常常认为讽刺的人很粗鲁或可鄙。",
+    "vocabulary": [
+      {
+        "term": "receive",
+        "explanation": "得到，收到"
+      },
+      {
+        "term": "person",
+        "explanation": "人"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "many people"
+      },
+      {
+        "role": "predicate",
+        "text": "feel"
+      },
+      {
+        "role": "complement",
+        "text": "put down"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "object",
+        "text": "the sarcastic person is rude, or contemptible",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "many people"
+      },
+      {
+        "role": "predicate",
+        "text": "feel"
+      },
+      {
+        "role": "complement",
+        "text": "put down"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "object",
+        "text": "the sarcastic person is rude, or contemptible",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-08": {
+    "translation": "事实上，讽刺这个词的起源源于希腊语“sarkazein”，字面意思是“撕下或剥掉肉体”，这并不奇怪。因此，毫不奇怪，讽刺前面经常出现“切割”这个词，这很伤人。",
+    "vocabulary": [
+      {
+        "term": "cutting",
+        "explanation": "卡廷（James Cutting，美国心理学家）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "no wonder that sarcasm is often preceded by the word “cutting”"
+      },
+      {
+        "role": "predicate",
+        "text": "hurts"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "no wonder that sarcasm is often preceded by the word “cutting”"
+      },
+      {
+        "role": "predicate",
+        "text": "hurts"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-09": {
+    "translation": "更重要的是，由于行为在很大程度上决定了思想和感受，当一个人持续表现出讽刺时，可能只会加剧他们潜在的敌意和不安全感。",
+    "vocabulary": [
+      {
+        "term": "underlying",
+        "explanation": "根本的，潜在的"
+      },
+      {
+        "term": "hostility",
+        "explanation": "敌意，对抗"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "What's more",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "since actions strongly determine thoughts and feelings",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "adverbial",
+        "text": "when a person consistently acts sarcastically",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "may only serve"
+      },
+      {
+        "role": "complement",
+        "text": "to heighten their underlying hostility and insecurity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "may only serve"
+      },
+      {
+        "role": "complement",
+        "text": "to heighten their underlying hostility and insecurity"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-10": {
+    "translation": "毕竟，归根结底，讽刺可以被用作一种微妙的欺凌形式——而且大多数欺凌者都是愤怒、缺乏安全感或胆怯的。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "when you come right down to it",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "can be used"
+      },
+      {
+        "role": "complement",
+        "text": "as a subtle form of bullying"
+      },
+      {
+        "role": "subject",
+        "text": "most bullies"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "angry, insecure, or cowardly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "can be used"
+      },
+      {
+        "role": "complement",
+        "text": "as a subtle form of bullying"
+      },
+      {
+        "role": "subject",
+        "text": "most bullies"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "angry, insecure, or cowardly"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-11": {
+    "translation": "或者，当一个人停止发表负面评论，尤其是讽刺性评论时，他们可能很快就会开始感到更快乐、更自信。",
+    "vocabulary": [
+      {
+        "term": "especially",
+        "explanation": "尤其，特别"
+      },
+      {
+        "term": "person",
+        "explanation": "人"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "when a person stops voicing negative comments, especially sarcastic ones",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "may soon start"
+      },
+      {
+        "role": "complement",
+        "text": "to feel happier and more self-confident"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "may soon start"
+      },
+      {
+        "role": "complement",
+        "text": "to feel happier and more self-confident"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-12": {
+    "translation": "此外，生活中的其他人也受益更多，因为他们不再需要听到伤人的讽刺语言。",
+    "vocabulary": [
+      {
+        "term": "benefit",
+        "explanation": "好处，益处"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "other people"
+      },
+      {
+        "role": "predicate",
+        "text": "benefit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "other people"
+      },
+      {
+        "role": "predicate",
+        "text": "benefit"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-13": {
+    "translation": "现在，我并不是说所有讽刺都是不好的。",
+    "vocabulary": [
+      {
+        "term": "saying",
+        "explanation": "说；表示（say 的动名词）；谚语"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "'m not saying"
+      },
+      {
+        "role": "object",
+        "text": "all sarcasm is bad",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "'m not saying"
+      },
+      {
+        "role": "object",
+        "text": "all sarcasm is bad",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-14": {
+    "translation": "它可能只是更好地使用——就像烹饪中的强力香料一样。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Itmay"
+      },
+      {
+        "role": "predicate",
+        "text": "be betterused"
+      },
+      {
+        "role": "complement",
+        "text": "like a potent spice in cooking"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Itmay"
+      },
+      {
+        "role": "predicate",
+        "text": "be betterused"
+      },
+      {
+        "role": "complement",
+        "text": "like a potent spice in cooking"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-15": {
+    "translation": "太多的香料，菜会被它淹没。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the dish"
+      },
+      {
+        "role": "predicate",
+        "text": "will be overwhelmed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the dish"
+      },
+      {
+        "role": "predicate",
+        "text": "will be overwhelmed"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-16": {
+    "translation": "同样，偶尔的讽刺可以让聊天变得有趣，并增添幽默的元素。",
+    "vocabulary": [
+      {
+        "term": "Similarly",
+        "explanation": "相似地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "an occasional dash"
+      },
+      {
+        "role": "predicate",
+        "text": "can spice"
+      },
+      {
+        "role": "object",
+        "text": "a chat"
+      },
+      {
+        "role": "predicate",
+        "text": "add"
+      },
+      {
+        "role": "object",
+        "text": "an element ofhumor"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "an occasional dash"
+      },
+      {
+        "role": "predicate",
+        "text": "can spice"
+      },
+      {
+        "role": "object",
+        "text": "a chat"
+      },
+      {
+        "role": "predicate",
+        "text": "add"
+      },
+      {
+        "role": "object",
+        "text": "an element ofhumor"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-17": {
+    "translation": "但是大量或持续的讽刺会压倒任何谈话的情感味道，并且会给接受者带来非常痛苦的感觉。",
+    "vocabulary": [
+      {
+        "term": "recipient",
+        "explanation": "接受者，领受者"
+      },
+      {
+        "term": "steady",
+        "explanation": "平稳的，稳步的，持续的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a big or steady serving"
+      },
+      {
+        "role": "predicate",
+        "text": "will overwhelm"
+      },
+      {
+        "role": "object",
+        "text": "the emotional flavor of any conversation"
+      },
+      {
+        "role": "predicate",
+        "text": "can taste"
+      },
+      {
+        "role": "complement",
+        "text": "very bitter to its recipient"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a big or steady serving"
+      },
+      {
+        "role": "predicate",
+        "text": "will overwhelm"
+      },
+      {
+        "role": "object",
+        "text": "the emotional flavor of any conversation"
+      },
+      {
+        "role": "predicate",
+        "text": "can taste"
+      },
+      {
+        "role": "complement",
+        "text": "very bitter to its recipient"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-18": {
+    "translation": "因此，请淡化讽刺，转而运用机智，这通常没有任何敌意，因此更容易受到与你交流的人的赞赏。",
+    "vocabulary": [
+      {
+        "term": "hostility",
+        "explanation": "敌意，对抗"
+      },
+      {
+        "term": "appreciated",
+        "explanation": "赏识，重视，欣赏"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "tone"
+      },
+      {
+        "role": "object",
+        "text": "the sarcasm and work on clever wit"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "tone"
+      },
+      {
+        "role": "object",
+        "text": "the sarcasm and work on clever wit"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 祈使句",
+      "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。"
+    }
+  },
+  "R1-19": {
+    "translation": "从本质上讲，讽刺很容易，而真实、无害的机智则需要天赋。",
+    "vocabulary": [
+      {
+        "term": "talent",
+        "explanation": "天赋，才能"
+      },
+      {
+        "term": "harmless",
+        "explanation": "无害的，不会导致损伤的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "easy"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "sarcasm"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "easy"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-20": {
+    "translation": "因此，机智和讽刺之间的主要区别在于，如前所述，讽刺往往是伪装成幽默的敌意。",
+    "vocabulary": [
+      {
+        "term": "difference",
+        "explanation": "差异，不同之处"
+      },
+      {
+        "term": "hostility",
+        "explanation": "敌意，对抗"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the main difference"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that, as already stated, sarcasm is often hostility disguised as humor",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the main difference"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that, as already stated, sarcasm is often hostility disguised as humor",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-21": {
+    "translation": "它可能是为了伤害，而且常常是苦涩的。",
+    "vocabulary": [
+      {
+        "term": "intended",
+        "explanation": "预期的，打算中的"
+      },
+      {
+        "term": "bitter",
+        "explanation": "味苦的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can be intended"
+      },
+      {
+        "role": "complement",
+        "text": "to hurt and is often bitter and biting"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can be intended"
+      },
+      {
+        "role": "complement",
+        "text": "to hurt and is often bitter and biting"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-22": {
+    "translation": "诙谐的言论通常是对某人无益的言论或行为的回应，其目的是通过强调问题的荒谬性来理清和澄清问题。",
+    "vocabulary": [
+      {
+        "term": "response",
+        "explanation": "反应，响应"
+      },
+      {
+        "term": "behaviors",
+        "explanation": "行为，举止，态度"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Witty statements"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "in response to someone's unhelpful remarks or behaviors"
+      },
+      {
+        "role": "subject",
+        "text": "the intent"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to untangle and clarify the issue by emphasizing its absurdities"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Witty statements"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "in response to someone's unhelpful remarks or behaviors"
+      },
+      {
+        "role": "subject",
+        "text": "the intent"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to untangle and clarify the issue by emphasizing its absurdities"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-23": {
+    "translation": "讽刺性的言论以尖刻的方式表达；诙谐的言论以毫不掩饰和无害的幽默来表达。",
+    "vocabulary": [
+      {
+        "term": "expressed",
+        "explanation": "express 的过去式和过去分词：表达（自己的意见、感情等）"
+      },
+      {
+        "term": "delivered",
+        "explanation": "投递，运送"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "witty remarks"
+      },
+      {
+        "role": "predicate",
+        "text": "are delivered"
+      },
+      {
+        "role": "complement",
+        "text": "with undisguised and harmless humor"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "witty remarks"
+      },
+      {
+        "role": "predicate",
+        "text": "are delivered"
+      },
+      {
+        "role": "complement",
+        "text": "with undisguised and harmless humor"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-01": {
+    "translation": "可变性对于学习新技能至关重要。",
+    "vocabulary": [
+      {
+        "term": "learning",
+        "explanation": "学习"
+      },
+      {
+        "term": "skills",
+        "explanation": "（特定的）技术，技能，技巧（skill 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Variability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "important for learning new skills"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Variability"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "important for learning new skills"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-02": {
+    "translation": "考虑学习如何打网球发球。",
+    "vocabulary": [
+      {
+        "term": "learning",
+        "explanation": "学习"
+      },
+      {
+        "term": "Consider",
+        "explanation": "考虑，斟酌"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Consider"
+      },
+      {
+        "role": "complement",
+        "text": "learning how to serve in tennis"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Consider"
+      },
+      {
+        "role": "complement",
+        "text": "learning how to serve in tennis"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 祈使句",
+      "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。"
+    }
+  },
+  "R2-03": {
+    "translation": "您是否应该始终在球场上的同一位置练习发球，瞄准同一位置？",
+    "vocabulary": [
+      {
+        "term": "exactly",
+        "explanation": "精确地，确切地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "practise"
+      },
+      {
+        "role": "complement",
+        "text": "serving from the exactly same location on the court"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "practise"
+      },
+      {
+        "role": "complement",
+        "text": "serving from the exactly same location on the court"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-04": {
+    "translation": "尽管在多变的条件下练习一开始会比较慢，但最终可能会让你成为一名更好的网球运动员。",
+    "vocabulary": [
+      {
+        "term": "conditions",
+        "explanation": "状况，状态"
+      },
+      {
+        "term": "player",
+        "explanation": "运动员，选手"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "will likely make"
+      },
+      {
+        "role": "object",
+        "text": "you a better tennis player in the end",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "will likely make"
+      },
+      {
+        "role": "object",
+        "text": "you a better tennis player in the end",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-05": {
+    "translation": "这是因为可变性可以更好地概括所学内容。",
+    "vocabulary": [
+      {
+        "term": "learned",
+        "explanation": "博学的"
+      },
+      {
+        "term": "better",
+        "explanation": "较好的，更好的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-06": {
+    "translation": "这一原则存在于许多领域，包括语音感知和学习类别。",
+    "vocabulary": [
+      {
+        "term": "perception",
+        "explanation": "看法，认识"
+      },
+      {
+        "term": "principle",
+        "explanation": "（行为）准则，（道德）原则"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This principle"
+      },
+      {
+        "role": "predicate",
+        "text": "is found"
+      },
+      {
+        "role": "complement",
+        "text": "in many domains, including speech perception and learning categories"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This principle"
+      },
+      {
+        "role": "predicate",
+        "text": "is found"
+      },
+      {
+        "role": "complement",
+        "text": "in many domains, including speech perception and learning categories"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-07": {
+    "translation": "例如，如果婴儿只接触吉娃娃而不是许多不同种类的狗，他们将很难学习“狗”这一类别。",
+    "vocabulary": [
+      {
+        "term": "struggle",
+        "explanation": "奋斗，努力"
+      },
+      {
+        "term": "instance",
+        "explanation": "例子，实例"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "infants"
+      },
+      {
+        "role": "predicate",
+        "text": "will struggle"
+      },
+      {
+        "role": "complement",
+        "text": "to learn the category “dog” if they are only exposed to Chihuahuas"
+      },
+      {
+        "role": "complement",
+        "text": "instead of many different kinds of dogs"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "infants"
+      },
+      {
+        "role": "predicate",
+        "text": "will struggle"
+      },
+      {
+        "role": "complement",
+        "text": "to learn the category “dog” if they are only exposed to Chihuahuas"
+      },
+      {
+        "role": "complement",
+        "text": "instead of many different kinds of dogs"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-08": {
+    "translation": "“这一基本原理有十多个不同的名称，”最近一项研究的高级研究员利莫尔·拉维夫 (Limor Raviv) 说。",
+    "vocabulary": [
+      {
+        "term": "principle",
+        "explanation": "（行为）准则，（道德）原则"
+      },
+      {
+        "term": "different",
+        "explanation": "不同的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Limor Raviv, the senior investigator of a recent study"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“There are over ten different names for this basic principle,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Limor Raviv, the senior investigator of a recent study"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“There are over ten different names for this basic principle,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-09": {
+    "translation": "“从变量较少的输入中学习通常很快，但可能无法推广到新的刺激。”",
+    "vocabulary": [
+      {
+        "term": "stimuli",
+        "explanation": "刺激（物）, 促进因素"
+      },
+      {
+        "term": "Learning",
+        "explanation": "学习"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Learning from less variable input",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "fast"
+      },
+      {
+        "role": "predicate",
+        "text": "may fail"
+      },
+      {
+        "role": "complement",
+        "text": "to generalise to new stimuli"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Learning from less variable input",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "fast"
+      },
+      {
+        "role": "predicate",
+        "text": "may fail"
+      },
+      {
+        "role": "complement",
+        "text": "to generalise to new stimuli"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 表语 / 补语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-10": {
+    "translation": "为了确定关键模式并了解变异性影响的基本原理，Raviv 和她的同事回顾了 150 多项跨领域的变异性和泛化研究，包括计算机科学、语言学、分类、视觉感知和正规教育。",
+    "vocabulary": [
+      {
+        "term": "understand",
+        "explanation": "理解，懂得"
+      },
+      {
+        "term": "underlying",
+        "explanation": "根本的，潜在的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "To identify key patterns and understand the underlying principles of variability effects",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "reviewed"
+      },
+      {
+        "role": "object",
+        "text": "over 150 studies on variability and generalisation across fields, including computer science, linguistics, categorisation, visual perception and formal education"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "reviewed"
+      },
+      {
+        "role": "object",
+        "text": "over 150 studies on variability and generalisation across fields, including computer science, linguistics, categorisation, visual perception and formal education"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-11": {
+    "translation": "研究人员发现，在研究中，术语“可变性”可以指至少四种不同类型的可变性，例如集合大小和调度。",
+    "vocabulary": [
+      {
+        "term": "researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      },
+      {
+        "term": "discovered",
+        "explanation": "发现，找到（discover 的过去式和过去分词）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "discovered"
+      },
+      {
+        "role": "object",
+        "text": "that, across studies, the term variability can refer to at least four different kinds of variability, such as set size and scheduling",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The researchers"
+      },
+      {
+        "role": "predicate",
+        "text": "discovered"
+      },
+      {
+        "role": "object",
+        "text": "that, across studies, the term variability can refer to at least four different kinds of variability, such as set size and scheduling",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-12": {
+    "translation": "“这四种变异性从未被直接比较过——这意味着我们目前不知道哪种对学习最有效，”拉维夫说。",
+    "vocabulary": [
+      {
+        "term": "learning",
+        "explanation": "学习"
+      },
+      {
+        "term": "compared",
+        "explanation": "compare 的过去式和过去分词：比较，对照"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“These four kinds of variability have never been directly compared—which means that we currently don't know which is most effective for learning,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "“These four kinds of variability have never been directly compared—which means that we currently don't know which is most effective for learning,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-13": {
+    "translation": "可变性的影响取决于它是否与任务相关。",
+    "vocabulary": [
+      {
+        "term": "depends",
+        "explanation": "依赖"
+      },
+      {
+        "term": "impact",
+        "explanation": "撞击，冲击力"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The impact"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      },
+      {
+        "role": "complement",
+        "text": "on whether it is relevant to the task or not"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The impact"
+      },
+      {
+        "role": "predicate",
+        "text": "depends"
+      },
+      {
+        "role": "complement",
+        "text": "on whether it is relevant to the task or not"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-14": {
+    "translation": "但据《先生》报道宫城原则”，练习看似无关的技能实际上可能有益于其他技能的学习。",
+    "vocabulary": [
+      {
+        "term": "principle",
+        "explanation": "（行为）准则，（道德）原则"
+      },
+      {
+        "term": "according",
+        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "practising seemingly unrelated skills",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "may actually benefit"
+      },
+      {
+        "role": "object",
+        "text": "learning of other skills"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "practising seemingly unrelated skills",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "may actually benefit"
+      },
+      {
+        "role": "object",
+        "text": "learning of other skills"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-15": {
+    "translation": "但为什么变异性会影响学习和泛化呢？",
+    "vocabulary": [
+      {
+        "term": "learning",
+        "explanation": "学习"
+      },
+      {
+        "term": "impact",
+        "explanation": "撞击，冲击力"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "variability"
+      },
+      {
+        "role": "predicate",
+        "text": "impact"
+      },
+      {
+        "role": "object",
+        "text": "learning and generalisation"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "variability"
+      },
+      {
+        "role": "predicate",
+        "text": "impact"
+      },
+      {
+        "role": "object",
+        "text": "learning and generalisation"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "这是特殊疑问句；还原陈述语序后，先确认主句的主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-16": {
+    "translation": "一种理论认为，更多的可变输入可以突出任务的哪些方面相关，哪些方面不相关。",
+    "vocabulary": [
+      {
+        "term": "relevant",
+        "explanation": "有关的，切题的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One theory"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that more variable input can highlight which aspects of atask are relevant and which are not",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One theory"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that more variable input can highlight which aspects of atask are relevant and which are not",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-17": {
+    "translation": "另一种理论是，更大的可变性导致更广泛的概括。",
+    "vocabulary": [
+      {
+        "term": "greater",
+        "explanation": "较大的（great 的比较级）"
+      },
+      {
+        "term": "broader",
+        "explanation": "broad 的比较级"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Another theory"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that greater variability leads to broader generalisations",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Another theory"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that greater variability leads to broader generalisations",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-18": {
+    "translation": "这是因为可变性将更好地代表现实世界，包括非典型的例子。",
+    "vocabulary": [
+      {
+        "term": "represent",
+        "explanation": "代表"
+      },
+      {
+        "term": "including",
+        "explanation": "包括，包含"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-19": {
+    "translation": "第三个原因与记忆的工作方式有关：当训练变化时，学习者被迫主动重建他们的记忆。",
+    "vocabulary": [
+      {
+        "term": "training",
+        "explanation": "训练，培训"
+      },
+      {
+        "term": "reason",
+        "explanation": "原因，理由"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "when training is variable",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "learners"
+      },
+      {
+        "role": "predicate",
+        "text": "are forced"
+      },
+      {
+        "role": "complement",
+        "text": "to actively reconstruct their memories"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "learners"
+      },
+      {
+        "role": "predicate",
+        "text": "are forced"
+      },
+      {
+        "role": "complement",
+        "text": "to actively reconstruct their memories"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-20": {
+    "translation": "“了解变异性的影响对于我们日常生活的各个方面都很重要。除了影响我们学习语言、运动技能和类别的方式之外，它甚至还会影响我们的社交生活，”拉维夫解释道。",
+    "vocabulary": [
+      {
+        "term": "Understanding",
+        "explanation": "（对某学科、过程或情况的）了解，认识"
+      },
+      {
+        "term": "explains",
+        "explanation": "解释，说明"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "explains"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "explains"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-21": {
+    "translation": "“例如，人脸识别受到人们是在小社区还是在大社区长大的影响。童年时期接触较少的面孔与面孔记忆的减弱有关。”",
+    "vocabulary": [
+      {
+        "term": "associated",
+        "explanation": "有关联的，相关的"
+      },
+      {
+        "term": "community",
+        "explanation": "社区，社会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Exposure"
+      },
+      {
+        "role": "predicate",
+        "text": "is associated"
+      },
+      {
+        "role": "complement",
+        "text": "with diminished face memory"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Exposure"
+      },
+      {
+        "role": "predicate",
+        "text": "is associated"
+      },
+      {
+        "role": "complement",
+        "text": "with diminished face memory"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-22": {
+    "translation": "“我们希望这项工作能够激发人们的好奇心并产生更多关于该主题的工作，”拉维夫总结道。",
+    "vocabulary": [
+      {
+        "term": "generate",
+        "explanation": "产生，引起"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "concludes"
+      },
+      {
+        "role": "object",
+        "text": "“We hope this work will spark people's curiosity and generate more work on the topic,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Raviv"
+      },
+      {
+        "role": "predicate",
+        "text": "concludes"
+      },
+      {
+        "role": "object",
+        "text": "“We hope this work will spark people's curiosity and generate more work on the topic,”",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-23": {
+    "translation": "“我们的论文提出了很多悬而未决的问题。我们能否在大脑之外，例如在免疫系统中找到类似的变异效应？”",
+    "vocabulary": [
+      {
+        "term": "questions",
+        "explanation": "问题，疑问（question 的复数）"
+      },
+      {
+        "term": "instance",
+        "explanation": "例子，实例"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "similar effects of variability beyond the brain"
+      },
+      {
+        "role": "complement",
+        "text": "for instance"
+      },
+      {
+        "role": "complement",
+        "text": "in the immune system"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "similar effects of variability beyond the brain"
+      },
+      {
+        "role": "complement",
+        "text": "for instance"
+      },
+      {
+        "role": "complement",
+        "text": "in the immune system"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  }
+}

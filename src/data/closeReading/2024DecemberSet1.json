@@ -1,0 +1,5806 @@
+{
+  "C01": {
+    "translation": "随着经济的快速进步，人们的思想观念自然也必然发生变化。",
+    "vocabulary": [
+      {
+        "term": "progress",
+        "explanation": "进步，进展"
+      },
+      {
+        "term": "ideology",
+        "explanation": "意识形态，思想体系"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "natural"
+      },
+      {
+        "role": "object",
+        "text": "that people's ideology is bound for change",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "natural"
+      },
+      {
+        "role": "object",
+        "text": "that people's ideology is bound for change",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C02": {
+    "translation": "对于一些人来说，节俭不再是一种美德，而且持这种观点的人也不止他们一个。",
+    "vocabulary": [
+      {
+        "term": "holding",
+        "explanation": "持有"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Being thrifty",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a virtue to some people"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      },
+      {
+        "role": "complement",
+        "text": "alone"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Being thrifty",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a virtue to some people"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      },
+      {
+        "role": "complement",
+        "text": "alone"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 表语 / 补语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "C03": {
+    "translation": "每个人对于如何过上自己的生活方式可能有不同的看法：有些人喜欢简单，有些人喜欢奢侈，有些人挥霍无度，有些人像乡下老鼠一样积累。",
+    "vocabulary": [
+      {
+        "term": "accumulate",
+        "explanation": "积累，积攒"
+      },
+      {
+        "term": "country",
+        "explanation": "国，国家"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "some"
+      },
+      {
+        "role": "predicate",
+        "text": "accumulate"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "some"
+      },
+      {
+        "role": "predicate",
+        "text": "accumulate"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C04": {
+    "translation": "由于我出身贫寒，生活在农村，简单的乡村生活对我来说很少失去吸引力，但随着身份的转变，我有机会与新富打交道，这种经历彻底改变了我的生活方式。",
+    "vocabulary": [
+      {
+        "term": "revolutionized",
+        "explanation": "彻底改变，彻底改革（revolutionize 的过去式和过去分词）"
+      },
+      {
+        "term": "opportunity",
+        "explanation": "时机，机会"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As I was born poor and in the countryside",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the simple rural life"
+      },
+      {
+        "role": "predicate",
+        "text": "loses"
+      },
+      {
+        "role": "object",
+        "text": "its appeal"
+      },
+      {
+        "role": "complement",
+        "text": "to me"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "an opportunity to mingle with the newly rich, an experience which has revolutionized my view of lifestyle"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the simple rural life"
+      },
+      {
+        "role": "predicate",
+        "text": "loses"
+      },
+      {
+        "role": "object",
+        "text": "its appeal"
+      },
+      {
+        "role": "complement",
+        "text": "to me"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "an opportunity to mingle with the newly rich, an experience which has revolutionized my view of lifestyle"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语 + 表语 / 补语 + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C05": {
+    "translation": "少花多存是邪恶的或有罪的，这是最近才向我透露的一个想法。",
+    "vocabulary": [
+      {
+        "term": "revealed",
+        "explanation": "揭露，透露"
+      },
+      {
+        "term": "recently",
+        "explanation": "最近，不久前"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "evil or sinful"
+      },
+      {
+        "role": "complement",
+        "text": "to spend little and to save much"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "evil or sinful"
+      },
+      {
+        "role": "complement",
+        "text": "to spend little and to save much"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C06": {
+    "translation": "事实上，全世界都在疯狂借贷和消费，其中美国引领了潮流。",
+    "vocabulary": [
+      {
+        "term": "leading",
+        "explanation": "主要的，最重要的"
+      },
+      {
+        "term": "Actually",
+        "explanation": "实际上，事实上"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the whole world"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "in a rage to borrow and to spend, with the USA leading the trend"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the whole world"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "in a rage to borrow and to spend, with the USA leading the trend"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C07": {
+    "translation": "美国仍然是世界上最富有、最强大的国家，但讽刺的是他们向我们借钱。",
+    "vocabulary": [
+      {
+        "term": "country",
+        "explanation": "国，国家"
+      },
+      {
+        "term": "powerful",
+        "explanation": "（人，组织，国家）强大的，有影响力的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The USA"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the richest and most powerful country in the world"
+      },
+      {
+        "role": "subject",
+        "text": "the irony"
+      },
+      {
+        "role": "object",
+        "text": "that they borrow money from us",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The USA"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the richest and most powerful country in the world"
+      },
+      {
+        "role": "subject",
+        "text": "the irony"
+      },
+      {
+        "role": "object",
+        "text": "that they borrow money from us",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C08": {
+    "translation": "虽然我是个经济学门外汉，但至少我知道用借来的钱进行投资会把借款人变成掠夺者，而不是正派和善良的贷款人。",
+    "vocabulary": [
+      {
+        "term": "economics",
+        "explanation": "经济学"
+      },
+      {
+        "term": "investing",
+        "explanation": "投资"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a layman"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "that investing with borrowed money will turn the borrower into the predator rather than the decent and kind lender",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a layman"
+      },
+      {
+        "role": "predicate",
+        "text": "know"
+      },
+      {
+        "role": "object",
+        "text": "that investing with borrowed money will turn the borrower into the predator rather than the decent and kind lender",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "C09": {
+    "translation": "一个明显的例子是房地产。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An apparent case"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "real estate"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "An apparent case"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "real estate"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C10": {
+    "translation": "那些精明的、从银行贷款的人，通过以高出几倍的价格出售所购买的房屋，变得相对富裕。",
+    "vocabulary": [
+      {
+        "term": "relatively",
+        "explanation": "相当地，相对地"
+      },
+      {
+        "term": "higher",
+        "explanation": "更高的，较高的（high 的比较级）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Those"
+      },
+      {
+        "role": "predicate",
+        "text": "become"
+      },
+      {
+        "role": "complement",
+        "text": "relatively rich by selling their purchased home at a price several folds higher"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Those"
+      },
+      {
+        "role": "predicate",
+        "text": "become"
+      },
+      {
+        "role": "complement",
+        "text": "relatively rich by selling their purchased home at a price several folds higher"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C11": {
+    "translation": "甚至教育也不能幸免于这一理论。",
+    "vocabulary": [
+      {
+        "term": "education",
+        "explanation": "（尤指学校）教育"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Even education"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "immune from this theory"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Even education"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "immune from this theory"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C12": {
+    "translation": "许多有志送孩子上大学的贫困父母都从这项投资中受益，尽管他们必须勉强维持生计。",
+    "vocabulary": [
+      {
+        "term": "investment",
+        "explanation": "投资"
+      },
+      {
+        "term": "children",
+        "explanation": "child 的复数形式"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many"
+      },
+      {
+        "role": "predicate",
+        "text": "have benefited"
+      },
+      {
+        "role": "complement",
+        "text": "from this investment"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Many"
+      },
+      {
+        "role": "predicate",
+        "text": "have benefited"
+      },
+      {
+        "role": "complement",
+        "text": "from this investment"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "C13": {
+    "translation": "可以合理地得出这样的结论：花钱是值得赞扬的，前提是它不超出你的能力范围。",
+    "vocabulary": [
+      {
+        "term": "spending",
+        "explanation": "（尤指政府或组织的）支出，开销，花费"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "reasonable"
+      },
+      {
+        "role": "complement",
+        "text": "to conclude that spending is praiseworthy, supposing it is not beyond your means"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "reasonable"
+      },
+      {
+        "role": "complement",
+        "text": "to conclude that spending is praiseworthy, supposing it is not beyond your means"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A01": {
+    "translation": "在马六甲海峡附近的一个小果园里，林国安 (Lim Kok Ann) 的果园里只有一棵树，种植着 kedondong，这是一种脆脆的酸浆果，马来西亚人主要用在泡菜和沙拉中。",
+    "vocabulary": [
+      {
+        "term": "growing",
+        "explanation": "增长的，增加的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Lim Kok Ann"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Lim Kok Ann"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A02": {
+    "translation": "这位 45 岁的人说，“它不是很出名”，他现在主要关注市场更大的龙眼浆果和菠萝。",
+    "vocabulary": [
+      {
+        "term": "markets",
+        "explanation": "市场，集市（market 的复数）"
+      },
+      {
+        "term": "instead",
+        "explanation": "代替，顶替，反而"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "very well-known,\"says"
+      },
+      {
+        "role": "complement",
+        "text": "the 45-year-old, who is instead focusing on longan ( 龙眼 ) berries and pineapples, which have bigger markets"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s not"
+      },
+      {
+        "role": "complement",
+        "text": "very well-known,\"says"
+      },
+      {
+        "role": "complement",
+        "text": "the 45-year-old, who is instead focusing on longan ( 龙眼 ) berries and pineapples, which have bigger markets"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-A03": {
+    "translation": "“我们必须发展有利可图的业务，”他说。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "what"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "\"We have to grow what is profitable,\"",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "what"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "\"We have to grow what is profitable,\"",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-B01": {
+    "translation": "但在距离马来西亚乡村不到一小时的地方，在三个巨大的银色圆顶内，科学家们正在试图改变食物的未来。",
+    "vocabulary": [
+      {
+        "term": "scientists",
+        "explanation": "科学家（scientist 的复数）"
+      },
+      {
+        "term": "trying",
+        "explanation": "令人厌烦的，难对付的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "are trying"
+      },
+      {
+        "role": "complement",
+        "text": "to change the future of food"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "scientists"
+      },
+      {
+        "role": "predicate",
+        "text": "are trying"
+      },
+      {
+        "role": "complement",
+        "text": "to change the future of food"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B02": {
+    "translation": "他们通过种植和加工所谓的“替代”作物（例如 kedondong）来突破人类饮食的界限。",
+    "vocabulary": [
+      {
+        "term": "pushing",
+        "explanation": "接近（某个年龄）"
+      },
+      {
+        "term": "processing",
+        "explanation": "步骤，程序"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "'re pushing"
+      },
+      {
+        "role": "object",
+        "text": "the boundaries of what humans eat by growing and processing so-called\"alternative\"crops—such as kedondong"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "'re pushing"
+      },
+      {
+        "role": "object",
+        "text": "the boundaries of what humans eat by growing and processing so-called\"alternative\"crops—such as kedondong"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B03": {
+    "translation": "在全球研究中心“未来作物”(CFF) 的总部，这种特殊的未充分利用的水果已被制成无糖果汁，富含维生素 C，并在感官评估中获得最高分。",
+    "vocabulary": [
+      {
+        "term": "evaluations",
+        "explanation": "评价，评估"
+      },
+      {
+        "term": "research",
+        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "this particular under-used fruit"
+      },
+      {
+        "role": "predicate",
+        "text": "has been turned"
+      },
+      {
+        "role": "complement",
+        "text": "into a sugar-free juice, high in vitamin C and getting top marks in sensory evaluations"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "this particular under-used fruit"
+      },
+      {
+        "role": "predicate",
+        "text": "has been turned"
+      },
+      {
+        "role": "complement",
+        "text": "into a sugar-free juice, high in vitamin C and getting top marks in sensory evaluations"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-B04": {
+    "translation": "“你在这里看到的任何东西都是被遗忘的作物，”赛义德·阿扎姆-阿里在谈到马来西亚首都吉隆坡郊外 CFF 花园中的丰富植物时说道。",
+    "vocabulary": [
+      {
+        "term": "plants",
+        "explanation": "植物"
+      },
+      {
+        "term": "gardens",
+        "explanation": "花园，菜园，果园"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Anything"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a forgotten crop,\"says Sayed Azam-Ali of the abundant plants weaving through the gardens of CFF outside Malaysia's capital Kuala Lumpur"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Anything"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a forgotten crop,\"says Sayed Azam-Ali of the abundant plants weaving through the gardens of CFF outside Malaysia's capital Kuala Lumpur"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C01": {
+    "translation": "阿扎姆-阿里教授解释说，仅四种作物——小麦、玉米、水稻和大豆——就提供了世界三分之二的粮食供应。",
+    "vocabulary": [
+      {
+        "term": "explains",
+        "explanation": "解释，说明"
+      },
+      {
+        "term": "provide",
+        "explanation": "提供，供给"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Prof Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "explains"
+      },
+      {
+        "role": "object",
+        "text": "that just four crops—wheat, maize, rice and soybean—provide two-thirds of the world's food supply",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Prof Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "explains"
+      },
+      {
+        "role": "object",
+        "text": "that just four crops—wheat, maize, rice and soybean—provide two-thirds of the world's food supply",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-C02": {
+    "translation": "“我们依赖这四个，”他说。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "We'",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "We'",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-C03": {
+    "translation": "“但实际上，我们已经种植了 7,000 种农作物数千年。",
+    "vocabulary": [
+      {
+        "term": "thousands",
+        "explanation": "数千（thousand 的复数）"
+      },
+      {
+        "term": "farming",
+        "explanation": "农业，农场经营"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "'re"
+      },
+      {
+        "role": "complement",
+        "text": "7,000 crops we've been farming for thousands of years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "'re"
+      },
+      {
+        "role": "complement",
+        "text": "7,000 crops we've been farming for thousands of years"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C04": {
+    "translation": "我们忽略所有这些。",
+    "vocabulary": [
+      {
+        "term": "ignore",
+        "explanation": "佯装未见，不理睬"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "ignore"
+      },
+      {
+        "role": "object",
+        "text": "all of those"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "ignore"
+      },
+      {
+        "role": "object",
+        "text": "all of those"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-C05": {
+    "translation": "“研究人员正试图释放这些被忽视的作物的潜力，他们将这些植物描述为被遗忘、未充分利用或“替代”的植物，因为它们被主要作物加工成分驱动的日益统一的饮食所取代。",
+    "vocabulary": [
+      {
+        "term": "ingredients",
+        "explanation": "材料，佐料，原料"
+      },
+      {
+        "term": "Researchers",
+        "explanation": "研究人员，研究者（researcher 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "plants"
+      },
+      {
+        "role": "predicate",
+        "text": "are displaced"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "plants"
+      },
+      {
+        "role": "predicate",
+        "text": "are displaced"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D01": {
+    "translation": "这是一个及时的探索。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a timely quest"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a timely quest"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D02": {
+    "translation": "食品行业已占全球温室气体排放量的近三分之一。",
+    "vocabulary": [
+      {
+        "term": "emissions",
+        "explanation": "排放"
+      },
+      {
+        "term": "sector",
+        "explanation": "区域，部分"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The food sector"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "responsible for nearly a third of global greenhouse gas emissions"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The food sector"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "responsible for nearly a third of global greenhouse gas emissions"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-D03": {
+    "translation": "据估计，到 2050 年，世界粮食产量必须增加 50%，才能养活预计的全球 100 亿人口。",
+    "vocabulary": [
+      {
+        "term": "population",
+        "explanation": "（地区、国家等的）人口，人口数量"
+      },
+      {
+        "term": "projected",
+        "explanation": "计划的，推断的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "estimates"
+      },
+      {
+        "role": "object",
+        "text": "the world must produce 50% more food to feed the projected global population of 10 billion",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "estimates"
+      },
+      {
+        "role": "object",
+        "text": "the world must produce 50% more food to feed the projected global population of 10 billion",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-D04": {
+    "translation": "在不加剧气候变化的情况下满足这一需求需要紧急解决方案。",
+    "vocabulary": [
+      {
+        "term": "contributing",
+        "explanation": "捐赠，捐助"
+      },
+      {
+        "term": "solutions",
+        "explanation": "（问题、困难等的）解决办法，解决方案"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Meeting this demand without contributing to climate change",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "calls"
+      },
+      {
+        "role": "complement",
+        "text": "for urgent solutions"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Meeting this demand without contributing to climate change",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "calls"
+      },
+      {
+        "role": "complement",
+        "text": "for urgent solutions"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E01": {
+    "translation": "被遗忘的农作物蕴藏着关键答案。",
+    "vocabulary": [
+      {
+        "term": "answers",
+        "explanation": "回答，答复"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Forgotten crops"
+      },
+      {
+        "role": "predicate",
+        "text": "hold"
+      },
+      {
+        "role": "object",
+        "text": "key answers"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Forgotten crops"
+      },
+      {
+        "role": "predicate",
+        "text": "hold"
+      },
+      {
+        "role": "object",
+        "text": "key answers"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E02": {
+    "translation": "通过投资被忽视的当地植物，各国可以减少对进口作物及其高碳供应链的依赖。",
+    "vocabulary": [
+      {
+        "term": "countries",
+        "explanation": "国家（country 的复数）"
+      },
+      {
+        "term": "imported",
+        "explanation": "输入的，进口的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "countries"
+      },
+      {
+        "role": "predicate",
+        "text": "can reduce"
+      },
+      {
+        "role": "object",
+        "text": "their reliance"
+      },
+      {
+        "role": "complement",
+        "text": "on imported crops and their carbon-heavy supply chains"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "countries"
+      },
+      {
+        "role": "predicate",
+        "text": "can reduce"
+      },
+      {
+        "role": "object",
+        "text": "their reliance"
+      },
+      {
+        "role": "complement",
+        "text": "on imported crops and their carbon-heavy supply chains"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E03": {
+    "translation": "在气候变暖威胁现有农作物之际，恢复人类曾经食用的农作物品种也可以提高粮食安全。",
+    "vocabulary": [
+      {
+        "term": "security",
+        "explanation": "保护措施，安全工作"
+      },
+      {
+        "term": "existing",
+        "explanation": "现存的，现行的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Bringing back the variety of crops humans once ate",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "boosts"
+      },
+      {
+        "role": "object",
+        "text": "food security"
+      },
+      {
+        "role": "object",
+        "text": "climates threaten existing crops",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "complement",
+        "text": "at a time warming"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Bringing back the variety of crops humans once ate",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "boosts"
+      },
+      {
+        "role": "object",
+        "text": "food security"
+      },
+      {
+        "role": "object",
+        "text": "climates threaten existing crops",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "complement",
+        "text": "at a time warming"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语 + 宾语从句（整体） + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-E04": {
+    "translation": "阿扎姆-阿里认为，最重要的是，被遗忘的作物是最能适应气候变化且营养丰富的作物之一。",
+    "vocabulary": [
+      {
+        "term": "climate",
+        "explanation": "气候"
+      },
+      {
+        "term": "argues",
+        "explanation": "主张；认为；论证（argue 的第三人称单数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "argues"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "argues"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-E05": {
+    "translation": "他的总结很简单：“饮食多样化对人类的未来至关重要。”",
+    "vocabulary": [
+      {
+        "term": "future",
+        "explanation": "未来，将来"
+      },
+      {
+        "term": "critical",
+        "explanation": "批判的，爱挑剔的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Dietary diversification"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "critical to the future of humanity"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Dietary diversification"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "critical to the future of humanity"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-F01": {
+    "translation": "粮食安全专家对此表示赞同。",
+    "vocabulary": [
+      {
+        "term": "security",
+        "explanation": "保护措施，安全工作"
+      },
+      {
+        "term": "experts",
+        "explanation": "专家"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Food security experts"
+      },
+      {
+        "role": "predicate",
+        "text": "agree"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Food security experts"
+      },
+      {
+        "role": "predicate",
+        "text": "agree"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-F02": {
+    "translation": "新加坡国立大学水政策研究所高级研究员塞西莉亚·托尔塔贾达说：“世界上不存在粮食不安全，而是对粮食无知。”",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "food ignorance,\"says Cecilia Tortajada, a senior research fellow at the Institute of Water Policy at the National University of Singapore"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "food ignorance,\"says Cecilia Tortajada, a senior research fellow at the Institute of Water Policy at the National University of Singapore"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-F03": {
+    "translation": "“每当我们拥有本土作物时，我们往往会忽视它们，就好像它们没有价值一样，但它们确实有价值，”她补充道。",
+    "vocabulary": [
+      {
+        "term": "valuable",
+        "explanation": "值钱的，贵重的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Whenever we have native crops",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to disregard them as if they were not valuable"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to disregard them as if they were not valuable"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语 + 主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-G01": {
+    "translation": "阿扎姆-阿里深知这种怀疑。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "knows"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "knows"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G02": {
+    "translation": "20 世纪 80 年代，他通过在尼日尔遇到的女农民的工作发现了替代作物。",
+    "vocabulary": [
+      {
+        "term": "alternative",
+        "explanation": "可供选择的事物，替代物"
+      },
+      {
+        "term": "farmers",
+        "explanation": "农民（farmer 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      },
+      {
+        "role": "complement",
+        "text": "across alternative crops"
+      },
+      {
+        "role": "complement",
+        "text": "in the 1980s"
+      },
+      {
+        "role": "complement",
+        "text": "through the work of women farmers he met in Niger"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "came"
+      },
+      {
+        "role": "complement",
+        "text": "across alternative crops"
+      },
+      {
+        "role": "complement",
+        "text": "in the 1980s"
+      },
+      {
+        "role": "complement",
+        "text": "through the work of women farmers he met in Niger"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G03": {
+    "translation": "这位当时的博士生记得，当大作物歉收时，他们在没有技术优势的情况下在后院种植农作物来养活家人，对此感到惊叹不已。",
+    "vocabulary": [
+      {
+        "term": "technology",
+        "explanation": "科技，技术"
+      },
+      {
+        "term": "families",
+        "explanation": "家庭（family 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The then-Ph D student"
+      },
+      {
+        "role": "predicate",
+        "text": "remembers"
+      },
+      {
+        "role": "complement",
+        "text": "marvelling at the crops they grew in their backyards, without the benefits of technology"
+      },
+      {
+        "role": "complement",
+        "text": "to feed their families when the big crops failed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The then-Ph D student"
+      },
+      {
+        "role": "predicate",
+        "text": "remembers"
+      },
+      {
+        "role": "complement",
+        "text": "marvelling at the crops they grew in their backyards, without the benefits of technology"
+      },
+      {
+        "role": "complement",
+        "text": "to feed their families when the big crops failed"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G04": {
+    "translation": "他看到了建立替代食品系统的巨大机会。",
+    "vocabulary": [
+      {
+        "term": "opportunity",
+        "explanation": "时机，机会"
+      },
+      {
+        "term": "alternative",
+        "explanation": "可供选择的事物，替代物"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "saw"
+      },
+      {
+        "role": "object",
+        "text": "a tremendous opportunity to build alternative food systems"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "saw"
+      },
+      {
+        "role": "object",
+        "text": "a tremendous opportunity to build alternative food systems"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-G05": {
+    "translation": "但“阻力是巨大的，”他回忆道。",
+    "vocabulary": [
+      {
+        "term": "resistance",
+        "explanation": "反对，抵制"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the resistance"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "enormous,\"he recalls"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the resistance"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "enormous,\"he recalls"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H01": {
+    "translation": "他没有被吓倒，继续耕耘。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Undeterred"
+      },
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "ploughed"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "ploughed"
+      }
+    ],
+    "structure": {
+      "pattern": "状语 + 主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H02": {
+    "translation": "一个又一个的项目帮助证明这些作物作为主要作物的替代品在不同的环境中都是可行的。",
+    "vocabulary": [
+      {
+        "term": "environments",
+        "explanation": "环境"
+      },
+      {
+        "term": "alternatives",
+        "explanation": "替代选择（alternative 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Project"
+      },
+      {
+        "role": "predicate",
+        "text": "helped"
+      },
+      {
+        "role": "complement",
+        "text": "prove these crops were viable in different environments as alternatives to the staple ones"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Project"
+      },
+      {
+        "role": "predicate",
+        "text": "helped"
+      },
+      {
+        "role": "complement",
+        "text": "prove these crops were viable in different environments as alternatives to the staple ones"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H03": {
+    "translation": "但这些作物是否有销路的问题仍然存在。",
+    "vocabulary": [
+      {
+        "term": "remained",
+        "explanation": "逗留，留下"
+      },
+      {
+        "term": "question",
+        "explanation": "问题，疑问"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the question"
+      },
+      {
+        "role": "predicate",
+        "text": "remained"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the question"
+      },
+      {
+        "role": "predicate",
+        "text": "remained"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H04": {
+    "translation": "“这是关键的事情，”他说。",
+    "vocabulary": [
+      {
+        "term": "critical",
+        "explanation": "批判的，爱挑剔的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the critical thing,\"he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "That'",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the critical thing,\"he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "That'",
+        "label": "直接引语（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H05": {
+    "translation": "在该中心的一个圆顶内，食品技术员谭新林用辣木叶粉代替一些小麦粉，烘烤出谷胶含量较低、营养成分较高的蛋糕。",
+    "vocabulary": [
+      {
+        "term": "leaves",
+        "explanation": "（leaf 的复数）树叶，叶片"
+      },
+      {
+        "term": "centre",
+        "explanation": "（地理位置）中间，中心点"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "food technologist Tan Xinlin"
+      },
+      {
+        "role": "predicate",
+        "text": "uses"
+      },
+      {
+        "role": "object",
+        "text": "powdered moringa(辣木)"
+      },
+      {
+        "role": "object",
+        "text": "leaves in place of some wheat flour to bake a cake lower in gluten (谷胶) and higher in nutrients"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "food technologist Tan Xinlin"
+      },
+      {
+        "role": "predicate",
+        "text": "uses"
+      },
+      {
+        "role": "object",
+        "text": "powdered moringa(辣木)"
+      },
+      {
+        "role": "object",
+        "text": "leaves in place of some wheat flour to bake a cake lower in gluten (谷胶) and higher in nutrients"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H06": {
+    "translation": "谭的工作是用这些仍然不熟悉的原料创造出既能满足当地和国际口味的食谱。",
+    "vocabulary": [
+      {
+        "term": "ingredients",
+        "explanation": "材料，佐料，原料"
+      },
+      {
+        "term": "international",
+        "explanation": "国际的，国际上的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tan's job"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to create recipes with these still- unfamiliar ingredients that will appeal to both local and international tastes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Tan's job"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to create recipes with these still- unfamiliar ingredients that will appeal to both local and international tastes"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H07": {
+    "translation": "近年来，她使用了 CFF 种植的一些被遗忘的作物，例如辣木和班巴拉花生，来制作从即食汤到印度小吃的各种食品。",
+    "vocabulary": [
+      {
+        "term": "recent",
+        "explanation": "最近的，最新的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "has used"
+      },
+      {
+        "role": "object",
+        "text": "some of the forgotten crops grown at CFF, such as moringa and bambara groundnut"
+      },
+      {
+        "role": "complement",
+        "text": "to make everything from instant soup to Indian snacks"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "has used"
+      },
+      {
+        "role": "object",
+        "text": "some of the forgotten crops grown at CFF, such as moringa and bambara groundnut"
+      },
+      {
+        "role": "complement",
+        "text": "to make everything from instant soup to Indian snacks"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H08": {
+    "translation": "“我尝试对被遗忘的作物进行现代化改造，而不是使用旧的食谱。",
+    "vocabulary": [
+      {
+        "term": "recipes",
+        "explanation": "烹饪法，食谱"
+      },
+      {
+        "term": "instead",
+        "explanation": "代替，顶替，反而"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "try"
+      },
+      {
+        "role": "complement",
+        "text": "to modernise forgotten crops instead of using old recipes"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "try"
+      },
+      {
+        "role": "complement",
+        "text": "to modernise forgotten crops instead of using old recipes"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H09": {
+    "translation": "“谭说，他也是一名训练有素的厨师。",
+    "vocabulary": [
+      {
+        "term": "trained",
+        "explanation": "培训"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tan"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Tan"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H10": {
+    "translation": "这一战略旨在吸引世界上不断壮大的中产阶级，他们越来越多地转向快餐和加工食品行业。",
+    "vocabulary": [
+      {
+        "term": "increasingly",
+        "explanation": "越来越多地，不断增加地"
+      },
+      {
+        "term": "strategy",
+        "explanation": "（尤指为获得某物制定长期的）策略，行动计划"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a strategy to appeal to the world's growing middle classes who are increasingly turning to the fast and processed food industries"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "a strategy to appeal to the world's growing middle classes who are increasingly turning to the fast and processed food industries"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H11": {
+    "translation": "谭补充道，这也是一种帮助扭转人们对当地农作物“老人或穷人的食物”或劣质“女性农作物”的看法。",
+    "vocabulary": [
+      {
+        "term": "perceptions",
+        "explanation": "看法，认识"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tan"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Tan"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H12": {
+    "translation": "D 当地食物的这些内涵的根源可以很深。",
+    "vocabulary": [
+      {
+        "term": "connotations",
+        "explanation": "内涵，含蓄，隐含意义（connotation 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The roots"
+      },
+      {
+        "role": "predicate",
+        "text": "can run"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The roots"
+      },
+      {
+        "role": "predicate",
+        "text": "can run"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H13": {
+    "translation": "班巴拉花生是撒哈拉以南非洲地区富含蛋白质的本土作物，东南亚部分地区也有种植，其边缘化可以追溯到殖民统治。",
+    "vocabulary": [
+      {
+        "term": "Saharan",
+        "explanation": "撒哈拉沙漠的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The bambara groundnut, a protein-rich native crop of sub-Saharan Africa that is also grown in parts of southeast Asia"
+      },
+      {
+        "role": "predicate",
+        "text": "can trace"
+      },
+      {
+        "role": "object",
+        "text": "its marginalisation"
+      },
+      {
+        "role": "complement",
+        "text": "to colonial rule"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The bambara groundnut, a protein-rich native crop of sub-Saharan Africa that is also grown in parts of southeast Asia"
+      },
+      {
+        "role": "predicate",
+        "text": "can trace"
+      },
+      {
+        "role": "object",
+        "text": "its marginalisation"
+      },
+      {
+        "role": "complement",
+        "text": "to colonial rule"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H14": {
+    "translation": "“种植班巴拉花生的非洲妇女实际上因种植而受到惩罚，”阿扎姆-阿里说。",
+    "vocabulary": [
+      {
+        "term": "growing",
+        "explanation": "增长的，增加的"
+      },
+      {
+        "term": "actually",
+        "explanation": "实际上，事实上"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "African women"
+      },
+      {
+        "role": "predicate",
+        "text": "were actually punished"
+      },
+      {
+        "role": "complement",
+        "text": "for growing it,\"says Azam-Ali"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "African women"
+      },
+      {
+        "role": "predicate",
+        "text": "were actually punished"
+      },
+      {
+        "role": "complement",
+        "text": "for growing it,\"says Azam-Ali"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H15": {
+    "translation": "“殖民国家说你不能种植这种植物，因为没有石油。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Colonial powers"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "Colonial powers said you can'",
+        "label": "直接引语（整体）"
+      },
+      {
+        "role": "object",
+        "text": "you can't grow that because there's no oil",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Colonial powers"
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "Colonial powers said you can'",
+        "label": "直接引语（整体）"
+      },
+      {
+        "role": "object",
+        "text": "you can't grow that because there's no oil",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 直接引语（整体） + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-H16": {
+    "translation": "我们找不到它的市场。",
+    "vocabulary": [
+      {
+        "term": "market",
+        "explanation": "集市，市场"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "can't get"
+      },
+      {
+        "role": "object",
+        "text": "a market"
+      },
+      {
+        "role": "complement",
+        "text": "for it"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "can't get"
+      },
+      {
+        "role": "object",
+        "text": "a market"
+      },
+      {
+        "role": "complement",
+        "text": "for it"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H17": {
+    "translation": "“但如今，bambara murukku 是 CFF 评价最好的食品之一，他们的目标是将其引入杂货店，向潜在投资者展示藜麦等农作物的成功。",
+    "vocabulary": [
+      {
+        "term": "investors",
+        "explanation": "投资者（investor 的复数）"
+      },
+      {
+        "term": "success",
+        "explanation": "成功，胜利"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the bambara murukku"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "one of CFF's best reviewed foods"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are aiming"
+      },
+      {
+        "role": "complement",
+        "text": "to get it into grocery stores"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the bambara murukku"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "one of CFF's best reviewed foods"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are aiming"
+      },
+      {
+        "role": "complement",
+        "text": "to get it into grocery stores"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "M-H18": {
+    "translation": "大约 30 年前，藜麦在玻利维亚和秘鲁的原生山区之外几乎闻所未闻。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "quinoa"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "virtually unheard of"
+      },
+      {
+        "role": "complement",
+        "text": "outside its native mountains in Bolivia and Peru"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "quinoa"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "virtually unheard of"
+      },
+      {
+        "role": "complement",
+        "text": "outside its native mountains in Bolivia and Peru"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-H19": {
+    "translation": "如今，这种营养丰富的谷物出现在世界各地豪华餐厅的菜单上。",
+    "vocabulary": [
+      {
+        "term": "restaurants",
+        "explanation": "餐厅，餐馆，饭店（restaurant 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the nutritious grain"
+      },
+      {
+        "role": "predicate",
+        "text": "is found"
+      },
+      {
+        "role": "complement",
+        "text": "on the menus of lavish restaurants across the world"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the nutritious grain"
+      },
+      {
+        "role": "predicate",
+        "text": "is found"
+      },
+      {
+        "role": "complement",
+        "text": "on the menus of lavish restaurants across the world"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I01": {
+    "translation": "通过营养而不是产量来衡量农作物是被遗忘的食品企业的核心。",
+    "vocabulary": [
+      {
+        "term": "enterprise",
+        "explanation": "企业，事业单位"
+      },
+      {
+        "term": "Measuring",
+        "explanation": "测量"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Measuring crops by nutrition instead of yield",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "at the heart of the forgotten foods enterprise"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Measuring crops by nutrition instead of yield",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "at the heart of the forgotten foods enterprise"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I02": {
+    "translation": "自 20 世纪 60 年代的“绿色革命”以来，高产作物一直在现代农业中占据主导地位，这在一定程度上是在世界需要增加粮食供应之际对毁灭性饥荒的关键反应。",
+    "vocabulary": [
+      {
+        "term": "agriculture",
+        "explanation": "农业，农学，农艺"
+      },
+      {
+        "term": "revolution",
+        "explanation": "（思想、工作方式等的）彻底变革"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "high-yielding crops"
+      },
+      {
+        "role": "predicate",
+        "text": "have dominated"
+      },
+      {
+        "role": "object",
+        "text": "modern agriculture That was in part a crucial response to devastating famines at a time when the world needed to increase its food supply"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "high-yielding crops"
+      },
+      {
+        "role": "predicate",
+        "text": "have dominated"
+      },
+      {
+        "role": "object",
+        "text": "modern agriculture That was in part a crucial response to devastating famines at a time when the world needed to increase its food supply"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I03": {
+    "translation": "如今，“营养正在成为一颗定时炸弹”，阿扎姆-阿里说，因为不断增加的二氧化碳水平剥夺了农作物的矿物质。",
+    "vocabulary": [
+      {
+        "term": "growing",
+        "explanation": "增长的，增加的"
+      },
+      {
+        "term": "levels",
+        "explanation": "数量，程度"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-I04": {
+    "translation": "他断言，我们不应该对主要农作物进行生物强化，而应该投资于那些被遗忘的、本来就更有营养的农作物。",
+    "vocabulary": [
+      {
+        "term": "investing",
+        "explanation": "投资"
+      },
+      {
+        "term": "Instead",
+        "explanation": "代替，顶替，反而"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "asserts"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "asserts"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-J01": {
+    "translation": "在 CFF 第三个圆顶的内部，实验室经理 Gomathy Sethuraman 打开一扇窗户，通向中心的“皇冠上的宝石”，露出在明亮的黄色灯光下生长的四棱豆藤蔓。",
+    "vocabulary": [
+      {
+        "term": "growing",
+        "explanation": "增长的，增加的"
+      },
+      {
+        "term": "window",
+        "explanation": "窗，窗玻璃"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "lab manager Gomathy Sethuraman"
+      },
+      {
+        "role": "predicate",
+        "text": "opens"
+      },
+      {
+        "role": "object",
+        "text": "a window into the centre's “crown jewels”"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "lab manager Gomathy Sethuraman"
+      },
+      {
+        "role": "predicate",
+        "text": "opens"
+      },
+      {
+        "role": "object",
+        "text": "a window into the centre's “crown jewels”"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-J02": {
+    "translation": "这是科学家们研究高温和二氧化碳水平对替代作物营养构成影响的多个房间之一。",
+    "vocabulary": [
+      {
+        "term": "scientists",
+        "explanation": "科学家（scientist 的复数）"
+      },
+      {
+        "term": "studying",
+        "explanation": "研究"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "one of multiple chambers where scientists are studying the impact of higher temperatures and carbon dioxide levels on the nutritional make-up of alternative crops"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "one of multiple chambers where scientists are studying the impact of higher temperatures and carbon dioxide levels on the nutritional make-up of alternative crops"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-J03": {
+    "translation": "阿扎姆-阿里表示，这项研究“改变了游戏规则”，确保“未来作物”在温暖气候下也是最健康的。",
+    "vocabulary": [
+      {
+        "term": "research",
+        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+      },
+      {
+        "term": "climates",
+        "explanation": "气候"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Azam-Ali"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-K01": {
+    "translation": "美国智囊团 Food Tank 总裁丹妮尔·尼伦伯格 (Danielle Nierenberg) 表示，全球范围内围绕被遗忘食物的势头正在不断增强。",
+    "vocabulary": [
+      {
+        "term": "president",
+        "explanation": "总统，国家主席"
+      },
+      {
+        "term": "momentum",
+        "explanation": "冲力，推力"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Danielle Nierenberg, president of Food Tank, a US-based think tank"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Danielle Nierenberg, president of Food Tank, a US-based think tank"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-K02": {
+    "translation": "除了自称为世界上第一个专门研究未充分利用作物的研究中心的 CFF 之外，还有其他倡导农业多样性的重要团体，包括作物信托、慢食、Icrisat 和国际生物多样性组织。",
+    "vocabulary": [
+      {
+        "term": "including",
+        "explanation": "包括，包含"
+      },
+      {
+        "term": "agricultural",
+        "explanation": "农业的，与农业有关的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "other key groups championing agricultural diversity including Crop Trust, Slow Food, Icrisat and Bioversity International"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "other key groups championing agricultural diversity including Crop Trust, Slow Food, Icrisat and Bioversity International"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-K03": {
+    "translation": "她说，更多的中等收入消费者正在寻找营养食品，而其他人则渴望尝试祖父母曾经吃过的未加工食品。",
+    "vocabulary": [
+      {
+        "term": "consumers",
+        "explanation": "消费者，消耗者"
+      },
+      {
+        "term": "income",
+        "explanation": "收入，收益"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-L01": {
+    "translation": "但在某些地区，人们对被遗忘的食物的兴趣日益浓厚，而在另一些地区，高糖、高脂肪和加工食品的西式饮食在全球范围内的蔓延，超过了人们对这些食品的兴趣。",
+    "vocabulary": [
+      {
+        "term": "overtaken",
+        "explanation": "超过，赶上（overtake 的过去分词，被动语态表示被超过、被赶上，完成时表示已经超过）"
+      },
+      {
+        "term": "quarters",
+        "explanation": "四分之一"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the rising interest"
+      },
+      {
+        "role": "predicate",
+        "text": "is overtaken"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the rising interest"
+      },
+      {
+        "role": "predicate",
+        "text": "is overtaken"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-M01": {
+    "translation": "例如，在马来西亚促进当地农作物枯萎的一个主要障碍是“对进口产品的痴迷”，吉隆坡富裕郊区一家倡导本地食品的餐厅的联合创始人詹妮弗·库阿（Jenifer Kuah）说。",
+    "vocabulary": [
+      {
+        "term": "obsession",
+        "explanation": "痴迷，困扰"
+      },
+      {
+        "term": "products",
+        "explanation": "产品"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jenifer Kuah, co-founder of a restaurant that champions locally-sourced food in an affluent suburb of Kuala Lumpur"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Jenifer Kuah, co-founder of a restaurant that champions locally-sourced food in an affluent suburb of Kuala Lumpur"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-M02": {
+    "translation": "她说，锡特卡被视为该国小型农场到餐桌餐饮领域的先驱，但顾客仍然寻求外国食材作为“地位的象征”。",
+    "vocabulary": [
+      {
+        "term": "ingredients",
+        "explanation": "材料，佐料，原料"
+      },
+      {
+        "term": "Customers",
+        "explanation": "顾客，客户（customer 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-N01": {
+    "translation": "关于被遗忘食物的争论感觉很直观。",
+    "vocabulary": [
+      {
+        "term": "argument",
+        "explanation": "争论，争吵"
+      },
+      {
+        "term": "intuitive",
+        "explanation": "直觉的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The argument"
+      },
+      {
+        "role": "predicate",
+        "text": "feels"
+      },
+      {
+        "role": "complement",
+        "text": "intuitive"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The argument"
+      },
+      {
+        "role": "predicate",
+        "text": "feels"
+      },
+      {
+        "role": "complement",
+        "text": "intuitive"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-N02": {
+    "translation": "一些分析人士表示，这实际上是不可避免的。",
+    "vocabulary": [
+      {
+        "term": "analysts",
+        "explanation": "分析师，分析家"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Some analysts"
+      },
+      {
+        "role": "predicate",
+        "text": "say"
+      },
+      {
+        "role": "object",
+        "text": "it is in fact inevitable",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Some analysts"
+      },
+      {
+        "role": "predicate",
+        "text": "say"
+      },
+      {
+        "role": "object",
+        "text": "it is in fact inevitable",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "M-N03": {
+    "translation": "伦敦城市大学食品政策教授蒂姆·朗说：“气候变化几乎肯定意味着人们的口味将被迫改变。”",
+    "vocabulary": [
+      {
+        "term": "professor",
+        "explanation": "教授"
+      },
+      {
+        "term": "Climate",
+        "explanation": "气候"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "tastes"
+      },
+      {
+        "role": "predicate",
+        "text": "are going"
+      },
+      {
+        "role": "complement",
+        "text": "to be forced to change,\"says Tim Lang, professor of food policy at City, University of London"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "tastes"
+      },
+      {
+        "role": "predicate",
+        "text": "are going"
+      },
+      {
+        "role": "complement",
+        "text": "to be forced to change,\"says Tim Lang, professor of food policy at City, University of London"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "M-N04": {
+    "translation": "他说，随着主要作物产量的下降，我们“必须习惯吃其他作物”。",
+    "vocabulary": [
+      {
+        "term": "yields",
+        "explanation": "产量，产出量"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-01": {
+    "translation": "想象一下，您是一名外星人，被派到地球来记录居住在地球上的哺乳动物的行为。",
+    "vocabulary": [
+      {
+        "term": "behaviour",
+        "explanation": "行为，举止，态度"
+      },
+      {
+        "term": "Imagine",
+        "explanation": "想象，设想"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Imagine"
+      },
+      {
+        "role": "object",
+        "text": "you're an alien sent to Earth to document the behaviour of the mammals inhabiting the planet",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Imagine"
+      },
+      {
+        "role": "object",
+        "text": "you're an alien sent to Earth to document the behaviour of the mammals inhabiting the planet",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 祈使句",
+      "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。"
+    }
+  },
+  "R1-02": {
+    "translation": "您无意中走进一家正在放映最新好莱坞恐怖电影的电影院。",
+    "vocabulary": [
+      {
+        "term": "showing",
+        "explanation": "显示；表明（show 的现在分词）"
+      },
+      {
+        "term": "latest",
+        "explanation": "最近的，最新的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "stumble"
+      },
+      {
+        "role": "complement",
+        "text": "into a movie theatre that's showing the latest Hollywood horror film"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "stumble"
+      },
+      {
+        "role": "complement",
+        "text": "into a movie theatre that's showing the latest Hollywood horror film"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-03": {
+    "translation": "几十个人聚集在一间漆黑、未装修的房间里。",
+    "vocabulary": [
+      {
+        "term": "humans",
+        "explanation": "人类（human 的复数形式）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Several dozen humans"
+      },
+      {
+        "role": "predicate",
+        "text": "are gathered"
+      },
+      {
+        "role": "complement",
+        "text": "in a dark, undecorated room"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Several dozen humans"
+      },
+      {
+        "role": "predicate",
+        "text": "are gathered"
+      },
+      {
+        "role": "complement",
+        "text": "in a dark, undecorated room"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-04": {
+    "translation": "他们都盯着一个矩形区域，上面的光线图案快速变化。",
+    "vocabulary": [
+      {
+        "term": "change",
+        "explanation": "改变，变化"
+      },
+      {
+        "term": "rapidly",
+        "explanation": "快速地，迅速地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "staring"
+      },
+      {
+        "role": "complement",
+        "text": "at a rectangular area on which patterns of light change rapidly"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "staring"
+      },
+      {
+        "role": "complement",
+        "text": "at a rectangular area on which patterns of light change rapidly"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-05": {
+    "translation": "他们显然处于高度兴奋的状态。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "in a state of high arousal"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "in a state of high arousal"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-06": {
+    "translation": "他们的心率加快，时而紧张地环顾四周，时而在座位上集体跳跃，并发出高亢的警告声。",
+    "vocabulary": [
+      {
+        "term": "warning",
+        "explanation": "警示，提醒，告诫"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "glance"
+      },
+      {
+        "role": "complement",
+        "text": "around"
+      },
+      {
+        "role": "predicate",
+        "text": "jump"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "glance"
+      },
+      {
+        "role": "complement",
+        "text": "around"
+      },
+      {
+        "role": "predicate",
+        "text": "jump"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 谓语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-07": {
+    "translation": "最终，灯光亮起，矩形屏幕变黑。",
+    "vocabulary": [
+      {
+        "term": "Eventually",
+        "explanation": "最终，结果"
+      },
+      {
+        "term": "screen",
+        "explanation": "屏幕，荧光屏"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the lights"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      },
+      {
+        "role": "subject",
+        "text": "the rectangular screen"
+      },
+      {
+        "role": "predicate",
+        "text": "goes"
+      },
+      {
+        "role": "complement",
+        "text": "black"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the lights"
+      },
+      {
+        "role": "predicate",
+        "text": "come"
+      },
+      {
+        "role": "subject",
+        "text": "the rectangular screen"
+      },
+      {
+        "role": "predicate",
+        "text": "goes"
+      },
+      {
+        "role": "complement",
+        "text": "black"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-08": {
+    "translation": "人类有说有笑地起身离开房间，脸上流露出喜悦的表情。",
+    "vocabulary": [
+      {
+        "term": "showing",
+        "explanation": "显示；表明（show 的现在分词）"
+      },
+      {
+        "term": "humans",
+        "explanation": "人类（human 的复数形式）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The humans"
+      },
+      {
+        "role": "predicate",
+        "text": "stand"
+      },
+      {
+        "role": "predicate",
+        "text": "leave"
+      },
+      {
+        "role": "object",
+        "text": "the room"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The humans"
+      },
+      {
+        "role": "predicate",
+        "text": "stand"
+      },
+      {
+        "role": "predicate",
+        "text": "leave"
+      },
+      {
+        "role": "object",
+        "text": "the room"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-09": {
+    "translation": "为什么这些人自愿让自己经历看似非常不愉快的经历？",
+    "vocabulary": [
+      {
+        "term": "experience",
+        "explanation": "经历，往事"
+      },
+      {
+        "term": "appears",
+        "explanation": "出现"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "these"
+      },
+      {
+        "role": "predicate",
+        "text": "humans"
+      },
+      {
+        "role": "object",
+        "text": "voluntarily expose themselves to what appears to be a deeply unpleasant experience"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "these"
+      },
+      {
+        "role": "predicate",
+        "text": "humans"
+      },
+      {
+        "role": "object",
+        "text": "voluntarily expose themselves to what appears to be a deeply unpleasant experience"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "这是特殊疑问句；还原陈述语序后，先确认主句的主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-10": {
+    "translation": "为什么它们对屏幕上的光图案反应如此强烈？",
+    "vocabulary": [
+      {
+        "term": "screen",
+        "explanation": "屏幕，荧光屏"
+      },
+      {
+        "term": "strongly",
+        "explanation": "坚定地，强烈地，坚决地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "react"
+      },
+      {
+        "role": "complement",
+        "text": "to those patterns of light"
+      },
+      {
+        "role": "complement",
+        "text": "on a screen"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "react"
+      },
+      {
+        "role": "complement",
+        "text": "to those patterns of light"
+      },
+      {
+        "role": "complement",
+        "text": "on a screen"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-11": {
+    "translation": "我对恐怖的悖论着迷——许多人寻求恐怖娱乐的奇怪事实。",
+    "vocabulary": [
+      {
+        "term": "fascinated",
+        "explanation": "入迷的，极感兴趣的"
+      },
+      {
+        "term": "people",
+        "explanation": "人，人类"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "am fascinated"
+      },
+      {
+        "role": "complement",
+        "text": "with the paradox of horror—the strange fact that many people seek out scary entertainment"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "am fascinated"
+      },
+      {
+        "role": "complement",
+        "text": "with the paradox of horror—the strange fact that many people seek out scary entertainment"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-12": {
+    "translation": "我认为这个难题的答案在于人性。",
+    "vocabulary": [
+      {
+        "term": "nature",
+        "explanation": "大自然，自然界"
+      },
+      {
+        "term": "answer",
+        "explanation": "回答，答复"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "object",
+        "text": "the answer to the puzzle lies in human nature",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "think"
+      },
+      {
+        "role": "object",
+        "text": "the answer to the puzzle lies in human nature",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-13": {
+    "translation": "我的研究表明，我们人类进化到能够在安全的环境中体验负面情绪的情况下寻找快乐。",
+    "vocabulary": [
+      {
+        "term": "situations",
+        "explanation": "情况，状况，局面（situation 的复数形式）"
+      },
+      {
+        "term": "experience",
+        "explanation": "经历，往事"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "My research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that we humans evolved to find pleasure in situations that allow us to experience negative emotions in a safe context",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "My research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that we humans evolved to find pleasure in situations that allow us to experience negative emotions in a safe context",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-14": {
+    "translation": "你可以在儿童游戏中看到这些恐怖元素。",
+    "vocabulary": [
+      {
+        "term": "children",
+        "explanation": "child 的复数形式"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "can see"
+      },
+      {
+        "role": "object",
+        "text": "these elements of horror"
+      },
+      {
+        "role": "complement",
+        "text": "in children's games"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "can see"
+      },
+      {
+        "role": "object",
+        "text": "these elements of horror"
+      },
+      {
+        "role": "complement",
+        "text": "in children's games"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-15": {
+    "translation": "以捉迷藏为例，这是对捕食者与猎物相互作用的模拟。",
+    "vocabulary": [
+      {
+        "term": "example",
+        "explanation": "例子，例证"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Take"
+      },
+      {
+        "role": "object",
+        "text": "hide-and-"
+      },
+      {
+        "role": "object",
+        "text": "seek for example, which is a simulation of a predator-prey interaction"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "predicate",
+        "text": "Take"
+      },
+      {
+        "role": "object",
+        "text": "hide-and-"
+      },
+      {
+        "role": "object",
+        "text": "seek for example, which is a simulation of a predator-prey interaction"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答 / 祈使句",
+      "explanation": "这是祈使句，主语 you 在原句中省略；只标出写出的谓语及其宾语或补充成分。"
+    }
+  },
+  "R1-16": {
+    "translation": "孩子躲起来，大人假装成掠食者，一边寻找孩子，一边像危险的野兽一样嚎叫。",
+    "vocabulary": [
+      {
+        "term": "dangerous",
+        "explanation": "危险的，有威胁的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The kid"
+      },
+      {
+        "role": "predicate",
+        "text": "hides"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The kid"
+      },
+      {
+        "role": "predicate",
+        "text": "hides"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-17": {
+    "translation": "这种模拟为孩子们提供了如何避免成为猎物的重要信息，孩子们往往会发现这种活动非常令人满意，大概是因为它让他们在潜在的灾难性场景中获得了安全的体验。",
+    "vocabulary": [
+      {
+        "term": "information",
+        "explanation": "消息，资料，情报"
+      },
+      {
+        "term": "experience",
+        "explanation": "经历，往事"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This simulation"
+      },
+      {
+        "role": "predicate",
+        "text": "gives"
+      },
+      {
+        "role": "object",
+        "text": "crucial information about how to avoid becoming prey"
+      },
+      {
+        "role": "subject",
+        "text": "children"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to find that kind of activity deeply satisfying"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "This simulation"
+      },
+      {
+        "role": "predicate",
+        "text": "gives"
+      },
+      {
+        "role": "object",
+        "text": "crucial information about how to avoid becoming prey"
+      },
+      {
+        "role": "subject",
+        "text": "children"
+      },
+      {
+        "role": "predicate",
+        "text": "tend"
+      },
+      {
+        "role": "complement",
+        "text": "to find that kind of activity deeply satisfying"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-18": {
+    "translation": "他们觉得这是令人愉快的，而愉悦是进化激励我们采取适应性行为的方式。",
+    "vocabulary": [
+      {
+        "term": "evolution",
+        "explanation": "进化（论）"
+      },
+      {
+        "term": "behaviour",
+        "explanation": "行为，举止，态度"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "it pleasurable",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "pleasure"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "evolution's way of motivating us toward adaptive behaviour"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "find"
+      },
+      {
+        "role": "object",
+        "text": "it pleasurable",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "pleasure"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "evolution's way of motivating us toward adaptive behaviour"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-19": {
+    "translation": "恐怖对许多人来说是令人愉悦的，因为它让我们能够应对负面情绪并制定应对策略。",
+    "vocabulary": [
+      {
+        "term": "strategies",
+        "explanation": "策略，战略（strategy 的复数）"
+      },
+      {
+        "term": "develop",
+        "explanation": "（使）成长，发育，发展"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Horror"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "pleasurable to many people"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Horror"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "pleasurable to many people"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-20": {
+    "translation": "我们了解真正害怕的感觉，并学习如何处理负面情绪。",
+    "vocabulary": [
+      {
+        "term": "handle",
+        "explanation": "拿"
+      },
+      {
+        "term": "negative",
+        "explanation": "有害的，负面的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "learn"
+      },
+      {
+        "role": "object",
+        "text": "what it feels like to be truly afraid",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "complement",
+        "text": "how to handle negative emotion"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "learn"
+      },
+      {
+        "role": "object",
+        "text": "what it feels like to be truly afraid",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "complement",
+        "text": "how to handle negative emotion"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体） + 主语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-21": {
+    "translation": "那么，恐怖是如何发挥作用的呢？",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "horror"
+      },
+      {
+        "role": "predicate",
+        "text": "work"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "horror"
+      },
+      {
+        "role": "predicate",
+        "text": "work"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "这是特殊疑问句；还原陈述语序后，先确认主句的主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-22": {
+    "translation": "我的研究表明，恐怖是通过利用一套古老的生物防御机制来发挥作用的，即我们与其他动物共有的进化的恐惧系统。",
+    "vocabulary": [
+      {
+        "term": "mechanisms",
+        "explanation": "机械装置，机件"
+      },
+      {
+        "term": "suggests",
+        "explanation": "表明；暗示；建议（suggest 的第三人称单数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "My research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that horror works by exploiting an ancient set of biological defence mechanisms-an evolved fear system, which we share with other animals",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "My research"
+      },
+      {
+        "role": "predicate",
+        "text": "suggests"
+      },
+      {
+        "role": "object",
+        "text": "that horror works by exploiting an ancient set of biological defence mechanisms-an evolved fear system, which we share with other animals",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-23": {
+    "translation": "但人类具有独特的想象力，我们利用进化后的想象力进入充满危险的虚拟世界。",
+    "vocabulary": [
+      {
+        "term": "travel",
+        "explanation": "（尤指长途）旅行"
+      },
+      {
+        "term": "humans",
+        "explanation": "人类（human 的复数形式）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "humans"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "uniquely imaginative"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "our evolved imagination"
+      },
+      {
+        "role": "complement",
+        "text": "to travel into virtual worlds that are full of danger"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "humans"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "uniquely imaginative"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "our evolved imagination"
+      },
+      {
+        "role": "complement",
+        "text": "to travel into virtual worlds that are full of danger"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语 + 主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R1-24": {
+    "translation": "即使您不是忠实的恐怖片粉丝，观看恐怖片也是有充分理由的。",
+    "vocabulary": [
+      {
+        "term": "reasons",
+        "explanation": "原因（reason 的复数）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "good reasons for watching a horror film"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "good reasons for watching a horror film"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R1-25": {
+    "translation": "如果你完整地看完了这部电影，你可能会体验到一种强烈的掌控感，一种你能够度过一段可怕经历的感觉。",
+    "vocabulary": [
+      {
+        "term": "experience",
+        "explanation": "经历，往事"
+      },
+      {
+        "term": "probably",
+        "explanation": "大概，或许"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you make it through the film in one piece",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "'ll probably experience"
+      },
+      {
+        "role": "object",
+        "text": "a strong sense of mastery, a sense that you were able to make it through an appalling experience"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "'ll probably experience"
+      },
+      {
+        "role": "object",
+        "text": "a strong sense of mastery, a sense that you were able to make it through an appalling experience"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R1-26": {
+    "translation": "不管怎样，看恐怖片可以让你更好地处理自己的恐惧，谁知道什么时候这会变得至关重要呢？",
+    "vocabulary": [
+      {
+        "term": "handling",
+        "explanation": "拿"
+      },
+      {
+        "term": "relevant",
+        "explanation": "有关的，切题的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "watching",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "you better at handling your own fear",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "who"
+      },
+      {
+        "role": "predicate",
+        "text": "knows"
+      },
+      {
+        "role": "object",
+        "text": "when that will become critically relevant",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "watching",
+        "label": "主语成分（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "makes"
+      },
+      {
+        "role": "object",
+        "text": "you better at handling your own fear",
+        "label": "宾语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "who"
+      },
+      {
+        "role": "predicate",
+        "text": "knows"
+      },
+      {
+        "role": "object",
+        "text": "when that will become critically relevant",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语成分（整体） + 谓语 + 宾语从句（整体） + 主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-01": {
+    "translation": "现实世界正在发生一场觉醒，反对多年来强加给我们的美丽模式。",
+    "vocabulary": [
+      {
+        "term": "taking",
+        "explanation": "取得"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "An awakening"
+      },
+      {
+        "role": "predicate",
+        "text": "has been taking"
+      },
+      {
+        "role": "object",
+        "text": "place"
+      },
+      {
+        "role": "complement",
+        "text": "in the physical world"
+      },
+      {
+        "role": "complement",
+        "text": "against the beauty model that has been dictated to us for years"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "An awakening"
+      },
+      {
+        "role": "predicate",
+        "text": "has been taking"
+      },
+      {
+        "role": "object",
+        "text": "place"
+      },
+      {
+        "role": "complement",
+        "text": "in the physical world"
+      },
+      {
+        "role": "complement",
+        "text": "against the beauty model that has been dictated to us for years"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-02": {
+    "translation": "但在数字领域，社交媒体决定了什么被认为是美丽的。",
+    "vocabulary": [
+      {
+        "term": "considered",
+        "explanation": "深思熟虑的"
+      },
+      {
+        "term": "determines",
+        "explanation": "决定，控制"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "social media"
+      },
+      {
+        "role": "predicate",
+        "text": "determines"
+      },
+      {
+        "role": "object",
+        "text": "what is considered beautiful",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "social media"
+      },
+      {
+        "role": "predicate",
+        "text": "determines"
+      },
+      {
+        "role": "object",
+        "text": "what is considered beautiful",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-03": {
+    "translation": "两种对立的斗争正在同时进行。",
+    "vocabulary": [
+      {
+        "term": "struggles",
+        "explanation": "奋斗，努力"
+      },
+      {
+        "term": "taking",
+        "explanation": "取得"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The two opposing struggles"
+      },
+      {
+        "role": "predicate",
+        "text": "are taking"
+      },
+      {
+        "role": "object",
+        "text": "place"
+      },
+      {
+        "role": "complement",
+        "text": "in parallel"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The two opposing struggles"
+      },
+      {
+        "role": "predicate",
+        "text": "are taking"
+      },
+      {
+        "role": "object",
+        "text": "place"
+      },
+      {
+        "role": "complement",
+        "text": "in parallel"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-04": {
+    "translation": "在物质世界中，这场斗争与女性承受的潜在压力背道而驰，她们要遵守不切实际的美丽理想。",
+    "vocabulary": [
+      {
+        "term": "underlying",
+        "explanation": "根本的，潜在的"
+      },
+      {
+        "term": "struggle",
+        "explanation": "奋斗，努力"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the struggle"
+      },
+      {
+        "role": "predicate",
+        "text": "goes"
+      },
+      {
+        "role": "complement",
+        "text": "against the underlying pressure exerted on women to conform to an unrealistic beauty ideal"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the struggle"
+      },
+      {
+        "role": "predicate",
+        "text": "goes"
+      },
+      {
+        "role": "complement",
+        "text": "against the underlying pressure exerted on women to conform to an unrealistic beauty ideal"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-05": {
+    "translation": "作为斗争的一部分，各种媒体都报道了身体不符合所谓理想的女性。",
+    "vocabulary": [
+      {
+        "term": "presented",
+        "explanation": "展示，提供"
+      },
+      {
+        "term": "struggle",
+        "explanation": "奋斗，努力"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "various media outlets"
+      },
+      {
+        "role": "predicate",
+        "text": "have presented"
+      },
+      {
+        "role": "object",
+        "text": "women whose bodies don't correspond to the so-called ideal"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "various media outlets"
+      },
+      {
+        "role": "predicate",
+        "text": "have presented"
+      },
+      {
+        "role": "object",
+        "text": "women whose bodies don't correspond to the so-called ideal"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-06": {
+    "translation": "所有那些以前被排除在杂志、电视剧封面和公共议程之外的女性，现在都变得“合法”了。",
+    "vocabulary": [
+      {
+        "term": "previously",
+        "explanation": "以前地，先前地"
+      },
+      {
+        "term": "series",
+        "explanation": "连续，一系列（事件）"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "All those women"
+      },
+      {
+        "role": "predicate",
+        "text": "have become"
+      },
+      {
+        "role": "complement",
+        "text": "legitimate"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "All those women"
+      },
+      {
+        "role": "predicate",
+        "text": "have become"
+      },
+      {
+        "role": "complement",
+        "text": "legitimate"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-07": {
+    "translation": "与此同时，一群有影响力的人开始在社交媒体上上传自己未化妆的照片，甚至是强调所谓缺陷的照片。",
+    "vocabulary": [
+      {
+        "term": "supposed",
+        "explanation": "假定的，据说的"
+      },
+      {
+        "term": "social",
+        "explanation": "社会的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "a group"
+      },
+      {
+        "role": "predicate",
+        "text": "have begun"
+      },
+      {
+        "role": "complement",
+        "text": "to upload to social media photos of themselves without makeup"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "a group"
+      },
+      {
+        "role": "predicate",
+        "text": "have begun"
+      },
+      {
+        "role": "complement",
+        "text": "to upload to social media photos of themselves without makeup"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-08": {
+    "translation": "科技重塑了我们的美丽理想，并在向大众传达这一信息方面做得非常出色。",
+    "vocabulary": [
+      {
+        "term": "Technology",
+        "explanation": "科技，技术"
+      },
+      {
+        "term": "message",
+        "explanation": "口信，消息"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Technology"
+      },
+      {
+        "role": "predicate",
+        "text": "has reshaped"
+      },
+      {
+        "role": "object",
+        "text": "our beauty ideal"
+      },
+      {
+        "role": "predicate",
+        "text": "is doing"
+      },
+      {
+        "role": "object",
+        "text": "a great job communicating that message to the masses"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "Technology"
+      },
+      {
+        "role": "predicate",
+        "text": "has reshaped"
+      },
+      {
+        "role": "object",
+        "text": "our beauty ideal"
+      },
+      {
+        "role": "predicate",
+        "text": "is doing"
+      },
+      {
+        "role": "object",
+        "text": "a great job communicating that message to the masses"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语 + 谓语 + 宾语",
+      "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。"
+    }
+  },
+  "R2-09": {
+    "translation": "过去十年的奇异遗产之一是“赛博格造型”的流行，它描绘了 2050 年美国人的样子。",
+    "vocabulary": [
+      {
+        "term": "popularity",
+        "explanation": "流行，普及，受欢迎"
+      },
+      {
+        "term": "decade",
+        "explanation": "十年，十年期"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the popularity of the “cyborg look”, which illustrates what Americans will look like in 2050"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the popularity of the “cyborg look”, which illustrates what Americans will look like in 2050"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-10": {
+    "translation": "半机械人的造型迅速传播开来。",
+    "vocabulary": [
+      {
+        "term": "rapidly",
+        "explanation": "快速地，迅速地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The cyborg look"
+      },
+      {
+        "role": "predicate",
+        "text": "spread"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The cyborg look"
+      },
+      {
+        "role": "predicate",
+        "text": "spread"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-11": {
+    "translation": "然而如今，Instagram 面孔已成为新的美丽理想。",
+    "vocabulary": [],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the Instagram face"
+      },
+      {
+        "role": "predicate",
+        "text": "has become"
+      },
+      {
+        "role": "complement",
+        "text": "the new beauty ideal"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "the Instagram face"
+      },
+      {
+        "role": "predicate",
+        "text": "has become"
+      },
+      {
+        "role": "complement",
+        "text": "the new beauty ideal"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-12": {
+    "translation": "当积极参与学习过程时，公认的美丽规范的内化会更加有效。",
+    "vocabulary": [
+      {
+        "term": "learning",
+        "explanation": "学习"
+      },
+      {
+        "term": "process",
+        "explanation": "步骤，程序"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The internalization"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "much more effective"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The internalization"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "much more effective"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-13": {
+    "translation": "用户的积极参与体现在社交媒体平台提供的游戏化互动中——点赞、发表评论、比较、分享的能力。",
+    "vocabulary": [
+      {
+        "term": "platforms",
+        "explanation": "平台"
+      },
+      {
+        "term": "compare",
+        "explanation": "比较，对比"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The active involvement of users is reflected in the gamified (游戏化的) interaction offered by the social media platforms—the ability to like, write a comment, compare, share"
+      },
+      {
+        "role": "predicate",
+        "text": "is reflected"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The active involvement of users is reflected in the gamified (游戏化的) interaction offered by the social media platforms—the ability to like, write a comment, compare, share"
+      },
+      {
+        "role": "predicate",
+        "text": "is reflected"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-14": {
+    "translation": "一旦所需的美丽理想被内化，用户就会获得工具或功能来改变自己的外观以适应公认的美丽理想，例如编辑图像、选择理想的滤镜、正确的背景。",
+    "vocabulary": [
+      {
+        "term": "background",
+        "explanation": "出身背景，学历，经历"
+      },
+      {
+        "term": "appearance",
+        "explanation": "露面，演出"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Once the desired beauty ideal has been internalized",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "users"
+      },
+      {
+        "role": "predicate",
+        "text": "are given"
+      },
+      {
+        "role": "object",
+        "text": "tools or features to change their appearance to suit the accepted beauty ideal such as editing the image, choosing the ideal filter, the right background"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "users"
+      },
+      {
+        "role": "predicate",
+        "text": "are given"
+      },
+      {
+        "role": "object",
+        "text": "tools or features to change their appearance to suit the accepted beauty ideal such as editing the image, choosing the ideal filter, the right background"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-15": {
+    "translation": "在美国进行的一项调查显示，超过 50% 的人在发布图片之前会对其进行过滤。",
+    "vocabulary": [
+      {
+        "term": "conducted",
+        "explanation": "conduct 的过去式和过去分词：实施，进行，管理"
+      },
+      {
+        "term": "revealed",
+        "explanation": "揭露，透露"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A survey"
+      },
+      {
+        "role": "predicate",
+        "text": "revealed"
+      },
+      {
+        "role": "object",
+        "text": "that more than 50% filter the images before posting them",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "A survey"
+      },
+      {
+        "role": "predicate",
+        "text": "revealed"
+      },
+      {
+        "role": "object",
+        "text": "that more than 50% filter the images before posting them",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-16": {
+    "translation": "听说其中大多数是女性，您不会感到惊讶。",
+    "vocabulary": [
+      {
+        "term": "majority",
+        "explanation": "大多数"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "will not be"
+      },
+      {
+        "role": "complement",
+        "text": "surprised to hear that the majority of them are women"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "will not be"
+      },
+      {
+        "role": "complement",
+        "text": "surprised to hear that the majority of them are women"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-17": {
+    "translation": "强迫性过滤的一个重要后果是，人们开始倾向于将自己视为一个需要观察和评价的对象，就像另一个人从侧面观察和判断一样。",
+    "vocabulary": [
+      {
+        "term": "consequences",
+        "explanation": "后果，结果，影响（consequence 的复数）"
+      },
+      {
+        "term": "significant",
+        "explanation": "显著的，相当数量的"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the emerging tendency to treat oneself as an object to be observed and valued"
+      },
+      {
+        "role": "complement",
+        "text": "in the same way another person observes and judges from the side"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "One"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "the emerging tendency to treat oneself as an object to be observed and valued"
+      },
+      {
+        "role": "complement",
+        "text": "in the same way another person observes and judges from the side"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-18": {
+    "translation": "滤镜的效果已经远远超出了友善的娱乐。",
+    "vocabulary": [
+      {
+        "term": "effect",
+        "explanation": "作用，影响"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The effect"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "far beyond amiable amusement"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The effect"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "far beyond amiable amusement"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-19": {
+    "translation": "过滤器和网络上玩的整个游戏都会影响用户的心理健康。",
+    "vocabulary": [
+      {
+        "term": "networks",
+        "explanation": "网络"
+      },
+      {
+        "term": "played",
+        "explanation": "演奏"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The filters"
+      },
+      {
+        "role": "predicate",
+        "text": "affect"
+      },
+      {
+        "role": "object",
+        "text": "the mental health of the users"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The filters"
+      },
+      {
+        "role": "predicate",
+        "text": "affect"
+      },
+      {
+        "role": "object",
+        "text": "the mental health of the users"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  },
+  "R2-20": {
+    "translation": "一项研究表明，Instagram、Snapchat 和 Face Tune 等应用程序可以让用户达到以前只能在美容杂志中观察到的完美水平。",
+    "vocabulary": [
+      {
+        "term": "According",
+        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
+      },
+      {
+        "term": "previously",
+        "explanation": "以前地，先前地"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "apps"
+      },
+      {
+        "role": "predicate",
+        "text": "allow"
+      },
+      {
+        "role": "object",
+        "text": "users to achieve a level of perfection that was previously only observed in beauty magazines",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "apps"
+      },
+      {
+        "role": "predicate",
+        "text": "allow"
+      },
+      {
+        "role": "object",
+        "text": "users to achieve a level of perfection that was previously only observed in beauty magazines",
+        "label": "宾语从句（整体）"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语从句（整体）",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-21": {
+    "translation": "尽管人类一向珍视美丽，但在过去的十年里，我们对外表的痴迷达到了前所未有的顶峰。",
+    "vocabulary": [
+      {
+        "term": "unprecedented",
+        "explanation": "前所未有的，史无前例的"
+      },
+      {
+        "term": "obsession",
+        "explanation": "痴迷，困扰"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Even though humanity has always cherished beauty",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "our obsession"
+      },
+      {
+        "role": "predicate",
+        "text": "has reached"
+      },
+      {
+        "role": "object",
+        "text": "an unprecedented peak"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "our obsession"
+      },
+      {
+        "role": "predicate",
+        "text": "has reached"
+      },
+      {
+        "role": "object",
+        "text": "an unprecedented peak"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。"
+    }
+  },
+  "R2-22": {
+    "translation": "人们花在社交媒体上的时间产生了一种想要实现不可能的美丽理想的冲动，这种冲动如此强烈，以至于唯一能解决这个问题的不是整容干预，而是心理健康护理",
+    "vocabulary": [
+      {
+        "term": "impossible",
+        "explanation": "不可能的，办不到的"
+      },
+      {
+        "term": "creates",
+        "explanation": "创造，创作"
+      }
+    ],
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The time"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "an urge to achieve an impossible beauty ideal"
+      }
+    ],
+    "trunk": [
+      {
+        "role": "subject",
+        "text": "The time"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "an urge to achieve an impossible beauty ideal"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。"
+    }
+  }
+}
