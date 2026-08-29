@@ -28,13 +28,13 @@ const learnerGuideInitial = initialWordCount === null
   : formatGuideDuration(recommendationSeconds(initialWordCount, 100));
 const initialDifficultyScore = 3;
 const sectionName = timerId === 'cloze'
-  ? 'Word Bank Cloze'
+  ? 'Cloze'
   : timerId === 'matching'
-    ? 'Paragraph Matching'
+    ? 'Matching'
     : timerId === 'passage-1'
-      ? 'Reading Passage 1'
+      ? 'Passage 1'
       : timerId === 'passage-2'
-        ? 'Reading Passage 2'
+        ? 'Passage 2'
         : label;
 ---
 
@@ -105,30 +105,20 @@ const sectionName = timerId === 'cloze'
   </div>
 
   <div class="reading-timer-progress" aria-label="推荐阅读进度">
-    <div class="reading-timer-progress-row">
-      <span class="reading-timer-progress-label native">美</span>
-      <span class="reading-timer-progress-track"><i data-timer-native-progress></i></span>
+    <div class="reading-timer-progress-legend">
+      <span class="native">美：美国成年人</span>
+      <span class="learner">学：普通学习者</span>
     </div>
-    <div class="reading-timer-progress-row">
-      <span class="reading-timer-progress-label learner">学</span>
-      <span class="reading-timer-progress-track"><i data-timer-learner-progress></i></span>
-    </div>
+    <span class="reading-timer-progress-track"><i data-timer-progress-marker></i></span>
   </div>
 
-  <div class="reading-timer-hint" data-timer-message>绿色代表美国成年人推荐速度，红色代表普通学习者推荐速度。</div>
+  <div class="reading-timer-hint" data-timer-message>绿色区代表美国成年人推荐用时，红色区代表普通学习者推荐用时，白色指针代表当前进度。</div>
 
   <div class="reading-timer-floating" data-timer-floating aria-hidden="true">
     <span class="reading-timer-floating-pulse" aria-hidden="true"></span>
     <span class="reading-timer-floating-label" data-floating-label>{sectionName}</span>
     <div class="reading-timer-floating-progress" aria-label="推荐阅读进度">
-      <span class="reading-timer-floating-progress-line">
-        <b class="native">美</b>
-        <span class="reading-timer-floating-track native"><i data-floating-native-progress></i></span>
-      </span>
-      <span class="reading-timer-floating-progress-line">
-        <b class="learner">学</b>
-        <span class="reading-timer-floating-track learner"><i data-floating-learner-progress></i></span>
-      </span>
+      <span class="reading-timer-floating-track"><i data-floating-progress-marker></i></span>
     </div>
     <button type="button" data-floating-action="toggle" aria-label="暂停或继续计时" title="暂停或继续">
       <Play class="floating-play-icon" size={14} stroke-width={2.2} aria-hidden="true" />
@@ -233,13 +223,14 @@ const sectionName = timerId === 'cloze'
     // preserving a 30-second floor for very short cloze passages.
     const nativeGuideMs = recommendationSeconds(wordCount, 200 / difficultyFactor) * 1000;
     const learnerGuideMs = recommendationSeconds(wordCount, 100 / difficultyFactor) * 1000;
+    const nativeStop = learnerGuideMs > 0 ? Math.min(1, nativeGuideMs / learnerGuideMs) : 0.5;
+    root.style.setProperty('--reading-native-stop', `${nativeStop * 100}%`);
 
     const wordCountNode = root.querySelector<HTMLElement>('[data-timer-word-count]');
     const difficultyNode = root.querySelector<HTMLElement>('[data-timer-difficulty]');
     const nativeGuideNode = root.querySelector<HTMLElement>('[data-timer-native-guide]');
     const learnerGuideNode = root.querySelector<HTMLElement>('[data-timer-learner-guide]');
-    const nativeProgressNode = root.querySelector<HTMLElement>('[data-timer-native-progress]');
-    const learnerProgressNode = root.querySelector<HTMLElement>('[data-timer-learner-progress]');
+    const progressMarkerNode = root.querySelector<HTMLElement>('[data-timer-progress-marker]');
     const displayNode = root.querySelector<HTMLTimeElement>('[data-timer-display]');
     const statusNode = root.querySelector<HTMLElement>('[data-timer-status]');
     const toggleButton = root.querySelector<HTMLButtonElement>('[data-timer-action="toggle"]');
@@ -249,16 +240,15 @@ const sectionName = timerId === 'cloze'
     const clearButton = root.querySelector<HTMLButtonElement>('[data-timer-action="clear"]');
     const messageNode = root.querySelector<HTMLElement>('[data-timer-message]');
     const floatingBar = root.querySelector<HTMLElement>('[data-timer-floating]');
-    const floatingNativeProgress = root.querySelector<HTMLElement>('[data-floating-native-progress]');
-    const floatingLearnerProgress = root.querySelector<HTMLElement>('[data-floating-learner-progress]');
+    const floatingProgressMarker = root.querySelector<HTMLElement>('[data-floating-progress-marker]');
     const floatingToggle = root.querySelector<HTMLButtonElement>('[data-floating-action="toggle"]');
     const floatingFinish = root.querySelector<HTMLButtonElement>('[data-floating-action="finish"]');
     const floatingRestart = root.querySelector<HTMLButtonElement>('[data-floating-action="restart"]');
 
     if (
       !displayNode || !statusNode || !toggleButton || !toggleLabel || !finishButton
-      || !restartButton || !clearButton || !nativeProgressNode || !learnerProgressNode
-      || !messageNode || !floatingBar || !floatingNativeProgress || !floatingLearnerProgress
+      || !restartButton || !clearButton || !progressMarkerNode
+      || !messageNode || !floatingBar || !floatingProgressMarker
       || !floatingToggle || !floatingFinish || !floatingRestart
     ) return;
 
@@ -278,8 +268,8 @@ const sectionName = timerId === 'cloze'
 
     const render = () => {
       const current = currentElapsed();
-      const nativeProgress = nativeGuideMs > 0 ? Math.min(1, current / nativeGuideMs) : 0;
       const learnerProgress = learnerGuideMs > 0 ? Math.min(1, current / learnerGuideMs) : 0;
+      const progressPercent = `${learnerProgress * 100}%`;
       displayNode.textContent = formatDuration(current);
       displayNode.dateTime = `PT${Math.floor(current / 1000)}S`;
       statusNode.lastChild!.textContent = statusMessage;
@@ -287,13 +277,12 @@ const sectionName = timerId === 'cloze'
       toggleButton.setAttribute('aria-pressed', String(running));
       toggleLabel.textContent = running ? '暂停' : current > 0 ? '继续' : '开始';
       finishButton.disabled = current < 1000 || completed;
-      nativeProgressNode.style.width = `${nativeProgress * 100}%`;
-      learnerProgressNode.style.width = `${learnerProgress * 100}%`;
+      root.style.setProperty('--reading-progress', progressPercent);
+      progressMarkerNode.style.left = progressPercent;
       root.toggleAttribute('data-over-native-guide', current > nativeGuideMs);
       root.toggleAttribute('data-over-learner-guide', current > learnerGuideMs);
 
-      floatingNativeProgress.style.width = `${nativeProgress * 100}%`;
-      floatingLearnerProgress.style.width = `${learnerProgress * 100}%`;
+      floatingProgressMarker.style.left = progressPercent;
       floatingToggle.setAttribute('aria-label', running ? '暂停计时' : '继续计时');
       floatingToggle.title = running ? '暂停' : '继续';
       floatingFinish.disabled = finishButton.disabled;
@@ -307,7 +296,7 @@ const sectionName = timerId === 'cloze'
       } else if (current >= nativeGuideMs) {
         messageNode.textContent = '已达到美国成年人推荐用时，继续读完即可。';
       } else {
-        messageNode.textContent = '绿色代表美国成年人速度，红色代表普通学习者速度。';
+        messageNode.textContent = '绿色区代表美国成年人推荐用时，红色区代表普通学习者推荐用时，白色指针代表当前进度。';
       }
     };
 
@@ -617,44 +606,43 @@ const sectionName = timerId === 'cloze'
 
   .reading-timer-progress {
     display: grid;
-    gap: 6px;
+    gap: 7px;
     padding: 0 20px 14px;
   }
 
-  .reading-timer-progress-row {
-    display: grid;
-    grid-template-columns: 16px minmax(0, 1fr);
-    gap: 8px;
-    align-items: center;
+  .reading-timer-progress-legend {
+    display: flex;
+    gap: 12px;
+    color: #818b84;
+    font-size: 0.6rem;
   }
 
-  .reading-timer-progress-label {
-    font-size: 0.62rem;
-    font-weight: 760;
-    text-align: center;
-  }
-
-  .reading-timer-progress-label.native { color: #2f805c; }
-  .reading-timer-progress-label.learner { color: #bd665e; }
+  .reading-timer-progress-legend .native { color: #2f805c; }
+  .reading-timer-progress-legend .learner { color: #bd665e; }
 
   .reading-timer-progress-track {
+    position: relative;
     display: block;
-    height: 5px;
+    height: 8px;
     overflow: hidden;
     border-radius: 99px;
-    background: #e9eeeb;
+    background: linear-gradient(90deg, #3c9b72 0 var(--reading-native-stop, 50%), #cf6c61 var(--reading-native-stop, 50%) 100%);
   }
 
-  .reading-timer-progress-track i {
-    display: block;
-    width: 0;
-    height: 100%;
-    border-radius: inherit;
-    transition: width 250ms linear;
+  .reading-timer-progress-track i,
+  .reading-timer-floating-track i {
+    position: absolute;
+    top: 50%;
+    left: var(--reading-progress, 0%);
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #243129;
+    box-shadow: 0 1px 3px rgba(24, 45, 33, 0.3);
+    transform: translate(-50%, -50%);
+    transition: left 250ms linear;
   }
-
-  .reading-timer-progress-row:first-child i { background: #3c9b72; }
-  .reading-timer-progress-row:last-child i { background: #cf6c61; }
 
   .reading-timer-hint {
     padding: 10px 20px 13px;
@@ -723,43 +711,21 @@ const sectionName = timerId === 'cloze'
     display: grid;
     width: 112px;
     flex: 1 1 112px;
-    gap: 4px;
   }
-
-  .reading-timer-floating-progress-line {
-    display: grid;
-    grid-template-columns: 12px minmax(0, 1fr);
-    gap: 5px;
-    align-items: center;
-  }
-
-  .reading-timer-floating-progress-line b {
-    font-size: 0.55rem;
-    font-weight: 760;
-    text-align: center;
-  }
-
-  .reading-timer-floating-progress-line b.native { color: #2f805c; }
-  .reading-timer-floating-progress-line b.learner { color: #bd665e; }
 
   .reading-timer-floating-track {
+    position: relative;
     display: block;
-    height: 4px;
+    height: 6px;
     overflow: hidden;
     border-radius: 99px;
-    background: #e7ece8;
+    background: linear-gradient(90deg, #3c9b72 0 var(--reading-native-stop, 50%), #cf6c61 var(--reading-native-stop, 50%) 100%);
   }
 
   .reading-timer-floating-track i {
-    display: block;
-    width: 0;
-    height: 100%;
-    border-radius: inherit;
-    transition: width 250ms linear;
+    width: 10px;
+    height: 10px;
   }
-
-  .reading-timer-floating-track.native i { background: #3c9b72; }
-  .reading-timer-floating-track.learner i { background: #cf6c61; }
 
   .reading-timer-floating button {
     display: grid;
