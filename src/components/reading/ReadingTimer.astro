@@ -31,12 +31,12 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
     <div>
       <span>美国成年人参考</span>
       <strong data-timer-native-guide>—</strong>
-      <small>约 250 WPM</small>
+      <small>约 200 WPM</small>
     </div>
     <div>
       <span>普通学习者建议</span>
       <strong data-timer-learner-guide>—</strong>
-      <small>约 120 WPM</small>
+      <small>约 100 WPM</small>
     </div>
   </div>
 
@@ -165,8 +165,13 @@ const { timerId, label, wordCount: providedWordCount } = Astro.props;
     const wordCount = Number.isFinite(providedWordCount)
       ? Math.max(0, providedWordCount ?? 0)
       : timerWordCount(root);
-    const nativeGuideMs = recommendationSeconds(wordCount, 250) * 1000;
-    const learnerGuideMs = recommendationSeconds(wordCount, 120) * 1000;
+    // These are practical CET-6 "first pass" benchmarks rather than
+    // speed-reading targets: a fluent native reader around 200 WPM and a
+    // typical Chinese English learner around 100 WPM.  Keeping the result
+    // rounded to 15-second increments makes the guide easy to use while
+    // preserving a 30-second floor for very short cloze passages.
+    const nativeGuideMs = recommendationSeconds(wordCount, 200) * 1000;
+    const learnerGuideMs = recommendationSeconds(wordCount, 100) * 1000;
 
     const wordCountNode = root.querySelector<HTMLElement>('[data-timer-word-count]');
     const nativeGuideNode = root.querySelector<HTMLElement>('[data-timer-native-guide]');
