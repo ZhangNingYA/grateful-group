@@ -1,0 +1,14 @@
+---
+title: '2024-12 CET6 Reading · Set 1'
+description: 'The cloze, paragraph-matching text, and two reading passages, arranged sentence by sentence.'
+pubDate: '2024-12-01'
+---
+
+import ReadingPractice from '../../components/reading/ReadingPractice.astro';
+import paper from '../../data/reading/2024-12-cet6-reading-1.json';
+
+<ReadingPractice
+  cloze={paper.sections.cloze}
+  matching={paper.sections.matching}
+  passages={[paper.sections.passageOne, paper.sections.passageTwo]}
+/>
