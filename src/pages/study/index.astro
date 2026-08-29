@@ -17,10 +17,28 @@ const modeLabels = {
   derivation: 'Derivation notebook',
   build: 'Build lab',
 };
+
+const courseCopy = {
+  'kalman-filter': {
+    title: 'Kalman filtering',
+    description: 'Estimate a hidden state by combining a motion model with noisy measurements.',
+    subject: 'State estimation',
+    units: '8 units',
+    duration: '45 min minimum',
+  },
+};
+
+const getCourseCopy = (study) => courseCopy[study.id] ?? {
+  title: study.data.title,
+  description: study.data.description,
+  subject: study.data.subject ?? 'Independent study',
+  units: 'Self-paced',
+  duration: 'Open-ended',
+};
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <BaseHead title={`Study | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
   </head>
@@ -28,57 +46,52 @@ const modeLabels = {
     <BlogHeader active="study" />
 
     <main class="study-index-shell">
-      <section class="study-index-hero" aria-labelledby="study-hero-title">
-        <div class="study-hero-copy">
-          <div class="study-hero-kicker"><span>Study / {String(studies.length).padStart(2, '0')} course{studies.length === 1 ? '' : 's'}</span><span>Field notes</span></div>
-          <h1 id="study-hero-title">让难懂的东西，<em>留下下一步。</em></h1>
-          <p class="study-index-lede">把抽象概念变成可以观察、计算和复盘的学习过程。</p>
-          <div class="study-hero-facts" aria-label="学习目录统计">
-            <div><strong>{String(studies.length).padStart(2, '0')}</strong><span>courses</span></div>
-            <div><strong><StudyMath expression="x" /></strong><span>question first</span></div>
-            <div><strong><StudyMath expression={'\\Delta'} /></strong><span>leave a trace</span></div>
-          </div>
+      <header class="study-index-intro" aria-labelledby="study-hero-title">
+        <div class="study-intro-copy">
+          <div class="study-hero-kicker"><span>Study / {String(studies.length).padStart(2, '0')} course{studies.length === 1 ? '' : 's'}</span><span>Personal curriculum</span></div>
+          <h1 id="study-hero-title">Make the next step <em>small enough to take.</em></h1>
+          <p class="study-index-lede">A growing set of interactive textbooks for turning difficult ideas into questions, evidence, and better explanations.</p>
         </div>
-        <div class="study-hero-visual" aria-label="从问题到证据再到理解的学习轨迹">
-          <div class="study-visual-grid"></div>
-          <div class="study-visual-line study-visual-line-one"></div>
-          <div class="study-visual-line study-visual-line-two"></div>
-          <div class="study-visual-node study-visual-node-one"><span>01</span><b>Question</b><StudyMath expression="x" /></div>
-          <div class="study-visual-node study-visual-node-two"><span>02</span><b>Evidence</b><StudyMath expression="z" /></div>
-          <div class="study-visual-node study-visual-node-three"><span>03</span><b>Revision</b><StudyMath expression={'\\hat x'} /></div>
-          <div class="study-visual-caption"><span>one idea</span><strong>three passes</strong></div>
+        <div class="study-intro-index" aria-label="Study desk index">
+          <span class="study-section-kicker">Desk index</span>
+          <strong>01</strong>
+          <div><span>active course</span><span>field notes</span><span>self-paced</span></div>
         </div>
-      </section>
+      </header>
 
       <div class="study-dashboard">
         <section class="study-catalog" aria-labelledby="study-list-title">
           <div class="study-dashboard-header">
-            <div><span class="study-section-kicker">The catalogue</span><h2 id="study-list-title">现在可以打开的课程</h2></div>
-            <span class="study-dashboard-count">按更新时间排序</span>
+            <div><span class="study-section-kicker">The catalogue</span><h2 id="study-list-title">Open a course</h2></div>
+            <span class="study-dashboard-count">{String(studies.length).padStart(2, '0')} available</span>
           </div>
           <div class="study-card-list">
-            {studies.map((study, index) => (
-              <a class="study-card" href={`/study/${study.id}/`}>
-                <div class="study-card-rail"><span>{String(index + 1).padStart(2, '0')}</span><i></i></div>
-                <div class="study-card-copy">
-                  <div class="study-card-mode">{modeLabels[study.data.mode]}{study.data.subject ? ` / ${study.data.subject}` : ''}</div>
-                  <h3>{study.data.title}</h3>
-                  <p>{study.data.description}</p>
-                  <div class="study-card-meta"><span>Updated <FormattedDate date={study.data.updatedDate ?? study.data.pubDate} /></span><span>Open course <b aria-hidden="true">↗</b></span></div>
-                </div>
-                <div class="study-card-mark" aria-hidden="true"><StudyMath expression={'\\rightarrow'} /></div>
-              </a>
-            ))}
+            {studies.map((study, index) => {
+              const copy = getCourseCopy(study);
+              return (
+                <a class:list={['study-card', index === 0 && 'study-card-featured']} href={`/study/${study.id}/`}>
+                  <div class="study-card-rail"><span>{String(index + 1).padStart(2, '0')}</span><i></i><small>{copy.units}</small></div>
+                  <div class="study-card-copy">
+                    <div class="study-card-mode">{modeLabels[study.data.mode]} / {copy.subject}</div>
+                    <h3>{copy.title}</h3>
+                    <p>{copy.description}</p>
+                    <div class="study-card-meta"><span>{copy.duration}</span><span>Updated <FormattedDate date={study.data.updatedDate ?? study.data.pubDate} /></span></div>
+                  </div>
+                  <div class="study-card-mark" aria-hidden="true"><StudyMath expression={'\\rightarrow'} /></div>
+                  {index === 0 && <div class="study-card-formula" aria-hidden="true"><StudyMath expression={'x_k\\rightarrow z_k\\rightarrow\\hat x_k'} display /></div>}
+                </a>
+              );
+            })}
           </div>
         </section>
 
         <aside class="study-principles" aria-labelledby="study-principles-title">
           <div class="study-principles-top"><span class="study-section-kicker">A useful rhythm</span><StudyMath expression={'k\\rightarrow k+1'} /></div>
-          <h2 id="study-principles-title">每次回来，<br /><em>只推进一格。</em></h2>
+          <h2 id="study-principles-title">Learn by<br /><em>leaving a trace.</em></h2>
           <ol>
-            <li><span>01</span><div><strong>提出一个可回答的问题</strong><p>把“我不懂”缩成下一次能验证的句子。</p></div></li>
-            <li><span>02</span><div><strong>让证据改变直觉</strong><p>用公式、图表或反例检查自己的解释。</p></div></li>
-            <li><span>03</span><div><strong>留下一条回来的路</strong><p>记录已会、卡住和下一步，不从零开始。</p></div></li>
+            <li><span>01</span><div><strong>Start with a question</strong><p>Turn “I do not get it” into one thing you can test.</p></div></li>
+            <li><span>02</span><div><strong>Make evidence visible</strong><p>Use a formula, chart, or counterexample to challenge intuition.</p></div></li>
+            <li><span>03</span><div><strong>Return with context</strong><p>Keep the useful mistake and choose the next small step.</p></div></li>
           </ol>
           <div class="study-principles-footer"><StudyMath expression={'\\text{question}\\rightarrow\\text{evidence}\\rightarrow\\text{revision}'} /></div>
         </aside>
