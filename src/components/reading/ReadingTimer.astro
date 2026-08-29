@@ -4,9 +4,10 @@ import { Check, Pause, Play, RotateCcw, Trash2 } from 'lucide-astro';
 interface Props {
   timerId: string;
   label: string;
+  wordCount?: number;
 }
 
-const { timerId, label } = Astro.props;
+const { timerId, label, wordCount: providedWordCount } = Astro.props;
 ---
 
 <section
@@ -14,6 +15,7 @@ const { timerId, label } = Astro.props;
   data-reading-timer
   data-timer-id={timerId}
   data-timer-label={label}
+  data-timer-word-count-provided={providedWordCount}
   data-timer-state="idle"
   aria-label={`${label} 阅读计时器`}
 >
@@ -160,7 +162,9 @@ const { timerId, label } = Astro.props;
     root.dataset.timerReady = 'true';
     const timerId = root.dataset.timerId ?? 'reading';
     const storageKey = `reading-timer:v1:${window.location.pathname}:${timerId}`;
-    const wordCount = timerWordCount(root);
+    const wordCount = Number.isFinite(providedWordCount)
+      ? Math.max(0, providedWordCount ?? 0)
+      : timerWordCount(root);
     const nativeGuideMs = recommendationSeconds(wordCount, 250) * 1000;
     const learnerGuideMs = recommendationSeconds(wordCount, 120) * 1000;
 

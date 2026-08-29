@@ -29,6 +29,9 @@ interface Props {
 }
 
 const { cloze, matching, passages, closeReadings, inlineGlossary, experience = 'blog' } = Astro.props;
+const countWords = (sentences: readonly string[]) => sentences.join(' ').match(
+  /[A-Za-z]+(?:['’][A-Za-z]+)?/g,
+)?.length ?? 0;
 const noteNumber = (prefix: string, index: number) =>
   `${prefix}${String(index + 1).padStart(2, '0')}`;
 const sharedGlossaryPhrases = inlineGlossary
@@ -47,7 +50,9 @@ const sharedGlossaryPhrases = inlineGlossary
 
 <h3>{cloze.title}</h3>
 
-{experience === 'blog' && <ReadingTimer timerId="cloze" label={cloze.title} />}
+{experience === 'blog' && (
+  <ReadingTimer timerId="cloze" label={cloze.title} wordCount={countWords(cloze.sentences)} />
+)}
 
 {cloze.sentences.map((sentence, index) => (
   <SentenceNote
@@ -64,7 +69,13 @@ const sharedGlossaryPhrases = inlineGlossary
 
 <h3>{matching.title}</h3>
 
-{experience === 'blog' && <ReadingTimer timerId="matching" label={matching.title} />}
+{experience === 'blog' && (
+  <ReadingTimer
+    timerId="matching"
+    label={matching.title}
+    wordCount={countWords(matching.paragraphs.flatMap((paragraph) => paragraph.sentences))}
+  />
+)}
 
 {matching.paragraphs.map((paragraph) => (
   <>
@@ -88,7 +99,11 @@ const sharedGlossaryPhrases = inlineGlossary
   <>
     <h3>{passage.title}</h3>
     {experience === 'blog' && (
-      <ReadingTimer timerId={`passage-${passageIndex + 1}`} label={passage.title} />
+      <ReadingTimer
+        timerId={`passage-${passageIndex + 1}`}
+        label={passage.title}
+        wordCount={countWords(passage.sentences)}
+      />
     )}
     {passage.sentences.map((sentence, sentenceIndex) => (
       <SentenceNote
