@@ -2087,26 +2087,44 @@
     ]
   },
   "M-L01": {
-    "pattern": "主语 + 谓语",
-    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "pattern": "条件从句（整体） + 主语 + 谓语 + 表语 / 补语 + 插入语（整体）",
+    "explanation": "If an organisation were to apply... 是条件从句，整体作状语；主句主语是 the most noticeable difference，谓语是 would be，后面是表语；末尾 Mroz says 是引述插入语。",
     "highlights": [
       {
+        "role": "adverbial",
+        "text": "If an organisation were to apply all 22 suggestions from Mroz and Allen's findings",
+        "label": "条件从句（整体）"
+      },
+      {
         "role": "subject",
-        "text": "Mroz"
+        "text": "the most noticeable difference"
       },
       {
         "role": "predicate",
-        "text": "says"
+        "text": "would be"
+      },
+      {
+        "role": "complement",
+        "text": "a stark decrease in the total number of meetings on the schedule"
+      },
+      {
+        "role": "adverbial",
+        "text": "Mroz says",
+        "label": "插入语（整体）"
       }
     ],
     "trunk": [
       {
         "role": "subject",
-        "text": "Mroz"
+        "text": "the most noticeable difference"
       },
       {
         "role": "predicate",
-        "text": "says"
+        "text": "would be"
+      },
+      {
+        "role": "complement",
+        "text": "a stark decrease in the total number of meetings on the schedule"
       }
     ]
   },

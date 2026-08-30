@@ -315,12 +315,17 @@
     ]
   },
   "C08": {
-    "pattern": "主语 + 谓语 + 宾语从句（整体）",
-    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "pattern": "让步状语（整体） + 主语 + 谓语 + 宾语从句（整体）",
+    "explanation": "Though a layman of economics 是让步状语，省略了主语和系动词；主句主语是 I，谓语是 know，that 引导的内容整体作宾语，不再拆分从句内部。",
     "highlights": [
       {
+        "role": "adverbial",
+        "text": "Though a layman of economics",
+        "label": "让步状语（整体）"
+      },
+      {
         "role": "subject",
-        "text": "a layman"
+        "text": "I"
       },
       {
         "role": "predicate",
@@ -335,7 +340,7 @@
     "trunk": [
       {
         "role": "subject",
-        "text": "a layman"
+        "text": "I"
       },
       {
         "role": "predicate",

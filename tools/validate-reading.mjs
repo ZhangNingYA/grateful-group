@@ -1,5 +1,5 @@
 import { build } from 'esbuild';
-import { readFile, readdir } from 'node:fs/promises';
+import { access, readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 
@@ -94,6 +94,25 @@ const hasWholeWordRange = (sentence, part) => {
     from = start + 1;
   }
   return false;
+};
+
+// Return the first whole-word match so semantic checks can reason about the
+// position of a component, rather than only checking that its text exists.
+const wholeWordStart = (sentence, part, initialFrom = 0) => {
+  const normalizedSentence = normalizeQuotes(sentence).toLowerCase();
+  const normalizedPart = normalizeQuotes(part).toLowerCase();
+  let from = initialFrom;
+  while (from <= normalizedSentence.length) {
+    const start = normalizedSentence.indexOf(normalizedPart, from);
+    if (start < 0) return -1;
+    const before = normalizedSentence[start - 1] ?? '';
+    const after = normalizedSentence[start + normalizedPart.length] ?? '';
+    const cutsStart = /[a-z]/.test(before) && /^[a-z]/.test(normalizedPart);
+    const cutsEnd = /[a-z]$/.test(normalizedPart) && /[a-z]/.test(after);
+    if (!cutsStart && !cutsEnd) return start;
+    from = start + 1;
+  }
+  return -1;
 };
 
 const vocabularyWords = (value) => Array.from(
@@ -193,7 +212,10 @@ const validateSemanticAnalysis = (paper, key, sentence, closeReading) => {
   }
 
   const isIntentionalFragment = /列表项|省略式回答/.test(analysis.pattern);
-  const isImperative = /^(?:Consider|Imagine|Take|Let|Suppose)\b/.test(sentence);
+  const isImperative = /^(?:Consider|Imagine|Take|Let|Suppose)\b/.test(sentence)
+    // A conditional/time clause can be followed by an implicit-subject
+    // imperative: “If ..., have ... ready.”
+    || /^(?:If|When|While)\b[^,]+,\s*(?:have|keep|make|remember|use|try|be|go|do|let)\b/i.test(sentence);
   if (!isIntentionalFragment && !analysis.highlights.some((item) => item.role === 'predicate')) {
     fail(paper, `${key} 的完整句没有谓语`);
   }
@@ -204,6 +226,65 @@ const validateSemanticAnalysis = (paper, key, sentence, closeReading) => {
   const clauseItems = analysis.highlights.filter((item) => item.label?.includes('从句'));
   for (const item of clauseItems) {
     if (item.text.split(/\s+/).length < 2) fail(paper, `${key} 的从句标签没有覆盖完整从句：${item.text}`);
+  }
+
+  // A fronted subordinate clause must not donate its subject to the main
+  // clause. This catches errors such as treating “a layman” in “Though a
+  // layman ..., I know ...” as the subject of the whole sentence.
+  const frontedClause = sentence.match(/^(?:Though|Although|If|When|While|Because|Since)\b[\s\S]*?,\s*/i);
+  const subject = analysis.highlights.find((item) => item.role === 'subject');
+  if (frontedClause && subject) {
+    const boundary = frontedClause[0].length;
+    const tail = sentence.slice(boundary).trim();
+    const subjectStart = wholeWordStart(sentence, subject.text);
+    const mainSubjectStart = wholeWordStart(sentence, subject.text, boundary);
+    const looksLikeMainClause = /^(?:(?:at least|at most|at present|only then|still|now|then)\s+)?(?:I|you|he|she|it|we|they|this|that|these|those|there|have|keep|make|remember|use|try|be|go|do|let)\b/i.test(tail);
+    const isTrailingModifier = /^(?:thus|therefore|which|and|or|but|so|rather|instead|resulting|thereby)\b/i.test(tail);
+    if (subjectStart >= 0 && mainSubjectStart < 0 && looksLikeMainClause && !isTrailingModifier) {
+      fail(paper, `${key} 把前置从句中的成分标成了主句主语：${subject.text}`);
+    }
+  }
+
+  // “that” immediately following another word is normally a relative or
+  // content-clause marker, not the subject itself. Sentence-initial “That”
+  // and ordinary demonstrative uses are intentionally excluded.
+  if (subject && /^that$/i.test(subject.text.trim())) {
+    const subjectStart = wholeWordStart(sentence, subject.text);
+    const before = subjectStart > 0
+      ? sentence.slice(0, subjectStart).match(/([A-Za-z]+)\s*$/)?.[1]?.toLowerCase()
+      : undefined;
+    const excludedBefore = new Set(['and', 'or', 'but', 'so', 'because', 'although', 'though', 'if', 'when', 'while', 'than', 'as', 'for', 'to']);
+    if (subjectStart > 0 && before && !excludedBefore.has(before)) {
+      fail(paper, `${key} 可能把关系词 that 误标成主语；请检查完整主语短语`);
+    }
+  }
+
+  // A reporting clause after a comma is an insertion, so it cannot replace
+  // the preceding sentence's main subject and predicate.
+  const trailingReport = sentence.match(/,\s*([A-Z][A-Za-z.'’ -]*)\s+(says|said)\.?$/);
+  const predicate = analysis.highlights.find((item) => item.role === 'predicate');
+  if (trailingReport && subject && predicate) {
+    const speaker = trailingReport[1].trim();
+    if (subject.text.trim().toLowerCase() === speaker.toLowerCase()
+      && /^(?:says|said)$/i.test(predicate.text.trim())) {
+      fail(paper, `${key} 只标注了句末引述插入语，遗漏前面的主句`);
+    }
+  }
+
+  // When a reporting verb introduces a quotation, the quotation belongs to
+  // the object clause as a whole. Ensure the highlight does not stop before
+  // the closing quote (the previous R1-09 error).
+  const objectClause = analysis.highlights.find((item) => (
+    item.role === 'object' && item.label?.includes('宾语从句')
+  ));
+  const openingQuote = sentence.search(/[“"]/);
+  if (objectClause && openingQuote >= 0 && /\b(?:said|says|told|asked|explained|reported)\b/i.test(sentence.slice(0, openingQuote))) {
+    const objectStart = wholeWordStart(sentence, objectClause.text);
+    const closingQuote = sentence.search(/[”"](?![\s\S]*[“"])/);
+    if (objectStart >= 0 && objectStart < openingQuote && closingQuote > 0
+      && !/[”"]/.test(objectClause.text)) {
+      fail(paper, `${key} 的宾语从句截断了引号内容`);
+    }
   }
 
   if (/主干可先读作/.test(analysis.explanation)) {
@@ -355,14 +436,53 @@ const blogSpecifications = [
   })),
 ];
 
+// Keep future CET6 papers from silently skipping validation. As long as a new
+// paper follows the existing YYYY{June|December}SetN naming convention, its
+// close-reading module is picked up automatically. The source sentence map
+// may be either the original JSON or the generated public MDX page.
+const closeReadingDirectory = path.join(projectRoot, 'src/data/closeReading');
+const knownBlogModules = new Set(blogSpecifications.map((specification) => specification.module));
+const closeReadingFiles = (await readdir(closeReadingDirectory))
+  .filter((file) => /^(\d{4})(June|December)Set([1-3])\.ts$/.test(file))
+  .sort();
+for (const file of closeReadingFiles) {
+  const match = file.match(/^(\d{4})(June|December)Set([1-3])\.ts$/);
+  if (!match) continue;
+  const [, year, monthName, set] = match;
+  const month = monthName === 'June' ? '06' : '12';
+  const date = `${year}-${month}`;
+  const module = path.join(closeReadingDirectory, file);
+  if (knownBlogModules.has(module)) continue;
+
+  const reading = path.join(projectRoot, `src/data/reading/${date}-cet6-reading-${set}.json`);
+  const mdx = path.join(projectRoot, `src/content/reading/${date}-cet6-${set}.mdx`);
+  const hasReading = await access(reading).then(() => true).catch(() => false);
+  const hasMdx = await access(mdx).then(() => true).catch(() => false);
+  blogSpecifications.push({
+    paper: `${date} CET6 Set ${set}`,
+    module,
+    exportName: `cet6CloseReadings${year}${month}Set${set}`,
+    ...(hasReading ? { reading } : {}),
+    ...(hasMdx ? { mdx } : {}),
+    semantic: true,
+    vocabularyQuality: true,
+  });
+}
+
 let blogSentenceCount = 0;
 let semanticSentenceCount = 0;
 for (const specification of blogSpecifications) {
   const module = await importTypeScript(specification.module);
   const closeReadings = module[specification.exportName];
-  const sentences = specification.reading
-    ? readingSentenceMap(JSON.parse(await readFile(specification.reading, 'utf8')))
-    : await mdxSentenceMap(specification.mdx);
+  let sentences;
+  if (specification.reading) {
+    sentences = readingSentenceMap(JSON.parse(await readFile(specification.reading, 'utf8')));
+  } else if (specification.mdx) {
+    sentences = await mdxSentenceMap(specification.mdx);
+  } else {
+    fail(specification.paper, '找不到对应的 reading JSON 或 Blog MDX 句子来源');
+    continue;
+  }
   const sentenceEntries = Object.entries(sentences);
   const expectedKeys = new Set(Object.keys(sentences));
 

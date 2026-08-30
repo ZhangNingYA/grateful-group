@@ -1334,17 +1334,13 @@
     ]
   },
   "M-E03": {
-    "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
-    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "pattern": "条件从句（整体） + 祈使句谓语 + 宾语",
+    "explanation": "If you don't want... 是条件从句，整体作状语；主句是祈使句，省略主语 you，直接用 have 作谓语，a box of herbal tea 作宾语，ready at your desk 补充说明状态。",
     "highlights": [
       {
         "role": "adverbial",
         "text": "If you don't want to reach for a sugary treat at 3 p.m.",
-        "label": "状语从句（整体）"
-      },
-      {
-        "role": "subject",
-        "text": "you"
+        "label": "条件从句（整体）"
       },
       {
         "role": "predicate",
@@ -1352,21 +1348,25 @@
       },
       {
         "role": "object",
-        "text": "a box of herbal tea ready at your desk"
+        "text": "a box of herbal tea"
+      },
+      {
+        "role": "complement",
+        "text": "ready at your desk"
       }
     ],
     "trunk": [
       {
-        "role": "subject",
-        "text": "you"
-      },
-      {
         "role": "predicate",
         "text": "have"
       },
       {
         "role": "object",
-        "text": "a box of herbal tea ready at your desk"
+        "text": "a box of herbal tea"
+      },
+      {
+        "role": "complement",
+        "text": "ready at your desk"
       }
     ]
   },
@@ -2944,12 +2944,17 @@
     ]
   },
   "M-L01": {
-    "pattern": "主语 + 谓语 + 宾语 + 表语 / 补语 + 谓语 + 宾语",
-    "explanation": "句中有并列的主句谓语；按相同层级抓住主语、谓语和宾语或表语。",
+    "pattern": "插入语（整体） + 主语 + 谓语 + 宾语 + 状语 + 并列谓语 + 宾语",
+    "explanation": "Remember 是句首提示语；主句主语是完整的动名词短语 overcoming...exercising，其中 that 引导的定语从句只作整体理解；can benefit 和 can improve 是并列谓语。",
     "highlights": [
       {
+        "role": "adverbial",
+        "text": "Remember",
+        "label": "插入语（整体）"
+      },
+      {
         "role": "subject",
-        "text": "that"
+        "text": "overcoming the behavioral inertia that prevents us from implementing new changes, like eating a healthy diet or exercising"
       },
       {
         "role": "predicate",
@@ -2960,7 +2965,7 @@
         "text": "us"
       },
       {
-        "role": "complement",
+        "role": "adverbial",
         "text": "in the long run"
       },
       {
@@ -3914,17 +3919,13 @@
     ]
   },
   "R2-05": {
-    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
-    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "pattern": "主语从句（整体） + 谓语 + 表语 / 补语",
+    "explanation": "引号中的完整句子整体作主语；主句谓语是 is，表语是 a sentence，后面的 that has been uttered... 是定语从句，整体修饰 sentence。",
     "highlights": [
       {
-        "role": "adverbial",
-        "text": "Without myjob I don't know who I am",
-        "label": "状语从句（整体）"
-      },
-      {
         "role": "subject",
-        "text": "that"
+        "text": "“Without myjob I don't know who I am,”",
+        "label": "主语从句（整体）"
       },
       {
         "role": "predicate",

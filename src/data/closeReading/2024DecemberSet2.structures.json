@@ -354,17 +354,17 @@
     ]
   },
   "C11": {
-    "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
-    "explanation": "先确认主句的主语、谓语和宾语或表语；从句或引语作为一个完整成分说明其作用，不再拆分内部主谓宾。",
+    "pattern": "时间状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+    "explanation": "When one participant does most of the talking 是时间状语从句，整体说明时间；主句主语是 this asymmetry or lack of balance，谓语是 tends，to become annoying... 是表语补充说明状态。",
     "highlights": [
       {
         "role": "adverbial",
-        "text": "When one participant does",
-        "label": "状语从句（整体）"
+        "text": "When one participant does most of the talking",
+        "label": "时间状语从句（整体）"
       },
       {
         "role": "subject",
-        "text": "most"
+        "text": "this asymmetry or lack of balance"
       },
       {
         "role": "predicate",

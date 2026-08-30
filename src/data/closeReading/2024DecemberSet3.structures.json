@@ -2623,34 +2623,39 @@
     ]
   },
   "M-L02": {
-    "pattern": "主语 + 谓语 + 宾语",
-    "explanation": "先确认主句的主语、谓语和宾语或表语；时间、地点、方式等信息作为整体补充。",
+    "pattern": "方式状语（整体） + 主语 + 谓语 + 宾语",
+    "explanation": "Only by... 是倒装句中的方式状语，整体置于句首；还原后主句是 free trade can win the day，主语是 free trade，can 是情态助动词，核心谓语是 win，the day 作宾语。",
     "highlights": [
       {
+        "role": "adverbial",
+        "text": "Only by de-anonymizing the men and women who supply us with the goods and services we enjoy from overseas and by creating a sense of solidarity and relationship across borders that transcends economic interest",
+        "label": "方式状语（整体）"
+      },
+      {
         "role": "subject",
-        "text": "that"
+        "text": "free trade"
       },
       {
         "role": "predicate",
-        "text": "can free"
+        "text": "win"
       },
       {
         "role": "object",
-        "text": "trade win the day"
+        "text": "the day"
       }
     ],
     "trunk": [
       {
         "role": "subject",
-        "text": "that"
+        "text": "free trade"
       },
       {
         "role": "predicate",
-        "text": "can free"
+        "text": "win"
       },
       {
         "role": "object",
-        "text": "trade win the day"
+        "text": "the day"
       }
     ]
   },
