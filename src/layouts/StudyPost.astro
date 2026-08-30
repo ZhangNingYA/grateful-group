@@ -19,6 +19,7 @@ const {
   updatedDate,
   mode = 'lab',
   subject = 'Guided study',
+  part,
   headings = [],
 } = Astro.props;
 
@@ -30,7 +31,18 @@ const modeLabels = {
 } as const;
 
 const sections = headings.filter((heading) => heading.depth === 2);
-const estimatedMinutes = Math.max(45, sections.length * 10);
+const estimatedMinutes = part ? Math.max(35, sections.length * 10) : Math.max(10, sections.length * 3);
+const kalmanSequence = [
+  { href: '/study/kalman-filter/', title: '课程地图' },
+  { href: '/study/kalman-filter-foundations/', title: '状态、证据与概率模型' },
+  { href: '/study/kalman-filter-recursion/', title: '把递推式推导出来' },
+  { href: '/study/kalman-filter-tuning/', title: 'Q、R、P 与动态响应' },
+  { href: '/study/kalman-filter-diagnostics/', title: '创新检验与失效模式' },
+  { href: '/study/kalman-filter-implementation/', title: '从方程到可靠软件' },
+];
+const sequenceIndex = Astro.url.pathname.startsWith('/study/kalman-filter') ? (part ?? 0) : -1;
+const previousChapter = sequenceIndex > 0 ? kalmanSequence[sequenceIndex - 1] : undefined;
+const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : undefined;
 ---
 
 <!doctype html>
@@ -53,7 +65,7 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
         </a>
         <div class="textbook-cover-grid">
           <div class="textbook-cover-copy">
-            <div class="textbook-overline"><span>Chapter 01</span><span>{modeLabels[mode]}</span><span>{subject}</span></div>
+            <div class="textbook-overline"><span>{part ? `Chapter ${String(part).padStart(2, '0')}` : 'Course map'}</span><span>{modeLabels[mode]}</span><span>{subject}</span></div>
             <h1>{title}</h1>
             <p class="textbook-subtitle">{description}</p>
             <div class="textbook-cover-actions">
@@ -73,7 +85,7 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
         <div class="textbook-cover-footer">
           <span>Published <FormattedDate date={pubDate} /></span>
           {updatedDate && <span>Updated <FormattedDate date={updatedDate} /></span>}
-          <span>阅读时请打开实验，边看边改参数。</span>
+          <span>阅读时请边做推导，边完成检查。</span>
         </div>
       </div>
     </header>
@@ -108,6 +120,18 @@ const estimatedMinutes = Math.max(45, sections.length * 10);
           <p>把它当成一本可以操作的教科书：先形成预测，再让数据反驳它；先写下自己的解释，再查看下一层公式。页面会记住你看过的章节和留下的笔记。</p>
         </div>
         <slot />
+        {sequenceIndex >= 0 && (
+          <nav class="textbook-course-nav" aria-label="课程章节导航">
+            {previousChapter ? (
+              <a href={previousChapter.href} rel="prev"><span>← 上一章</span><strong>{previousChapter.title}</strong></a>
+            ) : <span></span>}
+            {nextChapter ? (
+              <a class="is-next" href={nextChapter.href} rel="next"><span>下一章 →</span><strong>{nextChapter.title}</strong></a>
+            ) : (
+              <a class="is-next" href="/study/kalman-filter/"><span>课程完成</span><strong>回到课程地图</strong></a>
+            )}
+          </nav>
+        )}
         <footer class="textbook-endnote">
           <span>End of chapter</span>
           <a href="/study/">回到 Study desk →</a>

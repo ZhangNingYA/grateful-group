@@ -1,0 +1,182 @@
+---
+title: '第 02 章：把递推式推导出来'
+description: '从条件期望、误差传播和高斯融合出发，逐步推导卡尔曼滤波的预测、创新、增益与协方差更新。'
+pubDate: '2026-08-30'
+updatedDate: '2026-08-30'
+mode: 'derivation'
+subject: 'Derivation'
+part: 2
+---
+
+import KalmanStepExplorer from '../../components/study/KalmanStepExplorer.jsx';
+import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
+
+## 01 / 递推从哪一个分布开始
+
+第 01 章建立了状态空间模型。本章只研究它最小的一维版本：
+
+$$
+x_k=x_{k-1}+w_k,\quad z_k=x_k+v_k,\quad w_k\sim\mathcal N(0,Q),\quad v_k\sim\mathcal N(0,R).
+$$
+
+假设在第 $k-1$ 步更新后，已有：
+
+$$
+x_{k-1}\mid z_{1:k-1}\sim\mathcal N(\hat x_{k-1|k-1},P_{k-1|k-1}).
+$$
+
+这里 $z_{1:k-1}$ 代表测量历史。滤波器的任务是先求出 $x_k\mid z_{1:k-1}$（先验），再在看到 $z_k$ 后求出 $x_k\mid z_{1:k}$（后验）。因为线性变换保持高斯性、独立高斯变量相加仍是高斯，整个过程可以闭合在“均值 + 方差”这两个量上。
+
+## 02 / 预测：均值怎样走，方差怎样长大
+
+### 预测均值
+
+对状态方程取条件期望：
+
+$$
+\begin{aligned}
+\hat x_{k|k-1}
+&\equiv \mathrm E[x_k\mid z_{1:k-1}]\\
+&=\mathrm E[x_{k-1}+w_k\mid z_{1:k-1}]\\
+&=\hat x_{k-1|k-1}+0\\
+&=\hat x_{k-1|k-1}.
+\end{aligned}
+$$
+
+过程噪声零均值且与历史独立，所以它不会改变平均位置。注意这是随机游走模型的结果；一般模型会得到 $\hat x_{k|k-1}=F_k\hat x_{k-1|k-1}+B_ku_k$。
+
+### 预测方差
+
+定义预测误差 $e_{k|k-1}=x_k-\hat x_{k|k-1}$。代入状态方程：
+
+$$
+e_{k|k-1}=e_{k-1|k-1}+w_k.
+$$
+
+因此
+
+$$
+\begin{aligned}
+P_{k|k-1}
+&=\mathrm E[(e_{k-1|k-1}+w_k)^2]\\
+&=P_{k-1|k-1}+2\,\mathrm E[e_{k-1|k-1}w_k]+Q\\
+&=P_{k-1|k-1}+Q.
+\end{aligned}
+$$
+
+交叉项为零是一个统计假设的结果，而不是代数上的“顺手删掉”。如果过程噪声与过去的估计误差相关，就必须显式保留交叉协方差。
+
+一般矩阵形式是：
+
+$$
+\hat x_{k|k-1}=F_k\hat x_{k-1|k-1}+B_ku_k,\qquad
+P_{k|k-1}=F_kP_{k-1|k-1}F_k^T+Q_k.
+$$
+
+右侧两个 $F$ 来自 $\operatorname{Cov}(Fe)=\mathrm E[(Fe)(Fe)^T]=F\operatorname{Cov}(e)F^T$。
+
+## 03 / 更新：新证据提供了多少信息
+
+### 创新与创新协方差
+
+先把状态预测投影到测量空间：$\hat z_{k|k-1}=H_k\hat x_{k|k-1}$。实际测量与它的差称为创新：
+
+$$
+y_k=z_k-H_k\hat x_{k|k-1}.
+$$
+
+创新的协方差是：
+
+$$
+S_k=H_kP_{k|k-1}H_k^T+R_k.
+$$
+
+第一项是先验不确定性在测量空间中的投影，第二项是传感器自身噪声；由于二者独立，协方差相加。$S_k$ 的量纲是测量单位的平方，$y_k/\sqrt{S_k}$ 才是可跨时间比较的无量纲残差。
+
+### 用最小均方误差找到增益
+
+考虑所有形如
+
+$$
+\hat x_{k|k}=\hat x_{k|k-1}+K_k y_k
+$$
+
+的线性更新。其误差为
+
+$$
+e^+=(I-KH)e^- - Kv,
+$$
+
+其中 $e^-=x-\hat x^-$。利用独立性，误差协方差为
+
+$$
+P^+(K)=(I-KH)P^-(I-KH)^T+KRK^T.
+$$
+
+最小化 $\operatorname{tr}P^+(K)$（即最小化各状态误差方差之和）得到：
+
+$$
+K=P^-H^T(HP^-H^T+R)^{-1}=P^-H^TS^{-1}.
+$$
+
+在一维 $H=1$ 时，$K=P^-/(P^-+R)$。这个推导说明 $K$ 不是经验常数，而是让线性均方误差最小的唯一权重（当 $S$ 可逆时）。
+
+### 后验均值与协方差
+
+把最优增益代回，得到：
+
+$$
+\boxed{\hat x_{k|k}=\hat x_{k|k-1}+K_k y_k}
+$$
+
+以及简化后的后验协方差：
+
+$$
+\boxed{P_{k|k}=(I-K_kH_k)P_{k|k-1}}.
+$$
+
+一维时就是 $P^+=(1-K)P^-$。更稳健的实现保留完整平方项，使用 Joseph 形式：
+
+$$
+P^+=(I-KH)P^-(I-KH)^T+KRK^T.
+$$
+
+它在精确算术下与简化式相同，却更能抵抗浮点舍入造成的非对称或负特征值。
+
+<KalmanStepExplorer client:visible />
+
+## 04 / 贝叶斯视角：为什么结果位于两者之间
+
+在标量模型中，先验密度和测量似然分别是：
+
+$$
+p(x)=\mathcal N(x;\hat x^-,P^-),\qquad p(z\mid x)=\mathcal N(z;x,R).
+$$
+
+贝叶斯公式给出 $p(x\mid z)\propto p(z\mid x)p(x)$。把两个高斯指数中的二次项合并，可以得到后验精度（方差的倒数）相加：
+
+$$
+\frac1{P^+}=\frac1{P^-}+\frac1R,
+$$
+
+以及后验均值的精度加权平均：
+
+$$
+\hat x^+=P^+\left(\frac{\hat x^-}{P^-}+\frac{z}{R}\right).
+$$
+
+将 $P^+=P^-R/(P^-+R)$ 代入，就重新得到 $\hat x^+=\hat x^-+K(z-\hat x^-)$。因此“后验在预测与测量之间”不是视觉上的巧合，而是正方差条件下的凸组合结构。
+
+<StudyCheckpoint
+  client:visible
+  id="recursion-gain"
+  question="先验方差 $P^-=9$，测量方差 $R=1$。$K$ 最接近多少？"
+  options={['$0.1$，因为主要相信预测', '$0.9$，因为测量更精确', '$9$，因为把测量放大九倍']}
+  answer={1}
+  hint="使用 $K=P^-/(P^-+R)$，并检查标量增益应在 0 和 1 之间。"
+  explanation="$K=9/(9+1)=0.9$。测量方差较小，后验向测量移动创新的 90%。"
+/>
+
+<div className="worked-example"><span>完整数值例题</span><p>给定 $\hat x^-=10\,\mathrm m$、$P^-=2\,\mathrm m^2$、$z=12\,\mathrm m$、$R=3\,\mathrm m^2$：$y=2\,\mathrm m$，$S=5\,\mathrm m^2$，$K=0.4$，$\hat x^+=10.8\,\mathrm m$，$P^+=1.2\,\mathrm m^2$。后验均值位于 10 和 12 之间，后验方差小于先验方差；这两个结构检查比小数本身更重要。</p></div>
+
+<div className="study-note"><strong>本章结论</strong><br />预测阶段传播模型与不确定性；更新阶段用创新携带的新信息修正状态；卡尔曼增益是最小均方误差意义下的最优线性权重。下一章把这些统计量放回实验，研究参数如何改变行为。</div>

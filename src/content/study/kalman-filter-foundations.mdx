@@ -1,0 +1,115 @@
+---
+title: '第 01 章：状态、证据与概率模型'
+description: '从隐藏状态和测量开始，建立线性—高斯状态空间模型，并学会读懂卡尔曼滤波的记号。'
+pubDate: '2026-08-30'
+updatedDate: '2026-08-30'
+mode: 'reading'
+subject: 'Foundations'
+part: 1
+---
+
+import KalmanFormulaAtlas from '../../components/study/KalmanFormulaAtlas.jsx';
+import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
+
+## 01 / 三个容易混淆的量
+
+想象一辆小车在走廊里行驶。我们真正关心的是它的位置，但现实中没有一扇“真值窗口”可以让程序直接读取。程序看到的，是传感器返回的一串带抖动的数字。卡尔曼滤波首先要求我们把三件事分开：
+
+- **真实状态 $x_k$**：时刻 $k$ 的物理量，例如位置、速度或姿态。它存在于世界里，却通常不可直接访问。
+- **测量 $z_k$**：传感器在时刻 $k$ 的输出。它是证据，不是事实本身。
+- **估计 $\hat x_{k|k}$**：给定截至 $k$ 时刻的所有测量后，对状态条件均值的计算。
+
+下标表达“信息集”。$\hat x_{k|k-1}$ 只使用 $z_1,\ldots,z_{k-1}$，所以叫先验；$\hat x_{k|k}$ 已吸收 $z_k$，所以叫后验。竖线不是除法，而是“在给定这些信息的条件下”。
+
+<div className="notation-guide">
+  <div className="notation-guide-head"><strong>记号速查</strong><span>每个符号都有职责</span></div>
+  <dl>
+    <div><dt>$x_k$</dt><dd>物理世界中的真实状态，不带帽子。</dd></div>
+    <div><dt>$\hat x_{k|k-1}$</dt><dd>本次测量前的预测均值，即先验。</dd></div>
+    <div><dt>$\hat x_{k|k}$</dt><dd>吸收本次测量后的估计均值，即后验。</dd></div>
+    <div><dt>$P$</dt><dd>估计误差的方差或协方差，不是一次实际误差。</dd></div>
+    <div><dt>$Q$</dt><dd>过程噪声协方差：模型遗漏的状态变化有多大。</dd></div>
+    <div><dt>$R$</dt><dd>测量噪声协方差：传感器读数有多不可靠。</dd></div>
+  </dl>
+</div>
+
+<StudyCheckpoint
+  client:visible
+  id="foundations-symbols"
+  question="GPS 输出 $12.4\,\mathrm m$。哪个说法最准确？"
+  options={['它就是 $x_k$，因为 GPS 测到了位置', '它是 $z_k$，因为读数仍然含有测量噪声', '它是 $P_k$，因为位置有单位']}
+  answer={1}
+  hint="先问：这个数字是否能保证等于物理世界的真实位置？"
+  explanation="GPS 输出是观测 $z_k$。只有把观测和运动模型融合，滤波器才得到 $\hat x_{k|k}$；$P_k$ 则描述估计的不确定性，单位是位置单位的平方。"
+/>
+
+## 02 / 最小模型：随机游走与带噪测量
+
+先从最小而完整的模型开始：状态大致保持不变，但每一步可能被未建模扰动推开；传感器直接测量状态，却带有随机误差。
+
+$$
+x_k=x_{k-1}+w_k,\qquad w_k\sim\mathcal N(0,Q)
+$$
+
+$$
+z_k=x_k+v_k,\qquad v_k\sim\mathcal N(0,R)
+$$
+
+$w_k$ 和 $v_k$ 是一次采样实际抽到的误差；$Q=\mathrm E[w_k^2]$ 与 $R=\mathrm E[v_k^2]$ 是许多次重复实验下的平均平方尺度。若传感器标准差是 $2\,\mathrm m$，应使用 $R=4\,\mathrm m^2$，不能把标准差直接填进方差位置。
+
+<div className="formula-reading-card">
+  <span className="formula-reading-number">一次采样</span>
+  <p>若上一时刻 $x_{k-1}=10\,\mathrm m$，这一步的过程误差恰好是 $w_k=0.3\,\mathrm m$，则 $x_k=10.3\,\mathrm m$。若测量误差又是 $v_k=-1.1\,\mathrm m$，传感器读数为 $z_k=9.2\,\mathrm m$。单次的 $0.3$ 和 $-1.1$ 不是 $Q$、$R$；它们只是由这两个分布产生的样本。</p>
+</div>
+
+经典卡尔曼滤波的精确性来自三组假设：关系是线性的；初始状态和噪声是高斯的；过程噪声、测量噪声以及初始误差彼此不相关，并且噪声在时间上是白的。高斯假设的价值在于：一个高斯分布可以被均值和协方差完整描述，所以每次更新只需携带有限个数字。
+
+<div className="study-note"><strong>高斯假设的科学边界</strong><br />在线性—高斯模型中，卡尔曼递推给出精确的贝叶斯后验。若系统仍线性、噪声只满足给定的二阶矩条件而不服从高斯分布，同一递推仍给出线性最小均方误差估计，但均值与协方差不再能够描述完整后验。</div>
+
+<div className="assumption-grid">
+  <div><div>$x_0\sim\mathcal N(\hat x_0,P_0)$</div><p>初始信念由均值和方差给出；$P_0$ 大表示起点不确定。</p></div>
+  <div><div>$\mathrm E[w_k]=0$</div><p>过程扰动没有系统性偏向；若有偏置，应把偏置加入状态。</p></div>
+  <div><div>$\mathrm E[w_kw_j^T]=\delta_{kj}Q_k$</div><p>过程噪声在不同时间不相关，$\delta_{kj}$ 是克罗内克 delta。</p></div>
+  <div><div>$\mathrm E[w_kv_j^T]=0$</div><p>过程噪声和测量噪声不相关；否则标准递推需加入交叉协方差。</p></div>
+</div>
+
+## 03 / 推广到真实状态：矩阵模型
+
+实际应用往往不只估计一个位置。把位置和速度放进状态向量：
+
+$$
+x_k=F_kx_{k-1}+B_ku_k+w_k,\qquad z_k=H_kx_k+v_k.
+$$
+
+其中 $x_k\in\mathbb R^n$ 是 $n$ 维状态，$z_k\in\mathbb R^p$ 是 $p$ 维测量；$F_k$ 描述状态如何演化，$B_k u_k$ 是已知控制输入，$H_k$ 把状态投影到传感器空间。$Q_k$ 是 $n\times n$ 协方差，$R_k$ 是 $p\times p$ 协方差；非对角元素表示不同噪声分量之间的相关性。
+
+以采样周期 $\Delta t$ 的常速度模型为例：
+
+$$
+\begin{bmatrix}p_k\\v_k\end{bmatrix}
+=
+\begin{bmatrix}1&\Delta t\\0&1\end{bmatrix}
+\begin{bmatrix}p_{k-1}\\v_{k-1}\end{bmatrix}+w_k.
+$$
+
+第一行是 $p_k=p_{k-1}+\Delta t\,v_{k-1}$，第二行暂时假设速度保持不变。如果 GPS 只测位置，$H=[1\ \ 0]$；速度没有被直接读出，却能通过连续的位置测量间接显现。这里的“能否估计”不是传感器是否直接输出，而是系统的动态和测量是否共同提供了足够信息。
+
+<KalmanFormulaAtlas client:visible />
+
+## 04 / 先验为什么必须带方差
+
+在看到第 $k$ 次测量前，滤波器并不只持有一个预测数字，而是持有一个条件分布：
+
+$$
+x_k\mid z_{1:k-1}\sim\mathcal N(\hat x_{k|k-1},P_{k|k-1}).
+$$
+
+$P_{k|k-1}$ 是条件均方误差：
+
+$$
+P_{k|k-1}=\mathrm E\!\left[(x_k-\hat x_{k|k-1})^2\mid z_{1:k-1}\right].
+$$
+
+它不是“这一次错了多少”，因为真实 $x_k$ 往往未知；它是算法根据模型与历史数据对自身误差尺度的统计判断。标准差 $\sqrt P$ 才与状态有相同单位。下一章会从这个分布出发，推导预测和更新的每一行。
+
+<div className="study-note"><strong>本章结论</strong><br />卡尔曼滤波的输入不是一串裸数字，而是状态模型、测量模型、噪声协方差以及初始信念。把 $x$、$z$、$\hat x$ 和 $P$ 区分清楚，后面的推导就有了可靠的地基。</div>

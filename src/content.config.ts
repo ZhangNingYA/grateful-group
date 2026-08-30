@@ -30,6 +30,7 @@ const study = defineCollection({
         updatedDate: z.coerce.date().optional(),
         mode: z.enum(['lab', 'reading', 'derivation', 'build']).default('lab'),
         subject: z.string().optional(),
+        part: z.number().int().positive().optional(),
     }),
 });
 

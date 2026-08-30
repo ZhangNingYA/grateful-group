@@ -7,9 +7,12 @@ import StudyMath from '../../components/study/StudyMath.jsx';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 import '../../styles/study.css';
 
-const studies = (await getCollection('study')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const studies = (await getCollection('study')).sort((a, b) => {
+  const aPart = a.data.part ?? 0;
+  const bPart = b.data.part ?? 0;
+  if (aPart !== bPart) return aPart - bPart;
+  return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+});
 
 const modeLabels = {
   lab: 'Concept lab',
@@ -20,11 +23,46 @@ const modeLabels = {
 
 const courseCopy = {
   'kalman-filter': {
-    title: 'Kalman filtering',
-    description: 'Estimate a hidden state by combining a motion model with noisy measurements.',
+    title: 'Kalman filtering · course map',
+    description: 'A five-part textbook sequence: from probability and models to diagnostics and reliable implementation.',
     subject: 'State estimation',
-    units: '8 units',
-    duration: '45 min minimum',
+    units: 'Course map',
+    duration: '10 min',
+  },
+  'kalman-filter-foundations': {
+    title: '01 · State, evidence, and probability',
+    description: 'Learn what the filter estimates, how uncertainty becomes a distribution, and how to write a defensible state-space model.',
+    subject: 'Foundations',
+    units: '4 sections',
+    duration: '35 min',
+  },
+  'kalman-filter-recursion': {
+    title: '02 · The recursion, derived',
+    description: 'Derive prediction, innovation, gain, and covariance update from conditional Gaussians and least squares.',
+    subject: 'Derivation',
+    units: '4 sections',
+    duration: '45 min',
+  },
+  'kalman-filter-tuning': {
+    title: '03 · Q, R, P, and response',
+    description: 'Turn covariance assumptions into observable behavior, tune a filter without confusing smoothness for truth, and understand steady state.',
+    subject: 'Experiments',
+    units: '4 sections',
+    duration: '40 min',
+  },
+  'kalman-filter-diagnostics': {
+    title: '04 · Innovation and failure modes',
+    description: 'Use innovation tests, NIS, and residual patterns to tell a bad parameter from a bad model or a bad measurement.',
+    subject: 'Validation',
+    units: '4 sections',
+    duration: '35 min',
+  },
+  'kalman-filter-implementation': {
+    title: '05 · From equations to software',
+    description: 'Build a numerically stable implementation, handle missing data, and verify the result with tests that catch silent mistakes.',
+    subject: 'Engineering',
+    units: '4 sections',
+    duration: '40 min',
   },
 };
 
@@ -48,7 +86,7 @@ const getCourseCopy = (study) => courseCopy[study.id] ?? {
     <main class="study-index-shell">
       <header class="study-index-intro" aria-labelledby="study-hero-title">
         <div class="study-intro-copy">
-          <div class="study-hero-kicker"><span>Study / {String(studies.length).padStart(2, '0')} course{studies.length === 1 ? '' : 's'}</span><span>Personal curriculum</span></div>
+          <div class="study-hero-kicker"><span>Study / {String(studies.length).padStart(2, '0')} reading units</span><span>Personal curriculum</span></div>
           <h1 id="study-hero-title">Make the next step <em>small enough to take.</em></h1>
           <p class="study-index-lede">A growing set of interactive textbooks for turning difficult ideas into questions, evidence, and better explanations.</p>
         </div>

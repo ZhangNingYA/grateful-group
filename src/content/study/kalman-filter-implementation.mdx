@@ -1,0 +1,111 @@
+---
+title: '第 05 章：从方程到可靠软件'
+description: '把卡尔曼滤波写成可维护的工程模块：稳定求解矩阵、处理缺测和初始化，并用性质测试守住正确性。'
+pubDate: '2026-08-30'
+updatedDate: '2026-08-30'
+mode: 'build'
+subject: 'Engineering'
+part: 5
+---
+
+import KalmanPractice from '../../components/study/KalmanPractice.jsx';
+import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
+import StudyReflection from '../../components/study/StudyReflection.jsx';
+
+## 01 / 先把一轮更新写成接口
+
+一个可测试的滤波器，应明确区分预测和更新的输入输出。对一般线性模型：
+
+$$
+x_k=F_kx_{k-1}+B_ku_k+w_k,\qquad z_k=H_kx_k+v_k.
+$$
+
+每个时刻开始时保存后验状态 $(\hat x_{k-1|k-1},P_{k-1|k-1})$。预测接口读取 $F,B,u,Q$，返回 $(\hat x_{k|k-1},P_{k|k-1})$；更新接口读取 $H,R,z_k$，返回 $(\hat x_{k|k},P_{k|k})$。把这两个阶段分开，既方便处理缺测，也方便单独验证每条公式。
+
+伪代码如下：
+
+```text
+predict(x, P, F, B, u, Q):
+    x_prior = F * x + B * u
+    P_prior = F * P * transpose(F) + Q
+    return x_prior, symmetrize(P_prior)
+
+update(x_prior, P_prior, z, H, R):
+    innovation = z - H * x_prior
+    S = H * P_prior * transpose(H) + R
+    K = transpose(solve(S, H * P_prior))
+    x_post = x_prior + K * innovation
+    P_post = (I - K * H) * P_prior * transpose(I - K * H) + K * R * transpose(K)
+    return x_post, symmetrize(P_post), innovation, S
+```
+
+这里的 `solve(S, ·)` 表示解线性方程，不表示先求 $S^{-1}$。在数值库中通常使用 Cholesky 分解（$S$ 对称正定时）或带主元的 LDLᵀ 分解；显式求逆既浪费计算，也会放大舍入误差。
+
+## 02 / 协方差要保持什么性质
+
+理论上的协方差矩阵必须是对称半正定：
+
+$$
+P=P^T,\qquad a^TPa\ge0\quad\text{对所有向量 }a.
+$$
+
+浮点运算会逐渐破坏严格对称性，所以每轮结束后常做 $P\leftarrow(P+P^T)/2$。这一步只能修复微小的数值不对称，不能把一个真正错误的负特征值“洗白”。如果 Cholesky 分解失败，应记录诊断信息，检查 $Q$、$R$ 是否半正定、单位是否一致，以及更新顺序是否正确。
+
+Joseph 形式
+
+$$
+P^+=(I-KH)P^-(I-KH)^T+KRK^T
+$$
+
+把先验误差和测量噪声的贡献分开相加，通常比直接计算 $(I-KH)P^-$ 更稳健。若系统需要平方根滤波器，还可以直接传播协方差因子，让正定性在分解层面得到保护；这是高动态范围或高精度导航系统常用的进一步方案。
+
+## 03 / 缺测、延迟和初始化
+
+### 缺测不是零测量
+
+某一时刻没有 GPS 读数时，应只运行预测，把 $(\hat x^-,P^-)$ 作为下一时刻输入。把缺测填成 0 再更新，会注入一个并不存在的证据；把 $R$ 设成极大值虽在极限上接近跳过更新，却容易造成数值条件变差。更清晰的接口是 `measurement === null` 时显式跳过更新。
+
+### 部分测量
+
+若多维传感器只丢失一个分量，可以删去对应的 $H$ 行和 $R$ 行列后更新，或把可用观测分批处理。只有在噪声分量独立且正确处理相关性时，逐分量更新才与批量更新等价；$R$ 有非对角元素时，不能随意把它拆开。
+
+### 初始状态不是魔法常数
+
+初始均值可以来自静态测量或先验知识，初始协方差则应诚实表达不确定性。若只知道位置大约在 $[90,110]$ 内，可用均匀分布的方差近似 $20^2/12\approx33.3$，而不是把区间中点 100 配成 $P_0=0$。$P_0$ 过小会让滤波器在启动时拒绝有用测量；过大则会造成一段较激进的校正。无论选择何值，都应在启动日志中记录来源与单位。
+
+<StudyCheckpoint
+  client:visible
+  id="implementation-missing"
+  question="本次 GPS 数据缺失时，最合适的动作是什么？"
+  options={['把缺失值填成 0 并正常更新', '只执行预测，等待下一次有效测量', '把卡尔曼增益永久设为 1']}
+  answer={1}
+  hint="缺失值不是一个真实观测；更新阶段需要 $z_k$ 才有创新。"
+  explanation="没有观测就没有可计算的创新，应跳过更新并继续传播先验。下一次有效测量到来时，再执行完整更新。"
+/>
+
+## 04 / 用性质测试而不是只测几个小数
+
+下面的练习先复习标量更新。完成后，把这些不变量变成自动化测试：
+
+<KalmanPractice client:visible />
+
+推荐至少覆盖以下测试类别：
+
+<div className="practice-checklist">
+  <div><span>极限测试</span><strong>$R\to0\Rightarrow\hat x^+\to z$</strong><p>几乎无噪声的测量应主导后验；$R\to\infty$ 则应保留预测。</p></div>
+  <div><span>结构测试</span><strong>$P^+=P^{+T}\succeq0$</strong><p>每次更新后检查对称性和最小特征值，捕获数值不稳定。</p></div>
+  <div><span>单调性测试</span><strong>$0\le K\le1$</strong><p>标量正方差模型中，后验必须位于先验与测量之间。</p></div>
+  <div><span>统计测试</span><strong>$\mathbb E[\epsilon]\approx p$</strong><p>在已知真值的模拟数据上，批量检查 NIS 是否与自由度相符。</p></div>
+</div>
+
+还应测试单位和形状：$F$ 必须是 $n\times n$，$H$ 是 $p\times n$，$Q$ 是 $n\times n$，$R$ 是 $p\times p$；位置与速度不能在没有换算的情况下直接相加。对随机生成的正定协方差做性质测试，往往比只用一组手算数字更容易发现转置、索引和维度错误。
+
+### 记录足够的运行证据
+
+生产系统至少应能记录时间戳、先验和后验协方差的摘要、创新、$S$ 的条件数或分解状态、NIS 以及测量是否被门控。出现异常时，这些证据能回答“传感器错了”“模型错了”还是“数值实现错了”。日志本身也要注意采样频率、隐私和存储成本；记录摘要，不必永久保存所有原始状态。
+
+<div className="worked-example"><span>上线前的最小验收</span><p>在可控模拟器中生成已知 $Q$、$R$ 的轨迹；确认后验 RMSE 不劣于裸测量，NIS 均值接近测量维数，95% 置信区间覆盖率接近 95%，并在缺测、异常值、采样间隔变化和极端初值下不会产生 NaN 或负方差。最后再用独立的真实数据验证，避免把模拟器的实现错误当成滤波器的成功。</p></div>
+
+<div className="study-note"><strong>全课程结论</strong><br />可靠的卡尔曼滤波器由三部分组成：可解释的状态模型、与物理系统相称的协方差、以及持续的统计和数值诊断。公式只是核心循环；真正的工程质量来自你是否能说明每个矩阵从哪里来、在何种假设下有效，以及失效时系统会如何被发现。</div>
+
+<StudyReflection client:visible storageKey="study-reflection:kalman-filter-course" />
