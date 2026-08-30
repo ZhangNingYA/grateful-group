@@ -26,6 +26,7 @@
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  overflow-x: clip;
   color: var(--textbook-ink);
   background: var(--textbook-paper);
   font-family: var(--textbook-sans);
@@ -150,7 +151,7 @@
 }
 
 .textbook-layout { display: grid; grid-template-columns: 210px minmax(0, 770px) 210px; gap: 44px; width: min(1280px, calc(100% - 64px)); margin: 0 auto; padding: 60px 0 100px; align-items: start; }
-.textbook-rail, .textbook-inspector { min-width: 0; }
+.textbook-rail, .textbook-inspector { min-width: 0; align-self: stretch; }
 .rail-sticky, .inspector-sticky { position: sticky; top: 92px; }
 .rail-heading, .inspector-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; color: var(--textbook-muted); font-size: 0.68rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; }
 .rail-heading b, .inspector-card-head b { color: var(--textbook-coral); font-family: var(--textbook-serif); font-size: 1.15rem; font-weight: 500; }
