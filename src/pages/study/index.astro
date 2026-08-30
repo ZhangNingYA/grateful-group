@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import BlogHeader from '../../components/blog/BlogHeader.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
-import StudyMath from '../../components/study/StudyMath.jsx';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 import '../../styles/study.css';
 
@@ -110,13 +109,15 @@ const getCourseCopy = (study) => courseCopy[study.id] ?? {
                 <a class:list={['study-card', index === 0 && 'study-card-featured']} href={`/study/${study.id}/`}>
                   <div class="study-card-rail"><span>{String(index + 1).padStart(2, '0')}</span><i></i><small>{copy.units}</small></div>
                   <div class="study-card-copy">
-                    <div class="study-card-mode">{modeLabels[study.data.mode]} / {copy.subject}</div>
+                    <div class="study-card-mode">
+                      <span>{modeLabels[study.data.mode]} / {copy.subject}</span>
+                      {index === 0 && <b>Start here</b>}
+                    </div>
                     <h3>{copy.title}</h3>
                     <p>{copy.description}</p>
                     <div class="study-card-meta"><span>{copy.duration}</span><span>Updated <FormattedDate date={study.data.updatedDate ?? study.data.pubDate} /></span></div>
                   </div>
-                  <div class="study-card-mark" aria-hidden="true"><StudyMath expression={'\\rightarrow'} /></div>
-                  {index === 0 && <div class="study-card-formula" aria-hidden="true"><StudyMath expression={'x_k\\rightarrow z_k\\rightarrow\\hat x_k'} display /></div>}
+                  <div class="study-card-mark" aria-hidden="true">→</div>
                 </a>
               );
             })}
@@ -124,14 +125,14 @@ const getCourseCopy = (study) => courseCopy[study.id] ?? {
         </section>
 
         <aside class="study-principles" aria-labelledby="study-principles-title">
-          <div class="study-principles-top"><span class="study-section-kicker">A useful rhythm</span><StudyMath expression={'k\\rightarrow k+1'} /></div>
+          <span class="study-section-kicker">A useful rhythm</span>
           <h2 id="study-principles-title">Learn by<br /><em>leaving a trace.</em></h2>
           <ol>
             <li><span>01</span><div><strong>Start with a question</strong><p>Turn “I do not get it” into one thing you can test.</p></div></li>
             <li><span>02</span><div><strong>Make evidence visible</strong><p>Use a formula, chart, or counterexample to challenge intuition.</p></div></li>
             <li><span>03</span><div><strong>Return with context</strong><p>Keep the useful mistake and choose the next small step.</p></div></li>
           </ol>
-          <div class="study-principles-footer"><StudyMath expression={'\\text{question}\\rightarrow\\text{evidence}\\rightarrow\\text{revision}'} /></div>
+          <p class="study-principles-note">One chapter at a time. Your progress stays in this browser, so you can stop when the idea is still fresh.</p>
         </aside>
       </div>
 
