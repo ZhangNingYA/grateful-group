@@ -1437,6 +1437,10 @@
       {
         "term": "warming climates",
         "explanation": "变暖的气候"
+      },
+      {
+        "term": "bring back",
+        "explanation": "恢复；重新引入"
       }
     ],
     "highlights": [
@@ -2099,6 +2103,10 @@
       {
         "term": "gluten",
         "explanation": "麸质；谷胶"
+      },
+      {
+        "term": "in place of",
+        "explanation": "代替；取代"
       }
     ],
     "highlights": [
@@ -3804,8 +3812,8 @@
     "translation": "为什么这些人自愿让自己经历看似非常不愉快的经历？",
     "vocabulary": [
       {
-        "term": "voluntarily expose",
-        "explanation": "自愿使自己接触；主动暴露于"
+        "term": "expose oneself to",
+        "explanation": "使自己接触；让自己暴露于"
       }
     ],
     "highlights": [
@@ -4589,6 +4597,10 @@
       {
         "term": "appalling",
         "explanation": "骇人的；令人震惊的"
+      },
+      {
+        "term": "make it through",
+        "explanation": "挺过；顺利度过"
       }
     ],
     "highlights": [

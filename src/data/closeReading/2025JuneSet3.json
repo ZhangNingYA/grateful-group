@@ -122,8 +122,12 @@
     "translation": "此外，它还增强了妇女的政府关心她们的问题的感觉，并激励年轻女性更多地参与政治。",
     "vocabulary": [
       {
-        "term": "addition",
-        "explanation": "此外；增加"
+        "term": "bolster",
+        "explanation": "增强；巩固"
+      },
+      {
+        "term": "politically engaged",
+        "explanation": "积极参与政治的"
       }
     ],
     "structure": {
@@ -172,8 +176,12 @@
     "translation": "目前，美国在政府中的女性代表人数方面排名世界第 73 位。",
     "vocabulary": [
       {
-        "term": "Currently",
-        "explanation": "目前"
+        "term": "rank ... in the world",
+        "explanation": "世界排名……"
+      },
+      {
+        "term": "female representation",
+        "explanation": "女性代表比例"
       }
     ],
     "structure": {
@@ -380,8 +388,8 @@
     "translation": "当社交计划被取消时，我有时会暗自高兴。",
     "vocabulary": [
       {
-        "term": "sometimes",
-        "explanation": "有时"
+        "term": "call off",
+        "explanation": "取消"
       }
     ],
     "structure": {
@@ -471,10 +479,6 @@
   "M-B02": {
     "translation": "我喜欢我的房间。",
     "vocabulary": [
-      {
-        "term": "love",
-        "explanation": "喜欢；喜爱"
-      }
     ],
     "structure": {
       "pattern": "主语 + 谓语",
@@ -678,6 +682,10 @@
       {
         "term": "solitude",
         "explanation": "独处"
+      },
+      {
+        "term": "lead to",
+        "explanation": "导致；通向"
       }
     ],
     "structure": {
@@ -903,8 +911,12 @@
     "translation": "事实上，费斯特对艺术家和科学家的研究表明，富有创造力的人最显着的特征之一是他们对社交不太感兴趣。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "研究"
+        "term": "prominent features",
+        "explanation": "突出特征"
+      },
+      {
+        "term": "lesser interest in",
+        "explanation": "对……兴趣较低"
       }
     ],
     "structure": {
@@ -1190,6 +1202,10 @@
       {
         "term": "solitude",
         "explanation": "独处"
+      },
+      {
+        "term": "turn out",
+        "explanation": "结果是；事实证明"
       }
     ],
     "structure": {
@@ -1328,10 +1344,6 @@
       {
         "term": "likely to",
         "explanation": "很可能"
-      },
-      {
-        "term": "listen",
-        "explanation": "倾听"
       }
     ],
     "structure": {
@@ -1411,8 +1423,8 @@
     "translation": "最近的研究让我们更好地理解了其中的原因。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "研究"
+        "term": "give ... a better understanding",
+        "explanation": "使……有更深入的理解"
       }
     ],
     "structure": {
@@ -1457,8 +1469,8 @@
     "translation": "当另一个人在场时，你的大脑会情不自禁地集中注意力。",
     "vocabulary": [
       {
-        "term": "another",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "can't help but",
+        "explanation": "忍不住；不得不"
       }
     ],
     "structure": {
@@ -1628,6 +1640,10 @@
       {
         "term": "occasional",
         "explanation": "偶尔的"
+      },
+      {
+        "term": "in the long run",
+        "explanation": "从长远来看"
       }
     ],
     "structure": {
@@ -1701,6 +1717,10 @@
       {
         "term": "aesthetics",
         "explanation": "审美观"
+      },
+      {
+        "term": "take in",
+        "explanation": "吸收；接纳"
       }
     ],
     "structure": {
@@ -1814,8 +1834,12 @@
     "translation": "如果某人不再关心他人并切断所有联系，这可能表明对社会关系的非理性忽视。",
     "vocabulary": [
       {
-        "term": "someone",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "cut off all contact",
+        "explanation": "切断所有联系"
+      },
+      {
+        "term": "irrational neglect",
+        "explanation": "不理性的忽视"
       }
     ],
     "structure": {
@@ -1866,10 +1890,6 @@
       {
         "term": "real danger",
         "explanation": "真正的危险"
-      },
-      {
-        "term": "alone",
-        "explanation": "独处的"
       }
     ],
     "structure": {
@@ -1922,8 +1942,12 @@
     "translation": "此外，内向的人往往拥有较少但更牢固的友谊——这与更大的幸福感有关。",
     "vocabulary": [
       {
-        "term": "addition",
-        "explanation": "此外；增加"
+        "term": "be linked to",
+        "explanation": "与……相关"
+      },
+      {
+        "term": "greater happiness",
+        "explanation": "更高的幸福感"
       }
     ],
     "structure": {
@@ -1949,8 +1973,8 @@
     "translation": "与许多事情一样，质量胜过数量。",
     "vocabulary": [
       {
-        "term": "quality",
-        "explanation": "质量"
+        "term": "quality reigns over quantity",
+        "explanation": "质量胜过数量"
       }
     ],
     "structure": {
@@ -2318,8 +2342,12 @@
     "translation": "此外，在正常工作条件下，管理者很少看到员工发展努力的全部效果。",
     "vocabulary": [
       {
-        "term": "Further",
-        "explanation": "进一步"
+        "term": "under normal working conditions",
+        "explanation": "在正常工作条件下"
+      },
+      {
+        "term": "employee development efforts",
+        "explanation": "员工发展工作"
       }
     ],
     "structure": {
@@ -2522,8 +2550,12 @@
     "translation": "如果不这样做，他们会将这种体验视为一种游戏，这可能很难应用于工作中，或者更糟糕的是，与日常工作任务无关。",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历；体验"
+        "term": "apply on the job",
+        "explanation": "应用于实际工作"
+      },
+      {
+        "term": "irrelevant to",
+        "explanation": "与……无关"
       }
     ],
     "structure": {
@@ -2645,8 +2677,8 @@
     "translation": "政府应该关注幸福的想法受到了批评。",
     "vocabulary": [
       {
-        "term": "governments",
-        "explanation": "政府"
+        "term": "focus on",
+        "explanation": "专注于；集中于"
       }
     ],
     "structure": {
@@ -2714,8 +2746,8 @@
     "translation": "难道不同的人体验到的幸福程度不一样吗？",
     "vocabulary": [
       {
-        "term": "different",
-        "explanation": "不同的"
+        "term": "levels of happiness",
+        "explanation": "幸福程度"
       }
     ],
     "structure": {
@@ -2862,6 +2894,14 @@
       {
         "term": "GDP growth",
         "explanation": "国内生产总值增长"
+      },
+      {
+        "term": "focus on",
+        "explanation": "专注于；集中于"
+      },
+      {
+        "term": "depend on",
+        "explanation": "取决于"
       }
     ],
     "structure": {
@@ -2887,12 +2927,12 @@
     "translation": "获取是关键：人们不需要拥有，而是需要获取使他们能够过上美好生活的东西。",
     "vocabulary": [
       {
-        "term": "access",
-        "explanation": "获取；使用权"
+        "term": "access is key",
+        "explanation": "获得使用权是关键"
       },
       {
-        "term": "own",
-        "explanation": "拥有"
+        "term": "enable ... to live well",
+        "explanation": "使……能够生活得更好"
       }
     ],
     "structure": {
@@ -3126,8 +3166,16 @@
     "translation": "然而，它充分说明了世界卫生组织认为有必要利用改善心理健康的经济效益来说服各国政府，采取拟议措施的成本是合理的。",
     "vocabulary": [
       {
-        "term": "however",
-        "explanation": "然而"
+        "term": "appeal to",
+        "explanation": "诉诸；呼吁"
+      },
+      {
+        "term": "economic benefits",
+        "explanation": "经济效益"
+      },
+      {
+        "term": "proposed measures",
+        "explanation": "拟议措施"
       }
     ],
     "structure": {

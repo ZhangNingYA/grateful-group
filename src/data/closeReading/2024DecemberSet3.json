@@ -197,7 +197,12 @@
   },
   "C05": {
     "translation": "当非常富有的人承诺捐出大部分数十亿美元时，我们都会鼓掌，但他们通常会留下数百万美元可以传承，仍然远远超过大多数人一生的预期收入。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "pass on",
+        "explanation": "传给；留给后人"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -286,6 +291,10 @@
       {
         "term": "luxuries",
         "explanation": "奢侈品；奢侈享受"
+      },
+      {
+        "term": "give away",
+        "explanation": "捐赠；赠送"
       }
     ],
     "highlights": [
@@ -735,6 +744,10 @@
       {
         "term": "alleviation",
         "explanation": "缓解；减轻"
+      },
+      {
+        "term": "open up",
+        "explanation": "开放；打开"
       }
     ],
     "highlights": [
@@ -1012,6 +1025,10 @@
       {
         "term": "condemnation",
         "explanation": "谴责"
+      },
+      {
+        "term": "take place",
+        "explanation": "发生"
       }
     ],
     "highlights": [
@@ -1484,6 +1501,10 @@
       {
         "term": "cooperation",
         "explanation": "合作；协作"
+      },
+      {
+        "term": "deal with",
+        "explanation": "处理；应对"
       }
     ],
     "highlights": [
@@ -2225,7 +2246,12 @@
   },
   "M-H10": {
     "translation": "在进行交换之前无需建立任何关系。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "take place",
+        "explanation": "发生"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2575,6 +2601,10 @@
       {
         "term": "consciousness",
         "explanation": "意识；认识"
+      },
+      {
+        "term": "make up",
+        "explanation": "组成；构成"
       }
     ],
     "highlights": [
@@ -4573,6 +4603,10 @@
       {
         "term": "online quiz",
         "explanation": "在线测验"
+      },
+      {
+        "term": "come up with",
+        "explanation": "提出；想出"
       }
     ],
     "highlights": [
@@ -5068,6 +5102,10 @@
       {
         "term": "gamble",
         "explanation": "冒险尝试；赌注"
+      },
+      {
+        "term": "pay off",
+        "explanation": "取得成功；得到回报"
       }
     ],
     "highlights": [

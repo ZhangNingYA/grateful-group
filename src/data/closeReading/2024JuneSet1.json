@@ -206,6 +206,10 @@
       {
         "term": "stress response",
         "explanation": "应激反应"
+      },
+      {
+        "term": "turn down",
+        "explanation": "降低；减弱"
       }
     ],
     "highlights": [
@@ -247,6 +251,14 @@
       {
         "term": "clarity",
         "explanation": "清晰；清楚的思路"
+      },
+      {
+        "term": "lead to",
+        "explanation": "导致；通向"
+      },
+      {
+        "term": "turn out",
+        "explanation": "结果是；事实证明"
       }
     ],
     "highlights": [
@@ -1466,7 +1478,12 @@
   },
   "M-E01": {
     "translation": "大约四年后，少年女士花园俱乐部的成员（在这棵树不幸死亡之前一直在照顾这棵树）找到了一棵小树，它是用从原来的树上取下的坚果长成的。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "track down",
+        "explanation": "追查到；找到"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1806,6 +1823,10 @@
       {
         "term": "legally binding",
         "explanation": "具有法律约束力的"
+      },
+      {
+        "term": "bring ... around to",
+        "explanation": "把话题引到……；使转而考虑"
       }
     ],
     "highlights": [
@@ -1855,6 +1876,10 @@
       {
         "term": "dismissing",
         "explanation": "不予考虑；摒弃"
+      },
+      {
+        "term": "turn out",
+        "explanation": "结果是；事实证明"
       }
     ],
     "highlights": [
@@ -2218,6 +2243,10 @@
       {
         "term": "mortgage",
         "explanation": "抵押贷款"
+      },
+      {
+        "term": "auction off",
+        "explanation": "拍卖掉"
       }
     ],
     "highlights": [
@@ -2366,6 +2395,10 @@
       {
         "term": "facilitate",
         "explanation": "促进；使便利"
+      },
+      {
+        "term": "set up",
+        "explanation": "设立；建立"
       }
     ],
     "highlights": [
@@ -2495,7 +2528,12 @@
   },
   "M-M02": {
     "translation": "那么这一切是怎么发生的呢？",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "come about",
+        "explanation": "发生；产生"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -4482,6 +4520,10 @@
       {
         "term": "renewable",
         "explanation": "可再生的"
+      },
+      {
+        "term": "rely on",
+        "explanation": "依靠"
       }
     ],
     "highlights": [
@@ -4529,12 +4571,12 @@
     "translation": "与此同时，能够利用可再生能源的国家通常要归功于非凡的水力发电能力。",
     "vocabulary": [
       {
-        "term": "renewables",
-        "explanation": "可再生能源"
-      },
-      {
         "term": "capabilities",
         "explanation": "能力；性能"
+      },
+      {
+        "term": "run off renewables",
+        "explanation": "依靠可再生能源运行"
       }
     ],
     "highlights": [

@@ -126,7 +126,7 @@ const irregularLemmas: Record<string, string> = {
   "don't": 'not', "doesn't": 'not', "didn't": 'not', "isn't": 'not', "aren't": 'not',
   "wasn't": 'not', "weren't": 'not', "can't": 'not', "couldn't": 'not', "won't": 'not',
   fell: 'fall', fallen: 'fall', rose: 'rise', risen: 'rise', sank: 'sink', sunk: 'sink',
-  swept: 'sweep', came: 'come', grown: 'grow', paid: 'pay', drew: 'draw', swung: 'swing',
+  swept: 'sweep', came: 'come', grew: 'grow', grown: 'grow', paid: 'pay', drew: 'draw', swung: 'swing',
   brought: 'bring', led: 'lead',
   gave: 'give', given: 'give', found: 'find', made: 'make',
   took: 'take', taken: 'take', thought: 'think',
@@ -134,6 +134,7 @@ const irregularLemmas: Record<string, string> = {
 
 const wordForms = (word: string) => {
   const forms = new Set<string>([word]);
+  if (word.endsWith("'s") && word.length > 2) forms.add(word.slice(0, -2));
   if (irregularLemmas[word]) forms.add(irregularLemmas[word]);
   if (/^(?:aren't|isn't|wasn't|weren't|we're|they're|you're|he's|she's|it's|there's)$/.test(word)) {
     forms.add('be');

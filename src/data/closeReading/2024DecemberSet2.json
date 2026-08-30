@@ -251,6 +251,10 @@
       {
         "term": "adversarial",
         "explanation": "对抗性的"
+      },
+      {
+        "term": "heat up",
+        "explanation": "变得激烈；升温"
       }
     ],
     "highlights": [
@@ -629,6 +633,10 @@
       {
         "term": "airtime",
         "explanation": "发言时间"
+      },
+      {
+        "term": "take up",
+        "explanation": "占用"
       }
     ],
     "highlights": [
@@ -1826,10 +1834,6 @@
     "translation": "我们把最近的点称为近地点，最远的点称为远地点。2018年的最近近地点和最远远地点都发生在1月份，相差约3万英里。",
     "vocabulary": [
       {
-        "term": "perige",
-        "explanation": "近地点"
-      },
-      {
         "term": "perigee",
         "explanation": "近地点"
       },
@@ -2078,6 +2082,10 @@
       {
         "term": "supermoon",
         "explanation": "超级月亮"
+      },
+      {
+        "term": "line up with",
+        "explanation": "与……一致；恰逢"
       }
     ],
     "highlights": [
@@ -2597,7 +2605,12 @@
   },
   "M-I05": {
     "translation": "月亮周期平均为 29.53 天，因此在大多数月份中，我们仍然会看到一次新月和一次满月。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "end up with",
+        "explanation": "最终得到；最终出现"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2830,6 +2843,10 @@
       {
         "term": "disperse",
         "explanation": "散开；传播"
+      },
+      {
+        "term": "take on",
+        "explanation": "承担"
       }
     ],
     "highlights": [
@@ -3070,6 +3087,10 @@
       {
         "term": "calendar nonsense",
         "explanation": "日历概念上的噱头"
+      },
+      {
+        "term": "go into",
+        "explanation": "涉及；详细讨论"
       }
     ],
     "highlights": [
@@ -3262,6 +3283,10 @@
       {
         "term": "geographies",
         "explanation": "地理环境；地理区域"
+      },
+      {
+        "term": "come up with",
+        "explanation": "想出；提出"
       }
     ],
     "highlights": [
@@ -3337,6 +3362,10 @@
       {
         "term": "full moon",
         "explanation": "满月"
+      },
+      {
+        "term": "juice up",
+        "explanation": "给……增加噱头；使更有吸引力"
       }
     ],
     "highlights": [
@@ -3841,6 +3870,10 @@
       {
         "term": "endorse",
         "explanation": "支持；认可"
+      },
+      {
+        "term": "result in",
+        "explanation": "导致；造成"
       }
     ],
     "highlights": [
@@ -3977,6 +4010,10 @@
       {
         "term": "unaffordable",
         "explanation": "负担不起的"
+      },
+      {
+        "term": "push up",
+        "explanation": "推高；使上涨"
       }
     ],
     "highlights": [
@@ -5684,6 +5721,10 @@
       {
         "term": "artifacts",
         "explanation": "人工制品"
+      },
+      {
+        "term": "open ... up to",
+        "explanation": "使……接触并接受"
       }
     ],
     "highlights": [

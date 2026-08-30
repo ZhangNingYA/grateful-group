@@ -138,8 +138,16 @@
         "explanation": "缓步动物"
       },
       {
-        "term": "moss",
-        "explanation": "苔藓"
+        "term": "mossy home",
+        "explanation": "名词短语，在句中意为“长满苔藓的栖息地”"
+      },
+      {
+        "term": "turn out",
+        "explanation": "结果是；事实证明"
+      },
+      {
+        "term": "dry out",
+        "explanation": "变干；干透"
       }
     ],
     "structure": {
@@ -236,6 +244,10 @@
       {
         "term": "tardigrade",
         "explanation": "缓步动物"
+      },
+      {
+        "term": "dry out",
+        "explanation": "变干；干透"
       }
     ],
     "structure": {
@@ -519,8 +531,8 @@
     "translation": "然而，正如我将证明的那样，这种说法显然是错误的。",
     "vocabulary": [
       {
-        "term": "However",
-        "explanation": "然而"
+        "term": "demonstrably wrong",
+        "explanation": "明显错误的；可证伪的"
       }
     ],
     "structure": {
@@ -565,8 +577,12 @@
     "translation": "我最近的研究重点是畜牧业影响空气质量和气候变化的方式。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "研究"
+        "term": "animal agriculture",
+        "explanation": "畜牧业；动物农业"
+      },
+      {
+        "term": "air quality",
+        "explanation": "空气质量"
       }
     ],
     "structure": {
@@ -979,10 +995,6 @@
       {
         "term": "fertilizer",
         "explanation": "肥料"
-      },
-      {
-        "term": "emissions",
-        "explanation": "排放物"
       }
     ],
     "structure": {
@@ -1004,8 +1016,12 @@
     "translation": "然而，当他们研究交通运输的碳足迹时，他们忽略了制造汽车材料和零部件、组装车辆以及维护道路、桥梁和机场对气候的影响。",
     "vocabulary": [
       {
-        "term": "However",
-        "explanation": "然而"
+        "term": "carbon footprint",
+        "explanation": "碳足迹"
+      },
+      {
+        "term": "ignore impacts on",
+        "explanation": "忽视对……的影响"
       }
     ],
     "structure": {
@@ -1027,8 +1043,8 @@
     "translation": "相反，他们只考虑成品汽车、卡车、火车和飞机排放的废气。",
     "vocabulary": [
       {
-        "term": "Instead",
-        "explanation": "而不是；反而"
+        "term": "exhaust smoke",
+        "explanation": "尾气；排放烟气"
       }
     ],
     "structure": {
@@ -1112,8 +1128,8 @@
     "translation": "值得赞扬的是，粮农组织立即承认了自己的错误。",
     "vocabulary": [
       {
-        "term": "immediately",
-        "explanation": "立即"
+        "term": "own up to",
+        "explanation": "承认；坦白"
       }
     ],
     "structure": {
@@ -1251,10 +1267,6 @@
         "explanation": "直接排放"
       },
       {
-        "term": "emissions",
-        "explanation": "排放物"
-      },
-      {
         "term": "livestock",
         "explanation": "牲畜；畜牧业"
       }
@@ -1278,8 +1290,12 @@
     "translation": "许多人仍然认为，每周少吃一次肉就会对气候产生重大影响。",
     "vocabulary": [
       {
-        "term": "continue",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "as infrequently as",
+        "explanation": "低至……的频率"
+      },
+      {
+        "term": "make a significant difference to",
+        "explanation": "对……产生显著影响"
       }
     ],
     "structure": {
@@ -1494,8 +1510,8 @@
     "translation": "2015年，发达国家人均肉类年消费量为92公斤，而中东和北非为24公斤，东南亚为18公斤。",
     "vocabulary": [
       {
-        "term": "average",
-        "explanation": "平均的"
+        "term": "annual meat consumption per person",
+        "explanation": "人均年度肉类消费量"
       }
     ],
     "structure": {
@@ -1723,6 +1739,10 @@
       {
         "term": "ruminant",
         "explanation": "反刍动物"
+      },
+      {
+        "term": "break ... down",
+        "explanation": "分解……"
       }
     ],
     "structure": {
@@ -1783,8 +1803,12 @@
     "translation": "目前预计到 2050 年世界人口将达到 98 亿。",
     "vocabulary": [
       {
-        "term": "population",
-        "explanation": "人口"
+        "term": "be projected to reach",
+        "explanation": "预计将达到"
+      },
+      {
+        "term": "world population",
+        "explanation": "世界人口"
       }
     ],
     "structure": {
@@ -1948,8 +1972,8 @@
     "translation": "我相信首先要从基于科学的事实开始。",
     "vocabulary": [
       {
-        "term": "believe",
-        "explanation": "相信"
+        "term": "science-based facts",
+        "explanation": "以科学为依据的事实"
       }
     ],
     "structure": {
@@ -2142,6 +2166,10 @@
       {
         "term": "desperate",
         "explanation": "绝望的；迫切的"
+      },
+      {
+        "term": "be fired up by",
+        "explanation": "被……激起强烈热情"
       }
     ],
     "structure": {
@@ -2163,8 +2191,12 @@
     "translation": "有时我们的行为会被误认为是贪婪和虚荣，但事实还不止于此。",
     "vocabulary": [
       {
-        "term": "Sometimes",
-        "explanation": "有时"
+        "term": "be mistaken for",
+        "explanation": "被误认为"
+      },
+      {
+        "term": "greed and vanity",
+        "explanation": "贪婪与虚荣"
       }
     ],
     "structure": {
@@ -2236,8 +2268,12 @@
     "translation": "我们寻求的不是物品本身，而是我们通过拥有它们而获得的爱。",
     "vocabulary": [
       {
-        "term": "themselves",
-        "explanation": "他们自己"
+        "term": "stand to gain",
+        "explanation": "有望获得"
+      },
+      {
+        "term": "possession of",
+        "explanation": "对……的占有；拥有"
       }
     ],
     "structure": {
@@ -2259,8 +2295,12 @@
     "translation": "下次当我们看到有人驾驶法拉利时，我们不应该谴责他们的贪婪，我们应该怜悯他们对世界爱的强烈需求。",
     "vocabulary": [
       {
-        "term": "someone",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "condemn them for",
+        "explanation": "因……而谴责他们"
+      },
+      {
+        "term": "intensity of their need",
+        "explanation": "他们需求的强烈程度"
       }
     ],
     "structure": {
@@ -2409,8 +2449,12 @@
     "translation": "因为我们对其他人的价值判断能力很差，所以我们的最终责任仍然是对几乎所有遇到我们的人表现出友善、善良、好奇和富有想象力。",
     "vocabulary": [
       {
-        "term": "because",
-        "explanation": "因为"
+        "term": "poor judges of",
+        "explanation": "不善于判断……的人"
+      },
+      {
+        "term": "ultimate duty",
+        "explanation": "最终责任；根本义务"
       }
     ],
     "structure": {
@@ -2528,8 +2572,8 @@
     "translation": "但这种趋势并没有持续下去，而且差距仍然在扩大。",
     "vocabulary": [
       {
-        "term": "continue",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "gap remains yawning",
+        "explanation": "差距依然悬殊"
       }
     ],
     "structure": {
@@ -2553,6 +2597,10 @@
       {
         "term": "family leave",
         "explanation": "家庭休假"
+      },
+      {
+        "term": "be put down to",
+        "explanation": "被归因于"
       }
     ],
     "structure": {
@@ -2601,8 +2649,8 @@
     "translation": "尽管休假政策可能有助于这些女性留在工作场所，而不是为了组建家庭而辍学，但那些回来的女性发现她们的工资增幅低于男性。",
     "vocabulary": [
       {
-        "term": "policies",
-        "explanation": "政策"
+        "term": "drop out",
+        "explanation": "退出；中途离开"
       }
     ],
     "structure": {
@@ -2726,6 +2774,10 @@
       {
         "term": "motherhood penalty",
         "explanation": "母职惩罚"
+      },
+      {
+        "term": "childbearing years",
+        "explanation": "生育年龄阶段"
       }
     ],
     "structure": {
@@ -2747,8 +2799,12 @@
     "translation": "有孩子的女性开始发现她们的工资落后于男性。",
     "vocabulary": [
       {
-        "term": "children",
-        "explanation": "儿童"
+        "term": "slip behind",
+        "explanation": "逐渐落后于"
+      },
+      {
+        "term": "male counterparts",
+        "explanation": "男性同行；男性同等群体"
       }
     ],
     "structure": {
@@ -2772,6 +2828,14 @@
       {
         "term": "unpaid labor",
         "explanation": "无偿劳动"
+      },
+      {
+        "term": "take on",
+        "explanation": "承担"
+      },
+      {
+        "term": "eat into",
+        "explanation": "侵蚀；占用"
       }
     ],
     "structure": {
@@ -2795,6 +2859,14 @@
       {
         "term": "promotion",
         "explanation": "晋升"
+      },
+      {
+        "term": "be passed over for",
+        "explanation": "在……方面被忽视；未获考虑"
+      },
+      {
+        "term": "set ... back",
+        "explanation": "使……受挫；拖慢进展"
       }
     ],
     "structure": {
@@ -2816,8 +2888,8 @@
     "translation": "如果没有出台休假政策，会发生什么？",
     "vocabulary": [
       {
-        "term": "happened",
-        "explanation": "发生"
+        "term": "leave policies",
+        "explanation": "休假政策"
       }
     ],
     "structure": {
@@ -2841,6 +2913,10 @@
       {
         "term": "parity",
         "explanation": "平等；同等地位"
+      },
+      {
+        "term": "go into",
+        "explanation": "涉及；详细讨论"
       }
     ],
     "structure": {
@@ -2866,8 +2942,8 @@
         "explanation": "工资平等"
       },
       {
-        "term": "parity",
-        "explanation": "平等；同等地位"
+        "term": "stalled either way",
+        "explanation": "无论如何都停滞"
       }
     ],
     "structure": {

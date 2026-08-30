@@ -887,10 +887,6 @@
       {
         "term": "tap water",
         "explanation": "名词短语，在句中意为“自来水”"
-      },
-      {
-        "term": "impossible",
-        "explanation": "形容词，在句中意为“不可能的”"
       }
     ],
     "structure": {
@@ -2221,10 +2217,6 @@
       {
         "term": "sports team",
         "explanation": "名词短语，在句中意为“运动队”"
-      },
-      {
-        "term": "direction",
-        "explanation": "名词，在句中意为“方向”"
       }
     ],
     "structure": {
@@ -2391,6 +2383,10 @@
       {
         "term": "impacts",
         "explanation": "名词，在句中意为“影响”"
+      },
+      {
+        "term": "far beyond",
+        "explanation": "远远超出"
       }
     ],
     "structure": {
@@ -3296,10 +3292,6 @@
       {
         "term": "light source",
         "explanation": "名词短语，在句中意为“光源”"
-      },
-      {
-        "term": "fluorescent",
-        "explanation": "名词，在句中意为“荧光”"
       }
     ],
     "structure": {
@@ -3593,10 +3585,6 @@
       {
         "term": "symbiotic relationship",
         "explanation": "名词短语，在句中意为“共生关系”"
-      },
-      {
-        "term": "relationship",
-        "explanation": "名词，在句中意为“关系”"
       }
     ],
     "structure": {
@@ -4734,10 +4722,6 @@
         "explanation": "名词短语，在句中意为“长时间”"
       },
       {
-        "term": "development",
-        "explanation": "名词，在句中意为“发展”"
-      },
-      {
         "term": "recovered",
         "explanation": "动词，在句中意为“恢复了”"
       }
@@ -4811,6 +4795,10 @@
       {
         "term": "investors",
         "explanation": "名词，在句中意为“投资者”"
+      },
+      {
+        "term": "put up money",
+        "explanation": "出资；投入资金"
       }
     ],
     "structure": {
@@ -6496,10 +6484,6 @@
       {
         "term": "identified",
         "explanation": "动词，在句中意为“确定”"
-      },
-      {
-        "term": "American",
-        "explanation": "形容词，在句中意为“美国人”"
       }
     ],
     "structure": {
@@ -6595,6 +6579,10 @@
       {
         "term": "estimate",
         "explanation": "动词，在句中意为“估计”"
+      },
+      {
+        "term": "little else to go on",
+        "explanation": "几乎没有其他依据可参考"
       }
     ],
     "structure": {
@@ -7292,10 +7280,6 @@
       {
         "term": "two sociologists",
         "explanation": "名词短语，在句中意为“两位社会学家”"
-      },
-      {
-        "term": "sociologists",
-        "explanation": "名词，在句中意为“社会学家”"
       }
     ],
     "structure": {
@@ -7929,10 +7913,6 @@
       {
         "term": "forthcoming book",
         "explanation": "名词短语，在句中意为“即将出版的书”"
-      },
-      {
-        "term": "concerned",
-        "explanation": "形容词，在句中意为“担心的”"
       }
     ],
     "structure": {

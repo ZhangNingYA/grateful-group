@@ -388,10 +388,6 @@
       {
         "term": "phone business",
         "explanation": "名词短语，在句中意为“电话业务”"
-      },
-      {
-        "term": "business",
-        "explanation": "名词，在句中意为“商业”"
       }
     ],
     "structure": {
@@ -455,10 +451,6 @@
       {
         "term": "his position",
         "explanation": "名词短语，在句中意为“他的立场”"
-      },
-      {
-        "term": "decisions",
-        "explanation": "名词，在句中意为“决定”"
       }
     ],
     "structure": {
@@ -641,10 +633,6 @@
       {
         "term": "only person",
         "explanation": "名词短语，在句中意为“唯一的人”"
-      },
-      {
-        "term": "person",
-        "explanation": "名词，在句中意为“人”"
       }
     ],
     "structure": {
@@ -696,10 +684,6 @@
       {
         "term": "rapid shifts",
         "explanation": "名词短语，在句中意为“快速转变”"
-      },
-      {
-        "term": "impossible",
-        "explanation": "形容词，在句中意为“不可能的”"
       }
     ],
     "structure": {
@@ -1064,10 +1048,6 @@
       {
         "term": "Good leaders",
         "explanation": "名词短语，在句中意为“好领导”"
-      },
-      {
-        "term": "direction",
-        "explanation": "名词，在句中意为“方向”"
       }
     ],
     "structure": {
@@ -1291,8 +1271,8 @@
         "explanation": "名词短语，在句中意为“中等规模的州立大学”"
       },
       {
-        "term": "small federal loans",
-        "explanation": "名词短语，在句中意为“小额联邦贷款”"
+        "term": "take out ... federal loans",
+        "explanation": "申请并取得联邦贷款"
       }
     ],
     "structure": {
@@ -1586,10 +1566,6 @@
       {
         "term": "his first year",
         "explanation": "名词短语，在句中意为“他的第一年”"
-      },
-      {
-        "term": "impossible",
-        "explanation": "形容词，在句中意为“不可能的”"
       },
       {
         "term": "narrowly",
@@ -1994,6 +1970,10 @@
       {
         "term": "launched",
         "explanation": "动词，在句中意为“推出”"
+      },
+      {
+        "term": "reach out to",
+        "explanation": "主动联系；向……提供帮助"
       }
     ],
     "structure": {
@@ -2073,10 +2053,6 @@
       {
         "term": "prospective college-goers",
         "explanation": "名词短语，在句中意为“未来的大学生”"
-      },
-      {
-        "term": "information",
-        "explanation": "名词，在句中意为“信息”"
       }
     ],
     "structure": {
@@ -2162,8 +2138,8 @@
         "explanation": "名词短语，在句中意为“好数字”"
       },
       {
-        "term": "believes",
-        "explanation": "动词，在句中意为“相信”"
+        "term": "set aside",
+        "explanation": "留出；拨出"
       }
     ],
     "structure": {
@@ -2428,10 +2404,6 @@
         "explanation": "副词，在句中意为“很遗憾”"
       },
       {
-        "term": "information",
-        "explanation": "名词，在句中意为“信息”"
-      },
-      {
         "term": "students",
         "explanation": "名词，在句中意为“学生”"
       }
@@ -2683,6 +2655,10 @@
       {
         "term": "state schools",
         "explanation": "名词短语，在句中意为“公立学校”"
+      },
+      {
+        "term": "skip out on",
+        "explanation": "逃避；放弃本应参与的事"
       }
     ],
     "structure": {
@@ -2879,8 +2855,8 @@
         "explanation": "名词短语，在句中意为“低收入家庭的孩子”"
       },
       {
-        "term": "universities",
-        "explanation": "名词，在句中意为“大学”"
+        "term": "elite universities",
+        "explanation": "名词短语，在句中意为“精英大学”"
       },
       {
         "term": "scholarship",
@@ -2972,10 +2948,6 @@
       {
         "term": "higher education",
         "explanation": "名词短语，在句中意为“高等教育”"
-      },
-      {
-        "term": "successfully",
-        "explanation": "副词，在句中意为“成功地”"
       },
       {
         "term": "questioning",
@@ -3083,6 +3055,10 @@
       {
         "term": "students",
         "explanation": "名词，在句中意为“学生”"
+      },
+      {
+        "term": "end up",
+        "explanation": "最终；落得"
       }
     ],
     "structure": {
@@ -3751,10 +3727,6 @@
       {
         "term": "difficult",
         "explanation": "形容词，在句中意为“难的”"
-      },
-      {
-        "term": "actually",
-        "explanation": "副词，在句中意为“实际上”"
       }
     ],
     "structure": {
@@ -3903,12 +3875,8 @@
     "translation": "其他举措也未能分解数据。",
     "vocabulary": [
       {
-        "term": "Other initiatives",
-        "explanation": "名词短语，在句中意为“其他举措”"
-      },
-      {
-        "term": "initiatives",
-        "explanation": "名词，在句中意为“倡议”"
+        "term": "break down the data",
+        "explanation": "细分数据"
       }
     ],
     "structure": {
@@ -4053,10 +4021,6 @@
         "explanation": "名词短语，在句中意为“学生机会”"
       },
       {
-        "term": "information",
-        "explanation": "名词，在句中意为“信息”"
-      },
-      {
         "term": "originally",
         "explanation": "副词，在句中意为“起初”"
       }
@@ -4152,8 +4116,12 @@
         "explanation": "名词短语，在句中意为“规模较小的私立学校”"
       },
       {
-        "term": "greater frequency",
-        "explanation": "名词短语，在句中意为“频率更高”"
+        "term": "at greater frequency",
+        "explanation": "更频繁地"
+      },
+      {
+        "term": "get in and enroll",
+        "explanation": "进入并注册入学"
       }
     ],
     "structure": {
@@ -4764,10 +4732,6 @@
       {
         "term": "fortunate",
         "explanation": "形容词，在句中意为“幸运”"
-      },
-      {
-        "term": "though",
-        "explanation": "副词，在句中意为“尽管”"
       }
     ],
     "structure": {
@@ -6677,10 +6641,6 @@
       {
         "term": "costs",
         "explanation": "动词，在句中意为“成本”"
-      },
-      {
-        "term": "close",
-        "explanation": "形容词，在句中意为“关闭”"
       }
     ],
     "structure": {
@@ -7211,6 +7171,10 @@
       {
         "term": "failure",
         "explanation": "名词，在句中意为“失败”"
+      },
+      {
+        "term": "take up the issue",
+        "explanation": "着手处理这一问题"
       }
     ],
     "structure": {
@@ -7949,12 +7913,12 @@
         "explanation": "名词短语，在句中意为“社区层面”"
       },
       {
-        "term": "economic ladder",
-        "explanation": "名词短语，在句中意为“经济阶梯”"
-      },
-      {
         "term": "poor children",
         "explanation": "名词短语，在句中意为“可怜的孩子们”"
+      },
+      {
+        "term": "move up the economic ladder",
+        "explanation": "实现经济阶层上升"
       }
     ],
     "structure": {
@@ -8616,10 +8580,6 @@
   "R2-16": {
     "translation": "3. 地方政府人均支出",
     "vocabulary": [
-      {
-        "term": "government",
-        "explanation": "名词，在句中意为“政府”"
-      },
       {
         "term": "spending",
         "explanation": "名词，在句中意为“开支”"

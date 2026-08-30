@@ -101,6 +101,10 @@
       {
         "term": "strives",
         "explanation": "努力；力求"
+      },
+      {
+        "term": "bring ... over",
+        "explanation": "把……带过来；带到某地"
       }
     ],
     "highlights": [
@@ -1465,6 +1469,10 @@
       {
         "term": "inconclusive",
         "explanation": "没有定论的"
+      },
+      {
+        "term": "rely on",
+        "explanation": "依靠"
       }
     ],
     "highlights": [
@@ -1858,7 +1866,12 @@
   },
   "M-F02": {
     "translation": "有时候，让你失望的不是你的过程，而是你首先想要改变的习惯。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "let ... down",
+        "explanation": "使……失望；辜负"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2031,6 +2044,10 @@
       {
         "term": "in its place",
         "explanation": "代替它；在其位置"
+      },
+      {
+        "term": "give up",
+        "explanation": "放弃"
       }
     ],
     "highlights": [
@@ -2072,6 +2089,10 @@
       {
         "term": "conflict with",
         "explanation": "与……冲突"
+      },
+      {
+        "term": "focus on",
+        "explanation": "专注于；集中于"
       }
     ],
     "highlights": [
@@ -2571,6 +2592,10 @@
       {
         "term": "forgiving",
         "explanation": "宽容的，慈悲的"
+      },
+      {
+        "term": "slip up",
+        "explanation": "疏忽；犯小错误"
       }
     ],
     "highlights": [
@@ -2793,6 +2818,10 @@
       {
         "term": "inflexible",
         "explanation": "不灵活的；僵化的"
+      },
+      {
+        "term": "run out",
+        "explanation": "耗尽；用完"
       }
     ],
     "highlights": [
@@ -2915,6 +2944,10 @@
       {
         "term": "afresh",
         "explanation": "重新；从头开始"
+      },
+      {
+        "term": "stray off course",
+        "explanation": "偏离正轨"
       }
     ],
     "highlights": [
@@ -3726,6 +3759,10 @@
       {
         "term": "mental health",
         "explanation": "心理健康"
+      },
+      {
+        "term": "in the long run",
+        "explanation": "从长远来看"
       }
     ],
     "highlights": [
@@ -4247,6 +4284,10 @@
       {
         "term": "storyline",
         "explanation": "故事情节；叙事线"
+      },
+      {
+        "term": "find out",
+        "explanation": "查明；弄清"
       }
     ],
     "highlights": [

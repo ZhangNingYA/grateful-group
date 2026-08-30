@@ -34,7 +34,7 @@ const importTypeScript = async (entryPoint) => {
   return import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 };
 
-const validateCloseReading = (paper, key, sentence, closeReading) => {
+const validateCloseReading = (paper, key, sentence, closeReading, validateVocabulary = false) => {
   if (!closeReading) {
     fail(paper, `${key} 缺少精读数据`);
     return;
@@ -43,6 +43,27 @@ const validateCloseReading = (paper, key, sentence, closeReading) => {
   if (!closeReading.structure?.pattern?.trim()) fail(paper, `${key} 的句型为空`);
   if (!closeReading.structure?.explanation?.trim()) fail(paper, `${key} 的结构说明为空`);
   if (!Array.isArray(closeReading.vocabulary)) fail(paper, `${key} 的重点词汇不是数组`);
+  if (validateVocabulary && Array.isArray(closeReading.vocabulary)) {
+    closeReading.vocabulary.forEach((item) => {
+      if (!item.term?.trim() || !item.explanation?.trim()) {
+        fail(paper, `${key} 存在空的重点词汇或释义`);
+      } else if (!vocabularyTermMatches(sentence, item.term)) {
+        fail(paper, `${key} 的重点词汇无法匹配原句：${item.term}`);
+      }
+    });
+
+    closeReading.vocabulary.forEach((item, index, vocabulary) => {
+      const normalizedTerm = normalizeVocabularyTerm(item.term);
+      const isCoveredByLongerTerm = vocabulary.some((candidate, candidateIndex) => (
+        candidateIndex !== index
+        && normalizeVocabularyTerm(candidate.term) !== normalizedTerm
+        && hasWholeWordRange(normalizeVocabularyTerm(candidate.term), normalizedTerm)
+      ));
+      if (isCoveredByLongerTerm) {
+        fail(paper, `${key} 同时收录了完整短语和被其包含的简单词：${item.term}`);
+      }
+    });
+  }
   if (!Array.isArray(closeReading.highlights) || closeReading.highlights.length === 0) {
     fail(paper, `${key} 没有句子结构高亮`);
     return;
@@ -74,6 +95,73 @@ const hasWholeWordRange = (sentence, part) => {
   }
   return false;
 };
+
+const vocabularyWords = (value) => Array.from(
+  normalizeQuotes(value).toLowerCase().matchAll(/[a-z]+(?:'[a-z]+)?|\d+/g),
+  (match) => match[0],
+);
+
+const vocabularyWordForms = (word) => {
+  const forms = new Set([word.replace(/'s$/, '')]);
+  const irregular = {
+    am: 'be', is: 'be', are: 'be', was: 'be', were: 'be', been: 'be', being: 'be',
+    did: 'do', done: 'do', does: 'do', fell: 'fall', fallen: 'fall',
+    rose: 'rise', risen: 'rise', came: 'come', grew: 'grow', grown: 'grow', paid: 'pay',
+    drew: 'draw', swung: 'swing', brought: 'bring', led: 'lead',
+    gave: 'give', given: 'give', found: 'find', made: 'make',
+    took: 'take', taken: 'take', thought: 'think', loved: 'love',
+  };
+  if (irregular[word]) forms.add(irregular[word]);
+  const addStem = (stem) => {
+    forms.add(stem);
+    if (/(.)\1$/.test(stem)) forms.add(stem.slice(0, -1));
+  };
+  if (word.endsWith('ies') && word.length > 4) forms.add(`${word.slice(0, -3)}y`);
+  if (word.endsWith('ied') && word.length > 4) forms.add(`${word.slice(0, -3)}y`);
+  if (word.endsWith('ing') && word.length > 4) {
+    const stem = word.slice(0, -3);
+    addStem(stem);
+    forms.add(`${stem}e`);
+  }
+  if (word.endsWith('ed') && word.length > 4) {
+    addStem(word.slice(0, -2));
+    forms.add(word.slice(0, -1));
+  }
+  if (word.endsWith('es') && word.length > 4) forms.add(word.slice(0, -2));
+  if (word.endsWith('s') && word.length > 3) forms.add(word.slice(0, -1));
+  return forms;
+};
+
+const vocabularyWordsEquivalent = (source, term) => (
+  [...vocabularyWordForms(source)].some((form) => vocabularyWordForms(term).has(form))
+);
+
+const vocabularyTermMatches = (sentence, term) => {
+  const sentenceWords = vocabularyWords(sentence);
+  const termWords = vocabularyWords(term);
+  if (termWords.length === 0) return false;
+  const placeholders = new Set(['someone', 'something', "one's", 'oneself', 'one', 'a', 'b', 'doing']);
+  const maxGap = /\.{3}|…|\bsome(?:one|thing)\b|\boneself\b/i.test(term) ? 25 : 6;
+
+  return sentenceWords.some((_, startIndex) => {
+    let sentenceIndex = startIndex;
+    let matchedLiteral = false;
+    for (const termWord of termWords) {
+      if (placeholders.has(termWord)) continue;
+      const foundIndex = sentenceWords.findIndex((sourceWord, index) => (
+        index >= sentenceIndex
+        && index <= sentenceIndex + maxGap
+        && vocabularyWordsEquivalent(sourceWord, termWord)
+      ));
+      if (foundIndex < 0) return false;
+      sentenceIndex = foundIndex + 1;
+      matchedLiteral = true;
+    }
+    return matchedLiteral;
+  });
+};
+
+const normalizeVocabularyTerm = (value) => vocabularyWords(value).join(' ');
 
 const validateSemanticAnalysis = (paper, key, sentence, closeReading) => {
   const analysis = closeReading?.analysis;
@@ -244,6 +332,7 @@ const blogSpecifications = [
     exportName: `cet6CloseReadings${date.replace('-', '')}Set${set}`,
     reading: path.join(projectRoot, `src/data/reading/${date}-cet6-reading-${set}.json`),
     semantic: date === '2015-12',
+    vocabularyQuality: date === '2015-12',
   }))),
   ...['2024-06', '2024-12'].flatMap((date) => [1, 2, 3].map((set) => ({
     paper: `${date} CET6 Set ${set}`,
@@ -254,6 +343,7 @@ const blogSpecifications = [
     exportName: `cet6CloseReadings${date.replace('-', '')}Set${set}`,
     reading: path.join(projectRoot, `src/data/reading/${date}-cet6-reading-${set}.json`),
     semantic: true,
+    vocabularyQuality: true,
   }))),
   ...[1, 2, 3].map((set) => ({
     paper: `2025-06 CET6 Set ${set}`,
@@ -261,6 +351,7 @@ const blogSpecifications = [
     exportName: `cet6CloseReadings202506Set${set}`,
     mdx: path.join(projectRoot, `src/content/reading/2025-06-cet6-${set}.mdx`),
     semantic: true,
+    vocabularyQuality: true,
   })),
 ];
 
@@ -284,7 +375,13 @@ for (const specification of blogSpecifications) {
   }
   for (const [key, sentence] of sentenceEntries) {
     const closeReading = closeReadings[key];
-    validateCloseReading(specification.paper, key, sentence, closeReading);
+    validateCloseReading(
+      specification.paper,
+      key,
+      sentence,
+      closeReading,
+      specification.vocabularyQuality,
+    );
     if (specification.semantic) {
       validateSemanticAnalysis(specification.paper, key, sentence, closeReading);
       semanticSentenceCount += 1;

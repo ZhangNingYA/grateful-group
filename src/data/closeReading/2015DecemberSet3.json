@@ -11,8 +11,8 @@
         "explanation": "形容词，在句中意为“被低估”"
       },
       {
-        "term": "getting",
-        "explanation": "动词，在句中意为“得到”"
+        "term": "get by on",
+        "explanation": "靠……勉强维持"
       }
     ],
     "structure": {
@@ -98,12 +98,8 @@
         "explanation": "名词短语，在句中意为“在线购物网站”"
       },
       {
-        "term": "culture",
-        "explanation": "名词，在句中意为“文化”"
-      },
-      {
-        "term": "nighter",
-        "explanation": "名词，在句中意为“夜更者”"
+        "term": "cater to",
+        "explanation": "迎合；满足……的需要"
       }
     ],
     "structure": {
@@ -377,10 +373,6 @@
       {
         "term": "latest evidence",
         "explanation": "名词短语，在句中意为“最新证据”"
-      },
-      {
-        "term": "suggests",
-        "explanation": "动词，在句中意为“建议”"
       }
     ],
     "structure": {
@@ -692,12 +684,12 @@
     "translation": "尽管如此，刘并不准备赞同少睡、晚睡的习惯。",
     "vocabulary": [
       {
-        "term": "sleeping",
-        "explanation": "动词，在句中意为“睡眠”"
-      },
-      {
         "term": "endorse",
         "explanation": "动词，在句中意为“赞同”"
+      },
+      {
+        "term": "make up for",
+        "explanation": "弥补；补偿"
       }
     ],
     "structure": {
@@ -773,10 +765,6 @@
       {
         "term": "Sleeping pills",
         "explanation": "名词短语，在句中意为“安眠药”"
-      },
-      {
-        "term": "necessarily",
-        "explanation": "副词，在句中意为“一定”"
       }
     ],
     "structure": {
@@ -856,6 +844,10 @@
       {
         "term": "different stages",
         "explanation": "名词短语，在句中意为“不同的阶段”"
+      },
+      {
+        "term": "go through",
+        "explanation": "经历；通过"
       }
     ],
     "structure": {
@@ -1113,10 +1105,6 @@
       {
         "term": "own behaviour",
         "explanation": "名词短语，在句中意为“自己的行为”"
-      },
-      {
-        "term": "obvious",
-        "explanation": "形容词，在句中意为“明显的”"
       }
     ],
     "structure": {
@@ -1174,8 +1162,8 @@
         "explanation": "动词，在句中意为“愣”"
       },
       {
-        "term": "heating",
-        "explanation": "名词，在句中意为“加热”"
+        "term": "turn down",
+        "explanation": "调低；关小"
       }
     ],
     "structure": {
@@ -1231,14 +1219,6 @@
       {
         "term": "neighbour's trip",
         "explanation": "名词短语，在句中意为“邻居的旅行”"
-      },
-      {
-        "term": "promise",
-        "explanation": "名词，在句中意为“承诺”"
-      },
-      {
-        "term": "hearing",
-        "explanation": "动词，在句中意为“听力”"
       }
     ],
     "structure": {
@@ -1288,16 +1268,8 @@
     "translation": "最终，我们懒得去改变我们的态度。",
     "vocabulary": [
       {
-        "term": "Ultimately",
-        "explanation": "副词，在句中意为“最终”"
-      },
-      {
-        "term": "bothered",
-        "explanation": "动词，在句中意为“打扰了”"
-      },
-      {
-        "term": "attitude",
-        "explanation": "名词，在句中意为“态度”"
+        "term": "can't be bothered to",
+        "explanation": "不愿意；懒得"
       }
     ],
     "structure": {
@@ -1604,12 +1576,8 @@
     "translation": "但受访者将其排在优先事项列表的最后。",
     "vocabulary": [
       {
-        "term": "respondents",
-        "explanation": "名词，在句中意为“受访者”"
-      },
-      {
-        "term": "priorities",
-        "explanation": "名词，在句中意为“优先事项”"
+        "term": "ranked ... last",
+        "explanation": "把……排在最后"
       }
     ],
     "structure": {
@@ -1659,16 +1627,12 @@
     "translation": "这种不一致很大程度上源于一种无力感。",
     "vocabulary": [
       {
-        "term": "inconsistency",
-        "explanation": "名词，在句中意为“不一致”"
-      },
-      {
         "term": "powerlessness",
         "explanation": "名词，在句中意为“无能为力”"
       },
       {
-        "term": "largely",
-        "explanation": "副词，在句中意为“很大程度上”"
+        "term": "stem from",
+        "explanation": "源于；起因于"
       }
     ],
     "structure": {
@@ -1728,10 +1692,6 @@
       {
         "term": "defense mechanisms",
         "explanation": "名词短语，在句中意为“防御机制”"
-      },
-      {
-        "term": "psychologically",
-        "explanation": "副词，在句中意为“心理上”"
       }
     ],
     "structure": {
@@ -1831,10 +1791,6 @@
       {
         "term": "inner caveman",
         "explanation": "名词短语，在句中意为“内心的穴居人”"
-      },
-      {
-        "term": "caveman",
-        "explanation": "名词，在句中意为“穴居人”"
       }
     ],
     "structure": {
@@ -1882,14 +1838,6 @@
       {
         "term": "immediate impact",
         "explanation": "名词短语，在句中意为“立即产生影响”"
-      },
-      {
-        "term": "programmed",
-        "explanation": "动词，在句中意为“程序”"
-      },
-      {
-        "term": "attention",
-        "explanation": "名词，在句中意为“注意力”"
       }
     ],
     "structure": {
@@ -2226,10 +2174,6 @@
       {
         "term": "Experimental Psychology",
         "explanation": "名词短语，在句中意为“实验心理学”"
-      },
-      {
-        "term": "sees",
-        "explanation": "动词，在句中意为“看到了”"
       }
     ],
     "structure": {
@@ -2297,10 +2241,6 @@
       {
         "term": "all agents",
         "explanation": "名词短语，在句中意为“所有决策者”"
-      },
-      {
-        "term": "decisions",
-        "explanation": "名词，在句中意为“决定”"
       },
       {
         "term": "outcomes",
@@ -2406,16 +2346,8 @@
         "explanation": "名词短语，在句中意为“非常明智的方式”"
       },
       {
-        "term": "decisions",
-        "explanation": "名词，在句中意为“决定”"
-      },
-      {
         "term": "thousands",
         "explanation": "名词，在句中意为“数千”"
-      },
-      {
-        "term": "helpful",
-        "explanation": "形容词，在句中意为“有帮助”"
       }
     ],
     "structure": {
@@ -2499,10 +2431,6 @@
       {
         "term": "Not any longer",
         "explanation": "短语，在句中意为“如今不再适用”"
-      },
-      {
-        "term": "longer",
-        "explanation": "副词，在句中意为“更长”"
       }
     ],
     "structure": {
@@ -2540,8 +2468,8 @@
         "explanation": "名词短语，在句中意为“气候变化”"
       },
       {
-        "term": "climate",
-        "explanation": "名词，在句中意为“气候”"
+        "term": "wake up to",
+        "explanation": "意识到；认识到"
       }
     ],
     "structure": {
@@ -2621,10 +2549,6 @@
       {
         "term": "rational decisions",
         "explanation": "名词短语，在句中意为“理性的决定”"
-      },
-      {
-        "term": "decisions",
-        "explanation": "名词，在句中意为“决定”"
       }
     ],
     "structure": {
@@ -2708,10 +2632,6 @@
       {
         "term": "Improving",
         "explanation": "动词，在句中意为“改善”"
-      },
-      {
-        "term": "Decisions",
-        "explanation": "名词，在句中意为“决定”"
       }
     ],
     "structure": {
@@ -2884,8 +2804,8 @@
         "explanation": "名词短语，在句中意为“类似的战术”"
       },
       {
-        "term": "believes",
-        "explanation": "动词，在句中意为“相信”"
+        "term": "make use of",
+        "explanation": "利用"
       }
     ],
     "structure": {
@@ -3026,16 +2946,8 @@
     "translation": "默认值当然是解决方案的一部分。",
     "vocabulary": [
       {
-        "term": "certainly",
-        "explanation": "副词，在句中意为“当然”"
-      },
-      {
         "term": "Defaults",
         "explanation": "名词，在句中意为“默认值”"
-      },
-      {
-        "term": "solution",
-        "explanation": "名词，在句中意为“解决方案”"
       }
     ],
     "structure": {
@@ -3091,10 +3003,6 @@
       {
         "term": "group mentality",
         "explanation": "名词短语，在句中意为“群体心态”"
-      },
-      {
-        "term": "concerned",
-        "explanation": "形容词，在句中意为“担心的”"
       }
     ],
     "structure": {
@@ -3158,14 +3066,6 @@
       {
         "term": "Tyndall Centre",
         "explanation": "名词短语，在句中意为“廷德尔中心”"
-      },
-      {
-        "term": "understand",
-        "explanation": "动词，在句中意为“理解”"
-      },
-      {
-        "term": "motivates",
-        "explanation": "动词，在句中意为“激励”"
       }
     ],
     "structure": {
@@ -3281,14 +3181,6 @@
       {
         "term": "social norms",
         "explanation": "名词短语，在句中意为“社会规范”"
-      },
-      {
-        "term": "desirable",
-        "explanation": "形容词，在句中意为“理想的”"
-      },
-      {
-        "term": "actually",
-        "explanation": "副词，在句中意为“实际上”"
       }
     ],
     "structure": {
@@ -3651,16 +3543,8 @@
     "translation": "“鸟儿聚集在一起，鱼群聚集在一起，牛群聚集在一起……仅仅感知规范就足以使人们朝着人群的方向调整自己的行为。”",
     "vocabulary": [
       {
-        "term": "perceiving",
-        "explanation": "动词，在句中意为“感知”"
-      },
-      {
-        "term": "direction",
-        "explanation": "名词，在句中意为“方向”"
-      },
-      {
-        "term": "behavior",
-        "explanation": "名词，在句中意为“行为”"
+        "term": "flock together",
+        "explanation": "聚集在一起；随群体行动"
       }
     ],
     "structure": {
@@ -3764,10 +3648,6 @@
       {
         "term": "good intentions",
         "explanation": "名词短语，在句中意为“善意”"
-      },
-      {
-        "term": "intentions",
-        "explanation": "名词，在句中意为“意图”"
       }
     ],
     "structure": {
@@ -4560,12 +4440,12 @@
     "translation": "善用我们已有的自我认同至关重要。",
     "vocabulary": [
       {
-        "term": "Tapping",
-        "explanation": "动词，在句中意为“窃听”"
-      },
-      {
         "term": "crucial",
         "explanation": "形容词，在句中意为“至关重要的”"
+      },
+      {
+        "term": "tap into",
+        "explanation": "利用；发掘"
       }
     ],
     "structure": {
@@ -4783,6 +4663,10 @@
       {
         "term": "Climate Solidarity",
         "explanation": "名词短语，在句中意为“气候团结”"
+      },
+      {
+        "term": "set up",
+        "explanation": "建立；组建"
       }
     ],
     "structure": {
@@ -4862,10 +4746,6 @@
       {
         "term": "environment",
         "explanation": "名词，在句中意为“环境”"
-      },
-      {
-        "term": "revolution",
-        "explanation": "名词，在句中意为“革命”"
       }
     ],
     "structure": {
@@ -4969,10 +4849,6 @@
       {
         "term": "terrific idea",
         "explanation": "名词短语，在句中意为“好主意”"
-      },
-      {
-        "term": "campaign",
-        "explanation": "名词，在句中意为“活动”"
       }
     ],
     "structure": {
@@ -5042,12 +4918,8 @@
     "translation": "“工会的支持让成员们认为其中一定有什么东西。”",
     "vocabulary": [
       {
-        "term": "backing",
-        "explanation": "动词，在句中意为“后盾”"
-      },
-      {
-        "term": "members",
-        "explanation": "名词，在句中意为“成员”"
+        "term": "there must be something in it",
+        "explanation": "其中一定有道理；肯定有原因"
       }
     ],
     "structure": {
@@ -5269,10 +5141,6 @@
       {
         "term": "more effective way",
         "explanation": "名词短语，在句中意为“更有效的方式”"
-      },
-      {
-        "term": "obviously",
-        "explanation": "副词，在句中意为“明显地”"
       }
     ],
     "structure": {
@@ -5431,10 +5299,6 @@
       {
         "term": "new friends",
         "explanation": "名词短语，在句中意为“新朋友”"
-      },
-      {
-        "term": "campaign",
-        "explanation": "名词，在句中意为“活动”"
       }
     ],
     "structure": {
@@ -5490,10 +5354,6 @@
       {
         "term": "her kitchen",
         "explanation": "名词短语，在句中意为“她的厨房”"
-      },
-      {
-        "term": "meetings",
-        "explanation": "名词，在句中意为“会议”"
       }
     ],
     "structure": {
@@ -5569,10 +5429,6 @@
       {
         "term": "other people",
         "explanation": "名词短语，在句中意为“别人”"
-      },
-      {
-        "term": "incentive",
-        "explanation": "名词，在句中意为“激励”"
       }
     ],
     "structure": {
@@ -5650,16 +5506,8 @@
     "translation": "“如果你知道必须向团队提供反馈，你就会更有动力。”",
     "vocabulary": [
       {
-        "term": "motivates",
-        "explanation": "动词，在句中意为“激励”"
-      },
-      {
-        "term": "feedback",
-        "explanation": "名词，在句中意为“反馈”"
-      },
-      {
-        "term": "provide",
-        "explanation": "动词，在句中意为“提供”"
+        "term": "provide feedback",
+        "explanation": "提供反馈"
       }
     ],
     "structure": {
@@ -6525,10 +6373,6 @@
       {
         "term": "large differences",
         "explanation": "名词短语，在句中意为“差异较大”"
-      },
-      {
-        "term": "differences",
-        "explanation": "名词，在句中意为“差异”"
       }
     ],
     "structure": {
@@ -6793,10 +6637,6 @@
       {
         "term": "learned",
         "explanation": "动词，在句中意为“学到了”"
-      },
-      {
-        "term": "learn",
-        "explanation": "动词，在句中意为“学习”"
       }
     ],
     "structure": {
@@ -7006,10 +6846,6 @@
       {
         "term": "next exhibit",
         "explanation": "名词短语，在句中意为“下一个展览”"
-      },
-      {
-        "term": "participants",
-        "explanation": "名词，在句中意为“参与者”"
       }
     ],
     "structure": {
@@ -7244,10 +7080,6 @@
       {
         "term": "both cause",
         "explanation": "名词短语，在句中意为“两者都有原因”"
-      },
-      {
-        "term": "question",
-        "explanation": "名词，在句中意为“问题”"
       }
     ],
     "structure": {
@@ -7376,12 +7208,8 @@
         "explanation": "名词短语，在句中意为“机构环境”"
       },
       {
-        "term": "learning",
-        "explanation": "名词，在句中意为“学习”"
-      },
-      {
-        "term": "confined",
-        "explanation": "动词，在句中意为“受限”"
+        "term": "be confined to",
+        "explanation": "局限于；限制在"
       }
     ],
     "structure": {
@@ -7437,10 +7265,6 @@
       {
         "term": "tolerate failure",
         "explanation": "名词短语，在句中意为“容忍失败”"
-      },
-      {
-        "term": "schools",
-        "explanation": "名词，在句中意为“学校”"
       }
     ],
     "structure": {
@@ -7557,12 +7381,8 @@
     "translation": "但人们必须在某个地方获得这种技能。",
     "vocabulary": [
       {
-        "term": "acquire",
-        "explanation": "动词，在句中意为“获得”"
-      },
-      {
-        "term": "people",
-        "explanation": "名词，在句中意为“人们”"
+        "term": "acquire this skill",
+        "explanation": "掌握这项技能"
       }
     ],
     "structure": {
@@ -7816,10 +7636,6 @@
       {
         "term": "old saying",
         "explanation": "名词短语，在句中意为“老话；俗语”"
-      },
-      {
-        "term": "professionals",
-        "explanation": "名词，在句中意为“专业人士”"
       }
     ],
     "structure": {
@@ -7907,10 +7723,6 @@
       {
         "term": "his company",
         "explanation": "名词短语，在句中意为“他的公司”"
-      },
-      {
-        "term": "interview",
-        "explanation": "名词，在句中意为“面试”"
       }
     ],
     "structure": {
@@ -8059,12 +7871,8 @@
         "explanation": "名词短语，在句中意为“悲惨的损失”"
       },
       {
-        "term": "long shadow",
-        "explanation": "名词短语，在句中意为“长长的影子”"
-      },
-      {
-        "term": "accident",
-        "explanation": "名词，在句中意为“事故”"
+        "term": "cast a long shadow over",
+        "explanation": "给……蒙上长久的阴影"
       }
     ],
     "structure": {
@@ -8227,10 +8035,6 @@
       {
         "term": "similarly astronomical price tags",
         "explanation": "名词短语，在句中意为“同样的天文数字的价格标签”"
-      },
-      {
-        "term": "reached",
-        "explanation": "动词，在句中意为“达到了”"
       }
     ],
     "structure": {
@@ -8460,10 +8264,6 @@
       {
         "term": "around 800 would-be space tourists",
         "explanation": "名词短语，在句中意为“大约 800 名潜在的太空游客”"
-      },
-      {
-        "term": "including",
-        "explanation": "动词，在句中意为“包括”"
       }
     ],
     "structure": {
@@ -8545,12 +8345,12 @@
         "explanation": "名词短语，在句中意为“技术延误”"
       },
       {
-        "term": "suggested",
-        "explanation": "动词，在句中意为“建议”"
-      },
-      {
         "term": "customers",
         "explanation": "名词，在句中意为“顾客”"
+      },
+      {
+        "term": "be dogged by",
+        "explanation": "长期受……困扰"
       }
     ],
     "structure": {
@@ -8650,10 +8450,6 @@
       {
         "term": "impossible timeline",
         "explanation": "名词短语，在句中意为“不可能的时间表”"
-      },
-      {
-        "term": "impossible",
-        "explanation": "形容词，在句中意为“不可能的”"
       }
     ],
     "structure": {
@@ -8770,10 +8566,6 @@
     "translation": "另一半则必须等待，美国联邦航空管理局 (FAA) 和国家运输安全委员会当局将找出问题所在。",
     "vocabulary": [
       {
-        "term": "work out",
-        "explanation": "短语，在句中意为“弄清楚；解决”"
-      },
-      {
         "term": "America's Federal Aviation Administration",
         "explanation": "名词短语，在句中意为“美国联邦航空管理局”"
       },
@@ -8784,6 +8576,10 @@
       {
         "term": "other half",
         "explanation": "名词短语，在句中意为“另一半”"
+      },
+      {
+        "term": "work out what",
+        "explanation": "弄清……"
       }
     ],
     "structure": {
@@ -8873,12 +8669,12 @@
         "explanation": "名词短语，在句中意为“整个太空旅游产业”"
       },
       {
-        "term": "tenterhooks",
-        "explanation": "名词，在句中意为“提心吊胆”"
+        "term": "on tenterhooks",
+        "explanation": "坐立不安"
       },
       {
-        "term": "meantime",
-        "explanation": "名词，在句中意为“与此同时”"
+        "term": "in the meantime",
+        "explanation": "与此同时"
       }
     ],
     "structure": {
@@ -9051,10 +8847,6 @@
     "translation": "这意味着美国联邦航空局可能会暂停维珍银河的飞行执照。",
     "vocabulary": [
       {
-        "term": "suspend",
-        "explanation": "动词，在句中意为“暂停”"
-      },
-      {
         "term": "license",
         "explanation": "名词，在句中意为“执照”"
       }
@@ -9126,8 +8918,8 @@
         "explanation": "名词短语，在句中意为“商用飞机”"
       },
       {
-        "term": "thoroughly",
-        "explanation": "副词，在句中意为“彻底”"
+        "term": "insist on",
+        "explanation": "坚持要求；执意"
       }
     ],
     "structure": {

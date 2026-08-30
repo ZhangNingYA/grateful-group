@@ -59,6 +59,10 @@
       {
         "term": "herbicides",
         "explanation": "除草剂"
+      },
+      {
+        "term": "rid ... of",
+        "explanation": "清除……中的……"
       }
     ],
     "structure": {
@@ -142,8 +146,12 @@
     "translation": "当她发现 HFC 运动时，她说她觉得自己“找到了一个值得关注的特定领域，该领域仍然适合为所有人争取更健康、更安全、更清洁的环境的大局。”",
     "vocabulary": [
       {
-        "term": "discovered",
-        "explanation": "发现"
+        "term": "focus on",
+        "explanation": "专注于；集中于"
+      },
+      {
+        "term": "fit into the larger picture",
+        "explanation": "融入整体图景"
       }
     ],
     "structure": {
@@ -198,6 +206,10 @@
       {
         "term": "fertilizer",
         "explanation": "肥料"
+      },
+      {
+        "term": "rely on",
+        "explanation": "依靠"
       }
     ],
     "structure": {
@@ -219,8 +231,8 @@
     "translation": "拥有“美丽”的校园意味着绿色且维护良好的草坪、花坛和铺好的人行道。",
     "vocabulary": [
       {
-        "term": "beautiful",
-        "explanation": "美丽的"
+        "term": "perfectly maintained lawns",
+        "explanation": "维护得十分整齐的草坪"
       }
     ],
     "structure": {
@@ -252,6 +264,10 @@
       {
         "term": "waterway",
         "explanation": "水道"
+      },
+      {
+        "term": "come at a cost",
+        "explanation": "付出代价"
       }
     ],
     "structure": {
@@ -296,12 +312,12 @@
     "translation": "使用化学品来消灭昆虫或不需要的植物会增加间接排放，因为它们可能包含石油基成分。",
     "vocabulary": [
       {
-        "term": "direct emissions",
-        "explanation": "直接排放"
+        "term": "indirect emissions",
+        "explanation": "名词短语，在句中意为“间接排放”"
       },
       {
-        "term": "emissions",
-        "explanation": "排放物"
+        "term": "get rid of",
+        "explanation": "清除；摆脱"
       }
     ],
     "structure": {
@@ -356,6 +372,10 @@
       {
         "term": "weeding",
         "explanation": "除草"
+      },
+      {
+        "term": "help out with",
+        "explanation": "帮忙做……"
       }
     ],
     "structure": {
@@ -383,6 +403,10 @@
       {
         "term": "herbicide",
         "explanation": "除草剂"
+      },
+      {
+        "term": "in the present moment",
+        "explanation": "活在当下"
       }
     ],
     "structure": {
@@ -464,6 +488,10 @@
       {
         "term": "face-to-face",
         "explanation": "面对面的"
+      },
+      {
+        "term": "focus on",
+        "explanation": "专注于；集中于"
       }
     ],
     "structure": {
@@ -491,6 +519,10 @@
       {
         "term": "precisely",
         "explanation": "恰恰；准确地"
+      },
+      {
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -512,8 +544,8 @@
     "translation": "许多人指出公共图书馆为其社区带来的价值。",
     "vocabulary": [
       {
-        "term": "libraries",
-        "explanation": "图书馆"
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -535,8 +567,8 @@
     "translation": "图书馆不仅仅是书籍和电脑库，它仍然是人们聚集探索、互动和想象的地方。",
     "vocabulary": [
       {
-        "term": "computers",
-        "explanation": "计算机"
+        "term": "gather to explore",
+        "explanation": "聚集起来探索"
       }
     ],
     "structure": {
@@ -585,8 +617,8 @@
     "translation": "图书馆在这些方面发挥作用，不仅仅是提供信息。",
     "vocabulary": [
       {
-        "term": "Libraries",
-        "explanation": "图书馆"
+        "term": "serve in these capacities",
+        "explanation": "发挥这些作用"
       }
     ],
     "structure": {
@@ -631,8 +663,8 @@
     "translation": "从小型公共图书馆到拥有多个分支机构的大型城市机构，美国各地的图书馆正在以令人兴奋的方式建立社区并支持当地文化。",
     "vocabulary": [
       {
-        "term": "libraries",
-        "explanation": "图书馆"
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -746,8 +778,8 @@
     "translation": "像商场里的大型百货商店一样，图书馆吸引了大量的人，为周边地区的众多企业和组织创造了经济机会。",
     "vocabulary": [
       {
-        "term": "department",
-        "explanation": "部门"
+        "term": "surrounding area",
+        "explanation": "周边地区"
       }
     ],
     "structure": {
@@ -769,8 +801,8 @@
     "translation": "大城市、中型城市甚至小城镇都成功地将图书馆转变为充满活力的社区的枢纽。",
     "vocabulary": [
       {
-        "term": "successfully",
-        "explanation": "成功地"
+        "term": "vibrant neighborhoods",
+        "explanation": "充满活力的社区"
       }
     ],
     "structure": {
@@ -988,8 +1020,8 @@
     "translation": "用罗伯特·普特南（Robert Putnam）的话来说， “人们可能会去图书馆主要寻找信息，但他们会在那里找到彼此。”",
     "vocabulary": [
       {
-        "term": "library",
-        "explanation": "图书馆"
+        "term": "looking mainly for",
+        "explanation": "主要寻找"
       }
     ],
     "structure": {
@@ -1017,6 +1049,10 @@
       {
         "term": "connect",
         "explanation": "连接"
+      },
+      {
+        "term": "meet up",
+        "explanation": "碰面；会合"
       }
     ],
     "structure": {
@@ -1038,8 +1074,8 @@
     "translation": "在图书馆，社区建设联系一直在发生。",
     "vocabulary": [
       {
-        "term": "libraries",
-        "explanation": "图书馆"
+        "term": "community-building connections",
+        "explanation": "建立社区的联系"
       }
     ],
     "structure": {
@@ -1088,8 +1124,8 @@
     "translation": "尽管音乐会和剧院门票的成本不断上涨，但公共图书馆活动（包括音乐会、作家参观和画廊展示）通常是免费提供的，使任何收入水平的人都可以参加。",
     "vocabulary": [
       {
-        "term": "Despite",
-        "explanation": "尽管"
+        "term": "free of charge",
+        "explanation": "免费"
       }
     ],
     "structure": {
@@ -1167,6 +1203,10 @@
       {
         "term": "socio-economic status",
         "explanation": "社会经济地位"
+      },
+      {
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -1380,8 +1420,8 @@
     "translation": "公共图书馆通过人类图书馆和苏格拉底咖啡馆等项目，可以帮助建立差异化的小社区，鼓励人们通过对话进行互动和相互学习。",
     "vocabulary": [
       {
-        "term": "libraries",
-        "explanation": "图书馆"
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -1430,12 +1470,12 @@
     "translation": "免费辅导、家庭作业帮助计划和儿童和青少年暑期阅读计划有助于弥合影响学生学习成绩的经济鸿沟。",
     "vocabulary": [
       {
-        "term": "economic divide",
-        "explanation": "经济鸿沟"
-      },
-      {
         "term": "tutoring",
         "explanation": "辅导；家教"
+      },
+      {
+        "term": "bridge the economic divide",
+        "explanation": "弥合经济鸿沟"
       }
     ],
     "structure": {
@@ -1484,8 +1524,8 @@
     "translation": "一年一度的夏季阅读计划也对学生的表现产生积极影响，根据多米尼加大学图书馆和信息科学研究生院 2010 年进行的一项研究，学生的阅读技能从这些受欢迎的全国性活动中得到了提高。",
     "vocabulary": [
       {
-        "term": "reading",
-        "explanation": "阅读"
+        "term": "get a boost from",
+        "explanation": "从……中得到提升"
       }
     ],
     "structure": {
@@ -1507,8 +1547,12 @@
     "translation": "通过图书馆藏品、项目和物理空间，孩子们学会分享、参与社区、参与艺术，并探索他们眼前的世界和整个世界。",
     "vocabulary": [
       {
-        "term": "Through",
-        "explanation": "通过"
+        "term": "be engaged in",
+        "explanation": "参与；投入于"
+      },
+      {
+        "term": "the world at large",
+        "explanation": "整个世界；广阔世界"
       }
     ],
     "structure": {
@@ -1553,8 +1597,8 @@
     "translation": "这些例子只是美国（和世界各地）公共图书馆为建立和维护强大的社区联系所做的众多令人惊叹的事情中的一小部分。",
     "vocabulary": [
       {
-        "term": "examples",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -1576,8 +1620,8 @@
     "translation": "我们鼓励您在自己的图书馆中尝试其中的一些想法，我们希望这些想法能帮助您更好地说服社区领袖，让他们相信公共图书馆在大小社区中发挥的重要作用。",
     "vocabulary": [
       {
-        "term": "encourage",
-        "explanation": "鼓励"
+        "term": "public libraries",
+        "explanation": "公共图书馆"
       }
     ],
     "structure": {
@@ -1626,8 +1670,8 @@
     "translation": "教育官员对所有这些错过的指导表示遗憾。",
     "vocabulary": [
       {
-        "term": "Education",
-        "explanation": "教育"
+        "term": "deplore missed instruction",
+        "explanation": "对损失的课堂教学深感遗憾"
       }
     ],
     "structure": {
@@ -1651,6 +1695,10 @@
       {
         "term": "chronically",
         "explanation": "长期地"
+      },
+      {
+        "term": "miss out on",
+        "explanation": "错过；未能获得"
       }
     ],
     "structure": {
@@ -1699,8 +1747,8 @@
     "translation": "他的公开信指出，一年中因任何原因（有理由或无理由）错过10%的上学日是学业成绩低下的主要原因。",
     "vocabulary": [
       {
-        "term": "missing",
-        "explanation": "缺席；错过"
+        "term": "low academic achievement",
+        "explanation": "学业成绩低下"
       }
     ],
     "structure": {
@@ -1745,8 +1793,8 @@
     "translation": "毕竟，如果学生不出现，老师就无法教他们。",
     "vocabulary": [
       {
-        "term": "students",
-        "explanation": "学生"
+        "term": "show up",
+        "explanation": "出现；到场"
       }
     ],
     "structure": {
@@ -1772,8 +1820,8 @@
     "translation": "但如果美国的出勤危机不仅仅是学生缺课呢？",
     "vocabulary": [
       {
-        "term": "America",
-        "explanation": "美国"
+        "term": "attendance crisis",
+        "explanation": "出勤危机；缺勤问题"
       }
     ],
     "structure": {
@@ -1868,8 +1916,12 @@
     "translation": "事实上，没有无故缺席的儿童--但有15至18次免责缺席--的考试成绩与没有缺席的同龄人相当。",
     "vocabulary": [
       {
-        "term": "children",
-        "explanation": "儿童"
+        "term": "excused absences",
+        "explanation": "有正当理由的缺勤"
+      },
+      {
+        "term": "test scores",
+        "explanation": "考试成绩"
       }
     ],
     "structure": {
@@ -1897,6 +1949,10 @@
       {
         "term": "Meanwhile",
         "explanation": "与此同时"
+      },
+      {
+        "term": "unexcused absence",
+        "explanation": "无正当理由的缺勤"
       }
     ],
     "structure": {
@@ -1922,8 +1978,12 @@
     "translation": "我们认为，无故缺勤是一个强有力的信号，表明儿童和家庭面临许多挑战，包括经济和医疗困难。",
     "vocabulary": [
       {
-        "term": "believe",
-        "explanation": "相信"
+        "term": "unexcused absence",
+        "explanation": "无正当理由的缺勤"
+      },
+      {
+        "term": "economic and medical hardships",
+        "explanation": "经济和医疗困难"
       }
     ],
     "structure": {
@@ -1947,6 +2007,10 @@
       {
         "term": "Unexcused",
         "explanation": "未经批准的"
+      },
+      {
+        "term": "out-of-school challenges",
+        "explanation": "校外困境"
       }
     ],
     "structure": {
@@ -1968,8 +2032,12 @@
     "translation": "我们的证据表明，无故缺勤是有问题的，但原因与人们通常认为的不同。",
     "vocabulary": [
       {
-        "term": "evidence",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "unexcused absences",
+        "explanation": "无正当理由的缺勤"
+      },
+      {
+        "term": "problematic",
+        "explanation": "有问题的；会造成困难的"
       }
     ],
     "structure": {
@@ -1991,8 +2059,8 @@
     "translation": "缺课，特别是无故缺课，主要是儿童及其家庭可能面临许多危机的信号。",
     "vocabulary": [
       {
-        "term": "Absence",
-        "explanation": "缺席；缺课"
+        "term": "unexcused absence",
+        "explanation": "无正当理由的缺勤"
       }
     ],
     "structure": {
@@ -2060,8 +2128,8 @@
     "translation": "出勤政策通常要求学校和家庭对孩子们错过的日子负责，无论他们是被原谅还是无故缺席。",
     "vocabulary": [
       {
-        "term": "attendance",
-        "explanation": "出勤；到校"
+        "term": "school attendance policies",
+        "explanation": "学校出勤政策"
       }
     ],
     "structure": {
@@ -2106,8 +2174,12 @@
     "translation": "他们还认为，学校将能够通过减少学生缺勤率进行有效干预。",
     "vocabulary": [
       {
-        "term": "schools",
-        "explanation": "学校"
+        "term": "effectively intervene",
+        "explanation": "有效干预"
+      },
+      {
+        "term": "student absences",
+        "explanation": "学生缺勤"
       }
     ],
     "structure": {
@@ -2152,8 +2224,8 @@
     "translation": "因此，这些出勤政策最终会不成比例地惩罚那些在生活中面临失学危机的家庭，并迫使为他们提供服务的学校让学生更频繁地上学。",
     "vocabulary": [
       {
-        "term": "attendance",
-        "explanation": "出勤；到校"
+        "term": "end up",
+        "explanation": "最终；落得"
       }
     ],
     "structure": {
@@ -2179,8 +2251,8 @@
     "translation": "相反，我们建议使用无故缺勤作为信号，将资源分配给最需要资源的儿童和家庭。",
     "vocabulary": [
       {
-        "term": "instead",
-        "explanation": "而不是；反而"
+        "term": "unexcused absence",
+        "explanation": "无正当理由的缺勤"
       }
     ],
     "structure": {
@@ -2229,8 +2301,12 @@
     "translation": "我直奔研究生院，调查令我着迷的社会问题。",
     "vocabulary": [
       {
-        "term": "straight",
-        "explanation": "直接地"
+        "term": "head straight to",
+        "explanation": "径直前往"
+      },
+      {
+        "term": "graduate school",
+        "explanation": "研究生院"
       }
     ],
     "structure": {
@@ -2252,8 +2328,12 @@
     "translation": "近十年来，我告诉遇到的每个人，他们也应该这样做。",
     "vocabulary": [
       {
-        "term": "everyone",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "for almost a decade",
+        "explanation": "近十年来"
+      },
+      {
+        "term": "do the same",
+        "explanation": "做同样的事"
       }
     ],
     "structure": {
@@ -2302,8 +2382,8 @@
     "translation": "“你可以稍后再弄清楚就业问题。”",
     "vocabulary": [
       {
-        "term": "employment",
-        "explanation": "就业"
+        "term": "figure out",
+        "explanation": "弄清；想出办法"
       }
     ],
     "structure": {
@@ -2325,8 +2405,8 @@
     "translation": "直到我开始研究这个被广泛接受的职业建议，我才明白它的问题到底有多大。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "研究"
+        "term": "career advice",
+        "explanation": "职业建议"
       }
     ],
     "structure": {
@@ -2350,6 +2430,14 @@
       {
         "term": "sociologist",
         "explanation": "社会学家"
+      },
+      {
+        "term": "passion principle",
+        "explanation": "“追随热情”原则；职业选择理念"
+      },
+      {
+        "term": "pursue their dreams",
+        "explanation": "追求梦想"
       }
     ],
     "structure": {
@@ -2377,6 +2465,10 @@
       {
         "term": "stunned",
         "explanation": "震惊的"
+      },
+      {
+        "term": "find out about",
+        "explanation": "了解；查明"
       }
     ],
     "structure": {
@@ -2400,6 +2492,14 @@
       {
         "term": "Surveys",
         "explanation": "调查"
+      },
+      {
+        "term": "passion principle",
+        "explanation": "“追随热情”原则；职业选择理念"
+      },
+      {
+        "term": "career decision-making",
+        "explanation": "职业决策"
       }
     ],
     "structure": {
@@ -2423,6 +2523,10 @@
       {
         "term": "popularity",
         "explanation": "流行度"
+      },
+      {
+        "term": "job instability",
+        "explanation": "工作不稳定"
       }
     ],
     "structure": {
@@ -2446,6 +2550,10 @@
       {
         "term": "Advocates",
         "explanation": "倡导者"
+      },
+      {
+        "term": "passion principle",
+        "explanation": "“追随热情”原则；职业选择理念"
       }
     ],
     "structure": {
@@ -2467,8 +2575,8 @@
     "translation": "然而，我发现追随自己的热情并不一定会带来成就感，但却是导致过度劳累的最强大的文化力量之一。",
     "vocabulary": [
       {
-        "term": "following",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "lead to fulfillment",
+        "explanation": "带来满足感"
       }
     ],
     "structure": {
@@ -2496,6 +2604,10 @@
       {
         "term": "promoting",
         "explanation": "促进"
+      },
+      {
+        "term": "social inequalities",
+        "explanation": "社会不平等"
       }
     ],
     "structure": {
@@ -2517,8 +2629,12 @@
     "translation": "虽然激情原则广为流行，但并不是每个人都有必要的资源将他们的激情转化为稳定、高薪的工作。",
     "vocabulary": [
       {
-        "term": "passion",
-        "explanation": "热情；激情"
+        "term": "passion principle",
+        "explanation": "“追随热情”原则；职业选择理念"
+      },
+      {
+        "term": "stable, good-paying job",
+        "explanation": "稳定且薪酬良好的工作"
       }
     ],
     "structure": {
@@ -2542,6 +2658,10 @@
       {
         "term": "Passion",
         "explanation": "热情；激情"
+      },
+      {
+        "term": "in the meantime",
+        "explanation": "与此同时"
       }
     ],
     "structure": {
@@ -2586,8 +2706,12 @@
     "translation": "他们经常可以访问父母的社交网络来帮助他们找到工作。",
     "vocabulary": [
       {
-        "term": "parents",
-        "explanation": "结合上下文理解该词在句中的含义"
+        "term": "have access to",
+        "explanation": "可以获得；有机会使用"
+      },
+      {
+        "term": "social networks",
+        "explanation": "社会关系网络"
       }
     ],
     "structure": {
@@ -2611,6 +2735,10 @@
       {
         "term": "Surveys",
         "explanation": "调查"
+      },
+      {
+        "term": "end up in",
+        "explanation": "最终处于"
       }
     ],
     "structure": {
@@ -2634,6 +2762,10 @@
       {
         "term": "Colleges",
         "explanation": "大学"
+      },
+      {
+        "term": "leveling the playing field",
+        "explanation": "创造公平竞争环境"
       }
     ],
     "structure": {
@@ -2655,8 +2787,8 @@
     "translation": "受益于激情原则的不仅仅是富裕的激情追求者。",
     "vocabulary": [
       {
-        "term": "passion",
-        "explanation": "热情；激情"
+        "term": "passion principle",
+        "explanation": "“追随热情”原则；职业选择理念"
       }
     ],
     "structure": {
@@ -2701,8 +2833,16 @@
     "translation": "潜在雇主对充满热情的求职者表现出更大的兴趣，部分原因是他们相信求职者会在工作中努力工作，而不期望加薪。",
     "vocabulary": [
       {
-        "term": "Potential",
-        "explanation": "潜在的"
+        "term": "potential employers",
+        "explanation": "潜在雇主"
+      },
+      {
+        "term": "passionate applicants",
+        "explanation": "充满热情的求职者"
+      },
+      {
+        "term": "increase in pay",
+        "explanation": "加薪；薪资增长"
       }
     ],
     "structure": {
