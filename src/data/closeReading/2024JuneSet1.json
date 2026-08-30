@@ -3,12 +3,16 @@
     "translation": "不同类型的音乐能够激发独特的感受、情感和记忆，这是非常了不起的。",
     "vocabulary": [
       {
-        "term": "feelings",
-        "explanation": "感觉，感触"
+        "term": "remarkable",
+        "explanation": "非凡的；引人注目的"
       },
       {
-        "term": "memories",
-        "explanation": "记忆力，记性"
+        "term": "genres",
+        "explanation": "音乐类型；流派"
+      },
+      {
+        "term": "spark",
+        "explanation": "激发；引起"
       }
     ],
     "highlights": [
@@ -59,11 +63,11 @@
     "vocabulary": [
       {
         "term": "attracted",
-        "explanation": "吸引，引起……的兴趣"
+        "explanation": "被吸引的；产生兴趣的"
       },
       {
-        "term": "Studies",
-        "explanation": "研究"
+        "term": "soundtrack",
+        "explanation": "配乐；（比喻）人生背景音乐"
       }
     ],
     "highlights": [
@@ -105,8 +109,8 @@
     "translation": "如果您想缓解压力，您可能想尝试一下古典音乐。",
     "vocabulary": [
       {
-        "term": "looking",
-        "explanation": "看"
+        "term": "alleviate",
+        "explanation": "缓解；减轻"
       }
     ],
     "highlights": [
@@ -151,12 +155,16 @@
     "translation": "古典音乐的声音会产生镇静效果，释放大脑中令人愉悦的多巴胺（多巴胺），有助于控制注意力、学习和情绪反应。",
     "vocabulary": [
       {
-        "term": "attention",
-        "explanation": "注意"
+        "term": "calming",
+        "explanation": "使平静的；镇静的"
       },
       {
-        "term": "responses",
-        "explanation": "反应，响应"
+        "term": "pleasure-inducing",
+        "explanation": "带来愉悦的"
+      },
+      {
+        "term": "dopamine",
+        "explanation": "多巴胺"
       }
     ],
     "highlights": [
@@ -196,12 +204,8 @@
     "translation": "它还可以降低身体的压力反应，从而带来整体快乐的心情。",
     "vocabulary": [
       {
-        "term": "resulting",
-        "explanation": "发生，产生"
-      },
-      {
-        "term": "response",
-        "explanation": "反应，响应"
+        "term": "stress response",
+        "explanation": "应激反应"
       }
     ],
     "highlights": [
@@ -241,12 +245,8 @@
     "translation": "事实证明，愉快的心情可以使人的思维清晰。",
     "vocabulary": [
       {
-        "term": "thinking",
-        "explanation": "想法，见解"
-      },
-      {
-        "term": "person",
-        "explanation": "人"
+        "term": "clarity",
+        "explanation": "清晰；清楚的思路"
       }
     ],
     "highlights": [
@@ -288,12 +288,12 @@
     "translation": "尽管有许多伟大的古典音乐作曲家，如巴赫、贝多芬和亨德尔，但这些艺术家的音乐似乎都没有莫扎特的音乐具有同样的健康功效。",
     "vocabulary": [
       {
-        "term": "effects",
-        "explanation": "影响，效果，结果"
+        "term": "composers",
+        "explanation": "作曲家"
       },
       {
-        "term": "artists",
-        "explanation": "艺术家，设计师（artist 的复数）"
+        "term": "health effects",
+        "explanation": "健康影响"
       }
     ],
     "highlights": [
@@ -338,12 +338,8 @@
     "translation": "研究人员称，听莫扎特可以增加脑电波活动并改善认知功能。",
     "vocabulary": [
       {
-        "term": "researchers",
-        "explanation": "研究人员，研究者（researcher 的复数）"
-      },
-      {
-        "term": "According",
-        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
+        "term": "cognitive",
+        "explanation": "认知的"
       }
     ],
     "highlights": [
@@ -401,12 +397,8 @@
     "translation": "另一项研究发现，莫扎特音乐的独特特征会触发大脑中负责高级心理功能的部分。",
     "vocabulary": [
       {
-        "term": "functions",
-        "explanation": "功能，作用，职责"
-      },
-      {
-        "term": "features",
-        "explanation": "产品特点，特征，特性"
+        "term": "distinctive",
+        "explanation": "独特的；有区别的"
       }
     ],
     "highlights": [
@@ -446,7 +438,20 @@
   },
   "C10": {
     "translation": "甚至产科病房也用莫扎特来帮助新生婴儿适应母亲肚子外的生活。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "maternity",
+        "explanation": "产妇的；产科的"
+      },
+      {
+        "term": "wards",
+        "explanation": "病房；产房"
+      },
+      {
+        "term": "newborn",
+        "explanation": "新生儿；新生的"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -492,12 +497,8 @@
     "translation": "研究发现，听古典音乐可以显着降低人的血压。",
     "vocabulary": [
       {
-        "term": "pressure",
-        "explanation": "压力，挤压"
-      },
-      {
-        "term": "reduces",
-        "explanation": "降低，减少"
+        "term": "blood pressure",
+        "explanation": "血压"
       }
     ],
     "highlights": [
@@ -539,12 +540,8 @@
     "translation": "研究人员认为，古典音乐的平静声音可能有助于您的心脏从压力中恢复过来。",
     "vocabulary": [
       {
-        "term": "Researchers",
-        "explanation": "研究人员，研究者（researcher 的复数）"
-      },
-      {
-        "term": "believe",
-        "explanation": "相信"
+        "term": "calming",
+        "explanation": "使平静的；镇静的"
       }
     ],
     "highlights": [
@@ -586,12 +583,8 @@
     "translation": "古典音乐也是帮助睡眠困难的人的好工具。",
     "vocabulary": [
       {
-        "term": "sleeping",
-        "explanation": "睡觉，入睡（sleep 的现在分词）"
-      },
-      {
-        "term": "trouble",
-        "explanation": "困难，难题，苦恼"
+        "term": "trouble sleeping",
+        "explanation": "睡眠困难"
       }
     ],
     "highlights": [
@@ -631,12 +624,8 @@
     "translation": "一项研究发现，睡眠困难的学生在听古典音乐时睡得更好。",
     "vocabulary": [
       {
-        "term": "students",
-        "explanation": "学生（student 的复数）"
-      },
-      {
-        "term": "sleeping",
-        "explanation": "睡觉，入睡（sleep 的现在分词）"
+        "term": "trouble sleeping",
+        "explanation": "睡眠困难"
       }
     ],
     "highlights": [
@@ -678,8 +667,8 @@
     "translation": "无论您是否经常听古典音乐，每天抽出时间来听一些让您感到舒缓的音乐都没有什么坏处。",
     "vocabulary": [
       {
-        "term": "regular",
-        "explanation": "定期的，规律的"
+        "term": "soothing",
+        "explanation": "令人舒缓的"
       }
     ],
     "highlights": [
@@ -724,12 +713,8 @@
     "translation": "您会惊讶地发现它让您感觉如此良好以及对您的健康带来潜在的积极变化。",
     "vocabulary": [
       {
-        "term": "health",
-        "explanation": "身体状况"
-      },
-      {
-        "term": "change",
-        "explanation": "改变，变化"
+        "term": "positive change",
+        "explanation": "积极变化"
       }
     ],
     "highlights": [
@@ -769,12 +754,12 @@
     "translation": "在佐治亚州雅典市，有一个相当奇怪的当地地标——一棵几乎普遍声称拥有自己的大白橡树。",
     "vocabulary": [
       {
-        "term": "universally",
-        "explanation": "普遍地，人人"
+        "term": "landmark",
+        "explanation": "地标；标志性建筑"
       },
       {
-        "term": "landmark",
-        "explanation": "陆标，地标"
+        "term": "universally",
+        "explanation": "普遍地；广泛地"
       }
     ],
     "highlights": [
@@ -812,12 +797,7 @@
   },
   "M-A02": {
     "translation": "因此，它被认为是世界上最著名的树木之一。",
-    "vocabulary": [
-      {
-        "term": "considered",
-        "explanation": "深思熟虑的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -877,12 +857,16 @@
     "translation": "据报道，在十九世纪的某个时候，一位名叫威廉·杰克逊上校的格鲁吉亚人很喜欢这棵树，并努力保护它免受任何危险。",
     "vocabulary": [
       {
-        "term": "endeavored",
-        "explanation": "努力"
+        "term": "reportedly",
+        "explanation": "据报道；据说"
       },
       {
-        "term": "protect",
-        "explanation": "保护，防护"
+        "term": "liking",
+        "explanation": "喜爱；好感"
+      },
+      {
+        "term": "endeavored",
+        "explanation": "努力做；竭力"
       }
     ],
     "highlights": [
@@ -947,11 +931,15 @@
     "vocabulary": [
       {
         "term": "documented",
-        "explanation": "有文件证明的"
+        "explanation": "有记载的；有文件证明的"
       },
       {
-        "term": "article",
-        "explanation": "文章，论文"
+        "term": "anonymously",
+        "explanation": "匿名地"
+      },
+      {
+        "term": "published",
+        "explanation": "出版；发表"
       }
     ],
     "highlights": [
@@ -989,12 +977,7 @@
   },
   "M-B03": {
     "translation": "它指出，“上校。",
-    "vocabulary": [
-      {
-        "term": "states",
-        "explanation": "州；国家；陈述（state 的复数或第三人称单数）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1086,12 +1069,16 @@
     "translation": "它茂密的叶子和粗壮的枝干经常为他遮风挡雨，他也曾多次从它最高的树枝上得到羽毛歌手的蛋。",
     "vocabulary": [
       {
-        "term": "protected",
-        "explanation": "受保护的"
+        "term": "luxuriant",
+        "explanation": "繁茂的；茂盛的"
       },
       {
-        "term": "leaves",
-        "explanation": "（leaf 的复数）树叶，叶片"
+        "term": "sturdy",
+        "explanation": "结实的；坚固的"
+      },
+      {
+        "term": "feathered",
+        "explanation": "有羽毛的"
       }
     ],
     "highlights": [
@@ -1163,12 +1150,12 @@
     "translation": "他看着它的生长，当他年老时，他看到这棵树以其宏伟的比例矗立着，他痛苦地想到在他死后它会落入那些可能摧毁它的人的手中。",
     "vocabulary": [
       {
-        "term": "standing",
-        "explanation": "永久的，长期的，常设的"
+        "term": "proportions",
+        "explanation": "比例；形态"
       },
       {
-        "term": "growth",
-        "explanation": "成长，生长"
+        "term": "pained",
+        "explanation": "感到痛苦的"
       }
     ],
     "highlights": [
@@ -1224,12 +1211,8 @@
     "translation": "为此，杰克逊通过契约将这棵树及其周围的一小块土地的所有权转让给了这棵树本身。",
     "vocabulary": [
       {
-        "term": "transferred",
-        "explanation": "（使）转移，搬迁"
-      },
-      {
-        "term": "little",
-        "explanation": "小的，比较小的"
+        "term": "deed",
+        "explanation": "契约；法律文书"
       }
     ],
     "highlights": [
@@ -1269,12 +1252,16 @@
     "translation": "契约上写着：“W.H.杰克逊出于并考虑到他对这棵树的深厚感情，以及他希望看到这棵树得到保护的强烈愿望，已经将这棵橡树完全拥有了它本身以及周围八英尺范围内的所有土地。”",
     "vocabulary": [
       {
-        "term": "consideration",
-        "explanation": "考虑，斟酌"
+        "term": "affection",
+        "explanation": "喜爱；感情"
       },
       {
-        "term": "protected",
-        "explanation": "受保护的"
+        "term": "conveyed",
+        "explanation": "转让；传达"
+      },
+      {
+        "term": "possession",
+        "explanation": "所有权；占有"
       }
     ],
     "highlights": [
@@ -1304,7 +1291,12 @@
   },
   "M-D01": {
     "translation": "随着时间的推移，这棵树成为了一个旅游景点，被称为“拥有自己的树”。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "tourist attraction",
+        "explanation": "旅游景点"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1332,16 +1324,7 @@
   },
   "M-D02": {
     "translation": "然而，在 20 世纪初，这棵树开始出现缓慢死亡的迹象，但对此却无能为力。",
-    "vocabulary": [
-      {
-        "term": "started",
-        "explanation": "开始，着手"
-      },
-      {
-        "term": "showing",
-        "explanation": "显示；表明（show 的现在分词）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1387,8 +1370,8 @@
     "translation": "我们所有人的父亲时代最终都会到来，甚至包括我们那些长寿、高大、绿叶的地球守护者同伴。",
     "vocabulary": [
       {
-        "term": "eventually",
-        "explanation": "最终，结果"
+        "term": "custodians",
+        "explanation": "守护者；看管者"
       }
     ],
     "highlights": [
@@ -1420,12 +1403,8 @@
     "translation": "最终，1942 年 10 月 9 日，这棵 30 多米高、200-400 年树龄的树倒塌了，有传言称，这是由于一场严重的风暴和/或之前已经死亡且根腐烂了。",
     "vocabulary": [
       {
-        "term": "previously",
-        "explanation": "以前地，先前地"
-      },
-      {
-        "term": "result",
-        "explanation": "结果，后果"
+        "term": "windstorm",
+        "explanation": "风暴"
       }
     ],
     "highlights": [
@@ -1487,16 +1466,7 @@
   },
   "M-E01": {
     "translation": "大约四年后，少年女士花园俱乐部的成员（在这棵树不幸死亡之前一直在照顾这棵树）找到了一棵小树，它是用从原来的树上取下的坚果长成的。",
-    "vocabulary": [
-      {
-        "term": "members",
-        "explanation": "（社团、政党等组织的）成员，会员"
-      },
-      {
-        "term": "tended",
-        "explanation": "往往会；倾向于（tend 的过去式）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1558,12 +1528,12 @@
     "translation": "就这样，1946年10月9日，在佐治亚大学农学院罗伊·鲍登教授的指导下，这棵小树被移植到了它祖先的位置。",
     "vocabulary": [
       {
-        "term": "direction",
-        "explanation": "方向，方位"
+        "term": "transplanted",
+        "explanation": "移植的；移栽的"
       },
       {
-        "term": "little",
-        "explanation": "小的，比较小的"
+        "term": "ancestor",
+        "explanation": "祖先；先辈"
       }
     ],
     "highlights": [
@@ -1611,12 +1581,8 @@
     "translation": "几个月后，雅典市长罗伯特·L·麦克沃特 (Robert L Mc Whorter) 出席了一场正式仪式来纪念这一时刻。",
     "vocabulary": [
       {
-        "term": "featuring",
-        "explanation": "特点，特征"
-      },
-      {
-        "term": "months",
-        "explanation": "月份（month 的复数）"
+        "term": "commemorate",
+        "explanation": "纪念"
       }
     ],
     "highlights": [
@@ -1648,12 +1614,8 @@
     "translation": "这棵新树被称为“拥有自己的树的儿子”，人们认为，作为原始树的继承人，它自然继承了它所站立的土地。",
     "vocabulary": [
       {
-        "term": "inherited",
-        "explanation": "（疾病或特点）遗传的"
-      },
-      {
-        "term": "assumed",
-        "explanation": "假定的，假设的"
+        "term": "heir",
+        "explanation": "继承人"
       }
     ],
     "highlights": [
@@ -1719,12 +1681,12 @@
     "translation": "当然，还有许多其他已知的树是从原始树衍生而来的，因为人们肯定会从中取出坚果种植在其他地方。",
     "vocabulary": [
       {
-        "term": "taking",
-        "explanation": "取得"
+        "term": "descending",
+        "explanation": "传承下来的；下降的"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "certainty",
+        "explanation": "确定性；必然"
       }
     ],
     "highlights": [
@@ -1769,12 +1731,8 @@
     "translation": "也就是说，到目前为止，原树的其他孩子都没有向法院请求获得他们的土地份额，所以看起来一切都很好。",
     "vocabulary": [
       {
-        "term": "children",
-        "explanation": "child 的复数形式"
-      },
-      {
-        "term": "original",
-        "explanation": "起初的，原先的"
+        "term": "petitioned",
+        "explanation": "向法院请求；请愿"
       }
     ],
     "highlights": [
@@ -1812,16 +1770,7 @@
   },
   "M-F04": {
     "translation": "无论如何，“拥有自己的树之子”至今仍然屹立不倒，尽管经常被简单地称为“拥有自己的树”。",
-    "vocabulary": [
-      {
-        "term": "stands",
-        "explanation": "（stand 的复数）看台，观众席"
-      },
-      {
-        "term": "simply",
-        "explanation": "仅仅，只，不过"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1851,12 +1800,12 @@
     "translation": "这一切让我们思考杰克逊是否真的曾经真正将这棵树的合法所有权归于自己，以及这样的契约是否具有法律约束力。",
     "vocabulary": [
       {
-        "term": "actually",
-        "explanation": "实际上，事实上"
+        "term": "deed",
+        "explanation": "契约；法律文书"
       },
       {
-        "term": "binding",
-        "explanation": "(协议，承诺）有约束力的，必须遵守的"
+        "term": "legally binding",
+        "explanation": "具有法律约束力的"
       }
     ],
     "highlights": [
@@ -1904,12 +1853,8 @@
     "translation": "好吧，首先，事实证明，杰克逊从 43 岁开始，从 1829 年到 1832 年，只在雅典度过了大约三年的时间，他在某种程度上否认了他热爱这棵树的想法，因为他小时候在这棵树下度过了时光，看着它长大，然后担心他死后它会发生什么。",
     "vocabulary": [
       {
-        "term": "starting",
-        "explanation": "开始（start 的现在分词）"
-      },
-      {
-        "term": "spending",
-        "explanation": "（尤指政府或组织的）支出，开销，花费"
+        "term": "dismissing",
+        "explanation": "不予考虑；摒弃"
       }
     ],
     "highlights": [
@@ -1954,7 +1899,12 @@
   },
   "M-H02": {
     "translation": "此外，对雅典土地所有权记录的广泛搜索似乎并没有表明杰克逊曾经拥有这棵树所在的土地。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "ownership records",
+        "explanation": "所有权记录"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2060,12 +2010,12 @@
     "translation": "不管怎样，1832 年，一块四英亩的土地（其中包括这棵树所在的土地和杰克逊居住的邻近土地等）被卖给了大学教授马尔萨斯·沃德 (Malthus A Ward)。",
     "vocabulary": [
       {
-        "term": "professor",
-        "explanation": "教授"
+        "term": "parcel",
+        "explanation": "地块；土地"
       },
       {
-        "term": "included",
-        "explanation": "包括在内的，包含在内的"
+        "term": "neighboring",
+        "explanation": "邻近的"
       }
     ],
     "highlights": [
@@ -2113,12 +2063,12 @@
     "translation": "在交易中，沃德被要求向杰克逊支付 1,200 美元（相当于今天的 31,000 美元），要么是为了房产本身，要么只是为了补偿杰克逊对该地块所做的改进。",
     "vocabulary": [
       {
-        "term": "improvements",
-        "explanation": "提高，改进（improvement 的复数）"
+        "term": "transaction",
+        "explanation": "交易；事务"
       },
       {
-        "term": "transaction",
-        "explanation": "交易，买卖，业务"
+        "term": "compensation",
+        "explanation": "补偿；赔偿"
       }
     ],
     "highlights": [
@@ -2158,12 +2108,12 @@
     "translation": "最后，无论他曾经拥有邻近的土地，还是只是在他据称在大学工作期间被允许使用它，他绝对从未拥有这棵树生长的土地，这是当前话题中最重要的一点。",
     "vocabulary": [
       {
-        "term": "allowed",
-        "explanation": "allow 的过去式和过去分词：允许，认可"
+        "term": "neighboring",
+        "explanation": "邻近的"
       },
       {
-        "term": "worked",
-        "explanation": "工作"
+        "term": "allegedly",
+        "explanation": "据称；据说"
       }
     ],
     "highlights": [
@@ -2208,8 +2158,8 @@
     "translation": "沃德教授购买了这块土地后，杰克逊和他的家人在几英里外购买了一块 655 英亩的土地并搬到了那里。",
     "vocabulary": [
       {
-        "term": "family",
-        "explanation": "家，家庭"
+        "term": "parcel",
+        "explanation": "地块；土地"
       }
     ],
     "highlights": [
@@ -2262,12 +2212,12 @@
     "translation": "十年后，即 1844 年，杰克逊似乎陷入了财务困难，他的小种植园被克拉克县治安官办公室没收并拍卖以偿还抵押贷款。",
     "vocabulary": [
       {
-        "term": "difficulties",
-        "explanation": "难题，困难"
+        "term": "plantation",
+        "explanation": "种植园"
       },
       {
-        "term": "financial",
-        "explanation": "财政的，金融的"
+        "term": "mortgage",
+        "explanation": "抵押贷款"
       }
     ],
     "highlights": [
@@ -2323,8 +2273,8 @@
     "translation": "因此，如果他在雅典拥有一些土地，包括这棵树所在的土地，他可能会出售它以筹集资金，或者以其他方式将其夺走。",
     "vocabulary": [
       {
-        "term": "including",
-        "explanation": "包括，包含"
+        "term": "presumably",
+        "explanation": "推测起来；大概"
       }
     ],
     "highlights": [
@@ -2372,16 +2322,7 @@
   },
   "M-K01": {
     "translation": "不管情况如何，杰克逊都会知道，为了让这棵树在未来真正安全，需要在契约土地上缴纳财产税。",
-    "vocabulary": [
-      {
-        "term": "needed",
-        "explanation": "需要"
-      },
-      {
-        "term": "future",
-        "explanation": "未来，将来"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2420,7 +2361,11 @@
     "vocabulary": [
       {
         "term": "account",
-        "explanation": "账户，户头"
+        "explanation": "记载；叙述"
+      },
+      {
+        "term": "facilitate",
+        "explanation": "促进；使便利"
       }
     ],
     "highlights": [
@@ -2462,12 +2407,16 @@
     "translation": "最重要的是，没有确凿的证据证明这样的契约曾经存在过，尽管事实上雅典的契约记录可以追溯到 1876 年杰克逊去世之前的几十年，而且根据最初声称见过它的匿名新闻记者的说法，它应该在 1890 年就存在于档案中。",
     "vocabulary": [
       {
-        "term": "according",
-        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
+        "term": "deed",
+        "explanation": "契约；法律文书"
       },
       {
-        "term": "supposed",
-        "explanation": "假定的，据说的"
+        "term": "archives",
+        "explanation": "档案；档案馆"
+      },
+      {
+        "term": "anonymous",
+        "explanation": "匿名的"
       }
     ],
     "highlights": [
@@ -2505,16 +2454,7 @@
   },
   "M-M01": {
     "translation": "正如你可能从这一切中想象到的那样，很少有人相信故事的这一面。",
-    "vocabulary": [
-      {
-        "term": "imagine",
-        "explanation": "想象，设想"
-      },
-      {
-        "term": "credit",
-        "explanation": "信用，信贷，赊购"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "adverbial",
@@ -2585,12 +2525,16 @@
     "translation": "据推测，它是由《雅典周刊横幅》上上述 1890 年头版文章中那位匿名作者的想象力发明的，题为“契约本身”，顺便说一下，该文章包含了一些更容易被证明是错误的元素。",
     "vocabulary": [
       {
-        "term": "invented",
-        "explanation": "发明，创造"
+        "term": "speculated",
+        "explanation": "推测；猜测"
       },
       {
-        "term": "contained",
-        "explanation": "包含，容纳"
+        "term": "invented",
+        "explanation": "编造；发明"
+      },
+      {
+        "term": "aforementioned",
+        "explanation": "上述的；前面提到的"
       }
     ],
     "highlights": [
@@ -2630,12 +2574,16 @@
     "translation": "至于作者为什么要这样做，据推测，这可能是 19 世纪版本的点击诱饵思维练习，即某人对自己做这样一个无意识的生物是否合法。",
     "vocabulary": [
       {
-        "term": "exercise",
-        "explanation": "运动，锻炼"
+        "term": "speculated",
+        "explanation": "推测；猜测"
       },
       {
-        "term": "version",
-        "explanation": "（同一种物件稍有不同的）样式，型号"
+        "term": "click-bait",
+        "explanation": "诱导点击的内容"
+      },
+      {
+        "term": "non-conscious",
+        "explanation": "无意识的；无知觉的"
       }
     ],
     "highlights": [
@@ -2675,16 +2623,7 @@
   },
   "M-O01": {
     "translation": "不管怎样，下一个已知的“拥有自己的树”实例直到 1901 年才出现在同一份报纸《雅典旗帜周刊》的百年纪念版中。",
-    "vocabulary": [
-      {
-        "term": "mentioned",
-        "explanation": "提及，说起，谈到（mention 的过去式和过去分词）"
-      },
-      {
-        "term": "instance",
-        "explanation": "例子，实例"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2730,12 +2669,16 @@
     "translation": "这篇文章非常清楚地介绍了另一个帐户，只是复制了大约十年前发表的原始文章，只是稍微改写了措辞。",
     "vocabulary": [
       {
-        "term": "featured",
-        "explanation": "特点，特征"
+        "term": "account",
+        "explanation": "记载；叙述"
       },
       {
-        "term": "article",
-        "explanation": "文章，论文"
+        "term": "published",
+        "explanation": "出版；发表"
+      },
+      {
+        "term": "reworded",
+        "explanation": "改写；换一种说法"
       }
     ],
     "highlights": [
@@ -2783,12 +2726,12 @@
     "translation": "下一个报道发生在 1906 年，再次出现在《雅典周刊横幅》中，再次非常清楚地复制了原始报道，只是稍微改写了措辞，相当于 19 世纪当观众已经忘记了原始报道时的重新发布。",
     "vocabulary": [
       {
-        "term": "audience",
-        "explanation": "观众，听众"
+        "term": "account",
+        "explanation": "记载；叙述"
       },
       {
-        "term": "century",
-        "explanation": "世纪"
+        "term": "reworded",
+        "explanation": "改写；换一种说法"
       }
     ],
     "highlights": [
@@ -2836,12 +2779,8 @@
     "translation": "无可辩驳的是，员工知道是非之分。",
     "vocabulary": [
       {
-        "term": "difference",
-        "explanation": "差异，不同之处"
-      },
-      {
-        "term": "employees",
-        "explanation": "员工"
+        "term": "irrefutable",
+        "explanation": "无可辩驳的"
       }
     ],
     "highlights": [
@@ -2891,12 +2830,12 @@
     "translation": "那么，当更多的员工看到有人在工作场所表现出危险行为时，为什么不进行干预呢？",
     "vocabulary": [
       {
-        "term": "workplace",
-        "explanation": "（办公室，工厂）等工作场所"
+        "term": "intervene",
+        "explanation": "干预；介入"
       },
       {
-        "term": "employees",
-        "explanation": "员工"
+        "term": "at-risk behavior",
+        "explanation": "高风险行为"
       }
     ],
     "highlights": [
@@ -2928,12 +2867,8 @@
     "translation": "有很多因素会影响人们是否干预。",
     "vocabulary": [
       {
-        "term": "influence",
-        "explanation": "影响，作用"
-      },
-      {
-        "term": "factors",
-        "explanation": "因素，要素（factor 的复数）"
+        "term": "intervene",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -2973,12 +2908,8 @@
     "translation": "首先，他们需要能够看到危险局势开始显现。",
     "vocabulary": [
       {
-        "term": "situation",
-        "explanation": "情况，形势"
-      },
-      {
-        "term": "beginning",
-        "explanation": "开始，开端"
+        "term": "unfold",
+        "explanation": "展开；逐渐发生"
       }
     ],
     "highlights": [
@@ -3018,12 +2949,8 @@
     "translation": "其次，公司文化需要让他们感到可以安全地畅所欲言。",
     "vocabulary": [
       {
-        "term": "culture",
-        "explanation": "文化，文明"
-      },
-      {
-        "term": "company",
-        "explanation": "公司"
+        "term": "speak up",
+        "explanation": "大胆发言；说出意见"
       }
     ],
     "highlights": [
@@ -3063,12 +2990,8 @@
     "translation": "第三，他们需要具备有效表达能力的沟通技巧。",
     "vocabulary": [
       {
-        "term": "effectively",
-        "explanation": "有效地"
-      },
-      {
-        "term": "skills",
-        "explanation": "（特定的）技术，技能，技巧（skill 的复数）"
+        "term": "communication skills",
+        "explanation": "沟通技能"
       }
     ],
     "highlights": [
@@ -3108,12 +3031,8 @@
     "translation": "严格来说，这并不是一个工作场所问题；而是一个问题。这在工作之外也是一个日益严重的问题。",
     "vocabulary": [
       {
-        "term": "workplace",
-        "explanation": "（办公室，工厂）等工作场所"
-      },
-      {
-        "term": "problem",
-        "explanation": "问题，难题，困难"
+        "term": "off the job",
+        "explanation": "工作之外"
       }
     ],
     "highlights": [
@@ -3153,12 +3072,8 @@
     "translation": "每天，人们都会在街上目睹事情的发生，然后选择袖手旁观。",
     "vocabulary": [
       {
-        "term": "things",
-        "explanation": "事物，东西（thing 的复数形式）"
-      },
-      {
-        "term": "street",
-        "explanation": "街道，街"
+        "term": "stand idly by",
+        "explanation": "袖手旁观"
       }
     ],
     "highlights": [
@@ -3222,12 +3137,8 @@
     "translation": "这被称为旁观者效应——目击事件的人越多，该群体中帮助受害者的可能性就越小。",
     "vocabulary": [
       {
-        "term": "people",
-        "explanation": "人，人类"
-      },
-      {
-        "term": "effect",
-        "explanation": "作用，影响"
+        "term": "bystander effect",
+        "explanation": "旁观者效应"
       }
     ],
     "highlights": [
@@ -3267,12 +3178,8 @@
     "translation": "这背后的心理学称为责任分散。",
     "vocabulary": [
       {
-        "term": "responsibility",
-        "explanation": "责任，负责"
-      },
-      {
-        "term": "psychology",
-        "explanation": "心理学"
+        "term": "diffusion of responsibility",
+        "explanation": "责任分散"
       }
     ],
     "highlights": [
@@ -3312,12 +3219,8 @@
     "translation": "基本上，人群越多，就越多的人认为会有其他人来处理这件事——这意味着没有人在需要的时候有效干预或采取行动。",
     "vocabulary": [
       {
-        "term": "effectively",
-        "explanation": "有效地"
-      },
-      {
-        "term": "meaning",
-        "explanation": "意思，意义，含义"
+        "term": "intervenes",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -3359,12 +3262,16 @@
     "translation": "这种从众心态足以让人们逃避自己已知的责任。",
     "vocabulary": [
       {
-        "term": "responsibilities",
-        "explanation": "责任，负责"
+        "term": "mentality",
+        "explanation": "心态；思维方式"
       },
       {
-        "term": "mentality",
-        "explanation": "心态，思维方式"
+        "term": "evade",
+        "explanation": "逃避；躲避"
+      },
+      {
+        "term": "responsibilities",
+        "explanation": "责任；职责"
       }
     ],
     "highlights": [
@@ -3404,12 +3311,12 @@
     "translation": "但不仅仅是一线工人没有在工作场所进行安全干预。",
     "vocabulary": [
       {
-        "term": "interventions",
-        "explanation": "干预，干涉，介入（intervention 的复数）"
+        "term": "frontline workers",
+        "explanation": "一线工人"
       },
       {
-        "term": "workplace",
-        "explanation": "（办公室，工厂）等工作场所"
+        "term": "interventions",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -3449,8 +3356,12 @@
     "translation": "也有主管人员不干预的情况。",
     "vocabulary": [
       {
-        "term": "instances",
-        "explanation": "例子，实例"
+        "term": "supervisors",
+        "explanation": "主管；监督人员"
+      },
+      {
+        "term": "intervene",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -3490,12 +3401,16 @@
     "translation": "当一群员工发现领导层没有解决不安全行为时，就会开创先例，表明这些情况应该如何解决，从而为每个人定义安全文化。",
     "vocabulary": [
       {
-        "term": "situations",
-        "explanation": "情况，状况，局面（situation 的复数形式）"
+        "term": "unsafe",
+        "explanation": "不安全的；有危险的"
       },
       {
-        "term": "employees",
-        "explanation": "员工"
+        "term": "precedent",
+        "explanation": "先例；惯例"
+      },
+      {
+        "term": "safety culture",
+        "explanation": "安全文化"
       }
     ],
     "highlights": [
@@ -3540,12 +3455,12 @@
     "translation": "尽管鼓励工人在观察到不安全操作时进行干预，但这种情况发生的情况还不到一半。",
     "vocabulary": [
       {
-        "term": "operations",
-        "explanation": "运作，实施"
+        "term": "intervene",
+        "explanation": "干预；介入"
       },
       {
-        "term": "encouraged",
-        "explanation": "鼓励，激励"
+        "term": "unsafe",
+        "explanation": "不安全的；有危险的"
       }
     ],
     "highlights": [
@@ -3585,8 +3500,8 @@
     "translation": "恐惧是不干预的最终因素。",
     "vocabulary": [
       {
-        "term": "ultimate",
-        "explanation": "最终的，最后的"
+        "term": "intervening",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -3632,7 +3547,16 @@
   },
   "R1-18": {
     "translation": "人们担心受到惩罚，担心如果他们干预，他们将不得不做更多的工作。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "penalty",
+        "explanation": "惩罚；处罚"
+      },
+      {
+        "term": "intervene",
+        "explanation": "干预；介入"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -3678,12 +3602,8 @@
     "translation": "过去不成功的尝试是人们不干预的另一个重要因素——他们倾向于将这种行动推迟到其他人来应对未来的所有情况。",
     "vocabulary": [
       {
-        "term": "situations",
-        "explanation": "情况，状况，局面（situation 的复数形式）"
-      },
-      {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "intervene",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -3723,12 +3643,12 @@
     "translation": "在许多工作场所，必须任命有能力的工人。",
     "vocabulary": [
       {
-        "term": "workers",
-        "explanation": "工作者，工作人员"
+        "term": "competent workers",
+        "explanation": "有资质的工人"
       },
       {
-        "term": "competent",
-        "explanation": "能干的，能胜任的"
+        "term": "appointed",
+        "explanation": "被任命的；指定的"
       }
     ],
     "highlights": [
@@ -3760,12 +3680,12 @@
     "translation": "他们的部分工作是在工人在没有适当设备的情况下执行任务或条件不安全时进行干预。",
     "vocabulary": [
       {
-        "term": "conditions",
-        "explanation": "状况，状态"
+        "term": "intervene",
+        "explanation": "干预；介入"
       },
       {
-        "term": "workers",
-        "explanation": "工作者，工作人员"
+        "term": "unsafe",
+        "explanation": "不安全的；有危险的"
       }
     ],
     "highlights": [
@@ -3805,8 +3725,8 @@
     "translation": "当出现危险时，合格的工人也必须停止继续工作。",
     "vocabulary": [
       {
-        "term": "continuing",
-        "explanation": "（使）继续，（使）延续"
+        "term": "stop work",
+        "explanation": "停工"
       }
     ],
     "highlights": [
@@ -3838,8 +3758,8 @@
     "translation": "主管也发挥着关键作用。",
     "vocabulary": [
       {
-        "term": "critical",
-        "explanation": "批判的，爱挑剔的"
+        "term": "Supervisors",
+        "explanation": "主管；监督人员"
       }
     ],
     "highlights": [
@@ -3879,12 +3799,16 @@
     "translation": "即使不需要有能力的人员，主管也需要广泛的技能，不仅可以识别和减轻工作场所的危险，还可以在团队内部建立一个安全氛围，支持他们之间的干预和开放的沟通。",
     "vocabulary": [
       {
-        "term": "workplace",
-        "explanation": "（办公室，工厂）等工作场所"
+        "term": "workplace hazards",
+        "explanation": "工作场所隐患"
       },
       {
-        "term": "required",
-        "explanation": "必需的，规定的"
+        "term": "safety climate",
+        "explanation": "安全氛围"
+      },
+      {
+        "term": "open communication",
+        "explanation": "开放沟通"
       }
     ],
     "highlights": [
@@ -3929,12 +3853,16 @@
     "translation": "除了有能力的工人和主管之外，重要的是要教育组织内的每个人，如果他们目睹了可能的不安全行为，无论您是指定的有能力的人员、主管还是一线工人，他们都有义务进行干预",
     "vocabulary": [
       {
-        "term": "organization",
-        "explanation": "组织，机构"
+        "term": "competent workers",
+        "explanation": "有资质的工人"
       },
       {
-        "term": "workers",
-        "explanation": "工作者，工作人员"
+        "term": "obliged",
+        "explanation": "有义务的；被迫的"
+      },
+      {
+        "term": "intervene",
+        "explanation": "干预；介入"
       }
     ],
     "highlights": [
@@ -3993,11 +3921,7 @@
     "vocabulary": [
       {
         "term": "environmentalist",
-        "explanation": "环境保护主义者，环境保护论者"
-      },
-      {
-        "term": "things",
-        "explanation": "事物，东西（thing 的复数形式）"
+        "explanation": "环保主义者"
       }
     ],
     "highlights": [
@@ -4038,11 +3962,7 @@
     "vocabulary": [
       {
         "term": "ecosystems",
-        "explanation": "生态系统（ecosystem 的复数）"
-      },
-      {
-        "term": "protect",
-        "explanation": "保护，防护"
+        "explanation": "生态系统"
       }
     ],
     "highlights": [
@@ -4082,12 +4002,12 @@
     "translation": "在 21 世纪，这个术语已经演变为反映应对人为气候变化的需要。",
     "vocabulary": [
       {
-        "term": "climate",
-        "explanation": "气候"
+        "term": "evolved",
+        "explanation": "进化形成的"
       },
       {
-        "term": "century",
-        "explanation": "世纪"
+        "term": "human-made",
+        "explanation": "人为造成的"
       }
     ],
     "highlights": [
@@ -4120,11 +4040,15 @@
     "vocabulary": [
       {
         "term": "distinction",
-        "explanation": "差别，区分"
+        "explanation": "区别；差异"
       },
       {
-        "term": "community",
-        "explanation": "社区，社会"
+        "term": "strands",
+        "explanation": "分支；流派"
+      },
+      {
+        "term": "environmentalism",
+        "explanation": "环保主义；环境保护运动"
       }
     ],
     "highlights": [
@@ -4164,12 +4088,12 @@
     "translation": "一方面是纯粹主义者，他们认为核电不值得冒险，而解决气候危机的唯一解决方案是可再生能源。",
     "vocabulary": [
       {
-        "term": "solution",
-        "explanation": "（问题、困难等的）解决办法"
+        "term": "purists",
+        "explanation": "纯粹主义者"
       },
       {
-        "term": "climate",
-        "explanation": "气候"
+        "term": "renewable energy",
+        "explanation": "可再生能源"
       }
     ],
     "highlights": [
@@ -4201,12 +4125,12 @@
     "translation": "反对方同意可再生能源至关重要，但表示社会需要足够的电力来满足消费者在没有阳光和风的情况下的基本需求。",
     "vocabulary": [
       {
-        "term": "society",
-        "explanation": "社会（以群体形式生活在一起的人的总称）"
+        "term": "opposing",
+        "explanation": "对立的；反对的"
       },
       {
-        "term": "shining",
-        "explanation": "发光的，反光的"
+        "term": "renewables",
+        "explanation": "可再生能源"
       }
     ],
     "highlights": [
@@ -4266,12 +4190,8 @@
     "translation": "核能比石油、天然气和煤炭清洁得多，是一种自然的选择，特别是在水力发电能力有限的情况下。",
     "vocabulary": [
       {
-        "term": "capacity",
-        "explanation": "能力，才能"
-      },
-      {
-        "term": "especially",
-        "explanation": "尤其，特别"
+        "term": "hydroelectric capacity",
+        "explanation": "水力发电能力"
       }
     ],
     "highlights": [
@@ -4311,12 +4231,16 @@
     "translation": "帮助撰写联合国政府间气候变化专门委员会报告的莱昂·克拉克并不是核能的不加批判的支持者，但他表示，如果我们认真实现碳中和，那么核能是一个有价值的选择。",
     "vocabulary": [
       {
-        "term": "reports",
-        "explanation": "报告"
+        "term": "uncritical",
+        "explanation": "不加批判的；盲目支持的"
       },
       {
-        "term": "helped",
-        "explanation": "帮助（help 的过去分词）"
+        "term": "supporter",
+        "explanation": "支持者"
+      },
+      {
+        "term": "carbon neutrality",
+        "explanation": "碳中和"
       }
     ],
     "highlights": [
@@ -4374,12 +4298,8 @@
     "translation": "“所有这一切的核心是你认为我们能够在多大程度上利用 100% 可再生能源真正实现气候目标，”他说。",
     "vocabulary": [
       {
-        "term": "climate",
-        "explanation": "气候"
-      },
-      {
-        "term": "degree",
-        "explanation": "度，度数（温度单位）"
+        "term": "renewables",
+        "explanation": "可再生能源"
       }
     ],
     "highlights": [
@@ -4419,16 +4339,7 @@
   },
   "R2-10": {
     "translation": "“如果你不相信我们能做到这一点，而你又关心气候，那么你就被迫考虑核能之类的东西。”",
-    "vocabulary": [
-      {
-        "term": "climate",
-        "explanation": "气候"
-      },
-      {
-        "term": "believe",
-        "explanation": "相信"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "adverbial",
@@ -4471,12 +4382,16 @@
     "translation": "普遍 100% 可再生性的实现同样存在争议。",
     "vocabulary": [
       {
-        "term": "universal",
-        "explanation": "普遍的，全体的，全世界的"
+        "term": "achievability",
+        "explanation": "可实现性"
       },
       {
-        "term": "similarly",
-        "explanation": "相似地"
+        "term": "renewability",
+        "explanation": "可再生性"
+      },
+      {
+        "term": "contentious",
+        "explanation": "有争议的"
       }
     ],
     "highlights": [
@@ -4516,8 +4431,8 @@
     "translation": "佛蒙特州伯灵顿等城市多年来一直“100%可再生能源”。",
     "vocabulary": [
       {
-        "term": "Cities",
-        "explanation": "城市（city 的复数）"
+        "term": "renewable",
+        "explanation": "可再生的"
       }
     ],
     "highlights": [
@@ -4557,12 +4472,16 @@
     "translation": "但这些城市往往人口较少，有时仍然依赖化石燃料能源，并且拥有大量可立即使用的可再生资源。",
     "vocabulary": [
       {
-        "term": "populations",
-        "explanation": "（地区、国家等的）人口，人口数量"
+        "term": "small populations",
+        "explanation": "规模较小的人口"
       },
       {
-        "term": "resources",
-        "explanation": "资源，物力，财力（resource 的复数）"
+        "term": "fossil fuel",
+        "explanation": "化石燃料"
+      },
+      {
+        "term": "renewable",
+        "explanation": "可再生的"
       }
     ],
     "highlights": [
@@ -4610,12 +4529,12 @@
     "translation": "与此同时，能够利用可再生能源的国家通常要归功于非凡的水力发电能力。",
     "vocabulary": [
       {
-        "term": "countries",
-        "explanation": "国家（country 的复数）"
+        "term": "renewables",
+        "explanation": "可再生能源"
       },
       {
-        "term": "typically",
-        "explanation": "典型地，有代表性地"
+        "term": "capabilities",
+        "explanation": "能力；性能"
       }
     ],
     "highlights": [
@@ -4655,12 +4574,8 @@
     "translation": "德国是工业化大国推动绿色能源发展的最佳案例。",
     "vocabulary": [
       {
-        "term": "pushing",
-        "explanation": "接近（某个年龄）"
-      },
-      {
-        "term": "country",
-        "explanation": "国，国家"
+        "term": "industrialized",
+        "explanation": "工业化的"
       }
     ],
     "highlights": [
@@ -4700,12 +4615,12 @@
     "translation": "德国总理安格拉·默克尔 (Angela Merkel) 于 2011 年宣布了能源转型计划，这是一项能源转型计划，将逐步淘汰核电和煤炭，同时逐步采用可再生能源。",
     "vocabulary": [
       {
-        "term": "transition",
-        "explanation": "过渡，转变"
+        "term": "phase out",
+        "explanation": "逐步淘汰"
       },
       {
-        "term": "nuclear",
-        "explanation": "核子的，原子核的"
+        "term": "renewables",
+        "explanation": "可再生能源"
       }
     ],
     "highlights": [
@@ -4745,12 +4660,8 @@
     "translation": "自 2010 年以来，风能和太阳能发电量增长了 400% 以上，2019 年可再生能源提供了该国电力的 46%。",
     "vocabulary": [
       {
-        "term": "electricity",
-        "explanation": "电，电流，电力"
-      },
-      {
-        "term": "generation",
-        "explanation": "一代（人）"
+        "term": "renewables",
+        "explanation": "可再生能源"
       }
     ],
     "highlights": [
@@ -4814,12 +4725,8 @@
     "translation": "但近年来进展已经停止。",
     "vocabulary": [
       {
-        "term": "progress",
-        "explanation": "进步，进展"
-      },
-      {
-        "term": "recent",
-        "explanation": "最近的，最新的"
+        "term": "halted",
+        "explanation": "停止；停滞"
       }
     ],
     "highlights": [
@@ -4859,12 +4766,16 @@
     "translation": "可再生能源的不稳定不仅意味着能源通常不会在夜间产生，而且太阳能和风能可能会在白天压垮电网，迫使公用事业公司向客户付费。",
     "vocabulary": [
       {
-        "term": "electricity",
-        "explanation": "电，电流，电力"
+        "term": "instability",
+        "explanation": "不稳定性"
       },
       {
-        "term": "customers",
-        "explanation": "顾客，客户（customer 的复数）"
+        "term": "renewables",
+        "explanation": "可再生能源"
+      },
+      {
+        "term": "overwhelm",
+        "explanation": "压垮；使不堪重负"
       }
     ],
     "highlights": [
@@ -4906,12 +4817,12 @@
     "translation": "落后的电网基础设施难以将过剩的绿色能源从德国北部输送到工业南部，这意味着许多工厂仍然依靠煤炭和天然气运行。",
     "vocabulary": [
       {
-        "term": "infrastructure",
-        "explanation": "下面结构"
+        "term": "grid infrastructure",
+        "explanation": "电网基础设施"
       },
       {
-        "term": "transport",
-        "explanation": "运输，运送"
+        "term": "overabundance",
+        "explanation": "过剩；过量"
       }
     ],
     "highlights": [
@@ -4951,12 +4862,8 @@
     "translation": "一些地方也达到了政治极限，民众对新建风力发电机组的建设提出了强烈抗议。",
     "vocabulary": [
       {
-        "term": "construction",
-        "explanation": "建造，建筑"
-      },
-      {
-        "term": "citizens",
-        "explanation": "公民（citizen 的复数）"
+        "term": "wind turbines",
+        "explanation": "风力涡轮机；风机"
       }
     ],
     "highlights": [
@@ -5004,12 +4911,8 @@
     "translation": "结果是，自 2010 年以来，德国的温室气体排放量下降了约 11.5%，低于欧盟 13.5% 的平均水平。",
     "vocabulary": [
       {
-        "term": "emissions",
-        "explanation": "排放"
-      },
-      {
-        "term": "average",
-        "explanation": "平均水平，一般标准"
+        "term": "greenhouse gas emissions",
+        "explanation": "温室气体排放"
       }
     ],
     "highlights": [

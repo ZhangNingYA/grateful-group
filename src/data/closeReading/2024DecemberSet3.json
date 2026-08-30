@@ -3,12 +3,8 @@
     "translation": "全球约 23% 的人口生活在绝对贫困之中。",
     "vocabulary": [
       {
-        "term": "population",
-        "explanation": "（地区、国家等的）人口，人口数量"
-      },
-      {
-        "term": "poverty",
-        "explanation": "贫穷，贫困"
+        "term": "absolute poverty",
+        "explanation": "绝对贫困"
       }
     ],
     "highlights": [
@@ -48,12 +44,16 @@
     "translation": "在发展中国家，预期寿命低，婴儿死亡率高，失业率和文盲率高，营养水平低于可接受的标准，疾病广泛传播，而医疗援助却很少或质量很差。",
     "vocabulary": [
       {
-        "term": "unemployment",
-        "explanation": "失业人数，失业率"
+        "term": "infant mortality",
+        "explanation": "婴儿死亡率"
       },
       {
-        "term": "developing",
-        "explanation": "（国家）发展中的"
+        "term": "widespread disease",
+        "explanation": "广泛流行的疾病"
+      },
+      {
+        "term": "medical assistance",
+        "explanation": "医疗援助"
       }
     ],
     "highlights": [
@@ -93,12 +93,16 @@
     "translation": "其他人过着极其富裕和奢华的生活，因此财富的分配方式非常不平等。",
     "vocabulary": [
       {
-        "term": "distributed",
-        "explanation": "分发，分配"
+        "term": "luxurious",
+        "explanation": "奢侈的；豪华的"
       },
       {
-        "term": "incredibly",
-        "explanation": "难以置信地"
+        "term": "distributed",
+        "explanation": "分配；分布"
+      },
+      {
+        "term": "unequal",
+        "explanation": "不平等的；不均等的"
       }
     ],
     "highlights": [
@@ -154,12 +158,8 @@
     "translation": "这些是慈善问题的核心问题，尽管慈善还包括许多其他领域，例如帮助老年人。",
     "vocabulary": [
       {
-        "term": "questions",
-        "explanation": "问题，疑问（question 的复数）"
-      },
-      {
-        "term": "problems",
-        "explanation": "问题"
+        "term": "central problems",
+        "explanation": "核心问题"
       }
     ],
     "highlights": [
@@ -197,16 +197,7 @@
   },
   "C05": {
     "translation": "当非常富有的人承诺捐出大部分数十亿美元时，我们都会鼓掌，但他们通常会留下数百万美元可以传承，仍然远远超过大多数人一生的预期收入。",
-    "vocabulary": [
-      {
-        "term": "millions",
-        "explanation": "数百万"
-      },
-      {
-        "term": "billions",
-        "explanation": "数十亿（billion 的复数）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -252,12 +243,8 @@
     "translation": "与全球相比，即使是西方相对中等的工资也非常高。",
     "vocabulary": [
       {
-        "term": "compared",
-        "explanation": "compare 的过去式和过去分词：比较，对照"
-      },
-      {
-        "term": "salaries",
-        "explanation": "薪金，薪水"
+        "term": "moderate salaries",
+        "explanation": "中等薪资"
       }
     ],
     "highlights": [
@@ -295,7 +282,12 @@
   },
   "C07": {
     "translation": "拥有 20,000 法郎的人可以轻松承担每年赠送 2,000 法郎的费用，并且仍然有足够的生活费和一些奢侈品。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "luxuries",
+        "explanation": "奢侈品；奢侈享受"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -333,12 +325,16 @@
     "translation": "大多数人都认为，慈善捐赠在道德上是值得赞扬的，但慈善行为往往被认为超出了职责范围。",
     "vocabulary": [
       {
-        "term": "behaviour",
-        "explanation": "行为，举止，态度"
+        "term": "praiseworthy",
+        "explanation": "值得称赞的"
       },
       {
-        "term": "regarded",
-        "explanation": "认为，把……看作"
+        "term": "charitable",
+        "explanation": "慈善的；乐善好施的"
+      },
+      {
+        "term": "above and beyond",
+        "explanation": "超出……的要求"
       }
     ],
     "highlights": [
@@ -404,12 +400,12 @@
     "translation": "然而，有些人认为慈善行为是道德上所必需的。",
     "vocabulary": [
       {
-        "term": "behaviour",
-        "explanation": "行为，举止，态度"
+        "term": "charitable",
+        "explanation": "慈善的；乐善好施的"
       },
       {
-        "term": "required",
-        "explanation": "必需的，规定的"
+        "term": "morally required",
+        "explanation": "道德上必须的"
       }
     ],
     "highlights": [
@@ -449,7 +445,12 @@
   },
   "C10": {
     "translation": "这意味着不表现慈善行为就是错误的。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "charitably",
+        "explanation": "慈善地；宽厚地"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -489,12 +490,12 @@
     "translation": "这方面的大多数论点都涉及向较贫穷的国家提供援助，但它们也可能涉及在一个人的直接社区中给予时间。",
     "vocabulary": [
       {
-        "term": "community",
-        "explanation": "社区，社会"
+        "term": "giving aid",
+        "explanation": "提供援助"
       },
       {
-        "term": "majority",
-        "explanation": "大多数"
+        "term": "poorer nations",
+        "explanation": "较贫困国家"
       }
     ],
     "highlights": [
@@ -534,12 +535,16 @@
     "translation": "争论往往对不同收入阶层的人提出不同的要求，并完全排除那些仅仅维持收支平衡的人。",
     "vocabulary": [
       {
-        "term": "requirements",
-        "explanation": "要求，规定，必备条件（requirement 的复数）"
+        "term": "income brackets",
+        "explanation": "收入阶层"
       },
       {
-        "term": "Arguments",
-        "explanation": "争论，争吵"
+        "term": "exclude",
+        "explanation": "排除；不包括"
+      },
+      {
+        "term": "ends meet",
+        "explanation": "收支平衡；勉强维生"
       }
     ],
     "highlights": [
@@ -580,11 +585,11 @@
     "vocabulary": [
       {
         "term": "percentage",
-        "explanation": "百分比，百分率"
+        "explanation": "百分比"
       },
       {
-        "term": "contribute",
-        "explanation": "捐赠，捐助"
+        "term": "earnings",
+        "explanation": "收入；所得"
       }
     ],
     "highlights": [
@@ -626,12 +631,12 @@
     "translation": "我将把所有那些对人们捐赠慈善事业提出道德要求的论点放在一起，尽管事实上人们对于道德要求的程度存在广泛的分歧。",
     "vocabulary": [
       {
-        "term": "arguments",
-        "explanation": "争论，争吵"
+        "term": "disagreement",
+        "explanation": "分歧；意见不一致"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "extent",
+        "explanation": "程度；范围"
       }
     ],
     "highlights": [
@@ -680,11 +685,7 @@
     "vocabulary": [
       {
         "term": "hostility",
-        "explanation": "敌意，对抗"
-      },
-      {
-        "term": "policy",
-        "explanation": "政策，方针"
+        "explanation": "敌意；对抗"
       }
     ],
     "highlights": [
@@ -724,12 +725,16 @@
     "translation": "自由贸易者指出，免关税贸易为世界各地的消费者带来了不可否认的好处，并且在世界各个角落，以前封闭的市场被开放后，贫困现象明显减轻。",
     "vocabulary": [
       {
-        "term": "consumers",
-        "explanation": "消费者，消耗者"
+        "term": "tariff-free",
+        "explanation": "免关税的"
       },
       {
-        "term": "previously",
-        "explanation": "以前地，先前地"
+        "term": "observable",
+        "explanation": "可观察到的"
+      },
+      {
+        "term": "alleviation",
+        "explanation": "缓解；减轻"
       }
     ],
     "highlights": [
@@ -769,12 +774,16 @@
     "translation": "保护主义者指出，国内生产者为全球化经济付出了失去生计和社区空心化的代价。",
     "vocabulary": [
       {
-        "term": "communities",
-        "explanation": "社区"
+        "term": "domestic producers",
+        "explanation": "国内生产者"
       },
       {
-        "term": "economy",
-        "explanation": "经济"
+        "term": "lost livelihoods",
+        "explanation": "失去生计"
+      },
+      {
+        "term": "hollowed-out communities",
+        "explanation": "衰败的社区"
       }
     ],
     "highlights": [
@@ -814,12 +823,16 @@
     "translation": "持续不断的保守派内战常常会演变成毫无内容的部落战争，但贸易是一个罕见的例外。",
     "vocabulary": [
       {
-        "term": "exception",
-        "explanation": "例外，除外"
+        "term": "degenerates",
+        "explanation": "恶化；堕落"
       },
       {
-        "term": "content",
-        "explanation": "满足的，满意的，甘愿的"
+        "term": "tribal",
+        "explanation": "部落的；党派性的"
+      },
+      {
+        "term": "warfare",
+        "explanation": "战争；斗争"
       }
     ],
     "highlights": [
@@ -883,12 +896,8 @@
     "translation": "争论双方都提出了实质性的、经过深思熟虑的政策建议。",
     "vocabulary": [
       {
-        "term": "argument",
-        "explanation": "争论，争吵"
-      },
-      {
-        "term": "thought",
-        "explanation": "想法，看法，主意"
+        "term": "policy proposals",
+        "explanation": "政策提案"
       }
     ],
     "highlights": [
@@ -928,12 +937,16 @@
     "translation": "因此，贸易作为一个讨论话题为自由主义者和民粹主义者提供了真正达成共识的机会。",
     "vocabulary": [
       {
-        "term": "opportunity",
-        "explanation": "时机，机会"
+        "term": "Consequently",
+        "explanation": "因此；结果"
       },
       {
-        "term": "provides",
-        "explanation": "提供，供给"
+        "term": "populists",
+        "explanation": "民粹主义者"
+      },
+      {
+        "term": "meeting of minds",
+        "explanation": "思想共识"
       }
     ],
     "highlights": [
@@ -989,12 +1002,16 @@
     "translation": "富有成效的辩论实际上可能会在这一领域发生，而不是我们已经习惯的谴责与反谴责的熟悉仪式。",
     "vocabulary": [
       {
-        "term": "familiar",
-        "explanation": "熟悉的"
+        "term": "Fruitful",
+        "explanation": "富有成效的"
       },
       {
-        "term": "actually",
-        "explanation": "实际上，事实上"
+        "term": "as opposed to",
+        "explanation": "与……相对；而不是"
+      },
+      {
+        "term": "condemnation",
+        "explanation": "谴责"
       }
     ],
     "highlights": [
@@ -1040,16 +1057,7 @@
   },
   "M-D01": {
     "translation": "尽管听起来很奇怪，但现代世界的贸易问题并不是美元和美分的问题。",
-    "vocabulary": [
-      {
-        "term": "problem",
-        "explanation": "问题，难题，困难"
-      },
-      {
-        "term": "dollars",
-        "explanation": "美元（dollar 的复数）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "adverbial",
@@ -1092,8 +1100,8 @@
     "translation": "这是错误意识的问题。",
     "vocabulary": [
       {
-        "term": "matter",
-        "explanation": "事情，问题"
+        "term": "false consciousness",
+        "explanation": "虚假意识"
       }
     ],
     "highlights": [
@@ -1133,8 +1141,8 @@
     "translation": "这一观察必然会给一些读者敲响马克思主义的警钟，但它是由亚历克西斯·德·托克维尔于 1840 年首次提出的。",
     "vocabulary": [
       {
-        "term": "readers",
-        "explanation": "reader 的复数形式：读者"
+        "term": "observation",
+        "explanation": "观察；评论"
       }
     ],
     "highlights": [
@@ -1190,12 +1198,16 @@
     "translation": "托克维尔追踪人类从原始社会到现代社会的经济发展，观察到几个世纪以来随着经济现实和人类对这些现实的经验越来越背离而出现的悖论。",
     "vocabulary": [
       {
-        "term": "development",
-        "explanation": "发育，成长，发达"
+        "term": "mankind",
+        "explanation": "人类"
       },
       {
-        "term": "experience",
-        "explanation": "经历，往事"
+        "term": "paradox",
+        "explanation": "悖论"
+      },
+      {
+        "term": "unfolding",
+        "explanation": "逐渐展开；发生"
       }
     ],
     "highlights": [
@@ -1248,12 +1260,12 @@
     "translation": "他指出，在原始社会，劳动分工在很大程度上尚未发展，要求每个人、家庭或部落在满足自己的基本物质需求时相对独立。",
     "vocabulary": [
       {
-        "term": "independent",
-        "explanation": "自治的，独立的"
+        "term": "undeveloped",
+        "explanation": "未发展的；不发达的"
       },
       {
-        "term": "division",
-        "explanation": "分开，分配"
+        "term": "material needs",
+        "explanation": "物质需求"
       }
     ],
     "highlights": [
@@ -1293,8 +1305,12 @@
     "translation": "人们建造自己的住宅，耕种自己的土地，饲养自己的牲畜。",
     "vocabulary": [
       {
-        "term": "tended",
-        "explanation": "往往会；倾向于（tend 的过去式）"
+        "term": "dwellings",
+        "explanation": "住宅；住所"
+      },
+      {
+        "term": "livestock",
+        "explanation": "牲畜"
       }
     ],
     "highlights": [
@@ -1350,8 +1366,16 @@
     "translation": "这并不是否认基本形式的贸易的存在，但在大多数情况下，我们的原始祖先过着相当自力更生的生活，尽管生活极其贫困。",
     "vocabulary": [
       {
-        "term": "primitive",
-        "explanation": "原始的，远古的"
+        "term": "ancestors",
+        "explanation": "祖先；先辈"
+      },
+      {
+        "term": "self-reliant",
+        "explanation": "自力更生的"
+      },
+      {
+        "term": "crushingly",
+        "explanation": "极其；压倒性地"
       }
     ],
     "highlights": [
@@ -1415,12 +1439,16 @@
     "translation": "然而，古代和史前世界经济和政治组织的独特的地方性和面对面的性质不断地给这些原始民族留下深刻的印象：他人及其需求的现实是无法控制的。",
     "vocabulary": [
       {
-        "term": "organization",
-        "explanation": "组织，机构"
+        "term": "face-to-face",
+        "explanation": "面对面的"
       },
       {
-        "term": "impressed",
-        "explanation": "钦佩的，印象深刻的"
+        "term": "prehistoric",
+        "explanation": "史前的"
+      },
+      {
+        "term": "uncontrollable",
+        "explanation": "无法控制的"
       }
     ],
     "highlights": [
@@ -1446,12 +1474,16 @@
     "translation": "正如托克维尔所指出的，“一个人一旦开始在公共场合处理公共事务，他就开始意识到自己并不像他最初想象的那样独立于同胞，为了获得他们的支持，他必须经常与他们合作。”",
     "vocabulary": [
       {
-        "term": "perceive",
-        "explanation": "认为，理解"
+        "term": "common affairs",
+        "explanation": "公共事务"
       },
       {
-        "term": "independent",
-        "explanation": "自治的，独立的"
+        "term": "perceive",
+        "explanation": "感知；察觉"
+      },
+      {
+        "term": "cooperation",
+        "explanation": "合作；协作"
       }
     ],
     "highlights": [
@@ -1512,12 +1544,8 @@
     "translation": "随着现代世界的到来，劳动分工在整个社会中越来越广泛地蔓延。",
     "vocabulary": [
       {
-        "term": "division",
-        "explanation": "分开，分配"
-      },
-      {
-        "term": "society",
-        "explanation": "社会（以群体形式生活在一起的人的总称）"
+        "term": "advent",
+        "explanation": "到来；出现"
       }
     ],
     "highlights": [
@@ -1557,8 +1585,8 @@
     "translation": "每个人的基本需求都变得越来越依赖他人。",
     "vocabulary": [
       {
-        "term": "person",
-        "explanation": "人"
+        "term": "dependent on",
+        "explanation": "依赖于"
       }
     ],
     "highlights": [
@@ -1606,12 +1634,8 @@
     "translation": "然而，由于我们的祖先因环境而被迫与邻居和当地社区进行接触，我们感到自己越来越独立。",
     "vocabulary": [
       {
-        "term": "communities",
-        "explanation": "社区"
-      },
-      {
-        "term": "neighbors",
-        "explanation": "街坊邻里，邻居"
+        "term": "ancestors",
+        "explanation": "祖先；先辈"
       }
     ],
     "highlights": [
@@ -1658,8 +1682,12 @@
     "translation": "当我们越来越依赖他人时，我们就会越来越不意识到自己对他人的依赖。",
     "vocabulary": [
       {
-        "term": "conscious",
-        "explanation": "意识到的"
+        "term": "dependent on",
+        "explanation": "依赖于"
+      },
+      {
+        "term": "dependence",
+        "explanation": "依赖；依存"
       }
     ],
     "highlights": [
@@ -1702,7 +1730,12 @@
   },
   "M-G05": {
     "translation": "这就是现代世界贸易的悖论。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "paradox",
+        "explanation": "悖论"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1740,12 +1773,12 @@
     "translation": "这种悖论产生的错误意识对我们关于自由贸易的辩论造成了严重破坏。",
     "vocabulary": [
       {
-        "term": "generates",
-        "explanation": "产生，引起"
+        "term": "false consciousness",
+        "explanation": "虚假意识"
       },
       {
-        "term": "causes",
-        "explanation": "原因"
+        "term": "paradox",
+        "explanation": "悖论"
       }
     ],
     "highlights": [
@@ -1802,11 +1835,15 @@
     "vocabulary": [
       {
         "term": "commodity",
-        "explanation": "商品，货物"
+        "explanation": "商品；货物"
       },
       {
-        "term": "supply",
-        "explanation": "供给量，储备"
+        "term": "manufacture",
+        "explanation": "制造；生产"
+      },
+      {
+        "term": "supply chain",
+        "explanation": "供应链"
       }
     ],
     "highlights": [
@@ -1862,8 +1899,12 @@
     "translation": "但正如托克维尔在 1840 年就预见到的那样，我们并不觉得自己的生活方式依赖于这些陌生人。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
+        "term": "foresaw",
+        "explanation": "预见；预料"
+      },
+      {
+        "term": "dependent on",
+        "explanation": "依赖于"
       }
     ],
     "highlights": [
@@ -1916,12 +1957,16 @@
     "translation": "我们的民族意识从未意识到我们自己的物质福利依赖于他们的工作。",
     "vocabulary": [
       {
-        "term": "welfare",
-        "explanation": "幸福，安康"
+        "term": "dependence",
+        "explanation": "依赖；依存"
       },
       {
-        "term": "strikes",
-        "explanation": "击，撞"
+        "term": "material welfare",
+        "explanation": "物质福祉"
+      },
+      {
+        "term": "national consciousness",
+        "explanation": "民族意识"
       }
     ],
     "highlights": [
@@ -1959,7 +2004,20 @@
   },
   "M-H05": {
     "translation": "我们很少怀着感激之情思考自由贸易的全球化途径。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "contemplate",
+        "explanation": "思考；仔细考虑"
+      },
+      {
+        "term": "globalized",
+        "explanation": "全球化的"
+      },
+      {
+        "term": "gratitude",
+        "explanation": "感激；感谢"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2003,12 +2061,7 @@
   },
   "M-H06": {
     "translation": "D 造成这种情况的原因有两个。",
-    "vocabulary": [
-      {
-        "term": "reasons",
-        "explanation": "原因（reason 的复数）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2044,7 +2097,12 @@
   },
   "M-H07": {
     "translation": "第一个，说白了就是钱。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "put it bluntly",
+        "explanation": "直截了当地说"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2080,16 +2138,7 @@
   },
   "M-H08": {
     "translation": "金钱让我们能够购买他人的作品，而不用将他们视为人。",
-    "vocabulary": [
-      {
-        "term": "thought",
-        "explanation": "想法，看法，主意"
-      },
-      {
-        "term": "beings",
-        "explanation": "（任何真实或虚构的）生物"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2129,12 +2178,16 @@
     "translation": "与我们在原始乡镇的祖先不同，我们很少需要面对面地见到发明、建造、运输或供应我们商品的人们。",
     "vocabulary": [
       {
-        "term": "invented",
-        "explanation": "发明，创造"
+        "term": "ancestors",
+        "explanation": "祖先；先辈"
       },
       {
-        "term": "supplied",
-        "explanation": "供给量，储备"
+        "term": "face-to-face",
+        "explanation": "面对面的"
+      },
+      {
+        "term": "invented",
+        "explanation": "编造；发明"
       }
     ],
     "highlights": [
@@ -2172,16 +2225,7 @@
   },
   "M-H10": {
     "translation": "在进行交换之前无需建立任何关系。",
-    "vocabulary": [
-      {
-        "term": "relationship",
-        "explanation": "（人、团体、国家等相互间的）关系"
-      },
-      {
-        "term": "exchange",
-        "explanation": "交换，互换"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2220,11 +2264,7 @@
     "vocabulary": [
       {
         "term": "transaction",
-        "explanation": "交易，买卖，业务"
-      },
-      {
-        "term": "involved",
-        "explanation": "复杂的"
+        "explanation": "交易；事务"
       }
     ],
     "highlights": [
@@ -2278,16 +2318,7 @@
   },
   "M-H12": {
     "translation": "这样，金钱让我们感觉比实际更独立。",
-    "vocabulary": [
-      {
-        "term": "independent",
-        "explanation": "自治的，独立的"
-      },
-      {
-        "term": "actually",
-        "explanation": "实际上，事实上"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2363,12 +2394,8 @@
     "translation": "我们知道，如果我们出价足够高，我们就可以摆脱建立关系的耗时劳动。",
     "vocabulary": [
       {
-        "term": "relationships",
-        "explanation": "（人、团体、国家等相互间的）关系"
-      },
-      {
-        "term": "building",
-        "explanation": "建筑物，房屋，楼房"
+        "term": "time-consuming labor",
+        "explanation": "耗时的劳动"
       }
     ],
     "highlights": [
@@ -2454,12 +2481,8 @@
     "translation": "它为我们提供了一套要执行的仪式，并承诺如果我们这样做，我们将能够对他人行使权力。",
     "vocabulary": [
       {
-        "term": "promises",
-        "explanation": "承诺，保证"
-      },
-      {
-        "term": "perform",
-        "explanation": "演出，表演"
+        "term": "rituals",
+        "explanation": "惯例；仪式"
       }
     ],
     "highlights": [
@@ -2499,12 +2522,8 @@
     "translation": "这就产生了一种错觉，认为有足够的钱买东西就相当于知道如何自己制作东西。",
     "vocabulary": [
       {
-        "term": "created",
-        "explanation": "创造"
-      },
-      {
-        "term": "having",
-        "explanation": "有，拥有（have 的现在分词）"
+        "term": "illusion",
+        "explanation": "错觉；幻象"
       }
     ],
     "highlights": [
@@ -2546,8 +2565,16 @@
     "translation": "我们很少意识到对构成供应链的匿名男女的感激之情。",
     "vocabulary": [
       {
-        "term": "supply",
-        "explanation": "供给量，储备"
+        "term": "Gratitude",
+        "explanation": "感激；感谢"
+      },
+      {
+        "term": "supply chain",
+        "explanation": "供应链"
+      },
+      {
+        "term": "consciousness",
+        "explanation": "意识；认识"
       }
     ],
     "highlights": [
@@ -2595,8 +2622,12 @@
     "translation": "事实上，匿名是自由贸易悖论的第二个根本原因。",
     "vocabulary": [
       {
-        "term": "second",
-        "explanation": "第二（的），第二个（的）"
+        "term": "free-trade",
+        "explanation": "自由贸易"
+      },
+      {
+        "term": "paradox",
+        "explanation": "悖论"
       }
     ],
     "highlights": [
@@ -2636,12 +2667,12 @@
     "translation": "现代性将每个人从地点和社区的限制中解放出来。",
     "vocabulary": [
       {
-        "term": "community",
-        "explanation": "社区，社会"
+        "term": "Modernity",
+        "explanation": "现代性；现代社会"
       },
       {
-        "term": "limits",
-        "explanation": "范围"
+        "term": "emancipated",
+        "explanation": "获得解放的；摆脱束缚的"
       }
     ],
     "highlights": [
@@ -2681,12 +2712,8 @@
     "translation": "总的来说，当我们进行交易时，我们是在与陌生人进行交易；当我们投票时，我们投票给陌生人；当我们看、读或听故事时，故事的讲述者都是陌生人。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
-      },
-      {
         "term": "tellers",
-        "explanation": "银行柜员；出纳员（teller 的复数）"
+        "explanation": "讲述者"
       }
     ],
     "highlights": [
@@ -2726,12 +2753,16 @@
     "translation": "与托克维尔将我们比作的祖先相反，我们不了解我们必须与之打交道的人，无论是在经济领域还是在政治领域。",
     "vocabulary": [
       {
-        "term": "compares",
-        "explanation": "比较，对比"
+        "term": "As opposed to",
+        "explanation": "与……相对；而不是"
+      },
+      {
+        "term": "ancestors",
+        "explanation": "祖先；先辈"
       },
       {
         "term": "sphere",
-        "explanation": "（活动、兴趣、专业知识的）范围，领域"
+        "explanation": "领域；范围"
       }
     ],
     "highlights": [
@@ -2779,12 +2810,8 @@
     "translation": "这只是市场奇迹的阴暗面，历史上第一次让陌生人能够互相照顾。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
-      },
-      {
-        "term": "markets",
-        "explanation": "市场，集市（market 的复数）"
+        "term": "miracle",
+        "explanation": "奇迹"
       }
     ],
     "highlights": [
@@ -2824,12 +2851,8 @@
     "translation": "它们还让我们每个人越来越多地以陌生人的身份过着自己的生活。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
-      },
-      {
         "term": "exclusively",
-        "explanation": "仅仅，单独地，专门地"
+        "explanation": "仅仅；专门地"
       }
     ],
     "highlights": [
@@ -2871,12 +2894,12 @@
     "translation": "托克维尔是这样相当悲观地描述我们的：每个人，孤立无援，对他人的命运都像陌生人一样；每个人都对他人的命运感到陌生。他的孩子和私人朋友为他构成了整个人类。",
     "vocabulary": [
       {
-        "term": "describes",
-        "explanation": "（describe 的第三人称单数形式）：描述，叙述，记述"
+        "term": "pessimistically",
+        "explanation": "悲观地"
       },
       {
-        "term": "standing",
-        "explanation": "永久的，长期的，常设的"
+        "term": "destiny",
+        "explanation": "命运；宿命"
       }
     ],
     "highlights": [
@@ -2926,8 +2949,8 @@
     "translation": "至于其余的同胞，他就在他们旁边，但他看不到他们。",
     "vocabulary": [
       {
-        "term": "citizens",
-        "explanation": "公民（citizen 的复数）"
+        "term": "remainder",
+        "explanation": "其余部分"
       }
     ],
     "highlights": [
@@ -3025,12 +3048,7 @@
   },
   "M-I10": {
     "translation": "他只存在于他自己之中并为他自己而存在。",
-    "vocabulary": [
-      {
-        "term": "exists",
-        "explanation": "存在量词（exist 的复数）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3068,12 +3086,8 @@
     "translation": "最后一句话非常贴切地概括了我们每个人在现代经济中的运作方式：“他触摸了它们，但他感觉不到它们。”",
     "vocabulary": [
       {
-        "term": "functions",
-        "explanation": "功能，作用，职责"
-      },
-      {
-        "term": "economy",
-        "explanation": "经济"
+        "term": "apt a summary",
+        "explanation": "恰当的总结"
       }
     ],
     "highlights": [
@@ -3129,12 +3143,8 @@
     "translation": "这是自由贸易捍卫者面临的最大挑战。",
     "vocabulary": [
       {
-        "term": "challenge",
-        "explanation": "挑战，难题"
-      },
-      {
-        "term": "greatest",
-        "explanation": "最伟大的，最杰出的，最好的"
+        "term": "defenders",
+        "explanation": "捍卫者；支持者"
       }
     ],
     "highlights": [
@@ -3174,12 +3184,16 @@
     "translation": "人类很难对陌生人心存感激，而全球市场让我们变得如此富有，也让我们彼此变得陌生。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
+        "term": "exceedingly",
+        "explanation": "极其；非常"
       },
       {
-        "term": "difficult",
-        "explanation": "困难的，费力的"
+        "term": "gratitude",
+        "explanation": "感激；感谢"
+      },
+      {
+        "term": "marketplace",
+        "explanation": "市场；交易场所"
       }
     ],
     "highlights": [
@@ -3245,8 +3259,16 @@
     "translation": "我们的大脑天生适合部落生活，而部落不会善待陌生人。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
+        "term": "hardwired",
+        "explanation": "根深蒂固的；预先设定的"
+      },
+      {
+        "term": "tribal",
+        "explanation": "部落的；党派性的"
+      },
+      {
+        "term": "take kindly to",
+        "explanation": "善待；乐于接受"
       }
     ],
     "highlights": [
@@ -3302,12 +3324,16 @@
     "translation": "因此，让外国人对陌生人产生依赖感和感激之情是一项艰巨的任务。",
     "vocabulary": [
       {
-        "term": "strangers",
-        "explanation": "陌生人"
+        "term": "dependence",
+        "explanation": "依赖；依存"
       },
       {
-        "term": "foreign",
-        "explanation": "外国的，来自国外的"
+        "term": "gratitude",
+        "explanation": "感激；感谢"
+      },
+      {
+        "term": "uphill",
+        "explanation": "艰难的"
       }
     ],
     "highlights": [
@@ -3349,12 +3375,16 @@
     "translation": "如果自由贸易者想要在未来赢得政策争论，他们就必须找到一种在美国消费者和外国生产商之间建立感情纽带的方法。",
     "vocabulary": [
       {
-        "term": "consumers",
-        "explanation": "消费者，消耗者"
+        "term": "traders",
+        "explanation": "贸易商；交易者"
       },
       {
-        "term": "arguments",
-        "explanation": "争论，争吵"
+        "term": "affection",
+        "explanation": "喜爱；感情"
+      },
+      {
+        "term": "foreign producers",
+        "explanation": "外国生产者"
       }
     ],
     "highlights": [
@@ -3399,12 +3429,8 @@
     "translation": "只有消除向我们提供海外商品和服务的人们的匿名性，并建立超越经济利益的跨国界团结和关系，自由贸易才能赢得胜利。",
     "vocabulary": [
       {
-        "term": "relationship",
-        "explanation": "（人、团体、国家等相互间的）关系"
-      },
-      {
         "term": "solidarity",
-        "explanation": "团结一致"
+        "explanation": "团结；一致"
       }
     ],
     "highlights": [
@@ -3444,8 +3470,16 @@
     "translation": "否则，保护主义者以民族主义团结的形式所拥有的先天生物学优势必然会在投票箱中获胜。",
     "vocabulary": [
       {
-        "term": "solidarity",
-        "explanation": "团结一致"
+        "term": "protectionists",
+        "explanation": "保护主义者"
+      },
+      {
+        "term": "nationalist solidarity",
+        "explanation": "民族主义团结"
+      },
+      {
+        "term": "ballot box",
+        "explanation": "投票箱；选举"
       }
     ],
     "highlights": [
@@ -3485,12 +3519,16 @@
     "translation": "网上有数百个性格测验，声称它们可以确定你的右半脑或左半脑占主导地位。",
     "vocabulary": [
       {
-        "term": "hundreds",
-        "explanation": "数百，成百上千，许多，大量（常与 of 连用）"
+        "term": "personality",
+        "explanation": "个性；人格"
       },
       {
-        "term": "online",
-        "explanation": "（产品、服务或信息）在线的，网上的"
+        "term": "assert",
+        "explanation": "断言；坚称"
+      },
+      {
+        "term": "ascertain",
+        "explanation": "查明；确定"
       }
     ],
     "highlights": [
@@ -3530,12 +3568,16 @@
     "translation": "左脑型的人被认为逻辑性强，擅长语言和数学，而右脑型的人则更具想象力、情商和空间推理能力。",
     "vocabulary": [
       {
-        "term": "reasoning",
-        "explanation": "推理，推论"
+        "term": "Left-brained",
+        "explanation": "左脑型的"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "right-brained",
+        "explanation": "右脑型的"
+      },
+      {
+        "term": "spatial reasoning",
+        "explanation": "空间推理"
       }
     ],
     "highlights": [
@@ -3581,12 +3623,7 @@
   },
   "R1-03": {
     "translation": "只有一个问题：大脑不是这样工作的。",
-    "vocabulary": [
-      {
-        "term": "problem",
-        "explanation": "问题，难题，困难"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3626,12 +3663,8 @@
     "translation": "科普爱好者们接受了这个想法并付诸实践，它现在已经融入流行文化中，而且不会消失。",
     "vocabulary": [
       {
-        "term": "science",
-        "explanation": "科学，科学知识"
-      },
-      {
-        "term": "culture",
-        "explanation": "文化，文明"
+        "term": "enthusiasts",
+        "explanation": "爱好者；热衷者"
       }
     ],
     "highlights": [
@@ -3703,8 +3736,16 @@
     "translation": "尽管有这种持久的信念，但并不存在“右脑”或“左脑”之类的东西。",
     "vocabulary": [
       {
-        "term": "belief",
-        "explanation": "相信，信心"
+        "term": "enduring",
+        "explanation": "持久的；长期存在的"
+      },
+      {
+        "term": "right-brained",
+        "explanation": "右脑型的"
+      },
+      {
+        "term": "left-brained",
+        "explanation": "左脑型的"
       }
     ],
     "highlights": [
@@ -3742,7 +3783,20 @@
   },
   "R1-06": {
     "translation": "无论你是更倾向于创造力还是更倾向于逻辑，这与你的大脑半球是否优于另一半球无关。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "creativity",
+        "explanation": "创造力"
+      },
+      {
+        "term": "hemisphere",
+        "explanation": "半球；大脑半球"
+      },
+      {
+        "term": "dominant",
+        "explanation": "占主导地位的"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -3780,12 +3834,7 @@
   },
   "R1-07": {
     "translation": "但关于我们大脑的两半部分如何协同工作的实际科学有时比小说更奇怪。",
-    "vocabulary": [
-      {
-        "term": "science",
-        "explanation": "科学，科学知识"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3823,8 +3872,8 @@
     "translation": "人的大脑分为两个半球，左脑和右脑。",
     "vocabulary": [
       {
-        "term": "divided",
-        "explanation": "分裂的，有分歧的"
+        "term": "hemispheres",
+        "explanation": "半球；大脑半球"
       }
     ],
     "highlights": [
@@ -3856,12 +3905,12 @@
     "translation": "在所有脊椎动物中，右半球控制身体的左侧，反之亦然。",
     "vocabulary": [
       {
-        "term": "controls",
-        "explanation": "（对国家、地区、机构等的）控制权，支配权"
+        "term": "vertebrate",
+        "explanation": "脊椎动物"
       },
       {
-        "term": "animals",
-        "explanation": "动物"
+        "term": "hemisphere",
+        "explanation": "半球；大脑半球"
       }
     ],
     "highlights": [
@@ -3901,12 +3950,8 @@
     "translation": "科学家们早就知道，由于脑损伤患者的行为，大脑的不同区域会做不同的事情。",
     "vocabulary": [
       {
-        "term": "scientists",
-        "explanation": "科学家（scientist 的复数）"
-      },
-      {
-        "term": "patients",
-        "explanation": "病人，患者"
+        "term": "brain injuries",
+        "explanation": "脑损伤"
       }
     ],
     "highlights": [
@@ -3946,12 +3991,16 @@
     "translation": "但许多科学家对这个想法感到困惑，因为左右半脑运作方式不同的建议破坏了自然趋于完美对称的观点。",
     "vocabulary": [
       {
-        "term": "scientists",
-        "explanation": "科学家（scientist 的复数）"
+        "term": "operate",
+        "explanation": "运作；发挥作用"
       },
       {
-        "term": "struggled",
-        "explanation": "（struggle 的过去式和过去分词）挣扎"
+        "term": "disrupted",
+        "explanation": "扰乱；破坏"
+      },
+      {
+        "term": "symmetry",
+        "explanation": "对称；平衡"
       }
     ],
     "highlights": [
@@ -3991,12 +4040,8 @@
     "translation": "神经科学家的工作揭示了大脑不同半球对于不同活动的重要性。",
     "vocabulary": [
       {
-        "term": "activities",
-        "explanation": "活动（activity 的复数）"
-      },
-      {
-        "term": "revealed",
-        "explanation": "揭露，透露"
+        "term": "hemispheres",
+        "explanation": "半球；大脑半球"
       }
     ],
     "highlights": [
@@ -4036,12 +4081,16 @@
     "translation": "然而，他们的研究很快就引起了公众的一些误解：一些人认为富有创造力的人必须是右脑型的，而逻辑型的人必须是左脑型的。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+        "term": "misinterpretations",
+        "explanation": "误解；错误解释"
       },
       {
-        "term": "public",
-        "explanation": "公众的，大众的"
+        "term": "right-brained",
+        "explanation": "右脑型的"
+      },
+      {
+        "term": "left-brained",
+        "explanation": "左脑型的"
       }
     ],
     "highlights": [
@@ -4081,12 +4130,16 @@
     "translation": "事实证明，不仅性格与大脑的不同半球无关，而且人们一开始就不是真正的右脑或左脑。",
     "vocabulary": [
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "personality",
+        "explanation": "个性；人格"
       },
       {
-        "term": "different",
-        "explanation": "不同的"
+        "term": "unrelated",
+        "explanation": "无关的"
+      },
+      {
+        "term": "left-brained",
+        "explanation": "左脑型的"
       }
     ],
     "highlights": [
@@ -4160,12 +4213,16 @@
     "translation": "认为我们有左主导的人和右主导的人，并且这与性格有关的想法是绝对错误的。",
     "vocabulary": [
       {
-        "term": "related",
-        "explanation": "相关的，有联系的"
+        "term": "dominant",
+        "explanation": "占主导地位的"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "personality",
+        "explanation": "个性；人格"
+      },
+      {
+        "term": "categorically",
+        "explanation": "明确地；绝对地"
       }
     ],
     "highlights": [
@@ -4205,12 +4262,8 @@
     "translation": "这在神经科学界从未得到支持。",
     "vocabulary": [
       {
-        "term": "supported",
-        "explanation": "被支持的（得到帮助、资助或证据支持的）"
-      },
-      {
-        "term": "community",
-        "explanation": "社区，社会"
+        "term": "neuroscience",
+        "explanation": "神经科学"
       }
     ],
     "highlights": [
@@ -4250,8 +4303,8 @@
     "translation": "神经科学家不相信这一点，也从未相信过。",
     "vocabulary": [
       {
-        "term": "believe",
-        "explanation": "相信"
+        "term": "Neuroscientists",
+        "explanation": "神经科学家"
       }
     ],
     "highlights": [
@@ -4299,12 +4352,8 @@
     "translation": "科学家们了解到，左半球和右半球之间确实存在重要差异。",
     "vocabulary": [
       {
-        "term": "differences",
-        "explanation": "偏差，差异（difference 复数形式）"
-      },
-      {
-        "term": "scientists",
-        "explanation": "科学家（scientist 的复数）"
+        "term": "hemisphere",
+        "explanation": "半球；大脑半球"
       }
     ],
     "highlights": [
@@ -4348,12 +4397,16 @@
     "translation": "只是它们与个性无关，也与认知策略是否更具逻辑性、自由精神或创造性无关。",
     "vocabulary": [
       {
-        "term": "strategy",
-        "explanation": "（尤指为获得某物制定长期的）策略，行动计划"
+        "term": "personality",
+        "explanation": "个性；人格"
       },
       {
         "term": "cognitive",
-        "explanation": "认识的，认知的"
+        "explanation": "认知的"
+      },
+      {
+        "term": "free spirited",
+        "explanation": "自由奔放的"
       }
     ],
     "highlights": [
@@ -4395,12 +4448,12 @@
     "translation": "虽然研究人员已经证明了大脑半球影响我们生活的局限性，但不难理解这些想法的吸引力。",
     "vocabulary": [
       {
-        "term": "researchers",
-        "explanation": "研究人员，研究者（researcher 的复数）"
+        "term": "limitations",
+        "explanation": "局限；限制"
       },
       {
-        "term": "understand",
-        "explanation": "理解，懂得"
+        "term": "hemispheres",
+        "explanation": "半球；大脑半球"
       }
     ],
     "highlights": [
@@ -4453,12 +4506,16 @@
     "translation": "人们对自己和朋友有着无尽的着迷，人们看待世界的细微差别对他们来说确实很有意义。",
     "vocabulary": [
       {
-        "term": "differences",
-        "explanation": "偏差，差异（difference 复数形式）"
-      },
-      {
         "term": "fascinated",
         "explanation": "入迷的，极感兴趣的"
+      },
+      {
+        "term": "subtle",
+        "explanation": "微妙的；不易察觉的"
+      },
+      {
+        "term": "meaningful",
+        "explanation": "有意义的"
       }
     ],
     "highlights": [
@@ -4514,8 +4571,8 @@
     "translation": "当你想出一个在线测验来告诉我们一些关于我们自己的事情时，我们就会被它吸引。",
     "vocabulary": [
       {
-        "term": "online",
-        "explanation": "（产品、服务或信息）在线的，网上的"
+        "term": "online quiz",
+        "explanation": "在线测验"
       }
     ],
     "highlights": [
@@ -4558,7 +4615,12 @@
   },
   "R1-23": {
     "translation": "这是不可抗拒的。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "irresistible",
+        "explanation": "不可抗拒的；极有吸引力的"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -4596,8 +4658,8 @@
     "translation": "但你必须对此持保留态度。",
     "vocabulary": [
       {
-        "term": "enormous",
-        "explanation": "巨大的，极大的"
+        "term": "grain of salt",
+        "explanation": "持保留态度看待"
       }
     ],
     "highlights": [
@@ -4637,12 +4699,8 @@
     "translation": "一百三十五名学生、四名教师、一间巨大的教室：这就是韦斯特伍德高中九年级的样子，该高中位于亚利桑那州梅萨最大的学校系统。",
     "vocabulary": [
       {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
-      },
-      {
-        "term": "students",
-        "explanation": "学生（student 的复数）"
+        "term": "classroom",
+        "explanation": "教室；课堂"
       }
     ],
     "highlights": [
@@ -4684,8 +4742,8 @@
     "translation": "在那里，一种创新的教学模式已经形成，并正在推广到该地区及其他地区的其他学校。",
     "vocabulary": [
       {
-        "term": "schools",
-        "explanation": "（中、小）学校"
+        "term": "innovative",
+        "explanation": "创新的"
       }
     ],
     "highlights": [
@@ -4733,12 +4791,12 @@
     "translation": "五年前，面对教师流动率高和学生入学率下降的情况，韦斯特伍德的领导者决定尝试一些不同的东西。",
     "vocabulary": [
       {
-        "term": "declining",
-        "explanation": "越来越少的，越来越差的"
+        "term": "teacher turnover",
+        "explanation": "教师流动率"
       },
       {
-        "term": "teacher",
-        "explanation": "教师"
+        "term": "student enrollment",
+        "explanation": "学生入学人数"
       }
     ],
     "highlights": [
@@ -4783,12 +4841,16 @@
     "translation": "他们与亚利桑那州立大学师范学院的教授合作，试行了一种称为团队教学的课堂模式，该模式允许教师消除物理或年级分隔班级的墙壁。",
     "vocabulary": [
       {
-        "term": "professors",
-        "explanation": "教授（professor 的复数）"
+        "term": "teachers college",
+        "explanation": "师范学院"
       },
       {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
+        "term": "team teaching",
+        "explanation": "团队教学"
+      },
+      {
+        "term": "dissolve",
+        "explanation": "消除；解散"
       }
     ],
     "highlights": [
@@ -4833,12 +4895,16 @@
     "translation": "教师们与一大群学生（有时 100 名或更多）一起轮流进行小组教学、一对一干预、小型学习小组或教师团队一致同意的当天优先事项。",
     "vocabulary": [
       {
-        "term": "interventions",
-        "explanation": "干预，干涉，介入（intervention 的复数）"
+        "term": "instruction",
+        "explanation": "教学；指导"
       },
       {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
+        "term": "one-on-one interventions",
+        "explanation": "一对一干预"
+      },
+      {
+        "term": "small study groups",
+        "explanation": "小型学习小组"
       }
     ],
     "highlights": [
@@ -4910,12 +4976,16 @@
     "translation": "有时看似混乱的事情实际上是一个精心策划的计划：每天早上，Westwood 团队都会开会，为团队当天关注的每个学生制定个性化计划。",
     "vocabulary": [
       {
-        "term": "student",
-        "explanation": "学生"
+        "term": "orchestrated",
+        "explanation": "精心安排的；协调组织的"
       },
       {
-        "term": "program",
-        "explanation": "（计算机）程序（=programme）"
+        "term": "hammer out",
+        "explanation": "反复讨论后制定"
+      },
+      {
+        "term": "personalized",
+        "explanation": "个性化的"
       }
     ],
     "highlights": [
@@ -4947,12 +5017,16 @@
     "translation": "梅萨的管理人员希望通过为教师提供更多合作机会来填补人员缺口，提高教师士气和保留率。",
     "vocabulary": [
       {
-        "term": "opportunity",
-        "explanation": "时机，机会"
+        "term": "collaborate",
+        "explanation": "合作；协作"
       },
       {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
+        "term": "staffing gaps",
+        "explanation": "人员配置缺口"
+      },
+      {
+        "term": "teacher morale",
+        "explanation": "教师士气"
       }
     ],
     "highlights": [
@@ -4992,12 +5066,8 @@
     "translation": "初步研究表明，这场赌博可能会得到回报。",
     "vocabulary": [
       {
-        "term": "suggests",
-        "explanation": "表明；暗示；建议（suggest 的第三人称单数）"
-      },
-      {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+        "term": "gamble",
+        "explanation": "冒险尝试；赌注"
       }
     ],
     "highlights": [
@@ -5039,12 +5109,8 @@
     "translation": "梅萨公立学校的校长安迪·福利斯 (Andi Fourlis) 表示：“老师们正在做着很棒的事情，但很少有老师走进另一个房间来看看发生了什么。”",
     "vocabulary": [
       {
-        "term": "Teachers",
-        "explanation": "教师，老师（teacher 的复数）"
-      },
-      {
-        "term": "teacher",
-        "explanation": "教师"
+        "term": "superintendent",
+        "explanation": "学区负责人"
       }
     ],
     "highlights": [
@@ -5118,8 +5184,12 @@
     "translation": "“我们的职业发展如此缓慢，因为我们是孤立工作的。",
     "vocabulary": [
       {
-        "term": "working",
-        "explanation": "有工作的"
+        "term": "profession",
+        "explanation": "职业；行业"
+      },
+      {
+        "term": "isolation",
+        "explanation": "孤立；隔离"
       }
     ],
     "highlights": [
@@ -5159,12 +5229,16 @@
     "translation": "当然，彻底改革教学方法并不能解决教师面临的所有挫折，例如工资低，但梅萨的早期结果显示，团队教学可能有助于扭转低落的士气。",
     "vocabulary": [
       {
-        "term": "frustrations",
-        "explanation": "挫折，令人懊恼（或沮丧）的事物（frustration 的复数）"
+        "term": "overhauling",
+        "explanation": "彻底改革；全面检修"
       },
       {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
+        "term": "frustrations",
+        "explanation": "挫折；令人沮丧的事"
+      },
+      {
+        "term": "team teaching",
+        "explanation": "团队教学"
       }
     ],
     "highlights": [
@@ -5230,12 +5304,16 @@
     "translation": "在对该学区数百名教师的调查中，研究人员发现，那些以团队形式工作的教师的工作满意度更高，与同事的合作更频繁，与学生的互动也更积极。",
     "vocabulary": [
       {
+        "term": "job satisfaction",
+        "explanation": "工作满意度"
+      },
+      {
         "term": "collaborations",
         "explanation": "合作，协作"
       },
       {
-        "term": "researchers",
-        "explanation": "研究人员，研究者（researcher 的复数）"
+        "term": "colleagues",
+        "explanation": "同事"
       }
     ],
     "highlights": [
@@ -5277,12 +5355,8 @@
     "translation": "老师们说，团队的另一个好处是他们可以互相帮助改进教学。",
     "vocabulary": [
       {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
-      },
-      {
-        "term": "improve",
-        "explanation": "康复，健康好转"
+        "term": "instruction",
+        "explanation": "教学；指导"
       }
     ],
     "highlights": [
@@ -5324,12 +5398,16 @@
     "translation": "在一次计划会议上，英语老师杰夫·霍尔与一位科学老师分享了一个绩效评估：她最近关于她所谓的“生物学中心教条”的讲座让他和他们的其他队友感到困惑。",
     "vocabulary": [
       {
-        "term": "performance",
-        "explanation": "表演，演出"
+        "term": "performance appraisal",
+        "explanation": "绩效评价"
       },
       {
-        "term": "planning",
-        "explanation": "计划，规划"
+        "term": "central dogma",
+        "explanation": "中心法则（生物学术语）"
+      },
+      {
+        "term": "bewildered",
+        "explanation": "困惑的；不知所措的"
       }
     ],
     "highlights": [
@@ -5369,12 +5447,12 @@
     "translation": "“如果科学对我来说太令人困惑，你能想象你小时候感受到的挫败感吗？”霍尔说。",
     "vocabulary": [
       {
-        "term": "science",
-        "explanation": "科学，科学知识"
+        "term": "confusing",
+        "explanation": "令人困惑的"
       },
       {
-        "term": "imagine",
-        "explanation": "想象，设想"
+        "term": "frustration",
+        "explanation": "挫折；沮丧"
       }
     ],
     "highlights": [
@@ -5414,16 +5492,7 @@
   },
   "R2-16": {
     "translation": "但他说，科学老师自己不会知道这种混乱。",
-    "vocabulary": [
-      {
-        "term": "teacher",
-        "explanation": "教师"
-      },
-      {
-        "term": "science",
-        "explanation": "科学，科学知识"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -5497,12 +5566,8 @@
     "translation": "一些寻求加入团队志愿者的老师表示，他们更喜欢单独工作。",
     "vocabulary": [
       {
-        "term": "approached",
-        "explanation": "approach 的过去式和过去分词：接近，走近"
-      },
-      {
-        "term": "teachers",
-        "explanation": "教师，老师（teacher 的复数）"
+        "term": "volunteering",
+        "explanation": "自愿参加；志愿服务"
       }
     ],
     "highlights": [
@@ -5560,12 +5625,12 @@
     "translation": "团队教学也可能是日程安排的噩梦，尤其是在像 Westwood 这样的学校，那里只有一些教职员工以团队形式工作。",
     "vocabulary": [
       {
-        "term": "nightmare",
-        "explanation": "噩梦"
+        "term": "Team teaching",
+        "explanation": "团队教学"
       },
       {
-        "term": "schools",
-        "explanation": "（中、小）学校"
+        "term": "scheduling nightmare",
+        "explanation": "排课噩梦"
       }
     ],
     "highlights": [
@@ -5613,12 +5678,12 @@
     "translation": "还有一些棘手的问题，比如如何根据 135 名学生的表现来评估 4 名老师。",
     "vocabulary": [
       {
-        "term": "performance",
-        "explanation": "表演，演出"
+        "term": "thorny questions",
+        "explanation": "棘手的问题"
       },
       {
-        "term": "questions",
-        "explanation": "问题，疑问（question 的复数）"
+        "term": "evaluate",
+        "explanation": "评估；评价"
       }
     ],
     "highlights": [
@@ -5658,8 +5723,8 @@
     "translation": "但就目前而言，它似乎正在发挥作用。",
     "vocabulary": [
       {
-        "term": "working",
-        "explanation": "有工作的"
+        "term": "for the time being",
+        "explanation": "目前；暂时"
       }
     ],
     "highlights": [

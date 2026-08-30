@@ -3,12 +3,8 @@
     "translation": "您是否曾经与您关心的人谈论一些重要的事情，却发现讨论令人沮丧而不是富有成效？",
     "vocabulary": [
       {
-        "term": "important",
-        "explanation": "重要的，重大的"
-      },
-      {
-        "term": "instead",
-        "explanation": "代替，顶替，反而"
+        "term": "fruitful",
+        "explanation": "富有成效的"
       }
     ],
     "highlights": [
@@ -48,12 +44,16 @@
     "translation": "负能量会给你建立共同理解的努力蒙上阴影。",
     "vocabulary": [
       {
-        "term": "understanding",
-        "explanation": "（对某学科、过程或情况的）了解，认识"
+        "term": "Negative energy",
+        "explanation": "负面能量"
       },
       {
-        "term": "efforts",
-        "explanation": "努力"
+        "term": "cast a shadow over",
+        "explanation": "给……蒙上阴影"
+      },
+      {
+        "term": "shared understanding",
+        "explanation": "共同理解"
       }
     ],
     "highlights": [
@@ -101,12 +101,8 @@
     "translation": "事实上，协作解决问题的对话需要技巧。",
     "vocabulary": [
       {
-        "term": "conversations",
-        "explanation": "会话，交谈（conversation 的复数）"
-      },
-      {
-        "term": "collaborative",
-        "explanation": "合作的，协作的"
+        "term": "collaborative problem-solving",
+        "explanation": "协作式问题解决"
       }
     ],
     "highlights": [
@@ -144,16 +140,7 @@
   },
   "C04": {
     "translation": "强大的倾听能力是必不可少的。",
-    "vocabulary": [
-      {
-        "term": "skills",
-        "explanation": "（特定的）技术，技能，技巧（skill 的复数）"
-      },
-      {
-        "term": "essential",
-        "explanation": "必不可少的，非常重要的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -191,8 +178,8 @@
     "translation": "通过欣赏、深情的微笑和热情的评论来表达积极的态度会有所帮助。",
     "vocabulary": [
       {
-        "term": "appreciation",
-        "explanation": "欣赏，鉴赏"
+        "term": "affectionate",
+        "explanation": "亲切的；充满感情的"
       }
     ],
     "highlights": [
@@ -229,12 +216,8 @@
     "translation": "将情绪保持在平静区域的基本能力也是如此。",
     "vocabulary": [
       {
-        "term": "ability",
-        "explanation": "能力，能够"
-      },
-      {
-        "term": "essential",
-        "explanation": "必不可少的，非常重要的"
+        "term": "emotional tone",
+        "explanation": "情绪语气"
       }
     ],
     "highlights": [
@@ -266,12 +249,8 @@
     "translation": "如果对话的语气升温并爆发愤怒，对话就会从合作转变为对抗，进展可能会立即停止。",
     "vocabulary": [
       {
-        "term": "collaborative",
-        "explanation": "合作的，协作的"
-      },
-      {
-        "term": "progress",
-        "explanation": "进步，进展"
+        "term": "adversarial",
+        "explanation": "对抗性的"
       }
     ],
     "highlights": [
@@ -348,12 +327,8 @@
     "translation": "此外，有效的对话一般还有另一个重要特征：对称性。",
     "vocabulary": [
       {
-        "term": "important",
-        "explanation": "重要的，重大的"
-      },
-      {
-        "term": "generally",
-        "explanation": "笼统地，大概"
+        "term": "symmetry",
+        "explanation": "对称；平衡"
       }
     ],
     "highlights": [
@@ -393,8 +368,8 @@
     "translation": "对话中的对称性是指双方谈话量的平衡。",
     "vocabulary": [
       {
-        "term": "balance",
-        "explanation": "平衡，均衡，均势"
+        "term": "Symmetry",
+        "explanation": "对称；平衡"
       }
     ],
     "highlights": [
@@ -434,8 +409,8 @@
     "translation": "你们每个人的通话时间都一样吗？",
     "vocabulary": [
       {
-        "term": "getting",
-        "explanation": "get 的现在分词：得到，获得"
+        "term": "airtime",
+        "explanation": "发言时间"
       }
     ],
     "highlights": [
@@ -475,12 +450,8 @@
     "translation": "当一名参与者进行大部分发言时，这种不对称或缺乏平衡往往会让你们中的一个或两个人感到烦恼。",
     "vocabulary": [
       {
-        "term": "balance",
-        "explanation": "平衡，均衡，均势"
-      },
-      {
-        "term": "annoying",
-        "explanation": "令人恼火的，令人烦躁的"
+        "term": "asymmetry",
+        "explanation": "不对称；不平衡"
       }
     ],
     "highlights": [
@@ -525,8 +496,12 @@
     "translation": "沉默的一方通常厌倦了只倾听，而说话的一方可能会感到负担过重。",
     "vocabulary": [
       {
-        "term": "typically",
-        "explanation": "典型地，有代表性地"
+        "term": "talker",
+        "explanation": "健谈者；说话较多的人"
+      },
+      {
+        "term": "overburdened",
+        "explanation": "负担过重的；不堪重负的"
       }
     ],
     "highlights": [
@@ -566,8 +541,8 @@
     "translation": "通常，双方都更喜欢更平等的付出和索取。",
     "vocabulary": [
       {
-        "term": "Usually",
-        "explanation": "通常地，经常地"
+        "term": "equal give and take",
+        "explanation": "平等的互动与付出"
       }
     ],
     "highlights": [
@@ -607,12 +582,12 @@
     "translation": "不同的语速和音量水平也会破坏对称性。",
     "vocabulary": [
       {
-        "term": "volume",
-        "explanation": "体积，容积"
+        "term": "erode",
+        "explanation": "削弱；侵蚀"
       },
       {
-        "term": "speech",
-        "explanation": "演说，发言，谈话"
+        "term": "symmetry",
+        "explanation": "对称；平衡"
       }
     ],
     "highlights": [
@@ -652,12 +627,8 @@
     "translation": "速度更快或声音更大的伙伴很容易开始占用更多的通话时间。",
     "vocabulary": [
       {
-        "term": "taking",
-        "explanation": "取得"
-      },
-      {
-        "term": "faster",
-        "explanation": "更快的"
+        "term": "airtime",
+        "explanation": "发言时间"
       }
     ],
     "highlights": [
@@ -697,12 +668,8 @@
     "translation": "语速较慢或声音较轻的人可能很难获得发言权。",
     "vocabulary": [
       {
-        "term": "trouble",
-        "explanation": "困难，难题，苦恼"
-      },
-      {
-        "term": "getting",
-        "explanation": "get 的现在分词：得到，获得"
+        "term": "softer-voiced",
+        "explanation": "声音较轻的"
       }
     ],
     "highlights": [
@@ -740,16 +707,7 @@
   },
   "C17": {
     "translation": "当一方的意见比另一方的意见更重要时，谈话也会失去平衡。",
-    "vocabulary": [
-      {
-        "term": "Conversations",
-        "explanation": "会话，交谈（conversation 的复数）"
-      },
-      {
-        "term": "opinions",
-        "explanation": "意见，看法"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -787,8 +745,12 @@
     "translation": "一个人的意见可能会具有更大的影响力，因为他们的表达方式更加活跃。",
     "vocabulary": [
       {
-        "term": "person",
-        "explanation": "人"
+        "term": "input",
+        "explanation": "输入信息"
+      },
+      {
+        "term": "vigorous",
+        "explanation": "有力的；充满活力的"
       }
     ],
     "highlights": [
@@ -828,8 +790,12 @@
     "translation": "一种观点可能会因为更加试探性地表达而容易迷失。",
     "vocabulary": [
       {
-        "term": "expressed",
-        "explanation": "express 的过去式和过去分词：表达（自己的意见、感情等）"
+        "term": "viewpoint",
+        "explanation": "观点"
+      },
+      {
+        "term": "tentatively",
+        "explanation": "试探性地；犹豫地"
       }
     ],
     "highlights": [
@@ -869,12 +835,16 @@
     "translation": "如果任何一方一直占据主导地位或消失，那么修改模式将会有所帮助。",
     "vocabulary": [
       {
-        "term": "modifying",
-        "explanation": "修改，改进"
+        "term": "predominates",
+        "explanation": "占主导地位"
       },
       {
-        "term": "helpful",
-        "explanation": "有帮助的，有用的"
+        "term": "evaporates",
+        "explanation": "逐渐消失"
+      },
+      {
+        "term": "modifying",
+        "explanation": "修改，改进"
       }
     ],
     "highlights": [
@@ -919,16 +889,7 @@
   },
   "C21": {
     "translation": "对话会感觉更有成效，同时，整体关系可能会感觉更加积极。",
-    "vocabulary": [
-      {
-        "term": "relationship",
-        "explanation": "（人、团体、国家等相互间的）关系"
-      },
-      {
-        "term": "productive",
-        "explanation": "多产的，丰饶的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -988,7 +949,12 @@
   },
   "M-A01": {
     "translation": "蓝色月亮、玫瑰月亮、超级月亮。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "supermoons",
+        "explanation": "超级月亮"
+      }
+    ],
     "highlights": [
       {
         "role": "complement",
@@ -1010,16 +976,7 @@
   },
   "M-A02": {
     "translation": "出于某种原因，所有网站似乎都认为您真的想了解这些卫星的所有信息。",
-    "vocabulary": [
-      {
-        "term": "websites",
-        "explanation": "网站（website 的复数）"
-      },
-      {
-        "term": "reason",
-        "explanation": "原因，理由"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1057,8 +1014,8 @@
     "translation": "“观看本周末令人惊叹的超级月亮”，一个标题将宣布。",
     "vocabulary": [
       {
-        "term": "Weekend",
-        "explanation": "周末"
+        "term": "SUPERMOON",
+        "explanation": "超级月亮"
       }
     ],
     "highlights": [
@@ -1090,8 +1047,8 @@
     "translation": "“超级月亮实际上没什么大不了的，你们都在毁掉天文学，”另一个人会抱怨道。",
     "vocabulary": [
       {
-        "term": "Actually",
-        "explanation": "实际上，事实上"
+        "term": "Astronomy",
+        "explanation": "天文学"
       }
     ],
     "highlights": [
@@ -1123,12 +1080,12 @@
     "translation": "最新的例子是《超级血狼月食》，这听起来像是一首情感歌曲的名字，我在九年级时会表演现代舞，但事实上，这是一场将于 1 月 20 日发生的天文事件。",
     "vocabulary": [
       {
-        "term": "astronomical",
-        "explanation": "天文（学）的，天体的"
+        "term": "eclipse",
+        "explanation": "月食；日食；遮蔽"
       },
       {
-        "term": "performed",
-        "explanation": "演出，表演"
+        "term": "astronomical event",
+        "explanation": "天文事件"
       }
     ],
     "highlights": [
@@ -1176,12 +1133,8 @@
     "translation": "正如我们将在下面解释的那样，这颗卫星并没有什么真正神秘或特别的地方，它看起来也不会像天空中的血腥狼头或任何类似的东西。",
     "vocabulary": [
       {
-        "term": "explain",
-        "explanation": "解释，说明"
-      },
-      {
-        "term": "special",
-        "explanation": "特殊的，特别的"
+        "term": "mysterious",
+        "explanation": "神秘的；难以解释的"
       }
     ],
     "highlights": [
@@ -1242,12 +1195,12 @@
     "translation": "我们通过将历史上用于跟踪全年满月的所有限定符整合在一起来获得这些超级月球事件，而在互联网时代，我们可能会变得有点过于热情。",
     "vocabulary": [
       {
-        "term": "historically",
-        "explanation": "从历史角度说，从历史观点上说"
+        "term": "lunar",
+        "explanation": "月球的"
       },
       {
-        "term": "internet",
-        "explanation": "互联网，因特网（=the Internet）"
+        "term": "qualifiers",
+        "explanation": "限定词；限定条件"
       }
     ],
     "highlights": [
@@ -1319,12 +1272,8 @@
     "translation": "将此视为您所有月球观测新闻的首选资源。",
     "vocabulary": [
       {
-        "term": "resource",
-        "explanation": "自然资源"
-      },
-      {
-        "term": "Consider",
-        "explanation": "考虑，斟酌"
+        "term": "moon-gazing",
+        "explanation": "赏月；观月"
       }
     ],
     "highlights": [
@@ -1358,8 +1307,8 @@
     "translation": "以下是您需要了解的有关最新月球事件的信息。",
     "vocabulary": [
       {
-        "term": "latest",
-        "explanation": "最近的，最新的"
+        "term": "lunar event",
+        "explanation": "月球天文事件"
       }
     ],
     "highlights": [
@@ -1441,12 +1390,8 @@
     "translation": "可能有很多人四处走动，假装他们完全知道为什么天空中的那个东西似乎定期变大变小，但实际上他们完全不知道。",
     "vocabulary": [
       {
-        "term": "probably",
-        "explanation": "大概，或许"
-      },
-      {
-        "term": "smaller",
-        "explanation": "较小，更小的"
+        "term": "regular intervals",
+        "explanation": "固定间隔"
       }
     ],
     "highlights": [
@@ -1486,12 +1431,12 @@
     "translation": "月球绕地球运行，并且被潮汐锁定——这意味着它总是向我们展示同一张脸，而不是像我们的星球那样自转。",
     "vocabulary": [
       {
-        "term": "planet",
-        "explanation": "行星"
+        "term": "orbits",
+        "explanation": "轨道"
       },
       {
-        "term": "instead",
-        "explanation": "代替，顶替，反而"
+        "term": "tidally locked",
+        "explanation": "被潮汐锁定的"
       }
     ],
     "highlights": [
@@ -1581,12 +1526,8 @@
     "translation": "这就是为什么你总能看到月球上的人（或月兔，取决于你的文化偏好），即使它绕着我们旋转。",
     "vocabulary": [
       {
-        "term": "preferences",
-        "explanation": "偏爱，偏好"
-      },
-      {
-        "term": "depending",
-        "explanation": "依赖"
+        "term": "cultural preferences",
+        "explanation": "文化偏好"
       }
     ],
     "highlights": [
@@ -1626,7 +1567,12 @@
   },
   "M-E03": {
     "translation": "但是，虽然满月时月亮在天空中又大又亮，但这只是因为它反射了太阳的光。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "reflecting light",
+        "explanation": "反射光线"
+      }
+    ],
     "highlights": [
       {
         "role": "adverbial",
@@ -1661,12 +1607,8 @@
     "translation": "但月亮总是在移动，所以它会受到不同角度的阳光照射。",
     "vocabulary": [
       {
-        "term": "moving",
-        "explanation": "动人的，感人的"
-      },
-      {
-        "term": "different",
-        "explanation": "不同的"
+        "term": "sunlight",
+        "explanation": "阳光"
       }
     ],
     "highlights": [
@@ -1698,12 +1640,8 @@
     "translation": "在新月期间我们看不到它，因为我们的卫星停在我们和太阳之间；所谓的月球暗面就像拉斯维加斯一样被照亮，但我们能看到的一面却处于阴影中。",
     "vocabulary": [
       {
-        "term": "shadow",
-        "explanation": "阴影，影子"
-      },
-      {
-        "term": "called",
-        "explanation": "叫做，称作"
+        "term": "dark side",
+        "explanation": "黑暗面；阴暗的一面"
       }
     ],
     "highlights": [
@@ -1759,7 +1697,16 @@
   },
   "M-E06": {
     "translation": "当地球位于太阳和月亮之间时，就会发生满月，因此阳光照射到我们能看到的部分。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "full moon",
+        "explanation": "满月"
+      },
+      {
+        "term": "sunlight",
+        "explanation": "阳光"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1796,10 +1743,6 @@
   "M-E07": {
     "translation": "所有其他阶段都只是从其中一个极端到另一个极端的过渡。",
     "vocabulary": [
-      {
-        "term": "transition",
-        "explanation": "过渡，转变"
-      },
       {
         "term": "extremes",
         "explanation": "极大的，极度的"
@@ -1842,8 +1785,8 @@
     "translation": "月球与地球的距离并不总是完全相同，因为它的轨道不是完美的圆形。",
     "vocabulary": [
       {
-        "term": "exactly",
-        "explanation": "精确地，确切地"
+        "term": "orbit",
+        "explanation": "轨道"
       }
     ],
     "highlights": [
@@ -1883,12 +1826,16 @@
     "translation": "我们把最近的点称为近地点，最远的点称为远地点。2018年的最近近地点和最远远地点都发生在1月份，相差约3万英里。",
     "vocabulary": [
       {
-        "term": "difference",
-        "explanation": "差异，不同之处"
+        "term": "perige",
+        "explanation": "近地点"
       },
       {
-        "term": "closest",
-        "explanation": "最靠近的（close 的最高级）"
+        "term": "perigee",
+        "explanation": "近地点"
+      },
+      {
+        "term": "apogee",
+        "explanation": "远地点"
       }
     ],
     "highlights": [
@@ -1974,16 +1921,7 @@
   },
   "M-G01": {
     "translation": "你之所以关心这种普通的距离变化，是因为它变成了超级月亮。",
-    "vocabulary": [
-      {
-        "term": "reason",
-        "explanation": "原因，理由"
-      },
-      {
-        "term": "change",
-        "explanation": "改变，变化"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2023,8 +1961,12 @@
     "translation": "当满月发生在近地点附近时，它看起来会更大一些。",
     "vocabulary": [
       {
-        "term": "bigger",
-        "explanation": "更大的，较大的（big 的比较级）"
+        "term": "full moon",
+        "explanation": "满月"
+      },
+      {
+        "term": "perigee",
+        "explanation": "近地点"
       }
     ],
     "highlights": [
@@ -2069,12 +2011,8 @@
     "translation": "老实说，差异并没有那么大，但如果你能够在规模略有增加的物体旁边拍摄超级月亮，它看起来会非常酷。",
     "vocabulary": [
       {
-        "term": "difference",
-        "explanation": "差异，不同之处"
-      },
-      {
-        "term": "position",
-        "explanation": "位置，方位"
+        "term": "supermoon",
+        "explanation": "超级月亮"
       }
     ],
     "highlights": [
@@ -2138,12 +2076,8 @@
     "translation": "一月的超级血狼月食是超级棒的，因为它的日期与一月份月亮最接近我们的日期一致，但实际上直到二月的超级月亮，月亮才会达到今年最接近的位置，你可以期待很多过度的兴奋。",
     "vocabulary": [
       {
-        "term": "expect",
-        "explanation": "期待"
-      },
-      {
-        "term": "actually",
-        "explanation": "实际上，事实上"
+        "term": "supermoon",
+        "explanation": "超级月亮"
       }
     ],
     "highlights": [
@@ -2189,7 +2123,12 @@
   },
   "M-H01": {
     "translation": "血月仅发生在月全食期间（在任何特定地点，每年可能发生几次）。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "total lunar eclipses",
+        "explanation": "月全食"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2227,8 +2166,8 @@
     "translation": "当月亮滑过我们的影子时，我们给它呈现微红色。",
     "vocabulary": [
       {
-        "term": "shadow",
-        "explanation": "阴影，影子"
+        "term": "reddish coloring",
+        "explanation": "红色色调"
       }
     ],
     "highlights": [
@@ -2273,12 +2212,8 @@
     "translation": "当月亮升起或落下时，或者整晚都低悬在地平线时，月亮也会呈现橙色——从月亮上反射的光必须穿过那里更厚的大气层，从而散射更多的蓝光。",
     "vocabulary": [
       {
-        "term": "setting",
-        "explanation": "（某事发生的）环境，场合"
-      },
-      {
-        "term": "travel",
-        "explanation": "（尤指长途）旅行"
+        "term": "atmosphere",
+        "explanation": "大气层；氛围"
       }
     ],
     "highlights": [
@@ -2342,8 +2277,8 @@
     "translation": "但你可能只会在日食期间看到那种深沉、险恶的红色。",
     "vocabulary": [
       {
-        "term": "probably",
-        "explanation": "大概，或许"
+        "term": "eclipse",
+        "explanation": "月食；日食；遮蔽"
       }
     ],
     "highlights": [
@@ -2393,12 +2328,16 @@
     "translation": "很多关于月亮的头条新闻都很荒谬（你不需要对蓝月特别兴奋，它看起来就像普通的满月），但如果你所在的地区能看到血月，你绝对应该从床上滚起来看看血月，即使它们只是月食，而不是天神之间血腥战斗的证据。",
     "vocabulary": [
       {
-        "term": "particularly",
-        "explanation": "非常，尤其"
+        "term": "blue moon",
+        "explanation": "蓝月（一个月内第二次满月）"
       },
       {
-        "term": "evidence",
-        "explanation": "根据，证明"
+        "term": "full moon",
+        "explanation": "满月"
+      },
+      {
+        "term": "eclipses",
+        "explanation": "月食；日食；遮蔽"
       }
     ],
     "highlights": [
@@ -2454,8 +2393,8 @@
     "translation": "2018年3月，我们迎来了今年的第二个“蓝月亮”，广受好评。",
     "vocabulary": [
       {
-        "term": "second",
-        "explanation": "第二（的），第二个（的）"
+        "term": "blue moon",
+        "explanation": "蓝月（一个月内第二次满月）"
       }
     ],
     "highlights": [
@@ -2503,12 +2442,12 @@
     "translation": "虽然这不一定很特别，但它确实很特别：蓝月亮是同一个日历月出现两个满月的昵称，而自 1999 年以来，我们从未在一年内出现过两次满月。",
     "vocabulary": [
       {
-        "term": "necessarily",
-        "explanation": "必定，必然"
+        "term": "blue moon",
+        "explanation": "蓝月（一个月内第二次满月）"
       },
       {
-        "term": "previously",
-        "explanation": "以前地，先前地"
+        "term": "calendar month",
+        "explanation": "日历月份"
       }
     ],
     "highlights": [
@@ -2610,12 +2549,12 @@
     "translation": "天文学家大卫·查普曼解释说，这只是我们日历的一个特点；一旦我们停止根据月亮做事并开始尝试遵循太阳和季节，我们就不再每月有一次可靠的满月。",
     "vocabulary": [
       {
-        "term": "started",
-        "explanation": "开始，着手"
+        "term": "peculiarity",
+        "explanation": "特殊之处；独特现象"
       },
       {
-        "term": "explained",
-        "explanation": "解释，说明"
+        "term": "full moon",
+        "explanation": "满月"
       }
     ],
     "highlights": [
@@ -2658,16 +2597,7 @@
   },
   "M-I05": {
     "translation": "月亮周期平均为 29.53 天，因此在大多数月份中，我们仍然会看到一次新月和一次满月。",
-    "vocabulary": [
-      {
-        "term": "months",
-        "explanation": "月份（month 的复数）"
-      },
-      {
-        "term": "average",
-        "explanation": "平均水平，一般标准"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2721,8 +2651,8 @@
     "translation": "但每隔一段时间，一个月份就会从另一个月份偷走满月。",
     "vocabulary": [
       {
-        "term": "steals",
-        "explanation": "偷窃"
+        "term": "full moon",
+        "explanation": "满月"
       }
     ],
     "highlights": [
@@ -2812,16 +2742,7 @@
   },
   "M-J01": {
     "translation": "一年出现两次蓝月的情况很少见，但每隔几年我们就会出现一次蓝月。",
-    "vocabulary": [
-      {
-        "term": "individual",
-        "explanation": "单独的，个别的"
-      },
-      {
-        "term": "Getting",
-        "explanation": "get 的现在分词：得到，获得"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2883,12 +2804,7 @@
   },
   "M-J02": {
     "translation": "另外，有趣的事实是：实际上并不是蓝色的。",
-    "vocabulary": [
-      {
-        "term": "actually",
-        "explanation": "实际上，事实上"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "complement",
@@ -2912,8 +2828,8 @@
     "translation": "月亮确实可以呈现出喜怒无常的蓝色，但这只有当尺寸恰到好处的粒子散布在天空中时才会发生，而这与月亮的“蓝色”状态无关。",
     "vocabulary": [
       {
-        "term": "status",
-        "explanation": "法律地位（或身份）"
+        "term": "disperse",
+        "explanation": "散开；传播"
       }
     ],
     "highlights": [
@@ -2969,12 +2885,8 @@
     "translation": "火山喷发或火灾产生的大量火山灰可以起到作用，但这种情况并不经常发生，而且恒星肯定必须对齐才能同时发生两个这样的罕见情况。",
     "vocabulary": [
       {
-        "term": "instances",
-        "explanation": "例子，实例"
-      },
-      {
-        "term": "certainly",
-        "explanation": "无疑，确定"
+        "term": "volcanic eruptions",
+        "explanation": "火山喷发"
       }
     ],
     "highlights": [
@@ -3030,12 +2942,12 @@
     "translation": "你可能听说过2018年超级特别的第二个蓝月亮也是复活节月亮。",
     "vocabulary": [
       {
-        "term": "special",
-        "explanation": "特殊的，特别的"
+        "term": "blue moon",
+        "explanation": "蓝月（一个月内第二次满月）"
       },
       {
-        "term": "second",
-        "explanation": "第二（的），第二个（的）"
+        "term": "Paschal moon",
+        "explanation": "复活节月（决定复活节日期的满月）"
       }
     ],
     "highlights": [
@@ -3113,8 +3025,8 @@
     "translation": "这仅仅意味着这是春天的第一个满月，这通常被用来确定复活节的日期。",
     "vocabulary": [
       {
-        "term": "determine",
-        "explanation": "决定，控制"
+        "term": "full moon",
+        "explanation": "满月"
       }
     ],
     "highlights": [
@@ -3154,7 +3066,12 @@
   },
   "M-K04": {
     "translation": "所有这些都只是日历上的废话，我们拒绝进一步讨论。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "calendar nonsense",
+        "explanation": "日历概念上的噱头"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -3192,8 +3109,8 @@
     "translation": "有时你会看到一个标题，承诺月亮有这么多的限定词，这会让你头晕。",
     "vocabulary": [
       {
-        "term": "promises",
-        "explanation": "承诺，保证"
+        "term": "qualifiers",
+        "explanation": "限定词；限定条件"
       }
     ],
     "highlights": [
@@ -3284,12 +3201,12 @@
     "translation": "很多网站都会告诉你，“狼月”是“美洲原住民”文化中一年中第一个满月的传统名称，考虑到今天仅在美国就有 573 个登记的部落民族，这种说法有点奇怪，更不用说历史上的了。",
     "vocabulary": [
       {
-        "term": "historically",
-        "explanation": "从历史角度说，从历史观点上说"
+        "term": "full moon",
+        "explanation": "满月"
       },
       {
-        "term": "websites",
-        "explanation": "网站（website 的复数）"
+        "term": "Tribal Nations",
+        "explanation": "部落民族"
       }
     ],
     "highlights": [
@@ -3339,12 +3256,12 @@
     "translation": "饥饿、嚎叫的狼在一月如此普遍，以至于所有具有不同文化、地理和语言的北美地区都自发地想出了同一个绰号，这种想法是不合逻辑的。",
     "vocabulary": [
       {
-        "term": "cultures",
-        "explanation": "文化，文明"
+        "term": "universal constant",
+        "explanation": "普遍恒常现象"
       },
       {
-        "term": "universal",
-        "explanation": "普遍的，全体的，全世界的"
+        "term": "geographies",
+        "explanation": "地理环境；地理区域"
       }
     ],
     "highlights": [
@@ -3418,12 +3335,8 @@
     "translation": "许多文化对特定月份或季节的满月都有传统的名称，因此，如果您想在略大于平均的月亮视图上真正充实一个故事，那么可以使用相当多的列表。",
     "vocabulary": [
       {
-        "term": "traditional",
-        "explanation": "传统的"
-      },
-      {
-        "term": "cultures",
-        "explanation": "文化，文明"
+        "term": "full moon",
+        "explanation": "满月"
       }
     ],
     "highlights": [
@@ -3463,12 +3376,8 @@
     "translation": "但这些都是基于人类的历法、活动和民间传说；你不会在四月出去看到粉红色的月亮，尽管我希望如此。",
     "vocabulary": [
       {
-        "term": "activities",
-        "explanation": "活动（activity 的复数）"
-      },
-      {
-        "term": "outside",
-        "explanation": "外表，外部（the outside）"
+        "term": "folklore",
+        "explanation": "民间传说；民俗"
       }
     ],
     "highlights": [
@@ -3516,12 +3425,8 @@
     "translation": "随着人口的增长和全球城市化进程的不断加快，人们越来越关注城市的可持续性，而很少关注农村。",
     "vocabulary": [
       {
-        "term": "population",
-        "explanation": "（地区、国家等的）人口，人口数量"
-      },
-      {
-        "term": "increases",
-        "explanation": "增长，增强，增大（increase 的第三人称单数）"
+        "term": "sustainability",
+        "explanation": "可持续性"
       }
     ],
     "highlights": [
@@ -3582,12 +3487,8 @@
     "translation": "乡村生活与紧密的社区、归属感和简单、宁静的生活联系在一起。",
     "vocabulary": [
       {
-        "term": "communities",
-        "explanation": "社区"
-      },
-      {
-        "term": "associated",
-        "explanation": "有关联的，相关的"
+        "term": "Rural life",
+        "explanation": "乡村生活"
       }
     ],
     "highlights": [
@@ -3627,8 +3528,12 @@
     "translation": "然而，虽然农村存在部分或全部这些因素，但保守主义和缺乏就业机会也同样存在。",
     "vocabulary": [
       {
-        "term": "opportunities",
-        "explanation": "因素"
+        "term": "conservatism",
+        "explanation": "保守主义；守旧倾向"
+      },
+      {
+        "term": "employment opportunities",
+        "explanation": "就业机会"
       }
     ],
     "highlights": [
@@ -3660,12 +3565,8 @@
     "translation": "农村社区遭受苦难的主要原因是后者。",
     "vocabulary": [
       {
-        "term": "communities",
-        "explanation": "社区"
-      },
-      {
-        "term": "suffering",
-        "explanation": "（内心或肉体的）痛苦，问题"
+        "term": "rural communities",
+        "explanation": "农村社区"
       }
     ],
     "highlights": [
@@ -3705,12 +3606,12 @@
     "translation": "受城市地区经济改善的吸引，世界各地的乡村居民纷纷外迁，导致人口稠密的城市变得过于拥挤，而乡村则一片荒凉。",
     "vocabulary": [
       {
-        "term": "contributing",
-        "explanation": "捐赠，捐助"
+        "term": "Attracted",
+        "explanation": "被吸引的；产生兴趣的"
       },
       {
-        "term": "economics",
-        "explanation": "经济学"
+        "term": "desolation",
+        "explanation": "荒凉；荒废"
       }
     ],
     "highlights": [
@@ -3745,16 +3646,7 @@
   },
   "R1-06": {
     "translation": "那么，乡村如何在这些变化中生存？或者根本应该这样做？",
-    "vocabulary": [
-      {
-        "term": "survival",
-        "explanation": "继续生存，存活，幸存"
-      },
-      {
-        "term": "changes",
-        "explanation": "改变，变化"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3792,12 +3684,8 @@
     "translation": "由于住宅和设施之间的距离以及公共交通经常间歇性，居住在农村的人们是汽车的重度使用者。",
     "vocabulary": [
       {
-        "term": "facilities",
-        "explanation": "设施"
-      },
-      {
-        "term": "transport",
-        "explanation": "运输，运送"
+        "term": "intermittent",
+        "explanation": "间歇的；断断续续的"
       }
     ],
     "highlights": [
@@ -3837,12 +3725,12 @@
     "translation": "农村居民还使用更多的能源来维护他们大部分独立的建筑物。",
     "vocabulary": [
       {
-        "term": "buildings",
-        "explanation": "（建）建筑物（building 的复数）"
+        "term": "maintaining",
+        "explanation": "维护；保养（建筑）"
       },
       {
-        "term": "energy",
-        "explanation": "能力，力气"
+        "term": "detached",
+        "explanation": "独立式的（建筑）"
       }
     ],
     "highlights": [
@@ -3882,12 +3770,8 @@
     "translation": "我们可能像城市里的箱子一样堆积起来，但这带来的能源效率是乡村无法比拟的。",
     "vocabulary": [
       {
-        "term": "efficiency",
-        "explanation": "效率，效能"
-      },
-      {
-        "term": "energy",
-        "explanation": "能力，力气"
+        "term": "energy efficiency",
+        "explanation": "能源效率"
       }
     ],
     "highlights": [
@@ -3951,12 +3835,12 @@
     "translation": "农村的能源需求导致人均碳排放量高​​于城市，因此认可这样的生活方式选择实际上是不负责任的。",
     "vocabulary": [
       {
-        "term": "requirements",
-        "explanation": "要求，规定，必备条件（requirement 的复数）"
+        "term": "carbon emissions",
+        "explanation": "碳排放"
       },
       {
-        "term": "emissions",
-        "explanation": "排放"
+        "term": "endorse",
+        "explanation": "支持；认可"
       }
     ],
     "highlights": [
@@ -4002,12 +3886,7 @@
   },
   "R1-11": {
     "translation": "保护乡村是人们热议的话题。",
-    "vocabulary": [
-      {
-        "term": "Protecting",
-        "explanation": "保护的，防护的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -4051,8 +3930,8 @@
         "explanation": "命运，运气，机遇"
       },
       {
-        "term": "simple",
-        "explanation": "简单的，简明的"
+        "term": "supposedly",
+        "explanation": "据说；据推测"
       }
     ],
     "highlights": [
@@ -4092,12 +3971,12 @@
     "translation": "这样做的副作用是，由于需求增加，房价被推高，让当地人买不起。",
     "vocabulary": [
       {
-        "term": "increased",
-        "explanation": "增长，增强，增大（increase 的过去式和过去分词）"
+        "term": "side-effect",
+        "explanation": "副作用"
       },
       {
-        "term": "prices",
-        "explanation": "价格，物价（price 的复数）"
+        "term": "unaffordable",
+        "explanation": "负担不起的"
       }
     ],
     "highlights": [
@@ -4139,12 +4018,8 @@
     "translation": "这一挑战尚未找到解决方案，因为市场力量正在进一步迫使居民离开农村。",
     "vocabulary": [
       {
-        "term": "challenge",
-        "explanation": "挑战，难题"
-      },
-      {
-        "term": "solution",
-        "explanation": "（问题、困难等的）解决办法"
+        "term": "market forces",
+        "explanation": "市场力量"
       }
     ],
     "highlights": [
@@ -4184,12 +4059,8 @@
     "translation": "对于那些相信乡村保护的人来说，这是令人遗憾的。",
     "vocabulary": [
       {
-        "term": "preservation",
-        "explanation": "保护，维护"
-      },
-      {
-        "term": "believe",
-        "explanation": "相信"
+        "term": "rural preservation",
+        "explanation": "乡村保护"
       }
     ],
     "highlights": [
@@ -4229,12 +4100,16 @@
     "translation": "虽然对乡村的理想化看法很常见，但现实是乡村生活在不断发展。",
     "vocabulary": [
       {
-        "term": "continuously",
-        "explanation": "连续不断地"
+        "term": "idealised",
+        "explanation": "理想化的"
       },
       {
-        "term": "reality",
-        "explanation": "真实，现实"
+        "term": "rural life",
+        "explanation": "乡村生活"
+      },
+      {
+        "term": "evolved",
+        "explanation": "演变；逐渐发展"
       }
     ],
     "highlights": [
@@ -4281,12 +4156,12 @@
     "translation": "工业化带来了劳动分工的增加，改变了农村人口之间的社会联系。",
     "vocabulary": [
       {
-        "term": "divisions",
-        "explanation": "division 的复数形式：机构内的部门或分支机构（如分部、学部）"
+        "term": "Industrialisation",
+        "explanation": "工业化"
       },
       {
-        "term": "increase",
-        "explanation": "增长，增强，增大"
+        "term": "divisions",
+        "explanation": "分支；部门"
       }
     ],
     "highlights": [
@@ -4332,16 +4207,7 @@
   },
   "R1-18": {
     "translation": "互联网将曾经的外来文化引入了农村。",
-    "vocabulary": [
-      {
-        "term": "internet",
-        "explanation": "互联网，因特网（=the Internet）"
-      },
-      {
-        "term": "cultures",
-        "explanation": "文化，文明"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -4387,12 +4253,12 @@
     "translation": "旅行连接的改善和可负担性的改善使世界变得更容易到达，创造了一个“地球村”。",
     "vocabulary": [
       {
-        "term": "connections",
-        "explanation": "连接，联系，关系（connection 的复数形式）"
+        "term": "affordability",
+        "explanation": "可负担性"
       },
       {
-        "term": "creating",
-        "explanation": "创造，创建，产生（create 的现在分词/动名词）"
+        "term": "global village",
+        "explanation": "地球村"
       }
     ],
     "highlights": [
@@ -4434,12 +4300,8 @@
     "translation": "考虑到这些变化，农村的不断发展无疑是不可避免的。",
     "vocabulary": [
       {
-        "term": "evolving",
-        "explanation": "（evolve 的现在分词）（使）逐渐发展"
-      },
-      {
-        "term": "Considering",
-        "explanation": "考虑，斟酌"
+        "term": "inevitable",
+        "explanation": "不可避免的；必然发生的"
       }
     ],
     "highlights": [
@@ -4482,16 +4344,7 @@
   },
   "R1-21": {
     "translation": "也许农村也应该为未来人口的大量增长做好准备。",
-    "vocabulary": [
-      {
-        "term": "population",
-        "explanation": "（地区、国家等的）人口，人口数量"
-      },
-      {
-        "term": "increases",
-        "explanation": "增长，增强，增大（increase 的第三人称单数）"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -4537,12 +4390,12 @@
     "translation": "随着世界各地城市的快速发展，当前的城市一代将如何应对大规模城市化不可避免的社会变化？",
     "vocabulary": [
       {
-        "term": "generation",
-        "explanation": "一代（人）"
+        "term": "inevitable",
+        "explanation": "不可避免的；必然发生的"
       },
       {
-        "term": "respond",
-        "explanation": "（口头或书面）回答，回应"
+        "term": "mass urbanisation",
+        "explanation": "大规模城市化"
       }
     ],
     "highlights": [
@@ -4588,11 +4441,7 @@
     "vocabulary": [
       {
         "term": "renaissance",
-        "explanation": "复兴，再生"
-      },
-      {
-        "term": "stronger",
-        "explanation": "更强壮的"
+        "explanation": "复兴"
       }
     ],
     "highlights": [
@@ -4632,12 +4481,8 @@
     "translation": "随着世界不断城市化，呼吁保护乡村的呼声可能会越来越高。",
     "vocabulary": [
       {
-        "term": "preservation",
-        "explanation": "保护，维护"
-      },
-      {
-        "term": "continues",
-        "explanation": "（使）继续，（使）延续"
+        "term": "rural preservation",
+        "explanation": "乡村保护"
       }
     ],
     "highlights": [
@@ -4674,8 +4519,8 @@
     "translation": "但改变是不可避免的。",
     "vocabulary": [
       {
-        "term": "change",
-        "explanation": "改变，变化"
+        "term": "inevitable",
+        "explanation": "不可避免的；必然发生的"
       }
     ],
     "highlights": [
@@ -4715,12 +4560,8 @@
     "translation": "我们知道，世界将会看到新的城市从尘埃中崛起，现有的城市将发展成为大城市，但农村的未来还不太明朗。",
     "vocabulary": [
       {
-        "term": "emerging",
-        "explanation": "新兴的，发展初期的"
-      },
-      {
-        "term": "growing",
-        "explanation": "增长的，增加的"
+        "term": "megacities",
+        "explanation": "特大城市"
       }
     ],
     "highlights": [
@@ -4786,8 +4627,8 @@
     "translation": "像“情人眼里出西施”这样的说法很少受到质疑。",
     "vocabulary": [
       {
-        "term": "questioned",
-        "explanation": "问题，疑问"
+        "term": "eye of the beholder",
+        "explanation": "旁观者的眼光；审美因人而异"
       }
     ],
     "highlights": [
@@ -4827,12 +4668,8 @@
     "translation": "它们已经深深地融入我们的意识中，以至于人们认为不这样想是荒谬的。",
     "vocabulary": [
       {
-        "term": "embedded",
-        "explanation": "嵌入（或插入、埋入）……之中的"
-      },
-      {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "consciousness",
+        "explanation": "意识；认识"
       }
     ],
     "highlights": [
@@ -4872,12 +4709,8 @@
     "translation": "然而，至少推翻这个假设可能是有用的，因为人们从审美角度评估环境、情况和人。",
     "vocabulary": [
       {
-        "term": "environment",
-        "explanation": "自然环境，生态环境"
-      },
-      {
-        "term": "situations",
-        "explanation": "情况，状况，局面（situation 的复数形式）"
+        "term": "evaluate",
+        "explanation": "评估；评价"
       }
     ],
     "highlights": [
@@ -4915,16 +4748,7 @@
   },
   "R2-04": {
     "translation": "我们可能会发现我们仍然相信它是正确的，但我们也可能会发现情况比你想象的要复杂得多。",
-    "vocabulary": [
-      {
-        "term": "situation",
-        "explanation": "情况，形势"
-      },
-      {
-        "term": "believe",
-        "explanation": "相信"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -4990,12 +4814,8 @@
     "translation": "最近一项探索审美趣味的研究发表在《认知》杂志上。",
     "vocabulary": [
       {
-        "term": "exploring",
-        "explanation": "探讨，探究"
-      },
-      {
-        "term": "recent",
-        "explanation": "最近的，最新的"
+        "term": "published",
+        "explanation": "出版；发表"
       }
     ],
     "highlights": [
@@ -5035,12 +4855,16 @@
     "translation": "这项研究的结果表明，人们对自然物体的审美评价非常一致，但对人工制品或人造物体的分歧更大。",
     "vocabulary": [
       {
-        "term": "evaluation",
-        "explanation": "评价，评估"
+        "term": "aesthetic evaluation",
+        "explanation": "审美评价"
       },
       {
-        "term": "results",
-        "explanation": "结果；导致（result 的复数或第三人称单数）"
+        "term": "artifacts",
+        "explanation": "人工制品"
+      },
+      {
+        "term": "human-made",
+        "explanation": "人为造成的"
       }
     ],
     "highlights": [
@@ -5096,12 +4920,8 @@
     "translation": "研究发现，共同的品味在面孔和自然景观中最常见，但在建筑和艺术作品中最不常见。",
     "vocabulary": [
       {
-        "term": "landscapes",
-        "explanation": "（陆上，尤指乡村的）风景，景色"
-      },
-      {
-        "term": "shared",
-        "explanation": "分享的，共有的"
+        "term": "shared taste",
+        "explanation": "共同审美"
       }
     ],
     "highlights": [
@@ -5143,12 +4963,12 @@
     "translation": "假设是通常令人愉悦的特征，如比例或对称性，都在起作用。对自然场景的偏好可能是通过生活经历习得的。",
     "vocabulary": [
       {
-        "term": "experiences",
-        "explanation": "经历，体验（experience 的复数）"
+        "term": "proportion",
+        "explanation": "比例"
       },
       {
-        "term": "features",
-        "explanation": "产品特点，特征，特性"
+        "term": "symmetry",
+        "explanation": "对称；平衡"
       }
     ],
     "highlights": [
@@ -5196,12 +5016,8 @@
     "translation": "随着人们的发展，宜居性、安全性和开放性等因素可能会受到青睐。",
     "vocabulary": [
       {
-        "term": "preferred",
-        "explanation": "更合意的，更好的"
-      },
-      {
-        "term": "develop",
-        "explanation": "（使）成长，发育，发展"
+        "term": "habitability",
+        "explanation": "宜居性"
       }
     ],
     "highlights": [
@@ -5233,12 +5049,8 @@
     "translation": "景观的一些细节发生了变化，但基本要素更加常见，例如水、开放空间和护理标志。",
     "vocabulary": [
       {
-        "term": "landscapes",
-        "explanation": "（陆上，尤指乡村的）风景，景色"
-      },
-      {
-        "term": "details",
-        "explanation": "细节，细微之处"
+        "term": "open spaces",
+        "explanation": "开阔空间"
       }
     ],
     "highlights": [
@@ -5279,11 +5091,7 @@
     "vocabulary": [
       {
         "term": "exposure",
-        "explanation": "暴露，接触"
-      },
-      {
-        "term": "spaces",
-        "explanation": "空间，空地，空隙"
+        "explanation": "接触；暴露程度"
       }
     ],
     "highlights": [
@@ -5323,12 +5131,8 @@
     "translation": "因此，人们没有相同水平的共同品味。",
     "vocabulary": [
       {
-        "term": "shared",
-        "explanation": "分享的，共有的"
-      },
-      {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "shared taste",
+        "explanation": "共同审美"
       }
     ],
     "highlights": [
@@ -5368,12 +5172,12 @@
     "translation": "对文物的共同品味的一致程度较低可能更多地与风格元素有关，而不是“行为后果”。",
     "vocabulary": [
       {
-        "term": "consequences",
-        "explanation": "后果，结果，影响（consequence 的复数）"
+        "term": "shared taste",
+        "explanation": "共同审美"
       },
       {
-        "term": "behavioral",
-        "explanation": "行为的"
+        "term": "artifacts",
+        "explanation": "人工制品"
       }
     ],
     "highlights": [
@@ -5423,12 +5227,8 @@
     "translation": "所有的后果似乎都是合理的（或者至少是可能的），但我认为可能有一个他们没有得出的有趣的哲学结论。",
     "vocabulary": [
       {
-        "term": "consequences",
-        "explanation": "后果，结果，影响（consequence 的复数）"
-      },
-      {
-        "term": "conclusion",
-        "explanation": "结论，推论"
+        "term": "philosophical conclusion",
+        "explanation": "哲学层面的结论"
       }
     ],
     "highlights": [
@@ -5494,12 +5294,12 @@
     "translation": "看来我们的审美偏好或评价是有客观依据的。",
     "vocabulary": [
       {
-        "term": "preferences",
-        "explanation": "偏爱，偏好"
+        "term": "aesthetic preferences",
+        "explanation": "审美偏好"
       },
       {
         "term": "evaluations",
-        "explanation": "评价，评估"
+        "explanation": "评价；评估"
       }
     ],
     "highlights": [
@@ -5541,12 +5341,12 @@
     "translation": "我并不是说这意味着美是完全客观的，只是可能存在一般的客观原则在起作用，即美不只是在观看者的眼中。",
     "vocabulary": [
       {
-        "term": "principles",
-        "explanation": "（行为）准则，（道德）原则"
+        "term": "objective principles",
+        "explanation": "客观原则"
       },
       {
-        "term": "completely",
-        "explanation": "完全地，彻底地"
+        "term": "eye of the beholder",
+        "explanation": "旁观者的眼光；审美因人而异"
       }
     ],
     "highlights": [
@@ -5588,12 +5388,8 @@
     "translation": "大自然以全世界共同的方式展现出一些普遍的美学特征，例如光辉。",
     "vocabulary": [
       {
-        "term": "features",
-        "explanation": "产品特点，特征，特性"
-      },
-      {
-        "term": "exhibits",
-        "explanation": "展览（exhibit 的复数）"
+        "term": "radiance",
+        "explanation": "光辉；光泽"
       }
     ],
     "highlights": [
@@ -5639,16 +5435,7 @@
   },
   "R2-18": {
     "translation": "各地的情况并不完全相同，但很常见。",
-    "vocabulary": [
-      {
-        "term": "exactly",
-        "explanation": "精确地，确切地"
-      },
-      {
-        "term": "common",
-        "explanation": "共同的，共享的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -5710,12 +5497,8 @@
     "translation": "例如，不同地方的日落非常相似，足以引起几乎普遍的吸引力。",
     "vocabulary": [
       {
-        "term": "example",
-        "explanation": "例子，例证"
-      },
-      {
-        "term": "universal",
-        "explanation": "普遍的，全体的，全世界的"
+        "term": "universal appeal",
+        "explanation": "普遍吸引力"
       }
     ],
     "highlights": [
@@ -5755,12 +5538,16 @@
     "translation": "美的可能的普遍原则——例如比例、合身、光泽等——是一般类别，允许有各种各样的实施例。",
     "vocabulary": [
       {
-        "term": "principles",
-        "explanation": "（行为）准则，（道德）原则"
+        "term": "fittingness",
+        "explanation": "契合度；适配性"
       },
       {
-        "term": "categories",
-        "explanation": "种类，范畴"
+        "term": "radiance",
+        "explanation": "光辉；光泽"
+      },
+      {
+        "term": "embodiments",
+        "explanation": "具体体现；化身"
       }
     ],
     "highlights": [
@@ -5800,12 +5587,8 @@
     "translation": "当人们参与建筑或艺术制品的制作时，他们会以独特的方式应用这些非常普遍的概念。",
     "vocabulary": [
       {
-        "term": "involved",
-        "explanation": "复杂的"
-      },
-      {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "artifacts",
+        "explanation": "人工制品"
       }
     ],
     "highlights": [
@@ -5858,12 +5641,8 @@
     "translation": "但他们应用这一原则的方式可能并不具有普遍吸引力。",
     "vocabulary": [
       {
-        "term": "principle",
-        "explanation": "（行为）准则，（道德）原则"
-      },
-      {
-        "term": "universal",
-        "explanation": "普遍的，全体的，全世界的"
+        "term": "universal appeal",
+        "explanation": "普遍吸引力"
       }
     ],
     "highlights": [
@@ -5903,12 +5682,8 @@
     "translation": "这就是为什么体验不同的文化及其文物很重要，因为它为我们打开了接近或构建美的不同方式。",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历，往事"
-      },
-      {
-        "term": "approaching",
-        "explanation": "靠近，临近"
+        "term": "artifacts",
+        "explanation": "人工制品"
       }
     ],
     "highlights": [
@@ -5950,8 +5725,8 @@
     "translation": "质疑我们的假设总是好的。",
     "vocabulary": [
       {
-        "term": "question",
-        "explanation": "问题，疑问"
+        "term": "question our assumptions",
+        "explanation": "质疑我们的假设"
       }
     ],
     "highlights": [

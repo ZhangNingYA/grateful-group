@@ -1,7 +1,12 @@
 {
   "C01": {
     "translation": "《太阳也是一颗星星》是一个关于爱情、浪漫、命运和命运的真正可爱的故事。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "destiny",
+        "explanation": "命运；宿命"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -42,11 +47,11 @@
     "vocabulary": [
       {
         "term": "immigrant",
-        "explanation": "（外来）移民，侨民"
+        "explanation": "移民"
       },
       {
-        "term": "living",
-        "explanation": "活着的，活的"
+        "term": "illegally",
+        "explanation": "非法地"
       }
     ],
     "highlights": [
@@ -94,12 +99,8 @@
     "translation": "她的父母把她带了过来，并创造了她努力摆脱的困境。",
     "vocabulary": [
       {
-        "term": "situation",
-        "explanation": "情况，形势"
-      },
-      {
-        "term": "parents",
-        "explanation": "父母，双亲（parent 的复数）"
+        "term": "strives",
+        "explanation": "努力；力求"
       }
     ],
     "highlights": [
@@ -156,7 +157,7 @@
     "vocabulary": [
       {
         "term": "immigrants",
-        "explanation": "（外来）移民，侨民"
+        "explanation": "移民"
       }
     ],
     "highlights": [
@@ -196,12 +197,12 @@
     "translation": "他相信真爱、命运，以及娜塔莎通过科学推理驳斥的所有其他废话。",
     "vocabulary": [
       {
-        "term": "reasoning",
-        "explanation": "推理，推论"
+        "term": "dismisses",
+        "explanation": "不予考虑；驳回"
       },
       {
-        "term": "believes",
-        "explanation": "认为（believe 的三单形式）"
+        "term": "reasoning",
+        "explanation": "推理；推论"
       }
     ],
     "highlights": [
@@ -241,8 +242,12 @@
     "translation": "丹尼尔和娜塔莎在她被驱逐出境的那天在纽约街头巧合。",
     "vocabulary": [
       {
-        "term": "streets",
-        "explanation": "街道，街"
+        "term": "coincidence",
+        "explanation": "巧合"
+      },
+      {
+        "term": "deported",
+        "explanation": "被驱逐出境的"
       }
     ],
     "highlights": [
@@ -298,12 +303,16 @@
     "translation": "她没有告诉他这些，但确实允许他在一天中试图让她爱上他的同时陪伴她。",
     "vocabulary": [
       {
-        "term": "company",
-        "explanation": "公司"
+        "term": "keep her company",
+        "explanation": "陪伴她"
       },
       {
-        "term": "course",
-        "explanation": "课程"
+        "term": "fall in love",
+        "explanation": "坠入爱河"
+      },
+      {
+        "term": "over the course of the day",
+        "explanation": "在一天的过程中"
       }
     ],
     "highlights": [
@@ -395,12 +404,7 @@
   },
   "C09": {
     "translation": "我发现她和我很相似。",
-    "vocabulary": [
-      {
-        "term": "similar",
-        "explanation": "相像的，类似的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -440,8 +444,16 @@
     "translation": "她具有科学头脑，务实，有点愤世嫉俗，并且总是持怀疑态度。",
     "vocabulary": [
       {
-        "term": "practical",
-        "explanation": "真实的，实际的"
+        "term": "scientifically-minded",
+        "explanation": "具有科学思维的"
+      },
+      {
+        "term": "cynical",
+        "explanation": "愤世嫉俗的；怀疑一切的"
+      },
+      {
+        "term": "skeptical",
+        "explanation": "怀疑的；持怀疑态度的"
       }
     ],
     "highlights": [
@@ -482,11 +494,15 @@
     "vocabulary": [
       {
         "term": "obsession",
-        "explanation": "痴迷，困扰"
+        "explanation": "痴迷；执着"
       },
       {
-        "term": "scientific",
-        "explanation": "科学的，与科学有关的"
+        "term": "lens",
+        "explanation": "镜头；视角"
+      },
+      {
+        "term": "infectious",
+        "explanation": "有感染力的"
       }
     ],
     "highlights": [
@@ -550,7 +566,20 @@
   },
   "C12": {
     "translation": "丹尼尔迷人而热情，他的言辞甚至能打破娜塔莎坚韧的外壳。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "charming",
+        "explanation": "迷人的；讨人喜欢的"
+      },
+      {
+        "term": "passionate",
+        "explanation": "热情的；充满激情的"
+      },
+      {
+        "term": "cracks",
+        "explanation": "使裂开；攻破"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -640,8 +669,8 @@
     "translation": "我曾经觉得浪漫故事总是廉价或可笑的。",
     "vocabulary": [
       {
-        "term": "stories",
-        "explanation": "（真实或虚构的）故事，叙述"
+        "term": "laughable",
+        "explanation": "可笑的"
       }
     ],
     "highlights": [
@@ -682,11 +711,7 @@
     "vocabulary": [
       {
         "term": "optimism",
-        "explanation": "乐观"
-      },
-      {
-        "term": "escaping",
-        "explanation": "逃跑，逃脱"
+        "explanation": "乐观；乐观主义"
       }
     ],
     "highlights": [
@@ -728,12 +753,8 @@
     "translation": "我在《太阳也是一颗星星》中迷失了方向，并在一个周末的时间里从头到尾看完了它。",
     "vocabulary": [
       {
-        "term": "finished",
-        "explanation": "结束了的，完成了的"
-      },
-      {
-        "term": "weekend",
-        "explanation": "周末"
+        "term": "cover to cover",
+        "explanation": "从头到尾（读完）"
       }
     ],
     "highlights": [
@@ -791,8 +812,8 @@
     "translation": "我迫不及待地想得到一个幸福的结局。",
     "vocabulary": [
       {
-        "term": "ending",
-        "explanation": "结尾，结局"
+        "term": "happy ending",
+        "explanation": "圆满结局"
       }
     ],
     "highlights": [
@@ -830,7 +851,12 @@
   },
   "C18": {
     "translation": "偶尔屈服于魔法真是太好了。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "give in to",
+        "explanation": "向……屈服；沉溺于"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -882,16 +908,7 @@
   },
   "C19": {
     "translation": "它不一定是一本带有实际咒语的硬奇幻小说，它可以是两个拥有特殊东西的人之间发现的魔法。",
-    "vocabulary": [
-      {
-        "term": "people",
-        "explanation": "人，人类"
-      },
-      {
-        "term": "special",
-        "explanation": "特殊的，特别的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -929,8 +946,12 @@
     "translation": "当它们彼此靠近时，这种化学反应会导致它们发生反应并产生火花。",
     "vocabulary": [
       {
-        "term": "causes",
-        "explanation": "原因"
+        "term": "chemistry",
+        "explanation": "（人与人之间的）默契；化学反应"
+      },
+      {
+        "term": "spark",
+        "explanation": "激发；引起"
       }
     ],
     "highlights": [
@@ -962,12 +983,8 @@
     "translation": "根据最近的研究，行为改变涉及大脑的物理变化。",
     "vocabulary": [
       {
-        "term": "According",
-        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
-      },
-      {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+        "term": "behavioral change",
+        "explanation": "行为改变"
       }
     ],
     "highlights": [
@@ -1007,12 +1024,8 @@
     "translation": "在过去的十年中，研究人员表明，当谈到将一种新行为变成根深蒂固的习惯的持续时间时，没有一个简单的答案。",
     "vocabulary": [
       {
-        "term": "researchers",
-        "explanation": "研究人员，研究者（researcher 的复数）"
-      },
-      {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
+        "term": "deep-rooted",
+        "explanation": "根深蒂固的"
       }
     ],
     "highlights": [
@@ -1054,12 +1067,8 @@
     "translation": "即使对于我们之中最有生产力和最自律的人来说，消除一些已经成为我们的自然组成部分的东西也不是一朝一夕的努力就能做到的。",
     "vocabulary": [
       {
-        "term": "productive",
-        "explanation": "多产的，丰饶的"
-      },
-      {
-        "term": "effort",
-        "explanation": "努力，艰难的尝试"
+        "term": "automatic",
+        "explanation": "自动的；不假思索的"
       }
     ],
     "highlights": [
@@ -1099,12 +1108,8 @@
     "translation": "一旦我们成功地做出了改变，我们就必须对我们的生活进行其他调整，以确保我们继续维持它，这本身通常是一个完全不同的挑战。",
     "vocabulary": [
       {
-        "term": "successfully",
-        "explanation": "成功地，顺利地，圆满地"
-      },
-      {
-        "term": "challenge",
-        "explanation": "挑战，难题"
+        "term": "adjustments",
+        "explanation": "调整；适应"
       }
     ],
     "highlights": [
@@ -1149,12 +1154,12 @@
     "translation": "从本质上讲，如果不引入某种系统，就很难成功地改变和维持某种行为。",
     "vocabulary": [
       {
-        "term": "introduction",
-        "explanation": "初次投入使用，采用"
+        "term": "maintaining",
+        "explanation": "维持；保持"
       },
       {
-        "term": "changing",
-        "explanation": "变化中的，改变中的"
+        "term": "introduction",
+        "explanation": "引入；采用"
       }
     ],
     "highlights": [
@@ -1194,12 +1199,12 @@
     "translation": "如果没有适当的框架，我们来之不易的进步就更有可能脱轨。",
     "vocabulary": [
       {
-        "term": "progress",
-        "explanation": "进步，进展"
+        "term": "framework",
+        "explanation": "框架；体系"
       },
       {
-        "term": "earned",
-        "explanation": "挣得的"
+        "term": "likelihood",
+        "explanation": "可能性"
       }
     ],
     "highlights": [
@@ -1244,12 +1249,12 @@
     "translation": "为了确保成功改变和维持行为，我们应该远离一些有害的习惯",
     "vocabulary": [
       {
-        "term": "changing",
-        "explanation": "变化中的，改变中的"
+        "term": "maintaining",
+        "explanation": "维持；保持"
       },
       {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
+        "term": "detrimental",
+        "explanation": "有害的"
       }
     ],
     "highlights": [
@@ -1286,8 +1291,8 @@
     "translation": "第一个要避免的就是依靠意志力。",
     "vocabulary": [
       {
-        "term": "relying",
-        "explanation": "相信，信赖"
+        "term": "willpower",
+        "explanation": "意志力"
       }
     ],
     "highlights": [
@@ -1325,7 +1330,12 @@
   },
   "M-C02": {
     "translation": "想想你上次发誓要抵制诱惑是什么时候。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "temptation",
+        "explanation": "诱惑"
+      }
+    ],
     "highlights": [
       {
         "role": "predicate",
@@ -1356,11 +1366,7 @@
     "vocabulary": [
       {
         "term": "determined",
-        "explanation": "下定决心的，坚决的"
-      },
-      {
-        "term": "minutes",
-        "explanation": "分，分钟"
+        "explanation": "下定决心的"
       }
     ],
     "highlights": [
@@ -1416,8 +1422,8 @@
     "translation": "想象一下，当你触手可及的时候不看一眼手机，或者当你下午精神萎靡时不走到自动售货机那一定有多困难。",
     "vocabulary": [
       {
-        "term": "difficult",
-        "explanation": "困难的，费力的"
+        "term": "afternoon slump",
+        "explanation": "午后低迷状态"
       }
     ],
     "highlights": [
@@ -1449,12 +1455,16 @@
     "translation": "关于我们的意志力是有限还是无限的研究尚无定论，但专家们普遍认为，如果仅依靠意志力，就无法改变和维持习惯。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+        "term": "finite",
+        "explanation": "有限的"
       },
       {
-        "term": "sustain",
-        "explanation": "维持，保持"
+        "term": "willpower",
+        "explanation": "意志力"
+      },
+      {
+        "term": "inconclusive",
+        "explanation": "没有定论的"
       }
     ],
     "highlights": [
@@ -1520,12 +1530,12 @@
     "translation": "古老的军事格言“你永远不会适应这种情况，你只会下降到训练的水平”也适用于行为改变。",
     "vocabulary": [
       {
-        "term": "training",
-        "explanation": "训练，培训"
+        "term": "rise to the occasion",
+        "explanation": "应对局面；迎难而上"
       },
       {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
+        "term": "level of training",
+        "explanation": "训练水平"
       }
     ],
     "highlights": [
@@ -1570,8 +1580,12 @@
     "translation": "这个想法很简单——你重复某件事很多次，它就会变得自动。",
     "vocabulary": [
       {
-        "term": "simple",
-        "explanation": "简单的，简明的"
+        "term": "repeat something",
+        "explanation": "反复做某事"
+      },
+      {
+        "term": "automatic",
+        "explanation": "自动的；不假思索的"
       }
     ],
     "highlights": [
@@ -1622,11 +1636,7 @@
     "vocabulary": [
       {
         "term": "surrounding",
-        "explanation": "周围的，附近的"
-      },
-      {
-        "term": "perform",
-        "explanation": "演出，表演"
+        "explanation": "周围环境"
       }
     ],
     "highlights": [
@@ -1656,16 +1666,7 @@
   },
   "M-E02": {
     "translation": "这就是所谓的“提示”。基本上，它是执行该特定习惯的触发器。",
-    "vocabulary": [
-      {
-        "term": "perform",
-        "explanation": "演出，表演"
-      },
-      {
-        "term": "particular",
-        "explanation": "特定的，某一的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1709,7 +1710,16 @@
   },
   "M-E03": {
     "translation": "如果您不想在下午 3 点喝点甜食，可以在办公桌上准备一盒花草茶。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "sugary treat",
+        "explanation": "甜食"
+      },
+      {
+        "term": "herbal",
+        "explanation": "草本的；药草制的"
+      }
+    ],
     "highlights": [
       {
         "role": "adverbial",
@@ -1750,12 +1760,7 @@
   },
   "M-E04": {
     "translation": "下午 3 点的时候出现这种情况时，提示您给自己倒一杯热水并喝茶，而不是走到自动售货机那里。",
-    "vocabulary": [
-      {
-        "term": "instead",
-        "explanation": "代替，顶替，反而"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "adverbial",
@@ -1814,12 +1819,8 @@
     "translation": "第二个要避免的目标是关注消极目标。",
     "vocabulary": [
       {
-        "term": "negative",
-        "explanation": "有害的，负面的"
-      },
-      {
-        "term": "second",
-        "explanation": "第二（的），第二个（的）"
+        "term": "negative goals",
+        "explanation": "负面目标"
       }
     ],
     "highlights": [
@@ -1857,16 +1858,7 @@
   },
   "M-F02": {
     "translation": "有时候，让你失望的不是你的过程，而是你首先想要改变的习惯。",
-    "vocabulary": [
-      {
-        "term": "process",
-        "explanation": "步骤，程序"
-      },
-      {
-        "term": "change",
-        "explanation": "改变，变化"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1904,8 +1896,16 @@
     "translation": "首先，与到达指定时间时用巧克力代替花草茶相比，不吃巧克力来缓解下午的低迷状态是一个更难的目标。",
     "vocabulary": [
       {
-        "term": "harder",
-        "explanation": "更难的"
+        "term": "afternoon slump",
+        "explanation": "午后低迷状态"
+      },
+      {
+        "term": "herbal",
+        "explanation": "草本的；药草制的"
+      },
+      {
+        "term": "designated",
+        "explanation": "指定的；特定的"
       }
     ],
     "highlights": [
@@ -1947,12 +1947,8 @@
     "translation": "你的大脑想要找到过去成功的例程，并允许你在未来再次重复这些动作，而无需明确地思考它们。",
     "vocabulary": [
       {
-        "term": "succeeded",
-        "explanation": "成功"
-      },
-      {
-        "term": "actions",
-        "explanation": "行动，行为（action 的复数）"
+        "term": "explicitly",
+        "explanation": "明确地；明白地"
       }
     ],
     "highlights": [
@@ -1992,12 +1988,8 @@
     "translation": "然而，当学习不做某事时，这种习惯学习系统就不那么有效了。",
     "vocabulary": [
       {
-        "term": "learning",
-        "explanation": "学习"
-      },
-      {
-        "term": "system",
-        "explanation": "（协同工作的）系统"
+        "term": "habit-learning system",
+        "explanation": "习惯学习系统"
       }
     ],
     "highlights": [
@@ -2035,7 +2027,12 @@
   },
   "M-F06": {
     "translation": "这就是为什么与其放弃某些东西，不如考虑引入一些东西来代替它。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "in its place",
+        "explanation": "代替它；在其位置"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2073,12 +2070,8 @@
     "translation": "专注于你将要采取的行动，这些行动最终会与你想要停止的行为发生冲突。",
     "vocabulary": [
       {
-        "term": "conflict",
-        "explanation": "争执，争论，分歧"
-      },
-      {
-        "term": "behaviors",
-        "explanation": "行为，举止，态度"
+        "term": "conflict with",
+        "explanation": "与……冲突"
       }
     ],
     "highlights": [
@@ -2118,12 +2111,8 @@
     "translation": "当你的注意力集中在做新事物上时，你的习惯系统就有机会发挥作用。",
     "vocabulary": [
       {
-        "term": "attention",
-        "explanation": "注意"
-      },
-      {
         "term": "operate",
-        "explanation": "操纵，操作（机器或设备）"
+        "explanation": "运作；发挥作用"
       }
     ],
     "highlights": [
@@ -2168,12 +2157,8 @@
     "translation": "第三个要避免的就是在不同的情况下使用相同的策略。",
     "vocabulary": [
       {
-        "term": "strategies",
-        "explanation": "策略，战略（strategy 的复数）"
-      },
-      {
-        "term": "different",
-        "explanation": "不同的"
+        "term": "circumstances",
+        "explanation": "情况；环境（常指具体处境）"
       }
     ],
     "highlights": [
@@ -2213,12 +2198,8 @@
     "translation": "因为我们是习惯的生物，所以很自然地认为，当我们确实设法采取并维持一种理想的行为时，当我们想要改变另一种行为时，同样的策略也会起作用。",
     "vocabulary": [
       {
-        "term": "strategy",
-        "explanation": "（尤指为获得某物制定长期的）策略，行动计划"
-      },
-      {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
+        "term": "desirable",
+        "explanation": "理想的；值得拥有的"
       }
     ],
     "highlights": [
@@ -2305,16 +2286,7 @@
   },
   "M-G04": {
     "translation": "有时，让你改变一种行为的系统可能不适用于另一种行为。",
-    "vocabulary": [
-      {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
-      },
-      {
-        "term": "system",
-        "explanation": "（协同工作的）系统"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2352,12 +2324,8 @@
     "translation": "有时，我们在做决定时习惯于依靠自己的直觉。",
     "vocabulary": [
       {
-        "term": "decision",
-        "explanation": "决定，抉择"
-      },
-      {
-        "term": "relying",
-        "explanation": "相信，信赖"
+        "term": "accustomed",
+        "explanation": "习惯于……的"
       }
     ],
     "highlights": [
@@ -2397,12 +2365,16 @@
     "translation": "这在某些情况下对我们很有帮助，但在其他情况下可能会阻碍我们，特别是当我们需要考虑指标和数据，而不是让我们的直觉凌驾于一切时。",
     "vocabulary": [
       {
-        "term": "situations",
-        "explanation": "情况，状况，局面（situation 的复数形式）"
+        "term": "hinder",
+        "explanation": "阻碍；妨碍"
       },
       {
-        "term": "consider",
-        "explanation": "考虑，斟酌"
+        "term": "instinct",
+        "explanation": "本能；直觉"
+      },
+      {
+        "term": "override",
+        "explanation": "凌驾于；推翻"
       }
     ],
     "highlights": [
@@ -2458,12 +2430,12 @@
     "translation": "例如，如果您想在早上第一件事停止检查电子邮件，您可能会决定用其他活动来代替。",
     "vocabulary": [
       {
-        "term": "checking",
-        "explanation": "检查；核查（check 的动名词）"
+        "term": "first thing in the morning",
+        "explanation": "早晨第一件事"
       },
       {
-        "term": "activity",
-        "explanation": "活跃状况，热闹"
+        "term": "in its place",
+        "explanation": "代替它；在其位置"
       }
     ],
     "highlights": [
@@ -2508,12 +2480,8 @@
     "translation": "但如果你想停止沉迷于电子游戏，仅仅决定去跑步可能并不那么有效。",
     "vocabulary": [
       {
-        "term": "deciding",
-        "explanation": "决定性的，关键的"
-      },
-      {
-        "term": "effective",
-        "explanation": "产生预期结果的，有效的"
+        "term": "indulging",
+        "explanation": "沉溺于；放纵"
       }
     ],
     "highlights": [
@@ -2560,12 +2528,8 @@
     "translation": "您可能需要引入另一种强化措施，例如与朋友见面并一起预订健身课程",
     "vocabulary": [
       {
-        "term": "exercise",
-        "explanation": "运动，锻炼"
-      },
-      {
-        "term": "booking",
-        "explanation": "预订"
+        "term": "reinforcement",
+        "explanation": "强化；巩固"
       }
     ],
     "highlights": [
@@ -2607,10 +2571,6 @@
       {
         "term": "forgiving",
         "explanation": "宽容的，慈悲的"
-      },
-      {
-        "term": "fourth",
-        "explanation": "第四的，第四个的"
       }
     ],
     "highlights": [
@@ -2658,8 +2618,8 @@
     "translation": "当然，即使是最周密的计划有时也会失败。",
     "vocabulary": [
       {
-        "term": "course",
-        "explanation": "课程"
+        "term": "best-laid plans",
+        "explanation": "精心安排的计划"
       }
     ],
     "highlights": [
@@ -2691,12 +2651,8 @@
     "translation": "您可能已经坚持了五天没有屏幕的夜间例行公事，然后一个大项目落在您的办公桌上，您发现自己在睡觉前躺在床上，拿着笔记本电脑。",
     "vocabulary": [
       {
-        "term": "project",
-        "explanation": "项目，计划"
-      },
-      {
-        "term": "screen",
-        "explanation": "屏幕，荧光屏"
+        "term": "nighttime",
+        "explanation": "夜间的；夜间"
       }
     ],
     "highlights": [
@@ -2760,12 +2716,16 @@
     "translation": "或者你周日准备了饭菜，并坚持在家吃健康的晚餐，但到了周五，你发现自己太累了，选择点油腻的外卖。",
     "vocabulary": [
       {
-        "term": "prepared",
-        "explanation": "有准备的，准备好的"
+        "term": "exhausted",
+        "explanation": "筋疲力尽的"
       },
       {
-        "term": "healthy",
-        "explanation": "健康的，健壮的"
+        "term": "greasy",
+        "explanation": "油腻的"
+      },
+      {
+        "term": "takeout",
+        "explanation": "外带食物"
       }
     ],
     "highlights": [
@@ -2831,12 +2791,8 @@
     "translation": "生活会发生，即使你的行为改变很小，每一天都可能变得相当不灵活，在某些时候你的运气可能会耗尽，即使只是一天。",
     "vocabulary": [
       {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
-      },
-      {
-        "term": "change",
-        "explanation": "改变，变化"
+        "term": "inflexible",
+        "explanation": "不灵活的；僵化的"
       }
     ],
     "highlights": [
@@ -2892,12 +2848,16 @@
     "translation": "你身上的完美主义者可能会尖叫着完全放弃你的目标，但试着从更大的角度来看待它。",
     "vocabulary": [
       {
-        "term": "altogether",
-        "explanation": "完全地"
+        "term": "perfectionist",
+        "explanation": "完美主义者"
       },
       {
-        "term": "bigger",
-        "explanation": "更大的，较大的（big 的比较级）"
+        "term": "screaming",
+        "explanation": "尖叫；极其吵闹的"
+      },
+      {
+        "term": "abandon",
+        "explanation": "放弃；抛弃"
       }
     ],
     "highlights": [
@@ -2953,8 +2913,8 @@
     "translation": "仅仅因为您可能暂时偏离了方向，并不意味着您无法在第二天重新开始。",
     "vocabulary": [
       {
-        "term": "course",
-        "explanation": "课程"
+        "term": "afresh",
+        "explanation": "重新；从头开始"
       }
     ],
     "highlights": [
@@ -3001,8 +2961,8 @@
     "translation": "最后要避免的一点是低估微小的进步。",
     "vocabulary": [
       {
-        "term": "progress",
-        "explanation": "进步，进展"
+        "term": "discounting",
+        "explanation": "低估；忽视"
       }
     ],
     "highlights": [
@@ -3042,12 +3002,8 @@
     "translation": "许多完美主义者在试图改变行为时往往会陷入一种习惯。",
     "vocabulary": [
       {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
-      },
-      {
-        "term": "change",
-        "explanation": "改变，变化"
+        "term": "perfectionists",
+        "explanation": "完美主义者"
       }
     ],
     "highlights": [
@@ -3087,12 +3043,8 @@
     "translation": "他们过于关注大目标，而没有花时间庆祝他们在此过程中取得的小进步。",
     "vocabulary": [
       {
-        "term": "progress",
-        "explanation": "进步，进展"
-      },
-      {
-        "term": "process",
-        "explanation": "步骤，程序"
+        "term": "celebrate the small progress",
+        "explanation": "庆祝小幅进步"
       }
     ],
     "highlights": [
@@ -3156,8 +3108,8 @@
     "translation": "你的大脑会对奖励做出反应。",
     "vocabulary": [
       {
-        "term": "responds",
-        "explanation": "（口头或书面）回答，回应"
+        "term": "rewards",
+        "explanation": "奖励；回报"
       }
     ],
     "highlights": [
@@ -3197,12 +3149,12 @@
     "translation": "基底神经节是与我们的习惯表现相关的大脑区域，在行为开始时（当习惯受到提示时）以及在结束时（当习惯得到奖励时）最活跃。",
     "vocabulary": [
       {
-        "term": "performance",
-        "explanation": "表演，演出"
+        "term": "basal ganglia",
+        "explanation": "基底神经节"
       },
       {
-        "term": "beginning",
-        "explanation": "开始，开端"
+        "term": "rewarded",
+        "explanation": "奖励；回报"
       }
     ],
     "highlights": [
@@ -3312,8 +3264,8 @@
     "translation": "不要专注于你朝着目标走了多远，而是考虑如何奖励自己所取得的进步。",
     "vocabulary": [
       {
-        "term": "progress",
-        "explanation": "进步，进展"
+        "term": "reward",
+        "explanation": "奖励；回报"
       }
     ],
     "highlights": [
@@ -3351,16 +3303,7 @@
   },
   "M-J08": {
     "translation": "它不必很大或很昂贵；它可以像跑步后制作您最喜欢的果汁一样简单。",
-    "vocabulary": [
-      {
-        "term": "making",
-        "explanation": "制作，生产"
-      },
-      {
-        "term": "expensive",
-        "explanation": "花钱多的，昂贵的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3396,12 +3339,7 @@
   },
   "M-J09": {
     "translation": "无论你的奖励是什么，它都不能只是让你继续前进的活动本身。",
-    "vocabulary": [
-      {
-        "term": "activity",
-        "explanation": "活跃状况，热闹"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3439,12 +3377,8 @@
     "translation": "发起新的行为通常似乎是改变过程中最困难的部分。",
     "vocabulary": [
       {
-        "term": "behavior",
-        "explanation": "行为，举止，态度"
-      },
-      {
-        "term": "process",
-        "explanation": "步骤，程序"
+        "term": "Initiating",
+        "explanation": "开始；发起"
       }
     ],
     "highlights": [
@@ -3486,8 +3420,12 @@
     "translation": "然而，人们常常未能为维护它做好充分的准备。",
     "vocabulary": [
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "adequately",
+        "explanation": "充分地；足够地"
+      },
+      {
+        "term": "maintaining",
+        "explanation": "维持；保持"
       }
     ],
     "highlights": [
@@ -3527,12 +3465,8 @@
     "translation": "造成这种情况的原因之一是我们错误地认为我们用于发起变革的策略将同样有效地帮助我们继续变革。",
     "vocabulary": [
       {
-        "term": "strategies",
-        "explanation": "策略，战略（strategy 的复数）"
-      },
-      {
-        "term": "continue",
-        "explanation": "（使）继续，（使）延续"
+        "term": "mistakenly",
+        "explanation": "错误地；误以为"
       }
     ],
     "highlights": [
@@ -3592,8 +3526,12 @@
     "translation": "改变根深蒂固的习惯需要改变我们对这种深深渗透到我们生活中的习惯的信念，不断地体现出智慧要求我们保持积极的态度。",
     "vocabulary": [
       {
-        "term": "requires",
-        "explanation": "需要"
+        "term": "deep-rooted",
+        "explanation": "根深蒂固的"
+      },
+      {
+        "term": "penetrates",
+        "explanation": "穿透；渗入"
       },
       {
         "term": "continually",
@@ -3641,12 +3579,8 @@
     "translation": "如果我们情绪低落，改变行为的智慧似乎就会消失，我们就会回到多吃少运动的状态。",
     "vocabulary": [
       {
-        "term": "exercising",
-        "explanation": "运动，锻炼"
-      },
-      {
-        "term": "differently",
-        "explanation": "不同地"
+        "term": "wisdom",
+        "explanation": "智慧；明智的做法"
       }
     ],
     "highlights": [
@@ -3707,8 +3641,8 @@
     "translation": "因此，保持新行为的关键是快乐！",
     "vocabulary": [
       {
-        "term": "behaviors",
-        "explanation": "行为，举止，态度"
+        "term": "maintaining",
+        "explanation": "维持；保持"
       }
     ],
     "highlights": [
@@ -3746,12 +3680,7 @@
   },
   "M-K08": {
     "translation": "这就是为什么维持新行为如此困难。",
-    "vocabulary": [
-      {
-        "term": "behaviors",
-        "explanation": "行为，举止，态度"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3791,12 +3720,12 @@
     "translation": "请记住，克服阻碍我们实施新改变的行为惯性，例如健康饮食或锻炼身体，从长远来看可以使我们受益，并可以改善我们的身心健康。",
     "vocabulary": [
       {
-        "term": "implementing",
-        "explanation": "执行，贯彻"
+        "term": "inertia",
+        "explanation": "惰性；惯性"
       },
       {
-        "term": "exercising",
-        "explanation": "运动，锻炼"
+        "term": "mental health",
+        "explanation": "心理健康"
       }
     ],
     "highlights": [
@@ -3896,8 +3825,8 @@
     "translation": "它们都是有学问的，因此也都可以被忘掉。",
     "vocabulary": [
       {
-        "term": "learned",
-        "explanation": "博学的"
+        "term": "unlearned",
+        "explanation": "被遗忘；学会不再做"
       }
     ],
     "highlights": [
@@ -3935,16 +3864,7 @@
   },
   "M-L04": {
     "translation": "问题是：你到底有多想改变？",
-    "vocabulary": [
-      {
-        "term": "question",
-        "explanation": "问题，疑问"
-      },
-      {
-        "term": "change",
-        "explanation": "改变，变化"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3984,12 +3904,16 @@
     "translation": "“美国梦”承诺，在机遇之地，任何个人都可以通过努力工作和雄心壮志攀登经济阶梯并走向繁荣。",
     "vocabulary": [
       {
-        "term": "individual",
-        "explanation": "单独的，个别的"
+        "term": "economic ladder",
+        "explanation": "经济阶梯；社会上升通道"
       },
       {
-        "term": "promises",
-        "explanation": "承诺，保证"
+        "term": "prosper",
+        "explanation": "繁荣；成功"
+      },
+      {
+        "term": "ambition",
+        "explanation": "抱负；雄心"
       }
     ],
     "highlights": [
@@ -4031,12 +3955,16 @@
     "translation": "然而，今天的美国年轻人正在努力挣得比他们的父辈在同龄时更多的钱，而且美国的向上流动性实际上与其他工业化国家相比并不理想。",
     "vocabulary": [
       {
-        "term": "struggling",
-        "explanation": "艰难奋斗的，苦苦挣扎的"
+        "term": "upward mobility",
+        "explanation": "向上流动"
       },
       {
-        "term": "mobility",
-        "explanation": "（住处、社会阶层、职业方面的）流动能力"
+        "term": "unfavourably",
+        "explanation": "不利地；负面地"
+      },
+      {
+        "term": "industrialised",
+        "explanation": "工业化的"
       }
     ],
     "highlights": [
@@ -4074,7 +4002,12 @@
   },
   "R1-03": {
     "translation": "那么，为什么美国梦的理念能够持续存在呢？",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "persist",
+        "explanation": "持续存在；坚持"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -4104,12 +4037,8 @@
     "translation": "《美国政治学杂志》上的一项新研究发现了一个被忽视的因素：真人秀的影响。",
     "vocabulary": [
       {
-        "term": "influence",
-        "explanation": "影响，作用"
-      },
-      {
-        "term": "identifies",
-        "explanation": "认出，识别"
+        "term": "overlooked",
+        "explanation": "被忽视的"
       }
     ],
     "highlights": [
@@ -4169,12 +4098,16 @@
     "translation": "其中绝大多数都有一个“白手起家”的故事情节：它们的主角是普通美国人，他们努力工作以取得巨大的经济成功。",
     "vocabulary": [
       {
-        "term": "majority",
-        "explanation": "大多数"
+        "term": "overwhelming",
+        "explanation": "压倒性的；极其强烈的"
       },
       {
-        "term": "success",
-        "explanation": "成功，胜利"
+        "term": "rags-to-riches",
+        "explanation": "从贫穷到富有"
+      },
+      {
+        "term": "storyline",
+        "explanation": "故事情节；叙事线"
       }
     ],
     "highlights": [
@@ -4222,12 +4155,16 @@
     "translation": "虽然这些节目通常是收视率最高的节目之一，但新闻广播——对数百万美国人所面临的经济困难进行了更现实的描述——所占的收视比例要小得多。",
     "vocabulary": [
       {
-        "term": "mobility",
-        "explanation": "（住处、社会阶层、职业方面的）流动能力"
+        "term": "Rags-to-riches",
+        "explanation": "从贫穷到富有"
       },
       {
-        "term": "millions",
-        "explanation": "数百万"
+        "term": "economic mobility",
+        "explanation": "经济流动性"
+      },
+      {
+        "term": "attainable",
+        "explanation": "可达到的；可实现的"
       }
     ],
     "highlights": [
@@ -4300,12 +4237,16 @@
     "translation": "为了找到答案，Kim 的团队让参与者观看了一段 5 分钟的真人秀片段，讲述了白手起家的故事情节。",
     "vocabulary": [
       {
-        "term": "participants",
-        "explanation": "参与者，参加者（participant 的复数）"
+        "term": "reality show",
+        "explanation": "真人秀节目"
       },
       {
-        "term": "reality",
-        "explanation": "真实，现实"
+        "term": "rags-to-riches",
+        "explanation": "从贫穷到富有"
+      },
+      {
+        "term": "storyline",
+        "explanation": "故事情节；叙事线"
       }
     ],
     "highlights": [
@@ -4352,12 +4293,12 @@
     "translation": "对照组参与者观看了真人秀节目的剪辑，该节目没有白手起家的故事。",
     "vocabulary": [
       {
-        "term": "participants",
-        "explanation": "参与者，参加者（participant 的复数）"
+        "term": "reality show",
+        "explanation": "真人秀节目"
       },
       {
-        "term": "reality",
-        "explanation": "真实，现实"
+        "term": "rags-to-riches",
+        "explanation": "从贫穷到富有"
       }
     ],
     "highlights": [
@@ -4397,12 +4338,8 @@
     "translation": "观看节目后，参与者评估了他们对与美国梦有关的四个陈述的同意程度。结果表明，那些看过白手起家剪辑的人确实对美国梦有更大的信念。",
     "vocabulary": [
       {
-        "term": "participants",
-        "explanation": "参与者，参加者（participant 的复数）"
-      },
-      {
-        "term": "results",
-        "explanation": "结果；导致（result 的复数或第三人称单数）"
+        "term": "rags-to-riches",
+        "explanation": "从贫穷到富有"
       }
     ],
     "highlights": [
@@ -4444,12 +4381,12 @@
     "translation": "有趣的是，当参与者按党派关系分开时，这种效应在共和党人中显着，但在民主党人中则不然，这表明这些电视节目中隐含的信息可能会影响人们现有的社会经济信仰。",
     "vocabulary": [
       {
-        "term": "participants",
-        "explanation": "参与者，参加者（participant 的复数）"
+        "term": "implicit",
+        "explanation": "含蓄的；隐含的"
       },
       {
         "term": "socioeconomic",
-        "explanation": "社会经济学的"
+        "explanation": "社会经济的"
       }
     ],
     "highlights": [
@@ -4494,8 +4431,8 @@
     "translation": "Kim 还对 3000 名美国居民进行了一项调查。",
     "vocabulary": [
       {
-        "term": "conducted",
-        "explanation": "conduct 的过去式和过去分词：实施，进行，管理"
+        "term": "conducted a survey",
+        "explanation": "开展了一项调查"
       }
     ],
     "highlights": [
@@ -4535,12 +4472,12 @@
     "translation": "他们还评估了他们认为生活中的成功与各种内部因素（例如野心）和外部因素（例如家庭财富）相关的程度。",
     "vocabulary": [
       {
-        "term": "success",
-        "explanation": "成功，胜利"
+        "term": "extent",
+        "explanation": "程度；范围"
       },
       {
-        "term": "related",
-        "explanation": "相关的，有联系的"
+        "term": "ambition",
+        "explanation": "抱负；雄心"
       }
     ],
     "highlights": [
@@ -4588,16 +4525,7 @@
   },
   "R1-14": {
     "translation": "最后，他们阅读了一份电视节目列表并指出了他们经常观看的节目。",
-    "vocabulary": [
-      {
-        "term": "indicated",
-        "explanation": "表明的"
-      },
-      {
-        "term": "regularly",
-        "explanation": "定期地，有规律地"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -4653,12 +4581,8 @@
     "translation": "经常观看白手起家节目的参与者比那些从未观看过此类节目的参与者对美国梦有更强烈的信念。",
     "vocabulary": [
       {
-        "term": "Participants",
-        "explanation": "参与者，参加者（participant 的复数）"
-      },
-      {
-        "term": "viewers",
-        "explanation": "电视观众，观众"
+        "term": "rags-to-riches",
+        "explanation": "从贫穷到富有"
       }
     ],
     "highlights": [
@@ -4698,12 +4622,16 @@
     "translation": "金的结论是，“白手起家的娱乐媒体是促进和延续向上流动信念的重要文化力量”。",
     "vocabulary": [
       {
-        "term": "mobility",
-        "explanation": "（住处、社会阶层、职业方面的）流动能力"
+        "term": "rags-to-riches",
+        "explanation": "从贫穷到富有"
       },
       {
-        "term": "riches",
-        "explanation": "财富，富有（通常作复数）"
+        "term": "entertainment media",
+        "explanation": "娱乐媒体"
+      },
+      {
+        "term": "upward mobility",
+        "explanation": "向上流动"
       }
     ],
     "highlights": [
@@ -4745,12 +4673,12 @@
     "translation": "问题是：如果人们错误地认为，个人只需要努力工作就能过上更好的生活，那么他们可能不太支持真正消除不平等的政策。",
     "vocabulary": [
       {
-        "term": "individuals",
-        "explanation": "个人"
+        "term": "mistakenly",
+        "explanation": "错误地；误以为"
       },
       {
         "term": "inequality",
-        "explanation": "（大小、程度、情况等的）不同，不平等"
+        "explanation": "不平等"
       }
     ],
     "highlights": [
@@ -4795,12 +4723,8 @@
     "translation": "“在这个选择的时代，娱乐媒体才是俘获人心的东西，”金写道。",
     "vocabulary": [
       {
-        "term": "captures",
-        "explanation": "俘获，捕获"
-      },
-      {
-        "term": "choice",
-        "explanation": "选择，抉择"
+        "term": "entertainment media",
+        "explanation": "娱乐媒体"
       }
     ],
     "highlights": [
@@ -4832,12 +4756,12 @@
     "translation": "“其政治后果绝不是微不足道的”。",
     "vocabulary": [
       {
-        "term": "consequences",
-        "explanation": "后果，结果，影响（consequence 的复数）"
+        "term": "political consequences",
+        "explanation": "政治后果"
       },
       {
-        "term": "political",
-        "explanation": "政治（上）的，政府的"
+        "term": "trivial",
+        "explanation": "微不足道的"
       }
     ],
     "highlights": [
@@ -4877,8 +4801,8 @@
     "translation": "当有人问我们“你是做什么的？”我们几乎总是回答我们的职业。",
     "vocabulary": [
       {
-        "term": "nearly",
-        "explanation": "几乎，差不多"
+        "term": "occupation",
+        "explanation": "职业"
       }
     ],
     "highlights": [
@@ -4926,7 +4850,12 @@
   },
   "R2-02": {
     "translation": "对于我们许多人来说，工作不仅仅是一份工作。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "more than a job",
+        "explanation": "不只是工作"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -4964,12 +4893,8 @@
     "translation": "这是我们身份的决定性方面。",
     "vocabulary": [
       {
-        "term": "identity",
-        "explanation": "身份，本体"
-      },
-      {
-        "term": "defining",
-        "explanation": "最典型的，界定性的"
+        "term": "defining aspect",
+        "explanation": "定义性方面；最能体现……的方面"
       }
     ],
     "highlights": [
@@ -5009,8 +4934,8 @@
     "translation": "对于我们许多人来说，我们可以通过工作来定义自己。",
     "vocabulary": [
       {
-        "term": "define",
-        "explanation": "给……下定义，解释"
+        "term": "define ourselves",
+        "explanation": "定义自我；认识自己"
       }
     ],
     "highlights": [
@@ -5058,7 +4983,12 @@
   },
   "R2-05": {
     "translation": "“没有工作，我就不知道自己是谁”，这句话在我的办公椅上不止一次说过。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "handful of occasions",
+        "explanation": "为数不多的几次场合"
+      }
+    ],
     "highlights": [
       {
         "role": "adverbial",
@@ -5099,16 +5029,7 @@
   },
   "R2-06": {
     "translation": "事实上，这可能是我与失去或被迫换工作的客户合作的最具挑战性的方面之一。",
-    "vocabulary": [
-      {
-        "term": "changing",
-        "explanation": "变化中的，改变中的"
-      },
-      {
-        "term": "challenging",
-        "explanation": "富于挑战性的，困难而有趣的"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -5146,12 +5067,8 @@
     "translation": "这种损失引发的身份危机比失去工作本身还要严重得多。",
     "vocabulary": [
       {
-        "term": "identity",
-        "explanation": "身份，本体"
-      },
-      {
-        "term": "crisis",
-        "explanation": "危机，紧要关头"
+        "term": "identity crisis",
+        "explanation": "身份危机"
       }
     ],
     "highlights": [
@@ -5191,12 +5108,12 @@
     "translation": "然而，我逐渐明白的一件事是，我们的身份比我们乍一看要复杂得多。",
     "vocabulary": [
       {
-        "term": "understand",
-        "explanation": "理解，懂得"
+        "term": "recognise",
+        "explanation": "认识到；承认"
       },
       {
-        "term": "identity",
-        "explanation": "身份，本体"
+        "term": "at first glance",
+        "explanation": "乍一看"
       }
     ],
     "highlights": [
@@ -5238,12 +5155,12 @@
     "translation": "如果我们花时间反思，我们可能会认识到，除了工作之外，我们还可以将自己视为朋友、配偶、儿子女儿、父母、运动队或宗教团体的成员。",
     "vocabulary": [
       {
-        "term": "community",
-        "explanation": "社区，社会"
+        "term": "recognise",
+        "explanation": "认识到；承认"
       },
       {
-        "term": "identify",
-        "explanation": "认出，识别"
+        "term": "spouse",
+        "explanation": "配偶"
       }
     ],
     "highlights": [
@@ -5290,12 +5207,8 @@
     "translation": "我们可能会认识到，我们在这些角色和关系中的感受和行为与工作中的不同。",
     "vocabulary": [
       {
-        "term": "relationships",
-        "explanation": "（人、团体、国家等相互间的）关系"
-      },
-      {
-        "term": "differently",
-        "explanation": "不同地"
+        "term": "recognise",
+        "explanation": "认识到；承认"
       }
     ],
     "highlights": [
@@ -5337,8 +5250,8 @@
     "translation": "被动的女儿在工作中成为自信的领导者。",
     "vocabulary": [
       {
-        "term": "passive",
-        "explanation": "消极的，被动的"
+        "term": "assertive",
+        "explanation": "坚定自信的；武断的"
       }
     ],
     "highlights": [
@@ -5378,8 +5291,8 @@
     "translation": "此外，我们在工作中的身份并不是一成不变的。",
     "vocabulary": [
       {
-        "term": "identities",
-        "explanation": "身份，本体"
+        "term": "static",
+        "explanation": "静止的；一成不变的"
       }
     ],
     "highlights": [
@@ -5417,12 +5330,7 @@
   },
   "R2-13": {
     "translation": "它们随着时间的推移而改变。",
-    "vocabulary": [
-      {
-        "term": "change",
-        "explanation": "改变，变化"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -5460,12 +5368,8 @@
     "translation": "我本人曾当过店员、女服务员、学生、毕业生和临床心理学家。",
     "vocabulary": [
       {
-        "term": "psychologist",
-        "explanation": "心理学家"
-      },
-      {
-        "term": "graduate",
-        "explanation": "大学毕业生，学士学位获得者"
+        "term": "clinical psychologist",
+        "explanation": "临床心理学家"
       }
     ],
     "highlights": [
@@ -5505,12 +5409,8 @@
     "translation": "在每个阶段，我适应和发展职业身份的能力对我的幸福至关重要。",
     "vocabulary": [
       {
-        "term": "identity",
-        "explanation": "身份，本体"
-      },
-      {
-        "term": "develop",
-        "explanation": "（使）成长，发育，发展"
+        "term": "wellbeing",
+        "explanation": "身心健康；福祉"
       }
     ],
     "highlights": [
@@ -5550,12 +5450,12 @@
     "translation": "虽然我们希望在某种程度上消除生活中的不确定性，但我们必须管理不确定性，特别是在当今动荡且不断变化的就业市场中。",
     "vocabulary": [
       {
-        "term": "shifting",
-        "explanation": "不断移动的，不断变化的"
+        "term": "uncertainty",
+        "explanation": "不确定性"
       },
       {
-        "term": "especially",
-        "explanation": "尤其，特别"
+        "term": "volatile",
+        "explanation": "易变的；不稳定的"
       }
     ],
     "highlights": [
@@ -5595,12 +5495,8 @@
     "translation": "我们如何看待自己是我们身份问题的核心。",
     "vocabulary": [
       {
-        "term": "identity",
-        "explanation": "身份，本体"
-      },
-      {
-        "term": "central",
-        "explanation": "中央的，中心的"
+        "term": "central to",
+        "explanation": "对……至关重要"
       }
     ],
     "highlights": [
@@ -5650,12 +5546,8 @@
     "translation": "当我们告诉自己“我擅长启动项目，但不太擅长完成项目”时，它就可以成为我们信念体系的一部分。",
     "vocabulary": [
       {
-        "term": "starting",
-        "explanation": "开始（start 的现在分词）"
-      },
-      {
-        "term": "projects",
-        "explanation": "项目，计划"
+        "term": "belief system",
+        "explanation": "信念体系"
       }
     ],
     "highlights": [
@@ -5700,12 +5592,12 @@
     "translation": "但如果你有过被迫换工作的不幸经历，你就需要审视这些信念，看看它们在现实中的根基如何。",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历，往事"
+        "term": "enforced",
+        "explanation": "被强制的"
       },
       {
-        "term": "reality",
-        "explanation": "真实，现实"
+        "term": "grounded in reality",
+        "explanation": "以现实为依据的"
       }
     ],
     "highlights": [
@@ -5745,12 +5637,16 @@
     "translation": "你需要问自己这些信念有多大帮助，并考虑个人改变。我们可以通过实验、实践和有意识的自律随时改变我们的信念、行为和情感体验。",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历，往事"
-      },
-      {
         "term": "behaviours",
         "explanation": "行为，举止，态度"
+      },
+      {
+        "term": "experimentation",
+        "explanation": "实验；试验"
+      },
+      {
+        "term": "self-discipline",
+        "explanation": "自律"
       }
     ],
     "highlights": [
@@ -5790,12 +5686,16 @@
     "translation": "在职业发展可能引导我们进入新领域的时代，挑战自我意识并探索是否可以通过改变对自己的信念来创造新的身份体验以扩大职业选择变得更加重要。",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历，往事"
+        "term": "career progression",
+        "explanation": "职业发展"
       },
       {
-        "term": "challenge",
-        "explanation": "挑战，难题"
+        "term": "sectors",
+        "explanation": "行业；部门"
+      },
+      {
+        "term": "sense of self",
+        "explanation": "自我认同"
       }
     ],
     "highlights": [
@@ -5843,12 +5743,8 @@
     "translation": "最终，是你自己决定了你是谁。",
     "vocabulary": [
       {
-        "term": "Ultimately",
-        "explanation": "最终，最后"
-      },
-      {
-        "term": "define",
-        "explanation": "给……下定义，解释"
+        "term": "define who you are",
+        "explanation": "定义你是谁"
       }
     ],
     "highlights": [
@@ -5888,7 +5784,12 @@
   },
   "R2-23": {
     "translation": "如果你顺其自然的话，你就是你的工作。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "let it be",
+        "explanation": "任其如此；放任"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",

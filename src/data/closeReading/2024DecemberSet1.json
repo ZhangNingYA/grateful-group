@@ -3,12 +3,12 @@
     "translation": "随着经济的快速进步，人们的思想观念自然也必然发生变化。",
     "vocabulary": [
       {
-        "term": "progress",
-        "explanation": "进步，进展"
+        "term": "ideology",
+        "explanation": "意识形态；思想体系"
       },
       {
-        "term": "ideology",
-        "explanation": "意识形态，思想体系"
+        "term": "bound for",
+        "explanation": "注定要；驶往"
       }
     ],
     "highlights": [
@@ -58,12 +58,12 @@
     "translation": "对于一些人来说，节俭不再是一种美德，而且持这种观点的人也不止他们一个。",
     "vocabulary": [
       {
-        "term": "holding",
-        "explanation": "持有"
+        "term": "thrifty",
+        "explanation": "节俭的"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "virtue",
+        "explanation": "美德"
       }
     ],
     "highlights": [
@@ -129,12 +129,16 @@
     "translation": "每个人对于如何过上自己的生活方式可能有不同的看法：有些人喜欢简单，有些人喜欢奢侈，有些人挥霍无度，有些人像乡下老鼠一样积累。",
     "vocabulary": [
       {
-        "term": "accumulate",
-        "explanation": "积累，积攒"
+        "term": "simplicity",
+        "explanation": "简朴；简单"
       },
       {
-        "term": "country",
-        "explanation": "国，国家"
+        "term": "extravagantly",
+        "explanation": "奢侈地；挥霍地"
+      },
+      {
+        "term": "accumulate",
+        "explanation": "积累"
       }
     ],
     "highlights": [
@@ -166,12 +170,16 @@
     "translation": "由于我出身贫寒，生活在农村，简单的乡村生活对我来说很少失去吸引力，但随着身份的转变，我有机会与新富打交道，这种经历彻底改变了我的生活方式。",
     "vocabulary": [
       {
-        "term": "revolutionized",
-        "explanation": "彻底改变，彻底改革（revolutionize 的过去式和过去分词）"
+        "term": "rural life",
+        "explanation": "乡村生活"
       },
       {
-        "term": "opportunity",
-        "explanation": "时机，机会"
+        "term": "appeal to",
+        "explanation": "吸引；迎合"
+      },
+      {
+        "term": "revolutionized",
+        "explanation": "彻底改变；彻底改革"
       }
     ],
     "highlights": [
@@ -248,12 +256,8 @@
     "translation": "少花多存是邪恶的或有罪的，这是最近才向我透露的一个想法。",
     "vocabulary": [
       {
-        "term": "revealed",
-        "explanation": "揭露，透露"
-      },
-      {
-        "term": "recently",
-        "explanation": "最近，不久前"
+        "term": "sinful",
+        "explanation": "罪恶的；不道德的"
       }
     ],
     "highlights": [
@@ -301,12 +305,8 @@
     "translation": "事实上，全世界都在疯狂借贷和消费，其中美国引领了潮流。",
     "vocabulary": [
       {
-        "term": "leading",
-        "explanation": "主要的，最重要的"
-      },
-      {
-        "term": "Actually",
-        "explanation": "实际上，事实上"
+        "term": "rage",
+        "explanation": "狂热；愤怒"
       }
     ],
     "highlights": [
@@ -346,12 +346,8 @@
     "translation": "美国仍然是世界上最富有、最强大的国家，但讽刺的是他们向我们借钱。",
     "vocabulary": [
       {
-        "term": "country",
-        "explanation": "国，国家"
-      },
-      {
-        "term": "powerful",
-        "explanation": "（人，组织，国家）强大的，有影响力的"
+        "term": "irony",
+        "explanation": "讽刺；反讽"
       }
     ],
     "highlights": [
@@ -409,12 +405,12 @@
     "translation": "虽然我是个经济学门外汉，但至少我知道用借来的钱进行投资会把借款人变成掠夺者，而不是正派和善良的贷款人。",
     "vocabulary": [
       {
-        "term": "economics",
-        "explanation": "经济学"
+        "term": "layman",
+        "explanation": "外行；非专业人士"
       },
       {
-        "term": "investing",
-        "explanation": "投资"
+        "term": "predator",
+        "explanation": "捕食者"
       }
     ],
     "highlights": [
@@ -454,7 +450,12 @@
   },
   "C09": {
     "translation": "一个明显的例子是房地产。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "real estate",
+        "explanation": "房地产"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -492,12 +493,12 @@
     "translation": "那些精明的、从银行贷款的人，通过以高出几倍的价格出售所购买的房屋，变得相对富裕。",
     "vocabulary": [
       {
-        "term": "relatively",
-        "explanation": "相当地，相对地"
+        "term": "shrewd",
+        "explanation": "精明的"
       },
       {
-        "term": "higher",
-        "explanation": "更高的，较高的（high 的比较级）"
+        "term": "several folds",
+        "explanation": "几倍"
       }
     ],
     "highlights": [
@@ -537,8 +538,8 @@
     "translation": "甚至教育也不能幸免于这一理论。",
     "vocabulary": [
       {
-        "term": "education",
-        "explanation": "（尤指学校）教育"
+        "term": "immune",
+        "explanation": "不受影响的；对……免疫"
       }
     ],
     "highlights": [
@@ -578,12 +579,8 @@
     "translation": "许多有志送孩子上大学的贫困父母都从这项投资中受益，尽管他们必须勉强维持生计。",
     "vocabulary": [
       {
-        "term": "investment",
-        "explanation": "投资"
-      },
-      {
-        "term": "children",
-        "explanation": "child 的复数形式"
+        "term": "scrape a living",
+        "explanation": "勉强维持生计"
       }
     ],
     "highlights": [
@@ -623,8 +620,8 @@
     "translation": "可以合理地得出这样的结论：花钱是值得赞扬的，前提是它不超出你的能力范围。",
     "vocabulary": [
       {
-        "term": "spending",
-        "explanation": "（尤指政府或组织的）支出，开销，花费"
+        "term": "praiseworthy",
+        "explanation": "值得称赞的"
       }
     ],
     "highlights": [
@@ -672,8 +669,8 @@
     "translation": "在马六甲海峡附近的一个小果园里，林国安 (Lim Kok Ann) 的果园里只有一棵树，种植着 kedondong，这是一种脆脆的酸浆果，马来西亚人主要用在泡菜和沙拉中。",
     "vocabulary": [
       {
-        "term": "growing",
-        "explanation": "增长的，增加的"
+        "term": "kedondong",
+        "explanation": "肯冬果（一种热带水果）"
       }
     ],
     "highlights": [
@@ -705,12 +702,8 @@
     "translation": "这位 45 岁的人说，“它不是很出名”，他现在主要关注市场更大的龙眼浆果和菠萝。",
     "vocabulary": [
       {
-        "term": "markets",
-        "explanation": "市场，集市（market 的复数）"
-      },
-      {
-        "term": "instead",
-        "explanation": "代替，顶替，反而"
+        "term": "longan",
+        "explanation": "龙眼；桂圆"
       }
     ],
     "highlights": [
@@ -756,7 +749,12 @@
   },
   "M-A03": {
     "translation": "“我们必须发展有利可图的业务，”他说。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "profitable",
+        "explanation": "有利可图的；盈利的"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -796,12 +794,8 @@
     "translation": "但在距离马来西亚乡村不到一小时的地方，在三个巨大的银色圆顶内，科学家们正在试图改变食物的未来。",
     "vocabulary": [
       {
-        "term": "scientists",
-        "explanation": "科学家（scientist 的复数）"
-      },
-      {
-        "term": "trying",
-        "explanation": "令人厌烦的，难对付的"
+        "term": "Malaysian countryside",
+        "explanation": "马来西亚乡村"
       }
     ],
     "highlights": [
@@ -841,12 +835,8 @@
     "translation": "他们通过种植和加工所谓的“替代”作物（例如 kedondong）来突破人类饮食的界限。",
     "vocabulary": [
       {
-        "term": "pushing",
-        "explanation": "接近（某个年龄）"
-      },
-      {
-        "term": "processing",
-        "explanation": "步骤，程序"
+        "term": "kedondong",
+        "explanation": "肯冬果（一种热带水果）"
       }
     ],
     "highlights": [
@@ -886,12 +876,16 @@
     "translation": "在全球研究中心“未来作物”(CFF) 的总部，这种特殊的未充分利用的水果已被制成无糖果汁，富含维生素 C，并在感官评估中获得最高分。",
     "vocabulary": [
       {
-        "term": "evaluations",
-        "explanation": "评价，评估"
+        "term": "headquarters",
+        "explanation": "总部"
       },
       {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+        "term": "under-used",
+        "explanation": "未充分利用的"
+      },
+      {
+        "term": "sensory evaluations",
+        "explanation": "感官评价"
       }
     ],
     "highlights": [
@@ -931,12 +925,12 @@
     "translation": "“你在这里看到的任何东西都是被遗忘的作物，”赛义德·阿扎姆-阿里在谈到马来西亚首都吉隆坡郊外 CFF 花园中的丰富植物时说道。",
     "vocabulary": [
       {
-        "term": "plants",
-        "explanation": "植物"
+        "term": "forgotten crop",
+        "explanation": "被遗忘的作物"
       },
       {
-        "term": "gardens",
-        "explanation": "花园，菜园，果园"
+        "term": "abundant plants",
+        "explanation": "丰富的植物资源"
       }
     ],
     "highlights": [
@@ -976,12 +970,12 @@
     "translation": "阿扎姆-阿里教授解释说，仅四种作物——小麦、玉米、水稻和大豆——就提供了世界三分之二的粮食供应。",
     "vocabulary": [
       {
-        "term": "explains",
-        "explanation": "解释，说明"
+        "term": "soybean",
+        "explanation": "大豆"
       },
       {
-        "term": "provide",
-        "explanation": "提供，供给"
+        "term": "food supply",
+        "explanation": "粮食供应"
       }
     ],
     "highlights": [
@@ -1021,7 +1015,12 @@
   },
   "M-C02": {
     "translation": "“我们依赖这四个，”他说。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "dependent on",
+        "explanation": "依赖于"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1059,16 +1058,7 @@
   },
   "M-C03": {
     "translation": "“但实际上，我们已经种植了 7,000 种农作物数千年。",
-    "vocabulary": [
-      {
-        "term": "thousands",
-        "explanation": "数千（thousand 的复数）"
-      },
-      {
-        "term": "farming",
-        "explanation": "农业，农场经营"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1104,12 +1094,7 @@
   },
   "M-C04": {
     "translation": "我们忽略所有这些。",
-    "vocabulary": [
-      {
-        "term": "ignore",
-        "explanation": "佯装未见，不理睬"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -1147,12 +1132,8 @@
     "translation": "“研究人员正试图释放这些被忽视的作物的潜力，他们将这些植物描述为被遗忘、未充分利用或“替代”的植物，因为它们被主要作物加工成分驱动的日益统一的饮食所取代。",
     "vocabulary": [
       {
-        "term": "ingredients",
-        "explanation": "材料，佐料，原料"
-      },
-      {
-        "term": "Researchers",
-        "explanation": "研究人员，研究者（researcher 的复数）"
+        "term": "under-used",
+        "explanation": "未充分利用的"
       }
     ],
     "highlights": [
@@ -1182,7 +1163,12 @@
   },
   "M-D01": {
     "translation": "这是一个及时的探索。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "timely quest",
+        "explanation": "及时而重要的探索"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1220,12 +1206,8 @@
     "translation": "食品行业已占全球温室气体排放量的近三分之一。",
     "vocabulary": [
       {
-        "term": "emissions",
-        "explanation": "排放"
-      },
-      {
-        "term": "sector",
-        "explanation": "区域，部分"
+        "term": "greenhouse gas emissions",
+        "explanation": "温室气体排放"
       }
     ],
     "highlights": [
@@ -1265,12 +1247,8 @@
     "translation": "据估计，到 2050 年，世界粮食产量必须增加 50%，才能养活预计的全球 100 亿人口。",
     "vocabulary": [
       {
-        "term": "population",
-        "explanation": "（地区、国家等的）人口，人口数量"
-      },
-      {
         "term": "projected",
-        "explanation": "计划的，推断的"
+        "explanation": "预计的；推测的"
       }
     ],
     "highlights": [
@@ -1312,12 +1290,8 @@
     "translation": "在不加剧气候变化的情况下满足这一需求需要紧急解决方案。",
     "vocabulary": [
       {
-        "term": "contributing",
-        "explanation": "捐赠，捐助"
-      },
-      {
-        "term": "solutions",
-        "explanation": "（问题、困难等的）解决办法，解决方案"
+        "term": "urgent",
+        "explanation": "紧急的"
       }
     ],
     "highlights": [
@@ -1359,8 +1333,8 @@
     "translation": "被遗忘的农作物蕴藏着关键答案。",
     "vocabulary": [
       {
-        "term": "answers",
-        "explanation": "回答，答复"
+        "term": "key answers",
+        "explanation": "关键答案；解决之道"
       }
     ],
     "highlights": [
@@ -1400,12 +1374,16 @@
     "translation": "通过投资被忽视的当地植物，各国可以减少对进口作物及其高碳供应链的依赖。",
     "vocabulary": [
       {
-        "term": "countries",
-        "explanation": "国家（country 的复数）"
+        "term": "neglected local plants",
+        "explanation": "被忽视的本土植物"
       },
       {
-        "term": "imported",
-        "explanation": "输入的，进口的"
+        "term": "imported crops",
+        "explanation": "进口作物"
+      },
+      {
+        "term": "carbon-heavy supply chains",
+        "explanation": "高碳排放的供应链"
       }
     ],
     "highlights": [
@@ -1453,12 +1431,12 @@
     "translation": "在气候变暖威胁现有农作物之际，恢复人类曾经食用的农作物品种也可以提高粮食安全。",
     "vocabulary": [
       {
-        "term": "security",
-        "explanation": "保护措施，安全工作"
+        "term": "food security",
+        "explanation": "粮食安全"
       },
       {
-        "term": "existing",
-        "explanation": "现存的，现行的"
+        "term": "warming climates",
+        "explanation": "变暖的气候"
       }
     ],
     "highlights": [
@@ -1518,12 +1496,8 @@
     "translation": "阿扎姆-阿里认为，最重要的是，被遗忘的作物是最能适应气候变化且营养丰富的作物之一。",
     "vocabulary": [
       {
-        "term": "climate",
-        "explanation": "气候"
-      },
-      {
-        "term": "argues",
-        "explanation": "主张；认为；论证（argue 的第三人称单数）"
+        "term": "nutritious",
+        "explanation": "有营养的"
       }
     ],
     "highlights": [
@@ -1555,12 +1529,8 @@
     "translation": "他的总结很简单：“饮食多样化对人类的未来至关重要。”",
     "vocabulary": [
       {
-        "term": "future",
-        "explanation": "未来，将来"
-      },
-      {
-        "term": "critical",
-        "explanation": "批判的，爱挑剔的"
+        "term": "Dietary diversification",
+        "explanation": "膳食多样化"
       }
     ],
     "highlights": [
@@ -1600,12 +1570,8 @@
     "translation": "粮食安全专家对此表示赞同。",
     "vocabulary": [
       {
-        "term": "security",
-        "explanation": "保护措施，安全工作"
-      },
-      {
-        "term": "experts",
-        "explanation": "专家"
+        "term": "Food security",
+        "explanation": "粮食安全"
       }
     ],
     "highlights": [
@@ -1637,8 +1603,8 @@
     "translation": "新加坡国立大学水政策研究所高级研究员塞西莉亚·托尔塔贾达说：“世界上不存在粮食不安全，而是对粮食无知。”",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
+        "term": "food insecurity",
+        "explanation": "粮食不安全"
       }
     ],
     "highlights": [
@@ -1678,8 +1644,12 @@
     "translation": "“每当我们拥有本土作物时，我们往往会忽视它们，就好像它们没有价值一样，但它们确实有价值，”她补充道。",
     "vocabulary": [
       {
-        "term": "valuable",
-        "explanation": "值钱的，贵重的"
+        "term": "native crops",
+        "explanation": "本土作物"
+      },
+      {
+        "term": "disregard",
+        "explanation": "忽视；漠视"
       }
     ],
     "highlights": [
@@ -1738,7 +1708,16 @@
   },
   "M-G01": {
     "translation": "阿扎姆-阿里深知这种怀疑。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "scepticism",
+        "explanation": "怀疑态度"
+      },
+      {
+        "term": "firsthand",
+        "explanation": "亲身经历地"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -1768,12 +1747,8 @@
     "translation": "20 世纪 80 年代，他通过在尼日尔遇到的女农民的工作发现了替代作物。",
     "vocabulary": [
       {
-        "term": "alternative",
-        "explanation": "可供选择的事物，替代物"
-      },
-      {
-        "term": "farmers",
-        "explanation": "农民（farmer 的复数）"
+        "term": "alternative crops",
+        "explanation": "替代作物"
       }
     ],
     "highlights": [
@@ -1829,12 +1804,8 @@
     "translation": "这位当时的博士生记得，当大作物歉收时，他们在没有技术优势的情况下在后院种植农作物来养活家人，对此感到惊叹不已。",
     "vocabulary": [
       {
-        "term": "technology",
-        "explanation": "科技，技术"
-      },
-      {
-        "term": "families",
-        "explanation": "家庭（family 的复数）"
+        "term": "backyards",
+        "explanation": "后院"
       }
     ],
     "highlights": [
@@ -1882,12 +1853,12 @@
     "translation": "他看到了建立替代食品系统的巨大机会。",
     "vocabulary": [
       {
-        "term": "opportunity",
-        "explanation": "时机，机会"
+        "term": "tremendous opportunity",
+        "explanation": "巨大机遇"
       },
       {
-        "term": "alternative",
-        "explanation": "可供选择的事物，替代物"
+        "term": "food systems",
+        "explanation": "粮食体系"
       }
     ],
     "highlights": [
@@ -1928,7 +1899,7 @@
     "vocabulary": [
       {
         "term": "resistance",
-        "explanation": "反对，抵制"
+        "explanation": "阻力；抵制"
       }
     ],
     "highlights": [
@@ -1966,7 +1937,16 @@
   },
   "M-H01": {
     "translation": "他没有被吓倒，继续耕耘。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "Undeterred",
+        "explanation": "不受阻碍的；毫不气馁的"
+      },
+      {
+        "term": "ploughed on",
+        "explanation": "坚持进行；继续努力"
+      }
+    ],
     "highlights": [
       {
         "role": "adverbial",
@@ -2000,12 +1980,8 @@
     "translation": "一个又一个的项目帮助证明这些作物作为主要作物的替代品在不同的环境中都是可行的。",
     "vocabulary": [
       {
-        "term": "environments",
-        "explanation": "环境"
-      },
-      {
-        "term": "alternatives",
-        "explanation": "替代选择（alternative 的复数）"
+        "term": "staple",
+        "explanation": "主食；主要的"
       }
     ],
     "highlights": [
@@ -2045,12 +2021,8 @@
     "translation": "但这些作物是否有销路的问题仍然存在。",
     "vocabulary": [
       {
-        "term": "remained",
-        "explanation": "逗留，留下"
-      },
-      {
-        "term": "question",
-        "explanation": "问题，疑问"
+        "term": "marketable",
+        "explanation": "适销的；有市场的"
       }
     ],
     "highlights": [
@@ -2082,8 +2054,8 @@
     "translation": "“这是关键的事情，”他说。",
     "vocabulary": [
       {
-        "term": "critical",
-        "explanation": "批判的，爱挑剔的"
+        "term": "critical thing",
+        "explanation": "关键之处"
       }
     ],
     "highlights": [
@@ -2125,12 +2097,8 @@
     "translation": "在该中心的一个圆顶内，食品技术员谭新林用辣木叶粉代替一些小麦粉，烘烤出谷胶含量较低、营养成分较高的蛋糕。",
     "vocabulary": [
       {
-        "term": "leaves",
-        "explanation": "（leaf 的复数）树叶，叶片"
-      },
-      {
-        "term": "centre",
-        "explanation": "（地理位置）中间，中心点"
+        "term": "gluten",
+        "explanation": "麸质；谷胶"
       }
     ],
     "highlights": [
@@ -2178,12 +2146,12 @@
     "translation": "谭的工作是用这些仍然不熟悉的原料创造出既能满足当地和国际口味的食谱。",
     "vocabulary": [
       {
-        "term": "ingredients",
-        "explanation": "材料，佐料，原料"
+        "term": "unfamiliar ingredients",
+        "explanation": "不熟悉的食材"
       },
       {
-        "term": "international",
-        "explanation": "国际的，国际上的"
+        "term": "appeal to",
+        "explanation": "吸引；迎合"
       }
     ],
     "highlights": [
@@ -2223,8 +2191,12 @@
     "translation": "近年来，她使用了 CFF 种植的一些被遗忘的作物，例如辣木和班巴拉花生，来制作从即食汤到印度小吃的各种食品。",
     "vocabulary": [
       {
-        "term": "recent",
-        "explanation": "最近的，最新的"
+        "term": "moringa",
+        "explanation": "辣木"
+      },
+      {
+        "term": "bambara groundnut",
+        "explanation": "班巴拉花生"
       }
     ],
     "highlights": [
@@ -2270,16 +2242,7 @@
   },
   "M-H08": {
     "translation": "“我尝试对被遗忘的作物进行现代化改造，而不是使用旧的食谱。",
-    "vocabulary": [
-      {
-        "term": "recipes",
-        "explanation": "烹饪法，食谱"
-      },
-      {
-        "term": "instead",
-        "explanation": "代替，顶替，反而"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2315,12 +2278,7 @@
   },
   "M-H09": {
     "translation": "“谭说，他也是一名训练有素的厨师。",
-    "vocabulary": [
-      {
-        "term": "trained",
-        "explanation": "培训"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -2350,12 +2308,12 @@
     "translation": "这一战略旨在吸引世界上不断壮大的中产阶级，他们越来越多地转向快餐和加工食品行业。",
     "vocabulary": [
       {
-        "term": "increasingly",
-        "explanation": "越来越多地，不断增加地"
+        "term": "appeal to",
+        "explanation": "吸引；迎合"
       },
       {
-        "term": "strategy",
-        "explanation": "（尤指为获得某物制定长期的）策略，行动计划"
+        "term": "processed food industries",
+        "explanation": "加工食品行业"
       }
     ],
     "highlights": [
@@ -2399,8 +2357,8 @@
         "explanation": "看法，认识"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "inferior",
+        "explanation": "较差的；低劣的"
       }
     ],
     "highlights": [
@@ -2433,7 +2391,7 @@
     "vocabulary": [
       {
         "term": "connotations",
-        "explanation": "内涵，含蓄，隐含意义（connotation 的复数）"
+        "explanation": "含义；内涵"
       }
     ],
     "highlights": [
@@ -2464,6 +2422,10 @@
   "M-H13": {
     "translation": "班巴拉花生是撒哈拉以南非洲地区富含蛋白质的本土作物，东南亚部分地区也有种植，其边缘化可以追溯到殖民统治。",
     "vocabulary": [
+      {
+        "term": "bambara groundnut",
+        "explanation": "班巴拉花生"
+      },
       {
         "term": "Saharan",
         "explanation": "撒哈拉沙漠的"
@@ -2514,12 +2476,8 @@
     "translation": "“种植班巴拉花生的非洲妇女实际上因种植而受到惩罚，”阿扎姆-阿里说。",
     "vocabulary": [
       {
-        "term": "growing",
-        "explanation": "增长的，增加的"
-      },
-      {
-        "term": "actually",
-        "explanation": "实际上，事实上"
+        "term": "bambara groundnut",
+        "explanation": "班巴拉花生"
       }
     ],
     "highlights": [
@@ -2557,7 +2515,12 @@
   },
   "M-H15": {
     "translation": "“殖民国家说你不能种植这种植物，因为没有石油。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "Colonial powers",
+        "explanation": "殖民势力"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2607,8 +2570,8 @@
     "translation": "我们找不到它的市场。",
     "vocabulary": [
       {
-        "term": "market",
-        "explanation": "集市，市场"
+        "term": "get a market for",
+        "explanation": "为……找到市场"
       }
     ],
     "highlights": [
@@ -2656,12 +2619,8 @@
     "translation": "“但如今，bambara murukku 是 CFF 评价最好的食品之一，他们的目标是将其引入杂货店，向潜在投资者展示藜麦等农作物的成功。",
     "vocabulary": [
       {
-        "term": "investors",
-        "explanation": "投资者（investor 的复数）"
-      },
-      {
-        "term": "success",
-        "explanation": "成功，胜利"
+        "term": "murukku",
+        "explanation": "穆鲁库（一种印度小吃）"
       }
     ],
     "highlights": [
@@ -2723,7 +2682,12 @@
   },
   "M-H18": {
     "translation": "大约 30 年前，藜麦在玻利维亚和秘鲁的原生山区之外几乎闻所未闻。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "virtually unheard of",
+        "explanation": "几乎不为人知的"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -2769,8 +2733,8 @@
     "translation": "如今，这种营养丰富的谷物出现在世界各地豪华餐厅的菜单上。",
     "vocabulary": [
       {
-        "term": "restaurants",
-        "explanation": "餐厅，餐馆，饭店（restaurant 的复数）"
+        "term": "nutritious",
+        "explanation": "有营养的"
       }
     ],
     "highlights": [
@@ -2810,12 +2774,12 @@
     "translation": "通过营养而不是产量来衡量农作物是被遗忘的食品企业的核心。",
     "vocabulary": [
       {
-        "term": "enterprise",
-        "explanation": "企业，事业单位"
+        "term": "nutrition",
+        "explanation": "营养；营养状况"
       },
       {
-        "term": "Measuring",
-        "explanation": "测量"
+        "term": "yield",
+        "explanation": "产量；产出"
       }
     ],
     "highlights": [
@@ -2857,12 +2821,16 @@
     "translation": "自 20 世纪 60 年代的“绿色革命”以来，高产作物一直在现代农业中占据主导地位，这在一定程度上是在世界需要增加粮食供应之际对毁灭性饥荒的关键反应。",
     "vocabulary": [
       {
-        "term": "agriculture",
-        "explanation": "农业，农学，农艺"
+        "term": "green revolution",
+        "explanation": "绿色革命（农业技术变革）"
       },
       {
-        "term": "revolution",
-        "explanation": "（思想、工作方式等的）彻底变革"
+        "term": "high-yielding crops",
+        "explanation": "高产作物"
+      },
+      {
+        "term": "devastating famines",
+        "explanation": "毁灭性的饥荒"
       }
     ],
     "highlights": [
@@ -2902,12 +2870,12 @@
     "translation": "如今，“营养正在成为一颗定时炸弹”，阿扎姆-阿里说，因为不断增加的二氧化碳水平剥夺了农作物的矿物质。",
     "vocabulary": [
       {
-        "term": "growing",
-        "explanation": "增长的，增加的"
+        "term": "nutrition",
+        "explanation": "营养；营养状况"
       },
       {
-        "term": "levels",
-        "explanation": "数量，程度"
+        "term": "minerals",
+        "explanation": "矿物质"
       }
     ],
     "highlights": [
@@ -2939,12 +2907,12 @@
     "translation": "他断言，我们不应该对主要农作物进行生物强化，而应该投资于那些被遗忘的、本来就更有营养的农作物。",
     "vocabulary": [
       {
-        "term": "investing",
-        "explanation": "投资"
+        "term": "nutritious",
+        "explanation": "有营养的"
       },
       {
-        "term": "Instead",
-        "explanation": "代替，顶替，反而"
+        "term": "asserts",
+        "explanation": "断言；坚称"
       }
     ],
     "highlights": [
@@ -2976,12 +2944,12 @@
     "translation": "在 CFF 第三个圆顶的内部，实验室经理 Gomathy Sethuraman 打开一扇窗户，通向中心的“皇冠上的宝石”，露出在明亮的黄色灯光下生长的四棱豆藤蔓。",
     "vocabulary": [
       {
-        "term": "growing",
-        "explanation": "增长的，增加的"
+        "term": "crown jewels",
+        "explanation": "珍贵核心成果"
       },
       {
-        "term": "window",
-        "explanation": "窗，窗玻璃"
+        "term": "winged beans",
+        "explanation": "四棱豆"
       }
     ],
     "highlights": [
@@ -3021,12 +2989,12 @@
     "translation": "这是科学家们研究高温和二氧化碳水平对替代作物营养构成影响的多个房间之一。",
     "vocabulary": [
       {
-        "term": "scientists",
-        "explanation": "科学家（scientist 的复数）"
+        "term": "nutritional",
+        "explanation": "营养的"
       },
       {
-        "term": "studying",
-        "explanation": "研究"
+        "term": "alternative crops",
+        "explanation": "替代作物"
       }
     ],
     "highlights": [
@@ -3066,12 +3034,8 @@
     "translation": "阿扎姆-阿里表示，这项研究“改变了游戏规则”，确保“未来作物”在温暖气候下也是最健康的。",
     "vocabulary": [
       {
-        "term": "research",
-        "explanation": "（尤指大学或科研机构进行的）研究，探讨"
-      },
-      {
-        "term": "climates",
-        "explanation": "气候"
+        "term": "game changer",
+        "explanation": "改变格局的因素"
       }
     ],
     "highlights": [
@@ -3103,12 +3067,8 @@
     "translation": "美国智囊团 Food Tank 总裁丹妮尔·尼伦伯格 (Danielle Nierenberg) 表示，全球范围内围绕被遗忘食物的势头正在不断增强。",
     "vocabulary": [
       {
-        "term": "president",
-        "explanation": "总统，国家主席"
-      },
-      {
-        "term": "momentum",
-        "explanation": "冲力，推力"
+        "term": "global momentum",
+        "explanation": "全球势头；发展动力"
       }
     ],
     "highlights": [
@@ -3140,12 +3100,12 @@
     "translation": "除了自称为世界上第一个专门研究未充分利用作物的研究中心的 CFF 之外，还有其他倡导农业多样性的重要团体，包括作物信托、慢食、Icrisat 和国际生物多样性组织。",
     "vocabulary": [
       {
-        "term": "including",
-        "explanation": "包括，包含"
+        "term": "under-utilised crops",
+        "explanation": "未充分利用的作物"
       },
       {
-        "term": "agricultural",
-        "explanation": "农业的，与农业有关的"
+        "term": "agricultural diversity",
+        "explanation": "农业多样性"
       }
     ],
     "highlights": [
@@ -3185,12 +3145,12 @@
     "translation": "她说，更多的中等收入消费者正在寻找营养食品，而其他人则渴望尝试祖父母曾经吃过的未加工食品。",
     "vocabulary": [
       {
-        "term": "consumers",
-        "explanation": "消费者，消耗者"
+        "term": "nutritious",
+        "explanation": "有营养的"
       },
       {
-        "term": "income",
-        "explanation": "收入，收益"
+        "term": "unprocessed",
+        "explanation": "未经加工的"
       }
     ],
     "highlights": [
@@ -3223,11 +3183,7 @@
     "vocabulary": [
       {
         "term": "overtaken",
-        "explanation": "超过，赶上（overtake 的过去分词，被动语态表示被超过、被赶上，完成时表示已经超过）"
-      },
-      {
-        "term": "quarters",
-        "explanation": "四分之一"
+        "explanation": "超过；赶上"
       }
     ],
     "highlights": [
@@ -3260,11 +3216,15 @@
     "vocabulary": [
       {
         "term": "obsession",
-        "explanation": "痴迷，困扰"
+        "explanation": "痴迷；执着"
       },
       {
-        "term": "products",
-        "explanation": "产品"
+        "term": "locally-sourced",
+        "explanation": "本地采购的"
+      },
+      {
+        "term": "affluent",
+        "explanation": "富裕的"
       }
     ],
     "highlights": [
@@ -3296,12 +3256,12 @@
     "translation": "她说，锡特卡被视为该国小型农场到餐桌餐饮领域的先驱，但顾客仍然寻求外国食材作为“地位的象征”。",
     "vocabulary": [
       {
-        "term": "ingredients",
-        "explanation": "材料，佐料，原料"
+        "term": "farm-to-table",
+        "explanation": "从农场到餐桌的"
       },
       {
-        "term": "Customers",
-        "explanation": "顾客，客户（customer 的复数）"
+        "term": "status symbol",
+        "explanation": "身份象征"
       }
     ],
     "highlights": [
@@ -3333,12 +3293,8 @@
     "translation": "关于被遗忘食物的争论感觉很直观。",
     "vocabulary": [
       {
-        "term": "argument",
-        "explanation": "争论，争吵"
-      },
-      {
         "term": "intuitive",
-        "explanation": "直觉的"
+        "explanation": "直觉上合理的"
       }
     ],
     "highlights": [
@@ -3378,8 +3334,8 @@
     "translation": "一些分析人士表示，这实际上是不可避免的。",
     "vocabulary": [
       {
-        "term": "analysts",
-        "explanation": "分析师，分析家"
+        "term": "inevitable",
+        "explanation": "不可避免的；必然发生的"
       }
     ],
     "highlights": [
@@ -3421,12 +3377,8 @@
     "translation": "伦敦城市大学食品政策教授蒂姆·朗说：“气候变化几乎肯定意味着人们的口味将被迫改变。”",
     "vocabulary": [
       {
-        "term": "professor",
-        "explanation": "教授"
-      },
-      {
-        "term": "Climate",
-        "explanation": "气候"
+        "term": "forced to change",
+        "explanation": "被迫改变"
       }
     ],
     "highlights": [
@@ -3467,7 +3419,11 @@
     "vocabulary": [
       {
         "term": "yields",
-        "explanation": "产量，产出量"
+        "explanation": "产量；产出"
+      },
+      {
+        "term": "staple",
+        "explanation": "主食；主要的"
       }
     ],
     "highlights": [
@@ -3499,12 +3455,8 @@
     "translation": "想象一下，您是一名外星人，被派到地球来记录居住在地球上的哺乳动物的行为。",
     "vocabulary": [
       {
-        "term": "behaviour",
-        "explanation": "行为，举止，态度"
-      },
-      {
-        "term": "Imagine",
-        "explanation": "想象，设想"
+        "term": "mammals",
+        "explanation": "哺乳动物"
       }
     ],
     "highlights": [
@@ -3538,12 +3490,8 @@
     "translation": "您无意中走进一家正在放映最新好莱坞恐怖电影的电影院。",
     "vocabulary": [
       {
-        "term": "showing",
-        "explanation": "显示；表明（show 的现在分词）"
-      },
-      {
-        "term": "latest",
-        "explanation": "最近的，最新的"
+        "term": "stumble into",
+        "explanation": "偶然走进；意外遇到"
       }
     ],
     "highlights": [
@@ -3583,8 +3531,8 @@
     "translation": "几十个人聚集在一间漆黑、未装修的房间里。",
     "vocabulary": [
       {
-        "term": "humans",
-        "explanation": "人类（human 的复数形式）"
+        "term": "undecorated",
+        "explanation": "未装饰的；朴素的"
       }
     ],
     "highlights": [
@@ -3624,12 +3572,8 @@
     "translation": "他们都盯着一个矩形区域，上面的光线图案快速变化。",
     "vocabulary": [
       {
-        "term": "change",
-        "explanation": "改变，变化"
-      },
-      {
-        "term": "rapidly",
-        "explanation": "快速地，迅速地"
+        "term": "rectangular area",
+        "explanation": "矩形区域"
       }
     ],
     "highlights": [
@@ -3667,7 +3611,12 @@
   },
   "R1-05": {
     "translation": "他们显然处于高度兴奋的状态。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "high arousal",
+        "explanation": "高唤醒状态；高度兴奋"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -3705,8 +3654,8 @@
     "translation": "他们的心率加快，时而紧张地环顾四周，时而在座位上集体跳跃，并发出高亢的警告声。",
     "vocabulary": [
       {
-        "term": "warning",
-        "explanation": "警示，提醒，告诫"
+        "term": "elevated",
+        "explanation": "升高的"
       }
     ],
     "highlights": [
@@ -3752,16 +3701,7 @@
   },
   "R1-07": {
     "translation": "最终，灯光亮起，矩形屏幕变黑。",
-    "vocabulary": [
-      {
-        "term": "Eventually",
-        "explanation": "最终，结果"
-      },
-      {
-        "term": "screen",
-        "explanation": "屏幕，荧光屏"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3815,12 +3755,8 @@
     "translation": "人类有说有笑地起身离开房间，脸上流露出喜悦的表情。",
     "vocabulary": [
       {
-        "term": "showing",
-        "explanation": "显示；表明（show 的现在分词）"
-      },
-      {
-        "term": "humans",
-        "explanation": "人类（human 的复数形式）"
+        "term": "signs of pleasure",
+        "explanation": "愉悦的迹象"
       }
     ],
     "highlights": [
@@ -3868,12 +3804,8 @@
     "translation": "为什么这些人自愿让自己经历看似非常不愉快的经历？",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历，往事"
-      },
-      {
-        "term": "appears",
-        "explanation": "出现"
+        "term": "voluntarily expose",
+        "explanation": "自愿使自己接触；主动暴露于"
       }
     ],
     "highlights": [
@@ -3911,16 +3843,7 @@
   },
   "R1-10": {
     "translation": "为什么它们对屏幕上的光图案反应如此强烈？",
-    "vocabulary": [
-      {
-        "term": "screen",
-        "explanation": "屏幕，荧光屏"
-      },
-      {
-        "term": "strongly",
-        "explanation": "坚定地，强烈地，坚决地"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -3970,8 +3893,12 @@
         "explanation": "入迷的，极感兴趣的"
       },
       {
-        "term": "people",
-        "explanation": "人，人类"
+        "term": "paradox",
+        "explanation": "悖论"
+      },
+      {
+        "term": "seek out",
+        "explanation": "主动寻找"
       }
     ],
     "highlights": [
@@ -4009,16 +3936,7 @@
   },
   "R1-12": {
     "translation": "我认为这个难题的答案在于人性。",
-    "vocabulary": [
-      {
-        "term": "nature",
-        "explanation": "大自然，自然界"
-      },
-      {
-        "term": "answer",
-        "explanation": "回答，答复"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -4058,12 +3976,12 @@
     "translation": "我的研究表明，我们人类进化到能够在安全的环境中体验负面情绪的情况下寻找快乐。",
     "vocabulary": [
       {
-        "term": "situations",
-        "explanation": "情况，状况，局面（situation 的复数形式）"
+        "term": "evolved",
+        "explanation": "进化形成的"
       },
       {
-        "term": "experience",
-        "explanation": "经历，往事"
+        "term": "negative emotions",
+        "explanation": "负面情绪"
       }
     ],
     "highlights": [
@@ -4105,8 +4023,8 @@
     "translation": "你可以在儿童游戏中看到这些恐怖元素。",
     "vocabulary": [
       {
-        "term": "children",
-        "explanation": "child 的复数形式"
+        "term": "elements of horror",
+        "explanation": "恐怖元素"
       }
     ],
     "highlights": [
@@ -4154,8 +4072,12 @@
     "translation": "以捉迷藏为例，这是对捕食者与猎物相互作用的模拟。",
     "vocabulary": [
       {
-        "term": "example",
-        "explanation": "例子，例证"
+        "term": "simulation",
+        "explanation": "模拟"
+      },
+      {
+        "term": "predator-prey",
+        "explanation": "捕食者与猎物的"
       }
     ],
     "highlights": [
@@ -4195,8 +4117,8 @@
     "translation": "孩子躲起来，大人假装成掠食者，一边寻找孩子，一边像危险的野兽一样嚎叫。",
     "vocabulary": [
       {
-        "term": "dangerous",
-        "explanation": "危险的，有威胁的"
+        "term": "predator",
+        "explanation": "捕食者"
       }
     ],
     "highlights": [
@@ -4228,12 +4150,16 @@
     "translation": "这种模拟为孩子们提供了如何避免成为猎物的重要信息，孩子们往往会发现这种活动非常令人满意，大概是因为它让他们在潜在的灾难性场景中获得了安全的体验。",
     "vocabulary": [
       {
-        "term": "information",
-        "explanation": "消息，资料，情报"
+        "term": "simulation",
+        "explanation": "模拟"
       },
       {
-        "term": "experience",
-        "explanation": "经历，往事"
+        "term": "presumably",
+        "explanation": "推测起来；大概"
+      },
+      {
+        "term": "catastrophic",
+        "explanation": "灾难性的"
       }
     ],
     "highlights": [
@@ -4297,12 +4223,8 @@
     "translation": "他们觉得这是令人愉快的，而愉悦是进化激励我们采取适应性行为的方式。",
     "vocabulary": [
       {
-        "term": "evolution",
-        "explanation": "进化（论）"
-      },
-      {
-        "term": "behaviour",
-        "explanation": "行为，举止，态度"
+        "term": "adaptive behaviour",
+        "explanation": "适应性行为"
       }
     ],
     "highlights": [
@@ -4368,12 +4290,12 @@
     "translation": "恐怖对许多人来说是令人愉悦的，因为它让我们能够应对负面情绪并制定应对策略。",
     "vocabulary": [
       {
-        "term": "strategies",
-        "explanation": "策略，战略（strategy 的复数）"
+        "term": "negative emotions",
+        "explanation": "负面情绪"
       },
       {
-        "term": "develop",
-        "explanation": "（使）成长，发育，发展"
+        "term": "coping strategies",
+        "explanation": "应对策略"
       }
     ],
     "highlights": [
@@ -4413,12 +4335,8 @@
     "translation": "我们了解真正害怕的感觉，并学习如何处理负面情绪。",
     "vocabulary": [
       {
-        "term": "handle",
-        "explanation": "拿"
-      },
-      {
-        "term": "negative",
-        "explanation": "有害的，负面的"
+        "term": "negative emotion",
+        "explanation": "负面情绪"
       }
     ],
     "highlights": [
@@ -4504,12 +4422,8 @@
     "translation": "我的研究表明，恐怖是通过利用一套古老的生物防御机制来发挥作用的，即我们与其他动物共有的进化的恐惧系统。",
     "vocabulary": [
       {
-        "term": "mechanisms",
-        "explanation": "机械装置，机件"
-      },
-      {
-        "term": "suggests",
-        "explanation": "表明；暗示；建议（suggest 的第三人称单数）"
+        "term": "evolved",
+        "explanation": "进化形成的"
       }
     ],
     "highlights": [
@@ -4551,12 +4465,12 @@
     "translation": "但人类具有独特的想象力，我们利用进化后的想象力进入充满危险的虚拟世界。",
     "vocabulary": [
       {
-        "term": "travel",
-        "explanation": "（尤指长途）旅行"
+        "term": "imaginative",
+        "explanation": "富有想象力的"
       },
       {
-        "term": "humans",
-        "explanation": "人类（human 的复数形式）"
+        "term": "evolved",
+        "explanation": "进化形成的"
       }
     ],
     "highlights": [
@@ -4628,8 +4542,8 @@
     "translation": "即使您不是忠实的恐怖片粉丝，观看恐怖片也是有充分理由的。",
     "vocabulary": [
       {
-        "term": "reasons",
-        "explanation": "原因（reason 的复数）"
+        "term": "loyal horror fan",
+        "explanation": "忠实的恐怖片爱好者"
       }
     ],
     "highlights": [
@@ -4669,12 +4583,12 @@
     "translation": "如果你完整地看完了这部电影，你可能会体验到一种强烈的掌控感，一种你能够度过一段可怕经历的感觉。",
     "vocabulary": [
       {
-        "term": "experience",
-        "explanation": "经历，往事"
+        "term": "mastery",
+        "explanation": "掌控感；精通"
       },
       {
-        "term": "probably",
-        "explanation": "大概，或许"
+        "term": "appalling",
+        "explanation": "骇人的；令人震惊的"
       }
     ],
     "highlights": [
@@ -4719,12 +4633,8 @@
     "translation": "不管怎样，看恐怖片可以让你更好地处理自己的恐惧，谁知道什么时候这会变得至关重要呢？",
     "vocabulary": [
       {
-        "term": "handling",
-        "explanation": "拿"
-      },
-      {
-        "term": "relevant",
-        "explanation": "有关的，切题的"
+        "term": "critically relevant",
+        "explanation": "至关重要的；关键相关的"
       }
     ],
     "highlights": [
@@ -4794,8 +4704,16 @@
     "translation": "现实世界正在发生一场觉醒，反对多年来强加给我们的美丽模式。",
     "vocabulary": [
       {
-        "term": "taking",
-        "explanation": "取得"
+        "term": "awakening",
+        "explanation": "觉醒"
+      },
+      {
+        "term": "beauty model",
+        "explanation": "美丽模式；审美范式"
+      },
+      {
+        "term": "dictated",
+        "explanation": "规定；支配"
       }
     ],
     "highlights": [
@@ -4851,12 +4769,8 @@
     "translation": "但在数字领域，社交媒体决定了什么被认为是美丽的。",
     "vocabulary": [
       {
-        "term": "considered",
-        "explanation": "深思熟虑的"
-      },
-      {
-        "term": "determines",
-        "explanation": "决定，控制"
+        "term": "digital arena",
+        "explanation": "数字领域"
       }
     ],
     "highlights": [
@@ -4898,12 +4812,8 @@
     "translation": "两种对立的斗争正在同时进行。",
     "vocabulary": [
       {
-        "term": "struggles",
-        "explanation": "奋斗，努力"
-      },
-      {
-        "term": "taking",
-        "explanation": "取得"
+        "term": "opposing",
+        "explanation": "对立的；反对的"
       }
     ],
     "highlights": [
@@ -4952,11 +4862,11 @@
     "vocabulary": [
       {
         "term": "underlying",
-        "explanation": "根本的，潜在的"
+        "explanation": "潜在的；根本的"
       },
       {
-        "term": "struggle",
-        "explanation": "奋斗，努力"
+        "term": "beauty ideal",
+        "explanation": "审美理想"
       }
     ],
     "highlights": [
@@ -4996,12 +4906,8 @@
     "translation": "作为斗争的一部分，各种媒体都报道了身体不符合所谓理想的女性。",
     "vocabulary": [
       {
-        "term": "presented",
-        "explanation": "展示，提供"
-      },
-      {
-        "term": "struggle",
-        "explanation": "奋斗，努力"
+        "term": "media outlets",
+        "explanation": "媒体渠道"
       }
     ],
     "highlights": [
@@ -5041,12 +4947,12 @@
     "translation": "所有那些以前被排除在杂志、电视剧封面和公共议程之外的女性，现在都变得“合法”了。",
     "vocabulary": [
       {
-        "term": "previously",
-        "explanation": "以前地，先前地"
+        "term": "excluded",
+        "explanation": "排除；不包括"
       },
       {
-        "term": "series",
-        "explanation": "连续，一系列（事件）"
+        "term": "legitimate",
+        "explanation": "合理的；正当的"
       }
     ],
     "highlights": [
@@ -5086,12 +4992,12 @@
     "translation": "与此同时，一群有影响力的人开始在社交媒体上上传自己未化妆的照片，甚至是强调所谓缺陷的照片。",
     "vocabulary": [
       {
-        "term": "supposed",
-        "explanation": "假定的，据说的"
+        "term": "influencers",
+        "explanation": "网络影响者"
       },
       {
-        "term": "social",
-        "explanation": "社会的"
+        "term": "flaws",
+        "explanation": "缺陷；瑕疵"
       }
     ],
     "highlights": [
@@ -5131,12 +5037,12 @@
     "translation": "科技重塑了我们的美丽理想，并在向大众传达这一信息方面做得非常出色。",
     "vocabulary": [
       {
-        "term": "Technology",
-        "explanation": "科技，技术"
+        "term": "reshaped",
+        "explanation": "重塑"
       },
       {
-        "term": "message",
-        "explanation": "口信，消息"
+        "term": "beauty ideal",
+        "explanation": "审美理想"
       }
     ],
     "highlights": [
@@ -5192,12 +5098,8 @@
     "translation": "过去十年的奇异遗产之一是“赛博格造型”的流行，它描绘了 2050 年美国人的样子。",
     "vocabulary": [
       {
-        "term": "popularity",
-        "explanation": "流行，普及，受欢迎"
-      },
-      {
-        "term": "decade",
-        "explanation": "十年，十年期"
+        "term": "cyborg look",
+        "explanation": "赛博格外观"
       }
     ],
     "highlights": [
@@ -5237,8 +5139,8 @@
     "translation": "半机械人的造型迅速传播开来。",
     "vocabulary": [
       {
-        "term": "rapidly",
-        "explanation": "快速地，迅速地"
+        "term": "cyborg look",
+        "explanation": "赛博格外观"
       }
     ],
     "highlights": [
@@ -5268,7 +5170,12 @@
   },
   "R2-11": {
     "translation": "然而如今，Instagram 面孔已成为新的美丽理想。",
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "beauty ideal",
+        "explanation": "审美理想"
+      }
+    ],
     "highlights": [
       {
         "role": "subject",
@@ -5306,12 +5213,12 @@
     "translation": "当积极参与学习过程时，公认的美丽规范的内化会更加有效。",
     "vocabulary": [
       {
-        "term": "learning",
-        "explanation": "学习"
+        "term": "internalization",
+        "explanation": "内化"
       },
       {
-        "term": "process",
-        "explanation": "步骤，程序"
+        "term": "norms",
+        "explanation": "规范；标准"
       }
     ],
     "highlights": [
@@ -5351,12 +5258,8 @@
     "translation": "用户的积极参与体现在社交媒体平台提供的游戏化互动中——点赞、发表评论、比较、分享的能力。",
     "vocabulary": [
       {
-        "term": "platforms",
-        "explanation": "平台"
-      },
-      {
-        "term": "compare",
-        "explanation": "比较，对比"
+        "term": "gamified",
+        "explanation": "游戏化的"
       }
     ],
     "highlights": [
@@ -5388,12 +5291,8 @@
     "translation": "一旦所需的美丽理想被内化，用户就会获得工具或功能来改变自己的外观以适应公认的美丽理想，例如编辑图像、选择理想的滤镜、正确的背景。",
     "vocabulary": [
       {
-        "term": "background",
-        "explanation": "出身背景，学历，经历"
-      },
-      {
-        "term": "appearance",
-        "explanation": "露面，演出"
+        "term": "beauty ideal",
+        "explanation": "审美理想"
       }
     ],
     "highlights": [
@@ -5436,16 +5335,7 @@
   },
   "R2-15": {
     "translation": "在美国进行的一项调查显示，超过 50% 的人在发布图片之前会对其进行过滤。",
-    "vocabulary": [
-      {
-        "term": "conducted",
-        "explanation": "conduct 的过去式和过去分词：实施，进行，管理"
-      },
-      {
-        "term": "revealed",
-        "explanation": "揭露，透露"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -5483,12 +5373,7 @@
   },
   "R2-16": {
     "translation": "听说其中大多数是女性，您不会感到惊讶。",
-    "vocabulary": [
-      {
-        "term": "majority",
-        "explanation": "大多数"
-      }
-    ],
+    "vocabulary": [],
     "highlights": [
       {
         "role": "subject",
@@ -5526,12 +5411,8 @@
     "translation": "强迫性过滤的一个重要后果是，人们开始倾向于将自己视为一个需要观察和评价的对象，就像另一个人从侧面观察和判断一样。",
     "vocabulary": [
       {
-        "term": "consequences",
-        "explanation": "后果，结果，影响（consequence 的复数）"
-      },
-      {
-        "term": "significant",
-        "explanation": "显著的，相当数量的"
+        "term": "obsessive filtering",
+        "explanation": "过度滤镜美化"
       }
     ],
     "highlights": [
@@ -5579,8 +5460,12 @@
     "translation": "滤镜的效果已经远远超出了友善的娱乐。",
     "vocabulary": [
       {
-        "term": "effect",
-        "explanation": "作用，影响"
+        "term": "far beyond",
+        "explanation": "远远超出"
+      },
+      {
+        "term": "amiable amusement",
+        "explanation": "友善的娱乐；轻松消遣"
       }
     ],
     "highlights": [
@@ -5620,12 +5505,8 @@
     "translation": "过滤器和网络上玩的整个游戏都会影响用户的心理健康。",
     "vocabulary": [
       {
-        "term": "networks",
-        "explanation": "网络"
-      },
-      {
-        "term": "played",
-        "explanation": "演奏"
+        "term": "mental health",
+        "explanation": "心理健康"
       }
     ],
     "highlights": [
@@ -5665,12 +5546,8 @@
     "translation": "一项研究表明，Instagram、Snapchat 和 Face Tune 等应用程序可以让用户达到以前只能在美容杂志中观察到的完美水平。",
     "vocabulary": [
       {
-        "term": "According",
-        "explanation": "按照，根据，依照（according to，后接名词或名词短语）"
-      },
-      {
-        "term": "previously",
-        "explanation": "以前地，先前地"
+        "term": "beauty magazines",
+        "explanation": "美容杂志"
       }
     ],
     "highlights": [
@@ -5712,12 +5589,8 @@
     "translation": "尽管人类一向珍视美丽，但在过去的十年里，我们对外表的痴迷达到了前所未有的顶峰。",
     "vocabulary": [
       {
-        "term": "unprecedented",
-        "explanation": "前所未有的，史无前例的"
-      },
-      {
         "term": "obsession",
-        "explanation": "痴迷，困扰"
+        "explanation": "痴迷；执着"
       }
     ],
     "highlights": [
@@ -5762,12 +5635,16 @@
     "translation": "人们花在社交媒体上的时间产生了一种想要实现不可能的美丽理想的冲动，这种冲动如此强烈，以至于唯一能解决这个问题的不是整容干预，而是心理健康护理",
     "vocabulary": [
       {
-        "term": "impossible",
-        "explanation": "不可能的，办不到的"
+        "term": "beauty ideal",
+        "explanation": "审美理想"
       },
       {
-        "term": "creates",
-        "explanation": "创造，创作"
+        "term": "cosmetic intervention",
+        "explanation": "美容干预"
+      },
+      {
+        "term": "mental health care",
+        "explanation": "心理健康护理"
       }
     ],
     "highlights": [
