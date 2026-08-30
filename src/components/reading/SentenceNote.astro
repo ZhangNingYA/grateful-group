@@ -1,5 +1,6 @@
 ---
 import { BookOpenText } from 'lucide-astro';
+import { cet6InlineGlossary2015 } from '../../data/cet6InlineGlossary2015';
 import type {
   CloseReading,
   CloseReadingVocabulary,
@@ -25,6 +26,11 @@ const {
   experience = 'blog',
 } = Astro.props;
 const isBlogExperience = experience === 'blog';
+// Blog sentence notes historically use the CET-6 inline glossary. Keep that
+// as the default so pages that provide close readings cannot accidentally
+// lose clickable vocabulary by omitting the prop; Games remain unchanged.
+const effectiveInlineGlossary = inlineGlossary
+  ?? (isBlogExperience ? cet6InlineGlossary2015 : undefined);
 const semanticAnalysis = isBlogExperience ? closeReading?.analysis : undefined;
 const detailId = `close-reading-${number.toLowerCase().replace(/[^a-z0-9-]/g, '-')}`;
 const glossaryId = 'reading-inline-glossary-popover';
@@ -169,7 +175,7 @@ const wordsEquivalent = (source: string, term: string) => {
 };
 
 const inlineGlossaryEntry = (value: string) =>
-  inlineGlossary?.words[normalizeForMatch(value).toLowerCase()];
+  effectiveInlineGlossary?.words[normalizeForMatch(value).toLowerCase()];
 
 const partOfSpeechLabel = (value: string) => ({
   n: '名词',
@@ -195,7 +201,7 @@ const glossaryMatches = (): Array<{
   explanation: string;
   partOfSpeech: string;
 }> => {
-  if (!sentence || !closeReading || !inlineGlossary) return [];
+  if (!sentence || !closeReading || !effectiveInlineGlossary) return [];
 
   const normalizedSentence = normalizeForMatch(sentence).toLowerCase();
   const sentenceWords = wordTokens(sentence);

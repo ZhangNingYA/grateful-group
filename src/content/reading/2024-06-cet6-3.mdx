@@ -7,10 +7,12 @@ pubDate: '2024-06-01'
 import ReadingPractice from '../../components/reading/ReadingPractice.astro';
 import paper from '../../data/reading/2024-06-cet6-reading-3.json';
 import { cet6CloseReadings202406Set3 } from '../../data/closeReading/2024JuneSet3';
+import { cet6InlineGlossary2015 } from '../../data/cet6InlineGlossary2015';
 
 <ReadingPractice
   cloze={paper.sections.cloze}
   matching={paper.sections.matching}
   passages={[paper.sections.passageOne, paper.sections.passageTwo]}
   closeReadings={cet6CloseReadings202406Set3}
+  inlineGlossary={cet6InlineGlossary2015}
 />
