@@ -31,6 +31,7 @@ const study = defineCollection({
         mode: z.enum(['lab', 'reading', 'derivation', 'build']).default('lab'),
         subject: z.string().optional(),
         part: z.number().int().positive().optional(),
+        estimatedMinutes: z.number().int().positive().optional(),
     }),
 });
 

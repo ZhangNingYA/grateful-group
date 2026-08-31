@@ -19,6 +19,7 @@ const {
   mode = 'lab',
   subject = 'Guided study',
   part,
+  estimatedMinutes: providedEstimatedMinutes,
   headings = [],
 } = Astro.props;
 
@@ -30,7 +31,7 @@ const modeLabels = {
 } as const;
 
 const sections = headings.filter((heading) => heading.depth === 2);
-const estimatedMinutes = part ? Math.max(35, sections.length * 10) : Math.max(10, sections.length * 3);
+const estimatedMinutes = providedEstimatedMinutes ?? (part ? Math.max(35, sections.length * 10) : Math.max(10, sections.length * 3));
 const kalmanSequence = [
   { href: '/study/kalman-filter/', title: '课程地图' },
   { href: '/study/kalman-filter-foundations/', title: '状态、证据与概率模型' },
@@ -84,8 +85,18 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
     <main class="textbook-layout">
       <aside class="textbook-rail" aria-label="章节导航">
         <div class="rail-sticky">
-          <div class="rail-heading"><span>Contents</span><b>{String(sections.length).padStart(2, '0')}</b></div>
-          <ol>
+          <div class="rail-heading">
+            <span class="rail-heading-label"><span>Contents</span><b>{String(sections.length).padStart(2, '0')}</b></span>
+            <button
+              class="textbook-rail-toggle"
+              type="button"
+              aria-expanded="true"
+              aria-controls="study-contents-list"
+              aria-label="隐藏章节目录"
+              data-study-rail-toggle
+            >隐藏</button>
+          </div>
+          <ol id="study-contents-list">
             {sections.map((heading, index) => (
               <li>
                 <a href={`#${heading.slug}`} data-study-nav-link={heading.slug}>
@@ -135,6 +146,33 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
     <script define:vars={{ sectionSlugs: sections.map((section) => section.slug) }}>
       const headings = Array.from(document.querySelectorAll('.textbook-content h2'));
       const navLinks = Array.from(document.querySelectorAll('[data-study-nav-link]'));
+      const layout = document.querySelector('.textbook-layout');
+      const railToggle = document.querySelector('[data-study-rail-toggle]');
+      const railStorageKey = 'study-contents-collapsed';
+
+      const setRailCollapsed = (collapsed) => {
+        if (!layout || !railToggle) return;
+        layout.classList.toggle('is-rail-collapsed', collapsed);
+        railToggle.setAttribute('aria-expanded', String(!collapsed));
+        railToggle.setAttribute('aria-label', collapsed ? '显示章节目录' : '隐藏章节目录');
+        railToggle.textContent = collapsed ? '显示' : '隐藏';
+      };
+
+      try {
+        setRailCollapsed(window.localStorage.getItem(railStorageKey) === 'true');
+      } catch {
+        setRailCollapsed(false);
+      }
+
+      railToggle?.addEventListener('click', () => {
+        const collapsed = !layout?.classList.contains('is-rail-collapsed');
+        setRailCollapsed(collapsed);
+        try {
+          window.localStorage.setItem(railStorageKey, String(collapsed));
+        } catch {
+          // The toggle remains usable when storage is unavailable.
+        }
+      });
 
       const setCurrent = (slug) => {
         if (!document.getElementById(slug)) return;

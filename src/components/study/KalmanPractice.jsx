@@ -7,20 +7,20 @@ const exercises = [
     id: 'position-update',
     label: '练习 A · 位置更新',
     title: '把一次新测量放回公式链',
-    description: '这是上一节完整例题的变式。先在纸上完成计算，再把结果填入输入框。',
-    values: { prior: 10, priorVariance: 2, measurement: 12, measurementVariance: 3 },
-    answers: { innovation: 2, gain: 0.4, posterior: 10.8 },
+    description: '用一组新数据完成整条更新链。先在纸上计算，再把五个中间量填入输入框。',
+    values: { prior: 8, priorVariance: 3, measurement: 10.5, measurementVariance: 2 },
+    answers: { innovation: 2.5, innovationVariance: 5, gain: 0.6, posterior: 9.5, posteriorVariance: 1.2 },
     hints: [
-      '第一步只做减法：创新是测量减去预测，单位仍是 $\\mathrm m$。',
-      '第二步把两种方差相加：$S=P^-+R$，所以单位是 $\\mathrm m^2$。',
-      '最后先算 $K$，再把 $K$ 乘以创新并加回先验均值。',
+      '先分别计算 $y=z-\\hat x^-$ 与 $S=P^-+R$，不要混淆二者单位。',
+      '再用 $K=P^-/S$；标量正方差模型中结果应落在 $0$ 与 $1$ 之间。',
+      '最后同时更新均值和方差：$\\hat x^+=\\hat x^-+Ky$，$P^+=(1-K)P^-$。',
     ],
     solution: [
-      ['y=z-\\hat x^-', '12-10=2\\,\\mathrm m'],
-      ['S=P^-+R', '2+3=5\\,\\mathrm m^2'],
-      ['K=P^-/S', '2/5=0.400'],
-      ['\\hat x^+=\\hat x^-+Ky', '10+0.4\\times2=10.8\\,\\mathrm m'],
-      ['P^+=(1-K)P^-', '(1-0.4)\\times2=1.2\\,\\mathrm m^2'],
+      ['y=z-\\hat x^-', '10.5-8=2.5\\,\\mathrm m'],
+      ['S=P^-+R', '3+2=5\\,\\mathrm m^2'],
+      ['K=P^-/S', '3/5=0.600'],
+      ['\\hat x^+=\\hat x^-+Ky', '8+0.6\\times2.5=9.5\\,\\mathrm m'],
+      ['P^+=(1-K)P^-', '(1-0.6)\\times3=1.2\\,\\mathrm m^2'],
     ],
   },
   {
@@ -29,7 +29,7 @@ const exercises = [
     title: '观察较大的 $R$ 如何改变结果',
     description: '预测已经相当确定，而传感器噪声较大。计算后检查后验是否明显靠近测量。',
     values: { prior: 4.5, priorVariance: 0.8, measurement: 5.7, measurementVariance: 2 },
-    answers: { innovation: 1.2, gain: 0.2857, posterior: 4.8429 },
+    answers: { innovation: 1.2, innovationVariance: 2.8, gain: 0.2857, posterior: 4.8429, posteriorVariance: 0.5714 },
     hints: [
       '先标出两端：先验均值是 $4.5$，测量是 $5.7$；后验必须落在两者之间。',
       '$R=2$ 比 $P^-=0.8$ 大，说明传感器更不确定，因此 $K$ 应小于 $0.5$。',
@@ -47,22 +47,25 @@ const exercises = [
 
 const fields = [
   ['innovation', '创新', 'y_k', '例如 2'],
+  ['innovationVariance', '创新方差', 'S_k', '例如 5'],
   ['gain', '卡尔曼增益', 'K_k', '例如 0.4'],
   ['posterior', '后验均值', '\\hat x_k^+', '例如 10.8'],
+  ['posteriorVariance', '后验方差', 'P_k^+', '例如 1.2'],
 ];
 
 const closeEnough = (actual, expected) => Number.isFinite(actual) && Math.abs(actual - expected) <= 0.012;
 
 export default function KalmanPractice() {
   const [exerciseIndex, setExerciseIndex] = useState(0);
-  const [answers, setAnswers] = useState({ innovation: '', gain: '', posterior: '' });
+  const emptyAnswers = () => Object.fromEntries(fields.map(([key]) => [key, '']));
+  const [answers, setAnswers] = useState(emptyAnswers);
   const [checked, setChecked] = useState(false);
   const [hintCount, setHintCount] = useState(0);
   const [showSolution, setShowSolution] = useState(false);
   const exercise = useMemo(() => exercises[exerciseIndex], [exerciseIndex]);
 
   useEffect(() => {
-    setAnswers({ innovation: '', gain: '', posterior: '' });
+    setAnswers(emptyAnswers());
     setChecked(false);
     setHintCount(0);
     setShowSolution(false);
@@ -109,6 +112,8 @@ export default function KalmanPractice() {
         <span><b>③</b> 得到 <StudyMath expression="K_k" /></span>
         <i aria-hidden="true">→</i>
         <span><b>④</b> 更新 <StudyMath expression={'\\hat x_k^+'} /></span>
+        <i aria-hidden="true">→</i>
+        <span><b>⑤</b> 更新 <StudyMath expression={'P_k^+'} /></span>
       </div>
 
       <form className="practice-form" onSubmit={checkAnswers}>
@@ -126,11 +131,11 @@ export default function KalmanPractice() {
             />
           </label>
         ))}
-        <button className="practice-check" type="submit">检查这三步</button>
+        <button className="practice-check" type="submit">检查这五步</button>
       </form>
 
       <div className="practice-feedback" aria-live="polite">
-        {checked && correctCount === fields.length && <p className="practice-success">三步都对了。别忘了再检查：后验均值应位于先验与测量之间，且 <StudyMath expression="P_k^+<P_k^-" />。</p>}
+        {checked && correctCount === fields.length && <p className="practice-success">五步都对了。结构检查也通过：后验均值位于先验与测量之间，且 <StudyMath expression="P_k^+<P_k^-" />。</p>}
         {checked && correctCount < fields.length && <p className="practice-warn">目前答对了 {correctCount} / {fields.length} 步。先看提示，再重新计算；不要急着打开答案。</p>}
       </div>
 

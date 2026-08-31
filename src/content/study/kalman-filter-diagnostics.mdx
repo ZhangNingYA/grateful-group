@@ -2,12 +2,14 @@
 title: '第 04 章：创新检验与失效模式'
 description: '学习用创新序列、归一化创新平方和覆盖率检查滤波器的一致性，并识别模型失配、异常值与非线性。'
 pubDate: '2026-08-30'
-updatedDate: '2026-08-30'
+updatedDate: '2026-08-31'
 mode: 'lab'
 subject: 'Validation'
 part: 4
+estimatedMinutes: 35
 ---
 
+import KalmanDiagnosticsLab from '../../components/study/KalmanDiagnosticsLab.jsx';
 import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 
 ## 01 / “有输出”不等于“可信”
@@ -36,6 +38,22 @@ $$
 
 当测量维数为 $p$ 且模型一致时，$\epsilon_k$ 服从自由度为 $p$ 的卡方分布：$\epsilon_k\sim\chi_p^2$。其期望是 $p$；标量情况下就是 $\epsilon_k=y_k^2/S_k$，期望为 1。可以选择显著性水平 $\alpha$，用 $\chi^2_{p,1-\alpha}$ 做单步门限；也可以在一个窗口内检查 NIS 的平均值是否接近 $p$。
 
+“接近”不应只凭肉眼决定。若窗口包含 $N$ 个彼此独立的创新，则
+
+$$
+\sum_{k=1}^{N}\epsilon_k\sim\chi^2_{Np},
+$$
+
+因此平均 NIS 的双侧置信区间可写成
+
+$$
+\frac{\chi^2_{Np,\alpha/2}}{N}
+\le \bar\epsilon \le
+\frac{\chi^2_{Np,1-\alpha/2}}{N}.
+$$
+
+窗口越短，允许的随机波动越大；不能看到一次均值偏离 $p$ 就立刻反向调参。
+
 <div className="formula-caption"><strong>一个数值对照</strong><p>若 $y=2\,\mathrm m$：当 $S=1\,\mathrm m^2$ 时，$\epsilon=4$，相当于偏离预测两个标准差；当 $S=100\,\mathrm m^2$ 时，$\epsilon=0.04$，相同的绝对误差并不异常。NIS 的价值正是把残差按它自己的不确定性标准化。</p></div>
 
 如果估计误差的真实状态在离线评测中可知，还可以计算 NEES（归一化估计误差平方）：
@@ -46,16 +64,22 @@ $$
 
 NEES 直接检查后验协方差是否覆盖真实误差，期望是状态维数 $n$；但在线系统通常不知道真实 $x_k$，所以 NIS 更常用。
 
+离线知道真值时，还可以直接统计覆盖率：例如标量高斯后验中，检查 $x_k$ 落入 $\hat x_{k|k}\pm1.96\sqrt{P_{k|k}}$ 的比例是否接近 $95\%$。NIS 检查测量空间中的创新，NEES 与覆盖率检查状态空间中的估计误差，三者回答的问题不同。
+
 ## 03 / 读懂异常模式
 
 <div className="assumption-grid">
   <div><div>创新长期同号</div><p>常见原因是模型有偏、传感器有偏置，或状态中遗漏了一个慢变化的偏置项。只增大 $R$ 会掩盖问题。</p></div>
   <div><div>创新呈周期或自相关</div><p>模型漏掉了可预测动态，例如把正弦运动当成随机游走；应改进状态转移，而不是只调噪声。</p></div>
   <div><div>NIS 持续偏大</div><p>预测过于自信：可能低估了 $Q$、低估了 $R$，也可能出现异常值或模型结构错误。</p></div>
-  <div><div>NIS 持续偏小</div><p>协方差可能过于保守，或测量被重复计算、噪声相关性被错误忽略。</p></div>
+  <div><div>NIS 持续偏小</div><p>协方差可能过于保守，或同一测量被重复用于预测与更新，使残差显得不真实地小。</p></div>
 </div>
 
 这些模式应结合时间尺度判断。一次很大的 NIS 可能只是遮挡造成的离群读数；连续几十步偏大则更像协方差失配或模型结构问题。诊断的目标不是把每个残差都压小，而是让残差统计与 $S_k$ 的预测相符。
+
+若噪声存在时间相关性，NIS 与理想卡方分布的对应关系也会被破坏；这种问题不能简单归为“偏大”或“偏小”，必须同时查看创新自相关。
+
+<KalmanDiagnosticsLab client:visible />
 
 ## 04 / 失效时如何处理
 
@@ -74,11 +98,11 @@ NEES 直接检查后验协方差是否覆盖真实误差，期望是状态维数
 <StudyCheckpoint
   client:visible
   id="diagnostics-nis"
-  question="同一个创新 $y=2$，哪种情况更值得警惕？"
-  options={['$S=100$，因为创新绝对值很大', '$S=1$，因为它相当于两个标准差', '两者一样，NIS 不需要考虑 $S$']}
-  answer={1}
-  hint="计算 $\epsilon=y^2/S$，看看无量纲结果如何变化。"
-  explanation="$S=1$ 时 NIS 为 $4$，相当于偏离预测两个标准差；$S=100$ 时 NIS 只有 $0.04$。异常性必须相对于预测不确定性判断。"
+  question="一段创新的均值接近 $0$、平均 NIS 接近测量维数，但一阶自相关长期约为 $0.7$。首先应怀疑什么？"
+  options={['模型遗漏了可预测的时间动态', '滤波器已经完全一致，不需要处理', '只要把所有创新取绝对值即可']}
+  answer={0}
+  hint="均值和尺度正常，并不代表创新已经是白噪声。"
+  explanation="明显的时间相关说明过去的创新仍能预测未来创新，状态转移模型可能漏掉了速度、周期项或慢变偏置等动态结构。"
 />
 
-<div className="study-note"><strong>本章结论</strong><br />创新是滤波器对自己预测的公开答卷。看均值、相关性、NIS 和覆盖率，才能区分“参数需要重标定”和“模型需要重写”。当假设明显失效时，换一个更复杂的滤波器也不能替代正确建模。</div>
+<div className="study-note"><strong>本章结论</strong><br />创新是滤波器对自己预测的公开答卷。看均值、相关性、NIS 和覆盖率，才能区分“参数需要重标定”和“模型需要重写”。当假设明显失效时，换一个更复杂的滤波器也不能替代正确建模。下一章会把创新、$S$ 和分解状态正式变成接口返回值、日志与自动化测试。</div>

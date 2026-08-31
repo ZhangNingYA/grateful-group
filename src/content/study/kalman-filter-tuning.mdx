@@ -2,23 +2,24 @@
 title: '第 03 章：Q、R、P 与动态响应'
 description: '通过交互实验理解过程噪声、测量噪声和初始不确定性如何改变卡尔曼滤波的响应速度与置信带。'
 pubDate: '2026-08-30'
-updatedDate: '2026-08-30'
+updatedDate: '2026-08-31'
 mode: 'lab'
 subject: 'Experiments'
 part: 3
+estimatedMinutes: 45
 ---
 
 import KalmanSimulator from '../../components/study/KalmanSimulator.jsx';
 import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 
-## 01 / 四个旋钮，其实代表四种不同的信念
+## 01 / 四个量，其实代表四种不同的信念
 
 调参前先给每个量一句物理解释。把它们混在一起，滤波器仍然会运行，但你无法解释它为什么这样运行。
 
 <div className="symbol-grid">
   <div><div className="symbol-formula">$Q$</div><strong>过程噪声协方差</strong><span>模型没有解释的状态变化。大 $Q$ 表示“不太相信运动模型”。</span></div>
   <div><div className="symbol-formula">$R$</div><strong>测量噪声协方差</strong><span>传感器误差的统计尺度。大 $R$ 表示“不太相信这次读数”。</span></div>
-  <div><div className="symbol-formula">$P_0$</div><strong>初始方差</strong><span>启动时对初始状态的无知程度，只影响过渡阶段。</span></div>
+  <div><div className="symbol-formula">$P_0$</div><strong>初始方差</strong><span>启动时对初始状态的无知程度；在本章稳定、可观测的例子中主要影响过渡阶段。</span></div>
   <div><div className="symbol-formula">$P_k$</div><strong>当前估计方差</strong><span>滤波器对自身误差的在线记录，会由 $Q$ 增长、由测量收缩。</span></div>
 </div>
 
@@ -26,7 +27,7 @@ import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 
 ## 02 / 先做预测，再打开实验
 
-下面的模拟器生成一条隐藏的真实轨迹，并用固定的真实测量方差产生带噪读数。滤波器使用的 $Q$、$R$ 是可以故意设错的“假设”，所以你看到的 RMSE 既反映噪声，也反映模型失配。先不拖滑块，预测四件事：
+下面的模拟器生成一条隐藏的真实轨迹，并用固定的真实测量方差产生带噪读数。滤波器使用的 $Q$、$R$ 是可以故意设错的“假设”，所以你看到的 RMSE 既反映噪声，也反映模型失配。实验台只暴露 $Q$、$R$ 两个参数；$P_0$ 固定，$P_k$ 则由递推自动产生。先不拖滑块，预测四件事：
 
 1. $R$ 增大，测量点不变，估计应更平滑，但会更迟钝；
 2. $Q$ 增大，置信带的先验阶段变宽，估计应更快追随新证据；
@@ -35,7 +36,7 @@ import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 
 <KalmanSimulator client:visible />
 
-<div className="study-note"><strong>读图时分清两条曲线</strong><br />模拟器的“真实测量方差”是数据生成过程使用的值；滑块上的“滤波器假设的 $R$”是算法使用的值。两者相等时，模型在这一项上被正确标定；不相等时，实验是在观察失配后果。</div>
+<div className="study-note"><strong>读图时分清两个 $R$</strong><br />模拟器的“真实测量方差”是数据生成过程使用的值；滑块上的“滤波器假设的 $R$”是算法使用的值。两者相等时，模型在这一项上被正确标定；不相等时，实验是在观察失配后果。</div>
 
 图中的带状区域是 $\hat x_{k|k}\pm2\sqrt{P_{k|k}}$。在后验确为高斯且协方差标定正确时，条件概率
 
@@ -44,6 +45,8 @@ $$
 $$
 
 同样的结论也意味着：在模型正确的重复实验中，这种区间应有约 $95.45\%$ 的覆盖率。如果真实轨迹频繁跑出区间，不应先把区间当作“倒霉”，而应检查 $Q$、$R$、动力学模型和噪声相关性。置信带表达的是模型条件下的不确定性，不是脱离假设的安全保证。
+
+页面同时给出当前噪声样本的 RMSE 和多组噪声样本的平均估计 RMSE。单条曲线适合观察响应形状，却可能因为一次随机抽样显得格外好或格外坏；比较参数方案时，应优先看重复实验的统计结果，并把最终方案留到独立数据上验证。
 
 ## 03 / 为什么平滑和敏捷不能同时最大
 
@@ -60,6 +63,18 @@ $$
 ### 一个常见但危险的调参捷径
 
 为了让曲线“看起来好看”而增大 $R$，可能只是把真实动态也滤掉；为了追上突变而增大 $Q$，可能让平稳阶段充满抖动。正确做法是先从传感器标定和动力学误差估计协方差，再用独立数据检查创新与覆盖率。RMSE 可以帮助比较方案，却不能单独证明 $Q$、$R$ 是真实值。
+
+$Q$ 还必须与采样周期相匹配，不能在改变 $\Delta t$ 后原样照搬。以“每个采样间隔内有一个方差为 $\sigma_a^2$ 的随机恒加速度”为例，位置—速度模型中的过程噪声协方差可写成：
+
+$$
+Q=\sigma_a^2
+\begin{bmatrix}
+\Delta t^4/4 & \Delta t^3/2\\
+\Delta t^3/2 & \Delta t^2
+\end{bmatrix}.
+$$
+
+这不是唯一的 $Q$ 模型，却清楚说明了同一物理噪声在不同采样周期下会产生不同的离散协方差。
 
 <StudyCheckpoint
   client:visible
@@ -98,4 +113,4 @@ $$
 
 <div className="worked-example"><span>数量级检查</span><p>若 $Q\to0$ 而 $R$ 有限，模型几乎不增长不确定性，稳态 $K$ 会趋近 0，滤波器逐渐拒绝新测量。若 $R\to0$，$K$ 趋近 1，后验方差趋近 0。任何代码在这两个极限下都应表现出相同方向；否则优先检查方差是否被误当成标准差，或更新顺序是否写反。</p></div>
 
-<div className="study-note"><strong>本章结论</strong><br />$Q$ 和 $R$ 不是为了让曲线“更漂亮”的旋钮，而是两种不确定性的声明。调参的目标是让响应速度、误差统计和置信带同时与物理系统一致；平滑只是其中一个结果。</div>
+<div className="study-note"><strong>本章结论</strong><br />$Q$ 和 $R$ 不是为了让曲线“更漂亮”的旋钮，而是两种不确定性的声明。调参的目标是让响应速度、误差统计和置信带同时与物理系统一致；平滑只是其中一个结果。下一章不再凭曲线观感判断，而是用创新统计检验这些声明是否诚实。</div>

@@ -34,7 +34,7 @@ const format = (value) => value.toFixed(2);
 export default function KalmanStepExplorer() {
   const [processNoise, setProcessNoise] = useState(0.8);
   const [measurementNoise, setMeasurementNoise] = useState(4);
-  const [step, setStep] = useState(4);
+  const [step, setStep] = useState(0);
   const steps = useMemo(
     () => runScalarFilter(processNoise, measurementNoise),
     [processNoise, measurementNoise],
@@ -122,9 +122,10 @@ export default function KalmanStepExplorer() {
           <small>模型走一步，方差增加 <StudyMath expression="Q" />。</small>
         </div>
         <div className="step-equation">
-          <span>② 创新（测量 − 预测）</span>
+          <span>② 创新与创新方差</span>
           <StudyMath expression={`y_k=z_k-\\hat x_k^-=${format(current.innovation)}`} display />
-          <small>创新越大，说明新证据与预测越不一致。</small>
+          <StudyMath expression={`S_k=P_k^-+R=${format(current.innovationVariance)}`} display />
+          <small>创新必须与自己的方差 <StudyMath expression="S_k" /> 一起解释。</small>
         </div>
         <div className="step-equation step-equation-accent">
           <span>③ 卡尔曼增益</span>
@@ -132,9 +133,10 @@ export default function KalmanStepExplorer() {
           <small><StudyMath expression="K_k" /> 是本次应该向测量靠近的比例，不是永久常数。</small>
         </div>
         <div className="step-equation">
-          <span>④ 更新后的状态</span>
+          <span>④ 更新状态与方差</span>
           <StudyMath expression={`\\hat x_k^+=\\hat x_k^-+K_ky_k=${format(current.estimate)}`} display />
-          <small>估计落在预测与测量之间，位置由 <StudyMath expression="K_k" /> 决定。</small>
+          <StudyMath expression={`P_k^+=(1-K_k)P_k^-=${format(current.variance)}`} display />
+          <small>估计落在预测与测量之间，同时记录吸收证据后剩余的不确定性。</small>
         </div>
       </div>
 

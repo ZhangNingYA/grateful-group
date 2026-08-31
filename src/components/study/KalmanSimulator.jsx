@@ -94,6 +94,12 @@ export default function KalmanSimulator() {
     () => runFilter(processNoise, measurementNoise, scenario, seed),
     [processNoise, measurementNoise, scenario, seed],
   );
+  const repeatedEstimateError = useMemo(() => {
+    const runs = Array.from({ length: 24 }, (_, index) => (
+      runFilter(processNoise, measurementNoise, scenario, index + 101).estimateError
+    ));
+    return runs.reduce((sum, value) => sum + value, 0) / runs.length;
+  }, [processNoise, measurementNoise, scenario]);
   const values = result.points.flatMap((point) => [
     point.truth,
     point.measurement,
@@ -112,9 +118,11 @@ export default function KalmanSimulator() {
       return `L ${xAt(index).toFixed(2)} ${yAt(point.estimate - Math.sqrt(point.covariance) * 2).toFixed(2)}`;
     }).join(' ')} Z`;
 
-  const interpretation = processNoise > measurementNoise
-    ? '$Q>R$：模型本身更不可信，估计会更快跟随传感器。'
-    : '$R>Q$：传感器更不可信，估计会保持更平滑。';
+  const interpretation = result.averageGain > 0.65
+    ? `当前平均增益为 $\\bar K=${result.averageGain.toFixed(3)}$：更新明显偏向新测量，响应较快，也会带入更多测量抖动。`
+    : result.averageGain < 0.35
+      ? `当前平均增益为 $\\bar K=${result.averageGain.toFixed(3)}$：更新保留更多先验，曲线较平滑，也更可能落后于真实变化。`
+      : `当前平均增益为 $\\bar K=${result.averageGain.toFixed(3)}$：预测与测量都对更新保留了明显影响。`;
 
   return (
     <section className="simulator-card" data-study-step="simulator" aria-labelledby="simulator-title">
@@ -178,9 +186,10 @@ export default function KalmanSimulator() {
         </label>
       </div>
 
-      <div className="simulator-stats">
-        <div><span>测量 <StudyMath expression={'\\operatorname{RMSE}(z)'} /></span><StudyMath expression={result.measurementError.toFixed(2)} /></div>
-        <div><span>估计 <StudyMath expression={'\\operatorname{RMSE}(\\hat x)'} /></span><StudyMath expression={result.estimateError.toFixed(2)} /></div>
+      <div className="simulator-stats" aria-live="polite">
+        <div><span>本次测量 <StudyMath expression={'\\operatorname{RMSE}(z)'} /></span><StudyMath expression={result.measurementError.toFixed(2)} /></div>
+        <div><span>本次估计 <StudyMath expression={'\\operatorname{RMSE}(\\hat x)'} /></span><StudyMath expression={result.estimateError.toFixed(2)} /></div>
+        <div><span>24 次平均估计 RMSE</span><StudyMath expression={repeatedEstimateError.toFixed(2)} /></div>
         <div><span>平均 <StudyMath expression={'\\bar K'} /></span><StudyMath expression={result.averageGain.toFixed(3)} /></div>
         <div><span>末步 <StudyMath expression={'\\sigma'} /></span><StudyMath expression={Math.sqrt(result.latest.covariance).toFixed(2)} /></div>
       </div>

@@ -6,6 +6,7 @@ updatedDate: '2026-08-31'
 mode: 'derivation'
 subject: 'Derivation'
 part: 2
+estimatedMinutes: 65
 ---
 
 import KalmanFormulaAtlas from '../../components/study/KalmanFormulaAtlas.jsx';
@@ -96,6 +97,8 @@ $$
 
 ### 用最小均方误差找到增益
 
+为让矩阵式更易读，下面暂时使用简写：$\hat x^-\equiv\hat x_{k|k-1}$、$\hat x^+\equiv\hat x_{k|k}$，$P^-$ 和 $P^+$ 也采用相同约定。上标表示这一步测量进入更新之前或之后，不是正负号。
+
 考虑所有形如
 
 $$
@@ -114,7 +117,20 @@ $$
 P^+(K)=(I-KH)P^-(I-KH)^T+KRK^T.
 $$
 
-最小化 $\operatorname{tr}P^+(K)$（即最小化各状态误差方差之和）得到：
+令 $S=HP^-H^T+R$，展开并利用 $P^-=P^{-T}$：
+
+$$
+P^+(K)=P^- - KHP^- - P^-H^TK^T+KSK^T.
+$$
+
+最小化 $\operatorname{tr}P^+(K)$，就是最小化各状态误差方差之和。对 $K$ 求导并令其为零：
+
+$$
+\frac{\partial\,\operatorname{tr}P^+}{\partial K}
+=-2P^-H^T+2KS=0.
+$$
+
+当 $S$ 可逆时，由此得到：
 
 $$
 K=P^-H^T(HP^-H^T+R)^{-1}=P^-H^TS^{-1}.
@@ -142,7 +158,7 @@ $$
 P^+=(I-KH)P^-(I-KH)^T+KRK^T.
 $$
 
-它在精确算术下与简化式相同，却更能抵抗浮点舍入造成的非对称或负特征值。
+代入上面得到的最优 $K$ 后，它在精确算术下与简化式相同，却更能抵抗浮点舍入造成的非对称或负特征值。
 
 <KalmanStepExplorer client:visible />
 
@@ -182,6 +198,9 @@ $$
 
 到这里，预测、创新、增益和更新都已经有了来由。下面的公式图谱用于把完整递推重新收拢在一起：先按顺序复盘，再把它当成以后查阅符号、维度和结构检查的索引。
 
-<KalmanFormulaAtlas client:visible />
+<details className="formula-atlas-disclosure">
+  <summary><span>可选参考</span><strong>打开动态公式图谱</strong></summary>
+  <KalmanFormulaAtlas client:visible />
+</details>
 
 <div className="study-note"><strong>本章结论</strong><br />预测阶段传播模型与不确定性；更新阶段用创新携带的新信息修正状态；卡尔曼增益是最小均方误差意义下的最优线性权重。下一章把这些统计量放回实验，研究参数如何改变行为。</div>
