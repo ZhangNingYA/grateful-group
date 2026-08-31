@@ -4,7 +4,6 @@ import type { MarkdownHeading } from 'astro';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import StudyMath from '../components/study/StudyMath.jsx';
 import 'katex/dist/katex.min.css';
 import '../styles/study.css';
 
@@ -73,14 +72,6 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
               <span class="textbook-reading-time">约 {estimatedMinutes} 分钟 · {sections.length} 个单元</span>
             </div>
           </div>
-          <div class="textbook-cover-diagram" aria-label="本章学习循环">
-            <div class="diagram-orbit diagram-orbit-one"></div>
-            <div class="diagram-orbit diagram-orbit-two"></div>
-            <div class="diagram-core"><StudyMath expression={'\\hat x'} /><small>estimate</small></div>
-            <span class="diagram-label diagram-label-top">model</span>
-            <span class="diagram-label diagram-label-right">evidence</span>
-            <span class="diagram-label diagram-label-bottom">feedback</span>
-          </div>
         </div>
         <div class="textbook-cover-footer">
           <span>Published <FormattedDate date={pubDate} /></span>
@@ -104,8 +95,6 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
               </li>
             ))}
           </ol>
-          <div class="rail-rule"></div>
-          <p class="rail-note">这不是线性文章。可以先实验，再回到公式；每次回来都从上次留下的问题继续。</p>
         </div>
       </aside>
 
@@ -115,10 +104,6 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
         data-study-title={title}
         data-study-description={description}
       >
-        <div class="textbook-introduction">
-          <span class="textbook-label">How to use this chapter</span>
-          <p>把它当成一本可以操作的教科书：先形成预测，再让数据反驳它；先写下自己的解释，再查看下一层公式。页面会记住你看过的章节和留下的笔记。</p>
-        </div>
         <slot />
         {sequenceIndex >= 0 && (
           <nav class="textbook-course-nav" aria-label="课程章节导航">
@@ -132,35 +117,8 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
             )}
           </nav>
         )}
-        <footer class="textbook-endnote">
-          <span>End of chapter</span>
-          <a href="/study/">回到 Study desk →</a>
-        </footer>
       </article>
 
-      <aside class="textbook-inspector" aria-label="学习状态">
-        <div class="inspector-sticky">
-          <div class="inspector-card inspector-progress">
-            <div class="inspector-card-head"><span>Chapter progress</span><b data-study-progress-percent>0%</b></div>
-            <div class="inspector-progress-track"><span data-study-progress-bar></span></div>
-            <p><strong data-study-progress-count>00</strong> / {String(sections.length).padStart(2, '0')} sections explored</p>
-          </div>
-          <div class="inspector-card inspector-current">
-            <span class="textbook-label">现在所在</span>
-            <strong data-study-current>开篇</strong>
-            <span>滚动到下一节，页面会自动更新。</span>
-          </div>
-          <div class="inspector-card inspector-glossary">
-            <span class="textbook-label">本章词典</span>
-            <dl>
-              <div><dt>状态 <StudyMath expression="x_k" /></dt><dd>真正想知道的量</dd></div>
-              <div><dt>测量 <StudyMath expression="z_k" /></dt><dd>传感器给出的证据</dd></div>
-              <div><dt>协方差 <StudyMath expression="P_k" /></dt><dd>对估计不确定性的量化</dd></div>
-              <div><dt>增益 <StudyMath expression="K_k" /></dt><dd>这次如何映射创新</dd></div>
-            </dl>
-          </div>
-        </div>
-      </aside>
     </main>
 
     <script
@@ -174,50 +132,13 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
       })}
     ></script>
 
-    <script define:vars={{ sectionCount: sections.length, sectionSlugs: sections.map((section) => section.slug) }}>
-      const progressKey = `textbook-progress:${window.location.pathname}`;
+    <script define:vars={{ sectionSlugs: sections.map((section) => section.slug) }}>
       const headings = Array.from(document.querySelectorAll('.textbook-content h2'));
       const navLinks = Array.from(document.querySelectorAll('[data-study-nav-link]'));
-      const completed = new Set();
-      const progressBar = document.querySelector('[data-study-progress-bar]');
-      const progressPercent = document.querySelector('[data-study-progress-percent]');
-      const progressCount = document.querySelector('[data-study-progress-count]');
-      const currentLabel = document.querySelector('[data-study-current]');
-
-      document.querySelectorAll('.textbook-content h2').forEach((heading) => {
-        if (heading.id) heading.dataset.studySection = heading.id;
-      });
-
-      try {
-        JSON.parse(window.localStorage.getItem(progressKey) || '[]').forEach((key) => completed.add(key));
-      } catch {
-        // The textbook remains usable when storage is disabled.
-      }
-
-      const updateProgress = () => {
-        const amount = Math.min(completed.size, sectionCount);
-        const percent = sectionCount ? Math.round((amount / sectionCount) * 100) : 0;
-        if (progressBar) progressBar.style.width = `${percent}%`;
-        if (progressPercent) progressPercent.textContent = `${percent}%`;
-        if (progressCount) progressCount.textContent = String(amount).padStart(2, '0');
-      };
-
-      const markComplete = (slug) => {
-        if (!slug) return;
-        completed.add(slug);
-        try {
-          window.localStorage.setItem(progressKey, JSON.stringify([...completed]));
-        } catch {
-          // Ignore persistence failures.
-        }
-        updateProgress();
-      };
 
       const setCurrent = (slug) => {
-        const heading = document.getElementById(slug);
-        if (!heading) return;
+        if (!document.getElementById(slug)) return;
         navLinks.forEach((link) => link.classList.toggle('is-current', link.dataset.studyNavLink === slug));
-        if (currentLabel) currentLabel.textContent = heading.textContent || '当前章节';
       };
 
       if ('IntersectionObserver' in window) {
@@ -225,7 +146,6 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
           entries.forEach((entry) => {
             if (!entry.isIntersecting) return;
             const slug = entry.target.getAttribute('id');
-            markComplete(slug);
             setCurrent(slug);
           });
         }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
@@ -233,7 +153,6 @@ const nextChapter = sequenceIndex >= 0 ? kalmanSequence[sequenceIndex + 1] : und
       }
 
       navLinks.forEach((link) => link.addEventListener('click', () => setCurrent(link.dataset.studyNavLink)));
-      updateProgress();
       setCurrent(sectionSlugs[0]);
     </script>
   </body>
