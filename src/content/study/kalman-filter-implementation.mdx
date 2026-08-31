@@ -101,7 +101,7 @@ $$
 推荐至少覆盖以下测试类别：
 
 <div className="practice-checklist">
-  <div><span>极限测试</span><strong>$R\to0\Rightarrow\hat x^+\to z$</strong><p>几乎无噪声的测量应主导后验；$R\to\infty$ 则应保留预测。</p></div>
+  <div><span>极限测试</span><strong>标量 $H=1$：$R\to0\Rightarrow\hat x^+\to z$</strong><p>几乎无噪声的直接测量应主导后验；$R\to\infty$ 则应保留预测。矩阵情形要按测量空间方向解释。</p></div>
   <div><span>结构测试</span><strong>$P^+=P^{+T}\succeq0$</strong><p>每次更新后检查对称性和最小特征值，捕获数值不稳定。</p></div>
   <div><span>单调性测试</span><strong>$0\le K\le1$</strong><p>标量正方差模型中，后验必须位于先验与测量之间。</p></div>
   <div><span>统计测试</span><strong>$\mathbb E[\epsilon]\approx p$</strong><p>在已知真值的模拟数据上，批量检查 NIS 是否与自由度相符。</p></div>

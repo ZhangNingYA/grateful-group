@@ -94,11 +94,13 @@ export default function KalmanSimulator() {
     () => runFilter(processNoise, measurementNoise, scenario, seed),
     [processNoise, measurementNoise, scenario, seed],
   );
-  const repeatedEstimateError = useMemo(() => {
+  const repeatedEstimateStats = useMemo(() => {
     const runs = Array.from({ length: 24 }, (_, index) => (
       runFilter(processNoise, measurementNoise, scenario, index + 101).estimateError
     ));
-    return runs.reduce((sum, value) => sum + value, 0) / runs.length;
+    const mean = runs.reduce((sum, value) => sum + value, 0) / runs.length;
+    const variance = runs.reduce((sum, value) => sum + (value - mean) ** 2, 0) / Math.max(1, runs.length - 1);
+    return { mean, standardDeviation: Math.sqrt(variance) };
   }, [processNoise, measurementNoise, scenario]);
   const values = result.points.flatMap((point) => [
     point.truth,
@@ -151,7 +153,7 @@ export default function KalmanSimulator() {
         </div>
       </div>
 
-      <svg className="simulator-chart" viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label="真实状态、传感器测量、卡尔曼估计和百分之九十五不确定性区间">
+      <svg className="simulator-chart" viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label="真实状态、传感器测量、卡尔曼估计和百分之九十五不确定性区间；横轴为离散时间 k，纵轴为状态值">
         {[0.2, 0.5, 0.8].map((ratio) => {
           const y = PAD.top + ratio * chartHeight;
           return <line key={ratio} className="chart-grid" x1={PAD.left} x2={WIDTH - PAD.right} y1={y} y2={y} />;
@@ -164,6 +166,9 @@ export default function KalmanSimulator() {
         {result.points.map((point, index) => (
           <circle key={index} className="chart-measurement" cx={xAt(index)} cy={yAt(point.measurement)} r="3" />
         ))}
+        <text className="chart-axis-label" x={PAD.left + 5} y={PAD.top + 13}>状态值 <tspan className="chart-axis-math">xₖ</tspan></text>
+        <text className="chart-axis-label" x={PAD.left} y={HEIGHT - 8}>k=0</text>
+        <text className="chart-axis-label" x={WIDTH - PAD.right} y={HEIGHT - 8} textAnchor="end">k={STEPS - 1}</text>
       </svg>
 
       <div className="simulator-legend" aria-hidden="true">
@@ -189,7 +194,7 @@ export default function KalmanSimulator() {
       <div className="simulator-stats" aria-live="polite">
         <div><span>本次测量 <StudyMath expression={'\\operatorname{RMSE}(z)'} /></span><StudyMath expression={result.measurementError.toFixed(2)} /></div>
         <div><span>本次估计 <StudyMath expression={'\\operatorname{RMSE}(\\hat x)'} /></span><StudyMath expression={result.estimateError.toFixed(2)} /></div>
-        <div><span>24 次平均估计 RMSE</span><StudyMath expression={repeatedEstimateError.toFixed(2)} /></div>
+        <div><span>24 次平均估计 RMSE</span><StudyMath expression={repeatedEstimateStats.mean.toFixed(2)} /><small>样本标准差 ±{repeatedEstimateStats.standardDeviation.toFixed(2)}</small></div>
         <div><span>平均 <StudyMath expression={'\\bar K'} /></span><StudyMath expression={result.averageGain.toFixed(3)} /></div>
         <div><span>末步 <StudyMath expression={'\\sigma'} /></span><StudyMath expression={Math.sqrt(result.latest.covariance).toFixed(2)} /></div>
       </div>

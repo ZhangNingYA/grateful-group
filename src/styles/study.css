@@ -313,6 +313,15 @@
 .formula-atlas-disclosure > summary span { color: var(--textbook-muted); font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .formula-atlas-disclosure > summary strong { margin-left: auto; font-size: 0.76rem; }
 .formula-atlas-disclosure .formula-atlas { margin: 0; border-right: 0; border-bottom: 0; border-left: 0; box-shadow: none; }
+.study-disclosure { margin: 1.6rem 0 2rem; padding: 0 17px 17px; border: 1px solid #cbd9e7; background: rgba(247, 250, 255, 0.72); }
+.study-disclosure > summary { display: flex; align-items: center; gap: 12px; margin: 0 -17px 14px; padding: 13px 16px; color: var(--textbook-blue); cursor: pointer; list-style: none; }
+.study-disclosure > summary::-webkit-details-marker { display: none; }
+.study-disclosure > summary::after { content: '+'; font-family: var(--textbook-serif); font-size: 1.25rem; }
+.study-disclosure[open] > summary::after { content: '−'; }
+.study-disclosure > summary span { color: var(--textbook-muted); font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.study-disclosure > summary strong { margin-left: auto; font-size: 0.76rem; }
+.study-disclosure > p { font-size: 0.88rem; }
+.study-disclosure > :last-child { margin-bottom: 0; }
 
 /* Step explorer */
 .step-explorer { margin: 2.4rem 0 3rem; padding: 22px; border: 1px solid #bbcde2; background: #f5f8fb; box-shadow: 7px 7px 0 rgba(47, 110, 158, 0.1); }
@@ -379,6 +388,8 @@
 .chart-measurement { fill: var(--textbook-coral); opacity: 0.78; }
 .chart-truth { fill: none; stroke: #536e83; stroke-dasharray: 6 5; stroke-width: 2; }
 .chart-estimate { fill: none; stroke: var(--textbook-teal); stroke-width: 3; }
+.chart-axis-label { fill: #6f8b82; font-family: var(--textbook-sans); font-size: 10px; letter-spacing: 0.02em; }
+.chart-axis-math { font-family: var(--textbook-serif); font-size: 12px; font-style: italic; }
 .simulator-legend { display: flex; flex-wrap: wrap; gap: 10px 19px; margin-top: 10px; color: var(--textbook-muted); font-size: 0.68rem; }
 .simulator-legend > span::before { display: inline-block; width: 19px; height: 2px; margin: 0 6px 3px 0; background: currentColor; content: ''; }
 .simulator-legend .legend-measurement::before { width: 7px; height: 7px; margin-bottom: 1px; border-radius: 50%; background: var(--textbook-coral); }
@@ -391,6 +402,7 @@
 .simulator-stats div { padding: 11px; background: #eaf5f0; }
 .simulator-stats > div > span { display: block; color: var(--textbook-muted); font-size: 0.64rem; }
 .simulator-stats strong, .simulator-stats > div > .study-math { display: block; margin-top: 4px; color: var(--textbook-ink); font-size: 0.95rem; }
+.simulator-stats > div > small { display: block; margin-top: 3px; color: #6f8b82; font-size: 0.61rem; line-height: 1.35; }
 .simulator-interpretation { margin: 16px 0 0; color: #426866; font-size: 0.75rem; line-height: 1.65; }
 .simulator-interpretation b { color: var(--textbook-teal); }
 
@@ -438,12 +450,13 @@
 .practice-route span { display: inline-flex; align-items: center; gap: 4px; }
 .practice-route b { color: var(--textbook-coral); font-family: var(--textbook-serif); font-size: 1rem; }
 .practice-route i { color: #bd9970; font-style: normal; }
-.practice-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: 9px; }
+.practice-form { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: end; gap: 9px; }
 .practice-form label { display: grid; gap: 7px; color: #705631; font-size: 0.7rem; font-weight: 700; }
 .practice-form label > span { display: inline-flex; align-items: center; gap: 4px; }
 .practice-form input { width: 100%; min-height: 40px; padding: 8px 9px; border: 1px solid #d8c49a; border-radius: 4px; background: #fff; color: var(--textbook-ink); font: inherit; font-size: 0.85rem; }
 .practice-form input:focus { border-color: var(--textbook-coral); }
 .practice-check { min-height: 40px; padding: 8px 13px; border-color: var(--textbook-coral); background: var(--textbook-coral); color: #fff; font-weight: 700; }
+.practice-check { grid-column: 1 / -1; justify-self: start; }
 .practice-check:hover { border-color: #b54838; background: #b54838; color: #fff; transform: translateY(-1px); }
 .practice-feedback { min-height: 23px; }
 .practice-feedback p { margin: 12px 0 0; font-size: 0.78rem; line-height: 1.6; }
