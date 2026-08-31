@@ -12,7 +12,13 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
   aria-hidden="true"
   style={`--tend-accent: ${accent}; --tend-glow: ${glow};`}
 >
-  <span class="tend-text">Ten<span class="tend-d">d<span class="tend-mark"></span></span></span>
+  <span class="tend-symbol">
+    <svg viewBox="0 0 24 24" role="presentation">
+      <path d="M3.5 17.25c4.4 0 5.35-2.9 7.05-6.05C12.45 7.7 15 6 19.2 6" />
+      <circle cx="21" cy="6" r="1.55" />
+    </svg>
+  </span>
+  <span class="tend-text">Tend</span>
   <span class="care-line"></span>
 </span>
 
@@ -23,6 +29,7 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
     width: max-content;
     height: 26px;
     align-items: center;
+    gap: 7px;
     color: currentColor;
     font: inherit;
     line-height: 1;
@@ -40,10 +47,34 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
     line-height: 24px;
   }
 
-  .tend-d {
-    position: relative;
-    display: inline-block;
-    font: inherit;
+  .tend-symbol {
+    display: inline-grid;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    place-items: center;
+  }
+
+  .tend-symbol svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .tend-symbol path {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-width: 2.15;
+  }
+
+  .tend-symbol circle {
+    fill: var(--tend-accent);
+    filter: drop-shadow(0 0 3px var(--tend-glow));
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: care-mark-cycle 9s ease-in-out infinite;
   }
 
   .care-line {
@@ -62,23 +93,6 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
     animation: care-line-cycle 9s ease-in-out infinite;
   }
 
-  .tend-mark {
-    position: absolute;
-    bottom: 7px;
-    left: 50%;
-    z-index: 2;
-    display: block;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--tend-accent);
-    box-shadow: 0 0 0 2px var(--tend-glow), 0 0 8px var(--tend-glow);
-    opacity: 0.55;
-    transform: translateX(-50%) scale(0.76);
-    transform-origin: center;
-    animation: care-mark-cycle 9s ease-in-out infinite;
-  }
-
   @keyframes care-line-cycle {
     0%, 20%, 100% { opacity: 0; transform: scaleX(0); }
     23% { opacity: 0.72; transform: scaleX(0.04); }
@@ -87,11 +101,11 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
   }
 
   @keyframes care-mark-cycle {
-    0%, 35%, 100% { opacity: 0.5; transform: translateX(-50%) scale(0.72); }
-    43% { opacity: 1; transform: translateX(-50%) scale(1.16); }
-    51% { opacity: 0.72; transform: translateX(-50%) scale(0.82); }
-    59% { opacity: 1; transform: translateX(-50%) scale(1.06); }
-    69%, 90% { opacity: 0.58; transform: translateX(-50%) scale(0.76); }
+    0%, 35%, 100% { opacity: 0.7; transform: scale(0.86); }
+    43% { opacity: 1; transform: scale(1.12); }
+    51% { opacity: 0.82; transform: scale(0.94); }
+    59% { opacity: 1; transform: scale(1.06); }
+    69%, 90% { opacity: 0.74; transform: scale(0.9); }
   }
 
   @keyframes care-line-hover {
@@ -102,8 +116,8 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
   }
 
   @keyframes care-mark-hover {
-    0%, 45%, 100% { opacity: 0.58; transform: translateX(-50%) scale(0.76); }
-    72% { opacity: 1; transform: translateX(-50%) scale(1.16); }
+    0%, 45%, 100% { opacity: 0.74; transform: scale(0.9); }
+    72% { opacity: 1; transform: scale(1.16); }
   }
 
   @media (hover: hover) {
@@ -111,14 +125,14 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
       animation: care-line-hover 1.5s ease-in-out both;
     }
 
-    :global(.brand:hover) .tend-mark {
+    :global(.brand:hover) .tend-symbol circle {
       animation: care-mark-hover 1.5s ease-in-out both;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .care-line,
-    .tend-mark {
+    .tend-symbol circle {
       animation: none;
     }
 
@@ -127,9 +141,9 @@ const { accent = '#d9654b', glow = 'rgba(217, 101, 75, 0.22)' } = Astro.props;
       transform: scaleX(0.24);
     }
 
-    .tend-mark {
-      opacity: 0.82;
-      transform: translateX(-50%) scale(0.82);
+    .tend-symbol circle {
+      opacity: 0.9;
+      transform: scale(0.94);
     }
   }
 </style>
