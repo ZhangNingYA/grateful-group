@@ -2,12 +2,13 @@
 title: '第 02 章：把递推式推导出来'
 description: '从条件期望、误差传播和高斯融合出发，逐步推导卡尔曼滤波的预测、创新、增益与协方差更新。'
 pubDate: '2026-08-30'
-updatedDate: '2026-08-30'
+updatedDate: '2026-08-31'
 mode: 'derivation'
 subject: 'Derivation'
 part: 2
 ---
 
+import KalmanFormulaAtlas from '../../components/study/KalmanFormulaAtlas.jsx';
 import KalmanStepExplorer from '../../components/study/KalmanStepExplorer.jsx';
 import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 
@@ -178,5 +179,9 @@ $$
 />
 
 <div className="worked-example"><span>完整数值例题</span><p>给定 $\hat x^-=10\,\mathrm m$、$P^-=2\,\mathrm m^2$、$z=12\,\mathrm m$、$R=3\,\mathrm m^2$：$y=2\,\mathrm m$，$S=5\,\mathrm m^2$，$K=0.4$，$\hat x^+=10.8\,\mathrm m$，$P^+=1.2\,\mathrm m^2$。后验均值位于 10 和 12 之间，后验方差小于先验方差；这两个结构检查比小数本身更重要。</p></div>
+
+到这里，预测、创新、增益和更新都已经有了来由。下面的公式图谱用于把完整递推重新收拢在一起：先按顺序复盘，再把它当成以后查阅符号、维度和结构检查的索引。
+
+<KalmanFormulaAtlas client:visible />
 
 <div className="study-note"><strong>本章结论</strong><br />预测阶段传播模型与不确定性；更新阶段用创新携带的新信息修正状态；卡尔曼增益是最小均方误差意义下的最优线性权重。下一章把这些统计量放回实验，研究参数如何改变行为。</div>

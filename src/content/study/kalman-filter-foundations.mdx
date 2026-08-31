@@ -2,13 +2,12 @@
 title: '第 01 章：状态、证据与概率模型'
 description: '从隐藏状态和测量开始，建立线性—高斯状态空间模型，并学会读懂卡尔曼滤波的记号。'
 pubDate: '2026-08-30'
-updatedDate: '2026-08-30'
+updatedDate: '2026-08-31'
 mode: 'reading'
 subject: 'Foundations'
 part: 1
 ---
 
-import KalmanFormulaAtlas from '../../components/study/KalmanFormulaAtlas.jsx';
 import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
 
 ## 01 / 三个容易混淆的量
@@ -25,25 +24,39 @@ import StudyCheckpoint from '../../components/study/StudyCheckpoint.jsx';
   <div className="notation-guide-head"><strong>记号速查</strong><span>每个符号都有职责</span></div>
   <dl>
     <div><dt>$x_k$</dt><dd>物理世界中的真实状态，不带帽子。</dd></div>
+    <div><dt>$z_k$</dt><dd>传感器在时刻 $k$ 给出的测量，是证据而不是真值。</dd></div>
     <div><dt>$\hat x_{k|k-1}$</dt><dd>本次测量前的预测均值，即先验。</dd></div>
     <div><dt>$\hat x_{k|k}$</dt><dd>吸收本次测量后的估计均值，即后验。</dd></div>
     <div><dt>$P$</dt><dd>估计误差的方差或协方差，不是一次实际误差。</dd></div>
-    <div><dt>$Q$</dt><dd>过程噪声协方差：模型遗漏的状态变化有多大。</dd></div>
-    <div><dt>$R$</dt><dd>测量噪声协方差：传感器读数有多不可靠。</dd></div>
+    <div><dt>$\sqrt P$</dt><dd>估计误差的标准差，与状态具有相同单位。</dd></div>
   </dl>
 </div>
 
-<StudyCheckpoint
-  client:visible
-  id="foundations-symbols"
-  question="GPS 输出 $12.4\,\mathrm m$。哪个说法最准确？"
-  options={['它就是 $x_k$，因为 GPS 测到了位置', '它是 $z_k$，因为读数仍然含有测量噪声', '它是 $P_k$，因为位置有单位']}
-  answer={1}
-  hint="先问：这个数字是否能保证等于物理世界的真实位置？"
-  explanation="GPS 输出是观测 $z_k$。只有把观测和运动模型融合，滤波器才得到 $\hat x_{k|k}$；$P_k$ 则描述估计的不确定性，单位是位置单位的平方。"
-/>
+## 02 / 估计为什么必须带方差
 
-## 02 / 最小模型：随机游走与带噪测量
+一个预测数字不能表达我们有多相信它。设两个滤波器给出的先验均值都是 $10\,\mathrm m$：一个认为自己的标准差只有 $0.1\,\mathrm m$，另一个认为标准差是 $5\,\mathrm m$。面对同一个 $12\,\mathrm m$ 测量，前者有理由怀疑传感器，后者则应更愿意修正自己。均值相同，并不代表它们拥有相同的信息。
+
+因此，在看到第 $k$ 次测量前，滤波器同时维护条件均值和条件均方误差：
+
+$$
+\hat x_{k|k-1}=\mathrm E[x_k\mid z_{1:k-1}],
+$$
+
+$$
+P_{k|k-1}=\mathrm E\!\left[(x_k-\hat x_{k|k-1})^2\mid z_{1:k-1}\right].
+$$
+
+在线性—高斯模型中，这两个量完整描述先验分布：
+
+$$
+x_k\mid z_{1:k-1}\sim\mathcal N(\hat x_{k|k-1},P_{k|k-1}).
+$$
+
+$P_{k|k-1}$ 不是“这一次实际错了多少”，因为真实 $x_k$ 往往未知；它是算法根据模型和历史数据，对自身误差尺度作出的统计判断。若状态单位是米，$P$ 的单位就是平方米，标准差 $\sqrt P$ 才以米为单位。
+
+现在问题变成了：均值和方差怎样从上一时刻走到这一时刻？要回答它，必须先明确世界如何变化、传感器如何产生读数。
+
+## 03 / 最小模型：随机游走与带噪测量
 
 先从最小而完整的模型开始：状态大致保持不变，但每一步可能被未建模扰动推开；传感器直接测量状态，却带有随机误差。
 
@@ -62,18 +75,32 @@ $w_k$ 和 $v_k$ 是一次采样实际抽到的误差；$Q=\mathrm E[w_k^2]$ 与 
   <p>若上一时刻 $x_{k-1}=10\,\mathrm m$，这一步的过程误差恰好是 $w_k=0.3\,\mathrm m$，则 $x_k=10.3\,\mathrm m$。若测量误差又是 $v_k=-1.1\,\mathrm m$，传感器读数为 $z_k=9.2\,\mathrm m$。单次的 $0.3$ 和 $-1.1$ 不是 $Q$、$R$；它们只是由这两个分布产生的样本。</p>
 </div>
 
-经典卡尔曼滤波的精确性来自三组假设：关系是线性的；初始状态和噪声是高斯的；过程噪声、测量噪声以及初始误差彼此不相关，并且噪声在时间上是白的。高斯假设的价值在于：一个高斯分布可以被均值和协方差完整描述，所以每次更新只需携带有限个数字。
-
-<div className="study-note"><strong>高斯假设的科学边界</strong><br />在线性—高斯模型中，卡尔曼递推给出精确的贝叶斯后验。若系统仍线性、噪声只满足给定的二阶矩条件而不服从高斯分布，同一递推仍给出线性最小均方误差估计，但均值与协方差不再能够描述完整后验。</div>
+经典卡尔曼滤波的精确性来自三组假设：关系是线性的；初始状态和噪声是高斯的；过程噪声、测量噪声与初始误差彼此独立，并且两类噪声在时间上都是白的。写成标量形式如下；$\delta_{kj}$ 在 $k=j$ 时等于 $1$，其余时候等于 $0$。
 
 <div className="assumption-grid">
   <div><div>$x_0\sim\mathcal N(\hat x_0,P_0)$</div><p>初始信念由均值和方差给出；$P_0$ 大表示起点不确定。</p></div>
-  <div><div>$\mathrm E[w_k]=0$</div><p>过程扰动没有系统性偏向；若有偏置，应把偏置加入状态。</p></div>
-  <div><div>$\mathrm E[w_kw_j^T]=\delta_{kj}Q_k$</div><p>过程噪声在不同时间不相关，$\delta_{kj}$ 是克罗内克 delta。</p></div>
-  <div><div>$\mathrm E[w_kv_j^T]=0$</div><p>过程噪声和测量噪声不相关；否则标准递推需加入交叉协方差。</p></div>
+  <div><div>$\mathrm E[w_k]=\mathrm E[v_k]=0$</div><p>两类噪声都没有系统性偏向；若有偏置，应把偏置加入状态。</p></div>
+  <div><div>$\mathrm E[w_kw_j]=\delta_{kj}Q$</div><p>过程噪声在不同时刻不相关，同一时刻的方差为 $Q$。</p></div>
+  <div><div>$\mathrm E[v_kv_j]=\delta_{kj}R$</div><p>测量噪声也在不同时刻不相关，同一时刻的方差为 $R$。</p></div>
+  <div><div>$\mathrm E[w_kv_j]=0$</div><p>任意时刻的过程噪声与测量噪声不相关。</p></div>
+  <div><div>$x_0\perp\{w_k,v_k\}_{k\ge1}$</div><p>初始状态与之后的噪声独立；否则递推必须保留交叉协方差。</p></div>
 </div>
 
-## 03 / 推广到真实状态：矩阵模型
+高斯假设的价值在于：一个高斯分布可以被均值和方差完整描述，所以递推只需携带有限个数字。
+
+<div className="study-note"><strong>高斯假设的科学边界</strong><br />在线性—高斯模型中，卡尔曼递推给出精确的贝叶斯后验。若系统仍线性、噪声只满足给定的二阶矩条件而不服从高斯分布，同一递推仍给出线性最小均方误差估计，但均值与方差不再能够描述完整后验。</div>
+
+<StudyCheckpoint
+  client:visible
+  id="foundations-variance"
+  question="位置传感器的测量误差标准差是 $2\,\mathrm m$。模型中的测量方差 $R$ 应填多少？"
+  options={['$2\,\mathrm m$，直接使用标准差', '$4\,\mathrm m^2$，对标准差平方', '$\sqrt 2\,\mathrm m$，对标准差开方']}
+  answer={1}
+  hint="先检查 $R=\mathrm E[v_k^2]$ 的单位。"
+  explanation="$R$ 是测量噪声的方差，因此 $R=(2\,\mathrm m)^2=4\,\mathrm m^2$。标准差与位置同单位，方差的单位则是位置单位的平方。"
+/>
+
+## 04 / 推广到真实状态：矩阵模型
 
 实际应用往往不只估计一个位置。把位置和速度放进状态向量：
 
@@ -81,7 +108,7 @@ $$
 x_k=F_kx_{k-1}+B_ku_k+w_k,\qquad z_k=H_kx_k+v_k.
 $$
 
-其中 $x_k\in\mathbb R^n$ 是 $n$ 维状态，$z_k\in\mathbb R^p$ 是 $p$ 维测量；$F_k$ 描述状态如何演化，$B_k u_k$ 是已知控制输入，$H_k$ 把状态投影到传感器空间。$Q_k$ 是 $n\times n$ 协方差，$R_k$ 是 $p\times p$ 协方差；非对角元素表示不同噪声分量之间的相关性。
+其中 $x_k\in\mathbb R^n$ 是 $n$ 维状态，$z_k\in\mathbb R^p$ 是 $p$ 维测量；$F_k$ 描述状态如何演化，$B_k u_k$ 是已知控制输入，$H_k$ 把状态投影到传感器空间。此时标量方差 $P$、$Q$、$R$ 分别推广为估计误差、过程噪声和测量噪声的协方差矩阵；$Q_k$ 是 $n\times n$，$R_k$ 是 $p\times p$，非对角元素表示不同分量之间的相关性。
 
 以采样周期 $\Delta t$ 的常速度模型为例：
 
@@ -94,22 +121,6 @@ $$
 
 第一行是 $p_k=p_{k-1}+\Delta t\,v_{k-1}$，第二行暂时假设速度保持不变。如果 GPS 只测位置，$H=[1\ \ 0]$；速度没有被直接读出，却能通过连续的位置测量间接显现。这里的“能否估计”不是传感器是否直接输出，而是系统的动态和测量是否共同提供了足够信息。
 
-<KalmanFormulaAtlas client:visible />
+到这里，我们已经声明了滤波器的全部输入，却还没有写卡尔曼增益或更新公式。这是刻意的：下一章会从上一时刻的后验分布出发，先用状态模型得到本次先验，再让测量把它变成新的后验。
 
-## 04 / 先验为什么必须带方差
-
-在看到第 $k$ 次测量前，滤波器并不只持有一个预测数字，而是持有一个条件分布：
-
-$$
-x_k\mid z_{1:k-1}\sim\mathcal N(\hat x_{k|k-1},P_{k|k-1}).
-$$
-
-$P_{k|k-1}$ 是条件均方误差：
-
-$$
-P_{k|k-1}=\mathrm E\!\left[(x_k-\hat x_{k|k-1})^2\mid z_{1:k-1}\right].
-$$
-
-它不是“这一次错了多少”，因为真实 $x_k$ 往往未知；它是算法根据模型与历史数据对自身误差尺度的统计判断。标准差 $\sqrt P$ 才与状态有相同单位。下一章会从这个分布出发，推导预测和更新的每一行。
-
-<div className="study-note"><strong>本章结论</strong><br />卡尔曼滤波的输入不是一串裸数字，而是状态模型、测量模型、噪声协方差以及初始信念。把 $x$、$z$、$\hat x$ 和 $P$ 区分清楚，后面的推导就有了可靠的地基。</div>
+<div className="study-note"><strong>本章结论</strong><br />卡尔曼滤波的输入不是一串裸数字，而是状态模型、测量模型、噪声协方差以及初始信念。把 $x$、$z$、$\hat x$ 和 $P$ 区分清楚，下一章的每一行递推就都有明确的对象和统计依据。</div>
