@@ -129,6 +129,7 @@ export default function KalmanDiagnosticsLab() {
           <button
             key={item.id}
             type="button"
+            aria-pressed={index === caseIndex}
             className={index === caseIndex ? 'is-selected' : ''}
             onClick={() => chooseCase(index)}
           >

@@ -144,6 +144,7 @@ export default function KalmanSimulator() {
             <button
               key={key}
               type="button"
+              aria-pressed={scenario === key}
               className={scenario === key ? 'is-selected' : ''}
               onClick={() => setScenario(key)}
             >

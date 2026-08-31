@@ -57,7 +57,7 @@ export default function KalmanStoryBoard() {
           <span className="textbook-label">先看见，再推导</span>
           <h3 id="storyboard-title">一辆看不见的车，留下六次不完美的证据</h3>
         </div>
-        <button className="storyboard-play" type="button" onClick={() => {
+        <button className="storyboard-play" type="button" aria-pressed={playing} onClick={() => {
           if (frameIndex === frames.length - 1) setFrameIndex(0);
           setPlaying((value) => !value);
         }}>
@@ -87,7 +87,7 @@ export default function KalmanStoryBoard() {
         <span className="storyboard-legend-estimate">滤波估计 <StudyMath expression={'\\hat x_{k|k}'} /></span>
       </div>
 
-      <div className="storyboard-caption">
+      <div className="storyboard-caption" aria-live="polite">
         <div><span>{frame.title}</span><strong><StudyMath expression={`k=${frameIndex + 1}`} /></strong></div>
         <p>{frame.note}</p>
         <div className="storyboard-numbers">

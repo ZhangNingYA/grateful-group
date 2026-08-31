@@ -114,7 +114,9 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .storyboard-current-estimate { animation: storyboard-pulse 1.6s ease-in-out infinite; }
-  .study-card, .storyboard, .formula-atlas { animation: textbook-rise 460ms ease both; }
+  .study-card, .study-lead-card, .storyboard, .formula-atlas { animation: textbook-rise 460ms ease both; }
+  .study-lead-card:nth-child(2) { animation-delay: 70ms; }
+  .study-lead-card:nth-child(3) { animation-delay: 140ms; }
 }
 
 @keyframes storyboard-pulse {
@@ -177,11 +179,17 @@
 
 /* MDX teaching blocks */
 .study-lead-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 2.2rem 0 2.9rem; }
-.study-lead-card { min-height: 150px; padding: 17px; border: 1px solid var(--textbook-line); background: var(--textbook-surface); }
-.study-lead-card > span { display: block; margin-bottom: 30px; color: var(--textbook-coral); font-family: var(--textbook-serif); font-size: 1.35rem; }
+.study-lead-card { position: relative; min-height: 150px; overflow: hidden; padding: 17px; border: 1px solid var(--textbook-line); background: var(--textbook-surface); transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+.study-lead-card::after { position: absolute; top: -28px; right: -20px; width: 92px; height: 92px; border: 1px solid rgba(216, 93, 73, 0.22); border-radius: 50%; content: ''; transform: rotate(18deg); }
+.study-lead-card:nth-child(2)::after { border-color: rgba(25, 125, 114, 0.22); transform: translate(17px, 11px) rotate(-15deg); }
+.study-lead-card:nth-child(3)::after { border-color: rgba(47, 110, 158, 0.22); transform: translate(7px, -8px) rotate(28deg); }
+.study-lead-card:hover { border-color: #b7c9d6; box-shadow: 5px 5px 0 rgba(47, 110, 158, 0.08); transform: translateY(-3px); }
+.study-lead-card > span { position: relative; z-index: 1; display: block; margin-bottom: 30px; color: var(--textbook-coral); font-family: var(--textbook-serif); font-size: 1.35rem; transition: transform 180ms ease; }
+.study-lead-card:hover > span { transform: translateX(3px); }
 .study-lead-card strong { display: block; margin-bottom: 5px; font-size: 0.9rem; }
 .study-lead-card p { margin: 0; color: var(--textbook-muted); font-size: 0.78rem; line-height: 1.6; }
-.study-note { margin: 1.8rem 0 2.2rem; padding: 16px 19px; border-left: 4px solid var(--textbook-coral); background: var(--textbook-coral-soft); color: #713a30; font-size: 0.9rem; line-height: 1.75; }
+.study-note { position: relative; margin: 1.8rem 0 2.2rem; overflow: hidden; padding: 16px 43px 16px 19px; border-left: 4px solid var(--textbook-coral); background: linear-gradient(105deg, var(--textbook-coral-soft), #fff8f3); box-shadow: 4px 4px 0 rgba(216, 93, 73, 0.06); color: #713a30; font-size: 0.9rem; line-height: 1.75; }
+.study-note::after { position: absolute; top: 4px; right: 13px; color: var(--textbook-coral); content: '↗'; font-family: var(--textbook-serif); font-size: 2rem; line-height: 1; opacity: 0.16; transform: rotate(-12deg); pointer-events: none; }
 .study-note strong { color: #713a30; }
 .study-equation-card { display: grid; grid-template-columns: minmax(0, 1fr) 205px; gap: 24px; align-items: center; margin: 1.8rem 0 2.1rem; padding: 20px; border: 1px solid #b8d8d1; background: var(--textbook-teal-soft); }
 .study-equation-card code { display: block; margin-bottom: 7px; padding: 0; background: transparent; color: var(--textbook-ink); font-family: 'SFMono-Regular', Consolas, monospace; font-size: 1.07rem; }
@@ -216,7 +224,8 @@
 .assumption-grid > div { padding: 14px 15px; border: 1px solid #d8d6e6; background: #faf9ff; }
 .assumption-grid > div > div { min-height: 35px; overflow-x: auto; color: var(--textbook-violet); font-size: 0.78rem; }
 .assumption-grid p { margin: 7px 0 0; color: var(--textbook-muted); font-size: 0.69rem; line-height: 1.55; }
-.worked-example { margin: 2rem 0 2.5rem; padding: 18px 20px; border: 1px solid #decda8; border-top: 4px solid var(--textbook-gold); background: var(--textbook-gold-soft); }
+.worked-example { position: relative; margin: 2rem 0 2.5rem; overflow: hidden; padding: 18px 44px 18px 20px; border: 1px solid #decda8; border-top: 4px solid var(--textbook-gold); background: linear-gradient(105deg, var(--textbook-gold-soft), #fffaf0); box-shadow: 5px 5px 0 rgba(168, 116, 36, 0.07); }
+.worked-example::after { position: absolute; top: 9px; right: 17px; color: var(--textbook-gold); content: '✦'; font-size: 1.35rem; opacity: 0.2; pointer-events: none; }
 .worked-example > span { display: block; margin-bottom: 8px; color: var(--textbook-gold); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .worked-example p, .worked-example li { color: #644d28; font-size: 0.82rem; line-height: 1.75; }
 .worked-example p { margin: 0 0 0.8rem; }
@@ -234,9 +243,11 @@
 .derivation-formula { min-width: 0; min-height: 32px; overflow-x: auto; color: var(--textbook-blue); font-size: 0.9rem; }
 .derivation-stack p { margin: 7px 0 0; color: var(--textbook-muted); font-size: 0.7rem; line-height: 1.5; }
 .algorithm-map { display: grid; gap: 7px; margin: 2rem 0 2.6rem; counter-reset: algorithm; }
-.algorithm-map > div { display: grid; grid-template-columns: 105px 230px minmax(0, 1fr); gap: 16px; align-items: center; padding: 13px 15px; border: 1px solid var(--textbook-line); background: var(--textbook-surface); }
+.algorithm-map > div { display: grid; grid-template-columns: 105px 230px minmax(0, 1fr); gap: 16px; align-items: center; padding: 13px 15px; border: 1px solid var(--textbook-line); background: var(--textbook-surface); transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
 .algorithm-map > div:nth-child(odd) { border-left: 3px solid var(--textbook-teal); }
 .algorithm-map > div:nth-child(even) { border-left: 3px solid var(--textbook-blue); }
+.algorithm-map > div:hover { border-color: #b7c9d6; box-shadow: 5px 5px 0 rgba(47, 110, 158, 0.08); transform: translateX(4px); }
+.algorithm-map > div:hover .algorithm-formula a { color: var(--textbook-blue); }
 .algorithm-map > div > span { color: var(--textbook-muted); font-size: 0.67rem; font-weight: 750; }
 .algorithm-formula { color: var(--textbook-ink); font-size: 0.8rem; }
 .algorithm-formula a { color: inherit; text-decoration-color: var(--textbook-coral); text-decoration-thickness: 1px; text-underline-offset: 4px; }
@@ -357,7 +368,8 @@
 .step-marker.posterior { top: 98px; color: var(--textbook-teal); }
 .step-marker.prior b, .step-marker.posterior b { color: var(--textbook-ink); }
 .step-equations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
-.step-equation { display: grid; gap: 6px; padding: 13px; border: 1px solid #d6e0e8; background: #fff; }
+.step-equation { display: grid; gap: 6px; padding: 13px; border: 1px solid #d6e0e8; background: #fff; transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+.step-equation:hover { border-color: #a9c1d3; box-shadow: 4px 4px 0 rgba(47, 110, 158, 0.07); transform: translateY(-2px); }
 .step-equation > span { color: var(--textbook-muted); font-size: 0.68rem; font-weight: 750; }
 .step-equation code { padding: 0; background: transparent; color: var(--textbook-ink); font-size: 0.78rem; }
 .step-equation > .study-math-display { min-height: 31px; color: var(--textbook-ink); font-size: 0.74rem; }
@@ -399,7 +411,12 @@
 .simulator-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 20px; padding-top: 17px; border-top: 1px solid #d4e4df; }
 .simulator-controls small { color: #75877f; font-size: 0.66rem; }
 .simulator-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(115px, 1fr)); gap: 7px; margin-top: 18px; }
-.simulator-stats div { padding: 11px; background: #eaf5f0; }
+.simulator-stats div { padding: 11px; border-top: 2px solid rgba(25, 125, 114, 0.35); background: #eaf5f0; transition: box-shadow 180ms ease, transform 180ms ease; }
+.simulator-stats div:nth-child(2) { border-top-color: rgba(216, 93, 73, 0.48); }
+.simulator-stats div:nth-child(3) { border-top-color: rgba(47, 110, 158, 0.42); }
+.simulator-stats div:nth-child(4) { border-top-color: rgba(168, 116, 36, 0.48); }
+.simulator-stats div:nth-child(5) { border-top-color: rgba(105, 83, 161, 0.42); }
+.simulator-stats div:hover { box-shadow: 3px 3px 0 rgba(25, 125, 114, 0.08); transform: translateY(-2px); }
 .simulator-stats > div > span { display: block; color: var(--textbook-muted); font-size: 0.64rem; }
 .simulator-stats strong, .simulator-stats > div > .study-math { display: block; margin-top: 4px; color: var(--textbook-ink); font-size: 0.95rem; }
 .simulator-stats > div > small { display: block; margin-top: 3px; color: #6f8b82; font-size: 0.61rem; line-height: 1.35; }
@@ -421,7 +438,10 @@
 .diagnostics-path { fill: none; stroke: var(--textbook-violet); stroke-width: 1.5; opacity: 0.62; }
 .diagnostics-point { fill: var(--textbook-coral); opacity: 0.82; }
 .diagnostics-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-top: 12px; }
-.diagnostics-metrics > div { display: grid; gap: 3px; padding: 11px 12px; background: var(--textbook-violet-soft); }
+.diagnostics-metrics > div { display: grid; gap: 3px; padding: 11px 12px; border-top: 2px solid rgba(105, 83, 161, 0.35); background: var(--textbook-violet-soft); transition: box-shadow 180ms ease, transform 180ms ease; }
+.diagnostics-metrics > div:nth-child(2) { border-top-color: rgba(216, 93, 73, 0.45); }
+.diagnostics-metrics > div:nth-child(3) { border-top-color: rgba(25, 125, 114, 0.42); }
+.diagnostics-metrics > div:hover { box-shadow: 3px 3px 0 rgba(105, 83, 161, 0.08); transform: translateY(-2px); }
 .diagnostics-metrics span, .diagnostics-metrics small { color: var(--textbook-muted); font-size: 0.64rem; }
 .diagnostics-metrics strong { color: var(--textbook-violet); font-family: var(--textbook-serif); font-size: 1.15rem; font-weight: 600; }
 .diagnostics-question { margin-top: 16px; padding-top: 15px; border-top: 1px solid #ddd9e8; }
@@ -443,7 +463,8 @@
 .practice-index { padding: 5px 8px; border: 1px solid #e4ceb0; border-radius: 99px; color: var(--textbook-coral); font-size: 0.67rem; font-weight: 750; letter-spacing: 0.08em; }
 .practice-description { margin: 12px 0 18px; color: var(--textbook-muted); font-size: 0.81rem; line-height: 1.65; }
 .practice-givens { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
-.practice-givens > div { display: grid; gap: 5px; min-width: 0; padding: 11px; border: 1px solid #eadfc8; background: #fff; }
+.practice-givens > div { display: grid; gap: 5px; min-width: 0; padding: 11px; border: 1px solid #eadfc8; background: #fff; transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+.practice-givens > div:hover { border-color: #d8bd8d; box-shadow: 3px 3px 0 rgba(168, 116, 36, 0.08); transform: translateY(-2px); }
 .practice-givens span { color: var(--textbook-muted); font-size: 0.66rem; }
 .practice-givens .study-math { color: var(--textbook-ink); font-size: 0.86rem; }
 .practice-route { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 16px 0; padding: 11px 13px; background: #f7efe0; color: #785a31; font-size: 0.72rem; }
@@ -513,6 +534,8 @@
 .study-reflection-save { padding: 8px 13px; border-color: var(--textbook-teal); background: var(--textbook-teal); color: white; }
 .study-reflection-save:hover { border-color: #12645c; background: #12645c; color: white; transform: translateY(-1px); }
 .textbook-rail-toggle:focus-visible,
+.formula-atlas-disclosure > summary:focus-visible,
+.study-disclosure > summary:focus-visible,
 .diagnostics-case-tabs button:focus-visible,
 .diagnostics-question button:focus-visible,
 .diagnostics-question input:focus-visible,
@@ -536,6 +559,10 @@
   .textbook-layout { grid-template-columns: 180px minmax(0, 1fr); gap: 32px; }
   .textbook-cover-inner { width: min(100% - 48px, 1080px); }
   .textbook-layout { width: min(100% - 48px, 1080px); }
+}
+
+@media (max-width: 900px) {
+  .practice-form, .practice-solution-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
@@ -587,6 +614,8 @@
   .textbook-overline span + span { padding-left: 11px; }
   .textbook-overline span + span::before { width: 3px; height: 3px; }
   .textbook-content { font-size: 0.98rem; }
+  .study-note { padding-right: 34px; }
+  .worked-example { padding-right: 36px; }
   .step-explorer, .simulator-card, .diagnostics-lab, .study-checkpoint, .study-reflection { padding: 15px; }
   .notation-guide-head, .formula-atlas-heading { display: block; }
   .notation-guide-head span { display: block; margin-top: 5px; }

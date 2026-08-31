@@ -67,13 +67,13 @@ export default function StudyCheckpoint({
         <div className="checkpoint-actions">
           <button className="study-checkpoint-submit" type="submit" disabled={selected === null}>检查我的判断</button>
           {hint && (
-            <button className="study-checkpoint-hint" type="button" onClick={() => setShowHint((value) => !value)}>
+            <button className="study-checkpoint-hint" type="button" aria-expanded={showHint} aria-controls={`${id}-hint`} onClick={() => setShowHint((value) => !value)}>
               {showHint ? '收起提示' : '我需要一个提示'}
             </button>
           )}
         </div>
       </form>
-      {showHint && hint && <p className="study-checkpoint-hint-copy"><b>提示：</b><StudyRichText>{hint}</StudyRichText></p>}
+      {hint && <p id={`${id}-hint`} className="study-checkpoint-hint-copy" hidden={!showHint}><b>提示：</b><StudyRichText>{hint}</StudyRichText></p>}
       {result === 'correct' && (
         <p className="study-checkpoint-result success" role="status">判断正确。<StudyRichText>{explanation}</StudyRichText></p>
       )}

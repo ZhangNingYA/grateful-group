@@ -140,10 +140,10 @@ export default function KalmanPractice() {
       </div>
 
       <div className="practice-actions">
-        <button type="button" className="practice-hint-button" onClick={() => setHintCount((count) => Math.min(count + 1, exercise.hints.length))} disabled={hintCount >= exercise.hints.length}>
+        <button type="button" className="practice-hint-button" aria-expanded={hintCount > 0} aria-controls="kalman-practice-hints" onClick={() => setHintCount((count) => Math.min(count + 1, exercise.hints.length))} disabled={hintCount >= exercise.hints.length}>
           {hintCount >= exercise.hints.length ? '提示已全部展开' : `展开第 ${hintCount + 1} 个提示`}
         </button>
-        <button type="button" className="practice-solution-button" onClick={() => setShowSolution((value) => !value)}>
+        <button type="button" className="practice-solution-button" aria-expanded={showSolution} aria-controls="kalman-practice-solution" onClick={() => setShowSolution((value) => !value)}>
           {showSolution ? '收起分步答案' : '最后再看分步答案'}
         </button>
         <button type="button" className="practice-next-button" onClick={() => setExerciseIndex((index) => (index + 1) % exercises.length)}>
@@ -151,27 +151,25 @@ export default function KalmanPractice() {
         </button>
       </div>
 
-      {hintCount > 0 && (
-        <ol className="practice-hints">
-          {exercise.hints.slice(0, hintCount).map((hint, index) => <li key={hint}><b>提示 {index + 1}</b><span><StudyRichText>{hint}</StudyRichText></span></li>)}
-        </ol>
-      )}
+      <ol id="kalman-practice-hints" className="practice-hints" hidden={hintCount === 0}>
+        {exercise.hints.slice(0, hintCount).map((hint, index) => (
+          <li key={hint}><b>提示 {index + 1}</b><span><StudyRichText>{hint}</StudyRichText></span></li>
+        ))}
+      </ol>
 
-      {showSolution && (
-        <div className="practice-solution">
-          <div className="practice-solution-head"><strong>分步答案</strong><span>把每一行和上面的计算路线对应起来</span></div>
-          <div className="practice-solution-grid">
-            {exercise.solution.map(([formula, value], index) => (
-              <div key={formula}>
-                <span>{index + 1}</span>
-                <StudyMath expression={formula} display />
-                <StudyMath expression={value} />
-              </div>
-            ))}
-          </div>
-          <div className="practice-mistakes"><strong>常见错误</strong><ul><li>把标准差直接当成方差填入 <StudyMath expression="R" />。</li><li>把 <StudyMath expression="K_k" /> 乘在测量上，而不是乘在创新 <StudyMath expression="y_k" /> 上。</li><li>算出后验均值跑到先验和测量之外，却没有回头检查符号。</li></ul></div>
+      <div id="kalman-practice-solution" className="practice-solution" hidden={!showSolution}>
+        <div className="practice-solution-head"><strong>分步答案</strong><span>把每一行和上面的计算路线对应起来</span></div>
+        <div className="practice-solution-grid">
+          {exercise.solution.map(([formula, value], index) => (
+            <div key={formula}>
+              <span>{index + 1}</span>
+              <StudyMath expression={formula} display />
+              <StudyMath expression={value} />
+            </div>
+          ))}
         </div>
-      )}
+        <div className="practice-mistakes"><strong>常见错误</strong><ul><li>把标准差直接当成方差填入 <StudyMath expression="R" />。</li><li>把 <StudyMath expression="K_k" /> 乘在测量上，而不是乘在创新 <StudyMath expression="y_k" /> 上。</li><li>算出后验均值跑到先验和测量之外，却没有回头检查符号。</li></ul></div>
+      </div>
     </section>
   );
 }
