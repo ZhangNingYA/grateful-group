@@ -39,6 +39,7 @@ const sections = [
     description: 'Context notes on papers, methods, and lines of research.',
   },
 ];
+const totalEntries = sections.reduce((sum, section) => sum + section.count, 0);
 
 const recent = [
   ...reading.map((entry) => ({ ...entry, href: `/blog/${entry.id}/`, section: 'Reading' })),
@@ -63,12 +64,17 @@ const recent = [
           <h1 class="editorial-title">Care for the work.</h1>
           <p class="home-statement">Projects, notes, and experiments from a practice in progress.</p>
         </div>
+        <aside class="editorial-edition home-edition" aria-label={`${totalEntries} published entries across ${sections.length} collections`}>
+          <span>Archive index</span>
+          <strong>{String(totalEntries).padStart(2, '0')}</strong>
+          <small>published entries</small>
+        </aside>
       </header>
 
       <section class="editorial-index home-directory" aria-labelledby="directory-heading">
         <div class="editorial-section-heading">
           <h2 id="directory-heading">Explore the archive</h2>
-          <span>{sections.reduce((sum, section) => sum + section.count, 0)} published entries</span>
+          <span>{String(sections.length).padStart(2, '0')} collections</span>
         </div>
 
         <div class="editorial-list">
@@ -78,7 +84,7 @@ const recent = [
                 <span class="editorial-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 <div class="editorial-row-copy">
                   <div class="editorial-meta">
-                    <span>{String(section.count).padStart(2, '0')} entries</span>
+                    <span>{section.count} {section.count === 1 ? 'entry' : 'entries'}</span>
                   </div>
                   <h3>{section.label}</h3>
                   <p>{section.description}</p>
@@ -132,10 +138,11 @@ const recent = [
 
 <style>
   .home-hero {
-    min-height: 300px;
-    grid-template-columns: minmax(0, 1fr);
+    min-height: 280px;
+    grid-template-columns: minmax(0, 1fr) 190px;
     align-items: end;
-    padding: 58px 0 44px;
+    gap: 72px;
+    padding: 46px 0 40px;
   }
 
   .home-hero .editorial-title {
@@ -156,21 +163,52 @@ const recent = [
     line-height: 1.65;
   }
 
+  .home-edition {
+    min-height: 172px;
+  }
+
+  .home-edition small {
+    max-width: 170px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
   .directory-row > a {
-    min-height: 150px;
+    min-height: 138px;
   }
 
   .recent-index {
     padding-top: 0;
   }
 
+  .recent-index .editorial-row > a {
+    min-height: 158px;
+  }
+
   @media (max-width: 720px) {
     .home-hero {
       min-height: 0;
-      padding: 46px 0 38px;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 36px 0 26px;
     }
 
-    .home-hero .editorial-title { font-size: 2rem; }
+    .home-hero .editorial-title { font-size: 2.1rem; }
     .home-statement { font-size: 0.94rem; }
+
+    .home-edition {
+      min-height: 0;
+      border-top-width: 2px;
+    }
+
+    .home-edition strong {
+      font-size: 2.5rem;
+    }
+
+    .home-directory .editorial-section-heading span {
+      display: inline;
+      font-size: 0.68rem;
+    }
   }
 </style>
