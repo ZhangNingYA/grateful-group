@@ -1,0 +1,3334 @@
+{
+  "C01": {
+    "translation": "如今，人们普遍认为，对于长期坚持锻炼的人来说，规律运动会带来一系列健康益处。",
+    "vocabulary": [
+      {
+        "term": "assortment",
+        "explanation": "各种各样的；组合"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "By now",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is generally accepted"
+      },
+      {
+        "role": "object",
+        "text": "that regular exercise comes with an assortment of health benefits for people who maintain the habit over time",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "C02": {
+    "translation": "但开始锻炼真的会有太晚的时候吗？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C03": {
+    "translation": "一项新研究考察了这样一群人：他们在四十多岁以后把运动量提高到超过年轻时的水平；结果显示，这些人的早亡风险降幅与一生坚持锻炼的人相近。",
+    "vocabulary": [
+      {
+        "term": "mortality",
+        "explanation": "死亡；死亡率"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "New research"
+      },
+      {
+        "role": "predicate",
+        "text": "looked"
+      }
+    ]
+  },
+  "C04": {
+    "translation": "与不运动的人相比，他们的早亡风险下降了32%至35%。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      },
+      {
+        "role": "complement",
+        "text": "a drop of 32% to 35% compared to people who did not exercise"
+      }
+    ]
+  },
+  "C05": {
+    "translation": "中年开始锻炼的人，慢性病（如心脏病和癌症）的发病率也有所下降，降幅与一直坚持锻炼的人相近。",
+    "vocabulary": [
+      {
+        "term": "incidence",
+        "explanation": "发生率"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Those who began exercising in middle age"
+      },
+      {
+        "role": "predicate",
+        "text": "saw"
+      },
+      {
+        "role": "object",
+        "text": "reductions in their incidence of chronic diseases, such as heart disease and cancer, which were similar to the steady exercisers"
+      }
+    ]
+  },
+  "C06": {
+    "translation": "那么，为什么还要一生坚持锻炼呢？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "So",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "bother"
+      },
+      {
+        "role": "complement",
+        "text": "exercising consistently throughout your life"
+      }
+    ]
+  },
+  "C07": {
+    "translation": "研究作者承认，有些人可能会把研究结果理解为可以推迟开始锻炼，但这样做是错误的。",
+    "vocabulary": [
+      {
+        "term": "concede",
+        "explanation": "承认；让步"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The authors of the study"
+      },
+      {
+        "role": "predicate",
+        "text": "concede"
+      },
+      {
+        "role": "object",
+        "text": "that some might interpret the study's findings to mean that they can delay starting an exercise program",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "C08": {
+    "translation": "持续保持活跃还有其他身心方面的益处，我们不应忽视。",
+    "vocabulary": [
+      {
+        "term": "disregard",
+        "explanation": "忽视"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "other benefits, both mental and physical,"
+      }
+    ]
+  },
+  "C09": {
+    "translation": "这些切实的健康益处包括更好的认知功能和较低的增重风险。",
+    "vocabulary": [
+      {
+        "term": "cognitive",
+        "explanation": "认知的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These real health benefits"
+      },
+      {
+        "role": "predicate",
+        "text": "include"
+      },
+      {
+        "role": "object",
+        "text": "better cognitive functioning and lowered risk of gaining weight"
+      }
+    ]
+  },
+  "C10": {
+    "translation": "考虑到全球性的肥胖流行，这后一项尤其重要。",
+    "vocabulary": [
+      {
+        "term": "epidemic",
+        "explanation": "流行病；流行"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The latter"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C11": {
+    "translation": "此外，专家认为越早开始越好，因为如果年轻时养成锻炼习惯，日后更有可能保持这种模式。",
+    "vocabulary": [
+      {
+        "term": "assert",
+        "explanation": "断言；坚称"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In addition",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "experts"
+      },
+      {
+        "role": "predicate",
+        "text": "assert"
+      },
+      {
+        "role": "object",
+        "text": "that starting younger is better because, if you make a habit of exercising when you are young, you are more likely to keep up those patterns later in life",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "C12": {
+    "translation": "因此，人们最好在儿童或青少年时期就开始锻炼；无论年龄多大，始终保持积极的生活方式都是有益的。",
+    "vocabulary": [
+      {
+        "term": "maintain",
+        "explanation": "保持；维持"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "C13": {
+    "translation": "不过，这项研究确实表明，即使此前不活跃，到了四五十岁才开始变得活跃，仍然可以获益。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "However",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "this study"
+      },
+      {
+        "role": "predicate",
+        "text": "does indicate"
+      },
+      {
+        "role": "object",
+        "text": "that, if you have not been active, you can still benefit if you start becoming active in your 40s and 50s",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-A01": {
+    "translation": "和大多数厨师一样，Flippy 不怕辛苦。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Like most chefs",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Flippy"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "M-A02": {
+    "translation": "自去年夏天以来，这意味着它要在加利福尼亚州帕萨迪纳的 Caliburger 从上午11点工作到晚上7点，还要偶尔到洛杉矶道奇体育场的 Chick-N-Tots 短期工作。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Since last summer",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "has meant"
+      }
+    ]
+  },
+  "M-A03": {
+    "translation": "这些工作时间很长而且内容重复，老板要求始终做到绝对一致。",
+    "vocabulary": [
+      {
+        "term": "repetitive",
+        "explanation": "重复的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "long hours of repetitive work, where the boss demands absolute consistency"
+      }
+    ]
+  },
+  "M-A04": {
+    "translation": "但事实上，你不会听到 Flippy 抱怨，甚至不会听到它说什么。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "won't hear"
+      },
+      {
+        "role": "object",
+        "text": "Flippy complain",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-A05": {
+    "translation": "因为 Flippy 是一个机器人——一只连接云端、以3D热扫描仪为“眼睛”的机械臂——它每小时能翻烤汉堡或炸80篮食物，还能监控食物，甚至事后清理。",
+    "vocabulary": [
+      {
+        "term": "thermal",
+        "explanation": "热的；热能的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For Flippy",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "that"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a robot — a cloud-connected mechanical arm with 3D thermal scanners for eyes — that can flip burgers or fry 80 baskets of food an hour"
+      }
+    ]
+  },
+  "M-B01": {
+    "translation": "Flippy 由 Miso Robotics 制造，该公司隶属于 Cali Group；Cali Group 的首席执行官 John Miller 将其描述为“一家碰巧销售芝士汉堡的科技公司”。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Flippy"
+      },
+      {
+        "role": "predicate",
+        "text": "was created"
+      }
+    ]
+  },
+  "M-B02": {
+    "translation": "Cali 在全球各地的 Caliburger 餐厅中实地测试新机器，Flippy 今年也将部署到这些餐厅。",
+    "vocabulary": [
+      {
+        "term": "deployed",
+        "explanation": "部署；投入使用"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Cali"
+      },
+      {
+        "role": "predicate",
+        "text": "creates"
+      },
+      {
+        "role": "object",
+        "text": "new machines that it road-tests in its Caliburger restaurants across the world, into which Flippy will be deployed this year"
+      }
+    ]
+  },
+  "M-B03": {
+    "translation": "而且，Flippy 并不是唯一的机器人。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Flippy"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      }
+    ]
+  },
+  "M-B04": {
+    "translation": "同样在加利福尼亚州，Bear Robotics 开发了一个能自行引导的机器人 Penny；到目前为止，它已经服务过4万名食客。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Also",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Bear Robotics"
+      },
+      {
+        "role": "predicate",
+        "text": "has developed"
+      },
+      {
+        "role": "object",
+        "text": "a self-guiding robot, Penny, which has so far served 40,000 diners"
+      }
+    ]
+  },
+  "M-C01": {
+    "translation": "十年前，机器人厨师和服务员还纯粹是科幻作品中的想象。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Ten years ago",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "robot-chefs and waiters"
+      },
+      {
+        "role": "predicate",
+        "text": "were"
+      },
+      {
+        "role": "complement",
+        "text": "pure science fiction"
+      }
+    ]
+  },
+  "M-C02": {
+    "translation": "如今它们已经成为现实，而且价格也让购买它们成为一项可行的投资。",
+    "vocabulary": [
+      {
+        "term": "plausible",
+        "explanation": "可行的；可信的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Today",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "a reality"
+      }
+    ]
+  },
+  "M-C03": {
+    "translation": "Bear Robotics 首席运营官 Juan Higueros 说，从五月起，Penny 将以订阅方式提供，这种方式能“立即带来回报”。",
+    "vocabulary": [
+      {
+        "term": "on a subscription basis",
+        "explanation": "采用订阅制；按订阅模式"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Bear Robotics' chief operating officer, Juan Higueros"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "From May, Penny will be shipped on a subscription basis that offers \"an immediate return",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-C04": {
+    "translation": "据报道，Flippy 的成本为6万至10万美元。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Flippy"
+      },
+      {
+        "role": "predicate",
+        "text": "will cost"
+      },
+      {
+        "role": "object",
+        "text": "a reported $60,000 to $100,000"
+      }
+    ]
+  },
+  "M-C05": {
+    "translation": "如今，几乎不需要人工监督的全自动汉堡餐厅已经成为可能——顾客在屏幕上点餐、电子支付，再吃由机器人烹制并送来的食物。",
+    "vocabulary": [
+      {
+        "term": "oversight",
+        "explanation": "监督"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Fully automated burger restaurants managed with minimal human oversight — where customers order at screens,"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "object",
+        "text": "Fully automated burger restaurants managed with minimal human oversight — where customers order at screens, pay electronically and eat food cooked and delivered by robots",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-D01": {
+    "translation": "技术已经存在，只是需要以经济高效、且食客愿意接受的方式把各部分整合起来。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "object",
+        "text": "The technology exists",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-D02": {
+    "translation": "在一个急于削减劳动力成本、提高利润的行业里，进一步自动化似乎不可避免。",
+    "vocabulary": [
+      {
+        "term": "inevitable",
+        "explanation": "不可避免的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In an industry keen to slash labour costs and increase profits",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "further automation"
+      },
+      {
+        "role": "predicate",
+        "text": "seems"
+      },
+      {
+        "role": "complement",
+        "text": "inevitable"
+      }
+    ]
+  },
+  "M-D03": {
+    "translation": "在加利福尼亚州 Kang Nam Tofu House 进行为期八个月的测试后，Bear Robotics 认为 Penny 促成了销售额增长28%。",
+    "vocabulary": [
+      {
+        "term": "credit ... with",
+        "explanation": "认为……带来了某结果；把某事归功于……"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "After an eight-month test at Kang Nam Tofu House in California",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Bear Robotics"
+      },
+      {
+        "role": "predicate",
+        "text": "credited"
+      },
+      {
+        "role": "object",
+        "text": "Penny"
+      }
+    ]
+  },
+  "M-D04": {
+    "translation": "与此同时，在美国的试验中，麦当劳正在其英国1300家餐厅安装的自助点餐屏幕，据报道使订单金额提高了30%。",
+    "vocabulary": [
+      {
+        "term": "yielded",
+        "explanation": "产生；带来"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Meanwhile",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the self-ordering screens that McDonald's is currently installing at its 1,300 UK restaurants"
+      },
+      {
+        "role": "predicate",
+        "text": "yielded"
+      },
+      {
+        "role": "object",
+        "text": "a reported 30% rise in order values"
+      }
+    ]
+  },
+  "M-E01": {
+    "translation": "个性化被视为这项技术吸引力的关键，此外它还能可靠地向顾客推销所谓的“追加销售”（套餐、额外配料、更大杯饮料）。",
+    "vocabulary": [
+      {
+        "term": "Personalisation",
+        "explanation": "个性化"
+      },
+      {
+        "term": "upsells",
+        "explanation": "追加销售；诱导顾客加购或升级"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Personalisation"
+      },
+      {
+        "role": "predicate",
+        "text": "is seen"
+      }
+    ]
+  },
+  "M-E02": {
+    "translation": "很快，当你登录餐厅应用时，它就能利用你的数据和购买记录向你推荐菜品——从天气，到你在能读取面部的屏幕前点餐时的心情，统统纳入考虑。",
+    "vocabulary": [
+      {
+        "term": "recommend",
+        "explanation": "推荐"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Soon",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      }
+    ]
+  },
+  "M-F01": {
+    "translation": "“现在，人们只能在选择上作出妥协。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Right now",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "compromise"
+      }
+    ]
+  },
+  "M-F02": {
+    "translation": "我们面对的是一份千篇一律的菜单。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "'re presented"
+      }
+    ]
+  },
+  "M-F03": {
+    "translation": "归根结底，技术可以让我们做出个性化选择。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Ultimately",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "technology"
+      },
+      {
+        "role": "predicate",
+        "text": "can allow"
+      },
+      {
+        "role": "object",
+        "text": "us to make personal choices",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-F04": {
+    "translation": "你喜欢辣食和鸡肉吗？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "love"
+      },
+      {
+        "role": "object",
+        "text": "spicy food and chicken"
+      }
+    ]
+  },
+  "M-F05": {
+    "translation": "那这就是像你这样的人最常点的菜。”酒店餐饮科技公司 Flyt 的首席执行官 Tom Weaver 说。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Tom Weaver, CEO at the hospitality tech company Flyt"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "Here's the dish people like you mostly order",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-F06": {
+    "translation": "他兴致勃勃地谈到赫尔辛基的快闪店 Take-In：这是一家全服务餐厅，食客可以从各种外卖服务订来菜品。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "He"
+      },
+      {
+        "role": "predicate",
+        "text": "talks"
+      }
+    ]
+  },
+  "M-F07": {
+    "translation": "“几百年来第一次，数字技术让我们能够创造出新形态的餐厅。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For the first time in a few hundred years",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "digital"
+      },
+      {
+        "role": "predicate",
+        "text": "is allowing"
+      },
+      {
+        "role": "object",
+        "text": "us to create new versions of restaurants.\"",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-G01": {
+    "translation": "如果街边快餐已经适合自动化，那么自动化对高端餐厅的影响可能会更微妙、更缓慢。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "its impact on high-end restaurants"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-G02": {
+    "translation": "“我们大概还要很久才能看到五星级的机器人厨师。”谢菲尔德大学人工智能与机器人学教授 Noel Sharkey 说。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Noel Sharkey, professor of AI and robotics at the University of Sheffield"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "It'll probably be a very long time before we see a five-star robot-chef",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-G03": {
+    "translation": "“除了人工智能在创造力上的差距，优秀烹饪还需要对食材有细腻的理解和精巧的烹调，这对机器人来说将极具挑战。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Apart from the AI creativity gap",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "great cooking"
+      },
+      {
+        "role": "predicate",
+        "text": "involves"
+      },
+      {
+        "role": "object",
+        "text": "a subtle understanding of ingredients and delicate cooking that would be enormously challenging for robots"
+      }
+    ]
+  },
+  "M-G04": {
+    "translation": "把易碎的食物放到盘子里会慢得难以置信。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "动名词/非谓语短语作主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Placing fragile foods on plates",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "would be"
+      }
+    ]
+  },
+  "M-H01": {
+    "translation": "目前，机器人的功能还很有限。",
+    "vocabulary": [
+      {
+        "term": "functionality",
+        "explanation": "功能"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Currently",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "robots"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "limited functionality"
+      }
+    ]
+  },
+  "M-H02": {
+    "translation": "需要由人把盘子装到 Penny 上，食客再自行取下。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "diners"
+      },
+      {
+        "role": "predicate",
+        "text": "needs"
+      },
+      {
+        "role": "complement",
+        "text": "A human needs to load Penny with plates that diners lift off themselves."
+      }
+    ]
+  },
+  "M-H03": {
+    "translation": "在美国的机器人披萨配送公司 Zume，较为困难的工作（例如给披萨加配料）仍由人完成。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "At the robot-powered US pizza-delivery company Zume, the more difficult jobs, such as topping pizzas",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "are still done"
+      }
+    ]
+  },
+  "M-H04": {
+    "translation": "不过，即将推出的 Moley 让人得以一窥未来的先进程度。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Moley, which will launch soon,"
+      },
+      {
+        "role": "predicate",
+        "text": "offers"
+      },
+      {
+        "role": "object",
+        "text": "an idea of the sophistication to come"
+      }
+    ]
+  },
+  "M-H05": {
+    "translation": "它的动作以《MasterChef》比赛冠军 Tim Anderson 的动作作为模型；机械臂固定在炉灶上方，并被编程用生食材烹制菜肴。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Modelled on the movements of a MasterChef contest winner",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Tim Anderson, its robotic arms"
+      },
+      {
+        "role": "predicate",
+        "text": "are fixed"
+      }
+    ]
+  },
+  "M-H06": {
+    "translation": "它面向家庭使用而设计，但公司还计划推出商业版本，这使餐厅厨房自动完成甚至技术难度很高的任务成为可能。",
+    "vocabulary": [
+      {
+        "term": "domestic",
+        "explanation": "家庭的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is designed"
+      }
+    ]
+  },
+  "M-I01": {
+    "translation": "目前，QSR Automations 向 Mitchells & Butlers 的酒吧或肯德基供应的厨房技术并不那么光鲜。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For now",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the kitchen technology"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "M-I02": {
+    "translation": "QSR 系统不再需要厨师大声喊出食客的订单，而是自动把订单分配到各个屏幕上。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Rather than having a chef shouting out diners' orders",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the QSR system"
+      },
+      {
+        "role": "predicate",
+        "text": "distributes"
+      },
+      {
+        "role": "object",
+        "text": "those orders"
+      }
+    ]
+  },
+  "M-I03": {
+    "translation": "随后，厨房屏幕会告诉厨师何时开始烹制每道菜，从而让你的鱼、薯条和豌豆在恰当的时间一起上桌。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The kitchen screens"
+      },
+      {
+        "role": "predicate",
+        "text": "tell"
+      },
+      {
+        "role": "object",
+        "text": "chefs"
+      }
+    ]
+  },
+  "M-J01": {
+    "translation": "餐饮业目前正遭遇严重的熟练厨师短缺——技能机构 People 1st 称，缺口达1.1万人。",
+    "vocabulary": [
+      {
+        "term": "deficit",
+        "explanation": "缺口；不足"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The restaurant industry"
+      },
+      {
+        "role": "predicate",
+        "text": "is currently suffering"
+      },
+      {
+        "role": "object",
+        "text": "a severe shortage of skilled chefs — a deficit of 11,000"
+      }
+    ]
+  },
+  "M-J02": {
+    "translation": "“旨在让流程变得更不容易出错的自动化系统，正试图填补这一缺口。”《Restaurant》杂志编辑 Stefan Chomka 说。",
+    "vocabulary": [
+      {
+        "term": "bridge",
+        "explanation": "弥合；沟通"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Stefan Chomka, the editor of Restaurant magazine"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      }
+    ]
+  },
+  "M-K01": {
+    "translation": "就简化或提升顾客体验而言，网上餐厅预订是互联网时代轻易取得的成功。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In terms of simplifying or enhancing the customer experience",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "online restaurant booking"
+      },
+      {
+        "role": "predicate",
+        "text": "has been"
+      },
+      {
+        "role": "complement",
+        "text": "the easily-won success of the internet age"
+      }
+    ]
+  },
+  "M-K02": {
+    "translation": "餐桌边的自动点餐和支付被视为下一个里程碑。",
+    "vocabulary": [
+      {
+        "term": "landmark",
+        "explanation": "里程碑"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Automated at-table ordering and payment"
+      },
+      {
+        "role": "predicate",
+        "text": "is seen"
+      }
+    ]
+  },
+  "M-K03": {
+    "translation": "在那之前，像曼彻斯特酒吧老板 Andy Smith 这样的早期采用者（他在位于 Oldham Street 33号的店里使用 Ordoo 应用），可能会经历不断增加却“低于预期”的接受度。",
+    "vocabulary": [
+      {
+        "term": "acceptance",
+        "explanation": "接受；认可"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Until then",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "early adopters, such as the Manchester bar owner Andy Smith, who uses the Ordoo app at his venue 33 Oldham Street,"
+      },
+      {
+        "role": "predicate",
+        "text": "may well experience"
+      },
+      {
+        "role": "complement",
+        "text": "growing but \"lower than expected\" acceptance"
+      }
+    ]
+  },
+  "M-L01": {
+    "translation": "餐饮科技令人尴尬的失败经常登上新闻头条。",
+    "vocabulary": [
+      {
+        "term": "Embarrassing",
+        "explanation": "令人尴尬的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Embarrassing failures in restaurant tech"
+      },
+      {
+        "role": "predicate",
+        "text": "hit"
+      },
+      {
+        "role": "object",
+        "text": "the headlines"
+      }
+    ]
+  },
+  "M-L02": {
+    "translation": "比如弄伤《布鲁克林日报》摄影师的 TGI Fridays 无人机，以及美国汉堡连锁 Shake Shack 不得不放弃开设全无现金点餐门店的计划。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "US burger chain Shake Shack"
+      },
+      {
+        "role": "predicate",
+        "text": "having"
+      },
+      {
+        "role": "object",
+        "text": "The TGI Fridays drone that injured a Brooklyn Daily photographer",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-L03": {
+    "translation": "但 Chomka 说，如果这类技术只提供“解决并不存在的问题的方案”，就可能达不到目的。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "such technology"
+      },
+      {
+        "role": "predicate",
+        "text": "could miss"
+      },
+      {
+        "role": "object",
+        "text": "the mark"
+      }
+    ]
+  },
+  "M-L04": {
+    "translation": "他补充说，“自动完成支付”可能会有用。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "he"
+      },
+      {
+        "role": "predicate",
+        "text": "adds"
+      },
+      {
+        "role": "object",
+        "text": "Payments being automatic\" could be useful",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-L05": {
+    "translation": "但在一家昂贵的餐厅里，“你究竟需要晚餐有多快？”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "in an expensive restaurant",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "do you need"
+      },
+      {
+        "role": "object",
+        "text": "dinner to be?\"",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-M01": {
+    "translation": "人们对人类待客艺术的依恋，会让那些把自动化视为就业威胁的员工感到欣慰。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That attachment to the human art of hospitality"
+      },
+      {
+        "role": "predicate",
+        "text": "will be heartening"
+      }
+    ]
+  },
+  "M-M02": {
+    "translation": "工会伦敦地区官员 Dave Turnbull 说：“Unite 担心，如果没有保障措施，所有好处都会绕过服务员等低薪岗位的工人。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the union's London regional officer, Dave Turnbull"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "Unite is concerned that without safeguards, any benefits will bypass workers in low-paying jobs, such as waiters",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-M03": {
+    "translation": "“我们正敦促议员确保自动化不要像过去的工业革命那样，只让少数富人受益。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "动名词/非谓语短语作主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We're urging Members of Parliament to ensure automation",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "does not just benefit"
+      },
+      {
+        "role": "object",
+        "text": "a wealthy few like previous industrial revolutions.\""
+      }
+    ]
+  },
+  "M-N01": {
+    "translation": "行业的基本理念是，自动化能让企业更有效地重新安排员工。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The industry principle"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that automation will allow it to redeploy staff more effectively",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-N02": {
+    "translation": "即使员工数量不会立即减少，工作岗位也会发生变化。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Jobs"
+      },
+      {
+        "role": "predicate",
+        "text": "will change"
+      }
+    ]
+  },
+  "M-N03": {
+    "translation": "“自助点餐屏意味着前台人员的需求会增加。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Self-order screens"
+      },
+      {
+        "role": "predicate",
+        "text": "mean"
+      },
+      {
+        "role": "object",
+        "text": "more demand for people front-of-house"
+      }
+    ]
+  },
+  "M-N04": {
+    "translation": "去年我们招聘了1000名新经理。”麦当劳首席运营官 Jason Clark 说。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "McDonald's COO, Jason Clark"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "Last year, we recruited 1,000 new managers",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-N05": {
+    "translation": "Caliburger 有一项计划，把员工重新培训成机器人工程师或“厨师技术员”。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Caliburger"
+      },
+      {
+        "role": "predicate",
+        "text": "has"
+      },
+      {
+        "role": "object",
+        "text": "a programme to retrain staff as robot engineers or \"chef techs\""
+      }
+    ]
+  },
+  "M-O01": {
+    "translation": "但归根结底，通过雇用更少的人或支付更低的工资来减少管理成本的机会，才是吸引大品牌采用技术的原因。",
+    "vocabulary": [
+      {
+        "term": "overheads",
+        "explanation": "管理费用；间接成本"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "ultimately",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the chance to reduce overheads by employing fewer people or at lower rates"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "object",
+        "text": "what attracts big brands to technology",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-O02": {
+    "translation": "未来十年，传统砖瓦餐厅的岗位不可避免会减少，尤其因为自动化将助推其发展迅速的竞争对手：外卖配送。",
+    "vocabulary": [
+      {
+        "term": "Invariably",
+        "explanation": "总是；必然地"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Invariably",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "jobs"
+      },
+      {
+        "role": "predicate",
+        "text": "will go"
+      }
+    ]
+  },
+  "M-O03": {
+    "translation": "Domino 和 Just Eat 等公司都尝试过机器人和无人机配送，而这在冰岛雷克雅未克已经合法。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Companies such as Domino and Just Eat"
+      },
+      {
+        "role": "predicate",
+        "text": "have both experimented"
+      }
+    ]
+  },
+  "M-O04": {
+    "translation": "Noel Sharkey 说：“机器人送餐就是未来。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Noel Sharkey"
+      },
+      {
+        "role": "predicate",
+        "text": "says"
+      },
+      {
+        "role": "object",
+        "text": "Robot food deliveries are the future",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-O05": {
+    "translation": "“时速4英里的小型地面机器人很安全，而且一天24小时都能工作。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Small, 4mph ground robots"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      }
+    ]
+  },
+  "M-P01": {
+    "translation": "结合对预计订单量的机器学习，以及 QSR 等系统生成的逐分钟烹饪数据，那支机器人车队几乎可以即时送达。",
+    "vocabulary": [
+      {
+        "term": "anticipated",
+        "explanation": "预期的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Combined with machine learning of anticipated order volumes and the minute-by-minute cooking data generated by systems such as QSR",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "robot fleet"
+      },
+      {
+        "role": "predicate",
+        "text": "could deliver"
+      }
+    ]
+  },
+  "M-P02": {
+    "translation": "Just Eat 工程总监 Daniel Richardson 预测：“餐厅会在订单到来前提前准备食物。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Just Eat's director of engineering, Daniel Richardson"
+      },
+      {
+        "role": "predicate",
+        "text": "predicts"
+      },
+      {
+        "role": "object",
+        "text": "Restaurants will prepare food ahead of orders coming in",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-P03": {
+    "translation": "“我可以对家人说‘我们吃披萨吧’，智能助手会听到；十分钟后，食物就会送到我家门口。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "my intelligent assistant"
+      },
+      {
+        "role": "predicate",
+        "text": "will hear"
+      },
+      {
+        "role": "object",
+        "text": "I'll be able to say 'Let's have pizza' to my family",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-P04": {
+    "translation": "目前还没有人给出确切日期。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "No one"
+      },
+      {
+        "role": "predicate",
+        "text": "is putting"
+      },
+      {
+        "role": "object",
+        "text": "an exact date"
+      }
+    ]
+  },
+  "M-P05": {
+    "translation": "但无论在餐厅里还是在你家门口，机器人都正在到来。",
+    "vocabulary": [
+      {
+        "term": "doorstep",
+        "explanation": "门口"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the robots"
+      },
+      {
+        "role": "predicate",
+        "text": "are coming"
+      }
+    ]
+  },
+  "R1-01": {
+    "translation": "许多人把友谊看作一条慰藉毯：一个可以让你靠着哭泣的肩膀，一个值得倾诉的可靠灵魂。",
+    "vocabulary": [
+      {
+        "term": "comfort blanket",
+        "explanation": "精神慰藉；带来安全感的人或事物"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many"
+      },
+      {
+        "role": "predicate",
+        "text": "see"
+      },
+      {
+        "role": "object",
+        "text": "friendships as a comfort blanket"
+      }
+    ]
+  },
+  "R1-02": {
+    "translation": "然而，我们往往急于追求个人成功，在途中失去朋友，而这已经成了过程的一部分。",
+    "vocabulary": [
+      {
+        "term": "eagerness",
+        "explanation": "渴望；急切"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "However",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "lose"
+      },
+      {
+        "role": "object",
+        "text": "friends"
+      }
+    ]
+  },
+  "R1-03": {
+    "translation": "伴随日常生活而来的混乱和无休止的动荡，是追求稳定友谊的巨大障碍。",
+    "vocabulary": [
+      {
+        "term": "turmoil",
+        "explanation": "动荡"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The chaos and never-ending turmoil that accompanies everyday life"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "an aggressive obstacle in the pursuit of stable friendships"
+      }
+    ]
+  },
+  "R1-04": {
+    "translation": "作为学生，我们用这个借口，对失去那些曾被我们视为亲近之人的事实不以为意。",
+    "vocabulary": [
+      {
+        "term": "shrug off",
+        "explanation": "对……不予理会；把……轻轻带过"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As students",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "use"
+      },
+      {
+        "role": "object",
+        "text": "this excuse"
+      }
+    ]
+  },
+  "R1-05": {
+    "translation": "我们不应把人生看成一场竞赛，仿佛每个人都在沿着自己的道路走向某种成功；我们必须重新学会珍视沿途建立的联系。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Instead of viewing our lives as a race, where everyone is on their own path to some form of success",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "must relearn"
+      },
+      {
+        "role": "complement",
+        "text": "to value the connections we make along the track"
+      }
+    ]
+  },
+  "R1-06": {
+    "translation": "我们必须重新评估激进的个人自由所带来的危害。",
+    "vocabulary": [
+      {
+        "term": "reevaluate",
+        "explanation": "重新评估"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "must reevaluate"
+      },
+      {
+        "role": "object",
+        "text": "the harm of radical, individual freedom"
+      }
+    ]
+  },
+  "R1-07": {
+    "translation": "激进个人主义把个人自由置于集体之上。",
+    "vocabulary": [
+      {
+        "term": "Radical",
+        "explanation": "激进的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Radical individualism"
+      },
+      {
+        "role": "predicate",
+        "text": "elevates"
+      },
+      {
+        "role": "object",
+        "text": "the freedom of the individual over the collective"
+      }
+    ]
+  },
+  "R1-08": {
+    "translation": "例如，它认为作为集体主义范例的全民医疗保障威胁了许多美国人的梦想。",
+    "vocabulary": [
+      {
+        "term": "collectivism",
+        "explanation": "集体主义"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "argues"
+      },
+      {
+        "role": "object",
+        "text": "that universal healthcare, an example of collectivism, threatened the dream of many Americans",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R1-09": {
+    "translation": "我们许多人已经成了个人主义文化的受害者。",
+    "vocabulary": [
+      {
+        "term": "individualistic",
+        "explanation": "个人主义的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many of us"
+      },
+      {
+        "role": "predicate",
+        "text": "have fallen"
+      },
+      {
+        "role": "object",
+        "text": "victim"
+      }
+    ]
+  },
+  "R1-10": {
+    "translation": "社会往往庆祝个人成就，并基于这样一种假设来赞扬它：获胜或成功是比别人更努力工作的结果。",
+    "vocabulary": [
+      {
+        "term": "commend",
+        "explanation": "赞扬"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Society"
+      },
+      {
+        "role": "predicate",
+        "text": "tends"
+      },
+      {
+        "role": "complement",
+        "text": "to celebrate personal achievement and commend it based on the assumption that winning or succeeding is a consequence of working harder than the next person"
+      }
+    ]
+  },
+  "R1-11": {
+    "translation": "作为一个社会，我们把“在通往成功的路上失去朋友”这一观念奉为圭臬。",
+    "vocabulary": [
+      {
+        "term": "idolize",
+        "explanation": "奉为偶像；崇拜"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As a society",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "idolize"
+      },
+      {
+        "role": "object",
+        "text": "the concept of \"losing friends on the road to success.\""
+      }
+    ]
+  },
+  "R1-12": {
+    "translation": "我记得高中时听人说：“别担心失去友谊，只管专心学习、考上大学。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "remember"
+      },
+      {
+        "role": "complement",
+        "text": "hearing in high school, \""
+      }
+    ]
+  },
+  "R1-13": {
+    "translation": "从长远看，那才是一切。”这种观点并非我个人独有的经历。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "all that will matter in the long run"
+      }
+    ]
+  },
+  "R1-14": {
+    "translation": "许多成功故事都在宣扬这种观念，我们看待成长的方式也深受其影响。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s preached"
+      }
+    ]
+  },
+  "R1-15": {
+    "translation": "励志演讲者会推动听众安于接受失去朋友这一不可避免的结局。",
+    "vocabulary": [
+      {
+        "term": "complacent",
+        "explanation": "自满的；安于现状的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Motivational speakers"
+      },
+      {
+        "role": "predicate",
+        "text": "will push"
+      },
+      {
+        "role": "object",
+        "text": "their audience"
+      }
+    ]
+  },
+  "R1-16": {
+    "translation": "和朋友相处的时间太多？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Spend"
+      },
+      {
+        "role": "object",
+        "text": "too much time"
+      }
+    ]
+  },
+  "R1-17": {
+    "translation": "那就是把本可用于成就自己的时间浪费掉了。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "'re losing"
+      }
+    ]
+  },
+  "R1-18": {
+    "translation": "把时间投入到人际关系中？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Invest"
+      },
+      {
+        "role": "object",
+        "text": "time in your relationships"
+      }
+    ]
+  },
+  "R1-19": {
+    "translation": "那就改为把时间投入工作。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Invest"
+      },
+      {
+        "role": "object",
+        "text": "time in your work"
+      }
+    ]
+  },
+  "R1-20": {
+    "translation": "这种持续成功的需要，使我们无法透过伴随日常生活的变化旋风看清事物。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This constant need to succeed"
+      },
+      {
+        "role": "predicate",
+        "text": "has blinded"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      }
+    ]
+  },
+  "R1-21": {
+    "translation": "社会期待我们取得看得见的成功、赢得奖项、获得更高职位、取得更好成绩。",
+    "vocabulary": [
+      {
+        "term": "tangibly",
+        "explanation": "切实地；有形地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "are expected"
+      },
+      {
+        "role": "complement",
+        "text": "to tangibly succeed"
+      }
+    ]
+  },
+  "R1-22": {
+    "translation": "为了成功，我们失去了朋友，而这令人遗憾地已经被常态化。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In order to succeed",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "lose"
+      },
+      {
+        "role": "object",
+        "text": "friends"
+      }
+    ]
+  },
+  "R1-23": {
+    "translation": "我们不能安于失去友谊，因为朋友是我们的锚。",
+    "vocabulary": [
+      {
+        "term": "complacent",
+        "explanation": "自满的；安于现状的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "cannot be"
+      }
+    ]
+  },
+  "R1-24": {
+    "translation": "没错，去追求成功。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "pursue"
+      },
+      {
+        "role": "object",
+        "text": "success"
+      }
+    ]
+  },
+  "R1-25": {
+    "translation": "挑战自己。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Challenge"
+      },
+      {
+        "role": "object",
+        "text": "yourself"
+      }
+    ]
+  },
+  "R1-26": {
+    "translation": "突破极限。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "省略式回答（整体）",
+      "explanation": "这是上下文中的简短表达，需结合前后句还原省略的信息。"
+    },
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "Push limits.",
+        "label": "省略式回答（整体）"
+      }
+    ]
+  },
+  "R1-27": {
+    "translation": "但与所有自封的成功专家相反，独自做到并不会让你比那些在他人帮助下成功的人更成功，也不会让你更优秀。",
+    "vocabulary": [
+      {
+        "term": "contrary to",
+        "explanation": "与……相反"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 动名词/非谓语短语作主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "contrary to all the self-proclaimed success experts",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "doing it alone",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "does not make"
+      },
+      {
+        "role": "object",
+        "text": "you more successful or any better than someone who achieved it with the help of others",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R1-28": {
+    "translation": "即使忙碌的日程仿佛不给任何人留下时间，也要努力培养并维系健康的人际关系。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Put"
+      },
+      {
+        "role": "object",
+        "text": "effort"
+      }
+    ]
+  },
+  "R1-29": {
+    "translation": "尽管我们或许生活在一个珍视独立追求成就的社会里，但在路上有支持你、爱你的人，远比任何最终结果重要。",
+    "vocabulary": [
+      {
+        "term": "pursuit",
+        "explanation": "追求"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 动名词/非谓语短语作主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Although we may be living in a society that treasures the independent pursuit of achievement",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "having people to support and love you on the way",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-01": {
+    "translation": "马丁·路德·金在诺贝尔和平奖获奖演讲中说：“我相信，手无寸铁的真理和无条件的爱最终会在现实中胜出。”",
+    "vocabulary": [
+      {
+        "term": "acceptance speech",
+        "explanation": "获奖演说；领奖致辞"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "During his acceptance speech for the Nobel Peace Prize",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Martin Luther King Jr."
+      },
+      {
+        "role": "predicate",
+        "text": "said"
+      },
+      {
+        "role": "object",
+        "text": "I believe that unarmed truth and unconditional love will have the final word in reality.\"",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-02": {
+    "translation": "五十多年后，我们的社会仍在努力把真理与幻想、事实与虚构区分开来。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "More than five decades later",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "our society"
+      },
+      {
+        "role": "predicate",
+        "text": "is still struggling"
+      },
+      {
+        "role": "complement",
+        "text": "to separate truth from fantasy"
+      }
+    ]
+  },
+  "R2-03": {
+    "translation": "从气候变化争议到如何教授奴隶制历史的辩论，美国正处于十字路口。",
+    "vocabulary": [
+      {
+        "term": "crossroads",
+        "explanation": "十字路口"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "From disputes over the climate change to debates about how slavery is taught",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "America"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-04": {
+    "translation": "而公平之战正是这些重要对话的核心。",
+    "vocabulary": [
+      {
+        "term": "equity",
+        "explanation": "公平；平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the battle for equity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-05": {
+    "translation": "一项又一项研究表明，不平等造成了骇人的后果。",
+    "vocabulary": [
+      {
+        "term": "inequity",
+        "explanation": "不公平；不平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "study"
+      },
+      {
+        "role": "predicate",
+        "text": "Study"
+      },
+      {
+        "role": "complement",
+        "text": "Study after study shows that inequity has had appalling consequences."
+      }
+    ]
+  },
+  "R2-06": {
+    "translation": "花旗集团2020年的一份报告指出，如果过去二十年高等教育相关的公平问题得到充分解决，“黑人学生一生的收入本可增加900亿至1130亿美元”。",
+    "vocabulary": [
+      {
+        "term": "equity",
+        "explanation": "公平；平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A 2020 report by Citi"
+      },
+      {
+        "role": "predicate",
+        "text": "indicated"
+      },
+      {
+        "role": "object",
+        "text": "that \"Black students could have increased their lifetime incomes $90-$113 billion\" if equity issues related to higher education had been adequately addressed over the past two decades",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-07": {
+    "translation": "这一统计数字体现了我们国家未能面对的大量问题。",
+    "vocabulary": [
+      {
+        "term": "confront",
+        "explanation": "面对；处理"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This statistic"
+      },
+      {
+        "role": "predicate",
+        "text": "represents"
+      },
+      {
+        "role": "object",
+        "text": "a flood of issues we've failed to confront as a nation"
+      }
+    ]
+  },
+  "R2-08": {
+    "translation": "它还揭示了一个真相：我们错过了弥合分裂我们之差异的宝贵机会。",
+    "vocabulary": [
+      {
+        "term": "bridge",
+        "explanation": "弥合；沟通"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "'re missing out"
+      },
+      {
+        "role": "object",
+        "text": "It also highlights one truth:",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-09": {
+    "translation": "然而，只要传承马丁·路德·金的精神遗产，我们就能让国家重新走上真正公平的道路。",
+    "vocabulary": [
+      {
+        "term": "legacy",
+        "explanation": "遗产；影响"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "However",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "can get"
+      },
+      {
+        "role": "object",
+        "text": "our country"
+      }
+    ]
+  },
+  "R2-10": {
+    "translation": "学生——成年人也一样——如果不了解冲突最初的成因，就不可能理解今天的冲突。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Students — and adults for that matter"
+      },
+      {
+        "role": "predicate",
+        "text": "cannot understand"
+      },
+      {
+        "role": "object",
+        "text": "the conflicts we have"
+      }
+    ]
+  },
+  "R2-11": {
+    "translation": "这意味着我们有责任帮助他们把美国历史与时事联系起来。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "That"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "object",
+        "text": "we have a responsibility to help them make connections between U.S. history and current events",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-12": {
+    "translation": "这也意味着要给他们提供应对自身生活中不平等与偏见所需的工具。",
+    "vocabulary": [
+      {
+        "term": "inequity",
+        "explanation": "不公平；不平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "means"
+      },
+      {
+        "role": "complement",
+        "text": "giving them the tools they need to address inequity and bias in their own lives"
+      }
+    ]
+  },
+  "R2-13": {
+    "translation": "遵循这些原则并致力于真实对话，可以帮助每位学生更好地认识我们已经走了多远，也更清楚地看到仍待走过的道路。",
+    "vocabulary": [
+      {
+        "term": "Adherence",
+        "explanation": "遵循；坚持"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Adherence to these principles"
+      },
+      {
+        "role": "predicate",
+        "text": "can help"
+      },
+      {
+        "role": "object",
+        "text": "every student better appreciate how far we've come and more clearly see the roads we have yet to travel",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-14": {
+    "translation": "更如实地分析为什么需要更多合格且多元的教育工作者，可以改善全国学校的招聘、培训和留任策略。",
+    "vocabulary": [
+      {
+        "term": "qualified",
+        "explanation": "合格的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "With more truthful analysis of the need for more qualified, diverse educators",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "can improve"
+      },
+      {
+        "role": "object",
+        "text": "our recruiting, training, and retention strategies"
+      }
+    ]
+  },
+  "R2-15": {
+    "translation": "遗憾的是，我们根深蒂固的分歧正在拖延这些进步。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Unfortunately",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "our deeply rooted divisions"
+      },
+      {
+        "role": "predicate",
+        "text": "are delaying"
+      },
+      {
+        "role": "object",
+        "text": "these advancements"
+      }
+    ]
+  },
+  "R2-16": {
+    "translation": "最近一项调查发现，77%的美国人认为这个国家“比以往任何时候都更加分裂”。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "A recent survey"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that 77 percent of Americans believe the nation is \"more divided than ever before.\"",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-17": {
+    "translation": "但有关两极分化加剧的报道不应让我们彼此疏远。",
+    "vocabulary": [
+      {
+        "term": "polarization",
+        "explanation": "两极分化"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "reports of increased polarization"
+      },
+      {
+        "role": "predicate",
+        "text": "shouldn't persuade"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      }
+    ]
+  },
+  "R2-18": {
+    "translation": "相反，它们应促使我们正面处理共同的问题。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Instead",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "should compel"
+      },
+      {
+        "role": "object",
+        "text": "us"
+      }
+    ]
+  },
+  "R2-19": {
+    "translation": "我们并非像一些人所宣称的那样，生活在一个“后种族社会”。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "are not"
+      }
+    ]
+  },
+  "R2-20": {
+    "translation": "面对种族不平等时，我们根本承受不起继续把头埋在沙子里。",
+    "vocabulary": [
+      {
+        "term": "inequity",
+        "explanation": "不公平；不平等"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "cannot afford"
+      },
+      {
+        "role": "complement",
+        "text": "to keep our heads buried in the sand when it comes to racial inequity"
+      }
+    ]
+  },
+  "R2-21": {
+    "translation": "除非我们坦诚面对不宽容、偏见以及这些社会疾病如何影响我们彼此相待的方式，否则不公正将继续纠缠我们。",
+    "vocabulary": [
+      {
+        "term": "intolerance",
+        "explanation": "不宽容"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Unless we get honest about intolerance, bias, and how these social diseases impact the ways we treat one another",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "injustice"
+      },
+      {
+        "role": "predicate",
+        "text": "will continue"
+      },
+      {
+        "role": "complement",
+        "text": "to haunt us"
+      }
+    ]
+  },
+  "R2-22": {
+    "translation": "但我们的子孙后代值得拥有更好的未来。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "our children and our grandchildren"
+      },
+      {
+        "role": "predicate",
+        "text": "deserve"
+      }
+    ]
+  },
+  "R2-23": {
+    "translation": "在这个马丁·路德·金纪念日及今后的日子里，让我们承诺共同努力，打破现状。",
+    "vocabulary": [
+      {
+        "term": "status quo",
+        "explanation": "现状；当前局面"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "On this Martin Luther King Day and beyond",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "let"
+      },
+      {
+        "role": "object",
+        "text": "'s commit to working together to disrupt the status quo",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-24": {
+    "translation": "让我们继续建设一个更美好、更包容的国家；用马丁·路德·金的话说：“一个与自身和平相处、能够与良心共存的社会。”",
+    "vocabulary": [
+      {
+        "term": "inclusive",
+        "explanation": "包容的"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Let"
+      },
+      {
+        "role": "object",
+        "text": "'s continue to build a better, more inclusive nation",
+        "label": "内容从句（整体）"
+      }
+    ]
+  }
+}

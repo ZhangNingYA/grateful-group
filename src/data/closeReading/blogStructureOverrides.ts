@@ -9,6 +9,26 @@ export const june2025Set1StructureOverrides: Readonly<Record<string, AnalysisOve
     ['predicate', 'learned'],
     ['complement', 'of the use of poisonous, synthetic pesticides on her college campus'],
   ),
+  C03: parts(
+    ['adverbial', 'Along with a couple of classmates'],
+    ['subject', 'Charlene'],
+    ['predicate', 'did'],
+    ['object', 'a quick web search'],
+    ['predicate', 'discovered'],
+    ['object', 'a small but growing movement led by the organization, Herbicide-Free Campus (HFC)'],
+    ['adverbial', 'to rid college campuses of artificial herbicides (灭草剂)', '目的不定式短语'],
+  ),
+  C09: parts(
+    ['subject', 'Having a “beautiful” campus', '动名词短语作主语'],
+    ['predicate', 'means'],
+    ['object', 'green and perfectly maintained lawns along with flower beds and paved sidewalks'],
+  ),
+  C13: parts(
+    ['subject', 'Pesticide use'],
+    ['predicate', 'also decreases'],
+    ['object', 'the life in soil'],
+    ['adverbial', 'hampering the ability of soils to absorb carbon or retain water and thus reducing campuses’ ability to recover quickly from climate-related extreme weather events like droughts and floods', '现在分词短语作结果状语'],
+  ),
   C05: parts(
     ['adverbial', 'Like many'],
     ['subject', 'Charlene'],
@@ -56,6 +76,13 @@ export const june2025Set1StructureOverrides: Readonly<Record<string, AnalysisOve
     ['subject', 'Supporters of libraries as community builders'],
     ['predicate', 'claim'],
     ['object', 'that unless you are out there changing neighborhoods, you are not completing the work you are to do', '宾语从句（整体）'],
+  ),
+  'M-D02': parts(
+    ['adverbial', 'Like a major department store in a mall'],
+    ['subject', 'libraries'],
+    ['predicate', 'attract'],
+    ['object', 'large numbers of people'],
+    ['adverbial', 'creating economic opportunities for numerous businesses and organizations in the surrounding area', '现在分词短语作结果状语'],
   ),
   'M-F03': parts(
     ['subject', 'An organized archive'],
@@ -176,6 +203,11 @@ export const june2025Set1StructureOverrides: Readonly<Record<string, AnalysisOve
     ['object', 'everyone I encountered'],
     ['object', 'that they should do the same', '宾语从句（整体）'],
   ),
+  'R2-04': parts(
+    ['object', '“Follow your passion,”', '直接引语（整体）'],
+    ['subject', 'I'],
+    ['predicate', 'counseled'],
+  ),
   'R2-06': {
     highlights: [
       ['subject', 'It'],
@@ -209,6 +241,22 @@ export const june2025Set2StructureOverrides: Readonly<Record<string, AnalysisOve
     ['subject', 'the proteins'],
     ['predicate', 'self-assemble'],
     ['adverbial', 'into long fibers that fill the cell’s interior'],
+  ),
+  C14: parts(
+    ['subject', 'Emulating tardigrades', '动名词短语作主语'],
+    ['adverbial', 'one day'],
+    ['predicate', 'help'],
+    ['object', 'humans'],
+    ['complement', 'colonize outer space'],
+  ),
+  C16: parts(
+    ['adverbial', 'So'],
+    ['adverbial', 'if humans ever succeed in reaching the stars', '条件状语从句（整体）'],
+    ['subject', 'they'],
+    ['predicate', 'may accomplish'],
+    ['object', 'this feat'],
+    ['adverbial', 'in part'],
+    ['adverbial', 'by standing on the shoulders of the tiny eight-legged endurance specialists in your backyard', '介词 + 动名词短语作方式状语'],
   ),
   'M-C02': parts(
     ['adverbial', 'In my view'],
@@ -555,6 +603,13 @@ export const june2025Set3StructureOverrides: Readonly<Record<string, AnalysisOve
     ['object', 'us'],
     ['object', 'a better understanding of why'],
   ),
+  'M-K01': parts(
+    ['adverbial', 'Since ancient times'],
+    ['adverbial', 'meanwhile'],
+    ['subject', 'people'],
+    ['predicate', 'have been'],
+    ['complement', 'aware of a link between isolation and mental focus'],
+  ),
   'M-K05': parts(
     ['adverbial', 'When another person is present', '状语从句（整体）'],
     ['subject', 'your brain'],
@@ -614,6 +669,12 @@ export const june2025Set3StructureOverrides: Readonly<Record<string, AnalysisOve
     ['complement', 'hard to examine one’s own thoughts, feelings and motives, to be self-aware, and fully relaxed'],
     ['adverbial', 'unless you have occasional solitude', '条件状语从句（整体）'],
   ),
+  'M-O02': parts(
+    ['subject', 'Nurturing a few solid relationships without feeling the need to constantly populate your life with endless chatting', '动名词短语作主语'],
+    ['adverbial', 'ultimately'],
+    ['predicate', 'may be'],
+    ['complement', 'better for you'],
+  ),
   'M-P03': parts(
     ['adverbial', 'as long as you have regular social contact, you are choosing solitude rather than being forced into it, you have at least a few good friends and your solitude is good for your well-being or productivity', '条件状语部分（整体）'],
     ['subject', 'there'],
@@ -638,6 +699,12 @@ export const june2025Set3StructureOverrides: Readonly<Record<string, AnalysisOve
     ['predicate', 'is'],
     ['complement', 'because successful change requires more than a vision, it requires a workforce that not only doesn’t resist change, but embraces it', '表语从句（整体）'],
   ),
+  'R1-05': parts(
+    ['adverbial', 'To achieve success', '目的不定式短语'],
+    ['subject', 'an organization'],
+    ['predicate', 'must build'],
+    ['object', 'a transformation program that will allow change to be rapidly pulled across its departments and throughout its layers'],
+  ),
   'R1-06': parts(
     ['adverbial', 'Regardless of the level of senior management commitment'],
     ['adverbial', 'unless key thought leaders at all levels embrace the change', '条件状语从句（整体）'],
@@ -652,6 +719,15 @@ export const june2025Set3StructureOverrides: Readonly<Record<string, AnalysisOve
     ['complement', 'to what could be'],
     ['adverbial', 'which will enable them to rethink their mental models, enable them to break free from their deep-rooted paradigms and embrace the opportunity to learn', '结果说明（整体）'],
   ),
+  'R1-10': parts(
+    ['subject', 'Lectures, training programs and workshops'],
+    ['predicate', 'can explain'],
+    ['object', 'the intellectual elements of transformation'],
+    ['subject', 'they'],
+    ['predicate', 'are'],
+    ['complement', 'seldom effective'],
+    ['adverbial', 'at getting to the behavioral aspects that lie at the heart of a significant change initiative', '介词 + 动名词短语作方面状语'],
+  ),
   'R1-14': parts(
     ['subject', 'Simulations'],
     ['predicate', 'provide'],
@@ -662,6 +738,13 @@ export const june2025Set3StructureOverrides: Readonly<Record<string, AnalysisOve
     ['subject', 'The ability to explore, experiment and repeatedly apply new knowledge in unlimited, risk-free models'],
     ['predicate', 'is'],
     ['complement', 'what makes simulation one of the most productive forms of learning', '表语从句（整体）'],
+  ),
+  'R1-17': parts(
+    ['adverbial', 'To reap the benefits', '目的不定式短语'],
+    ['adverbial', 'however'],
+    ['subject', 'simulations'],
+    ['predicate', 'must feel'],
+    ['complement', 'like reality'],
   ),
   'R1-18': parts(
     ['adverbial', 'At the end of the successful simulation'],

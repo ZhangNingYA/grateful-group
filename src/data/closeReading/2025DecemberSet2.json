@@ -1,0 +1,3073 @@
+{
+  "C01": {
+    "translation": "我们人类喜欢相信自己与众不同，但科学和技术一次又一次证明这种信念是错误的。",
+    "vocabulary": [
+      {
+        "term": "repeatedly",
+        "explanation": "反复地；一再地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We humans"
+      },
+      {
+        "role": "predicate",
+        "text": "love"
+      },
+      {
+        "role": "complement",
+        "text": "to believe we are special"
+      }
+    ]
+  },
+  "C02": {
+    "translation": "人们曾以为只有人类会使用工具、组建团队或传播文化，但科学已经表明，其他动物也会做这些事。",
+    "vocabulary": [
+      {
+        "term": "propagate",
+        "explanation": "传播"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "People"
+      },
+      {
+        "role": "predicate",
+        "text": "thought"
+      },
+      {
+        "role": "object",
+        "text": "that humans were the only animals to use tools, to form teams or to propagate culture",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "C03": {
+    "translation": "与此同时，技术逐一击破了“创造性任务需要人类大脑”的说法。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Meanwhile",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "technology"
+      },
+      {
+        "role": "predicate",
+        "text": "has quashed"
+      }
+    ]
+  },
+  "C04": {
+    "translation": "第一台加法机于1623年发明。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The first adding machine"
+      },
+      {
+        "role": "predicate",
+        "text": "was invented"
+      }
+    ]
+  },
+  "C05": {
+    "translation": "就在过去一年，一件由计算机生成的作品赢得了艺术比赛。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "This past year",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "a computer-generated work"
+      },
+      {
+        "role": "predicate",
+        "text": "won"
+      },
+      {
+        "role": "object",
+        "text": "an art contest"
+      }
+    ]
+  },
+  "C06": {
+    "translation": "我相信计算机与人类智能相遇并超越人类智能的时刻已经近在眼前。",
+    "vocabulary": [
+      {
+        "term": "surpass",
+        "explanation": "超过"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "believe"
+      },
+      {
+        "role": "object",
+        "text": "the moment when computers meet and surpass human intelligence is on the horizon",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "C07": {
+    "translation": "当机器比最聪明的人更聪明、更有创造力时，人类的智能和创造力将如何被评价？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "How",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "human intelligence and creativity"
+      },
+      {
+        "role": "predicate",
+        "text": "will human intelligence and creativity be valued"
+      }
+    ]
+  },
+  "C08": {
+    "translation": "届时很可能会呈现一个连续的光谱。",
+    "vocabulary": [
+      {
+        "term": "spectrum",
+        "explanation": "范围；光谱"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "There"
+      },
+      {
+        "role": "predicate",
+        "text": "will likely be"
+      },
+      {
+        "role": "complement",
+        "text": "a spectrum"
+      }
+    ]
+  },
+  "C09": {
+    "translation": "在某些领域，即使计算机做得更好，人们仍然看重由人来完成事情。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In some domains",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "value"
+      },
+      {
+        "role": "object",
+        "text": "humans doing things"
+      }
+    ]
+  },
+  "C10": {
+    "translation": "计算机击败世界冠军加里·卡斯帕罗夫已经过去四分之一个世纪，但人类棋类运动并没有消失。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s been"
+      },
+      {
+        "role": "complement",
+        "text": "a quarter of a century"
+      }
+    ]
+  },
+  "C11": {
+    "translation": "在另一些领域，人类技能会显得昂贵而且逊色。",
+    "vocabulary": [
+      {
+        "term": "inferior",
+        "explanation": "较差的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In other fields",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "human skill"
+      },
+      {
+        "role": "predicate",
+        "text": "will seem"
+      },
+      {
+        "role": "complement",
+        "text": "costly and inferior"
+      }
+    ]
+  },
+  "C12": {
+    "translation": "以插画为例：大多数读者并不在乎杂志文章配图是人画的还是电脑生成的；他们只希望它切题、新颖，也许还要漂亮。当然，这个问题并非非黑即白。",
+    "vocabulary": [
+      {
+        "term": "accompanying",
+        "explanation": "伴随的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "want"
+      },
+      {
+        "role": "object",
+        "text": "Take illustration for example: most readers don't care whether the graphic accompanying a magazine article was drawn by a person or a computer",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "C13": {
+    "translation": "许多领域将呈现人机混合的形态：少数人找到有利位置，但大部分工作由计算机完成，就像今天的制造业——大部分工作由机器人完成，但仍需一些人监控机器。",
+    "vocabulary": [
+      {
+        "term": "hybrid",
+        "explanation": "混合的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Many fields"
+      },
+      {
+        "role": "predicate",
+        "text": "will be"
+      },
+      {
+        "role": "complement",
+        "text": "a hybrid, where some humans find a lucky place"
+      }
+    ]
+  },
+  "C14": {
+    "translation": "如果历史可以作为借鉴，那么人工智能的发展几乎肯定会让更多工作消失；只具有人类专属技能的创意工作者会变得更富有但人数更少，而拥有创意技术的人将成为新的超级富豪。",
+    "vocabulary": [
+      {
+        "term": "ultra-rich",
+        "explanation": "超级富豪"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If history is any guide",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "object",
+        "text": "that advances in AI will cause more jobs to disappear",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-A01": {
+    "translation": "项目、人际关系和工作并不总能按计划发展，而且何时放弃也并不总是清楚。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Projects, relationships, and jobs"
+      },
+      {
+        "role": "predicate",
+        "text": "don't always work out"
+      }
+    ]
+  },
+  "M-A02": {
+    "translation": "我们都反复听过“放弃者永远不会赢”这句话，但有时止损才是最好的决定。",
+    "vocabulary": [
+      {
+        "term": "cut our losses",
+        "explanation": "及时止损；停止继续投入"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "have all repeatedly heard"
+      },
+      {
+        "role": "object",
+        "text": "the saying that \"quitters never win"
+      }
+    ]
+  },
+  "M-B01": {
+    "translation": "想想那段你明知已经走到尽头却仍坚持的关系，或那个老板让你痛苦不堪、你却继续留下的工作。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Think"
+      }
+    ]
+  },
+  "M-B02": {
+    "translation": "我们许多人试图抓住最后一线希望，想着无论“它”是什么，都能把事情做好。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "Many of us try to hold onto the last ray of hope, thinking we can make it work",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-B03": {
+    "translation": "坚持通常是一种优秀品质，但也可能使你倾向于在已经不再明智的事情上投入过多。",
+    "vocabulary": [
+      {
+        "term": "perseverance",
+        "explanation": "坚持不懈"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "while perseverance is generally an excellent quality",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "may also incline"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      }
+    ]
+  },
+  "M-C01": {
+    "translation": "作为一名高管教练，我与许多充满热情、勤奋努力却不愿“放弃”的领导者共事。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As an executive coach",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "work"
+      }
+    ]
+  },
+  "M-C02": {
+    "translation": "但最聪明的领导者会学会辨别过早放弃与坚持不该坚持之事的区别。",
+    "vocabulary": [
+      {
+        "term": "discern",
+        "explanation": "辨别"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the smartest leaders"
+      },
+      {
+        "role": "predicate",
+        "text": "learn"
+      },
+      {
+        "role": "complement",
+        "text": "to discern the difference between quitting too soon and holding onto something"
+      }
+    ]
+  },
+  "M-D01": {
+    "translation": "我们都容易陷入沉没成本谬误：这种无意识的偏见让我们坚持已经投入时间、精力或金钱的事业，即使放弃会更有利。",
+    "vocabulary": [
+      {
+        "term": "susceptible",
+        "explanation": "易受影响的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "an unconscious bias that leads us to persist in an endeavor we have already invested time, effort, or money into—even when abandoning it would be more beneficial"
+      }
+    ]
+  },
+  "M-D02": {
+    "translation": "我们知道投入的资源无法收回，于是继续坚持——投资一个本应叫停的项目，留在一段本应结束的关系中，或读完一本已经不再喜欢、其实该放下的书，因为我们已经读了一半。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "persevere"
+      },
+      {
+        "role": "object",
+        "text": "We realize that we can't get back the resources we've given",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-D03": {
+    "translation": "如果“放弃不是你的风格”，你尤其容易受到这种偏见影响。",
+    "vocabulary": [
+      {
+        "term": "susceptible",
+        "explanation": "易受影响的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If quitting is \"not your thing",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "may be"
+      }
+    ]
+  },
+  "M-E01": {
+    "translation": "沉没成本谬误让我们过度担心继续前进会失去什么，却没有充分考虑不继续前进的代价。",
+    "vocabulary": [
+      {
+        "term": "delusion",
+        "explanation": "错觉；谬误"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The sunk-cost delusion"
+      },
+      {
+        "role": "predicate",
+        "text": "causes"
+      },
+      {
+        "role": "object",
+        "text": "us to overly worry about what we'll lose if we move on and not think enough about the costs of not moving on",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-E02": {
+    "translation": "为了抵消这种偏见，要有意识地把思考重新集中到收益上，从而更客观地权衡各种选择。",
+    "vocabulary": [
+      {
+        "term": "offset",
+        "explanation": "抵消"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "To offset this bias",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "refocus"
+      },
+      {
+        "role": "object",
+        "text": "your thinking"
+      }
+    ]
+  },
+  "M-E03": {
+    "translation": "问问自己：现在止损，我可能得到什么？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Ask"
+      },
+      {
+        "role": "object",
+        "text": "yourself"
+      }
+    ]
+  },
+  "M-E04": {
+    "translation": "你会更快乐，或者有时间抓住另一个（更好的）机会吗？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "Will you be"
+      }
+    ]
+  },
+  "M-E05": {
+    "translation": "然后再问自己：坚持下去会付出什么代价？",
+    "vocabulary": [
+      {
+        "term": "soldier on",
+        "explanation": "迎难坚持；硬着头皮继续"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Then",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "ask"
+      },
+      {
+        "role": "object",
+        "text": "yourself"
+      }
+    ]
+  },
+  "M-E06": {
+    "translation": "例如，你是否可能把更多的好钱继续投入到已经损失的事情中？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For example",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that you'll be throwing more good money after what you've already lost",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-E07": {
+    "translation": "或者你会不会没有精力把握其他有希望的可能性？",
+    "vocabulary": [
+      {
+        "term": "capitalize",
+        "explanation": "利用；从中获益"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "won't have"
+      },
+      {
+        "role": "object",
+        "text": "the energy to capitalize on other promising possibilities"
+      }
+    ]
+  },
+  "M-F01": {
+    "translation": "控制幻觉也会干扰我们最好的判断，使我们高估自己控制事件、取得积极结果的能力。",
+    "vocabulary": [
+      {
+        "term": "illusion",
+        "explanation": "幻觉；错觉"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The illusion of control"
+      },
+      {
+        "role": "predicate",
+        "text": "can also interfere"
+      }
+    ]
+  },
+  "M-F02": {
+    "translation": "这种偏见让我们产生能动感，也有助于心理健康。",
+    "vocabulary": [
+      {
+        "term": "agency",
+        "explanation": "能动性；自主感"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This bias"
+      },
+      {
+        "role": "predicate",
+        "text": "gives"
+      },
+      {
+        "role": "object",
+        "text": "a sense of agency"
+      }
+    ]
+  },
+  "M-F03": {
+    "translation": "然而，这种偏见也可能导致我们对一条正在失败的行动路线不断加码。",
+    "vocabulary": [
+      {
+        "term": "escalating",
+        "explanation": "不断升级的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "However",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the bias"
+      },
+      {
+        "role": "predicate",
+        "text": "can also result"
+      }
+    ]
+  },
+  "M-F04": {
+    "translation": "尤其当它与“我不是一个放弃者”的心态结合时，觉得自己比实际更能控制某件事或某个人，会让我们在应该退出时反而不断押注。",
+    "vocabulary": [
+      {
+        "term": "double down",
+        "explanation": "加倍投入；在不利局面中仍进一步坚持"
+      },
+      {
+        "term": "pull out",
+        "explanation": "退出；撤出"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Especially",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "am not"
+      },
+      {
+        "role": "complement",
+        "text": "a quitter\" mentality"
+      }
+    ]
+  },
+  "M-G01": {
+    "translation": "要抵消这种偏见，可以审视自己的处境，用两栏清单列出哪些事情在控制之内、哪些不在。",
+    "vocabulary": [
+      {
+        "term": "counteract",
+        "explanation": "抵消；对抗"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "To counteract this bias",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "consider"
+      },
+      {
+        "role": "object",
+        "text": "your situation"
+      }
+    ]
+  },
+  "M-G02": {
+    "translation": "虽然你或许能够影响他人和各种情况，却无法强迫他们改变或按你的意愿行事。",
+    "vocabulary": [
+      {
+        "term": "influence",
+        "explanation": "影响"
+      },
+      {
+        "term": "go your way",
+        "explanation": "按你的意愿发展"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "can't force"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ]
+  },
+  "M-H01": {
+    "translation": "弄清自己能控制什么、不能控制什么，对于决定是放弃还是坚持至关重要。",
+    "vocabulary": [
+      {
+        "term": "call it quits",
+        "explanation": "就此停止；决定放弃"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Getting"
+      },
+      {
+        "role": "object",
+        "text": "what you can't is essential to making a quality decision about whether to call it quits or persevere",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-H02": {
+    "translation": "手头有一份书面清单，你就能确保把注意力放在可控之处，并更好评估继续努力是否值得付出代价。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "With a written list in hand",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "can ensure"
+      },
+      {
+        "role": "object",
+        "text": "you focus on what you can control and better assess whether your continued efforts are worth the expense",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-H03": {
+    "translation": "把精力和情绪耗在无法控制的事情上，既会让人筋疲力尽，也会使人感到无力。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "动名词/非谓语短语作主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Expending effort and emotion on things you can't control",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "M-I01": {
+    "translation": "研究表明，人们会把自我身份和社会地位与自己的承诺联系起来。",
+    "vocabulary": [
+      {
+        "term": "status",
+        "explanation": "地位"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Research"
+      },
+      {
+        "role": "predicate",
+        "text": "indicates"
+      },
+      {
+        "role": "object",
+        "text": "that people link their self-identity and social status to their commitments",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-I02": {
+    "translation": "正因为我们认同自己的承诺，退出其中一项就可能感觉像是对身份或地位的威胁。",
+    "vocabulary": [
+      {
+        "term": "identity",
+        "explanation": "身份；认同"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 动名词/非谓语短语作主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "because we identify with our commitments",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "withdrawing from one",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "can feel"
+      }
+    ]
+  },
+  "M-J01": {
+    "translation": "以我的客户 Ryan 为例，她是一家科技公司的领导者。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Take"
+      },
+      {
+        "role": "object",
+        "text": "my client Ryan, a leader at a technology company"
+      }
+    ]
+  },
+  "M-J02": {
+    "translation": "Ryan 在一个没有带来所需成果的设计项目上投入了两年时间和大量精力，但想到放弃这个自己倾注了这么多的项目，她就难以承受。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Ryan"
+      },
+      {
+        "role": "predicate",
+        "text": "had invested"
+      }
+    ]
+  },
+  "M-J03": {
+    "translation": "我和 Ryan 探讨她是否应该取消自己一直领导的计划，还是继续坚持时，她说：“问题在于，我不是一个放弃者。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As Ryan and I explored whether she should cancel the initiative she'd been leading or continue to persevere",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "stated"
+      },
+      {
+        "role": "object",
+        "text": "The thing is, I'm not a quitter",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-J04": {
+    "translation": "这种单一而僵化的自我认知蒙蔽了她的判断，限制了她采取行动的选择。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This singular, fixed sense of self"
+      },
+      {
+        "role": "predicate",
+        "text": "was clouding"
+      },
+      {
+        "role": "object",
+        "text": "her judgment"
+      }
+    ]
+  },
+  "M-K01": {
+    "translation": "我们的自我概念和身份都是影响行为的心理概念。",
+    "vocabulary": [
+      {
+        "term": "identity",
+        "explanation": "身份；认同"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Our self-concept and identity"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "mental concepts that influence our behavior"
+      }
+    ]
+  },
+  "M-K02": {
+    "translation": "如果你强烈认定自己不是放弃者，就可能因为狭隘僵化的自我概念而困在一条行动路线上。",
+    "vocabulary": [
+      {
+        "term": "rigid",
+        "explanation": "僵化的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "can end up"
+      },
+      {
+        "role": "complement",
+        "text": "staying stuck in a course of action"
+      }
+    ]
+  },
+  "M-K03": {
+    "translation": "要克服这种内部障碍，回想自己的其他积极特质和性格特点。",
+    "vocabulary": [
+      {
+        "term": "obstacle",
+        "explanation": "障碍"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "To overcome this kind of internal obstacle",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "recall"
+      },
+      {
+        "role": "object",
+        "text": "your other positive traits and personality characteristics"
+      }
+    ]
+  },
+  "M-K04": {
+    "translation": "问问自己：我还具备（或希望具备）哪些有助于在这里采取行动的优势？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Ask"
+      },
+      {
+        "role": "object",
+        "text": "yourself"
+      }
+    ]
+  },
+  "M-K05": {
+    "translation": "例如，当我问 Ryan 还需要调动哪些性格中的积极品质来帮助决策时，她回答：“辨别力和勇气。”",
+    "vocabulary": [
+      {
+        "term": "leverage",
+        "explanation": "利用；调动"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For example",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "replied"
+      }
+    ]
+  },
+  "M-L01": {
+    "translation": "现在，从自己的每一个这些方面来审视处境。",
+    "vocabulary": [
+      {
+        "term": "through the lens of",
+        "explanation": "从……的视角；透过……来看"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Now",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "examine"
+      },
+      {
+        "role": "object",
+        "text": "your situation"
+      }
+    ]
+  },
+  "M-L02": {
+    "translation": "你内心具有辨别力的那一部分会怎么说？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the discerning part of you"
+      },
+      {
+        "role": "predicate",
+        "text": "does the discerning part of you say"
+      },
+      {
+        "role": "object",
+        "text": "What"
+      }
+    ]
+  },
+  "M-L03": {
+    "translation": "从这些不同特质的角度思考决定，会让你看到自己拥有更多选择。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "动名词/非谓语短语作主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Considering your decision through these different characteristics",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "will enable"
+      },
+      {
+        "role": "object",
+        "text": "you"
+      }
+    ]
+  },
+  "M-L04": {
+    "translation": "此外，寻找外部信息来源也很有帮助，不要只依赖自己的思考和直觉。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "to seek external sources of information, rather than relying solely on your thinking and instincts"
+      }
+    ]
+  },
+  "M-L05": {
+    "translation": "但重要的是要想清楚你征求的是谁的意见。",
+    "vocabulary": [
+      {
+        "term": "solicit",
+        "explanation": "征求"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "to think through whose opinions you solicit"
+      }
+    ]
+  },
+  "M-M01": {
+    "translation": "理想情况下，应找那些比你更少投入这项决定的人。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Ideally",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "seek out"
+      },
+      {
+        "role": "object",
+        "text": "people who are less invested in your decision than you are"
+      }
+    ]
+  },
+  "M-M02": {
+    "translation": "例如，如果你在考虑是否关闭自己的创业项目，就去找其他创始人，而不是只找商业伙伴。",
+    "vocabulary": [
+      {
+        "term": "venture",
+        "explanation": "事业；风险项目"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If you're considering",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "reach out"
+      }
+    ]
+  },
+  "M-M03": {
+    "translation": "同样，如果你在寻求恋爱建议，应询问置身于你们关系起伏之外的人，而不要只依赖最好的朋友。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Similarly",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "ask"
+      },
+      {
+        "role": "object",
+        "text": "someone removed from the ups and downs of your relationship"
+      }
+    ]
+  },
+  "M-M04": {
+    "translation": "在所有情况下，我都建议你描述自己的处境，并以这样的问题跟进：“你会如何处理这种情况？”",
+    "vocabulary": [
+      {
+        "term": "recommend",
+        "explanation": "推荐"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In all cases",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "recommend"
+      },
+      {
+        "role": "complement",
+        "text": "describing your situation and following up with a question like: “How would you manage this situation?”"
+      }
+    ]
+  },
+  "M-N01": {
+    "translation": "另外，你也可以寻找能说明自己在所考虑事业中真实成功机会的硬数据。",
+    "vocabulary": [
+      {
+        "term": "endeavor",
+        "explanation": "努力；事业"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Alternately",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "could also seek out"
+      },
+      {
+        "role": "object",
+        "text": "hard data that illuminates your real chance of success in whatever endeavor you are contemplating"
+      }
+    ]
+  },
+  "M-N02": {
+    "translation": "继续以创业项目为例，数字是你最好的朋友。",
+    "vocabulary": [
+      {
+        "term": "venture",
+        "explanation": "事业；风险项目"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Sticking with the example of the entrepreneurial venture",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "numbers"
+      },
+      {
+        "role": "predicate",
+        "text": "are"
+      },
+      {
+        "role": "complement",
+        "text": "your best friend"
+      }
+    ]
+  },
+  "M-N03": {
+    "translation": "利用数字把自己从对这个想法的热爱中抽离出来，并考虑烧钱速度相对于增长计划、行业增长率以及其他预测初创企业成功的因素。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "Use"
+      },
+      {
+        "role": "object",
+        "text": "them"
+      }
+    ]
+  },
+  "M-N04": {
+    "translation": "外部信息来源能帮助你看到自己可能没有考虑过的角度和可能性。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "might not have considered"
+      },
+      {
+        "role": "object",
+        "text": "External sources of information can help you see angles and possibilities",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-O01": {
+    "translation": "当一件起初看起来很有希望的事没有像我们想象的那样发展时，我们可能会过度自责。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "When something that seemed so promising at the start doesn't turn out the way we imagined",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "can become"
+      }
+    ]
+  },
+  "M-O02": {
+    "translation": "没人喜欢觉得自己做了糟糕的决定，尤其当“能做出明智决定”是你高度重视的品质时。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Nobody"
+      },
+      {
+        "role": "predicate",
+        "text": "likes"
+      },
+      {
+        "role": "complement",
+        "text": "to feel that they've made a poor decision,"
+      }
+    ]
+  },
+  "M-O03": {
+    "translation": "这里最有效的策略是放自己一马。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The most effective strategy here"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to give yourself a break"
+      }
+    ]
+  },
+  "M-O04": {
+    "translation": "练习自我慈悲能增强韧性、情商和对他人的同情，也能提升表现并帮助你形成成长型思维。",
+    "vocabulary": [
+      {
+        "term": "resilience",
+        "explanation": "韧性"
+      }
+    ],
+    "structure": {
+      "pattern": "动名词/非谓语短语作主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Practicing",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "increases"
+      },
+      {
+        "role": "object",
+        "text": "your resilience (韧性), emotional intelligence, compassion toward others"
+      }
+    ]
+  },
+  "M-P01": {
+    "translation": "不要反复斟酌并责备自己，而应把注意力放在能从这次经历中学到什么上。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Instead of deliberating and criticizing yourself",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "predicate",
+        "text": "focus"
+      }
+    ]
+  },
+  "M-P02": {
+    "translation": "例如，Ryan 意识到，领导这个设计项目让她培养了各种新技能和领导能力。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "For example",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "Ryan"
+      },
+      {
+        "role": "predicate",
+        "text": "recognized"
+      },
+      {
+        "role": "object",
+        "text": "she had developed various new skills and leadership capabilities from leading the design project",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-P03": {
+    "translation": "尽管最终决定放弃，她仍然庆幸自己尝试过，也感谢这段经历教会她的东西。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "despite ultimately deciding to drop it",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "she"
+      },
+      {
+        "role": "predicate",
+        "text": "was"
+      }
+    ]
+  },
+  "M-Q01": {
+    "translation": "不可否认，坚持可以帮助我们取得成功。",
+    "vocabulary": [
+      {
+        "term": "perseverance",
+        "explanation": "坚持不懈"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Undeniably",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "perseverance"
+      },
+      {
+        "role": "predicate",
+        "text": "can help"
+      },
+      {
+        "role": "object",
+        "text": "us succeed",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "M-Q02": {
+    "translation": "但为了自己的福祉，重要的是学会区分过早放弃和紧抓一条失败的行动路线。",
+    "vocabulary": [
+      {
+        "term": "wellbeing",
+        "explanation": "福祉"
+      },
+      {
+        "term": "cling to",
+        "explanation": "紧抓不放；固守"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "for your wellbeing",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "'s"
+      },
+      {
+        "role": "complement",
+        "text": "to learn how to distinguish quitting too soon and clinging to a losing course of action"
+      }
+    ]
+  },
+  "M-Q03": {
+    "translation": "放手可能很难，但它会释放你的时间、精力和心理空间，让你想象新的可能并追求新的机会。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "While letting go can be difficult",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "will free up"
+      },
+      {
+        "role": "object",
+        "text": "your time, energy, and mental space"
+      }
+    ]
+  },
+  "R1-01": {
+    "translation": "作为相互依存的个体，我们离开他人就无法蓬勃发展。",
+    "vocabulary": [
+      {
+        "term": "interdependent",
+        "explanation": "相互依存的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "we"
+      },
+      {
+        "role": "predicate",
+        "text": "cannot thrive"
+      },
+      {
+        "role": "object",
+        "text": "independent of others"
+      }
+    ]
+  },
+  "R1-02": {
+    "translation": "我们喜欢与志趣相投的人一起工作：和他们有共同兴趣，或者他们也相信我们认真投入的事业。",
+    "vocabulary": [
+      {
+        "term": "like-minded",
+        "explanation": "志趣相投的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "We"
+      },
+      {
+        "role": "predicate",
+        "text": "like"
+      },
+      {
+        "role": "complement",
+        "text": "to work with people who are like-minded, with whom we share a common interest, or who also believe in a cause we are serious about"
+      }
+    ]
+  },
+  "R1-03": {
+    "translation": "这一点从我们如何把自己组织成国家、地区、社区、机构和家庭等各种集体群体中就能看出。",
+    "vocabulary": [
+      {
+        "term": "collective",
+        "explanation": "集体的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "This"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-04": {
+    "translation": "你所属的群体是否拥有强烈的集体意识或共同信念？",
+    "vocabulary": [
+      {
+        "term": "collective",
+        "explanation": "集体的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "the group you belong"
+      },
+      {
+        "role": "predicate",
+        "text": "Does the group you belong to have"
+      },
+      {
+        "role": "object",
+        "text": "a strong collective consciousness or shared beliefs"
+      }
+    ]
+  },
+  "R1-05": {
+    "translation": "其成员之间存在相互依存吗？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "Is"
+      },
+      {
+        "role": "complement",
+        "text": "interdependence among its members"
+      }
+    ]
+  },
+  "R1-06": {
+    "translation": "你是否认为这个群体是自己存在的重要组成部分？",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "Do you consider"
+      },
+      {
+        "role": "object",
+        "text": "this group a significant part of your existence",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R1-07": {
+    "translation": "如果你的回答是肯定的，那么你正在体验一种微观层面的团结。",
+    "vocabulary": [
+      {
+        "term": "affirmative",
+        "explanation": "肯定的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "are experiencing"
+      },
+      {
+        "role": "object",
+        "text": "a micro version of solidarity"
+      }
+    ]
+  },
+  "R1-08": {
+    "translation": "什么是团结？",
+    "vocabulary": [
+      {
+        "term": "solidarity",
+        "explanation": "团结；团结一致"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "What"
+      }
+    ]
+  },
+  "R1-09": {
+    "translation": "字典给出的最简单定义是：",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Its simplest definition in the dictionary"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-10": {
+    "translation": "“一个群体成员之间统一的意见、感受、目标或利益。”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "省略式回答（整体）",
+      "explanation": "这是上下文中的简短表达，需结合前后句还原省略的信息。"
+    },
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "\"a unifying opinion, feeling, purpose or interest among a group of people.\"",
+        "label": "省略式回答（整体）"
+      }
+    ]
+  },
+  "R1-11": {
+    "translation": "在我们所处的这个日益多元的社会中，团结随着自身形成复杂而多面的特征：它在快速变化的环境里、在复杂分工中工作的独特个体之间建立相互依存的纽带。",
+    "vocabulary": [
+      {
+        "term": "solidarity",
+        "explanation": "团结；团结一致"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In this increasingly diverse society we live in",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "takes on"
+      },
+      {
+        "role": "object",
+        "text": "a complex and multifaceted character"
+      }
+    ]
+  },
+  "R1-12": {
+    "translation": "团结的一个面向与社群主义的原则十分契合。",
+    "vocabulary": [
+      {
+        "term": "facet",
+        "explanation": "方面"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One facet of solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "fits"
+      }
+    ]
+  },
+  "R1-13": {
+    "translation": "在这种情形下，个人放弃自身利益以服务共同利益。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In this setting",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "individuals"
+      },
+      {
+        "role": "predicate",
+        "text": "give up"
+      },
+      {
+        "role": "object",
+        "text": "their own interests"
+      }
+    ]
+  },
+  "R1-14": {
+    "translation": "然而，对社会凝聚力和排他性的严格遵循，会限制个人差异与偏好的表达和实践。",
+    "vocabulary": [
+      {
+        "term": "adherence",
+        "explanation": "遵循；坚持"
+      }
+    ],
+    "structure": {
+      "pattern": "省略式回答（整体）",
+      "explanation": "这是上下文中的简短表达，需结合前后句还原省略的信息。"
+    },
+    "highlights": [
+      {
+        "role": "complement",
+        "text": "However, its strict adherence to social cohesiveness and exclusiveness restricts expression and practice of individual differences and preferences.",
+        "label": "省略式回答（整体）"
+      }
+    ]
+  },
+  "R1-15": {
+    "translation": "因此，为了维护群体统一，个体性和自主性被牺牲了。",
+    "vocabulary": [
+      {
+        "term": "autonomy",
+        "explanation": "自主性"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Consequently",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "individuality and autonomy"
+      },
+      {
+        "role": "predicate",
+        "text": "is sacrificed"
+      },
+      {
+        "role": "complement",
+        "text": "to maintain the unity of the group"
+      }
+    ]
+  },
+  "R1-16": {
+    "translation": "团结也被视为对极端强调个人主义和选择自由的一种反应。",
+    "vocabulary": [
+      {
+        "term": "Solidarity",
+        "explanation": "团结；团结一致"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "is also viewed"
+      }
+    ]
+  },
+  "R1-17": {
+    "translation": "它反对那种自由主义观念：不受约束的个人把社会视为妨碍自己选择并按自身利益行事的障碍，而不管这些行为会如何影响他人。",
+    "vocabulary": [
+      {
+        "term": "liberal",
+        "explanation": "自由主义的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "goes"
+      }
+    ]
+  },
+  "R1-18": {
+    "translation": "尽管团结有许多面向，社会理论家仍把它视为促成社会秩序与进步的关键因素。",
+    "vocabulary": [
+      {
+        "term": "solidarity",
+        "explanation": "团结；团结一致"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "despite its many facets",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "social theorists"
+      },
+      {
+        "role": "predicate",
+        "text": "have viewed"
+      },
+      {
+        "role": "object",
+        "text": "solidarity"
+      }
+    ]
+  },
+  "R1-19": {
+    "translation": "他们认为，随着社会日益多元，为了让人类社会存续，需要基于差异建立更多新的纽带。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "more new bonds"
+      },
+      {
+        "role": "predicate",
+        "text": "need"
+      },
+      {
+        "role": "object",
+        "text": "They believe that for human society to survive as it becomes more diverse",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R1-20": {
+    "translation": "鉴于此，他们认为真正的团结不只是建立在共同利益上的浅层关系。",
+    "vocabulary": [
+      {
+        "term": "genuine",
+        "explanation": "真正的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "In the light of this",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "they"
+      },
+      {
+        "role": "predicate",
+        "text": "regard"
+      },
+      {
+        "role": "object",
+        "text": "a genuine solidarity"
+      }
+    ]
+  },
+  "R1-21": {
+    "translation": "团结不只是计算对自身有多大好处的策略性产物。",
+    "vocabulary": [
+      {
+        "term": "Solidarity",
+        "explanation": "团结；团结一致"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Solidarity"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "just a product of strategic calculations of how much it will benefit the self"
+      }
+    ]
+  },
+  "R1-22": {
+    "translation": "它不是建立在“你和我对抗全世界”原则上的排他阶层。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is not"
+      },
+      {
+        "role": "complement",
+        "text": "an exclusive class founded on the you-and-me-against-the-world principle"
+      }
+    ]
+  },
+  "R1-23": {
+    "translation": "相反，它具有包容性，也不是被强迫的。",
+    "vocabulary": [
+      {
+        "term": "inclusive",
+        "explanation": "包容的"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Rather",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-24": {
+    "translation": "出于团结而行动，意味着彼此支持、为彼此挺身而出——认识到一个人的命运与他人的命运相连。",
+    "vocabulary": [
+      {
+        "term": "solidarity",
+        "explanation": "团结；团结一致"
+      },
+      {
+        "term": "stand up for",
+        "explanation": "支持；维护；为……挺身而出"
+      }
+    ],
+    "structure": {
+      "pattern": "动名词/非谓语短语作主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Acting out of solidarity means supporting and standing up for each other",
+        "label": "动名词/非谓语短语作主语"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R1-25": {
+    "translation": "这是一种以合作实践为特征、并因关心他人福祉或共同利益而得到强化的纽带。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "a bond characterised by cooperative practices and strengthened by the concern for the well-being of others or the common good"
+      }
+    ]
+  },
+  "R1-26": {
+    "translation": "它为保护人的尊严而斗争，倾听最脆弱者的呼声并采取行动。",
+    "vocabulary": [
+      {
+        "term": "dignity",
+        "explanation": "尊严"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "fights"
+      }
+    ]
+  },
+  "R2-01": {
+    "translation": "反复给出不请自来的建议的人可能是出于好意，真心想帮忙。",
+    "vocabulary": [
+      {
+        "term": "repeatedly",
+        "explanation": "反复地"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "People who repeatedly give unwanted advice"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      }
+    ]
+  },
+  "R2-02": {
+    "translation": "另一些人这样做，可能是因为他们把影响他人的能力视为自我价值感的来源。",
+    "vocabulary": [
+      {
+        "term": "self-worth",
+        "explanation": "自我价值感"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "Others"
+      },
+      {
+        "role": "predicate",
+        "text": "might do"
+      },
+      {
+        "role": "object",
+        "text": "this"
+      }
+    ]
+  },
+  "R2-03": {
+    "translation": "一项研究发现，强烈寻求权力的人比倾向相反的人更可能给出建议。",
+    "vocabulary": [
+      {
+        "term": "tendency",
+        "explanation": "倾向"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "One study"
+      },
+      {
+        "role": "predicate",
+        "text": "found"
+      },
+      {
+        "role": "object",
+        "text": "that people with a high tendency to seek power were more likely to give advice than those with an opposite tendency",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-04": {
+    "translation": "有些人打着无私的旗号给你不请自来的建议，其实是因为这让他们感到强大或掌控局面。",
+    "vocabulary": [
+      {
+        "term": "guise",
+        "explanation": "伪装；旗号"
+      }
+    ],
+    "structure": {
+      "pattern": "状语短语（整体） + 主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Under the guise of unselfishness",
+        "label": "状语短语（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "people"
+      },
+      {
+        "role": "predicate",
+        "text": "may be driven"
+      },
+      {
+        "role": "complement",
+        "text": "to give you unwanted advice"
+      }
+    ]
+  },
+  "R2-05": {
+    "translation": "不过，他们可能并没有完全意识到这种驱动力。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "They"
+      },
+      {
+        "role": "predicate",
+        "text": "may not be"
+      }
+    ]
+  },
+  "R2-06": {
+    "translation": "这些人还可能表现出程度令人担忧的情绪脆弱性：很快感到不安，而且需要很长时间才能平静下来。",
+    "vocabulary": [
+      {
+        "term": "emotional",
+        "explanation": "情绪的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "These people"
+      },
+      {
+        "role": "predicate",
+        "text": "may also display"
+      },
+      {
+        "role": "object",
+        "text": "a problematic degree of emotional vulnerability"
+      }
+    ]
+  },
+  "R2-07": {
+    "translation": "有可能，他们的情绪只有在童年时表现得最激烈才会得到认可，这促使他们养成在大多数情境下都对不适作出过度反应的方式。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "object",
+        "text": "that their emotions were only validated in childhood when they were at their loudest, encouraging them to adopt responses to discomfort that are excessive in most situations",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-08": {
+    "translation": "当一个人为了让自己更有力量而给建议时，其行为背后存在一种焦虑，建议接受者往往能察觉到。",
+    "vocabulary": [
+      {
+        "term": "underlying anxiety",
+        "explanation": "潜在的焦虑；深层焦虑"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "there"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "underlying anxiety to their behavior that recipients of the advice tend to notice"
+      }
+    ]
+  },
+  "R2-09": {
+    "translation": "在这种情况下，人们很容易严厉回应建议者并指责其操纵他人，但这样做可能产生不理想的结果。",
+    "vocabulary": [
+      {
+        "term": "manipulative",
+        "explanation": "操纵性的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "can be"
+      },
+      {
+        "role": "complement",
+        "text": "to react harshly to the advice giver and to accuse them of being manipulative"
+      }
+    ]
+  },
+  "R2-10": {
+    "translation": "如果给建议这一行为正积极支撑某人的自我价值感，直接拒绝就可能被视为威胁，激活其“战或逃”反应，可能使其加倍进行寻求认可的行为，或引发更大冲突。",
+    "vocabulary": [
+      {
+        "term": "self-worth",
+        "explanation": "自我价值感"
+      },
+      {
+        "term": "fight-or-flight response",
+        "explanation": "战或逃反应；面对威胁时的本能反应"
+      },
+      {
+        "term": "double down",
+        "explanation": "加倍坚持；进一步加码"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "If the act of giving advice is contributing actively to someone's feelings of self-worth",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "an outright rejection"
+      },
+      {
+        "role": "predicate",
+        "text": "may be perceived"
+      }
+    ]
+  },
+  "R2-11": {
+    "translation": "关键是在认可对方的同时不过度认同。",
+    "vocabulary": [
+      {
+        "term": "validate",
+        "explanation": "认可；使有效"
+      },
+      {
+        "term": "over-identifying",
+        "explanation": "过度认同；把自己过多代入对方"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "The key"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to validate without over-identifying"
+      }
+    ]
+  },
+  "R2-12": {
+    "translation": "你可以让对方知道自己听到了他的意见，也理解其出发点，但不要接受“没有他的帮助你就无法应付”的潜在有害叙事。",
+    "vocabulary": [
+      {
+        "term": "gotten by",
+        "explanation": "勉强应付；设法过下去"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "can let"
+      },
+      {
+        "role": "object",
+        "text": "them know that you have heard them and appreciate where they are coming from without taking on the potentially damaging narrative that you could not have gotten by without their help",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-13": {
+    "translation": "你最好这样说：“谢谢你的建议。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "You"
+      },
+      {
+        "role": "predicate",
+        "text": "had better say"
+      },
+      {
+        "role": "object",
+        "text": "something like"
+      }
+    ]
+  },
+  "R2-14": {
+    "translation": "我有自己的处理计划，但非常感谢你的看法，我会考虑的。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 宾语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "have"
+      },
+      {
+        "role": "object",
+        "text": "my own plan for handling this"
+      }
+    ]
+  },
+  "R2-15": {
+    "translation": "将来需要帮助时我可以告诉你吗？”",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 内容从句（整体）",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "I"
+      },
+      {
+        "role": "predicate",
+        "text": "Can I let"
+      },
+      {
+        "role": "object",
+        "text": "you know when I need help in the future?",
+        "label": "内容从句（整体）"
+      }
+    ]
+  },
+  "R2-16": {
+    "translation": "如果你难以得体地设定界限，就优先练习自我调节能力。",
+    "vocabulary": [
+      {
+        "term": "tactfully",
+        "explanation": "圆通得体地"
+      }
+    ],
+    "structure": {
+      "pattern": "祈使句（列表项，省略主语 you）",
+      "explanation": "这是祈使句，主语 you 被省略；先理解谓语动词，再补出动作对象和目的。"
+    },
+    "highlights": [
+      {
+        "role": "predicate",
+        "text": "prioritize"
+      },
+      {
+        "role": "complement",
+        "text": "working on your own ability to self-regulate"
+      }
+    ]
+  },
+  "R2-17": {
+    "translation": "持续收到不请自来的建议可能让你不舒服，但如果你能带着同理心回应，情况很可能会更快缓和。",
+    "vocabulary": [
+      {
+        "term": "compassion",
+        "explanation": "同情；慈悲"
+      },
+      {
+        "term": "diffuse",
+        "explanation": "（此处指局面）缓和、消散"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "As uncomfortable as it may make you continuously receiving unwanted advice",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "the situation"
+      },
+      {
+        "role": "predicate",
+        "text": "will likely diffuse"
+      }
+    ]
+  },
+  "R2-18": {
+    "translation": "虽然让人感到压力、被冒犯或恼火通常并非给出不请自来建议者的本意，但许多接受者确实会因这些建议产生上述感受。",
+    "vocabulary": [
+      {
+        "term": "unsolicited",
+        "explanation": "未经请求的"
+      }
+    ],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "it"
+      },
+      {
+        "role": "predicate",
+        "text": "is usually not"
+      },
+      {
+        "role": "complement",
+        "text": "the intended outcome of giving unsolicited advice, many who receive it often feel stressed, offended, or simply annoyed by unwanted suggestions"
+      }
+    ]
+  },
+  "R2-19": {
+    "translation": "在这方面设定界限（如果你觉得需要）完全合理，也能带来更强的情绪安全感。",
+    "vocabulary": [
+      {
+        "term": "boundary",
+        "explanation": "界限"
+      }
+    ],
+    "structure": {
+      "pattern": "状语从句（整体） + 主语 + 谓语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "adverbial",
+        "text": "Setting a boundary in this regard",
+        "label": "状语从句（整体）"
+      },
+      {
+        "role": "subject",
+        "text": "you"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      }
+    ]
+  },
+  "R2-20": {
+    "translation": "设定界限时最好考虑对方这样做背后的原因，以避免不必要的冲突和更多压力。",
+    "vocabulary": [],
+    "structure": {
+      "pattern": "主语 + 谓语 + 表语 / 补语",
+      "explanation": "先抓住主句的主语和谓语；宾语、表语以及前置状语再按原句顺序补回。"
+    },
+    "highlights": [
+      {
+        "role": "subject",
+        "text": "It"
+      },
+      {
+        "role": "predicate",
+        "text": "is"
+      },
+      {
+        "role": "complement",
+        "text": "to set boundaries in a way that takes into account the individual's underlying reasons for doing what they are doing to avoid unnecessary conflict and more stress"
+      }
+    ]
+  }
+}

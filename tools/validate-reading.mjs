@@ -316,10 +316,15 @@ const readingSentenceMap = (reading) => {
 
 const mdxSentenceMap = async (file) => {
   const source = await readFile(file, 'utf8');
-  return Object.fromEntries(Array.from(
+  const attributeSentences = Object.fromEntries(Array.from(
     source.matchAll(/<SentenceNote\s+number="([^"]+)"\s+sentence=\{("(?:\\.|[^"\\])*")\}/g),
     (match) => [match[1], JSON.parse(match[2])],
   ));
+  const childSentences = Object.fromEntries(Array.from(
+    source.matchAll(/<SentenceNote\s+number="([^"]+)"[^>]*>\s*([\s\S]*?)\s*<\/SentenceNote>/g),
+    (match) => [match[1], match[2].replace(/\s+/g, ' ').trim()],
+  ));
+  return { ...childSentences, ...attributeSentences };
 };
 
 const files = (await readdir(dataDirectory)).filter((file) => filePattern.test(file)).sort();
@@ -467,6 +472,29 @@ for (const file of closeReadingFiles) {
     semantic: true,
     vocabularyQuality: true,
   });
+}
+
+// A Blog page must not disappear from validation merely because its
+// close-reading module was never created. Discover the public MDX pages as
+// well as the modules, then require every CET6 paper to have both sides.
+const readingContentDirectory = path.join(projectRoot, 'src/content/reading');
+const readingContentFiles = (await readdir(readingContentDirectory))
+  .filter((file) => /^(\d{4})-(06|12)-cet6-([1-3])\.mdx$/.test(file))
+  .sort();
+const specifiedPapers = new Set(blogSpecifications.map((specification) => specification.paper));
+for (const file of readingContentFiles) {
+  const match = file.match(/^(\d{4})-(06|12)-cet6-([1-3])\.mdx$/);
+  if (!match) continue;
+  const [, year, month, set] = match;
+  const date = `${year}-${month}`;
+  const paper = `${date} CET6 Set ${set}`;
+  if (specifiedPapers.has(paper)) continue;
+  const monthName = month === '06' ? 'June' : 'December';
+  const expectedModule = path.join(closeReadingDirectory, `${year}${monthName}Set${set}.ts`);
+  const hasModule = await access(expectedModule).then(() => true).catch(() => false);
+  if (!hasModule) {
+    fail(paper, `Blog 页面存在，但缺少精读模块 src/data/closeReading/${year}${monthName}Set${set}.ts`);
+  }
 }
 
 let blogSentenceCount = 0;
