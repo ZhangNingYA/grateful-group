@@ -77,6 +77,7 @@
 .notebook-entry-meta { display: flex; gap: 12px; color: var(--notebook-accent); font-size: 0.65rem; font-weight: 550; letter-spacing: 0.07em; text-transform: uppercase; }
 .notebook-entry-meta > span + span { padding-left: 12px; border-left: 1px solid var(--notebook-line); color: var(--notebook-muted); }
 .notebook-entry h3 { max-width: 680px; margin: 14px 0 13px; font-family: var(--notebook-serif); font-size: clamp(1.65rem, 2.7vw, 2.1rem); font-weight: 450; line-height: 1.25; letter-spacing: -0.025em; text-wrap: pretty; }
+.notebook-entry h3:lang(zh-CN) { font-family: inherit; font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 550; line-height: 1.6; letter-spacing: 0; }
 .notebook-entry-copy > p { max-width: 590px; margin: 0; color: var(--notebook-muted); font-size: 0.83rem; line-height: 1.8; }
 .notebook-entry-details { display: flex; flex-wrap: wrap; gap: 9px 22px; margin-top: 25px; color: var(--notebook-muted); font-size: 0.68rem; }
 .notebook-entry-open { display: flex; align-items: center; align-self: center; justify-content: end; gap: 12px; font-size: 0.72rem; }

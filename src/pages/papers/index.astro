@@ -57,9 +57,9 @@ const notes = await Promise.all(papers.map(async (paper) => {
               <a href={`/papers/${note.id}/`} class="notebook-entry-link">
                 <span class="notebook-entry-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 <div class="notebook-entry-copy">
-                  <div class="notebook-entry-meta"><span>{note.data.topic}</span>{note.data.year && <span>{note.data.year}</span>}</div>
-                  <h3>{note.data.indexTitle}</h3>
-                  <p>{note.data.indexDescription}</p>
+                  <div class="notebook-entry-meta"><span lang="zh-CN">{note.data.topic}</span>{note.data.year && <span>{note.data.year}</span>}</div>
+                  <h3 lang="zh-CN">{note.data.indexTitle}</h3>
+                  <p lang="zh-CN">{note.data.indexDescription}</p>
                   <div class="notebook-entry-details">
                     {note.questionCount > 0 && <span>{note.questionCount} {note.questionCount === 1 ? 'question' : 'questions'} & answers</span>}
                     <span>Noted <FormattedDate date={note.data.pubDate} /></span>
