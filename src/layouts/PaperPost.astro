@@ -1,487 +1,110 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import type { MarkdownHeading } from 'astro';
+import { ArrowLeft } from 'lucide-astro';
 import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/blog/BlogHeader.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import 'katex/dist/katex.min.css';
+import '../styles/papers.css';
 
-type Props = CollectionEntry<'papers'>['data'];
-
-const { title, description, pubDate, updatedDate, authors, venue, year, pdfUrl, tags } = Astro.props;
+type Props = CollectionEntry<'papers'>['data'] & { headings: MarkdownHeading[] };
+const { title, description, pubDate, updatedDate, authors, venue, year, topic, headings } = Astro.props;
+const questions = headings.filter((heading) => heading.depth === 2 && heading.text.startsWith('问：'));
+const reference = headings.find((heading) => heading.depth === 2 && heading.text === '原论文');
 ---
 
+<!doctype html>
 <html lang="zh-CN">
   <head>
-    <BaseHead title={title} description={description} />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <BaseHead title={`${title} · 论文笔记`} description={description} />
   </head>
+  <body class="papers-page paper-note">
+    <a class="papers-skip" href="#main">跳至正文</a>
+    <BlogHeader active="papers" />
 
-  <body>
-    <!-- 固定返回按钮 -->
-    <a href="/papers" class="back-btn" aria-label="返回论文列表">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </a>
+    <main id="main" class:list={['papers-shell', 'paper-document', { 'has-questions': questions.length > 0 }]}>
+      <a class="paper-back" href="/papers/"><ArrowLeft size={15} stroke-width={1.6} /> All paper notes</a>
 
-    <main class="page">
-      <!-- Article Header -->
-      <header class="article-header">
-        <div class="article-meta">
-          {venue && <span class="meta-venue">{venue}</span>}
-          {year && (
-            <>
-              <span class="meta-sep">·</span>
-              <span>{year}</span>
-            </>
-          )}
-          <span class="meta-sep">·</span>
-          <FormattedDate date={pubDate} />
-          {updatedDate && (
-            <>
-              <span class="meta-sep">·</span>
-              <span>更新于 <FormattedDate date={updatedDate} /></span>
-            </>
-          )}
-        </div>
-
-        <h1 class="article-title">{title}</h1>
-
-        {authors && authors.length > 0 && (
-          <p class="article-authors">{authors.join(' · ')}</p>
-        )}
-
-        {description && (
-          <p class="article-desc">{description}</p>
-        )}
-
-        <div class="article-actions">
-          {pdfUrl && (
-            <a href={pdfUrl} class="action-link" target="_blank" rel="noopener noreferrer">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-              </svg>
-              <span>Read PDF</span>
-            </a>
-          )}
-          {tags && tags.length > 0 && (
-            <div class="article-tags">
-              {tags.map((t) => <span class="tag">{t}</span>)}
-            </div>
-          )}
+      <header class="paper-cover">
+        <p class="papers-eyebrow"><span class="papers-dot" aria-hidden="true"></span> Reading note <span class="paper-cover-topic">{topic}</span></p>
+        <h1>{title}</h1>
+        <p class="paper-bibliography">{authors?.join('、')}{venue && <span>{venue}</span>}{year && <span>{year}</span>}</p>
+        <p class="paper-cover-description">{description}</p>
+        <div class="paper-cover-bottom">
+          <span>Noted <FormattedDate date={pubDate} />{updatedDate && <> · Updated <FormattedDate date={updatedDate} /></>}</span>
+          {questions.length > 0 && <span>{String(questions.length).padStart(2, '0')} questions & answers</span>}
         </div>
       </header>
 
-      <!-- Article Body -->
-      <article class="article-body">
-        <slot />
-      </article>
+      <div class="paper-reading-layout">
+        {questions.length > 0 && (
+          <aside class="paper-contents" aria-label="问题导航">
+            <div class="paper-contents-inner">
+              <details open>
+                <summary><span>On this page</span><span class="paper-contents-toggle" aria-hidden="true"></span></summary>
+                <nav aria-label="问题目录">
+                  <ol>
+                    {questions.map((question, index) => (
+                      <li>
+                        <a href={`#${question.slug}`} data-question-link>
+                          <span class="paper-nav-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                          <span>{question.text.replace(/^问：\s*/, '')}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                  {reference && <a class="paper-source-nav" href={`#${reference.slug}`}>原论文 <span aria-hidden="true">↗</span></a>}
+                </nav>
+              </details>
+            </div>
+          </aside>
+        )}
 
-      <!-- Footer -->
-      <footer class="article-footer">
-        <a href="/papers" class="footer-back">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-          返回论文列表
-        </a>
-      </footer>
+        <article class="paper-prose" aria-label="论文笔记">
+          <slot />
+        </article>
+      </div>
     </main>
+
+    <footer class="papers-footer papers-shell">
+      <a href="/">Tend <span> / A personal practice</span></a>
+      <span>Stay curious.</span>
+    </footer>
+
+    <script>
+      const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-question-link]'));
+      const sections = links.map((link) => document.getElementById(decodeURIComponent(link.hash.slice(1))));
+
+      if (links.length) {
+        const updateCurrentQuestion = () => {
+          let current = -1;
+          sections.forEach((section, index) => {
+            if (section && section.getBoundingClientRect().top <= 180) current = index;
+          });
+          links.forEach((link, index) => {
+            if (index === current) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+        };
+
+        let pending = false;
+        window.addEventListener('scroll', () => {
+          if (pending) return;
+          pending = true;
+          requestAnimationFrame(() => {
+            updateCurrentQuestion();
+            pending = false;
+          });
+        }, { passive: true });
+        updateCurrentQuestion();
+      }
+
+      document.querySelectorAll<HTMLElement>('.paper-prose .katex-display').forEach((formula) => {
+        formula.tabIndex = 0;
+        formula.setAttribute('role', 'region');
+        formula.setAttribute('aria-label', '公式，可使用左右方向键横向滚动');
+      });
+    </script>
   </body>
 </html>
-
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #fafbfd;
-    color: #1a1a2e;
-    min-height: 100vh;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* 固定返回按钮 */
-  .back-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background: #fff;
-    border: 1px solid #ede7fb;
-    color: #8a64c8;
-    text-decoration: none;
-    box-shadow: 0 2px 12px rgba(138, 100, 200, 0.08);
-    transition: all 0.2s ease;
-  }
-  .back-btn:hover {
-    border-color: #d3c4ec;
-    box-shadow: 0 4px 16px rgba(138, 100, 200, 0.15);
-    transform: scale(1.05);
-  }
-
-  /* Page */
-  .page {
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 48px 36px 80px;
-  }
-
-  /* Article Header */
-  .article-header {
-    margin-bottom: 40px;
-    padding-left: 4px;
-  }
-
-  .article-meta {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 14px;
-    font-size: 0.8rem;
-    color: #94a3b8;
-  }
-  .meta-venue {
-    font-weight: 600;
-    color: #8a64c8;
-    background: rgba(138, 100, 200, 0.1);
-    padding: 2px 9px;
-    border-radius: 999px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    font-size: 0.72rem;
-  }
-  .meta-sep {
-    color: #cbd5e1;
-  }
-
-  .article-title {
-    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: #0f0f23;
-    line-height: 1.2;
-    margin-bottom: 12px;
-  }
-
-  .article-authors {
-    font-style: italic;
-    font-size: 0.95rem;
-    color: #475569;
-    margin-bottom: 12px;
-  }
-
-  .article-desc {
-    font-size: 0.95rem;
-    color: #64748b;
-    line-height: 1.6;
-    max-width: 680px;
-    margin-bottom: 18px;
-  }
-
-  .article-actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 18px;
-  }
-
-  .action-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
-    border-radius: 999px;
-    background: #8a64c8;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.82rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 10px rgba(138, 100, 200, 0.2);
-  }
-  .action-link:hover {
-    transform: translateY(-1px);
-    background: #7551b8;
-    box-shadow: 0 4px 16px rgba(138, 100, 200, 0.3);
-  }
-
-  .article-tags {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .tag {
-    display: inline-flex;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: #fff;
-    border: 1px solid #ede7fb;
-    color: #6f5298;
-    font-size: 0.74rem;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  /* Article Body */
-  .article-body {
-    animation: fade-in 0.5s ease both;
-  }
-
-  :global(.article-body > :first-child) {
-    margin-top: 0;
-  }
-
-  :global(.article-body p) {
-    margin: 1.1rem 0;
-    font-size: 0.96rem;
-    line-height: 1.85;
-    color: #374151;
-  }
-
-  :global(.article-body h2) {
-    margin: 2.8rem 0 0.9rem;
-    font-size: clamp(1.35rem, 3vw, 1.75rem);
-    font-weight: 700;
-    color: #0f0f23;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #f1f5f9;
-  }
-
-  :global(.article-body h3) {
-    margin: 2rem 0 0.7rem;
-    font-size: clamp(1.08rem, 2.2vw, 1.3rem);
-    font-weight: 650;
-    color: #1e293b;
-    line-height: 1.35;
-  }
-
-  :global(.article-body h4) {
-    margin: 1.5rem 0 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #334155;
-  }
-
-  :global(.article-body ul),
-  :global(.article-body ol) {
-    margin: 1rem 0;
-    padding-left: 1.4rem;
-    color: #374151;
-  }
-
-  :global(.article-body li) {
-    margin: 0.35rem 0;
-    line-height: 1.8;
-    font-size: 0.95rem;
-  }
-
-  :global(.article-body li::marker) {
-    color: #d3c4ec;
-  }
-
-  :global(.article-body strong) {
-    color: #0f0f23;
-    font-weight: 600;
-  }
-
-  :global(.article-body a) {
-    color: #8a64c8;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(138, 100, 200, 0.25);
-    transition: all 0.15s ease;
-  }
-
-  :global(.article-body a:hover) {
-    color: #6e4eaa;
-    border-bottom-color: rgba(110, 78, 170, 0.5);
-  }
-
-  :global(.article-body blockquote) {
-    margin: 1.4rem 0;
-    padding: 0.9rem 1.1rem;
-    border-left: 3px solid #d3c4ec;
-    border-radius: 0 10px 10px 0;
-    background: #faf7ff;
-    color: #475569;
-    font-size: 0.93rem;
-  }
-
-  :global(.article-body blockquote p) {
-    margin: 0.3rem 0;
-    color: #475569;
-  }
-
-  :global(.article-body hr) {
-    margin: 2.4rem 0;
-    border: none;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
-  }
-
-  :global(.article-body img) {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1.5rem auto;
-    border-radius: 12px;
-    border: 1px solid #f1f5f9;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
-  }
-
-  :global(.article-body pre) {
-    margin: 1.3rem 0;
-    padding: 1rem 1.2rem;
-    overflow-x: auto;
-    border-radius: 12px;
-    border: 1px solid #f1f5f9;
-    background: #fafbfd;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
-  }
-
-  :global(.article-body code) {
-    font-size: 0.86em;
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  }
-
-  :global(.article-body pre code) {
-    color: #334155;
-  }
-
-  :global(.article-body :not(pre) > code) {
-    padding: 2px 6px;
-    border-radius: 5px;
-    background: #f3eef9;
-    color: #8a64c8;
-    font-size: 0.84em;
-  }
-
-  /* 表格 */
-  :global(.article-body table) {
-    width: 100%;
-    margin: 1.3rem 0;
-    border-collapse: collapse;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #f1f5f9;
-    font-size: 0.88rem;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
-  }
-
-  :global(.article-body th),
-  :global(.article-body td) {
-    padding: 9px 14px;
-    text-align: left;
-    border-bottom: 1px solid #f1f5f9;
-  }
-
-  :global(.article-body th) {
-    background: #faf7ff;
-    font-weight: 600;
-    color: #1e293b;
-    font-size: 0.8rem;
-  }
-
-  :global(.article-body td) {
-    color: #475569;
-  }
-
-  :global(.article-body tr:last-child td) {
-    border-bottom: none;
-  }
-
-  /* KaTeX */
-  :global(.article-body .katex-display) {
-    margin: 1.4rem 0;
-    padding: 0.9rem 1.1rem;
-    overflow-x: auto;
-    border-radius: 10px;
-    background: #faf7ff;
-    border: 1px solid #ede7fb;
-  }
-
-  :global(.article-body .katex) {
-    color: #1e293b;
-  }
-
-  /* Embedded content blocks */
-  :global(.article-body > div) {
-    margin: 2rem 0;
-  }
-
-  /* Footer */
-  .article-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #f1f5f9;
-  }
-
-  .footer-back {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 16px 8px 12px;
-    border-radius: 100px;
-    background: #fff;
-    border: 1px solid #ede7fb;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #8a64c8;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 10px rgba(138, 100, 200, 0.06);
-  }
-
-  .footer-back:hover {
-    border-color: #d3c4ec;
-    box-shadow: 0 4px 16px rgba(138, 100, 200, 0.12);
-    transform: translateY(-1px);
-  }
-
-  /* Animations */
-  @keyframes fade-in {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* Responsive */
-  @media (max-width: 768px) {
-    .page {
-      padding: 36px 20px 60px;
-    }
-
-    .back-btn {
-      top: 14px;
-      left: 14px;
-      width: 32px;
-      height: 32px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .page {
-      padding: 28px 14px 48px;
-    }
-
-    .article-title {
-      font-size: 1.5rem;
-    }
-
-    :global(.article-body > div) {
-      margin: 1.5rem -6px;
-    }
-  }
-</style>

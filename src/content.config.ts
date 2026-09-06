@@ -48,22 +48,19 @@ const works = defineCollection({
 });
 
 const papers = defineCollection({
-    // 注意这里路径是 ./src/content/papers
     loader: glob({ base: './src/content/papers', pattern: '**/*.{md,mdx}' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            description: z.string(),
-            pubDate: z.coerce.date(),
-            updatedDate: z.coerce.date().optional(),
-            heroImage: z.optional(image()),
-            // 论文专用可选字段
-            authors: z.array(z.string()).optional(),
-            venue: z.string().optional(),
-            year: z.number().optional(),
-            pdfUrl: z.string().url().optional(),
-            tags: z.array(z.string()).optional(),
-        }),
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        indexTitle: z.string(),
+        indexDescription: z.string(),
+        topic: z.string(),
+        pubDate: z.coerce.date(),
+        updatedDate: z.coerce.date().optional(),
+        authors: z.array(z.string()).optional(),
+        venue: z.string().optional(),
+        year: z.number().optional(),
+    }),
 });
 
 export const collections = { reading, games, study, works, papers };
