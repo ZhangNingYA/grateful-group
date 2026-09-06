@@ -59,7 +59,13 @@ const notes = await Promise.all(papers.map(async (paper) => {
                 <div class="notebook-entry-copy">
                   <div class="notebook-entry-meta"><span lang="zh-CN">{note.data.topic}</span>{note.data.year && <span>{note.data.year}</span>}</div>
                   <h3 lang="zh-CN">{note.data.indexTitle}</h3>
-                  <p lang="zh-CN">{note.data.indexDescription}</p>
+                  <div class="notebook-entry-bibliography" lang="zh-CN">
+                    {note.data.authors && note.data.authors.length > 0 && <p class="notebook-entry-authors">{note.data.authors.join('、')}</p>}
+                    {note.data.affiliation && <p>{note.data.affiliation}</p>}
+                    {note.data.venue && <p class="notebook-entry-venue">{note.data.venue}</p>}
+                  </div>
+                  <p class="notebook-entry-description" lang="zh-CN">{note.data.indexDescription}</p>
+                  {note.data.doi && <p class="notebook-entry-doi"><span>DOI</span><span>{note.data.doi}</span></p>}
                   <div class="notebook-entry-details">
                     {note.questionCount > 0 && <span>{note.questionCount} {note.questionCount === 1 ? 'question' : 'questions'} & answers</span>}
                     <span>Noted <FormattedDate date={note.data.pubDate} /></span>

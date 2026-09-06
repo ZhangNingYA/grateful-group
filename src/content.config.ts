@@ -58,8 +58,10 @@ const papers = defineCollection({
         pubDate: z.coerce.date(),
         updatedDate: z.coerce.date().optional(),
         authors: z.array(z.string()).optional(),
+        affiliation: z.string().optional(),
         venue: z.string().optional(),
         year: z.number().optional(),
+        doi: z.string().optional(),
     }),
 });
 
